@@ -1,0 +1,393 @@
+/* ==========================================================================
+   DYNANCA MATHEMATICS FOR COMPUTING — Unlimited Practice — Shell
+   -------------------------------------------------------------------------
+   Layout, header, hero, theme and responsive rules for the website shell
+   around the practice engine. The engine's own markup (question card,
+   options, hint, explanation, Next/Previous controls) is styled separately
+   in practices.css.
+   ========================================================================== */
+
+/* ---------- Design tokens ---------- */
+:root {
+  --dmc-bg: #FAF9F6;
+  --dmc-surface: #FFFFFF;
+  --dmc-ink: #2D2A26;
+  --dmc-muted: #6B6459;
+  --dmc-accent: #B54D32;
+  --dmc-accent-hover: #B54D32;
+  --dmc-accent-tint: #FBEFEA;
+  --dmc-border: #E8E4DF;
+  --dmc-code-bg: #F4F1EA;
+  --dmc-success: #477254;
+  --dmc-success-tint: #ECF3EE;
+  --dmc-danger: #AF4933;
+  --dmc-danger-tint: #FBEFEB;
+
+  --dmc-font-serif: "Playfair Display", "Lora", Georgia, serif;
+  --dmc-font-sans: "Inter", "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --dmc-font-mono: "JetBrains Mono", "Fira Code", ui-monospace, Menlo, Consolas, monospace;
+
+  /* Small accent text and success feedback also need AA contrast on their
+     cream/tinted backgrounds. Their shades are verified in the browser.
+     Solid white-text CTAs keep separate tokens because the dark theme's
+     lighter text accent is unsuitable as a white-text button background. */
+  --dmc-cta-bg: #B54D32;
+  --dmc-cta-bg-hover: #9C4029;
+
+  /* Real, measured height of the sticky header (see initHeaderOffset in
+     shell.js) — this default is only a pre-JS fallback for the first
+     paint; every scroll target uses this variable rather than a hardcoded
+     pixel guess, so it stays correct at any zoom level or viewport. */
+  --dmc-header-h: 64px;
+}
+
+[data-theme="dark"] {
+  --dmc-bg: #1A1816;
+  --dmc-surface: #221F1B;
+  --dmc-ink: #F3EFE8;
+  --dmc-muted: #B0A696;
+  --dmc-accent: #D97A5C;
+  --dmc-accent-hover: #E28D71;
+  --dmc-accent-tint: #34241F;
+  --dmc-border: #3A362F;
+  --dmc-code-bg: #26221D;
+  --dmc-success: #7CA98B;
+  --dmc-success-tint: #223028;
+  --dmc-danger: #C97B67;
+  --dmc-danger-tint: #332420;
+  --dmc-cta-bg: #B5432C;
+  --dmc-cta-bg-hover: #9C3824;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: var(--dmc-bg);
+}
+
+body {
+  margin: 0;
+  background: var(--dmc-bg);
+  color: var(--dmc-ink);
+  font-family: var(--dmc-font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+a { color: inherit; }
+
+/* ---------- Header ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--dmc-bg);
+  border-bottom: 1px solid var(--dmc-border);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.site-header__inner {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-decoration: none;
+  line-height: 1.25;
+}
+
+/* The wordmark is fixed dark ink + blue — it does not recolor for dark
+   mode, so it always sits on its own small, permanently-light plate
+   rather than directly on the (theme-dependent) header background. */
+.brand__logo-plate {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  background: #FFFFFF;
+  border: 1px solid rgba(45, 42, 38, 0.08);
+  border-radius: 10px;
+  padding: 0.4rem 0.65rem;
+  box-shadow: 0 1px 2px rgba(45, 42, 38, 0.06);
+}
+
+.brand__logo {
+  display: block;
+  height: 22px;
+  width: auto;
+}
+
+
+.theme-switch {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--dmc-border);
+  border-radius: 999px;
+  padding: 3px;
+  gap: 2px;
+  background: var(--dmc-surface);
+}
+
+/* The three Light/Dark/System buttons are the only actual "navigation"
+   here, so only they sit inside the aria-labeled nav landmark; Reset
+   progress is a sibling plain button, not a theme option, so it stays
+   outside that landmark while remaining visually part of the same pill
+   (see index.html markup). */
+.theme-switch__group {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.theme-switch__btn {
+  border: none;
+  background: transparent;
+  color: var(--dmc-muted);
+  font-family: var(--dmc-font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.theme-switch__btn:hover {
+  color: var(--dmc-ink);
+}
+
+.theme-switch__btn[aria-pressed="true"] {
+  background: var(--dmc-cta-bg);
+  color: #FFFFFF;
+}
+
+.theme-switch__btn:focus-visible {
+  outline: 2.5px solid var(--dmc-accent);
+  outline-offset: 2px;
+}
+
+/* Reset progress sits inside the same segmented-pill nav as the theme
+   buttons but had NO styling at all — it rendered as a bare default
+   browser <button>, visually broken next to the pill segments (and
+   especially jarring in dark mode, where a default button stays
+   light-on-dark). Match the theme buttons' sizing/typography so it reads
+   as a natural 4th segment, with a danger-tinted hover/focus treatment
+   (rather than the accent "pressed" look) since it's a destructive
+   action, not a toggle state. */
+.dynanca-reset-progress {
+  border: none;
+  background: transparent;
+  color: var(--dmc-muted);
+  font-family: var(--dmc-font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.dynanca-reset-progress:hover:not(:disabled) {
+  background: var(--dmc-danger-tint);
+  color: var(--dmc-danger);
+}
+.dynanca-reset-progress:focus-visible {
+  outline: 2.5px solid var(--dmc-accent);
+  outline-offset: 2px;
+}
+.dynanca-reset-progress:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 2.25rem;
+  text-align: center;
+}
+
+.hero__eyebrow {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--dmc-accent);
+  margin: 0 0 0.85rem;
+}
+
+.hero__title {
+  font-family: var(--dmc-font-serif);
+  font-size: clamp(2.1rem, 4.5vw, 3rem);
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+  color: var(--dmc-ink);
+}
+
+.hero__lead {
+  font-size: 1.08rem;
+  line-height: 1.65;
+  color: var(--dmc-muted);
+  max-width: 46ch;
+  margin: 0 auto;
+}
+
+.hero__progress {
+  margin: 1.6rem auto 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--dmc-muted);
+  letter-spacing: 0.01em;
+}
+
+.hero__progress strong {
+  color: var(--dmc-ink);
+}
+
+/* ---------- Review-mistakes affordance ----------
+   The only "navigation" the practice UI has, and it's deliberately quiet:
+   a single inline text-button, present only once there's something to
+   review. Never a bar, never a set of chips, never sticky. */
+.hero__review {
+  margin: 0.6rem auto 0;
+  min-height: 1px; /* avoid layout jump when it toggles empty <-> populated */
+}
+
+.review-toggle {
+  min-height: 44px;
+  border: none;
+  background: none;
+  padding: 0.2rem 0.1rem;
+  color: var(--dmc-accent);
+  font-family: var(--dmc-font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Comfortable targets remain full size when the mobile header wraps. */
+.theme-switch__btn,
+.dynanca-reset-progress {
+  min-height: 44px;
+}
+.review-toggle:hover {
+  color: var(--dmc-accent-hover);
+}
+.review-toggle:focus-visible {
+  outline: 2.5px solid var(--dmc-accent);
+  outline-offset: 2px;
+}
+.review-toggle--active {
+  color: var(--dmc-muted);
+  text-decoration: none;
+}
+.review-toggle--active:hover {
+  color: var(--dmc-ink);
+}
+
+/* ---------- Practice session ---------- */
+.practice-session {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2.75rem 1.5rem 4rem;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  border-top: 1px solid var(--dmc-border);
+  padding: 2rem 1.5rem 3rem;
+  text-align: center;
+  transition: border-color 0.25s ease;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--dmc-muted);
+}
+
+/* ---------- Focus & motion ---------- */
+:focus-visible {
+  outline: 2.5px solid var(--dmc-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  /* Root cause fix, not a cover-up: at narrow widths, brand (logo + full
+     product name) plus 4 nav controls (Light/Dark/System/Reset) do not
+     fit on one row without shrinking text illegibly. Previously nothing
+     here prevented that from silently overflowing off-screen — masked
+     by `body { overflow-x: hidden }` — instead of wrapping. Wrapping the
+     header onto two centered rows keeps every control visible and
+     reachable instead of clipped. */
+  .site-header__inner {
+    padding: 0.85rem 1.1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 0.6rem;
+  }
+
+
+  .brand__logo-plate {
+    padding: 0.3rem 0.5rem;
+  }
+
+  .brand__logo {
+    height: 18px;
+  }
+
+  .theme-switch {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 3px;
+  }
+
+  .theme-switch__group {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 3px;
+  }
+
+  .theme-switch__btn,
+  .dynanca-reset-progress {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.72rem;
+  }
+
+  .hero {
+    padding: 2.5rem 1.1rem 1.75rem;
+  }
+
+  .practice-session {
+    padding: 2rem 1.1rem 3rem;
+  }
+}
+
+@media (max-width: 380px) {
+  /* Smallest phones (e.g. 320–360px): tighten the nav segments a little
+     further so the 4-button row still comfortably fits its own line. */
+  .theme-switch__btn,
+  .dynanca-reset-progress {
+    padding: 0.28rem 0.5rem;
+    font-size: 0.68rem;
+  }
+}

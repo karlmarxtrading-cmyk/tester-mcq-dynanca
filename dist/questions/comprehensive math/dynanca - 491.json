@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-491",
+  "category": "Comprehensive Mathematics",
+  "title": "491. Sets, Logic, Reasoning & Proof: Biconditional Statements",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-491-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Truth condition for a biconditional",
+      "learningObjective": "State when a biconditional is true.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "When is the biconditional \\(p\\iff q\\) true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only when \\(p\\) and \\(q\\) are both true"
+        },
+        {
+          "label": "B",
+          "text": "When \\(p\\) and \\(q\\) have the same truth value"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The biconditional \"\\(p\\) if and only if \\(q\\)\" is true when both parts are true and also when both parts are false. It is false when one is true and the other is false.",
+      "hint": "Consider what happens when both parts are false."
+    },
+    {
+      "id": "dynanca-491-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Biconditional of two false propositions",
+      "learningObjective": "Evaluate a biconditional when both parts are false.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Both \\(p\\) and \\(q\\) are false. What is the truth value of \\(p\\iff q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "True"
+        },
+        {
+          "label": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The two parts have the same truth value (both false), so the biconditional is true. Both directions hold: \\(p\\implies q\\) and \\(q\\implies p\\) are true because their hypotheses are false.",
+      "hint": "Compare the truth values of the two parts."
+    },
+    {
+      "id": "dynanca-491-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Truth table column of a biconditional",
+      "learningObjective": "Write the truth table column of a biconditional.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The rows of a truth table are ordered by \\((p,q)\\) as \\((T,T)\\), \\((T,F)\\), \\((F,T)\\), \\((F,F)\\). What is the column for \\(p\\iff q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(T,\\ F,\\ T,\\ T\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(T,\\ F,\\ F,\\ T\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The biconditional is true when the two values agree, rows \\((T,T)\\) and \\((F,F)\\), and false when they differ, rows \\((T,F)\\) and \\((F,T)\\). So the column is \\(T,F,F,T\\). The column \\(T,F,T,T\\) belongs to the conditional \\(p\\implies q\\).",
+      "hint": "Mark the rows in which \\(p\\) and \\(q\\) have equal truth values."
+    },
+    {
+      "id": "dynanca-491-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Biconditional as two conditionals",
+      "learningObjective": "Express a biconditional as a conjunction of two conditionals.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which compound proposition is logically equivalent to \\(p\\iff q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((p\\implies q)\\lor(q\\implies p)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((p\\implies q)\\land(q\\implies p)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\"\\(p\\) if and only if \\(q\\)\" asserts both \"if \\(p\\), then \\(q\\)\" and \"if \\(q\\), then \\(p\\)\", so it is the conjunction of the two conditionals. The disjunction of the two conditionals is true in every row, because at least one of them always has a false hypothesis or a true conclusion; it is not equivalent to the biconditional.",
+      "hint": "The phrase \"if and only if\" combines two directions with \"and\"."
+    },
+    {
+      "id": "dynanca-491-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Biconditional with different truth values",
+      "learningObjective": "Determine the truth value of a biconditional of two arithmetic statements.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the truth value of the statement \"\\(2\\) is even if and only if \\(3\\) is even\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The part \"\\(2\\) is even\" is true, and the part \"\\(3\\) is even\" is false. Since the two parts have different truth values, the biconditional is false.",
+      "hint": "Find each truth value and check whether they agree."
+    },
+    {
+      "id": "dynanca-491-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Biconditional of two false arithmetic statements",
+      "learningObjective": "Determine the truth value of a biconditional whose parts are both false.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the truth value of the statement \"\\(4\\) is odd if and only if \\(9\\) is prime\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The part \"\\(4\\) is odd\" is false, and the part \"\\(9\\) is prime\" is also false, since \\(9=3\\cdot 3\\). The two parts have the same truth value, so the biconditional is true.",
+      "hint": "A biconditional compares truth values; it does not require the parts to be true."
+    },
+    {
+      "id": "dynanca-491-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A true biconditional about integers",
+      "learningObjective": "Decide whether both directions of a statement about integers hold.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For integers \\(n\\), what is the truth value of the statement \"\\(n\\) is even if and only if \\(n^2\\) is even\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False for some integer \\(n\\)"
+        },
+        {
+          "label": "B",
+          "text": "True for every integer \\(n\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If \\(n=2k\\) is even, then \\(n^2=4k^2\\) is even. If \\(n=2k+1\\) is odd, then \\(n^2=4k^2+4k+1\\) is odd; so an even square can only come from an even \\(n\\). Both directions hold, and the two parts always have the same truth value.",
+      "hint": "Check both directions: from \\(n\\) even to \\(n^2\\) even, and from \\(n\\) odd to \\(n^2\\) odd."
+    },
+    {
+      "id": "dynanca-491-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negation of a biconditional",
+      "learningObjective": "Write a biconditional equivalent to the negation of a biconditional.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Which proposition is logically equivalent to \\(\\neg(p\\iff q)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\neg p\\iff\\neg q\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\iff\\neg q\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The negation is true when \\(p\\) and \\(q\\) have different truth values, which is the same as saying that \\(p\\) and \\(\\neg q\\) have the same truth value: \\(p\\iff\\neg q\\). Negating both sides, as in \\(\\neg p\\iff\\neg q\\), gives a statement equivalent to the original \\(p\\iff q\\), not to its negation.",
+      "hint": "Negating one side of a biconditional reverses it; negating both sides restores it."
+    },
+    {
+      "id": "dynanca-491-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A biconditional that fails in one direction",
+      "learningObjective": "Find the truth value of a biconditional over the real numbers by testing both directions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For real numbers \\(x\\), is the statement \"\\(x^2=4\\) if and only if \\(x=2\\)\" true for every \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; both sides say the same thing about \\(x\\)."
+        },
+        {
+          "label": "B",
+          "text": "No; for \\(x=-2\\), \\(x^2=4\\) is true but \\(x=2\\) is false."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The direction \"if \\(x=2\\), then \\(x^2=4\\)\" is true. The other direction fails: \\(x=-2\\) satisfies \\(x^2=4\\) but not \\(x=2\\). For that value the two sides have different truth values, so the biconditional is not true for every real \\(x\\).",
+      "hint": "Test the direction from \\(x^2=4\\) to \\(x=2\\) with a negative number."
+    },
+    {
+      "id": "dynanca-491-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Biconditional in terms of and, or, not",
+      "learningObjective": "Express a biconditional with conjunction, disjunction, and negation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which proposition that uses only \\(\\land\\), \\(\\lor\\), and \\(\\neg\\) is logically equivalent to \\(p\\iff q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((p\\land q)\\lor(\\neg p\\land\\neg q)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((p\\lor q)\\land(\\neg p\\lor\\neg q)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The biconditional is true in exactly two situations: both parts true, \\(p\\land q\\), or both parts false, \\(\\neg p\\land\\neg q\\). Joining these with \"or\" gives the first expression. The second expression says \"at least one is true and at least one is false\", which describes the exclusive or.",
+      "hint": "Describe the two cases in which the biconditional is true and join them."
+    }
+  ]
+}

@@ -1,0 +1,1311 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "questions-mathematics-statistics-statistics-learning-01",
+  "category": "Mathematics for Computing",
+  "title": "Statistics Foundations: Data Types, Means & Outliers",
+  "description": "Explore essential mathematical concepts through carefully crafted questions. Strengthen your understanding, practice your reasoning, and learn at your own pace.",
+  "questionCount": 50,
+  "questions": [
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q001",
+      "category": "MATH",
+      "concept": "DATA_DISTRIBUTION",
+      "learningObjective": "Classify a variable as categorical, discrete numerical, or continuous numerical.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "A survey records the brand of phone each student owns. What type of data is this?",
+      "options": [
+        {
+          "label": "A",
+          "text": "categorical"
+        },
+        {
+          "label": "B",
+          "text": "numerical (discrete)"
+        },
+        {
+          "label": "C",
+          "text": "numerical (continuous)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "This data records categories or labels rather than numerical quantities, so it is categorical data.",
+      "hint": "Decide whether the data represents categories, counts, or measurements that can take any value in a range."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q002",
+      "category": "MATH",
+      "concept": "DATA_INTERPRETATION",
+      "learningObjective": "Recognize how a truncated axis can create a misleading visual impression of a data comparison.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "recall",
+      "question": "A bar chart comparing two companies' annual revenue has its vertical axis starting at \\(90\\) instead of \\(0\\). Company X's bar looks twice as tall as Company Y's, even though Company X's revenue is only slightly higher. What statistical issue does this illustrate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The data itself must have been recorded incorrectly"
+        },
+        {
+          "label": "B",
+          "text": "Bar charts can never be used to compare two companies fairly"
+        },
+        {
+          "label": "C",
+          "text": "A truncated (non-zero) axis can visually exaggerate small differences between values"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Starting a bar chart's axis at a value other than zero distorts the visual proportions between bars, making a small actual difference appear much larger than it really is. This is a common way graphs can mislead viewers, even when the underlying numbers are accurate.",
+      "hint": "Think about how the starting point of the vertical axis affects the apparent height of the bars."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q003",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Calculate the arithmetic mean of a data set.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "reasoning",
+      "question": "A set of video views (thousands) was recorded as \\(90, 37, 69, 52\\). What is the mean of this data set?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(58\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(63\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(62\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Sum all the values: \\(90 + 37 + 69 + 52 = 248\\). Divide by the number of values, \\(n=4\\): \\(\\bar{x} = \\frac{248}{4} = 62\\).",
+      "hint": "Add all the values together, then divide by how many values there are: \\(\\bar{x} = \\frac{\\sum x}{n}\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q004",
+      "category": "MATH",
+      "concept": "OUTLIERS",
+      "learningObjective": "Identify how an extreme outlier affects the mean compared to the median.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "understanding",
+      "question": "A data set is \\(20, 14, 26, 26, 13\\). If an extreme outlier of \\(180\\) is added to the data set, what is the most likely effect on the mean and the median?",
+      "options": [
+        {
+          "label": "A",
+          "text": "increases the mean, while the median changes very little"
+        },
+        {
+          "label": "B",
+          "text": "decreases the mean and the median equally"
+        },
+        {
+          "label": "C",
+          "text": "has no effect on the mean or the median"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Before adding the outlier, the mean is \\(\\bar{x} \\approx 19.8\\). After adding \\(180\\), the mean rises to about \\(46.5\\), since the mean is sensitive to extreme values. The median, which depends only on the middle-ranked value, shifts by at most one position and changes very little. Therefore, the outlier increases the mean, while the median changes very little.",
+      "hint": "The mean uses every value in its calculation, but the median only depends on the middle position."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q005",
+      "category": "MATH",
+      "concept": "DATA_DISTRIBUTION",
+      "learningObjective": "Classify a variable as categorical, discrete numerical, or continuous numerical.",
+      "difficulty": "beginner",
+      "cognitiveLevel": "problem-solving",
+      "question": "A survey records the number of siblings each student has. What type of data is this?",
+      "options": [
+        {
+          "label": "A",
+          "text": "categorical"
+        },
+        {
+          "label": "B",
+          "text": "numerical (continuous)"
+        },
+        {
+          "label": "C",
+          "text": "numerical (discrete)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "This data consists of countable whole-number values, so it is numerical and discrete.",
+      "hint": "Decide whether the data represents categories, counts, or measurements that can take any value in a range."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q006",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Determine whether a claim about a data set is mathematically consistent with a given mean.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "A data set has \\(n=6\\) values with a mean of \\(20\\). A student claims that all 6 values in the data set are greater than \\(25\\). Is this possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, this is always possible regardless of the mean"
+        },
+        {
+          "label": "B",
+          "text": "Yes, as long as the median is also greater than the mean"
+        },
+        {
+          "label": "C",
+          "text": "No, because the sum of the values would then exceed the total implied by the mean"
+        }
+      ],
+      "answer": "C",
+      "explanation": "If the mean is \\(20\\) for \\(n=6\\) values, the total sum must be \\(20 \\times 6 = 120\\). If every value were greater than \\(25\\), the sum would have to exceed \\(150\\), which is greater than \\(120\\). This is a contradiction, so it is impossible for all values to exceed the mean by that much.",
+      "hint": "Check whether the claim is consistent with the total sum implied by the mean: \\(\\text{sum} = \\bar{x} \\times n\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q007",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Calculate the arithmetic mean of a data set.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "recall",
+      "question": "A set of plant heights (cm) was recorded as \\(16, 22, 41, 29, 37\\). What is the mean of this data set?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(29\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(35\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(27\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Sum all the values: \\(16 + 22 + 41 + 29 + 37 = 145\\). Divide by the number of values, \\(n=5\\): \\(\\bar{x} = \\frac{145}{5} = 29\\).",
+      "hint": "Add all the values together, then divide by how many values there are: \\(\\bar{x} = \\frac{\\sum x}{n}\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q008",
+      "category": "MATH",
+      "concept": "OUTLIERS",
+      "learningObjective": "Identify how an extreme outlier affects the mean compared to the median.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "reasoning",
+      "question": "A data set is \\(14, 29, 25, 28, 11\\). If an extreme outlier of \\(200\\) is added to the data set, what is the most likely effect on the mean and the median?",
+      "options": [
+        {
+          "label": "A",
+          "text": "increases the mean, while the median changes very little"
+        },
+        {
+          "label": "B",
+          "text": "decreases the mean and the median equally"
+        },
+        {
+          "label": "C",
+          "text": "has no effect on the mean or the median"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Before adding the outlier, the mean is \\(\\bar{x} \\approx 21.4\\). After adding \\(200\\), the mean rises to about \\(51.2\\), since the mean is sensitive to extreme values. The median, which depends only on the middle-ranked value, shifts by at most one position and changes very little. Therefore, the outlier increases the mean, while the median changes very little.",
+      "hint": "The mean uses every value in its calculation, but the median only depends on the middle position."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q009",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Select the most appropriate measure of central tendency for a given data scenario.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "understanding",
+      "question": "A data set of shoe sizes sold in a store is being analyzed to determine which size to stock the most of. Which measure of central tendency is most useful?",
+      "options": [
+        {
+          "label": "A",
+          "text": "mean"
+        },
+        {
+          "label": "B",
+          "text": "median"
+        },
+        {
+          "label": "C",
+          "text": "mode"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The mode identifies the most frequently occurring value, which directly answers which shoe size sells the most and should be stocked in the greatest quantity.",
+      "hint": "Consider whether the data has outliers, repeated values, or is symmetric, and which measure handles that situation best."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q010",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Determine whether a claim about a data set is mathematically consistent with a given mean.",
+      "difficulty": "beginner",
+      "cognitiveLevel": "problem-solving",
+      "question": "A data set has \\(n=5\\) values with a mean of \\(24\\). A student claims that all 5 values in the data set are greater than \\(29\\). Is this possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, this is always possible regardless of the mean"
+        },
+        {
+          "label": "B",
+          "text": "No, because the sum of the values would then exceed the total implied by the mean"
+        },
+        {
+          "label": "C",
+          "text": "Yes, as long as the median is also greater than the mean"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If the mean is \\(24\\) for \\(n=5\\) values, the total sum must be \\(24 \\times 5 = 120\\). If every value were greater than \\(29\\), the sum would have to exceed \\(145\\), which is greater than \\(120\\). This is a contradiction, so it is impossible for all values to exceed the mean by that much.",
+      "hint": "Check whether the claim is consistent with the total sum implied by the mean: \\(\\text{sum} = \\bar{x} \\times n\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q011",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Calculate the arithmetic mean of a data set.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "A set of running times (minutes) was recorded as \\(76, 10, 32, 60\\). What is the mean of this data set?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(49.5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(51.5\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(44.5\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Sum all the values: \\(76 + 10 + 32 + 60 = 178\\). Divide by the number of values, \\(n=4\\): \\(\\bar{x} = \\frac{178}{4} = 44.5\\).",
+      "hint": "Add all the values together, then divide by how many values there are: \\(\\bar{x} = \\frac{\\sum x}{n}\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q012",
+      "category": "MATH",
+      "concept": "OUTLIERS",
+      "learningObjective": "Identify how an extreme outlier affects the mean compared to the median.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "recall",
+      "question": "A data set is \\(14, 16, 23, 27, 29\\). If an extreme outlier of \\(220\\) is added to the data set, what is the most likely effect on the mean and the median?",
+      "options": [
+        {
+          "label": "A",
+          "text": "decreases the mean and the median equally"
+        },
+        {
+          "label": "B",
+          "text": "increases the mean, while the median changes very little"
+        },
+        {
+          "label": "C",
+          "text": "has no effect on the mean or the median"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Before adding the outlier, the mean is \\(\\bar{x} \\approx 21.8\\). After adding \\(220\\), the mean rises to about \\(54.8\\), since the mean is sensitive to extreme values. The median, which depends only on the middle-ranked value, shifts by at most one position and changes very little. Therefore, the outlier increases the mean, while the median changes very little.",
+      "hint": "The mean uses every value in its calculation, but the median only depends on the middle position."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q013",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Select the most appropriate measure of central tendency for a given data scenario.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "reasoning",
+      "question": "A data set of household incomes contains one extremely high value (an outlier). Which measure of central tendency best represents the typical household in this case?",
+      "options": [
+        {
+          "label": "A",
+          "text": "mean"
+        },
+        {
+          "label": "B",
+          "text": "median"
+        },
+        {
+          "label": "C",
+          "text": "mode"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The median is not affected by extreme outliers, since it only depends on the middle position of ordered data, making it more representative here than the mean.",
+      "hint": "Consider whether the data has outliers, repeated values, or is symmetric, and which measure handles that situation best."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q014",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Determine whether a claim about a data set is mathematically consistent with a given mean.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "understanding",
+      "question": "A data set has \\(n=5\\) values with a mean of \\(31\\). A student claims that all 5 values in the data set are greater than \\(36\\). Is this possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, this is always possible regardless of the mean"
+        },
+        {
+          "label": "B",
+          "text": "No, because the sum of the values would then exceed the total implied by the mean"
+        },
+        {
+          "label": "C",
+          "text": "Yes, as long as the median is also greater than the mean"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If the mean is \\(31\\) for \\(n=5\\) values, the total sum must be \\(31 \\times 5 = 155\\). If every value were greater than \\(36\\), the sum would have to exceed \\(180\\), which is greater than \\(155\\). This is a contradiction, so it is impossible for all values to exceed the mean by that much.",
+      "hint": "Check whether the claim is consistent with the total sum implied by the mean: \\(\\text{sum} = \\bar{x} \\times n\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q015",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Calculate the arithmetic mean of a data set.",
+      "difficulty": "beginner",
+      "cognitiveLevel": "problem-solving",
+      "question": "A set of book pages read was recorded as \\(17, 84, 82, 24, 52, 49\\). What is the mean of this data set?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(51.33\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(58.33\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(53.33\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Sum all the values: \\(17 + 84 + 82 + 24 + 52 + 49 = 308\\). Divide by the number of values, \\(n=6\\): \\(\\bar{x} = \\frac{308}{6} = 51.33\\).",
+      "hint": "Add all the values together, then divide by how many values there are: \\(\\bar{x} = \\frac{\\sum x}{n}\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q016",
+      "category": "MATH",
+      "concept": "OUTLIERS",
+      "learningObjective": "Identify how an extreme outlier affects the mean compared to the median.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "A data set is \\(28, 29, 16, 21, 17\\). If an extreme outlier of \\(220\\) is added to the data set, what is the most likely effect on the mean and the median?",
+      "options": [
+        {
+          "label": "A",
+          "text": "increases the mean, while the median changes very little"
+        },
+        {
+          "label": "B",
+          "text": "decreases the mean and the median equally"
+        },
+        {
+          "label": "C",
+          "text": "has no effect on the mean or the median"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Before adding the outlier, the mean is \\(\\bar{x} \\approx 22.2\\). After adding \\(220\\), the mean rises to about \\(55.2\\), since the mean is sensitive to extreme values. The median, which depends only on the middle-ranked value, shifts by at most one position and changes very little. Therefore, the outlier increases the mean, while the median changes very little.",
+      "hint": "The mean uses every value in its calculation, but the median only depends on the middle position."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q017",
+      "category": "MATH",
+      "concept": "FREQUENCY",
+      "learningObjective": "Calculate a relative frequency as a percentage from a frequency table.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "recall",
+      "question": "A survey of 50 people asked their favorite color, with results: Red: 14; Blue: 10; Green: 11; Yellow: 15. What percentage of respondents chose Yellow, the most popular color? Round to one decimal place.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(28\\%\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(37\\%\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The frequency for Yellow is \\(15\\) out of \\(50\\) total respondents. The percentage is \\(\\frac{15}{50} \\times 100\\% \\approx 30\\%\\).",
+      "hint": "Divide the frequency of the category by the total number of respondents, then multiply by 100."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q018",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Determine whether a claim about a data set is mathematically consistent with a given mean.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "reasoning",
+      "question": "A data set has \\(n=5\\) values with a mean of \\(25\\). A student claims that all 5 values in the data set are greater than \\(30\\). Is this possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because the sum of the values would then exceed the total implied by the mean"
+        },
+        {
+          "label": "B",
+          "text": "Yes, this is always possible regardless of the mean"
+        },
+        {
+          "label": "C",
+          "text": "Yes, as long as the median is also greater than the mean"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If the mean is \\(25\\) for \\(n=5\\) values, the total sum must be \\(25 \\times 5 = 125\\). If every value were greater than \\(30\\), the sum would have to exceed \\(150\\), which is greater than \\(125\\). This is a contradiction, so it is impossible for all values to exceed the mean by that much.",
+      "hint": "Check whether the claim is consistent with the total sum implied by the mean: \\(\\text{sum} = \\bar{x} \\times n\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q019",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Calculate the arithmetic mean of a data set.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "understanding",
+      "question": "A set of basketball points scored was recorded as \\(87, 82, 60, 64\\). What is the mean of this data set?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(80.25\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(73.25\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(67.25\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sum all the values: \\(87 + 82 + 60 + 64 = 293\\). Divide by the number of values, \\(n=4\\): \\(\\bar{x} = \\frac{293}{4} = 73.25\\).",
+      "hint": "Add all the values together, then divide by how many values there are: \\(\\bar{x} = \\frac{\\sum x}{n}\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q020",
+      "category": "MATH",
+      "concept": "OUTLIERS",
+      "learningObjective": "Identify how an extreme outlier affects the mean compared to the median.",
+      "difficulty": "beginner",
+      "cognitiveLevel": "problem-solving",
+      "question": "A data set is \\(26, 17, 21, 12, 11\\). If an extreme outlier of \\(150\\) is added to the data set, what is the most likely effect on the mean and the median?",
+      "options": [
+        {
+          "label": "A",
+          "text": "decreases the mean and the median equally"
+        },
+        {
+          "label": "B",
+          "text": "increases the mean, while the median changes very little"
+        },
+        {
+          "label": "C",
+          "text": "has no effect on the mean or the median"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Before adding the outlier, the mean is \\(\\bar{x} \\approx 17.4\\). After adding \\(150\\), the mean rises to about \\(39.5\\), since the mean is sensitive to extreme values. The median, which depends only on the middle-ranked value, shifts by at most one position and changes very little. Therefore, the outlier increases the mean, while the median changes very little.",
+      "hint": "The mean uses every value in its calculation, but the median only depends on the middle position."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q021",
+      "category": "MATH",
+      "concept": "FREQUENCY",
+      "learningObjective": "Calculate a relative frequency as a percentage from a frequency table.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "A survey of 22 people asked their favorite color, with results: Red: 3; Blue: 3; Green: 8; Yellow: 8. What percentage of respondents chose Green, the most popular color? Round to one decimal place.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(38.4\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(39.4\\%\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(36.4\\%\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The frequency for Green is \\(8\\) out of \\(22\\) total respondents. The percentage is \\(\\frac{8}{22} \\times 100\\% \\approx 36.4\\%\\).",
+      "hint": "Divide the frequency of the category by the total number of respondents, then multiply by 100."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q022",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Determine whether a claim about a data set is mathematically consistent with a given mean.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "recall",
+      "question": "A data set has \\(n=5\\) values with a mean of \\(28\\). A student claims that all 5 values in the data set are greater than \\(33\\). Is this possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because the sum of the values would then exceed the total implied by the mean"
+        },
+        {
+          "label": "B",
+          "text": "Yes, this is always possible regardless of the mean"
+        },
+        {
+          "label": "C",
+          "text": "Yes, as long as the median is also greater than the mean"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If the mean is \\(28\\) for \\(n=5\\) values, the total sum must be \\(28 \\times 5 = 140\\). If every value were greater than \\(33\\), the sum would have to exceed \\(165\\), which is greater than \\(140\\). This is a contradiction, so it is impossible for all values to exceed the mean by that much.",
+      "hint": "Check whether the claim is consistent with the total sum implied by the mean: \\(\\text{sum} = \\bar{x} \\times n\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q023",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Calculate the arithmetic mean of a data set.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "reasoning",
+      "question": "A set of daily temperatures (°C) was recorded as \\(55, 53, 61, 69, 40, 59\\). What is the mean of this data set?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(49.17\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(56.17\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(60.17\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sum all the values: \\(55 + 53 + 61 + 69 + 40 + 59 = 337\\). Divide by the number of values, \\(n=6\\): \\(\\bar{x} = \\frac{337}{6} = 56.17\\).",
+      "hint": "Add all the values together, then divide by how many values there are: \\(\\bar{x} = \\frac{\\sum x}{n}\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q024",
+      "category": "MATH",
+      "concept": "OUTLIERS",
+      "learningObjective": "Identify how an extreme outlier affects the mean compared to the median.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "understanding",
+      "question": "A data set is \\(24, 25, 21, 28, 29\\). If an extreme outlier of \\(150\\) is added to the data set, what is the most likely effect on the mean and the median?",
+      "options": [
+        {
+          "label": "A",
+          "text": "decreases the mean and the median equally"
+        },
+        {
+          "label": "B",
+          "text": "increases the mean, while the median changes very little"
+        },
+        {
+          "label": "C",
+          "text": "has no effect on the mean or the median"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Before adding the outlier, the mean is \\(\\bar{x} \\approx 25.4\\). After adding \\(150\\), the mean rises to about \\(46.2\\), since the mean is sensitive to extreme values. The median, which depends only on the middle-ranked value, shifts by at most one position and changes very little. Therefore, the outlier increases the mean, while the median changes very little.",
+      "hint": "The mean uses every value in its calculation, but the median only depends on the middle position."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q025",
+      "category": "MATH",
+      "concept": "FREQUENCY",
+      "learningObjective": "Calculate a relative frequency as a percentage from a frequency table.",
+      "difficulty": "beginner",
+      "cognitiveLevel": "problem-solving",
+      "question": "A survey of 34 people asked their favorite color, with results: Red: 11; Blue: 9; Green: 8; Yellow: 6. What percentage of respondents chose Red, the most popular color? Round to one decimal place.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(37.4\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(27.4\\%\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(32.4\\%\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The frequency for Red is \\(11\\) out of \\(34\\) total respondents. The percentage is \\(\\frac{11}{34} \\times 100\\% \\approx 32.4\\%\\).",
+      "hint": "Divide the frequency of the category by the total number of respondents, then multiply by 100."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q026",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Determine whether a claim about a data set is mathematically consistent with a given mean.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "A data set has \\(n=5\\) values with a mean of \\(35\\). A student claims that all 5 values in the data set are greater than \\(40\\). Is this possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because the sum of the values would then exceed the total implied by the mean"
+        },
+        {
+          "label": "B",
+          "text": "Yes, this is always possible regardless of the mean"
+        },
+        {
+          "label": "C",
+          "text": "Yes, as long as the median is also greater than the mean"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If the mean is \\(35\\) for \\(n=5\\) values, the total sum must be \\(35 \\times 5 = 175\\). If every value were greater than \\(40\\), the sum would have to exceed \\(200\\), which is greater than \\(175\\). This is a contradiction, so it is impossible for all values to exceed the mean by that much.",
+      "hint": "Check whether the claim is consistent with the total sum implied by the mean: \\(\\text{sum} = \\bar{x} \\times n\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q027",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Calculate the arithmetic mean of a data set.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "recall",
+      "question": "A set of video views (thousands) was recorded as \\(27, 73, 11, 82, 41, 18\\). What is the mean of this data set?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(47\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(42\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(40\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sum all the values: \\(27 + 73 + 11 + 82 + 41 + 18 = 252\\). Divide by the number of values, \\(n=6\\): \\(\\bar{x} = \\frac{252}{6} = 42\\).",
+      "hint": "Add all the values together, then divide by how many values there are: \\(\\bar{x} = \\frac{\\sum x}{n}\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q028",
+      "category": "MATH",
+      "concept": "OUTLIERS",
+      "learningObjective": "Identify how an extreme outlier affects the mean compared to the median.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "reasoning",
+      "question": "A data set is \\(18, 29, 12, 27, 27\\). If an extreme outlier of \\(150\\) is added to the data set, what is the most likely effect on the mean and the median?",
+      "options": [
+        {
+          "label": "A",
+          "text": "decreases the mean and the median equally"
+        },
+        {
+          "label": "B",
+          "text": "has no effect on the mean or the median"
+        },
+        {
+          "label": "C",
+          "text": "increases the mean, while the median changes very little"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Before adding the outlier, the mean is \\(\\bar{x} \\approx 22.6\\). After adding \\(150\\), the mean rises to about \\(43.8\\), since the mean is sensitive to extreme values. The median, which depends only on the middle-ranked value, shifts by at most one position and changes very little. Therefore, the outlier increases the mean, while the median changes very little.",
+      "hint": "The mean uses every value in its calculation, but the median only depends on the middle position."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q029",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Select the most appropriate measure of central tendency for a given data scenario.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "understanding",
+      "question": "A data set of exam scores has no outliers and is roughly symmetric. Which measure of central tendency best summarizes the typical score?",
+      "options": [
+        {
+          "label": "A",
+          "text": "mean"
+        },
+        {
+          "label": "B",
+          "text": "median"
+        },
+        {
+          "label": "C",
+          "text": "mode"
+        }
+      ],
+      "answer": "A",
+      "explanation": "When data is roughly symmetric and free of extreme outliers, the mean uses all the data points and gives an accurate and stable measure of the center.",
+      "hint": "Consider whether the data has outliers, repeated values, or is symmetric, and which measure handles that situation best."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q030",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Determine whether a claim about a data set is mathematically consistent with a given mean.",
+      "difficulty": "beginner",
+      "cognitiveLevel": "problem-solving",
+      "question": "A data set has \\(n=6\\) values with a mean of \\(27\\). A student claims that all 6 values in the data set are greater than \\(32\\). Is this possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, this is always possible regardless of the mean"
+        },
+        {
+          "label": "B",
+          "text": "No, because the sum of the values would then exceed the total implied by the mean"
+        },
+        {
+          "label": "C",
+          "text": "Yes, as long as the median is also greater than the mean"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If the mean is \\(27\\) for \\(n=6\\) values, the total sum must be \\(27 \\times 6 = 162\\). If every value were greater than \\(32\\), the sum would have to exceed \\(192\\), which is greater than \\(162\\). This is a contradiction, so it is impossible for all values to exceed the mean by that much.",
+      "hint": "Check whether the claim is consistent with the total sum implied by the mean: \\(\\text{sum} = \\bar{x} \\times n\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q031",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Calculate the arithmetic mean of a data set.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "A set of plant heights (cm) was recorded as \\(27, 54, 12, 51\\). What is the mean of this data set?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(31\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(34\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(36\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Sum all the values: \\(27 + 54 + 12 + 51 = 144\\). Divide by the number of values, \\(n=4\\): \\(\\bar{x} = \\frac{144}{4} = 36\\).",
+      "hint": "Add all the values together, then divide by how many values there are: \\(\\bar{x} = \\frac{\\sum x}{n}\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q032",
+      "category": "MATH",
+      "concept": "OUTLIERS",
+      "learningObjective": "Identify how an extreme outlier affects the mean compared to the median.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "recall",
+      "question": "A data set is \\(29, 25, 15, 25, 13\\). If an extreme outlier of \\(150\\) is added to the data set, what is the most likely effect on the mean and the median?",
+      "options": [
+        {
+          "label": "A",
+          "text": "decreases the mean and the median equally"
+        },
+        {
+          "label": "B",
+          "text": "has no effect on the mean or the median"
+        },
+        {
+          "label": "C",
+          "text": "increases the mean, while the median changes very little"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Before adding the outlier, the mean is \\(\\bar{x} \\approx 21.4\\). After adding \\(150\\), the mean rises to about \\(42.8\\), since the mean is sensitive to extreme values. The median, which depends only on the middle-ranked value, shifts by at most one position and changes very little. Therefore, the outlier increases the mean, while the median changes very little.",
+      "hint": "The mean uses every value in its calculation, but the median only depends on the middle position."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q033",
+      "category": "MATH",
+      "concept": "DATA_DISTRIBUTION",
+      "learningObjective": "Classify a variable as categorical, discrete numerical, or continuous numerical.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "reasoning",
+      "question": "A survey records the height of each student in centimeters. What type of data is this?",
+      "options": [
+        {
+          "label": "A",
+          "text": "categorical"
+        },
+        {
+          "label": "B",
+          "text": "numerical (discrete)"
+        },
+        {
+          "label": "C",
+          "text": "numerical (continuous)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "This data can take any value within a range (including decimals), so it is numerical and continuous.",
+      "hint": "Decide whether the data represents categories, counts, or measurements that can take any value in a range."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q034",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Determine whether a claim about a data set is mathematically consistent with a given mean.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "understanding",
+      "question": "A data set has \\(n=6\\) values with a mean of \\(33\\). A student claims that all 6 values in the data set are greater than \\(38\\). Is this possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, this is always possible regardless of the mean"
+        },
+        {
+          "label": "B",
+          "text": "No, because the sum of the values would then exceed the total implied by the mean"
+        },
+        {
+          "label": "C",
+          "text": "Yes, as long as the median is also greater than the mean"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If the mean is \\(33\\) for \\(n=6\\) values, the total sum must be \\(33 \\times 6 = 198\\). If every value were greater than \\(38\\), the sum would have to exceed \\(228\\), which is greater than \\(198\\). This is a contradiction, so it is impossible for all values to exceed the mean by that much.",
+      "hint": "Check whether the claim is consistent with the total sum implied by the mean: \\(\\text{sum} = \\bar{x} \\times n\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q035",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Calculate the arithmetic mean of a data set.",
+      "difficulty": "beginner",
+      "cognitiveLevel": "problem-solving",
+      "question": "A set of daily steps (thousands) was recorded as \\(90, 10, 52, 9, 51\\). What is the mean of this data set?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(42.4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(44.4\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(37.4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Sum all the values: \\(90 + 10 + 52 + 9 + 51 = 212\\). Divide by the number of values, \\(n=5\\): \\(\\bar{x} = \\frac{212}{5} = 42.4\\).",
+      "hint": "Add all the values together, then divide by how many values there are: \\(\\bar{x} = \\frac{\\sum x}{n}\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q036",
+      "category": "MATH",
+      "concept": "OUTLIERS",
+      "learningObjective": "Identify how an extreme outlier affects the mean compared to the median.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "A data set is \\(16, 15, 13, 29, 24\\). If an extreme outlier of \\(220\\) is added to the data set, what is the most likely effect on the mean and the median?",
+      "options": [
+        {
+          "label": "A",
+          "text": "decreases the mean and the median equally"
+        },
+        {
+          "label": "B",
+          "text": "has no effect on the mean or the median"
+        },
+        {
+          "label": "C",
+          "text": "increases the mean, while the median changes very little"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Before adding the outlier, the mean is \\(\\bar{x} \\approx 19.4\\). After adding \\(220\\), the mean rises to about \\(52.8\\), since the mean is sensitive to extreme values. The median, which depends only on the middle-ranked value, shifts by at most one position and changes very little. Therefore, the outlier increases the mean, while the median changes very little.",
+      "hint": "The mean uses every value in its calculation, but the median only depends on the middle position."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q037",
+      "category": "MATH",
+      "concept": "FREQUENCY",
+      "learningObjective": "Calculate a relative frequency as a percentage from a frequency table.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "recall",
+      "question": "A survey of 38 people asked their favorite color, with results: Red: 9; Blue: 10; Green: 15; Yellow: 4. What percentage of respondents chose Green, the most popular color? Round to one decimal place.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(39.5\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(41.5\\%\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(35.5\\%\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The frequency for Green is \\(15\\) out of \\(38\\) total respondents. The percentage is \\(\\frac{15}{38} \\times 100\\% \\approx 39.5\\%\\).",
+      "hint": "Divide the frequency of the category by the total number of respondents, then multiply by 100."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q038",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Determine whether a claim about a data set is mathematically consistent with a given mean.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "reasoning",
+      "question": "A data set has \\(n=6\\) values with a mean of \\(34\\). A student claims that all 6 values in the data set are greater than \\(39\\). Is this possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because the sum of the values would then exceed the total implied by the mean"
+        },
+        {
+          "label": "B",
+          "text": "Yes, this is always possible regardless of the mean"
+        },
+        {
+          "label": "C",
+          "text": "Yes, as long as the median is also greater than the mean"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If the mean is \\(34\\) for \\(n=6\\) values, the total sum must be \\(34 \\times 6 = 204\\). If every value were greater than \\(39\\), the sum would have to exceed \\(234\\), which is greater than \\(204\\). This is a contradiction, so it is impossible for all values to exceed the mean by that much.",
+      "hint": "Check whether the claim is consistent with the total sum implied by the mean: \\(\\text{sum} = \\bar{x} \\times n\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q039",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Calculate the arithmetic mean of a data set.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "understanding",
+      "question": "A set of weekly sales ($) was recorded as \\(67, 72, 60, 43, 17, 67\\). What is the mean of this data set?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(47.33\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(54.33\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(48.33\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sum all the values: \\(67 + 72 + 60 + 43 + 17 + 67 = 326\\). Divide by the number of values, \\(n=6\\): \\(\\bar{x} = \\frac{326}{6} = 54.33\\).",
+      "hint": "Add all the values together, then divide by how many values there are: \\(\\bar{x} = \\frac{\\sum x}{n}\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q040",
+      "category": "MATH",
+      "concept": "OUTLIERS",
+      "learningObjective": "Identify how an extreme outlier affects the mean compared to the median.",
+      "difficulty": "beginner",
+      "cognitiveLevel": "problem-solving",
+      "question": "A data set is \\(26, 17, 11, 24, 15\\). If an extreme outlier of \\(220\\) is added to the data set, what is the most likely effect on the mean and the median?",
+      "options": [
+        {
+          "label": "A",
+          "text": "decreases the mean and the median equally"
+        },
+        {
+          "label": "B",
+          "text": "has no effect on the mean or the median"
+        },
+        {
+          "label": "C",
+          "text": "increases the mean, while the median changes very little"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Before adding the outlier, the mean is \\(\\bar{x} \\approx 18.6\\). After adding \\(220\\), the mean rises to about \\(52.2\\), since the mean is sensitive to extreme values. The median, which depends only on the middle-ranked value, shifts by at most one position and changes very little. Therefore, the outlier increases the mean, while the median changes very little.",
+      "hint": "The mean uses every value in its calculation, but the median only depends on the middle position."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q041",
+      "category": "MATH",
+      "concept": "DATA_DISTRIBUTION",
+      "learningObjective": "Classify a variable as categorical, discrete numerical, or continuous numerical.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "A survey records the favorite color of each student in a class. What type of data is this?",
+      "options": [
+        {
+          "label": "A",
+          "text": "categorical"
+        },
+        {
+          "label": "B",
+          "text": "numerical (discrete)"
+        },
+        {
+          "label": "C",
+          "text": "numerical (continuous)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "This data records categories or labels rather than numerical quantities, so it is categorical data.",
+      "hint": "Decide whether the data represents categories, counts, or measurements that can take any value in a range."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q042",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Determine whether a claim about a data set is mathematically consistent with a given mean.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "recall",
+      "question": "A data set has \\(n=6\\) values with a mean of \\(32\\). A student claims that all 6 values in the data set are greater than \\(37\\). Is this possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, this is always possible regardless of the mean"
+        },
+        {
+          "label": "B",
+          "text": "Yes, as long as the median is also greater than the mean"
+        },
+        {
+          "label": "C",
+          "text": "No, because the sum of the values would then exceed the total implied by the mean"
+        }
+      ],
+      "answer": "C",
+      "explanation": "If the mean is \\(32\\) for \\(n=6\\) values, the total sum must be \\(32 \\times 6 = 192\\). If every value were greater than \\(37\\), the sum would have to exceed \\(222\\), which is greater than \\(192\\). This is a contradiction, so it is impossible for all values to exceed the mean by that much.",
+      "hint": "Check whether the claim is consistent with the total sum implied by the mean: \\(\\text{sum} = \\bar{x} \\times n\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q043",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Calculate the arithmetic mean of a data set.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "reasoning",
+      "question": "A set of daily steps (thousands) was recorded as \\(70, 37, 32, 69, 41, 65\\). What is the mean of this data set?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(52.33\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(47.33\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(51.33\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Sum all the values: \\(70 + 37 + 32 + 69 + 41 + 65 = 314\\). Divide by the number of values, \\(n=6\\): \\(\\bar{x} = \\frac{314}{6} = 52.33\\).",
+      "hint": "Add all the values together, then divide by how many values there are: \\(\\bar{x} = \\frac{\\sum x}{n}\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q044",
+      "category": "MATH",
+      "concept": "OUTLIERS",
+      "learningObjective": "Identify how an extreme outlier affects the mean compared to the median.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "understanding",
+      "question": "A data set is \\(30, 13, 29, 19, 20\\). If an extreme outlier of \\(220\\) is added to the data set, what is the most likely effect on the mean and the median?",
+      "options": [
+        {
+          "label": "A",
+          "text": "decreases the mean and the median equally"
+        },
+        {
+          "label": "B",
+          "text": "increases the mean, while the median changes very little"
+        },
+        {
+          "label": "C",
+          "text": "has no effect on the mean or the median"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Before adding the outlier, the mean is \\(\\bar{x} \\approx 22.2\\). After adding \\(220\\), the mean rises to about \\(55.2\\), since the mean is sensitive to extreme values. The median, which depends only on the middle-ranked value, shifts by at most one position and changes very little. Therefore, the outlier increases the mean, while the median changes very little.",
+      "hint": "The mean uses every value in its calculation, but the median only depends on the middle position."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q045",
+      "category": "MATH",
+      "concept": "FREQUENCY",
+      "learningObjective": "Calculate a relative frequency as a percentage from a frequency table.",
+      "difficulty": "beginner",
+      "cognitiveLevel": "problem-solving",
+      "question": "A survey of 34 people asked their favorite color, with results: Red: 4; Blue: 8; Green: 11; Yellow: 11. What percentage of respondents chose Green, the most popular color? Round to one decimal place.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30.4\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(32.4\\%\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(28.4\\%\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The frequency for Green is \\(11\\) out of \\(34\\) total respondents. The percentage is \\(\\frac{11}{34} \\times 100\\% \\approx 32.4\\%\\).",
+      "hint": "Divide the frequency of the category by the total number of respondents, then multiply by 100."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q046",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Determine whether a claim about a data set is mathematically consistent with a given mean.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "A data set has \\(n=5\\) values with a mean of \\(22\\). A student claims that all 5 values in the data set are greater than \\(27\\). Is this possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, this is always possible regardless of the mean"
+        },
+        {
+          "label": "B",
+          "text": "No, because the sum of the values would then exceed the total implied by the mean"
+        },
+        {
+          "label": "C",
+          "text": "Yes, as long as the median is also greater than the mean"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If the mean is \\(22\\) for \\(n=5\\) values, the total sum must be \\(22 \\times 5 = 110\\). If every value were greater than \\(27\\), the sum would have to exceed \\(135\\), which is greater than \\(110\\). This is a contradiction, so it is impossible for all values to exceed the mean by that much.",
+      "hint": "Check whether the claim is consistent with the total sum implied by the mean: \\(\\text{sum} = \\bar{x} \\times n\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q047",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Calculate the arithmetic mean of a data set.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "recall",
+      "question": "A set of book pages read was recorded as \\(9, 30, 47, 26, 46, 14\\). What is the mean of this data set?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(25.67\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(23.67\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(28.67\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Sum all the values: \\(9 + 30 + 47 + 26 + 46 + 14 = 172\\). Divide by the number of values, \\(n=6\\): \\(\\bar{x} = \\frac{172}{6} = 28.67\\).",
+      "hint": "Add all the values together, then divide by how many values there are: \\(\\bar{x} = \\frac{\\sum x}{n}\\)."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q048",
+      "category": "MATH",
+      "concept": "OUTLIERS",
+      "learningObjective": "Identify how an extreme outlier affects the mean compared to the median.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "reasoning",
+      "question": "A data set is \\(22, 12, 13, 25, 28\\). If an extreme outlier of \\(150\\) is added to the data set, what is the most likely effect on the mean and the median?",
+      "options": [
+        {
+          "label": "A",
+          "text": "decreases the mean and the median equally"
+        },
+        {
+          "label": "B",
+          "text": "increases the mean, while the median changes very little"
+        },
+        {
+          "label": "C",
+          "text": "has no effect on the mean or the median"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Before adding the outlier, the mean is \\(\\bar{x} \\approx 20\\). After adding \\(150\\), the mean rises to about \\(41.7\\), since the mean is sensitive to extreme values. The median, which depends only on the middle-ranked value, shifts by at most one position and changes very little. Therefore, the outlier increases the mean, while the median changes very little.",
+      "hint": "The mean uses every value in its calculation, but the median only depends on the middle position."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q049",
+      "category": "MATH",
+      "concept": "FREQUENCY",
+      "learningObjective": "Calculate a relative frequency as a percentage from a frequency table.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "understanding",
+      "question": "A survey of 17 people asked their favorite color, with results: Red: 3; Blue: 8; Green: 3; Yellow: 3. What percentage of respondents chose Blue, the most popular color? Round to one decimal place.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(44.1\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(47.1\\%\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(43.1\\%\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The frequency for Blue is \\(8\\) out of \\(17\\) total respondents. The percentage is \\(\\frac{8}{17} \\times 100\\% \\approx 47.1\\%\\).",
+      "hint": "Divide the frequency of the category by the total number of respondents, then multiply by 100."
+    },
+    {
+      "id": "questions-mathematics-statistics-statistics-learning-01-q050",
+      "category": "MATH",
+      "concept": "MEAN",
+      "learningObjective": "Determine whether a claim about a data set is mathematically consistent with a given mean.",
+      "difficulty": "beginner",
+      "cognitiveLevel": "problem-solving",
+      "question": "A data set has \\(n=5\\) values with a mean of \\(40\\). A student claims that all 5 values in the data set are greater than \\(45\\). Is this possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, this is always possible regardless of the mean"
+        },
+        {
+          "label": "B",
+          "text": "Yes, as long as the median is also greater than the mean"
+        },
+        {
+          "label": "C",
+          "text": "No, because the sum of the values would then exceed the total implied by the mean"
+        }
+      ],
+      "answer": "C",
+      "explanation": "If the mean is \\(40\\) for \\(n=5\\) values, the total sum must be \\(40 \\times 5 = 200\\). If every value were greater than \\(45\\), the sum would have to exceed \\(225\\), which is greater than \\(200\\). This is a contradiction, so it is impossible for all values to exceed the mean by that much.",
+      "hint": "Check whether the claim is consistent with the total sum implied by the mean: \\(\\text{sum} = \\bar{x} \\times n\\)."
+    }
+  ]
+}

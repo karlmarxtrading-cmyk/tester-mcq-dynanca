@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dynanca MCQ Question Bank",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "type",
+    "id",
+    "category",
+    "title",
+    "description",
+    "questionCount",
+    "questions"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "type": {
+      "const": "mcq"
+    },
+    "id": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "questionCount": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "questions": {
+      "type": "array"
+    }
+  }
+}

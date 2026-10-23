@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-421",
+  "category": "Comprehensive Mathematics",
+  "title": "421. Trigonometry & Periodic Models: Half-Angle Formulas",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-421-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Half-angle identity for sine squared",
+      "learningObjective": "State the power-reducing form behind the half-angle formula for sine.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For every angle \\(\\theta\\), \\(\\sin^2\\frac{\\theta}{2}\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1+\\cos\\theta}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1-\\cos\\theta}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(\\cos\\theta=1-2\\sin^2\\frac{\\theta}{2}\\), solving for the squared sine gives \\(\\sin^2\\frac{\\theta}{2}=\\frac{1-\\cos\\theta}{2}\\). The expression with a plus sign is \\(\\cos^2\\frac{\\theta}{2}\\). A check at \\(\\theta=0\\): \\(\\sin^2 0=0=\\frac{1-1}{2}\\).",
+      "hint": "Test both candidates at \\(\\theta=0\\), where the left side is \\(0\\)."
+    },
+    {
+      "id": "dynanca-421-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Half-angle identity for tangent",
+      "learningObjective": "State a rational form of the half-angle formula for tangent.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Wherever both sides are defined, \\(\\tan\\frac{\\theta}{2}\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\sin\\theta}{1+\\cos\\theta}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{\\sin\\theta}{1-\\cos\\theta}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using double-angle formulas, \\(\\frac{\\sin\\theta}{1+\\cos\\theta}=\\frac{2\\sin\\frac{\\theta}{2}\\cos\\frac{\\theta}{2}}{2\\cos^2\\frac{\\theta}{2}}=\\tan\\frac{\\theta}{2}\\). The expression with \\(1-\\cos\\theta\\) in the denominator equals \\(\\cot\\frac{\\theta}{2}\\). A check at \\(\\theta=90^\\circ\\) alone cannot separate them, but \\(\\theta=60^\\circ\\) does: \\(\\tan 30^\\circ=\\frac{\\sqrt{3}}{3}\\).",
+      "hint": "Test both candidates at \\(\\theta=60^\\circ\\), where the left side is \\(\\tan 30^\\circ\\)."
+    },
+    {
+      "id": "dynanca-421-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Exact sine of fifteen degrees by a half angle",
+      "learningObjective": "Evaluate a sine exactly with the half-angle formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Using the half-angle formula with \\(\\theta=30^\\circ\\), what is the exact value of \\(\\sin 15^\\circ\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\sqrt{2-\\sqrt{3}}}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{\\sqrt{2+\\sqrt{3}}}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(15^\\circ\\) is acute, the sine is positive: \\(\\sin 15^\\circ=\\sqrt{\\frac{1-\\cos 30^\\circ}{2}}=\\sqrt{\\frac{1-\\frac{\\sqrt{3}}{2}}{2}}=\\sqrt{\\frac{2-\\sqrt{3}}{4}}=\\frac{\\sqrt{2-\\sqrt{3}}}{2}\\approx 0.259\\). The value with a plus sign is \\(\\cos 15^\\circ\\approx 0.966\\).",
+      "hint": "The half-angle formula for sine uses \\(1-\\cos\\theta\\) under the square root."
+    },
+    {
+      "id": "dynanca-421-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Exact cosine of twenty-two and a half degrees",
+      "learningObjective": "Evaluate a cosine exactly with the half-angle formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Using the half-angle formula with \\(\\theta=45^\\circ\\), what is the exact value of \\(\\cos 22.5^\\circ\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\sqrt{2-\\sqrt{2}}}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{\\sqrt{2+\\sqrt{2}}}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(22.5^\\circ\\) is acute, the cosine is positive: \\(\\cos 22.5^\\circ=\\sqrt{\\frac{1+\\cos 45^\\circ}{2}}=\\sqrt{\\frac{1+\\frac{\\sqrt{2}}{2}}{2}}=\\sqrt{\\frac{2+\\sqrt{2}}{4}}=\\frac{\\sqrt{2+\\sqrt{2}}}{2}\\approx 0.924\\). The value with a minus sign is \\(\\sin 22.5^\\circ\\approx 0.383\\).",
+      "hint": "The half-angle formula for cosine uses \\(1+\\cos\\theta\\) under the square root."
+    },
+    {
+      "id": "dynanca-421-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Sine of half an acute angle",
+      "learningObjective": "Apply the half-angle formula for sine to a given cosine.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "An angle \\(\\theta\\) with \\(0^\\circ<\\theta<90^\\circ\\) has \\(\\cos\\theta=\\frac{7}{25}\\). What is \\(\\sin\\frac{\\theta}{2}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{4}{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{5}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(\\frac{\\theta}{2}\\) is acute, the sine is positive: \\(\\sin\\frac{\\theta}{2}=\\sqrt{\\frac{1-\\frac{7}{25}}{2}}=\\sqrt{\\frac{18/25}{2}}=\\sqrt{\\frac{9}{25}}=\\frac{3}{5}\\). The value \\(\\frac{4}{5}=\\sqrt{\\frac{1+\\frac{7}{25}}{2}}\\) is \\(\\cos\\frac{\\theta}{2}\\).",
+      "hint": "Use \\(1-\\cos\\theta\\) for the sine of the half angle."
+    },
+    {
+      "id": "dynanca-421-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Cosine of half an angle with a sign decision",
+      "learningObjective": "Choose the sign in the half-angle formula from the location of the half angle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "An angle \\(\\theta\\) with \\(180^\\circ<\\theta<270^\\circ\\) has \\(\\cos\\theta=-\\frac{7}{25}\\). What is \\(\\cos\\frac{\\theta}{2}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{3}{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{5}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The size is \\(\\sqrt{\\frac{1+\\cos\\theta}{2}}=\\sqrt{\\frac{1-\\frac{7}{25}}{2}}=\\sqrt{\\frac{9}{25}}=\\frac{3}{5}\\). Since \\(90^\\circ<\\frac{\\theta}{2}<135^\\circ\\), the half angle lies in Quadrant II, where cosine is negative. Therefore \\(\\cos\\frac{\\theta}{2}=-\\frac{3}{5}\\).",
+      "hint": "Halve the inequality for \\(\\theta\\) to find the quadrant of \\(\\frac{\\theta}{2}\\) before choosing the sign."
+    },
+    {
+      "id": "dynanca-421-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Tangent of a half angle from sine and cosine",
+      "learningObjective": "Apply the rational half-angle formula for tangent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "An angle \\(\\theta\\) has \\(\\sin\\theta=\\frac{4}{5}\\) and \\(\\cos\\theta=\\frac{3}{5}\\). What is \\(\\tan\\frac{\\theta}{2}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(\\tan\\frac{\\theta}{2}=\\frac{\\sin\\theta}{1+\\cos\\theta}=\\frac{4/5}{1+3/5}=\\frac{4/5}{8/5}=\\frac{1}{2}\\). Using \\(1-\\cos\\theta=\\frac{2}{5}\\) in the denominator gives \\(2\\), which is the reciprocal of the correct value.",
+      "hint": "Use the form with \\(1+\\cos\\theta\\) in the denominator."
+    },
+    {
+      "id": "dynanca-421-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Sign of the sine of a half angle",
+      "learningObjective": "Determine the sign needed in a half-angle formula from an interval for the angle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Suppose \\(180^\\circ<\\theta<360^\\circ\\). Which sign must be chosen in \\(\\sin\\frac{\\theta}{2}=\\pm\\sqrt{\\frac{1-\\cos\\theta}{2}}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The negative sign"
+        },
+        {
+          "label": "B",
+          "text": "The positive sign"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Halving the inequality gives \\(90^\\circ<\\frac{\\theta}{2}<180^\\circ\\), so the half angle lies in Quadrant II, where sine is positive. The sign depends on the quadrant of \\(\\frac{\\theta}{2}\\), not on the sign of \\(\\sin\\theta\\), which is negative here.",
+      "hint": "The sign is decided by the quadrant of \\(\\frac{\\theta}{2}\\), not by the quadrant of \\(\\theta\\)."
+    },
+    {
+      "id": "dynanca-421-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Exact tangent of twenty-two and a half degrees",
+      "learningObjective": "Evaluate a tangent exactly with a half-angle formula.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "What is the exact value of \\(\\tan 22.5^\\circ\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{2}-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{2}+1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "With \\(\\theta=45^\\circ\\): \\(\\tan 22.5^\\circ=\\frac{\\sin 45^\\circ}{1+\\cos 45^\\circ}=\\frac{\\frac{\\sqrt{2}}{2}}{1+\\frac{\\sqrt{2}}{2}}=\\frac{\\sqrt{2}}{2+\\sqrt{2}}=\\frac{\\sqrt{2}(2-\\sqrt{2})}{2}=\\sqrt{2}-1\\approx 0.414\\). The value \\(\\sqrt{2}+1\\approx 2.414\\) is \\(\\tan 67.5^\\circ\\).",
+      "hint": "Use \\(\\tan\\frac{\\theta}{2}=\\frac{\\sin\\theta}{1+\\cos\\theta}\\); the answer must be less than \\(1\\) because \\(22.5^\\circ<45^\\circ\\)."
+    },
+    {
+      "id": "dynanca-421-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Cosine of half an angle from a small cosine",
+      "learningObjective": "Apply the half-angle formula for cosine and distinguish it from the sine form.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "An angle \\(\\theta\\) with \\(0^\\circ<\\theta<90^\\circ\\) has \\(\\cos\\theta=\\frac{1}{8}\\). What is \\(\\cos\\frac{\\theta}{2}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\sqrt{7}}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(\\frac{\\theta}{2}\\) is acute, the cosine is positive: \\(\\cos\\frac{\\theta}{2}=\\sqrt{\\frac{1+\\frac{1}{8}}{2}}=\\sqrt{\\frac{9/8}{2}}=\\sqrt{\\frac{9}{16}}=\\frac{3}{4}\\). The value \\(\\frac{\\sqrt{7}}{4}=\\sqrt{\\frac{1-\\frac{1}{8}}{2}}\\) is \\(\\sin\\frac{\\theta}{2}\\).",
+      "hint": "Use \\(1+\\cos\\theta\\) for the cosine of the half angle."
+    }
+  ]
+}

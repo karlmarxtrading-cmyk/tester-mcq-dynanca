@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-584",
+  "category": "Comprehensive Mathematics",
+  "title": "584. Discrete Mathematics, Counting & Graph Theory: Cycles and Acyclic Graphs",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-584-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Definition of a cycle",
+      "learningObjective": "State what a cycle in a graph is.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which closed walks in a simple graph are called cycles?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Those that visit every vertex of the graph at least once"
+        },
+        {
+          "label": "B",
+          "text": "Those with at least three edges in which no vertex is repeated, except that the last vertex equals the first"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A cycle returns to its starting vertex without visiting any other vertex twice, and in a simple graph it has at least three edges. Visiting every vertex is not required; a cycle may involve only a few of the vertices.",
+      "hint": "A cycle is a closed walk that does not cross itself."
+    },
+    {
+      "id": "dynanca-584-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Finding a cycle",
+      "learningObjective": "Decide whether a small graph contains a cycle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D\\) and edges \\(AB\\), \\(BC\\), \\(CA\\), and \\(CD\\). Does it contain a cycle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the vertex \\(D\\) has degree \\(1\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; \\(A,B,C,A\\) is a cycle."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The edges \\(AB\\), \\(BC\\), and \\(CA\\) form the closed walk \\(A,B,C,A\\), which repeats no vertex except the first, so it is a cycle. A vertex of degree \\(1\\) cannot lie on a cycle, but its presence does not prevent a cycle elsewhere in the graph.",
+      "hint": "Look for three vertices that are pairwise adjacent."
+    },
+    {
+      "id": "dynanca-584-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An acyclic graph",
+      "learningObjective": "Decide whether a small graph is acyclic.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D,E\\) and edges \\(AB\\), \\(BC\\), \\(CD\\), and \\(BE\\). Is the graph acyclic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the vertex \\(B\\) has degree \\(3\\), so a cycle passes through it."
+        },
+        {
+          "label": "B",
+          "text": "Yes; no closed walk without repeated vertices exists."
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(B\\) the graph branches to \\(A\\), to \\(E\\), and to \\(C\\), and from \\(C\\) on to \\(D\\). None of these branches ever meets another, so there is no way to return to a vertex without retracing an edge. A vertex of degree \\(3\\) does not force a cycle.",
+      "hint": "Try to leave a vertex and come back to it along different edges."
+    },
+    {
+      "id": "dynanca-584-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Shortest cycle",
+      "learningObjective": "Find the length of the shortest cycle of a graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A graph has vertices \\(A,B,C,D,E\\) and edges \\(AB\\), \\(BC\\), \\(CD\\), \\(DE\\), \\(EA\\), and \\(AC\\). What is the length of its shortest cycle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The edges \\(AB\\), \\(BC\\), and \\(AC\\) form the cycle \\(A,B,C,A\\) of length \\(3\\), and no cycle in a simple graph can be shorter. The cycle \\(A,B,C,D,E,A\\) through all five vertices has length \\(5\\), but it is not the shortest.",
+      "hint": "The extra edge \\(AC\\) creates a shortcut across the five-vertex cycle."
+    },
+    {
+      "id": "dynanca-584-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Enough edges force a cycle",
+      "learningObjective": "Decide whether a graph with as many edges as vertices must contain a cycle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A simple graph has \\(6\\) vertices and \\(6\\) edges. Must it contain a cycle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the edges can always be arranged so that no cycle appears."
+        },
+        {
+          "label": "B",
+          "text": "Yes; an acyclic graph with \\(6\\) vertices has at most \\(5\\) edges."
+        }
+      ],
+      "answer": "B",
+      "explanation": "An acyclic graph is a forest, and a forest with \\(n\\) vertices and \\(c\\) components has exactly \\(n-c\\) edges, which is at most \\(n-1\\). With \\(6\\) vertices that is at most \\(5\\) edges, so \\(6\\) edges force a cycle.",
+      "hint": "Recall how many edges a tree with \\(6\\) vertices has."
+    },
+    {
+      "id": "dynanca-584-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Edges of a forest",
+      "learningObjective": "Count the edges of a forest from its vertices and components.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "An acyclic graph has \\(10\\) vertices and \\(3\\) connected components. How many edges does it have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each component of an acyclic graph is a tree, and a tree has one edge fewer than it has vertices. Adding over the \\(3\\) components, the number of edges is \\(10-3=7\\). The value \\(9\\) would be correct for a single tree with \\(10\\) vertices.",
+      "hint": "Each tree has one edge fewer than vertices; add this up over the components."
+    },
+    {
+      "id": "dynanca-584-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Removing an edge of a cycle",
+      "learningObjective": "Decide whether removing an edge of a cycle disconnects a connected graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A connected graph contains a cycle, and one edge of that cycle is removed. Is the graph still connected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; the rest of the cycle joins the two endpoints of the removed edge."
+        },
+        {
+          "label": "B",
+          "text": "No; removing an edge always splits a connected graph into two parts."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Any walk that used the removed edge can be rerouted along the remaining part of the cycle, which still joins the two endpoints. So all vertices stay connected. Removing an edge disconnects a graph only when the edge lies on no cycle.",
+      "hint": "Think about a detour around the cycle."
+    },
+    {
+      "id": "dynanca-584-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Cycles in a complete graph",
+      "learningObjective": "Count the cycles of the complete graph on four vertices.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many different cycles does the complete graph on \\(4\\) vertices contain, if two cycles are the same when they use the same set of edges?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every choice of \\(3\\) vertices gives a triangle, so there are \\(\\binom{4}{3}=4\\) cycles of length \\(3\\). The cycles of length \\(4\\) use all four vertices; there are \\(\\dfrac{3!}{2}=3\\) of them, because \\(4\\) starting points and \\(2\\) directions describe the same cycle among the \\(4!\\) orderings. In total there are \\(4+3=7\\) cycles. The value \\(4\\) counts the triangles only.",
+      "hint": "Count the cycles of length \\(3\\) and those of length \\(4\\) separately."
+    },
+    {
+      "id": "dynanca-584-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Edges to remove",
+      "learningObjective": "Find how many edges must be removed to destroy all cycles of a connected graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A connected graph has \\(7\\) vertices and \\(10\\) edges. What is the smallest number of edges whose removal leaves a connected graph without cycles?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A connected graph without cycles is a tree, and a tree with \\(7\\) vertices has \\(6\\) edges. So \\(10-6=4\\) edges must be removed. Removing fewer leaves more than \\(6\\) edges on \\(7\\) vertices, which forces a cycle.",
+      "hint": "Count the edges of a tree on the same vertices."
+    },
+    {
+      "id": "dynanca-584-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Directed cycles",
+      "learningObjective": "Decide whether a small directed graph contains a directed cycle.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A directed graph has arcs \\(A\\to B\\), \\(B\\to C\\), and \\(A\\to C\\). Does it contain a directed cycle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; the three arcs form a triangle."
+        },
+        {
+          "label": "B",
+          "text": "No; no arc leaves \\(C\\), so no directed walk can return to its starting vertex."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A directed cycle must follow the arrows all the way round. Every directed walk here ends at \\(C\\), from which no arc leaves, so none can return to its start. If the directions are ignored the three arcs do form a triangle, but that is a cycle of the underlying undirected graph only.",
+      "hint": "Follow the arrows from each vertex and see whether a return is possible."
+    }
+  ]
+}

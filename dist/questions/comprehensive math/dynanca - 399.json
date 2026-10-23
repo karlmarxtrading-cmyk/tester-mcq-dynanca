@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-399",
+  "category": "Comprehensive Mathematics",
+  "title": "399. Geometry, Spatial Thinking & Measurement: Coordinate Proof of Geometric Properties",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-399-q001",
+      "category": "Geometry",
+      "concept": "Coordinate proof of a rectangle",
+      "learningObjective": "Use perpendicular sides and unequal adjacent lengths to classify a quadrilateral.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "Vertices in cyclic order are \\(A=(0,0)\\), \\(B=(4,0)\\), \\(C=(4,3)\\), and \\(D=(0,3)\\). Which classification is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A rhombus"
+        },
+        {
+          "label": "B",
+          "text": "A rectangle"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Opposite sides are parallel and adjacent sides are horizontal and vertical, so all angles are right. Adjacent lengths are \\(4\\) and \\(3\\), ruling out a rhombus.",
+      "hint": "Compare both side directions and side lengths."
+    },
+    {
+      "id": "dynanca-399-q002",
+      "category": "Geometry",
+      "concept": "Coordinate proof of a rhombus",
+      "learningObjective": "Verify equal sides without assuming right angles.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Vertices in cyclic order are \\(A=(0,0)\\), \\(B=(2,1)\\), \\(C=(4,0)\\), and \\(D=(2,-1)\\). Which classification is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A rhombus"
+        },
+        {
+          "label": "B",
+          "text": "A rectangle"
+        }
+      ],
+      "answer": "A",
+      "explanation": "All four sides have squared length \\(5\\), so the quadrilateral is a rhombus. Adjacent vectors \\(\\langle2,1\\rangle\\) and \\(\\langle2,-1\\rangle\\) have dot product \\(3\\), so it is not a rectangle.",
+      "hint": "Check lengths and perpendicularity separately."
+    },
+    {
+      "id": "dynanca-399-q003",
+      "category": "Geometry",
+      "concept": "Coordinate proof of a square",
+      "learningObjective": "Combine equal adjacent sides with right angles.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "Vertices in cyclic order are \\((-1,-1)\\), \\((3,-1)\\), \\((3,3)\\), and \\((-1,3)\\). Which description is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A square"
+        },
+        {
+          "label": "B",
+          "text": "A rectangle with unequal adjacent side lengths"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each side has length \\(4\\), and adjacent sides are horizontal and vertical. Equal sides and right angles establish a square.",
+      "hint": "Verify both defining properties, not just one."
+    },
+    {
+      "id": "dynanca-399-q004",
+      "category": "Geometry",
+      "concept": "Coordinate proof of an isosceles triangle",
+      "learningObjective": "Compare exact squared side lengths.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "A triangle has vertices \\(A=(0,3)\\), \\(B=(-2,0)\\), and \\(C=(2,0)\\). Which description is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equilateral"
+        },
+        {
+          "label": "B",
+          "text": "Isosceles but not equilateral"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The squared lengths are \\(AB^2=13\\), \\(AC^2=13\\), and \\(BC^2=16\\). Exactly two side lengths agree, so the triangle is isosceles but not equilateral.",
+      "hint": "Squared lengths suffice for comparing side lengths."
+    },
+    {
+      "id": "dynanca-399-q005",
+      "category": "Geometry",
+      "concept": "Coordinate proof of a right angle",
+      "learningObjective": "Identify the vertex with perpendicular incident sides.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "A triangle has vertices \\(A=(0,0)\\), \\(B=(3,0)\\), and \\(C=(0,4)\\). Where is its right angle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At \\(B\\)"
+        },
+        {
+          "label": "B",
+          "text": "At \\(A\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sides from \\(A\\) lie on the horizontal and vertical axes and are perpendicular. At \\(B\\), incident vectors \\(\\langle-3,0\\rangle\\) and \\(\\langle-3,4\\rangle\\) have dot product \\(9\\), not zero.",
+      "hint": "Test the two sides meeting at each proposed vertex."
+    },
+    {
+      "id": "dynanca-399-q006",
+      "category": "Geometry",
+      "concept": "Coordinate proof by diagonal midpoints",
+      "learningObjective": "Verify a parallelogram and reject a rectangle with a dot product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Vertices in cyclic order are \\(A=(1,1)\\), \\(B=(5,2)\\), \\(C=(7,5)\\), and \\(D=(3,4)\\). Which description is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A parallelogram that is not a rectangle"
+        },
+        {
+          "label": "B",
+          "text": "A rectangle"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both diagonal midpoints are \\((4,3)\\), so the diagonals bisect each other and the figure is a parallelogram. Adjacent vectors \\(\\langle4,1\\rangle\\) and \\(\\langle2,3\\rangle\\) have dot product \\(11\\), ruling out a rectangle.",
+      "hint": "Compare diagonal midpoints, then check an adjacent-angle condition."
+    },
+    {
+      "id": "dynanca-399-q007",
+      "category": "Geometry",
+      "concept": "Coordinate proof of exactly one parallel side pair",
+      "learningObjective": "Compare slopes to establish a trapezoid's parallel-side property.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Vertices in cyclic order are \\(A=(0,0)\\), \\(B=(6,0)\\), \\(C=(4,3)\\), and \\(D=(1,3)\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both pairs of opposite sides are parallel."
+        },
+        {
+          "label": "B",
+          "text": "Only \\(AB\\) and \\(CD\\) form a parallel pair of opposite sides."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The slopes of \\(AB\\) and \\(CD\\) are zero. The other opposite sides have slopes \\(-\\frac{3}{2}\\) and \\(3\\), which differ. Exactly one opposite-side pair is parallel.",
+      "hint": "Calculate the slopes of both opposite-side pairs."
+    },
+    {
+      "id": "dynanca-399-q008",
+      "category": "Geometry",
+      "concept": "Coordinate proof of a perpendicular bisector",
+      "learningObjective": "Combine midpoint and perpendicular slope conditions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which equation describes the perpendicular bisector of the segment from \\((-2,1)\\) to \\((4,3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=\\frac{1}{3}x+\\frac{5}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=-3x+5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The segment midpoint is \\((1,2)\\), and its slope is \\(\\frac{1}{3}\\). The perpendicular slope is \\(-3\\), so \\(y-2=-3(x-1)\\), yielding \\(y=-3x+5\\).",
+      "hint": "Find both the required point and the required slope."
+    },
+    {
+      "id": "dynanca-399-q009",
+      "category": "Geometry",
+      "concept": "Coordinate proof of the midpoint theorem",
+      "learningObjective": "Compare a midpoint-joining vector with the third-side vector.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In triangle \\(A=(0,0)\\), \\(B=(8,2)\\), \\(C=(2,6)\\), let \\(M\\) and \\(N\\) be the midpoints of \\(AB\\) and \\(AC\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(MN\\perp BC\\) and \\(MN=\\frac{1}{2}BC\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(MN\\parallel BC\\) and \\(MN=\\frac{1}{2}BC\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The midpoints are \\(M=(4,1)\\) and \\(N=(1,3)\\). Thus \\(\\overrightarrow{MN}=\\langle-3,2\\rangle=\\frac{1}{2}\\langle-6,4\\rangle=\\frac{1}{2}\\overrightarrow{BC}\\), proving parallelism and the length ratio.",
+      "hint": "Compare the directed vectors after calculating the midpoints."
+    },
+    {
+      "id": "dynanca-399-q010",
+      "category": "Geometry",
+      "concept": "Diagonal properties from coordinates",
+      "learningObjective": "Distinguish diagonal bisection from equal diagonal lengths.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Vertices in cyclic order are \\(A=(0,0)\\), \\(B=(4,0)\\), \\(C=(5,3)\\), and \\(D=(1,3)\\). Which property of diagonals \\(AC\\) and \\(BD\\) is verified by these coordinates?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They bisect each other."
+        },
+        {
+          "label": "B",
+          "text": "They have equal lengths."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both diagonal midpoints are \\(\\left(\\frac{5}{2},\\frac{3}{2}\\right)\\), proving bisection. Their squared lengths are \\(34\\) and \\(18\\), so the lengths are unequal.",
+      "hint": "Check the midpoint test and the length test independently."
+    }
+  ]
+}

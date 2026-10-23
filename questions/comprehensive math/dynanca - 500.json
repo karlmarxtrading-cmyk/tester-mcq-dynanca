@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-500",
+  "category": "Comprehensive Mathematics",
+  "title": "500. Sets, Logic, Reasoning & Proof: Negating Quantified Statements",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-500-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negating a universal statement",
+      "learningObjective": "State the negation of a universally quantified statement.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which statement is equivalent to \\(\\neg\\left(\\forall x,\\ P(x)\\right)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\exists x,\\ \\neg P(x)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\forall x,\\ \\neg P(x)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\"Not every \\(x\\) has property \\(P\\)\" means that at least one \\(x\\) lacks it: \\(\\exists x,\\ \\neg P(x)\\). The statement \\(\\forall x,\\ \\neg P(x)\\) says that no \\(x\\) has the property, which is a much stronger claim.",
+      "hint": "To deny \"all\", one exception is enough."
+    },
+    {
+      "id": "dynanca-500-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negating an existential statement",
+      "learningObjective": "State the negation of an existentially quantified statement.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which statement is equivalent to \\(\\neg\\left(\\exists x,\\ P(x)\\right)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\forall x,\\ \\neg P(x)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\exists x,\\ \\neg P(x)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\"There is no \\(x\\) with property \\(P\\)\" means that every \\(x\\) lacks the property: \\(\\forall x,\\ \\neg P(x)\\). The statement \\(\\exists x,\\ \\neg P(x)\\) only says that some \\(x\\) lacks it, which can be true even when another \\(x\\) has the property.",
+      "hint": "To deny \"there exists\", the property must fail for every element."
+    },
+    {
+      "id": "dynanca-500-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negating an \"all\" sentence",
+      "learningObjective": "Negate an everyday universal sentence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the negation of \"All students in the class passed the test\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"At least one student in the class did not pass the test.\""
+        },
+        {
+          "label": "B",
+          "text": "\"No student in the class passed the test.\""
+        }
+      ],
+      "answer": "A",
+      "explanation": "The original sentence is false as soon as one student failed. So its negation is \"At least one student did not pass\". The sentence \"No student passed\" is not the negation: if some passed and some failed, both it and the original sentence are false.",
+      "hint": "Consider a class in which some students passed and some did not."
+    },
+    {
+      "id": "dynanca-500-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negating an existence claim about rational numbers",
+      "learningObjective": "Negate an existential statement about a solution of an equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the negation of \"There exists a rational number \\(x\\) with \\(x^2=2\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"There exists a rational number \\(x\\) with \\(x^2\\ne 2\\).\""
+        },
+        {
+          "label": "B",
+          "text": "\"For every rational number \\(x\\), \\(x^2\\ne 2\\).\""
+        }
+      ],
+      "answer": "B",
+      "explanation": "Denying that a solution exists means asserting that every rational number fails to be a solution: for every rational \\(x\\), \\(x^2\\ne 2\\). The sentence \"there exists a rational \\(x\\) with \\(x^2\\ne 2\\)\" is true simply because \\(x=1\\) works; it does not deny the original claim.",
+      "hint": "The quantifier changes from \"there exists\" to \"for every\", and the property is negated."
+    },
+    {
+      "id": "dynanca-500-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negating a universal inequality",
+      "learningObjective": "Negate a universal statement with a strict inequality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the negation of \\(\\forall x\\in\\mathbb{R},\\ x^2>0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\exists x\\in\\mathbb{R},\\ x^2<0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\exists x\\in\\mathbb{R},\\ x^2\\le 0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The quantifier changes to \\(\\exists\\), and the inequality is negated: the negation of \\(x^2>0\\) is \\(x^2\\le 0\\). The statement with \\(x^2<0\\) is too strong; it leaves out the possibility \\(x^2=0\\), which is exactly what happens for \\(x=0\\).",
+      "hint": "The negation of a strict \"greater than\" allows equality."
+    },
+    {
+      "id": "dynanca-500-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negating a \"no\" sentence",
+      "learningObjective": "Negate a sentence of the form \"no A is B\".",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "What is the negation of \"No prime number is even\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"At least one prime number is even.\""
+        },
+        {
+          "label": "B",
+          "text": "\"Every prime number is even.\""
+        }
+      ],
+      "answer": "A",
+      "explanation": "\"No prime is even\" means \"every prime is not even\". Its negation is \"there is a prime that is even\", that is, at least one prime is even. The sentence \"Every prime is even\" is far stronger than the negation requires. (Here the negation is in fact true, since \\(2\\) is an even prime.)",
+      "hint": "Rewrite \"no \\(A\\) is \\(B\\)\" as \"every \\(A\\) is not \\(B\\)\", then negate."
+    },
+    {
+      "id": "dynanca-500-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negating an existential conjunction",
+      "learningObjective": "Negate an existential statement whose property is a conjunction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Which statement is equivalent to \\(\\neg\\,\\exists x\\,\\left(P(x)\\land Q(x)\\right)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\forall x\\,\\left(\\neg P(x)\\lor\\neg Q(x)\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\forall x\\,\\left(\\neg P(x)\\land\\neg Q(x)\\right)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Negating \\(\\exists\\) gives \\(\\forall\\) with the property negated: \\(\\forall x\\,\\neg(P(x)\\land Q(x))\\). By De Morgan's law, \\(\\neg(P\\land Q)\\) is \\(\\neg P\\lor\\neg Q\\). The version with \"and\" claims that every \\(x\\) lacks both properties, which is stronger than \"no \\(x\\) has both\".",
+      "hint": "Change the quantifier, then apply De Morgan's law to the conjunction."
+    },
+    {
+      "id": "dynanca-500-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negating a universal conditional",
+      "learningObjective": "Negate a statement of the form \"every A is B\".",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Which statement is equivalent to \\(\\neg\\,\\forall x\\,\\left(P(x)\\implies Q(x)\\right)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\exists x\\,\\left(P(x)\\implies\\neg Q(x)\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\exists x\\,\\left(P(x)\\land\\neg Q(x)\\right)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Negating \\(\\forall\\) gives \\(\\exists\\) with the property negated, and the negation of a conditional \\(P\\implies Q\\) is \\(P\\land\\neg Q\\). So the negation says: some \\(x\\) has property \\(P\\) but not \\(Q\\). The formula \\(\\exists x\\,(P(x)\\implies\\neg Q(x))\\) is satisfied by any \\(x\\) without property \\(P\\), so it does not express the negation.",
+      "hint": "A conditional fails only when its hypothesis holds and its conclusion does not."
+    },
+    {
+      "id": "dynanca-500-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negating two nested quantifiers",
+      "learningObjective": "Negate a statement with a universal quantifier followed by an existential quantifier.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Which statement is equivalent to the negation of \\(\\forall x\\,\\exists y,\\ x+y=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\forall x\\,\\exists y,\\ x+y\\ne 0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\exists x\\,\\forall y,\\ x+y\\ne 0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Move the negation inward one quantifier at a time: \\(\\neg\\forall x\\) becomes \\(\\exists x\\,\\neg\\), and \\(\\neg\\exists y\\) becomes \\(\\forall y\\,\\neg\\). The result is \\(\\exists x\\,\\forall y,\\ x+y\\ne 0\\). Both quantifiers change; negating only the equation and keeping the quantifiers gives a different statement.",
+      "hint": "Each quantifier flips as the negation passes it, and the innermost property is negated."
+    },
+    {
+      "id": "dynanca-500-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negating a conjecture-style statement",
+      "learningObjective": "Negate a universal statement in words without asserting its truth.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "What is the negation of \"Every even integer greater than \\(2\\) is the sum of two primes\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"There is an even integer greater than \\(2\\) that is not the sum of two primes.\""
+        },
+        {
+          "label": "B",
+          "text": "\"No even integer greater than \\(2\\) is the sum of two primes.\""
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement has the form \"every \\(n\\) of a certain kind has property \\(S\\)\". Its negation is \"some \\(n\\) of that kind lacks property \\(S\\)\". The sentence \"No even integer greater than \\(2\\) is the sum of two primes\" is not the negation; it is false already because \\(4=2+2\\), independently of whether the original statement is true.",
+      "hint": "The negation of \"every\" is \"there is one that does not\"."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-608",
+  "category": "Comprehensive Mathematics",
+  "title": "608. Discrete Mathematics, Counting & Graph Theory: Logic Circuit Truth Tables",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-608-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The AND gate",
+      "learningObjective": "State when an AND gate outputs one.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "When does an AND gate with two inputs output \\(1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When both inputs are \\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "When at least one input is \\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An AND gate outputs \\(1\\) only if every input is \\(1\\); in the other three input combinations it outputs \\(0\\). Outputting \\(1\\) when at least one input is \\(1\\) is the behaviour of an OR gate.",
+      "hint": "The name of the gate says which inputs must be \\(1\\)."
+    },
+    {
+      "id": "dynanca-608-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The OR gate",
+      "learningObjective": "Give the output column of an OR gate.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The inputs \\((x,y)\\) of a gate are listed in the order \\((0,0)\\), \\((0,1)\\), \\((1,0)\\), \\((1,1)\\). What is the output column of an OR gate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0,\\ 0,\\ 0,\\ 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0,\\ 1,\\ 1,\\ 1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An OR gate outputs \\(1\\) whenever at least one input is \\(1\\), so only the row \\((0,0)\\) gives \\(0\\). The column \\(0,0,0,1\\) has a \\(1\\) only when both inputs are \\(1\\); it belongs to the AND gate.",
+      "hint": "Find the only row in which neither input is \\(1\\)."
+    },
+    {
+      "id": "dynanca-608-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The NAND gate",
+      "learningObjective": "Give the output column of a NAND gate.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A NAND gate outputs the complement of what an AND gate would output. With the inputs \\((x,y)\\) in the order \\((0,0)\\), \\((0,1)\\), \\((1,0)\\), \\((1,1)\\), what is its output column?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1,\\ 1,\\ 1,\\ 0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1,\\ 0,\\ 0,\\ 0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The AND column is \\(0,0,0,1\\); complementing every entry gives \\(1,1,1,0\\). The column \\(1,0,0,0\\) is the complement of the OR column, so it belongs to the NOR gate.",
+      "hint": "Write the AND column first, then invert each entry."
+    },
+    {
+      "id": "dynanca-608-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The XOR gate",
+      "learningObjective": "Give the output column of an XOR gate.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "An XOR gate outputs \\(1\\) exactly when its two inputs are different. With the inputs \\((x,y)\\) in the order \\((0,0)\\), \\((0,1)\\), \\((1,0)\\), \\((1,1)\\), what is its output column?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0,\\ 1,\\ 1,\\ 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0,\\ 1,\\ 1,\\ 0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inputs differ in the rows \\((0,1)\\) and \\((1,0)\\), so the output is \\(1\\) there and \\(0\\) in the rows \\((0,0)\\) and \\((1,1)\\). The column \\(0,1,1,1\\) also gives \\(1\\) when both inputs are \\(1\\); it belongs to the OR gate.",
+      "hint": "Mark the rows in which the two inputs are unequal."
+    },
+    {
+      "id": "dynanca-608-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Evaluating a two-gate circuit",
+      "learningObjective": "Evaluate a circuit for given inputs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In a circuit, the inputs \\(x\\) and \\(y\\) feed an AND gate, and the output of that gate passes through a NOT gate. What is the final output for \\(x=1\\) and \\(y=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The AND gate receives \\(1\\) and \\(0\\) and outputs \\(0\\). The NOT gate inverts this to \\(1\\). The value \\(0\\) is the output of the AND gate before the inversion.",
+      "hint": "Evaluate the gates in the order in which the signal passes through them."
+    },
+    {
+      "id": "dynanca-608-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A circuit with three gates",
+      "learningObjective": "Give the output column of a small circuit.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "In a circuit, \\(x\\) and \\(y\\) feed an OR gate, \\(x\\) also feeds a NOT gate, and the outputs of these two gates feed an AND gate. With the inputs \\((x,y)\\) in the order \\((0,0)\\), \\((0,1)\\), \\((1,0)\\), \\((1,1)\\), what is the output column of the circuit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0,\\ 1,\\ 0,\\ 0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0,\\ 1,\\ 1,\\ 0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The circuit computes \\((x+y)\\,\\overline{x}\\). The factor \\(\\overline{x}\\) is \\(0\\) in the last two rows, so the output is \\(0\\) there. In the first two rows \\(\\overline{x}=1\\), and the output equals \\(x+y\\), which is \\(0\\) and then \\(1\\). The column \\(0,1,1,0\\) would be the XOR of the inputs, which this circuit does not compute.",
+      "hint": "Write the circuit as an expression and evaluate it row by row."
+    },
+    {
+      "id": "dynanca-608-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Size of a truth table",
+      "learningObjective": "Find the number of rows of a truth table.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A logic circuit has \\(4\\) inputs. How many rows does its truth table have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each input is \\(0\\) or \\(1\\) independently, so there are \\(2\\cdot 2\\cdot 2\\cdot 2=2^4=16\\) input combinations, one row for each. The number \\(8=2\\cdot 4\\) doubles the number of inputs instead of doubling once for every input.",
+      "hint": "Each additional input doubles the number of rows."
+    },
+    {
+      "id": "dynanca-608-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Recognising a known gate",
+      "learningObjective": "Identify the single gate equivalent to a circuit.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A circuit forms \\(\\overline{x}\\,y\\) with a NOT gate and an AND gate, forms \\(x\\,\\overline{y}\\) in the same way, and feeds both results into an OR gate. Which single gate has the same truth table?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An OR gate"
+        },
+        {
+          "label": "B",
+          "text": "An XOR gate"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The term \\(\\overline{x}\\,y\\) is \\(1\\) only for \\((x,y)=(0,1)\\), and \\(x\\,\\overline{y}\\) is \\(1\\) only for \\((1,0)\\). Their sum is \\(1\\) exactly when the inputs differ, which is the XOR function. An OR gate would also output \\(1\\) for \\((1,1)\\), where this circuit outputs \\(0\\).",
+      "hint": "Find the rows in which each of the two products is \\(1\\)."
+    },
+    {
+      "id": "dynanca-608-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A majority circuit",
+      "learningObjective": "Count the input rows for which a majority circuit outputs one.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A circuit with inputs \\(x,y,z\\) computes \\(xy+xz+yz\\). In how many of the \\(8\\) rows of its truth table is the output \\(1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The output is \\(1\\) when at least two of the three inputs are \\(1\\). Exactly two inputs equal to \\(1\\) occurs in \\(3\\) rows, and all three equal to \\(1\\) occurs in \\(1\\) row, so the output is \\(1\\) in \\(3+1=4\\) rows. Counting only the rows with exactly two ones gives \\(3\\).",
+      "hint": "Include the row in which all three inputs are \\(1\\)."
+    },
+    {
+      "id": "dynanca-608-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A half adder",
+      "learningObjective": "Evaluate the two outputs of a half adder.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A half adder has two outputs: the sum bit, produced by an XOR gate on \\(x\\) and \\(y\\), and the carry bit, produced by an AND gate on \\(x\\) and \\(y\\). What are the outputs for \\(x=1\\) and \\(y=1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sum bit \\(0\\) and carry bit \\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "Sum bit \\(1\\) and carry bit \\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The XOR gate outputs \\(0\\), because the inputs are equal, and the AND gate outputs \\(1\\), because both inputs are \\(1\\). Read together, carry \\(1\\) and sum \\(0\\) form the binary number \\(10\\), which is two: the correct result of adding one and one.",
+      "hint": "Evaluate each gate separately for equal inputs."
+    }
+  ]
+}

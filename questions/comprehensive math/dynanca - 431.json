@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-431",
+  "category": "Comprehensive Mathematics",
+  "title": "431. Trigonometry & Periodic Models: Trigonometric Equations Reducible to Quadratic Form",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-431-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Pure quadratic in sine",
+      "learningObjective": "Solve an equation containing only a squared sine by taking both square roots.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What are all solutions of \\(2\\sin^2 x-1=0\\) with \\(0\\le x<2\\pi\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=\\frac{\\pi}{4},\\ \\frac{3\\pi}{4},\\ \\frac{5\\pi}{4},\\ \\frac{7\\pi}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=\\frac{\\pi}{4},\\ \\frac{3\\pi}{4}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Solve for the square: \\(\\sin^2 x=\\frac{1}{2}\\), so \\(\\sin x=\\frac{\\sqrt{2}}{2}\\) or \\(\\sin x=-\\frac{\\sqrt{2}}{2}\\). The positive value gives \\(\\frac{\\pi}{4}\\) and \\(\\frac{3\\pi}{4}\\); the negative value gives \\(\\frac{5\\pi}{4}\\) and \\(\\frac{7\\pi}{4}\\). Keeping only the positive root loses two solutions.",
+      "hint": "When taking a square root of both sides, remember both the positive and the negative root."
+    },
+    {
+      "id": "dynanca-431-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Factoring after substitution",
+      "learningObjective": "Factor the quadratic obtained by substituting a single letter for cosine.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "With \\(u=\\cos x\\), the equation \\(2\\cos^2 x-\\cos x-1=0\\) becomes \\(2u^2-u-1=0\\). Which factorisation is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2u-1)(u+1)=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2u+1)(u-1)=0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Expand to check: \\((2u+1)(u-1)=2u^2-2u+u-1=2u^2-u-1\\), which matches. The other product is \\((2u-1)(u+1)=2u^2+u-1\\), whose middle term has the wrong sign.",
+      "hint": "Expand each candidate and compare the middle term with \\(-u\\)."
+    },
+    {
+      "id": "dynanca-431-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Factoring out a common sine",
+      "learningObjective": "Solve a quadratic-type equation by factoring instead of dividing by a trigonometric factor.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What are all solutions of \\(\\sin^2 x-\\sin x=0\\) with \\(0\\le x<2\\pi\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=\\frac{\\pi}{2}\\) only"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=0,\\ \\frac{\\pi}{2},\\ \\pi\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor: \\(\\sin x(\\sin x-1)=0\\), so \\(\\sin x=0\\) or \\(\\sin x=1\\). The first gives \\(x=0\\) and \\(x=\\pi\\); the second gives \\(x=\\frac{\\pi}{2}\\). Dividing both sides by \\(\\sin x\\) would discard the solutions with \\(\\sin x=0\\).",
+      "hint": "Factor out the common factor; never divide by an expression that might be zero."
+    },
+    {
+      "id": "dynanca-431-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Quadratic in cosine",
+      "learningObjective": "Solve a factorable quadratic equation in cosine on one full turn.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What are all solutions of \\(2\\cos^2 x-\\cos x-1=0\\) with \\(0\\le x<2\\pi\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=0,\\ \\frac{\\pi}{3},\\ \\frac{5\\pi}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=0,\\ \\frac{2\\pi}{3},\\ \\frac{4\\pi}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor: \\((2\\cos x+1)(\\cos x-1)=0\\), so \\(\\cos x=-\\frac{1}{2}\\) or \\(\\cos x=1\\). The value \\(1\\) gives \\(x=0\\). The value \\(-\\frac{1}{2}\\) gives \\(x=\\frac{2\\pi}{3}\\) and \\(x=\\frac{4\\pi}{3}\\). The angles \\(\\frac{\\pi}{3}\\) and \\(\\frac{5\\pi}{3}\\) correspond to \\(\\cos x=+\\frac{1}{2}\\).",
+      "hint": "Factor the quadratic in \\(\\cos x\\), set each factor to zero, and watch the sign of each root."
+    },
+    {
+      "id": "dynanca-431-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Quadratic in sine with two valid roots",
+      "learningObjective": "Solve a quadratic in sine whose two roots both give solutions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What are all solutions of \\(2\\sin^2 x+3\\sin x+1=0\\) with \\(0^\\circ\\le x<360^\\circ\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=210^\\circ,\\ 270^\\circ,\\ 330^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=210^\\circ,\\ 330^\\circ\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor: \\((2\\sin x+1)(\\sin x+1)=0\\), so \\(\\sin x=-\\frac{1}{2}\\) or \\(\\sin x=-1\\). The first gives \\(210^\\circ\\) and \\(330^\\circ\\); the second gives \\(270^\\circ\\). Every factor must be solved, so there are three solutions.",
+      "hint": "Each factor gives its own equation in \\(\\sin x\\); solve both."
+    },
+    {
+      "id": "dynanca-431-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Pure quadratic in tangent",
+      "learningObjective": "Solve an equation containing only a squared tangent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What are all solutions of \\(\\tan^2 x-3=0\\) with \\(0\\le x<2\\pi\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=\\frac{\\pi}{3},\\ \\frac{4\\pi}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=\\frac{\\pi}{3},\\ \\frac{2\\pi}{3},\\ \\frac{4\\pi}{3},\\ \\frac{5\\pi}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(\\tan^2 x=3\\), \\(\\tan x=\\sqrt{3}\\) or \\(\\tan x=-\\sqrt{3}\\). The positive value gives \\(\\frac{\\pi}{3}\\) and \\(\\frac{4\\pi}{3}\\); the negative value gives \\(\\frac{2\\pi}{3}\\) and \\(\\frac{5\\pi}{3}\\). Using only \\(\\tan x=\\sqrt{3}\\) loses half of the solutions.",
+      "hint": "Take both square roots, then solve the two tangent equations separately."
+    },
+    {
+      "id": "dynanca-431-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Rejecting an impossible root",
+      "learningObjective": "Discard a root of the quadratic that lies outside the range of sine.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What are all solutions of \\(\\sin^2 x-3\\sin x+2=0\\) with \\(0\\le x<2\\pi\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=\\frac{\\pi}{2}\\) only"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=\\frac{\\pi}{2}\\) and \\(x=\\frac{3\\pi}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor: \\((\\sin x-1)(\\sin x-2)=0\\), so \\(\\sin x=1\\) or \\(\\sin x=2\\). The equation \\(\\sin x=2\\) has no solution because \\(\\sin x\\le 1\\). The equation \\(\\sin x=1\\) gives \\(x=\\frac{\\pi}{2}\\) only; at \\(\\frac{3\\pi}{2}\\) the sine is \\(-1\\).",
+      "hint": "After factoring, check each root against the range of sine."
+    },
+    {
+      "id": "dynanca-431-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Rewriting with one function",
+      "learningObjective": "Use a Pythagorean identity to turn a mixed equation into a quadratic in one function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The equation \\(2\\cos^2 x+\\sin x-1=0\\) is rewritten using \\(\\cos^2 x=1-\\sin^2 x\\). Which quadratic equation in \\(\\sin x\\) is equivalent to it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\sin^2 x-\\sin x-1=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\sin^2 x+\\sin x-1=0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute: \\(2(1-\\sin^2 x)+\\sin x-1=0\\), so \\(-2\\sin^2 x+\\sin x+1=0\\). Multiplying by \\(-1\\) gives \\(2\\sin^2 x-\\sin x-1=0\\). Every term changes sign when multiplying by \\(-1\\), including the middle term.",
+      "hint": "Substitute, collect like terms, and then multiply the whole equation by \\(-1\\)."
+    },
+    {
+      "id": "dynanca-431-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Double angle leading to a quadratic",
+      "learningObjective": "Use a double-angle formula to obtain and solve a quadratic in cosine.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "What are all solutions of \\(\\cos 2x+\\cos x=0\\) with \\(0\\le x<2\\pi\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=\\frac{\\pi}{3},\\ \\frac{5\\pi}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=\\frac{\\pi}{3},\\ \\pi,\\ \\frac{5\\pi}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(\\cos 2x=2\\cos^2 x-1\\): \\(2\\cos^2 x+\\cos x-1=0\\), which factors as \\((2\\cos x-1)(\\cos x+1)=0\\). So \\(\\cos x=\\frac{1}{2}\\), giving \\(\\frac{\\pi}{3}\\) and \\(\\frac{5\\pi}{3}\\), or \\(\\cos x=-1\\), giving \\(\\pi\\). Omitting the factor \\(\\cos x+1\\) loses the solution \\(x=\\pi\\).",
+      "hint": "Replace \\(\\cos 2x\\) by an expression in \\(\\cos x\\) only, then factor the quadratic."
+    },
+    {
+      "id": "dynanca-431-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Counting solutions of a quadratic in tangent",
+      "learningObjective": "Count the solutions produced by both roots of a quadratic in tangent.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How many solutions does \\(\\tan^2 x-\\tan x-2=0\\) have with \\(0\\le x<2\\pi\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two"
+        },
+        {
+          "label": "B",
+          "text": "Four"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor: \\((\\tan x-2)(\\tan x+1)=0\\), so \\(\\tan x=2\\) or \\(\\tan x=-1\\). Each tangent equation has exactly one solution in every interval of length \\(\\pi\\), hence two solutions in \\([0,2\\pi)\\). Together the two roots give \\(2+2=4\\) solutions.",
+      "hint": "Each value of the tangent gives two angles in one full turn."
+    }
+  ]
+}

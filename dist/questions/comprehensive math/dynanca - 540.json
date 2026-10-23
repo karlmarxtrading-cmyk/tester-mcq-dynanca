@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-540",
+  "category": "Comprehensive Mathematics",
+  "title": "540. Sets, Logic, Reasoning & Proof: Propositional Formulas in Disjunctive Normal Form",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-540-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Terms of a disjunctive normal form",
+      "learningObjective": "Describe the parts of a formula in disjunctive normal form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a formula in disjunctive normal form, what is each of the parts joined by \\(\\lor\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A conjunction of literals"
+        },
+        {
+          "label": "B",
+          "text": "A disjunction of literals"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Disjunctive normal form is a disjunction of terms, and each term is a conjunction of literals, where a literal is a variable or a negated variable. For example, \\((p\\land\\neg q)\\lor(q\\land r)\\) has the two terms \\(p\\land\\neg q\\) and \\(q\\land r\\).",
+      "hint": "Inside each term of a disjunctive normal form, only one connective joins the literals."
+    },
+    {
+      "id": "dynanca-540-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Recognising disjunctive normal form",
+      "learningObjective": "Decide which formula is in disjunctive normal form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Which formula is in disjunctive normal form?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((p\\lor\\neg q)\\land(\\neg p\\lor r)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((p\\land\\neg q)\\lor(\\neg p\\land r)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first formula is a disjunction of two terms, each a conjunction of literals. The second is a conjunction of disjunctions, which is conjunctive normal form.",
+      "hint": "Look for \\(\\lor\\) as the outermost connective."
+    },
+    {
+      "id": "dynanca-540-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Exclusive or in disjunctive normal form",
+      "learningObjective": "Write the exclusive or in disjunctive normal form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which formula in disjunctive normal form is equivalent to the exclusive or \\(p\\oplus q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((p\\land\\neg q)\\lor(\\neg p\\land q)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((p\\land q)\\lor(\\neg p\\land\\neg q)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(p\\oplus q\\) is true exactly when one of \\(p\\), \\(q\\) is true and the other is false. The two such rows are described by the terms \\(p\\land\\neg q\\) and \\(\\neg p\\land q\\). The formula \\((p\\land q)\\lor(\\neg p\\land\\neg q)\\) is true when \\(p\\) and \\(q\\) agree, so it expresses \\(p\\iff q\\).",
+      "hint": "Write one term for each row of the truth table in which the exclusive or is true."
+    },
+    {
+      "id": "dynanca-540-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Distributing to reach disjunctive normal form",
+      "learningObjective": "Use a distributive law to convert a formula to disjunctive normal form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which formula in disjunctive normal form is equivalent to \\(p\\land(q\\lor\\neg r)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((p\\lor q)\\land(p\\lor\\neg r)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((p\\land q)\\lor(p\\land\\neg r)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Distributing \\(\\land\\) over \\(\\lor\\) gives \\(p\\land(q\\lor\\neg r)\\equiv(p\\land q)\\lor(p\\land\\neg r)\\), a disjunction of two terms. The other formula is in conjunctive normal form and is equivalent to \\(p\\lor(q\\land\\neg r)\\); it differs from the given formula when \\(p\\) and \\(r\\) are true and \\(q\\) is false.",
+      "hint": "Distribute the conjunction over the disjunction."
+    },
+    {
+      "id": "dynanca-540-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Building terms from satisfying rows",
+      "learningObjective": "Build a disjunctive normal form from the rows in which a formula is true.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A formula in the variables \\(p\\) and \\(q\\) is true in exactly two rows: \\(p\\) true with \\(q\\) false, and \\(p\\) false with \\(q\\) false. Building one term for each of these rows gives which disjunctive normal form?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((p\\land\\neg q)\\lor(\\neg p\\land\\neg q)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((p\\land q)\\lor(\\neg p\\land q)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For each row in which the formula is true, write the term that is true in that row only: \\(p\\land\\neg q\\) and \\(\\neg p\\land\\neg q\\). Their disjunction is true in exactly these two rows; it simplifies to \\(\\neg q\\). The other formula is true in the two rows where \\(q\\) is true.",
+      "hint": "A term is true only when every one of its literals is true."
+    },
+    {
+      "id": "dynanca-540-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Number of terms",
+      "learningObjective": "Count the terms of a disjunctive normal form built from a truth table.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A formula in three variables is true in exactly \\(2\\) of the \\(8\\) rows of its truth table. A disjunctive normal form is built with one term for each row in which the formula is true. How many terms does it have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each term is true in exactly one row, so one term is needed for each row in which the formula is true. That gives \\(2\\) terms. The number \\(6\\) counts the rows in which the formula is false; those rows are used when building a conjunctive normal form.",
+      "hint": "Terms correspond to the rows where the formula is true."
+    },
+    {
+      "id": "dynanca-540-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Truth of a disjunctive normal form",
+      "learningObjective": "State when a formula in disjunctive normal form is true.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Under a given assignment of truth values, when is a formula in disjunctive normal form true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When every one of its terms is true"
+        },
+        {
+          "label": "B",
+          "text": "When at least one of its terms is true"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A disjunction is true when at least one of its members is true. So a formula in disjunctive normal form is true as soon as one term has all its literals true. Requiring every member to be true is the rule for a conjunction, as in conjunctive normal form.",
+      "hint": "The outermost connective decides."
+    },
+    {
+      "id": "dynanca-540-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A conjunction with a negated variable",
+      "learningObjective": "Convert a conjunction of a disjunction and a literal to disjunctive normal form.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "Which formula in disjunctive normal form is equivalent to \\((p\\lor q)\\land\\neg r\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((p\\land\\neg r)\\lor(q\\land\\neg r)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((p\\land q)\\lor\\neg r\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Distributing \\(\\land\\) over \\(\\lor\\) gives \\((p\\lor q)\\land\\neg r\\equiv(p\\land\\neg r)\\lor(q\\land\\neg r)\\). The formula \\((p\\land q)\\lor\\neg r\\) is not equivalent: when \\(p\\), \\(q\\), and \\(r\\) are all false it is true, while \\((p\\lor q)\\land\\neg r\\) is false.",
+      "hint": "Distribute \\(\\neg r\\) over the two parts of the disjunction."
+    },
+    {
+      "id": "dynanca-540-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Simplifying a disjunctive normal form",
+      "learningObjective": "Simplify a disjunctive normal form by factoring out a common literal.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "To which formula does the disjunctive normal form \\((p\\land q)\\lor(p\\land\\neg q)\\) simplify?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(q\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor out \\(p\\): \\((p\\land q)\\lor(p\\land\\neg q)\\equiv p\\land(q\\lor\\neg q)\\). Since \\(q\\lor\\neg q\\) is always true, the formula is equivalent to \\(p\\). Its truth value does not depend on \\(q\\) at all.",
+      "hint": "Both terms share a literal; factor it out."
+    },
+    {
+      "id": "dynanca-540-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Full disjunctive normal form",
+      "learningObjective": "Write the full disjunctive normal form of a simple formula.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The full disjunctive normal form of a formula has one term for each row in which the formula is true, and each term contains every variable. What is the full disjunctive normal form of \\(p\\lor q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((p\\land\\neg q)\\lor(\\neg p\\land q)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((p\\land q)\\lor(p\\land\\neg q)\\lor(\\neg p\\land q)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(p\\lor q\\) is true in three rows: both variables true, only \\(p\\) true, and only \\(q\\) true. These give the terms \\(p\\land q\\), \\(p\\land\\neg q\\), and \\(\\neg p\\land q\\). The two-term formula omits the row in which both variables are true, so it expresses the exclusive or.",
+      "hint": "Count the rows of the truth table in which \\(p\\lor q\\) is true."
+    }
+  ]
+}

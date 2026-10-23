@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-539",
+  "category": "Comprehensive Mathematics",
+  "title": "539. Sets, Logic, Reasoning & Proof: Propositional Formulas in Conjunctive Normal Form",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-539-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of conjunctive normal form",
+      "learningObjective": "Describe the structure of a formula in conjunctive normal form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is a propositional formula in conjunctive normal form?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A conjunction of clauses, each of which is a disjunction of literals"
+        },
+        {
+          "label": "B",
+          "text": "A disjunction of terms, each of which is a conjunction of literals"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In conjunctive normal form the outermost connective is \\(\\land\\), and each part joined by \\(\\land\\) is a clause: a disjunction of literals, where a literal is a variable or a negated variable. The other description is that of disjunctive normal form.",
+      "hint": "The name of the normal form tells you the outermost connective."
+    },
+    {
+      "id": "dynanca-539-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Recognising conjunctive normal form",
+      "learningObjective": "Decide which formula is in conjunctive normal form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Which formula is in conjunctive normal form?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((p\\land q)\\lor(\\neg p\\land r)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((p\\lor q)\\land(\\neg p\\lor r)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first formula is a conjunction of two clauses, \\(p\\lor q\\) and \\(\\neg p\\lor r\\), each a disjunction of literals. The second formula is a disjunction of conjunctions, which is disjunctive normal form.",
+      "hint": "Look for \\(\\land\\) as the outermost connective, with only \\(\\lor\\) inside each pair of parentheses."
+    },
+    {
+      "id": "dynanca-539-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Converting an implication",
+      "learningObjective": "Convert an implication with a compound hypothesis to conjunctive normal form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which formula in conjunctive normal form is equivalent to \\((p\\land q)\\implies r\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\neg p\\lor\\neg q\\lor r\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((\\neg p\\lor r)\\land(\\neg q\\lor r)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Replace the implication: \\((p\\land q)\\implies r\\) is equivalent to \\(\\neg(p\\land q)\\lor r\\). De Morgan's law turns \\(\\neg(p\\land q)\\) into \\(\\neg p\\lor\\neg q\\), giving the single clause \\(\\neg p\\lor\\neg q\\lor r\\). The formula \\((\\neg p\\lor r)\\land(\\neg q\\lor r)\\) is equivalent to \\((p\\lor q)\\implies r\\), which is a stronger statement.",
+      "hint": "Rewrite the implication with \\(\\neg\\) and \\(\\lor\\), then apply De Morgan's law."
+    },
+    {
+      "id": "dynanca-539-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Converting a biconditional",
+      "learningObjective": "Convert a biconditional to conjunctive normal form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which formula in conjunctive normal form is equivalent to \\(p\\iff q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((p\\lor q)\\land(\\neg p\\lor\\neg q)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((\\neg p\\lor q)\\land(p\\lor\\neg q)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(p\\iff q\\) means \\((p\\implies q)\\land(q\\implies p)\\), and each implication becomes a clause: \\(\\neg p\\lor q\\) and \\(\\neg q\\lor p\\). The formula \\((p\\lor q)\\land(\\neg p\\lor\\neg q)\\) is true exactly when \\(p\\) and \\(q\\) differ, so it expresses the exclusive or instead.",
+      "hint": "Write the biconditional as two implications and convert each one."
+    },
+    {
+      "id": "dynanca-539-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Distributing to reach conjunctive normal form",
+      "learningObjective": "Use a distributive law to convert a formula to conjunctive normal form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which formula in conjunctive normal form is equivalent to \\((p\\land q)\\lor\\neg r\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((p\\land\\neg r)\\lor(q\\land\\neg r)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((p\\lor\\neg r)\\land(q\\lor\\neg r)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Distributing \\(\\lor\\) over \\(\\land\\) gives \\((p\\land q)\\lor\\neg r\\equiv(p\\lor\\neg r)\\land(q\\lor\\neg r)\\), a conjunction of two clauses. The other formula is a disjunction of conjunctions, so it is not in conjunctive normal form; it is also not equivalent, because it is false when \\(p\\), \\(q\\), and \\(r\\) are all true, while \\((p\\land q)\\lor\\neg r\\) is then true.",
+      "hint": "Use the distributive law that turns a disjunction with a conjunction into a conjunction of disjunctions."
+    },
+    {
+      "id": "dynanca-539-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negation outside a compound formula",
+      "learningObjective": "Decide whether a negated disjunction is in conjunctive normal form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Is \\(\\neg(p\\lor q)\\) in conjunctive normal form?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; negation is applied to a compound formula. An equivalent formula in conjunctive normal form is \\(\\neg p\\land\\neg q\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; it consists of a single clause, \\(p\\lor q\\), with a negation in front."
+        }
+      ],
+      "answer": "A",
+      "explanation": "In conjunctive normal form, negation may be applied only to single variables. De Morgan's law gives \\(\\neg(p\\lor q)\\equiv\\neg p\\land\\neg q\\), which is a conjunction of two one-literal clauses and is in conjunctive normal form.",
+      "hint": "Check where the negation signs are allowed to stand."
+    },
+    {
+      "id": "dynanca-539-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A single clause",
+      "learningObjective": "Decide whether a single clause is in conjunctive normal form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Is the formula \\(p\\lor\\neg q\\lor r\\) in conjunctive normal form?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; it is a conjunction consisting of a single clause."
+        },
+        {
+          "label": "B",
+          "text": "No; it contains no \\(\\land\\), so it cannot be a conjunction."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A formula in conjunctive normal form is a conjunction of one or more clauses. A single clause, such as \\(p\\lor\\neg q\\lor r\\), counts as a conjunction with just one member. The same formula is also in disjunctive normal form, with three one-literal terms.",
+      "hint": "A conjunction is allowed to have only one member."
+    },
+    {
+      "id": "dynanca-539-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Building clauses from falsifying rows",
+      "learningObjective": "Build a conjunctive normal form from the rows in which a formula is false.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A formula in the variables \\(p\\) and \\(q\\) is false in exactly two rows: \\(p\\) true with \\(q\\) false, and \\(p\\) false with \\(q\\) false. Building one clause for each of these rows gives which conjunctive normal form?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((p\\lor\\neg q)\\land(\\neg p\\lor\\neg q)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((\\neg p\\lor q)\\land(p\\lor q)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For each falsifying row, write the clause that is false in that row only: for \\(p\\) true with \\(q\\) false it is \\(\\neg p\\lor q\\); for \\(p\\) false with \\(q\\) false it is \\(p\\lor q\\). Their conjunction is false in exactly these two rows. The other formula is false in the two rows where \\(q\\) is true, the opposite pattern.",
+      "hint": "A clause is false only when every one of its literals is false."
+    },
+    {
+      "id": "dynanca-539-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Number of clauses",
+      "learningObjective": "Count the clauses of a conjunctive normal form built from a truth table.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A formula in three variables is false in exactly \\(3\\) of the \\(8\\) rows of its truth table. A conjunctive normal form is built with one clause for each row in which the formula is false. How many clauses does it have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each clause is designed to be false in exactly one falsifying row and true elsewhere, so the conjunction is false in exactly the required rows. With \\(3\\) falsifying rows there are \\(3\\) clauses. The number \\(5\\) counts the rows in which the formula is true; those rows are used when building a disjunctive normal form.",
+      "hint": "Clauses correspond to the rows where the formula is false."
+    },
+    {
+      "id": "dynanca-539-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An implication with a compound conclusion",
+      "learningObjective": "Convert an implication with a conjunction as conclusion to conjunctive normal form.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Which formula in conjunctive normal form is equivalent to \\(p\\implies(q\\land r)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((\\neg p\\lor q)\\land(\\neg p\\lor r)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\neg p\\lor q\\lor r\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(p\\implies(q\\land r)\\) is equivalent to \\(\\neg p\\lor(q\\land r)\\), and distributing \\(\\lor\\) over \\(\\land\\) gives \\((\\neg p\\lor q)\\land(\\neg p\\lor r)\\). The single clause \\(\\neg p\\lor q\\lor r\\) is equivalent to \\(p\\implies(q\\lor r)\\), which is weaker: it is true when \\(p\\) and \\(q\\) are true and \\(r\\) is false.",
+      "hint": "Replace the implication first, then distribute."
+    }
+  ]
+}

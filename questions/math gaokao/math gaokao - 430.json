@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-430",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 430",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-430-q001",
+      "category": "Mathematical Reasoning",
+      "concept": "Parameter in a linear equation with no solution",
+      "learningObjective": "Determine the parameter value for which a linear equation in one variable has no solution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For the equation \\((m-2)x=3\\) in \\(x\\), where \\(m\\) is a real parameter, what value of \\(m\\) makes the equation have no solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(m=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If \\(m=2\\), the equation becomes\n\\[\n0\\cdot x=3,\n\\]\nwhich is false for every real number \\(x\\). Thus the equation has no solution. If \\(m\\ne 2\\), then \\(x=\\frac{3}{m-2}\\) is a solution. Therefore, the required value is \\(m=2\\).",
+      "hint": "Examine what happens when the coefficient of \\(x\\) is zero."
+    },
+    {
+      "id": "math-gaokao-430-q002",
+      "category": "Mathematical Reasoning",
+      "concept": "Parameter condition for a quadratic inequality to hold for all real numbers",
+      "learningObjective": "Use the discriminant to find parameter values for which a quadratic expression is always positive.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For which values of \\(m\\) is \\(x^2-2x+m>0\\) true for every real number \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m>1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(m<1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The quadratic \\(x^2-2x+m\\) opens upward. It is positive for every real \\(x\\) if and only if its discriminant is negative:\n\\[\n\\Delta=(-2)^2-4(1)(m)=4-4m.\n\\]\nThus \\(4-4m<0\\), so \\(m>1\\). If \\(m=1\\), the expression becomes \\((x-1)^2\\), which equals \\(0\\) at \\(x=1\\), so it is not always positive.",
+      "hint": "For an upward-opening quadratic to be always positive, its discriminant must be negative."
+    },
+    {
+      "id": "math-gaokao-430-q003",
+      "category": "Mathematical Reasoning",
+      "concept": "Parameter range for monotonicity of a quadratic on an interval",
+      "learningObjective": "Determine the parameter condition for a quadratic function to be increasing on a closed interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The function \\(f(x)=x^2+2ax+3\\) is increasing on the interval \\([1,2]\\). What condition must the real parameter \\(a\\) satisfy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a\\ge -1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a\\le -1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The derivative is\n\\[\nf'(x)=2x+2a.\n\\]\nFor \\(f\\) to be increasing on \\([1,2]\\), we need \\(f'(x)\\ge 0\\) for all \\(x\\in[1,2]\\). Since \\(f'(x)\\) is increasing in \\(x\\), its minimum on \\([1,2]\\) occurs at \\(x=1\\):\n\\[\nf'(1)=2+2a\\ge 0.\n\\]\nThus \\(a\\ge -1\\). Equivalently, the vertex \\(x=-a\\) must be at or to the left of \\(1\\), giving \\(-a\\le 1\\), so \\(a\\ge -1\\).",
+      "hint": "Use the derivative or the vertex: increasing on \\([1,2]\\) means the vertex is at or to the left of \\(1\\)."
+    },
+    {
+      "id": "math-gaokao-430-q004",
+      "category": "Mathematical Reasoning",
+      "concept": "Discriminant condition for two distinct real roots",
+      "learningObjective": "Find the parameter range for a quadratic equation to have two distinct real roots.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For which values of the real parameter \\(a\\) does the equation \\(x^2+ax+1=0\\) have two distinct real roots?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2<a<2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a<-2\\) or \\(a>2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The discriminant is\n\\[\n\\Delta=a^2-4.\n\\]\nA quadratic equation has two distinct real roots exactly when \\(\\Delta>0\\). Thus\n\\[\na^2-4>0,\n\\]\nso \\(a^2>4\\), which means \\(a<-2\\) or \\(a>2\\).",
+      "hint": "A quadratic has two distinct real roots when its discriminant is positive."
+    },
+    {
+      "id": "math-gaokao-430-q005",
+      "category": "Mathematical Reasoning",
+      "concept": "Parameter from the minimum value of a quadratic on an interval",
+      "learningObjective": "Determine a parameter so that a quadratic function attains a specified minimum value on an interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=x^2-2x+a\\) on the interval \\([0,3]\\). If the minimum value of \\(f\\) on this interval is \\(5\\), what is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Complete the square:\n\\[\nf(x)=x^2-2x+a=(x-1)^2+a-1.\n\\]\nThe vertex occurs at \\(x=1\\), which lies in the interval \\([0,3]\\). Therefore, the minimum value is \\(a-1\\). Setting\n\\[\na-1=5\n\\]\ngives \\(a=6\\).",
+      "hint": "Complete the square to locate the vertex and check whether it lies in the given interval."
+    },
+    {
+      "id": "math-gaokao-430-q006",
+      "category": "Mathematical Reasoning",
+      "concept": "Parameter from a quadratic inequality solution interval",
+      "learningObjective": "Find a parameter so that the solution set of a quadratic inequality is a given interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If the solution set of \\(x^2-2ax+a^2-1<0\\) is \\((0,2)\\), what is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rewrite the quadratic expression:\n\\[\nx^2-2ax+a^2-1=(x-a)^2-1.\n\\]\nThe inequality becomes\n\\[\n(x-a)^2<1,\n\\]\nso\n\\[\n-1<x-a<1,\n\\]\nwhich gives\n\\[\na-1<x<a+1.\n\\]\nThus the solution set is \\((a-1,a+1)\\). Since this must equal \\((0,2)\\), we have \\(a-1=0\\) and \\(a+1=2\\), so \\(a=1\\).",
+      "hint": "Write the quadratic as a square minus a constant."
+    },
+    {
+      "id": "math-gaokao-430-q007",
+      "category": "Mathematical Reasoning",
+      "concept": "Tangency condition for a line and a parabola",
+      "learningObjective": "Determine the parameter value for which a line is tangent to a parabola.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The line \\(y=x+k\\) is tangent to the parabola \\(y=x^2\\). What is \\(k\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=\\frac{1}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=-\\frac{1}{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set the equations equal:\n\\[\nx^2=x+k.\n\\]\nRearrange:\n\\[\nx^2-x-k=0.\n\\]\nTangency means the line and parabola have exactly one intersection, so the discriminant must be zero:\n\\[\n\\begin{aligned}\n\\Delta&=(-1)^2-4(1)(-k) \\\\\n&=1+4k \\\\\n&=0.\n\\end{aligned}\n\\]\nThus\n\\[\nk=-\\frac{1}{4}.\n\\]",
+      "hint": "Set the equations equal and use the discriminant condition for tangency."
+    },
+    {
+      "id": "math-gaokao-430-q008",
+      "category": "Mathematical Reasoning",
+      "concept": "Parameter range for the number of solutions of an absolute-value equation",
+      "learningObjective": "Determine the parameter range for an absolute-value equation to have exactly two solutions.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For which values of the real parameter \\(a\\) does the equation \\(|x-2|=a\\) have exactly two solutions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a>0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a\\ge 0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(a>0\\), the equation \\(|x-2|=a\\) gives\n\\[\nx-2=a \\quad \\text{or} \\quad x-2=-a,\n\\]\nso\n\\[\nx=2+a \\quad \\text{or} \\quad x=2-a,\n\\]\nwhich are two distinct solutions. If \\(a=0\\), the only solution is \\(x=2\\). If \\(a<0\\), there is no solution. Therefore, exactly two solutions occur when \\(a>0\\).",
+      "hint": "Recall that an absolute value equals a nonnegative number; consider how many points are at a given distance from \\(2\\)."
+    },
+    {
+      "id": "math-gaokao-430-q009",
+      "category": "Mathematical Reasoning",
+      "concept": "Parameter condition for two critical points of a cubic",
+      "learningObjective": "Find the parameter range for a cubic function to have two distinct critical points.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The function \\(f(x)=x^3-3ax+1\\) has two distinct critical points. What condition must the real parameter \\(a\\) satisfy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a<0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a>0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2-3a=3(x^2-a).\n\\]\nCritical points satisfy\n\\[\nx^2=a.\n\\]\nThere are two distinct real solutions exactly when \\(a>0\\). If \\(a=0\\), there is only one critical point. If \\(a<0\\), there are no real critical points.",
+      "hint": "Find the derivative and count the real solutions of \\(x^2=a\\)."
+    },
+    {
+      "id": "math-gaokao-430-q010",
+      "category": "Mathematical Reasoning",
+      "concept": "Parameter conditions for two distinct positive roots of a quadratic",
+      "learningObjective": "Determine the parameter range for a quadratic equation to have two distinct positive roots.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For which values of the real parameter \\(a\\) does the equation \\(x^2+(a-2)x+a=0\\) have two distinct positive roots?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a>4+2\\sqrt{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0<a<4-2\\sqrt{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let the roots be \\(r\\) and \\(s\\). For two distinct positive roots, we need the sum and product to be positive, and the discriminant to be positive.\nBy Vieta's formulas:\n\\[\n\\begin{aligned}\nr+s&=2-a>0 \\quad \\Rightarrow \\quad a<2, \\\\\nrs&=a>0 \\quad \\Rightarrow \\quad a>0.\n\\end{aligned}\n\\]\nThe discriminant is\n\\[\n\\Delta=(a-2)^2-4a=a^2-8a+4.\n\\]\nFor two distinct roots, \\(\\Delta>0\\):\n\\[\na^2-8a+4>0.\n\\]\nSolving gives\n\\[\na<4-2\\sqrt{3} \\quad \\text{or} \\quad a>4+2\\sqrt{3}.\n\\]\nCombining with \\(0<a<2\\), we obtain\n\\[\n0<a<4-2\\sqrt{3}.\n\\]",
+      "hint": "Use Vieta's formulas for positive roots and require the discriminant to be positive."
+    }
+  ]
+}

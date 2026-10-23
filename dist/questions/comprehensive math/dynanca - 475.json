@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-475",
+  "category": "Comprehensive Mathematics",
+  "title": "475. Sets, Logic, Reasoning & Proof: Set Difference",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-475-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of set difference",
+      "learningObjective": "State which elements belong to a set difference.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which elements belong to \\(A\\setminus B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The elements of \\(B\\) that are not in \\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "The elements of \\(A\\) that are not in \\(B\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The difference \\(A\\setminus B\\) is obtained by removing from \\(A\\) every element that also belongs to \\(B\\). What remains are the elements of \\(A\\) that are not in \\(B\\). The elements of \\(B\\) that are not in \\(A\\) form the different set \\(B\\setminus A\\).",
+      "hint": "Start with the first set and remove elements of the second."
+    },
+    {
+      "id": "dynanca-475-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Difference of two listed sets",
+      "learningObjective": "Compute a set difference of two finite sets.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\{1,2,3,4\\}\\setminus\\{3,4,5\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1,2\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{5\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Remove from \\(\\{1,2,3,4\\}\\) the elements that are in \\(\\{3,4,5\\}\\), namely \\(3\\) and \\(4\\). The elements \\(1\\) and \\(2\\) remain. The element \\(5\\) is not in the first set, so it cannot be in the difference; \\(\\{5\\}\\) is the difference taken in the other order.",
+      "hint": "Only elements of the first set can appear in the answer."
+    },
+    {
+      "id": "dynanca-475-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Difference in the other order",
+      "learningObjective": "Recognise that set difference depends on the order of the sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\{3,4,5\\}\\setminus\\{1,2,3,4\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{5\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,2\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Remove from \\(\\{3,4,5\\}\\) the elements \\(3\\) and \\(4\\), which are in \\(\\{1,2,3,4\\}\\). Only \\(5\\) remains. The set \\(\\{1,2\\}\\) is the difference \\(\\{1,2,3,4\\}\\setminus\\{3,4,5\\}\\); the operation is not commutative.",
+      "hint": "The answer must consist of elements of the set written first."
+    },
+    {
+      "id": "dynanca-475-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Difference of a set with itself",
+      "learningObjective": "Simplify the difference of a set with itself.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "For every set \\(A\\), what is \\(A\\setminus A\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Removing from \\(A\\) every element that belongs to \\(A\\) removes all elements. Nothing remains, so \\(A\\setminus A=\\varnothing\\).",
+      "hint": "Ask which elements of \\(A\\) are not in \\(A\\)."
+    },
+    {
+      "id": "dynanca-475-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Difference with the empty set",
+      "learningObjective": "Simplify the difference of a set and the empty set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "For every set \\(A\\), what is \\(A\\setminus\\varnothing\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\varnothing\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The empty set has no elements, so nothing is removed from \\(A\\). Hence \\(A\\setminus\\varnothing=A\\). The result \\(\\varnothing\\) would be correct for \\(\\varnothing\\setminus A\\), where the starting set has no elements.",
+      "hint": "Count how many elements the empty set can remove."
+    },
+    {
+      "id": "dynanca-475-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Elements of a difference of number sets",
+      "learningObjective": "Decide membership in the difference of the real and rational numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which number is an element of \\(\\mathbb{R}\\setminus\\mathbb{Q}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The set \\(\\mathbb{R}\\setminus\\mathbb{Q}\\) contains the real numbers that are not rational, that is, the irrational numbers. The number \\(\\sqrt{2}\\) is real and irrational, so it belongs to this set. The number \\(\\frac{1}{2}\\) is rational, so it is removed.",
+      "hint": "The difference removes every rational number from the real numbers."
+    },
+    {
+      "id": "dynanca-475-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Difference of intervals",
+      "learningObjective": "Remove a closed interval from a larger closed interval with correct endpoints.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "What is \\([0,5]\\setminus[2,3]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([0,2)\\cup(3,5]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([0,2]\\cup[3,5]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Removing \\([2,3]\\) deletes every number with \\(2\\le x\\le 3\\), including the endpoints \\(2\\) and \\(3\\). What remains is \\(0\\le x<2\\) together with \\(3<x\\le 5\\), that is, \\([0,2)\\cup(3,5]\\). The version with square brackets at \\(2\\) and \\(3\\) keeps two numbers that were removed.",
+      "hint": "Decide whether the numbers \\(2\\) and \\(3\\) are removed or kept."
+    },
+    {
+      "id": "dynanca-475-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Difference of disjoint sets",
+      "learningObjective": "Simplify a difference when the two sets have no common element.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(A=\\{1,2\\}\\) and \\(B=\\{3\\}\\). What is \\(A\\setminus B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1,2\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The only element of \\(B\\) is \\(3\\), which is not in \\(A\\), so nothing is removed from \\(A\\). Hence \\(A\\setminus B=A=\\{1,2\\}\\). When two sets are disjoint, the difference equals the first set.",
+      "hint": "Check which elements of \\(A\\) also belong to \\(B\\)."
+    },
+    {
+      "id": "dynanca-475-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Difference written with a complement",
+      "learningObjective": "Express a set difference using intersection and complement.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(A\\) and \\(B\\) be subsets of a universal set \\(U\\), and let \\(B^{c}\\) denote the complement of \\(B\\) in \\(U\\). Which expression always equals \\(A\\setminus B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A^{c}\\cap B\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\cap B^{c}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An element is in \\(A\\setminus B\\) when it is in \\(A\\) and not in \\(B\\). Being not in \\(B\\) means being in \\(B^{c}\\), so the condition is membership in \\(A\\cap B^{c}\\). The expression \\(A^{c}\\cap B\\) describes the elements of \\(B\\) that are not in \\(A\\), which is \\(B\\setminus A\\).",
+      "hint": "Translate \"not in \\(B\\)\" into membership in a complement."
+    },
+    {
+      "id": "dynanca-475-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Order of two successive differences",
+      "learningObjective": "Evaluate two different groupings of successive set differences.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(A=\\{1,2,3,4,5,6\\}\\), \\(B=\\{2,4,6\\}\\), and \\(C=\\{1,2,3\\}\\). What is \\((A\\setminus B)\\setminus C\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{5\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,2,3,5\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First, \\(A\\setminus B=\\{1,3,5\\}\\). Removing the elements of \\(C\\) deletes \\(1\\) and \\(3\\), leaving \\(\\{5\\}\\). The set \\(\\{1,2,3,5\\}\\) is \\(A\\setminus(B\\setminus C)\\): there \\(B\\setminus C=\\{4,6\\}\\) and \\(A\\setminus\\{4,6\\}=\\{1,2,3,5\\}\\). The position of the parentheses matters.",
+      "hint": "Work from the inside of the parentheses outward."
+    }
+  ]
+}

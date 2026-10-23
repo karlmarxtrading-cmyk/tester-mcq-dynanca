@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-478",
+  "category": "Comprehensive Mathematics",
+  "title": "478. Sets, Logic, Reasoning & Proof: De Morgan Laws for Sets",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-478-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Complement of a union",
+      "learningObjective": "State De Morgan's law for the complement of a union.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For subsets \\(A\\) and \\(B\\) of a universal set, which set equals \\((A\\cup B)^{c}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A^{c}\\cap B^{c}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A^{c}\\cup B^{c}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An element is outside \\(A\\cup B\\) exactly when it is in neither set, that is, outside \\(A\\) and outside \\(B\\). So \\((A\\cup B)^{c}=A^{c}\\cap B^{c}\\). Taking a complement changes the union into an intersection.",
+      "hint": "To be outside the union, an element must avoid both sets."
+    },
+    {
+      "id": "dynanca-478-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Complement of an intersection",
+      "learningObjective": "State De Morgan's law for the complement of an intersection.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For subsets \\(A\\) and \\(B\\) of a universal set, which set equals \\((A\\cap B)^{c}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A^{c}\\cup B^{c}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A^{c}\\cap B^{c}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An element is outside \\(A\\cap B\\) exactly when it fails to be in both sets, that is, when it is outside \\(A\\) or outside \\(B\\). So \\((A\\cap B)^{c}=A^{c}\\cup B^{c}\\). Taking a complement changes the intersection into a union.",
+      "hint": "To be outside the intersection, it is enough to miss one of the sets."
+    },
+    {
+      "id": "dynanca-478-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Complement of a union in a listed universe",
+      "learningObjective": "Apply De Morgan's law to listed sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(U=\\{1,2,3,4,5,6\\}\\), \\(A=\\{1,2\\}\\), and \\(B=\\{2,3\\}\\). What is \\((A\\cup B)^{c}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{4,5,6\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,3,4,5,6\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The union is \\(A\\cup B=\\{1,2,3\\}\\), so its complement is \\(\\{4,5,6\\}\\). By De Morgan's law this equals \\(A^{c}\\cap B^{c}=\\{3,4,5,6\\}\\cap\\{1,4,5,6\\}=\\{4,5,6\\}\\). The set \\(\\{1,3,4,5,6\\}\\) is \\(A^{c}\\cup B^{c}\\), which is the complement of the intersection.",
+      "hint": "Either compute the union first, or intersect the two complements."
+    },
+    {
+      "id": "dynanca-478-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Complement of an intersection in a listed universe",
+      "learningObjective": "Apply De Morgan's law for an intersection to listed sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(U=\\{1,2,3,4,5,6\\}\\), \\(A=\\{1,2\\}\\), and \\(B=\\{2,3\\}\\). What is \\((A\\cap B)^{c}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{4,5,6\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,3,4,5,6\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The intersection is \\(A\\cap B=\\{2\\}\\), so its complement is \\(\\{1,3,4,5,6\\}\\). By De Morgan's law this equals \\(A^{c}\\cup B^{c}=\\{3,4,5,6\\}\\cup\\{1,4,5,6\\}\\). The set \\(\\{4,5,6\\}\\) is the complement of the union.",
+      "hint": "Find the intersection first and remove it from the universal set."
+    },
+    {
+      "id": "dynanca-478-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "De Morgan's law in words",
+      "learningObjective": "Translate the complement of a union into a verbal condition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which condition is equivalent to \"\\(x\\) is not in \\(A\\cup B\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\) is not in \\(A\\) and \\(x\\) is not in \\(B\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\) is not in \\(A\\) or \\(x\\) is not in \\(B\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Being in \\(A\\cup B\\) means being in at least one of the sets. Not being in the union therefore means being in neither: not in \\(A\\) and not in \\(B\\). The condition with \"or\" is weaker; it holds, for example, for an element that is in \\(A\\) but not in \\(B\\), which does belong to the union.",
+      "hint": "Test both conditions on an element that is in \\(A\\) but not in \\(B\\)."
+    },
+    {
+      "id": "dynanca-478-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Simplifying a complement of complements",
+      "learningObjective": "Simplify the complement of a union of complements.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For subsets \\(A\\) and \\(B\\) of a universal set, which set equals \\(\\left(A^{c}\\cup B^{c}\\right)^{c}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\cap B\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\cup B\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By De Morgan's law, the complement of a union is the intersection of the complements: \\(\\left(A^{c}\\cup B^{c}\\right)^{c}=(A^{c})^{c}\\cap(B^{c})^{c}=A\\cap B\\). The union changes to an intersection, and each double complement cancels.",
+      "hint": "Apply De Morgan's law, then remove the double complements."
+    },
+    {
+      "id": "dynanca-478-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "De Morgan's law with one complemented set",
+      "learningObjective": "Simplify the complement of an intersection in which one set is already complemented.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "For subsets \\(A\\) and \\(B\\) of a universal set, which set equals \\(\\left(A^{c}\\cap B\\right)^{c}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\cap B^{c}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\cup B^{c}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By De Morgan's law, \\(\\left(A^{c}\\cap B\\right)^{c}=(A^{c})^{c}\\cup B^{c}=A\\cup B^{c}\\). The intersection becomes a union, and each of the two sets is complemented once more. Keeping the intersection sign gives \\(A\\cap B^{c}\\), which is incorrect.",
+      "hint": "Complement each of the two sets and change the operation."
+    },
+    {
+      "id": "dynanca-478-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "De Morgan's law for three sets",
+      "learningObjective": "Extend De Morgan's law to a union of three sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For subsets \\(A\\), \\(B\\), and \\(C\\) of a universal set, which set equals \\((A\\cup B\\cup C)^{c}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A^{c}\\cup B^{c}\\cup C^{c}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A^{c}\\cap B^{c}\\cap C^{c}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An element is outside the union of the three sets exactly when it is in none of them: outside \\(A\\), outside \\(B\\), and outside \\(C\\). So the complement of the union is the intersection of the three complements. The union of the complements is the complement of \\(A\\cap B\\cap C\\) instead.",
+      "hint": "Being outside a union means avoiding every one of the sets."
+    },
+    {
+      "id": "dynanca-478-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "De Morgan's law for a set difference",
+      "learningObjective": "Apply De Morgan's law to the removal of a union.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Which set always equals \\(A\\setminus(B\\cup C)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((A\\setminus B)\\cup(A\\setminus C)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((A\\setminus B)\\cap(A\\setminus C)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An element of \\(A\\setminus(B\\cup C)\\) is in \\(A\\) and in neither \\(B\\) nor \\(C\\). So it is in \\(A\\) but not in \\(B\\), and also in \\(A\\) but not in \\(C\\); that is, it lies in \\((A\\setminus B)\\cap(A\\setminus C)\\). The union \\((A\\setminus B)\\cup(A\\setminus C)\\) equals \\(A\\setminus(B\\cap C)\\), which removes only the elements in both \\(B\\) and \\(C\\).",
+      "hint": "Removing a union removes anything in either set, so both exclusions must hold together."
+    },
+    {
+      "id": "dynanca-478-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting with De Morgan's law",
+      "learningObjective": "Use De Morgan's law to find the size of a union from the size of an intersection of complements.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A universal set has \\(30\\) elements, and \\(\\left|A^{c}\\cap B^{c}\\right|=8\\). What is \\(|A\\cup B|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(22\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By De Morgan's law, \\(A^{c}\\cap B^{c}=(A\\cup B)^{c}\\). So \\(8\\) elements lie outside \\(A\\cup B\\), and \\(|A\\cup B|=30-8=22\\). The number \\(8\\) is the size of the complement of the union, not of the union itself.",
+      "hint": "Recognise \\(A^{c}\\cap B^{c}\\) as the complement of a single set."
+    }
+  ]
+}

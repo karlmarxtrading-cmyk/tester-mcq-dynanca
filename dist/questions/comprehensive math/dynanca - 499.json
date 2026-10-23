@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-499",
+  "category": "Comprehensive Mathematics",
+  "title": "499. Sets, Logic, Reasoning & Proof: Existential Quantifier",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-499-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Meaning of the existential quantifier",
+      "learningObjective": "State the meaning of an existentially quantified statement.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What does the statement \\(\\exists x\\in D,\\ P(x)\\) assert?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P(x)\\) is true for at least one element \\(x\\) of \\(D\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(P(x)\\) is true for every element \\(x\\) of \\(D\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The symbol \\(\\exists\\) is read \"there exists\". The statement claims that the domain \\(D\\) contains at least one element with property \\(P\\). It does not claim that every element has the property; that would be a universal statement.",
+      "hint": "The symbol \\(\\exists\\) abbreviates \"there exists\"."
+    },
+    {
+      "id": "dynanca-499-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An existential statement on a small domain",
+      "learningObjective": "Evaluate an existential statement on a finite domain.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the truth value of \\(\\exists x\\in\\{1,2,3\\},\\ x>2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The element \\(x=3\\) satisfies \\(3>2\\). One such element is enough, so the existential statement is true, even though \\(1\\) and \\(2\\) do not satisfy the inequality.",
+      "hint": "Look for one element of the domain that satisfies the property."
+    },
+    {
+      "id": "dynanca-499-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An existential statement with no witness",
+      "learningObjective": "Evaluate an existential statement that no element of a finite domain satisfies.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the truth value of \\(\\exists x\\in\\{1,2,3\\},\\ x^2=5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The squares of the elements are \\(1\\), \\(4\\), and \\(9\\). None of them equals \\(5\\), so no element of the domain satisfies the equation, and the existential statement is false.",
+      "hint": "Compute the square of each element of the domain."
+    },
+    {
+      "id": "dynanca-499-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Proving an existential statement",
+      "learningObjective": "State what is needed to prove an existential statement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is enough to prove a statement of the form \\(\\exists x\\in D,\\ P(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One specific element of \\(D\\) for which \\(P(x)\\) is true"
+        },
+        {
+          "label": "B",
+          "text": "A check that \\(P(x)\\) is true for every element of \\(D\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement claims only that some element has the property. Exhibiting one element of \\(D\\) that satisfies \\(P\\), called a witness, proves it. Checking every element is unnecessary and, for infinite domains, impossible.",
+      "hint": "The statement asks for existence, not for all elements."
+    },
+    {
+      "id": "dynanca-499-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An equation with no integer solution",
+      "learningObjective": "Evaluate an existential statement over the integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the truth value of \\(\\exists x\\in\\mathbb{Z},\\ 2x=7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The only real solution of \\(2x=7\\) is \\(x=3.5\\), which is not an integer. For every integer \\(x\\), the number \\(2x\\) is even, while \\(7\\) is odd. So no integer satisfies the equation, and the statement is false.",
+      "hint": "Compare the parity of \\(2x\\) with the parity of \\(7\\)."
+    },
+    {
+      "id": "dynanca-499-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An equation with an irrational solution",
+      "learningObjective": "Evaluate an existential statement over the real numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the truth value of \\(\\exists x\\in\\mathbb{R},\\ x^2=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The real number \\(x=\\sqrt{2}\\) satisfies \\(x^2=2\\) (so does \\(-\\sqrt{2}\\)). Since a witness exists in \\(\\mathbb{R}\\), the statement is true. The witness is irrational, but the domain is all real numbers, so that does not matter.",
+      "hint": "Check whether the solution of the equation belongs to the stated domain."
+    },
+    {
+      "id": "dynanca-499-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Existential statement as a disjunction",
+      "learningObjective": "Rewrite an existential statement on a finite domain without a quantifier.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which proposition is equivalent to \\(\\exists x\\in\\{1,2,3\\},\\ P(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P(1)\\land P(2)\\land P(3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(P(1)\\lor P(2)\\lor P(3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\"There exists \\(x\\) in \\(\\{1,2,3\\}\\)\" means that the property holds for \\(1\\), or for \\(2\\), or for \\(3\\). So the existential statement is the disjunction of the three instances. The conjunction would require the property for all three.",
+      "hint": "\"There exists\" over a finite domain means at least one instance holds."
+    },
+    {
+      "id": "dynanca-499-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An equation with no real solution",
+      "learningObjective": "Evaluate an existential statement that fails over the real numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is the truth value of \\(\\exists x\\in\\mathbb{R},\\ x^2+1=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "True"
+        },
+        {
+          "label": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For every real \\(x\\), \\(x^2\\ge 0\\), so \\(x^2+1\\ge 1>0\\). The expression is never \\(0\\), so no real number is a witness, and the statement is false.",
+      "hint": "Find the smallest possible value of \\(x^2+1\\) for real \\(x\\)."
+    },
+    {
+      "id": "dynanca-499-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Translating a \"some\" statement",
+      "learningObjective": "Translate a sentence of the form \"some A is B\" into symbols.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Over the positive integers, let \\(E(x)\\) mean \"\\(x\\) is even\" and \\(P(x)\\) mean \"\\(x\\) is prime\". Which formula expresses \"Some even number is prime\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\exists x\\,\\left(E(x)\\implies P(x)\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\exists x\\,\\left(E(x)\\land P(x)\\right)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sentence says that some number has both properties: it is even and it is prime, which is \\(\\exists x\\,(E(x)\\land P(x))\\); the witness is \\(x=2\\). The formula with a conditional is satisfied by any odd number, because a conditional with a false hypothesis is true, so it does not express the intended claim.",
+      "hint": "\"Some \\(A\\) is \\(B\\)\" requires one object that is both \\(A\\) and \\(B\\)."
+    },
+    {
+      "id": "dynanca-499-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Unique existence",
+      "learningObjective": "Decide which statement of unique existence is true.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The notation \\(\\exists!\\,x\\) means \"there exists exactly one \\(x\\)\". Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\exists!\\,x\\in\\mathbb{R},\\ 2x+3=7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\exists!\\,x\\in\\mathbb{R},\\ x^2=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation \\(2x+3=7\\) has the single solution \\(x=2\\), so exactly one real number satisfies it. The equation \\(x^2=4\\) has two real solutions, \\(x=2\\) and \\(x=-2\\), so a solution exists but is not unique.",
+      "hint": "Count the real solutions of each equation."
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "name": "verify-protected",
+    "command": "npm run verify:protected",
+    "started": "2026-10-08T11:30:00.265140+00:00",
+    "status": "COMPLETED",
+    "log": "verify-protected.log",
+    "exitCode": 0,
+    "durationSeconds": 0.28,
+    "finished": "2026-10-08T11:30:00.547575+00:00"
+  },
+  {
+    "name": "verify-mathjax",
+    "command": "npm run verify:mathjax",
+    "started": "2026-10-08T11:30:00.547865+00:00",
+    "status": "COMPLETED",
+    "log": "verify-mathjax.log",
+    "exitCode": 0,
+    "durationSeconds": 0.26,
+    "finished": "2026-10-08T11:30:00.811118+00:00"
+  },
+  {
+    "name": "verify-csp",
+    "command": "npm run verify:csp",
+    "started": "2026-10-08T11:30:00.811585+00:00",
+    "status": "COMPLETED",
+    "log": "verify-csp.log",
+    "exitCode": 0,
+    "durationSeconds": 0.2,
+    "finished": "2026-10-08T11:30:01.009441+00:00"
+  },
+  {
+    "name": "verify-index",
+    "command": "npm run verify:index",
+    "started": "2026-10-08T11:30:01.009795+00:00",
+    "status": "COMPLETED",
+    "log": "verify-index.log",
+    "exitCode": 0,
+    "durationSeconds": 0.32,
+    "finished": "2026-10-08T11:30:01.334920+00:00"
+  },
+  {
+    "name": "validate-shipped",
+    "command": "npm run validate:shipped",
+    "started": "2026-10-08T11:30:01.335261+00:00",
+    "status": "COMPLETED",
+    "log": "validate-shipped.log",
+    "exitCode": 0,
+    "durationSeconds": 0.61,
+    "finished": "2026-10-08T11:30:01.940943+00:00"
+  },
+  {
+    "name": "test",
+    "command": "npm test",
+    "started": "2026-10-08T11:37:45.536961+00:00",
+    "status": "COMPLETED",
+    "log": "test.log",
+    "exitCode": 0,
+    "durationSeconds": 6.33,
+    "finished": "2026-10-08T11:37:51.867707+00:00",
+    "reason": "Final precision check: use unrounded contrast ratios, per WCAG SC 1.4.3. No production data or application bytes changed."
+  },
+  {
+    "name": "build",
+    "command": "npm run build",
+    "started": "2026-10-08T11:30:08.470344+00:00",
+    "status": "COMPLETED",
+    "log": "build.log",
+    "exitCode": 0,
+    "durationSeconds": 1.71,
+    "finished": "2026-10-08T11:30:10.183771+00:00"
+  },
+  {
+    "name": "browser",
+    "command": "npm run test:browser -- --reporter=list,json",
+    "started": "2026-10-08T11:37:51.868079+00:00",
+    "status": "COMPLETED",
+    "log": "browser.log",
+    "exitCode": 0,
+    "durationSeconds": 28.88,
+    "finished": "2026-10-08T11:38:20.750090+00:00",
+    "reason": "Final precision check: use unrounded contrast ratios, per WCAG SC 1.4.3. No production data or application bytes changed."
+  },
+  {
+    "name": "validate",
+    "command": "npm run validate",
+    "started": "2026-10-08T11:30:40.024186+00:00",
+    "status": "COMPLETED",
+    "log": "validate.log",
+    "exitCode": 1,
+    "durationSeconds": 0.53,
+    "finished": "2026-10-08T11:30:40.550569+00:00"
+  },
+  {
+    "name": "audit-content",
+    "command": "python3 tools/qa/audit-content.py",
+    "started": "2026-10-08T11:30:40.550883+00:00",
+    "status": "COMPLETED",
+    "log": "audit-content.log",
+    "exitCode": 0,
+    "durationSeconds": 3.36,
+    "finished": "2026-10-08T11:30:43.912394+00:00"
+  },
+  {
+    "name": "audit-mathjax-content",
+    "command": "node tools/qa/audit-mathjax.js",
+    "started": "2026-10-08T11:30:43.912829+00:00",
+    "status": "COMPLETED",
+    "log": "audit-mathjax-content.log",
+    "exitCode": 0,
+    "durationSeconds": 30.27,
+    "finished": "2026-10-08T11:31:14.180181+00:00"
+  },
+  {
+    "name": "npm-audit",
+    "command": "npm audit --json",
+    "started": "2026-10-08T11:31:14.180555+00:00",
+    "status": "COMPLETED",
+    "log": "npm-audit.log",
+    "exitCode": 0,
+    "durationSeconds": 11.74,
+    "finished": "2026-10-08T11:31:25.923169+00:00"
+  },
+  {
+    "name": "browser-evidence",
+    "command": "npm run qa:evidence -- --out audit/browser-evidence",
+    "started": "2026-10-08T11:31:25.923782+00:00",
+    "status": "COMPLETED",
+    "log": "browser-evidence.log",
+    "exitCode": 0,
+    "durationSeconds": 45.76,
+    "finished": "2026-10-08T11:32:11.686687+00:00"
+  }
+]

@@ -1,0 +1,4411 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "algebra-06",
+  "category": "Mathematics for Computing",
+  "title": "Matrices, Determinants & Linear Systems",
+  "description": "Explore essential mathematical concepts through carefully crafted questions. Strengthen your understanding, practice your reasoning, and learn at your own pace.",
+  "questionCount": 200,
+  "questions": [
+    {
+      "id": "algebra-06-q001",
+      "category": "Algebra",
+      "concept": "Matrix Dimensions",
+      "learningObjective": "Determine the dimensions of a matrix from its rows and columns.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What are the dimensions of the matrix \\(\\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3 \\times 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2 \\times 3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The matrix has 2 rows and 3 columns. Therefore, its dimensions are \\(2 \\times 3\\).",
+      "hint": "Count the rows first, then count the columns."
+    },
+    {
+      "id": "algebra-06-q002",
+      "category": "Algebra",
+      "concept": "Matrix Entries",
+      "learningObjective": "Count the total number of entries in a matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many entries are in a \\(2 \\times 3\\) matrix?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A \\(2 \\times 3\\) matrix has \\(2 \\times 3 = 6\\) entries.",
+      "hint": "Multiply the number of rows by the number of columns."
+    },
+    {
+      "id": "algebra-06-q003",
+      "category": "Algebra",
+      "concept": "Matrix Entries",
+      "learningObjective": "Identify a specified element in a matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For \\(A=\\begin{pmatrix} 2 & 5 \\\\ 7 & 1 \\end{pmatrix}\\), what is \\(a_{21}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The notation \\(a_{21}\\) means the entry in row 2, column 1. In the matrix, row 2 column 1 is \\(7\\).",
+      "hint": "The first subscript gives the row and the second gives the column."
+    },
+    {
+      "id": "algebra-06-q004",
+      "category": "Algebra",
+      "concept": "Equality of Matrices",
+      "learningObjective": "Use equality of matrices to find an unknown entry.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(\\begin{pmatrix} x & 2 \\\\ 3 & 4 \\end{pmatrix}=\\begin{pmatrix} 5 & 2 \\\\ 3 & y \\end{pmatrix}\\), what is \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Equal matrices have equal corresponding entries. Thus \\(x=5\\).",
+      "hint": "Compare entries in the same position."
+    },
+    {
+      "id": "algebra-06-q005",
+      "category": "Algebra",
+      "concept": "Matrix Addition",
+      "learningObjective": "Add two matrices of the same dimensions.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the entry in row 1, column 1 of \\(\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}+\\begin{pmatrix} 5 & 6 \\\\ 7 & 8 \\end{pmatrix}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Add corresponding entries: \\(1+5=6\\). Therefore, the top-left entry is \\(6\\).",
+      "hint": "Add only entries in the same position."
+    },
+    {
+      "id": "algebra-06-q006",
+      "category": "Algebra",
+      "concept": "Scalar Multiplication",
+      "learningObjective": "Multiply a matrix by a scalar.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(A=\\begin{pmatrix} 2 & -1 \\\\ 0 & 4 \\end{pmatrix}\\), what is the entry in row 1, column 2 of \\(3A\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "-3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiply each entry by 3. The entry in row 1, column 2 is \\(3(-1)=-3\\).",
+      "hint": "Apply the scalar to every entry."
+    },
+    {
+      "id": "algebra-06-q007",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication Dimensions",
+      "learningObjective": "Determine the dimensions of a product of two matrices.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is \\(2 \\times 3\\) and \\(B\\) is \\(3 \\times 4\\), what are the dimensions of \\(AB\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3 \\times 4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2 \\times 4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(AB\\), the inner dimensions match: \\(3=3\\). The result has the outer dimensions, so \\(AB\\) is \\(2 \\times 4\\).",
+      "hint": "The result uses the number of rows of the first matrix and columns of the second."
+    },
+    {
+      "id": "algebra-06-q008",
+      "category": "Algebra",
+      "concept": "Identity Matrix",
+      "learningObjective": "Recognize the identity property of matrix multiplication.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(I\\) is the identity matrix of compatible size, then \\(IA\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A^T\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The identity matrix leaves a matrix unchanged under multiplication: \\(IA=A\\).",
+      "hint": "Think of the number 1 in ordinary multiplication."
+    },
+    {
+      "id": "algebra-06-q009",
+      "category": "Algebra",
+      "concept": "Matrix Transpose",
+      "learningObjective": "Determine the dimensions of a transpose.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is a \\(2 \\times 3\\) matrix, what are the dimensions of \\(A^T\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2 \\times 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3 \\times 2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Transposing swaps rows and columns. A \\(2 \\times 3\\) matrix becomes \\(3 \\times 2\\).",
+      "hint": "Rows become columns and columns become rows."
+    },
+    {
+      "id": "algebra-06-q010",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Calculate the determinant of a \\(2 \\times 2\\) matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 2 & 3 \\\\ 1 & 4 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "11"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}\\), the determinant is \\(ad-bc\\). Thus \\(2(4)-3(1)=8-3=5\\).",
+      "hint": "Use \\(ad-bc\\)."
+    },
+    {
+      "id": "algebra-06-q011",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Determine when a \\(2 \\times 2\\) determinant is zero.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 1 & 2 \\\\ 2 & 4 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The determinant is \\(1(4)-2(2)=4-4=0\\).",
+      "hint": "Compute the products and subtract."
+    },
+    {
+      "id": "algebra-06-q012",
+      "category": "Algebra",
+      "concept": "Matrix Inverse",
+      "learningObjective": "Find the inverse of a diagonal \\(2 \\times 2\\) matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the inverse of \\(\\begin{pmatrix} 2 & 0 \\\\ 0 & 3 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 2 & 0 \\\\ 0 & 3 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} \\frac12 & 0 \\\\ 0 & \\frac13 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For a diagonal matrix, invert each nonzero diagonal entry. The inverse is \\(\\begin{pmatrix} \\frac12 & 0 \\\\ 0 & \\frac13 \\end{pmatrix}\\).",
+      "hint": "Reciprocate each diagonal entry."
+    },
+    {
+      "id": "algebra-06-q013",
+      "category": "Algebra",
+      "concept": "Matrix Equations",
+      "learningObjective": "Solve a simple matrix equation by subtraction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(X+\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}=\\begin{pmatrix} 5 & 6 \\\\ 7 & 8 \\end{pmatrix}\\), what is \\(X\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 4 & 4 \\\\ 4 & 4 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 6 & 8 \\\\ 10 & 12 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Subtract corresponding entries: \\(X=\\begin{pmatrix} 5-1 & 6-2 \\\\ 7-3 & 8-4 \\end{pmatrix}=\\begin{pmatrix} 4 & 4 \\\\ 4 & 4 \\end{pmatrix}\\).",
+      "hint": "Subtract the known matrix from both sides."
+    },
+    {
+      "id": "algebra-06-q014",
+      "category": "Algebra",
+      "concept": "Elementary Row Operations",
+      "learningObjective": "Perform a row replacement operation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "After applying \\(R_1 \\to R_1+R_2\\) to \\(\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\), what is the new first row?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 4 & 6 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 2 & 6 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Add row 2 to row 1: \\((1,2)+(3,4)=(4,6)\\).",
+      "hint": "Add corresponding entries of the two rows."
+    },
+    {
+      "id": "algebra-06-q015",
+      "category": "Algebra",
+      "concept": "Zero Matrix",
+      "learningObjective": "Recognize the additive identity property of the zero matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(O\\) is the zero matrix of compatible size, then \\(A+O\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(O\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Adding the zero matrix does not change a matrix: \\(A+O=A\\).",
+      "hint": "Think of adding 0 to a number."
+    },
+    {
+      "id": "algebra-06-q016",
+      "category": "Algebra",
+      "concept": "Properties of Matrix Multiplication",
+      "learningObjective": "Recognize that matrix multiplication is not generally commutative.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For general square matrices \\(A\\) and \\(B\\), which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(AB=BA\\) always"
+        },
+        {
+          "label": "B",
+          "text": "\\(AB=BA\\) is not always true"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Matrix multiplication is not commutative in general. There are matrices for which \\(AB \\neq BA\\).",
+      "hint": "Recall that order matters in matrix multiplication."
+    },
+    {
+      "id": "algebra-06-q017",
+      "category": "Algebra",
+      "concept": "Distributive Property",
+      "learningObjective": "Apply the distributive property of scalar multiplication over matrix addition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For a scalar \\(k\\) and matrices \\(A,B\\), \\(k(A+B)\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A+B\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(kA+kB\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Scalar multiplication distributes over matrix addition: \\(k(A+B)=kA+kB\\).",
+      "hint": "Multiply each matrix by the scalar separately."
+    },
+    {
+      "id": "algebra-06-q018",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Calculate a determinant involving a negative entry.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 3 & 0 \\\\ 0 & -2 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "-6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The determinant is \\(3(-2)-0(0)=-6\\).",
+      "hint": "Use \\(ad-bc\\)."
+    },
+    {
+      "id": "algebra-06-q019",
+      "category": "Algebra",
+      "concept": "Matrix Invertibility",
+      "learningObjective": "State the determinant condition for invertibility.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A \\(2 \\times 2\\) matrix is invertible exactly when its determinant is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "not equal to 0"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A square matrix is invertible if and only if its determinant is nonzero.",
+      "hint": "A zero determinant means the matrix is singular."
+    },
+    {
+      "id": "algebra-06-q020",
+      "category": "Algebra",
+      "concept": "Solving Systems Using Matrices",
+      "learningObjective": "Solve a simple linear system.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system \\(x+y=3\\), \\(x-y=1\\). What is \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Adding the equations gives \\(2x=4\\), so \\(x=2\\).",
+      "hint": "Eliminate \\(y\\) by adding the equations."
+    },
+    {
+      "id": "algebra-06-q021",
+      "category": "Algebra",
+      "concept": "Matrix Representation of Linear Systems",
+      "learningObjective": "Identify the coefficient matrix of a linear system.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the coefficient matrix of \\(2x+y=5\\), \\(x+3y=6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 2 & 1 \\\\ 3 & 1 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 2 & 1 \\\\ 1 & 3 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The coefficients of \\(x,y\\) in order are \\(2,1\\) and \\(1,3\\), giving \\(\\begin{pmatrix} 2 & 1 \\\\ 1 & 3 \\end{pmatrix}\\).",
+      "hint": "List coefficients by rows, one equation per row."
+    },
+    {
+      "id": "algebra-06-q022",
+      "category": "Algebra",
+      "concept": "Augmented Matrices",
+      "learningObjective": "Form the augmented matrix of a linear system.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the augmented matrix of \\(x+2y=3\\), \\(4x+5y=6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 1 & 2 \\\\ 4 & 5 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The augmented matrix includes coefficients and constants: \\(\\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{pmatrix}\\).",
+      "hint": "Include the constant column after the coefficient columns."
+    },
+    {
+      "id": "algebra-06-q023",
+      "category": "Algebra",
+      "concept": "Gaussian Elimination",
+      "learningObjective": "Perform one elimination step on an augmented matrix.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Given \\(\\begin{pmatrix} 1 & 2 & 3 \\\\ 2 & 5 & 8 \\end{pmatrix}\\), what is the new second row after \\(R_2 \\to R_2-2R_1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 0 & 1 & 2 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 0 & 3 & 5 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Subtract \\(2R_1=(2,4,6)\\) from \\(R_2=(2,5,8)\\): \\((0,1,2)\\).",
+      "hint": "Multiply row 1 by 2 before subtracting."
+    },
+    {
+      "id": "algebra-06-q024",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication",
+      "learningObjective": "Multiply a row matrix by a column matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\(\\begin{pmatrix} 2 & 3 \\end{pmatrix}\\begin{pmatrix} 4 \\\\ 5 \\end{pmatrix}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "23"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiply corresponding entries and add: \\(2(4)+3(5)=8+15=23\\).",
+      "hint": "Use the dot product of the row and column."
+    },
+    {
+      "id": "algebra-06-q025",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication Dimensions",
+      "learningObjective": "Determine the dimensions of a product.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is \\(2 \\times 2\\) and \\(B\\) is \\(2 \\times 1\\), what are the dimensions of \\(AB\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2 \\times 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1 \\times 2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The inner dimensions match. The product has dimensions \\(2 \\times 1\\).",
+      "hint": "Use rows of the first matrix and columns of the second."
+    },
+    {
+      "id": "algebra-06-q026",
+      "category": "Algebra",
+      "concept": "Trace of a Matrix",
+      "learningObjective": "Calculate the trace of a \\(2 \\times 2\\) matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the trace of \\(\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The trace is the sum of the main diagonal entries: \\(1+4=5\\).",
+      "hint": "Add the diagonal entries from top-left to bottom-right."
+    },
+    {
+      "id": "algebra-06-q027",
+      "category": "Algebra",
+      "concept": "Symmetric Matrices",
+      "learningObjective": "State the condition for a matrix to be symmetric.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A square matrix \\(A\\) is symmetric if:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A=A^T\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A=-A^T\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A symmetric matrix equals its transpose: \\(A=A^T\\).",
+      "hint": "Compare the matrix with its transpose."
+    },
+    {
+      "id": "algebra-06-q028",
+      "category": "Algebra",
+      "concept": "Skew-Symmetric Matrices",
+      "learningObjective": "Identify a property of skew-symmetric matrices.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a skew-symmetric matrix, every main diagonal entry is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For skew-symmetric \\(A\\), \\(A^T=-A\\). Diagonal entries satisfy \\(a_{ii}=-a_{ii}\\), so \\(a_{ii}=0\\).",
+      "hint": "Consider the condition \\(a_{ii}=-a_{ii}\\)."
+    },
+    {
+      "id": "algebra-06-q029",
+      "category": "Algebra",
+      "concept": "Determinant of a 3 × 3 Matrix",
+      "learningObjective": "Compute the determinant of a diagonal \\(3 \\times 3\\) matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 3 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a diagonal matrix, the determinant is the product of the diagonal entries: \\(1\\cdot2\\cdot3=6\\).",
+      "hint": "Multiply the main diagonal entries."
+    },
+    {
+      "id": "algebra-06-q030",
+      "category": "Algebra",
+      "concept": "Minors",
+      "learningObjective": "Find a minor of a \\(2 \\times 2\\) matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(A=\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\), what is the minor \\(M_{11}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The minor \\(M_{11}\\) is the determinant after deleting row 1 and column 1. The remaining entry is \\(4\\).",
+      "hint": "Delete the row and column of the specified entry."
+    },
+    {
+      "id": "algebra-06-q031",
+      "category": "Algebra",
+      "concept": "Cofactors",
+      "learningObjective": "Calculate a cofactor of a \\(2 \\times 2\\) matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(A=\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\), what is the cofactor \\(C_{11}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "-4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(C_{11}=(-1)^{1+1}M_{11}=(+1)(4)=4\\).",
+      "hint": "Use the sign \\((-1)^{i+j}\\) with the minor."
+    },
+    {
+      "id": "algebra-06-q032",
+      "category": "Algebra",
+      "concept": "Matrix Inverse",
+      "learningObjective": "Find an entry of the inverse of a \\(2 \\times 2\\) matrix.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(A=\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\), what is the entry in row 1, column 1 of \\(A^{-1}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "-2"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(\\det A=1(4)-2(3)=-2\\). Then \\(A^{-1}=\\frac{1}{-2}\\begin{pmatrix} 4 & -2 \\\\ -3 & 1 \\end{pmatrix}\\). The \\((1,1)\\) entry is \\(4/(-2)=-2\\).",
+      "hint": "Use the inverse formula and divide by the determinant."
+    },
+    {
+      "id": "algebra-06-q033",
+      "category": "Algebra",
+      "concept": "Matrix Invertibility",
+      "learningObjective": "Determine invertibility from a zero determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(\\det A=0\\), then \\(A\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "invertible"
+        },
+        {
+          "label": "B",
+          "text": "not invertible"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A square matrix with determinant zero is singular, so it has no inverse.",
+      "hint": "Recall the nonzero determinant condition for invertibility."
+    },
+    {
+      "id": "algebra-06-q034",
+      "category": "Algebra",
+      "concept": "Matrix Transpose",
+      "learningObjective": "Apply the transpose rule for a product.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For compatible matrices \\(A\\) and \\(B\\), \\((AB)^T\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A^T B^T\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(B^T A^T\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The transpose of a product reverses the order: \\((AB)^T=B^T A^T\\).",
+      "hint": "Reverse the multiplication order when transposing a product."
+    },
+    {
+      "id": "algebra-06-q035",
+      "category": "Algebra",
+      "concept": "Matrix Transpose",
+      "learningObjective": "Apply the double transpose property.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For any matrix \\(A\\), \\((A^T)^T\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A^T\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Transposing twice returns the original matrix: \\((A^T)^T=A\\).",
+      "hint": "Rows and columns swap twice."
+    },
+    {
+      "id": "algebra-06-q036",
+      "category": "Algebra",
+      "concept": "Scalar Multiplication",
+      "learningObjective": "Recognize multiplication by zero scalar.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For any matrix \\(A\\), \\(0A\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "the zero matrix"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiplying every entry of \\(A\\) by 0 gives the zero matrix.",
+      "hint": "Apply the scalar 0 to every entry."
+    },
+    {
+      "id": "algebra-06-q037",
+      "category": "Algebra",
+      "concept": "Identity Matrix",
+      "learningObjective": "Identify the structure of an identity matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "An identity matrix has:",
+      "options": [
+        {
+          "label": "A",
+          "text": "all entries equal to 1"
+        },
+        {
+          "label": "B",
+          "text": "1s on the main diagonal and 0s elsewhere"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The identity matrix \\(I_n\\) has 1s on the main diagonal and 0s in all other positions.",
+      "hint": "Think of the matrix version of the number 1."
+    },
+    {
+      "id": "algebra-06-q038",
+      "category": "Algebra",
+      "concept": "Matrix Addition",
+      "learningObjective": "Recognize commutativity of matrix addition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For matrices \\(A\\) and \\(B\\) of the same dimensions, \\(A+B=B+A\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "always true"
+        },
+        {
+          "label": "B",
+          "text": "always false"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Matrix addition is commutative because corresponding entries are added.",
+      "hint": "Addition of numbers is commutative."
+    },
+    {
+      "id": "algebra-06-q039",
+      "category": "Algebra",
+      "concept": "Associativity of Matrix Multiplication",
+      "learningObjective": "Recognize the associative property of matrix multiplication.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For compatible matrices \\(A,B,C\\), \\((AB)C=A(BC)\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "always false"
+        },
+        {
+          "label": "B",
+          "text": "true when the products are defined"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Matrix multiplication is associative whenever the products are defined.",
+      "hint": "Grouping does not affect the final product for compatible matrices."
+    },
+    {
+      "id": "algebra-06-q040",
+      "category": "Algebra",
+      "concept": "Determinant Properties",
+      "learningObjective": "Apply the determinant product rule.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "For square matrices \\(A\\) and \\(B\\), \\(\\det(AB)\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\det A \\cdot \\det B\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\det A+\\det B\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The determinant of a product is the product of the determinants: \\(\\det(AB)=\\det A\\det B\\).",
+      "hint": "Use the multiplicative property of determinants."
+    },
+    {
+      "id": "algebra-06-q041",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication Compatibility",
+      "learningObjective": "Determine whether a matrix product is defined.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is \\(2 \\times 2\\) and \\(B\\) is \\(2 \\times 3\\), which product is defined?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(BA\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(AB\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(AB\\) is defined because the inner dimensions \\(2\\) and \\(2\\) match. \\(BA\\) is not defined.",
+      "hint": "Check whether the number of columns of the first matrix equals the number of rows of the second."
+    },
+    {
+      "id": "algebra-06-q042",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication Compatibility",
+      "learningObjective": "Determine whether a matrix product is defined.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is \\(2 \\times 2\\) and \\(B\\) is \\(2 \\times 3\\), then:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(BA\\) is defined"
+        },
+        {
+          "label": "B",
+          "text": "\\(AB\\) is defined"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(AB\\), the inner dimensions are \\(2\\) and \\(2\\), so \\(AB\\) is defined.",
+      "hint": "Compare inner dimensions."
+    },
+    {
+      "id": "algebra-06-q043",
+      "category": "Algebra",
+      "concept": "Matrix Equations",
+      "learningObjective": "Solve a matrix equation using an inverse.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(A\\) is invertible and \\(AX=B\\), then \\(X\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(BA^{-1}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A^{-1}B\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiply both sides on the left by \\(A^{-1}\\): \\(X=A^{-1}B\\).",
+      "hint": "Undo the multiplication by \\(A\\) on the left."
+    },
+    {
+      "id": "algebra-06-q044",
+      "category": "Algebra",
+      "concept": "Matrix Equations",
+      "learningObjective": "Solve a simple diagonal matrix equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\begin{pmatrix} 2 & 0 \\\\ 0 & 2 \\end{pmatrix}\\begin{pmatrix} x \\\\ y \\end{pmatrix}=\\begin{pmatrix} 4 \\\\ 6 \\end{pmatrix}\\). What is \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first equation is \\(2x=4\\), so \\(x=2\\).",
+      "hint": "Divide the first component by 2."
+    },
+    {
+      "id": "algebra-06-q045",
+      "category": "Algebra",
+      "concept": "Row Echelon Form",
+      "learningObjective": "Recognize a matrix in row echelon form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Is \\(\\begin{pmatrix} 1 & 2 \\\\ 0 & 1 \\end{pmatrix}\\) in row echelon form?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The leading entry of row 1 is left of the leading entry of row 2, and zeros appear below leading entries.",
+      "hint": "Check the staircase pattern of leading entries."
+    },
+    {
+      "id": "algebra-06-q046",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Calculate a determinant with zeros.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "-1"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The determinant is \\(0(0)-1(1)=-1\\).",
+      "hint": "Use \\(ad-bc\\)."
+    },
+    {
+      "id": "algebra-06-q047",
+      "category": "Algebra",
+      "concept": "Singular Matrices",
+      "learningObjective": "Identify a singular matrix from its determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The matrix \\(\\begin{pmatrix} 1 & 2 \\\\ 2 & 4 \\end{pmatrix}\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "invertible"
+        },
+        {
+          "label": "B",
+          "text": "singular"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Its determinant is \\(1(4)-2(2)=0\\), so it is singular.",
+      "hint": "Compute the determinant first."
+    },
+    {
+      "id": "algebra-06-q048",
+      "category": "Algebra",
+      "concept": "Systems of Equations Using Matrices",
+      "learningObjective": "Identify a dependent system.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The system \\(x+2y=4\\), \\(3x+6y=12\\) has:",
+      "options": [
+        {
+          "label": "A",
+          "text": "infinitely many solutions"
+        },
+        {
+          "label": "B",
+          "text": "a unique solution"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The second equation is 3 times the first, so the equations are dependent. The system has infinitely many solutions.",
+      "hint": "Compare whether one equation is a multiple of the other."
+    },
+    {
+      "id": "algebra-06-q049",
+      "category": "Algebra",
+      "concept": "Inconsistent Systems",
+      "learningObjective": "Recognize an inconsistent linear system.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The system \\(x+y=1\\), \\(x+y=2\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "consistent"
+        },
+        {
+          "label": "B",
+          "text": "inconsistent"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The same left side cannot equal both 1 and 2, so the system has no solution and is inconsistent.",
+      "hint": "Compare the two equations."
+    },
+    {
+      "id": "algebra-06-q050",
+      "category": "Algebra",
+      "concept": "Elementary Row Operations",
+      "learningObjective": "State the valid scalar for a row scaling operation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "When scaling a row, the scalar used must be:",
+      "options": [
+        {
+          "label": "A",
+          "text": "zero"
+        },
+        {
+          "label": "B",
+          "text": "nonzero"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiplying a row by zero would destroy information, so elementary row scaling uses a nonzero scalar.",
+      "hint": "Elementary operations must be reversible."
+    },
+    {
+      "id": "algebra-06-q051",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication",
+      "learningObjective": "Describe how to compute an entry of a matrix product.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The entry in row \\(i\\), column \\(j\\) of \\(AB\\) is found by:",
+      "options": [
+        {
+          "label": "A",
+          "text": "taking the dot product of row \\(i\\) of \\(A\\) and column \\(j\\) of \\(B\\)"
+        },
+        {
+          "label": "B",
+          "text": "adding row \\(i\\) of \\(A\\) and column \\(j\\) of \\(B\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Matrix product entries are computed as dot products of rows of the first matrix and columns of the second.",
+      "hint": "Think row-by-column multiplication."
+    },
+    {
+      "id": "algebra-06-q052",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication Dimensions",
+      "learningObjective": "Determine the dimensions of a product.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is \\(3 \\times 2\\) and \\(B\\) is \\(2 \\times 5\\), what are the dimensions of \\(AB\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3 \\times 5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5 \\times 3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The inner dimensions match. The product has dimensions \\(3 \\times 5\\).",
+      "hint": "Use outer dimensions after checking compatibility."
+    },
+    {
+      "id": "algebra-06-q053",
+      "category": "Algebra",
+      "concept": "Identity Matrix",
+      "learningObjective": "Identify the size of an identity matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many rows does \\(I_3\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(I_3\\) is the \\(3 \\times 3\\) identity matrix, so it has 3 rows.",
+      "hint": "The subscript gives the number of rows and columns."
+    },
+    {
+      "id": "algebra-06-q054",
+      "category": "Algebra",
+      "concept": "Matrix Transpose",
+      "learningObjective": "Determine the transpose of a row matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The transpose of \\(\\begin{pmatrix} 1 & 2 & 3 \\end{pmatrix}\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "a column matrix"
+        },
+        {
+          "label": "B",
+          "text": "a row matrix"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Transposing a \\(1 \\times 3\\) row matrix gives a \\(3 \\times 1\\) column matrix.",
+      "hint": "Rows become columns."
+    },
+    {
+      "id": "algebra-06-q055",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Compute the determinant of the identity matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The determinant is \\(1(1)-0(0)=1\\).",
+      "hint": "Use \\(ad-bc\\)."
+    },
+    {
+      "id": "algebra-06-q056",
+      "category": "Algebra",
+      "concept": "Matrix Inverse",
+      "learningObjective": "Identify the inverse of an identity matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The inverse of \\(I\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "the zero matrix"
+        },
+        {
+          "label": "B",
+          "text": "\\(I\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The identity matrix is its own inverse because \\(I \\cdot I=I\\).",
+      "hint": "What matrix multiplied by \\(I\\) gives \\(I\\)?"
+    },
+    {
+      "id": "algebra-06-q057",
+      "category": "Algebra",
+      "concept": "Matrix Dimensions",
+      "learningObjective": "Identify the number of columns from matrix dimensions.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is an \\(m \\times n\\) matrix, then the number of columns is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(m\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In \\(m \\times n\\), \\(m\\) is the number of rows and \\(n\\) is the number of columns.",
+      "hint": "The second number gives columns."
+    },
+    {
+      "id": "algebra-06-q058",
+      "category": "Algebra",
+      "concept": "Matrix Entries",
+      "learningObjective": "Identify an entry using subscript notation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For \\(A=\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\), what is \\(a_{12}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(a_{12}\\) is row 1, column 2, which is 2.",
+      "hint": "First subscript is row, second is column."
+    },
+    {
+      "id": "algebra-06-q059",
+      "category": "Algebra",
+      "concept": "Scalar Multiplication",
+      "learningObjective": "Recognize the effect of multiplying by -1.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Multiplying a matrix by \\(-1\\):",
+      "options": [
+        {
+          "label": "A",
+          "text": "changes the sign of every entry"
+        },
+        {
+          "label": "B",
+          "text": "leaves every entry unchanged"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiplying by \\(-1\\) negates each entry.",
+      "hint": "Apply \\(-1\\) to every entry."
+    },
+    {
+      "id": "algebra-06-q060",
+      "category": "Algebra",
+      "concept": "Matrix Subtraction",
+      "learningObjective": "Relate subtraction to addition of the negative.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "\\(A-B\\) is equal to:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A+B\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A+(-B)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtracting a matrix is the same as adding its additive inverse: \\(A-B=A+(-B)\\).",
+      "hint": "Think of ordinary subtraction."
+    },
+    {
+      "id": "algebra-06-q061",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication",
+      "learningObjective": "Expand \\((A+B)^2\\) for matrices.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For square matrices \\(A\\) and \\(B\\), \\((A+B)^2\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A^2+2AB+B^2\\) always"
+        },
+        {
+          "label": "B",
+          "text": "\\(A^2+AB+BA+B^2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\((A+B)^2=(A+B)(A+B)=A^2+AB+BA+B^2\\). Since \\(AB\\) and \\(BA\\) may differ, both terms remain.",
+      "hint": "Expand carefully without assuming commutativity."
+    },
+    {
+      "id": "algebra-06-q062",
+      "category": "Algebra",
+      "concept": "Zero Product Property",
+      "learningObjective": "Recognize that \\(AB=0\\) does not imply \\(A=0\\) or \\(B=0\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "If \\(AB=0\\) for square matrices, then:",
+      "options": [
+        {
+          "label": "A",
+          "text": "it is not necessary that \\(A=0\\) or \\(B=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "always \\(A=0\\) or \\(B=0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Matrix multiplication lacks the zero product property. Nonzero matrices can multiply to the zero matrix.",
+      "hint": "Consider singular matrices."
+    },
+    {
+      "id": "algebra-06-q063",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Compute the determinant of an upper triangular matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 2 & 3 \\\\ 0 & 4 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The determinant is \\(2(4)-3(0)=8\\).",
+      "hint": "Use \\(ad-bc\\)."
+    },
+    {
+      "id": "algebra-06-q064",
+      "category": "Algebra",
+      "concept": "Cofactor Expansion",
+      "learningObjective": "Recognize the sign pattern in cofactor expansion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Along the first row of a \\(3 \\times 3\\) determinant, the signs are:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(+,-,+\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-,+,-\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The cofactor signs follow \\((-1)^{i+j}\\), giving \\(+,-,+\\) along the first row.",
+      "hint": "Use the checkerboard sign pattern."
+    },
+    {
+      "id": "algebra-06-q065",
+      "category": "Algebra",
+      "concept": "Matrix Inverse",
+      "learningObjective": "Recall the formula for the inverse of a \\(2 \\times 2\\) matrix.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "For \\(A=\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}\\), \\(A^{-1}\\) uses which matrix?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} a & -b \\\\ -c & d \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inverse is \\(\\frac{1}{ad-bc}\\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}\\).",
+      "hint": "Swap the main diagonal and negate the other entries."
+    },
+    {
+      "id": "algebra-06-q066",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Calculate a determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 2 & 1 \\\\ 3 & 4 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The determinant is \\(2(4)-1(3)=8-3=5\\).",
+      "hint": "Use \\(ad-bc\\)."
+    },
+    {
+      "id": "algebra-06-q067",
+      "category": "Algebra",
+      "concept": "Matrix Equations",
+      "learningObjective": "Solve a scalar matrix equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(2X=\\begin{pmatrix} 2 & 4 \\\\ 6 & 8 \\end{pmatrix}\\), what is \\(X\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 4 & 8 \\\\ 12 & 16 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide every entry by 2: \\(X=\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\).",
+      "hint": "Multiply both sides by \\(\\frac12\\)."
+    },
+    {
+      "id": "algebra-06-q068",
+      "category": "Algebra",
+      "concept": "Matrix Inverse",
+      "learningObjective": "Recognize the inverse relationship.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is invertible, then \\(AA^{-1}\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(I\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By definition of the inverse, \\(AA^{-1}=I\\).",
+      "hint": "What matrix acts like 1?"
+    },
+    {
+      "id": "algebra-06-q069",
+      "category": "Algebra",
+      "concept": "Solving Systems Using Matrices",
+      "learningObjective": "Solve a simple linear system.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(2x+y=8\\), \\(x-y=1\\). What is \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Adding the two equations eliminates \\(y\\): \\(3x=9\\), so \\(x=3\\).",
+      "hint": "Add the equations to eliminate y."
+    },
+    {
+      "id": "algebra-06-q070",
+      "category": "Algebra",
+      "concept": "Row Reduction",
+      "learningObjective": "Recognize that row operations preserve the solution set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Elementary row operations on an augmented matrix:",
+      "options": [
+        {
+          "label": "A",
+          "text": "preserve the solution set"
+        },
+        {
+          "label": "B",
+          "text": "change the solution set"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Elementary row operations produce equivalent systems, so the solution set is unchanged.",
+      "hint": "Row reduction is a valid method for solving systems."
+    },
+    {
+      "id": "algebra-06-q071",
+      "category": "Algebra",
+      "concept": "Augmented Matrices",
+      "learningObjective": "Identify the columns of an augmented matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "An augmented matrix contains:",
+      "options": [
+        {
+          "label": "A",
+          "text": "only coefficient columns"
+        },
+        {
+          "label": "B",
+          "text": "coefficient columns and a constant column"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The augmented matrix appends the constants from the right-hand side to the coefficient matrix.",
+      "hint": "Look for the vertical separator in the system."
+    },
+    {
+      "id": "algebra-06-q072",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Recall the \\(2 \\times 2\\) determinant formula.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For \\(\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}\\), the determinant is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(ad-bc\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(ab-cd\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The determinant of a \\(2 \\times 2\\) matrix is \\(ad-bc\\).",
+      "hint": "Multiply main diagonal and subtract the other diagonal."
+    },
+    {
+      "id": "algebra-06-q073",
+      "category": "Algebra",
+      "concept": "Properties of Matrix Multiplication",
+      "learningObjective": "Identify non-commutativity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Matrix multiplication is generally:",
+      "options": [
+        {
+          "label": "A",
+          "text": "commutative"
+        },
+        {
+          "label": "B",
+          "text": "not commutative"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For many matrices, \\(AB \\neq BA\\).",
+      "hint": "Order matters in matrix multiplication."
+    },
+    {
+      "id": "algebra-06-q074",
+      "category": "Algebra",
+      "concept": "Matrix Transpose",
+      "learningObjective": "Apply transpose with scalar multiplication.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For scalar \\(k\\), \\((kA)^T\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(kA^T\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k^T A^T\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Scalars pass through the transpose: \\((kA)^T=kA^T\\).",
+      "hint": "The scalar is unaffected by transposition."
+    },
+    {
+      "id": "algebra-06-q075",
+      "category": "Algebra",
+      "concept": "Matrix Transpose",
+      "learningObjective": "Apply transpose to a difference.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "\\((A-B)^T\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A^T+B^T\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A^T-B^T\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Transpose distributes over subtraction: \\((A-B)^T=A^T-B^T\\).",
+      "hint": "Transpose each term and keep the subtraction."
+    },
+    {
+      "id": "algebra-06-q076",
+      "category": "Algebra",
+      "concept": "Zero Matrix",
+      "learningObjective": "Recognize possible dimensions of a zero matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A zero matrix can have:",
+      "options": [
+        {
+          "label": "A",
+          "text": "only square dimensions"
+        },
+        {
+          "label": "B",
+          "text": "any dimensions \\(m \\times n\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A zero matrix is any matrix whose entries are all zero, regardless of dimensions.",
+      "hint": "Zero matrix is defined by its entries, not its shape."
+    },
+    {
+      "id": "algebra-06-q077",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Compute a determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 1 & 2 \\\\ 0 & 1 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The determinant is \\(1(1)-2(0)=1\\).",
+      "hint": "Use \\(ad-bc\\)."
+    },
+    {
+      "id": "algebra-06-q078",
+      "category": "Algebra",
+      "concept": "Matrix Inverse",
+      "learningObjective": "Find the inverse of a \\(1 \\times 1\\) matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The inverse of \\(\\begin{pmatrix} 5 \\end{pmatrix}\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} \\frac15 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 5 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a \\(1 \\times 1\\) matrix \\([a]\\) with \\(a \\neq 0\\), the inverse is \\([1/a]\\). Thus the inverse is \\(\\begin{pmatrix} \\frac15 \\end{pmatrix}\\).",
+      "hint": "Use the reciprocal."
+    },
+    {
+      "id": "algebra-06-q079",
+      "category": "Algebra",
+      "concept": "Matrix Inverse",
+      "learningObjective": "Apply the inverse of an inverse property.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is invertible, \\((A^{-1})^{-1}\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A^{-1}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Taking the inverse twice returns the original matrix: \\((A^{-1})^{-1}=A\\).",
+      "hint": "Undo the inverse operation."
+    },
+    {
+      "id": "algebra-06-q080",
+      "category": "Algebra",
+      "concept": "Determinant Properties",
+      "learningObjective": "Relate determinant of a transpose to the original.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "For any square matrix \\(A\\), \\(\\det(A^T)\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\det A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\det A\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Transposing a matrix does not change its determinant: \\(\\det(A^T)=\\det A\\).",
+      "hint": "Transpose only swaps rows and columns."
+    },
+    {
+      "id": "algebra-06-q081",
+      "category": "Algebra",
+      "concept": "Determinant Properties",
+      "learningObjective": "Apply the determinant product rule.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(\\det A=2\\) and \\(\\det B=3\\), what is \\(\\det(AB)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(\\det(AB)=\\det A\\det B=2\\cdot3=6\\).",
+      "hint": "Multiply the determinants."
+    },
+    {
+      "id": "algebra-06-q082",
+      "category": "Algebra",
+      "concept": "Singular Matrices",
+      "learningObjective": "Relate zero determinant to rank.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "If \\(A\\) is a \\(2 \\times 2\\) matrix and \\(\\det A=0\\), then its rank is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "less than 2"
+        },
+        {
+          "label": "B",
+          "text": "exactly 2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A \\(2 \\times 2\\) matrix with determinant zero is singular, so its rank cannot be 2.",
+      "hint": "Full rank requires a nonzero determinant."
+    },
+    {
+      "id": "algebra-06-q083",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication Dimensions",
+      "learningObjective": "Determine the dimensions of a product.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "An \\(m \\times n\\) matrix multiplied by an \\(n \\times p\\) matrix gives dimensions:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n \\times m\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(m \\times p\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inner dimensions \\(n\\) and \\(n\\) match, and the result is \\(m \\times p\\).",
+      "hint": "Use outer dimensions after compatibility."
+    },
+    {
+      "id": "algebra-06-q084",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication",
+      "learningObjective": "Compute an entry of a matrix product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(A=\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\) and \\(B=\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}\\), what is the entry in row 2, column 1 of \\(AB\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(AB=\\begin{pmatrix} 2 & 1 \\\\ 4 & 3 \\end{pmatrix}\\). The entry in row 2, column 1 is 4.",
+      "hint": "Multiply row 2 of \\(A\\) by column 1 of \\(B\\)."
+    },
+    {
+      "id": "algebra-06-q085",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication",
+      "learningObjective": "Compute an entry of a matrix product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(A=\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\) and \\(B=\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}\\), what is the entry in row 2, column 1 of \\(BA\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(BA=\\begin{pmatrix} 3 & 4 \\\\ 1 & 2 \\end{pmatrix}\\). The entry in row 2, column 1 is 1.",
+      "hint": "Multiply row 2 of \\(B\\) by column 1 of \\(A\\)."
+    },
+    {
+      "id": "algebra-06-q086",
+      "category": "Algebra",
+      "concept": "Matrix Equations",
+      "learningObjective": "Solve a matrix equation by addition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(X-\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}=\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}\\), what is \\(X\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 1 & 1 \\\\ 1 & 1 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} -1 & 1 \\\\ 1 & -1 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Add the identity matrix to both sides: \\(X=\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}+\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}=\\begin{pmatrix} 1 & 1 \\\\ 1 & 1 \\end{pmatrix}\\).",
+      "hint": "Move the subtracted matrix to the other side."
+    },
+    {
+      "id": "algebra-06-q087",
+      "category": "Algebra",
+      "concept": "Symmetric Matrices",
+      "learningObjective": "Recognize a property of symmetric matrices.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is symmetric, then:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A^T=A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A^T=-A\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By definition, a symmetric matrix satisfies \\(A^T=A\\).",
+      "hint": "Compare the matrix with its transpose."
+    },
+    {
+      "id": "algebra-06-q088",
+      "category": "Algebra",
+      "concept": "Symmetric Matrices",
+      "learningObjective": "Identify an example of a symmetric matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which matrix is symmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 1 & 2 \\\\ 2 & 3 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The matrix \\(\\begin{pmatrix} 1 & 2 \\\\ 2 & 3 \\end{pmatrix}\\) equals its transpose, so it is symmetric.",
+      "hint": "Check whether the off-diagonal entries match."
+    },
+    {
+      "id": "algebra-06-q089",
+      "category": "Algebra",
+      "concept": "Matrix Inverse",
+      "learningObjective": "Find the inverse of a diagonal matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the inverse of \\(\\begin{pmatrix} 3 & 0 \\\\ 0 & 2 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 3 & 0 \\\\ 0 & 2 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} \\frac13 & 0 \\\\ 0 & \\frac12 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Invert each diagonal entry. The inverse is \\(\\begin{pmatrix} \\frac13 & 0 \\\\ 0 & \\frac12 \\end{pmatrix}\\).",
+      "hint": "Take reciprocals of the diagonal entries."
+    },
+    {
+      "id": "algebra-06-q090",
+      "category": "Algebra",
+      "concept": "Solving Systems Using Matrices",
+      "learningObjective": "Solve a system represented by the identity matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}\\begin{pmatrix} x \\\\ y \\end{pmatrix}=\\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix}\\), what is \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The identity matrix leaves the vector unchanged, so \\(x=2\\).",
+      "hint": "Multiplying by \\(I\\) does not change the vector."
+    },
+    {
+      "id": "algebra-06-q091",
+      "category": "Algebra",
+      "concept": "Matrix Representation of Linear Systems",
+      "learningObjective": "Identify the coefficient matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the coefficient matrix of \\(x+y=2\\), \\(2x+3y=5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 1 & 1 \\\\ 1 & 3 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 1 & 1 \\\\ 2 & 3 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The coefficients are \\(1,1\\) and \\(2,3\\), giving \\(\\begin{pmatrix} 1 & 1 \\\\ 2 & 3 \\end{pmatrix}\\).",
+      "hint": "List coefficients row by row."
+    },
+    {
+      "id": "algebra-06-q092",
+      "category": "Algebra",
+      "concept": "Augmented Matrices",
+      "learningObjective": "Form an augmented matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the augmented matrix of \\(2x+y=1\\), \\(x-y=3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 2 & 1 & 1 \\\\ 1 & -1 & 3 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 2 & 1 \\\\ 1 & -1 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Include coefficients and constants: \\(\\begin{pmatrix} 2 & 1 & 1 \\\\ 1 & -1 & 3 \\end{pmatrix}\\).",
+      "hint": "The last column contains the constants."
+    },
+    {
+      "id": "algebra-06-q093",
+      "category": "Algebra",
+      "concept": "Gaussian Elimination",
+      "learningObjective": "Perform an elimination step.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Given \\(\\begin{pmatrix} 1 & 1 & 2 \\\\ 2 & 2 & 5 \\end{pmatrix}\\), what is the new second row after \\(R_2 \\to R_2-2R_1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 0 & 0 & 5 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 0 & 0 & 1 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtract \\(2R_1=(2,2,4)\\) from \\(R_2=(2,2,5)\\): \\((0,0,1)\\).",
+      "hint": "Subtract corresponding entries carefully."
+    },
+    {
+      "id": "algebra-06-q094",
+      "category": "Algebra",
+      "concept": "Solving Systems Using Matrices",
+      "learningObjective": "Solve a simple system after elimination.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If row reduction gives \\(x=1\\), what is \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The reduced row directly states \\(x=1\\).",
+      "hint": "Read the value from the row."
+    },
+    {
+      "id": "algebra-06-q095",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication Compatibility",
+      "learningObjective": "Determine whether \\(2 \\times 2\\) matrices can be multiplied.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Can two \\(2 \\times 2\\) matrices always be multiplied?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The inner dimensions \\(2\\) and \\(2\\) match, so the product is always defined.",
+      "hint": "Check inner dimensions."
+    },
+    {
+      "id": "algebra-06-q096",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication Dimensions",
+      "learningObjective": "Determine the dimensions of an outer product.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is \\(3 \\times 1\\) and \\(B\\) is \\(1 \\times 3\\), what are the dimensions of \\(AB\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3 \\times 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1 \\times 1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The product has dimensions \\(3 \\times 3\\) because the outer dimensions are 3 and 3.",
+      "hint": "Use outer dimensions after checking compatibility."
+    },
+    {
+      "id": "algebra-06-q097",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication Dimensions",
+      "learningObjective": "Determine the dimensions of an inner product.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is \\(1 \\times 3\\) and \\(B\\) is \\(3 \\times 1\\), what are the dimensions of \\(AB\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1 \\times 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3 \\times 3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The product is \\(1 \\times 1\\).",
+      "hint": "Outer dimensions are 1 and 1."
+    },
+    {
+      "id": "algebra-06-q098",
+      "category": "Algebra",
+      "concept": "Matrix Addition",
+      "learningObjective": "State the condition for matrix addition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Two matrices can be added only if they have:",
+      "options": [
+        {
+          "label": "A",
+          "text": "the same dimensions"
+        },
+        {
+          "label": "B",
+          "text": "the same determinant"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Matrix addition is defined only for matrices of the same dimensions.",
+      "hint": "Corresponding entries must exist."
+    },
+    {
+      "id": "algebra-06-q099",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Compute a determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 4 & 2 \\\\ 3 & 1 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "-2"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The determinant is \\(4(1)-2(3)=4-6=-2\\).",
+      "hint": "Use \\(ad-bc\\)."
+    },
+    {
+      "id": "algebra-06-q100",
+      "category": "Algebra",
+      "concept": "Matrix Inverse",
+      "learningObjective": "Find the inverse of a \\(2 \\times 2\\) triangular matrix.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the inverse of \\(\\begin{pmatrix} 1 & 2 \\\\ 0 & 1 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 1 & 2 \\\\ 0 & 1 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 1 & -2 \\\\ 0 & 1 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(\\begin{pmatrix} 1 & 2 \\\\ 0 & 1 \\end{pmatrix}\\), \\(\\det=1\\), so the inverse is \\(\\begin{pmatrix} 1 & -2 \\\\ 0 & 1 \\end{pmatrix}\\).",
+      "hint": "Use the \\(2 \\times 2\\) inverse formula."
+    },
+    {
+      "id": "algebra-06-q101",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Compute a determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "-2"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The determinant is \\(1(4)-2(3)=4-6=-2\\).",
+      "hint": "Use \\(ad-bc\\)."
+    },
+    {
+      "id": "algebra-06-q102",
+      "category": "Algebra",
+      "concept": "Matrix Equations",
+      "learningObjective": "Solve a matrix equation using the identity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(A+X=I\\), what is \\(X\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(I-A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A-I\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Subtract \\(A\\) from both sides: \\(X=I-A\\).",
+      "hint": "Isolate \\(X\\) by subtracting \\(A\\)."
+    },
+    {
+      "id": "algebra-06-q103",
+      "category": "Algebra",
+      "concept": "Matrix Transpose",
+      "learningObjective": "Determine the dimensions of a transpose.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is \\(2 \\times 3\\), what are the dimensions of \\(A^T\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2 \\times 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3 \\times 2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Transposing swaps dimensions, so \\(A^T\\) is \\(3 \\times 2\\).",
+      "hint": "Rows become columns."
+    },
+    {
+      "id": "algebra-06-q104",
+      "category": "Algebra",
+      "concept": "Matrix Transpose",
+      "learningObjective": "Apply transpose to a sum.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which statement about transpose is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((A+B)^T=A^T-B^T\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((A+B)^T=A^T+B^T\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Transpose distributes over addition: \\((A+B)^T=A^T+B^T\\).",
+      "hint": "Transpose each matrix and keep the addition."
+    },
+    {
+      "id": "algebra-06-q105",
+      "category": "Algebra",
+      "concept": "Scalar Multiplication",
+      "learningObjective": "Apply distributivity of scalar multiplication over scalar addition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For scalars \\(k,l\\) and matrix \\(A\\), \\((k+l)A\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(kA+lA\\) only if \\(A\\) is square"
+        },
+        {
+          "label": "B",
+          "text": "\\(kA+lA\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Scalar multiplication distributes: \\((k+l)A=kA+lA\\).",
+      "hint": "Distribute the scalar sum over the matrix."
+    },
+    {
+      "id": "algebra-06-q106",
+      "category": "Algebra",
+      "concept": "Scalar Multiplication",
+      "learningObjective": "Recognize multiplication by the scalar 1.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For any matrix \\(A\\), \\(1A\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "the zero matrix"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiplying by the scalar \\(1\\) leaves every entry unchanged, so \\(1A=A\\).",
+      "hint": "Multiplying by 1 does not change a number, and the same holds for a matrix."
+    },
+    {
+      "id": "algebra-06-q107",
+      "category": "Algebra",
+      "concept": "Distributive Property",
+      "learningObjective": "Apply distributivity of matrix multiplication over addition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For compatible matrices, \\(A(B+C)\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(AB+AC\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(AB+CA\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Matrix multiplication distributes over addition on the right: \\(A(B+C)=AB+AC\\).",
+      "hint": "Distribute \\(A\\) to both \\(B\\) and \\(C\\)."
+    },
+    {
+      "id": "algebra-06-q108",
+      "category": "Algebra",
+      "concept": "Matrix Powers",
+      "learningObjective": "Recognize the zero power of a square matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For a square matrix \\(A\\), \\(A^0\\) is defined as:",
+      "options": [
+        {
+          "label": "A",
+          "text": "the zero matrix"
+        },
+        {
+          "label": "B",
+          "text": "\\(I\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By convention, \\(A^0=I\\) for square matrices.",
+      "hint": "Think of \\(x^0=1\\)."
+    },
+    {
+      "id": "algebra-06-q109",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Compute a determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 2 & 3 \\\\ 4 & 5 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "-2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The determinant is \\(2(5)-3(4)=10-12=-2\\).",
+      "hint": "Use \\(ad-bc\\)."
+    },
+    {
+      "id": "algebra-06-q110",
+      "category": "Algebra",
+      "concept": "Cofactors",
+      "learningObjective": "Compute a cofactor of a \\(2 \\times 2\\) matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(A=\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\), what is \\(C_{12}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "-3"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(C_{12}=(-1)^{1+2}M_{12}=(-1)(3)=-3\\).",
+      "hint": "Use the sign \\((-1)^{i+j}\\)."
+    },
+    {
+      "id": "algebra-06-q111",
+      "category": "Algebra",
+      "concept": "Minors",
+      "learningObjective": "Compute a minor of a \\(2 \\times 2\\) matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(A=\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\), what is \\(M_{12}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Delete row 1 and column 2. The remaining entry is 3.",
+      "hint": "Remove the row and column of the specified entry."
+    },
+    {
+      "id": "algebra-06-q112",
+      "category": "Algebra",
+      "concept": "Matrix Inverse",
+      "learningObjective": "Find the inverse of a \\(2 \\times 2\\) matrix.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the inverse of \\(\\begin{pmatrix} 2 & 1 \\\\ 1 & 1 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 1 & 1 \\\\ 1 & 2 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 1 & -1 \\\\ -1 & 2 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The determinant is \\(2(1)-1(1)=1\\). The inverse is \\(\\begin{pmatrix} 1 & -1 \\\\ -1 & 2 \\end{pmatrix}\\).",
+      "hint": "Use the \\(2 \\times 2\\) inverse formula."
+    },
+    {
+      "id": "algebra-06-q113",
+      "category": "Algebra",
+      "concept": "Matrix Invertibility",
+      "learningObjective": "Determine invertibility from a determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(\\det A=-1\\), then \\(A\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "not invertible"
+        },
+        {
+          "label": "B",
+          "text": "invertible"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A nonzero determinant means the matrix is invertible.",
+      "hint": "Check whether the determinant is zero."
+    },
+    {
+      "id": "algebra-06-q114",
+      "category": "Algebra",
+      "concept": "Matrix Equations",
+      "learningObjective": "Solve a triangular matrix system.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix}\\begin{pmatrix} x \\\\ y \\end{pmatrix}=\\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix}\\). What is \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "-1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From the second row, \\(y=3\\). Then \\(x+y=2\\) gives \\(x+3=2\\), so \\(x=-1\\).",
+      "hint": "Solve the second equation first."
+    },
+    {
+      "id": "algebra-06-q115",
+      "category": "Algebra",
+      "concept": "Matrix Equations",
+      "learningObjective": "Analyze solution uniqueness of \\(AX=B\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "If \\(AX=B\\) and \\(A\\) is not invertible, then the system:",
+      "options": [
+        {
+          "label": "A",
+          "text": "always has a unique solution"
+        },
+        {
+          "label": "B",
+          "text": "may have no solution or infinitely many solutions"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A non-invertible coefficient matrix can lead to no solution or infinitely many solutions, but not a unique solution.",
+      "hint": "Consider dependent or inconsistent systems."
+    },
+    {
+      "id": "algebra-06-q116",
+      "category": "Algebra",
+      "concept": "Row Echelon Form",
+      "learningObjective": "Identify the zero pattern in row echelon form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In row echelon form, entries below each leading entry are:",
+      "options": [
+        {
+          "label": "A",
+          "text": "nonzero"
+        },
+        {
+          "label": "B",
+          "text": "zero"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Row echelon form has zeros below each leading entry.",
+      "hint": "Think of the staircase pattern."
+    },
+    {
+      "id": "algebra-06-q117",
+      "category": "Algebra",
+      "concept": "Reduced Row Echelon Form",
+      "learningObjective": "Identify a property of reduced row echelon form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In reduced row echelon form, each leading 1 has zeros:",
+      "options": [
+        {
+          "label": "A",
+          "text": "above and below it"
+        },
+        {
+          "label": "B",
+          "text": "only below it"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reduced row echelon form has zeros above and below each leading 1.",
+      "hint": "It is a stronger form than row echelon form."
+    },
+    {
+      "id": "algebra-06-q118",
+      "category": "Algebra",
+      "concept": "Determinant of a 3 × 3 Matrix",
+      "learningObjective": "Compute the determinant of a triangular matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 1 & 2 & 3 \\\\ 0 & 1 & 4 \\\\ 0 & 0 & 1 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a triangular matrix, the determinant is the product of the diagonal entries: \\(1\\cdot1\\cdot1=1\\).",
+      "hint": "Multiply the main diagonal entries."
+    },
+    {
+      "id": "algebra-06-q119",
+      "category": "Algebra",
+      "concept": "Determinant Properties",
+      "learningObjective": "Recognize the determinant of a matrix with a zero row.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If a square matrix has a row of zeros, its determinant is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "nonzero"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A matrix with a zero row has determinant zero.",
+      "hint": "Use cofactor expansion along the zero row."
+    },
+    {
+      "id": "algebra-06-q120",
+      "category": "Algebra",
+      "concept": "Determinant Properties",
+      "learningObjective": "Recognize the determinant of a matrix with identical rows.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If two rows of a square matrix are identical, its determinant is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "nonzero"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Identical rows make the rows linearly dependent, so the determinant is zero.",
+      "hint": "One row does not add new information."
+    },
+    {
+      "id": "algebra-06-q121",
+      "category": "Algebra",
+      "concept": "Determinant of a 3 × 3 Matrix",
+      "learningObjective": "Compute the determinant of a diagonal matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 2 & 0 & 0 \\\\ 0 & 3 & 0 \\\\ 0 & 0 & 4 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The determinant is the product of the diagonal entries: \\(2\\cdot3\\cdot4=24\\).",
+      "hint": "Multiply the main diagonal."
+    },
+    {
+      "id": "algebra-06-q122",
+      "category": "Algebra",
+      "concept": "Cofactors",
+      "learningObjective": "Determine the sign of a cofactor.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The sign of cofactor \\(C_{21}\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(+\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sign is \\((-1)^{2+1}=-1\\), so \\(C_{21}\\) has a negative sign.",
+      "hint": "Use \\((-1)^{i+j}\\)."
+    },
+    {
+      "id": "algebra-06-q123",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication",
+      "learningObjective": "Distinguish dot product from element-wise multiplication.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In matrix multiplication, entries are combined using:",
+      "options": [
+        {
+          "label": "A",
+          "text": "dot products"
+        },
+        {
+          "label": "B",
+          "text": "element-wise multiplication only"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Matrix multiplication uses row-by-column dot products, not element-wise multiplication.",
+      "hint": "Multiply and then add corresponding products."
+    },
+    {
+      "id": "algebra-06-q124",
+      "category": "Algebra",
+      "concept": "Matrix Powers",
+      "learningObjective": "Interpret \\(A^2\\) for a matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For a square matrix \\(A\\), \\(A^2\\) means:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(AA\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2A\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(A^2\\) denotes the product \\(A \\cdot A\\), not scalar multiplication by 2.",
+      "hint": "Think of repeated multiplication."
+    },
+    {
+      "id": "algebra-06-q125",
+      "category": "Algebra",
+      "concept": "Inverse Matrices",
+      "learningObjective": "Recognize the two-sided inverse property for square matrices.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For square matrices, if \\(AB=I\\), then:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(BA=I\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(BA=0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For square matrices, a right inverse is also a left inverse, so \\(BA=I\\).",
+      "hint": "Square matrices have a two-sided inverse when one side works."
+    },
+    {
+      "id": "algebra-06-q126",
+      "category": "Algebra",
+      "concept": "Matrix Addition",
+      "learningObjective": "Determine whether matrices can be added.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is \\(2 \\times 3\\), can \\(I_2\\) be added to \\(A\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(I_2\\) is \\(2 \\times 2\\), while \\(A\\) is \\(2 \\times 3\\). They do not have the same dimensions.",
+      "hint": "Check dimensions before adding."
+    },
+    {
+      "id": "algebra-06-q127",
+      "category": "Algebra",
+      "concept": "Zero Matrix",
+      "learningObjective": "Recognize the additive identity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The additive identity for matrices is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(I\\)"
+        },
+        {
+          "label": "B",
+          "text": "the zero matrix"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Adding the zero matrix leaves a matrix unchanged.",
+      "hint": "Think of adding 0."
+    },
+    {
+      "id": "algebra-06-q128",
+      "category": "Algebra",
+      "concept": "Determinant Properties",
+      "learningObjective": "Recognize the effect of swapping two rows on the determinant.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If two rows of a square matrix are swapped, the determinant:",
+      "options": [
+        {
+          "label": "A",
+          "text": "changes sign"
+        },
+        {
+          "label": "B",
+          "text": "stays the same"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Swapping two rows of a matrix multiplies its determinant by -1, changing its sign.",
+      "hint": "Compare this to the case of identical rows, which gives a zero determinant."
+    },
+    {
+      "id": "algebra-06-q129",
+      "category": "Algebra",
+      "concept": "Matrix Transpose",
+      "learningObjective": "Determine the transpose of a column matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The transpose of \\(\\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "a row matrix"
+        },
+        {
+          "label": "B",
+          "text": "a column matrix"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Transposing a \\(3 \\times 1\\) column matrix gives a \\(1 \\times 3\\) row matrix.",
+      "hint": "Columns become rows."
+    },
+    {
+      "id": "algebra-06-q130",
+      "category": "Algebra",
+      "concept": "Matrix Transpose",
+      "learningObjective": "Apply transpose to a product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "\\((AB)^T\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(B^T A^T\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A^T B^T\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The transpose of a product reverses the order: \\((AB)^T=B^T A^T\\).",
+      "hint": "Reverse the order when transposing a product."
+    },
+    {
+      "id": "algebra-06-q131",
+      "category": "Algebra",
+      "concept": "Matrix Invertibility",
+      "learningObjective": "Relate zero determinant to no inverse.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A matrix with determinant 0 has:",
+      "options": [
+        {
+          "label": "A",
+          "text": "no inverse"
+        },
+        {
+          "label": "B",
+          "text": "an inverse"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A zero determinant means the matrix is singular and has no inverse.",
+      "hint": "Recall the invertibility condition."
+    },
+    {
+      "id": "algebra-06-q132",
+      "category": "Algebra",
+      "concept": "Determinant Properties",
+      "learningObjective": "Relate determinant of transpose to original.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For a square matrix \\(A\\), \\(\\det(A^T)\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\det A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\det A\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Transposing does not change the determinant.",
+      "hint": "Rows and columns swap without changing the value."
+    },
+    {
+      "id": "algebra-06-q133",
+      "category": "Algebra",
+      "concept": "Matrix Equations",
+      "learningObjective": "Solve \\(XA=B\\) using an inverse.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(A\\) is invertible and \\(XA=B\\), then \\(X\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(BA^{-1}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A^{-1}B\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiply both sides on the right by \\(A^{-1}\\): \\(X=BA^{-1}\\).",
+      "hint": "Undo multiplication by \\(A\\) on the right."
+    },
+    {
+      "id": "algebra-06-q134",
+      "category": "Algebra",
+      "concept": "Matrix Equations",
+      "learningObjective": "Solve a diagonal matrix equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\begin{pmatrix} 2 & 0 \\\\ 0 & 3 \\end{pmatrix}\\begin{pmatrix} x \\\\ y \\end{pmatrix}=\\begin{pmatrix} 4 \\\\ 9 \\end{pmatrix}\\). What is \\(y\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The second equation is \\(3y=9\\), so \\(y=3\\).",
+      "hint": "Solve the second component."
+    },
+    {
+      "id": "algebra-06-q135",
+      "category": "Algebra",
+      "concept": "Solving Systems Using Matrices",
+      "learningObjective": "Solve a simple system.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x+y=1\\), \\(x-y=3\\). What is \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Adding gives \\(2x=4\\), so \\(x=2\\).",
+      "hint": "Eliminate \\(y\\) by adding the equations."
+    },
+    {
+      "id": "algebra-06-q136",
+      "category": "Algebra",
+      "concept": "Augmented Matrices",
+      "learningObjective": "Form an augmented matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the augmented matrix of \\(x+2y=4\\), \\(3x-y=5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 1 & 2 \\\\ 3 & -1 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 1 & 2 & 4 \\\\ 3 & -1 & 5 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Include coefficients and constants: \\(\\begin{pmatrix} 1 & 2 & 4 \\\\ 3 & -1 & 5 \\end{pmatrix}\\).",
+      "hint": "Add a constant column."
+    },
+    {
+      "id": "algebra-06-q137",
+      "category": "Algebra",
+      "concept": "Elementary Row Operations",
+      "learningObjective": "Identify a row swap operation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "\\(R_1 \\leftrightarrow R_2\\) means:",
+      "options": [
+        {
+          "label": "A",
+          "text": "swap row 1 and row 2"
+        },
+        {
+          "label": "B",
+          "text": "add row 1 to row 2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The notation \\(R_1 \\leftrightarrow R_2\\) indicates swapping the two rows.",
+      "hint": "The double arrow means interchange."
+    },
+    {
+      "id": "algebra-06-q138",
+      "category": "Algebra",
+      "concept": "Elementary Row Operations",
+      "learningObjective": "Recognize a row addition operation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "\\(R_1 \\to R_1+kR_2\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "not an elementary row operation"
+        },
+        {
+          "label": "B",
+          "text": "an elementary row operation"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Adding a multiple of one row to another is a valid elementary row operation.",
+      "hint": "It is one of the three standard row operations."
+    },
+    {
+      "id": "algebra-06-q139",
+      "category": "Algebra",
+      "concept": "Gaussian Elimination",
+      "learningObjective": "Identify the form produced by Gaussian elimination.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Gaussian elimination aims to produce:",
+      "options": [
+        {
+          "label": "A",
+          "text": "reduced row echelon form always"
+        },
+        {
+          "label": "B",
+          "text": "row echelon form"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Gaussian elimination produces row echelon form; continuing to reduced row echelon form is Gauss-Jordan elimination.",
+      "hint": "Distinguish forward elimination from the extra backward steps used in Gauss-Jordan elimination."
+    },
+    {
+      "id": "algebra-06-q140",
+      "category": "Algebra",
+      "concept": "Matrix Representation of Linear Systems",
+      "learningObjective": "Identify the components of a matrix system.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A matrix representation of a linear system uses:",
+      "options": [
+        {
+          "label": "A",
+          "text": "only constants"
+        },
+        {
+          "label": "B",
+          "text": "coefficients and constants"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The coefficient matrix and constant vector represent the system.",
+      "hint": "Both coefficients and right-hand constants are needed."
+    },
+    {
+      "id": "algebra-06-q141",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication Dimensions",
+      "learningObjective": "Determine the dimensions of a product.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is \\(1 \\times 2\\) and \\(B\\) is \\(2 \\times 1\\), what are the dimensions of \\(AB\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1 \\times 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2 \\times 2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The product is \\(1 \\times 1\\).",
+      "hint": "Use outer dimensions."
+    },
+    {
+      "id": "algebra-06-q142",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication Dimensions",
+      "learningObjective": "Determine the dimensions of a product.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) and \\(B\\) are both \\(2 \\times 2\\), what are the dimensions of \\(AB\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2 \\times 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4 \\times 4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiplying two \\(2 \\times 2\\) matrices gives a \\(2 \\times 2\\) matrix.",
+      "hint": "The result keeps the outer dimensions."
+    },
+    {
+      "id": "algebra-06-q143",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication Compatibility",
+      "learningObjective": "Identify the compatibility condition for matrix multiplication.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For \\(AB\\) to be defined, the inner dimensions must:",
+      "options": [
+        {
+          "label": "A",
+          "text": "be different"
+        },
+        {
+          "label": "B",
+          "text": "match"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number of columns of \\(A\\) must equal the number of rows of \\(B\\), so the inner dimensions must match.",
+      "hint": "Check the inner dimensions."
+    },
+    {
+      "id": "algebra-06-q144",
+      "category": "Algebra",
+      "concept": "Matrix Dimensions",
+      "learningObjective": "Identify the number of rows from dimensions.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many rows does a \\(4 \\times 5\\) matrix have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In \\(4 \\times 5\\), the first number is the number of rows, so there are 4 rows.",
+      "hint": "The first number gives rows."
+    },
+    {
+      "id": "algebra-06-q145",
+      "category": "Algebra",
+      "concept": "Matrix Dimensions",
+      "learningObjective": "Identify the number of columns from dimensions.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many columns does a \\(4 \\times 5\\) matrix have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In \\(4 \\times 5\\), the second number is the number of columns, so there are 5 columns.",
+      "hint": "The second number gives columns."
+    },
+    {
+      "id": "algebra-06-q146",
+      "category": "Algebra",
+      "concept": "Matrix Entries",
+      "learningObjective": "Identify an entry from subscript notation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For \\(A=\\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{pmatrix}\\), what is \\(a_{23}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(a_{23}\\) is row 2, column 3, which is 6.",
+      "hint": "First subscript is row, second is column."
+    },
+    {
+      "id": "algebra-06-q147",
+      "category": "Algebra",
+      "concept": "Equality of Matrices",
+      "learningObjective": "State the conditions for matrix equality.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Two matrices are equal if:",
+      "options": [
+        {
+          "label": "A",
+          "text": "only their dimensions are equal"
+        },
+        {
+          "label": "B",
+          "text": "their dimensions and corresponding entries are equal"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Matrix equality requires both the same dimensions and equal corresponding entries.",
+      "hint": "Every position must match."
+    },
+    {
+      "id": "algebra-06-q148",
+      "category": "Algebra",
+      "concept": "Scalar Multiplication",
+      "learningObjective": "Multiply a matrix by a scalar.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(2\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 2 & 4 \\\\ 6 & 8 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 2 & 2 \\\\ 3 & 4 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiply every entry by 2: \\(\\begin{pmatrix} 2 & 4 \\\\ 6 & 8 \\end{pmatrix}\\).",
+      "hint": "Apply the scalar to all entries."
+    },
+    {
+      "id": "algebra-06-q149",
+      "category": "Algebra",
+      "concept": "Matrix Addition",
+      "learningObjective": "Add a matrix and its negative.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "\\(\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}+\\begin{pmatrix} -1 & -2 \\\\ -3 & -4 \\end{pmatrix}\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(I\\)"
+        },
+        {
+          "label": "B",
+          "text": "the zero matrix"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each pair sums to 0, so the result is the zero matrix.",
+      "hint": "Add corresponding entries."
+    },
+    {
+      "id": "algebra-06-q150",
+      "category": "Algebra",
+      "concept": "Matrix Subtraction",
+      "learningObjective": "Subtract a matrix from itself.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "\\(\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}-\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(I\\)"
+        },
+        {
+          "label": "B",
+          "text": "the zero matrix"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtracting a matrix from itself gives all zero entries.",
+      "hint": "Each entry becomes 0."
+    },
+    {
+      "id": "algebra-06-q151",
+      "category": "Algebra",
+      "concept": "Matrix Transpose",
+      "learningObjective": "Compute a transpose.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the transpose of \\(\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 1 & 3 \\\\ 2 & 4 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Swap rows and columns: \\(\\begin{pmatrix} 1 & 3 \\\\ 2 & 4 \\end{pmatrix}\\).",
+      "hint": "First row becomes first column."
+    },
+    {
+      "id": "algebra-06-q152",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Compute a determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 3 & 1 \\\\ 2 & 4 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "14"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The determinant is \\(3(4)-1(2)=12-2=10\\).",
+      "hint": "Use \\(ad-bc\\)."
+    },
+    {
+      "id": "algebra-06-q153",
+      "category": "Algebra",
+      "concept": "Matrix Inverse",
+      "learningObjective": "Find the inverse of a scalar multiple of the identity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the inverse of \\(\\begin{pmatrix} 2 & 0 \\\\ 0 & 2 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 2 & 0 \\\\ 0 & 2 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} \\frac12 & 0 \\\\ 0 & \\frac12 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Invert each diagonal entry: \\(\\begin{pmatrix} \\frac12 & 0 \\\\ 0 & \\frac12 \\end{pmatrix}\\).",
+      "hint": "Take reciprocals."
+    },
+    {
+      "id": "algebra-06-q154",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Compute a determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 1 & 1 \\\\ 1 & 1 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The determinant is \\(1(1)-1(1)=0\\).",
+      "hint": "Use \\(ad-bc\\)."
+    },
+    {
+      "id": "algebra-06-q155",
+      "category": "Algebra",
+      "concept": "Singular Matrices",
+      "learningObjective": "Identify a singular matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The matrix \\(\\begin{pmatrix} 1 & 1 \\\\ 1 & 1 \\end{pmatrix}\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "invertible"
+        },
+        {
+          "label": "B",
+          "text": "singular"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Its determinant is 0, so it is singular.",
+      "hint": "Compute the determinant."
+    },
+    {
+      "id": "algebra-06-q156",
+      "category": "Algebra",
+      "concept": "Solving Systems Using Matrices",
+      "learningObjective": "Solve a simple system.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x+2y=3\\), \\(y=1\\). What is \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(y=1\\): \\(x+2(1)=3\\), so \\(x=1\\).",
+      "hint": "Substitute the known value of \\(y\\)."
+    },
+    {
+      "id": "algebra-06-q157",
+      "category": "Algebra",
+      "concept": "Matrix Representation of Linear Systems",
+      "learningObjective": "Identify the coefficient matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the coefficient matrix of \\(2x+3y=1\\), \\(x-y=4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 2 & 3 \\\\ 1 & -1 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 2 & 3 \\\\ -1 & 1 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The coefficients are \\(2,3\\) and \\(1,-1\\).",
+      "hint": "Read coefficients in order."
+    },
+    {
+      "id": "algebra-06-q158",
+      "category": "Algebra",
+      "concept": "Augmented Matrices",
+      "learningObjective": "Form an augmented matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the augmented matrix of \\(2x+3y=1\\), \\(x-y=4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 2 & 3 \\\\ 1 & -1 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 2 & 3 & 1 \\\\ 1 & -1 & 4 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Include coefficients and constants: \\(\\begin{pmatrix} 2 & 3 & 1 \\\\ 1 & -1 & 4 \\end{pmatrix}\\).",
+      "hint": "Add the constant column."
+    },
+    {
+      "id": "algebra-06-q159",
+      "category": "Algebra",
+      "concept": "Gaussian Elimination",
+      "learningObjective": "Perform an elimination step.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Given \\(\\begin{pmatrix} 1 & 2 & 3 \\\\ 2 & 4 & 8 \\end{pmatrix}\\), what is the new second row after \\(R_2 \\to R_2-2R_1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 0 & 0 & 2 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 0 & 0 & 0 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Subtract \\(2R_1=(2,4,6)\\) from \\(R_2=(2,4,8)\\): \\((0,0,2)\\).",
+      "hint": "Subtract corresponding entries."
+    },
+    {
+      "id": "algebra-06-q160",
+      "category": "Algebra",
+      "concept": "Inconsistent Systems",
+      "learningObjective": "Recognize an inconsistent row in an augmented matrix.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "An augmented matrix row \\(\\begin{pmatrix} 0 & 0 & 2 \\end{pmatrix}\\) indicates:",
+      "options": [
+        {
+          "label": "A",
+          "text": "an inconsistent system"
+        },
+        {
+          "label": "B",
+          "text": "a dependent system"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The row represents \\(0x+0y=2\\), which is impossible, so the system is inconsistent.",
+      "hint": "Check whether the equation can be true."
+    },
+    {
+      "id": "algebra-06-q161",
+      "category": "Algebra",
+      "concept": "Dependent Systems",
+      "learningObjective": "Recognize a dependent row in an augmented matrix.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "An augmented matrix row \\(\\begin{pmatrix} 0 & 0 & 0 \\end{pmatrix}\\) indicates:",
+      "options": [
+        {
+          "label": "A",
+          "text": "the row gives no new constraint"
+        },
+        {
+          "label": "B",
+          "text": "the system is inconsistent"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The row \\(0=0\\) gives no new restriction, so the system is dependent.",
+      "hint": "A zero row with zero constant does not contradict the system."
+    },
+    {
+      "id": "algebra-06-q162",
+      "category": "Algebra",
+      "concept": "Properties of Matrix Multiplication",
+      "learningObjective": "Recognize when \\(AB=BA\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "For general matrices \\(A\\) and \\(B\\), \\(AB=BA\\):",
+      "options": [
+        {
+          "label": "A",
+          "text": "is always true"
+        },
+        {
+          "label": "B",
+          "text": "is not always true"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Matrix multiplication is not commutative in general.",
+      "hint": "Order matters."
+    },
+    {
+      "id": "algebra-06-q163",
+      "category": "Algebra",
+      "concept": "Distributive Property",
+      "learningObjective": "Apply right distributivity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "\\((A+B)C\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(AC+BC\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(AB+BC\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Matrix multiplication distributes on the right: \\((A+B)C=AC+BC\\).",
+      "hint": "Distribute \\(C\\) to both \\(A\\) and \\(B\\)."
+    },
+    {
+      "id": "algebra-06-q164",
+      "category": "Algebra",
+      "concept": "Associativity of Matrix Multiplication",
+      "learningObjective": "Apply associativity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "\\(A(BC)\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(AB+C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((AB)C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Matrix multiplication is associative: \\(A(BC)=(AB)C\\).",
+      "hint": "Regroup the product."
+    },
+    {
+      "id": "algebra-06-q165",
+      "category": "Algebra",
+      "concept": "Identity Matrix",
+      "learningObjective": "Recognize the identity property.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For compatible matrices, \\(AI\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(I\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiplying by the identity matrix leaves \\(A\\) unchanged.",
+      "hint": "Identity acts like 1."
+    },
+    {
+      "id": "algebra-06-q166",
+      "category": "Algebra",
+      "concept": "Zero Matrix",
+      "learningObjective": "Recognize the additive identity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For compatible matrices, \\(A+O\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(O\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Adding the zero matrix does not change \\(A\\).",
+      "hint": "Think of adding 0."
+    },
+    {
+      "id": "algebra-06-q167",
+      "category": "Algebra",
+      "concept": "Matrix Transpose",
+      "learningObjective": "Recognize the transpose of the identity matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The transpose of \\(I\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(I\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(O\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The identity matrix is symmetric, so \\(I^T=I\\).",
+      "hint": "The identity matrix is unchanged by row-column swapping."
+    },
+    {
+      "id": "algebra-06-q168",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Compute the determinant of the identity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det I_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(I_2=\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}\\), so its determinant is 1.",
+      "hint": "Use \\(ad-bc\\)."
+    },
+    {
+      "id": "algebra-06-q169",
+      "category": "Algebra",
+      "concept": "Singular Matrices",
+      "learningObjective": "Relate zero determinant to linear dependence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "If \\(\\det A=0\\) for a \\(2 \\times 2\\) matrix, its rows are:",
+      "options": [
+        {
+          "label": "A",
+          "text": "linearly independent"
+        },
+        {
+          "label": "B",
+          "text": "linearly dependent"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A zero determinant means the rows are linearly dependent.",
+      "hint": "Singular matrices have dependent rows."
+    },
+    {
+      "id": "algebra-06-q170",
+      "category": "Algebra",
+      "concept": "Cofactor Expansion",
+      "learningObjective": "Recognize valid rows for cofactor expansion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Cofactor expansion for a determinant can be done along:",
+      "options": [
+        {
+          "label": "A",
+          "text": "only the first row"
+        },
+        {
+          "label": "B",
+          "text": "any row or column"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A determinant can be expanded along any row or column.",
+      "hint": "Choose the row or column with the most zeros for convenience."
+    },
+    {
+      "id": "algebra-06-q171",
+      "category": "Algebra",
+      "concept": "Minors",
+      "learningObjective": "Compute a minor of a \\(2 \\times 2\\) matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(A=\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\), what is \\(M_{22}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Delete row 2 and column 2. The remaining entry is 1.",
+      "hint": "Remove the specified row and column."
+    },
+    {
+      "id": "algebra-06-q172",
+      "category": "Algebra",
+      "concept": "Cofactors",
+      "learningObjective": "Compute a cofactor.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(A=\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\), what is \\(C_{22}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "-1"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(C_{22}=(-1)^{2+2}M_{22}=(+1)(1)=1\\).",
+      "hint": "Use the sign \\((-1)^{i+j}\\)."
+    },
+    {
+      "id": "algebra-06-q173",
+      "category": "Algebra",
+      "concept": "Matrix Inverse",
+      "learningObjective": "Find the inverse of a diagonal matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the inverse of \\(\\begin{pmatrix} 1 & 0 \\\\ 0 & 2 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix} 1 & 0 \\\\ 0 & \\frac12 \\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix} 1 & 0 \\\\ 0 & 2 \\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Invert each diagonal entry: \\(\\begin{pmatrix} 1 & 0 \\\\ 0 & \\frac12 \\end{pmatrix}\\).",
+      "hint": "Take reciprocals of nonzero diagonal entries."
+    },
+    {
+      "id": "algebra-06-q174",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Compute a determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 3 & 0 \\\\ 0 & 3 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The determinant is \\(3(3)-0(0)=9\\).",
+      "hint": "Use \\(ad-bc\\)."
+    },
+    {
+      "id": "algebra-06-q175",
+      "category": "Algebra",
+      "concept": "Determinant Properties",
+      "learningObjective": "Apply the determinant scaling property for a \\(2 \\times 2\\) matrix.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(A\\) is \\(2 \\times 2\\) and \\(\\det A=5\\), what is \\(\\det(2A)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For an \\(n \\times n\\) matrix, \\(\\det(kA)=k^n\\det A\\). Here \\(n=2\\), so \\(\\det(2A)=2^2\\cdot5=20\\).",
+      "hint": "The scalar is raised to the matrix size."
+    },
+    {
+      "id": "algebra-06-q176",
+      "category": "Algebra",
+      "concept": "Determinant Properties",
+      "learningObjective": "Apply determinant scaling for a \\(2 \\times 2\\) matrix.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For a \\(2 \\times 2\\) matrix \\(A\\), \\(\\det(-A)\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\det A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\det A\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(\\det(-A)=(-1)^2\\det A=\\det A\\).",
+      "hint": "Use the scaling rule with \\(k=-1\\)."
+    },
+    {
+      "id": "algebra-06-q177",
+      "category": "Algebra",
+      "concept": "Determinant Properties",
+      "learningObjective": "Apply determinant scaling for a \\(3 \\times 3\\) matrix.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For a \\(3 \\times 3\\) matrix \\(A\\), \\(\\det(-A)\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\det A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\det A\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(\\det(-A)=(-1)^3\\det A=-\\det A\\).",
+      "hint": "Use \\(k=-1\\) and matrix size 3."
+    },
+    {
+      "id": "algebra-06-q178",
+      "category": "Algebra",
+      "concept": "Determinant Properties",
+      "learningObjective": "Apply the determinant product rule to find an unknown determinant.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(\\det(AB)=12\\) and \\(\\det A=3\\), what is \\(\\det B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(\\det(AB)=\\det A \\cdot \\det B\\), \\(\\det B=12/3=4\\).",
+      "hint": "Divide \\(\\det(AB)\\) by \\(\\det A\\)."
+    },
+    {
+      "id": "algebra-06-q179",
+      "category": "Algebra",
+      "concept": "Matrix Invertibility",
+      "learningObjective": "State the invertibility condition for a \\(2 \\times 2\\) matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For \\(A=\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}\\), \\(A\\) is invertible if:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(ad-bc=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(ad-bc\\neq0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A \\(2 \\times 2\\) matrix is invertible when its determinant \\(ad-bc\\) is nonzero.",
+      "hint": "Check the determinant."
+    },
+    {
+      "id": "algebra-06-q180",
+      "category": "Algebra",
+      "concept": "Matrix Invertibility",
+      "learningObjective": "Relate invertibility to determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is invertible, then \\(\\det A\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "not zero"
+        },
+        {
+          "label": "B",
+          "text": "zero"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Invertible matrices have nonzero determinant.",
+      "hint": "Recall the singular matrix condition."
+    },
+    {
+      "id": "algebra-06-q181",
+      "category": "Algebra",
+      "concept": "Matrix Inverse",
+      "learningObjective": "Apply the transpose-inverse property.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For invertible \\(A\\), \\((A^{-1})^T\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((A^T)^{-1}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A^T\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The inverse of the transpose equals the transpose of the inverse.",
+      "hint": "Transpose and inverse operations commute."
+    },
+    {
+      "id": "algebra-06-q182",
+      "category": "Algebra",
+      "concept": "Matrix Inverse",
+      "learningObjective": "Apply the inverse of a product rule.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(A\\) and \\(B\\) are invertible, \\((AB)^{-1}\\) equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(B^{-1}A^{-1}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A^{-1}B^{-1}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The inverse of a product reverses the order: \\((AB)^{-1}=B^{-1}A^{-1}\\).",
+      "hint": "Reverse the order when inverting a product."
+    },
+    {
+      "id": "algebra-06-q183",
+      "category": "Algebra",
+      "concept": "Homogeneous Systems",
+      "learningObjective": "Recognize the trivial solution of \\(AX=0\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The system \\(AX=0\\) always has:",
+      "options": [
+        {
+          "label": "A",
+          "text": "the trivial solution \\(X=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "no solution"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substituting \\(X=0\\) gives \\(A0=0\\), so the trivial solution always exists.",
+      "hint": "Test the zero vector."
+    },
+    {
+      "id": "algebra-06-q184",
+      "category": "Algebra",
+      "concept": "Homogeneous Systems",
+      "learningObjective": "Relate invertibility to uniqueness of \\(AX=0\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "If \\(A\\) is invertible, then \\(AX=0\\) has:",
+      "options": [
+        {
+          "label": "A",
+          "text": "infinitely many solutions"
+        },
+        {
+          "label": "B",
+          "text": "only the trivial solution"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiply by \\(A^{-1}\\): \\(X=A^{-1}0=0\\). Thus only the trivial solution exists.",
+      "hint": "Use the inverse to isolate \\(X\\)."
+    },
+    {
+      "id": "algebra-06-q185",
+      "category": "Algebra",
+      "concept": "Solving Systems Using Matrices",
+      "learningObjective": "Solve a simple system.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x+y=2\\), \\(y=1\\). What is \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(y=1\\): \\(x+1=2\\), so \\(x=1\\).",
+      "hint": "Substitute the known value."
+    },
+    {
+      "id": "algebra-06-q186",
+      "category": "Algebra",
+      "concept": "Solving Systems Using Matrices",
+      "learningObjective": "Solve a simple system.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x-y=3\\), \\(x=4\\). What is \\(y\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x=4\\): \\(4-y=3\\), so \\(y=1\\).",
+      "hint": "Substitute and solve for \\(y\\)."
+    },
+    {
+      "id": "algebra-06-q187",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication Dimensions",
+      "learningObjective": "Determine the dimensions of a product.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is \\(2 \\times 3\\) and \\(B\\) is \\(3 \\times 2\\), what are the dimensions of \\(AB\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3 \\times 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2 \\times 2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The product has dimensions \\(2 \\times 2\\).",
+      "hint": "Use outer dimensions."
+    },
+    {
+      "id": "algebra-06-q188",
+      "category": "Algebra",
+      "concept": "Matrix Multiplication Dimensions",
+      "learningObjective": "Determine the dimensions of a product.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is \\(3 \\times 2\\) and \\(B\\) is \\(2 \\times 3\\), what are the dimensions of \\(AB\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3 \\times 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2 \\times 2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The product has dimensions \\(3 \\times 3\\).",
+      "hint": "Use outer dimensions."
+    },
+    {
+      "id": "algebra-06-q189",
+      "category": "Algebra",
+      "concept": "Matrix Transpose",
+      "learningObjective": "Determine the dimensions of a transpose.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) is \\(4 \\times 2\\), what are the dimensions of \\(A^T\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4 \\times 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2 \\times 4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Transposing swaps dimensions, so \\(A^T\\) is \\(2 \\times 4\\).",
+      "hint": "Rows become columns."
+    },
+    {
+      "id": "algebra-06-q190",
+      "category": "Algebra",
+      "concept": "Identity Matrix",
+      "learningObjective": "Identify an entry of the identity matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In \\(I_3\\), what is the entry in row 3, column 1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Off-diagonal entries of an identity matrix are 0.",
+      "hint": "Only main diagonal entries are 1."
+    },
+    {
+      "id": "algebra-06-q191",
+      "category": "Algebra",
+      "concept": "Identity Matrix",
+      "learningObjective": "Identify a diagonal entry of the identity matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In \\(I_3\\), what is the entry in row 2, column 2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Main diagonal entries of an identity matrix are 1.",
+      "hint": "Look at row number equal to column number."
+    },
+    {
+      "id": "algebra-06-q192",
+      "category": "Algebra",
+      "concept": "Zero Matrix",
+      "learningObjective": "Identify the entries of a zero matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Every entry of a zero matrix is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A zero matrix has all entries equal to 0.",
+      "hint": "The name indicates the value."
+    },
+    {
+      "id": "algebra-06-q193",
+      "category": "Algebra",
+      "concept": "Identity Matrix",
+      "learningObjective": "Identify the entries of an identity matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "An identity matrix has 1s on the main diagonal and:",
+      "options": [
+        {
+          "label": "A",
+          "text": "0s elsewhere"
+        },
+        {
+          "label": "B",
+          "text": "2s elsewhere"
+        }
+      ],
+      "answer": "A",
+      "explanation": "All off-diagonal entries of an identity matrix are 0.",
+      "hint": "Only the main diagonal contains 1s."
+    },
+    {
+      "id": "algebra-06-q194",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Compute a determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 0 & 2 \\\\ 3 & 0 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "-6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The determinant is \\(0(0)-2(3)=-6\\).",
+      "hint": "Use \\(ad-bc\\)."
+    },
+    {
+      "id": "algebra-06-q195",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Compute a determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 1 & 2 \\\\ 2 & 1 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "-3"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The determinant is \\(1(1)-2(2)=1-4=-3\\).",
+      "hint": "Use \\(ad-bc\\)."
+    },
+    {
+      "id": "algebra-06-q196",
+      "category": "Algebra",
+      "concept": "Matrix Invertibility",
+      "learningObjective": "Determine whether a matrix is invertible from its determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Is \\(\\begin{pmatrix} 1 & 2 \\\\ 2 & 1 \\end{pmatrix}\\) invertible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Its determinant is \\(-3\\), which is nonzero, so it is invertible.",
+      "hint": "Check whether the determinant is zero."
+    },
+    {
+      "id": "algebra-06-q197",
+      "category": "Algebra",
+      "concept": "Matrix Invertibility",
+      "learningObjective": "Determine whether a specific matrix is invertible by computing its determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "For \\(A=\\begin{pmatrix} 2 & 4 \\\\ 1 & 2 \\end{pmatrix}\\), is \\(A\\) invertible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(\\det A=2(2)-4(1)=4-4=0\\), so \\(A\\) has no inverse.",
+      "hint": "Compute the determinant using \\(ad-bc\\)."
+    },
+    {
+      "id": "algebra-06-q198",
+      "category": "Algebra",
+      "concept": "Matrix Equations",
+      "learningObjective": "Solve a system using the identity matrix.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}\\begin{pmatrix} x \\\\ y \\end{pmatrix}=\\begin{pmatrix} 5 \\\\ 7 \\end{pmatrix}\\), what is \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The identity matrix leaves the vector unchanged, so \\(x=5\\).",
+      "hint": "Multiplying by \\(I\\) does not change the vector."
+    },
+    {
+      "id": "algebra-06-q199",
+      "category": "Algebra",
+      "concept": "Matrix Equations",
+      "learningObjective": "Solve a matrix equation involving the identity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(X+I=2I\\), what is \\(X\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(I\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Subtract \\(I\\) from both sides: \\(X=I\\).",
+      "hint": "Isolate \\(X\\)."
+    },
+    {
+      "id": "algebra-06-q200",
+      "category": "Algebra",
+      "concept": "Determinant of a 2 × 2 Matrix",
+      "learningObjective": "Compute a determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\det\\begin{pmatrix} 1 & 2 \\\\ 3 & 6 \\end{pmatrix}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The determinant is \\(1(6)-2(3)=6-6=0\\).",
+      "hint": "Use \\(ad-bc\\)."
+    }
+  ]
+}

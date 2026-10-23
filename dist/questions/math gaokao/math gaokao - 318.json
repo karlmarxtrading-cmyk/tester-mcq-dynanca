@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-318",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 318",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-318-q001",
+      "category": "Probability",
+      "concept": "Variance of a Discrete Random Variable from a Distribution Table",
+      "learningObjective": "Compute the variance of a discrete random variable using its probability distribution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A discrete random variable \\(X\\) has distribution \\(P(X=0)=\\frac14\\), \\(P(X=1)=\\frac12\\), and \\(P(X=2)=\\frac14\\). Find \\(\\operatorname{Var}(X)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First compute the mean:\n\\[\nE(X)=0\\cdot\\frac14+1\\cdot\\frac12+2\\cdot\\frac14=\\frac12+\\frac12=1.\n\\]\nNext compute the second moment:\n\\[\nE(X^2)=0^2\\cdot\\frac14+1^2\\cdot\\frac12+2^2\\cdot\\frac14\n=0+\\frac12+1=\\frac32.\n\\]\nThen\n\\[\n\\operatorname{Var}(X)=E(X^2)-[E(X)]^2\n=\\frac32-1^2=\\frac12.\n\\]",
+      "hint": "Use \\(\\operatorname{Var}(X)=E(X^2)-[E(X)]^2\\), and first compute \\(E(X)\\) and \\(E(X^2)\\)."
+    },
+    {
+      "id": "math-gaokao-318-q002",
+      "category": "Probability",
+      "concept": "Variance from the First and Second Moments",
+      "learningObjective": "Determine the variance of a discrete random variable from \\(E(X)\\) and \\(E(X^2)\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For a discrete random variable \\(X\\), \\(E(X)=3\\) and \\(E(X^2)=13\\). What is \\(\\operatorname{Var}(X)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the identity\n\\[\n\\operatorname{Var}(X)=E(X^2)-[E(X)]^2.\n\\]\nSubstitute the given values:\n\\[\n\\operatorname{Var}(X)=13-3^2=13-9=4.\n\\]",
+      "hint": "Recall the identity relating variance to the first and second moments of \\(X\\)."
+    },
+    {
+      "id": "math-gaokao-318-q003",
+      "category": "Probability",
+      "concept": "Variance of a Symmetric Three-Point Distribution",
+      "learningObjective": "Calculate the variance of a discrete random variable taking three equally likely values.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(X\\) take values \\(-1\\), \\(0\\), and \\(1\\), each with probability \\(\\frac13\\). Find \\(\\operatorname{Var}(X)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac13\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac23\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By symmetry,\n\\[\nE(X)=(-1)\\cdot\\frac13+0\\cdot\\frac13+1\\cdot\\frac13=0.\n\\]\nNext,\n\\[\nE(X^2)=(-1)^2\\cdot\\frac13+0^2\\cdot\\frac13+1^2\\cdot\\frac13\n=\\frac13+\\frac13=\\frac23.\n\\]\nTherefore,\n\\[\n\\operatorname{Var}(X)=E(X^2)-[E(X)]^2=\\frac23-0=\\frac23.\n\\]",
+      "hint": "Because the distribution is symmetric about \\(0\\), first find \\(E(X^2)\\), then use \\(\\operatorname{Var}(X)=E(X^2)-[E(X)]^2\\)."
+    },
+    {
+      "id": "math-gaokao-318-q004",
+      "category": "Probability",
+      "concept": "Variance under a Linear Transformation",
+      "learningObjective": "Apply the rule for the variance of \\(aX+b\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A random variable \\(X\\) has \\(\\operatorname{Var}(X)=5\\). Find \\(\\operatorname{Var}(2X+3)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For constants \\(a\\) and \\(b\\),\n\\[\n\\operatorname{Var}(aX+b)=a^2\\operatorname{Var}(X).\n\\]\nHere \\(a=2\\) and \\(b=3\\), so\n\\[\n\\operatorname{Var}(2X+3)=2^2\\cdot5=4\\cdot5=20.\n\\]",
+      "hint": "Use \\(\\operatorname{Var}(aX+b)=a^2\\operatorname{Var}(X)\\); the additive constant does not affect variance."
+    },
+    {
+      "id": "math-gaokao-318-q005",
+      "category": "Probability",
+      "concept": "Variance of a Bernoulli Random Variable",
+      "learningObjective": "Compute the variance of a Bernoulli random variable from its success probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A Bernoulli random variable \\(X\\) has success probability \\(p=0.3\\). Find \\(\\operatorname{Var}(X)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.21\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For a Bernoulli random variable with success probability \\(p\\),\n\\[\n\\operatorname{Var}(X)=p(1-p).\n\\]\nThus\n\\[\n\\operatorname{Var}(X)=0.3(1-0.3)=0.3\\cdot0.7=0.21.\n\\]",
+      "hint": "For a Bernoulli variable, variance depends on \\(p\\) through the product \\(p(1-p)\\)."
+    },
+    {
+      "id": "math-gaokao-318-q006",
+      "category": "Probability",
+      "concept": "Variance of a Binomial Random Variable",
+      "learningObjective": "Compute the variance of a binomial random variable using \\(n\\) and \\(p\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(X\\sim B(10,0.4)\\). Find \\(\\operatorname{Var}(X)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2.4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4.0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a binomial random variable \\(X\\sim B(n,p)\\),\n\\[\n\\operatorname{Var}(X)=np(1-p).\n\\]\nHere \\(n=10\\) and \\(p=0.4\\), so\n\\[\n\\operatorname{Var}(X)=10\\cdot0.4\\cdot(1-0.4)\n=10\\cdot0.4\\cdot0.6=2.4.\n\\]",
+      "hint": "For a binomial distribution, use \\(\\operatorname{Var}(X)=np(1-p)\\)."
+    },
+    {
+      "id": "math-gaokao-318-q007",
+      "category": "Probability",
+      "concept": "Variance of a Two-Point \\(0\\)-\\(1\\) Distribution",
+      "learningObjective": "Calculate the variance of a \\(0\\)-\\(1\\) random variable with a given probability.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A random variable \\(X\\) has \\(P(X=0)=1-p\\) and \\(P(X=1)=p\\). If \\(p=\\frac14\\), find \\(\\operatorname{Var}(X)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{16}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac14\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a \\(0\\)-\\(1\\) random variable,\n\\[\nE(X)=p=\\frac14.\n\\]\nAlso, since \\(X^2=X\\) for \\(X\\in\\{0,1\\}\\),\n\\[\nE(X^2)=p=\\frac14.\n\\]\nTherefore,\n\\[\n\\operatorname{Var}(X)=E(X^2)-[E(X)]^2\n=\\frac14-\\left(\\frac14\\right)^2\n=\\frac14-\\frac{1}{16}\n=\\frac{3}{16}.\n\\]",
+      "hint": "For a \\(0\\)-\\(1\\) variable, \\(\\operatorname{Var}(X)=p(1-p)\\)."
+    },
+    {
+      "id": "math-gaokao-318-q008",
+      "category": "Probability",
+      "concept": "Variance of a Symmetric Two-Point Distribution",
+      "learningObjective": "Determine the variance of a random variable taking two symmetric values.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A random variable \\(X\\) takes values \\(-3\\) and \\(3\\), each with probability \\(\\frac12\\). Find \\(\\operatorname{Var}(X)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By symmetry,\n\\[\nE(X)=(-3)\\cdot\\frac12+3\\cdot\\frac12=0.\n\\]\nNext,\n\\[\nE(X^2)=(-3)^2\\cdot\\frac12+3^2\\cdot\\frac12\n=9\\cdot\\frac12+9\\cdot\\frac12=9.\n\\]\nThus\n\\[\n\\operatorname{Var}(X)=E(X^2)-[E(X)]^2=9-0=9.\n\\]",
+      "hint": "The mean is \\(0\\) by symmetry; compute \\(E(X^2)\\) and then use \\(\\operatorname{Var}(X)=E(X^2)-[E(X)]^2\\)."
+    },
+    {
+      "id": "math-gaokao-318-q009",
+      "category": "Probability",
+      "concept": "Recovering \\(E(X^2)\\) from Mean and Variance",
+      "learningObjective": "Use the variance identity to find the second moment of a discrete random variable.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "For a discrete random variable \\(X\\), \\(E(X)=2\\) and \\(\\operatorname{Var}(X)=3\\). Find \\(E(X^2)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From\n\\[\n\\operatorname{Var}(X)=E(X^2)-[E(X)]^2,\n\\]\nwe get\n\\[\nE(X^2)=\\operatorname{Var}(X)+[E(X)]^2.\n\\]\nSubstitute \\(E(X)=2\\) and \\(\\operatorname{Var}(X)=3\\):\n\\[\nE(X^2)=3+2^2=3+4=7.\n\\]",
+      "hint": "Rearrange the identity \\(\\operatorname{Var}(X)=E(X^2)-[E(X)]^2\\) to isolate \\(E(X^2)\\)."
+    },
+    {
+      "id": "math-gaokao-318-q010",
+      "category": "Probability",
+      "concept": "Solving for a Parameter from a Given Variance",
+      "learningObjective": "Determine an unknown probability parameter from a specified variance condition.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A discrete random variable \\(X\\) takes values \\(0\\) and \\(2\\), with \\(P(X=2)=p\\). If \\(\\operatorname{Var}(X)=\\frac34\\) and \\(p<\\frac12\\), find \\(p\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac14\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The mean is\n\\[\nE(X)=0\\cdot(1-p)+2p=2p.\n\\]\nThe second moment is\n\\[\nE(X^2)=0^2\\cdot(1-p)+2^2p=4p.\n\\]\nThus\n\\[\n\\operatorname{Var}(X)=E(X^2)-[E(X)]^2\n=4p-(2p)^2\n=4p-4p^2\n=4p(1-p).\n\\]\nSet \\(\\operatorname{Var}(X)=\\frac34\\):\n\\[\n4p(1-p)=\\frac34.\n\\]\nSo\n\\[\np(1-p)=\\frac{3}{16}.\n\\]\nThis gives\n\\[\n16p^2-16p+3=0,\n\\]\nwhich factors as\n\\[\n(4p-1)(4p-3)=0.\n\\]\nHence\n\\[\np=\\frac14 \\quad \\text{or} \\quad p=\\frac34.\n\\]\nSince \\(p<\\frac12\\), we obtain\n\\[\np=\\frac14.\n\\]",
+      "hint": "Compute \\(\\operatorname{Var}(X)=E(X^2)-[E(X)]^2\\) in terms of \\(p\\), then solve the resulting equation and use the condition \\(p<\\frac12\\)."
+    }
+  ]
+}

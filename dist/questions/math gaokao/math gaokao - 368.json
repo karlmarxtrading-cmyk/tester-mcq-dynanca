@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-368",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 368",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-368-q001",
+      "category": "Combinatorics",
+      "concept": "Coefficient Extraction from a Binomial Expansion",
+      "learningObjective": "Extract the coefficient of a specified power from the expansion of \\((1+x)^n\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the coefficient of \\(x^3\\) in the expansion of \\((1+x)^5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In the expansion of \\((1+x)^5\\), the coefficient of \\(x^3\\) is\n\\[\n\\binom{5}{3}=10.\n\\]\nThus the correct option is B.",
+      "hint": "Use the binomial coefficient \\(\\binom{5}{3}\\)."
+    },
+    {
+      "id": "math-gaokao-368-q002",
+      "category": "Combinatorics",
+      "concept": "Coefficient Extraction from a Binomial Expansion",
+      "learningObjective": "Find the coefficient of a specified power in \\((1+x)^n\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the coefficient of \\(x^2\\) in the expansion of \\((1+3x)^6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(135\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The term containing \\(x^2\\) is\n\\[\n\\binom{6}{2}(3x)^2=15\\cdot9x^2=135x^2.\n\\]\nThe coefficient is \\(135\\). The distractor \\(15\\) omits the scale factor \\(3^2\\).",
+      "hint": "Use the binomial theorem and keep the numerical factor attached to \\(x\\) when taking powers."
+    },
+    {
+      "id": "math-gaokao-368-q003",
+      "category": "Combinatorics",
+      "concept": "Coefficient Extraction with a Scaled Variable",
+      "learningObjective": "Extract a coefficient from the expansion of \\((1+ax)^n\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the coefficient of \\(x^5\\) in the expansion of \\((1+2x)^6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(192\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(384\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The general term in \\((1+2x)^6\\) is\n\\[\n\\binom{6}{k}(2x)^k=\\binom{6}{k}2^kx^k.\n\\]\nFor the coefficient of \\(x^5\\), take \\(k=5\\):\n\\[\n\\binom{6}{5}2^5=6\\cdot 32=192.\n\\]\nThus the correct option is A.",
+      "hint": "Use the general term and substitute \\(k=5\\)."
+    },
+    {
+      "id": "math-gaokao-368-q004",
+      "category": "Combinatorics",
+      "concept": "Coefficient Extraction with a Negative Constant",
+      "learningObjective": "Extract a coefficient from the expansion of \\((ax+b)^n\\) involving a negative constant.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the coefficient of \\(x^4\\) in the expansion of \\((2x-1)^5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(80\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-80\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The general term is\n\\[\n\\binom{5}{r}(2x)^{5-r}(-1)^r.\n\\]\nFor the coefficient of \\(x^4\\), we need \\(5-r=4\\), so \\(r=1\\). Thus the coefficient is\n\\[\n\\binom{5}{1}2^4(-1)^1=5\\cdot 16\\cdot(-1)=-80.\n\\]\nThus the correct option is B.",
+      "hint": "Use the general term and choose \\(r\\) so that the exponent of \\(x\\) is \\(4\\)."
+    },
+    {
+      "id": "math-gaokao-368-q005",
+      "category": "Combinatorics",
+      "concept": "Constant Term in a Binomial Expansion",
+      "learningObjective": "Determine the constant term in an expansion involving reciprocal powers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For \\(x\\ne0\\), find the constant term in the expansion of \\(\\left(x+\\frac{2}{x}\\right)^6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(160\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The general term is\n\\[\n\\binom{6}{k}x^{6-k}\\left(\\frac{2}{x}\\right)^k=\\binom{6}{k}2^k x^{6-2k}.\n\\]\nThe exponent is zero when \\(6-2k=0\\), so \\(k=3\\). Therefore, the constant term is\n\\[\n\\binom{6}{3}2^3=20\\cdot8=160.\n\\]\nThe distractor \\(20\\) omits the factor \\(2^3\\).",
+      "hint": "Set the exponent of \\(x\\) in the general term equal to zero."
+    },
+    {
+      "id": "math-gaokao-368-q006",
+      "category": "Combinatorics",
+      "concept": "Coefficient Extraction from a Trinomial Expansion",
+      "learningObjective": "Extract a coefficient from the expansion of \\((1+x+x^2)^n\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the coefficient of \\(x^2\\) in the expansion of \\((1+x+x^2)^5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "To obtain \\(x^2\\), we may choose either one factor of \\(x^2\\) from the five factors, or two factors of \\(x\\) from the five factors.\nThere are \\(5\\) ways to choose one \\(x^2\\), and\n\\[\n\\binom{5}{2}=10\n\\]\nways to choose two \\(x\\)'s. Therefore the coefficient is\n\\[\n5+10=15.\n\\]\nThus the correct option is B.",
+      "hint": "Count the ways to form \\(x^2\\) by choosing one \\(x^2\\) or two \\(x\\)'s."
+    },
+    {
+      "id": "math-gaokao-368-q007",
+      "category": "Combinatorics",
+      "concept": "Finding a Parameter from a Coefficient",
+      "learningObjective": "Determine a parameter in a binomial expansion from a given coefficient.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If the coefficient of \\(x^3\\) in the expansion of \\((1+ax)^5\\) is \\(80\\), and \\(a>0\\), find \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The coefficient of \\(x^3\\) in \\((1+ax)^5\\) is\n\\[\n\\binom{5}{3}a^3=10a^3.\n\\]\nGiven \\(10a^3=80\\), we get \\(a^3=8\\), so \\(a=2\\) since \\(a>0\\).\nThus the correct option is A.",
+      "hint": "Use the general term and set the coefficient equal to \\(80\\)."
+    },
+    {
+      "id": "math-gaokao-368-q008",
+      "category": "Combinatorics",
+      "concept": "Finding a Parameter from a Coefficient",
+      "learningObjective": "Determine a positive parameter from a given coefficient in \\((1+kx)^n\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If the coefficient of \\(x^2\\) in the expansion of \\((1+kx)^4\\) is \\(54\\), and \\(k>0\\), find \\(k\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The coefficient of \\(x^2\\) in \\((1+kx)^4\\) is\n\\[\n\\binom{4}{2}k^2=6k^2.\n\\]\nGiven \\(6k^2=54\\), we get \\(k^2=9\\). Since \\(k>0\\), \\(k=3\\).\nThus the correct option is B.",
+      "hint": "Use \\(\\binom{4}{2}k^2\\) and solve for \\(k\\)."
+    },
+    {
+      "id": "math-gaokao-368-q009",
+      "category": "Combinatorics",
+      "concept": "Coefficient Extraction from a Product of Binomials",
+      "learningObjective": "Find a coefficient by combining terms from two binomial expansions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the coefficient of \\(x^3\\) in the expansion of \\((1+x)^5(1-x)^4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\((1+x)^5\\), the term contributing \\(x^i\\) is \\(\\binom{5}{i}x^i\\). From \\((1-x)^4\\), the term contributing \\(x^j\\) is \\(\\binom{4}{j}(-1)^jx^j\\). We need \\(i+j=3\\). Thus the coefficient is\n\\[\n\\binom{5}{0}\\binom{4}{3}(-1)^3 +\\binom{5}{1}\\binom{4}{2}(-1)^2 +\\binom{5}{2}\\binom{4}{1}(-1)^1 +\\binom{5}{3}\\binom{4}{0}(-1)^0.\n\\]\nComputing gives\n\\[\n-4+30-40+10=-4.\n\\]\nThus the correct option is B.",
+      "hint": "Collect all pairs of terms whose exponents sum to \\(3\\)."
+    },
+    {
+      "id": "math-gaokao-368-q010",
+      "category": "Combinatorics",
+      "concept": "Coefficient Extraction from a Product of Binomial Expansions",
+      "learningObjective": "Determine a coefficient in a product of two binomial expansions with different parameters.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the coefficient of \\(x^4\\) in the expansion of \\((1+2x)^5(1-x)^3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(50\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-50\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\((1+2x)^5\\), the term contributing \\(x^i\\) is \\(\\binom{5}{i}2^ix^i\\). From \\((1-x)^3\\), the term contributing \\(x^j\\) is \\(\\binom{3}{j}(-1)^jx^j\\). We need \\(i+j=4\\). Thus the coefficient is\n\\[\n\\binom{5}{1}2^1\\binom{3}{3}(-1)^3 +\\binom{5}{2}2^2\\binom{3}{2}(-1)^2 +\\binom{5}{3}2^3\\binom{3}{1}(-1)^1 +\\binom{5}{4}2^4\\binom{3}{0}(-1)^0.\n\\]\nComputing gives\n\\[\n-10+120-240+80=-50.\n\\]\nThus the correct option is B.",
+      "hint": "Use the general terms of both expansions and collect pairs whose exponents sum to \\(4\\)."
+    }
+  ]
+}

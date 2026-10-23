@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-470",
+  "category": "Comprehensive Mathematics",
+  "title": "470. Sets, Logic, Reasoning & Proof: Empty Set",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-470-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Notation for the empty set",
+      "learningObjective": "Identify correct notation for the set with no elements.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which notation denotes the set that has no elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\varnothing\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{0\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The empty set is written \\(\\varnothing\\) or \\(\\{\\ \\}\\). The set \\(\\{0\\}\\) is not empty: it contains one element, the number \\(0\\).",
+      "hint": "Count the elements of each candidate."
+    },
+    {
+      "id": "dynanca-470-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Recognising an empty set from a description",
+      "learningObjective": "Decide which described set has no elements.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Which of the following sets is empty?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{x\\in\\mathbb{Z}\\mid x>0\\text{ and }x<1\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{x\\in\\mathbb{Z}\\mid x\\ge 0\\text{ and }x<1\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "No integer lies strictly between \\(0\\) and \\(1\\), so the first set has no elements. The second set contains the integer \\(0\\), because \\(0\\ge 0\\) and \\(0<1\\), so it equals \\(\\{0\\}\\) and is not empty.",
+      "hint": "Test whether \\(0\\) satisfies each description."
+    },
+    {
+      "id": "dynanca-470-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The set containing zero",
+      "learningObjective": "Distinguish the set containing zero from the empty set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which statement about the set \\(\\{0\\}\\) is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It has exactly one element, so it is not the empty set."
+        },
+        {
+          "label": "B",
+          "text": "It is the empty set, because \\(0\\) represents nothing."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number \\(0\\) is an object like any other number, and \\(\\{0\\}\\) is the set whose only element is that object. Its cardinality is \\(1\\). The empty set has cardinality \\(0\\) and contains no objects at all, not even the number \\(0\\).",
+      "hint": "Compare the number of elements of \\(\\{0\\}\\) with the number of elements of \\(\\varnothing\\)."
+    },
+    {
+      "id": "dynanca-470-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Union with the empty set",
+      "learningObjective": "Simplify the union of a set with the empty set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For every set \\(A\\), what is \\(A\\cup\\varnothing\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The union contains everything that is in \\(A\\) or in \\(\\varnothing\\). Since \\(\\varnothing\\) contributes no elements, the union is exactly \\(A\\). The empty set behaves for union like \\(0\\) behaves for addition.",
+      "hint": "Ask which elements the empty set adds to the union."
+    },
+    {
+      "id": "dynanca-470-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Intersection with the empty set",
+      "learningObjective": "Simplify the intersection of a set with the empty set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For every set \\(A\\), what is \\(A\\cap\\varnothing\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The intersection contains the elements that are in both \\(A\\) and \\(\\varnothing\\). No element is in \\(\\varnothing\\), so no element can be in both. Hence \\(A\\cap\\varnothing=\\varnothing\\), in the same way that multiplying by \\(0\\) gives \\(0\\).",
+      "hint": "An element of the intersection would have to belong to the empty set."
+    },
+    {
+      "id": "dynanca-470-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An equation without real solutions",
+      "learningObjective": "Recognise the empty solution set of an equation over the real numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which set equals \\(\\{x\\in\\mathbb{R}\\mid x^2+4=0\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\varnothing\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{-2,2\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For every real \\(x\\), \\(x^2\\ge 0\\), so \\(x^2+4\\ge 4>0\\). The equation has no real solution, and the set is empty. The numbers \\(-2\\) and \\(2\\) solve \\(x^2-4=0\\); for them \\(x^2+4=8\\).",
+      "hint": "Find the smallest value that \\(x^2+4\\) can take for real \\(x\\)."
+    },
+    {
+      "id": "dynanca-470-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Subsets of the empty set",
+      "learningObjective": "Count the subsets of the empty set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many subsets does the empty set have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A set with \\(n\\) elements has \\(2^n\\) subsets. For \\(n=0\\) this is \\(2^0=1\\). The single subset is \\(\\varnothing\\) itself, since every set is a subset of itself.",
+      "hint": "Use the formula \\(2^n\\) with \\(n=0\\), or recall that every set is a subset of itself."
+    },
+    {
+      "id": "dynanca-470-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The empty set and the set containing it",
+      "learningObjective": "Decide whether the empty set equals the set whose only element is the empty set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Is \\(\\varnothing=\\{\\varnothing\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; \\(\\varnothing\\) has no elements, while \\(\\{\\varnothing\\}\\) has one element."
+        },
+        {
+          "label": "B",
+          "text": "Yes; both contain nothing."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Two sets are equal only if they have the same elements. The set \\(\\{\\varnothing\\}\\) has an element, namely \\(\\varnothing\\), whereas \\(\\varnothing\\) has none. So the sets are different.",
+      "hint": "Compare the cardinalities of the two sets."
+    },
+    {
+      "id": "dynanca-470-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Disjoint sets",
+      "learningObjective": "Recognise a pair of sets whose intersection is empty.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "Which pair of sets has an empty intersection?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The multiples of \\(2\\) and the multiples of \\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "The even integers and the odd integers"
+        }
+      ],
+      "answer": "B",
+      "explanation": "No integer is both even and odd, so the intersection of those two sets is \\(\\varnothing\\). The multiples of \\(2\\) and the multiples of \\(3\\) share elements such as \\(6\\) and \\(12\\), so their intersection is not empty.",
+      "hint": "Look for one number that belongs to both sets of the pair."
+    },
+    {
+      "id": "dynanca-470-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Statements about all elements of the empty set",
+      "learningObjective": "Evaluate a universal statement about the elements of the empty set.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Is the statement \"every element of \\(\\varnothing\\) is greater than \\(100\\)\" true or false?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False, because \\(\\varnothing\\) contains no number greater than \\(100\\)."
+        },
+        {
+          "label": "B",
+          "text": "True, because there is no element of \\(\\varnothing\\) that fails the condition."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A statement of the form \"every element of \\(S\\) has property \\(P\\)\" is false only if some element of \\(S\\) lacks the property. The empty set has no elements, so no such counterexample exists, and the statement is true (it is called vacuously true). The statement does not claim that such an element exists.",
+      "hint": "To refute a statement about every element, a specific element that fails is needed."
+    }
+  ]
+}

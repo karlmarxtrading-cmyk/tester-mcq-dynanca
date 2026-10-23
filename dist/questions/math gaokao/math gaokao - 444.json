@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-444",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 444",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-444-q001",
+      "category": "Analytic Geometry",
+      "concept": "Equation of a Circle and Disk Inequality",
+      "learningObjective": "Convert a circle equation to center-radius form and identify the inequality for the closed disk.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "The equation \\(x^2+y^2-4x+6y-12=0\\) represents a circle. Which inequality describes the closed disk bounded by this circle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((x-2)^2+(y+3)^2 \\le 25\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((x+2)^2+(y-3)^2 \\le 25\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Complete the square: \\(x^2-4x+y^2+6y=12\\), so \\((x-2)^2-4+(y+3)^2-9=12\\). Thus \\((x-2)^2+(y+3)^2=25\\). The closed disk is the set of points with distance at most \\(5\\) from \\((2,-3)\\), namely \\((x-2)^2+(y+3)^2 \\le 25\\).",
+      "hint": "Complete the square in \\(x\\) and \\(y\\) to find the center and radius."
+    },
+    {
+      "id": "math-gaokao-444-q002",
+      "category": "Analytic Geometry",
+      "concept": "Intersection of a Line and a Circle",
+      "learningObjective": "Determine the parameter range for a line to intersect a circle by using a distance inequality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For which real values of \\(k\\) does the line \\(y=x+k\\) have at least one point in common with the circle \\(x^2+y^2=8\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\sqrt{2} \\le k \\le 2\\sqrt{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-4 \\le k \\le 4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The line can be written as \\(x-y+k=0\\). Its distance from the origin is \\(\\frac{|k|}{\\sqrt{2}}\\). The circle has radius \\(2\\sqrt{2}\\). Intersection requires this distance to be at most the radius: \\(\\frac{|k|}{\\sqrt{2}} \\le 2\\sqrt{2}\\). Hence \\(|k| \\le 4\\), so \\(-4 \\le k \\le 4\\).",
+      "hint": "Use the distance from the center of the circle to the line and compare it with the radius."
+    },
+    {
+      "id": "math-gaokao-444-q003",
+      "category": "Analytic Geometry",
+      "concept": "Interior of an Ellipse and Coordinate Range",
+      "learningObjective": "Determine the range of \\(x\\) for points inside a given ellipse.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For points satisfying \\(\\frac{x^2}{25}+\\frac{y^2}{9} \\le 1\\), what is the range of \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-5 \\le x \\le 5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-3 \\le x \\le 3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(\\frac{y^2}{9} \\ge 0\\), the inequality implies \\(\\frac{x^2}{25} \\le 1\\). Therefore \\(x^2 \\le 25\\), which gives \\(-5 \\le x \\le 5\\). The value \\(3\\) is the semi-minor axis in the \\(y\\)-direction, not the \\(x\\)-range.",
+      "hint": "Use the nonnegativity of \\(\\frac{y^2}{9}\\) to isolate the condition on \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-444-q004",
+      "category": "Analytic Geometry",
+      "concept": "Hyperbola Inequality and \\(x\\)-Range",
+      "learningObjective": "Find the \\(x\\)-values for which a hyperbola inequality is satisfied.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which \\(x\\)-values satisfy the inequality \\(\\frac{x^2}{16}-\\frac{y^2}{9} \\ge 1\\) for some real \\(y\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x \\le -4\\) or \\(x \\ge 4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-4 \\le x \\le 4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If the inequality holds, then\n\\[\n\\frac{x^2}{16}\\ge1+\\frac{y^2}{9}\\ge1.\n\\]\nConsequently, \\(x^2\\ge16\\), which is equivalent to \\(x\\le-4\\) or \\(x\\ge4\\). Conversely, for any such \\(x\\), choosing \\(y=0\\) satisfies the original inequality. These conditions are therefore both necessary and sufficient. The boundary values \\(x=-4\\) and \\(x=4\\) are included. Option B is not the solution set because all values with \\(-4<x<4\\) are impossible.",
+      "hint": "Move the negative term to the right and use the fact that \\(\\frac{y^2}{9}\\) is nonnegative."
+    },
+    {
+      "id": "math-gaokao-444-q005",
+      "category": "Analytic Geometry",
+      "concept": "Parabolic Inequality and Point Testing",
+      "learningObjective": "Determine which point satisfies a system involving a parabolic inequality and a linear inequality.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Which point lies in the region defined by \\(y^2 \\le 8x\\) and \\(x \\le y+1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Test \\((1,3)\\): \\(y^2=9\\) and \\(8x=8\\), so \\(9 \\le 8\\) is false. Test \\((2,3)\\): \\(9 \\le 16\\) is true, and \\(2 \\le 3+1=4\\) is also true. Therefore only \\((2,3)\\) satisfies both inequalities.",
+      "hint": "Substitute each point into both inequalities and check whether both conditions hold."
+    },
+    {
+      "id": "math-gaokao-444-q006",
+      "category": "Analytic Geometry",
+      "concept": "Circle Inequality and Completing the Square",
+      "learningObjective": "Rewrite a quadratic inequality as a disk inequality and identify its center and radius.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The inequality \\(x^2+y^2 \\le 2x+4y\\) describes a disk. What are its center and radius?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Center \\((1,2)\\), radius \\(\\sqrt{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "Center \\((2,1)\\), radius \\(\\sqrt{5}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rewrite as \\(x^2-2x+y^2-4y \\le 0\\). Completing the square gives \\((x-1)^2-1+(y-2)^2-4 \\le 0\\), so \\((x-1)^2+(y-2)^2 \\le 5\\). Thus the center is \\((1,2)\\) and the radius is \\(\\sqrt{5}\\).",
+      "hint": "Move all terms to one side and complete the square in both variables."
+    },
+    {
+      "id": "math-gaokao-444-q007",
+      "category": "Analytic Geometry",
+      "concept": "Line-Disk Intersection and Parameter Range",
+      "learningObjective": "Determine all parameter values for which a line intersects a given disk.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For which real values of \\(k\\) does the line \\(y=kx+1\\) intersect the disk \\(x^2+y^2 \\le 1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All real \\(k\\)"
+        },
+        {
+          "label": "B",
+          "text": "Only \\(k=0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every line \\(y=kx+1\\) passes through \\((0,1)\\). Since \\((0,1)\\) satisfies \\(0^2+1^2=1 \\le 1\\), this point lies in the disk for every real \\(k\\). Hence the line intersects the disk for all real \\(k\\). Alternatively, the distance from the origin to the line is \\(\\frac{1}{\\sqrt{k^2+1}} \\le 1\\).",
+      "hint": "Look for a fixed point common to all lines of the form \\(y=kx+1\\)."
+    },
+    {
+      "id": "math-gaokao-444-q008",
+      "category": "Analytic Geometry",
+      "concept": "System of a Disk Inequality and a Half-Plane",
+      "learningObjective": "Identify a point that satisfies both a circular disk inequality and a linear inequality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which point lies in the region defined by \\(x^2+y^2 \\le 4\\) and \\(y \\ge x+1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-2,0)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\((0,0)\\), the linear inequality gives \\(0 \\ge 1\\), which is false. For \\((-2,0)\\), \\(x^2+y^2=4 \\le 4\\) is true, and \\(0 \\ge -2+1=-1\\) is true. Thus only \\((-2,0)\\) satisfies both inequalities.",
+      "hint": "Check the linear inequality first, then verify the disk inequality."
+    },
+    {
+      "id": "math-gaokao-444-q009",
+      "category": "Analytic Geometry",
+      "concept": "Maximum on an Ellipse Using Cauchy-Schwarz Inequality",
+      "learningObjective": "Use an inequality to find the maximum value of a linear expression on an ellipse.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "If real numbers \\(x,y\\) satisfy \\(\\frac{x^2}{4}+\\frac{y^2}{9}=1\\), what is the maximum value of \\(2x+3y\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(13\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{97}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(x=2a\\) and \\(y=3b\\). Then \\(a^2+b^2=1\\), and \\(2x+3y=4a+9b\\). By the Cauchy-Schwarz inequality, \\((4a+9b)^2 \\le (4^2+9^2)(a^2+b^2)=97\\). Thus the maximum is \\(\\sqrt{97}\\), attained when \\((a,b)\\) is proportional to \\((4,9)\\).",
+      "hint": "Parametrize the ellipse using \\(x=2a\\), \\(y=3b\\), then apply Cauchy-Schwarz."
+    },
+    {
+      "id": "math-gaokao-444-q010",
+      "category": "Analytic Geometry",
+      "concept": "Intersection of a Line and an Ellipse",
+      "learningObjective": "Determine the parameter range for a line to cut an ellipse at two distinct points.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For which real values of \\(m\\) does the line \\(y=mx+2\\) intersect the ellipse \\(\\frac{x^2}{4}+y^2=1\\) at two distinct points?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(|m|>\\frac{\\sqrt{3}}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(|m|<\\frac{\\sqrt{3}}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(y=mx+2\\) into \\(\\frac{x^2}{4}+y^2=1\\):\n\\[\n\\frac{x^2}{4}+(mx+2)^2=1\n\\]\nwhich becomes\n\\[\n\\left(m^2+\\frac{1}{4}\\right)x^2+4mx+3=0.\n\\]\nFor two distinct intersections, the discriminant must be positive:\n\\[\n(4m)^2-4\\left(m^2+\\frac{1}{4}\\right)(3)=4m^2-3>0.\n\\]\nThus \\(m^2>\\frac{3}{4}\\), so \\(|m|>\\frac{\\sqrt{3}}{2}\\).",
+      "hint": "Substitute the line into the ellipse and require the resulting quadratic to have two distinct real roots."
+    }
+  ]
+}

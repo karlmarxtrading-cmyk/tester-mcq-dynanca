@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-386",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 386",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-386-q001",
+      "category": "Number Theory",
+      "concept": "Divisibility by \\(9\\)",
+      "learningObjective": "Apply the divisibility rule for \\(9\\) to identify a number divisible by \\(9\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which of the following numbers is divisible by \\(9\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12345\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12348\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A number is divisible by \\(9\\) if the sum of its digits is divisible by \\(9\\). For \\(12345\\), the digit sum is \\(1+2+3+4+5=15\\), which is not divisible by \\(9\\). For \\(12348\\), the digit sum is \\(1+2+3+4+8=18\\), which is divisible by \\(9\\). Therefore, \\(12348\\) is divisible by \\(9\\), so the correct choice is B.",
+      "hint": "Use the divisibility rule for \\(9\\): add the digits and check whether the sum is a multiple of \\(9\\)."
+    },
+    {
+      "id": "math-gaokao-386-q002",
+      "category": "Number Theory",
+      "concept": "Remainders of Powers Modulo \\(10\\)",
+      "learningObjective": "Use the cycle of powers of \\(3\\) modulo \\(10\\) to find a remainder.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the remainder when \\(3^{20}\\) is divided by \\(10\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute powers of \\(3\\) modulo \\(10\\): \\(3^1\\equiv 3\\), \\(3^2\\equiv 9\\), \\(3^3\\equiv 27\\equiv 7\\), and \\(3^4\\equiv 81\\equiv 1\\pmod{10}\\). Thus the remainders repeat every \\(4\\) powers. Since \\(20=4\\cdot 5\\), we have \\(3^{20}=(3^4)^5\\equiv 1^5\\equiv 1\\pmod{10}\\). The remainder is \\(1\\), so the correct choice is B.",
+      "hint": "Find the repeating cycle of \\(3^n\\) modulo \\(10\\), then use the exponent \\(20\\)."
+    },
+    {
+      "id": "math-gaokao-386-q003",
+      "category": "Number Theory",
+      "concept": "Greatest Common Divisor",
+      "learningObjective": "Compute the greatest common divisor of two integers using prime factorization.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\gcd(84,132)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Write the numbers in prime factorization form: \\(84=2^2\\cdot 3\\cdot 7\\) and \\(132=2^2\\cdot 3\\cdot 11\\). The common prime factors are \\(2^2\\) and \\(3\\). Therefore, \\(\\gcd(84,132)=2^2\\cdot 3=12\\). The correct choice is B.",
+      "hint": "Factor both numbers into primes, then multiply the lowest powers of the common prime factors."
+    },
+    {
+      "id": "math-gaokao-386-q004",
+      "category": "Number Theory",
+      "concept": "Least Common Multiple",
+      "learningObjective": "Find the least common multiple of two integers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "What is the least common multiple of \\(12\\) and \\(18\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(72\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor the numbers: \\(12=2^2\\cdot 3\\) and \\(18=2\\cdot 3^2\\). The least common multiple takes the highest power of each prime: \\(2^2\\cdot 3^2=4\\cdot 9=36\\). Thus the least common multiple is \\(36\\), so the correct choice is A.",
+      "hint": "Use prime factorizations and take the largest exponent of each prime that appears."
+    },
+    {
+      "id": "math-gaokao-386-q005",
+      "category": "Number Theory",
+      "concept": "Number of Positive Divisors",
+      "learningObjective": "Use prime factorization to count the positive divisors of an integer.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many positive divisors does \\(36\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The prime factorization is \\(36=2^2\\cdot 3^2\\). If \\(n=p^a q^b\\), the number of positive divisors is \\((a+1)(b+1)\\). Therefore, the number of positive divisors of \\(36\\) is \\((2+1)(2+1)=3\\cdot 3=9\\). The correct choice is A.",
+      "hint": "Write \\(36\\) as a product of prime powers, then add \\(1\\) to each exponent and multiply."
+    },
+    {
+      "id": "math-gaokao-386-q006",
+      "category": "Number Theory",
+      "concept": "Modular Multiplication",
+      "learningObjective": "Determine a remainder after multiplying a congruence by an integer.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If an integer \\(n\\) leaves remainder \\(3\\) when divided by \\(5\\), what is the remainder when \\(3n\\) is divided by \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(n\\) leaves remainder \\(3\\) modulo \\(5\\), write \\(n=5k+3\\). Then \\[\n\\begin{aligned}\n3n&=3(5k+3) \\\\\n&=15k+9 \\\\\n&=5(3k+1)+4\n\\end{aligned}\n\\]. Therefore, \\(3n\\) leaves remainder \\(4\\) when divided by \\(5\\). The correct choice is A.",
+      "hint": "Represent \\(n\\) as \\(5k+3\\), then multiply by \\(3\\) and separate the part divisible by \\(5\\)."
+    },
+    {
+      "id": "math-gaokao-386-q007",
+      "category": "Number Theory",
+      "concept": "Remainders of Powers Modulo \\(5\\)",
+      "learningObjective": "Use the cycle of powers modulo \\(5\\) to compute a large remainder.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is the remainder when \\(7^{100}\\) is divided by \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(7\\equiv 2\\pmod{5}\\), we need \\(2^{100}\\pmod{5}\\). Now \\(2^4=16\\equiv 1\\pmod{5}\\). Because \\(100=4\\cdot 25\\), we have \\(2^{100}=(2^4)^{25}\\equiv 1^{25}\\equiv 1\\pmod{5}\\). Therefore, the remainder is \\(1\\), so the correct choice is B.",
+      "hint": "Reduce \\(7\\) modulo \\(5\\), then find the repeating cycle of powers of \\(2\\) modulo \\(5\\)."
+    },
+    {
+      "id": "math-gaokao-386-q008",
+      "category": "Number Theory",
+      "concept": "Divisibility by \\(11\\)",
+      "learningObjective": "Use the alternating digit sum rule for divisibility by \\(11\\) to find a missing digit.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The four-digit number \\(\\overline{45a6}\\) is divisible by \\(11\\), where \\(a\\) is a digit. What is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For divisibility by \\(11\\), the alternating sum of the digits must be divisible by \\(11\\). For \\(\\overline{45a6}\\), this alternating sum is \\((4+a)-(5+6)=a-7\\). Since \\(a\\) is a digit from \\(0\\) to \\(9\\), the only value that makes \\(a-7\\) divisible by \\(11\\) is \\(a=7\\). Thus the correct choice is B.",
+      "hint": "For a number to be divisible by \\(11\\), the difference between the sums of digits in alternating positions must be \\(0\\), \\(11\\), or \\(-11\\)."
+    },
+    {
+      "id": "math-gaokao-386-q009",
+      "category": "Number Theory",
+      "concept": "Quadratic Remainders Modulo \\(7\\)",
+      "learningObjective": "Compute the remainder of a square when the original number has a known remainder modulo \\(7\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If an integer \\(n\\) leaves remainder \\(4\\) when divided by \\(7\\), what is the remainder when \\(n^2\\) is divided by \\(7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(n\\) leaves remainder \\(4\\) modulo \\(7\\), write \\(n=7k+4\\). Then \\[\n\\begin{aligned}\nn^2&=(7k+4)^2 \\\\\n&=49k^2+56k+16 \\\\\n&=7(7k^2+8k+2)+2\n\\end{aligned}\n\\]. Therefore, \\(n^2\\) leaves remainder \\(2\\) when divided by \\(7\\). The correct choice is A.",
+      "hint": "Use \\(n=7k+4\\), square it, and separate the terms that are multiples of \\(7\\)."
+    },
+    {
+      "id": "math-gaokao-386-q010",
+      "category": "Number Theory",
+      "concept": "Modular Exponentiation",
+      "learningObjective": "Use periodicity modulo \\(13\\) to find the remainder of a large power.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the remainder when \\(2^{2026}\\) is divided by \\(13\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(13\\) is prime, Fermat's little theorem gives \\(2^{12}\\equiv 1\\pmod{13}\\). Now \\(2026=12\\cdot 168+10\\), so \\(2^{2026}\\equiv 2^{10}\\pmod{13}\\). Compute \\(2^{10}=1024\\), and \\(1024=13\\cdot 78+10\\). Therefore, \\(2^{2026}\\equiv 10\\pmod{13}\\). The remainder is \\(10\\), so the correct choice is B.",
+      "hint": "Use the fact that powers of \\(2\\) modulo \\(13\\) repeat every \\(12\\) exponents, then reduce \\(2026\\) modulo \\(12\\)."
+    }
+  ]
+}

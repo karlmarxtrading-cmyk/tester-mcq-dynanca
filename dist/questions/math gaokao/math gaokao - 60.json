@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-60",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 60",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-60-q001",
+      "category": "Algebra",
+      "concept": "System of Linear Inequalities in One Variable",
+      "learningObjective": "Solve a system of two linear inequalities in one variable and express the solution as an interval.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system of inequalities\n\\[\n\\begin{cases}\nx-1>0,\\\\\n2x\\le 6.\n\\end{cases}\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([1,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,3]\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Solve the first inequality:\n\\[\nx-1>0 \\Rightarrow x>1.\n\\]\nSolve the second inequality:\n\\[\n2x\\le 6 \\Rightarrow x\\le 3.\n\\]\nThe solution is the intersection of \\(x>1\\) and \\(x\\le 3\\):\n\\[\n1<x\\le 3.\n\\]\nIn interval notation, this is\n\\[\n(1,3].\n\\]\nThus option B is correct.",
+      "hint": "Solve each inequality separately, then take the intersection of the two solution sets."
+    },
+    {
+      "id": "math-gaokao-60-q002",
+      "category": "Algebra",
+      "concept": "Testing a Point in a System of Linear Inequalities",
+      "learningObjective": "Determine which of two given points satisfies a system of two linear inequalities in two variables.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which point satisfies the system\n\\[\n\\begin{cases}\nx+y<5,\\\\\ny>x+1?\n\\end{cases}\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Test \\((1,2)\\):\n\\[\n1+2=3<5,\n\\]\nbut\n\\[\n2>1+1 \\Rightarrow 2>2\n\\]\nis false because the inequality is strict.\nTest \\((1,3)\\):\n\\[\n1+3=4<5,\n\\]\nand\n\\[\n3>1+1 \\Rightarrow 3>2,\n\\]\nwhich is true. Therefore, only \\((1,3)\\) satisfies the system. Thus option B is correct.",
+      "hint": "Substitute each point into both inequalities and check whether both conditions are true."
+    },
+    {
+      "id": "math-gaokao-60-q003",
+      "category": "Algebra",
+      "concept": "Integer Solutions of a System of Inequalities",
+      "learningObjective": "Count the integer solutions of a system of linear inequalities in one variable.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the number of integer solutions of the system\n\\[\n\\begin{cases}\nx>-2,\\\\\nx\\le 2,\\\\\nx\\ge 0.\n\\end{cases}\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Combining the inequalities gives\n\\[\n0\\le x\\le 2.\n\\]\nThe integers satisfying this are\n\\[\n0,\\ 1,\\ 2.\n\\]\nThere are \\(3\\) integer solutions. Thus option A is correct.",
+      "hint": "First find the overall interval for \\(x\\), then list the integers inside it."
+    },
+    {
+      "id": "math-gaokao-60-q004",
+      "category": "Algebra",
+      "concept": "Maximum Value in a Feasible Region",
+      "learningObjective": "Determine the maximum possible value of one variable in a system of linear inequalities in two variables.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\((x,y)\\) satisfies the system\n\\[\n\\begin{cases}\nx+y\\le 5,\\\\\nx\\ge 1,\\\\\ny\\ge 2,\n\\end{cases}\n\\]\nwhat is the maximum possible value of \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(y\\ge 2\\) and \\(x+y\\le 5\\), we get\n\\[\nx\\le 5-y\\le 5-2=3.\n\\]\nThus \\(x\\le 3\\). The value \\(x=3\\) is attainable when \\(y=2\\), since\n\\[\n3+2=5\\le 5,\\quad x=3\\ge 1,\\quad y=2\\ge 2.\n\\]\nTherefore, the maximum possible value of \\(x\\) is \\(3\\). Thus option B is correct.",
+      "hint": "Use the lower bound on \\(y\\) together with \\(x+y\\le 5\\) to bound \\(x\\) from above."
+    },
+    {
+      "id": "math-gaokao-60-q005",
+      "category": "Algebra",
+      "concept": "System Involving an Absolute-Value Inequality",
+      "learningObjective": "Solve a system containing an absolute-value inequality and a linear inequality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve the system\n\\[\n\\begin{cases}\nx\\ge 0,\\\\\n|x-1|\\le 2.\n\\end{cases}\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([0,3]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,3]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The inequality \\(|x-1|\\le 2\\) is equivalent to\n\\[\n-2\\le x-1\\le 2.\n\\]\nAdd \\(1\\) to all parts:\n\\[\n-1\\le x\\le 3.\n\\]\nIntersecting this with \\(x\\ge 0\\), we get\n\\[\n0\\le x\\le 3.\n\\]\nIn interval notation, this is\n\\[\n[0,3].\n\\]\nThus option A is correct.",
+      "hint": "Solve the absolute-value inequality first, then intersect its solution with \\(x\\ge 0\\)."
+    },
+    {
+      "id": "math-gaokao-60-q006",
+      "category": "Algebra",
+      "concept": "Parameter in a System of Inequalities",
+      "learningObjective": "Determine a parameter value from the given solution set of a system of linear inequalities.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If the solution set of the system\n\\[\n\\begin{cases}\nx>2,\\\\\nx\\le a\n\\end{cases}\n\\]\nis \\((2,5]\\), find \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The system \\(x>2\\) and \\(x\\le a\\) has solution\n\\[\n(2,a]\n\\]\nprovided \\(a>2\\). The given solution set is \\((2,5]\\), so the right endpoint must be \\(5\\). Therefore,\n\\[\na=5.\n\\]\nThus option A is correct.",
+      "hint": "Compare the right endpoint of the interval \\((2,a]\\) with the given interval \\((2,5]\\)."
+    },
+    {
+      "id": "math-gaokao-60-q007",
+      "category": "Algebra",
+      "concept": "Linear Programming Objective Function",
+      "learningObjective": "Find the maximum value of a linear expression over a feasible region defined by a system of inequalities.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For the system\n\\[\n\\begin{cases}\nx\\ge 0,\\\\\ny\\ge 0,\\\\\nx+y\\le 4,\n\\end{cases}\n\\]\nfind the maximum value of \\(2x+3y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The feasible region is the triangle with vertices\n\\[\n(0,0),\\quad (4,0),\\quad (0,4).\n\\]\nEvaluate \\(2x+3y\\) at each vertex:\n\\[\n(0,0):\\quad 2(0)+3(0)=0,\n\\]\n\\[\n(4,0):\\quad 2(4)+3(0)=8,\n\\]\n\\[\n(0,4):\\quad 2(0)+3(4)=12.\n\\]\nThe maximum value is \\(12\\). Thus option A is correct.",
+      "hint": "For a linear objective function over a polygon, check its values at the vertices of the feasible region."
+    },
+    {
+      "id": "math-gaokao-60-q008",
+      "category": "Algebra",
+      "concept": "Minimum Value in a Feasible Region",
+      "learningObjective": "Determine the minimum value of one variable in a system of linear inequalities.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For the system\n\\[\n\\begin{cases}\nx+y\\ge 2,\\\\\nx-y\\le 2,\\\\\nx\\ge 0,\n\\end{cases}\n\\]\nfind the minimum possible value of \\(y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(x+y\\ge 2\\), we have\n\\[\ny\\ge 2-x.\n\\]\nFrom \\(x-y\\le 2\\), we have\n\\[\ny\\ge x-2.\n\\]\nThus\n\\[\ny\\ge \\max(2-x,\\ x-2).\n\\]\nFor \\(x\\ge 0\\), the expression \\(\\max(2-x,\\ x-2)\\) is minimized when\n\\[\n2-x=x-2 \\Rightarrow x=2.\n\\]\nAt \\(x=2\\), we get\n\\[\ny\\ge 0.\n\\]\nThe point \\((2,0)\\) satisfies all constraints:\n\\[\n2+0=2\\ge 2,\\quad 2-0=2\\le 2,\\quad 2\\ge 0.\n\\]\nTherefore, the minimum possible value of \\(y\\) is \\(0\\). Thus option B is correct.",
+      "hint": "Rewrite each inequality as a lower bound for \\(y\\), then find the smallest possible value of the larger lower bound."
+    },
+    {
+      "id": "math-gaokao-60-q009",
+      "category": "Algebra",
+      "concept": "Integer Points in a Nonlinear System of Inequalities",
+      "learningObjective": "Count integer pairs satisfying a system involving a circle and a linear inequality.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the number of integer pairs \\((x,y)\\) satisfying\n\\[\n\\begin{cases}\nx^2+y^2\\le 4,\\\\\ny\\ge x.\n\\end{cases}\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "List all integer points inside or on the circle \\(x^2+y^2\\le 4\\) and check \\(y\\ge x\\).\nFor \\(x=-2\\): \\(y=0\\) gives \\((-2,0)\\), which satisfies \\(0\\ge -2\\). Count \\(1\\).\nFor \\(x=-1\\): \\(y=-1,0,1\\), all satisfy \\(y\\ge -1\\). Count \\(3\\).\nFor \\(x=0\\): \\(y=0,1,2\\) satisfy \\(y\\ge 0\\). Count \\(3\\).\nFor \\(x=1\\): only \\(y=1\\) satisfies \\(y\\ge 1\\). Count \\(1\\).\nFor \\(x=2\\): \\(y=0\\) does not satisfy \\(0\\ge 2\\). Count \\(0\\).\nTotal:\n\\[\n1+3+3+1=8.\n\\]\nThus option B is correct.",
+      "hint": "List the integer points inside the circle by considering each possible integer \\(x\\)-value, then test the inequality \\(y\\ge x\\)."
+    },
+    {
+      "id": "math-gaokao-60-q010",
+      "category": "Algebra",
+      "concept": "Parameter Condition for a System of Inequalities to Have a Solution",
+      "learningObjective": "Determine the minimum parameter value for which a system of linear inequalities has a solution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the minimum value of \\(m\\) such that the system\n\\[\n\\begin{cases}\nx+y\\ge 1,\\\\\nx-y\\ge 1,\\\\\nx\\le m\n\\end{cases}\n\\]\nhas at least one solution.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Add the first two inequalities:\n\\[\n(x+y)+(x-y)\\ge 1+1 \\Rightarrow 2x\\ge 2 \\Rightarrow x\\ge 1.\n\\]\nThus any solution must satisfy \\(x\\ge 1\\). Since the system also requires \\(x\\le m\\), we must have\n\\[\nm\\ge 1.\n\\]\nWhen \\(m=1\\), the point \\((1,0)\\) satisfies\n\\[\n1+0=1\\ge 1,\\quad 1-0=1\\ge 1,\\quad x=1\\le 1.\n\\]\nTherefore, the minimum value of \\(m\\) is \\(1\\). Thus option A is correct.",
+      "hint": "Combine the first two inequalities to find a necessary lower bound for \\(x\\), then compare it with \\(x\\le m\\)."
+    }
+  ]
+}

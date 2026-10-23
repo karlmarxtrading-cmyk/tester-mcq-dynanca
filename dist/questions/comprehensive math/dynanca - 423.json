@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-423",
+  "category": "Comprehensive Mathematics",
+  "title": "423. Trigonometry & Periodic Models: Sum-to-Product Formulas",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-423-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Sum of two sines as a product",
+      "learningObjective": "State the sum-to-product formula for a sum of two sines.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For all angles \\(A\\) and \\(B\\), \\(\\sin A+\\sin B\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\cos\\frac{A+B}{2}\\sin\\frac{A-B}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\sin\\frac{A+B}{2}\\cos\\frac{A-B}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sum-to-product formula is \\(\\sin A+\\sin B=2\\sin\\frac{A+B}{2}\\cos\\frac{A-B}{2}\\). The other expression equals \\(\\sin A-\\sin B\\). A check with \\(A=B\\): the correct formula gives \\(2\\sin A\\cdot 1=2\\sin A\\), while the other gives \\(0\\).",
+      "hint": "Test each candidate with \\(A=B\\), where the sum is \\(2\\sin A\\)."
+    },
+    {
+      "id": "dynanca-423-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Sum of two cosines as a product",
+      "learningObjective": "State the sum-to-product formula for a sum of two cosines.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For all angles \\(A\\) and \\(B\\), \\(\\cos A+\\cos B\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\sin\\frac{A+B}{2}\\sin\\frac{A-B}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\cos\\frac{A+B}{2}\\cos\\frac{A-B}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sum-to-product formula is \\(\\cos A+\\cos B=2\\cos\\frac{A+B}{2}\\cos\\frac{A-B}{2}\\). The expression with two sines and a negative sign equals \\(\\cos A-\\cos B\\). A check with \\(A=B\\): the correct formula gives \\(2\\cos A\\).",
+      "hint": "Test each candidate with \\(A=B\\), where the sum is \\(2\\cos A\\)."
+    },
+    {
+      "id": "dynanca-423-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Difference of two cosines as a product",
+      "learningObjective": "State the sum-to-product formula for a difference of two cosines with the correct sign.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "For all angles \\(A\\) and \\(B\\), \\(\\cos A-\\cos B\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\sin\\frac{A+B}{2}\\sin\\frac{A-B}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\sin\\frac{A+B}{2}\\sin\\frac{A-B}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The formula is \\(\\cos A-\\cos B=-2\\sin\\frac{A+B}{2}\\sin\\frac{A-B}{2}\\). A check with \\(A=90^\\circ\\) and \\(B=0^\\circ\\): the left side is \\(0-1=-1\\), and the formula gives \\(-2\\sin 45^\\circ\\sin 45^\\circ=-2\\cdot\\frac{1}{2}=-1\\). Without the negative sign the value would be \\(+1\\).",
+      "hint": "Check the sign with \\(A=90^\\circ\\) and \\(B=0^\\circ\\)."
+    },
+    {
+      "id": "dynanca-423-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Factoring a sum of sines",
+      "learningObjective": "Convert a sum of two sines with different arguments into a product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For every real \\(x\\), \\(\\sin 5x+\\sin 3x\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\sin 8x\\cos 2x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\sin 4x\\cos x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(\\sin A+\\sin B=2\\sin\\frac{A+B}{2}\\cos\\frac{A-B}{2}\\) with \\(A=5x\\) and \\(B=3x\\): the half-sum is \\(4x\\) and the half-difference is \\(x\\). Hence \\(\\sin 5x+\\sin 3x=2\\sin 4x\\cos x\\). Using \\(8x\\) and \\(2x\\) forgets to halve the sum and the difference.",
+      "hint": "The arguments in the product are half the sum and half the difference of the original arguments."
+    },
+    {
+      "id": "dynanca-423-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Factoring a sum of cosines",
+      "learningObjective": "Convert a sum of two cosines with different arguments into a product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For every real \\(x\\), \\(\\cos 7x+\\cos x\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\cos 8x\\cos 6x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\cos 4x\\cos 3x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(\\cos A+\\cos B=2\\cos\\frac{A+B}{2}\\cos\\frac{A-B}{2}\\) with \\(A=7x\\) and \\(B=x\\): the half-sum is \\(4x\\) and the half-difference is \\(3x\\). Hence \\(\\cos 7x+\\cos x=2\\cos 4x\\cos 3x\\). The arguments \\(8x\\) and \\(6x\\) are the full sum and difference, not their halves.",
+      "hint": "Halve both the sum and the difference of the two arguments."
+    },
+    {
+      "id": "dynanca-423-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Factoring a difference of sines",
+      "learningObjective": "Convert a difference of two sines into a product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For every real \\(x\\), \\(\\sin 6x-\\sin 2x\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\cos 4x\\sin 2x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\sin 4x\\cos 2x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(\\sin A-\\sin B=2\\cos\\frac{A+B}{2}\\sin\\frac{A-B}{2}\\) with \\(A=6x\\) and \\(B=2x\\): the half-sum is \\(4x\\) and the half-difference is \\(2x\\). Hence \\(\\sin 6x-\\sin 2x=2\\cos 4x\\sin 2x\\). The expression \\(2\\sin 4x\\cos 2x\\) equals the sum \\(\\sin 6x+\\sin 2x\\) instead.",
+      "hint": "For a difference of sines, the cosine takes the half-sum and the sine takes the half-difference."
+    },
+    {
+      "id": "dynanca-423-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Evaluating a sum of sines exactly",
+      "learningObjective": "Evaluate a sum of two sines by converting it to a product of standard values.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the exact value of \\(\\sin 75^\\circ+\\sin 15^\\circ\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\sqrt{2}}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{\\sqrt{6}}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(\\sin A+\\sin B=2\\sin\\frac{A+B}{2}\\cos\\frac{A-B}{2}\\): the half-sum is \\(45^\\circ\\) and the half-difference is \\(30^\\circ\\). So the value is \\(2\\sin 45^\\circ\\cos 30^\\circ=2\\cdot\\frac{\\sqrt{2}}{2}\\cdot\\frac{\\sqrt{3}}{2}=\\frac{\\sqrt{6}}{2}\\approx 1.225\\). The value \\(\\frac{\\sqrt{2}}{2}\\) is the difference \\(\\sin 75^\\circ-\\sin 15^\\circ\\).",
+      "hint": "Half the sum and half the difference of the two angles are both standard angles."
+    },
+    {
+      "id": "dynanca-423-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Evaluating a difference of cosines exactly",
+      "learningObjective": "Evaluate a difference of two cosines with the correct sign.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the exact value of \\(\\cos 75^\\circ-\\cos 15^\\circ\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{\\sqrt{2}}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{\\sqrt{2}}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(\\cos A-\\cos B=-2\\sin\\frac{A+B}{2}\\sin\\frac{A-B}{2}\\): the value is \\(-2\\sin 45^\\circ\\sin 30^\\circ=-2\\cdot\\frac{\\sqrt{2}}{2}\\cdot\\frac{1}{2}=-\\frac{\\sqrt{2}}{2}\\). The result is negative because cosine decreases on acute angles, so \\(\\cos 75^\\circ<\\cos 15^\\circ\\).",
+      "hint": "Decide first which of the two cosines is larger; that fixes the sign of the difference."
+    },
+    {
+      "id": "dynanca-423-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Difference of cosines with a negative half-difference",
+      "learningObjective": "Apply the difference-of-cosines formula when the first argument is smaller.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "For every real \\(x\\), \\(\\cos 3x-\\cos 5x\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\sin 4x\\sin x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\sin 4x\\sin x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(\\cos A-\\cos B=-2\\sin\\frac{A+B}{2}\\sin\\frac{A-B}{2}\\) with \\(A=3x\\) and \\(B=5x\\): the half-sum is \\(4x\\) and the half-difference is \\(-x\\). Then \\(-2\\sin 4x\\sin(-x)=-2\\sin 4x\\cdot(-\\sin x)=2\\sin 4x\\sin x\\). The two negative signs cancel.",
+      "hint": "The half-difference is negative here; use the fact that sine is odd."
+    },
+    {
+      "id": "dynanca-423-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Simplifying a quotient with sum-to-product",
+      "learningObjective": "Simplify a quotient of sums by factoring numerator and denominator.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Wherever it is defined, \\(\\frac{\\sin 5x+\\sin x}{\\cos 5x+\\cos x}\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\tan 6x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\tan 3x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor both parts: \\(\\sin 5x+\\sin x=2\\sin 3x\\cos 2x\\) and \\(\\cos 5x+\\cos x=2\\cos 3x\\cos 2x\\). The common factor \\(2\\cos 2x\\) cancels, leaving \\(\\frac{\\sin 3x}{\\cos 3x}=\\tan 3x\\). The argument is the half-sum \\(3x\\), not the full sum \\(6x\\).",
+      "hint": "Convert the numerator and the denominator to products and look for a common factor."
+    }
+  ]
+}

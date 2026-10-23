@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-320",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 320",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-320-q001",
+      "category": "Probability",
+      "concept": "Standard Normal Distribution",
+      "learningObjective": "Compute a cumulative probability for a standard normal variable.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(Z\\) follow the standard normal distribution. Find \\(P(Z<1.5)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.9332\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.0668\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(Z\\sim N(0,1)\\), the standard normal table gives\n\\[\nP(Z<1.5)=0.9332.\n\\]\nThe value \\(0.0668\\) is the upper-tail probability \\(P(Z>1.5)\\), not \\(P(Z<1.5)\\).",
+      "hint": "Use the standard normal table or the symmetry of the normal curve."
+    },
+    {
+      "id": "math-gaokao-320-q002",
+      "category": "Probability",
+      "concept": "Normal Distribution Probability",
+      "learningObjective": "Convert a normal variable to standard normal and compute a cumulative probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(X\\sim N(100,16)\\). Find \\(P(X<104)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.8413\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.1587\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Here \\(\\mu=100\\) and \\(\\sigma^2=16\\), so \\(\\sigma=4\\). Standardize:\n\\[\nZ=\\frac{X-100}{4}.\n\\]\nThus\n\\[\nP(X<104)=P\\left(Z<\\frac{104-100}{4}\\right)=P(Z<1)=0.8413.\n\\]\nThe value \\(0.1587\\) is \\(P(Z>1)\\), the complement.",
+      "hint": "First find the standard deviation from the given variance, then convert \\(X=104\\) to a \\(z\\)-score."
+    },
+    {
+      "id": "math-gaokao-320-q003",
+      "category": "Probability",
+      "concept": "Interval Probability for Normal Distribution",
+      "learningObjective": "Compute the probability that a normal variable lies in an interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(X\\sim N(50,25)\\). Find \\(P(45<X<60)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.8185\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.9544\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(\\sigma^2=25\\), we have \\(\\sigma=5\\). Standardize the endpoints:\n\\[\nP(45<X<60)=P\\left(\\frac{45-50}{5}<Z<\\frac{60-50}{5}\\right)=P(-1<Z<2).\n\\]\nUsing the standard normal table,\n\\[\nP(-1<Z<2)=P(Z<2)-P(Z<-1)=0.9772-0.1587=0.8185.\n\\]\nThe value \\(0.9544\\) corresponds to \\(P(-2<Z<2)\\), which is not the required interval.",
+      "hint": "Convert both interval endpoints to \\(z\\)-scores and subtract the smaller cumulative probability from the larger one."
+    },
+    {
+      "id": "math-gaokao-320-q004",
+      "category": "Probability",
+      "concept": "Upper-Tail Probability",
+      "learningObjective": "Compute an upper-tail probability for a normally distributed variable.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(X\\sim N(70,100)\\). Find \\(P(X>85)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.9332\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.0668\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Here \\(\\mu=70\\) and \\(\\sigma^2=100\\), so \\(\\sigma=10\\). Standardize:\n\\[\nP(X>85)=P\\left(Z>\\frac{85-70}{10}\\right)=P(Z>1.5).\n\\]\nFrom the standard normal table,\n\\[\nP(Z>1.5)=1-P(Z<1.5)=1-0.9332=0.0668.\n\\]\nThe value \\(0.9332\\) is \\(P(Z<1.5)\\), the complement of the required probability.",
+      "hint": "Compute the \\(z\\)-score and then use the complement rule for an upper-tail probability."
+    },
+    {
+      "id": "math-gaokao-320-q005",
+      "category": "Probability",
+      "concept": "Normal Distribution Application",
+      "learningObjective": "Apply the normal distribution to a real-world measurement problem.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Adult male heights in a city are normally distributed with mean \\(170\\) cm and standard deviation \\(5\\) cm. What is the probability that a randomly selected adult male is taller than \\(178\\) cm?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.9452\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.0548\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(X\\) be the height. Then \\(X\\sim N(170,5^2)\\). Standardize:\n\\[\nP(X>178)=P\\left(Z>\\frac{178-170}{5}\\right)=P(Z>1.6).\n\\]\nFrom the standard normal table,\n\\[\nP(Z>1.6)=1-P(Z<1.6)=1-0.9452=0.0548.\n\\]\nThe value \\(0.9452\\) is the probability of being shorter than \\(178\\) cm.",
+      "hint": "Subtract the mean and divide by the standard deviation, then use the complement rule."
+    },
+    {
+      "id": "math-gaokao-320-q006",
+      "category": "Probability",
+      "concept": "Normal Distribution Percentile",
+      "learningObjective": "Find a value corresponding to a given upper-tail percentage in a normal distribution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In a normal distribution with mean \\(500\\) and standard deviation \\(100\\), what score is exceeded by approximately \\(15.87\\%\\) of the population?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(600\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(700\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "We need \\(x\\) such that\n\\[\nP(X>x)=0.1587.\n\\]\nFor the standard normal distribution,\n\\[\nP(Z>1)=0.1587.\n\\]\nThus the corresponding \\(z\\)-score is \\(1\\). Therefore,\n\\[\nx=\\mu+z\\sigma=500+1\\cdot100=600.\n\\]\nA score of \\(700\\) would correspond to \\(z=2\\), whose upper-tail probability is about \\(0.0228\\).",
+      "hint": "Find the standard normal \\(z\\)-score whose upper-tail probability is \\(0.1587\\), then convert it back to the original scale."
+    },
+    {
+      "id": "math-gaokao-320-q007",
+      "category": "Probability",
+      "concept": "Determining Standard Deviation from Normal Probabilities",
+      "learningObjective": "Determine a normal distribution parameter from given cumulative probabilities.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(X\\) be normally distributed with mean \\(\\mu\\) and variance \\(\\sigma^2\\). If \\(P(X<2)=0.5\\) and \\(P(X<0)=0.1587\\), what is \\(\\sigma\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(P(X<2)=0.5\\), the mean is the median, so\n\\[\n\\mu=2.\n\\]\nAlso,\n\\[\nP(X<0)=P\\left(Z<\\frac{0-2}{\\sigma}\\right)=0.1587.\n\\]\nFrom the standard normal table,\n\\[\nP(Z<-1)=0.1587.\n\\]\nTherefore,\n\\[\n\\frac{0-2}{\\sigma}=-1.\n\\]\nSolving gives\n\\[\n-2=-\\sigma \\quad\\Rightarrow\\quad \\sigma=2.\n\\]",
+      "hint": "Use \\(P(X<\\mu)=0.5\\) to identify the mean, then match \\(P(X<0)\\) to a standard normal cumulative probability."
+    },
+    {
+      "id": "math-gaokao-320-q008",
+      "category": "Probability",
+      "concept": "Symmetric Interval and Standard Deviation",
+      "learningObjective": "Determine the standard deviation from a symmetric interval probability.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(X\\sim N(10,\\sigma^2)\\). If \\(P(8<X<12)=0.9544\\), what is \\(\\sigma\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The interval \\(8<X<12\\) is symmetric about the mean \\(10\\). For the standard normal distribution,\n\\[\nP(-2<Z<2)=0.9544.\n\\]\nThus the endpoints must correspond to \\(z=-2\\) and \\(z=2\\). For the lower endpoint,\n\\[\n\\frac{8-10}{\\sigma}=-2.\n\\]\nSo\n\\[\n\\frac{-2}{\\sigma}=-2 \\quad\\Rightarrow\\quad \\sigma=1.\n\\]",
+      "hint": "Recognize that \\(0.9544\\) is the probability for a standard normal variable between \\(-2\\) and \\(2\\), then relate the interval half-width to \\(\\sigma\\)."
+    },
+    {
+      "id": "math-gaokao-320-q009",
+      "category": "Probability",
+      "concept": "Two-Tail Probability",
+      "learningObjective": "Compute a two-tail probability for a normally distributed quality characteristic.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "The weights of packages are normally distributed with mean \\(500\\) g and standard deviation \\(10\\) g. Find the probability that a randomly selected package weighs less than \\(480\\) g or more than \\(520\\) g.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.0456\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.9544\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(X\\sim N(500,10^2)\\). Standardize the boundary values:\n\\[\nP(X<480\\text{ or }X>520)=P(Z<-2)+P(Z>2).\n\\]\nBy symmetry,\n\\[\nP(Z<-2)+P(Z>2)=2P(Z>2)=2(1-P(Z<2)).\n\\]\nFrom the standard normal table, \\(P(Z<2)=0.9772\\). Hence\n\\[\n2(1-0.9772)=2(0.0228)=0.0456.\n\\]\nThe value \\(0.9544\\) is the probability of the complementary event \\(480<X<520\\).",
+      "hint": "Convert \\(480\\) and \\(520\\) to \\(z\\)-scores, then use the symmetry of the standard normal curve."
+    },
+    {
+      "id": "math-gaokao-320-q010",
+      "category": "Probability",
+      "concept": "Sum of Independent Normal Variables",
+      "learningObjective": "Analyze the distribution of a sum of independent normal variables.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(X\\sim N(1,4)\\) and \\(Y\\sim N(2,9)\\) be independent normal variables. Find \\(P(X+Y<3)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.8413\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For independent normal variables,\n\\[\nX+Y\\sim N(\\mu_X+\\mu_Y,\\ \\sigma_X^2+\\sigma_Y^2).\n\\]\nThus\n\\[\n\\mu_{X+Y}=1+2=3\n\\]\nand\n\\[\n\\sigma_{X+Y}^2=4+9=13.\n\\]\nSo\n\\[\nX+Y\\sim N(3,13).\n\\]\nThe value \\(3\\) is the mean of \\(X+Y\\). For any normal distribution,\n\\[\nP(X+Y<\\mu_{X+Y})=0.5.\n\\]\nTherefore,\n\\[\nP(X+Y<3)=0.5.\n\\]\nThe value \\(0.8413\\) would correspond to being one standard deviation above the mean, not at the mean.",
+      "hint": "Find the mean and variance of \\(X+Y\\), then use the symmetry of the normal distribution about its mean."
+    }
+  ]
+}

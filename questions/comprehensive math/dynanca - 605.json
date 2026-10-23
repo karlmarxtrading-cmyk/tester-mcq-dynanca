@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-605",
+  "category": "Comprehensive Mathematics",
+  "title": "605. Discrete Mathematics, Counting & Graph Theory: Network Flow Conservation",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-605-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The conservation rule",
+      "learningObjective": "State the flow conservation rule.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What does flow conservation require in a flow network with source \\(S\\) and sink \\(T\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At every vertex other than \\(S\\) and \\(T\\), the total flow entering equals the total flow leaving."
+        },
+        {
+          "label": "B",
+          "text": "At every vertex, including \\(S\\) and \\(T\\), the total flow entering equals the total flow leaving."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Inner vertices neither create nor absorb flow, so what enters them must leave them. The source and the sink are the exceptions: the source sends out more than it receives, and the sink receives more than it sends out, by the value of the flow.",
+      "hint": "Two vertices are allowed to be unbalanced."
+    },
+    {
+      "id": "dynanca-605-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A missing outflow",
+      "learningObjective": "Use conservation to find an unknown flow leaving a vertex.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An inner vertex \\(V\\) of a flow network receives \\(3\\) and \\(4\\) units along its two incoming arcs and sends \\(2\\) and \\(x\\) units along its two outgoing arcs. What is \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Conservation at \\(V\\) gives \\(3+4=2+x\\), so \\(x=5\\). The value \\(7\\) is the total flow entering \\(V\\); it ignores the \\(2\\) units that already leave along the other arc.",
+      "hint": "Set the total entering equal to the total leaving."
+    },
+    {
+      "id": "dynanca-605-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "One arc in, three arcs out",
+      "learningObjective": "Use conservation at a vertex with several outgoing arcs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "An inner vertex receives \\(6\\) units along its only incoming arc and sends \\(1\\), \\(2\\), and \\(x\\) units along its three outgoing arcs. What is \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Conservation gives \\(6=1+2+x\\), so \\(x=3\\). The value \\(9\\) adds the known flows instead of balancing them.",
+      "hint": "The three outgoing flows must add up to the incoming flow."
+    },
+    {
+      "id": "dynanca-605-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Checking a proposed flow",
+      "learningObjective": "Decide whether a proposed assignment satisfies conservation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A proposed flow assigns \\(3\\) to \\(S\\to A\\), \\(1\\) to \\(A\\to B\\), \\(1\\) to \\(A\\to T\\), \\(2\\) to \\(S\\to B\\), and \\(3\\) to \\(B\\to T\\). Does it satisfy flow conservation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the vertex \\(A\\) receives \\(3\\) units but sends out only \\(2\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; the vertex \\(B\\) receives \\(3\\) units and sends out \\(3\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Conservation must hold at every inner vertex. At \\(B\\) it holds: \\(1+2=3\\) in and \\(3\\) out. At \\(A\\) it fails: \\(3\\) in, but only \\(1+1=2\\) out. One violated vertex is enough to rule out the assignment as a flow.",
+      "hint": "Check every inner vertex, not just one of them."
+    },
+    {
+      "id": "dynanca-605-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "What arrives at the sink",
+      "learningObjective": "Relate the flow leaving the source to the flow reaching the sink.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A flow sends \\(2\\) and \\(3\\) units along the two arcs that leave \\(S\\); no arc enters \\(S\\), and no arc leaves \\(T\\). How many units arrive at \\(T\\) in total?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inner vertices pass on exactly what they receive, so everything that leaves the source eventually reaches the sink. The source sends \\(2+3=5\\) units, so \\(5\\) units arrive at \\(T\\), whatever routes they take.",
+      "hint": "Nothing is lost or created on the way."
+    },
+    {
+      "id": "dynanca-605-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two unknown flows",
+      "learningObjective": "Use conservation at two vertices in turn.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A flow assigns \\(5\\) to \\(S\\to A\\), \\(x\\) to \\(A\\to B\\), \\(2\\) to \\(A\\to T\\), \\(1\\) to \\(S\\to B\\), and \\(y\\) to \\(B\\to T\\). There are no other arcs. What is \\(y\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "At \\(A\\): \\(5=x+2\\), so \\(x=3\\). At \\(B\\): the inflow is \\(1+x=4\\), so \\(y=4\\). The value \\(3\\) is \\(x\\), the flow on \\(A\\to B\\); it is only part of what enters \\(B\\).",
+      "hint": "Find the flow on \\(A\\to B\\) first, then balance \\(B\\)."
+    },
+    {
+      "id": "dynanca-605-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Source and sink balance each other",
+      "learningObjective": "Explain why the net flow out of the source equals the net flow into the sink.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Why does the net flow out of the source equal the net flow into the sink?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The source and the sink have the same number of arcs."
+        },
+        {
+          "label": "B",
+          "text": "Every other vertex sends out exactly as much as it receives."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Add up, over all vertices, the flow leaving minus the flow entering. Each arc is counted once positively, at its tail, and once negatively, at its head, so the total is \\(0\\). The inner vertices contribute \\(0\\) by conservation, so the surplus of the source must equal the intake of the sink. The numbers of arcs at the two vertices are irrelevant.",
+      "hint": "Add the balance of every vertex and see what remains."
+    },
+    {
+      "id": "dynanca-605-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Flow around a cycle",
+      "learningObjective": "Decide whether flow on a directed cycle satisfies conservation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "In a flow network, \\(2\\) units are placed on each arc of the directed cycle \\(A\\to B\\to C\\to A\\), where \\(A\\), \\(B\\), \\(C\\) are inner vertices, and \\(0\\) on every other arc. Is flow conservation satisfied?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; each of \\(A\\), \\(B\\), \\(C\\) receives \\(2\\) units and sends out \\(2\\) units."
+        },
+        {
+          "label": "B",
+          "text": "No; flow has to start at the source."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Conservation is a condition on each inner vertex separately, and here each vertex on the cycle has inflow \\(2\\) and outflow \\(2\\). So the assignment is a valid flow. Its value is \\(0\\), because nothing leaves the source; such a circulation satisfies the rules although it transports nothing from \\(S\\) to \\(T\\).",
+      "hint": "Check the balance at each of the three vertices."
+    },
+    {
+      "id": "dynanca-605-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two equal outflows",
+      "learningObjective": "Solve for a flow that appears on two outgoing arcs.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "An inner vertex receives \\(5\\) and \\(2\\) units along its incoming arcs. It sends \\(3\\) units along one outgoing arc and the same amount \\(x\\) along each of two further outgoing arcs. What is \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Conservation gives \\(5+2=3+x+x\\), so \\(2x=4\\) and \\(x=2\\). The value \\(4\\) is the total sent along the two equal arcs together, not the amount on each.",
+      "hint": "The unknown appears twice in the balance equation."
+    },
+    {
+      "id": "dynanca-605-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A chain of balances",
+      "learningObjective": "Use conservation at several vertices to find a flow near the sink.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A flow assigns \\(a\\) to \\(S\\to A\\), \\(4\\) to \\(S\\to B\\), \\(1\\) to \\(A\\to B\\), \\(3\\) to \\(A\\to C\\), \\(b\\) to \\(B\\to C\\), \\(2\\) to \\(B\\to T\\), and \\(c\\) to \\(C\\to T\\). There are no other arcs. What is \\(c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "At \\(A\\): \\(a=1+3=4\\). At \\(B\\): \\(4+1=b+2\\), so \\(b=3\\). At \\(C\\): \\(3+b=c\\), so \\(c=6\\). As a check, the source sends \\(a+4=8\\) and the sink receives \\(2+c=8\\).",
+      "hint": "Balance the vertices in the order \\(A\\), \\(B\\), \\(C\\)."
+    }
+  ]
+}

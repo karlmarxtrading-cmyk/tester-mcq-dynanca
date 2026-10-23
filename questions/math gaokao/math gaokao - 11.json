@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-11",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 11",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-11-q001",
+      "category": "Sets",
+      "concept": "Cardinality of a Power Set",
+      "learningObjective": "Determine the number of subsets of a finite set from its cardinality.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A\\) be a finite set with \\(|A|=6\\). How many subsets does \\(A\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(64\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A finite set with \\(n\\) elements has \\(2^n\\) subsets. Since \\(|A|=6\\), the number of subsets is\n\\[\n2^6=64.\n\\]",
+      "hint": "Use the formula for the number of subsets of an \\(n\\)-element set."
+    },
+    {
+      "id": "math-gaokao-11-q002",
+      "category": "Sets",
+      "concept": "Cardinality of a Cartesian Product",
+      "learningObjective": "Find the cardinality of the Cartesian product of two finite sets.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A\\) and \\(B\\) be finite sets with \\(|A|=4\\) and \\(|B|=5\\). What is \\(|A\\times B|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For finite sets, the cardinality of the Cartesian product is the product of the cardinalities:\n\\[\n|A\\times B|=|A|\\cdot |B|=4\\cdot 5=20.\n\\]",
+      "hint": "Multiply the cardinalities of the two sets."
+    },
+    {
+      "id": "math-gaokao-11-q003",
+      "category": "Sets",
+      "concept": "Two-Set Inclusion-Exclusion",
+      "learningObjective": "Use the two-set inclusion-exclusion formula to find a union cardinality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For finite sets \\(A\\) and \\(B\\), \\(|A|=17\\), \\(|B|=23\\), and \\(|A\\cap B|=8\\). Find \\(|A\\cup B|\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(32\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(40\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the two-set inclusion-exclusion formula,\n\\[\n|A\\cup B|=|A|+|B|-|A\\cap B|.\n\\]\nSubstituting the given values,\n\\[\n|A\\cup B|=17+23-8=32.\n\\]",
+      "hint": "Use \\( |A\\cup B|=|A|+|B|-|A\\cap B| \\)."
+    },
+    {
+      "id": "math-gaokao-11-q004",
+      "category": "Sets",
+      "concept": "Three-Set Inclusion-Exclusion",
+      "learningObjective": "Apply the three-set inclusion-exclusion formula to find a union cardinality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For finite sets \\(A\\), \\(B\\), and \\(C\\),\n\\[\n|A|=12,\\quad |B|=15,\\quad |C|=10,\n\\]\n\\[\n|A\\cap B|=5,\\quad |A\\cap C|=4,\\quad |B\\cap C|=3,\n\\]\nand\n\\[\n|A\\cap B\\cap C|=2.\n\\]\nFind \\(|A\\cup B\\cup C|\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(27\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(29\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the three-set inclusion-exclusion formula,\n\\[\n|A\\cup B\\cup C|\n=\n|A|+|B|+|C|\n-|A\\cap B|-|A\\cap C|-|B\\cap C|\n+|A\\cap B\\cap C|.\n\\]\nSubstituting the values,\n\\[\n|A\\cup B\\cup C|\n=\n12+15+10-5-4-3+2\n=\n27.\n\\]",
+      "hint": "Use the three-set inclusion-exclusion formula and substitute carefully."
+    },
+    {
+      "id": "math-gaokao-11-q005",
+      "category": "Sets",
+      "concept": "Cardinality of a Complement",
+      "learningObjective": "Find the number of elements in the complement of a set within a finite universal set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(U\\) be a universal set with \\(|U|=50\\). If \\(A\\subseteq U\\) and \\(|A|=32\\), find \\(|A^c|\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(18\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(22\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The complement \\(A^c\\) consists of all elements of \\(U\\) that are not in \\(A\\). Therefore,\n\\[\n|A^c|=|U|-|A|=50-32=18.\n\\]",
+      "hint": "The complement size is the universal set size minus the set size."
+    },
+    {
+      "id": "math-gaokao-11-q006",
+      "category": "Sets",
+      "concept": "Elements in Exactly One of Two Sets",
+      "learningObjective": "Count elements belonging to exactly one of two finite sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For finite sets \\(A\\) and \\(B\\), \\(|A|=20\\), \\(|B|=18\\), and \\(|A\\cap B|=7\\). How many elements belong to exactly one of \\(A\\) and \\(B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(31\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number of elements in exactly one of \\(A\\) and \\(B\\) is\n\\[\n|A\\triangle B|=|A|+|B|-2|A\\cap B|.\n\\]\nSubstituting the values,\n\\[\n|A\\triangle B|=20+18-2(7)=38-14=24.\n\\]",
+      "hint": "Exactly one means the symmetric difference, so subtract the intersection twice."
+    },
+    {
+      "id": "math-gaokao-11-q007",
+      "category": "Sets",
+      "concept": "Subsets Containing a Fixed Element",
+      "learningObjective": "Count subsets of a finite set that contain a specified element.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A set \\(S\\) has \\(7\\) elements. How many subsets of \\(S\\) contain a fixed element \\(x\\in S\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(64\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(128\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If a subset must contain \\(x\\), then \\(x\\) is already included. The remaining \\(6\\) elements may each be either included or not included. Therefore, the number of such subsets is\n\\[\n2^6=64.\n\\]",
+      "hint": "Fix the inclusion of \\(x\\), then choose freely among the remaining elements."
+    },
+    {
+      "id": "math-gaokao-11-q008",
+      "category": "Sets",
+      "concept": "Proper Subsets of a Finite Set",
+      "learningObjective": "Count the proper subsets of a finite set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A set \\(T\\) has \\(5\\) elements. How many proper subsets does \\(T\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(32\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(31\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total number of subsets of a \\(5\\)-element set is\n\\[\n2^5=32.\n\\]\nA proper subset is any subset other than \\(T\\) itself. Therefore, the number of proper subsets is\n\\[\n32-1=31.\n\\]",
+      "hint": "Count all subsets first, then exclude the whole set itself."
+    },
+    {
+      "id": "math-gaokao-11-q009",
+      "category": "Sets",
+      "concept": "Inclusion-Exclusion in a Word Problem",
+      "learningObjective": "Use inclusion-exclusion and complement counting to solve a finite-set application.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In a class of \\(45\\) students, \\(28\\) play basketball, \\(22\\) play football, and \\(12\\) play both. How many students play neither basketball nor football?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number of students who play at least one of the two sports is\n\\[\n28+22-12=38.\n\\]\nSince there are \\(45\\) students in total, the number who play neither is\n\\[\n45-38=7.\n\\]",
+      "hint": "First find the union of the two sets using inclusion-exclusion."
+    },
+    {
+      "id": "math-gaokao-11-q010",
+      "category": "Sets",
+      "concept": "Parameter Reasoning with Set Cardinalities",
+      "learningObjective": "Determine an unknown finite-set cardinality from union, intersection, and a ratio condition.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(A\\) and \\(B\\) be finite sets such that \\(|A|=2|B|\\), \\(|A\\cup B|=30\\), and \\(|A\\cap B|=6\\). Find \\(|B|\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(14\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(|B|=x\\). Then \\(|A|=2x\\). By inclusion-exclusion,\n\\[\n|A\\cup B|=|A|+|B|-|A\\cap B|.\n\\]\nSubstituting the given information,\n\\[\n30=2x+x-6.\n\\]\nThus,\n\\[\n3x=36,\n\\]\nso\n\\[\nx=12.\n\\]\nTherefore, \\(|B|=12\\).",
+      "hint": "Let \\(|B|=x\\), express \\(|A|\\) in terms of \\(x\\), and use inclusion-exclusion."
+    }
+  ]
+}

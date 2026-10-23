@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-111",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 111",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-111-q001",
+      "category": "Functions",
+      "concept": "Graph Interpretation of Rational Functions",
+      "learningObjective": "Identify the vertical asymptote of a rational function from its equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The graph of\n\\[\ny=\\frac{1}{x-2}\n\\]\nhas a vertical asymptote at which line?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A vertical asymptote occurs where the denominator is zero and the numerator is not zero. Set the denominator equal to zero:\n\\[\nx-2=0 \\implies x=2.\n\\]\nAt \\(x=2\\), the numerator is \\(1\\neq 0\\). Therefore, the vertical asymptote is\n\\[\nx=2.\n\\]",
+      "hint": "Set the denominator equal to zero and check that the numerator does not also vanish there."
+    },
+    {
+      "id": "math-gaokao-111-q002",
+      "category": "Functions",
+      "concept": "Graph Interpretation of Rational Functions",
+      "learningObjective": "Determine the horizontal asymptote of a rational function whose numerator degree is less than the denominator degree.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The graph of\n\\[\ny=\\frac{3}{x+1}\n\\]\nhas a horizontal asymptote at which line?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The numerator has degree \\(0\\), while the denominator has degree \\(1\\). Since the degree of the numerator is less than the degree of the denominator, the horizontal asymptote is\n\\[\ny=0.\n\\]\nEquivalently, as \\(x\\to\\pm\\infty\\), the denominator grows without bound, so the fraction approaches \\(0\\).",
+      "hint": "Compare the degrees of the numerator and denominator."
+    },
+    {
+      "id": "math-gaokao-111-q003",
+      "category": "Functions",
+      "concept": "Graph Interpretation of Rational Functions",
+      "learningObjective": "Determine the horizontal asymptote when the numerator and denominator have the same degree.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The graph of\n\\[\ny=\\frac{x+1}{x-3}\n\\]\nhas a horizontal asymptote at which line?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The numerator and denominator both have degree \\(1\\). When the degrees are equal, the horizontal asymptote is the ratio of the leading coefficients:\n\\[\ny=\\frac{1}{1}=1.\n\\]\nTherefore, the horizontal asymptote is\n\\[\ny=1.\n\\]",
+      "hint": "Use the leading coefficients of the numerator and denominator."
+    },
+    {
+      "id": "math-gaokao-111-q004",
+      "category": "Functions",
+      "concept": "Graph Interpretation of Rational Functions",
+      "learningObjective": "Identify a rational function from its vertical and horizontal asymptotes.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which function has a graph with vertical asymptote \\(x=-1\\) and horizontal asymptote \\(y=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=\\frac{1}{x-1}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=\\frac{1}{x+1}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For option B,\n\\[\ny=\\frac{1}{x+1}.\n\\]\nThe denominator is zero when\n\\[\nx+1=0 \\implies x=-1,\n\\]\nso the vertical asymptote is \\(x=-1\\). Since the numerator has degree \\(0\\) and the denominator has degree \\(1\\), the horizontal asymptote is \\(y=0\\). Option A has vertical asymptote \\(x=1\\), not \\(x=-1\\).",
+      "hint": "Find the denominator zero for the vertical asymptote, and compare degrees for the horizontal asymptote."
+    },
+    {
+      "id": "math-gaokao-111-q005",
+      "category": "Functions",
+      "concept": "Graph Interpretation of Rational Functions",
+      "learningObjective": "Find the slant asymptote of a rational function by polynomial division.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The graph of\n\\[\ny=\\frac{x^2-1}{x-2}\n\\]\nhas a slant asymptote at which line?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=x-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=x+2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Divide the numerator by the denominator:\n\\[\nx^2-1=(x-2)(x+2)+3.\n\\]\nThus\n\\[\n\\frac{x^2-1}{x-2}=x+2+\\frac{3}{x-2}.\n\\]\nAs \\(x\\to\\pm\\infty\\), the remainder term \\(\\frac{3}{x-2}\\to 0\\). Therefore, the slant asymptote is\n\\[\ny=x+2.\n\\]",
+      "hint": "Perform polynomial division and ignore the remainder term for large \\(|x|\\)."
+    },
+    {
+      "id": "math-gaokao-111-q006",
+      "category": "Functions",
+      "concept": "Graph Interpretation of Rational Functions",
+      "learningObjective": "Determine the horizontal asymptote when the denominator has higher degree than the numerator.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The graph of\n\\[\ny=\\frac{1}{x^2+1}\n\\]\nhas a horizontal asymptote at which line?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The numerator has degree \\(0\\), while the denominator has degree \\(2\\). Since the degree of the numerator is less than the degree of the denominator, the horizontal asymptote is\n\\[\ny=0.\n\\]\nAs \\(x\\to\\pm\\infty\\), the denominator becomes very large, so the fraction approaches \\(0\\).",
+      "hint": "Compare the degrees of the numerator and denominator."
+    },
+    {
+      "id": "math-gaokao-111-q007",
+      "category": "Functions",
+      "concept": "Graph Interpretation of Rational Functions",
+      "learningObjective": "Count the vertical asymptotes of a rational function after factoring.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The graph of\n\\[\ny=\\frac{x^2-4}{x^2-1}\n\\]\nhas how many vertical asymptotes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor the numerator and denominator:\n\\[\nx^2-4=(x-2)(x+2),\n\\]\nand\n\\[\nx^2-1=(x-1)(x+1).\n\\]\nThere are no common factors to cancel. The denominator is zero at\n\\[\nx=1 \\quad \\text{and} \\quad x=-1.\n\\]\nThe numerator is nonzero at both values, so both produce vertical asymptotes. Therefore, the graph has \\(2\\) vertical asymptotes.",
+      "hint": "Factor both the numerator and denominator, then check for common factors."
+    },
+    {
+      "id": "math-gaokao-111-q008",
+      "category": "Functions",
+      "concept": "Graph Interpretation of Rational Functions",
+      "learningObjective": "Identify a hole in the graph of a rational function after canceling a common factor.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The graph of\n\\[\ny=\\frac{x^2-1}{x-1}\n\\]\nhas a hole at which \\(x\\)-value?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor the numerator:\n\\[\nx^2-1=(x-1)(x+1).\n\\]\nThus\n\\[\ny=\\frac{(x-1)(x+1)}{x-1}.\n\\]\nFor \\(x\\neq 1\\), the factor \\(x-1\\) cancels, giving\n\\[\ny=x+1.\n\\]\nThe original function is undefined at \\(x=1\\), so the graph has a hole at\n\\[\nx=1.\n\\]",
+      "hint": "Factor the numerator, cancel the common factor, and identify the excluded value."
+    },
+    {
+      "id": "math-gaokao-111-q009",
+      "category": "Functions",
+      "concept": "Graph Interpretation of Rational Functions",
+      "learningObjective": "Distinguish between a vertical asymptote and a hole after factoring a rational function.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "For the function\n\\[\ny=\\frac{x+2}{x^2-4},\n\\]\nwhich statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The graph has a vertical asymptote \\(x=-2\\)."
+        },
+        {
+          "label": "B",
+          "text": "The graph has a vertical asymptote \\(x=2\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor the denominator:\n\\[\nx^2-4=(x-2)(x+2).\n\\]\nSo\n\\[\ny=\\frac{x+2}{(x-2)(x+2)}.\n\\]\nThe factor \\(x+2\\) cancels, so \\(x=-2\\) is a hole, not a vertical asymptote. The remaining denominator factor \\(x-2\\) gives a vertical asymptote at\n\\[\nx=2.\n\\]\nTherefore, the correct statement is that the graph has a vertical asymptote \\(x=2\\).",
+      "hint": "Factor and cancel common factors before identifying vertical asymptotes."
+    },
+    {
+      "id": "math-gaokao-111-q010",
+      "category": "Functions",
+      "concept": "Graph Interpretation of Rational Functions",
+      "learningObjective": "Determine the horizontal asymptote of a rational function with equal degrees.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The graph of\n\\[\ny=\\frac{2x+1}{x-1}\n\\]\nhas a horizontal asymptote at which line?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The numerator and denominator both have degree \\(1\\). When the degrees are equal, the horizontal asymptote is the ratio of the leading coefficients:\n\\[\ny=\\frac{2}{1}=2.\n\\]\nTherefore, the horizontal asymptote is\n\\[\ny=2.\n\\]",
+      "hint": "Use the leading coefficients of the numerator and denominator."
+    }
+  ]
+}

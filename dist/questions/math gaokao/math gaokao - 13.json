@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-13",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 13",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-13-q001",
+      "category": "Logic",
+      "concept": "Propositions and Open Sentences",
+      "learningObjective": "Distinguish a proposition from an open sentence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which of the following is a proposition?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x+2=5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2+3=6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A proposition is a declarative statement that has a definite truth value, either true or false. The statement \\(2+3=6\\) is false, but it is still a proposition because its truth value is definite. The statement \\(x+2=5\\) depends on the value of \\(x\\), so it is an open sentence, not a proposition.",
+      "hint": "Recall that a proposition must be either true or false without depending on a variable."
+    },
+    {
+      "id": "math-gaokao-13-q002",
+      "category": "Logic",
+      "concept": "Truth Values of Compound Statements",
+      "learningObjective": "Determine the truth value of a conjunction and a disjunction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(p\\): \\(5>2\\), and let \\(q\\): \\(7\\) is even. Which compound statement is false?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\land q\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\lor q\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement \\(p\\) is true because \\(5>2\\). The statement \\(q\\) is false because \\(7\\) is odd, not even. For the conjunction,\n\\[\np\\land q\n\\]\nis true only if both \\(p\\) and \\(q\\) are true. Since \\(q\\) is false, \\(p\\land q\\) is false. For the disjunction,\n\\[\np\\lor q\n\\]\nis true because at least one of \\(p\\) and \\(q\\) is true.",
+      "hint": "Check the truth value of each simple statement first, then apply the rules for \\(\\land\\) and \\(\\lor\\)."
+    },
+    {
+      "id": "math-gaokao-13-q003",
+      "category": "Logic",
+      "concept": "Negation of a Universal Statement",
+      "learningObjective": "Write the negation of a universally quantified statement.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the negation of the statement “All real numbers \\(x\\) satisfy \\(x^2\\ge 0\\)”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\exists x\\in\\mathbb{R},\\ x^2<0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\forall x\\in\\mathbb{R},\\ x^2<0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The negation of a universal statement\n\\[\n\\forall x\\in\\mathbb{R},\\ P(x)\n\\]\nis the existential statement\n\\[\n\\exists x\\in\\mathbb{R},\\ \\neg P(x).\n\\]\nHere \\(P(x)\\) is \\(x^2\\ge 0\\), so \\(\\neg P(x)\\) is \\(x^2<0\\). Therefore, the negation is\n\\[\n\\exists x\\in\\mathbb{R},\\ x^2<0.\n\\]",
+      "hint": "Negating “for all” changes it to “there exists” and negates the inner condition."
+    },
+    {
+      "id": "math-gaokao-13-q004",
+      "category": "Logic",
+      "concept": "Contrapositive of a Conditional Statement",
+      "learningObjective": "Identify a statement logically equivalent to a given conditional statement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which statement is logically equivalent to “If a number is divisible by \\(4\\), then it is even”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "If a number is not even, then it is not divisible by \\(4\\)."
+        },
+        {
+          "label": "B",
+          "text": "If a number is even, then it is divisible by \\(4\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a conditional statement \\(p\\rightarrow q\\), the contrapositive is\n\\[\n\\neg q\\rightarrow \\neg p,\n\\]\nand it is logically equivalent to the original statement. Here \\(p\\) is “a number is divisible by \\(4\\)” and \\(q\\) is “a number is even.” Therefore, the contrapositive is “If a number is not even, then it is not divisible by \\(4\\).” Option B is the converse, which is not logically equivalent in general.",
+      "hint": "Use the contrapositive, not the converse."
+    },
+    {
+      "id": "math-gaokao-13-q005",
+      "category": "Logic",
+      "concept": "Sufficient and Necessary Conditions",
+      "learningObjective": "Interpret a conditional statement in terms of sufficient and necessary conditions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For a positive integer \\(n\\), consider the statement “If \\(n\\) is divisible by \\(6\\), then \\(n\\) is divisible by \\(3\\).” Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Divisibility by \\(6\\) is sufficient for divisibility by \\(3\\)."
+        },
+        {
+          "label": "B",
+          "text": "Divisibility by \\(6\\) is necessary for divisibility by \\(3\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "In a conditional statement \\(p\\rightarrow q\\), \\(p\\) is a sufficient condition for \\(q\\). Here \\(p\\) is “\\(n\\) is divisible by \\(6\\)” and \\(q\\) is “\\(n\\) is divisible by \\(3\\).” Since every integer divisible by \\(6\\) is also divisible by \\(3\\), divisibility by \\(6\\) is sufficient for divisibility by \\(3\\). It is not necessary, because \\(3\\) itself is divisible by \\(3\\) but not by \\(6\\).",
+      "hint": "In \\(p\\rightarrow q\\), the condition \\(p\\) is sufficient for \\(q\\), while \\(q\\) is necessary for \\(p\\)."
+    },
+    {
+      "id": "math-gaokao-13-q006",
+      "category": "Logic",
+      "concept": "Negation of a Conjunction",
+      "learningObjective": "Apply De Morgan’s law to negate a compound statement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the negation of “\\(x>0\\) and \\(y<0\\)”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\le 0\\) or \\(y\\ge 0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\le 0\\) and \\(y\\ge 0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By De Morgan’s law, the negation of a conjunction is the disjunction of the negations:\n\\[\n\\neg(p\\land q)\\equiv \\neg p\\lor \\neg q.\n\\]\nHere \\(p\\) is \\(x>0\\), so \\(\\neg p\\) is \\(x\\le 0\\). Also \\(q\\) is \\(y<0\\), so \\(\\neg q\\) is \\(y\\ge 0\\). Therefore, the negation is\n\\[\nx\\le 0\\ \\text{or}\\ y\\ge 0.\n\\]",
+      "hint": "Negate each part and change “and” to “or.”"
+    },
+    {
+      "id": "math-gaokao-13-q007",
+      "category": "Logic",
+      "concept": "Tautology",
+      "learningObjective": "Identify a tautology involving a statement and its negation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which statement is a tautology?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\land \\neg p\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\lor \\neg p\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A tautology is a statement that is always true for every truth value of its variables. If \\(p\\) is true, then \\(p\\lor \\neg p\\) is true. If \\(p\\) is false, then \\(\\neg p\\) is true, so \\(p\\lor \\neg p\\) is still true. Therefore,\n\\[\np\\lor \\neg p\n\\]\nis a tautology. The statement \\(p\\land \\neg p\\) is always false.",
+      "hint": "A statement and its negation cannot both be true, but at least one of them must be true."
+    },
+    {
+      "id": "math-gaokao-13-q008",
+      "category": "Logic",
+      "concept": "Negation of a Quantified Conditional",
+      "learningObjective": "Negate a universal conditional statement involving integers.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "What is the negation of “For every integer \\(n\\), if \\(n\\) is even, then \\(n^2\\) is even”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "For every integer \\(n\\), \\(n\\) is even and \\(n^2\\) is even."
+        },
+        {
+          "label": "B",
+          "text": "There exists an integer \\(n\\) such that \\(n\\) is even and \\(n^2\\) is odd."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The original statement has the form\n\\[\n\\forall n\\in\\mathbb{Z},\\ (P(n)\\rightarrow Q(n)),\n\\]\nwhere \\(P(n)\\) is “\\(n\\) is even” and \\(Q(n)\\) is “\\(n^2\\) is even.” The negation of a universal statement is an existential statement, and the negation of \\(P\\rightarrow Q\\) is \\(P\\land \\neg Q\\). Therefore, the negation is\n\\[\n\\exists n\\in\\mathbb{Z},\\ (P(n)\\land \\neg Q(n)).\n\\]\nThat is, there exists an integer \\(n\\) such that \\(n\\) is even and \\(n^2\\) is not even. For an integer, “not even” means odd. Hence the negation is: There exists an integer \\(n\\) such that \\(n\\) is even and \\(n^2\\) is odd.",
+      "hint": "Negate the universal quantifier first, then negate the conditional inside."
+    },
+    {
+      "id": "math-gaokao-13-q009",
+      "category": "Logic",
+      "concept": "Truth Values with a Finite Domain",
+      "learningObjective": "Determine the truth value of quantified statements over a finite set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(D=\\{1,2,3\\}\\). Which statement is false?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\forall x\\in D,\\ x+2<6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\exists x\\in D,\\ x+3=7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Check statement A: for \\(x=1\\), \\(1+2=3<6\\); for \\(x=2\\), \\(2+2=4<6\\); for \\(x=3\\), \\(3+2=5<6\\). Thus A is true for every element of \\(D\\).\nCheck statement B: the equation \\(x+3=7\\) gives \\(x=4\\). But \\(4\\notin D\\), so no element of \\(D\\) satisfies \\(x+3=7\\). Therefore, B is false.",
+      "hint": "Test each element of the finite domain \\(D\\) for both statements."
+    },
+    {
+      "id": "math-gaokao-13-q010",
+      "category": "Logic",
+      "concept": "Logical Equivalence of a Conditional",
+      "learningObjective": "Identify a statement equivalent to an implication.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which statement is logically equivalent to \\(p\\rightarrow q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(q\\rightarrow p\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\neg p\\lor q\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The implication \\(p\\rightarrow q\\) is false only when \\(p\\) is true and \\(q\\) is false. The statement \\(\\neg p\\lor q\\) is also false only when \\(\\neg p\\) is false and \\(q\\) is false, that is, when \\(p\\) is true and \\(q\\) is false. Therefore,\n\\[\np\\rightarrow q\\equiv \\neg p\\lor q.\n\\]\nThe statement \\(q\\rightarrow p\\) is the converse, which is not logically equivalent to \\(p\\rightarrow q\\) in general.",
+      "hint": "Recall that an implication can be rewritten using “not \\(p\\) or \\(q\\).”"
+    }
+  ]
+}

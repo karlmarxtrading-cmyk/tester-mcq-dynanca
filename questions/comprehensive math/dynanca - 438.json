@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-438",
+  "category": "Comprehensive Mathematics",
+  "title": "438. Trigonometry & Periodic Models: Law of Cosines for Missing Sides",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-438-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Statement of the Law of Cosines",
+      "learningObjective": "State the Law of Cosines for the side opposite a given angle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In triangle \\(ABC\\), side \\(c\\) is opposite angle \\(C\\). Which relation is the Law of Cosines?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(c^2=a^2+b^2+2ab\\cos C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(c^2=a^2+b^2-2ab\\cos C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The Law of Cosines is \\(c^2=a^2+b^2-2ab\\cos C\\). The minus sign can be checked with an equilateral triangle of side \\(1\\): \\(1=1+1-2\\cdot\\frac{1}{2}\\) is true, whereas the version with a plus sign would give \\(1=3\\).",
+      "hint": "Test each version on an equilateral triangle with side \\(1\\) and angles of \\(60^\\circ\\)."
+    },
+    {
+      "id": "dynanca-438-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Third side with a sixty-degree angle",
+      "learningObjective": "Find the third side from two sides and the included angle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In triangle \\(ABC\\), \\(a=3\\), \\(b=4\\), and the included angle is \\(C=60^\\circ\\). What is \\(c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{37}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{13}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the Law of Cosines, \\(c^2=3^2+4^2-2\\cdot 3\\cdot 4\\cdot\\cos 60^\\circ=9+16-12=13\\), so \\(c=\\sqrt{13}\\approx 3.61\\). Adding the last term instead of subtracting it gives \\(37\\), which is incorrect.",
+      "hint": "Substitute into \\(c^2=a^2+b^2-2ab\\cos C\\) and watch the sign of the last term."
+    },
+    {
+      "id": "dynanca-438-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Third side as a whole number",
+      "learningObjective": "Apply the Law of Cosines when the result is a perfect square.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In triangle \\(ABC\\), \\(a=5\\), \\(b=8\\), and the included angle is \\(C=60^\\circ\\). What is \\(c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{129}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the Law of Cosines, \\(c^2=25+64-2\\cdot 5\\cdot 8\\cdot\\frac{1}{2}=89-40=49\\), so \\(c=7\\). Adding \\(40\\) instead of subtracting gives \\(129\\), which corresponds to an included angle of \\(120^\\circ\\), not \\(60^\\circ\\).",
+      "hint": "Compute \\(2ab\\cos C\\) first, then subtract it from \\(a^2+b^2\\)."
+    },
+    {
+      "id": "dynanca-438-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Third side with an obtuse angle",
+      "learningObjective": "Apply the Law of Cosines when the included angle is obtuse.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In triangle \\(ABC\\), \\(a=3\\), \\(b=5\\), and the included angle is \\(C=120^\\circ\\). What is \\(c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{19}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(\\cos 120^\\circ=-\\frac{1}{2}\\), \\(c^2=9+25-2\\cdot 3\\cdot 5\\cdot\\left(-\\frac{1}{2}\\right)=34+15=49\\), so \\(c=7\\). Subtracting \\(15\\) ignores the negative cosine and gives \\(19\\); the side opposite an obtuse angle must be the longest side, and \\(\\sqrt{19}\\approx 4.36\\) is shorter than \\(b\\).",
+      "hint": "The cosine of an obtuse angle is negative, so the last term is added."
+    },
+    {
+      "id": "dynanca-438-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Third side with a thirty-degree angle",
+      "learningObjective": "Apply the Law of Cosines with a radical side length.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In triangle \\(ABC\\), \\(a=2\\), \\(b=2\\sqrt{3}\\), and the included angle is \\(C=30^\\circ\\). What is \\(c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\sqrt{7}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the Law of Cosines, \\(c^2=4+12-2\\cdot 2\\cdot 2\\sqrt{3}\\cdot\\frac{\\sqrt{3}}{2}=16-12=4\\), so \\(c=2\\). Adding \\(12\\) instead of subtracting gives \\(28\\) and \\(c=2\\sqrt{7}\\), which is incorrect.",
+      "hint": "Simplify the product \\(2ab\\cos C\\) carefully; the two radicals multiply to a whole number."
+    },
+    {
+      "id": "dynanca-438-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Distance between two ships",
+      "learningObjective": "Model a distance problem with the Law of Cosines.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Two ships leave the same port along straight courses that form an angle of \\(60^\\circ\\). One ship travels \\(10\\text{ km}\\) and the other \\(16\\text{ km}\\). How far apart are the ships?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\sqrt{89}\\text{ km}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(14\\text{ km}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The distance \\(d\\) is the side opposite the \\(60^\\circ\\) angle: \\(d^2=10^2+16^2-2\\cdot 10\\cdot 16\\cdot\\frac{1}{2}=356-160=196\\), so \\(d=14\\text{ km}\\). Using \\(d^2=10^2+16^2=356\\) treats the angle as \\(90^\\circ\\) and gives \\(2\\sqrt{89}\\text{ km}\\approx 18.9\\text{ km}\\), which is incorrect.",
+      "hint": "The two distances are sides of a triangle and the given angle lies between them."
+    },
+    {
+      "id": "dynanca-438-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Third side with a decimal cosine",
+      "learningObjective": "Apply the Law of Cosines using a given decimal value of a cosine.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In triangle \\(ABC\\), \\(a=6\\), \\(b=9\\), and the included angle is \\(C=40^\\circ\\). Using \\(\\cos 40^\\circ\\approx 0.766\\), what is \\(c\\) to one decimal place?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5.9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(14.1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the Law of Cosines, \\(c^2\\approx 36+81-2\\cdot 6\\cdot 9\\cdot 0.766=117-82.728=34.272\\), so \\(c\\approx 5.9\\). Adding \\(82.728\\) instead gives \\(c\\approx 14.1\\); but an acute included angle must give a third side shorter than \\(\\sqrt{117}\\approx 10.8\\).",
+      "hint": "Compute \\(2ab\\cos C\\) with the given decimal and subtract it from \\(a^2+b^2\\)."
+    },
+    {
+      "id": "dynanca-438-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Special case of a right angle",
+      "learningObjective": "Relate the Law of Cosines to the Pythagorean theorem.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What does the Law of Cosines \\(c^2=a^2+b^2-2ab\\cos C\\) become when \\(C=90^\\circ\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(c^2=a^2+b^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(c^2=a^2+b^2-2ab\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(\\cos 90^\\circ=0\\), the last term vanishes and the law becomes \\(c^2=a^2+b^2\\), the Pythagorean theorem. The expression \\(a^2+b^2-2ab\\) would require \\(\\cos C=1\\), that is, \\(C=0^\\circ\\).",
+      "hint": "Substitute the value of \\(\\cos 90^\\circ\\) into the formula."
+    },
+    {
+      "id": "dynanca-438-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Longer diagonal of a parallelogram",
+      "learningObjective": "Apply the Law of Cosines with the supplementary angle of a parallelogram.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A parallelogram has adjacent sides \\(5\\) and \\(8\\) that meet at an angle of \\(60^\\circ\\). What is the length of its longer diagonal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{129}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The longer diagonal lies opposite the larger angle of the parallelogram, which is \\(180^\\circ-60^\\circ=120^\\circ\\). So \\(d^2=25+64-2\\cdot 5\\cdot 8\\cdot\\cos 120^\\circ=89+40=129\\) and \\(d=\\sqrt{129}\\approx 11.4\\). The value \\(7\\) is the shorter diagonal, opposite the \\(60^\\circ\\) angle.",
+      "hint": "Adjacent angles of a parallelogram are supplementary; the longer diagonal is opposite the larger angle."
+    },
+    {
+      "id": "dynanca-438-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Base of an isosceles triangle with a given apex angle",
+      "learningObjective": "Derive a side length in terms of a variable using the Law of Cosines.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "An isosceles triangle has two sides of length \\(x\\) that meet at an angle of \\(120^\\circ\\). What is the length of the third side?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\sqrt{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\sqrt{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the Law of Cosines, \\(c^2=x^2+x^2-2x^2\\cos 120^\\circ=2x^2+x^2=3x^2\\), so \\(c=x\\sqrt{3}\\). The value \\(x\\sqrt{2}\\) corresponds to an apex angle of \\(90^\\circ\\), where the last term is zero.",
+      "hint": "Substitute \\(a=b=x\\) and use the exact value of \\(\\cos 120^\\circ\\)."
+    }
+  ]
+}

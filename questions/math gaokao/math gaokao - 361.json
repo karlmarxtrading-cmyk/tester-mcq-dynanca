@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-361",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 361",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-361-q001",
+      "category": "Combinatorics",
+      "concept": "Shortest paths on a rectangular grid",
+      "learningObjective": "Count shortest paths between two grid points using right and up moves.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many shortest paths are there from \\((0,0)\\) to \\((3,2)\\) if each step is either one unit right or one unit up?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A shortest path must contain exactly \\(3\\) right moves and \\(2\\) up moves, for a total of \\(5\\) moves. Choosing the positions of the \\(2\\) up moves gives \\(\\binom{5}{2}=10\\) paths.",
+      "hint": "Count the total number of right and up moves needed, then choose positions for one type of move."
+    },
+    {
+      "id": "math-gaokao-361-q002",
+      "category": "Combinatorics",
+      "concept": "Paths passing through a specified lattice point",
+      "learningObjective": "Use multiplication of binomial counts to count paths through an intermediate point.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "How many shortest paths from \\((0,0)\\) to \\((5,4)\\) pass through \\((2,2)\\), if moves are only right or up?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(50\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\((0,0)\\) to \\((2,2)\\), there are \\(2\\) right and \\(2\\) up moves, so \\(\\binom{4}{2}=6\\) paths. From \\((2,2)\\) to \\((5,4)\\), there are \\(3\\) right and \\(2\\) up moves, so \\(\\binom{5}{2}=10\\) paths. By the multiplication principle, the number is \\(6 \\cdot 10 = 60\\).",
+      "hint": "Split the journey at the intermediate point and multiply the counts for the two stages."
+    },
+    {
+      "id": "math-gaokao-361-q003",
+      "category": "Combinatorics",
+      "concept": "Paths avoiding a forbidden point",
+      "learningObjective": "Count shortest paths that avoid a given lattice point by subtracting paths through it.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many shortest paths from \\((0,0)\\) to \\((4,3)\\) avoid the point \\((2,1)\\), using only right and up moves?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(17\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(18\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Total shortest paths from \\((0,0)\\) to \\((4,3)\\) are \\(\\binom{7}{3}=35\\). Paths through \\((2,1)\\): from \\((0,0)\\) to \\((2,1)\\) there are \\(\\binom{3}{1}=3\\) paths, and from \\((2,1)\\) to \\((4,3)\\) there are \\(\\binom{4}{2}=6\\) paths. Thus \\(3 \\cdot 6 = 18\\) paths pass through \\((2,1)\\). Therefore the number avoiding \\((2,1)\\) is \\(35 - 18 = 17\\).",
+      "hint": "First count all shortest paths, then subtract those that pass through the forbidden point."
+    },
+    {
+      "id": "math-gaokao-361-q004",
+      "category": "Combinatorics",
+      "concept": "Paths avoiding a lattice point",
+      "learningObjective": "Apply complementary counting to exclude paths through a forbidden point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many shortest paths from \\((0,0)\\) to \\((4,4)\\) do not pass through \\((1,1)\\), if only right and up moves are allowed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(40\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Total paths are \\(\\binom{8}{4}=70\\). Paths through \\((1,1)\\): from \\((0,0)\\) to \\((1,1)\\) there are \\(\\binom{2}{1}=2\\) paths, and from \\((1,1)\\) to \\((4,4)\\) there are \\(\\binom{6}{3}=20\\) paths. So \\(2 \\cdot 20 = 40\\) paths pass through \\((1,1)\\). Hence the number avoiding \\((1,1)\\) is \\(70 - 40 = 30\\).",
+      "hint": "Use complementary counting: total paths minus paths that go through the forbidden point."
+    },
+    {
+      "id": "math-gaokao-361-q005",
+      "category": "Combinatorics",
+      "concept": "Paths avoiding two forbidden points",
+      "learningObjective": "Use inclusion-exclusion to count shortest paths avoiding two specified lattice points.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How many shortest paths from \\((0,0)\\) to \\((5,3)\\) avoid both \\((2,1)\\) and \\((3,2)\\), using only right and up moves?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(14\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Total paths are \\(\\binom{8}{3}=56\\). Paths through \\((2,1)\\): \\(\\binom{3}{1}\\binom{5}{2}=3 \\cdot 10 = 30\\). Paths through \\((3,2)\\): \\(\\binom{5}{2}\\binom{3}{1}=10 \\cdot 3 = 30\\). Paths through both: \\(\\binom{3}{1}\\binom{2}{1}\\binom{3}{1}=3 \\cdot 2 \\cdot 3 = 18\\). By inclusion-exclusion, paths avoiding both are \\(56 - 30 - 30 + 18 = 14\\).",
+      "hint": "Count total paths, subtract paths through each forbidden point, and add back paths through both."
+    },
+    {
+      "id": "math-gaokao-361-q006",
+      "category": "Combinatorics",
+      "concept": "Paths through a fixed point",
+      "learningObjective": "Count shortest grid paths that must pass through a given intermediate point.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many shortest paths from \\((0,0)\\) to \\((3,3)\\) pass through \\((1,2)\\), moving only right or up?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\((0,0)\\) to \\((1,2)\\), the moves are \\(1\\) right and \\(2\\) up, giving \\(\\binom{3}{1}=3\\) paths. From \\((1,2)\\) to \\((3,3)\\), the moves are \\(2\\) right and \\(1\\) up, giving \\(\\binom{3}{1}=3\\) paths. Multiplying gives \\(3 \\cdot 3 = 9\\).",
+      "hint": "Break the path at \\((1,2)\\) and multiply the number of ways for each part."
+    },
+    {
+      "id": "math-gaokao-361-q007",
+      "category": "Combinatorics",
+      "concept": "Determining a grid dimension from a path count",
+      "learningObjective": "Solve for an unknown grid coordinate given the number of shortest paths.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The number of shortest paths from \\((0,0)\\) to \\((n,2)\\), using only right and up moves, is \\(21\\). What is \\(n\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A shortest path from \\((0,0)\\) to \\((n,2)\\) has \\(n\\) right moves and \\(2\\) up moves, so the number of paths is \\(\\binom{n+2}{2}=21\\). Thus \\(\\frac{(n+2)(n+1)}{2}=21\\), so \\((n+2)(n+1)=42\\). Since \\(7 \\cdot 6 = 42\\), we get \\(n+1=6\\), so \\(n=5\\).",
+      "hint": "Write the path count as a binomial coefficient involving \\(n\\), then solve the resulting equation."
+    },
+    {
+      "id": "math-gaokao-361-q008",
+      "category": "Combinatorics",
+      "concept": "Catalan paths below a diagonal",
+      "learningObjective": "Count shortest paths that never go above a diagonal line using the Catalan number or reflection principle.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many shortest paths from \\((0,0)\\) to \\((4,4)\\) never go above the diagonal line \\(y=x\\), if each step is one unit right or one unit up?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(14\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Paths from \\((0,0)\\) to \\((4,4)\\) that never go above \\(y=x\\) are counted by the Catalan number \\(C_4=\\frac{1}{5}\\binom{8}{4}\\). Since \\(\\binom{8}{4}=70\\), we get \\(C_4=\\frac{70}{5}=14\\).",
+      "hint": "Recognize the Catalan-number condition for paths that stay on or below the diagonal."
+    },
+    {
+      "id": "math-gaokao-361-q009",
+      "category": "Combinatorics",
+      "concept": "Avoiding two lattice points with inclusion-exclusion",
+      "learningObjective": "Count shortest paths avoiding two forbidden points using total count and inclusion-exclusion.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How many shortest paths from \\((0,0)\\) to \\((6,4)\\) avoid both \\((2,1)\\) and \\((4,3)\\), using only right and up moves?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(52\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(54\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Total paths are \\(\\binom{10}{4}=210\\). Paths through \\((2,1)\\): \\(\\binom{3}{1}\\binom{7}{3}=3 \\cdot 35 = 105\\). Paths through \\((4,3)\\): \\(\\binom{7}{3}\\binom{3}{1}=35 \\cdot 3 = 105\\). Paths through both: \\(\\binom{3}{1}\\binom{4}{2}\\binom{3}{1}=3 \\cdot 6 \\cdot 3 = 54\\). By inclusion-exclusion, paths avoiding both are \\(210 - 105 - 105 + 54 = 54\\).",
+      "hint": "Use inclusion-exclusion with the two forbidden points as the events to exclude."
+    },
+    {
+      "id": "math-gaokao-361-q010",
+      "category": "Combinatorics",
+      "concept": "Paths through exactly one of two points",
+      "learningObjective": "Use inclusion-exclusion to count paths that pass through exactly one of two specified lattice points.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many shortest paths from \\((0,0)\\) to \\((3,3)\\) pass through exactly one of the points \\((1,1)\\) and \\((2,2)\\), using only right and up moves?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Paths through \\((1,1)\\): \\(\\binom{2}{1}\\binom{4}{2}=2 \\cdot 6 = 12\\). Paths through \\((2,2)\\): \\(\\binom{4}{2}\\binom{2}{1}=6 \\cdot 2 = 12\\). Paths through both: \\(\\binom{2}{1}\\binom{2}{1}\\binom{2}{1}=2 \\cdot 2 \\cdot 2 = 8\\). Thus paths through exactly one are \\((12-8)+(12-8)=8\\).",
+      "hint": "Subtract the paths that pass through both points from the paths that pass through each one."
+    }
+  ]
+}

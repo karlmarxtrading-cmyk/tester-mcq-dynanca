@@ -1,0 +1,664 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "mathematics-sat-08",
+  "title": "SAT 08 · Factors and multiples",
+  "category": "SAT Mathematics",
+  "description": "A/B reasoning practice. Difficulty is editorial, not standardized SAT calibration.",
+  "questionCount": 18,
+  "questions": [
+    {
+      "id": "sat-q0127",
+      "title": "Largest Equal Book Bundles",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "A library has \\(72\\) science books and \\(96\\) history books. It wants to make bundles that all contain the same number of books, use every book, and never mix the two subjects in one bundle. What is the greatest possible number of books in each bundle? Choose A or B and justify why a larger bundle size cannot work.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\) books"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\) books"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The size of each bundle must divide both \\(72\\) and \\(96\\) without a remainder. Since \\(72=3\\times24\\) and \\(96=4\\times24\\), bundles of \\(24\\) work and produce \\(3+4=7\\) bundles. To prove this size is greatest, note that \\(96-72=24\\), so every common divisor of \\(72\\) and \\(96\\) must divide \\(24\\). No common divisor can therefore exceed \\(24\\). Choice A is a common divisor, but it is not the greatest one. Thus choice B is correct.",
+      "hint": "The bundle size must divide both 72 and 96; look for their greatest common divisor, for example by using their difference."
+    },
+    {
+      "id": "sat-q0128",
+      "title": "Largest Equal Teams Across Classrooms",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "The chart shows how many students are in each of three classrooms. Each classroom must split its own students into teams of the same size, with no student left out. Teams may not combine students from different classrooms. What is the largest possible team size shared by all three classrooms? Choose A or B and show how the chart supports your choice.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\) students per team"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\) students per team"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A team size must divide each of the three classroom totals: \\(18\\), \\(24\\), and \\(30\\). Six works because \\(18\\div6=3\\), \\(24\\div6=4\\), and \\(30\\div6=5\\). Any common divisor of \\(18\\) and \\(24\\) must divide their difference, \\(6\\), so no common divisor of all three totals can be greater than \\(6\\). Choice B also gives equal teams, but teams of \\(3\\) are smaller than necessary. Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0128-v1",
+          "type": "DATA_CHART",
+          "data": {
+            "kind": "bar",
+            "xLabel": "Classroom",
+            "yLabel": "Students",
+            "bars": [
+              {
+                "label": "Orchid",
+                "value": 18
+              },
+              {
+                "label": "Maple",
+                "value": 24
+              },
+              {
+                "label": "Cedar",
+                "value": 30
+              }
+            ],
+            "chart": "bar",
+            "labels": [
+              "Orchid",
+              "Maple",
+              "Cedar"
+            ],
+            "values": [
+              18,
+              24,
+              30
+            ],
+            "axes": {
+              "xLabel": "Classroom",
+              "yLabel": "Students"
+            }
+          },
+          "alt": "Bar chart of classroom sizes: Orchid has 18 students, Maple has 24 students, and Cedar has 30 students."
+        }
+      ],
+      "hint": "A team size must divide all three bar values; find the greatest number that divides 18, 24 and 30."
+    },
+    {
+      "id": "sat-q0129",
+      "title": "Numbers in Exactly One Multiples Group",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "Every whole number from \\(1\\) through \\(30\\), inclusive, is considered. Group T contains multiples of \\(3\\), and Group F contains multiples of \\(5\\). The Venn diagram classifies all \\(30\\) numbers. How many numbers belong to exactly one of the two groups? Choose A or B and explain why numbers in both groups must be excluded.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(14\\) numbers"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\) numbers"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(30\\div3=10\\) multiples of \\(3\\) and \\(30\\div5=6\\) multiples of \\(5\\). The multiples of both are multiples of \\(15\\): \\(15\\) and \\(30\\), so there are \\(2\\). Exactly one group therefore contains \\((10-2)+(6-2)=8+4=12\\) numbers. This agrees with the two nonoverlapping regions of the Venn diagram. Choice A gives \\(10+6-2=14\\), the number in at least one group, which incorrectly includes the two numbers in both groups. Thus choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0129-v1",
+          "type": "VENN",
+          "data": {
+            "universe": {
+              "label": "Integers 1 through 30",
+              "total": 30
+            },
+            "sets": [
+              {
+                "id": "T",
+                "label": "Multiples of 3",
+                "elements": []
+              },
+              {
+                "id": "F",
+                "label": "Multiples of 5",
+                "elements": []
+              }
+            ],
+            "regions": {
+              "T_only": 8,
+              "F_only": 4,
+              "intersection": 2,
+              "outside": 16
+            }
+          },
+          "alt": "Among integers 1 through 30, eight are multiples only of 3, four are multiples only of 5, two are multiples of both 3 and 5, and sixteen are multiples of neither."
+        }
+      ],
+      "hint": "Count the multiples of 3 and of 5 from 1 to 30, find how many are in both, and remove those from each group."
+    },
+    {
+      "id": "sat-q0130",
+      "title": "Fewest Square Tiles for a Rectangular Floor",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "A rectangular floor is \\(18\\) meters long and \\(12\\) meters wide. It must be covered with identical square tiles whose side lengths are whole numbers of meters. No tile may be cut, and the tiles must align with the sides of the floor. What is the smallest number of tiles needed? Choose A or B and show how factors determine the tile size.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\) tiles"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\) tiles"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The side length of a square tile must divide both \\(18\\) and \\(12\\). Their greatest common divisor is \\(6\\), so the largest possible square tiles measure \\(6\\) meters by \\(6\\) meters. The floor fits \\(18\\div6=3\\) tiles along its length and \\(12\\div6=2\\) along its width, giving \\(3\\times2=6\\) tiles. No larger whole-number square can fit both dimensions exactly, so this count is minimal. Choice A is the \\(24\\) tiles required if smaller \\(3\\)-meter squares were chosen: \\((18\\div3)(12\\div3)=24\\). Therefore, choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0130-v1",
+          "type": "GEOMETRY_2D",
+          "data": {
+            "units": "m",
+            "points": [
+              {
+                "id": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "x": 18,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "x": 18,
+                "y": 12
+              },
+              {
+                "id": "D",
+                "x": 0,
+                "y": 12
+              }
+            ],
+            "segments": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "D"
+              ],
+              [
+                "D",
+                "A"
+              ]
+            ]
+          },
+          "alt": "Outline of rectangle ABCD with length 18 meters and width 12 meters, without an interior tile grid. Determine the largest whole-number square size that fits both dimensions."
+        }
+      ],
+      "hint": "Fewest tiles means the largest square that fits both 18 and 12 exactly; find their greatest common divisor first."
+    },
+    {
+      "id": "sat-q0131",
+      "title": "When Three Shuttle Routes Meet Again",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "Three shuttle buses depart a station together at 8:00 a.m. Bus P returns to depart every \\(12\\) minutes, Bus Q every \\(18\\) minutes, and Bus R every \\(30\\) minutes. Their departure patterns continue without delays. At what earliest time after 8:00 a.m. will all three depart together again? Choose A or B and explain using least common multiples.",
+      "options": [
+        {
+          "label": "A",
+          "text": "11:00 a.m."
+        },
+        {
+          "label": "B",
+          "text": "9:00 a.m."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The elapsed time must be a positive multiple of \\(12\\), \\(18\\), and \\(30\\). Their prime factorizations are \\(12=2^2\\times3\\), \\(18=2\\times3^2\\), and \\(30=2\\times3\\times5\\). The least common multiple is \\(2^2\\times3^2\\times5=180\\) minutes, or \\(3\\) hours. Three hours after 8:00 a.m. is 11:00 a.m. Choice B represents \\(60\\) minutes, which is divisible by \\(12\\) and \\(30\\) but not by \\(18\\); Bus Q would not depart then. Therefore, choice A is correct.",
+      "hint": "The buses meet again after a common multiple of 12, 18 and 30 minutes; use prime factorizations to find the least one."
+    },
+    {
+      "id": "sat-q0132",
+      "title": "Shipments Divisible by Two Packing Sizes",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "The table gives the item counts in four shipments. A shipment qualifies if it could be packed with no leftovers into boxes holding exactly \\(6\\) items each, and could also be repacked with no leftovers into boxes holding exactly \\(9\\) items each. How many shipments qualify? Choose A or B and justify the divisibility test for every row.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\) shipments"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\) shipments"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A shipment must be divisible by both \\(6\\) and \\(9\\), which is equivalent to divisibility by their least common multiple, \\(18\\). For P, \\(126\\div18=7\\), so it qualifies. For Q, \\(150\\div18\\) is not a whole number, so it does not qualify, even though \\(150\\div6=25\\). For R, \\(162\\div18=9\\), and for S, \\(180\\div18=10\\); both qualify. Thus exactly three shipments, P, R, and S, qualify. Choice B wrongly includes Q, which cannot be packed into groups of \\(9\\) without a remainder. Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0132-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Shipment",
+              "Items"
+            ],
+            "rows": [
+              [
+                "P",
+                126
+              ],
+              [
+                "Q",
+                150
+              ],
+              [
+                "R",
+                162
+              ],
+              [
+                "S",
+                180
+              ]
+            ],
+            "headers": [
+              "Shipment",
+              "Items"
+            ]
+          },
+          "alt": "Table of four shipment sizes: P has 126 items, Q has 150 items, R has 162 items, and S has 180 items."
+        }
+      ],
+      "hint": "A shipment must be divisible by both 6 and 9; replace that with one test using their least common multiple and check each row."
+    },
+    {
+      "id": "sat-q0133",
+      "title": "Counting Factors from a Mapping Rule",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "The mapping diagram follows one rule: each input positive integer is mapped to its number of distinct positive factors, including \\(1\\) and itself. The diagram shows three examples. Under the same rule, how many distinct positive factors does \\(18\\) have? Choose A or B and list the factors to justify your answer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\) factors"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\) factors"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The positive factors of \\(18\\) are \\(1\\), \\(2\\), \\(3\\), \\(6\\), \\(9\\), and \\(18\\). Each divides \\(18\\) without a remainder, and no other positive integer does. Therefore \\(18\\) has \\(6\\) distinct positive factors, just as the diagram counts distinct factors for its example integers. Choice A omits one valid factor, often \\(1\\) or \\(18\\). Thus choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0133-v1",
+          "type": "MAPPING",
+          "data": {
+            "left": {
+              "label": "Integer",
+              "elements": [
+                12,
+                15,
+                16
+              ]
+            },
+            "right": {
+              "label": "Number of factors",
+              "elements": [
+                6,
+                4,
+                5
+              ]
+            },
+            "arrows": [
+              [
+                12,
+                6
+              ],
+              [
+                15,
+                4
+              ],
+              [
+                16,
+                5
+              ]
+            ]
+          },
+          "alt": "Mapping diagram: 12 maps to 6 positive factors, 15 maps to 4 positive factors, and 16 maps to 5 positive factors."
+        }
+      ],
+      "hint": "List the factors of 18 in pairs whose product is 18, starting with 1 and 18; check that the mapping's counts follow the same rule."
+    },
+    {
+      "id": "sat-q0134",
+      "title": "A Missing Digit in a Multiple of Twelve",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "A three-digit whole number has hundreds digit \\(4\\), tens digit \\(a\\), and units digit \\(2\\), where \\(a\\) is a digit less than \\(5\\). The number must be divisible by \\(12\\). Which value of \\(a\\) satisfies every condition? Choose A or B and use the relevant divisibility tests.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A number is divisible by \\(12\\) exactly when it is divisible by both \\(3\\) and \\(4\\). Its digit sum is \\(4+a+2=6+a\\), so divisibility by \\(3\\) requires \\(a\\) to be a multiple of \\(3\\). Since \\(a\\) is a digit below \\(5\\), the candidates are \\(0\\) and \\(3\\). For \\(a=0\\), the last two digits form \\(02\\), or \\(2\\), which is not divisible by \\(4\\). For \\(a=3\\), the last two digits form \\(32\\), which is divisible by \\(4\\); the full number is \\(432=12\\times36\\). Choice B passes the divisibility-by-3 test but fails the divisibility-by-4 test. Hence choice A is correct.",
+      "hint": "Divisibility by 12 means divisibility by both 3 and 4: use the digit sum for 3 and the last two digits for 4."
+    },
+    {
+      "id": "sat-q0135",
+      "title": "Divisible Outputs of a Quadratic Function",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "The graph represents \\(f(x)=x^2-5x+6=(x-2)(x-3)\\). Consider only integer inputs \\(x\\) with \\(0\\le x\\le7\\). Which set contains every such input for which the output \\(f(x)\\) is divisible by \\(4\\)? Remember that \\(0\\) is divisible by every nonzero integer. Choose A or B and verify all candidate inputs using factoring or remainders.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{2,3\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{2,3,6,7\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For integer \\(x=0,1,2,3,4,5,6,7\\), the corresponding outputs are \\(6,2,0,0,2,6,12,20\\). Only \\(0\\), \\(12\\), and \\(20\\) are divisible by \\(4\\), so the qualifying inputs are \\(2,3,6,7\\). The graph is consistent with these values: it shows zeros at \\(x=2,3\\) and values \\(12\\) and \\(20\\) at \\(x=6,7\\). Choice A identifies only the zeros and overlooks nonzero multiples of \\(4\\). Thus choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0135-v1",
+          "type": "FUNCTION_GRAPH",
+          "data": {
+            "axes": {
+              "xMin": 0,
+              "xMax": 7,
+              "yMin": -2,
+              "yMax": 22
+            },
+            "curves": [
+              {
+                "expression": "x^2-5*x+6",
+                "label": "y=x^2-5x+6"
+              }
+            ],
+            "points": [
+              {
+                "x": 2,
+                "y": 0,
+                "label": "(2,0)"
+              },
+              {
+                "x": 3,
+                "y": 0,
+                "label": "(3,0)"
+              },
+              {
+                "x": 6,
+                "y": 12,
+                "label": "(6,12)"
+              },
+              {
+                "x": 7,
+                "y": 20,
+                "label": "(7,20)"
+              }
+            ]
+          },
+          "alt": "Parabola y=x squared minus 5x plus 6 over integer inputs 0 to 7. It crosses the x-axis at 2 and 3, and has marked points (6,12) and (7,20); all four marked y-values are divisible by 4."
+        }
+      ],
+      "hint": "Compute f(x) for each integer from 0 to 7 (or read them from the graph) and test each output for divisibility by 4."
+    },
+    {
+      "id": "sat-q0136",
+      "title": "Divisibility of Three Consecutive Integers",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "For every positive integer \\(n\\), consider the product \\(n(n+1)(n+2)\\). Which statement is true for every possible \\(n\\)? Choose A or B and prove your selection with divisibility arguments and a counterexample to the other statement.",
+      "options": [
+        {
+          "label": "A",
+          "text": "The product is always divisible by \\(6\\)."
+        },
+        {
+          "label": "B",
+          "text": "The product is always divisible by \\(12\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Among any three consecutive integers, exactly one is divisible by \\(3\\) and at least one is even, so the product contains a factor of \\(3\\) and a factor of \\(2\\). Since \\(2\\) and \\(3\\) are coprime, the product is always divisible by \\(6\\). It need not be divisible by \\(12\\): when \\(n=1\\), the product is \\(1\\times2\\times3=6\\), which is not divisible by \\(12\\). Thus choice B makes a stronger false claim, and choice A is correct.",
+      "hint": "Think about what three consecutive integers must always contain, then test the stronger claim with a small value of n."
+    },
+    {
+      "id": "sat-q0137",
+      "title": "Choosing a Multiple of Ninety-Nine",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "Consider the two very large positive integers shown below. Which one is divisible by \\(99\\)? Choose A or B and explain the result using the identity \\(10^2=100\\), rather than attempting to write out all the digits.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10^{2026}-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10^{2026}+1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Because \\(100=99+1\\), we have \\(10^2\\equiv1\\pmod{99}\\). Raising both sides to the power \\(1013\\) gives \\(10^{2026}=(10^2)^{1013}\\equiv1\\pmod{99}\\). Therefore \\(10^{2026}-1\\equiv0\\pmod{99}\\), so choice A is divisible by \\(99\\). In contrast, \\(10^{2026}+1\\equiv2\\pmod{99}\\), so choice B is not divisible by \\(99\\). Choice A is correct.",
+      "hint": "Since 100 = 99 + 1, think about the remainder of 10^2, and then of 10^2026, when divided by 99."
+    },
+    {
+      "id": "sat-q0138",
+      "title": "Counting Divisors from Prime Powers",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "A positive integer \\(N\\) has the prime factorization \\(N=2^4\\times3^2\\times5\\). How many distinct positive divisors does \\(N\\) have, including \\(1\\) and \\(N\\)? Choose A or B and explain how the prime exponents determine the count.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\) divisors"
+        },
+        {
+          "label": "B",
+          "text": "\\(30\\) divisors"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every positive divisor of \\(N\\) has the form \\(2^a3^b5^c\\), where \\(a\\) can be \\(0,1,2,3,4\\) (five choices), \\(b\\) can be \\(0,1,2\\) (three choices), and \\(c\\) can be \\(0,1\\) (two choices). Each exponent combination gives one different divisor, so the total is \\(5\\times3\\times2=30\\). Choice A can arise by allowing only four choices for the exponent of \\(2\\), incorrectly excluding exponent \\(0\\): \\(4\\times3\\times2=24\\). Therefore, choice B is correct.",
+      "hint": "Every divisor has the form 2^a 3^b 5^c; count how many choices each exponent has, remembering that 0 is allowed."
+    },
+    {
+      "id": "sat-q0139",
+      "title": "A Bead Count with Three Conditions",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "A craft club has more than \\(100\\) but fewer than \\(150\\) beads. When the beads are arranged into groups of \\(6\\), exactly \\(5\\) beads remain; when arranged into groups of \\(8\\), exactly \\(5\\) remain again. The total number of beads is also divisible by \\(5\\) with none left over. How many beads are there? Choose A or B and justify why no other count in the stated range works.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(125\\) beads"
+        },
+        {
+          "label": "B",
+          "text": "\\(149\\) beads"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Removing the \\(5\\) leftover beads must leave a number divisible by both \\(6\\) and \\(8\\). Their least common multiple is \\(24\\), so the bead total must have the form \\(24k+5\\). The possibilities strictly between \\(100\\) and \\(150\\) are \\(101\\), \\(125\\), and \\(149\\). Only \\(125\\) is divisible by \\(5\\), since it ends in \\(5\\); the other two end in \\(1\\) and \\(9\\). Checking, \\(125=6(20)+5=8(15)+5\\), and \\(125=5(25)\\). Choice B satisfies the two remainder conditions but fails divisibility by \\(5\\). Therefore, choice A is correct.",
+      "hint": "Remove the 5 leftover beads: the rest must be a common multiple of 6 and 8. List those totals in the range, then test divisibility by 5."
+    },
+    {
+      "id": "sat-q0140",
+      "title": "Identical Prize Sets from Three Colors",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "A teacher has \\(36\\) blue cards, \\(48\\) red cards, and \\(60\\) yellow cards. All cards must be divided into the greatest possible number of identical prize sets, with each set receiving the same number of each color and no cards left over. The teacher then gives away \\(5\\) complete sets. How many yellow cards remain? Choose A or B and show all necessary steps without using formal algebra.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(55\\) yellow cards"
+        },
+        {
+          "label": "B",
+          "text": "\\(35\\) yellow cards"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number of identical sets must divide \\(36\\), \\(48\\), and \\(60\\) exactly. Their greatest common divisor is \\(12\\), so the teacher can form at most \\(12\\) sets. Each set contains \\(36\\div12=3\\) blue cards, \\(48\\div12=4\\) red cards, and \\(60\\div12=5\\) yellow cards. Giving away \\(5\\) sets uses \\(5\\times5=25\\) yellow cards. Therefore \\(60-25=35\\) yellow cards remain. Choice A subtracts only \\(5\\) yellow cards, treating each given-away set as if it contained just one yellow card. Thus choice B is correct.",
+      "hint": "The number of sets must divide 36, 48 and 60; find the greatest such number, then work out how many yellow cards each set has."
+    },
+    {
+      "id": "sat-q0141",
+      "title": "The First Large Multiple with a Required Remainder",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "Find the smallest positive integer \\(n\\) greater than \\(300\\) that is divisible by both \\(12\\) and \\(15\\), and that leaves a remainder of exactly \\(4\\) when divided by \\(7\\). Which candidate works? Choose A or B and justify minimality, not just divisibility.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(480\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(420\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(n\\) is divisible by both \\(12\\) and \\(15\\), it must be a multiple of their least common multiple, \\(60\\). Write \\(n=60k\\) for a positive integer \\(k\\). Because \\(60\\equiv4\\pmod7\\), the remainder condition requires \\(4k\\equiv4\\pmod7\\), or \\(k\\equiv1\\pmod7\\). Positive values of \\(k\\) with this remainder are \\(1,8,15,\\ldots\\). The first gives \\(n=60\\), which is not greater than \\(300\\); the next gives \\(n=60(8)=480\\), which is greater than \\(300\\). Thus \\(480\\) is the smallest allowed value. Choice B is a common multiple of \\(12\\) and \\(15\\), but \\(420\\div7=60\\) has remainder \\(0\\), not \\(4\\). Therefore, choice A is correct.",
+      "hint": "Being divisible by 12 and 15 means being a multiple of their least common multiple; list those above 300 and test the remainder on division by 7."
+    },
+    {
+      "id": "sat-q0142",
+      "title": "A Four-Digit Multiple of Thirty-Six",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "A four-digit number has thousands digit \\(3\\), hundreds digit \\(a\\), tens digit \\(5\\), and units digit \\(b\\). The digits \\(a\\) and \\(b\\) must satisfy \\(a<b\\). The number must be divisible by \\(36\\). Which of the two proposed numbers meets both requirements? Choose A or B and demonstrate the divisibility tests.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3852\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3456\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Because \\(36=4\\times9\\) and \\(4\\) and \\(9\\) are coprime, divisibility by \\(36\\) requires divisibility by both \\(4\\) and \\(9\\). For \\(3852\\), the final two digits \\(52\\) are divisible by \\(4\\), and the digit sum is \\(3+8+5+2=18\\), divisible by \\(9\\). Thus \\(3852\\) is divisible by \\(36\\), but its digits have \\(a=8\\) and \\(b=2\\), violating \\(a<b\\). For \\(3456\\), the last two digits \\(56\\) are divisible by \\(4\\), and the digit sum is \\(3+4+5+6=18\\), divisible by \\(9\\). Also \\(a=4<b=6\\). Only choice B satisfies both the divisibility and digit-order constraints.",
+      "hint": "Divisibility by 36 needs both 4 and 9: test the last two digits and the digit sum, then check the condition a<b."
+    },
+    {
+      "id": "sat-q0143",
+      "title": "When the Difference of Two Squares Is Divisible by Twenty-Four",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "For a positive integer \\(n\\), consider \\(n^2-1=(n-1)(n+1)\\). Which condition describes exactly the positive integers for which \\(n^2-1\\) is divisible by \\(24\\)? Choose A or B and prove both directions, including an explanation of why the other condition fails.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Every odd positive integer \\(n\\)"
+        },
+        {
+          "label": "B",
+          "text": "Every odd positive integer \\(n\\) that is not divisible by \\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First consider divisibility by \\(8\\). If \\(n\\) is odd, then \\(n-1\\) and \\(n+1\\) are consecutive even numbers, so one is divisible by \\(4\\) and the other by \\(2\\); their product is divisible by \\(8\\). If \\(n\\) is even, then \\(n^2-1\\) is odd and cannot be divisible by \\(24\\). Next consider divisibility by \\(3\\). If \\(3\\) divides \\(n\\), then \\(n^2-1\\equiv-1\\pmod3\\), so the expression is not divisible by \\(3\\). If \\(3\\) does not divide \\(n\\), then \\(n\\equiv1\\) or \\(-1\\pmod3\\), so \\(n^2-1\\equiv0\\pmod3\\). Since \\(8\\) and \\(3\\) are coprime, the expression is divisible by \\(24\\) exactly when \\(n\\) is odd and not divisible by \\(3\\). Choice A incorrectly includes \\(n=3\\), for which \\(n^2-1=8\\), not a multiple of \\(24\\). Thus choice B is correct.",
+      "hint": "Treat divisibility by 8 and by 3 separately using the factors n-1 and n+1, and test a small odd multiple of 3."
+    },
+    {
+      "id": "sat-q0144",
+      "title": "The Smallest Factorial Containing Three Prime Powers",
+      "category": "MATH",
+      "concept": "Factors and multiples",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply factors and multiples and justify the selected answer.",
+      "question": "Let \\(n!\\) denote the product of all positive integers from \\(1\\) through \\(n\\). What is the smallest positive integer \\(n\\) such that \\(n!\\) is divisible by \\(2^{22}\\times3^{10}\\times5^6\\)? Choose A or B and calculate the number of factors of each prime within the factorial to establish minimality.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(25\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "To count factors of a prime \\(p\\) in \\(n!\\), add \\(\\lfloor n/p\\rfloor+\\lfloor n/p^2\\rfloor+\\lfloor n/p^3\\rfloor+\\cdots\\), stopping when the terms become zero. For \\(25!\\), the number of factors of \\(2\\) is \\(\\lfloor25/2\\rfloor+\\lfloor25/4\\rfloor+\\lfloor25/8\\rfloor+\\lfloor25/16\\rfloor=12+6+3+1=22\\). The number of factors of \\(3\\) is \\(\\lfloor25/3\\rfloor+\\lfloor25/9\\rfloor=8+2=10\\). The number of factors of \\(5\\) is \\(\\lfloor25/5\\rfloor+\\lfloor25/25\\rfloor=5+1=6\\). Thus \\(25!\\) contains all the required prime powers. For \\(24!\\), the number of factors of \\(5\\) is only \\(\\lfloor24/5\\rfloor+\\lfloor24/25\\rfloor=4+0=4\\), which is too few. Since every positive factorial smaller than \\(24!\\) has no more factors of \\(5\\), no smaller \\(n\\) can work either. Choice B fails the \\(5^6\\) requirement; choice A is correct.",
+      "hint": "Count the factors of 2, 3 and 5 inside n! by adding floor(n/p)+floor(n/p^2)+...; the prime 5 is likely to be the limiting one."
+    }
+  ]
+}

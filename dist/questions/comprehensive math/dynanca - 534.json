@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-534",
+  "category": "Comprehensive Mathematics",
+  "title": "534. Sets, Logic, Reasoning & Proof: Least and Greatest Elements",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-534-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of a least element",
+      "learningObjective": "State the definition of a least element of a partially ordered set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a partially ordered set, what is a least element?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An element \\(l\\) such that \\(l\\preceq x\\) for every element \\(x\\)"
+        },
+        {
+          "label": "B",
+          "text": "An element \\(l\\) such that no other element \\(x\\) satisfies \\(x\\preceq l\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A least element lies below every element of the set, so it must be comparable with all of them. The other condition describes a minimal element, which only needs to have nothing strictly below it. In \\(\\{2,3,6\\}\\) ordered by divisibility, \\(2\\) and \\(3\\) are minimal, but there is no least element.",
+      "hint": "A least element must be comparable with every element of the set."
+    },
+    {
+      "id": "dynanca-534-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Greatest element of a power set",
+      "learningObjective": "Find the greatest element of a power set ordered by inclusion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The subsets of \\(\\{1,2,3\\}\\) are ordered by \\(\\subseteq\\). What is the greatest element?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\varnothing\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,2,3\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every subset \\(S\\) satisfies \\(S\\subseteq\\{1,2,3\\}\\), so \\(\\{1,2,3\\}\\) is the greatest element. The empty set satisfies \\(\\varnothing\\subseteq S\\) for every \\(S\\), which makes it the least element.",
+      "hint": "Look for the subset that contains every other subset."
+    },
+    {
+      "id": "dynanca-534-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A set with no least element",
+      "learningObjective": "Decide whether a finite set ordered by divisibility has a least element.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The set \\(\\{2,3,6,12\\}\\) is ordered by divisibility. Does it have a least element?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because neither of \\(2\\) and \\(3\\) divides the other."
+        },
+        {
+          "label": "B",
+          "text": "Yes, it is \\(2\\), the smallest number in the set."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A least element would have to divide every element of the set. But \\(2\\nmid 3\\) and \\(3\\nmid 2\\), and neither \\(6\\) nor \\(12\\) divides \\(2\\). So there is no least element; \\(2\\) and \\(3\\) are both minimal. The set does have a greatest element, \\(12\\).",
+      "hint": "A least element would have to divide both \\(2\\) and \\(3\\)."
+    },
+    {
+      "id": "dynanca-534-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Uniqueness of the greatest element",
+      "learningObjective": "Explain why a greatest element is unique when it exists.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Can a partially ordered set have two different greatest elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; if \\(g\\) and \\(h\\) are both greatest, then \\(g\\preceq h\\) and \\(h\\preceq g\\), so \\(g=h\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; this happens when two elements at the top are incomparable."
+        }
+      ],
+      "answer": "A",
+      "explanation": "If \\(g\\) is greatest, then \\(h\\preceq g\\); if \\(h\\) is greatest, then \\(g\\preceq h\\). Antisymmetry gives \\(g=h\\). Two incomparable elements at the top are maximal elements, and in that case there is no greatest element at all.",
+      "hint": "Apply the definition of a greatest element to each of the two elements, then use antisymmetry."
+    },
+    {
+      "id": "dynanca-534-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Least without greatest",
+      "learningObjective": "Decide which extreme elements a small collection of sets has.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The collection \\(\\{\\varnothing,\\{1\\},\\{2\\}\\}\\) is ordered by \\(\\subseteq\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It has a greatest element but no least element."
+        },
+        {
+          "label": "B",
+          "text": "It has a least element but no greatest element."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The empty set is contained in each member, so it is the least element. A greatest element would have to contain both \\(\\{1\\}\\) and \\(\\{2\\}\\), but neither \\(\\{1\\}\\) nor \\(\\{2\\}\\) contains the other, and \\(\\{1,2\\}\\) is not in the collection. So there is no greatest element.",
+      "hint": "Check whether one member is contained in all the others, and whether one member contains all the others."
+    },
+    {
+      "id": "dynanca-534-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Greatest elements and maximal elements",
+      "learningObjective": "Relate a greatest element to the maximal elements of the set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Suppose \\(g\\) is the greatest element of a partially ordered set. Which statement about maximal elements is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(g\\) is maximal, and it is the only maximal element."
+        },
+        {
+          "label": "B",
+          "text": "\\(g\\) is maximal, but other maximal elements may also exist."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Nothing lies strictly above \\(g\\), so \\(g\\) is maximal. If \\(m\\) is any maximal element, then \\(m\\preceq g\\) because \\(g\\) is greatest, and maximality of \\(m\\) forces \\(m=g\\). So no other maximal element exists.",
+      "hint": "Any other maximal element would have to lie below \\(g\\)."
+    },
+    {
+      "id": "dynanca-534-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Extreme elements of the positive integers under divisibility",
+      "learningObjective": "Decide which extreme elements the positive integers have under divisibility.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The positive integers are ordered by divisibility. Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There is no least element, and there is no greatest element."
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\) is the least element, and there is no greatest element."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(1\\mid n\\) for every positive integer \\(n\\), the number \\(1\\) is the least element. A greatest element would have to be a multiple of every positive integer, including numbers larger than itself, which is impossible for a positive integer.",
+      "hint": "Find a positive integer that divides every positive integer."
+    },
+    {
+      "id": "dynanca-534-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Zero in the divisibility order",
+      "learningObjective": "Find the greatest element of the nonnegative integers under divisibility.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The nonnegative integers \\(0,1,2,\\dots\\) are ordered by divisibility, where \\(a\\mid b\\) means \\(b=ak\\) for some integer \\(k\\). What is the greatest element?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There is none, because the integers are unbounded."
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\), because \\(0=n\\cdot 0\\) for every \\(n\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every nonnegative integer \\(n\\) divides \\(0\\), since \\(0=n\\cdot 0\\). So \\(0\\) lies above every element in the divisibility order and is the greatest element, even though it is the smallest number in the usual order. Unboundedness in the usual order is irrelevant here.",
+      "hint": "Ask which nonnegative integer is a multiple of every integer."
+    },
+    {
+      "id": "dynanca-534-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An interval with no least element",
+      "learningObjective": "Decide whether an open interval has a least element.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "The open interval \\((0,1)\\) of real numbers has the usual order \\(\\le\\). Does it have a least element?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; for each \\(x\\) in the interval, \\(\\dfrac{x}{2}\\) is a smaller number in the interval."
+        },
+        {
+          "label": "B",
+          "text": "Yes; it is \\(0\\), because every number in the interval is greater than \\(0\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A least element must belong to the set. The number \\(0\\) is a lower bound but is not in \\((0,1)\\). For any \\(x\\) with \\(0<x<1\\), the number \\(\\dfrac{x}{2}\\) satisfies \\(0<\\dfrac{x}{2}<x\\), so \\(x\\) is not least. Hence there is no least element.",
+      "hint": "A least element must itself be a member of the set."
+    },
+    {
+      "id": "dynanca-534-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Extreme elements from a diagram",
+      "learningObjective": "Read least and greatest elements from a described Hasse diagram.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A Hasse diagram has elements \\(a,b,c,d,e\\) and exactly five edges, drawn upward from \\(a\\) to \\(b\\), from \\(a\\) to \\(c\\), from \\(b\\) to \\(d\\), from \\(c\\) to \\(d\\), and from \\(c\\) to \\(e\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a\\) is the least element, and \\(d\\) is the greatest element."
+        },
+        {
+          "label": "B",
+          "text": "\\(a\\) is the least element, and there is no greatest element."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Upward paths lead from \\(a\\) to every other element, so \\(a\\) is the least element. No edge goes upward from \\(d\\) or from \\(e\\), so both are maximal. Since \\(e\\) is not below \\(d\\), the element \\(d\\) is not greatest, and with two maximal elements there can be no greatest element.",
+      "hint": "Check whether \\(e\\) lies below \\(d\\)."
+    }
+  ]
+}

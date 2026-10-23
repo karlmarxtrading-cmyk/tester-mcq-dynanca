@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-431",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 431",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-431-q001",
+      "category": "Mathematical Reasoning",
+      "concept": "Minimum of a Quadratic Function",
+      "learningObjective": "Determine the minimum value of a quadratic function by completing the square or using the vertex.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "What is the minimum value of the function \\(f(x)=x^2-4x+7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Complete the square:\n\\[\nf(x)=x^2-4x+7=(x-2)^2+3.\n\\]\nSince \\((x-2)^2\\ge 0\\), the smallest possible value occurs when \\((x-2)^2=0\\). Thus the minimum value is \\(3\\).",
+      "hint": "Rewrite the quadratic in completed-square form to identify the smallest possible value."
+    },
+    {
+      "id": "math-gaokao-431-q002",
+      "category": "Mathematical Reasoning",
+      "concept": "Maximum of a Quadratic Function in Vertex Form",
+      "learningObjective": "Identify the maximum value of a quadratic function given in vertex form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the maximum value of the function \\(f(x)=-2(x-1)^2+5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Because \\(-2(x-1)^2\\le 0\\) for all real \\(x\\), we have\n\\[\nf(x)=-2(x-1)^2+5\\le 5.\n\\]\nEquality occurs when \\(x=1\\). Therefore, the maximum value is \\(5\\).",
+      "hint": "Examine the sign of the squared term and determine the largest value the expression can reach."
+    },
+    {
+      "id": "math-gaokao-431-q003",
+      "category": "Mathematical Reasoning",
+      "concept": "Local Extremum of a Cubic Function",
+      "learningObjective": "Find the local maximum value of a cubic function using derivatives.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The function \\(f(x)=x^3-3x\\) has a local maximum value equal to:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2-3=3(x^2-1).\n\\]\nSet \\(f'(x)=0\\):\n\\[\n3(x^2-1)=0 \\implies x=\\pm 1.\n\\]\nNow \\(f''(x)=6x\\). At \\(x=-1\\), \\(f''(-1)=-6<0\\), so \\(x=-1\\) gives a local maximum. Thus\n\\[\n\\begin{aligned}\nf(-1)&=(-1)^3-3(-1) \\\\\n&=-1+3 \\\\\n&=2.\n\\end{aligned}\n\\]\nSo the local maximum value is \\(2\\).",
+      "hint": "Find critical points first, then use the second derivative or sign changes to identify the local maximum."
+    },
+    {
+      "id": "math-gaokao-431-q004",
+      "category": "Mathematical Reasoning",
+      "concept": "Minimum Value on a Closed Interval",
+      "learningObjective": "Determine the minimum value of a quadratic function on a closed interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the minimum value of \\(f(x)=x^2-2x+3\\) on the interval \\([0,3]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The vertex of the parabola occurs at\n\\[\nx=-\\frac{-2}{2}=1.\n\\]\nSince \\(1\\in[0,3]\\), evaluate\n\\[\nf(1)=1^2-2(1)+3=2.\n\\]\nThe endpoint values are\n\\[\nf(0)=3,\\qquad f(3)=9-6+3=6.\n\\]\nTherefore, the minimum value on \\([0,3]\\) is \\(2\\).",
+      "hint": "Check the vertex inside the interval and compare it with the endpoint values."
+    },
+    {
+      "id": "math-gaokao-431-q005",
+      "category": "Mathematical Reasoning",
+      "concept": "Minimum of a Sum with a Reciprocal Term",
+      "learningObjective": "Find the minimum value of \\(x+\\frac{a}{x}\\) for \\(x>0\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For \\(x>0\\), what is the minimum value of \\(f(x)=x+\\frac{9}{x}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By AM-GM, \\(x+\\frac{9}{x}\\ge2\\sqrt{9}=6\\). Equality holds when \\(x=9/x\\), which gives \\(x=3\\) in the stated domain. Thus the minimum is \\(6\\). The value \\(9\\) is not a lower bound attained at the minimizing input.",
+      "hint": "Use the derivative or the AM-GM inequality to locate the balancing value of \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-431-q006",
+      "category": "Mathematical Reasoning",
+      "concept": "Local Maximum of a Cubic Polynomial",
+      "learningObjective": "Determine the local maximum value of a cubic polynomial by analyzing its critical points.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The local maximum value of \\(f(x)=-x^3+3x^2+9x\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(27\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Differentiate:\n\\[\n\\begin{aligned}\nf'(x)&=-3x^2+6x+9 \\\\\n&=-3(x^2-2x-3) \\\\\n&=-3(x-3)(x+1).\n\\end{aligned}\n\\]\nThus the critical points are \\(x=-1\\) and \\(x=3\\). Also,\n\\[\nf''(x)=-6x+6.\n\\]\nAt \\(x=3\\), \\(f''(3)=-12<0\\), so \\(x=3\\) gives a local maximum. Therefore,\n\\[\nf(3)=-27+27+27=27.\n\\]\nThe local maximum value is \\(27\\).",
+      "hint": "Find critical points, then use the second derivative to decide which one gives a local maximum."
+    },
+    {
+      "id": "math-gaokao-431-q007",
+      "category": "Mathematical Reasoning",
+      "concept": "Maximum Product under a Fixed Sum",
+      "learningObjective": "Maximize a product \\(xy\\) when \\(x+y\\) is fixed and \\(x,y>0\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "If \\(x>0\\), \\(y>0\\), and \\(x+y=10\\), what is the maximum value of \\(xy\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(25\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(x+y=10\\), we have \\(y=10-x\\). Thus\n\\[\nxy=x(10-x)=10x-x^2.\n\\]\nThis is a downward-opening quadratic with vertex at\n\\[\nx=\\frac{10}{2}=5.\n\\]\nThen \\(y=5\\), so\n\\[\nxy=5\\cdot 5=25.\n\\]\nTherefore, the maximum value is \\(25\\).",
+      "hint": "Substitute \\(y=10-x\\) and maximize the resulting quadratic expression."
+    },
+    {
+      "id": "math-gaokao-431-q008",
+      "category": "Mathematical Reasoning",
+      "concept": "Minimum of an Exponential-Linear Function",
+      "learningObjective": "Find the minimum value of a function involving \\(e^x\\) and a linear term.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is the minimum value of \\(f(x)=e^x-4x\\) for \\(x\\in\\mathbb{R}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\ln 4-4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4-4\\ln 4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate:\n\\[\nf'(x)=e^x-4.\n\\]\nSet \\(f'(x)=0\\):\n\\[\ne^x=4 \\implies x=\\ln 4.\n\\]\nSince \\(f''(x)=e^x>0\\), this critical point gives a minimum. Evaluating,\n\\[\nf(\\ln 4)=e^{\\ln 4}-4\\ln 4=4-4\\ln 4.\n\\]\nThus the minimum value is \\(4-4\\ln 4\\).",
+      "hint": "Differentiate, set the derivative equal to zero, and then evaluate the function at the resulting critical point."
+    },
+    {
+      "id": "math-gaokao-431-q009",
+      "category": "Mathematical Reasoning",
+      "concept": "Extremum Difference of a Parameterized Cubic",
+      "learningObjective": "Use the difference between local maximum and local minimum values to determine a parameter.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(a>0\\). The function \\(f(x)=x^3-3ax\\) has local maximum value \\(M\\) and local minimum value \\(m\\). If \\(M-m=4\\), then \\(a=\\)",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2-3a=3(x^2-a).\n\\]\nThus the critical points are \\(x=\\pm\\sqrt{a}\\). Since \\(a>0\\), \\(f''(x)=6x\\), so \\(x=-\\sqrt{a}\\) gives the local maximum and \\(x=\\sqrt{a}\\) gives the local minimum. Now\n\\[\n\\begin{aligned}\nM&=f(-\\sqrt{a})=2a\\sqrt{a}, \\\\\nm&=f(\\sqrt{a})=-2a\\sqrt{a}.\n\\end{aligned}\n\\]\nTherefore,\n\\[\nM-m=4a\\sqrt{a}=4.\n\\]\nSo \\(a\\sqrt{a}=1\\), which implies \\(a=1\\).",
+      "hint": "Find the two critical points, compute the local maximum and local minimum values, and set their difference equal to \\(4\\)."
+    },
+    {
+      "id": "math-gaokao-431-q010",
+      "category": "Mathematical Reasoning",
+      "concept": "Parameter Condition for a Maximum on an Interval",
+      "learningObjective": "Determine the parameter range so that a cubic function has a specified maximum value on an interval.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(a>2\\). The maximum value of \\(f(x)=x^3-3x^2+2\\) on the interval \\([0,a]\\) is \\(2\\). Then the range of \\(a\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2<a\\le 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a\\ge 3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2-6x=3x(x-2).\n\\]\nThe critical points are \\(x=0\\) and \\(x=2\\). On \\([0,a]\\) with \\(a>2\\),\n\\[\nf(0)=2,\\qquad f(2)=8-12+2=-2.\n\\]\nFor \\(x>2\\), the function is increasing, so the maximum is either \\(f(0)=2\\) or \\(f(a)\\). We need the maximum to be \\(2\\), so\n\\[\nf(a)\\le 2.\n\\]\nThus\n\\[\na^3-3a^2+2\\le 2 \\implies a^3-3a^2\\le 0 \\implies a^2(a-3)\\le 0.\n\\]\nSince \\(a>2>0\\), this gives \\(a\\le 3\\). Therefore,\n\\[\n2<a\\le 3.\n\\]",
+      "hint": "Compare the endpoint values and the critical-point value, then impose the condition that the endpoint value at \\(a\\) does not exceed the maximum value \\(2\\)."
+    }
+  ]
+}

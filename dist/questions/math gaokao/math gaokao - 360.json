@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-360",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 360",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-360-q001",
+      "category": "Combinatorics",
+      "concept": "Pigeonhole Principle with Months",
+      "learningObjective": "Apply the pigeonhole principle to determine a guaranteed repetition among people and months.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "In a group of \\(13\\) people, what is the minimum number of people who must have been born in the same month?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(12\\) months in a year. If each month contained at most \\(1\\) person from the group, then there could be at most \\(12\\) people. Since there are \\(13\\) people, by the pigeonhole principle at least one month must contain at least \\(2\\) people. Thus the minimum guaranteed number is \\(2\\).",
+      "hint": "Compare the number of people with the number of months in a year."
+    },
+    {
+      "id": "math-gaokao-360-q002",
+      "category": "Combinatorics",
+      "concept": "Pigeonhole Principle with Colored Balls",
+      "learningObjective": "Determine the minimum number of draws needed to guarantee three balls of the same color.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A box contains \\(10\\) red balls, \\(10\\) blue balls, and \\(10\\) green balls. What is the minimum number of balls to draw without looking to guarantee at least \\(3\\) balls of the same color?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "To avoid having \\(3\\) balls of the same color, we could draw at most \\(2\\) red, \\(2\\) blue, and \\(2\\) green balls, for a total of \\(6\\) balls. Therefore, drawing \\(7\\) balls forces at least one color to appear at least \\(3\\) times. Equivalently, by the pigeonhole principle,\n\\[\n\\left\\lceil \\frac{7}{3} \\right\\rceil = 3.\n\\]",
+      "hint": "Find the largest number of balls that can be drawn while keeping each color below \\(3\\)."
+    },
+    {
+      "id": "math-gaokao-360-q003",
+      "category": "Combinatorics",
+      "concept": "Pigeonhole Principle with Socks",
+      "learningObjective": "Determine the minimum number of socks needed to guarantee a matching pair from several colors.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A drawer contains at least two socks of each of three colors: black, white, and blue. What is the minimum number of socks to draw without looking to guarantee a matching pair of the same color?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "With \\(3\\) colors, it is possible to draw \\(3\\) socks and have one black, one white, and one blue sock, with no matching pair. Drawing a \\(4\\)th sock forces it to match one of the three colors already drawn. Therefore, the minimum guaranteed number is \\(4\\).",
+      "hint": "Consider how many colors are available and how many socks can be drawn without repeating a color."
+    },
+    {
+      "id": "math-gaokao-360-q004",
+      "category": "Combinatorics",
+      "concept": "Pigeonhole Principle with Remainders",
+      "learningObjective": "Use remainders modulo \\(7\\) to determine a guaranteed repeated remainder.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many integers must be chosen from \\(1,2,\\dots,100\\) to guarantee that at least two chosen integers have the same remainder when divided by \\(7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "When an integer is divided by \\(7\\), the possible remainders are\n\\[\n0,1,2,3,4,5,6,\n\\]\nso there are \\(7\\) possible remainder classes. If we choose \\(8\\) integers, then by the pigeonhole principle at least two of them must have the same remainder modulo \\(7\\). Choosing only \\(7\\) integers might give one from each remainder class, so \\(8\\) is the minimum guaranteed number.",
+      "hint": "List the possible remainders when an integer is divided by \\(7\\)."
+    },
+    {
+      "id": "math-gaokao-360-q005",
+      "category": "Combinatorics",
+      "concept": "Pigeonhole Principle with Zodiac Signs",
+      "learningObjective": "Apply the pigeonhole principle to determine a guaranteed repetition among people and zodiac signs.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "In any group of \\(25\\) people, what is the minimum number of people guaranteed to share the same zodiac sign? There are \\(12\\) zodiac signs.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(12\\) zodiac signs. If each sign were shared by at most \\(2\\) people, then there could be at most\n\\[\n12 \\cdot 2 = 24\n\\]\npeople. Since there are \\(25\\) people, at least one zodiac sign must be shared by at least \\(3\\) people. Equivalently,\n\\[\n\\left\\lceil \\frac{25}{12} \\right\\rceil = 3.\n\\]",
+      "hint": "Use the ceiling of the quotient of the number of people by the number of zodiac signs."
+    },
+    {
+      "id": "math-gaokao-360-q006",
+      "category": "Combinatorics",
+      "concept": "Pigeonhole Principle with Birth Months",
+      "learningObjective": "Determine a guaranteed number of students born in the same month.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A class has \\(40\\) students. What is the minimum number of students guaranteed to have birthdays in the same month?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(12\\) months. If each month contained at most \\(3\\) students, then the class could have at most\n\\[\n12 \\cdot 3 = 36\n\\]\nstudents. Since there are \\(40\\) students, at least one month must contain at least \\(4\\) students. Equivalently,\n\\[\n\\left\\lceil \\frac{40}{12} \\right\\rceil = 4.\n\\]",
+      "hint": "Compare \\(40\\) with multiples of \\(12\\)."
+    },
+    {
+      "id": "math-gaokao-360-q007",
+      "category": "Combinatorics",
+      "concept": "Pigeonhole Principle in Geometry",
+      "learningObjective": "Use a partition of a square to guarantee two nearby points.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Ten points are placed in a square of side length \\(3\\). Which of the following is a distance \\(d\\) such that two of the points are guaranteed to be at distance at most \\(d\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide the square into \\(9\\) unit squares, assigning any point on a shared edge to just one of the adjacent squares. With \\(10\\) points in \\(9\\) cells, the pigeonhole principle puts two points in one cell. Their distance is at most the diagonal:\n\\[\n\\sqrt{1^2+1^2}=\\sqrt{2}.\n\\]\nTo show that a distance of at most \\(1\\) is not guaranteed, consider these ten points in \\([0,3]^2\\):\n\\[\n\\begin{aligned}\n&(0,0),\\ (6/5,0),\\ (12/5,0),\\\\\n&(3/5,1),\\ (9/5,1),\\ (3,1),\\\\\n&(0,2),\\ (6/5,2),\\ (12/5,2),\\\\\n&(3/5,3).\n\\end{aligned}\n\\]\nPoints in the same row are separated by at least \\(6/5>1\\). In neighboring rows, the vertical separation is \\(1\\) and the horizontal separation is at least \\(3/5\\), giving distance at least\n\\[\n\\sqrt{1+(3/5)^2}=\\frac{\\sqrt{34}}{5}>1.\n\\]\nPoints in non-neighboring rows have vertical separation at least \\(2\\). Thus every pair in this configuration is farther apart than \\(1\\), whereas the \\(\\sqrt{2}\\) bound always holds.",
+      "hint": "Partition the large square into \\(9\\) smaller squares of equal size."
+    },
+    {
+      "id": "math-gaokao-360-q008",
+      "category": "Combinatorics",
+      "concept": "Pigeonhole Principle with Acquaintance Counts",
+      "learningObjective": "Apply the pigeonhole principle to show that two people have the same number of acquaintances.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In any group of \\(6\\) people, let \\(M\\) be the largest number of people sharing one acquaintance count. What is the smallest possible value of \\(M\\)? Assume acquaintance is mutual, and no person is counted as their own acquaintance.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each person in a group of \\(6\\) can have \\(0,1,2,3,4\\), or \\(5\\) acquaintances. However, \\(0\\) and \\(5\\) cannot both occur in the same group: if someone knows \\(0\\) people, then no one can know all \\(5\\) others; if someone knows all \\(5\\) others, then no one can know \\(0\\) people. Thus there are at most \\(5\\) possible acquaintance counts. Since there are \\(6\\) people, by the pigeonhole principle at least two people must have the same number of acquaintances. To show that a group need not contain three people with the same count, label its people A through F and let the only acquaintance pairs be A-B, A-C, A-D, A-E, B-C, and B-D. Their counts are \\(4,3,2,2,1,0\\). The largest multiplicity is exactly \\(2\\), so the lower bound is attained.",
+      "hint": "Consider the possible numbers of acquaintances and note that \\(0\\) and \\(5\\) cannot both appear."
+    },
+    {
+      "id": "math-gaokao-360-q009",
+      "category": "Combinatorics",
+      "concept": "Pigeonhole Principle with Consecutive Integers",
+      "learningObjective": "Determine the minimum number of selected integers that forces two consecutive integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A bag contains balls numbered \\(1,2,\\dots,50\\). What is the minimum number of balls to draw without replacement to guarantee that two drawn numbers differ by exactly \\(1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(25\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(26\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Partition the numbers \\(1,2,\\dots,50\\) into the \\(25\\) pairs\n\\[\n(1,2),(3,4),\\dots,(49,50).\n\\]\nIf \\(26\\) balls are drawn, then by the pigeonhole principle two of them must come from the same pair, and those two numbers differ by \\(1\\). It is possible to draw \\(25\\) balls without any two differing by \\(1\\), for example by drawing all odd-numbered balls. Therefore, the minimum guaranteed number is \\(26\\).",
+      "hint": "Pair consecutive numbers and use the pigeonhole principle."
+    },
+    {
+      "id": "math-gaokao-360-q010",
+      "category": "Combinatorics",
+      "concept": "Pigeonhole Principle with Difference Three",
+      "learningObjective": "Determine the minimum number of chosen integers that forces two numbers to differ by \\(3\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "From the integers \\(1,2,\\dots,20\\), what is the minimum number that must be chosen to guarantee that two chosen integers differ by \\(3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(11\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Partition the integers into three chains where consecutive terms differ by \\(3\\):\n\\[\n\\{1,4,7,10,13,16,19\\},\\quad \\{2,5,8,11,14,17,20\\},\\quad \\{3,6,9,12,15,18\\}.\n\\]\nWithin each chain, we cannot choose two consecutive terms if we want to avoid a difference of \\(3\\). The first two chains have length \\(7\\), so at most \\(4\\) numbers can be chosen from each. The third chain has length \\(6\\), so at most \\(3\\) numbers can be chosen from it. Therefore, at most\n\\[\n4+4+3=11\n\\]\nintegers can be chosen without any two differing by \\(3\\). Hence, choosing \\(12\\) integers guarantees such a pair.",
+      "hint": "Split the integers into chains where consecutive terms differ by \\(3\\), then count how many can be taken from each chain without taking adjacent terms."
+    }
+  ]
+}

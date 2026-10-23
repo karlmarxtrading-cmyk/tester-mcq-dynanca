@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-545",
+  "category": "Comprehensive Mathematics",
+  "title": "545. Discrete Mathematics, Counting & Graph Theory: Multiplication Rule of Counting",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-545-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The multiplication rule",
+      "learningObjective": "State the multiplication rule for a task done in two stages.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A task is completed in two stages. The first stage can be done in \\(m\\) ways, and for each of these the second stage can be done in \\(n\\) ways. In how many ways can the whole task be done?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m\\cdot n\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(m+n\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each of the \\(m\\) ways of doing the first stage can be continued in \\(n\\) ways, so there are \\(m\\cdot n\\) ways in total. The sum \\(m+n\\) would count the ways of doing just one of two alternative tasks.",
+      "hint": "Imagine a tree diagram: every first-stage branch splits into the same number of second-stage branches."
+    },
+    {
+      "id": "dynanca-545-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Outfits",
+      "learningObjective": "Apply the multiplication rule to two independent choices.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A traveller packs \\(5\\) shirts and \\(3\\) pairs of trousers. How many outfits consisting of one shirt and one pair of trousers are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An outfit requires a shirt and a pair of trousers. Each of the \\(5\\) shirts can be worn with each of the \\(3\\) pairs of trousers, so there are \\(5\\cdot 3=15\\) outfits. The sum \\(5+3=8\\) is the number of garments.",
+      "hint": "Both items are chosen, one after the other."
+    },
+    {
+      "id": "dynanca-545-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Plates with repetition",
+      "learningObjective": "Count strings with several positions when repetition is allowed.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A licence plate shows \\(2\\) uppercase letters followed by \\(3\\) digits, and symbols may repeat. How many plates are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(468000\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(676000\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each letter position has \\(26\\) choices and each digit position has \\(10\\), so the number of plates is \\(26^2\\cdot 10^3=676\\cdot 1000=676000\\). The number \\(468000=26\\cdot 25\\cdot 10\\cdot 9\\cdot 8\\) would be correct only if no symbol could repeat.",
+      "hint": "Because repetition is allowed, the number of choices is the same in every position of the same kind."
+    },
+    {
+      "id": "dynanca-545-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Numbers with odd digits",
+      "learningObjective": "Count three-digit integers whose digits come from a restricted set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many integers from \\(100\\) to \\(999\\) have all three digits odd?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(125\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each digit must be one of \\(1,3,5,7,9\\), and digits may repeat, so there are \\(5\\cdot 5\\cdot 5=125\\) such integers. The number \\(60=5\\cdot 4\\cdot 3\\) would count only those with three different odd digits.",
+      "hint": "Count the choices for each of the three positions; nothing forbids repeating a digit."
+    },
+    {
+      "id": "dynanca-545-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "True-false answer sheets",
+      "learningObjective": "Count the outcomes of several two-way choices.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A quiz has \\(6\\) true-false questions, and every question is answered. How many different answer sheets are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(64\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each of the \\(6\\) questions is answered in one of \\(2\\) ways, independently of the others, so there are \\(2^6=64\\) answer sheets. The product \\(6\\cdot 2=12\\) counts the individual answers that could be written, not the complete sheets.",
+      "hint": "Multiply the number of choices for each question."
+    },
+    {
+      "id": "dynanca-545-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Three different digits",
+      "learningObjective": "Count three-digit integers with distinct digits.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many integers from \\(100\\) to \\(999\\) have three different digits?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(648\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(720\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The hundreds digit can be any of \\(9\\) digits (not \\(0\\)). The tens digit can be any of the \\(9\\) remaining digits (now \\(0\\) is allowed), and the units digit any of the \\(8\\) still unused. This gives \\(9\\cdot 9\\cdot 8=648\\). The product \\(10\\cdot 9\\cdot 8=720\\) also counts strings that begin with \\(0\\).",
+      "hint": "Choose the hundreds digit first, because it has the extra restriction."
+    },
+    {
+      "id": "dynanca-545-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Even numbers from given digits",
+      "learningObjective": "Count numbers by choosing the most restricted position first.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Three-digit numbers are formed from the digits \\(1,2,3,4,5\\) without repeating a digit. How many of them are even?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The units digit must be \\(2\\) or \\(4\\), which gives \\(2\\) choices. The remaining two positions are filled with \\(4\\) and then \\(3\\) of the unused digits. So there are \\(2\\cdot 4\\cdot 3=24\\) even numbers. The number \\(60=5\\cdot 4\\cdot 3\\) counts all the three-digit numbers, even and odd.",
+      "hint": "Fill the units position first."
+    },
+    {
+      "id": "dynanca-545-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting divisors",
+      "learningObjective": "Use the multiplication rule to count the positive divisors of an integer.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Since \\(72=2^3\\cdot 3^2\\), every positive divisor of \\(72\\) has the form \\(2^a\\cdot 3^b\\) with \\(0\\le a\\le 3\\) and \\(0\\le b\\le 2\\). How many positive divisors does \\(72\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(4\\) possible values of \\(a\\) and \\(3\\) possible values of \\(b\\), and each pair gives a different divisor, so there are \\(4\\cdot 3=12\\) divisors. The product \\(3\\cdot 2=6\\) forgets that an exponent may also be \\(0\\).",
+      "hint": "Count the allowed values of each exponent, including \\(0\\)."
+    },
+    {
+      "id": "dynanca-545-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A round trip on different roads",
+      "learningObjective": "Count round trips when no road may be used twice.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "There are \\(3\\) roads from \\(A\\) to \\(B\\) and \\(4\\) roads from \\(B\\) to \\(C\\). A traveller goes from \\(A\\) to \\(C\\) through \\(B\\) and returns from \\(C\\) to \\(A\\) through \\(B\\), never using a road twice. How many round trips are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(72\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(144\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Going out there are \\(3\\cdot 4=12\\) routes. On the way back, one road between \\(C\\) and \\(B\\) and one road between \\(B\\) and \\(A\\) are no longer available, leaving \\(3\\cdot 2=6\\) routes. So there are \\(12\\cdot 6=72\\) round trips. The number \\(144=12\\cdot 12\\) allows the same roads to be reused.",
+      "hint": "Count the outward routes, then count the roads still available on each stretch of the return."
+    },
+    {
+      "id": "dynanca-545-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Even numbers with different digits",
+      "learningObjective": "Count four-digit even integers with distinct digits by cases.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many even integers from \\(1000\\) to \\(9999\\) have four different digits?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2520\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2296\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Split by the units digit. If it is \\(0\\), the other positions can be filled in \\(9\\cdot 8\\cdot 7=504\\) ways. If it is \\(2,4,6\\), or \\(8\\), the thousands digit has \\(8\\) choices (not \\(0\\) and not the units digit), and the middle positions have \\(8\\) and \\(7\\) choices, giving \\(4\\cdot 8\\cdot 8\\cdot 7=1792\\). The total is \\(504+1792=2296\\). The product \\(5\\cdot 9\\cdot 8\\cdot 7=2520\\) overlooks that a nonzero units digit removes one choice for the thousands digit.",
+      "hint": "The case with units digit \\(0\\) behaves differently from the other even units digits."
+    }
+  ]
+}

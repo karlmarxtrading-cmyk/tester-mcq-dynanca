@@ -1,0 +1,4411 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "algebra-02",
+  "category": "Mathematics for Computing",
+  "title": "Coordinate Algebra, Systems & Functions",
+  "description": "Explore essential mathematical concepts through carefully crafted questions. Strengthen your understanding, practice your reasoning, and learn at your own pace.",
+  "questionCount": 200,
+  "questions": [
+    {
+      "id": "algebra-02-q001",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Determine the slope of a line from two points.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the slope of the line through \\((2,3)\\) and \\((4,7)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using \\(m=\\frac{y_2-y_1}{x_2-x_1}\\), we get \\(m=\\frac{7-3}{4-2}=\\frac{4}{2}=2\\). Therefore, the correct answer is option A.",
+      "hint": "Use the slope formula and subtract the coordinates in the same order."
+    },
+    {
+      "id": "algebra-02-q002",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Find the midpoint of a segment given its endpoints.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the midpoint of the segment with endpoints \\((-2,5)\\) and \\((4,-1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,-2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,2)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The midpoint formula is \\(\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)\\). Substituting gives \\(\\left(\\frac{-2+4}{2},\\frac{5+(-1)}{2}\\right)=(1,2)\\). Therefore, option B is correct.",
+      "hint": "Average the x-coordinates and average the y-coordinates."
+    },
+    {
+      "id": "algebra-02-q003",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Calculate the distance between two points in the coordinate plane.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the distance between \\((0,0)\\) and \\((3,4)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the distance formula \\(d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}\\). Then \\(d=\\sqrt{(3-0)^2+(4-0)^2}=\\sqrt{9+16}=\\sqrt{25}=5\\). Therefore, option A is correct.",
+      "hint": "Apply the distance formula and simplify the square root."
+    },
+    {
+      "id": "algebra-02-q004",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Write the equation of a line given its slope and a point.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the equation of the line with slope \\(3\\) that passes through \\((1,2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=3x-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=3x+1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using \\(y=mx+b\\), substitute \\(m=3\\), \\(x=1\\), and \\(y=2\\): \\(2=3(1)+b\\), so \\(b=-1\\). Thus the equation is \\(y=3x-1\\), which is option A.",
+      "hint": "Substitute the given point into slope-intercept form to find the y-intercept."
+    },
+    {
+      "id": "algebra-02-q005",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Find the x-intercept of a linear equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the x-intercept of the line \\(2x+3y=12\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0,6)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((6,0)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "To find the x-intercept, set \\(y=0\\): \\(2x=12\\), so \\(x=6\\). The x-intercept is \\((6,0)\\), which is option B.",
+      "hint": "Set \\(y=0\\) and solve for \\(x\\)."
+    },
+    {
+      "id": "algebra-02-q006",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Identify the y-intercept of a linear equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the y-intercept of the line \\(y=-2x+5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0,5)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((5,0)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The y-intercept occurs when \\(x=0\\). Substituting gives \\(y=-2(0)+5=5\\). Therefore, the y-intercept is \\((0,5)\\), which is option A.",
+      "hint": "Set \\(x=0\\) and evaluate \\(y\\)."
+    },
+    {
+      "id": "algebra-02-q007",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Determine the slope of a line parallel to a given line.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the slope of any line parallel to \\(y=-4x+7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Parallel lines have the same slope. The given line has slope \\(-4\\), so a parallel line also has slope \\(-4\\). Therefore, option B is correct.",
+      "hint": "Parallel lines share the same slope."
+    },
+    {
+      "id": "algebra-02-q008",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Determine the slope of a line perpendicular to a given line.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the slope of a line perpendicular to a line with slope \\(\\frac{2}{3}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\frac{3}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Perpendicular slopes are negative reciprocals. The negative reciprocal of \\(\\frac{2}{3}\\) is \\(-\\frac{3}{2}\\). Therefore, option B is correct.",
+      "hint": "Flip the fraction and change the sign."
+    },
+    {
+      "id": "algebra-02-q009",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Write the equation of a line through two points.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the equation of the line through \\((1,1)\\) and \\((3,5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=2x+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=2x-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The slope is \\(\\frac{5-1}{3-1}=\\frac{4}{2}=2\\). Using \\((1,1)\\), \\(1=2(1)+b\\), so \\(b=-1\\). Thus \\(y=2x-1\\), which is option B.",
+      "hint": "Find the slope first, then substitute one point to find the y-intercept."
+    },
+    {
+      "id": "algebra-02-q010",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Write the point-slope form of a linear equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Which equation is in point-slope form for a line with slope \\(-2\\) through \\((3,4)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y+4=-2(x-3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y-4=-2(x-3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Point-slope form is \\(y-y_1=m(x-x_1)\\). With \\(m=-2\\), \\(x_1=3\\), and \\(y_1=4\\), we get \\(y-4=-2(x-3)\\). Therefore, option B is correct.",
+      "hint": "Use \\(y-y_1=m(x-x_1)\\) and substitute carefully."
+    },
+    {
+      "id": "algebra-02-q011",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Convert a linear equation to standard form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Which equation is equivalent to \\(y=2x+3\\) in standard form?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2x-y=-3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2x+y=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Starting with \\(y=2x+3\\), subtract \\(2x\\) from both sides: \\(-2x+y=3\\). Multiplying by \\(-1\\) gives \\(2x-y=-3\\). Therefore, option A is correct.",
+      "hint": "Move the x-term to the left side and keep the equation balanced."
+    },
+    {
+      "id": "algebra-02-q012",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Identify the slope of a vertical line.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the slope of the vertical line through \\((2,5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "undefined"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A vertical line has no horizontal change, so its slope is undefined. Therefore, option B is correct.",
+      "hint": "Recall what happens when the denominator in the slope formula is zero."
+    },
+    {
+      "id": "algebra-02-q013",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Identify the slope of a horizontal line.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the slope of the horizontal line \\(y=3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "undefined"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A horizontal line has no vertical change, so its slope is \\(0\\). Therefore, option B is correct.",
+      "hint": "Horizontal lines have zero rise."
+    },
+    {
+      "id": "algebra-02-q014",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Write the equation of a vertical line through two points.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the equation of the line through \\((2,-1)\\) and \\((2,5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both points have the same x-coordinate, so the line is vertical. A vertical line through \\(x=2\\) is \\(x=2\\). Therefore, option A is correct.",
+      "hint": "Check whether the x-coordinates or y-coordinates are identical."
+    },
+    {
+      "id": "algebra-02-q015",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Write the equation of a line through the origin and another point.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the equation of the line through \\((0,0)\\) and \\((4,8)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=2x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=4x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The slope is \\(\\frac{8-0}{4-0}=2\\). Since the line passes through the origin, \\(b=0\\), so \\(y=2x\\). Therefore, option A is correct.",
+      "hint": "Find the slope, and note that the y-intercept is zero."
+    },
+    {
+      "id": "algebra-02-q016",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Find an input value from a linear equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(y=2x+1\\), what is \\(x\\) when \\(y=7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(y=7\\): \\(7=2x+1\\). Subtract 1 to get \\(6=2x\\), so \\(x=3\\). Therefore, option B is correct.",
+      "hint": "Substitute the given y-value and solve for x."
+    },
+    {
+      "id": "algebra-02-q017",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Determine the slope from a linear equation in standard form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the slope of the line \\(3x-2y=6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{3}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Solve for \\(y\\): \\(-2y=-3x+6\\), so \\(y=\\frac{3}{2}x-3\\). The slope is \\(\\frac{3}{2}\\), which is option B.",
+      "hint": "Rewrite the equation in slope-intercept form."
+    },
+    {
+      "id": "algebra-02-q018",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Write the equation of a perpendicular line through a given point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the equation of the line perpendicular to \\(y=-\\frac{1}{2}x+4\\) that passes through \\((1,2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=2x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=-2x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The perpendicular slope is the negative reciprocal of \\(-\\frac{1}{2}\\), which is \\(2\\). Using \\((1,2)\\), \\(2=2(1)+b\\), so \\(b=0\\). Thus \\(y=2x\\), which is option A.",
+      "hint": "Find the negative reciprocal slope, then use the given point."
+    },
+    {
+      "id": "algebra-02-q019",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Calculate distance between two coordinate points.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the distance between \\((1,2)\\) and \\((4,6)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the distance formula: \\(d=\\sqrt{(4-1)^2+(6-2)^2}=\\sqrt{9+16}=\\sqrt{25}=5\\). Therefore, option B is correct.",
+      "hint": "Subtract the coordinates, square, add, and take the square root."
+    },
+    {
+      "id": "algebra-02-q020",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Find the midpoint of a segment.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the midpoint of the segment from \\((3,7)\\) to \\((5,-1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((4,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((8,6)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The midpoint is \\(\\left(\\frac{3+5}{2},\\frac{7+(-1)}{2}\\right)=(4,3)\\). Therefore, option A is correct.",
+      "hint": "Average the x-coordinates and the y-coordinates separately."
+    },
+    {
+      "id": "algebra-02-q021",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Determine slope from two points involving negative coordinates.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the slope of the line through \\((-1,4)\\) and \\((2,-5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the slope formula: \\(m=\\frac{-5-4}{2-(-1)}=\\frac{-9}{3}=-3\\). Therefore, option A is correct.",
+      "hint": "Be careful with subtraction of negative numbers."
+    },
+    {
+      "id": "algebra-02-q022",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Find the x-intercept of a line.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the x-intercept of \\(y=3x-9\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set \\(y=0\\): \\(0=3x-9\\). Then \\(3x=9\\), so \\(x=3\\). Therefore, option B is correct.",
+      "hint": "Set \\(y=0\\) and solve for \\(x\\)."
+    },
+    {
+      "id": "algebra-02-q023",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Find the y-intercept of a line in standard form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the y-intercept of \\(4x-2y=8\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set \\(x=0\\): \\(-2y=8\\), so \\(y=-4\\). The y-intercept is \\(-4\\), which is option B.",
+      "hint": "Substitute \\(x=0\\) and solve for \\(y\\)."
+    },
+    {
+      "id": "algebra-02-q024",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Write the equation of a line parallel to a given line through a point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the equation of the line through \\((2,3)\\) parallel to \\(y=5x-1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=5x-7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=5x+7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The parallel slope is \\(5\\). Using \\((2,3)\\): \\(3=5(2)+b\\), so \\(b=-7\\). Thus \\(y=5x-7\\), which is option A.",
+      "hint": "Use the same slope as the given line, then substitute the point."
+    },
+    {
+      "id": "algebra-02-q025",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Write the equation of a perpendicular line through a point.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "What is the equation of the line through \\((1,4)\\) perpendicular to \\(y=-3x+2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=-3x+7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=\\frac{1}{3}x+\\frac{11}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The perpendicular slope is \\(\\frac{1}{3}\\). Using \\((1,4)\\): \\(4=\\frac{1}{3}(1)+b\\), so \\(b=\\frac{11}{3}\\). Thus \\(y=\\frac{1}{3}x+\\frac{11}{3}\\), which is option B.",
+      "hint": "Use the negative reciprocal of \\(-3\\), then solve for the intercept."
+    },
+    {
+      "id": "algebra-02-q026",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Find the slope from standard form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the slope of \\(5x+2y=10\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{5}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Solve for \\(y\\): \\(2y=-5x+10\\), so \\(y=-\\frac{5}{2}x+5\\). The slope is \\(-\\frac{5}{2}\\), which is option A.",
+      "hint": "Rewrite the equation in \\(y=mx+b\\) form."
+    },
+    {
+      "id": "algebra-02-q027",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Write a linear equation from slope and y-intercept.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the equation of the line with slope \\(4\\) and y-intercept \\(-2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=4x-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=-2x+4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Slope-intercept form is \\(y=mx+b\\). With \\(m=4\\) and \\(b=-2\\), the equation is \\(y=4x-2\\). Therefore, option A is correct.",
+      "hint": "Substitute the slope for \\(m\\) and the y-intercept for \\(b\\)."
+    },
+    {
+      "id": "algebra-02-q028",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Determine whether a point lies on a line.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which point lies on the line \\(y=2x-1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\((2,3)\\): \\(3=2(2)-1=3\\), so it lies on the line. For \\((1,3)\\), \\(3\\neq2(1)-1=1\\). Therefore, option A is correct.",
+      "hint": "Substitute the coordinates into the equation."
+    },
+    {
+      "id": "algebra-02-q029",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Identify the slope of a vertical line from two points.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the slope of the line through \\((5,2)\\) and \\((5,9)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "undefined"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The x-coordinates are equal, so the line is vertical. A vertical line has undefined slope. Therefore, option A is correct.",
+      "hint": "Check whether the run is zero."
+    },
+    {
+      "id": "algebra-02-q030",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Write the equation of a line through two points.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the equation of the line through \\((-2,1)\\) and \\((0,5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=2x+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=2x+5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The slope is \\(\\frac{5-1}{0-(-2)}=\\frac{4}{2}=2\\). The y-intercept is \\(5\\), so \\(y=2x+5\\). Therefore, option B is correct.",
+      "hint": "Find the slope, then use the point with \\(x=0\\)."
+    },
+    {
+      "id": "algebra-02-q031",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Find the x-intercept of a linear equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the x-intercept of \\(3x+4y=12\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((4,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,4)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(y=0\\): \\(3x=12\\), so \\(x=4\\). The x-intercept is \\((4,0)\\), which is option A.",
+      "hint": "Set \\(y=0\\) and solve for \\(x\\)."
+    },
+    {
+      "id": "algebra-02-q032",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Calculate distance between two points.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the distance between \\((-1,-2)\\) and \\((2,2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(d=\\sqrt{(2-(-1))^2+(2-(-2))^2}=\\sqrt{3^2+4^2}=\\sqrt{25}=5\\). Therefore, option A is correct.",
+      "hint": "Use the distance formula carefully with negative coordinates."
+    },
+    {
+      "id": "algebra-02-q033",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Find the midpoint of a segment with negative coordinates.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the midpoint of \\((-3,4)\\) and \\((5,-2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,2)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The midpoint is \\(\\left(\\frac{-3+5}{2},\\frac{4+(-2)}{2}\\right)=(1,1)\\). Therefore, option A is correct.",
+      "hint": "Average each coordinate separately."
+    },
+    {
+      "id": "algebra-02-q034",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Determine slope from two points.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the slope of the line through \\((2,5)\\) and \\((6,13)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(m=\\frac{13-5}{6-2}=\\frac{8}{4}=2\\). Therefore, option A is correct.",
+      "hint": "Divide the change in y by the change in x."
+    },
+    {
+      "id": "algebra-02-q035",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Write the equation of a line given slope and point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the equation of the line with slope \\(-2\\) through \\((1,-1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=-2x-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=-2x+1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using \\(y=mx+b\\): \\(-1=-2(1)+b\\), so \\(b=1\\). Thus \\(y=-2x+1\\), which is option B.",
+      "hint": "Substitute the point into slope-intercept form and solve for \\(b\\)."
+    },
+    {
+      "id": "algebra-02-q036",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Identify the y-intercept.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the y-intercept of \\(y=-3x+7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((7,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,7)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set \\(x=0\\): \\(y=-3(0)+7=7\\). The y-intercept is \\((0,7)\\), which is option B.",
+      "hint": "The y-intercept occurs when \\(x=0\\)."
+    },
+    {
+      "id": "algebra-02-q037",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Write the equation of a line parallel to a vertical line.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the equation of the line parallel to \\(x=4\\) that passes through \\((2,5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Lines parallel to \\(x=4\\) are vertical lines of the form \\(x=c\\). Since the line passes through \\((2,5)\\), the equation is \\(x=2\\). Therefore, option A is correct.",
+      "hint": "A line parallel to a vertical line is also vertical."
+    },
+    {
+      "id": "algebra-02-q038",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Determine slope through the origin and another point.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the slope of the line through \\((0,0)\\) and \\((5,-10)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(m=\\frac{-10-0}{5-0}=\\frac{-10}{5}=-2\\). Therefore, option A is correct.",
+      "hint": "Use the slope formula with the origin as one point."
+    },
+    {
+      "id": "algebra-02-q039",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Write the equation of a line given its intercepts.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the equation of the line with x-intercept \\((3,0)\\) and y-intercept \\((0,6)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=-2x+6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=2x+6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The slope is \\(\\frac{6-0}{0-3}=\\frac{6}{-3}=-2\\). The y-intercept is \\(6\\), so \\(y=-2x+6\\). Therefore, option A is correct.",
+      "hint": "Use the two intercepts to find the slope and y-intercept."
+    },
+    {
+      "id": "algebra-02-q040",
+      "category": "Algebra",
+      "concept": "Coordinate Algebra",
+      "learningObjective": "Write the equation of a line perpendicular to a vertical line.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the equation of the line perpendicular to \\(x=3\\) that passes through \\((2,4)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A line perpendicular to a vertical line is horizontal. A horizontal line through \\((2,4)\\) has equation \\(y=4\\). Therefore, option B is correct.",
+      "hint": "Vertical lines are perpendicular to horizontal lines."
+    },
+    {
+      "id": "algebra-02-q041",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system of linear equations by elimination.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(x+y=5\\), \\(x-y=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Adding the equations gives \\(2x=6\\), so \\(x=3\\). Substituting into \\(x+y=5\\) gives \\(y=2\\). Therefore, the solution is \\((3,2)\\), which is option A.",
+      "hint": "Add the equations to eliminate \\(y\\)."
+    },
+    {
+      "id": "algebra-02-q042",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system using substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(y=2x\\), \\(x+y=9\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((6,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,6)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(y=2x\\) into \\(x+y=9\\): \\(x+2x=9\\), so \\(3x=9\\) and \\(x=3\\). Then \\(y=2(3)=6\\). The solution is \\((3,6)\\), which is option B.",
+      "hint": "Substitute the expression for \\(y\\) into the second equation."
+    },
+    {
+      "id": "algebra-02-q043",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by elimination.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(2x+y=10\\), \\(x-y=2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((4,2)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Adding the equations gives \\(3x=12\\), so \\(x=4\\). Then \\(4-y=2\\), so \\(y=2\\). The solution is \\((4,2)\\), which is option B.",
+      "hint": "Add the equations to eliminate \\(y\\)."
+    },
+    {
+      "id": "algebra-02-q044",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system with a given variable value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(x+2y=8\\), \\(x=2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,4)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=2\\): \\(2+2y=8\\), so \\(2y=6\\) and \\(y=3\\). The solution is \\((2,3)\\), which is option A.",
+      "hint": "Substitute the known value into the other equation."
+    },
+    {
+      "id": "algebra-02-q045",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution when one variable is zero.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(3x+2y=12\\), \\(y=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((4,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,4)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(y=0\\): \\(3x=12\\), so \\(x=4\\). The solution is \\((4,0)\\), which is option A.",
+      "hint": "Substitute \\(y=0\\) and solve for \\(x\\)."
+    },
+    {
+      "id": "algebra-02-q046",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(x+y=10\\), \\(y=x+2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((6,4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((4,6)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(y=x+2\\) into \\(x+y=10\\): \\(x+x+2=10\\), so \\(2x=8\\) and \\(x=4\\). Then \\(y=4+2=6\\). The solution is \\((4,6)\\), which is option B.",
+      "hint": "Replace \\(y\\) with \\(x+2\\) in the first equation."
+    },
+    {
+      "id": "algebra-02-q047",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(2x+3y=13\\), \\(x=2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x=2\\): \\(4+3y=13\\), so \\(3y=9\\) and \\(y=3\\). The solution is \\((2,3)\\), which is option B.",
+      "hint": "Substitute \\(x=2\\) into the first equation."
+    },
+    {
+      "id": "algebra-02-q048",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(y=3x-1\\), \\(y=x+5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,10)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,8)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set \\(3x-1=x+5\\). Then \\(2x=6\\), so \\(x=3\\). Substitute to get \\(y=3+5=8\\). The solution is \\((3,8)\\), which is option B.",
+      "hint": "Set the two expressions for \\(y\\) equal to each other."
+    },
+    {
+      "id": "algebra-02-q049",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(4x-y=7\\), \\(y=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,1)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(y=1\\): \\(4x-1=7\\), so \\(4x=8\\) and \\(x=2\\). The solution is \\((2,1)\\), which is option B.",
+      "hint": "Replace \\(y\\) with 1 and solve for \\(x\\)."
+    },
+    {
+      "id": "algebra-02-q050",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system involving a simple fraction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(\\frac{x}{2}+y=5\\), \\(x=4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((4,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((4,3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x=4\\): \\(\\frac{4}{2}+y=5\\), so \\(2+y=5\\) and \\(y=3\\). The solution is \\((4,3)\\), which is option B.",
+      "hint": "Substitute \\(x=4\\) and simplify the fraction."
+    },
+    {
+      "id": "algebra-02-q051",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by elimination.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(x+y=7\\), \\(2x-y=5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((4,3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Adding the equations gives \\(3x=12\\), so \\(x=4\\). Then \\(4+y=7\\), so \\(y=3\\). The solution is \\((4,3)\\), which is option B.",
+      "hint": "Add the equations to eliminate \\(y\\)."
+    },
+    {
+      "id": "algebra-02-q052",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(5x+2y=16\\), \\(x=2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,2)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=2\\): \\(10+2y=16\\), so \\(2y=6\\) and \\(y=3\\). The solution is \\((2,3)\\), which is option A.",
+      "hint": "Substitute \\(x=2\\) into the first equation."
+    },
+    {
+      "id": "algebra-02-q053",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(y=-x+4\\), \\(y=2x-2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(-x+4=2x-2\\). Then \\(6=3x\\), so \\(x=2\\). Substitute to get \\(y=-2+4=2\\). The solution is \\((2,2)\\), which is option A.",
+      "hint": "Set the two expressions for \\(y\\) equal."
+    },
+    {
+      "id": "algebra-02-q054",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by elimination.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(3x-y=5\\), \\(x+y=3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,2)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Adding the equations gives \\(4x=8\\), so \\(x=2\\). Then \\(2+y=3\\), so \\(y=1\\). The solution is \\((2,1)\\), which is option A.",
+      "hint": "Add the equations to eliminate \\(y\\)."
+    },
+    {
+      "id": "algebra-02-q055",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(x-2y=0\\), \\(x+y=6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((4,2)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(x-2y=0\\), \\(x=2y\\). Substitute into \\(x+y=6\\): \\(2y+y=6\\), so \\(3y=6\\) and \\(y=2\\). Then \\(x=4\\). The solution is \\((4,2)\\), which is option B.",
+      "hint": "Solve one equation for \\(x\\), then substitute."
+    },
+    {
+      "id": "algebra-02-q056",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(2x+5y=20\\), \\(y=2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((5,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,5)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(y=2\\): \\(2x+10=20\\), so \\(2x=10\\) and \\(x=5\\). The solution is \\((5,2)\\), which is option A.",
+      "hint": "Replace \\(y\\) with 2 and solve for \\(x\\)."
+    },
+    {
+      "id": "algebra-02-q057",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(y=4x\\), \\(x+y=15\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,12)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((12,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(y=4x\\): \\(x+4x=15\\), so \\(5x=15\\) and \\(x=3\\). Then \\(y=12\\). The solution is \\((3,12)\\), which is option A.",
+      "hint": "Substitute \\(4x\\) for \\(y\\) in the second equation."
+    },
+    {
+      "id": "algebra-02-q058",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by elimination.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(x+y=8\\), \\(x-y=2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,5)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((5,3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Adding gives \\(2x=10\\), so \\(x=5\\). Then \\(5+y=8\\), so \\(y=3\\). The solution is \\((5,3)\\), which is option B.",
+      "hint": "Add the equations to eliminate \\(y\\)."
+    },
+    {
+      "id": "algebra-02-q059",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(3x+4y=18\\), \\(y=3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,2)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(y=3\\): \\(3x+12=18\\), so \\(3x=6\\) and \\(x=2\\). The solution is \\((2,3)\\), which is option A.",
+      "hint": "Substitute \\(y=3\\) into the first equation."
+    },
+    {
+      "id": "algebra-02-q060",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(y=2x+1\\), \\(y=3x-2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,7)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((7,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(2x+1=3x-2\\). Then \\(3=x\\), so \\(x=3\\). Substitute to get \\(y=2(3)+1=7\\). The solution is \\((3,7)\\), which is option A.",
+      "hint": "Set the two expressions for \\(y\\) equal and solve for \\(x\\)."
+    },
+    {
+      "id": "algebra-02-q061",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by elimination.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(2x-y=4\\), \\(x+y=5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,2)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Adding gives \\(3x=9\\), so \\(x=3\\). Then \\(3+y=5\\), so \\(y=2\\). The solution is \\((3,2)\\), which is option B.",
+      "hint": "Add the equations to eliminate \\(y\\)."
+    },
+    {
+      "id": "algebra-02-q062",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(x+3y=11\\), \\(x=2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x=2\\): \\(2+3y=11\\), so \\(3y=9\\) and \\(y=3\\). The solution is \\((2,3)\\), which is option B.",
+      "hint": "Substitute \\(x=2\\) into the first equation."
+    },
+    {
+      "id": "algebra-02-q063",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(4x+3y=24\\), \\(y=4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((4,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,4)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(y=4\\): \\(4x+12=24\\), so \\(4x=12\\) and \\(x=3\\). The solution is \\((3,4)\\), which is option B.",
+      "hint": "Replace \\(y\\) with 4 and solve for \\(x\\)."
+    },
+    {
+      "id": "algebra-02-q064",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(y=x-3\\), \\(x+y=7\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((5,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,5)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(y=x-3\\): \\(x+x-3=7\\), so \\(2x=10\\) and \\(x=5\\). Then \\(y=5-3=2\\). The solution is \\((5,2)\\), which is option A.",
+      "hint": "Replace \\(y\\) with \\(x-3\\) in the second equation."
+    },
+    {
+      "id": "algebra-02-q065",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(2x+y=9\\), \\(y=x+3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((5,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,5)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(y=x+3\\): \\(2x+x+3=9\\), so \\(3x=6\\) and \\(x=2\\). Then \\(y=2+3=5\\). The solution is \\((2,5)\\), which is option B.",
+      "hint": "Substitute \\(x+3\\) for \\(y\\) and simplify."
+    },
+    {
+      "id": "algebra-02-q066",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by elimination.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(x-y=4\\), \\(2x+y=8\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0,4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((4,0)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Adding gives \\(3x=12\\), so \\(x=4\\). Then \\(4-y=4\\), so \\(y=0\\). The solution is \\((4,0)\\), which is option B.",
+      "hint": "Add the equations to eliminate \\(y\\)."
+    },
+    {
+      "id": "algebra-02-q067",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(3x+2y=16\\), \\(x=4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((4,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((4,2)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x=4\\): \\(12+2y=16\\), so \\(2y=4\\) and \\(y=2\\). The solution is \\((4,2)\\), which is option B.",
+      "hint": "Substitute \\(x=4\\) into the first equation."
+    },
+    {
+      "id": "algebra-02-q068",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(y=5x-2\\), \\(y=2x+7\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,13)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((13,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(5x-2=2x+7\\). Then \\(3x=9\\), so \\(x=3\\). Substitute to get \\(y=5(3)-2=13\\). The solution is \\((3,13)\\), which is option A.",
+      "hint": "Set the two expressions for \\(y\\) equal."
+    },
+    {
+      "id": "algebra-02-q069",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(x+4y=10\\), \\(y=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,6)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((6,1)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(y=1\\): \\(x+4=10\\), so \\(x=6\\). The solution is \\((6,1)\\), which is option B.",
+      "hint": "Replace \\(y\\) with 1 and solve for \\(x\\)."
+    },
+    {
+      "id": "algebra-02-q070",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(2x+3y=18\\), \\(x=3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,4)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x=3\\): \\(6+3y=18\\), so \\(3y=12\\) and \\(y=4\\). The solution is \\((3,4)\\), which is option B.",
+      "hint": "Substitute \\(x=3\\) into the first equation."
+    },
+    {
+      "id": "algebra-02-q071",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(x+y=12\\), \\(x=2y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((4,8)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((8,4)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x=2y\\): \\(2y+y=12\\), so \\(3y=12\\) and \\(y=4\\). Then \\(x=8\\). The solution is \\((8,4)\\), which is option B.",
+      "hint": "Replace \\(x\\) with \\(2y\\) in the first equation."
+    },
+    {
+      "id": "algebra-02-q072",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(5x-y=9\\), \\(x=2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,2)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=2\\): \\(10-y=9\\), so \\(y=1\\). The solution is \\((2,1)\\), which is option A.",
+      "hint": "Substitute \\(x=2\\) and solve for \\(y\\)."
+    },
+    {
+      "id": "algebra-02-q073",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(y=-2x+10\\), \\(y=x+1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((4,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,4)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set \\(-2x+10=x+1\\). Then \\(9=3x\\), so \\(x=3\\). Substitute to get \\(y=3+1=4\\). The solution is \\((3,4)\\), which is option B.",
+      "hint": "Set the two expressions for \\(y\\) equal."
+    },
+    {
+      "id": "algebra-02-q074",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(3x+5y=20\\), \\(y=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((5,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,5)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(y=1\\): \\(3x+5=20\\), so \\(3x=15\\) and \\(x=5\\). The solution is \\((5,1)\\), which is option A.",
+      "hint": "Replace \\(y\\) with 1 and solve for \\(x\\)."
+    },
+    {
+      "id": "algebra-02-q075",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system using substitution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the system: \\(x+2y=7\\), \\(2x-y=4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(x+2y=7\\), \\(x=7-2y\\). Substitute into \\(2x-y=4\\): \\(2(7-2y)-y=4\\), so \\(14-5y=4\\) and \\(y=2\\). Then \\(x=7-4=3\\). The solution is \\((3,2)\\), which is option A.",
+      "hint": "Solve the first equation for \\(x\\), then substitute."
+    },
+    {
+      "id": "algebra-02-q076",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(4x+2y=14\\), \\(x=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,5)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x=1\\): \\(4+2y=14\\), so \\(2y=10\\) and \\(y=5\\). The solution is \\((1,5)\\), which is option B.",
+      "hint": "Substitute \\(x=1\\) into the first equation."
+    },
+    {
+      "id": "algebra-02-q077",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(y=3x\\), \\(x-y=-4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,6)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((6,2)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(y=3x\\): \\(x-3x=-4\\), so \\(-2x=-4\\) and \\(x=2\\). Then \\(y=6\\). The solution is \\((2,6)\\), which is option A.",
+      "hint": "Replace \\(y\\) with \\(3x\\) in the second equation."
+    },
+    {
+      "id": "algebra-02-q078",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(2x+4y=16\\), \\(x=2y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((4,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,4)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=2y\\): \\(2(2y)+4y=16\\), so \\(8y=16\\) and \\(y=2\\). Then \\(x=4\\). The solution is \\((4,2)\\), which is option A.",
+      "hint": "Replace \\(x\\) with \\(2y\\) in the first equation."
+    },
+    {
+      "id": "algebra-02-q079",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(x+y=9\\), \\(y=2x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,6)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((6,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(y=2x\\): \\(x+2x=9\\), so \\(3x=9\\) and \\(x=3\\). Then \\(y=6\\). The solution is \\((3,6)\\), which is option A.",
+      "hint": "Replace \\(y\\) with \\(2x\\) in the first equation."
+    },
+    {
+      "id": "algebra-02-q080",
+      "category": "Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve a system by substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system: \\(3x-y=8\\), \\(y=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(y=1\\): \\(3x-1=8\\), so \\(3x=9\\) and \\(x=3\\). The solution is \\((3,1)\\), which is option A.",
+      "hint": "Replace \\(y\\) with 1 and solve for \\(x\\)."
+    },
+    {
+      "id": "algebra-02-q081",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a linear function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=3x+2\\), what is \\(f(4)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(14\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x=4\\): \\(f(4)=3(4)+2=12+2=14\\). Therefore, option B is correct.",
+      "hint": "Replace every \\(x\\) with 4 and simplify."
+    },
+    {
+      "id": "algebra-02-q082",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a quadratic function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=x^2-1\\), what is \\(f(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=3\\): \\(f(3)=3^2-1=9-1=8\\). Therefore, option A is correct.",
+      "hint": "Square the input first, then subtract 1."
+    },
+    {
+      "id": "algebra-02-q083",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Find the input that produces a given output.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=2x-5\\), for what value of \\(x\\) is \\(f(x)=7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(2x-5=7\\). Then \\(2x=12\\), so \\(x=6\\). Therefore, option A is correct.",
+      "hint": "Set the function equal to 7 and solve for \\(x\\)."
+    },
+    {
+      "id": "algebra-02-q084",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Determine the domain of a rational function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the domain of \\(f(x)=\\frac{1}{x-3}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "all real numbers except \\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "all real numbers"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The denominator cannot be zero, so \\(x-3\\neq0\\). Thus \\(x\\neq3\\). The domain is all real numbers except \\(3\\), which is option A.",
+      "hint": "Find the value that makes the denominator zero."
+    },
+    {
+      "id": "algebra-02-q085",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Determine the range of a quadratic function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the range of \\(f(x)=x^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "all real numbers"
+        },
+        {
+          "label": "B",
+          "text": "\\(y\\ge0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The square of any real number is nonnegative, so \\(f(x)\\ge0\\). Therefore, the range is \\(y\\ge0\\), which is option B.",
+      "hint": "Think about the smallest possible value of a square."
+    },
+    {
+      "id": "algebra-02-q086",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Determine whether a relation is a function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Is the relation \\(\\{(1,2),(2,3),(1,4)\\}\\) a function?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The input \\(x=1\\) is paired with both \\(2\\) and \\(4\\), so one input has two outputs. Therefore, it is not a function, which is option B.",
+      "hint": "Check whether any input repeats with different outputs."
+    },
+    {
+      "id": "algebra-02-q087",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a linear function at a negative input.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=5x\\), what is \\(f(-2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=-2\\): \\(f(-2)=5(-2)=-10\\). Therefore, option A is correct.",
+      "hint": "Multiply the input by 5, keeping the negative sign."
+    },
+    {
+      "id": "algebra-02-q088",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Solve for an input given a function value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=x+7\\), what is \\(x\\) when \\(f(x)=10\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(x+7=10\\). Then \\(x=3\\). Therefore, option A is correct.",
+      "hint": "Subtract 7 from the given output."
+    },
+    {
+      "id": "algebra-02-q089",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a linear function at zero.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=4x-1\\), what is \\(f(0)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=0\\): \\(f(0)=4(0)-1=-1\\). Therefore, option A is correct.",
+      "hint": "Substitute 0 for \\(x\\) and simplify."
+    },
+    {
+      "id": "algebra-02-q090",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Determine the domain of a square root function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the domain of \\(f(x)=\\sqrt{x-2}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([2,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,\\infty)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expression under the square root must be nonnegative: \\(x-2\\ge0\\), so \\(x\\ge2\\). The domain is \\([2,\\infty)\\), which is option A.",
+      "hint": "Set the radicand greater than or equal to zero."
+    },
+    {
+      "id": "algebra-02-q091",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a quadratic function with a coefficient.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(g(x)=2x^2\\), what is \\(g(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(18\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=3\\): \\(g(3)=2(3^2)=2(9)=18\\). Therefore, option A is correct.",
+      "hint": "Square the input before multiplying by 2."
+    },
+    {
+      "id": "algebra-02-q092",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Solve for an input from a function value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=3x+1\\) and \\(f(a)=16\\), what is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set \\(3a+1=16\\). Then \\(3a=15\\), so \\(a=5\\). Therefore, option B is correct.",
+      "hint": "Solve the equation \\(3a+1=16\\)."
+    },
+    {
+      "id": "algebra-02-q093",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Identify a function from tables.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Which table represents a function?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x:1,2,3\\) and \\(y:4,5,6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x:1,1,2\\) and \\(y:4,5,6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A function has exactly one output for each input. In table A, each input appears once. In table B, input \\(1\\) has two outputs, so it is not a function. Therefore, option A is correct.",
+      "hint": "Look for repeated input values with different outputs."
+    },
+    {
+      "id": "algebra-02-q094",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Determine the domain of a square root function with a negative coefficient.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the domain of \\(f(x)=\\sqrt{5-x}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\ge5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\le5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The radicand must be nonnegative: \\(5-x\\ge0\\). Then \\(5\\ge x\\), or \\(x\\le5\\). Therefore, option B is correct.",
+      "hint": "Set \\(5-x\\ge0\\) and solve the inequality."
+    },
+    {
+      "id": "algebra-02-q095",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a linear function with a negative coefficient.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=-2x+3\\), what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=2\\): \\(f(2)=-2(2)+3=-4+3=-1\\). Therefore, option A is correct.",
+      "hint": "Multiply carefully with the negative sign."
+    },
+    {
+      "id": "algebra-02-q096",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Determine the range of a linear function over a finite domain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(f(x)=2x+1\\) and the domain is \\(\\{0,1,2\\}\\), what is the range?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{0,2,4\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,3,5\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Evaluate: \\(f(0)=1\\), \\(f(1)=3\\), and \\(f(2)=5\\). Thus the range is \\(\\{1,3,5\\}\\), which is option B.",
+      "hint": "Evaluate the function at each domain value."
+    },
+    {
+      "id": "algebra-02-q097",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a quadratic function with two terms.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=x^2+2x\\), what is \\(f(1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=1\\): \\(f(1)=1^2+2(1)=1+2=3\\). Therefore, option A is correct.",
+      "hint": "Substitute 1 for both occurrences of \\(x\\)."
+    },
+    {
+      "id": "algebra-02-q098",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a linear function with subtraction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=6-x\\), what is \\(f(10)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x=10\\): \\(f(10)=6-10=-4\\). Therefore, option B is correct.",
+      "hint": "Subtract the input from 6."
+    },
+    {
+      "id": "algebra-02-q099",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a function involving division.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(h(x)=\\frac{x}{2}+1\\), what is \\(h(8)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=8\\): \\(h(8)=\\frac{8}{2}+1=4+1=5\\). Therefore, option A is correct.",
+      "hint": "Divide the input by 2, then add 1."
+    },
+    {
+      "id": "algebra-02-q100",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Determine the domain of a rational function with a quadratic denominator.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the domain of \\(f(x)=\\frac{1}{x^2-4}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "all real numbers except \\(2\\) and \\(-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "all real numbers except \\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set the denominator equal to zero: \\(x^2-4=0\\), so \\(x=2\\) or \\(x=-2\\). These values must be excluded. Therefore, option A is correct.",
+      "hint": "Factor the denominator and exclude its zeros."
+    },
+    {
+      "id": "algebra-02-q101",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a composition of a linear function with itself.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(f(x)=2x+3\\), what is \\(f(f(1))\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(13\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(11\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First, \\(f(1)=2(1)+3=5\\). Then \\(f(5)=2(5)+3=13\\). Therefore, option A is correct.",
+      "hint": "Evaluate the inner function first."
+    },
+    {
+      "id": "algebra-02-q102",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Determine whether an equation represents a function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Does \\(y^2=x\\) represent \\(y\\) as a function of \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No"
+        },
+        {
+          "label": "B",
+          "text": "Yes"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a positive \\(x\\), there are two possible \\(y\\)-values, \\(y=\\sqrt{x}\\) and \\(y=-\\sqrt{x}\\). Since one input can have two outputs, it is not a function. Therefore, option A is correct.",
+      "hint": "Check whether a single \\(x\\)-value can produce more than one \\(y\\)-value."
+    },
+    {
+      "id": "algebra-02-q103",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a quadratic function at a negative input.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=x^2\\), what is \\(f(-3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x=-3\\): \\(f(-3)=(-3)^2=9\\). Therefore, option B is correct.",
+      "hint": "A negative number squared becomes positive."
+    },
+    {
+      "id": "algebra-02-q104",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a linear function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(g(x)=3x-4\\), what is \\(g(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x=2\\): \\(g(2)=3(2)-4=6-4=2\\). Therefore, option B is correct.",
+      "hint": "Multiply 3 by 2, then subtract 4."
+    },
+    {
+      "id": "algebra-02-q105",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Determine the domain of a function with a square root and denominator.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "What is the domain of \\(f(x)=\\frac{\\sqrt{x+1}}{x-1}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\ge-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\ge-1\\) except \\(x=1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The square root requires \\(x+1\\ge0\\), so \\(x\\ge-1\\). The denominator requires \\(x-1\\neq0\\), so \\(x\\neq1\\). Therefore, option B is correct.",
+      "hint": "Combine the square root condition with the denominator condition."
+    },
+    {
+      "id": "algebra-02-q106",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a linear function at zero.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=-x+5\\), what is \\(f(0)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=0\\): \\(f(0)=-0+5=5\\). Therefore, option A is correct.",
+      "hint": "Substitute 0 for \\(x\\)."
+    },
+    {
+      "id": "algebra-02-q107",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Determine the range of an absolute value function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the range of \\(f(x)=|x|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "all real numbers"
+        },
+        {
+          "label": "B",
+          "text": "\\(y\\ge0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Absolute value is always nonnegative, so \\(f(x)\\ge0\\). Therefore, the range is \\(y\\ge0\\), which is option B.",
+      "hint": "Think about whether absolute value can be negative."
+    },
+    {
+      "id": "algebra-02-q108",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a quadratic function with a linear term.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=x^2-3x\\), what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=2\\): \\(f(2)=2^2-3(2)=4-6=-2\\). Therefore, option A is correct.",
+      "hint": "Square 2 first, then subtract \\(3\\cdot2\\)."
+    },
+    {
+      "id": "algebra-02-q109",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Solve for an input that makes a function equal zero.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=2x+1\\), what value of \\(x\\) gives \\(f(x)=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(2x+1=0\\). Then \\(2x=-1\\), so \\(x=-\\frac{1}{2}\\). Therefore, option A is correct.",
+      "hint": "Solve the equation \\(2x+1=0\\)."
+    },
+    {
+      "id": "algebra-02-q110",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Determine the domain of a reciprocal square root function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the domain of \\(f(x)=\\frac{1}{\\sqrt{x}}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\ge0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x>0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The square root requires \\(x\\ge0\\), but the denominator cannot be zero. Since \\(\\sqrt{0}=0\\), we must exclude 0. Therefore, \\(x>0\\), which is option B.",
+      "hint": "The denominator cannot be zero."
+    },
+    {
+      "id": "algebra-02-q111",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a quadratic function at zero.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=x^2+1\\), what is \\(f(0)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=0\\): \\(f(0)=0^2+1=1\\). Therefore, option A is correct.",
+      "hint": "Substitute 0 for \\(x\\) and simplify."
+    },
+    {
+      "id": "algebra-02-q112",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Add function values.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=3x\\), what is \\(f(2)+f(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(18\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(2)=6\\) and \\(f(3)=9\\), so \\(f(2)+f(3)=6+9=15\\). Therefore, option A is correct.",
+      "hint": "Evaluate each function value separately, then add."
+    },
+    {
+      "id": "algebra-02-q113",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Identify a function from ordered pairs.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which set of ordered pairs represents a function?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{(1,2),(2,3),(3,4)\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{(1,2),(1,3),(3,4)\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In set A, each input appears only once. In set B, input \\(1\\) has two different outputs. Therefore, option A is correct.",
+      "hint": "Look for repeated x-values with different y-values."
+    },
+    {
+      "id": "algebra-02-q114",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a linear function at a negative input.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=4x-2\\), what is \\(f(-1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x=-1\\): \\(f(-1)=4(-1)-2=-4-2=-6\\). Therefore, option B is correct.",
+      "hint": "Multiply \\(4\\) by \\(-1\\), then subtract 2."
+    },
+    {
+      "id": "algebra-02-q115",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a quadratic function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=x^2-4\\), what is \\(f(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=3\\): \\(f(3)=3^2-4=9-4=5\\). Therefore, option A is correct.",
+      "hint": "Square 3 first, then subtract 4."
+    },
+    {
+      "id": "algebra-02-q116",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Determine the domain of a square root function with a coefficient.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the domain of \\(f(x)=\\sqrt{2x-6}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\le3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\ge3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The radicand must be nonnegative: \\(2x-6\\ge0\\). Then \\(2x\\ge6\\), so \\(x\\ge3\\). Therefore, option B is correct.",
+      "hint": "Set \\(2x-6\\ge0\\) and solve."
+    },
+    {
+      "id": "algebra-02-q117",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Solve for an input from a function value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=5x+2\\), what is \\(x\\) when \\(f(x)=17\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set \\(5x+2=17\\). Then \\(5x=15\\), so \\(x=3\\). Therefore, option B is correct.",
+      "hint": "Subtract 2, then divide by 5."
+    },
+    {
+      "id": "algebra-02-q118",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a function involving division.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=\\frac{x}{3}\\), what is \\(f(9)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x=9\\): \\(f(9)=\\frac{9}{3}=3\\). Therefore, option B is correct.",
+      "hint": "Divide the input by 3."
+    },
+    {
+      "id": "algebra-02-q119",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Determine the range of a shifted quadratic function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the range of \\(f(x)=x^2+1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y\\ge0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y\\ge1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(x^2\\ge0\\), adding 1 gives \\(x^2+1\\ge1\\). Therefore, the range is \\(y\\ge1\\), which is option B.",
+      "hint": "Find the minimum value of \\(x^2+1\\)."
+    },
+    {
+      "id": "algebra-02-q120",
+      "category": "Algebra",
+      "concept": "Functions",
+      "learningObjective": "Evaluate a linear function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=2x-7\\), what is \\(f(5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=5\\): \\(f(5)=2(5)-7=10-7=3\\). Therefore, option A is correct.",
+      "hint": "Multiply 2 by 5, then subtract 7."
+    },
+    {
+      "id": "algebra-02-q121",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a vertical translation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How is the graph of \\(g(x)=x^2+3\\) obtained from \\(f(x)=x^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "shifted down 3 units"
+        },
+        {
+          "label": "B",
+          "text": "shifted up 3 units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Adding 3 outside the function shifts the graph vertically up by 3 units. Therefore, option B is correct.",
+      "hint": "A constant added outside \\(f(x)\\) affects vertical position."
+    },
+    {
+      "id": "algebra-02-q122",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a horizontal translation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How is the graph of \\(g(x)=(x-2)^2\\) obtained from \\(f(x)=x^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "shifted right 2 units"
+        },
+        {
+          "label": "B",
+          "text": "shifted left 2 units"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expression \\(x-2\\) inside the function shifts the graph to the right by 2 units. Therefore, option A is correct.",
+      "hint": "Inside the function, \\(x-h\\) means a right shift by \\(h\\)."
+    },
+    {
+      "id": "algebra-02-q123",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a horizontal translation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How is the graph of \\(g(x)=(x+4)^2\\) obtained from \\(f(x)=x^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "shifted right 4 units"
+        },
+        {
+          "label": "B",
+          "text": "shifted left 4 units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expression \\(x+4\\) inside the function shifts the graph to the left by 4 units. Therefore, option B is correct.",
+      "hint": "Inside the function, \\(x+h\\) means a left shift by \\(h\\)."
+    },
+    {
+      "id": "algebra-02-q124",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a reflection.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How is the graph of \\(g(x)=-x^2\\) related to \\(f(x)=x^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "reflected across the y-axis"
+        },
+        {
+          "label": "B",
+          "text": "reflected across the x-axis"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiplying the whole function by \\(-1\\) reflects the graph across the x-axis. Therefore, option B is correct.",
+      "hint": "A negative sign outside the function reflects vertically."
+    },
+    {
+      "id": "algebra-02-q125",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a vertical stretch.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How is the graph of \\(g(x)=2x^2\\) related to \\(f(x)=x^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "vertical stretch by a factor of 2"
+        },
+        {
+          "label": "B",
+          "text": "vertical compression by a factor of \\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiplying the function by 2 stretches it vertically by a factor of 2. Therefore, option A is correct.",
+      "hint": "A coefficient greater than 1 outside the function stretches vertically."
+    },
+    {
+      "id": "algebra-02-q126",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a vertical compression.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How is the graph of \\(g(x)=\\frac{1}{2}x^2\\) related to \\(f(x)=x^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "vertical stretch by a factor of 2"
+        },
+        {
+          "label": "B",
+          "text": "vertical compression by a factor of \\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiplying the function by \\(\\frac{1}{2}\\) compresses it vertically by a factor of \\(\\frac{1}{2}\\). Therefore, option B is correct.",
+      "hint": "A coefficient between 0 and 1 outside the function compresses vertically."
+    },
+    {
+      "id": "algebra-02-q127",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify combined transformations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How is \\(g(x)=(x-3)^2+2\\) obtained from \\(f(x)=x^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "right 3 units and up 2 units"
+        },
+        {
+          "label": "B",
+          "text": "left 3 units and up 2 units"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The \\(x-3\\) shifts right 3 units, and the \\(+2\\) shifts up 2 units. Therefore, option A is correct.",
+      "hint": "Read horizontal shifts from inside the function and vertical shifts from outside."
+    },
+    {
+      "id": "algebra-02-q128",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a reflection from function notation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What transformation does \\(g(x)=-f(x)\\) represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "reflection across the x-axis"
+        },
+        {
+          "label": "B",
+          "text": "reflection across the y-axis"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A negative sign outside the function changes \\(y\\) to \\(-y\\), reflecting across the x-axis. Therefore, option A is correct.",
+      "hint": "The negative sign is outside the function."
+    },
+    {
+      "id": "algebra-02-q129",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a reflection from function notation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What transformation does \\(g(x)=f(-x)\\) represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "reflection across the x-axis"
+        },
+        {
+          "label": "B",
+          "text": "reflection across the y-axis"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Replacing \\(x\\) with \\(-x\\) reflects the graph across the y-axis. Therefore, option B is correct.",
+      "hint": "The negative sign is inside the function."
+    },
+    {
+      "id": "algebra-02-q130",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a vertical translation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does \\(g(x)=f(x)+5\\) transform \\(f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "up 5 units"
+        },
+        {
+          "label": "B",
+          "text": "down 5 units"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Adding 5 outside the function shifts the graph up by 5 units. Therefore, option A is correct.",
+      "hint": "A constant added outside \\(f(x)\\) moves the graph vertically."
+    },
+    {
+      "id": "algebra-02-q131",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a horizontal translation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does \\(g(x)=f(x-1)\\) transform \\(f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "right 1 unit"
+        },
+        {
+          "label": "B",
+          "text": "left 1 unit"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expression \\(x-1\\) inside the function shifts the graph right 1 unit. Therefore, option A is correct.",
+      "hint": "Inside the function, \\(x-h\\) shifts right by \\(h\\)."
+    },
+    {
+      "id": "algebra-02-q132",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a horizontal translation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does \\(g(x)=f(x+2)\\) transform \\(f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "right 2 units"
+        },
+        {
+          "label": "B",
+          "text": "left 2 units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expression \\(x+2\\) inside the function shifts the graph left 2 units. Therefore, option B is correct.",
+      "hint": "Inside the function, \\(x+h\\) shifts left by \\(h\\)."
+    },
+    {
+      "id": "algebra-02-q133",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify combined transformations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How is \\(g(x)=-f(x)+1\\) obtained from \\(f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "reflected across the y-axis and up 1 unit"
+        },
+        {
+          "label": "B",
+          "text": "reflected across the x-axis and up 1 unit"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The negative sign outside reflects across the x-axis, and \\(+1\\) shifts up 1 unit. Therefore, option B is correct.",
+      "hint": "Outside changes affect vertical reflection and vertical shift."
+    },
+    {
+      "id": "algebra-02-q134",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a vertical stretch.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does \\(g(x)=3f(x)\\) transform \\(f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "vertical compression by a factor of 3"
+        },
+        {
+          "label": "B",
+          "text": "vertical stretch by a factor of 3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiplying the function by 3 stretches it vertically by a factor of 3. Therefore, option B is correct.",
+      "hint": "A factor greater than 1 outside the function stretches vertically."
+    },
+    {
+      "id": "algebra-02-q135",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a horizontal compression.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does \\(g(x)=f(2x)\\) transform \\(f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "horizontal compression by a factor of \\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "horizontal stretch by a factor of 2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Replacing \\(x\\) with \\(2x\\) compresses the graph horizontally by a factor of \\(\\frac{1}{2}\\). Therefore, option A is correct.",
+      "hint": "Inside the function, multiplying \\(x\\) by a number greater than 1 compresses horizontally."
+    },
+    {
+      "id": "algebra-02-q136",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a horizontal stretch.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does \\(g(x)=f\\left(\\frac{x}{2}\\right)\\) transform \\(f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "horizontal stretch by a factor of 2"
+        },
+        {
+          "label": "B",
+          "text": "horizontal compression by a factor of \\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Replacing \\(x\\) with \\(\\frac{x}{2}\\) stretches the graph horizontally by a factor of 2. Therefore, option A is correct.",
+      "hint": "Inside the function, dividing \\(x\\) by a number greater than 1 stretches horizontally."
+    },
+    {
+      "id": "algebra-02-q137",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify combined horizontal and vertical translations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How is \\(g(x)=(x+5)^2-4\\) obtained from \\(f(x)=x^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "right 5 units and down 4 units"
+        },
+        {
+          "label": "B",
+          "text": "left 5 units and down 4 units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The \\(x+5\\) shifts left 5 units, and the \\(-4\\) shifts down 4 units. Therefore, option B is correct.",
+      "hint": "Inside \\(x+5\\) means left, and outside \\(-4\\) means down."
+    },
+    {
+      "id": "algebra-02-q138",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify combined transformations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How is \\(g(x)=-(x-2)^2\\) obtained from \\(f(x)=x^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "right 2 units and reflected across the x-axis"
+        },
+        {
+          "label": "B",
+          "text": "left 2 units and reflected across the x-axis"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The \\(x-2\\) shifts right 2 units, and the negative sign reflects across the x-axis. Therefore, option A is correct.",
+      "hint": "Handle the horizontal shift inside and the reflection outside."
+    },
+    {
+      "id": "algebra-02-q139",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify combined transformations.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How is \\(g(x)=2(x-1)^2+3\\) obtained from \\(f(x)=x^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "left 1 unit, up 3 units, and vertical stretch by 2"
+        },
+        {
+          "label": "B",
+          "text": "right 1 unit, up 3 units, and vertical stretch by 2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The \\(x-1\\) shifts right 1 unit, the \\(+3\\) shifts up 3 units, and the coefficient 2 stretches vertically by 2. Therefore, option B is correct.",
+      "hint": "Read each transformation from the equation separately."
+    },
+    {
+      "id": "algebra-02-q140",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a vertical translation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does \\(g(x)=f(x)-7\\) transform \\(f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "up 7 units"
+        },
+        {
+          "label": "B",
+          "text": "down 7 units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtracting 7 outside the function shifts the graph down 7 units. Therefore, option B is correct.",
+      "hint": "A negative constant outside \\(f(x)\\) shifts downward."
+    },
+    {
+      "id": "algebra-02-q141",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify combined transformations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How does \\(g(x)=f(x+3)-2\\) transform \\(f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "left 3 units and down 2 units"
+        },
+        {
+          "label": "B",
+          "text": "right 3 units and down 2 units"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The \\(x+3\\) shifts left 3 units, and the \\(-2\\) shifts down 2 units. Therefore, option A is correct.",
+      "hint": "Inside \\(x+3\\) means left; outside \\(-2\\) means down."
+    },
+    {
+      "id": "algebra-02-q142",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify combined transformations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How does \\(g(x)=-f(x-4)\\) transform \\(f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "right 4 units and reflected across the x-axis"
+        },
+        {
+          "label": "B",
+          "text": "left 4 units and reflected across the x-axis"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The \\(x-4\\) shifts right 4 units, and the negative sign outside reflects across the x-axis. Therefore, option A is correct.",
+      "hint": "The shift is inside; the reflection is outside."
+    },
+    {
+      "id": "algebra-02-q143",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify combined transformations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How does \\(g(x)=f(-x)+2\\) transform \\(f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "reflected across the x-axis and up 2 units"
+        },
+        {
+          "label": "B",
+          "text": "reflected across the y-axis and up 2 units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Replacing \\(x\\) with \\(-x\\) reflects across the y-axis, and \\(+2\\) shifts up 2 units. Therefore, option B is correct.",
+      "hint": "The negative sign is inside the function, so it affects the y-axis reflection."
+    },
+    {
+      "id": "algebra-02-q144",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify combined transformations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How is \\(g(x)=(x-1)^2+5\\) obtained from \\(f(x)=x^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "left 1 unit and up 5 units"
+        },
+        {
+          "label": "B",
+          "text": "right 1 unit and up 5 units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The \\(x-1\\) shifts right 1 unit, and \\(+5\\) shifts up 5 units. Therefore, option B is correct.",
+      "hint": "Inside \\(x-1\\) means right; outside \\(+5\\) means up."
+    },
+    {
+      "id": "algebra-02-q145",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify combined transformations.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How is \\(g(x)=-2x^2\\) obtained from \\(f(x)=x^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "reflected across the x-axis and vertical stretch by 2"
+        },
+        {
+          "label": "B",
+          "text": "reflected across the y-axis and vertical stretch by 2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The negative sign reflects across the x-axis, and the coefficient 2 stretches vertically by 2. Therefore, option A is correct.",
+      "hint": "The negative sign outside the function reflects across the x-axis."
+    },
+    {
+      "id": "algebra-02-q146",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a vertical compression.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does \\(g(x)=\\frac{1}{3}f(x)\\) transform \\(f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "vertical stretch by a factor of 3"
+        },
+        {
+          "label": "B",
+          "text": "vertical compression by a factor of \\(\\frac{1}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiplying the function by \\(\\frac{1}{3}\\) compresses it vertically by a factor of \\(\\frac{1}{3}\\). Therefore, option B is correct.",
+      "hint": "A factor between 0 and 1 outside the function compresses vertically."
+    },
+    {
+      "id": "algebra-02-q147",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a vertical translation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does \\(g(x)=f(x)-3\\) transform \\(f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "up 3 units"
+        },
+        {
+          "label": "B",
+          "text": "down 3 units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtracting 3 outside the function shifts the graph down 3 units. Therefore, option B is correct.",
+      "hint": "A negative constant outside \\(f(x)\\) shifts the graph down."
+    },
+    {
+      "id": "algebra-02-q148",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a horizontal translation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does \\(g(x)=f(x+6)\\) transform \\(f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "right 6 units"
+        },
+        {
+          "label": "B",
+          "text": "left 6 units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The \\(x+6\\) inside the function shifts the graph left 6 units. Therefore, option B is correct.",
+      "hint": "Inside \\(x+6\\) means a left shift."
+    },
+    {
+      "id": "algebra-02-q149",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify combined transformations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How does \\(g(x)=f(x-2)+1\\) transform \\(f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "left 2 units and up 1 unit"
+        },
+        {
+          "label": "B",
+          "text": "right 2 units and up 1 unit"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The \\(x-2\\) shifts right 2 units, and \\(+1\\) shifts up 1 unit. Therefore, option B is correct.",
+      "hint": "Inside \\(x-2\\) means right; outside \\(+1\\) means up."
+    },
+    {
+      "id": "algebra-02-q150",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify combined reflections.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "What transformation does \\(g(x)=-f(-x)\\) represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "reflection across the x-axis only"
+        },
+        {
+          "label": "B",
+          "text": "reflection across the origin"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The negative outside reflects across the x-axis, and the negative inside reflects across the y-axis. Together they reflect across the origin. Therefore, option B is correct.",
+      "hint": "Combine an outside negative with an inside negative."
+    },
+    {
+      "id": "algebra-02-q151",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a horizontal translation of an absolute value function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How is \\(g(x)=|x-4|\\) obtained from \\(f(x)=|x|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "left 4 units"
+        },
+        {
+          "label": "B",
+          "text": "right 4 units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expression \\(x-4\\) inside the absolute value shifts the graph right 4 units. Therefore, option B is correct.",
+      "hint": "Inside \\(x-4\\) means a right shift."
+    },
+    {
+      "id": "algebra-02-q152",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a vertical translation of an absolute value function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How is \\(g(x)=|x|+2\\) obtained from \\(f(x)=|x|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "down 2 units"
+        },
+        {
+          "label": "B",
+          "text": "up 2 units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Adding 2 outside the absolute value shifts the graph up 2 units. Therefore, option B is correct.",
+      "hint": "A positive constant outside the function shifts upward."
+    },
+    {
+      "id": "algebra-02-q153",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a horizontal translation of an absolute value function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How is \\(g(x)=|x+3|\\) obtained from \\(f(x)=|x|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "left 3 units"
+        },
+        {
+          "label": "B",
+          "text": "right 3 units"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expression \\(x+3\\) inside the absolute value shifts the graph left 3 units. Therefore, option A is correct.",
+      "hint": "Inside \\(x+3\\) means a left shift."
+    },
+    {
+      "id": "algebra-02-q154",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a reflection of an absolute value function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How is \\(g(x)=-|x|\\) related to \\(f(x)=|x|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "reflected across the y-axis"
+        },
+        {
+          "label": "B",
+          "text": "reflected across the x-axis"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The negative sign outside the absolute value reflects the graph across the x-axis. Therefore, option B is correct.",
+      "hint": "A negative outside the function reflects vertically."
+    },
+    {
+      "id": "algebra-02-q155",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a vertical stretch.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How is \\(g(x)=2|x|\\) related to \\(f(x)=|x|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "vertical stretch by a factor of 2"
+        },
+        {
+          "label": "B",
+          "text": "vertical compression by a factor of \\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiplying by 2 outside the absolute value stretches the graph vertically by a factor of 2. Therefore, option A is correct.",
+      "hint": "A coefficient greater than 1 outside the function stretches vertically."
+    },
+    {
+      "id": "algebra-02-q156",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify a vertical compression.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How is \\(g(x)=\\frac{1}{2}|x|\\) related to \\(f(x)=|x|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "vertical compression by a factor of \\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "vertical stretch by a factor of 2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiplying by \\(\\frac{1}{2}\\) outside the absolute value compresses the graph vertically by a factor of \\(\\frac{1}{2}\\). Therefore, option A is correct.",
+      "hint": "A coefficient between 0 and 1 compresses vertically."
+    },
+    {
+      "id": "algebra-02-q157",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify combined transformations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How is \\(g(x)=|x-1|-2\\) obtained from \\(f(x)=|x|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "left 1 unit and down 2 units"
+        },
+        {
+          "label": "B",
+          "text": "right 1 unit and down 2 units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The \\(x-1\\) shifts right 1 unit, and \\(-2\\) shifts down 2 units. Therefore, option B is correct.",
+      "hint": "Inside \\(x-1\\) means right; outside \\(-2\\) means down."
+    },
+    {
+      "id": "algebra-02-q158",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify combined transformations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How is \\(g(x)=|x+4|+3\\) obtained from \\(f(x)=|x|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "left 4 units and up 3 units"
+        },
+        {
+          "label": "B",
+          "text": "right 4 units and up 3 units"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The \\(x+4\\) shifts left 4 units, and \\(+3\\) shifts up 3 units. Therefore, option A is correct.",
+      "hint": "Inside \\(x+4\\) means left; outside \\(+3\\) means up."
+    },
+    {
+      "id": "algebra-02-q159",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify combined transformations.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How is \\(g(x)=-|x-2|+1\\) obtained from \\(f(x)=|x|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "right 2 units, reflected across the x-axis, and up 1 unit"
+        },
+        {
+          "label": "B",
+          "text": "left 2 units, reflected across the x-axis, and up 1 unit"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The \\(x-2\\) shifts right 2 units, the negative sign reflects across the x-axis, and \\(+1\\) shifts up 1 unit. Therefore, option A is correct.",
+      "hint": "Read the shift, reflection, and vertical shift in order."
+    },
+    {
+      "id": "algebra-02-q160",
+      "category": "Algebra",
+      "concept": "Function Transformations",
+      "learningObjective": "Identify combined transformations.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How is \\(g(x)=3|x+1|-4\\) obtained from \\(f(x)=|x|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "right 1 unit, down 4 units, and vertical stretch by 3"
+        },
+        {
+          "label": "B",
+          "text": "left 1 unit, down 4 units, and vertical stretch by 3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The \\(x+1\\) shifts left 1 unit, \\(-4\\) shifts down 4 units, and the coefficient 3 stretches vertically by 3. Therefore, option B is correct.",
+      "hint": "Inside \\(x+1\\) means left; the outside changes handle down and stretch."
+    },
+    {
+      "id": "algebra-02-q161",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function for a negative input.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x+1 & x<0\\\\ x^2 & x\\ge0\\end{cases}\\), what is \\(f(-2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(-2<0\\), use \\(x+1\\): \\(f(-2)=-2+1=-1\\). Therefore, option B is correct.",
+      "hint": "Choose the piece whose condition matches \\(x=-2\\)."
+    },
+    {
+      "id": "algebra-02-q162",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function for a nonnegative input.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x+1 & x<0\\\\ x^2 & x\\ge0\\end{cases}\\), what is \\(f(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(3\\ge0\\), use \\(x^2\\): \\(f(3)=3^2=9\\). Therefore, option B is correct.",
+      "hint": "Check which interval contains \\(x=3\\)."
+    },
+    {
+      "id": "algebra-02-q163",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function at zero.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}2x & x\\le1\\\\ 3x-1 & x>1\\end{cases}\\), what is \\(f(0)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(0\\le1\\), use \\(2x\\): \\(f(0)=2(0)=0\\). Therefore, option A is correct.",
+      "hint": "Use the first piece because \\(0\\le1\\)."
+    },
+    {
+      "id": "algebra-02-q164",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the second piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}2x & x\\le1\\\\ 3x-1 & x>1\\end{cases}\\), what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(2>1\\), use \\(3x-1\\): \\(f(2)=3(2)-1=5\\). Therefore, option B is correct.",
+      "hint": "Use the second piece because \\(2>1\\)."
+    },
+    {
+      "id": "algebra-02-q165",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function at a boundary value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x^2 & x<2\\\\ 2x+1 & x\\ge2\\end{cases}\\), what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(2\\ge2\\), use \\(2x+1\\): \\(f(2)=2(2)+1=5\\). Therefore, option A is correct.",
+      "hint": "At the boundary, use the piece that includes equality."
+    },
+    {
+      "id": "algebra-02-q166",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the first piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x^2 & x<2\\\\ 2x+1 & x\\ge2\\end{cases}\\), what is \\(f(1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(1<2\\), use \\(x^2\\): \\(f(1)=1^2=1\\). Therefore, option A is correct.",
+      "hint": "Use the first piece because \\(1<2\\)."
+    },
+    {
+      "id": "algebra-02-q167",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a constant piecewise function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}3 & x<5\\\\ -1 & x\\ge5\\end{cases}\\), what is \\(f(5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(5\\ge5\\), use \\(-1\\): \\(f(5)=-1\\). Therefore, option B is correct.",
+      "hint": "Check which interval includes \\(x=5\\)."
+    },
+    {
+      "id": "algebra-02-q168",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a constant piecewise function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}3 & x<5\\\\ -1 & x\\ge5\\end{cases}\\), what is \\(f(4)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(4<5\\), use \\(3\\): \\(f(4)=3\\). Therefore, option B is correct.",
+      "hint": "Use the first piece because \\(4<5\\)."
+    },
+    {
+      "id": "algebra-02-q169",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function for an input less than the boundary.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x+4 & x\\le-2\\\\ x^2 & x>-2\\end{cases}\\), what is \\(f(-3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(-3\\le-2\\), use \\(x+4\\): \\(f(-3)=-3+4=1\\). Therefore, option B is correct.",
+      "hint": "Use the first piece because \\(-3\\le-2\\)."
+    },
+    {
+      "id": "algebra-02-q170",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the second piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x+4 & x\\le-2\\\\ x^2 & x>-2\\end{cases}\\), what is \\(f(0)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(0>-2\\), use \\(x^2\\): \\(f(0)=0^2=0\\). Therefore, option B is correct.",
+      "hint": "Use the second piece because \\(0>-2\\)."
+    },
+    {
+      "id": "algebra-02-q171",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function at a boundary value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}2x-1 & x<3\\\\ x+2 & x\\ge3\\end{cases}\\), what is \\(f(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(3\\ge3\\), use \\(x+2\\): \\(f(3)=3+2=5\\). Therefore, option B is correct.",
+      "hint": "Use the piece that includes equality at \\(x=3\\)."
+    },
+    {
+      "id": "algebra-02-q172",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the first piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}2x-1 & x<3\\\\ x+2 & x\\ge3\\end{cases}\\), what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(2<3\\), use \\(2x-1\\): \\(f(2)=2(2)-1=3\\). Therefore, option A is correct.",
+      "hint": "Use the first piece because \\(2<3\\)."
+    },
+    {
+      "id": "algebra-02-q173",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate an absolute value as a piecewise function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}-x & x<0\\\\ x & x\\ge0\\end{cases}\\), what is \\(f(-4)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(-4<0\\), use \\(-x\\): \\(f(-4)=-(-4)=4\\). Therefore, option B is correct.",
+      "hint": "Use the first piece for negative inputs."
+    },
+    {
+      "id": "algebra-02-q174",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate an absolute value as a piecewise function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}-x & x<0\\\\ x & x\\ge0\\end{cases}\\), what is \\(f(5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(5\\ge0\\), use \\(x\\): \\(f(5)=5\\). Therefore, option A is correct.",
+      "hint": "Use the second piece for nonnegative inputs."
+    },
+    {
+      "id": "algebra-02-q175",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the first piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x+1 & x<2\\\\ 2x & x\\ge2\\end{cases}\\), what is \\(f(1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(1<2\\), use \\(x+1\\): \\(f(1)=1+1=2\\). Therefore, option B is correct.",
+      "hint": "Use the first piece because \\(1<2\\)."
+    },
+    {
+      "id": "algebra-02-q176",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the second piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x+1 & x<2\\\\ 2x & x\\ge2\\end{cases}\\), what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(2\\ge2\\), use \\(2x\\): \\(f(2)=2(2)=4\\). Therefore, option A is correct.",
+      "hint": "Use the second piece because \\(2\\ge2\\)."
+    },
+    {
+      "id": "algebra-02-q177",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function at a boundary value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}5 & x\\le0\\\\ x^2+1 & x>0\\end{cases}\\), what is \\(f(0)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(0\\le0\\), use \\(5\\): \\(f(0)=5\\). Therefore, option A is correct.",
+      "hint": "Use the first piece because \\(0\\le0\\)."
+    },
+    {
+      "id": "algebra-02-q178",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the second piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}5 & x\\le0\\\\ x^2+1 & x>0\\end{cases}\\), what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(2>0\\), use \\(x^2+1\\): \\(f(2)=2^2+1=5\\). Therefore, option B is correct.",
+      "hint": "Use the second piece because \\(2>0\\)."
+    },
+    {
+      "id": "algebra-02-q179",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function at a boundary value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x-3 & x<1\\\\ x+3 & x\\ge1\\end{cases}\\), what is \\(f(1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(1\\ge1\\), use \\(x+3\\): \\(f(1)=1+3=4\\). Therefore, option A is correct.",
+      "hint": "Use the piece that includes equality at \\(x=1\\)."
+    },
+    {
+      "id": "algebra-02-q180",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the first piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x-3 & x<1\\\\ x+3 & x\\ge1\\end{cases}\\), what is \\(f(0)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(0<1\\), use \\(x-3\\): \\(f(0)=0-3=-3\\). Therefore, option B is correct.",
+      "hint": "Use the first piece because \\(0<1\\)."
+    },
+    {
+      "id": "algebra-02-q181",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function at a boundary value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}2x & x\\le2\\\\ x^2 & x>2\\end{cases}\\), what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(2\\le2\\), use \\(2x\\): \\(f(2)=2(2)=4\\). Therefore, option B is correct.",
+      "hint": "Use the first piece because \\(2\\le2\\)."
+    },
+    {
+      "id": "algebra-02-q182",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the second piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}2x & x\\le2\\\\ x^2 & x>2\\end{cases}\\), what is \\(f(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(3>2\\), use \\(x^2\\): \\(f(3)=3^2=9\\). Therefore, option B is correct.",
+      "hint": "Use the second piece because \\(3>2\\)."
+    },
+    {
+      "id": "algebra-02-q183",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function at a boundary value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x^2 & x<-1\\\\ x+2 & x\\ge-1\\end{cases}\\), what is \\(f(-1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(-1\\ge-1\\), use \\(x+2\\): \\(f(-1)=-1+2=1\\). Therefore, option A is correct.",
+      "hint": "Use the piece that includes \\(x=-1\\)."
+    },
+    {
+      "id": "algebra-02-q184",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the first piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x^2 & x<-1\\\\ x+2 & x\\ge-1\\end{cases}\\), what is \\(f(-2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(-2<-1\\), use \\(x^2\\): \\(f(-2)=(-2)^2=4\\). Therefore, option B is correct.",
+      "hint": "Use the first piece because \\(-2<-1\\)."
+    },
+    {
+      "id": "algebra-02-q185",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function at zero.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}3x+1 & x<0\\\\ 2x-1 & x\\ge0\\end{cases}\\), what is \\(f(0)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(0\\ge0\\), use \\(2x-1\\): \\(f(0)=2(0)-1=-1\\). Therefore, option B is correct.",
+      "hint": "Use the second piece because \\(0\\ge0\\)."
+    },
+    {
+      "id": "algebra-02-q186",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the first piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}3x+1 & x<0\\\\ 2x-1 & x\\ge0\\end{cases}\\), what is \\(f(-1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(-1<0\\), use \\(3x+1\\): \\(f(-1)=3(-1)+1=-3+1=-2\\). Therefore, option B is correct.",
+      "hint": "Use the first piece because \\(-1<0\\)."
+    },
+    {
+      "id": "algebra-02-q187",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function at a boundary value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x+5 & x\\le-3\\\\ x^2 & x>-3\\end{cases}\\), what is \\(f(-3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(-3\\le-3\\), use \\(x+5\\): \\(f(-3)=-3+5=2\\). Therefore, option B is correct.",
+      "hint": "Use the first piece because \\(-3\\le-3\\)."
+    },
+    {
+      "id": "algebra-02-q188",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the second piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x+5 & x\\le-3\\\\ x^2 & x>-3\\end{cases}\\), what is \\(f(0)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(0>-3\\), use \\(x^2\\): \\(f(0)=0^2=0\\). Therefore, option A is correct.",
+      "hint": "Use the second piece because \\(0>-3\\)."
+    },
+    {
+      "id": "algebra-02-q189",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function at a boundary value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}4 & x<2\\\\ x-1 & x\\ge2\\end{cases}\\), what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(2\\ge2\\), use \\(x-1\\): \\(f(2)=2-1=1\\). Therefore, option A is correct.",
+      "hint": "Use the piece that includes \\(x=2\\)."
+    },
+    {
+      "id": "algebra-02-q190",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the first piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}4 & x<2\\\\ x-1 & x\\ge2\\end{cases}\\), what is \\(f(1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(1<2\\), use \\(4\\): \\(f(1)=4\\). Therefore, option A is correct.",
+      "hint": "Use the first piece because \\(1<2\\)."
+    },
+    {
+      "id": "algebra-02-q191",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function at a boundary value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}2x+3 & x\\le1\\\\ x^2+1 & x>1\\end{cases}\\), what is \\(f(1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(1\\le1\\), use \\(2x+3\\): \\(f(1)=2(1)+3=5\\). Therefore, option B is correct.",
+      "hint": "Use the first piece because \\(1\\le1\\)."
+    },
+    {
+      "id": "algebra-02-q192",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the second piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}2x+3 & x\\le1\\\\ x^2+1 & x>1\\end{cases}\\), what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(2>1\\), use \\(x^2+1\\): \\(f(2)=2^2+1=5\\). Therefore, option A is correct.",
+      "hint": "Use the second piece because \\(2>1\\)."
+    },
+    {
+      "id": "algebra-02-q193",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function at a boundary value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}-2x & x<3\\\\ x-4 & x\\ge3\\end{cases}\\), what is \\(f(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(3\\ge3\\), use \\(x-4\\): \\(f(3)=3-4=-1\\). Therefore, option A is correct.",
+      "hint": "Use the piece that includes \\(x=3\\)."
+    },
+    {
+      "id": "algebra-02-q194",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the first piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}-2x & x<3\\\\ x-4 & x\\ge3\\end{cases}\\), what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(2<3\\), use \\(-2x\\): \\(f(2)=-2(2)=-4\\). Therefore, option A is correct.",
+      "hint": "Use the first piece because \\(2<3\\)."
+    },
+    {
+      "id": "algebra-02-q195",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function with a special value at zero.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x+1 & x<0\\\\ 2 & x=0\\\\ x^2 & x>0\\end{cases}\\), what is \\(f(0)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The definition states that \\(f(0)=2\\). Therefore, option B is correct.",
+      "hint": "Look for the piece that specifically applies to \\(x=0\\)."
+    },
+    {
+      "id": "algebra-02-q196",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the first piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x+1 & x<0\\\\ 2 & x=0\\\\ x^2 & x>0\\end{cases}\\), what is \\(f(-2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(-2<0\\), use \\(x+1\\): \\(f(-2)=-2+1=-1\\). Therefore, option A is correct.",
+      "hint": "Use the first piece because \\(-2<0\\)."
+    },
+    {
+      "id": "algebra-02-q197",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function at a boundary value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x^2-1 & x\\le0\\\\ 3x & x>0\\end{cases}\\), what is \\(f(0)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(0\\le0\\), use \\(x^2-1\\): \\(f(0)=0^2-1=-1\\). Therefore, option A is correct.",
+      "hint": "Use the first piece because \\(0\\le0\\)."
+    },
+    {
+      "id": "algebra-02-q198",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the second piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x^2-1 & x\\le0\\\\ 3x & x>0\\end{cases}\\), what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(2>0\\), use \\(3x\\): \\(f(2)=3(2)=6\\). Therefore, option A is correct.",
+      "hint": "Use the second piece because \\(2>0\\)."
+    },
+    {
+      "id": "algebra-02-q199",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function at a boundary value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x+2 & x<-2\\\\ 2x & x\\ge-2\\end{cases}\\), what is \\(f(-2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(-2\\ge-2\\), use \\(2x\\): \\(f(-2)=2(-2)=-4\\). Therefore, option A is correct.",
+      "hint": "Use the piece that includes \\(x=-2\\)."
+    },
+    {
+      "id": "algebra-02-q200",
+      "category": "Algebra",
+      "concept": "Piecewise Functions",
+      "learningObjective": "Evaluate a piecewise function using the first piece.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=\\begin{cases}x+2 & x<-2\\\\ 2x & x\\ge-2\\end{cases}\\), what is \\(f(-3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(-3<-2\\), use \\(x+2\\): \\(f(-3)=-3+2=-1\\). Therefore, option B is correct.",
+      "hint": "Use the first piece because \\(-3<-2\\)."
+    }
+  ]
+}

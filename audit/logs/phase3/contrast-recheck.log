@@ -1,0 +1,25 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> dynanca-mcq@1.1.0 test:browser
+> playwright test --config=tests/browser/playwright.config.js tests/browser/layout-a11y.spec.js tests/browser/release-audit.spec.js --grep contrast --reporter=list
+
+
+Running 7 tests using 2 workers
+
+(node:31) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:32) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:32) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [chromium] › tests/browser/release-audit.spec.js:211:1 › contrast measurement catches low-opacity text despite its opaque colour value (562ms)
+  ✓  1 [chromium] › tests/browser/layout-a11y.spec.js:366:5 › Colour contrast (WCAG 2.2 AA) on computed colours › light: every text and control boundary on the landing page meets AA in all catalog states (864ms)
+  ✓  3 [chromium] › tests/browser/layout-a11y.spec.js:410:5 › Colour contrast (WCAG 2.2 AA) on computed colours › light: hover and focus states keep AA contrast and a visible focus ring (1.6s)
+  ✓  4 [chromium] › tests/browser/layout-a11y.spec.js:457:5 › Colour contrast (WCAG 2.2 AA) on computed colours › light: practice page status layer (back link, failure state) meets AA (1.1s)
+  ✓  5 [chromium] › tests/browser/layout-a11y.spec.js:366:5 › Colour contrast (WCAG 2.2 AA) on computed colours › dark: every text and control boundary on the landing page meets AA in all catalog states (678ms)
+  ✓  6 [chromium] › tests/browser/layout-a11y.spec.js:410:5 › Colour contrast (WCAG 2.2 AA) on computed colours › dark: hover and focus states keep AA contrast and a visible focus ring (1.5s)
+  ✓  7 [chromium] › tests/browser/layout-a11y.spec.js:457:5 › Colour contrast (WCAG 2.2 AA) on computed colours › dark: practice page status layer (back link, failure state) meets AA (1.1s)
+
+  7 passed (7.7s)

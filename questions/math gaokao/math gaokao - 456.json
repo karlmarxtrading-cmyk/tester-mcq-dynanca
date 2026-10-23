@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-456",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 456",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-456-q001",
+      "category": "Statistics",
+      "concept": "Mean and Variance",
+      "learningObjective": "Calculate the mean and variance of a small dataset.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Five observed data values are \\(12,15,15,18,20\\). Calculate their mean and their descriptive variance using divisor \\(n=5\\), not the unbiased sample-variance divisor \\(n-1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "The mean is \\(16\\), and the variance is \\(7.6\\)."
+        },
+        {
+          "label": "B",
+          "text": "The mean is \\(16\\), and the variance is \\(38\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sum of the five observations is \\(80\\), so\n\\[\n\\bar{x}=\\frac{12+15+15+18+20}{5}=16.\n\\]\nUsing the requested divisor \\(n=5\\), the variance is\n\\[\n\\begin{aligned}\nv&=\\frac{(12-16)^2+(15-16)^2+(15-16)^2+(18-16)^2+(20-16)^2}{5}\\\\\n&=\\frac{16+1+1+4+16}{5}\\\\\n&=\\frac{38}{5}=7.6.\n\\end{aligned}\n\\]\nThus A is correct. The value \\(38\\) is the sum of squared deviations, not the variance. Using the different, unbiased sample-variance convention would instead give \\(\\frac{38}{4}=9.5\\), which is not the convention requested here.",
+      "hint": "Find the mean, square the deviations from the mean, and use the divisor explicitly specified in the question."
+    },
+    {
+      "id": "math-gaokao-456-q002",
+      "category": "Statistics",
+      "concept": "Counts from a Relative-Frequency Density Histogram",
+      "learningObjective": "Convert histogram bar areas into relative frequencies and then into data counts.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "In a relative-frequency density histogram of a sample of size \\(200\\), the heights of the rectangles for the intervals \\([10, 20)\\), \\([20, 30)\\), \\([30, 40)\\), and \\([40, 50)\\) are \\(0.01\\), \\(0.03\\), \\(0.04\\), and \\(0.02\\), respectively. Calculate the number of data points in the interval \\([10, 30)\\). Each bar height is the relative frequency divided by the class width.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(80\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(120\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In a relative-frequency density histogram, each bar's area is its relative frequency, not its absolute count. Each class here has width \\(10\\). For the two relevant classes, the relative frequencies are\n\\[\n0.01\\cdot10=0.1,\\qquad0.03\\cdot10=0.3.\n\\]\nThus \\([10,30)\\) contains the proportion \\(0.1+0.3=0.4\\) of the sample. Multiplying by the sample size gives the number of data points:\n\\[\n200\\cdot0.4=80.\n\\]\nThe distractor \\(120\\) counts the complementary proportion \\(0.6\\).",
+      "hint": "Multiply each relevant bar height by its class width to obtain a proportion. Add those proportions, then use the sample size to convert the result into a count."
+    },
+    {
+      "id": "math-gaokao-456-q003",
+      "category": "Statistics",
+      "concept": "Median and Percentiles",
+      "learningObjective": "Find the median and a specific percentile of an ordered dataset.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Given an ordered dataset of \\(10\\) values: \\(2\\), \\(4\\), \\(6\\), \\(8\\), \\(10\\), \\(12\\), \\(14\\), \\(16\\), \\(18\\), \\(20\\). Determine the median and the 75th percentile of this dataset. Use the nearest-rank convention for the percentile: the \\(75\\)th percentile is the value at rank \\(\\lceil0.75n\\rceil\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "The median is \\(11\\), and the 75th percentile is \\(14\\)."
+        },
+        {
+          "label": "B",
+          "text": "The median is \\(11\\), and the 75th percentile is \\(16\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "For a dataset of \\(n = 10\\) values, the median is the average of the 5th and 6th values. The 5th value is \\(10\\) and the 6th value is \\(12\\), so the median is \\(\\frac{10 + 12}{2} = 11\\).\nTo find the 75th percentile, calculate \\(10 \\times 0.75 = 7.5\\). Since this is not an integer, we round up to the next whole number, which is \\(8\\). The 8th value in the dataset is \\(16\\). Thus, the 75th percentile is \\(16\\).",
+      "hint": "The median of an even number of ordered data points is the average of the two middle values. For percentiles, multiply the total number of data points by the percentile percentage."
+    },
+    {
+      "id": "math-gaokao-456-q004",
+      "category": "Statistics",
+      "concept": "Linear Regression",
+      "learningObjective": "Calculate the equation of the linear regression line for a given set of data points.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Given the data points \\((1, 2)\\), \\((2, 3)\\), \\((3, 5)\\), and \\((4, 6)\\), find the equation of the linear regression line \\(\\hat{y} = \\hat{b}x + \\hat{a}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\hat{y} = 1.5x + 0.25\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\hat{y} = 1.4x + 0.5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First, calculate the means: \\(\\bar{x} = \\frac{1+2+3+4}{4} = 2.5\\) and \\(\\bar{y} = \\frac{2+3+5+6}{4} = 4\\).\nNext, calculate the slope \\(\\hat{b}\\):\n\\[\n\\begin{aligned}\n\\sum (x_i - \\bar{x})(y_i - \\bar{y}) &= (-1.5)(-2) + (-0.5)(-1) + (0.5)(1) + (1.5)(2) \\\\\n&= 3 + 0.5 + 0.5 + 3 \\\\\n&= 7\n\\end{aligned}\n\\].\n\\[\n\\begin{aligned}\n\\sum (x_i - \\bar{x})^2 &= (-1.5)^2 + (-0.5)^2 + (0.5)^2 + (1.5)^2 \\\\\n&= 2.25 + 0.25 + 0.25 + 2.25 \\\\\n&= 5\n\\end{aligned}\n\\].\n\\(\\hat{b} = \\frac{7}{5} = 1.4\\).\nThen, calculate the intercept \\(\\hat{a}\\):\n\\[\n\\begin{aligned}\n\\hat{a} &= \\bar{y} - \\hat{b}\\bar{x} \\\\\n&= 4 - 1.4 \\times 2.5 \\\\\n&= 4 - 3.5 \\\\\n&= 0.5\n\\end{aligned}\n\\].\nThe regression line equation is \\(\\hat{y} = 1.4x + 0.5\\).",
+      "hint": "Use the least squares formulas for the slope and intercept of the linear regression line."
+    },
+    {
+      "id": "math-gaokao-456-q005",
+      "category": "Statistics",
+      "concept": "Variance Comparison",
+      "learningObjective": "Compare the variances of two datasets to determine their relative dispersion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Dataset X consists of the values \\(10\\), \\(10\\), \\(10\\), \\(10\\), \\(10\\). Dataset Y consists of the values \\(8\\), \\(9\\), \\(10\\), \\(11\\), \\(12\\). Which of the following statements about their variances is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The variance of Dataset X is less than the variance of Dataset Y."
+        },
+        {
+          "label": "B",
+          "text": "The variance of Dataset X is greater than the variance of Dataset Y."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Dataset X has all identical values, so its variance is \\(0\\).\nFor Dataset Y, the mean is \\(\\frac{8+9+10+11+12}{5} = 10\\).\nThe variance of Dataset Y is \\(\\frac{(8-10)^2 + (9-10)^2 + (10-10)^2 + (11-10)^2 + (12-10)^2}{5} = \\frac{4+1+0+1+4}{5} = 2\\).\nSince \\(0 < 2\\), the variance of Dataset X is less than the variance of Dataset Y.",
+      "hint": "Compare the distances from each dataset’s own mean, rather than comparing the two means."
+    },
+    {
+      "id": "math-gaokao-456-q006",
+      "category": "Statistics",
+      "concept": "Mode and Median from Frequency Table",
+      "learningObjective": "Determine the mode and median of a dataset given in a frequency table.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A frequency table for a dataset is given below:\nValue: \\(10\\), \\(20\\), \\(30\\), \\(40\\)\nFrequency: \\(4\\), \\(6\\), \\(5\\), \\(5\\)\nDetermine the mode and the median of this dataset.",
+      "options": [
+        {
+          "label": "A",
+          "text": "The mode is \\(20\\), and the median is \\(20\\)."
+        },
+        {
+          "label": "B",
+          "text": "The mode is \\(20\\), and the median is \\(25\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The mode is the value with the highest frequency. The highest frequency is \\(6\\), which corresponds to the value \\(20\\). Thus, the mode is \\(20\\).\nThe total number of data points is \\(4 + 6 + 5 + 5 = 20\\).\nThe median is the average of the 10th and 11th values when ordered.\nThe cumulative frequencies are: \\(4\\) (for \\(10\\)), \\(10\\) (for \\(20\\)), \\(15\\) (for \\(30\\)), \\(20\\) (for \\(40\\)).\nThe 10th value is \\(20\\), and the 11th value is \\(30\\).\nThe median is \\(\\frac{20 + 30}{2} = 25\\).",
+      "hint": "The mode is the most frequent value. To find the median from a frequency table, use cumulative frequencies to locate the middle values."
+    },
+    {
+      "id": "math-gaokao-456-q007",
+      "category": "Statistics",
+      "concept": "Systematic Sampling",
+      "learningObjective": "Determine the selected sample number in a specific group using systematic sampling.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A population consists of \\(1000\\) individuals. A systematic sample of size \\(50\\) is to be drawn. The individuals are numbered \\(1\\) to \\(1000\\) and divided into \\(50\\) groups. If the number drawn from the first group (numbers \\(1\\) to \\(20\\)) is \\(12\\), what is the number drawn from the fourth group (numbers \\(61\\) to \\(80\\))?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(62\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(72\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sampling interval is \\(k = \\frac{1000}{50} = 20\\).\nIn systematic sampling, the number drawn from the \\(n\\)-th group is given by the formula: \\(x_n = x_1 + (n - 1)k\\), where \\(x_1\\) is the number drawn from the first group.\nHere, \\(x_1 = 12\\) and \\(k = 20\\).\nFor the fourth group (\\(n = 4\\)):\n\\[\n\\begin{aligned}\nx_4 &= 12 + (4 - 1) \\times 20 \\\\\n&= 12 + 3 \\times 20 \\\\\n&= 12 + 60 \\\\\n&= 72\n\\end{aligned}\n\\].",
+      "hint": "In systematic sampling, the selected numbers form an arithmetic sequence with a common difference equal to the sampling interval."
+    },
+    {
+      "id": "math-gaokao-456-q008",
+      "category": "Statistics",
+      "concept": "Correlation Coefficient",
+      "learningObjective": "Interpret the correlation coefficient to compare the strength of linear relationships.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Two sets of data have sample correlation coefficients \\(r_1 = 0.85\\) and \\(r_2 = -0.92\\). Which of the following statements is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The linear correlation of the second set of data is stronger than that of the first set."
+        },
+        {
+          "label": "B",
+          "text": "The linear correlation of the first set of data is stronger than that of the second set."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The strength of a linear correlation is determined by the absolute value of the correlation coefficient \\(|r|\\). The closer \\(|r|\\) is to \\(1\\), the stronger the linear correlation.\nFor the first set, \\(|r_1| = |0.85| = 0.85\\).\nFor the second set, \\(|r_2| = |-0.92| = 0.92\\).\nSince \\(0.92 > 0.85\\), the linear correlation of the second set is stronger than that of the first set.",
+      "hint": "The sign of the correlation coefficient indicates the direction of the relationship, while its absolute value indicates the strength."
+    },
+    {
+      "id": "math-gaokao-456-q009",
+      "category": "Statistics",
+      "concept": "Combined Mean",
+      "learningObjective": "Calculate the overall mean of two combined groups given their individual sizes and means.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Group \\(1\\) consists of \\(10\\) data points with a mean of \\(5\\). Group \\(2\\) consists of \\(20\\) data points with a mean of \\(8\\). Calculate the mean of the combined \\(30\\) data points.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6.5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sum of the data points in Group \\(1\\) is \\(10 \\times 5 = 50\\).\nThe sum of the data points in Group \\(2\\) is \\(20 \\times 8 = 160\\).\nThe total sum of the combined \\(30\\) data points is \\(50 + 160 = 210\\).\nThe mean of the combined dataset is \\(\\frac{210}{30} = 7\\).",
+      "hint": "The combined mean can be found by calculating the total sum of all data points and dividing by the total number of data points."
+    },
+    {
+      "id": "math-gaokao-456-q010",
+      "category": "Statistics",
+      "concept": "Pie Chart Interpretation",
+      "learningObjective": "Extract specific data values from a pie chart representing percentages.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A company's total annual revenue is \\(500\\) million yuan. A pie chart showing the revenue distribution among four products indicates that Product B accounts for \\(30\\%\\) of the total revenue. Calculate the revenue generated by Product B.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(100\\) million yuan"
+        },
+        {
+          "label": "B",
+          "text": "\\(150\\) million yuan"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total revenue is \\(500\\) million yuan.\nProduct B accounts for \\(30\\%\\) of the total revenue.\nThe revenue generated by Product B is \\(500 \\times 30\\% = 500 \\times 0.3 = 150\\) million yuan.",
+      "hint": "In a pie chart, each sector's area represents the proportion of the whole. Multiply the total value by the given percentage."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-379",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 379",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-379-q001",
+      "category": "Complex Numbers",
+      "concept": "Powers of the Imaginary Unit",
+      "learningObjective": "Compute a small positive integer power of \\(i\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\(i^{11}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(i^4=1\\),\n\\[\ni^{11}=(i^4)^2i^3=i^2i=-i.\n\\]\nThe distractor has the wrong sign.",
+      "hint": "Reduce the exponent modulo four, then evaluate the remaining power."
+    },
+    {
+      "id": "math-gaokao-379-q002",
+      "category": "Complex Numbers",
+      "concept": "Powers of the Imaginary Unit",
+      "learningObjective": "Evaluate a positive integer power of \\(i\\) that is a multiple of \\(4\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\(i^4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(i^2=-1\\), we get\n\\[\n\\begin{aligned}\ni^4&=(i^2)^2 \\\\\n&=(-1)^2 \\\\\n&=1.\n\\end{aligned}\n\\]\nThus \\(i^4=1\\).",
+      "hint": "Square \\(i^2=-1\\) once more."
+    },
+    {
+      "id": "math-gaokao-379-q003",
+      "category": "Complex Numbers",
+      "concept": "Powers of the Imaginary Unit",
+      "learningObjective": "Evaluate a power of \\(i\\) whose exponent is congruent to \\(2\\) modulo \\(4\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\(i^6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Write \\(6=4+2\\). Then\n\\[\n\\begin{aligned}\ni^6&=i^{4+2} \\\\\n&=i^4\\cdot i^2 \\\\\n&=1\\cdot(-1) \\\\\n&=-1.\n\\end{aligned}\n\\]\nTherefore \\(i^6=-1\\).",
+      "hint": "Reduce the exponent modulo \\(4\\) and use \\(i^2=-1\\)."
+    },
+    {
+      "id": "math-gaokao-379-q004",
+      "category": "Complex Numbers",
+      "concept": "Powers of the Imaginary Unit",
+      "learningObjective": "Evaluate a power of \\(i\\) whose exponent is congruent to \\(1\\) modulo \\(4\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\(i^9\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(9=4\\cdot 2+1\\),\n\\[\n\\begin{aligned}\ni^9&=i^{4\\cdot 2+1} \\\\\n&=(i^4)^2\\cdot i \\\\\n&=1^2\\cdot i \\\\\n&=i.\n\\end{aligned}\n\\]\nThus \\(i^9=i\\).",
+      "hint": "Use \\(i^4=1\\) and write the exponent as a multiple of \\(4\\) plus a remainder."
+    },
+    {
+      "id": "math-gaokao-379-q005",
+      "category": "Complex Numbers",
+      "concept": "Powers of the Imaginary Unit",
+      "learningObjective": "Evaluate a power of \\(i\\) whose exponent is congruent to \\(2\\) modulo \\(4\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\(i^{18}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(18=4\\cdot 4+2\\),\n\\[\n\\begin{aligned}\ni^{18}&=i^{4\\cdot 4+2} \\\\\n&=(i^4)^4\\cdot i^2 \\\\\n&=1\\cdot(-1) \\\\\n&=-1.\n\\end{aligned}\n\\]\nTherefore \\(i^{18}=-1\\).",
+      "hint": "Divide the exponent by \\(4\\) and use the remainder."
+    },
+    {
+      "id": "math-gaokao-379-q006",
+      "category": "Complex Numbers",
+      "concept": "Sum of Powers of \\(i\\)",
+      "learningObjective": "Evaluate a sum of two large powers of \\(i\\) using modular arithmetic.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Compute \\(i^{2023}+i^{2024}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1-i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1+i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(2023=4\\cdot 505+3\\), we have\n\\[\ni^{2023}=i^3=-i.\n\\]\nSince \\(2024=4\\cdot 506\\), we have\n\\[\ni^{2024}=i^0=1.\n\\]\nTherefore\n\\[\ni^{2023}+i^{2024}=-i+1=1-i.\n\\]",
+      "hint": "Reduce each exponent modulo \\(4\\) before adding."
+    },
+    {
+      "id": "math-gaokao-379-q007",
+      "category": "Complex Numbers",
+      "concept": "Sum of a Complete Cycle of Powers of \\(i\\)",
+      "learningObjective": "Evaluate the sum of four consecutive powers of \\(i\\) forming one complete cycle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Evaluate \\(1+i+i^2+i^3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using \\(i^2=-1\\) and \\(i^3=-i\\), we get\n\\[\n1+i+i^2+i^3=1+i+(-1)+(-i)=0.\n\\]\nThus the sum is \\(0\\).",
+      "hint": "Write each power in terms of \\(1\\), \\(i\\), \\(-1\\), and \\(-i\\)."
+    },
+    {
+      "id": "math-gaokao-379-q008",
+      "category": "Complex Numbers",
+      "concept": "Negative Powers of the Imaginary Unit",
+      "learningObjective": "Compute the reciprocal of \\(i\\) using the fact that \\(i^{-1}=-i\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\(i^{-1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\[\n\\begin{aligned}\ni\\cdot(-i)&=-i^2 \\\\\n&=-(-1) \\\\\n&=1\n\\end{aligned}\n\\], the reciprocal of \\(i\\) is \\(-i\\). Equivalently,\n\\[\n\\begin{aligned}\ni^{-1}&=\\frac{1}{i} \\\\\n&=\\frac{1}{i}\\cdot\\frac{-i}{-i} \\\\\n&=\\frac{-i}{-i^2} \\\\\n&=\\frac{-i}{1} \\\\\n&=-i.\n\\end{aligned}\n\\]\nTherefore \\(i^{-1}=-i\\).",
+      "hint": "Find a complex number whose product with \\(i\\) equals \\(1\\)."
+    },
+    {
+      "id": "math-gaokao-379-q009",
+      "category": "Complex Numbers",
+      "concept": "Products Involving Powers of \\(i\\)",
+      "learningObjective": "Simplify an expression involving products of powers of \\(i\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Compute \\((i^5+i^6)(i^7+i^8)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reduce each power modulo \\(4\\):\n\\[\ni^5=i,\\quad i^6=-1,\\quad i^7=-i,\\quad i^8=1.\n\\]\nThen\n\\[\ni^5+i^6=i-1,\\qquad i^7+i^8=1-i.\n\\]\nTheir product is\n\\[\n\\begin{aligned}\n(i-1)(1-i)&=i-i^2-1+i \\\\\n&=i+1-1+i \\\\\n&=2i.\n\\end{aligned}\n\\]\nTherefore the value is \\(2i\\).",
+      "hint": "First simplify each power of \\(i\\), then multiply the two resulting complex numbers."
+    },
+    {
+      "id": "math-gaokao-379-q010",
+      "category": "Complex Numbers",
+      "concept": "Sum of Many Powers of \\(i\\)",
+      "learningObjective": "Evaluate a long sum of powers of \\(i\\) by grouping complete cycles.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Find \\(\\displaystyle \\sum_{k=1}^{2023} i^k\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The powers of \\(i\\) repeat in cycles of length \\(4\\), and each complete cycle satisfies\n\\[\ni+i^2+i^3+i^4=i-1-i+1=0.\n\\]\nSince\n\\[\n2023=4\\cdot 505+3,\n\\]\nthe first \\(2020\\) terms form \\(505\\) complete cycles and contribute \\(0\\). The remaining three terms are\n\\[\ni^{2021}+i^{2022}+i^{2023}=i-1-i=-1.\n\\]\nTherefore\n\\[\n\\sum_{k=1}^{2023} i^k=-1.\n\\]",
+      "hint": "Group the terms into blocks of four consecutive powers of \\(i\\)."
+    }
+  ]
+}

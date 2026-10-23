@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-550",
+  "category": "Comprehensive Mathematics",
+  "title": "550. Discrete Mathematics, Counting & Graph Theory: Combinations without Repetition",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-550-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Selections without order",
+      "learningObjective": "Distinguish an unordered selection from an ordered one.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A teacher chooses \\(2\\) of \\(4\\) students to form a team, and the two team members have no special roles. How many different teams are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A team is an unordered pair of students, so the count is \\(\\binom{4}{2}=\\dfrac{4\\cdot 3}{2}=6\\). The number \\(12=4\\cdot 3\\) counts ordered pairs, in which choosing Ana then Ben differs from choosing Ben then Ana; for a team these are the same.",
+      "hint": "Ask whether swapping the two chosen students gives a different team."
+    },
+    {
+      "id": "dynanca-550-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Pairs from six",
+      "learningObjective": "Evaluate a small binomial coefficient as a number of selections.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In how many ways can \\(2\\) objects be chosen from \\(6\\) different objects, if the order of choosing does not matter?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number of unordered selections is \\(\\binom{6}{2}=\\dfrac{6\\cdot 5}{2\\cdot 1}=15\\). The number \\(30=6\\cdot 5\\) counts ordered selections, each unordered pair twice.",
+      "hint": "Count the ordered pairs, then divide by the number of orders of two objects."
+    },
+    {
+      "id": "dynanca-550-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Triples from eight",
+      "learningObjective": "Evaluate the number of unordered selections of three from eight.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A committee of \\(3\\) members with equal roles is chosen from \\(8\\) people. How many committees are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(336\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(56\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number of committees is \\(\\binom{8}{3}=\\dfrac{8\\cdot 7\\cdot 6}{3\\cdot 2\\cdot 1}=56\\). The number \\(336=8\\cdot 7\\cdot 6\\) counts ordered selections; each committee is counted \\(3!=6\\) times in it.",
+      "hint": "Divide the number of ordered selections by the number of orders of three people."
+    },
+    {
+      "id": "dynanca-550-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Choosing by leaving out",
+      "learningObjective": "Use symmetry to evaluate a number of selections.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In how many ways can \\(8\\) objects be chosen from \\(10\\) different objects, if order does not matter?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(80\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(45\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Choosing \\(8\\) objects to take is the same as choosing \\(2\\) objects to leave behind, so \\(\\binom{10}{8}=\\binom{10}{2}=\\dfrac{10\\cdot 9}{2}=45\\). The product \\(10\\cdot 8=80\\) has no meaning for this count.",
+      "hint": "Count the ways to choose the objects that are not taken."
+    },
+    {
+      "id": "dynanca-550-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Handshakes",
+      "learningObjective": "Count the pairs formed in a group.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "At a meeting, each of \\(9\\) people shakes hands once with every other person. How many handshakes take place?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(72\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each handshake corresponds to an unordered pair of people, so there are \\(\\binom{9}{2}=\\dfrac{9\\cdot 8}{2}=36\\) handshakes. The number \\(72=9\\cdot 8\\) counts every handshake twice, once from each participant's point of view.",
+      "hint": "A handshake between two people is one event, not two."
+    },
+    {
+      "id": "dynanca-550-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Choosing from two groups",
+      "learningObjective": "Combine two independent unordered selections.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A team of \\(2\\) boys and \\(2\\) girls is chosen from \\(5\\) boys and \\(4\\) girls. How many teams are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The boys can be chosen in \\(\\binom{5}{2}=10\\) ways and the girls in \\(\\binom{4}{2}=6\\) ways. Both selections are made, so the multiplication rule gives \\(10\\cdot 6=60\\). Adding, \\(10+6=16\\), would count the ways to choose only the boys or only the girls.",
+      "hint": "Count the two selections separately and decide whether to add or to multiply."
+    },
+    {
+      "id": "dynanca-550-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Diagonals of a polygon",
+      "learningObjective": "Count the diagonals of a convex polygon with a selection argument.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "How many diagonals does a convex octagon have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(28\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every pair of vertices determines a segment, and there are \\(\\binom{8}{2}=28\\) pairs. Of these segments, \\(8\\) are sides of the octagon, so the number of diagonals is \\(28-8=20\\). The number \\(28\\) includes the sides.",
+      "hint": "Count all segments joining two vertices, then remove the sides."
+    },
+    {
+      "id": "dynanca-550-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Finding the size of the set",
+      "learningObjective": "Find the number of objects from a given number of pairs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The number of ways to choose \\(2\\) objects from \\(n\\) different objects is \\(28\\). What is \\(n\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n=8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n=7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation is \\(\\dfrac{n(n-1)}{2}=28\\), so \\(n(n-1)=56=8\\cdot 7\\) and \\(n=8\\). The value \\(n=7\\) gives \\(\\dfrac{7\\cdot 6}{2}=21\\), which is too small.",
+      "hint": "Look for two consecutive integers whose product is \\(56\\)."
+    },
+    {
+      "id": "dynanca-550-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Triangles from points",
+      "learningObjective": "Count triangles when some of the given points are collinear.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "Seven points are marked in a plane. Four of them lie on one line, and no other three of the seven points are collinear. How many triangles have their vertices among these points?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(35\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(31\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(\\binom{7}{3}=35\\) ways to choose three points. A choice fails to give a triangle exactly when all three points lie on the line, which happens in \\(\\binom{4}{3}=4\\) ways. So there are \\(35-4=31\\) triangles. The number \\(35\\) includes the collinear triples.",
+      "hint": "Subtract the choices of three points that lie on one line."
+    },
+    {
+      "id": "dynanca-550-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "More men than women",
+      "learningObjective": "Count committees by cases on their composition.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A committee of \\(4\\) is chosen from \\(6\\) men and \\(5\\) women. How many committees contain more men than women?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(115\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(100\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "More men than women means \\(4\\) men, or \\(3\\) men and \\(1\\) woman. The first case gives \\(\\binom{6}{4}=15\\) committees, and the second gives \\(\\binom{6}{3}\\cdot\\binom{5}{1}=20\\cdot 5=100\\). The total is \\(15+100=115\\). The number \\(100\\) omits the committees made up of men only.",
+      "hint": "List the possible numbers of men and women, and count each case."
+    }
+  ]
+}

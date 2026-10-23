@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-271",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 271",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-271-q001",
+      "category": "Calculus",
+      "concept": "Standard Trigonometric Limit for Sine",
+      "learningObjective": "Evaluate a limit of the form \\(\\sin(ax)/x\\) using the standard limit \\(\\lim_{u\\to 0}\\sin u/u=1\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to 0}\\frac{\\sin 5x}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rewrite the expression so that the argument of sine matches the denominator:\n\\[\n\\frac{\\sin 5x}{x}=5\\cdot \\frac{\\sin 5x}{5x}.\n\\]\nAs \\(x\\to 0\\), we have \\(5x\\to 0\\), so\n\\[\n\\lim_{x\\to 0}\\frac{\\sin 5x}{5x}=1.\n\\]\nTherefore,\n\\[\n\\lim_{x\\to 0}\\frac{\\sin 5x}{x}=5\\cdot 1=5.\n\\]",
+      "hint": "Use \\(\\lim_{u\\to 0}\\frac{\\sin u}{u}=1\\) by letting \\(u=5x\\)."
+    },
+    {
+      "id": "math-gaokao-271-q002",
+      "category": "Calculus",
+      "concept": "Ratio of Sine Functions Near Zero",
+      "learningObjective": "Evaluate a limit of the form \\(\\sin(ax)/\\sin(bx)\\) using standard trigonometric limits.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to 0}\\frac{\\sin 3x}{\\sin 7x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{7}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{7}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide numerator and denominator by \\(x\\):\n\\[\n\\frac{\\sin 3x}{\\sin 7x}\n=\n\\frac{\\frac{\\sin 3x}{x}}{\\frac{\\sin 7x}{x}}\n=\n\\frac{3\\cdot \\frac{\\sin 3x}{3x}}{7\\cdot \\frac{\\sin 7x}{7x}}.\n\\]\nAs \\(x\\to 0\\), both \\(\\frac{\\sin 3x}{3x}\\to 1\\) and \\(\\frac{\\sin 7x}{7x}\\to 1\\). Hence\n\\[\n\\lim_{x\\to 0}\\frac{\\sin 3x}{\\sin 7x}=\\frac{3}{7}.\n\\]",
+      "hint": "Divide the numerator and denominator by \\(x\\), then use \\(\\lim_{u\\to 0}\\frac{\\sin u}{u}=1\\)."
+    },
+    {
+      "id": "math-gaokao-271-q003",
+      "category": "Calculus",
+      "concept": "Standard Limit Involving \\(1-\\cos x\\)",
+      "learningObjective": "Evaluate a limit involving \\(1-\\cos(ax)\\) over \\(x^2\\) using standard trigonometric limits.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to 0}\\frac{1-\\cos 4x}{x^2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the identity \\(1-\\cos u=2\\sin^2\\frac{u}{2}\\). With \\(u=4x\\),\n\\[\n1-\\cos 4x=2\\sin^2(2x).\n\\]\nThus\n\\[\n\\frac{1-\\cos 4x}{x^2}\n=\n2\\cdot \\frac{\\sin^2(2x)}{x^2}\n=\n2\\cdot 4\\left(\\frac{\\sin 2x}{2x}\\right)^2.\n\\]\nAs \\(x\\to 0\\), \\(\\frac{\\sin 2x}{2x}\\to 1\\), so the limit is\n\\[\n2\\cdot 4=8.\n\\]",
+      "hint": "Use \\(1-\\cos u=2\\sin^2\\frac{u}{2}\\), or the approximation \\(1-\\cos u\\sim \\frac{u^2}{2}\\)."
+    },
+    {
+      "id": "math-gaokao-271-q004",
+      "category": "Calculus",
+      "concept": "Standard Limit for Tangent",
+      "learningObjective": "Evaluate a limit of the form \\(\\tan(ax)/x\\) using the standard tangent limit.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to 0}\\frac{\\tan 2x}{5x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{5}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2}{5}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rewrite the expression as\n\\[\n\\frac{\\tan 2x}{5x}\n=\n\\frac{2}{5}\\cdot \\frac{\\tan 2x}{2x}.\n\\]\nAs \\(x\\to 0\\), \\(2x\\to 0\\), and the standard limit\n\\[\n\\lim_{u\\to 0}\\frac{\\tan u}{u}=1\n\\]\napplies. Therefore,\n\\[\n\\lim_{x\\to 0}\\frac{\\tan 2x}{5x}=\\frac{2}{5}.\n\\]",
+      "hint": "Use \\(\\lim_{u\\to 0}\\frac{\\tan u}{u}=1\\) by making the denominator match the tangent argument."
+    },
+    {
+      "id": "math-gaokao-271-q005",
+      "category": "Calculus",
+      "concept": "Square of a Sine Limit",
+      "learningObjective": "Evaluate a limit involving \\(\\sin^2(ax)/x^2\\) using the standard sine limit.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to 0}\\frac{\\sin^2 3x}{x^2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rewrite the expression as\n\\[\n\\frac{\\sin^2 3x}{x^2}\n=\n9\\left(\\frac{\\sin 3x}{3x}\\right)^2.\n\\]\nAs \\(x\\to 0\\), \\(3x\\to 0\\), so\n\\[\n\\lim_{x\\to 0}\\frac{\\sin 3x}{3x}=1.\n\\]\nHence\n\\[\n\\lim_{x\\to 0}\\frac{\\sin^2 3x}{x^2}=9\\cdot 1^2=9.\n\\]",
+      "hint": "Rewrite the expression using \\(3x\\) in both the numerator and the denominator."
+    },
+    {
+      "id": "math-gaokao-271-q006",
+      "category": "Calculus",
+      "concept": "Limit Involving \\(1-\\cos x\\) and \\(x\\sin x\\)",
+      "learningObjective": "Evaluate a trigonometric limit by combining half-angle identities and standard limits.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Evaluate \\(\\lim_{x\\to 0}\\frac{1-\\cos x}{x\\sin x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(1-\\cos x=2\\sin^2\\frac{x}{2}\\) and \\(\\sin x=2\\sin\\frac{x}{2}\\cos\\frac{x}{2}\\). Then\n\\[\n\\frac{1-\\cos x}{x\\sin x}\n=\n\\frac{2\\sin^2\\frac{x}{2}}{x\\cdot 2\\sin\\frac{x}{2}\\cos\\frac{x}{2}}\n=\n\\frac{\\sin\\frac{x}{2}}{x\\cos\\frac{x}{2}}.\n\\]\nRewrite this as\n\\[\n\\frac{1}{2}\\cdot \\frac{\\sin\\frac{x}{2}}{\\frac{x}{2}}\\cdot \\frac{1}{\\cos\\frac{x}{2}}.\n\\]\nAs \\(x\\to 0\\), \\(\\frac{\\sin(x/2)}{x/2}\\to 1\\) and \\(\\cos(x/2)\\to 1\\). Therefore, the limit is\n\\[\n\\frac{1}{2}.\n\\]",
+      "hint": "Use the half-angle identity \\(1-\\cos x=2\\sin^2\\frac{x}{2}\\)."
+    },
+    {
+      "id": "math-gaokao-271-q007",
+      "category": "Calculus",
+      "concept": "Product of a Sine Limit and Secant",
+      "learningObjective": "Evaluate a trigonometric limit involving \\(\\sin(ax)/x\\) and \\(\\sec x\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Evaluate \\(\\lim_{x\\to 0}\\frac{\\sin 2x}{3x}\\sec x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{2}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rewrite the expression:\n\\[\n\\frac{\\sin 2x}{3x}\\sec x\n=\n\\frac{2}{3}\\cdot \\frac{\\sin 2x}{2x}\\cdot \\frac{1}{\\cos x}.\n\\]\nAs \\(x\\to 0\\), \\(\\frac{\\sin 2x}{2x}\\to 1\\) and \\(\\cos x\\to 1\\). Hence\n\\[\n\\lim_{x\\to 0}\\frac{\\sin 2x}{3x}\\sec x\n=\n\\frac{2}{3}\\cdot 1\\cdot 1\n=\n\\frac{2}{3}.\n\\]",
+      "hint": "Separate the constant factor and use \\(\\lim_{u\\to 0}\\frac{\\sin u}{u}=1\\)."
+    },
+    {
+      "id": "math-gaokao-271-q008",
+      "category": "Calculus",
+      "concept": "Negative Cosine Limit",
+      "learningObjective": "Evaluate a limit involving \\(\\cos(ax)-1\\) over \\(x\\sin(bx)\\) with correct sign.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Evaluate \\(\\lim_{x\\to 0}\\frac{\\cos 3x-1}{x\\sin 2x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{9}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\frac{9}{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use the standard approximations\n\\[\n1-\\cos u\\sim \\frac{u^2}{2},\n\\qquad\n\\sin u\\sim u\n\\]\nas \\(u\\to 0\\). Therefore,\n\\[\n\\cos 3x-1=-(1-\\cos 3x)\\sim -\\frac{(3x)^2}{2}=-\\frac{9x^2}{2}.\n\\]\nAlso,\n\\[\nx\\sin 2x\\sim x\\cdot 2x=2x^2.\n\\]\nThus\n\\[\n\\frac{\\cos 3x-1}{x\\sin 2x}\n\\sim\n\\frac{-\\frac{9x^2}{2}}{2x^2}\n=\n-\\frac{9}{4}.\n\\]",
+      "hint": "Use \\(1-\\cos u\\sim \\frac{u^2}{2}\\) and keep the negative sign from \\(\\cos 3x-1\\)."
+    },
+    {
+      "id": "math-gaokao-271-q009",
+      "category": "Calculus",
+      "concept": "Parameter from a Trigonometric Limit",
+      "learningObjective": "Determine a parameter so that a trigonometric limit has a prescribed value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "If \\(\\lim_{x\\to 0}\\frac{\\sin 3x}{kx}=2\\), find the value of \\(k\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rewrite the limit as\n\\[\n\\lim_{x\\to 0}\\frac{\\sin 3x}{kx}\n=\n\\frac{3}{k}\\lim_{x\\to 0}\\frac{\\sin 3x}{3x}.\n\\]\nSince \\(\\lim_{x\\to 0}\\frac{\\sin 3x}{3x}=1\\), we obtain\n\\[\n\\frac{3}{k}=2.\n\\]\nSolving gives\n\\[\nk=\\frac{3}{2}.\n\\]",
+      "hint": "Rewrite \\(\\frac{\\sin 3x}{kx}\\) using the standard form \\(\\frac{\\sin 3x}{3x}\\)."
+    },
+    {
+      "id": "math-gaokao-271-q010",
+      "category": "Calculus",
+      "concept": "Higher-Order Trigonometric Limit",
+      "learningObjective": "Evaluate a trigonometric limit involving \\(\\tan x-\\sin x\\) over \\(x^3\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Evaluate \\(\\lim_{x\\to 0}\\frac{\\tan x-\\sin x}{x^3}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor the numerator:\n\\[\n\\tan x-\\sin x\n=\n\\sin x\\left(\\frac{1}{\\cos x}-1\\right)\n=\n\\sin x\\cdot \\frac{1-\\cos x}{\\cos x}.\n\\]\nTherefore,\n\\[\n\\frac{\\tan x-\\sin x}{x^3}\n=\n\\frac{\\sin x}{x}\\cdot \\frac{1-\\cos x}{x^2}\\cdot \\frac{1}{\\cos x}.\n\\]\nAs \\(x\\to 0\\),\n\\[\n\\frac{\\sin x}{x}\\to 1,\n\\qquad\n\\frac{1-\\cos x}{x^2}\\to \\frac{1}{2},\n\\qquad\n\\frac{1}{\\cos x}\\to 1.\n\\]\nHence the limit is\n\\[\n1\\cdot \\frac{1}{2}\\cdot 1=\\frac{1}{2}.\n\\]",
+      "hint": "Factor \\(\\sin x\\) from \\(\\tan x-\\sin x\\), then use the standard limits for \\(\\frac{\\sin x}{x}\\) and \\(\\frac{1-\\cos x}{x^2}\\)."
+    }
+  ]
+}

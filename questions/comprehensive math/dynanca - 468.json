@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-468",
+  "category": "Comprehensive Mathematics",
+  "title": "468. Sets, Logic, Reasoning & Proof: Subsets",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-468-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of a subset",
+      "learningObjective": "State the definition of a subset.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What does \\(A\\subseteq B\\) mean?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Every element of \\(A\\) is also an element of \\(B\\)."
+        },
+        {
+          "label": "B",
+          "text": "At least one element of \\(A\\) is also an element of \\(B\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "By definition, \\(A\\subseteq B\\) holds when each element of \\(A\\) belongs to \\(B\\). Sharing only some elements is not enough: \\(\\{1,4\\}\\) and \\(\\{1,2,3\\}\\) share the element \\(1\\), but \\(\\{1,4\\}\\) is not a subset of \\(\\{1,2,3\\}\\).",
+      "hint": "Test the candidate definitions on \\(\\{1,4\\}\\) and \\(\\{1,2,3\\}\\)."
+    },
+    {
+      "id": "dynanca-468-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Recognising a subset",
+      "learningObjective": "Decide which set is a subset of a given set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Which set is a subset of \\(\\{1,2,3\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1,2\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,4\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both elements of \\(\\{1,2\\}\\) belong to \\(\\{1,2,3\\}\\), so it is a subset. The set \\(\\{1,4\\}\\) contains \\(4\\), which is not in \\(\\{1,2,3\\}\\), so it is not a subset.",
+      "hint": "Check every element of the candidate set against the larger set."
+    },
+    {
+      "id": "dynanca-468-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Number of subsets",
+      "learningObjective": "Count all subsets of a three-element set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many subsets does the set \\(\\{a,b,c\\}\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For each of the \\(3\\) elements there are two choices: in the subset or not. This gives \\(2^3=8\\) subsets: \\(\\varnothing\\), \\(\\{a\\}\\), \\(\\{b\\}\\), \\(\\{c\\}\\), \\(\\{a,b\\}\\), \\(\\{a,c\\}\\), \\(\\{b,c\\}\\), and \\(\\{a,b,c\\}\\). The value \\(6=2\\cdot 3\\) uses multiplication instead of a power.",
+      "hint": "Each element is either included or excluded; multiply the numbers of choices."
+    },
+    {
+      "id": "dynanca-468-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The empty set as a subset",
+      "learningObjective": "Recognise that the empty set is a subset of every set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For which sets \\(A\\) is \\(\\varnothing\\subseteq A\\) true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "For every set \\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "Only when \\(A\\) is itself empty"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement \\(\\varnothing\\subseteq A\\) says that every element of \\(\\varnothing\\) is in \\(A\\). Since \\(\\varnothing\\) has no elements, there is no element that could fail this condition, so the statement is true for every set \\(A\\).",
+      "hint": "To show that a set is not a subset, an element outside the larger set is needed; ask whether one exists here."
+    },
+    {
+      "id": "dynanca-468-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A set as a subset of itself",
+      "learningObjective": "Recognise that every set is a subset of itself.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Is the statement \\(A\\subseteq A\\) true for every set \\(A\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because every element of \\(A\\) is an element of \\(A\\)."
+        },
+        {
+          "label": "B",
+          "text": "No, because a subset must be smaller than the original set."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The definition of \\(\\subseteq\\) only requires each element of the first set to be in the second, which certainly holds when the two sets are the same. The symbol \\(\\subseteq\\) allows equality; a subset that must be different from the original set is called a proper subset.",
+      "hint": "Apply the definition of subset directly with both sets equal to \\(A\\)."
+    },
+    {
+      "id": "dynanca-468-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Subsets among number systems",
+      "learningObjective": "Order the standard number sets by inclusion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\mathbb{Q}\\subseteq\\mathbb{Z}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\mathbb{Z}\\subseteq\\mathbb{Q}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every integer \\(n\\) can be written as the fraction \\(\\frac{n}{1}\\), so every integer is a rational number and \\(\\mathbb{Z}\\subseteq\\mathbb{Q}\\). The reverse fails: \\(\\frac{1}{2}\\) is rational but not an integer.",
+      "hint": "Find a rational number that is not an integer."
+    },
+    {
+      "id": "dynanca-468-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Subset versus element",
+      "learningObjective": "Use the subset symbol with sets rather than with elements.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(A=\\{1,2,3\\}\\). Which statement about the set \\(\\{1\\}\\) is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1\\}\\in A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1\\}\\subseteq A\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The set \\(\\{1\\}\\) has the single element \\(1\\), and \\(1\\in A\\), so \\(\\{1\\}\\subseteq A\\). However, \\(\\{1\\}\\) is not one of the elements \\(1,2,3\\) of \\(A\\), so \\(\\{1\\}\\in A\\) is false. The subset relation compares two sets; membership relates an object to a set.",
+      "hint": "Decide whether the statement compares two sets or asks whether an object is listed in \\(A\\)."
+    },
+    {
+      "id": "dynanca-468-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Listing all subsets",
+      "learningObjective": "List every subset of a two-element set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which list contains all the subsets of \\(\\{a,b\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{a\\},\\ \\{b\\},\\ \\{a,b\\}\\) only"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing,\\ \\{a\\},\\ \\{b\\},\\ \\{a,b\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A set with \\(2\\) elements has \\(2^2=4\\) subsets. Besides \\(\\{a\\}\\), \\(\\{b\\}\\), and \\(\\{a,b\\}\\), the empty set is also a subset, because it is a subset of every set. Omitting \\(\\varnothing\\) leaves only \\(3\\) of the \\(4\\) subsets.",
+      "hint": "Compare the number of sets in the list with \\(2^n\\)."
+    },
+    {
+      "id": "dynanca-468-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Transitivity of inclusion",
+      "learningObjective": "Combine two subset relations.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Suppose \\(A\\subseteq B\\) and \\(B\\subseteq C\\). Which conclusion always follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(C\\subseteq A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\subseteq C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Take any element \\(x\\in A\\). Since \\(A\\subseteq B\\), \\(x\\in B\\); since \\(B\\subseteq C\\), \\(x\\in C\\). Hence every element of \\(A\\) is in \\(C\\), that is, \\(A\\subseteq C\\). The reverse inclusion can fail: for \\(A=\\{1\\}\\), \\(B=\\{1,2\\}\\), \\(C=\\{1,2,3\\}\\), the element \\(3\\) is in \\(C\\) but not in \\(A\\).",
+      "hint": "Follow a single element of \\(A\\) through the two inclusions."
+    },
+    {
+      "id": "dynanca-468-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Inclusion between sets of multiples",
+      "learningObjective": "Decide the inclusion between two sets of multiples.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(A\\) be the set of all integer multiples of \\(6\\), and let \\(B\\) be the set of all integer multiples of \\(3\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(B\\subseteq A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\subseteq B\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every multiple of \\(6\\) has the form \\(6k=3(2k)\\), so it is also a multiple of \\(3\\). Hence \\(A\\subseteq B\\). The reverse fails: \\(3\\) is a multiple of \\(3\\) but not a multiple of \\(6\\), so \\(B\\) is not a subset of \\(A\\).",
+      "hint": "Write a general element of \\(A\\) and check whether it has the form required for \\(B\\)."
+    }
+  ]
+}

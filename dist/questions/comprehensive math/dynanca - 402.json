@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-402",
+  "category": "Comprehensive Mathematics",
+  "title": "402. Geometry, Spatial Thinking & Measurement: Two-Dimensional Rotation Matrices",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-402-q001",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Standard counterclockwise rotation matrix",
+      "learningObjective": "Identify the matrix of a counterclockwise rotation about the origin for a standard angle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Points are written as column vectors, and \\(R(\\theta)\\) denotes counterclockwise rotation about the origin by \\(\\theta\\). Which matrix is \\(R(90^\\circ)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix}0&-1\\\\1&0\\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The rotation matrix is \\(R(\\theta)=\\begin{pmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{pmatrix}\\). With \\(\\cos 90^\\circ=0\\) and \\(\\sin 90^\\circ=1\\), the first row is \\((0,-1)\\) and the second row is \\((1,0)\\). As a check, this matrix sends \\((1,0)\\) to \\((0,1)\\), a quarter turn counterclockwise.",
+      "hint": "Recall the general form of \\(R(\\theta)\\) and substitute the sine and cosine of the angle."
+    },
+    {
+      "id": "dynanca-402-q002",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Rotating a point on an axis",
+      "learningObjective": "Apply a rotation matrix to a point on a coordinate axis.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The point \\((2,0)\\) is rotated counterclockwise about the origin by \\(90^\\circ\\). What is its image?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0,-2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,2)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiply by the rotation matrix: \\(\\begin{pmatrix}0&-1\\\\1&0\\end{pmatrix}\\begin{pmatrix}2\\\\0\\end{pmatrix}=\\begin{pmatrix}0\\\\2\\end{pmatrix}\\). A counterclockwise quarter turn carries the positive \\(x\\)-axis to the positive \\(y\\)-axis.",
+      "hint": "Multiply the rotation matrix for a quarter turn by the column vector of the point."
+    },
+    {
+      "id": "dynanca-402-q003",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Rotation by forty-five degrees",
+      "learningObjective": "Compute the image of a point under a rotation whose matrix has irrational entries.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The point \\((1,1)\\) is rotated counterclockwise about the origin by \\(45^\\circ\\). What is its image?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left(\\sqrt{2},0\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\left(0,\\sqrt{2}\\right)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Here \\(\\cos 45^\\circ=\\sin 45^\\circ=\\frac{\\sqrt{2}}{2}\\). The image is \\(\\left(\\frac{\\sqrt{2}}{2}\\cdot 1-\\frac{\\sqrt{2}}{2}\\cdot 1,\\ \\frac{\\sqrt{2}}{2}\\cdot 1+\\frac{\\sqrt{2}}{2}\\cdot 1\\right)=\\left(0,\\sqrt{2}\\right)\\). This agrees with geometry: \\((1,1)\\) is at angle \\(45^\\circ\\) and distance \\(\\sqrt{2}\\) from the origin, so it moves to angle \\(90^\\circ\\).",
+      "hint": "Use \\(x'=x\\cos\\theta-y\\sin\\theta\\) and \\(y'=x\\sin\\theta+y\\cos\\theta\\)."
+    },
+    {
+      "id": "dynanca-402-q004",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Quarter-turn image of a general point",
+      "learningObjective": "Apply the quarter-turn rotation rule to a point not on an axis.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The point \\((2,4)\\) is rotated counterclockwise about the origin by \\(90^\\circ\\). What is its image?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((4,-2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-4,2)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The matrix \\(R(90^\\circ)\\) sends \\((x,y)\\) to \\((-y,x)\\). Therefore \\((2,4)\\) is sent to \\((-4,2)\\). The image is in the second quadrant, as expected for a counterclockwise quarter turn of a first-quadrant point.",
+      "hint": "Work out what \\(R(90^\\circ)\\) does to a general column vector \\((x,y)\\)."
+    },
+    {
+      "id": "dynanca-402-q005",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Determinant of a rotation matrix",
+      "learningObjective": "Evaluate the determinant of the general rotation matrix.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "For the rotation matrix \\(R(\\theta)=\\begin{pmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{pmatrix}\\), what is \\(\\det R(\\theta)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\cos^2\\theta-\\sin^2\\theta=\\cos 2\\theta\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\cos^2\\theta+\\sin^2\\theta=1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The determinant is \\((\\cos\\theta)(\\cos\\theta)-(-\\sin\\theta)(\\sin\\theta)=\\cos^2\\theta+\\sin^2\\theta=1\\). The value \\(1\\) reflects that a rotation preserves both area and orientation.",
+      "hint": "Use \\(ad-bc\\) for a two-by-two matrix and watch the sign of the off-diagonal product."
+    },
+    {
+      "id": "dynanca-402-q006",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Inverse of a rotation matrix",
+      "learningObjective": "Relate the inverse of a rotation matrix to its transpose.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which matrix equals the inverse of the rotation matrix \\(R(\\theta)\\) for every angle \\(\\theta\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The transpose \\(R(\\theta)^{T}\\)"
+        },
+        {
+          "label": "B",
+          "text": "The negative \\(-R(\\theta)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Undoing a rotation by \\(\\theta\\) is a rotation by \\(-\\theta\\). Since \\(\\cos(-\\theta)=\\cos\\theta\\) and \\(\\sin(-\\theta)=-\\sin\\theta\\), \\(R(-\\theta)=\\begin{pmatrix}\\cos\\theta&\\sin\\theta\\\\-\\sin\\theta&\\cos\\theta\\end{pmatrix}=R(\\theta)^{T}\\). In contrast, \\(-R(\\theta)\\) is a rotation by \\(\\theta+180^\\circ\\), which does not undo \\(R(\\theta)\\).",
+      "hint": "The inverse rotation turns by the opposite angle; write that matrix and compare it with \\(R(\\theta)\\)."
+    },
+    {
+      "id": "dynanca-402-q007",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Powers of a rotation matrix",
+      "learningObjective": "Use angle addition to find an entry of the square of a rotation matrix.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(R=R(60^\\circ)\\) be the counterclockwise rotation matrix for \\(60^\\circ\\). What is the top-left entry of \\(R^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{4}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Applying a \\(60^\\circ\\) rotation twice gives a \\(120^\\circ\\) rotation, so \\(R^2=R(120^\\circ)\\). Its top-left entry is \\(\\cos 120^\\circ=-\\frac{1}{2}\\). Squaring the single entry \\(\\cos 60^\\circ=\\frac{1}{2}\\) is not matrix multiplication and gives the wrong value.",
+      "hint": "Composing two rotations adds their angles; identify the angle of \\(R^2\\) first."
+    },
+    {
+      "id": "dynanca-402-q008",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Reading the angle from a rotation matrix",
+      "learningObjective": "Determine the rotation angle from the entries of a rotation matrix.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The matrix \\(\\begin{pmatrix}\\frac{1}{2}&-\\frac{\\sqrt{3}}{2}\\\\\\frac{\\sqrt{3}}{2}&\\frac{1}{2}\\end{pmatrix}\\) is a counterclockwise rotation about the origin. What is the angle of rotation, taken between \\(0^\\circ\\) and \\(90^\\circ\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(30^\\circ\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Comparing with \\(R(\\theta)\\), \\(\\cos\\theta=\\frac{1}{2}\\) and \\(\\sin\\theta=\\frac{\\sqrt{3}}{2}\\). The acute angle with these values is \\(\\theta=60^\\circ\\). For \\(30^\\circ\\) the values of sine and cosine would be exchanged.",
+      "hint": "The top-left entry is \\(\\cos\\theta\\) and the bottom-left entry is \\(\\sin\\theta\\)."
+    },
+    {
+      "id": "dynanca-402-q009",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Clockwise rotation",
+      "learningObjective": "Rotate a point clockwise by using the matrix of a negative angle.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "The point \\((0,2)\\) is rotated clockwise about the origin by \\(90^\\circ\\). What is its image?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-2,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,0)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A clockwise rotation by \\(90^\\circ\\) is \\(R(-90^\\circ)=\\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}\\). Then \\(\\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}\\begin{pmatrix}0\\\\2\\end{pmatrix}=\\begin{pmatrix}2\\\\0\\end{pmatrix}\\). A clockwise quarter turn carries the positive \\(y\\)-axis to the positive \\(x\\)-axis.",
+      "hint": "A clockwise rotation by \\(\\theta\\) is a counterclockwise rotation by \\(-\\theta\\)."
+    },
+    {
+      "id": "dynanca-402-q010",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Order of a rotation",
+      "learningObjective": "Find the smallest power of a rotation matrix that equals the identity.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(R=R(45^\\circ)\\) be the counterclockwise rotation matrix for \\(45^\\circ\\). What is the smallest positive integer \\(n\\) such that \\(R^n\\) is the identity matrix?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n=8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The matrix \\(R^n\\) is the rotation by \\(45^\\circ n\\). It is the identity exactly when \\(45^\\circ n\\) is a multiple of \\(360^\\circ\\), and the smallest such positive \\(n\\) is \\(\\frac{360}{45}=8\\). For \\(n=4\\) the rotation is \\(180^\\circ\\), whose matrix is the negative of the identity.",
+      "hint": "Find the total angle of \\(R^n\\) and ask when it is a whole number of full turns."
+    }
+  ]
+}

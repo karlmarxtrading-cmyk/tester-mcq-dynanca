@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-209",
+  "category": "Comprehensive Mathematics",
+  "title": "209. Algebra, Equations & Inequalities: Solving Cubic Equations with Known Rational Roots",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-209-q001",
+      "category": "Algebra",
+      "concept": "Solving cubic equations with integer roots",
+      "learningObjective": "Solve a cubic equation by finding one rational root and factoring.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x^3-6x^2+11x-6=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1,2,3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-1,-2,-3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Test \\(x=1\\): \\(1-6+11-6=0\\), so \\(x=1\\) is a root. Divide by \\(x-1\\) to get\n\\[\nx^3-6x^2+11x-6=(x-1)(x^2-5x+6)\n\\]\nFactor the quadratic: \\(x^2-5x+6=(x-2)(x-3)\\). Therefore the roots are \\(x=1,2,3\\).",
+      "hint": "Test small integer values that divide the constant term, then factor out the corresponding linear factor."
+    },
+    {
+      "id": "dynanca-209-q002",
+      "category": "Algebra",
+      "concept": "Solving cubic equations using a known rational root",
+      "learningObjective": "Solve a cubic equation by using a rational root and factoring the remaining quadratic.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x^3+2x^2-5x-6=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-3,-1,2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-2,1,3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Test \\(x=2\\): \\(8+8-10-6=0\\), so \\(x=2\\) is a root. Divide by \\(x-2\\):\n\\[\nx^3+2x^2-5x-6=(x-2)(x^2+4x+3)\n\\]\nFactor \\(x^2+4x+3=(x+1)(x+3)\\). Therefore the roots are \\(x=-3,-1,2\\).",
+      "hint": "Find one integer root by testing divisors of the constant term, then factor the cubic completely."
+    },
+    {
+      "id": "dynanca-209-q003",
+      "category": "Algebra",
+      "concept": "Solving cubic equations by factoring with grouping",
+      "learningObjective": "Solve a cubic equation by factoring with grouping and identifying all roots.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x^3-3x^2-4x+12=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-3,-2,2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-2,2,3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Group the terms, then use \\(x^2-4=(x-2)(x+2)\\):\n\\[\n\\begin{aligned}\nx^3-3x^2-4x+12 &= x^2(x-3)-4(x-3)\\\\\n&= (x-3)(x^2-4)\\\\\n&= (x-3)(x-2)(x+2)\n\\end{aligned}\n\\]\nso the roots are \\(x=-2,2,3\\).",
+      "hint": "Group the first two terms and the last two terms, then factor out the common binomial factor."
+    },
+    {
+      "id": "dynanca-209-q004",
+      "category": "Algebra",
+      "concept": "Solving cubic equations by factoring with grouping",
+      "learningObjective": "Solve a cubic equation by grouping and factoring a difference of squares.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x^3+x^2-4x-4=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-2,-1,2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-2,1,2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Group the terms, then use \\(x^2-4=(x-2)(x+2)\\):\n\\[\n\\begin{aligned}\nx^3+x^2-4x-4 &= x^2(x+1)-4(x+1)\\\\\n&= (x+1)(x^2-4)\\\\\n&= (x+1)(x-2)(x+2)\n\\end{aligned}\n\\]\nTherefore the roots are \\(x=-2,-1,2\\).",
+      "hint": "Group pairs of terms and factor out the common factor \\(x+1\\)."
+    },
+    {
+      "id": "dynanca-209-q005",
+      "category": "Algebra",
+      "concept": "Solving cubic equations with a missing quadratic term",
+      "learningObjective": "Solve a cubic equation by finding a rational root and factoring the remaining quadratic.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(x^3-7x+6=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-2,-1,3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-3,1,2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Test \\(x=1\\): \\(1-7+6=0\\), so \\(x=1\\) is a root. Divide by \\(x-1\\):\n\\[\nx^3-7x+6=(x-1)(x^2+x-6)\n\\]\nFactor \\(x^2+x-6=(x+3)(x-2)\\). Therefore the roots are \\(x=-3,1,2\\).",
+      "hint": "Find one root by testing small integers, then divide to obtain a quadratic factor."
+    },
+    {
+      "id": "dynanca-209-q006",
+      "category": "Algebra",
+      "concept": "Solving cubic equations with a rational root not equal to an integer",
+      "learningObjective": "Solve a cubic equation whose rational root is a fraction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(2x^3-3x^2-8x+12=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-2,\\frac{3}{2},2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-2,-\\frac{3}{2},2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Group the terms:\n\\[\n2x^3-3x^2-8x+12=x^2(2x-3)-4(2x-3)=(2x-3)(x^2-4)\n\\]\nSince \\(x^2-4=(x-2)(x+2)\\), the roots satisfy \\(2x-3=0\\), \\(x-2=0\\), or \\(x+2=0\\). Therefore the roots are \\(x=-2,\\frac{3}{2},2\\).",
+      "hint": "Group the terms to expose the common factor \\(2x-3\\), then solve each linear factor."
+    },
+    {
+      "id": "dynanca-209-q007",
+      "category": "Algebra",
+      "concept": "Solving cubic equations with a fractional rational root",
+      "learningObjective": "Solve a cubic equation by grouping and using a linear factor with a fractional root.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(3x^3+2x^2-12x-8=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-2,\\frac{2}{3},2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-2,-\\frac{2}{3},2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Group the terms:\n\\[\n3x^3+2x^2-12x-8=x^2(3x+2)-4(3x+2)=(3x+2)(x^2-4)\n\\]\nThen \\(x^2-4=(x-2)(x+2)\\). The roots come from \\(3x+2=0\\), \\(x-2=0\\), and \\(x+2=0\\), giving \\(x=-2,-\\frac{2}{3},2\\).",
+      "hint": "Group the terms so that \\(3x+2\\) appears as a common factor."
+    },
+    {
+      "id": "dynanca-209-q008",
+      "category": "Algebra",
+      "concept": "Solving cubic equations using a known rational root",
+      "learningObjective": "Solve a cubic equation by finding an integer root and factoring the remaining quadratic.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x^3-2x^2-5x+6=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-2,1,3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-3,-1,2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Test \\(x=1\\): \\(1-2-5+6=0\\), so \\(x=1\\) is a root. Divide by \\(x-1\\):\n\\[\nx^3-2x^2-5x+6=(x-1)(x^2-x-6)\n\\]\nFactor \\(x^2-x-6=(x-3)(x+2)\\). Therefore the roots are \\(x=-2,1,3\\).",
+      "hint": "Find one integer root by testing divisors of \\(6\\), then factor the resulting quadratic."
+    },
+    {
+      "id": "dynanca-209-q009",
+      "category": "Algebra",
+      "concept": "Solving cubic equations with a known rational root and a quadratic factor",
+      "learningObjective": "Solve a cubic equation by using a rational root to factor the cubic completely.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^3-6x^2+5x+12=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-1,3,4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1,-3,-4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Test \\(x=3\\): \\(27-54+15+12=0\\), so \\(x=3\\) is a root. Divide by \\(x-3\\):\n\\[\nx^3-6x^2+5x+12=(x-3)(x^2-3x-4)\n\\]\nFactor \\(x^2-3x-4=(x-4)(x+1)\\). Therefore the roots are \\(x=-1,3,4\\).",
+      "hint": "Find one rational root by testing divisors of \\(12\\), then factor the remaining quadratic."
+    },
+    {
+      "id": "dynanca-209-q010",
+      "category": "Algebra",
+      "concept": "Solving cubic equations with a fractional rational root and a negative integer root",
+      "learningObjective": "Solve a cubic equation by factoring out a linear factor and solving the remaining quadratic.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(2x^3+x^2-13x+6=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-3,-\\frac{1}{2},2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-3,\\frac{1}{2},2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Test \\(x=2\\): \\(16+4-26+6=0\\), so \\(x=2\\) is a root. Divide by \\(x-2\\):\n\\[\n2x^3+x^2-13x+6=(x-2)(2x^2+5x-3)\n\\]\nFactor \\(2x^2+5x-3=(2x-1)(x+3)\\). Therefore the roots are \\(x=-3,\\frac{1}{2},2\\).",
+      "hint": "Find one rational root, then factor the remaining quadratic and solve each linear factor."
+    }
+  ]
+}

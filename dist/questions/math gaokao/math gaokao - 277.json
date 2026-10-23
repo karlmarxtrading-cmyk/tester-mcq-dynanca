@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-277",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 277",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-277-q001",
+      "category": "Calculus",
+      "concept": "Removable Discontinuity of a Rational Function",
+      "learningObjective": "Determine the value at a point that removes a removable discontinuity of a rational function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(f(x)=\\frac{x^2-4}{x-2}\\) for \\(x\\neq 2\\), and let \\(f(2)=0\\). What value should be assigned to \\(f(2)\\) to remove the discontinuity at \\(x=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(x\\neq 2\\),\n\\[\n\\frac{x^2-4}{x-2}=\\frac{(x-2)(x+2)}{x-2}=x+2.\n\\]\nTherefore,\n\\[\n\\lim_{x\\to 2}\\frac{x^2-4}{x-2}=\\lim_{x\\to 2}(x+2)=4.\n\\]\nTo remove the discontinuity, we must set \\(f(2)\\) equal to this limit, so \\(f(2)=4\\).",
+      "hint": "Factor the numerator and simplify the quotient for \\(x\\neq 2\\), then evaluate the limit at \\(x=2\\)."
+    },
+    {
+      "id": "math-gaokao-277-q002",
+      "category": "Calculus",
+      "concept": "Classification of a Discontinuity",
+      "learningObjective": "Identify whether a given discontinuity is removable or a jump discontinuity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(f(x)=\\frac{x^2-9}{x-3}\\) for \\(x\\neq 3\\), and let \\(f(3)=5\\). The discontinuity at \\(x=3\\) is",
+      "options": [
+        {
+          "label": "A",
+          "text": "a jump discontinuity"
+        },
+        {
+          "label": "B",
+          "text": "a removable discontinuity"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(x\\neq 3\\),\n\\[\n\\frac{x^2-9}{x-3}=\\frac{(x-3)(x+3)}{x-3}=x+3.\n\\]\nThus,\n\\[\n\\lim_{x\\to 3}\\frac{x^2-9}{x-3}=3+3=6.\n\\]\nThe limit exists, but \\(f(3)=5\\neq 6\\). Since the limit exists and the discontinuity can be removed by redefining \\(f(3)\\), the discontinuity is removable.",
+      "hint": "Compute the limit at \\(x=3\\) and compare it with the assigned function value."
+    },
+    {
+      "id": "math-gaokao-277-q003",
+      "category": "Calculus",
+      "concept": "Removable Discontinuity by Factoring",
+      "learningObjective": "Find the continuous extension value for a rational function with a common factor.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(f(x)=\\frac{x^2-1}{x-1}\\) for \\(x\\neq 1\\), and let \\(f(1)=3\\). To remove the discontinuity at \\(x=1\\), what should \\(f(1)\\) be?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(x\\neq 1\\),\n\\[\n\\frac{x^2-1}{x-1}=\\frac{(x-1)(x+1)}{x-1}=x+1.\n\\]\nTherefore,\n\\[\n\\lim_{x\\to 1}\\frac{x^2-1}{x-1}=1+1=2.\n\\]\nTo remove the discontinuity, set \\(f(1)=2\\).",
+      "hint": "Factor \\(x^2-1\\) and cancel the common factor with the denominator."
+    },
+    {
+      "id": "math-gaokao-277-q004",
+      "category": "Calculus",
+      "concept": "Removable Discontinuity with Quadratic Numerator",
+      "learningObjective": "Evaluate the limit after factoring to remove a discontinuity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(f(x)=\\frac{x^2-5x+6}{x-2}\\) for \\(x\\neq 2\\), and let \\(f(2)=1\\). What value of \\(f(2)\\) removes the discontinuity at \\(x=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor the numerator:\n\\[\nx^2-5x+6=(x-2)(x-3).\n\\]\nFor \\(x\\neq 2\\),\n\\[\n\\frac{x^2-5x+6}{x-2}=\\frac{(x-2)(x-3)}{x-2}=x-3.\n\\]\nThus,\n\\[\n\\lim_{x\\to 2}\\frac{x^2-5x+6}{x-2}=2-3=-1.\n\\]\nTherefore, setting \\(f(2)=-1\\) removes the discontinuity.",
+      "hint": "Factor the quadratic numerator and cancel the common factor \\(x-2\\)."
+    },
+    {
+      "id": "math-gaokao-277-q005",
+      "category": "Calculus",
+      "concept": "Removable Discontinuity of a Trigonometric Function",
+      "learningObjective": "Use the standard limit \\(\\frac{\\sin x}{x}\\) to remove a discontinuity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=\\frac{\\sin x}{x}\\) for \\(x\\neq 0\\), and let \\(f(0)=0\\). Which value at \\(x=0\\) makes \\(f\\) continuous at \\(x=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The standard trigonometric limit is\n\\[\n\\lim_{x\\to 0}\\frac{\\sin x}{x}=1.\n\\]\nFor \\(f\\) to be continuous at \\(x=0\\), we need\n\\[\nf(0)=\\lim_{x\\to 0}f(x)=1.\n\\]\nThus, \\(f(0)=1\\) removes the discontinuity.",
+      "hint": "Recall the standard limit of \\(\\frac{\\sin x}{x}\\) as \\(x\\to 0\\)."
+    },
+    {
+      "id": "math-gaokao-277-q006",
+      "category": "Calculus",
+      "concept": "Removable Discontinuity Involving \\(1-\\cos x\\)",
+      "learningObjective": "Use the standard limit \\(\\frac{1-\\cos x}{x^2}\\) to determine the continuous value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=\\frac{1-\\cos x}{x^2}\\) for \\(x\\neq 0\\), and let \\(f(0)=0\\). Which value at \\(x=0\\) removes the discontinuity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The standard limit is\n\\[\n\\lim_{x\\to 0}\\frac{1-\\cos x}{x^2}=\\frac{1}{2}.\n\\]\nFor continuity at \\(x=0\\), we must have\n\\[\nf(0)=\\lim_{x\\to 0}f(x)=\\frac{1}{2}.\n\\]\nTherefore, \\(f(0)=\\frac{1}{2}\\) removes the discontinuity.",
+      "hint": "Recall the standard limit involving \\(1-\\cos x\\) and \\(x^2\\) as \\(x\\to 0\\)."
+    },
+    {
+      "id": "math-gaokao-277-q007",
+      "category": "Calculus",
+      "concept": "Parameter for Removing a Discontinuity",
+      "learningObjective": "Determine a parameter that makes a rational piecewise function continuous at a removable discontinuity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(f(x)=\\frac{x^2-7x+12}{x-3}\\) for \\(x\\neq 3\\), and let \\(f(3)=a\\). Find \\(a\\) so that \\(f\\) is continuous at \\(x=3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor the numerator:\n\\[\nx^2-7x+12=(x-3)(x-4).\n\\]\nFor \\(x\\neq 3\\),\n\\[\n\\frac{x^2-7x+12}{x-3}=\\frac{(x-3)(x-4)}{x-3}=x-4.\n\\]\nTherefore,\n\\[\n\\lim_{x\\to 3}\\frac{x^2-7x+12}{x-3}=3-4=-1.\n\\]\nFor continuity, we need \\(a=-1\\).",
+      "hint": "Factor the numerator, cancel the common factor, and evaluate the limit at \\(x=3\\)."
+    },
+    {
+      "id": "math-gaokao-277-q008",
+      "category": "Calculus",
+      "concept": "Removable Discontinuity of a Cubic Rational Function",
+      "learningObjective": "Evaluate the limit of a cubic difference quotient to remove a discontinuity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(f(x)=\\frac{x^3-8}{x-2}\\) for \\(x\\neq 2\\), and let \\(f(2)=0\\). What value at \\(x=2\\) removes the discontinuity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the factorization of a difference of cubes:\n\\[\nx^3-8=(x-2)(x^2+2x+4).\n\\]\nFor \\(x\\neq 2\\),\n\\[\n\\frac{x^3-8}{x-2}=x^2+2x+4.\n\\]\nThus,\n\\[\n\\lim_{x\\to 2}\\frac{x^3-8}{x-2}=2^2+2(2)+4=4+4+4=12.\n\\]\nTherefore, setting \\(f(2)=12\\) removes the discontinuity.",
+      "hint": "Factor \\(x^3-8\\) as a difference of cubes and cancel \\(x-2\\)."
+    },
+    {
+      "id": "math-gaokao-277-q009",
+      "category": "Calculus",
+      "concept": "Removable Discontinuity of an Exponential Expression",
+      "learningObjective": "Use the standard exponential limit to remove a discontinuity.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(f(x)=\\frac{e^x-1}{x}\\) for \\(x\\neq 0\\), and let \\(f(0)=2\\). Which value at \\(x=0\\) removes the discontinuity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The standard exponential limit is\n\\[\n\\lim_{x\\to 0}\\frac{e^x-1}{x}=1.\n\\]\nFor continuity at \\(x=0\\), we need\n\\[\nf(0)=\\lim_{x\\to 0}\\frac{e^x-1}{x}=1.\n\\]\nTherefore, \\(f(0)=1\\) removes the discontinuity.",
+      "hint": "Recall the standard limit \\(\\lim_{x\\to 0}\\frac{e^x-1}{x}=1\\)."
+    },
+    {
+      "id": "math-gaokao-277-q010",
+      "category": "Calculus",
+      "concept": "Removable Discontinuity of a Rational Function with Linear Cancellation",
+      "learningObjective": "Find the continuous extension value after canceling a linear factor.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(f(x)=\\frac{x^2+2x-3}{x-1}\\) for \\(x\\neq 1\\), and let \\(f(1)=5\\). What value of \\(f(1)\\) removes the discontinuity at \\(x=1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor the numerator:\n\\[\nx^2+2x-3=(x-1)(x+3).\n\\]\nFor \\(x\\neq 1\\),\n\\[\n\\frac{x^2+2x-3}{x-1}=\\frac{(x-1)(x+3)}{x-1}=x+3.\n\\]\nThus,\n\\[\n\\lim_{x\\to 1}\\frac{x^2+2x-3}{x-1}=1+3=4.\n\\]\nTherefore, setting \\(f(1)=4\\) removes the discontinuity.",
+      "hint": "Factor the quadratic numerator and cancel the common factor \\(x-1\\)."
+    }
+  ]
+}

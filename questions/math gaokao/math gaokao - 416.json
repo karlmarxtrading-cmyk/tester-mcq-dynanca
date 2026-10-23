@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-416",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 416",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-416-q001",
+      "category": "Mathematical Modeling",
+      "concept": "Interpreting the Slope of a Linear Cost Model",
+      "learningObjective": "Interpret the coefficient of the independent variable as a per-unit rate in a linear model.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A taxi fare model is \\(C(d)=5+2.4d\\), where \\(C\\) is the fare in yuan and \\(d\\) is the distance in kilometers. What does the parameter \\(2.4\\) represent in this model?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The fare increases by \\(2.4\\text{ yuan}\\) for each additional kilometer."
+        },
+        {
+          "label": "B",
+          "text": "The fixed starting fare is \\(2.4\\text{ yuan}\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "In the linear model \\(C(d)=5+2.4d\\), the constant term \\(5\\) is the fixed starting fare. The coefficient \\(2.4\\) multiplies the distance \\(d\\). Therefore, when \\(d\\) increases by \\(1\\) kilometer, the fare \\(C\\) increases by \\(2.4\\text{ yuan}\\). Hence \\(2.4\\) is the per-kilometer rate, not the fixed starting fare.",
+      "hint": "Compare the roles of the constant term and the coefficient of the variable in a linear model."
+    },
+    {
+      "id": "math-gaokao-416-q002",
+      "category": "Mathematical Modeling",
+      "concept": "Interpreting the Constant Term in a Linear Population Model",
+      "learningObjective": "Interpret the constant term of a linear model as the initial value of the modeled quantity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A wildlife population is modeled by \\(P(t)=1200-15t\\), where \\(t\\) is the number of months after observation begins. What does the parameter \\(1200\\) represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The population decreases by \\(1200\\) each month."
+        },
+        {
+          "label": "B",
+          "text": "The initial population at \\(t=0\\) is \\(1200\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substituting \\(t=0\\) into the model gives \\(P(0)=1200-15(0)=1200\\). Thus \\(1200\\) is the population at the beginning of the observation. The coefficient \\(-15\\) indicates that the population decreases by \\(15\\) each month, so \\(1200\\) is not the monthly decrease.",
+      "hint": "Evaluate the model at the starting time to identify what the constant term represents."
+    },
+    {
+      "id": "math-gaokao-416-q003",
+      "category": "Mathematical Modeling",
+      "concept": "Interpreting the Base in an Exponential Depreciation Model",
+      "learningObjective": "Determine the annual depreciation rate from the base of an exponential decay model.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A car's value is modeled by \\(V(t)=200000(0.85)^t\\), where \\(V(t)\\) is the value in yuan after \\(t\\) years. What is the annual depreciation rate implied by the parameter \\(0.85\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The annual depreciation rate is \\(85\\%\\)."
+        },
+        {
+          "label": "B",
+          "text": "The annual depreciation rate is \\(15\\%\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "An exponential depreciation model has the form \\(V(t)=V_0(1-r)^t\\), where \\(r\\) is the depreciation rate. Here \\(1-r=0.85\\), so \\(r=0.15=15\\%\\). The car retains \\(85\\%\\) of its value each year, which means it depreciates by \\(15\\%\\) per year.",
+      "hint": "Write the model as \\(V_0(1-r)^t\\) and solve for the rate \\(r\\)."
+    },
+    {
+      "id": "math-gaokao-416-q004",
+      "category": "Mathematical Modeling",
+      "concept": "Determining the Growth Parameter from Doubling Time",
+      "learningObjective": "Find the exponential growth parameter \\(k\\) by using a given doubling time.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A population is modeled by \\(N(t)=N_0e^{kt}\\), where \\(t\\) is measured in hours. If the population doubles in \\(2\\) hours, what is the value of the parameter \\(k\\)? Assume \\(N_0>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\ln 2}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\ln 2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since the population doubles in \\(2\\) hours, \\(N(2)=2N_0\\). Substituting into the model gives\n\\[\nN_0e^{2k}=2N_0.\n\\]\nDividing by \\(N_0>0\\),\n\\[\ne^{2k}=2.\n\\]\nTaking natural logarithms,\n\\[\n2k=\\ln 2,\n\\]\nso\n\\[\nk=\\frac{\\ln 2}{2}.\n\\]",
+      "hint": "Use the doubling condition \\(N(2)=2N_0\\) and take logarithms."
+    },
+    {
+      "id": "math-gaokao-416-q005",
+      "category": "Mathematical Modeling",
+      "concept": "Interpreting the Quadratic Coefficient in a Projectile Model",
+      "learningObjective": "Relate the coefficient of the quadratic term in a height model to gravitational acceleration.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The height of a projectile is modeled by \\(h(t)=20t-5t^2\\), where \\(h\\) is in meters and \\(t\\) is in seconds. In the standard model \\(h(t)=v_0t-\\frac{1}{2}gt^2\\), the coefficient \\(-5\\) equals \\(-\\frac{1}{2}g\\). What is the gravitational acceleration \\(g\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\ \\text{m/s}^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\ \\text{m/s}^2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Comparing \\(h(t)=20t-5t^2\\) with \\(h(t)=v_0t-\\frac{1}{2}gt^2\\), we have\n\\[\n-\\frac{1}{2}g=-5.\n\\]\nMultiplying both sides by \\(-2\\),\n\\[\ng=10.\n\\]\nThus the gravitational acceleration is \\(10\\ \\text{m/s}^2\\). The coefficient \\(-5\\) is not itself \\(g\\).",
+      "hint": "Compare the coefficient of \\(t^2\\) in the given model with \\(-\\frac{1}{2}g\\)."
+    },
+    {
+      "id": "math-gaokao-416-q006",
+      "category": "Mathematical Modeling",
+      "concept": "Interpreting the Carrying Capacity in a Logistic Model",
+      "learningObjective": "Identify the carrying capacity parameter in a logistic population model.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "A population is modeled by\n\\[\nP(t)=\\frac{1000}{1+9e^{-0.5t}},\n\\]\nwhere \\(t\\) is the time in years. What does the parameter \\(1000\\) represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The initial population at \\(t=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "The carrying capacity of the environment"
+        }
+      ],
+      "answer": "B",
+      "explanation": "As \\(t\\to\\infty\\), the term \\(e^{-0.5t}\\to0\\), so\n\\[\nP(t)\\to\\frac{1000}{1+0}=1000.\n\\]\nThus the population approaches \\(1000\\) in the long run. This limiting value is the carrying capacity. The initial population is\n\\[\nP(0)=\\frac{1000}{1+9}=100,\n\\]\nso \\(1000\\) is not the initial population.",
+      "hint": "Consider the long-term behavior of the logistic model as \\(t\\) becomes very large."
+    },
+    {
+      "id": "math-gaokao-416-q007",
+      "category": "Mathematical Modeling",
+      "concept": "Effect of the Leading Coefficient in a Quadratic Model",
+      "learningObjective": "Interpret how changing the parameter \\(a\\) in \\(y=ax^2\\) affects the shape of the graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In the model \\(y=ax^2\\), the parameter \\(a\\) is positive. As \\(a\\) increases, how does the graph of the model change?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The parabola becomes narrower."
+        },
+        {
+          "label": "B",
+          "text": "The parabola becomes wider."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a fixed nonzero value of \\(x\\), increasing \\(a>0\\) increases the value of \\(y=ax^2\\). Therefore, points away from the vertex rise faster, so the parabola becomes steeper and narrower. It does not become wider as \\(a\\) increases.",
+      "hint": "Compare the value of \\(y=ax^2\\) at a fixed \\(x\\ne0\\) for a larger positive \\(a\\)."
+    },
+    {
+      "id": "math-gaokao-416-q008",
+      "category": "Mathematical Modeling",
+      "concept": "Determining a Linear Cost Parameter from a Condition",
+      "learningObjective": "Find the parameter \\(k\\) in a linear cost model by using a given total-cost condition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A cost model is \\(C(x)=kx+2\\), where \\(C(x)\\) is the total cost in yuan for \\(x\\) units. If the total cost for \\(10\\) units is \\(32\\text{ yuan}\\), what is the value of the parameter \\(k\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2.8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using \\(x=10\\) and \\(C(10)=32\\),\n\\[\n10k+2=32.\n\\]\nSubtracting \\(2\\) from both sides gives\n\\[\n10k=30,\n\\]\nso\n\\[\nk=3.\n\\]\nThus the parameter \\(k\\) is \\(3\\), meaning the variable cost is \\(3\\text{ yuan}\\) per unit.",
+      "hint": "Substitute the given total cost and number of units into the model, then solve for \\(k\\)."
+    },
+    {
+      "id": "math-gaokao-416-q009",
+      "category": "Mathematical Modeling",
+      "concept": "Determining the Frequency Parameter from the Period of a Sinusoidal Model",
+      "learningObjective": "Find the parameter \\(B\\) in a sinusoidal model by using its given period.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A periodic quantity is modeled by\n\\[\ny=3\\sin(Bx)+1.\n\\]\nIf the period of the model is \\(6\\), what is the value of the parameter \\(B\\)? Assume \\(B>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\pi}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2\\pi}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(y=A\\sin(Bx)+C\\), the period is\n\\[\nT=\\frac{2\\pi}{B}.\n\\]\nGiven \\(T=6\\),\n\\[\n6=\\frac{2\\pi}{B}.\n\\]\nMultiplying both sides by \\(B\\) and dividing by \\(6\\),\n\\[\nB=\\frac{2\\pi}{6}=\\frac{\\pi}{3}.\n\\]\nThus the parameter \\(B\\) is \\(\\frac{\\pi}{3}\\).",
+      "hint": "Use the relationship \\(\\text{period}=\\frac{2\\pi}{B}\\) for a sine model."
+    },
+    {
+      "id": "math-gaokao-416-q010",
+      "category": "Mathematical Modeling",
+      "concept": "Estimating Parameters in a Logarithmic Model",
+      "learningObjective": "Determine an unknown parameter in a logarithmic model from two given data points.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model is given by\n\\[\nC(x)=a+b\\ln x.\n\\]\nIf \\(C(1)=2\\) and \\(C(e)=5\\), what is the value of the parameter \\(b\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using \\(C(1)=2\\),\n\\[\na+b\\ln 1=2.\n\\]\nSince \\(\\ln 1=0\\),\n\\[\na=2.\n\\]\nUsing \\(C(e)=5\\),\n\\[\na+b\\ln e=5.\n\\]\nSince \\(\\ln e=1\\) and \\(a=2\\),\n\\[\n2+b=5.\n\\]\nTherefore,\n\\[\nb=3.\n\\]\nSo the parameter \\(b\\) is \\(3\\).",
+      "hint": "Use \\(\\ln 1=0\\) and \\(\\ln e=1\\), then solve the resulting system for \\(a\\) and \\(b\\)."
+    }
+  ]
+}

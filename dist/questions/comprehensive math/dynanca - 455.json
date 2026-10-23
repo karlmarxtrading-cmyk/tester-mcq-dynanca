@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-455",
+  "category": "Comprehensive Mathematics",
+  "title": "455. Trigonometry & Periodic Models: Simple Harmonic Oscillation from a Cosine Rule",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-455-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Amplitude of a harmonic oscillation",
+      "learningObjective": "Read the amplitude from a cosine rule for simple harmonic motion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The displacement of an oscillator, in metres, is \\(x(t)=0.2\\cos(5t)\\), with \\(t\\) in seconds. What is the amplitude of the motion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\text{ m}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.2\\text{ m}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In \\(x(t)=A\\cos(\\omega t+\\varphi)\\), the amplitude \\(A\\) is the coefficient of the cosine, here \\(0.2\\text{ m}\\). It is the greatest distance from the equilibrium position. The number \\(5\\) is the angular frequency \\(\\omega\\) in radians per second.",
+      "hint": "The amplitude multiplies the cosine; the angular frequency multiplies \\(t\\)."
+    },
+    {
+      "id": "dynanca-455-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Period of a harmonic oscillation",
+      "learningObjective": "Compute the period from the angular frequency in a cosine rule.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The displacement of an oscillator is \\(x(t)=0.2\\cos(5t)\\), with \\(t\\) in seconds. What is the period of the motion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{2\\pi}{5}\\text{ s}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{2\\pi}\\text{ s}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The angular frequency is \\(\\omega=5\\text{ rad/s}\\), so the period is \\(T=\\frac{2\\pi}{\\omega}=\\frac{2\\pi}{5}\\text{ s}\\approx 1.26\\text{ s}\\). The number \\(\\frac{5}{2\\pi}\\) is the frequency in hertz, the reciprocal of the period.",
+      "hint": "Use \\(T=\\frac{2\\pi}{\\omega}\\) with \\(\\omega\\) the coefficient of \\(t\\)."
+    },
+    {
+      "id": "dynanca-455-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Initial displacement with a phase constant",
+      "learningObjective": "Evaluate the displacement at time zero when a phase constant is present.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The displacement of an oscillator, in centimetres, is \\(x(t)=4\\cos\\left(2t+\\frac{\\pi}{3}\\right)\\). What is the displacement at \\(t=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\text{ cm}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\text{ cm}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "At \\(t=0\\) the argument is \\(\\frac{\\pi}{3}\\), and \\(\\cos\\frac{\\pi}{3}=\\frac{1}{2}\\). So \\(x(0)=4\\cdot\\frac{1}{2}=2\\text{ cm}\\). The value \\(4\\text{ cm}\\) is the amplitude, which would be the initial displacement only if the phase constant were \\(0\\).",
+      "hint": "Substitute \\(t=0\\); the phase constant remains in the argument."
+    },
+    {
+      "id": "dynanca-455-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Maximum speed",
+      "learningObjective": "Find the maximum speed of a simple harmonic oscillator from its displacement rule.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The displacement of an oscillator, in metres, is \\(x(t)=0.2\\cos(5t)\\), with \\(t\\) in seconds. What is its maximum speed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\text{ m/s}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.2\\text{ m/s}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The velocity is the derivative: \\(v(t)=-0.2\\cdot 5\\sin(5t)=-\\sin(5t)\\). Its greatest size is \\(A\\omega=0.2\\cdot 5=1\\text{ m/s}\\). The value \\(0.2\\) is the amplitude of the displacement and omits the factor \\(\\omega\\).",
+      "hint": "Differentiate the displacement; the maximum speed is the amplitude times the angular frequency."
+    },
+    {
+      "id": "dynanca-455-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Maximum acceleration",
+      "learningObjective": "Find the maximum acceleration of a simple harmonic oscillator from its displacement rule.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The displacement of an oscillator, in metres, is \\(x(t)=0.2\\cos(5t)\\), with \\(t\\) in seconds. What is the greatest size of its acceleration?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\text{ m/s}^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\text{ m/s}^2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Differentiating twice gives \\(a(t)=-0.2\\cdot 5^2\\cos(5t)=-5\\cos(5t)\\). Its greatest size is \\(A\\omega^2=0.2\\cdot 25=5\\text{ m/s}^2\\). The value \\(1\\) is \\(A\\omega\\), the maximum speed in metres per second, not the acceleration.",
+      "hint": "Differentiate the displacement twice; each differentiation brings out a factor \\(\\omega\\)."
+    },
+    {
+      "id": "dynanca-455-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Position after half a period",
+      "learningObjective": "Evaluate a cosine displacement rule at a given time.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The displacement of an oscillator, in centimetres, is \\(x(t)=3\\cos(\\pi t)\\), with \\(t\\) in seconds. What is the displacement at \\(t=1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-3\\text{ cm}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\text{ cm}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "At \\(t=1\\) the argument is \\(\\pi\\), and \\(\\cos\\pi=-1\\), so \\(x(1)=-3\\text{ cm}\\). The period is \\(\\frac{2\\pi}{\\pi}=2\\text{ s}\\), so \\(t=1\\) is half a period after the start, when the oscillator is at the opposite extreme.",
+      "hint": "Find the period first, and decide which part of the cycle \\(t=1\\) corresponds to."
+    },
+    {
+      "id": "dynanca-455-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "First passage through equilibrium",
+      "learningObjective": "Find the first time at which a cosine oscillation passes through equilibrium.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The displacement of an oscillator is \\(x(t)=3\\cos(\\pi t)\\), with \\(t\\) in seconds. What is the first time \\(t>0\\) at which the oscillator passes through the equilibrium position \\(x=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(t=1\\text{ s}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(t=0.5\\text{ s}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The displacement is zero when \\(\\cos(\\pi t)=0\\), first when \\(\\pi t=\\frac{\\pi}{2}\\), so \\(t=0.5\\text{ s}\\). This is a quarter of the period \\(2\\text{ s}\\). At \\(t=1\\text{ s}\\) the oscillator is at the extreme position \\(x=-3\\).",
+      "hint": "Solve \\(\\cos(\\pi t)=0\\) for the smallest positive \\(t\\)."
+    },
+    {
+      "id": "dynanca-455-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Acceleration proportional to displacement",
+      "learningObjective": "Use the defining relation between acceleration and displacement in simple harmonic motion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "An oscillator in simple harmonic motion with angular frequency \\(\\omega=2\\text{ rad/s}\\) is at displacement \\(x=0.5\\text{ m}\\). What is its acceleration at that instant?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\text{ m/s}^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\text{ m/s}^2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(x(t)=A\\cos(\\omega t+\\varphi)\\), differentiating twice gives \\(a=-\\omega^2 x\\). So \\(a=-(2)^2\\cdot 0.5=-2\\text{ m/s}^2\\). The negative sign shows that the acceleration is directed back toward the equilibrium position, opposite to the displacement.",
+      "hint": "Differentiate \\(A\\cos(\\omega t+\\varphi)\\) twice and compare the result with the displacement."
+    },
+    {
+      "id": "dynanca-455-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Phase constant from initial conditions",
+      "learningObjective": "Determine the phase constant from the initial position and direction of motion.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "An oscillator has displacement \\(x(t)=A\\cos(\\omega t+\\varphi)\\) with \\(A>0\\), \\(\\omega>0\\), and \\(-\\pi<\\varphi\\le\\pi\\). At \\(t=0\\) it is at \\(x=0\\) and moving in the negative direction. What is \\(\\varphi\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\varphi=-\\frac{\\pi}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varphi=\\frac{\\pi}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(x(0)=A\\cos\\varphi=0\\), \\(\\varphi=\\pm\\frac{\\pi}{2}\\). The velocity is \\(v(0)=-A\\omega\\sin\\varphi\\). For motion in the negative direction, \\(v(0)<0\\), which requires \\(\\sin\\varphi>0\\), so \\(\\varphi=\\frac{\\pi}{2}\\). With \\(\\varphi=-\\frac{\\pi}{2}\\) the initial velocity would be positive.",
+      "hint": "Use the initial position to find the possible phase constants, then use the sign of the initial velocity to choose."
+    },
+    {
+      "id": "dynanca-455-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Time to reach half the amplitude",
+      "learningObjective": "Find the time for an oscillator to move from an extreme position to half the amplitude.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "An oscillator has displacement \\(x(t)=A\\cos(\\omega t)\\) and period \\(T\\). Starting from \\(x=A\\) at \\(t=0\\), how long does it take to first reach \\(x=\\frac{A}{2}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{T}{8}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{T}{6}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set \\(A\\cos(\\omega t)=\\frac{A}{2}\\), so \\(\\cos(\\omega t)=\\frac{1}{2}\\) and \\(\\omega t=\\frac{\\pi}{3}\\). With \\(\\omega=\\frac{2\\pi}{T}\\), \\(t=\\frac{\\pi}{3}\\cdot\\frac{T}{2\\pi}=\\frac{T}{6}\\). The value \\(\\frac{T}{8}\\) assumes that half the distance to equilibrium takes half of the quarter period, but the oscillator moves slowly near the extreme position.",
+      "hint": "Solve the equation for \\(\\omega t\\), then replace \\(\\omega\\) by \\(\\frac{2\\pi}{T}\\)."
+    }
+  ]
+}

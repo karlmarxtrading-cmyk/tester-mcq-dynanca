@@ -1,0 +1,18 @@
+# Protected files are verified byte-for-byte by tools/integrity/verify-protected.js
+# (which `npm run build` runs on Cloudflare Pages). Git must never rewrite their
+# line endings (e.g. core.autocrlf on Windows), or the deployed checkout would no
+# longer match tools/integrity/protected-baseline.json. master-manifest.csv is
+# CRLF in the owner's archive; the rest are LF.
+master-manifest.json -text
+master-manifest.csv -text
+*.xlsx binary
+questions/** -text
+schemas/** -text
+assets/vendor/mathjax/** -text
+assets/js/manifest.js -text
+assets/js/reset-progress.js -text
+practice/practice-engine.js -text
+practice/practice-state.js -text
+practice/venn-renderer.js -text
+practice/math-visuals.js -text
+practice/practices.css -text

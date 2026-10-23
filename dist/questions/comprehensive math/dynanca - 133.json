@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-133",
+  "category": "Comprehensive Mathematics",
+  "title": "133. Quantitative Relationships & Measurement: Uncertainty in Multiplication and Division",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-133-q001",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Relative Maximum Uncertainty in Products and Quotients",
+      "learningObjective": "Identify the rule for combining relative uncertainties in multiplication and division.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "When two independently measured positive quantities are multiplied or divided, how are their small relative maximum error bounds combined in the first-order worst-case model? Use linear propagation, not statistical root-sum-of-squares.",
+      "options": [
+        {
+          "label": "A",
+          "text": "They are subtracted."
+        },
+        {
+          "label": "B",
+          "text": "They are added."
+        }
+      ],
+      "answer": "B",
+      "explanation": "For multiplication and division, the relative uncertainty of the result is the sum of the relative uncertainties of the factors. For example, if one factor has \\(2\\%\\) relative uncertainty and another has \\(3\\%\\), the product has about \\(5\\%\\) relative uncertainty. Therefore, the correct rule is that they are added. Subtracting the contributions would allow independent errors to cancel in a maximum bound, which the stated rule does not assume.",
+      "hint": "Consider the worst case, in which both relative errors push the result in the same direction."
+    },
+    {
+      "id": "dynanca-133-q002",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Absolute Maximum Uncertainty of a Product",
+      "learningObjective": "Calculate the absolute approximate maximum uncertainty of a rectangular area from side measurements.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "A rectangle has sides \\((4.0 \\pm 0.2)\\text{ cm}\\) and \\((5.0 \\pm 0.5)\\text{ cm}\\). What is the absolute uncertainty of its area? Use first-order maximum-uncertainty propagation: absolute exponent-weighted relative contributions add; do not use root-sum-of-squares.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.7\\text{ cm}^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3.0\\text{ cm}^2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The area is \\(4.0\\times 5.0=20\\text{ cm}^2\\). The relative uncertainties are \\(\\frac{0.2}{4.0}=5\\%\\) and \\(\\frac{0.5}{5.0}=10\\%\\). For a product, these add: \\(5\\%+10\\%=15\\%\\). Therefore, the absolute uncertainty is \\(15\\%\\) of \\(20\\text{ cm}^2\\), which is \\(3.0\\text{ cm}^2\\). The alternative \\(0.7\\) adds the side-length absolute bounds, \\(0.2+0.5\\), then labels that length sum as an area uncertainty.",
+      "hint": "Apply the propagation convention stated in the question."
+    },
+    {
+      "id": "dynanca-133-q003",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Maximum Uncertainty of Density from Mass and Volume",
+      "learningObjective": "Determine density and its absolute approximate maximum uncertainty using relative uncertainties.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A mass is \\((20.0 \\pm 0.5)\\text{ g}\\) and its volume is \\((4.0 \\pm 0.2)\\text{ cm}^3\\). What is the density with its absolute uncertainty? Use first-order maximum-uncertainty propagation: absolute exponent-weighted relative contributions add; do not use root-sum-of-squares. Report the uncertainty to two significant figures using round-half-up and align the decimal place of the nominal value.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((5.00\\pm0.38)\\text{ g/cm}^3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((5.00\\pm0.70)\\text{ g/cm}^3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The nominal density is \\(\\frac{20.0}{4.0}=5.00\\text{ g/cm}^3\\). The relative uncertainty is approximately \\(\\frac{0.5}{20.0}+\\frac{0.2}{4.0}=0.075\\), giving an unrounded absolute uncertainty of \\(5.00\\times 0.075=0.375\\text{ g/cm}^3\\). Rounded to two significant figures, the uncertainty is \\(0.38\\text{ g/cm}^3\\). The alternative \\(0.70\\) incorrectly adds the input absolute uncertainties despite their different units.",
+      "hint": "Find the relative uncertainty of each measurement before combining them for the quotient."
+    },
+    {
+      "id": "dynanca-133-q004",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Maximum Uncertainty of Volume from Three Measurements",
+      "learningObjective": "Calculate the absolute approximate maximum uncertainty of a product of three measured lengths.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A box has dimensions \\((10.0 \\pm 0.2)\\text{ cm}\\), \\((5.0 \\pm 0.1)\\text{ cm}\\), and \\((2.0 \\pm 0.1)\\text{ cm}\\). What is its volume with absolute uncertainty? Use first-order maximum-uncertainty propagation: absolute exponent-weighted relative contributions add; do not use root-sum-of-squares.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((100 \\pm 2)\\text{ cm}^3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((100 \\pm 9)\\text{ cm}^3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The volume is \\(10.0\\times 5.0\\times 2.0=100\\text{ cm}^3\\). The relative uncertainties are \\(\\frac{0.2}{10.0}=2\\%\\), \\(\\frac{0.1}{5.0}=2\\%\\), and \\(\\frac{0.1}{2.0}=5\\%\\). For a product, these add: \\(2\\%+2\\%+5\\%=9\\%\\). Thus the absolute uncertainty is \\(9\\%\\) of \\(100\\text{ cm}^3\\), which is \\(9\\text{ cm}^3\\). Therefore, the volume is \\((100 \\pm 9)\\text{ cm}^3\\). The alternative includes only the first side's relative contribution, \\(2\\%\\), and omits the other two.",
+      "hint": "Begin with the nominal value, then examine the relative error contributions."
+    },
+    {
+      "id": "dynanca-133-q005",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Relative Maximum Uncertainty of a Quotient",
+      "learningObjective": "Determine the relative approximate maximum uncertainty of a quotient from given relative uncertainties.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "A quantity \\(A\\) has relative uncertainty \\(3\\%\\), and a quantity \\(B\\) has relative uncertainty \\(4\\%\\). If \\(x=\\frac{A}{B}\\), what is the relative uncertainty of \\(x\\)? Use first-order maximum-uncertainty propagation: absolute exponent-weighted relative contributions add; do not use root-sum-of-squares.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\%\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For division, the relative uncertainties add. Therefore, the relative uncertainty of \\(x\\) is \\(3\\%+4\\%=7\\%\\). Option A incorrectly subtracts the uncertainties.",
+      "hint": "Apply the propagation convention stated in the question."
+    },
+    {
+      "id": "dynanca-133-q006",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Work Calculation with Maximum Uncertainty",
+      "learningObjective": "Calculate work and its absolute approximate maximum uncertainty from force and distance measurements.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A force of \\((100 \\pm 3)\\text{ N}\\) moves an object \\((2.0 \\pm 0.1)\\text{ m}\\) in the direction of the force. What is the work done with its absolute uncertainty? Use first-order maximum-uncertainty propagation: absolute exponent-weighted relative contributions add; do not use root-sum-of-squares.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((200 \\pm 16)\\text{ J}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((200 \\pm 4)\\text{ J}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The work is \\(100\\times 2.0=200\\text{ J}\\). The relative uncertainties are \\(\\frac{3}{100}=3\\%\\) and \\(\\frac{0.1}{2.0}=5\\%\\). For a product, these add: \\(3\\%+5\\%=8\\%\\). The absolute uncertainty is \\(8\\%\\) of \\(200\\text{ J}\\), which is \\(16\\text{ J}\\). Therefore, the work is \\((200 \\pm 16)\\text{ J}\\). The alternative subtracts the relative contributions in magnitude: \\(200\\times(0.05-0.03)=4\\), although maximum contributions for a product add.",
+      "hint": "Find the relative uncertainty of each factor before combining them for the product."
+    },
+    {
+      "id": "dynanca-133-q007",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Speed Calculation with Maximum Uncertainty",
+      "learningObjective": "Determine speed and its absolute approximate maximum uncertainty from distance and time measurements.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A distance is \\((150 \\pm 3)\\text{ m}\\), and the time taken is \\((5.0 \\pm 0.2)\\text{ s}\\). What is the speed with its absolute uncertainty? Use first-order maximum-uncertainty propagation: absolute exponent-weighted relative contributions add; do not use root-sum-of-squares. Report the uncertainty to two significant figures and align the decimal place of the nominal value.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((30.0\\pm1.8)\\text{ m/s}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((30.00\\pm0.60)\\text{ m/s}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The nominal speed is \\(\\frac{150}{5.0}=30.0\\text{ m/s}\\). The relative uncertainty is approximately \\(\\frac{3}{150}+\\frac{0.2}{5.0}=0.06\\), giving \\(30.0\\times 0.06=1.8\\text{ m/s}\\). The alternative uncertainty \\(0.60\\text{ m/s}\\) subtracts the relative contributions, \\(0.04-0.02=0.02\\), then multiplies this difference by the speed; quotient uncertainty contributions must add.",
+      "hint": "Begin with the nominal value, then examine the relative error contributions."
+    },
+    {
+      "id": "dynanca-133-q008",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Maximum Relative Uncertainty of a Calculated Width",
+      "learningObjective": "Propagate independent maximum relative bounds through an area-length quotient.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A rectangle's measured area has relative uncertainty \\(5\\%\\), and its independently measured length has relative uncertainty \\(2\\%\\). Its width is calculated as area divided by length. What is the approximate maximum relative uncertainty of the width? Use first-order linear propagation, not root-sum-of-squares.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\%\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Width is calculated by division. Its first-order maximum relative uncertainty is approximately \\(5\\%+2\\%=7\\%\\). The alternative \\(3\\%\\) subtracts the contributions; for independent maximum bounds, the relative contributions in a quotient add.",
+      "hint": "Identify the operation used to obtain width from the two independent measurements."
+    },
+    {
+      "id": "dynanca-133-q009",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Maximum Uncertainty with a Squared Quantity",
+      "learningObjective": "Calculate the absolute approximate maximum uncertainty for \\(x=a^2b\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Given \\(a=(2.0 \\pm 0.1)\\text{ m}\\), \\(b=(3.0 \\pm 0.3)\\text{ m}\\), and \\(x=a^2b\\), what is \\(x\\) with its absolute uncertainty? Use first-order maximum-uncertainty propagation: absolute exponent-weighted relative contributions add; do not use root-sum-of-squares.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((12.0\\pm2.4)\\text{ m}^3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((12.0\\pm1.2)\\text{ m}^3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The relative uncertainty of \\(a\\) is \\(\\frac{0.1}{2.0}=5\\%\\), so the relative uncertainty of \\(a^2\\) is \\(2\\times 5\\%=10\\%\\). The relative uncertainty of \\(b\\) is \\(\\frac{0.3}{3.0}=10\\%\\). The total relative uncertainty is \\(10\\%+10\\%=20\\%\\). The value is \\(x=2.0^2\\times 3.0=12\\text{ m}^3\\). The absolute uncertainty is \\(20\\%\\) of \\(12\\), which is \\(2.4\\text{ m}^3\\). Therefore, \\(x=(12.0 \\pm 2.4)\\text{ m}^3\\). The alternative includes only the relative uncertainty of \\(b\\), omitting the doubled contribution from the exponent on \\(a\\).",
+      "hint": "An exponent changes the relative contribution of its measured base."
+    },
+    {
+      "id": "dynanca-133-q010",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Combined Multiplication and Division",
+      "learningObjective": "Determine the absolute approximate maximum uncertainty for \\(x=\\frac{ab}{c}\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Given \\(a=(10.0 \\pm 1.0)\\text{ cm}\\), \\(b=(5.0 \\pm 0.5)\\text{ cm}\\), \\(c=(2.0 \\pm 0.1)\\text{ cm}\\), and \\(x=\\frac{ab}{c}\\), what is \\(x\\) with its absolute uncertainty? Use first-order maximum-uncertainty propagation: absolute exponent-weighted relative contributions add; do not use root-sum-of-squares. Report the uncertainty to two significant figures using round-half-up and align the decimal place of the nominal value.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((25.0\\pm6.3)\\text{ cm}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((25.0\\pm3.8)\\text{ cm}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The nominal value is \\(\\frac{10.0\\times 5.0}{2.0}=25.0\\text{ cm}\\). The first-order maximum relative uncertainty is approximately \\(\\frac{1.0}{10.0}+\\frac{0.5}{5.0}+\\frac{0.1}{2.0}=0.25\\). The absolute uncertainty before reporting is \\(25.0\\times 0.25=6.25\\text{ cm}\\), which rounds half-up to \\(6.3\\text{ cm}\\). Thus report \\((25.0\\pm6.3)\\text{ cm}\\). The alternative \\(3.8\\text{ cm}\\) subtracts the denominator contribution, giving \\(25.0(0.10+0.10-0.05)=3.75\\text{ cm}\\) before rounding.",
+      "hint": "Begin with the nominal value, then examine the relative error contributions."
+    }
+  ]
+}

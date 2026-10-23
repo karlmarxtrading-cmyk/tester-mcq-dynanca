@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dynanca Master Manifest",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "manifestType",
+    "subjects"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "manifestType": {
+      "const": "dynanca-master"
+    },
+    "subjects": {
+      "type": "array"
+    }
+  }
+}

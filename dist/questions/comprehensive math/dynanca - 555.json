@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-555",
+  "category": "Comprehensive Mathematics",
+  "title": "555. Discrete Mathematics, Counting & Graph Theory: Counting Injective Functions on Finite Sets",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-555-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Injective functions from two elements",
+      "learningObjective": "Count the injective functions from a two-element set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many injective (one-to-one) functions are there from a set with \\(2\\) elements to a set with \\(4\\) elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first element can be sent to any of \\(4\\) elements, and the second to any of the \\(3\\) others, because an injective function may not repeat a value. This gives \\(4\\cdot 3=12\\). The number \\(16=4^2\\) counts all functions, including those that repeat a value.",
+      "hint": "The second image must differ from the first."
+    },
+    {
+      "id": "dynanca-555-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Injective functions from three elements",
+      "learningObjective": "Count the injective functions from a three-element set to a four-element set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many injective functions are there from a set with \\(3\\) elements to a set with \\(4\\) elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(64\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Choose the images one at a time without repetition: \\(4\\cdot 3\\cdot 2=24\\). The number \\(64=4^3\\) counts all functions.",
+      "hint": "Each image that has been used is no longer available."
+    },
+    {
+      "id": "dynanca-555-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A falling product",
+      "learningObjective": "Count the injective functions from a four-element set to a six-element set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many injective functions are there from a set with \\(4\\) elements to a set with \\(6\\) elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(360\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1296\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The images are chosen without repetition: \\(6\\cdot 5\\cdot 4\\cdot 3=360\\). The number \\(1296=6^4\\) counts all functions from the first set to the second.",
+      "hint": "Multiply four consecutive decreasing integers, starting from \\(6\\)."
+    },
+    {
+      "id": "dynanca-555-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A codomain that is too small",
+      "learningObjective": "Recognise when no injective function exists.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many injective functions are there from a set with \\(5\\) elements to a set with \\(3\\) elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An injective function needs \\(5\\) different images, but only \\(3\\) elements are available. The product \\(3\\cdot 2\\cdot 1\\cdot 0\\cdot(-1)\\) already contains the factor \\(0\\) at the fourth step, so no such function exists. The number \\(60=5\\cdot 4\\cdot 3\\) counts injective functions in the opposite direction.",
+      "hint": "Try to assign different images to all five elements."
+    },
+    {
+      "id": "dynanca-555-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Bijections of a set",
+      "learningObjective": "Count the bijections from a five-element set to itself.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many bijections are there from a set with \\(5\\) elements to itself?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(25\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(120\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A bijection of a finite set to itself is an injective function, so its values are chosen without repetition: \\(5\\cdot 4\\cdot 3\\cdot 2\\cdot 1=5!=120\\). The number \\(25=5^2\\) multiplies the sizes of the two sets; it counts ordered pairs of elements, not bijections.",
+      "hint": "A bijection of the set rearranges its five elements."
+    },
+    {
+      "id": "dynanca-555-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Guests and rooms",
+      "learningObjective": "Model an assignment without sharing as an injective function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Four guests are each given a different room in a hotel with \\(9\\) free rooms. In how many ways can the rooms be assigned?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6561\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3024\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An assignment is an injective function from the guests to the rooms: \\(9\\cdot 8\\cdot 7\\cdot 6=3024\\). The number \\(6561=9^4\\) would allow several guests to be given the same room.",
+      "hint": "After a room has been given to one guest, it is unavailable to the others."
+    },
+    {
+      "id": "dynanca-555-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An injective function with a prescribed value",
+      "learningObjective": "Count injective functions when one image is fixed.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "How many injective functions \\(f:\\{1,2,3\\}\\to\\{1,2,3,4,5\\}\\) satisfy \\(f(1)=5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "With \\(f(1)=5\\) fixed, \\(f(2)\\) can be any of the \\(4\\) remaining elements and \\(f(3)\\) any of the \\(3\\) then remaining, so there are \\(4\\cdot 3=12\\) such functions. The number \\(20=5\\cdot 4\\) forgets that the value \\(5\\) is already used.",
+      "hint": "The fixed value is no longer available for the other two inputs."
+    },
+    {
+      "id": "dynanca-555-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Increasing functions",
+      "learningObjective": "Count strictly increasing functions as selections.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many functions \\(f:\\{1,2,3\\}\\to\\{1,2,3,4,5,6\\}\\) satisfy \\(f(1)<f(2)<f(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(120\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Such a function is determined by its set of three values, because the values must then be assigned in increasing order. So the count is \\(\\binom{6}{3}=20\\). The number \\(120=6\\cdot 5\\cdot 4\\) counts all injective functions, in which the three values may be assigned in any order.",
+      "hint": "Once the three values are chosen, ask in how many ways they can be assigned."
+    },
+    {
+      "id": "dynanca-555-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "One forbidden value",
+      "learningObjective": "Count injective functions in which one input avoids one value.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many injective functions \\(f:\\{1,2,3\\}\\to\\{1,2,3,4,5\\}\\) satisfy \\(f(1)\\ne 1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(48\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(5\\cdot 4\\cdot 3=60\\) injective functions in all. Those with \\(f(1)=1\\) number \\(4\\cdot 3=12\\). So \\(60-12=48\\) satisfy \\(f(1)\\ne 1\\). The number \\(12\\) counts the functions that violate the condition.",
+      "hint": "Count the injective functions with \\(f(1)=1\\) and subtract them from all injective functions."
+    },
+    {
+      "id": "dynanca-555-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A value that must be used",
+      "learningObjective": "Count injective functions whose range contains a given element.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many injective functions \\(f:\\{1,2,3,4\\}\\to\\{1,2,3,4,5,6\\}\\) have \\(6\\) among their values?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(240\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(6\\cdot 5\\cdot 4\\cdot 3=360\\) injective functions in all. Those that never take the value \\(6\\) are the injective functions into \\(\\{1,2,3,4,5\\}\\), of which there are \\(5\\cdot 4\\cdot 3\\cdot 2=120\\). So \\(360-120=240\\) functions have \\(6\\) among their values. The number \\(120\\) counts the functions that avoid \\(6\\).",
+      "hint": "Count the injective functions that avoid the value \\(6\\) and subtract."
+    }
+  ]
+}

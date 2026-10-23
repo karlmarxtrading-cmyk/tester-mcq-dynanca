@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-520",
+  "category": "Comprehensive Mathematics",
+  "title": "520. Sets, Logic, Reasoning & Proof: Definitions and Theorem Hypotheses",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-520-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Applying the definition of even",
+      "learningObjective": "Use a definition to decide a boundary case.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An integer \\(n\\) is called even if \\(n=2k\\) for some integer \\(k\\). According to this definition, is \\(0\\) even?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because \\(0\\) is neither even nor odd."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because \\(0=2\\cdot 0\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The definition asks for an integer \\(k\\) with \\(n=2k\\). For \\(n=0\\), the integer \\(k=0\\) works, so \\(0\\) is even. Decisions about special cases are made by checking the definition, not by impressions.",
+      "hint": "Look for an integer \\(k\\) that satisfies the equation in the definition."
+    },
+    {
+      "id": "dynanca-520-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Applying the definition of prime",
+      "learningObjective": "Use a definition to decide whether one is prime.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A prime number is an integer greater than \\(1\\) that has exactly two positive divisors. According to this definition, is \\(1\\) prime?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; \\(1\\) is not greater than \\(1\\), and it has only one positive divisor."
+        },
+        {
+          "label": "B",
+          "text": "Yes; \\(1\\) is divisible only by \\(1\\) and by itself."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The definition requires the integer to be greater than \\(1\\) and to have exactly two positive divisors. The number \\(1\\) fails both: it is not greater than \\(1\\), and its only positive divisor is \\(1\\). \"Divisible by \\(1\\) and by itself\" names the same divisor twice.",
+      "hint": "Count the positive divisors of \\(1\\)."
+    },
+    {
+      "id": "dynanca-520-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Checking the hypothesis of a theorem",
+      "learningObjective": "Decide whether a theorem applies by checking its hypothesis.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The Pythagorean theorem states: if a triangle is right-angled with legs \\(a\\), \\(b\\) and hypotenuse \\(c\\), then \\(a^2+b^2=c^2\\). Can it be applied to a triangle that is known only to have sides \\(2\\), \\(3\\), and \\(4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; the theorem holds for every triangle."
+        },
+        {
+          "label": "B",
+          "text": "No; it is not known that the triangle is right-angled, and in fact \\(2^2+3^2\\ne 4^2\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The theorem has a hypothesis: the triangle must be right-angled. That is not given here. Moreover \\(2^2+3^2=13\\) and \\(4^2=16\\), so the equation fails, which shows that this triangle is not right-angled. A theorem can be used only when its hypotheses are satisfied.",
+      "hint": "Identify the \"if\" part of the theorem and check whether it holds."
+    },
+    {
+      "id": "dynanca-520-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A hypothesis that fails",
+      "learningObjective": "Recognise that a theorem gives no conclusion when a hypothesis fails.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A theorem states: if \\(f\\) is continuous on \\([a,b]\\) and \\(f(a)\\) and \\(f(b)\\) have opposite signs, then \\(f(c)=0\\) for some \\(c\\) in \\((a,b)\\). Does it guarantee a zero of \\(f(x)=\\frac{1}{x}\\) between \\(-1\\) and \\(1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; \\(f\\) is not continuous on \\([-1,1]\\), since it is not even defined at \\(x=0\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; \\(f(-1)=-1\\) and \\(f(1)=1\\) have opposite signs."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The theorem has two hypotheses, and both must hold. The values at the endpoints do have opposite signs, but \\(f\\) is not continuous on the whole interval, because it is undefined at \\(0\\). So the theorem does not apply, and indeed \\(\\frac{1}{x}\\) is never zero.",
+      "hint": "Check every hypothesis of the theorem, not only the one about the signs."
+    },
+    {
+      "id": "dynanca-520-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Applying the definition of rational",
+      "learningObjective": "Use the definition of a rational number to classify a decimal.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A rational number is a number that can be written as \\(\\frac{p}{q}\\) with integers \\(p\\) and \\(q\\), \\(q\\ne 0\\). Is \\(0.75\\) rational?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because \\(0.75=\\frac{3}{4}\\)."
+        },
+        {
+          "label": "B",
+          "text": "No, because it is written as a decimal, not as a fraction."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The definition asks whether the number can be written as a quotient of integers, not how it happens to be written. Since \\(0.75=\\frac{75}{100}=\\frac{3}{4}\\), it is rational.",
+      "hint": "The definition concerns what is possible, not the notation currently used."
+    },
+    {
+      "id": "dynanca-520-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Reading a definition precisely",
+      "learningObjective": "Apply a definition containing \"at least\" to a special case.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A triangle is called isosceles if it has at least two sides of equal length. According to this definition, is an equilateral triangle isosceles?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; an isosceles triangle has exactly two equal sides."
+        },
+        {
+          "label": "B",
+          "text": "Yes; it has three equal sides, so in particular at least two."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The definition says \"at least two\", and a triangle with three equal sides certainly has two equal sides. So every equilateral triangle is isosceles under this definition. The answer would differ only if the definition said \"exactly two\"; the wording of the definition decides.",
+      "hint": "Compare the phrases \"at least two\" and \"exactly two\"."
+    },
+    {
+      "id": "dynanca-520-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A hypothesis that cannot be dropped",
+      "learningObjective": "Find values showing that a hypothesis of a theorem is essential.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A theorem states: if \\(a\\mid bc\\) and \\(\\gcd(a,b)=1\\), then \\(a\\mid c\\). Which values show that the hypothesis \\(\\gcd(a,b)=1\\) cannot be omitted?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a=4\\), \\(b=2\\), \\(c=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a=3\\), \\(b=2\\), \\(c=6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(a=4\\), \\(b=2\\), \\(c=2\\): \\(bc=4\\), so \\(a\\mid bc\\), but \\(\\gcd(4,2)=2\\ne 1\\), and \\(4\\) does not divide \\(c=2\\). So without the hypothesis the conclusion can fail. For \\(a=3\\), \\(b=2\\), \\(c=6\\) the hypothesis holds and so does the conclusion; that choice shows nothing about dropping it.",
+      "hint": "Look for values where \\(a\\mid bc\\) holds, the greatest common divisor is not \\(1\\), and the conclusion fails."
+    },
+    {
+      "id": "dynanca-520-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Before applying a theorem",
+      "learningObjective": "State what must be verified before a theorem is applied.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Before a theorem is applied to a specific object, what must be verified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "That the object satisfies every hypothesis of the theorem"
+        },
+        {
+          "label": "B",
+          "text": "That the object satisfies the conclusion of the theorem"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A theorem of the form \"if the hypotheses hold, then the conclusion holds\" delivers its conclusion only for objects that satisfy all its hypotheses. If the conclusion had to be verified first, the theorem would be of no use.",
+      "hint": "Think about which part of a conditional statement must be known in order to use it."
+    },
+    {
+      "id": "dynanca-520-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Divisibility statements involving zero",
+      "learningObjective": "Apply the definition of divisibility to statements with zero.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For integers, \\(a\\mid b\\) means that \\(b=ak\\) for some integer \\(k\\). Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\mid 0\\) is false, and \\(0\\mid 5\\) is true."
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\mid 0\\) is true, and \\(0\\mid 5\\) is false."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(0=5\\cdot 0\\), the definition gives \\(5\\mid 0\\). For \\(0\\mid 5\\) one would need \\(5=0\\cdot k\\), but \\(0\\cdot k=0\\) for every \\(k\\), so no such \\(k\\) exists. Every non-zero integer divides \\(0\\), while \\(0\\) divides no non-zero integer.",
+      "hint": "Write out the defining equation in each case and look for a suitable integer \\(k\\)."
+    },
+    {
+      "id": "dynanca-520-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "What a theorem says outside its hypothesis",
+      "learningObjective": "Recognise that a theorem is silent about objects that do not satisfy its hypothesis.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "A theorem states: if \\(n\\) is an odd integer, then \\(n^2\\) leaves remainder \\(1\\) on division by \\(8\\). What does the theorem say about \\(n=6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "That \\(6^2\\) leaves remainder \\(1\\) on division by \\(8\\)."
+        },
+        {
+          "label": "B",
+          "text": "Nothing, because \\(6\\) does not satisfy the hypothesis."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The theorem makes a claim only about odd integers. Since \\(6\\) is even, the theorem does not apply, and it asserts nothing about \\(6^2\\). In fact \\(36=8\\cdot 4+4\\) leaves remainder \\(4\\), which does not contradict the theorem.",
+      "hint": "Check whether \\(6\\) satisfies the \"if\" part of the theorem."
+    }
+  ]
+}

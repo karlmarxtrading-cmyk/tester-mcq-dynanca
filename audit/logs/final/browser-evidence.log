@@ -1,0 +1,20 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> dynanca-mcq@1.1.0 qa:evidence
+> node tools/qa/capture-evidence.js --out audit/browser-evidence
+
+Screenshots:            45 -> audit/browser-evidence/screenshots
+Layout audits:          37 (0 with a finding)
+Contrast audits:        8 (0 with a failing pair)
+  light / default: min normal text 5.91:1, min large text 16.76:1, min control boundary 3.9:1 (216 text samples)
+  light / all banks, mixed: min normal text 5.82:1, min large text 16.76:1, min control boundary 3.9:1 (218 text samples)
+  light / search + topic: min normal text 5.82:1, min large text 16.76:1, min control boundary 3.9:1 (145 text samples)
+  light / empty: min normal text 5.82:1, min large text 16.76:1, min control boundary 3.9:1 (69 text samples)
+  dark / default: min normal text 7.61:1, min large text 16.57:1, min control boundary 4.68:1 (216 text samples)
+  dark / all banks, mixed: min normal text 6.79:1, min large text 16.57:1, min control boundary 4.68:1 (218 text samples)
+  dark / search + topic: min normal text 6.83:1, min large text 16.57:1, min control boundary 4.68:1 (145 text samples)
+  dark / empty: min normal text 6.83:1, min large text 16.57:1, min control boundary 4.68:1 (69 text samples)
+Lab — Mobile lab: 390x844, 4x CPU slowdown, 1.6 Mbps down / 750 kbps up / 150 ms RTT: FCP 480 ms, LCP 480 ms, CLS 0.017, catalog ready 1454 ms, 11 requests, 209811 bytes, 387 DOM nodes, 24 cards
+Lab — Desktop lab: 1280x800, no throttling: FCP 44 ms, LCP 44 ms, CLS 0.003, catalog ready 78 ms, 11 requests, 209811 bytes, 387 DOM nodes, 24 cards
+Landing JS+CSS (gzip):  22932 bytes of an 81,920-byte budget
+Console problems (page errors / CSP): 0

@@ -1,0 +1,780 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "mathematics-sat-10",
+  "title": "SAT 10 · GCF and LCM",
+  "category": "SAT Mathematics",
+  "description": "A/B reasoning practice. Difficulty is editorial, not standardized SAT calibration.",
+  "questionCount": 18,
+  "questions": [
+    {
+      "id": "sat-q0163",
+      "title": "Greatest Common Factor of Two Numbers",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "A teacher has 18 red counters and 30 blue counters. She wants to make the greatest possible number of identical groups, using every counter and placing the same number of red counters and the same number of blue counters in each group. What is the greatest possible number of groups? Use the factor table to support your reasoning. Choose A or B and explain why.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\) groups"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\) groups"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number of groups must divide both 18 and 30. Their common factors are 1, 2, 3, and 6, so the greatest common factor is 6. With 6 groups, each group gets \\(18\\div6=3\\) red counters and \\(30\\div6=5\\) blue counters. Choice B makes only 3 groups, which is possible but not the greatest number.",
+      "visuals": [
+        {
+          "id": "sat-q0163-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Factor",
+              "Divides 18?",
+              "Divides 30?"
+            ],
+            "rows": [
+              [
+                1,
+                "Yes",
+                "Yes"
+              ],
+              [
+                2,
+                "Yes",
+                "Yes"
+              ],
+              [
+                3,
+                "Yes",
+                "Yes"
+              ],
+              [
+                6,
+                "Yes",
+                "Yes"
+              ],
+              [
+                9,
+                "Yes",
+                "No"
+              ],
+              [
+                10,
+                "No",
+                "Yes"
+              ],
+              [
+                15,
+                "No",
+                "Yes"
+              ],
+              [
+                18,
+                "Yes",
+                "No"
+              ]
+            ],
+            "headers": [
+              "Factor",
+              "Divides 18?",
+              "Divides 30?"
+            ]
+          },
+          "alt": "A table compares factors of 18 and 30. The common factors are 1, 2, 3, and 6, with 6 the greatest."
+        }
+      ],
+      "hint": "The number of groups must divide both 18 and 30; use the table to find the largest factor marked 'Yes' in both columns."
+    },
+    {
+      "id": "sat-q0164",
+      "title": "When Two Buses Arrive Together",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "Two buses leave a station at the same time. Bus A leaves every 6 minutes, and Bus B leaves every 8 minutes. After how many minutes will they first leave together again? The table shows selected departure times after they leave initially. Choose A or B and justify your answer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(48\\) minutes"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\) minutes"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The buses leave together at positive times that are multiples of both 6 and 8. The first common positive multiple is the least common multiple: \\(6=2\\times3\\) and \\(8=2^3\\), so \\(\\operatorname{LCM}(6,8)=2^3\\times3=24\\). Choice A is a common multiple, but it is not the first time they meet again because they already leave together after 24 minutes.",
+      "visuals": [
+        {
+          "id": "sat-q0164-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Minutes after start",
+              "Bus A departs?",
+              "Bus B departs?"
+            ],
+            "rows": [
+              [
+                6,
+                "Yes",
+                "No"
+              ],
+              [
+                8,
+                "No",
+                "Yes"
+              ],
+              [
+                12,
+                "Yes",
+                "No"
+              ],
+              [
+                16,
+                "No",
+                "Yes"
+              ],
+              [
+                18,
+                "Yes",
+                "No"
+              ],
+              [
+                24,
+                "Yes",
+                "Yes"
+              ]
+            ],
+            "headers": [
+              "Minutes after start",
+              "Bus A departs?",
+              "Bus B departs?"
+            ]
+          },
+          "alt": "A table of selected departure times shows that both buses depart at the 24-minute mark; none of the earlier positive times listed is shared."
+        }
+      ],
+      "hint": "The buses leave together at times that are multiples of both 6 and 8; find the smallest positive such time and check it in the table."
+    },
+    {
+      "id": "sat-q0165",
+      "title": "Cutting Ribbons into Equal Pieces",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "Two ribbons are 24 centimeters and 36 centimeters long. They must be cut into pieces of equal length, with no ribbon left over, and each piece must be as long as possible. What should the length of each piece be? Choose A or B and explain how the common factors determine the answer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\) centimeters"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\) centimeters"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The piece length must divide both 24 and 36. Their greatest common factor is 12 because \\(24=2\\times12\\) and \\(36=3\\times12\\), and no larger integer divides both. Each ribbon can therefore be cut into pieces of length 12 centimeters. Choice A also divides both lengths, but it produces shorter pieces, so it does not meet the requirement that each piece be as long as possible.",
+      "hint": "The piece length must divide both 24 and 36; look for the largest number that does."
+    },
+    {
+      "id": "sat-q0166",
+      "title": "Two Repeating Club Meetings",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "A chess club meets every 4 days, and a science club meets every 10 days. Both clubs meet today. Assuming the schedules continue unchanged, after how many days will they next meet on the same day? Choose A or B and show how you find the least common multiple.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\) days"
+        },
+        {
+          "label": "B",
+          "text": "\\(40\\) days"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The next shared meeting day occurs after a positive number of days divisible by both 4 and 10. The multiples of 4 are 4, 8, 12, 16, 20, and the multiples of 10 are 10, 20, so the least common multiple is 20. Equivalently, \\(4=2^2\\) and \\(10=2\\times5\\), giving \\(\\operatorname{LCM}(4,10)=2^2\\times5=20\\). Choice B is also a common multiple, but it is not the next shared meeting day.",
+      "hint": "Find the smallest positive number of days that is a multiple of both 4 and 10."
+    },
+    {
+      "id": "sat-q0167",
+      "title": "Prime Factors Shared by Eighty-Four and One Hundred Twenty-Six",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "The table gives the prime factorizations of 84 and 126. What is the greatest common factor of the two numbers? Choose A or B and explain how the shared prime factors determine the result.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(42\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(21\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The greatest common factor uses each prime that appears in both factorizations, taking the smaller exponent. Both numbers share \\(2^1\\), \\(3^1\\), and \\(7^1\\), so the GCF is \\(2\\times3\\times7=42\\). Choice B is only \\(3\\times7=21\\) and incorrectly leaves out the shared factor 2.",
+      "visuals": [
+        {
+          "id": "sat-q0167-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Number",
+              "Prime factorization"
+            ],
+            "rows": [
+              [
+                "84",
+                "2^2 × 3 × 7"
+              ],
+              [
+                "126",
+                "2 × 3^2 × 7"
+              ]
+            ],
+            "headers": [
+              "Number",
+              "Prime factorization"
+            ]
+          },
+          "alt": "The prime factorization table shows 84 equals 2 squared times 3 times 7 and 126 equals 2 times 3 squared times 7."
+        }
+      ],
+      "hint": "Use each prime that appears in both factorizations, with the smaller exponent, and multiply."
+    },
+    {
+      "id": "sat-q0168",
+      "title": "The Least Common Multiple of Three Numbers",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "Find the least common multiple of 12, 18, and 30. The table lists the prime exponents in each number. Choose A or B and explain why the greatest exponent of each prime is used.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(90\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(180\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The factorizations are \\(12=2^2\\times3\\), \\(18=2\\times3^2\\), and \\(30=2\\times3\\times5\\). A common multiple must contain at least \\(2^2\\), \\(3^2\\), and one factor of 5. Thus the LCM is \\(2^2\\times3^2\\times5=4\\times9\\times5=180\\). Choice A, 90, is a multiple of 18 and 30 but not of 12: \\(90=2\\times3^2\\times5\\) has only one factor of 2, so it is not divisible by 4 and therefore not by 12.",
+      "visuals": [
+        {
+          "id": "sat-q0168-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Prime",
+              "Exponent in 12",
+              "Exponent in 18",
+              "Exponent in 30"
+            ],
+            "rows": [
+              [
+                2,
+                2,
+                1,
+                1
+              ],
+              [
+                3,
+                1,
+                2,
+                1
+              ],
+              [
+                5,
+                0,
+                0,
+                1
+              ]
+            ],
+            "headers": [
+              "Prime",
+              "Exponent in 12",
+              "Exponent in 18",
+              "Exponent in 30"
+            ]
+          },
+          "alt": "A prime-exponent table for 12, 18, and 30 shows exponents 2, 1, and 1 for prime 2; 1, 2, and 1 for prime 3; and 0, 0, and 1 for prime 5."
+        }
+      ],
+      "hint": "For each prime in the table, use the largest exponent that appears among the three numbers."
+    },
+    {
+      "id": "sat-q0169",
+      "title": "Reducing a Fraction with the Greatest Common Factor",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "A student wants to write \\(\\frac{84}{126}\\) in simplest form. Which fraction is equivalent to it and has no common factor greater than 1 in its numerator and denominator? Choose A or B and justify the simplification.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The greatest common factor of 84 and 126 is 42. Dividing the numerator and denominator by 42 gives \\(\\frac{84\\div42}{126\\div42}=\\frac23\\). The numerator and denominator 2 and 3 have no common factor greater than 1. Choice A is not equivalent to the original fraction: \\(3/4\\ne2/3\\), as can be checked by cross-multiplication, since \\(3\\times3=9\\) and \\(4\\times2=8\\).",
+      "hint": "Divide the numerator and denominator by their greatest common factor, then check that no common factor remains."
+    },
+    {
+      "id": "sat-q0170",
+      "title": "The Largest Square Tile for a Rectangular Floor",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "A rectangular floor measures 168 centimeters by 120 centimeters. It is covered completely with identical square tiles, without cutting any tiles. If the square tiles are as large as possible, how many tiles are needed? Use the rectangle dimensions to support your reasoning. Choose A or B.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(35\\) tiles"
+        },
+        {
+          "label": "B",
+          "text": "\\(28\\) tiles"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The side length of the largest square tile is the greatest common factor of 168 and 120. Since \\(168=7\\times24\\) and \\(120=5\\times24\\), and 24 is their GCF, each tile is \\(24\\) centimeters wide. The floor needs \\(168\\div24=7\\) tiles along its length and \\(120\\div24=5\\) along its width, for \\(7\\times5=35\\) tiles. Choice B is impossible: 28 equal square tiles would each cover \\(168\\times120\\div28=720\\) square centimeters, but 720 is not a perfect square, so no whole-number square tile has that area.",
+      "visuals": [
+        {
+          "id": "sat-q0170-v1",
+          "type": "GEOMETRY_2D",
+          "data": {
+            "units": "cm",
+            "points": [
+              {
+                "id": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "x": 168,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "x": 168,
+                "y": 120
+              },
+              {
+                "id": "D",
+                "x": 0,
+                "y": 120
+              }
+            ],
+            "segments": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "D"
+              ],
+              [
+                "D",
+                "A"
+              ]
+            ]
+          },
+          "alt": "A rectangular floor, not drawn to scale, has length 168 centimeters and width 120 centimeters. The largest square tile must have a side length that divides both dimensions."
+        }
+      ],
+      "hint": "The largest square tile has a side equal to the greatest common factor of 168 and 120; then count the tiles along each side."
+    },
+    {
+      "id": "sat-q0171",
+      "title": "Three Machines Starting Together",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "Three machines complete a cycle every 15 minutes, 20 minutes, and 24 minutes, respectively. They have just completed a cycle together. After how many minutes will they next complete a cycle together? Choose A or B and justify the least-common-multiple calculation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60\\) minutes"
+        },
+        {
+          "label": "B",
+          "text": "\\(120\\) minutes"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The next simultaneous completion occurs at the least common multiple of 15, 20, and 24. Their prime factorizations are \\(15=3\\times5\\), \\(20=2^2\\times5\\), and \\(24=2^3\\times3\\). Taking the greatest exponent of each prime gives \\(2^3\\times3\\times5=120\\). Choice A is not a multiple of 24, so all three cycles cannot finish together after 60 minutes.",
+      "hint": "Factor 15, 20 and 24 into primes and build the least common multiple from the largest exponent of each prime."
+    },
+    {
+      "id": "sat-q0172",
+      "title": "Recovering a Number from the GCF and LCM",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "Two positive integers have a greatest common factor of 18 and a least common multiple of 540. One of the integers is 90. What is the other integer? Choose A or B and show how the GCF and LCM relate to the product of the two integers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(108\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(120\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For two positive integers \\(a\\) and \\(b\\), \\(ab=\\operatorname{GCF}(a,b)\\times\\operatorname{LCM}(a,b)\\). Therefore, the product is \\(18\\times540=9720\\). Dividing by the known integer gives the other integer as \\(9720\\div90=108\\). Check: the GCF of 90 and 108 is 18, and their LCM is \\((90\\times108)\\div18=540\\). Choice B would give product \\(90\\times120=10800\\), which does not equal 9720.",
+      "hint": "Use the fact that the product of two positive integers equals their GCF times their LCM."
+    },
+    {
+      "id": "sat-q0173",
+      "title": "A Number with Prescribed Greatest Common Factor and Least Common Multiple",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "A positive integer \\(n\\) satisfies \\(\\operatorname{GCF}(48,n)=12\\) and \\(\\operatorname{LCM}(48,n)=240\\). What is \\(n\\)? Choose A or B and use the relationship between the GCF and LCM to justify your answer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(30\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For positive integers, \\(48n=\\operatorname{GCF}(48,n)\\times\\operatorname{LCM}(48,n)\\). Thus \\(48n=12\\times240=2880\\), so \\(n=2880\\div48=60\\). Checking confirms that the GCF of 48 and 60 is 12 and their LCM is 240. Choice B, 30, does have LCM 240 with 48, but \\(\\operatorname{GCF}(48,30)=6\\), not 12, so it fails the GCF condition.",
+      "hint": "Use 48 x n = GCF x LCM, then check both conditions for your value."
+    },
+    {
+      "id": "sat-q0174",
+      "title": "Choosing a Pair with a Given GCF and LCM",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "Which pair of positive integers has greatest common factor 6 and least common multiple 180? Choose A or B and justify both parts of your choice.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\) and \\(45\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(30\\) and \\(36\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For 30 and 36, the prime factorizations are \\(30=2\\times3\\times5\\) and \\(36=2^2\\times3^2\\). Their GCF is \\(2\\times3=6\\), and their LCM is \\(2^2\\times3^2\\times5=180\\). Choice A has GCF 3, since 24 and 45 share only one factor of 3, and its LCM is 360, not 180.",
+      "hint": "Factor each pair into primes and compute both the GCF and the LCM; both must match."
+    },
+    {
+      "id": "sat-q0175",
+      "title": "Making the Greatest Number of Identical Snack Packs",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "A teacher has 48 crackers and 60 juice boxes. She wants to make the greatest possible number of identical snack packs, using every item and putting the same number of crackers and juice boxes in each pack. How many packs can she make, and how many of each item will be in each pack? Choose A or B and explain the role of the greatest common factor.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\) packs, with 3 crackers and 4 juice boxes in each pack"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\) packs, with 4 crackers and 5 juice boxes in each pack"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number of identical packs must divide both 48 and 60. Their greatest common factor is 12, so 12 is the maximum possible number of packs. Each pack contains \\(48\\div12=4\\) crackers and \\(60\\div12=5\\) juice boxes. Choice A is impossible: 15 packs of 3 crackers use only 45 crackers and leave 3 unused, because 15 does not divide 48.",
+      "hint": "The number of packs must divide both 48 and 60; find the greatest such number, then divide to get the items per pack."
+    },
+    {
+      "id": "sat-q0176",
+      "title": "The Next Shared Day on Two Schedules",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "One activity happens every 6 days and another happens every 9 days. Both happen today. On how many days from now will they first happen on the same day again? Choose A or B and use the table of multiples to justify your answer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(18\\) days"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\) days"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The shared day must be a positive multiple of both 6 and 9. Since \\(6=2\\times3\\) and \\(9=3^2\\), their least common multiple is \\(2\\times3^2=18\\). Thus they first coincide again after 18 days. Choice B is not a multiple of either 6 or 9, so it cannot be a shared day.",
+      "visuals": [
+        {
+          "id": "sat-q0176-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Multiples of 6 (days)",
+              "Multiples of 9 (days)"
+            ],
+            "rows": [
+              [
+                6,
+                9
+              ],
+              [
+                12,
+                18
+              ],
+              [
+                18,
+                27
+              ],
+              [
+                24,
+                36
+              ],
+              [
+                30,
+                45
+              ],
+              [
+                36,
+                54
+              ]
+            ],
+            "headers": [
+              "Multiples of 6 (days)",
+              "Multiples of 9 (days)"
+            ]
+          },
+          "alt": "A table lists multiples of 6 and 9. The first shared positive multiple is 18 days."
+        }
+      ],
+      "hint": "Use the table to find the first number that appears in both columns of multiples."
+    },
+    {
+      "id": "sat-q0177",
+      "title": "Recovering an Integer from Its GCF and LCM",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "Two positive integers have a greatest common factor of 8 and a least common multiple of 240. One integer is 40. What is the other integer? Choose A or B and verify that the proposed pair has the required GCF and LCM.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(56\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(48\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The product of two positive integers equals the product of their GCF and LCM. The product here is \\(8\\times240=1920\\), so the unknown integer is \\(1920\\div40=48\\). The GCF of 40 and 48 is 8, and their LCM is \\((40\\times48)\\div8=240\\). Choice A fails because the GCF of 40 and 56 is 8, but their LCM is 280 rather than 240.",
+      "hint": "Use the product rule GCF x LCM = product of the two numbers, then verify both conditions."
+    },
+    {
+      "id": "sat-q0178",
+      "title": "A Common Multiple with a Remainder Condition",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "Find the smallest positive integer that is divisible by both 12 and 18 and leaves a remainder of 5 when divided by 7. Choose A or B and explain how the least common multiple narrows the possibilities.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(180\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(108\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every integer divisible by both 12 and 18 is a multiple of their LCM, 36. The positive multiples are \\(36,72,108,144,180,\\ldots\\). Their remainders upon division by 7 are 1, 2, 3, 4, 5, respectively, because \\(36\\equiv1\\pmod7\\). The first multiple with remainder 5 is 180. Choice B is divisible by both 12 and 18, but \\(108=7\\times15+3\\), so its remainder is 3 rather than 5.",
+      "hint": "All numbers divisible by 12 and 18 are multiples of their LCM; list those multiples and check each remainder on division by 7."
+    },
+    {
+      "id": "sat-q0179",
+      "title": "Counting Integer Pairs from a GCF and LCM",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "How many unordered pairs of positive integers \\((a,b)\\), with \\(a\\le b\\), have greatest common factor 6 and least common multiple 180? The table lists the possible coprime factor pairs after dividing each integer by 6. Choose A or B and explain why each listed pair qualifies.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\) pairs"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\) pairs"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Write \\(a=6x\\) and \\(b=6y\\). The GCF condition requires \\(x\\) and \\(y\\) to be coprime, and the LCM condition becomes \\(6xy=180\\), so \\(xy=30\\). The factor pairs of 30 with \\(x\\le y\\) are \\((1,30),(2,15),(3,10),(5,6)\\), and each pair is coprime. They produce exactly four unordered pairs: \\((6,180),(12,90),(18,60),(30,36)\\). Choice B, 6, does not match any valid count: there are only four coprime factor pairs with \\(x\\le y\\), and counting ordered pairs would give 8, not 6.",
+      "visuals": [
+        {
+          "id": "sat-q0179-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "x",
+              "y",
+              "Are x and y coprime?"
+            ],
+            "rows": [
+              [
+                1,
+                30,
+                "Yes"
+              ],
+              [
+                2,
+                15,
+                "Yes"
+              ],
+              [
+                3,
+                10,
+                "Yes"
+              ],
+              [
+                5,
+                6,
+                "Yes"
+              ]
+            ],
+            "headers": [
+              "x",
+              "y",
+              "Are x and y coprime?"
+            ]
+          },
+          "alt": "The table lists the four coprime factor pairs of 30 with the smaller factor first: (1,30), (2,15), (3,10), and (5,6)."
+        }
+      ],
+      "hint": "Write a = 6x and b = 6y with x and y coprime; the LCM condition then fixes the product xy. Count factor pairs with x <= y."
+    },
+    {
+      "id": "sat-q0180",
+      "title": "Determining a Number from Prime Exponents",
+      "category": "MATH",
+      "concept": "GCF and LCM",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply gcf and lcm and justify the selected answer.",
+      "question": "A positive integer \\(n\\) satisfies \\(\\operatorname{GCF}(n,72)=18\\) and \\(\\operatorname{LCM}(n,72)=360\\). What is \\(n\\)? Use the prime-exponent table to justify your answer. Choose A or B.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(45\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(90\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "We have \\(72=2^3\\times3^2\\), \\(18=2\\times3^2\\), and \\(360=2^3\\times3^2\\times5\\). For the GCF with 72 to have exactly one factor of 2, \\(n\\) must contain exactly one factor of 2; the GCF requires at least two factors of 3 in \\(n\\) and the LCM allows at most two, so \\(n\\) contains exactly two factors of 3. The LCM also requires one factor of 5 in \\(n\\). Hence \\(n=2\\times3^2\\times5=90\\). Choice A, 45, has no factor of 2, so its GCF with 72 is 9, not 18.",
+      "visuals": [
+        {
+          "id": "sat-q0180-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Prime",
+              "Exponent in 72",
+              "Exponent in GCF 18",
+              "Exponent in LCM 360"
+            ],
+            "rows": [
+              [
+                2,
+                3,
+                1,
+                3
+              ],
+              [
+                3,
+                2,
+                2,
+                2
+              ],
+              [
+                5,
+                0,
+                0,
+                1
+              ]
+            ],
+            "headers": [
+              "Prime",
+              "Exponent in 72",
+              "Exponent in GCF 18",
+              "Exponent in LCM 360"
+            ]
+          },
+          "alt": "The prime exponents are: 72 has exponents 3 for 2 and 2 for 3; 18 has exponents 1 for 2 and 2 for 3; 360 has exponents 3 for 2, 2 for 3, and 1 for 5."
+        }
+      ],
+      "hint": "Compare exponents prime by prime: the GCF gives the smaller exponent and the LCM the larger exponent between n and 72."
+    }
+  ]
+}

@@ -1,0 +1,650 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "mathematics-sat-19",
+  "title": "SAT 19 · Integer operations",
+  "category": "SAT Mathematics",
+  "description": "A/B reasoning practice. Difficulty is editorial, not standardized SAT calibration.",
+  "questionCount": 18,
+  "questions": [
+    {
+      "id": "sat-q0325",
+      "title": "Temperature After Two Changes",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "At sunrise, the temperature is \\(-3^\\circ\\text{C}\\). By noon it rises \\(5^\\circ\\text{C}\\), and by evening it falls \\(4^\\circ\\text{C}\\). What is the evening temperature? Choose A or B and show the signed-number steps.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2^\\circ\\text{C}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2^\\circ\\text{C}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Starting from \\(-3\\), the rise gives \\(-3+5=2\\). The later fall gives \\(2-4=-2\\). Therefore the evening temperature is \\(-2^\\circ\\text{C}\\). Choice B stops after the rise and does not include the final \\(4^\\circ\\text{C}\\) decrease, so choice A is correct.",
+      "hint": "Apply the rise and then the fall to -3 in order, treating them as signed changes."
+    },
+    {
+      "id": "sat-q0326",
+      "title": "Game Score Across Three Rounds",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "A player begins with \\(10\\) points. The chart shows the change in score during the next three rounds. What is the player's score after all three rounds? Choose A or B and justify the total.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\) points"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\) points"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The three changes have total \\(-4+7-3=0\\). Applying that net change to the starting score gives \\(10+0=10\\) points. Choice A results from subtracting the first loss without correctly combining all three signed changes. Therefore, choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0326-v1",
+          "type": "DATA_CHART",
+          "data": {
+            "kind": "bar",
+            "xLabel": "Round",
+            "yLabel": "Score change",
+            "bars": [
+              {
+                "label": "Round 1",
+                "value": -4
+              },
+              {
+                "label": "Round 2",
+                "value": 7
+              },
+              {
+                "label": "Round 3",
+                "value": -3
+              }
+            ],
+            "chart": "bar",
+            "labels": [
+              "Round 1",
+              "Round 2",
+              "Round 3"
+            ],
+            "values": [
+              -4,
+              7,
+              -3
+            ],
+            "axes": {
+              "xLabel": "Round",
+              "yLabel": "Score change"
+            }
+          },
+          "alt": "Bar chart of score changes: Round 1 is negative 4, Round 2 is positive 7, and Round 3 is negative 3."
+        }
+      ],
+      "hint": "Add the three signed changes from the chart to get the net change, then apply it to the starting score."
+    },
+    {
+      "id": "sat-q0327",
+      "title": "Negative Even Integers",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "The universe contains the integers from \\(-4\\) through \\(4\\). Set \\(N\\) contains the negative integers, and set \\(E\\) contains the even integers. The Venn diagram classifies the integers by these two properties. How many integers are both negative and even? Choose A or B and explain.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\) integers"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\) integers"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The negative integers are \\(-4,-3,-2,-1\\). Among them, the even integers are \\(-4\\) and \\(-2\\), so there are \\(2\\) integers in both sets. Choice A counts all four negative integers instead of only those that are also even. Therefore, choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0327-v1",
+          "type": "VENN",
+          "data": {
+            "universe": {
+              "label": "Integers from -4 through 4",
+              "total": 9
+            },
+            "sets": [
+              {
+                "id": "N",
+                "label": "Negative integers",
+                "elements": []
+              },
+              {
+                "id": "E",
+                "label": "Even integers",
+                "elements": []
+              }
+            ],
+            "regions": {
+              "N_only": 2,
+              "E_only": 3,
+              "intersection": 2,
+              "outside": 2
+            }
+          },
+          "alt": "Among the integers from negative 4 through 4, two are negative only, three are even but not negative, two are both negative and even, and two are neither."
+        }
+      ],
+      "hint": "List the integers from -4 to 4, mark the negative ones, and among those mark the even ones."
+    },
+    {
+      "id": "sat-q0328",
+      "title": "Elevator Through Basement Levels",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "An elevator starts on floor \\(-3\\). It goes up \\(7\\) floors and then goes down \\(5\\) floors. On which floor does it stop? Choose A or B and show the integer operations.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Floor \\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "Floor \\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Moving up \\(7\\) floors gives \\(-3+7=4\\). Moving down \\(5\\) more floors gives \\(4-5=-1\\). Thus the elevator stops on floor \\(-1\\). Choice B results from losing track of the sign when moving below floor \\(0\\), so choice A is correct.",
+      "hint": "Treat going up as adding and going down as subtracting, starting from -3."
+    },
+    {
+      "id": "sat-q0329",
+      "title": "Evaluating a Signed Expression",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "Evaluate the expression\n\\[\n-6+4(-3)-(-5).\n\\]\nChoose A or B and justify each sign operation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-23\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-13\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First, \\(4(-3)=-12\\). The expression becomes \\(-6-12-(-5)\\). Subtracting a negative is addition, so this is \\(-18+5=-13\\). Choice A incorrectly treats subtracting \\(-5\\) as subtracting \\(5\\). Therefore, choice B is correct.",
+      "hint": "Do the multiplication first, then remember that subtracting a negative number is the same as adding its opposite."
+    },
+    {
+      "id": "sat-q0330",
+      "title": "Mapping a Negative Input Rule",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "The mapping diagram follows the rule \\(f(x)=-2x+1\\). What is \\(f(4)\\)? Choose A or B and show how the sign of the coefficient affects the calculation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=4\\) into the rule: \\(f(4)=-2(4)+1=-8+1=-7\\). Choice B loses the negative sign on the coefficient and effectively treats the rule as \\(2x-1\\). Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0330-v1",
+          "type": "MAPPING",
+          "data": {
+            "left": {
+              "label": "x",
+              "elements": [
+                -2,
+                -1,
+                0
+              ]
+            },
+            "right": {
+              "label": "f(x)",
+              "elements": [
+                5,
+                3,
+                1
+              ]
+            },
+            "arrows": [
+              [
+                -2,
+                5
+              ],
+              [
+                -1,
+                3
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "alt": "Mapping diagram for f of x equals negative 2x plus 1: negative 2 maps to 5, negative 1 maps to 3, and 0 maps to 1."
+        }
+      ],
+      "hint": "Substitute 4 for x, keeping the negative sign on the coefficient; you can test the rule on a mapping pair first."
+    },
+    {
+      "id": "sat-q0331",
+      "title": "Solving a Negative-Coefficient Equation",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "Solve\n\\[\n-3(x-2)=15.\n\\]\nWhich value of \\(x\\) satisfies the equation? Choose A or B and verify the result by substitution.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide both sides by \\(-3\\): \\(x-2=-5\\). Adding \\(2\\) gives \\(x=-3\\). Checking, \\(-3(-3-2)=-3(-5)=15\\). Choice B would give \\(-3(7-2)=-15\\), not \\(15\\). Therefore, choice A is correct.",
+      "hint": "Divide both sides by -3 first, then isolate x; check by substituting."
+    },
+    {
+      "id": "sat-q0332",
+      "title": "Distance Across Zero",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "Two points on a number line are located at \\(-8\\) and \\(5\\). What is the distance between them? Choose A or B and explain why distance cannot be negative.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\) units"
+        },
+        {
+          "label": "B",
+          "text": "\\(13\\) units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The distance is the absolute difference:\n\\[\n|5-(-8)|=|13|=13.\n\\]\nEquivalently, it is \\(8\\) units from \\(-8\\) to \\(0\\) and \\(5\\) more units from \\(0\\) to \\(5\\). Choice A comes from combining the magnitudes incorrectly. Therefore, choice B is correct.",
+      "hint": "Distance is the absolute value of the difference of the coordinates; count across zero if that helps."
+    },
+    {
+      "id": "sat-q0333",
+      "title": "X-Intercept of a Decreasing Line",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "The graph represents \\(y=-2x-4\\). At what \\(x\\)-value does the line cross the \\(x\\)-axis? Choose A or B and justify the signed equation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "At an \\(x\\)-intercept, \\(y=0\\). Thus \\(0=-2x-4\\), so \\(4=-2x\\) and \\(x=-2\\). Substitution confirms that \\(-2(-2)-4=0\\). Choice B gives \\(-2(2)-4=-8\\), so it is not an intercept. Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0333-v1",
+          "type": "FUNCTION_GRAPH",
+          "data": {
+            "axes": {
+              "xMin": -5,
+              "xMax": 3,
+              "yMin": -8,
+              "yMax": 6
+            },
+            "curves": [
+              {
+                "expression": "-2*x-4",
+                "label": "y=-2x-4"
+              }
+            ],
+            "points": [
+              {
+                "x": -2,
+                "y": 0,
+                "label": "x-intercept"
+              },
+              {
+                "x": 0,
+                "y": -4,
+                "label": "y-intercept"
+              }
+            ]
+          },
+          "alt": "Decreasing line y equals negative 2x minus 4, crossing the x-axis at negative 2 and the y-axis at negative 4."
+        }
+      ],
+      "hint": "At an x-intercept y = 0; set -2x - 4 equal to 0 and solve."
+    },
+    {
+      "id": "sat-q0334",
+      "title": "Parentheses and Negative Powers",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "Evaluate\n\\[\n-3^2+(-3)^2-(-4).\n\\]\nChoose A or B and explain how the parentheses change the meaning of the powers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(22\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Exponentiation is performed before the leading negative, so \\(-3^2=-(3^2)=-9\\). However, \\((-3)^2=9\\). Also, \\(-(-4)=+4\\). Therefore,\n\\[\n-9+9+4=4.\n\\]\nChoice A results from treating \\(-3^2\\) as though the negative sign were inside parentheses. Therefore, choice B is correct.",
+      "hint": "Decide in each power whether the minus sign is part of the base, then handle subtracting a negative."
+    },
+    {
+      "id": "sat-q0335",
+      "title": "Signed Arithmetic Sequence Total",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "The table shows the beginning of an arithmetic sequence. The same signed change continues from one term to the next. What is the sum \\(a_0+a_1+a_2+a_3+a_4\\)? Choose A or B and justify the missing term.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each term decreases by \\(4\\), so \\(a_4=-5-4=-9\\). The required sum is\n\\[\n7+3+(-1)+(-5)+(-9)=-5.\n\\]\nChoice B has the opposite sign and does not match the signed sum. Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0335-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "n",
+              "a_n"
+            ],
+            "rows": [
+              [
+                0,
+                7
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                -1
+              ],
+              [
+                3,
+                -5
+              ]
+            ],
+            "headers": [
+              "n",
+              "a_n"
+            ]
+          },
+          "alt": "Table of an arithmetic sequence: a sub 0 equals 7, a sub 1 equals 3, a sub 2 equals negative 1, and a sub 3 equals negative 5."
+        }
+      ],
+      "hint": "Find the common difference from the table, compute the next term, and add all five terms."
+    },
+    {
+      "id": "sat-q0336",
+      "title": "Solving with Two Negative Distributions",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "Solve\n\\[\n-2(3k-4)+5(k+1)=16.\n\\]\nChoose A or B and verify the signed distribution carefully.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=-3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Distribute first:\n\\[\n-6k+8+5k+5=16.\n\\]\nCombining like terms gives \\(-k+13=16\\), so \\(-k=3\\) and \\(k=-3\\). Checking the original expression gives \\(-2(-13)+5(-2)=26-10=16\\). Choice A does not satisfy the equation. Therefore, choice B is correct.",
+      "hint": "Distribute -2 and 5 carefully, combine like terms, and solve; then substitute to check."
+    },
+    {
+      "id": "sat-q0337",
+      "title": "Recovering the Morning Temperature",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "A town's temperature changes three times during a day. First it falls \\(7^\\circ\\text{C}\\), then rises \\(4^\\circ\\text{C}\\), and finally falls \\(6^\\circ\\text{C}\\). The final temperature is \\(-11^\\circ\\text{C}\\). What was the temperature before these changes began? Choose A or B and reason backward or by using the net change.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-20^\\circ\\text{C}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2^\\circ\\text{C}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The net change is \\(-7+4-6=-9\\). If the starting temperature is \\(s\\), then \\(s-9=-11\\), so \\(s=-2\\). Checking forward, \\(-2-7=-9\\), then \\(-9+4=-5\\), and \\(-5-6=-11\\). Choice A would end at \\(-29^\\circ\\text{C}\\), so choice B is correct.",
+      "hint": "Find the net change of the three steps, then undo it from the final temperature."
+    },
+    {
+      "id": "sat-q0338",
+      "title": "Finding a Missing Score Change",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "A game score starts at \\(-4\\). During four turns, the score changes by \\(+6\\), \\(+6\\), \\(-5\\), and one unknown signed amount. The final score is \\(7\\). What was the unknown change? Choose A or B and justify the reverse calculation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(+4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "After the three known changes, the score is\n\\[\n-4+6+6-5=3.\n\\]\nTo finish at \\(7\\), the missing change must take \\(3\\) to \\(7\\), so it is \\(+4\\). Choice B would produce \\(3-4=-1\\), not \\(7\\). Therefore, choice A is correct.",
+      "hint": "Apply the three known changes to -4, then find the change that brings that result to 7."
+    },
+    {
+      "id": "sat-q0339",
+      "title": "Path Length Versus Displacement",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "A robot starts at \\(A(-4,3)\\), moves horizontally to \\(B(2,3)\\), then vertically to \\(C(2,-2)\\), and finally horizontally to \\(D(-1,-2)\\). How many units does the robot travel in total along these three segments? Choose A or B and distinguish total path length from direct displacement.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\) units"
+        },
+        {
+          "label": "B",
+          "text": "\\(14\\) units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(A\\) to \\(B\\), the robot travels \\(|2-(-4)|=6\\) units. From \\(B\\) to \\(C\\), it travels \\(|-2-3|=5\\) units. From \\(C\\) to \\(D\\), it travels \\(|-1-2|=3\\) units. The total is \\(6+5+3=14\\) units. Choice A corresponds to combining only the net horizontal and vertical displacement rather than adding all traveled segments. Therefore, choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0339-v1",
+          "type": "GEOMETRY_2D",
+          "data": {
+            "units": "units",
+            "points": [
+              {
+                "id": "A",
+                "x": -4,
+                "y": 3
+              },
+              {
+                "id": "B",
+                "x": 2,
+                "y": 3
+              },
+              {
+                "id": "C",
+                "x": 2,
+                "y": -2
+              },
+              {
+                "id": "D",
+                "x": -1,
+                "y": -2
+              }
+            ],
+            "segments": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "D"
+              ]
+            ]
+          },
+          "alt": "Coordinate path from A at negative 4 comma 3 to B at 2 comma 3, then to C at 2 comma negative 2, then to D at negative 1 comma negative 2."
+        }
+      ],
+      "hint": "Find the length of each straight segment from the coordinates and add them; this differs from the straight-line distance from start to finish."
+    },
+    {
+      "id": "sat-q0340",
+      "title": "Integers with Opposite Signs",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "Two integers have a product of \\(-48\\) and a sum of \\(2\\). What is the positive integer minus the negative integer? Choose A or B and justify the factor pair.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(14\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Because the product is negative, the integers have opposite signs. The factor pair \\(8\\) and \\(6\\) has a difference of \\(2\\), and \\(8+(-6)=2\\), so the integers are \\(8\\) and \\(-6\\). The requested difference is\n\\[\n8-(-6)=14.\n\\]\nChoice B is the sum of the two integers, not the requested difference. Therefore, choice A is correct.",
+      "hint": "Opposite signs give a negative product; list factor pairs of 48 whose difference is 2, then compute the requested difference."
+    },
+    {
+      "id": "sat-q0341",
+      "title": "Exactly Two Integer Branches",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "Let \\(t\\) be an integer. Consider\n\\[\n|x-3|+|x+1|=t.\n\\]\nFor which condition on \\(t\\) does the equation have exactly two distinct integer solutions for \\(x\\)? Choose A or B and analyze the signed-distance cases.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(t\\) is even and \\(t>4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(t\\ge4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The points \\(-1\\) and \\(3\\) are \\(4\\) units apart. For every \\(x\\) between them, the sum of distances is exactly \\(4\\), so \\(t=4\\) gives several integer solutions rather than exactly two. Outside that interval, the expression increases by \\(2\\) whenever \\(x\\) moves one integer step farther outward. Therefore values \\(t=6,8,10,\\ldots\\) each produce one integer solution on the left and one on the right. These are precisely the even integers greater than \\(4\\). Choice B wrongly includes \\(t=4\\) and odd values such as \\(5\\), which do not produce exactly two integer solutions. Therefore, choice A is correct.",
+      "hint": "Interpret the expression as the sum of distances from x to 3 and to -1, and examine what happens inside and outside the interval between them."
+    },
+    {
+      "id": "sat-q0342",
+      "title": "Minimum of an Integer Quadratic",
+      "category": "MATH",
+      "concept": "Integer operations",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply integer operations and justify the selected answer.",
+      "question": "For integers \\(x\\) satisfying \\(-5\\le x\\le4\\), consider\n\\[\nf(x)=x^2+3x-4.\n\\]\nWhich statement correctly describes the minimum value of \\(f(x)\\) on this integer domain? Choose A or B and justify why nearby integers must be checked.",
+      "options": [
+        {
+          "label": "A",
+          "text": "The minimum is \\(-6\\), attained by exactly one integer."
+        },
+        {
+          "label": "B",
+          "text": "The minimum is \\(-6\\), attained by exactly two integers."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The quadratic opens upward, and its continuous vertex occurs at\n\\[\nx=-\\frac{3}{2}.\n\\]\nThe nearest integers are \\(-2\\) and \\(-1\\). Evaluating,\n\\[\nf(-2)=4-6-4=-6\n\\]\nand\n\\[\nf(-1)=1-3-4=-6.\n\\]\nBecause the parabola increases as integer inputs move away from the vertex, no other allowed integer gives a smaller value. Thus the minimum is \\(-6\\), attained at both \\(-2\\) and \\(-1\\). Choice A incorrectly assumes only one integer can attain the minimum, so choice B is correct.",
+      "hint": "Find the vertex of the parabola, then evaluate the function at the integers closest to it."
+    }
+  ]
+}

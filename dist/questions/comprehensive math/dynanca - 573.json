@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-573",
+  "category": "Comprehensive Mathematics",
+  "title": "573. Discrete Mathematics, Counting & Graph Theory: Fibonacci Recurrence Applications",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-573-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A Fibonacci number",
+      "learningObjective": "Compute a Fibonacci number from the recurrence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The Fibonacci numbers are defined by \\(F_1=1\\), \\(F_2=1\\), and \\(F_n=F_{n-1}+F_{n-2}\\). What is \\(F_{10}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(55\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(34\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sequence begins \\(1,1,2,3,5,8,13,21,34,55\\). The tenth term is \\(55\\). The number \\(34\\) is \\(F_9\\).",
+      "hint": "Write out the terms one by one, keeping track of the index."
+    },
+    {
+      "id": "dynanca-573-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Ways to climb five stairs",
+      "learningObjective": "Count ways to climb stairs with steps of one or two.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In how many ways can \\(5\\) stairs be climbed if each step covers \\(1\\) or \\(2\\) stairs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(a_n\\) be the number of ways for \\(n\\) stairs. Then \\(a_1=1\\), \\(a_2=2\\), and \\(a_n=a_{n-1}+a_{n-2}\\), so \\(a_3=3\\), \\(a_4=5\\), \\(a_5=8\\). These are Fibonacci numbers shifted by one index: \\(a_n=F_{n+1}\\). The number \\(5\\) is \\(a_4\\).",
+      "hint": "Build the values up from one stair and two stairs."
+    },
+    {
+      "id": "dynanca-573-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Domino tilings",
+      "learningObjective": "Count domino tilings of a rectangle of height two.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In how many ways can a \\(2\\times 6\\) rectangle be tiled with \\(1\\times 2\\) dominoes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(13\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(t_n\\) be the number of tilings of a \\(2\\times n\\) rectangle. The last column is covered by one vertical domino (leaving \\(2\\times(n-1)\\)) or by two horizontal dominoes (leaving \\(2\\times(n-2)\\)), so \\(t_n=t_{n-1}+t_{n-2}\\) with \\(t_1=1\\), \\(t_2=2\\). Hence \\(t_3=3\\), \\(t_4=5\\), \\(t_5=8\\), \\(t_6=13\\). The number \\(12\\) is the area of the rectangle.",
+      "hint": "Consider how the last column can be covered."
+    },
+    {
+      "id": "dynanca-573-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Strings without adjacent ones",
+      "learningObjective": "Count binary strings with no two consecutive ones.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many binary strings of length \\(7\\) contain no two consecutive digits equal to \\(1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(34\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(33\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(b_n\\) be the number of such strings of length \\(n\\). A valid string ends in \\(0\\) (after any valid string of length \\(n-1\\)) or in \\(01\\) (after any valid string of length \\(n-2\\)), so \\(b_n=b_{n-1}+b_{n-2}\\) with \\(b_1=2\\), \\(b_2=3\\). The values are \\(2,3,5,8,13,21,34\\), so \\(b_7=34\\).",
+      "hint": "Separate the strings ending in \\(0\\) from those ending in \\(1\\)."
+    },
+    {
+      "id": "dynanca-573-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Breeding pairs",
+      "learningObjective": "Apply the Fibonacci recurrence to a population model.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A newborn pair of rabbits is placed in a field in month \\(1\\). Every pair produces one new pair in each month from its third month of life onward, and no rabbits die, so the number of pairs in month \\(n\\) is the Fibonacci number \\(F_n\\) with \\(F_1=F_2=1\\). How many pairs are there in month \\(11\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(110\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(89\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The numbers of pairs are \\(1,1,2,3,5,8,13,21,34,55,89\\), so month \\(11\\) has \\(89\\) pairs. The number \\(110=2\\cdot 55\\) assumes that every pair present in month \\(10\\) produces a new pair, but the pairs born in month \\(10\\) are still too young.",
+      "hint": "The pairs in a month are those of the previous month plus the new pairs, one for each pair alive two months earlier."
+    },
+    {
+      "id": "dynanca-573-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Subsets without neighbours",
+      "learningObjective": "Count subsets that contain no two consecutive integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "How many subsets of \\(\\{1,2,3,4,5,6\\}\\), including the empty set, contain no two consecutive integers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(32\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(21\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(c_n\\) be the number of such subsets of \\(\\{1,\\dots,n\\}\\). A subset either omits \\(n\\) (\\(c_{n-1}\\) choices) or contains \\(n\\) and therefore omits \\(n-1\\) (\\(c_{n-2}\\) choices). So \\(c_n=c_{n-1}+c_{n-2}\\) with \\(c_1=2\\), \\(c_2=3\\), giving \\(2,3,5,8,13,21\\). The number \\(32\\) is half of all \\(64\\) subsets, which is not the correct count.",
+      "hint": "Decide whether the largest element \\(6\\) is in the subset."
+    },
+    {
+      "id": "dynanca-573-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Sum of the first Fibonacci numbers",
+      "learningObjective": "Use the identity for a sum of consecutive Fibonacci numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "With \\(F_1=F_2=1\\), what is \\(F_1+F_2+\\cdots+F_8\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(55\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(54\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The terms are \\(1+1+2+3+5+8+13+21=54\\). This agrees with the identity \\(F_1+F_2+\\cdots+F_n=F_{n+2}-1\\), since \\(F_{10}-1=55-1=54\\). The number \\(55\\) forgets to subtract \\(1\\).",
+      "hint": "Add the eight numbers, or use the identity that involves \\(F_{n+2}\\)."
+    },
+    {
+      "id": "dynanca-573-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Sum of squares",
+      "learningObjective": "Use the identity for a sum of squares of Fibonacci numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "With \\(F_1=F_2=1\\), what is \\(F_1^2+F_2^2+\\cdots+F_6^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(104\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(64\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The squares are \\(1+1+4+9+25+64=104\\). This agrees with the identity \\(F_1^2+\\cdots+F_n^2=F_n\\,F_{n+1}\\), since \\(F_6F_7=8\\cdot 13=104\\). The number \\(64\\) is only the last square, \\(F_6^2\\).",
+      "hint": "Square each of the first six Fibonacci numbers and add."
+    },
+    {
+      "id": "dynanca-573-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A product identity",
+      "learningObjective": "Evaluate an expression built from three consecutive Fibonacci numbers.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "With \\(F_7=13\\), \\(F_8=21\\), and \\(F_9=34\\), what is \\(F_7\\,F_9-F_8^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(F_7F_9-F_8^2=13\\cdot 34-21^2=442-441=1\\). In general \\(F_{n-1}F_{n+1}-F_n^2=(-1)^n\\), which equals \\(1\\) for the even index \\(n=8\\).",
+      "hint": "Compute the product and the square exactly."
+    },
+    {
+      "id": "dynanca-573-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A stair that must be skipped",
+      "learningObjective": "Count stair-climbing sequences that avoid one stair.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In how many ways can \\(8\\) stairs be climbed with steps covering \\(1\\) or \\(2\\) stairs, if stair number \\(4\\) must not be stepped on?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(25\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The climber must reach stair \\(3\\), jump from \\(3\\) to \\(5\\), and then climb the remaining \\(3\\) stairs. Stair \\(3\\) can be reached in \\(3\\) ways, and the last \\(3\\) stairs can be climbed in \\(3\\) ways, so there are \\(3\\cdot 1\\cdot 3=9\\) ways. The number \\(25=5\\cdot 5\\) counts the ways that do step on stair \\(4\\).",
+      "hint": "The only way to pass stair \\(4\\) without stepping on it is a two-stair step from stair \\(3\\)."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-541",
+  "category": "Comprehensive Mathematics",
+  "title": "541. Sets, Logic, Reasoning & Proof: Satisfiability of Small Boolean Formulas",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-541-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Meaning of satisfiable",
+      "learningObjective": "State what it means for a propositional formula to be satisfiable.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "When is a propositional formula called satisfiable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When every assignment of truth values makes it true"
+        },
+        {
+          "label": "B",
+          "text": "When at least one assignment of truth values makes it true"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Satisfiable means that some assignment makes the formula true. A formula that is true under every assignment is a tautology, which is a stronger property. For example, \\(p\\land q\\) is satisfiable but is not a tautology.",
+      "hint": "To satisfy a formula, one suitable assignment is enough."
+    },
+    {
+      "id": "dynanca-541-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An unsatisfiable conjunction",
+      "learningObjective": "Decide whether a short conjunction is satisfiable.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Is the formula \\((p\\lor q)\\land\\neg p\\land\\neg q\\) satisfiable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; \\(\\neg p\\) and \\(\\neg q\\) force both variables to be false, and then \\(p\\lor q\\) is false."
+        },
+        {
+          "label": "B",
+          "text": "Yes; it is satisfied when \\(p\\) and \\(q\\) are both false."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For the conjunction to be true, \\(\\neg p\\) and \\(\\neg q\\) must both be true, so \\(p\\) and \\(q\\) must both be false. But then \\(p\\lor q\\) is false. No assignment makes all three parts true, so the formula is unsatisfiable.",
+      "hint": "Start with the parts that consist of a single literal."
+    },
+    {
+      "id": "dynanca-541-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Finding a satisfying assignment",
+      "learningObjective": "Find an assignment that satisfies a conjunction of three clauses.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which assignment satisfies \\((p\\lor q)\\land(\\neg p\\lor q)\\land(p\\lor\\neg q)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\) true and \\(q\\) true"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\) true and \\(q\\) false"
+        }
+      ],
+      "answer": "A",
+      "explanation": "With \\(p\\) and \\(q\\) both true, each clause contains a true literal. With \\(p\\) true and \\(q\\) false, the clause \\(\\neg p\\lor q\\) is false. In fact the first two clauses together force \\(q\\) to be true, and the first and third force \\(p\\) to be true, so the satisfying assignment is unique.",
+      "hint": "Substitute each proposed assignment into every clause."
+    },
+    {
+      "id": "dynanca-541-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting satisfying assignments in two variables",
+      "learningObjective": "Count the assignments that satisfy a formula in two variables.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many of the four assignments to \\(p\\) and \\(q\\) satisfy \\((p\\lor q)\\land(\\neg p\\lor\\neg q)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The clause \\(p\\lor q\\) excludes the assignment with both variables false, and \\(\\neg p\\lor\\neg q\\) excludes the assignment with both true. The two remaining assignments, in which exactly one variable is true, satisfy both clauses. The number \\(3\\) counts the assignments satisfying \\(p\\lor q\\) alone.",
+      "hint": "Each clause rules out exactly one assignment."
+    },
+    {
+      "id": "dynanca-541-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "All four clauses",
+      "learningObjective": "Decide whether the conjunction of all four two-literal clauses is satisfiable.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Is \\((p\\lor q)\\land(p\\lor\\neg q)\\land(\\neg p\\lor q)\\land(\\neg p\\lor\\neg q)\\) satisfiable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; a conjunction of clauses is false only when every clause is false."
+        },
+        {
+          "label": "B",
+          "text": "No; each of the four assignments makes one of the four clauses false."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A clause with two literals is false under exactly one assignment to \\(p\\) and \\(q\\). The four clauses are falsified by four different assignments, so every assignment falsifies some clause, and the formula is unsatisfiable. A conjunction is false as soon as one clause is false.",
+      "hint": "For each clause, find the single assignment that makes it false."
+    },
+    {
+      "id": "dynanca-541-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Unsatisfiable formulas and tautologies",
+      "learningObjective": "Relate an unsatisfiable formula to its negation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Suppose a formula \\(F\\) is unsatisfiable. What can be said about \\(\\neg F\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\neg F\\) is a tautology."
+        },
+        {
+          "label": "B",
+          "text": "\\(\\neg F\\) is also unsatisfiable."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Unsatisfiable means \\(F\\) is false under every assignment. Then \\(\\neg F\\) is true under every assignment, which makes it a tautology. For instance, \\(p\\land\\neg p\\) is unsatisfiable and \\(\\neg(p\\land\\neg p)\\) is always true.",
+      "hint": "Negation reverses the truth value in every row of the truth table."
+    },
+    {
+      "id": "dynanca-541-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Forced values",
+      "learningObjective": "Follow forced truth values through a chain of clauses.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which assignment satisfies \\(p\\land(\\neg p\\lor q)\\land(\\neg q\\lor r)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\) and \\(q\\) true, \\(r\\) false"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\), \\(q\\), and \\(r\\) all true"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first part forces \\(p\\) to be true. Then \\(\\neg p\\) is false, so the clause \\(\\neg p\\lor q\\) forces \\(q\\) to be true. Then \\(\\neg q\\) is false, so \\(\\neg q\\lor r\\) forces \\(r\\) to be true. With \\(r\\) false, the last clause would be false.",
+      "hint": "Begin with the one-literal part and let each clause force the next variable."
+    },
+    {
+      "id": "dynanca-541-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Satisfiable but not a tautology",
+      "learningObjective": "Classify a formula built from two implications and a clause.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Which description fits the formula \\((p\\implies q)\\land(q\\implies p)\\land(p\\lor q)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Satisfiable, with exactly one satisfying assignment"
+        },
+        {
+          "label": "B",
+          "text": "Unsatisfiable"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The two implications together say that \\(p\\) and \\(q\\) have the same truth value. The clause \\(p\\lor q\\) excludes the case in which both are false. So the only satisfying assignment makes \\(p\\) and \\(q\\) both true; the formula is satisfiable but is not a tautology.",
+      "hint": "First decide what the two implications say together."
+    },
+    {
+      "id": "dynanca-541-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A chain of forced values ending in conflict",
+      "learningObjective": "Show that a formula in three variables is unsatisfiable.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Is \\((p\\lor q)\\land(\\neg p\\lor r)\\land(\\neg q\\lor r)\\land\\neg r\\) satisfiable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; take \\(p\\) true, \\(q\\) false, and \\(r\\) false."
+        },
+        {
+          "label": "B",
+          "text": "No; \\(\\neg r\\) forces \\(r\\) false, which forces \\(p\\) and \\(q\\) false, contradicting \\(p\\lor q\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The part \\(\\neg r\\) requires \\(r\\) to be false. Then \\(\\neg p\\lor r\\) requires \\(p\\) to be false and \\(\\neg q\\lor r\\) requires \\(q\\) to be false, so \\(p\\lor q\\) is false. The proposed assignment with \\(p\\) true and \\(r\\) false makes \\(\\neg p\\lor r\\) false.",
+      "hint": "Start from the one-literal part and follow what it forces."
+    },
+    {
+      "id": "dynanca-541-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting satisfying assignments in three variables",
+      "learningObjective": "Count the assignments that satisfy a formula in three variables.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many of the eight assignments to \\(p\\), \\(q\\), \\(r\\) satisfy \\((p\\lor q)\\land(q\\lor r)\\land(\\neg p\\lor\\neg r)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If \\(q\\) is true, the first two clauses hold, and the third excludes only the case with \\(p\\) and \\(r\\) both true, leaving \\(3\\) assignments. If \\(q\\) is false, the first two clauses force \\(p\\) and \\(r\\) to be true, which makes the third clause false, so there are none. The total is \\(3\\).",
+      "hint": "Split into the cases \\(q\\) true and \\(q\\) false."
+    }
+  ]
+}

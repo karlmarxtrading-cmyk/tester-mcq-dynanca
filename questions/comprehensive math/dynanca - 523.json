@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-523",
+  "category": "Comprehensive Mathematics",
+  "title": "523. Sets, Logic, Reasoning & Proof: Identifying Gaps in Mathematical Arguments",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-523-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Generalising from one example",
+      "learningObjective": "Identify the gap in an argument that rests on a single example.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "An argument reads: \"\\(6\\) is even and \\(6^2=36\\) is even. Therefore the square of every even number is even.\" What is the gap?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There is no gap; the argument is complete."
+        },
+        {
+          "label": "B",
+          "text": "A single example is used to justify a statement about all even numbers."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The conclusion concerns every even number, but the argument examines only \\(6\\). The statement happens to be true, but this argument does not prove it. A proof would take an arbitrary even number \\(2k\\) and compute \\((2k)^2=2(2k^2)\\).",
+      "hint": "Compare the scope of the conclusion with what was actually checked."
+    },
+    {
+      "id": "dynanca-523-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A circular justification",
+      "learningObjective": "Identify an argument that merely restates the claim.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "An argument reads: \"\\(\\sqrt{2}\\) is irrational, because it cannot be written as a fraction of two integers.\" What is the gap?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The reason given only restates the claim in other words; nothing is proved."
+        },
+        {
+          "label": "B",
+          "text": "There is no gap; the argument is complete."
+        }
+      ],
+      "answer": "A",
+      "explanation": "\"Cannot be written as a fraction of two integers\" is the definition of \"irrational\". The argument therefore says \"\\(\\sqrt{2}\\) is irrational because it is irrational\", which is circular. A proof must show why no such fraction exists, for example by contradiction.",
+      "hint": "Compare the reason offered with the definition of the word \"irrational\"."
+    },
+    {
+      "id": "dynanca-523-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Using the converse",
+      "learningObjective": "Identify an argument that cites the converse of the fact it needs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "An argument reads: \"Suppose \\(n^2\\) is even. Even numbers have even squares. Therefore \\(n\\) is even.\" What is the gap?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The cited fact is \"if \\(n\\) is even, then \\(n^2\\) is even\", which is the converse of what is needed."
+        },
+        {
+          "label": "B",
+          "text": "There is no gap; the cited fact gives the conclusion directly."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The argument needs \"if \\(n^2\\) is even, then \\(n\\) is even\". The fact cited goes in the opposite direction, from \\(n\\) to \\(n^2\\). A conditional does not justify its converse. The needed statement is true, but it requires its own proof, for example by contraposition.",
+      "hint": "Write the cited fact as a conditional and compare its direction with the direction required."
+    },
+    {
+      "id": "dynanca-523-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A missing type of triangle",
+      "learningObjective": "Identify an unconsidered case in an argument about all triangles.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "An argument about all triangles treats the case of acute triangles and the case of obtuse triangles, and then concludes. What is the gap?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There is no gap; every triangle is acute or obtuse."
+        },
+        {
+          "label": "B",
+          "text": "Right triangles are not covered by either case."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A triangle is acute if all its angles are less than \\(90^\\circ\\), obtuse if one angle is greater than \\(90^\\circ\\), and right if one angle equals \\(90^\\circ\\). The right triangles belong to neither of the two cases considered, so the argument is incomplete.",
+      "hint": "Consider a triangle with angles \\(30^\\circ\\), \\(60^\\circ\\), and \\(90^\\circ\\)."
+    },
+    {
+      "id": "dynanca-523-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A lost solution",
+      "learningObjective": "Identify the unjustified division that loses a solution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "An argument reads: \"Suppose \\(x^2=x\\). Dividing both sides by \\(x\\) gives \\(x=1\\). Hence \\(1\\) is the only solution.\" What is the gap?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There is no gap; \\(x=1\\) is the only solution."
+        },
+        {
+          "label": "B",
+          "text": "Division by \\(x\\) is not justified when \\(x=0\\), and the solution \\(x=0\\) is lost."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Dividing by \\(x\\) requires \\(x\\ne 0\\). The case \\(x=0\\) must be examined separately, and \\(0^2=0\\) shows that \\(0\\) is also a solution. A complete argument factors instead: \\(x(x-1)=0\\), so \\(x=0\\) or \\(x=1\\).",
+      "hint": "Test whether \\(x=0\\) satisfies the original equation."
+    },
+    {
+      "id": "dynanca-523-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Assuming that an object exists",
+      "learningObjective": "Identify an unproved existence assumption in an argument.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "An argument reads: \"Let \\(m\\) be the smallest positive real number. Then \\(\\frac{m}{2}\\) is positive and smaller than \\(m\\), a contradiction. Hence \\(m=0\\).\" What is the gap?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The number \\(\\frac{m}{2}\\) might not be positive."
+        },
+        {
+          "label": "B",
+          "text": "It assumes without proof that a smallest positive real number exists; in fact none exists."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The argument begins by naming an object whose existence has not been established. The contradiction it reaches shows precisely that no smallest positive real number exists; it does not show \\(m=0\\). Half of a positive number is always positive, so that part is correct.",
+      "hint": "Ask whether the object introduced in the first sentence is known to exist."
+    },
+    {
+      "id": "dynanca-523-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A property of primes used for a composite number",
+      "learningObjective": "Identify the use of a fact outside the conditions under which it holds.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "An argument contains the step: \"Since \\(6\\) divides \\(4\\cdot 9\\), it follows that \\(6\\) divides \\(4\\) or \\(6\\) divides \\(9\\).\" What is the gap?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There is no gap; the rule holds for every integer \\(a\\)."
+        },
+        {
+          "label": "B",
+          "text": "The rule \"if \\(a\\mid bc\\), then \\(a\\mid b\\) or \\(a\\mid c\\)\" holds for prime \\(a\\), and \\(6\\) is not prime."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The rule quoted is a property of prime numbers. For the composite number \\(6\\) it fails here: \\(6\\) divides \\(36\\), but \\(6\\) divides neither \\(4\\) nor \\(9\\). The step applies a theorem without checking its hypothesis.",
+      "hint": "Check the hypothesis and the conclusion of the step with the actual numbers."
+    },
+    {
+      "id": "dynanca-523-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An induction without a start",
+      "learningObjective": "Identify the missing part of an induction argument.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "An argument reads: \"Assume the statement holds for \\(n=k\\). A computation shows that it then holds for \\(n=k+1\\). Therefore it holds for every positive integer \\(n\\).\" What is the gap?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There is no gap; the inductive step is all that is required."
+        },
+        {
+          "label": "B",
+          "text": "The base case has not been verified."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inductive step shows only that each case implies the next. Without a verified starting case, no case is actually known to be true, and the chain of implications never begins. A proof by induction needs both the base case and the inductive step.",
+      "hint": "Ask which specific value of \\(n\\) the argument has shown the statement to hold for."
+    },
+    {
+      "id": "dynanca-523-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An unstated sign condition",
+      "learningObjective": "Identify a hidden assumption about the sign of a multiplier.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For real numbers, an argument contains the step \"from \\(x<y\\) it follows that \\(xz<yz\\)\". What is the gap?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The step requires \\(z>0\\); for \\(z<0\\) the inequality reverses, and for \\(z=0\\) both sides are equal."
+        },
+        {
+          "label": "B",
+          "text": "There is no gap; multiplying both sides by the same number preserves every inequality."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiplying an inequality by a positive number preserves its direction, by a negative number reverses it, and by zero turns it into \\(0=0\\). Unless \\(z>0\\) is known, the step is unjustified: for \\(x=1\\), \\(y=2\\), \\(z=-1\\), we have \\(xz=-1>-2=yz\\).",
+      "hint": "Test the step with a negative value of \\(z\\)."
+    },
+    {
+      "id": "dynanca-523-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Exchanging two quantifiers",
+      "learningObjective": "Identify an illegitimate change in the order of quantifiers.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "An argument about integers reads: \"For every integer \\(x\\) there is an integer \\(y\\) with \\(y>x\\). Therefore there is an integer \\(y\\) that is greater than every integer \\(x\\).\" What is the gap?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The order of the quantifiers has been exchanged; a \\(y\\) that depends on \\(x\\) has been replaced by a single \\(y\\) for all \\(x\\)."
+        },
+        {
+          "label": "B",
+          "text": "There is no gap; the two sentences say the same thing."
+        }
+      ],
+      "answer": "A",
+      "explanation": "In the premise, \\(y\\) may depend on \\(x\\) (for example \\(y=x+1\\)). The conclusion requires one \\(y\\) that works for all \\(x\\) simultaneously, which is a much stronger claim, and here a false one, since no integer exceeds itself. Passing from \"for every \\(x\\) there is a \\(y\\)\" to \"there is a \\(y\\) for every \\(x\\)\" is not a valid inference.",
+      "hint": "Ask whether the \\(y\\) in the premise is allowed to change when \\(x\\) changes."
+    }
+  ]
+}

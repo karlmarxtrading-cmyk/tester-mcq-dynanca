@@ -1,0 +1,4388 @@
+[
+  {
+    "path": "questions/comprehensive math/dynanca - 37.json",
+    "id": "dynanca-37-q008",
+    "question": "What is the place value of the digit \\(2\\) in \\(4.125\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "hundredths"
+      },
+      {
+        "label": "B",
+        "text": "thousandths"
+      }
+    ],
+    "answer": "A",
+    "hint": "Count the places after the decimal point: tenths, hundredths, thousandths.",
+    "explanation": "In \\(4.125\\), the digits after the decimal point are \\(1\\), \\(2\\), and \\(5\\). The digit \\(2\\) is the second digit after the decimal point, so it is in the hundredths place. Therefore, the place value of the digit \\(2\\) is hundredths.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/comprehensive math/dynanca - 51.json",
+    "id": "dynanca-51-q010",
+    "question": "Which number is greater: \\(-\\sqrt{10}\\) or \\(-3.2\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(-\\sqrt{10}\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(-3.2\\)"
+      }
+    ],
+    "answer": "A",
+    "hint": "Approximate \\(\\sqrt{10}\\), then compare the two negative numbers on the number line.",
+    "explanation": "Approximate \\(\\sqrt{10}\\approx 3.162\\), so \\(-\\sqrt{10}\\approx -3.162\\). Compare \\(-3.162\\) and \\(-3.2\\). Since \\(-3.162\\) is closer to zero than \\(-3.2\\), we have \\(-3.162>-3.2\\). Therefore, \\(-\\sqrt{10}\\) is greater. For negative numbers, greater magnitude means a smaller number.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/comprehensive math/dynanca - 87.json",
+    "id": "dynanca-87-q004",
+    "question": "When adding two unsigned binary integers of fixed width, which condition indicates overflow?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A carry out of the most significant bit"
+      },
+      {
+        "label": "B",
+        "text": "A carry into the most significant bit"
+      }
+    ],
+    "answer": "A",
+    "hint": "Focus on the final carry produced after the most significant bit is added.",
+    "explanation": "In fixed-width unsigned addition, overflow occurs when the sum exceeds the maximum representable value. This is detected by a carry out of the most significant bit. A carry into the most significant bit does not by itself indicate unsigned overflow.",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/math gaokao/math gaokao - 102.json",
+    "id": "math-gaokao-102-q006",
+    "question": "Solve the equation\n\\[\n5^{2x-1} = \\frac{1}{25}.\n\\]",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\frac{1}{2}\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(-\\frac{1}{2}\\)"
+      }
+    ],
+    "answer": "B",
+    "hint": "Write \\(\\frac{1}{25}\\) as a power of \\(5\\).",
+    "explanation": "Rewrite the right side as a power of \\(5\\):\n\\[\n\\frac{1}{25} = 5^{-2}.\n\\]\nSo\n\\[\n5^{2x-1} = 5^{-2}.\n\\]\nEquating exponents gives\n\\[\n2x - 1 = -2.\n\\]\nThen\n\\[\n2x = -1,\n\\]\nso\n\\[\nx = -\\frac{1}{2}.\n\\]",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/math gaokao/math gaokao - 134.json",
+    "id": "math-gaokao-134-q006",
+    "question": "To prove by induction that\n\\[\n\\frac{1}{1\\cdot 2}+\\frac{1}{2\\cdot 3}+\\cdots+\\frac{1}{n(n+1)}=\\frac{n}{n+1}\n\\]\nfor every positive integer \\(n\\), assume the identity holds for \\(n=k\\). Which term must be added to both sides to obtain the identity for \\(n=k+1\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\frac{1}{(k+1)(k+2)}\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(\\frac{1}{k(k+1)}\\)"
+      }
+    ],
+    "answer": "A",
+    "hint": "The new term added when \\(n\\) increases from \\(k\\) to \\(k+1\\) is \\(\\frac{1}{(k+1)(k+2)}\\).",
+    "explanation": "For \\(n=k\\), the sum is\n\\[\n\\frac{1}{1\\cdot 2}+\\frac{1}{2\\cdot 3}+\\cdots+\\frac{1}{k(k+1)}=\\frac{k}{k+1}.\n\\]\nFor \\(n=k+1\\), the next term is\n\\[\n\\frac{1}{(k+1)(k+2)}.\n\\]\nTherefore, we add \\(\\frac{1}{(k+1)(k+2)}\\) to both sides. So option A is correct.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/math gaokao/math gaokao - 141.json",
+    "id": "math-gaokao-141-q004",
+    "question": "Simplify\n\\[\n1+\\tan^2\\theta.\n\\]",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\sec^2\\theta\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(\\csc^2\\theta\\)"
+      }
+    ],
+    "answer": "A",
+    "hint": "Recall the Pythagorean identity involving \\(\\tan^2\\theta\\) and \\(\\sec^2\\theta\\).",
+    "explanation": "The Pythagorean identity for tangent and secant is\n\\[\n1+\\tan^2\\theta=\\sec^2\\theta.\n\\]\nTherefore, the simplified expression is \\(\\sec^2\\theta\\).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/math gaokao/math gaokao - 141.json",
+    "id": "math-gaokao-141-q007",
+    "question": "Simplify\n\\[\n\\cot\\theta\\cdot\\sin\\theta.\n\\]",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\sin\\theta\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(\\cos\\theta\\)"
+      }
+    ],
+    "answer": "B",
+    "hint": "Use \\(\\cot\\theta=\\frac{\\cos\\theta}{\\sin\\theta}\\).",
+    "explanation": "Using the quotient identity\n\\[\n\\cot\\theta=\\frac{\\cos\\theta}{\\sin\\theta},\n\\]\nwe get\n\\[\n\\cot\\theta\\cdot\\sin\\theta\n=\\frac{\\cos\\theta}{\\sin\\theta}\\cdot\\sin\\theta\n=\\cos\\theta.\n\\]\nTherefore, the simplified expression is \\(\\cos\\theta\\).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/math gaokao/math gaokao - 141.json",
+    "id": "math-gaokao-141-q010",
+    "question": "Simplify\n\\[\n\\frac{\\sin^2\\theta+\\cos^2\\theta}{1+\\tan^2\\theta}.\n\\]",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\sin^2\\theta\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(\\cos^2\\theta\\)"
+      }
+    ],
+    "answer": "B",
+    "hint": "Use \\(\\sin^2\\theta+\\cos^2\\theta=1\\) and \\(1+\\tan^2\\theta=\\sec^2\\theta\\).",
+    "explanation": "Using the Pythagorean identity,\n\\[\n\\sin^2\\theta+\\cos^2\\theta=1.\n\\]\nAlso,\n\\[\n1+\\tan^2\\theta=\\sec^2\\theta.\n\\]\nTherefore,\n\\[\n\\frac{\\sin^2\\theta+\\cos^2\\theta}{1+\\tan^2\\theta}\n=\\frac{1}{\\sec^2\\theta}.\n\\]\nSince\n\\[\n\\frac{1}{\\sec^2\\theta}=\\cos^2\\theta,\n\\]\nthe simplified expression is\n\\[\n\\cos^2\\theta.\n\\]",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/math gaokao/math gaokao - 153.json",
+    "id": "math-gaokao-153-q005",
+    "question": "Solve \\(\\sin x\\le \\cos x\\) for \\(0\\le x<2\\pi\\).",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\left[0,\\frac{\\pi}{4}\\right]\\cup\\left[\\frac{5\\pi}{4},2\\pi\\right)\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(\\left[\\frac{\\pi}{4},\\frac{5\\pi}{4}\\right]\\)"
+      }
+    ],
+    "answer": "A",
+    "hint": "Use the identity \\(\\sin x-\\cos x=\\sqrt2\\sin\\left(x-\\frac{\\pi}{4}\\right)\\).",
+    "explanation": "Write\n\\[\n\\sin x-\\cos x=\\sqrt2\\sin\\left(x-\\frac{\\pi}{4}\\right).\n\\]\nWe need this to be at most \\(0\\), so\n\\[\n\\sin\\left(x-\\frac{\\pi}{4}\\right)\\le 0.\n\\]\nThus\n\\[\nx-\\frac{\\pi}{4}\\in[\\pi+2k\\pi,2\\pi+2k\\pi].\n\\]\nFor \\(0\\le x<2\\pi\\), this gives\n\\[\nx\\in\\left[0,\\frac{\\pi}{4}\\right]\\cup\\left[\\frac{5\\pi}{4},2\\pi\\right).\n\\]\nAt the endpoints \\(\\frac{\\pi}{4}\\) and \\(\\frac{5\\pi}{4}\\), the two functions are equal, so those endpoints are included.",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/math gaokao/math gaokao - 158.json",
+    "id": "math-gaokao-158-q003",
+    "question": "In triangle \\(ABC\\), the area is \\(12\\), \\(a=6\\), and \\(b=8\\). Find \\(\\sin C\\).",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\frac{\\sqrt3}{2}\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(\\frac12\\)"
+      }
+    ],
+    "answer": "B",
+    "hint": "Substitute the given area and side lengths into \\(S=\\frac12 ab\\sin C\\), then solve for \\(\\sin C\\).",
+    "explanation": "Using the area formula,\n\\[\nS=\\frac12 ab\\sin C.\n\\]\nSubstitute \\(S=12\\), \\(a=6\\), and \\(b=8\\):\n\\[\n12=\\frac12\\cdot 6\\cdot 8\\cdot \\sin C.\n\\]\nThus\n\\[\n12=24\\sin C,\n\\]\nso\n\\[\n\\sin C=\\frac{12}{24}=\\frac12.\n\\]\nTherefore,\n\\[\n\\sin C=\\frac12.\n\\]",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/math gaokao/math gaokao - 158.json",
+    "id": "math-gaokao-158-q008",
+    "question": "In triangle \\(ABC\\), the area is \\(6\\), \\(a=3\\), and \\(b=8\\). Find \\(\\sin C\\).",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\frac12\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(\\frac{\\sqrt3}{2}\\)"
+      }
+    ],
+    "answer": "A",
+    "hint": "Substitute the given values into \\(S=\\frac12 ab\\sin C\\), then solve for \\(\\sin C\\).",
+    "explanation": "Using the area formula,\n\\[\nS=\\frac12 ab\\sin C.\n\\]\nSubstitute \\(S=6\\), \\(a=3\\), and \\(b=8\\):\n\\[\n6=\\frac12\\cdot 3\\cdot 8\\cdot \\sin C.\n\\]\nThus\n\\[\n6=12\\sin C,\n\\]\nso\n\\[\n\\sin C=\\frac{6}{12}=\\frac12.\n\\]\nTherefore,\n\\[\n\\sin C=\\frac12.\n\\]",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/math gaokao/math gaokao - 16.json",
+    "id": "math-gaokao-16-q005",
+    "question": "Suppose \\(p\\) is true and \\(q\\) is false. What is the truth value of \\(p\\leftrightarrow q\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      }
+    ],
+    "answer": "B",
+    "hint": "A biconditional is false when the two components have different truth values.",
+    "explanation": "A biconditional \\(p\\leftrightarrow q\\) is true exactly when \\(p\\) and \\(q\\) have the same truth value. Here \\(p\\) is true and \\(q\\) is false, so they have different truth values. Therefore, \\(p\\leftrightarrow q\\) is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/math gaokao/math gaokao - 182.json",
+    "id": "math-gaokao-182-q006",
+    "question": "In triangle \\(ABC\\), \\(M\\) is the midpoint of \\(BC\\). Which vector identity is always true?",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\vec{AB}+\\vec{AC}=\\vec{AM}\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(\\vec{AB}+\\vec{AC}=2\\vec{AM}\\)"
+      }
+    ],
+    "answer": "B",
+    "hint": "Express both \\(\\vec{AM}\\) and \\(\\vec{AB}+\\vec{AC}\\) in terms of the position vectors of \\(A,B,C\\).",
+    "explanation": "Since \\(M\\) is the midpoint of \\(BC\\),\n\\[\n\\vec{OM}=\\frac{\\vec{OB}+\\vec{OC}}{2}.\n\\]\nThen\n\\[\n\\vec{AM}=\\vec{OM}-\\vec{OA}\n=\\frac{\\vec{OB}+\\vec{OC}}{2}-\\vec{OA}\n=\\frac{\\vec{OB}+\\vec{OC}-2\\vec{OA}}{2}.\n\\]\nAlso,\n\\[\n\\vec{AB}+\\vec{AC}\n=(\\vec{OB}-\\vec{OA})+(\\vec{OC}-\\vec{OA})\n=\\vec{OB}+\\vec{OC}-2\\vec{OA}.\n\\]\nTherefore,\n\\[\n\\vec{AB}+\\vec{AC}=2\\vec{AM}.\n\\]\nThus option B is correct.",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/math gaokao/math gaokao - 184.json",
+    "id": "math-gaokao-184-q009",
+    "question": "Are the lines \\(y=2x+1\\) and \\(y=-\\frac{1}{2}x+2\\) parallel, perpendicular, or neither?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Perpendicular"
+      },
+      {
+        "label": "B",
+        "text": "Parallel"
+      }
+    ],
+    "answer": "A",
+    "hint": "Compare the slopes using the parallel and perpendicular slope conditions.",
+    "explanation": "The slopes are \\(2\\) and \\(-\\frac{1}{2}\\). Their product is\n\\[\n2\\left(-\\frac{1}{2}\\right)=-1.\n\\]\nSince the product of the slopes is \\(-1\\), the lines are perpendicular. They are not parallel because their slopes are not equal.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/math gaokao/math gaokao - 23.json",
+    "id": "math-gaokao-23-q009",
+    "question": "The number \\(\\sqrt{2}+\\sqrt{3}\\) is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Irrational"
+      },
+      {
+        "label": "B",
+        "text": "Rational"
+      }
+    ],
+    "answer": "A",
+    "hint": "Square the expression and use the fact that \\(\\sqrt{6}\\) is irrational.",
+    "explanation": "Assume, for contradiction, that \\(\\sqrt{2}+\\sqrt{3}\\) is rational. Then its square\n\\[\n(\\sqrt{2}+\\sqrt{3})^2=2+3+2\\sqrt{6}=5+2\\sqrt{6}\n\\]\nwould also be rational. Since \\(5\\) is rational, this would imply that \\(2\\sqrt{6}\\) is rational, and hence \\(\\sqrt{6}\\) is rational. But \\(6\\) is not a perfect square, so \\(\\sqrt{6}\\) is irrational. This contradiction shows that \\(\\sqrt{2}+\\sqrt{3}\\) is irrational.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/math gaokao/math gaokao - 26.json",
+    "id": "math-gaokao-26-q005",
+    "question": "Simplify \\(\\sqrt{45}-\\sqrt{20}\\).",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(5\\sqrt{5}\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(\\sqrt{5}\\)"
+      }
+    ],
+    "answer": "B",
+    "hint": "Write each radical as a multiple of \\(\\sqrt{5}\\), then combine like terms.",
+    "explanation": "Simplify each radical first:\n\\[\n\\sqrt{45}=\\sqrt{9\\cdot 5}=3\\sqrt{5},\n\\]\nand\n\\[\n\\sqrt{20}=\\sqrt{4\\cdot 5}=2\\sqrt{5}.\n\\]\nThen\n\\[\n\\sqrt{45}-\\sqrt{20}=3\\sqrt{5}-2\\sqrt{5}=\\sqrt{5}.\n\\]\nTherefore, the simplified expression is \\(\\sqrt{5}\\).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/math gaokao/math gaokao - 37.json",
+    "id": "math-gaokao-37-q007",
+    "question": "Rationalize the denominator and simplify \\(\\frac{3}{\\sqrt{5}+\\sqrt{2}}\\).",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\sqrt{5}-\\sqrt{2}\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(\\sqrt{5}+\\sqrt{2}\\)"
+      }
+    ],
+    "answer": "A",
+    "hint": "Multiply by \\(\\sqrt{5}-\\sqrt{2}\\) and simplify the denominator.",
+    "explanation": "Multiply numerator and denominator by the conjugate \\(\\sqrt{5}-\\sqrt{2}\\):\n\\[\n\\frac{3}{\\sqrt{5}+\\sqrt{2}}\\cdot\\frac{\\sqrt{5}-\\sqrt{2}}{\\sqrt{5}-\\sqrt{2}}\n=\n\\frac{3(\\sqrt{5}-\\sqrt{2})}{5-2}.\n\\]\nThe denominator becomes \\(3\\). Therefore,\n\\[\n\\frac{3(\\sqrt{5}-\\sqrt{2})}{3}=\\sqrt{5}-\\sqrt{2}.\n\\]\nSo the simplified expression is \\(\\sqrt{5}-\\sqrt{2}\\).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/math gaokao/math gaokao - 408.json",
+    "id": "math-gaokao-408-q007",
+    "question": "A trigonometric model has amplitude \\(4\\), period \\(6\\), and midline \\(y=2\\). Which equation could represent the model?",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(y=4\\sin(\\frac{\\pi}{3}x)+2\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(y=2\\sin(\\frac{\\pi}{3}x)+4\\)"
+      }
+    ],
+    "answer": "A",
+    "hint": "Use \\(y=A\\sin(Bx)+C\\), where \\(|A|\\) is the amplitude, \\(\\frac{2\\pi}{|B|}\\) is the period, and \\(C\\) is the midline.",
+    "explanation": "For \\(y=A\\sin(Bx)+C\\), the amplitude is \\(|A|\\), the period is \\(\\frac{2\\pi}{|B|}\\), and the midline is \\(y=C\\). Since the period is \\(6\\), \\(B=\\frac{2\\pi}{6}=\\frac{\\pi}{3}\\). The amplitude is \\(4\\) and the midline is \\(2\\), so the model is \\(y=4\\sin(\\frac{\\pi}{3}x)+2\\). Option B swaps the amplitude and midline.",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/math gaokao/math gaokao - 429.json",
+    "id": "math-gaokao-429-q005",
+    "question": "The graph of \\(y=f(x)\\) approaches the horizontal line \\(y=-1\\) as \\(x\\to\\infty\\), and it has a vertical asymptote at \\(x=2\\). Which pair of asymptotes describes the graph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Horizontal asymptote \\(y=2\\), vertical asymptote \\(x=-1\\)"
+      },
+      {
+        "label": "B",
+        "text": "Horizontal asymptote \\(y=-1\\), vertical asymptote \\(x=2\\)"
+      }
+    ],
+    "answer": "B",
+    "hint": "A horizontal asymptote gives the limiting \\(y\\)-value, while a vertical asymptote is a limiting \\(x\\)-value.",
+    "explanation": "A horizontal asymptote describes the end behavior of the graph. Since the graph approaches \\(y=-1\\) as \\(x\\to\\infty\\), the horizontal asymptote is \\(y=-1\\).\nA vertical asymptote occurs at a value where the graph tends to infinity. Since the graph has a vertical asymptote at \\(x=2\\), that asymptote is \\(x=2\\).\nTherefore, the correct pair is \\(y=-1\\) and \\(x=2\\).",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/mathematics/algebra/ALGEBRA 04.json",
+    "id": "algebra-04-q019",
+    "question": "Rationalize the denominator of \\(\\dfrac{1}{\\sqrt{5}-2}\\).",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\sqrt{5}-2\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(\\sqrt{5}+2\\)"
+      }
+    ],
+    "answer": "B",
+    "hint": "Multiply by the conjugate \\(\\sqrt{5}+2\\).",
+    "explanation": "Multiply numerator and denominator by \\(\\sqrt{5}+2\\):\n\\[\n\\frac{1}{\\sqrt{5}-2}\\cdot\\frac{\\sqrt{5}+2}{\\sqrt{5}+2}\n=\\frac{\\sqrt{5}+2}{5-4}=\\sqrt{5}+2.\n\\]\nThus the correct answer is \\(\\sqrt{5}+2\\), which is option B.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/algebra/ALGEBRA 05.json",
+    "id": "algebra-05-q184",
+    "question": "Find the asymptotes of the hyperbola \\(\\frac{x^2}{16}-\\frac{y^2}{9}=1\\).",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(y=\\pm\\frac{4}{3}x\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(y=\\pm\\frac{3}{4}x\\)"
+      }
+    ],
+    "answer": "B",
+    "hint": "Use the formula \\(y=\\pm\\frac{b}{a}x\\).",
+    "explanation": "For \\(\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\), the asymptotes are \\(y=\\pm\\frac{b}{a}x\\). Here \\(a=4\\) and \\(b=3\\), so the asymptotes are \\(y=\\pm\\frac{3}{4}x\\). Therefore, the correct answer is \\(y=\\pm\\frac{3}{4}x\\), which is option B.",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/mathematics/algebra/ALGEBRA 05.json",
+    "id": "algebra-05-q187",
+    "question": "Find the asymptotes of the hyperbola \\(\\frac{y^2}{9}-\\frac{x^2}{16}=1\\).",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(y=\\pm\\frac{4}{3}x\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(y=\\pm\\frac{3}{4}x\\)"
+      }
+    ],
+    "answer": "B",
+    "hint": "Use the formula \\(y=\\pm\\frac{a}{b}x\\) for a vertical transverse axis.",
+    "explanation": "For \\(\\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1\\), the asymptotes are \\(y=\\pm\\frac{a}{b}x\\). Here \\(a=3\\) and \\(b=4\\), so the asymptotes are \\(y=\\pm\\frac{3}{4}x\\). Therefore, the correct answer is \\(y=\\pm\\frac{3}{4}x\\), which is option B.",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/mathematics/algebra/ALGEBRA 05.json",
+    "id": "algebra-05-q189",
+    "question": "The equation \\(\\frac{x^2}{9}+\\frac{y^2}{4}=1\\) represents which conic section?",
+    "options": [
+      {
+        "label": "A",
+        "text": "circle"
+      },
+      {
+        "label": "B",
+        "text": "ellipse"
+      }
+    ],
+    "answer": "B",
+    "hint": "The sum of two squared terms with different denominators indicates an ellipse.",
+    "explanation": "An equation of the form \\(\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\) with \\(a\\neq b\\) represents an ellipse. Therefore, the correct answer is ellipse, which is option B.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/algebra/ALGEBRA 05.json",
+    "id": "algebra-05-q190",
+    "question": "The equation \\(\\frac{x^2}{9}-\\frac{y^2}{4}=1\\) represents which conic section?",
+    "options": [
+      {
+        "label": "A",
+        "text": "ellipse"
+      },
+      {
+        "label": "B",
+        "text": "hyperbola"
+      }
+    ],
+    "answer": "B",
+    "hint": "The difference of two squared terms indicates a hyperbola.",
+    "explanation": "An equation of the form \\(\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\) represents a hyperbola. Therefore, the correct answer is hyperbola, which is option B.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/algebra/ALGEBRA 06.json",
+    "id": "algebra-06-q139",
+    "question": "Gaussian elimination aims to produce:",
+    "options": [
+      {
+        "label": "A",
+        "text": "reduced row echelon form always"
+      },
+      {
+        "label": "B",
+        "text": "row echelon form"
+      }
+    ],
+    "answer": "B",
+    "hint": "Forward elimination gives row echelon form.",
+    "explanation": "Gaussian elimination produces row echelon form; continuing to reduced row echelon form is Gauss-Jordan elimination.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/algebra/FIRST MATH.json",
+    "id": "questions-mathematics-algebra-first-math-600-q542",
+    "question": "If the cost of energy rises, what is the likely effect on the supply curve, all else being equal?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The supply curve shifts left (supply decreases)"
+      },
+      {
+        "label": "B",
+        "text": "The supply curve does not shift"
+      },
+      {
+        "label": "C",
+        "text": "The supply curve shifts right (supply increases)"
+      }
+    ],
+    "answer": "A",
+    "hint": "Think about whether the change makes production cheaper (supply increases, curve shifts right) or more expensive (supply decreases, curve shifts left).",
+    "explanation": "A rising cost of energy raises production costs, which changes how much producers are willing to supply at each price. The supply curve shifts left (supply decreases).",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/mathematics/algebra/FIRST MATH.json",
+    "id": "questions-mathematics-algebra-first-math-600-q543",
+    "question": "If the cost of raw materials falls, what is the likely effect on the supply curve, all else being equal?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The supply curve does not shift"
+      },
+      {
+        "label": "B",
+        "text": "The supply curve shifts right (supply increases)"
+      },
+      {
+        "label": "C",
+        "text": "The supply curve shifts left (supply decreases)"
+      }
+    ],
+    "answer": "B",
+    "hint": "Think about whether the change makes production cheaper (supply increases, curve shifts right) or more expensive (supply decreases, curve shifts left).",
+    "explanation": "A rising cost of raw materials raises production costs, which changes how much producers are willing to supply at each price. The supply curve shifts right (supply increases).",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/mathematics/algebra/FIRST MATH.json",
+    "id": "questions-mathematics-algebra-first-math-600-q544",
+    "question": "If the cost of raw materials rises, what is the likely effect on the supply curve, all else being equal?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The supply curve shifts left (supply decreases)"
+      },
+      {
+        "label": "B",
+        "text": "The supply curve shifts right (supply increases)"
+      },
+      {
+        "label": "C",
+        "text": "The supply curve does not shift"
+      }
+    ],
+    "answer": "A",
+    "hint": "Think about whether the change makes production cheaper (supply increases, curve shifts right) or more expensive (supply decreases, curve shifts left).",
+    "explanation": "A rising cost of raw materials raises production costs, which changes how much producers are willing to supply at each price. The supply curve shifts left (supply decreases).",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/mathematics/algebra/FIRST MATH.json",
+    "id": "questions-mathematics-algebra-first-math-600-q545",
+    "question": "If the cost of technology improves, what is the likely effect on the supply curve, all else being equal?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The supply curve shifts left (supply decreases)"
+      },
+      {
+        "label": "B",
+        "text": "The supply curve shifts right (supply increases)"
+      },
+      {
+        "label": "C",
+        "text": "The supply curve does not shift"
+      }
+    ],
+    "answer": "B",
+    "hint": "Think about whether the change makes production cheaper (supply increases, curve shifts right) or more expensive (supply decreases, curve shifts left).",
+    "explanation": "Improving technology lowers production costs, which changes how much producers are willing to supply at each price. The supply curve shifts right (supply increases).",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/mathematics/calculus/BASIC CALCULUS-2.json",
+    "id": "basic-calculus-2-q410",
+    "question": "Which graph represents the inequality \\(y \\ge x + 3\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A solid line with shading above the line"
+      },
+      {
+        "label": "B",
+        "text": "A dashed line with shading below the line"
+      }
+    ],
+    "answer": "A",
+    "hint": "The symbol \\(\\ge\\) means a solid line and shading above.",
+    "explanation": "The inequality \\(y \\ge x + 3\\) includes the boundary line (solid) and shades above the line because \\(y\\) is greater than or equal to the expression.",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/mathematics/discrete-mathematics/SETS 1.json",
+    "id": "questions-mathematics-discrete-mathematics-sets-q041",
+    "question": "How would you best describe the relationship between A = {6, 13, 14} and B = {13, 14, 6}?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Equal sets"
+      },
+      {
+        "label": "B",
+        "text": "Neither equal nor equivalent"
+      },
+      {
+        "label": "C",
+        "text": "Equivalent sets (same cardinality, different elements)"
+      }
+    ],
+    "answer": "A",
+    "hint": "Equal sets share every element; equivalent sets only need to match in size.",
+    "explanation": "|A| = 3 and |B| = 3. The sets contain exactly the same elements, so they are equal (and therefore also equivalent).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/discrete-mathematics/SETS 1.json",
+    "id": "questions-mathematics-discrete-mathematics-sets-q128",
+    "question": "How would you best describe the relationship between A = {21, 22, 23, 34, 35} and B = {35, 21, 23, 34, 22}?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Equal sets"
+      },
+      {
+        "label": "B",
+        "text": "Neither equal nor equivalent"
+      },
+      {
+        "label": "C",
+        "text": "Equivalent sets (same cardinality, different elements)"
+      }
+    ],
+    "answer": "A",
+    "hint": "Equal sets share every element; equivalent sets only need to match in size.",
+    "explanation": "|A| = 5 and |B| = 5. The sets contain exactly the same elements, so they are equal (and therefore also equivalent).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/discrete-mathematics/SETS 1.json",
+    "id": "questions-mathematics-discrete-mathematics-sets-q235",
+    "question": "How would you best describe the relationship between A = {2, 3, 4, 21} and B = {21, 3, 2, 4}?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Equal sets"
+      },
+      {
+        "label": "B",
+        "text": "Neither equal nor equivalent"
+      },
+      {
+        "label": "C",
+        "text": "Equivalent sets (same cardinality, different elements)"
+      }
+    ],
+    "answer": "A",
+    "hint": "Equal sets share every element; equivalent sets only need to match in size.",
+    "explanation": "|A| = 4 and |B| = 4. The sets contain exactly the same elements, so they are equal (and therefore also equivalent).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/discrete-mathematics/SETS 1.json",
+    "id": "questions-mathematics-discrete-mathematics-sets-q273",
+    "question": "How would you best describe the relationship between A = {4, 11, 21, 25} and B = {4, 21, 25, 11}?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Neither equal nor equivalent"
+      },
+      {
+        "label": "B",
+        "text": "Equivalent sets (same cardinality, different elements)"
+      },
+      {
+        "label": "C",
+        "text": "Equal sets"
+      }
+    ],
+    "answer": "C",
+    "hint": "Equal sets share every element; equivalent sets only need to match in size.",
+    "explanation": "|A| = 4 and |B| = 4. The sets contain exactly the same elements, so they are equal (and therefore also equivalent).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/discrete-mathematics/SETS 1.json",
+    "id": "questions-mathematics-discrete-mathematics-sets-q297",
+    "question": "How would you best describe the relationship between A = {19, 21, 22, 24} and B = {22, 24, 19, 21}?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Equal sets"
+      },
+      {
+        "label": "B",
+        "text": "Neither equal nor equivalent"
+      },
+      {
+        "label": "C",
+        "text": "Equivalent sets (same cardinality, different elements)"
+      }
+    ],
+    "answer": "A",
+    "hint": "Equal sets share every element; equivalent sets only need to match in size.",
+    "explanation": "|A| = 4 and |B| = 4. The sets contain exactly the same elements, so they are equal (and therefore also equivalent).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/discrete-mathematics/SETS 1.json",
+    "id": "questions-mathematics-discrete-mathematics-sets-q313",
+    "question": "How would you best describe the relationship between A = {5, 7, 8, 14} and B = {14, 5, 7, 8}?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Neither equal nor equivalent"
+      },
+      {
+        "label": "B",
+        "text": "Equal sets"
+      },
+      {
+        "label": "C",
+        "text": "Equivalent sets (same cardinality, different elements)"
+      }
+    ],
+    "answer": "B",
+    "hint": "Equal sets share every element; equivalent sets only need to match in size.",
+    "explanation": "|A| = 4 and |B| = 4. The sets contain exactly the same elements, so they are equal (and therefore also equivalent).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/discrete-mathematics/SETS 1.json",
+    "id": "questions-mathematics-discrete-mathematics-sets-q321",
+    "question": "How would you best describe the relationship between A = {2, 3, 14} and B = {14, 2, 3}?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Neither equal nor equivalent"
+      },
+      {
+        "label": "B",
+        "text": "Equal sets"
+      },
+      {
+        "label": "C",
+        "text": "Equivalent sets (same cardinality, different elements)"
+      }
+    ],
+    "answer": "B",
+    "hint": "Equal sets share every element; equivalent sets only need to match in size.",
+    "explanation": "|A| = 3 and |B| = 3. The sets contain exactly the same elements, so they are equal (and therefore also equivalent).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/discrete-mathematics/SETS 1.json",
+    "id": "questions-mathematics-discrete-mathematics-sets-q333",
+    "question": "How would you best describe the relationship between A = {3, 6, 9, 14} and B = {3, 9, 6, 14}?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Equal sets"
+      },
+      {
+        "label": "B",
+        "text": "Equivalent sets (same cardinality, different elements)"
+      },
+      {
+        "label": "C",
+        "text": "Neither equal nor equivalent"
+      }
+    ],
+    "answer": "A",
+    "hint": "Equal sets share every element; equivalent sets only need to match in size.",
+    "explanation": "|A| = 4 and |B| = 4. The sets contain exactly the same elements, so they are equal (and therefore also equivalent).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/discrete-mathematics/SETS 1.json",
+    "id": "questions-mathematics-discrete-mathematics-sets-q360",
+    "question": "How would you best describe the relationship between A = {1, 10, 14, 16} and B = {16, 14, 10, 1}?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Neither equal nor equivalent"
+      },
+      {
+        "label": "B",
+        "text": "Equivalent sets (same cardinality, different elements)"
+      },
+      {
+        "label": "C",
+        "text": "Equal sets"
+      }
+    ],
+    "answer": "C",
+    "hint": "Equal sets share every element; equivalent sets only need to match in size.",
+    "explanation": "|A| = 4 and |B| = 4. The sets contain exactly the same elements, so they are equal (and therefore also equivalent).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/discrete-mathematics/SETS 1.json",
+    "id": "questions-mathematics-discrete-mathematics-sets-q377",
+    "question": "How would you best describe the relationship between A = {5, 7, 18, 25, 30} and B = {7, 18, 25, 30, 5}?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Equivalent sets (same cardinality, different elements)"
+      },
+      {
+        "label": "B",
+        "text": "Neither equal nor equivalent"
+      },
+      {
+        "label": "C",
+        "text": "Equal sets"
+      }
+    ],
+    "answer": "C",
+    "hint": "Equal sets share every element; equivalent sets only need to match in size.",
+    "explanation": "|A| = 5 and |B| = 5. The sets contain exactly the same elements, so they are equal (and therefore also equivalent).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/discrete-mathematics/SETS 1.json",
+    "id": "questions-mathematics-discrete-mathematics-sets-q386",
+    "question": "How would you best describe the relationship between A = {6, 11, 18, 24} and B = {11, 24, 18, 6}?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Equivalent sets (same cardinality, different elements)"
+      },
+      {
+        "label": "B",
+        "text": "Equal sets"
+      },
+      {
+        "label": "C",
+        "text": "Neither equal nor equivalent"
+      }
+    ],
+    "answer": "B",
+    "hint": "Equal sets share every element; equivalent sets only need to match in size.",
+    "explanation": "|A| = 4 and |B| = 4. The sets contain exactly the same elements, so they are equal (and therefore also equivalent).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/discrete-mathematics/SETS 1.json",
+    "id": "questions-mathematics-discrete-mathematics-sets-q392",
+    "question": "How would you best describe the relationship between A = {13, 26, 34, 35, 36} and B = {36, 13, 26, 34, 35}?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Equivalent sets (same cardinality, different elements)"
+      },
+      {
+        "label": "B",
+        "text": "Neither equal nor equivalent"
+      },
+      {
+        "label": "C",
+        "text": "Equal sets"
+      }
+    ],
+    "answer": "C",
+    "hint": "Equal sets share every element; equivalent sets only need to match in size.",
+    "explanation": "|A| = 5 and |B| = 5. The sets contain exactly the same elements, so they are equal (and therefore also equivalent).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/discrete-mathematics/SETS 1.json",
+    "id": "questions-mathematics-discrete-mathematics-sets-q454",
+    "question": "How would you best describe the relationship between A = {5, 17, 24, 25} and B = {25, 24, 17, 5}?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Neither equal nor equivalent"
+      },
+      {
+        "label": "B",
+        "text": "Equal sets"
+      },
+      {
+        "label": "C",
+        "text": "Equivalent sets (same cardinality, different elements)"
+      }
+    ],
+    "answer": "B",
+    "hint": "Equal sets share every element; equivalent sets only need to match in size.",
+    "explanation": "|A| = 4 and |B| = 4. The sets contain exactly the same elements, so they are equal (and therefore also equivalent).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/discrete-mathematics/SETS 1.json",
+    "id": "questions-mathematics-discrete-mathematics-sets-q510",
+    "question": "How would you best describe the relationship between A = {8, 10, 11} and B = {11, 10, 8}?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Neither equal nor equivalent"
+      },
+      {
+        "label": "B",
+        "text": "Equivalent sets (same cardinality, different elements)"
+      },
+      {
+        "label": "C",
+        "text": "Equal sets"
+      }
+    ],
+    "answer": "C",
+    "hint": "Equal sets share every element; equivalent sets only need to match in size.",
+    "explanation": "|A| = 3 and |B| = 3. The sets contain exactly the same elements, so they are equal (and therefore also equivalent).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q013",
+    "question": "Let D = {1, 2, 3, 4, 5, 6, 7, 8} and let P(x) be the predicate \"x is greater than 5.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "True"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined without more information"
+      }
+    ],
+    "answer": "A",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "1 ∈ D does not satisfy \"x is greater than 5\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q019",
+    "question": "Let D = {1, 2, 3, 4, 5} and let P(x) be the predicate \"x is odd.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "Cannot be determined without more information"
+      },
+      {
+        "label": "C",
+        "text": "True"
+      }
+    ],
+    "answer": "A",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "2 ∈ D does not satisfy \"x is odd\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q025",
+    "question": "Let D = {1, 2, 3, 4, 5} and let P(x) be the predicate \"2x is greater than 10.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined without more information"
+      }
+    ],
+    "answer": "B",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "1 ∈ D does not satisfy \"2x is greater than 10\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q167",
+    "question": "Let D = {1, 2, 3, 4, 5} and let P(x) be the predicate \"x is a perfect square.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "True"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined without more information"
+      }
+    ],
+    "answer": "A",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "2 ∈ D does not satisfy \"x is a perfect square\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q168",
+    "question": "An argument has premises (1) If it rains, then the game is postponed. (2) It rains. and concludes: \"The game is postponed.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Modus Ponens"
+      },
+      {
+        "label": "B",
+        "text": "Addition"
+      },
+      {
+        "label": "C",
+        "text": "Conjunction"
+      }
+    ],
+    "answer": "A",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P → Q, P ⊢ Q, which is exactly the pattern of Modus Ponens.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q175",
+    "question": "An argument has premises (1) If the switch is closed, then current flows. (2) It is not the case that current flows. and concludes: \"It is not the case that the switch is closed.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hypothetical Syllogism"
+      },
+      {
+        "label": "B",
+        "text": "Modus Ponens"
+      },
+      {
+        "label": "C",
+        "text": "Modus Tollens"
+      }
+    ],
+    "answer": "C",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P → Q, ¬Q ⊢ ¬P, which is exactly the pattern of Modus Tollens.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q189",
+    "question": "An argument has premises (1) If the alarm sounds, then there is a fire. (2) The alarm sounds. and concludes: \"There is a fire.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Modus Ponens"
+      },
+      {
+        "label": "B",
+        "text": "Simplification"
+      },
+      {
+        "label": "C",
+        "text": "Addition"
+      }
+    ],
+    "answer": "A",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P → Q, P ⊢ Q, which is exactly the pattern of Modus Ponens.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q196",
+    "question": "An argument has premises (1) If the switch is closed, then current flows. (2) The switch is closed. and concludes: \"Current flows.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Modus Ponens"
+      },
+      {
+        "label": "B",
+        "text": "Addition"
+      },
+      {
+        "label": "C",
+        "text": "Hypothetical Syllogism"
+      }
+    ],
+    "answer": "A",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P → Q, P ⊢ Q, which is exactly the pattern of Modus Ponens.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q209",
+    "question": "Let D = {5, 10, 15, 20, 25} and let P(x) be the predicate \"x is a two-digit number.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cannot be determined without more information"
+      },
+      {
+        "label": "B",
+        "text": "True"
+      },
+      {
+        "label": "C",
+        "text": "False"
+      }
+    ],
+    "answer": "C",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "5 ∈ D does not satisfy \"x is a two-digit number\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q210",
+    "question": "An argument has premises (1) You finish the assignment and you may go to the party. and concludes: \"You finish the assignment.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Conjunction"
+      },
+      {
+        "label": "B",
+        "text": "Simplification"
+      },
+      {
+        "label": "C",
+        "text": "Disjunctive Syllogism"
+      }
+    ],
+    "answer": "B",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P ∧ Q ⊢ P, which is exactly the pattern of Simplification.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q216",
+    "question": "Let D = {1, 2, 3, 4, 5, 6, 7, 8} and let P(x) be the predicate \"x is a two-digit number.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined without more information"
+      }
+    ],
+    "answer": "B",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "1 ∈ D does not satisfy \"x is a two-digit number\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q230",
+    "question": "Let D = {2, 3, 5, 7, 11} and let P(x) be the predicate \"x + 3 is even.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "Cannot be determined without more information"
+      },
+      {
+        "label": "C",
+        "text": "True"
+      }
+    ],
+    "answer": "A",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "2 ∈ D does not satisfy \"x + 3 is even\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q238",
+    "question": "An argument has premises (1) If you finish the assignment, then you may go to the party. (2) You finish the assignment. and concludes: \"You may go to the party.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Conjunction"
+      },
+      {
+        "label": "B",
+        "text": "Modus Ponens"
+      },
+      {
+        "label": "C",
+        "text": "Modus Tollens"
+      }
+    ],
+    "answer": "B",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P → Q, P ⊢ Q, which is exactly the pattern of Modus Ponens.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q244",
+    "question": "Let D = {1, 2, 3, 4, 5, 6, 7, 8} and let P(x) be the predicate \"x is prime.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "True"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined without more information"
+      }
+    ],
+    "answer": "A",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "1 ∈ D does not satisfy \"x is prime\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q251",
+    "question": "Let D = {3, 6, 9, 12, 15} and let P(x) be the predicate \"x is even.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cannot be determined without more information"
+      },
+      {
+        "label": "B",
+        "text": "True"
+      },
+      {
+        "label": "C",
+        "text": "False"
+      }
+    ],
+    "answer": "C",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "3 ∈ D does not satisfy \"x is even\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q252",
+    "question": "An argument has premises (1) The triangle is equilateral and the triangle is isosceles. and concludes: \"The triangle is equilateral.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Conjunction"
+      },
+      {
+        "label": "B",
+        "text": "Simplification"
+      },
+      {
+        "label": "C",
+        "text": "Disjunctive Syllogism"
+      }
+    ],
+    "answer": "B",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P ∧ Q ⊢ P, which is exactly the pattern of Simplification.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q258",
+    "question": "Let D = {2, 4, 6, 8, 10} and let P(x) be the predicate \"x + 3 is even.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined without more information"
+      }
+    ],
+    "answer": "B",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "2 ∈ D does not satisfy \"x + 3 is even\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q281",
+    "question": "An argument has premises (1) If you finish the assignment, then you may go to the party. (2) It is not the case that you may go to the party. and concludes: \"It is not the case that you finish the assignment.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Modus Tollens"
+      },
+      {
+        "label": "B",
+        "text": "Conjunction"
+      },
+      {
+        "label": "C",
+        "text": "Hypothetical Syllogism"
+      }
+    ],
+    "answer": "A",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P → Q, ¬Q ⊢ ¬P, which is exactly the pattern of Modus Tollens.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q290",
+    "question": "Let D = {5, 10, 15, 20, 25} and let P(x) be the predicate \"x is prime.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cannot be determined without more information"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "True"
+      }
+    ],
+    "answer": "B",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "10 ∈ D does not satisfy \"x is prime\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q291",
+    "question": "An argument has premises (1) If the code compiles, then the tests can run. (2) It is not the case that the tests can run. and concludes: \"It is not the case that the code compiles.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Modus Tollens"
+      },
+      {
+        "label": "B",
+        "text": "Conjunction"
+      },
+      {
+        "label": "C",
+        "text": "Addition"
+      }
+    ],
+    "answer": "A",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P → Q, ¬Q ⊢ ¬P, which is exactly the pattern of Modus Tollens.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q315",
+    "question": "Let D = {2, 3, 5, 7, 11} and let P(x) be the predicate \"x is a multiple of 3.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined without more information"
+      }
+    ],
+    "answer": "B",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "2 ∈ D does not satisfy \"x is a multiple of 3\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q325",
+    "question": "Let D = {10, 11, 12, 13, 14} and let P(x) be the predicate \"x is a perfect square.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined without more information"
+      }
+    ],
+    "answer": "B",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "10 ∈ D does not satisfy \"x is a perfect square\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q331",
+    "question": "An argument has premises (1) The patient has a fever and the patient is ill. and concludes: \"The patient has a fever.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Simplification"
+      },
+      {
+        "label": "B",
+        "text": "Modus Ponens"
+      },
+      {
+        "label": "C",
+        "text": "Disjunctive Syllogism"
+      }
+    ],
+    "answer": "A",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P ∧ Q ⊢ P, which is exactly the pattern of Simplification.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q340",
+    "question": "Let D = {2, 4, 6, 8, 10} and let P(x) be the predicate \"x^2 is greater than 20.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "Cannot be determined without more information"
+      },
+      {
+        "label": "C",
+        "text": "True"
+      }
+    ],
+    "answer": "A",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "2 ∈ D does not satisfy \"x^2 is greater than 20\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q341",
+    "question": "An argument has premises (1) If n is divisible by 6, then n is divisible by 3. (2) It is not the case that n is divisible by 3. and concludes: \"It is not the case that n is divisible by 6.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hypothetical Syllogism"
+      },
+      {
+        "label": "B",
+        "text": "Modus Tollens"
+      },
+      {
+        "label": "C",
+        "text": "Simplification"
+      }
+    ],
+    "answer": "B",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P → Q, ¬Q ⊢ ¬P, which is exactly the pattern of Modus Tollens.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q343",
+    "question": "Let D = {2, 4, 6, 8, 10} and let P(x) be the predicate \"x is less than 4.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "Cannot be determined without more information"
+      },
+      {
+        "label": "C",
+        "text": "False"
+      }
+    ],
+    "answer": "C",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "4 ∈ D does not satisfy \"x is less than 4\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q344",
+    "question": "An argument has premises (1) If the code compiles, then the tests can run. (2) The code compiles. and concludes: \"The tests can run.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Modus Ponens"
+      },
+      {
+        "label": "B",
+        "text": "Hypothetical Syllogism"
+      },
+      {
+        "label": "C",
+        "text": "Conjunction"
+      }
+    ],
+    "answer": "A",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P → Q, P ⊢ Q, which is exactly the pattern of Modus Ponens.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q346",
+    "question": "Let D = {3, 6, 9, 12, 15} and let P(x) be the predicate \"x is a perfect square.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "True"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined without more information"
+      }
+    ],
+    "answer": "A",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "3 ∈ D does not satisfy \"x is a perfect square\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q347",
+    "question": "An argument has premises (1) If the alarm sounds, then there is a fire. (2) It is not the case that there is a fire. and concludes: \"It is not the case that the alarm sounds.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Modus Tollens"
+      },
+      {
+        "label": "B",
+        "text": "Disjunctive Syllogism"
+      },
+      {
+        "label": "C",
+        "text": "Conjunction"
+      }
+    ],
+    "answer": "A",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P → Q, ¬Q ⊢ ¬P, which is exactly the pattern of Modus Tollens.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q349",
+    "question": "Let D = {2, 3, 5, 7, 11} and let P(x) be the predicate \"x is a two-digit number.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cannot be determined without more information"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "True"
+      }
+    ],
+    "answer": "B",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "2 ∈ D does not satisfy \"x is a two-digit number\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q355",
+    "question": "Let D = {10, 11, 12, 13, 14} and let P(x) be the predicate \"x is less than 4.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "True"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined without more information"
+      }
+    ],
+    "answer": "A",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "10 ∈ D does not satisfy \"x is less than 4\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q356",
+    "question": "An argument has premises (1) N is divisible by 6 and n is divisible by 3. and concludes: \"N is divisible by 6.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Conjunction"
+      },
+      {
+        "label": "B",
+        "text": "Modus Tollens"
+      },
+      {
+        "label": "C",
+        "text": "Simplification"
+      }
+    ],
+    "answer": "C",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P ∧ Q ⊢ P, which is exactly the pattern of Simplification.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q358",
+    "question": "Let D = {10, 11, 12, 13, 14} and let P(x) be the predicate \"x is even.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "Cannot be determined without more information"
+      },
+      {
+        "label": "C",
+        "text": "False"
+      }
+    ],
+    "answer": "C",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "11 ∈ D does not satisfy \"x is even\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q359",
+    "question": "An argument has premises (1) If it rains, then the game is postponed. (2) It is not the case that the game is postponed. and concludes: \"It is not the case that it rains.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Modus Ponens"
+      },
+      {
+        "label": "B",
+        "text": "Modus Tollens"
+      },
+      {
+        "label": "C",
+        "text": "Addition"
+      }
+    ],
+    "answer": "B",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P → Q, ¬Q ⊢ ¬P, which is exactly the pattern of Modus Tollens.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q361",
+    "question": "Let D = {5, 10, 15, 20, 25} and let P(x) be the predicate \"x is a perfect square.\" For every x in D, is it true that P(x)? In symbols: ∀x ∈ D, P(x). Is this statement true or false?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "True"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined without more information"
+      }
+    ],
+    "answer": "A",
+    "hint": "A universal statement is false as soon as you find even one counterexample.",
+    "explanation": "5 ∈ D does not satisfy \"x is a perfect square\" (a counterexample), so the universal statement is false. Since the domain D is finite and fully listed, the statement's truth value can always be determined by checking every element.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q365",
+    "question": "An argument has premises (1) If the triangle is equilateral, then the triangle is isosceles. (2) The triangle is equilateral. and concludes: \"The triangle is isosceles.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Addition"
+      },
+      {
+        "label": "B",
+        "text": "Disjunctive Syllogism"
+      },
+      {
+        "label": "C",
+        "text": "Modus Ponens"
+      }
+    ],
+    "answer": "C",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P → Q, P ⊢ Q, which is exactly the pattern of Modus Ponens.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q368",
+    "question": "An argument has premises (1) The code compiles and the tests can run. and concludes: \"The code compiles.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Simplification"
+      },
+      {
+        "label": "B",
+        "text": "Addition"
+      },
+      {
+        "label": "C",
+        "text": "Modus Tollens"
+      }
+    ],
+    "answer": "A",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P ∧ Q ⊢ P, which is exactly the pattern of Simplification.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q374",
+    "question": "An argument has premises (1) The switch is closed and current flows. and concludes: \"The switch is closed.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Simplification"
+      },
+      {
+        "label": "B",
+        "text": "Conjunction"
+      },
+      {
+        "label": "C",
+        "text": "Hypothetical Syllogism"
+      }
+    ],
+    "answer": "A",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P ∧ Q ⊢ P, which is exactly the pattern of Simplification.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q377",
+    "question": "An argument has premises (1) The alarm sounds and there is a fire. and concludes: \"The alarm sounds.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Disjunctive Syllogism"
+      },
+      {
+        "label": "B",
+        "text": "Hypothetical Syllogism"
+      },
+      {
+        "label": "C",
+        "text": "Simplification"
+      }
+    ],
+    "answer": "C",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P ∧ Q ⊢ P, which is exactly the pattern of Simplification.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-01.json",
+    "id": "questions-mathematics-logic-logic-01-q380",
+    "question": "An argument has premises (1) If n is divisible by 6, then n is divisible by 3. (2) N is divisible by 6. and concludes: \"N is divisible by 3.\" Which rule of inference does this argument use?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Conjunction"
+      },
+      {
+        "label": "B",
+        "text": "Modus Ponens"
+      },
+      {
+        "label": "C",
+        "text": "Modus Tollens"
+      }
+    ],
+    "answer": "B",
+    "hint": "Match the shape of the premises and conclusion to the standard inference-rule patterns (Modus Ponens, Modus Tollens, syllogisms, simplification, etc.).",
+    "explanation": "This argument has the form P → Q, P ⊢ Q, which is exactly the pattern of Modus Ponens.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-03.json",
+    "id": "questions-mathematics-logic-logic-03-q023",
+    "question": "Let \\(P = \\text{False}\\) and \\(Q = \\text{True}\\). Which of the following Boolean expressions evaluates to TRUE?",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\neg(P \\oplus Q)\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(P \\lor \\neg Q\\)"
+      },
+      {
+        "label": "C",
+        "text": "\\(P \\oplus Q\\)"
+      }
+    ],
+    "answer": "C",
+    "hint": "Recall that \\(P \\oplus Q\\) is true exactly when \\(P\\) and \\(Q\\) have different truth values.",
+    "explanation": "With \\(P = \\text{False}\\) and \\(Q = \\text{True}\\), evaluating \\(P \\oplus Q\\) gives TRUE. The remaining expressions evaluate to the opposite value under the same assignment.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-03.json",
+    "id": "questions-mathematics-logic-logic-03-q028",
+    "question": "Let \\(X = \\text{False}\\) and \\(Y = \\text{True}\\). Which of the following Boolean expressions evaluates to TRUE?",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(X \\lor \\neg Y\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(X \\oplus \\neg Y\\)"
+      },
+      {
+        "label": "C",
+        "text": "\\(X \\oplus Y\\)"
+      }
+    ],
+    "answer": "C",
+    "hint": "Recall that \\(X \\oplus Y\\) is true exactly when \\(X\\) and \\(Y\\) have different truth values.",
+    "explanation": "With \\(X = \\text{False}\\) and \\(Y = \\text{True}\\), evaluating \\(X \\oplus Y\\) gives TRUE. The remaining expressions evaluate to the opposite value under the same assignment.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-03.json",
+    "id": "questions-mathematics-logic-logic-03-q034",
+    "question": "Let \\(X = \\text{True}\\) and \\(Y = \\text{False}\\). Which of the following Boolean expressions evaluates to TRUE?",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\neg X \\oplus Y\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(\\neg X \\land Y\\)"
+      },
+      {
+        "label": "C",
+        "text": "\\(X \\oplus Y\\)"
+      }
+    ],
+    "answer": "C",
+    "hint": "Recall that \\(X \\oplus Y\\) is true exactly when \\(X\\) and \\(Y\\) have different truth values.",
+    "explanation": "With \\(X = \\text{True}\\) and \\(Y = \\text{False}\\), evaluating \\(X \\oplus Y\\) gives TRUE. The remaining expressions evaluate to the opposite value under the same assignment.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-03.json",
+    "id": "questions-mathematics-logic-logic-03-q035",
+    "question": "Let \\(P = \\text{True}\\) and \\(Q = \\text{False}\\). Which of the following Boolean expressions evaluates to TRUE?",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\neg P \\oplus Q\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(\\neg P \\land \\neg Q\\)"
+      },
+      {
+        "label": "C",
+        "text": "\\(P \\oplus Q\\)"
+      }
+    ],
+    "answer": "C",
+    "hint": "Recall that \\(P \\oplus Q\\) is true exactly when \\(P\\) and \\(Q\\) have different truth values.",
+    "explanation": "With \\(P = \\text{True}\\) and \\(Q = \\text{False}\\), evaluating \\(P \\oplus Q\\) gives TRUE. The remaining expressions evaluate to the opposite value under the same assignment.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-03.json",
+    "id": "questions-mathematics-logic-logic-03-q037",
+    "question": "Let \\(M = \\text{False}\\) and \\(N = \\text{True}\\). Which of the following Boolean expressions evaluates to TRUE?",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(M \\land \\neg N\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(M \\oplus N\\)"
+      },
+      {
+        "label": "C",
+        "text": "\\(\\neg M \\land \\neg N\\)"
+      }
+    ],
+    "answer": "B",
+    "hint": "Recall that \\(M \\oplus N\\) is true exactly when \\(M\\) and \\(N\\) have different truth values.",
+    "explanation": "With \\(M = \\text{False}\\) and \\(N = \\text{True}\\), evaluating \\(M \\oplus N\\) gives TRUE. The remaining expressions evaluate to the opposite value under the same assignment.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q005",
+    "question": "Let \\(p\\): \"It rains.\" and \\(q\\): \"The outdoor concert is cancelled.\" The implication \\(p \\rightarrow q\\) is true, and \\(q\\) is false. What must be the truth value of \\(p\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "Cannot be determined"
+      },
+      {
+        "label": "C",
+        "text": "False"
+      }
+    ],
+    "answer": "C",
+    "hint": "Recall the only row of the truth table where an implication is false, and rule it out.",
+    "explanation": "An implication \\(p \\rightarrow q\\) is false only when \\(p\\) is true and \\(q\\) is false. Since \\(p \\rightarrow q\\) is given as true, the combination \\(p\\)=True, \\(q\\)=False cannot occur. As \\(q\\) is false, \\(p\\) must therefore be False.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q021",
+    "question": "For a positive integer \\(n\\), being divisible by 3 is a ______ condition for \\(n\\) being divisible by 6.",
+    "options": [
+      {
+        "label": "A",
+        "text": "necessary"
+      },
+      {
+        "label": "B",
+        "text": "sufficient"
+      },
+      {
+        "label": "C",
+        "text": "neither necessary nor sufficient"
+      }
+    ],
+    "answer": "A",
+    "hint": "Ask: must the second property hold whenever the first one does? That describes a necessary condition.",
+    "explanation": "Every integer that is divisible by 6 is also divisible by 3 (since divisible by 6 implies divisible by 3), so being divisible by 3 is required whenever \\(n\\) is divisible by 6 — that makes it a necessary condition. However, being divisible by 3 alone does not guarantee \\(n\\) is divisible by 6, so it is not sufficient.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q035",
+    "question": "Let \\(a\\): \"The alarm is triggered.\" and \\(b\\): \"The security team is notified.\" The implication \\(a \\rightarrow b\\) is true, and \\(b\\) is false. What must be the truth value of \\(a\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined"
+      }
+    ],
+    "answer": "B",
+    "hint": "Recall the only row of the truth table where an implication is false, and rule it out.",
+    "explanation": "An implication \\(a \\rightarrow b\\) is false only when \\(a\\) is true and \\(b\\) is false. Since \\(a \\rightarrow b\\) is given as true, the combination \\(a\\)=True, \\(b\\)=False cannot occur. As \\(b\\) is false, \\(a\\) must therefore be False.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q051",
+    "question": "For a positive integer \\(n\\), being divisible by 2 is a ______ condition for \\(n\\) being divisible by 8.",
+    "options": [
+      {
+        "label": "A",
+        "text": "necessary"
+      },
+      {
+        "label": "B",
+        "text": "sufficient"
+      },
+      {
+        "label": "C",
+        "text": "neither necessary nor sufficient"
+      }
+    ],
+    "answer": "A",
+    "hint": "Ask: must the second property hold whenever the first one does? That describes a necessary condition.",
+    "explanation": "Every integer that is divisible by 8 is also divisible by 2 (since divisible by 8 implies divisible by 2), so being divisible by 2 is required whenever \\(n\\) is divisible by 8 — that makes it a necessary condition. However, being divisible by 2 alone does not guarantee \\(n\\) is divisible by 8, so it is not sufficient.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q065",
+    "question": "Let \\(x\\): \"The number n is divisible by 6.\" and \\(y\\): \"The number n is divisible by 3.\" The implication \\(x \\rightarrow y\\) is true, and \\(y\\) is false. What must be the truth value of \\(x\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined"
+      }
+    ],
+    "answer": "B",
+    "hint": "Recall the only row of the truth table where an implication is false, and rule it out.",
+    "explanation": "An implication \\(x \\rightarrow y\\) is false only when \\(x\\) is true and \\(y\\) is false. Since \\(x \\rightarrow y\\) is given as true, the combination \\(x\\)=True, \\(y\\)=False cannot occur. As \\(y\\) is false, \\(x\\) must therefore be False.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q081",
+    "question": "For a positive integer \\(n\\), being divisible by 3 is a ______ condition for \\(n\\) being divisible by 9.",
+    "options": [
+      {
+        "label": "A",
+        "text": "necessary"
+      },
+      {
+        "label": "B",
+        "text": "sufficient"
+      },
+      {
+        "label": "C",
+        "text": "neither necessary nor sufficient"
+      }
+    ],
+    "answer": "A",
+    "hint": "Ask: must the second property hold whenever the first one does? That describes a necessary condition.",
+    "explanation": "Every integer that is divisible by 9 is also divisible by 3 (since divisible by 9 implies divisible by 3), so being divisible by 3 is required whenever \\(n\\) is divisible by 9 — that makes it a necessary condition. However, being divisible by 3 alone does not guarantee \\(n\\) is divisible by 9, so it is not sufficient.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q095",
+    "question": "Let \\(m\\): \"The access code is valid.\" and \\(n\\): \"The door unlocks.\" The implication \\(m \\rightarrow n\\) is true, and \\(n\\) is false. What must be the truth value of \\(m\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined"
+      }
+    ],
+    "answer": "B",
+    "hint": "Recall the only row of the truth table where an implication is false, and rule it out.",
+    "explanation": "An implication \\(m \\rightarrow n\\) is false only when \\(m\\) is true and \\(n\\) is false. Since \\(m \\rightarrow n\\) is given as true, the combination \\(m\\)=True, \\(n\\)=False cannot occur. As \\(n\\) is false, \\(m\\) must therefore be False.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q111",
+    "question": "For a positive integer \\(n\\), being divisible by 4 is a ______ condition for \\(n\\) being divisible by 12.",
+    "options": [
+      {
+        "label": "A",
+        "text": "sufficient"
+      },
+      {
+        "label": "B",
+        "text": "necessary"
+      },
+      {
+        "label": "C",
+        "text": "neither necessary nor sufficient"
+      }
+    ],
+    "answer": "B",
+    "hint": "Ask: must the second property hold whenever the first one does? That describes a necessary condition.",
+    "explanation": "Every integer that is divisible by 12 is also divisible by 4 (since divisible by 12 implies divisible by 4), so being divisible by 4 is required whenever \\(n\\) is divisible by 12 — that makes it a necessary condition. However, being divisible by 4 alone does not guarantee \\(n\\) is divisible by 12, so it is not sufficient.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q125",
+    "question": "Let \\(s\\): \"The battery is fully charged.\" and \\(t\\): \"The phone powers on.\" The implication \\(s \\rightarrow t\\) is true, and \\(t\\) is false. What must be the truth value of \\(s\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined"
+      }
+    ],
+    "answer": "B",
+    "hint": "Recall the only row of the truth table where an implication is false, and rule it out.",
+    "explanation": "An implication \\(s \\rightarrow t\\) is false only when \\(s\\) is true and \\(t\\) is false. Since \\(s \\rightarrow t\\) is given as true, the combination \\(s\\)=True, \\(t\\)=False cannot occur. As \\(t\\) is false, \\(s\\) must therefore be False.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q141",
+    "question": "For a positive integer \\(n\\), being divisible by 5 is a ______ condition for \\(n\\) being divisible by 10.",
+    "options": [
+      {
+        "label": "A",
+        "text": "sufficient"
+      },
+      {
+        "label": "B",
+        "text": "neither necessary nor sufficient"
+      },
+      {
+        "label": "C",
+        "text": "necessary"
+      }
+    ],
+    "answer": "C",
+    "hint": "Ask: must the second property hold whenever the first one does? That describes a necessary condition.",
+    "explanation": "Every integer that is divisible by 10 is also divisible by 5 (since divisible by 10 implies divisible by 5), so being divisible by 5 is required whenever \\(n\\) is divisible by 10 — that makes it a necessary condition. However, being divisible by 5 alone does not guarantee \\(n\\) is divisible by 10, so it is not sufficient.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q155",
+    "question": "Let \\(u\\): \"The number x is a multiple of 8.\" and \\(v\\): \"The number x is a multiple of 4.\" The implication \\(u \\rightarrow v\\) is true, and \\(v\\) is false. What must be the truth value of \\(u\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined"
+      }
+    ],
+    "answer": "B",
+    "hint": "Recall the only row of the truth table where an implication is false, and rule it out.",
+    "explanation": "An implication \\(u \\rightarrow v\\) is false only when \\(u\\) is true and \\(v\\) is false. Since \\(u \\rightarrow v\\) is given as true, the combination \\(u\\)=True, \\(v\\)=False cannot occur. As \\(v\\) is false, \\(u\\) must therefore be False.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q171",
+    "question": "For a positive integer \\(n\\), being divisible by 4 is a ______ condition for \\(n\\) being divisible by 20.",
+    "options": [
+      {
+        "label": "A",
+        "text": "sufficient"
+      },
+      {
+        "label": "B",
+        "text": "necessary"
+      },
+      {
+        "label": "C",
+        "text": "neither necessary nor sufficient"
+      }
+    ],
+    "answer": "B",
+    "hint": "Ask: must the second property hold whenever the first one does? That describes a necessary condition.",
+    "explanation": "Every integer that is divisible by 20 is also divisible by 4 (since divisible by 20 implies divisible by 4), so being divisible by 4 is required whenever \\(n\\) is divisible by 20 — that makes it a necessary condition. However, being divisible by 4 alone does not guarantee \\(n\\) is divisible by 20, so it is not sufficient.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q185",
+    "question": "Let \\(c\\): \"The traffic light is red.\" and \\(d\\): \"The cars must stop.\" The implication \\(c \\rightarrow d\\) is true, and \\(d\\) is false. What must be the truth value of \\(c\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "Cannot be determined"
+      },
+      {
+        "label": "C",
+        "text": "False"
+      }
+    ],
+    "answer": "C",
+    "hint": "Recall the only row of the truth table where an implication is false, and rule it out.",
+    "explanation": "An implication \\(c \\rightarrow d\\) is false only when \\(c\\) is true and \\(d\\) is false. Since \\(c \\rightarrow d\\) is given as true, the combination \\(c\\)=True, \\(d\\)=False cannot occur. As \\(d\\) is false, \\(c\\) must therefore be False.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q201",
+    "question": "For a positive integer \\(n\\), being a multiple of 5 is a ______ condition for \\(n\\) being a multiple of 15.",
+    "options": [
+      {
+        "label": "A",
+        "text": "necessary"
+      },
+      {
+        "label": "B",
+        "text": "sufficient"
+      },
+      {
+        "label": "C",
+        "text": "neither necessary nor sufficient"
+      }
+    ],
+    "answer": "A",
+    "hint": "Ask: must the second property hold whenever the first one does? That describes a necessary condition.",
+    "explanation": "Every integer that is a multiple of 15 is also a multiple of 5 (since a multiple of 15 implies a multiple of 5), so being a multiple of 5 is required whenever \\(n\\) is a multiple of 15 — that makes it a necessary condition. However, being a multiple of 5 alone does not guarantee \\(n\\) is a multiple of 15, so it is not sufficient.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q215",
+    "question": "Let \\(j\\): \"A student passes the final exam.\" and \\(k\\): \"A certificate is issued.\" The implication \\(j \\rightarrow k\\) is true, and \\(k\\) is false. What must be the truth value of \\(j\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined"
+      }
+    ],
+    "answer": "B",
+    "hint": "Recall the only row of the truth table where an implication is false, and rule it out.",
+    "explanation": "An implication \\(j \\rightarrow k\\) is false only when \\(j\\) is true and \\(k\\) is false. Since \\(j \\rightarrow k\\) is given as true, the combination \\(j\\)=True, \\(k\\)=False cannot occur. As \\(k\\) is false, \\(j\\) must therefore be False.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q231",
+    "question": "For a positive integer \\(n\\), being a multiple of 7 is a ______ condition for \\(n\\) being a multiple of 14.",
+    "options": [
+      {
+        "label": "A",
+        "text": "sufficient"
+      },
+      {
+        "label": "B",
+        "text": "necessary"
+      },
+      {
+        "label": "C",
+        "text": "neither necessary nor sufficient"
+      }
+    ],
+    "answer": "B",
+    "hint": "Ask: must the second property hold whenever the first one does? That describes a necessary condition.",
+    "explanation": "Every integer that is a multiple of 14 is also a multiple of 7 (since a multiple of 14 implies a multiple of 7), so being a multiple of 7 is required whenever \\(n\\) is a multiple of 14 — that makes it a necessary condition. However, being a multiple of 7 alone does not guarantee \\(n\\) is a multiple of 14, so it is not sufficient.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q245",
+    "question": "Let \\(e\\): \"The temperature drops below 0°C.\" and \\(f\\): \"The water freezes.\" The implication \\(e \\rightarrow f\\) is true, and \\(f\\) is false. What must be the truth value of \\(e\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "True"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined"
+      }
+    ],
+    "answer": "A",
+    "hint": "Recall the only row of the truth table where an implication is false, and rule it out.",
+    "explanation": "An implication \\(e \\rightarrow f\\) is false only when \\(e\\) is true and \\(f\\) is false. Since \\(e \\rightarrow f\\) is given as true, the combination \\(e\\)=True, \\(f\\)=False cannot occur. As \\(f\\) is false, \\(e\\) must therefore be False.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q261",
+    "question": "For a positive integer \\(n\\), being a positive integer is a ______ condition for \\(n\\) being a perfect square greater than 4.",
+    "options": [
+      {
+        "label": "A",
+        "text": "necessary"
+      },
+      {
+        "label": "B",
+        "text": "sufficient"
+      },
+      {
+        "label": "C",
+        "text": "neither necessary nor sufficient"
+      }
+    ],
+    "answer": "A",
+    "hint": "Ask: must the second property hold whenever the first one does? That describes a necessary condition.",
+    "explanation": "Every integer that is a perfect square greater than 4 is also a positive integer (since a perfect square greater than 4 implies a positive integer), so being a positive integer is required whenever \\(n\\) is a perfect square greater than 4 — that makes it a necessary condition. However, being a positive integer alone does not guarantee \\(n\\) is a perfect square greater than 4, so it is not sufficient.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q275",
+    "question": "Let \\(g\\): \"The file is saved.\" and \\(h\\): \"The changes persist after closing.\" The implication \\(g \\rightarrow h\\) is true, and \\(h\\) is false. What must be the truth value of \\(g\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined"
+      }
+    ],
+    "answer": "B",
+    "hint": "Recall the only row of the truth table where an implication is false, and rule it out.",
+    "explanation": "An implication \\(g \\rightarrow h\\) is false only when \\(g\\) is true and \\(h\\) is false. Since \\(g \\rightarrow h\\) is given as true, the combination \\(g\\)=True, \\(h\\)=False cannot occur. As \\(h\\) is false, \\(g\\) must therefore be False.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/logic/logic-05.json",
+    "id": "questions-mathematics-logic-logic-05-q291",
+    "question": "For a positive integer \\(n\\), being divisible by 5 is a ______ condition for \\(n\\) being divisible by 25.",
+    "options": [
+      {
+        "label": "A",
+        "text": "sufficient"
+      },
+      {
+        "label": "B",
+        "text": "necessary"
+      },
+      {
+        "label": "C",
+        "text": "neither necessary nor sufficient"
+      }
+    ],
+    "answer": "B",
+    "hint": "Ask: must the second property hold whenever the first one does? That describes a necessary condition.",
+    "explanation": "Every integer that is divisible by 25 is also divisible by 5 (since divisible by 25 implies divisible by 5), so being divisible by 5 is required whenever \\(n\\) is divisible by 25 — that makes it a necessary condition. However, being divisible by 5 alone does not guarantee \\(n\\) is divisible by 25, so it is not sufficient.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/statistics/LEARN STATISTICS 1.json",
+    "id": "questions-mathematics-statistics-statistics-q300",
+    "question": "An estimator \\(\\hat{\\theta}\\) is said to be unbiased for a parameter \\(\\theta\\) if which condition holds?",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\operatorname{Var}(\\hat{\\theta})=0\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(\\hat{\\theta}=\\theta\\) for every possible sample"
+      },
+      {
+        "label": "C",
+        "text": "\\(E[\\hat{\\theta}]=\\theta\\)"
+      }
+    ],
+    "answer": "C",
+    "hint": "Step 1: identify the quantity or decision being asked for. Step 2: choose the definition or formula that matches the setting. Key idea: an estimator is unbiased when its expected value equals the parameter it targets: \\(E[\\hat{\\theta}]=\\theta\\).",
+    "explanation": "Check: unbiasedness concerns the long-run average of the estimator, not an individual sample. Applying that principle to the data given in the question leads to option C, \\(E[\\hat{\\theta}]=\\theta\\). Key idea: an estimator is unbiased when its expected value equals the parameter it targets. Common trap: interpreting unbiasedness as meaning every estimate equals the true parameter.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/statistics/LEARN STATISTICS 1.json",
+    "id": "questions-mathematics-statistics-statistics-q333",
+    "question": "As the degrees of freedom of a Student's t-distribution increase toward infinity, the shape of the t-distribution approaches which distribution?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The chi-square distribution"
+      },
+      {
+        "label": "B",
+        "text": "The standard normal distribution"
+      },
+      {
+        "label": "C",
+        "text": "The uniform distribution"
+      }
+    ],
+    "answer": "B",
+    "hint": "Step 1: identify the quantity or decision being asked for. Step 2: choose the definition or formula that matches the setting. Key idea: as degrees of freedom increase, the t distribution approaches the standard normal distribution.",
+    "explanation": "Check: heavier tails matter most at small degrees of freedom. Applying that principle to the data given in the question leads to option B, The standard normal distribution. Key idea: as degrees of freedom increase, the t distribution approaches the standard normal distribution. Common trap: assuming the t distribution becomes wider as degrees of freedom grow.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/statistics/LEARN STATISTICS 3.json",
+    "id": "questions-mathematics-statistics-statistics-learning-02-q003",
+    "question": "A quality inspector tests 50 phones randomly selected from today's production of 5,000 phones. Does this describe a population or a sample?",
+    "options": [
+      {
+        "label": "A",
+        "text": "sample"
+      },
+      {
+        "label": "B",
+        "text": "population"
+      },
+      {
+        "label": "C",
+        "text": "neither a population nor a sample"
+      }
+    ],
+    "answer": "A",
+    "hint": "A population includes every member of the group; a sample includes only part of it.",
+    "explanation": "Because only a subset of the full group is measured, this data set represents a sample drawn from a larger population.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/statistics/LEARN STATISTICS 3.json",
+    "id": "questions-mathematics-statistics-statistics-learning-02-q007",
+    "question": "A researcher measures the height of every student in a school of 500 students. Does this describe a population or a sample?",
+    "options": [
+      {
+        "label": "A",
+        "text": "population"
+      },
+      {
+        "label": "B",
+        "text": "sample"
+      },
+      {
+        "label": "C",
+        "text": "neither a population nor a sample"
+      }
+    ],
+    "answer": "A",
+    "hint": "A population includes every member of the group; a sample includes only part of it.",
+    "explanation": "Because every single member of the group of interest is measured, this data set represents the entire population, not just a subset.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/statistics/LEARN STATISTICS 3.json",
+    "id": "questions-mathematics-statistics-statistics-learning-02-q019",
+    "question": "A researcher measures the height of 40 randomly chosen students out of a school of 500. Does this describe a population or a sample?",
+    "options": [
+      {
+        "label": "A",
+        "text": "population"
+      },
+      {
+        "label": "B",
+        "text": "neither a population nor a sample"
+      },
+      {
+        "label": "C",
+        "text": "sample"
+      }
+    ],
+    "answer": "C",
+    "hint": "A population includes every member of the group; a sample includes only part of it.",
+    "explanation": "Because only a subset of the full group is measured, this data set represents a sample drawn from a larger population.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/statistics/LEARN STATISTICS 3.json",
+    "id": "questions-mathematics-statistics-statistics-learning-02-q035",
+    "question": "A quality inspector tests every single phone produced in a factory today. Does this describe a population or a sample?",
+    "options": [
+      {
+        "label": "A",
+        "text": "sample"
+      },
+      {
+        "label": "B",
+        "text": "population"
+      },
+      {
+        "label": "C",
+        "text": "neither a population nor a sample"
+      }
+    ],
+    "answer": "B",
+    "hint": "A population includes every member of the group; a sample includes only part of it.",
+    "explanation": "Because every single member of the group of interest is measured, this data set represents the entire population, not just a subset.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/statistics/LEARN STATISTICS 4.json",
+    "id": "questions-mathematics-statistics-statistics-learning-03-q009",
+    "question": "A researcher measures the height of 40 randomly chosen students out of a school of 500. Does this describe a population or a sample?",
+    "options": [
+      {
+        "label": "A",
+        "text": "sample"
+      },
+      {
+        "label": "B",
+        "text": "population"
+      },
+      {
+        "label": "C",
+        "text": "neither a population nor a sample"
+      }
+    ],
+    "answer": "A",
+    "hint": "A population includes every member of the group; a sample includes only part of it.",
+    "explanation": "Because only a subset of the full group is measured, this data set represents a sample drawn from a larger population.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/statistics/LEARN STATISTICS 4.json",
+    "id": "questions-mathematics-statistics-statistics-learning-03-q021",
+    "question": "A researcher measures the height of every student in a school of 500 students. Does this describe a population or a sample?",
+    "options": [
+      {
+        "label": "A",
+        "text": "sample"
+      },
+      {
+        "label": "B",
+        "text": "population"
+      },
+      {
+        "label": "C",
+        "text": "neither a population nor a sample"
+      }
+    ],
+    "answer": "B",
+    "hint": "A population includes every member of the group; a sample includes only part of it.",
+    "explanation": "Because every single member of the group of interest is measured, this data set represents the entire population, not just a subset.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/statistics/LEARN STATISTICS 4.json",
+    "id": "questions-mathematics-statistics-statistics-learning-03-q045",
+    "question": "A quality inspector randomly selects \\(60\\) phones from today's production of \\(5{,}000\\) phones. Does this describe a population or a sample?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A sample"
+      },
+      {
+        "label": "B",
+        "text": "A population"
+      },
+      {
+        "label": "C",
+        "text": "A census"
+      }
+    ],
+    "answer": "A",
+    "hint": "Only a subset of the 5,000 phones is selected, so the selected phones form a sample.",
+    "explanation": "Because only 60 of the 5,000 phones are selected, the selected phones form a sample. The correct answer is A.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/mathematics/statistics/LEARN STATISTICS 5.json",
+    "id": "questions-mathematics-statistics-statistics-learning-04-q023",
+    "question": "A quality inspector tests 50 phones randomly selected from today's production of 5,000 phones. Does this describe a population or a sample?",
+    "options": [
+      {
+        "label": "A",
+        "text": "population"
+      },
+      {
+        "label": "B",
+        "text": "sample"
+      },
+      {
+        "label": "C",
+        "text": "neither a population nor a sample"
+      }
+    ],
+    "answer": "B",
+    "hint": "A population includes every member of the group; a sample includes only part of it.",
+    "explanation": "Because only a subset of the full group is measured, this data set represents a sample drawn from a larger population.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 04.json",
+    "id": "questions-quiz-quiz-04-q004",
+    "question": "Without fully computing it, what is the sign of the product \\( (-1) \\times (-6) \\times (-5) \\times (-6) \\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Positive"
+      },
+      {
+        "label": "B",
+        "text": "Negative"
+      },
+      {
+        "label": "C",
+        "text": "Zero"
+      },
+      {
+        "label": "D",
+        "text": "Cannot be determined without multiplying"
+      }
+    ],
+    "answer": "A",
+    "hint": "Count the negative factors: an even count gives a positive product, an odd count gives a negative product.",
+    "explanation": "There are 4 negative factor(s) among 4 numbers. An even number of negative factors produces a positive product, and an odd number produces a negative product. Since there are 4 negative factors, the product is positive.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 04.json",
+    "id": "questions-quiz-quiz-04-q007",
+    "question": "Without fully computing it, what is the sign of the product \\( (-7) \\times 2 \\times 9 \\times 6 \\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Negative"
+      },
+      {
+        "label": "B",
+        "text": "Zero"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined without multiplying"
+      },
+      {
+        "label": "D",
+        "text": "Positive"
+      }
+    ],
+    "answer": "A",
+    "hint": "Count the negative factors: an even count gives a positive product, an odd count gives a negative product.",
+    "explanation": "There are 1 negative factor(s) among 4 numbers. An even number of negative factors produces a positive product, and an odd number produces a negative product. Since there are 1 negative factors, the product is negative.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 04.json",
+    "id": "questions-quiz-quiz-04-q012",
+    "question": "Without fully computing it, what is the sign of the product \\( 9 \\times 2 \\times (-7) \\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Positive"
+      },
+      {
+        "label": "B",
+        "text": "Cannot be determined without multiplying"
+      },
+      {
+        "label": "C",
+        "text": "Negative"
+      },
+      {
+        "label": "D",
+        "text": "Zero"
+      }
+    ],
+    "answer": "C",
+    "hint": "Count the negative factors: an even count gives a positive product, an odd count gives a negative product.",
+    "explanation": "There are 1 negative factor(s) among 3 numbers. An even number of negative factors produces a positive product, and an odd number produces a negative product. Since there are 1 negative factors, the product is negative.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 04.json",
+    "id": "questions-quiz-quiz-04-q014",
+    "question": "Without fully computing it, what is the sign of the product \\( 1 \\times 7 \\times 9 \\times (-9) \\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cannot be determined without multiplying"
+      },
+      {
+        "label": "B",
+        "text": "Positive"
+      },
+      {
+        "label": "C",
+        "text": "Negative"
+      },
+      {
+        "label": "D",
+        "text": "Zero"
+      }
+    ],
+    "answer": "C",
+    "hint": "Count the negative factors: an even count gives a positive product, an odd count gives a negative product.",
+    "explanation": "There are 1 negative factor(s) among 4 numbers. An even number of negative factors produces a positive product, and an odd number produces a negative product. Since there are 1 negative factors, the product is negative.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 04.json",
+    "id": "questions-quiz-quiz-04-q016",
+    "question": "Without fully computing it, what is the sign of the product \\( 5 \\times (-1) \\times (-4) \\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Zero"
+      },
+      {
+        "label": "B",
+        "text": "Positive"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined without multiplying"
+      },
+      {
+        "label": "D",
+        "text": "Negative"
+      }
+    ],
+    "answer": "B",
+    "hint": "Count the negative factors: an even count gives a positive product, an odd count gives a negative product.",
+    "explanation": "There are 2 negative factor(s) among 3 numbers. An even number of negative factors produces a positive product, and an odd number produces a negative product. Since there are 2 negative factors, the product is positive.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 100.json",
+    "id": "questions-quiz-quiz-100-q005",
+    "question": "Statement P: \"3 plus 4 equals 6.\" (false). Statement Q: \"A week has 6 days.\" (false). What is the truth value of \"P OR Q\"?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cannot be determined"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "True"
+      },
+      {
+        "label": "D",
+        "text": "Neither true nor false"
+      }
+    ],
+    "answer": "B",
+    "hint": "'OR' is true if at least one part is true; it is false only when both parts are false.",
+    "explanation": "OR is true when at least one statement is true. Here P is false and Q is false, so P OR Q is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 100.json",
+    "id": "questions-quiz-quiz-100-q013",
+    "question": "Statement P: \"The number 3 is an even number.\" (false). Statement Q: \"10 is a perfect square.\" (false). What is the truth value of \"P OR Q\"?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Neither true nor false"
+      },
+      {
+        "label": "B",
+        "text": "Cannot be determined"
+      },
+      {
+        "label": "C",
+        "text": "True"
+      },
+      {
+        "label": "D",
+        "text": "False"
+      }
+    ],
+    "answer": "D",
+    "hint": "'OR' is true if at least one part is true; it is false only when both parts are false.",
+    "explanation": "OR is true when at least one statement is true. Here P is false and Q is false, so P OR Q is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 100.json",
+    "id": "questions-quiz-quiz-100-q016",
+    "question": "Statement P: \"A right angle measures 180 degrees.\" (false). Statement Q: \"10 is a perfect square.\" (false). What is the truth value of \"P OR Q\"?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cannot be determined"
+      },
+      {
+        "label": "B",
+        "text": "Neither true nor false"
+      },
+      {
+        "label": "C",
+        "text": "False"
+      },
+      {
+        "label": "D",
+        "text": "True"
+      }
+    ],
+    "answer": "C",
+    "hint": "'OR' is true if at least one part is true; it is false only when both parts are false.",
+    "explanation": "OR is true when at least one statement is true. Here P is false and Q is false, so P OR Q is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 100.json",
+    "id": "questions-quiz-quiz-100-q018",
+    "question": "Statement P: \"12 is divisible by 5.\" (false). Statement Q: \"A hexagon has five sides.\" (false). What is the truth value of \"P OR Q\"?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "Neither true nor false"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined"
+      },
+      {
+        "label": "D",
+        "text": "False"
+      }
+    ],
+    "answer": "D",
+    "hint": "'OR' is true if at least one part is true; it is false only when both parts are false.",
+    "explanation": "OR is true when at least one statement is true. Here P is false and Q is false, so P OR Q is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 101.json",
+    "id": "quiz-101-q062",
+    "question": "What is the slope of a vertical line?",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(0\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(1\\)"
+      },
+      {
+        "label": "C",
+        "text": "\\(-1\\)"
+      },
+      {
+        "label": "D",
+        "text": "\\(\\infty\\)"
+      },
+      {
+        "label": "E",
+        "text": "undefined"
+      }
+    ],
+    "answer": "E",
+    "hint": "Division by zero is undefined.",
+    "explanation": "A vertical line has zero horizontal change, so the slope is undefined.\nThus, the correct answer is undefined.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 102.json",
+    "id": "quiz-102-q001",
+    "question": "If \\(p\\) is true and \\(q\\) is false, what is the truth value of \\(p \\rightarrow q\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "True"
+      }
+    ],
+    "answer": "A",
+    "hint": "Recall the single condition under which an implication is false.",
+    "explanation": "The implication \\(p \\rightarrow q\\) is false only when the antecedent \\(p\\) is true and the consequent \\(q\\) is false. Since \\(p\\) is true and \\(q\\) is false, the implication is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 102.json",
+    "id": "quiz-102-q039",
+    "question": "What is the truth value of \\(p \\lor q\\) when both \\(p\\) and \\(q\\) are False?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      }
+    ],
+    "answer": "B",
+    "hint": "Disjunction is false only when both components are false.",
+    "explanation": "A disjunction \\(p \\lor q\\) is false only when both \\(p\\) and \\(q\\) are false. Since both are false, \\(p \\lor q\\) is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 102.json",
+    "id": "quiz-102-q048",
+    "question": "If \\(p\\) is true, what is the truth value of \\(p \\land \\neg p\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      }
+    ],
+    "answer": "B",
+    "hint": "A proposition and its negation always have opposite truth values, so their conjunction is always False.",
+    "explanation": "Since \\(p\\) is True, \\(\\neg p\\) is False. A proposition can never be True at the same time as its own negation, so \\(p \\land \\neg p\\) is False.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 102.json",
+    "id": "quiz-102-q060",
+    "question": "If \\(p\\) is true and \\(q\\) is false, what is the truth value of \\(p \\leftrightarrow q\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      }
+    ],
+    "answer": "B",
+    "hint": "Biconditional is false when components differ.",
+    "explanation": "A biconditional \\(p \\leftrightarrow q\\) is false when the components have different truth values. Since \\(p\\) is true and \\(q\\) is false, \\(p \\leftrightarrow q\\) is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 102.json",
+    "id": "quiz-102-q062",
+    "question": "If \\(p\\) is false and \\(q\\) is true, what is the truth value of \\(p \\leftrightarrow q\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      }
+    ],
+    "answer": "B",
+    "hint": "Biconditional is false when components differ.",
+    "explanation": "A biconditional \\(p \\leftrightarrow q\\) is false when the components have different truth values. Since \\(p\\) is false and \\(q\\) is true, \\(p \\leftrightarrow q\\) is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 103.json",
+    "id": "quiz-103-q046",
+    "question": "Which expression is equivalent to \\(P \\land \\text{False}\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(P\\)"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      }
+    ],
+    "answer": "B",
+    "hint": "AND with False always gives False.",
+    "explanation": "Domination law: \\(P \\land \\text{False} \\equiv \\text{False}\\).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 103.json",
+    "id": "quiz-103-q050",
+    "question": "Which expression is equivalent to \\(P \\land \\neg P\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "\\(P\\)"
+      }
+    ],
+    "answer": "A",
+    "hint": "A variable cannot be both True and False.",
+    "explanation": "Complement law: \\(P \\land \\neg P \\equiv \\text{False}\\).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 103.json",
+    "id": "quiz-103-q117",
+    "question": "A transaction is flagged if it is not the case that both the location matches and the device is recognized. Let \\(L\\) be location matches and \\(D\\) be device recognized. Which expression represents flagging?",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\neg L \\land \\neg D\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(\\neg L \\lor \\neg D\\)"
+      }
+    ],
+    "answer": "B",
+    "hint": "Apply De Morgan's law to \"not the case that both\": \\(\\neg(L \\land D) \\equiv \\neg L \\lor \\neg D\\).",
+    "explanation": "\"Not both\" is \\(\\neg(L \\land D)\\), equivalent to \\(\\neg L \\lor \\neg D\\).",
+    "reason": [
+      "correct option substring",
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 103.json",
+    "id": "quiz-103-q118",
+    "question": "A meeting is rescheduled if it is not the case that both the room is available and all attendees confirm. Let \\(R\\) be room available and \\(A\\) be attendees confirm. Which expression represents rescheduling?",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\neg R \\land \\neg A\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(\\neg R \\lor \\neg A\\)"
+      }
+    ],
+    "answer": "B",
+    "hint": "Apply De Morgan's law to \"not the case that both\": \\(\\neg(R \\land A) \\equiv \\neg R \\lor \\neg A\\).",
+    "explanation": "\"Not both\" is \\(\\neg(R \\land A)\\), equivalent to \\(\\neg R \\lor \\neg A\\).",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 103.json",
+    "id": "quiz-103-q119",
+    "question": "A batch is rejected if it is not the case that both the weight is within range and the seal is intact. Let \\(W\\) be weight within range and \\(S\\) be seal intact. Which expression represents rejection?",
+    "options": [
+      {
+        "label": "A",
+        "text": "\\(\\neg W \\land \\neg S\\)"
+      },
+      {
+        "label": "B",
+        "text": "\\(\\neg W \\lor \\neg S\\)"
+      }
+    ],
+    "answer": "B",
+    "hint": "Apply De Morgan's law to \"not the case that both\": \\(\\neg(W \\land S) \\equiv \\neg W \\lor \\neg S\\).",
+    "explanation": "\"Not both\" is \\(\\neg(W \\land S)\\), equivalent to \\(\\neg W \\lor \\neg S\\).",
+    "reason": [
+      "correct option substring",
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 103.json",
+    "id": "quiz-103-q129",
+    "question": "Simplify \\(\\neg(P \\rightarrow P)\\).",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "True"
+      }
+    ],
+    "answer": "A",
+    "hint": "Negating a statement that is always True gives a statement that is always False.",
+    "explanation": "Since \\(P \\rightarrow P\\) is always True, its negation is always False.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 104.json",
+    "id": "quiz-104-2-q022",
+    "question": "If \\(P = \\text{True}\\) and \\(Q = \\text{True}\\), what is the value of \\(P \\text{ XOR } Q\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      }
+    ],
+    "answer": "B",
+    "hint": "XOR is false when both operands have the same truth value.",
+    "explanation": "The XOR operator returns True when exactly one operand is True. Since both \\(P\\) and \\(Q\\) are True, the result is False. Therefore, the correct answer is False, which is option B.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 104.json",
+    "id": "quiz-104-2-q023",
+    "question": "If \\(P = \\text{False}\\) and \\(Q = \\text{False}\\), what is the value of \\(P \\text{ XOR } Q\\)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      }
+    ],
+    "answer": "B",
+    "hint": "XOR is false when both operands are the same.",
+    "explanation": "The XOR operator returns True when exactly one operand is True. Since both \\(P\\) and \\(Q\\) are False, the result is False. Therefore, the correct answer is False, which is option B.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 104.json",
+    "id": "quiz-104-2-q026",
+    "question": "Consider the conditional statement \"If \\(P\\), then \\(Q\\).\" If \\(P\\) is true and \\(Q\\) is false, is the conditional statement true?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "True"
+      }
+    ],
+    "answer": "A",
+    "hint": "The only case where \"If P, then Q\" is false is when P is true and Q is false.",
+    "explanation": "An if-then statement is false only when the hypothesis is true and the conclusion is false. Here, \\(P\\) is true and \\(Q\\) is false, so the statement is false. Therefore, the correct answer is False, which is option A.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 113.json",
+    "id": "quiz-113-q012",
+    "question": "In a scatter plot, the points are tightly packed around a straight line. How is the strength of the association described?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Strong"
+      },
+      {
+        "label": "B",
+        "text": "Weak"
+      }
+    ],
+    "answer": "A",
+    "hint": "The closer the points are to a line, the stronger the association.",
+    "explanation": "When points are tightly packed around a line, the association is strong because the linear relationship is very clear. A weak association would have points spread far from any line.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 113.json",
+    "id": "quiz-113-q068",
+    "question": "In a right-skewed distribution, which measure of center is larger?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The median"
+      },
+      {
+        "label": "B",
+        "text": "The mean"
+      }
+    ],
+    "answer": "B",
+    "hint": "Recall that the tail pulls the mean in its direction.",
+    "explanation": "In a right-skewed distribution, the long right tail pulls the mean to the right, making the mean larger than the median. The median is less affected by extreme values.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 113.json",
+    "id": "quiz-113-q108",
+    "question": "A data set is \\(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1000\\). Which statistic is most affected by the value 1000?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The mean"
+      },
+      {
+        "label": "B",
+        "text": "The median"
+      }
+    ],
+    "answer": "A",
+    "hint": "Compare how the mean and median respond to extreme values.",
+    "explanation": "The value 1000 is an extreme outlier that pulls the mean far to the right. The median, which is 6, is resistant and changes little. Therefore, the mean is most affected.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 113.json",
+    "id": "quiz-113-q155",
+    "question": "Variance is a measure of what?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Center"
+      },
+      {
+        "label": "B",
+        "text": "Spread"
+      }
+    ],
+    "answer": "B",
+    "hint": "Think about whether variance describes center or spread.",
+    "explanation": "Variance is a measure of spread, describing how far data values are from the mean. Center is measured by the mean or median.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 60.json",
+    "id": "questions-quiz-quiz-60-q007",
+    "question": "How many solutions does this system have? \\( 4a + 2y = 17 \\) and \\( 16a + 8y = 72 \\)",
+    "options": [
+      {
+        "label": "A",
+        "text": "Exactly two solutions"
+      },
+      {
+        "label": "B",
+        "text": "Infinitely many solutions"
+      },
+      {
+        "label": "C",
+        "text": "No solution"
+      },
+      {
+        "label": "D",
+        "text": "Exactly one solution"
+      }
+    ],
+    "answer": "C",
+    "hint": "Compare the ratios of the coefficients and constants: equal ratios throughout means infinite solutions, equal coefficient ratios but different constant ratios means no solution, otherwise one solution.",
+    "explanation": "The two equations have proportional variable coefficients but different constants, meaning the lines are parallel and never intersect: No solution.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 60.json",
+    "id": "questions-quiz-quiz-60-q015",
+    "question": "How many solutions does this system have? \\( 5x + 3a = 14 \\) and \\( 20x + 12a = 63 \\)",
+    "options": [
+      {
+        "label": "A",
+        "text": "No solution"
+      },
+      {
+        "label": "B",
+        "text": "Exactly one solution"
+      },
+      {
+        "label": "C",
+        "text": "Exactly two solutions"
+      },
+      {
+        "label": "D",
+        "text": "Infinitely many solutions"
+      }
+    ],
+    "answer": "A",
+    "hint": "Compare the ratios of the coefficients and constants: equal ratios throughout means infinite solutions, equal coefficient ratios but different constant ratios means no solution, otherwise one solution.",
+    "explanation": "The two equations have proportional variable coefficients but different constants, meaning the lines are parallel and never intersect: No solution.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 73.json",
+    "id": "questions-quiz-quiz-73-q001",
+    "question": "What does the notation \\( g(16) \\) mean?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The function g multiplied by 16."
+      },
+      {
+        "label": "B",
+        "text": "The variable 16 raised to the power g."
+      },
+      {
+        "label": "C",
+        "text": "The output of function g when the input is 16."
+      },
+      {
+        "label": "D",
+        "text": "The input value of function g."
+      }
+    ],
+    "answer": "C",
+    "hint": "Function notation f(n) represents the output of f when the input is n; parentheses here do not mean multiplication.",
+    "explanation": "\\( g(16) \\) means \"evaluate the function g at the input 16\"; it represents the resulting output value, not multiplication.",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 73.json",
+    "id": "questions-quiz-quiz-73-q006",
+    "question": "What does the notation \\( f(10) \\) mean?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The output of function f when the input is 10."
+      },
+      {
+        "label": "B",
+        "text": "The input value of function f."
+      },
+      {
+        "label": "C",
+        "text": "The function f multiplied by 10."
+      },
+      {
+        "label": "D",
+        "text": "The variable 10 raised to the power f."
+      }
+    ],
+    "answer": "A",
+    "hint": "Function notation f(n) represents the output of f when the input is n; parentheses here do not mean multiplication.",
+    "explanation": "\\( f(10) \\) means \"evaluate the function f at the input 10\"; it represents the resulting output value, not multiplication.",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 73.json",
+    "id": "questions-quiz-quiz-73-q008",
+    "question": "What does the notation \\( h(16) \\) mean?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The variable 16 raised to the power h."
+      },
+      {
+        "label": "B",
+        "text": "The function h multiplied by 16."
+      },
+      {
+        "label": "C",
+        "text": "The output of function h when the input is 16."
+      },
+      {
+        "label": "D",
+        "text": "The input value of function h."
+      }
+    ],
+    "answer": "C",
+    "hint": "Function notation f(n) represents the output of f when the input is n; parentheses here do not mean multiplication.",
+    "explanation": "\\( h(16) \\) means \"evaluate the function h at the input 16\"; it represents the resulting output value, not multiplication.",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 73.json",
+    "id": "questions-quiz-quiz-73-q009",
+    "question": "What does the notation \\( f(3) \\) mean?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The variable 3 raised to the power f."
+      },
+      {
+        "label": "B",
+        "text": "The output of function f when the input is 3."
+      },
+      {
+        "label": "C",
+        "text": "The function f multiplied by 3."
+      },
+      {
+        "label": "D",
+        "text": "The input value of function f."
+      }
+    ],
+    "answer": "B",
+    "hint": "Function notation f(n) represents the output of f when the input is n; parentheses here do not mean multiplication.",
+    "explanation": "\\( f(3) \\) means \"evaluate the function f at the input 3\"; it represents the resulting output value, not multiplication.",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 73.json",
+    "id": "questions-quiz-quiz-73-q014",
+    "question": "What does the notation \\( g(12) \\) mean?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The input value of function g."
+      },
+      {
+        "label": "B",
+        "text": "The function g multiplied by 12."
+      },
+      {
+        "label": "C",
+        "text": "The variable 12 raised to the power g."
+      },
+      {
+        "label": "D",
+        "text": "The output of function g when the input is 12."
+      }
+    ],
+    "answer": "D",
+    "hint": "Function notation f(n) represents the output of f when the input is n; parentheses here do not mean multiplication.",
+    "explanation": "\\( g(12) \\) means \"evaluate the function g at the input 12\"; it represents the resulting output value, not multiplication.",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 73.json",
+    "id": "questions-quiz-quiz-73-q016",
+    "question": "What does the notation \\( g(5) \\) mean?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The variable 5 raised to the power g."
+      },
+      {
+        "label": "B",
+        "text": "The function g multiplied by 5."
+      },
+      {
+        "label": "C",
+        "text": "The input value of function g."
+      },
+      {
+        "label": "D",
+        "text": "The output of function g when the input is 5."
+      }
+    ],
+    "answer": "D",
+    "hint": "Function notation f(n) represents the output of f when the input is n; parentheses here do not mean multiplication.",
+    "explanation": "\\( g(5) \\) means \"evaluate the function g at the input 5\"; it represents the resulting output value, not multiplication.",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 73.json",
+    "id": "questions-quiz-quiz-73-q018",
+    "question": "What does the notation \\( h(14) \\) mean?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The output of function h when the input is 14."
+      },
+      {
+        "label": "B",
+        "text": "The function h multiplied by 14."
+      },
+      {
+        "label": "C",
+        "text": "The variable 14 raised to the power h."
+      },
+      {
+        "label": "D",
+        "text": "The input value of function h."
+      }
+    ],
+    "answer": "A",
+    "hint": "Function notation f(n) represents the output of f when the input is n; parentheses here do not mean multiplication.",
+    "explanation": "\\( h(14) \\) means \"evaluate the function h at the input 14\"; it represents the resulting output value, not multiplication.",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 73.json",
+    "id": "questions-quiz-quiz-73-q020",
+    "question": "What does the notation \\( h(19) \\) mean?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The output of function h when the input is 19."
+      },
+      {
+        "label": "B",
+        "text": "The input value of function h."
+      },
+      {
+        "label": "C",
+        "text": "The function h multiplied by 19."
+      },
+      {
+        "label": "D",
+        "text": "The variable 19 raised to the power h."
+      }
+    ],
+    "answer": "A",
+    "hint": "Function notation f(n) represents the output of f when the input is n; parentheses here do not mean multiplication.",
+    "explanation": "\\( h(19) \\) means \"evaluate the function h at the input 19\"; it represents the resulting output value, not multiplication.",
+    "reason": [
+      "high token overlap"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 90.json",
+    "id": "questions-quiz-quiz-90-q005",
+    "question": "In which quadrant does the point (4, 6) lie?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Quadrant I"
+      },
+      {
+        "label": "B",
+        "text": "Quadrant II"
+      },
+      {
+        "label": "C",
+        "text": "Quadrant III"
+      },
+      {
+        "label": "D",
+        "text": "Quadrant IV"
+      }
+    ],
+    "answer": "A",
+    "hint": "Quadrant I has (+,+), Quadrant II has (-,+), Quadrant III has (-,-), and Quadrant IV has (+,-).",
+    "explanation": "Since x is positive and y is positive, the point lies in Quadrant I.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 90.json",
+    "id": "questions-quiz-quiz-90-q008",
+    "question": "In which quadrant does the point (9, 6) lie?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Quadrant I"
+      },
+      {
+        "label": "B",
+        "text": "Quadrant IV"
+      },
+      {
+        "label": "C",
+        "text": "Quadrant III"
+      },
+      {
+        "label": "D",
+        "text": "Quadrant II"
+      }
+    ],
+    "answer": "A",
+    "hint": "Quadrant I has (+,+), Quadrant II has (-,+), Quadrant III has (-,-), and Quadrant IV has (+,-).",
+    "explanation": "Since x is positive and y is positive, the point lies in Quadrant I.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 90.json",
+    "id": "questions-quiz-quiz-90-q011",
+    "question": "In which quadrant does the point (-1, 4) lie?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Quadrant I"
+      },
+      {
+        "label": "B",
+        "text": "Quadrant IV"
+      },
+      {
+        "label": "C",
+        "text": "Quadrant III"
+      },
+      {
+        "label": "D",
+        "text": "Quadrant II"
+      }
+    ],
+    "answer": "D",
+    "hint": "Quadrant I has (+,+), Quadrant II has (-,+), Quadrant III has (-,-), and Quadrant IV has (+,-).",
+    "explanation": "Since x is negative and y is positive, the point lies in Quadrant II.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 90.json",
+    "id": "questions-quiz-quiz-90-q015",
+    "question": "In which quadrant does the point (-7, -2) lie?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Quadrant II"
+      },
+      {
+        "label": "B",
+        "text": "Quadrant I"
+      },
+      {
+        "label": "C",
+        "text": "Quadrant III"
+      },
+      {
+        "label": "D",
+        "text": "Quadrant IV"
+      }
+    ],
+    "answer": "C",
+    "hint": "Quadrant I has (+,+), Quadrant II has (-,+), Quadrant III has (-,-), and Quadrant IV has (+,-).",
+    "explanation": "Since x is negative and y is negative, the point lies in Quadrant III.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 90.json",
+    "id": "questions-quiz-quiz-90-q017",
+    "question": "In which quadrant does the point (-5, 4) lie?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Quadrant I"
+      },
+      {
+        "label": "B",
+        "text": "Quadrant II"
+      },
+      {
+        "label": "C",
+        "text": "Quadrant IV"
+      },
+      {
+        "label": "D",
+        "text": "Quadrant III"
+      }
+    ],
+    "answer": "B",
+    "hint": "Quadrant I has (+,+), Quadrant II has (-,+), Quadrant III has (-,-), and Quadrant IV has (+,-).",
+    "explanation": "Since x is negative and y is positive, the point lies in Quadrant II.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 98.json",
+    "id": "questions-quiz-quiz-98-q001",
+    "question": "The statement \"A square has four equal sides.\" is true. What is the truth value of its negation (NOT the statement)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Neither true nor false"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "Both true and false"
+      },
+      {
+        "label": "D",
+        "text": "True"
+      }
+    ],
+    "answer": "B",
+    "hint": "Negation (NOT) always flips a statement's truth value: true becomes false, and false becomes true.",
+    "explanation": "Negation always reverses the truth value. Since the original statement is true, its negation is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 98.json",
+    "id": "questions-quiz-quiz-98-q003",
+    "question": "The statement \"The number 2 is an even number.\" is true. What is the truth value of its negation (NOT the statement)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Both true and false"
+      },
+      {
+        "label": "B",
+        "text": "True"
+      },
+      {
+        "label": "C",
+        "text": "Neither true nor false"
+      },
+      {
+        "label": "D",
+        "text": "False"
+      }
+    ],
+    "answer": "D",
+    "hint": "Negation (NOT) always flips a statement's truth value: true becomes false, and false becomes true.",
+    "explanation": "Negation always reverses the truth value. Since the original statement is true, its negation is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 98.json",
+    "id": "questions-quiz-quiz-98-q004",
+    "question": "The statement \"7 is a prime number.\" is true. What is the truth value of its negation (NOT the statement)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "Both true and false"
+      },
+      {
+        "label": "C",
+        "text": "True"
+      },
+      {
+        "label": "D",
+        "text": "Neither true nor false"
+      }
+    ],
+    "answer": "A",
+    "hint": "Negation (NOT) always flips a statement's truth value: true becomes false, and false becomes true.",
+    "explanation": "Negation always reverses the truth value. Since the original statement is true, its negation is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 98.json",
+    "id": "questions-quiz-quiz-98-q005",
+    "question": "The statement \"3 plus 4 equals 7.\" is true. What is the truth value of its negation (NOT the statement)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "Both true and false"
+      },
+      {
+        "label": "C",
+        "text": "True"
+      },
+      {
+        "label": "D",
+        "text": "Neither true nor false"
+      }
+    ],
+    "answer": "A",
+    "hint": "Negation (NOT) always flips a statement's truth value: true becomes false, and false becomes true.",
+    "explanation": "Negation always reverses the truth value. Since the original statement is true, its negation is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 98.json",
+    "id": "questions-quiz-quiz-98-q007",
+    "question": "The statement \"A week has 7 days.\" is true. What is the truth value of its negation (NOT the statement)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "Both true and false"
+      },
+      {
+        "label": "C",
+        "text": "False"
+      },
+      {
+        "label": "D",
+        "text": "Neither true nor false"
+      }
+    ],
+    "answer": "C",
+    "hint": "Negation (NOT) always flips a statement's truth value: true becomes false, and false becomes true.",
+    "explanation": "Negation always reverses the truth value. Since the original statement is true, its negation is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 98.json",
+    "id": "questions-quiz-quiz-98-q013",
+    "question": "The statement \"15 is greater than 10.\" is true. What is the truth value of its negation (NOT the statement)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Both true and false"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "True"
+      },
+      {
+        "label": "D",
+        "text": "Neither true nor false"
+      }
+    ],
+    "answer": "B",
+    "hint": "Negation (NOT) always flips a statement's truth value: true becomes false, and false becomes true.",
+    "explanation": "Negation always reverses the truth value. Since the original statement is true, its negation is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 98.json",
+    "id": "questions-quiz-quiz-98-q017",
+    "question": "The statement \"Water freezes at 0 degrees Celsius (at standard pressure).\" is true. What is the truth value of its negation (NOT the statement)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "Both true and false"
+      },
+      {
+        "label": "C",
+        "text": "True"
+      },
+      {
+        "label": "D",
+        "text": "Neither true nor false"
+      }
+    ],
+    "answer": "A",
+    "hint": "Negation (NOT) always flips a statement's truth value: true becomes false, and false becomes true.",
+    "explanation": "Negation always reverses the truth value. Since the original statement is true, its negation is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 98.json",
+    "id": "questions-quiz-quiz-98-q020",
+    "question": "The statement \"A rectangle has four right angles.\" is true. What is the truth value of its negation (NOT the statement)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Both true and false"
+      },
+      {
+        "label": "B",
+        "text": "Neither true nor false"
+      },
+      {
+        "label": "C",
+        "text": "False"
+      },
+      {
+        "label": "D",
+        "text": "True"
+      }
+    ],
+    "answer": "C",
+    "hint": "Negation (NOT) always flips a statement's truth value: true becomes false, and false becomes true.",
+    "explanation": "Negation always reverses the truth value. Since the original statement is true, its negation is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 99.json",
+    "id": "questions-quiz-quiz-99-q002",
+    "question": "Statement P: \"12 is divisible by 5.\" (false). Statement Q: \"8 is a prime number.\" (false). What is the truth value of \"P AND Q\"?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "True"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined"
+      },
+      {
+        "label": "D",
+        "text": "Neither true nor false"
+      }
+    ],
+    "answer": "A",
+    "hint": "'AND' is true only when both parts are true; if either part is false, the whole AND statement is false.",
+    "explanation": "AND is true only when both statements are true. Here P is false and Q is false, so P AND Q is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 99.json",
+    "id": "questions-quiz-quiz-99-q004",
+    "question": "Statement P: \"8 is a prime number.\" (false). Statement Q: \"A triangle has three sides.\" (true). What is the truth value of \"P AND Q\"?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Neither true nor false"
+      },
+      {
+        "label": "B",
+        "text": "False"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined"
+      },
+      {
+        "label": "D",
+        "text": "True"
+      }
+    ],
+    "answer": "B",
+    "hint": "'AND' is true only when both parts are true; if either part is false, the whole AND statement is false.",
+    "explanation": "AND is true only when both statements are true. Here P is false and Q is true, so P AND Q is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 99.json",
+    "id": "questions-quiz-quiz-99-q008",
+    "question": "Statement P: \"The number 3 is an even number.\" (false). Statement Q: \"A square has four equal sides.\" (true). What is the truth value of \"P AND Q\"?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cannot be determined"
+      },
+      {
+        "label": "B",
+        "text": "Neither true nor false"
+      },
+      {
+        "label": "C",
+        "text": "False"
+      },
+      {
+        "label": "D",
+        "text": "True"
+      }
+    ],
+    "answer": "C",
+    "hint": "'AND' is true only when both parts are true; if either part is false, the whole AND statement is false.",
+    "explanation": "AND is true only when both statements are true. Here P is false and Q is true, so P AND Q is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 99.json",
+    "id": "questions-quiz-quiz-99-q013",
+    "question": "Statement P: \"10 is a perfect square.\" (false). Statement Q: \"The number 3 is an even number.\" (false). What is the truth value of \"P AND Q\"?",
+    "options": [
+      {
+        "label": "A",
+        "text": "False"
+      },
+      {
+        "label": "B",
+        "text": "Neither true nor false"
+      },
+      {
+        "label": "C",
+        "text": "Cannot be determined"
+      },
+      {
+        "label": "D",
+        "text": "True"
+      }
+    ],
+    "answer": "A",
+    "hint": "'AND' is true only when both parts are true; if either part is false, the whole AND statement is false.",
+    "explanation": "AND is true only when both statements are true. Here P is false and Q is false, so P AND Q is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 99.json",
+    "id": "questions-quiz-quiz-99-q017",
+    "question": "Statement P: \"A hexagon has six sides.\" (true). Statement Q: \"3 plus 4 equals 6.\" (false). What is the truth value of \"P AND Q\"?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cannot be determined"
+      },
+      {
+        "label": "B",
+        "text": "True"
+      },
+      {
+        "label": "C",
+        "text": "Neither true nor false"
+      },
+      {
+        "label": "D",
+        "text": "False"
+      }
+    ],
+    "answer": "D",
+    "hint": "'AND' is true only when both parts are true; if either part is false, the whole AND statement is false.",
+    "explanation": "AND is true only when both statements are true. Here P is true and Q is false, so P AND Q is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  },
+  {
+    "path": "questions/quiz/quiz - 99.json",
+    "id": "questions-quiz-quiz-99-q020",
+    "question": "Statement P: \"A right angle measures 180 degrees.\" (false). Statement Q: \"A rectangle has four right angles.\" (true). What is the truth value of \"P AND Q\"?",
+    "options": [
+      {
+        "label": "A",
+        "text": "True"
+      },
+      {
+        "label": "B",
+        "text": "Cannot be determined"
+      },
+      {
+        "label": "C",
+        "text": "Neither true nor false"
+      },
+      {
+        "label": "D",
+        "text": "False"
+      }
+    ],
+    "answer": "D",
+    "hint": "'AND' is true only when both parts are true; if either part is false, the whole AND statement is false.",
+    "explanation": "AND is true only when both statements are true. Here P is false and Q is true, so P AND Q is false.",
+    "reason": [
+      "correct option substring"
+    ]
+  }
+]

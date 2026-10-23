@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-350",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 350",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-350-q001",
+      "category": "Combinatorics",
+      "concept": "Addition Principle for Disjoint Groups",
+      "learningObjective": "Count choices from two disjoint groups by adding their sizes.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A class has \\(5\\) boys and \\(7\\) girls. In how many ways can one student be chosen from the class?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(35\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The boys and girls form two disjoint groups. A single student is chosen from either the group of boys or the group of girls. By the addition principle, the total number of choices is\n\\[\n5+7=12\n\\]\nThus there are \\(12\\) ways.",
+      "hint": "Since the groups do not overlap, add the number of choices from each group."
+    },
+    {
+      "id": "math-gaokao-350-q002",
+      "category": "Combinatorics",
+      "concept": "Addition Principle for Categories",
+      "learningObjective": "Count selections from two mutually exclusive menu categories.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A menu has \\(6\\) vegetarian dishes and \\(4\\) non-vegetarian dishes. If a customer chooses exactly one dish, how many choices are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The vegetarian and non-vegetarian dishes are disjoint categories. The total number of choices is\n\\[\n6+4=10\n\\]\nThus there are \\(10\\) possible choices.",
+      "hint": "Add the counts from the two categories because no dish belongs to both."
+    },
+    {
+      "id": "math-gaokao-350-q003",
+      "category": "Combinatorics",
+      "concept": "Counting Multiples by Cases",
+      "learningObjective": "Count integers divisible by 3 or 5 using disjoint cases.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many integers from \\(1\\) to \\(100\\) inclusive are divisible by \\(3\\) or by \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(47\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(53\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiples of \\(3\\):\n\\[\n\\left\\lfloor \\frac{100}{3}\\right\\rfloor=33\n\\]\nMultiples of \\(5\\):\n\\[\n\\left\\lfloor \\frac{100}{5}\\right\\rfloor=20\n\\]\nMultiples of both \\(3\\) and \\(5\\), i.e. multiples of \\(15\\):\n\\[\n\\left\\lfloor \\frac{100}{15}\\right\\rfloor=6\n\\]\nBy the addition principle with the overlap removed, the number is\n\\[\n33+20-6=47\n\\]\nThus there are \\(47\\) such integers.",
+      "hint": "Count multiples of \\(3\\), multiples of \\(5\\), and then account for numbers counted twice."
+    },
+    {
+      "id": "math-gaokao-350-q004",
+      "category": "Combinatorics",
+      "concept": "Counting Multiples by Disjoint Cases",
+      "learningObjective": "Count positive integers less than 50 divisible by 2 or 7.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many positive integers less than \\(50\\) are divisible by \\(2\\) or by \\(7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(28\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(31\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiples of \\(2\\) less than \\(50\\):\n\\[\n2,4,6,\\ldots,48\n\\]\nThere are \\(24\\) such numbers.\nMultiples of \\(7\\) less than \\(50\\):\n\\[\n7,14,21,28,35,42,49\n\\]\nThere are \\(7\\) such numbers.\nMultiples of both \\(2\\) and \\(7\\), i.e. multiples of \\(14\\), less than \\(50\\):\n\\[\n14,28,42\n\\]\nThere are \\(3\\) such numbers.\nThus the number is\n\\[\n24+7-3=28\n\\]\nSo there are \\(28\\) such integers.",
+      "hint": "Use the counts for multiples of \\(2\\), multiples of \\(7\\), and their common multiples."
+    },
+    {
+      "id": "math-gaokao-350-q005",
+      "category": "Combinatorics",
+      "concept": "Casework with Digit Restrictions",
+      "learningObjective": "Count three-digit numbers with exactly one zero digit by splitting into disjoint cases.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many three-digit positive integers contain exactly one digit equal to \\(0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(153\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(162\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A three-digit number cannot begin with \\(0\\). The single zero must be in the tens place or the units place.\nCase 1: The tens digit is \\(0\\). The hundreds digit has \\(9\\) choices and the units digit has \\(9\\) choices, giving\n\\[\n9\\times 9=81\n\\]\nCase 2: The units digit is \\(0\\). The hundreds digit has \\(9\\) choices and the tens digit has \\(9\\) choices, giving\n\\[\n9\\times 9=81\n\\]\nThese cases are disjoint, so by the addition principle the total is\n\\[\n81+81=162\n\\]\nThus there are \\(162\\) such integers.",
+      "hint": "Separate the count according to the position of the zero, remembering that the hundreds digit cannot be zero."
+    },
+    {
+      "id": "math-gaokao-350-q006",
+      "category": "Combinatorics",
+      "concept": "Casework with Repeated Digits",
+      "learningObjective": "Count three-digit numbers with exactly two digits equal to 5.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many three-digit positive integers have exactly two digits equal to \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(26\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(27\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Consider the position of the digit that is not \\(5\\).\nCase 1: Hundreds and tens digits are \\(5\\). The units digit can be any digit except \\(5\\), giving \\(9\\) choices.\nCase 2: Hundreds and units digits are \\(5\\). The tens digit can be any digit except \\(5\\), giving \\(9\\) choices.\nCase 3: Tens and units digits are \\(5\\). The hundreds digit cannot be \\(0\\) or \\(5\\), giving \\(8\\) choices.\nThese cases are disjoint, so the total is\n\\[\n9+9+8=26\n\\]\nThus there are \\(26\\) such integers.",
+      "hint": "Split into cases according to which two positions contain the digit \\(5\\)."
+    },
+    {
+      "id": "math-gaokao-350-q007",
+      "category": "Combinatorics",
+      "concept": "Counting Union of Divisibility Conditions",
+      "learningObjective": "Count integers from 1 to 1000 divisible by 2, 3, or 5.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many integers from \\(1\\) to \\(1000\\) inclusive are divisible by \\(2\\), \\(3\\), or \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(733\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(734\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Count multiples:\n\\[\n\\left\\lfloor \\frac{1000}{2}\\right\\rfloor=500,\\quad\n\\left\\lfloor \\frac{1000}{3}\\right\\rfloor=333,\\quad\n\\left\\lfloor \\frac{1000}{5}\\right\\rfloor=200\n\\]\nSubtract multiples of pairwise least common multiples:\n\\[\n\\left\\lfloor \\frac{1000}{6}\\right\\rfloor=166,\\quad\n\\left\\lfloor \\frac{1000}{10}\\right\\rfloor=100,\\quad\n\\left\\lfloor \\frac{1000}{15}\\right\\rfloor=66\n\\]\nAdd back multiples of \\(30\\):\n\\[\n\\left\\lfloor \\frac{1000}{30}\\right\\rfloor=33\n\\]\nThus the total is\n\\[\n500+333+200-166-100-66+33=734\n\\]\nSo there are \\(734\\) such integers.",
+      "hint": "Use inclusion and exclusion with the least common multiples of the divisibility conditions."
+    },
+    {
+      "id": "math-gaokao-350-q008",
+      "category": "Combinatorics",
+      "concept": "Counting Numbers with At Least One Zero",
+      "learningObjective": "Count four-digit numbers containing at least one zero digit by disjoint cases.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many four-digit positive integers contain at least one digit equal to \\(0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2400\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2439\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Count by the number of zero digits.\nExactly one zero: the zero can be in the hundreds, tens, or units place. For each placement, the remaining three digits are chosen from \\(1\\) to \\(9\\), giving\n\\[\n3\\times 9^3=3\\times 729=2187\n\\]\nExactly two zeros: choose which two of the last three positions are zero, then choose the remaining nonzero digit from \\(1\\) to \\(9\\) for the other position and the hundreds digit from \\(1\\) to \\(9\\):\n\\[\n3\\times 9\\times 9=243\n\\]\nExactly three zeros: the last three digits are all zero, and the hundreds digit has \\(9\\) choices, giving\n\\[\n9\n\\]\nBy the addition principle, the total is\n\\[\n2187+243+9=2439\n\\]\nThus there are \\(2439\\) such integers.",
+      "hint": "Split the count according to exactly one, exactly two, and exactly three zero digits."
+    },
+    {
+      "id": "math-gaokao-350-q009",
+      "category": "Combinatorics",
+      "concept": "Counting Integers Satisfying Exactly One of Two Conditions",
+      "learningObjective": "Count integers divisible by 2 or 3 but not by 6.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How many integers from \\(1\\) to \\(300\\) inclusive are divisible by \\(2\\) or by \\(3\\), but not by \\(6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(200\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(150\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiples of \\(2\\):\n\\[\n\\left\\lfloor \\frac{300}{2}\\right\\rfloor=150\n\\]\nMultiples of \\(3\\):\n\\[\n\\left\\lfloor \\frac{300}{3}\\right\\rfloor=100\n\\]\nMultiples of both \\(2\\) and \\(3\\), i.e. multiples of \\(6\\):\n\\[\n\\left\\lfloor \\frac{300}{6}\\right\\rfloor=50\n\\]\nThe numbers divisible by exactly one of \\(2\\) or \\(3\\) are\n\\[\n(150-50)+(100-50)=100+50=150\n\\]\nThus there are \\(150\\) such integers.",
+      "hint": "Subtract the common multiples of \\(2\\) and \\(3\\) from each separate count, then add the two disjoint results."
+    },
+    {
+      "id": "math-gaokao-350-q010",
+      "category": "Combinatorics",
+      "concept": "Counting Subsets with a Property",
+      "learningObjective": "Count three-element subsets containing at least one even number.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many three-element subsets of the set \\(\\{1,2,3,4,5,6,7,8,9,10\\}\\) contain at least one even number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(110\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(100\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The set has \\(5\\) even numbers and \\(5\\) odd numbers. Count by the number of even elements.\nExactly one even:\n\\[\n\\binom{5}{1}\\binom{5}{2}=5\\times 10=50\n\\]\nExactly two even:\n\\[\n\\binom{5}{2}\\binom{5}{1}=10\\times 5=50\n\\]\nExactly three even:\n\\[\n\\binom{5}{3}=10\n\\]\nThese cases are disjoint, so the total is\n\\[\n50+50+10=110\n\\]\nThus there are \\(110\\) such subsets.",
+      "hint": "Split the count according to the number of even elements in the subset."
+    }
+  ]
+}

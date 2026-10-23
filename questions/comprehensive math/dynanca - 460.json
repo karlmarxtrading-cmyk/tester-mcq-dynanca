@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-460",
+  "category": "Comprehensive Mathematics",
+  "title": "460. Trigonometry & Periodic Models: Fourier Series Coefficients of Simple Periodic Functions",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-460-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Reading a sine coefficient",
+      "learningObjective": "Read a Fourier sine coefficient from a finite trigonometric sum.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A function with period \\(2\\pi\\) is written as \\(f(x)=\\frac{a_0}{2}+\\sum_{n\\ge 1}\\left(a_n\\cos nx+b_n\\sin nx\\right)\\). For \\(f(x)=3+2\\cos x-5\\sin 2x\\), what is \\(b_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(b_2=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(b_2=-5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The coefficient \\(b_2\\) multiplies \\(\\sin 2x\\). In the given function that coefficient is \\(-5\\), including its sign. The number \\(2\\) is \\(a_1\\), the coefficient of \\(\\cos x\\).",
+      "hint": "Match each term of the function with the corresponding term of the general series."
+    },
+    {
+      "id": "dynanca-460-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Constant term and the coefficient a zero",
+      "learningObjective": "Relate the constant term of a trigonometric sum to the coefficient a zero.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A function with period \\(2\\pi\\) is written as \\(f(x)=\\frac{a_0}{2}+\\sum_{n\\ge 1}\\left(a_n\\cos nx+b_n\\sin nx\\right)\\). For \\(f(x)=4+\\sin x\\), what is \\(a_0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_0=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a_0=8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In this convention the constant term of the series is \\(\\frac{a_0}{2}\\). Since the constant term of \\(f\\) is \\(4\\), \\(\\frac{a_0}{2}=4\\) and \\(a_0=8\\). The value \\(4\\) is the mean value of \\(f\\), which equals \\(\\frac{a_0}{2}\\), not \\(a_0\\).",
+      "hint": "Compare the constant term of the function with \\(\\frac{a_0}{2}\\)."
+    },
+    {
+      "id": "dynanca-460-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Coefficient of a squared sine",
+      "learningObjective": "Find a Fourier coefficient by rewriting a squared sine with a double-angle identity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "With \\(f(x)=\\frac{a_0}{2}+\\sum_{n\\ge 1}\\left(a_n\\cos nx+b_n\\sin nx\\right)\\), what is \\(a_2\\) for \\(f(x)=\\sin^2 x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_2=\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a_2=-\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use the identity \\(\\sin^2 x=\\frac{1}{2}-\\frac{1}{2}\\cos 2x\\). This is already a trigonometric sum, so the coefficient of \\(\\cos 2x\\) is \\(a_2=-\\frac{1}{2}\\). The positive value \\(\\frac{1}{2}\\) is the coefficient for \\(\\cos^2 x=\\frac{1}{2}+\\frac{1}{2}\\cos 2x\\).",
+      "hint": "Rewrite \\(\\sin^2 x\\) using \\(\\cos 2x=1-2\\sin^2 x\\)."
+    },
+    {
+      "id": "dynanca-460-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Mean value of a squared cosine",
+      "learningObjective": "Find the constant term of the Fourier series of a squared cosine.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the constant term \\(\\frac{a_0}{2}\\) of the Fourier series of \\(f(x)=\\cos^2 x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(\\cos^2 x=\\frac{1}{2}+\\frac{1}{2}\\cos 2x\\). The constant term is \\(\\frac{1}{2}\\), which is the mean value of \\(\\cos^2 x\\) over a period. The value \\(1\\) is the maximum of the function, not its mean.",
+      "hint": "Rewrite \\(\\cos^2 x\\) using \\(\\cos 2x=2\\cos^2 x-1\\); the constant term is the average value."
+    },
+    {
+      "id": "dynanca-460-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "First sine coefficient of a square wave",
+      "learningObjective": "Compute the first Fourier sine coefficient of an odd square wave.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function of period \\(2\\pi\\) equals \\(1\\) for \\(0<x<\\pi\\) and \\(-1\\) for \\(-\\pi<x<0\\). With \\(b_n=\\frac{1}{\\pi}\\int_{-\\pi}^{\\pi}f(x)\\sin nx\\,dx\\), what is \\(b_1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(b_1=\\frac{4}{\\pi}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(b_1=\\frac{2}{\\pi}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The product \\(f(x)\\sin x\\) is even, so \\(b_1=\\frac{2}{\\pi}\\int_0^{\\pi}\\sin x\\,dx=\\frac{2}{\\pi}\\left[-\\cos x\\right]_0^{\\pi}=\\frac{2}{\\pi}(1+1)=\\frac{4}{\\pi}\\). The value \\(\\frac{2}{\\pi}\\) results from integrating over \\((0,\\pi)\\) only, without doubling.",
+      "hint": "Use the symmetry of the integrand to integrate over \\((0,\\pi)\\) and double the result."
+    },
+    {
+      "id": "dynanca-460-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Second sine coefficient of a square wave",
+      "learningObjective": "Compute a Fourier sine coefficient that vanishes for a square wave.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For the function of period \\(2\\pi\\) that equals \\(1\\) for \\(0<x<\\pi\\) and \\(-1\\) for \\(-\\pi<x<0\\), with \\(b_n=\\frac{1}{\\pi}\\int_{-\\pi}^{\\pi}f(x)\\sin nx\\,dx\\), what is \\(b_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(b_2=\\frac{2}{\\pi}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(b_2=0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By symmetry, \\(b_2=\\frac{2}{\\pi}\\int_0^{\\pi}\\sin 2x\\,dx=\\frac{2}{\\pi}\\left[-\\frac{\\cos 2x}{2}\\right]_0^{\\pi}=\\frac{2}{\\pi}\\left(-\\frac{1}{2}+\\frac{1}{2}\\right)=0\\). Over \\((0,\\pi)\\) the function \\(\\sin 2x\\) completes one full cycle, so its integral is zero. This square wave has only odd harmonics.",
+      "hint": "Evaluate \\(\\cos 2x\\) at both limits carefully; note that \\(\\cos 2\\pi=\\cos 0\\)."
+    },
+    {
+      "id": "dynanca-460-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "First sine coefficient of a sawtooth",
+      "learningObjective": "Compute the first Fourier sine coefficient of the function x on a symmetric interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function of period \\(2\\pi\\) equals \\(x\\) for \\(-\\pi<x<\\pi\\). With \\(b_n=\\frac{1}{\\pi}\\int_{-\\pi}^{\\pi}f(x)\\sin nx\\,dx\\), what is \\(b_1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(b_1=-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(b_1=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The integrand \\(x\\sin x\\) is even, so \\(b_1=\\frac{2}{\\pi}\\int_0^{\\pi}x\\sin x\\,dx\\). Integrating by parts, \\(\\int_0^{\\pi}x\\sin x\\,dx=\\left[-x\\cos x+\\sin x\\right]_0^{\\pi}=\\pi\\). Hence \\(b_1=\\frac{2}{\\pi}\\cdot\\pi=2\\). The sign is positive because \\(-\\pi\\cos\\pi=+\\pi\\).",
+      "hint": "Integrate by parts and evaluate \\(-x\\cos x\\) at \\(x=\\pi\\) with care for the sign."
+    },
+    {
+      "id": "dynanca-460-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Second sine coefficient of a sawtooth",
+      "learningObjective": "Compute the second Fourier sine coefficient of the function x on a symmetric interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For the function of period \\(2\\pi\\) that equals \\(x\\) for \\(-\\pi<x<\\pi\\), with \\(b_n=\\frac{1}{\\pi}\\int_{-\\pi}^{\\pi}f(x)\\sin nx\\,dx\\), what is \\(b_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(b_2=-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(b_2=1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By symmetry, \\(b_2=\\frac{2}{\\pi}\\int_0^{\\pi}x\\sin 2x\\,dx\\). Integrating by parts, \\(\\int_0^{\\pi}x\\sin 2x\\,dx=\\left[-\\frac{x\\cos 2x}{2}+\\frac{\\sin 2x}{4}\\right]_0^{\\pi}=-\\frac{\\pi}{2}\\). Hence \\(b_2=\\frac{2}{\\pi}\\cdot\\left(-\\frac{\\pi}{2}\\right)=-1\\). In general \\(b_n=\\frac{2(-1)^{n+1}}{n}\\), which alternates in sign.",
+      "hint": "Integrate by parts; at \\(x=\\pi\\), \\(\\cos 2\\pi=1\\), which makes the result negative."
+    },
+    {
+      "id": "dynanca-460-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Coefficient a zero of the absolute value function",
+      "learningObjective": "Compute the coefficient a zero for the absolute value function.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A function of period \\(2\\pi\\) equals \\(|x|\\) for \\(-\\pi<x<\\pi\\). With \\(a_0=\\frac{1}{\\pi}\\int_{-\\pi}^{\\pi}f(x)\\,dx\\), what is \\(a_0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_0=\\pi\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a_0=\\frac{\\pi}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The function is even, so \\(a_0=\\frac{2}{\\pi}\\int_0^{\\pi}x\\,dx=\\frac{2}{\\pi}\\cdot\\frac{\\pi^2}{2}=\\pi\\). The value \\(\\frac{\\pi}{2}\\) is the mean value of the function, which equals \\(\\frac{a_0}{2}\\), the constant term of the series, not \\(a_0\\) itself.",
+      "hint": "Integrate over \\((0,\\pi)\\) and double; distinguish \\(a_0\\) from the constant term \\(\\frac{a_0}{2}\\)."
+    },
+    {
+      "id": "dynanca-460-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "First cosine coefficient of the absolute value function",
+      "learningObjective": "Compute the first Fourier cosine coefficient of the absolute value function.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For the function of period \\(2\\pi\\) that equals \\(|x|\\) for \\(-\\pi<x<\\pi\\), with \\(a_n=\\frac{1}{\\pi}\\int_{-\\pi}^{\\pi}f(x)\\cos nx\\,dx\\), what is \\(a_1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_1=\\frac{4}{\\pi}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a_1=-\\frac{4}{\\pi}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The integrand is even, so \\(a_1=\\frac{2}{\\pi}\\int_0^{\\pi}x\\cos x\\,dx\\). Integrating by parts, \\(\\int_0^{\\pi}x\\cos x\\,dx=\\left[x\\sin x+\\cos x\\right]_0^{\\pi}=(0-1)-(0+1)=-2\\). Hence \\(a_1=\\frac{2}{\\pi}\\cdot(-2)=-\\frac{4}{\\pi}\\). The negative sign is expected: \\(|x|\\) is smallest at \\(x=0\\), where \\(\\cos x\\) is largest.",
+      "hint": "Integrate by parts and evaluate \\(\\cos x\\) at both limits; the two contributions have the same sign."
+    }
+  ]
+}

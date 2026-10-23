@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-524",
+  "category": "Comprehensive Mathematics",
+  "title": "524. Sets, Logic, Reasoning & Proof: Binary Relations on Finite Sets",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-524-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of a binary relation",
+      "learningObjective": "State what a binary relation from one set to another is.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is a binary relation from a set \\(A\\) to a set \\(B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Any element of the Cartesian product \\(A\\times B\\)"
+        },
+        {
+          "label": "B",
+          "text": "Any subset of the Cartesian product \\(A\\times B\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A binary relation from \\(A\\) to \\(B\\) is a set of ordered pairs \\((a,b)\\) with \\(a\\in A\\) and \\(b\\in B\\), that is, a subset of \\(A\\times B\\). A single element of \\(A\\times B\\) is one ordered pair, not a relation.",
+      "hint": "A relation is a collection of ordered pairs."
+    },
+    {
+      "id": "dynanca-524-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Listing a relation defined by an inequality",
+      "learningObjective": "List the ordered pairs of a relation on a small set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A=\\{1,2,3\\}\\) and \\(R=\\{(a,b)\\in A\\times A\\mid a<b\\}\\). Which listing equals \\(R\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{(2,1),(3,1),(3,2)\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{(1,2),(1,3),(2,3)\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A pair \\((a,b)\\) belongs to \\(R\\) when the first component is less than the second. The pairs with this property are \\((1,2)\\), \\((1,3)\\), and \\((2,3)\\). The other listing contains the pairs with \\(a>b\\).",
+      "hint": "In each pair, compare the first component with the second."
+    },
+    {
+      "id": "dynanca-524-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Number of ordered pairs available",
+      "learningObjective": "Count the ordered pairs from which a relation on a set is formed.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A\\) be a set with \\(3\\) elements. How many ordered pairs does \\(A\\times A\\) contain?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each of the \\(3\\) choices for the first component can be combined with each of the \\(3\\) choices for the second, including pairs such as \\((a,a)\\). So there are \\(3\\cdot 3=9\\) ordered pairs. The value \\(6\\) counts only the pairs with two different components.",
+      "hint": "Pairs with equal components are also ordered pairs."
+    },
+    {
+      "id": "dynanca-524-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Membership in the divisibility relation",
+      "learningObjective": "Decide whether a pair belongs to a relation defined by divisibility.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "On \\(A=\\{1,2,3,4\\}\\), let \\(R=\\{(a,b)\\mid a\\text{ divides }b\\}\\). Is \\((2,2)\\in R\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because the two components of a pair must be different."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because \\(2\\) divides \\(2\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The pair \\((2,2)\\) belongs to \\(R\\) when \\(2\\) divides \\(2\\), which is true since \\(2=2\\cdot 1\\). Nothing in the definition of a relation requires the two components to be different.",
+      "hint": "Apply the defining condition of \\(R\\) to the pair."
+    },
+    {
+      "id": "dynanca-524-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Listing a relation defined by an equation",
+      "learningObjective": "List a relation defined by a sum condition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A=\\{1,2,3\\}\\) and \\(R=\\{(a,b)\\in A\\times A\\mid a+b=4\\}\\). Which listing equals \\(R\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{(1,3),(3,1)\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{(1,3),(2,2),(3,1)\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The pairs of elements of \\(A\\) with sum \\(4\\) are \\((1,3)\\), \\((2,2)\\), and \\((3,1)\\). The pair \\((2,2)\\) qualifies, since \\(2+2=4\\); omitting it leaves the listing incomplete.",
+      "hint": "For each first component, find the second component that makes the sum \\(4\\)."
+    },
+    {
+      "id": "dynanca-524-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Size of the divisibility relation",
+      "learningObjective": "Count the ordered pairs in a relation defined by divisibility.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "On \\(A=\\{1,2,3,4\\}\\), let \\(R=\\{(a,b)\\mid a\\text{ divides }b\\}\\). How many ordered pairs does \\(R\\) contain?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The pairs are \\((1,1)\\), \\((1,2)\\), \\((1,3)\\), \\((1,4)\\), \\((2,2)\\), \\((2,4)\\), \\((3,3)\\), and \\((4,4)\\): the number \\(1\\) divides all four elements, \\(2\\) divides \\(2\\) and \\(4\\), and \\(3\\) and \\(4\\) divide only themselves. That is \\(8\\) pairs. Counting only the pairs \\((a,a)\\) gives \\(4\\).",
+      "hint": "For each first component, list the elements of \\(A\\) that it divides."
+    },
+    {
+      "id": "dynanca-524-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Inverse of a relation",
+      "learningObjective": "Form the inverse of a relation given by a list of pairs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(R=\\{(1,2),(1,3),(2,3)\\}\\). What is the inverse relation \\(R^{-1}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{(2,1),(3,1),(3,2)\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{(1,2),(1,3),(2,3)\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The inverse relation is obtained by reversing every ordered pair: \\((a,b)\\) becomes \\((b,a)\\). This gives \\(\\{(2,1),(3,1),(3,2)\\}\\). Here \\(R\\) is the relation \"less than\" on \\(\\{1,2,3\\}\\), and its inverse is \"greater than\".",
+      "hint": "Swap the two components of each pair."
+    },
+    {
+      "id": "dynanca-524-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Domain of a relation",
+      "learningObjective": "Find the set of first components of a relation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(R=\\{(1,p),(1,q),(3,p)\\}\\) be a relation from \\(\\{1,2,3\\}\\) to \\(\\{p,q,r\\}\\). What is the domain of \\(R\\), that is, the set of first components of its pairs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1,2,3\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,3\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first components that actually occur in pairs of \\(R\\) are \\(1\\) and \\(3\\). The element \\(2\\) belongs to the set \\(\\{1,2,3\\}\\), but it is not related to anything, so it is not in the domain of \\(R\\).",
+      "hint": "Collect the first components that appear in at least one pair."
+    },
+    {
+      "id": "dynanca-524-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Composition of two relations",
+      "learningObjective": "Compute the composition of two relations given by lists of pairs.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(R=\\{(1,2),(2,3)\\}\\) and \\(S=\\{(2,4),(3,5)\\}\\). The composition \\(S\\circ R\\) contains \\((a,c)\\) whenever \\((a,b)\\in R\\) and \\((b,c)\\in S\\) for some \\(b\\). What is \\(S\\circ R\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{(1,2),(2,3),(2,4),(3,5)\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{(1,4),(2,5)\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\((1,2)\\in R\\) and \\((2,4)\\in S\\) we get \\((1,4)\\). From \\((2,3)\\in R\\) and \\((3,5)\\in S\\) we get \\((2,5)\\). No other pairs link up, so \\(S\\circ R=\\{(1,4),(2,5)\\}\\). The other set is the union of \\(R\\) and \\(S\\), not their composition.",
+      "hint": "For each pair of \\(R\\), look for a pair of \\(S\\) whose first component equals its second component."
+    },
+    {
+      "id": "dynanca-524-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Number of relations between two sets",
+      "learningObjective": "Count all binary relations from one finite set to another.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(A\\) have \\(2\\) elements and \\(B\\) have \\(3\\) elements. How many different binary relations from \\(A\\) to \\(B\\) are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(64\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The product \\(A\\times B\\) has \\(2\\cdot 3=6\\) ordered pairs. A relation is any subset of \\(A\\times B\\), and a set with \\(6\\) elements has \\(2^6=64\\) subsets. The number \\(6\\) is the number of ordered pairs, not the number of relations.",
+      "hint": "Count the subsets of \\(A\\times B\\)."
+    }
+  ]
+}

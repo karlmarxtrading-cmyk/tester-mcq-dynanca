@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-501",
+  "category": "Comprehensive Mathematics",
+  "title": "501. Sets, Logic, Reasoning & Proof: Nested Quantifiers and Quantifier Order",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-501-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "For every integer there is a larger one",
+      "learningObjective": "Evaluate a statement with a universal quantifier followed by an existential quantifier.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Over the integers, what is the truth value of \\(\\forall x\\,\\exists y,\\ y>x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "True"
+        },
+        {
+          "label": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement says that every integer \\(x\\) has some integer \\(y\\) larger than it. Given \\(x\\), the choice \\(y=x+1\\) works. The value of \\(y\\) is allowed to depend on \\(x\\), so the statement is true.",
+      "hint": "For a given \\(x\\), try to name a suitable \\(y\\) in terms of \\(x\\)."
+    },
+    {
+      "id": "dynanca-501-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An integer larger than all integers",
+      "learningObjective": "Evaluate a statement with an existential quantifier followed by a universal quantifier.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Over the integers, what is the truth value of \\(\\exists y\\,\\forall x,\\ y>x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement says that one single integer \\(y\\) is larger than every integer \\(x\\). No such integer exists: whatever \\(y\\) is chosen, \\(x=y\\) does not satisfy \\(y>x\\). So the statement is false.",
+      "hint": "Here \\(y\\) must be chosen first and must work for every \\(x\\), including \\(x=y\\)."
+    },
+    {
+      "id": "dynanca-501-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Additive inverses",
+      "learningObjective": "Evaluate a statement asserting that every integer has an additive inverse.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Over the integers, what is the truth value of \\(\\forall x\\,\\exists y,\\ x+y=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "True"
+        },
+        {
+          "label": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For each integer \\(x\\), the integer \\(y=-x\\) satisfies \\(x+y=0\\). Since a suitable \\(y\\) exists for every \\(x\\), the statement is true.",
+      "hint": "Given \\(x\\), solve the equation for \\(y\\)."
+    },
+    {
+      "id": "dynanca-501-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "One number cancelling every integer",
+      "learningObjective": "Evaluate the statement obtained by exchanging the two quantifiers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Over the integers, what is the truth value of \\(\\exists y\\,\\forall x,\\ x+y=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement requires a single integer \\(y\\) that satisfies \\(x+y=0\\) for every \\(x\\). If such a \\(y\\) worked for \\(x=0\\) it would be \\(0\\), but then \\(x=1\\) gives \\(1+0\\ne 0\\). So no such \\(y\\) exists. Exchanging the quantifiers has changed a true statement into a false one.",
+      "hint": "Test whether one fixed \\(y\\) can work for both \\(x=0\\) and \\(x=1\\)."
+    },
+    {
+      "id": "dynanca-501-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A number that annihilates every integer",
+      "learningObjective": "Evaluate an existential-universal statement that has a witness.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Over the integers, what is the truth value of \\(\\exists x\\,\\forall y,\\ xy=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "True"
+        },
+        {
+          "label": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The witness \\(x=0\\) works: \\(0\\cdot y=0\\) for every integer \\(y\\). So there is a single \\(x\\) that satisfies the equation for all \\(y\\), and the statement is true.",
+      "hint": "Look for one value of \\(x\\) that makes the product zero whatever \\(y\\) is."
+    },
+    {
+      "id": "dynanca-501-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Exchanging two universal quantifiers",
+      "learningObjective": "Decide whether the order of two universal quantifiers matters.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Are the statements \\(\\forall x\\,\\forall y,\\ P(x,y)\\) and \\(\\forall y\\,\\forall x,\\ P(x,y)\\) equivalent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; both say that \\(P(x,y)\\) holds for every pair \\((x,y)\\)."
+        },
+        {
+          "label": "B",
+          "text": "No; exchanging quantifiers always changes the meaning."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both statements assert that \\(P\\) holds for all choices of \\(x\\) and \\(y\\), so they are equivalent. The order matters only when the two quantifiers are of different kinds, one universal and one existential.",
+      "hint": "Describe in words what each statement requires of the pairs \\((x,y)\\)."
+    },
+    {
+      "id": "dynanca-501-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Reading nested quantifiers in words",
+      "learningObjective": "Translate a nested quantified formula into an everyday sentence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Over a set of people, let \\(L(x,y)\\) mean \"\\(x\\) likes \\(y\\)\". What does \\(\\forall x\\,\\exists y,\\ L(x,y)\\) say?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Everyone likes at least one person."
+        },
+        {
+          "label": "B",
+          "text": "There is one person whom everyone likes."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The formula says: for each person \\(x\\) there is some person \\(y\\) that \\(x\\) likes. The liked person may be different for different \\(x\\). The sentence \"there is one person whom everyone likes\" corresponds to \\(\\exists y\\,\\forall x,\\ L(x,y)\\), where the same \\(y\\) must work for all \\(x\\).",
+      "hint": "Read the quantifiers from left to right; the inner choice may depend on the outer variable."
+    },
+    {
+      "id": "dynanca-501-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Nested quantifiers on a finite domain",
+      "learningObjective": "Evaluate a universal-existential statement on a small finite domain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(D=\\{1,2,3\\}\\). What is the truth value of \\(\\forall x\\in D\\,\\exists y\\in D,\\ x<y\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "True"
+        },
+        {
+          "label": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(x=1\\), \\(y=2\\) works; for \\(x=2\\), \\(y=3\\) works. But for \\(x=3\\) there is no element of \\(D\\) greater than \\(3\\). Since the requirement fails for one \\(x\\), the statement is false.",
+      "hint": "Check each \\(x\\) in turn, especially the largest element."
+    },
+    {
+      "id": "dynanca-501-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A least element on a finite domain",
+      "learningObjective": "Evaluate an existential-universal statement on a small finite domain.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(D=\\{1,2,3\\}\\). What is the truth value of \\(\\exists x\\in D\\,\\forall y\\in D,\\ x\\le y\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The statement says that some element of \\(D\\) is less than or equal to every element of \\(D\\). The element \\(x=1\\) works: \\(1\\le 1\\), \\(1\\le 2\\), and \\(1\\le 3\\). So the statement is true; it expresses that \\(D\\) has a least element.",
+      "hint": "Try the smallest element of the domain as the witness."
+    },
+    {
+      "id": "dynanca-501-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Square roots over the real numbers",
+      "learningObjective": "Evaluate a universal-existential statement whose inner equation is not always solvable.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Over the real numbers, what is the truth value of \\(\\forall x\\,\\exists y,\\ y^2=x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False; for \\(x=-1\\) no real \\(y\\) satisfies \\(y^2=-1\\)."
+        },
+        {
+          "label": "B",
+          "text": "True; the choice \\(y=\\sqrt{x}\\) always works."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement requires a real square root for every real number \\(x\\). Negative numbers have no real square root, since \\(y^2\\ge 0\\) for all real \\(y\\). So \\(x=-1\\) is a counterexample. The choice \\(y=\\sqrt{x}\\) is available only for \\(x\\ge 0\\).",
+      "hint": "Test a negative value of \\(x\\)."
+    }
+  ]
+}

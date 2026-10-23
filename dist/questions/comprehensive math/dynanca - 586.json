@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-586",
+  "category": "Comprehensive Mathematics",
+  "title": "586. Discrete Mathematics, Counting & Graph Theory: Bipartite Graph Recognition",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-586-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Definition of bipartite",
+      "learningObjective": "State what it means for a graph to be bipartite.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "When is a graph called bipartite?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When its vertices can be split into two sets with the same number of vertices"
+        },
+        {
+          "label": "B",
+          "text": "When its vertices can be split into two sets so that every edge joins a vertex of one set to a vertex of the other"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In a bipartite graph no edge has both endpoints in the same set; every edge crosses from one set to the other. The two sets need not have the same size: a path with three vertices is bipartite with sets of sizes \\(2\\) and \\(1\\).",
+      "hint": "The condition is about where the edges run, not about the sizes of the two sets."
+    },
+    {
+      "id": "dynanca-586-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A cycle of length four",
+      "learningObjective": "Decide whether a cycle of length four is bipartite.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D\\) and edges \\(AB\\), \\(BC\\), \\(CD\\), and \\(DA\\). Is it bipartite?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the edges form a closed cycle."
+        },
+        {
+          "label": "B",
+          "text": "Yes; take the sets \\(\\{A,C\\}\\) and \\(\\{B,D\\}\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every edge joins a vertex of \\(\\{A,C\\}\\) to a vertex of \\(\\{B,D\\}\\): \\(AB\\), \\(BC\\), \\(CD\\), and \\(DA\\) all cross between the sets. So the graph is bipartite. A cycle prevents this only when its length is odd.",
+      "hint": "Go around the cycle and place the vertices alternately in two sets."
+    },
+    {
+      "id": "dynanca-586-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A triangle",
+      "learningObjective": "Decide whether a triangle is bipartite.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Is the graph with vertices \\(A,B,C\\) and edges \\(AB\\), \\(BC\\), and \\(CA\\) bipartite?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; take the sets \\(\\{A,B\\}\\) and \\(\\{C\\}\\)."
+        },
+        {
+          "label": "B",
+          "text": "No; of three pairwise adjacent vertices, two must lie in the same set."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Three vertices are distributed over two sets, so two of them share a set, and since all pairs are adjacent, an edge joins them inside that set. With the sets \\(\\{A,B\\}\\) and \\(\\{C\\}\\), for example, the edge \\(AB\\) lies inside the first set. So a triangle is not bipartite.",
+      "hint": "Try to place three mutually adjacent vertices into two sets."
+    },
+    {
+      "id": "dynanca-586-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Odd cycles",
+      "learningObjective": "State the characterisation of bipartite graphs by cycles.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which graphs are bipartite?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Exactly the graphs that contain no cycle of odd length"
+        },
+        {
+          "label": "B",
+          "text": "Exactly the graphs that contain no cycle of even length"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Going around a cycle in a bipartite graph, the vertices alternate between the two sets, so the cycle must have even length. Conversely, a graph with no odd cycle can be split into two sets by the parity of the distance from a starting vertex in each component. Even cycles are harmless: a cycle of length \\(4\\) is bipartite.",
+      "hint": "Think about alternating between the two sets while walking around a cycle."
+    },
+    {
+      "id": "dynanca-586-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Trees are bipartite",
+      "learningObjective": "Decide whether every tree is bipartite.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Is every tree bipartite?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; a tree with a vertex of degree \\(3\\) is not bipartite."
+        },
+        {
+          "label": "B",
+          "text": "Yes; a tree has no cycles at all, so it has no cycle of odd length."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A graph is bipartite exactly when it has no odd cycle, and a tree has no cycles. Concretely, put the vertices at even distance from a chosen root in one set and those at odd distance in the other; every edge joins the two sets. The degrees of the vertices do not matter.",
+      "hint": "Split the vertices by the parity of their distance from a fixed vertex."
+    },
+    {
+      "id": "dynanca-586-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A cycle of length five",
+      "learningObjective": "Decide whether a cycle of length five is bipartite.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D,E\\) and edges \\(AB\\), \\(BC\\), \\(CD\\), \\(DE\\), and \\(EA\\). Is it bipartite?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; place the vertices alternately in two sets while going around the cycle."
+        },
+        {
+          "label": "B",
+          "text": "No; it is a cycle of odd length."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Alternating around the cycle puts \\(A\\), \\(C\\), \\(E\\) in one set and \\(B\\), \\(D\\) in the other, but then the edge \\(EA\\) joins two vertices of the same set. With an odd number of vertices the alternation cannot close up, so the graph is not bipartite.",
+      "hint": "Alternate around the cycle and check the last edge."
+    },
+    {
+      "id": "dynanca-586-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Finding the two sets",
+      "learningObjective": "Find the two sets of a bipartite graph by alternating from a starting vertex.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A bipartite graph has vertices \\(A,B,C,D,E\\) and edges \\(AB\\), \\(AC\\), \\(BD\\), \\(CD\\), and \\(DE\\). Which vertices lie in the same set as \\(A\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\) and \\(D\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\), \\(D\\), and \\(E\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The neighbours \\(B\\) and \\(C\\) of \\(A\\) go into the other set. Their neighbour \\(D\\) returns to the set of \\(A\\). The neighbour \\(E\\) of \\(D\\) goes into the other set again. So the sets are \\(\\{A,D\\}\\) and \\(\\{B,C,E\\}\\). The vertex \\(E\\) cannot be with \\(D\\), because \\(DE\\) is an edge.",
+      "hint": "Neighbours always lie in opposite sets."
+    },
+    {
+      "id": "dynanca-586-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Edges of a complete bipartite graph",
+      "learningObjective": "Count the edges of a complete bipartite graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "In a complete bipartite graph, one set has \\(3\\) vertices, the other has \\(4\\) vertices, and every vertex of the first set is adjacent to every vertex of the second. How many edges are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each of the \\(3\\) vertices of the first set is joined to each of the \\(4\\) vertices of the second, giving \\(3\\cdot 4=12\\) edges. The number \\(7\\) is the number of vertices.",
+      "hint": "Count the pairs consisting of one vertex from each set."
+    },
+    {
+      "id": "dynanca-586-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The cube graph",
+      "learningObjective": "Decide whether the graph of a cube is bipartite.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The vertices of a graph are the eight binary strings of length \\(3\\), and two strings are adjacent when they differ in exactly one position. Is this graph bipartite?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; every edge joins a string with an even number of ones to a string with an odd number of ones."
+        },
+        {
+          "label": "B",
+          "text": "No; every vertex has degree \\(3\\), which is odd."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Changing one position changes the number of ones by exactly \\(1\\), so the two ends of every edge have different parity. The strings with an even number of ones and those with an odd number of ones therefore form the two sets. The degrees of the vertices are irrelevant.",
+      "hint": "Compare the number of ones in two adjacent strings."
+    },
+    {
+      "id": "dynanca-586-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Most edges in a bipartite graph",
+      "learningObjective": "Find the largest number of edges of a bipartite graph on six vertices.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "What is the largest number of edges in a simple bipartite graph with \\(6\\) vertices?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If the two sets have \\(k\\) and \\(6-k\\) vertices, there are at most \\(k(6-k)\\) edges. The values are \\(5\\), \\(8\\), and \\(9\\) for \\(k=1,2,3\\), so the maximum is \\(9\\), attained with two sets of \\(3\\) vertices. The number \\(15\\) is the number of edges of the complete graph, which is not bipartite.",
+      "hint": "Choose the sizes of the two sets so that their product is as large as possible."
+    }
+  ]
+}

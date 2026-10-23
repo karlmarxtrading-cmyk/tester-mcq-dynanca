@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-450",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 450",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-450-q001",
+      "category": "Solid Geometry and Vectors",
+      "concept": "Perpendicular vectors in space",
+      "learningObjective": "Determine an unknown coordinate so that two space vectors are perpendicular.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For what value of \\(m\\) are the vectors \\(\\vec{u}=(1,2,-1)\\) and \\(\\vec{v}=(m,-1,3)\\) perpendicular?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Two nonzero vectors are perpendicular exactly when their dot product is zero. Compute \\[\n\\begin{aligned}\n\\vec{u}\\cdot\\vec{v}&=1\\cdot m+2\\cdot(-1)+(-1)\\cdot3 \\\\\n&=m-2-3 \\\\\n&=m-5\n\\end{aligned}\n\\]. Setting \\(m-5=0\\) gives \\(m=5\\). Therefore option B is correct.",
+      "hint": "Recall that perpendicular vectors have dot product equal to zero."
+    },
+    {
+      "id": "math-gaokao-450-q002",
+      "category": "Solid Geometry and Vectors",
+      "concept": "Distance from a point to a plane",
+      "learningObjective": "Find the distance from the origin to the plane through three coordinate-axis intercepts.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "The plane passes through \\(A(1,0,0)\\), \\(B(0,1,0)\\), and \\(C(0,0,1)\\). Find the distance from the origin \\(O(0,0,0)\\) to this plane.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\sqrt{3}}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The plane through the three intercepts has equation \\(x+y+z=1\\). The distance from \\(O(0,0,0)\\) to this plane is \\(\\frac{|0+0+0-1|}{\\sqrt{1^2+1^2+1^2}}=\\frac{1}{\\sqrt{3}}=\\frac{\\sqrt{3}}{3}\\). Therefore option A is correct.",
+      "hint": "Write the plane in intercept form, then use the point-to-plane distance formula."
+    },
+    {
+      "id": "math-gaokao-450-q003",
+      "category": "Solid Geometry and Vectors",
+      "concept": "Angle between two vectors",
+      "learningObjective": "Compute the angle between two vectors using the dot product.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Find the angle between \\(\\vec{a}=(1,1,0)\\) and \\(\\vec{b}=(0,1,1)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(45^\\circ\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using \\(\\cos\\theta=\\frac{\\vec{a}\\cdot\\vec{b}}{|\\vec{a}||\\vec{b}|}\\), we get \\(\\vec{a}\\cdot\\vec{b}=1\\cdot0+1\\cdot1+0\\cdot1=1\\), \\(|\\vec{a}|=\\sqrt{2}\\), and \\(|\\vec{b}|=\\sqrt{2}\\). Thus \\(\\cos\\theta=\\frac{1}{\\sqrt{2}\\sqrt{2}}=\\frac{1}{2}\\), so \\(\\theta=60^\\circ\\). Therefore option A is correct.",
+      "hint": "Use the dot product formula for the cosine of the angle between two vectors."
+    },
+    {
+      "id": "math-gaokao-450-q004",
+      "category": "Solid Geometry and Vectors",
+      "concept": "Volume of a tetrahedron using coordinates",
+      "learningObjective": "Compute the volume of a tetrahedron from its vertices using a determinant.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the volume of the tetrahedron with vertices \\(O(0,0,0)\\), \\(A(1,0,0)\\), \\(B(0,2,0)\\), and \\(C(0,0,3)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The volume of the tetrahedron is one-sixth of the absolute scalar triple product of \\(\\vec{OA}\\), \\(\\vec{OB}\\), and \\(\\vec{OC}\\). Here the determinant has value \\(1\\cdot2\\cdot3=6\\), so the volume is \\(\\frac{6}{6}=1\\). Therefore option A is correct.",
+      "hint": "Use the formula \\(V=\\frac{1}{6}|\\vec{OA}\\cdot(\\vec{OB}\\times\\vec{OC})|\\)."
+    },
+    {
+      "id": "math-gaokao-450-q005",
+      "category": "Solid Geometry and Vectors",
+      "concept": "Scalar projection of a vector",
+      "learningObjective": "Compute the scalar projection of one vector onto another.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the scalar projection of \\(\\vec{a}=(2,-1,3)\\) onto \\(\\vec{b}=(1,2,2)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The scalar projection of \\(\\vec{a}\\) onto \\(\\vec{b}\\) is \\(\\frac{\\vec{a}\\cdot\\vec{b}}{|\\vec{b}|}\\). Compute \\[\n\\begin{aligned}\n\\vec{a}\\cdot\\vec{b}&=2\\cdot1+(-1)\\cdot2+3\\cdot2 \\\\\n&=2-2+6 \\\\\n&=6\n\\end{aligned}\n\\]. Also \\[\n\\begin{aligned}\n|\\vec{b}|&=\\sqrt{1^2+2^2+2^2} \\\\\n&=\\sqrt{9} \\\\\n&=3\n\\end{aligned}\n\\]. Hence the scalar projection is \\(\\frac{6}{3}=2\\). Therefore option B is correct.",
+      "hint": "Use the formula \\(\\frac{\\vec{a}\\cdot\\vec{b}}{|\\vec{b}|}\\)."
+    },
+    {
+      "id": "math-gaokao-450-q006",
+      "category": "Solid Geometry and Vectors",
+      "concept": "Distance from a point to a plane",
+      "learningObjective": "Calculate the distance between a point and a given plane.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the distance from the point \\(P(1,2,3)\\) to the plane \\(2x-y+2z-5=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The point-to-plane distance is \\(\\frac{|2\\cdot1-1\\cdot2+2\\cdot3-5|}{\\sqrt{2^2+(-1)^2+2^2}}=\\frac{|2-2+6-5|}{\\sqrt{9}}=\\frac{1}{3}\\). Therefore option A is correct.",
+      "hint": "Use \\(d=\\frac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}\\)."
+    },
+    {
+      "id": "math-gaokao-450-q007",
+      "category": "Solid Geometry and Vectors",
+      "concept": "Area of a triangle in space using vector product",
+      "learningObjective": "Find the area of a triangle from coordinates using the cross product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the area of triangle \\(ABC\\) with \\(A(1,0,0)\\), \\(B(0,2,0)\\), and \\(C(0,0,2)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{6}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\sqrt{6}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Take \\(\\vec{AB}=(-1,2,0)\\) and \\(\\vec{AC}=(-1,0,2)\\). Their cross product is \\(\\vec{AB}\\times\\vec{AC}=(4,2,2)\\). Its magnitude is \\(\\sqrt{4^2+2^2+2^2}=\\sqrt{24}=2\\sqrt{6}\\). The area of the triangle is half this magnitude, so the area is \\(\\sqrt{6}\\). Therefore option A is correct.",
+      "hint": "The area of a triangle is half the magnitude of the cross product of two side vectors."
+    },
+    {
+      "id": "math-gaokao-450-q008",
+      "category": "Solid Geometry and Vectors",
+      "concept": "Coplanar vectors and scalar triple product",
+      "learningObjective": "Determine a parameter so that three vectors are coplanar.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For which value of \\(m\\) are the vectors \\(\\vec{a}=(1,2,1)\\), \\(\\vec{b}=(2,-1,3)\\), and \\(\\vec{c}=(1,1,m)\\) coplanar?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{5}{6}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{6}{5}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Three vectors are coplanar exactly when their scalar triple product is zero. Compute \\(\\vec{b}\\times\\vec{c}=(-m-3,\\,3-2m,\\,3)\\). Then \\[\n\\begin{aligned}\n\\vec{a}\\cdot(\\vec{b}\\times\\vec{c})&=1(-m-3)+2(3-2m)+1(3) \\\\\n&=-m-3+6-4m+3 \\\\\n&=6-5m\n\\end{aligned}\n\\]. Setting \\(6-5m=0\\) gives \\(m=\\frac{6}{5}\\). Therefore option B is correct.",
+      "hint": "Use the condition \\(\\vec{a}\\cdot(\\vec{b}\\times\\vec{c})=0\\) for coplanar vectors."
+    },
+    {
+      "id": "math-gaokao-450-q009",
+      "category": "Solid Geometry and Vectors",
+      "concept": "Angle between two planes",
+      "learningObjective": "Compute the cosine of the angle between two planes from their normal vectors.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Find the cosine of the acute angle between the planes \\(x+2y+2z=1\\) and \\(2x-y+2z=3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{4}{9}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The normal vectors are \\(\\vec{n}_1=(1,2,2)\\) and \\(\\vec{n}_2=(2,-1,2)\\). Their dot product is \\(1\\cdot2+2\\cdot(-1)+2\\cdot2=2-2+4=4\\). Also \\(|\\vec{n}_1|=\\sqrt{1^2+2^2+2^2}=3\\) and \\(|\\vec{n}_2|=\\sqrt{2^2+(-1)^2+2^2}=3\\). Hence the cosine of the acute angle is \\(\\frac{|4|}{3\\cdot3}=\\frac{4}{9}\\). Therefore option A is correct.",
+      "hint": "The angle between planes is determined by the angle between their normal vectors."
+    },
+    {
+      "id": "math-gaokao-450-q010",
+      "category": "Solid Geometry and Vectors",
+      "concept": "Volume of a parallelepiped using scalar triple product",
+      "learningObjective": "Compute the volume of a parallelepiped spanned by three space vectors.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the volume of the parallelepiped spanned by \\(\\vec{a}=(1,2,2)\\), \\(\\vec{b}=(2,1,-2)\\), and \\(\\vec{c}=(1,1,1)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The volume is the absolute value of the scalar triple product \\(\\vec{a}\\cdot(\\vec{b}\\times\\vec{c})\\). First compute \\(\\vec{b}\\times\\vec{c}=(3,-4,1)\\). Then \\[\n\\begin{aligned}\n\\vec{a}\\cdot(\\vec{b}\\times\\vec{c})&=1\\cdot3+2\\cdot(-4)+2\\cdot1 \\\\\n&=3-8+2 \\\\\n&=-3\n\\end{aligned}\n\\]. The absolute value is \\(3\\), so the volume is \\(3\\). Therefore option B is correct.",
+      "hint": "Use \\(V=|\\vec{a}\\cdot(\\vec{b}\\times\\vec{c})|\\)."
+    }
+  ]
+}

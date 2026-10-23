@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-473",
+  "category": "Comprehensive Mathematics",
+  "title": "473. Sets, Logic, Reasoning & Proof: Union of Two Sets",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-473-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of union",
+      "learningObjective": "State which elements belong to the union of two sets.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which elements belong to \\(A\\cup B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The elements that are in \\(A\\) or in \\(B\\) (or in both)"
+        },
+        {
+          "label": "B",
+          "text": "Only the elements that are in both \\(A\\) and \\(B\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The union \\(A\\cup B\\) collects every element that belongs to at least one of the two sets. The elements that belong to both sets form the intersection \\(A\\cap B\\), which is usually smaller.",
+      "hint": "The union is the result of putting the two sets together."
+    },
+    {
+      "id": "dynanca-473-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Union of two listed sets",
+      "learningObjective": "Compute the union of two finite sets.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\{1,2,3\\}\\cup\\{3,4\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1,2,3,4\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{3\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The union contains every element that appears in either set: \\(1,2,3\\) from the first and \\(3,4\\) from the second. The common element \\(3\\) is listed once, giving \\(\\{1,2,3,4\\}\\). The set \\(\\{3\\}\\) is the intersection.",
+      "hint": "Collect all elements from both sets and list each one once."
+    },
+    {
+      "id": "dynanca-473-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Union of a set with itself",
+      "learningObjective": "Simplify the union of a set with itself.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is \\(\\{1,2\\}\\cup\\{1,2\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1,2\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "A set with four elements"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The union contains the elements that are in the first set or in the second; these are just \\(1\\) and \\(2\\). Elements are not counted twice in a set, so the result is \\(\\{1,2\\}\\) with two elements. In general \\(A\\cup A=A\\).",
+      "hint": "A set never contains the same element more than once."
+    },
+    {
+      "id": "dynanca-473-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Union of overlapping intervals",
+      "learningObjective": "Compute the union of two overlapping closed intervals.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\([0,2]\\cup[1,5]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([0,5]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([1,2]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A real number belongs to the union if it lies in \\([0,2]\\) or in \\([1,5]\\). Because the intervals overlap, together they cover every number from \\(0\\) to \\(5\\), so the union is \\([0,5]\\). The interval \\([1,2]\\) is the overlap, that is, the intersection.",
+      "hint": "Sketch both intervals on a number line and shade everything covered by at least one of them."
+    },
+    {
+      "id": "dynanca-473-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Union with a superset",
+      "learningObjective": "Simplify a union when one set is contained in the other.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Suppose \\(A\\subseteq B\\). What is \\(A\\cup B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(B\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every element of \\(A\\) is already in \\(B\\), so adding the elements of \\(A\\) to \\(B\\) gives nothing new. Hence \\(A\\cup B=B\\). For example, \\(\\{1\\}\\cup\\{1,2,3\\}=\\{1,2,3\\}\\).",
+      "hint": "Ask which of the two sets already contains all elements of the other."
+    },
+    {
+      "id": "dynanca-473-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Union of the even and odd integers",
+      "learningObjective": "Identify the union of two complementary sets of integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the union of the set of even integers and the set of odd integers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\mathbb{Z}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every integer is either even or odd, so every integer belongs to at least one of the two sets. The union is therefore the whole set \\(\\mathbb{Z}\\). The empty set is their intersection, because no integer is both even and odd.",
+      "hint": "Ask whether some integer belongs to neither of the two sets."
+    },
+    {
+      "id": "dynanca-473-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Reasoning with membership in a union",
+      "learningObjective": "Deduce membership in one set from membership in a union.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Suppose \\(x\\in A\\cup B\\) and \\(x\\notin A\\). What follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\in B\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\notin B\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Membership in \\(A\\cup B\\) means \\(x\\in A\\) or \\(x\\in B\\). Since the first possibility is ruled out, the second must hold, so \\(x\\in B\\).",
+      "hint": "Write out what membership in a union means and eliminate one of the two cases."
+    },
+    {
+      "id": "dynanca-473-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Union of three sets",
+      "learningObjective": "Compute the union of three finite sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\{1,2\\}\\cup\\{2,3\\}\\cup\\{3,4\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{2,3\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,2,3,4\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The union collects every element that appears in at least one of the three sets: \\(1,2\\) from the first, \\(2,3\\) from the second, and \\(3,4\\) from the third. Listing each element once gives \\(\\{1,2,3,4\\}\\). The elements \\(2\\) and \\(3\\) are those that appear in more than one set, but the union is not restricted to them.",
+      "hint": "Take every element that occurs anywhere, and write each once."
+    },
+    {
+      "id": "dynanca-473-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Finding a set from a union",
+      "learningObjective": "Decide which set is compatible with a given union.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(A=\\{1,2\\}\\) and suppose \\(A\\cup B=\\{1,2,3\\}\\). Which set can \\(B\\) be?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{2,3\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{3,4\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "With \\(B=\\{2,3\\}\\), \\(A\\cup B=\\{1,2,3\\}\\), as required. With \\(B=\\{3,4\\}\\), the union would be \\(\\{1,2,3,4\\}\\), which contains the extra element \\(4\\). The set \\(B\\) must contain \\(3\\) and may contain nothing outside \\(\\{1,2,3\\}\\).",
+      "hint": "Compute the union for each candidate and compare with the required result."
+    },
+    {
+      "id": "dynanca-473-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting the solutions of a union equation",
+      "learningObjective": "Count the sets that satisfy an equation involving a union.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many different sets \\(B\\) satisfy \\(\\{1,2\\}\\cup B=\\{1,2,3\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The set \\(B\\) must be a subset of \\(\\{1,2,3\\}\\) and must contain \\(3\\), since \\(3\\) is not in \\(\\{1,2\\}\\). The elements \\(1\\) and \\(2\\) may each be in \\(B\\) or not, giving \\(2\\cdot 2=4\\) possibilities: \\(\\{3\\}\\), \\(\\{1,3\\}\\), \\(\\{2,3\\}\\), and \\(\\{1,2,3\\}\\).",
+      "hint": "Decide which elements \\(B\\) must contain and which it may contain."
+    }
+  ]
+}

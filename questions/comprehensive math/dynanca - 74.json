@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-74",
+  "category": "Comprehensive Mathematics",
+  "title": "74. Numeracy & Number Systems: Union and Intersection of Number Intervals",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-74-q001",
+      "category": "Numeracy & Number Systems",
+      "concept": "Union of Overlapping Intervals",
+      "learningObjective": "Determine the union of two overlapping closed intervals.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is \\([1,3] \\cup [2,5]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([2,3]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([1,5]\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The union of two intervals includes every number that belongs to at least one of them. Since \\([1,3]\\) and \\([2,5]\\) overlap, their union is the single interval from the smaller left endpoint to the larger right endpoint: \\([1,5]\\). The choice \"\\([2,3]\\)\" is the intersection, not the union.",
+      "hint": "Combine all points covered by either interval; if the intervals overlap, the union is one continuous interval."
+    },
+    {
+      "id": "dynanca-74-q002",
+      "category": "Numeracy & Number Systems",
+      "concept": "Intersection of Open Intervals",
+      "learningObjective": "Determine the intersection of two open intervals.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is \\((1,4) \\cap (2,5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,5)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,4)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The intersection consists of numbers that belong to both intervals. The larger lower endpoint is \\(2\\), and the smaller upper endpoint is \\(4\\). Since both endpoints are excluded, the intersection is \\((2,4)\\). The choice \"\\((1,5)\\)\" is the union.",
+      "hint": "Take the larger lower endpoint and the smaller upper endpoint, and keep the endpoint exclusions."
+    },
+    {
+      "id": "dynanca-74-q003",
+      "category": "Numeracy & Number Systems",
+      "concept": "Union of Disjoint Intervals",
+      "learningObjective": "Determine the union of two disjoint closed intervals.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which statement about \\([-3,-1]\\cup[1,4]\\) is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It equals \\([-3,4]\\)."
+        },
+        {
+          "label": "B",
+          "text": "It cannot be written as a single interval."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The union includes the intervals on either side but excludes every value strictly between \\(-1\\) and \\(1\\). This gap means it cannot be written as a single interval. The interval \\([-3,4]\\) incorrectly fills the gap.",
+      "hint": "Check whether any gap remains between the parts of the union."
+    },
+    {
+      "id": "dynanca-74-q004",
+      "category": "Numeracy & Number Systems",
+      "concept": "Intersection of Half-Open Intervals",
+      "learningObjective": "Determine the intersection of a closed interval and a half-open interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\([0,5] \\cap (2,7]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,5]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([2,5]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The intersection must satisfy both conditions. The number \\(2\\) is excluded because \\((2,7]\\) excludes \\(2\\), even though \\([0,5]\\) includes it. The number \\(5\\) is included because both intervals include \\(5\\). Therefore, the intersection is \\((2,5]\\). The choice \"\\([2,5]\\)\" incorrectly includes \\(2\\).",
+      "hint": "An endpoint is included in the intersection only if it is included in both intervals."
+    },
+    {
+      "id": "dynanca-74-q005",
+      "category": "Numeracy & Number Systems",
+      "concept": "Union of Intervals Sharing an Endpoint",
+      "learningObjective": "Determine the union of two closed intervals that meet at an endpoint.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Write \\([1,4]\\cup[4,6]\\) as a single interval.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([1,6]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,6)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The intervals meet at \\(4\\), so there is no gap. Every point from \\(1\\) to \\(6\\), including both endpoints, is covered. Thus the union is \\([1,6]\\). The interval \\((1,6)\\) incorrectly excludes \\(1\\) and \\(6\\).",
+      "hint": "Check whether the shared endpoint is covered before merging the intervals."
+    },
+    {
+      "id": "dynanca-74-q006",
+      "category": "Numeracy & Number Systems",
+      "concept": "Intersection with Unbounded Intervals",
+      "learningObjective": "Determine the intersection of two unbounded intervals.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is \\((-\\infty,3) \\cap (1,\\infty)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,3]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The intersection consists of all \\(x\\) such that \\(x<3\\) and \\(x>1\\). This gives \\(1<x<3\\), so the interval is \\((1,3)\\). Both endpoints are excluded because \\(1\\) is excluded by \\((1,\\infty)\\) and \\(3\\) is excluded by \\((-\\infty,3)\\).",
+      "hint": "Combine the two inequalities and check whether the endpoints are included."
+    },
+    {
+      "id": "dynanca-74-q007",
+      "category": "Numeracy & Number Systems",
+      "concept": "Union Covering All Real Numbers",
+      "learningObjective": "Determine the union of two unbounded intervals that together cover all real numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is \\((-\\infty,2) \\cup [2,\\infty)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-\\infty,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\infty,2)\\cup(2,\\infty)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every real number is either less than \\(2\\) or at least \\(2\\). The union therefore equals \\((-\\infty,\\infty)\\). The alternative removes \\(2\\), even though \\([2,\\infty)\\) includes it.",
+      "hint": "Check whether any real number is missing from the union."
+    },
+    {
+      "id": "dynanca-74-q008",
+      "category": "Numeracy & Number Systems",
+      "concept": "Intersection of Closed Intervals",
+      "learningObjective": "Determine the intersection of two overlapping closed intervals.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is \\([-1,4] \\cap [2,6]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([2,4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([2,4]\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The numbers common to both intervals satisfy \\(2 \\le x \\le 4\\). Since both intervals include their endpoints, the endpoints \\(2\\) and \\(4\\) are included. Therefore, the intersection is \\([2,4]\\). The choice \"\\([2,4)\\)\" incorrectly excludes \\(4\\).",
+      "hint": "Take the larger lower endpoint and the smaller upper endpoint, and keep brackets if the endpoints are included in both intervals."
+    },
+    {
+      "id": "dynanca-74-q009",
+      "category": "Numeracy & Number Systems",
+      "concept": "Union of Overlapping Intervals",
+      "learningObjective": "Simplify the union of two overlapping closed intervals.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is \\([-5,-2] \\cup [-3,0]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([-5,0]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([-3,-2]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The intervals overlap, so the union extends from \\(-5\\) to \\(0\\), including both endpoints: \\([-5,0]\\). The interval \\([-3,-2]\\) is their intersection and leaves out points that belong to just one interval.",
+      "hint": "If the intervals overlap, merge them into one interval from the smallest left endpoint to the largest right endpoint."
+    },
+    {
+      "id": "dynanca-74-q010",
+      "category": "Numeracy & Number Systems",
+      "concept": "Intersection of Inequalities as an Interval",
+      "learningObjective": "Express the solution of two inequalities as an interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which interval represents all \\(x\\) satisfying \\(x<5\\) and \\(x>-2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-2,5)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([-2,5]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The conditions \\(x>-2\\) and \\(x<5\\) combine to \\(-2<x<5\\). Since both inequalities are strict, the endpoints \\(-2\\) and \\(5\\) are excluded. Therefore, the interval is \\((-2,5)\\). The choice \"\\([-2,5]\\)\" incorrectly includes both endpoints.",
+      "hint": "Translate each inequality into interval notation and take the intersection."
+    }
+  ]
+}

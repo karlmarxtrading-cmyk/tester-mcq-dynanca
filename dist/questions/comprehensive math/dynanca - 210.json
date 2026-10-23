@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-210",
+  "category": "Comprehensive Mathematics",
+  "title": "210. Algebra, Equations & Inequalities: Finding Rational Roots of Polynomials",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-210-q001",
+      "category": "Algebra",
+      "concept": "Applying the Rational Root Theorem",
+      "learningObjective": "List all possible rational roots of a polynomial using the Rational Root Theorem.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "According to the Rational Root Theorem, which list gives all possible rational roots of \\(2x^3-3x^2-8x+12=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\pm1,\\pm2,\\pm3,\\pm4,\\pm6,\\pm12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\pm1,\\pm2,\\pm3,\\pm4,\\pm6,\\pm12,\\pm\\frac{1}{2},\\pm\\frac{3}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The constant term is \\(12\\), whose positive divisors are \\(1,2,3,4,6,12\\). The leading coefficient is \\(2\\), whose positive divisors are \\(1,2\\). Possible rational roots have the form \\(\\frac{p}{q}\\), where \\(p\\) divides \\(12\\) and \\(q\\) divides \\(2\\). This gives \\(\\pm1,\\pm2,\\pm3,\\pm4,\\pm6,\\pm12,\\pm\\frac{1}{2},\\pm\\frac{3}{2}\\). Therefore the complete list is option B.",
+      "hint": "Write all factors of the constant term over all factors of the leading coefficient."
+    },
+    {
+      "id": "dynanca-210-q002",
+      "category": "Algebra",
+      "concept": "Finding rational roots by testing possible values",
+      "learningObjective": "Find all rational roots of a cubic polynomial by testing candidates and factoring.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find all rational roots of \\(x^3-x^2-10x-8=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-2,-1,4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-4,1,2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Test \\(x=-1\\): \\(-1-1+10-8=0\\), so \\(x=-1\\) is a root. Divide by \\(x+1\\):\n\\[\nx^3-x^2-10x-8=(x+1)(x^2-2x-8)\n\\]\nFactor \\(x^2-2x-8=(x-4)(x+2)\\). Therefore the roots are \\(x=-2,-1,4\\).",
+      "hint": "Find one candidate that gives zero, then divide the cubic by the corresponding linear factor."
+    },
+    {
+      "id": "dynanca-210-q003",
+      "category": "Algebra",
+      "concept": "Solving cubic equations by grouping and rational roots",
+      "learningObjective": "Solve a cubic equation by grouping and identifying all rational roots.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x^3+3x^2-4x-12=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-3,-2,2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-2,1,3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Group the terms:\n\\[\nx^3+3x^2-4x-12=x^2(x+3)-4(x+3)=(x+3)(x^2-4)\n\\]\nSince \\(x^2-4=(x-2)(x+2)\\), we have\n\\[\nx^3+3x^2-4x-12=(x+3)(x-2)(x+2)\n\\]\nTherefore the roots are \\(x=-3,-2,2\\).",
+      "hint": "Group pairs of terms and factor out the common binomial factor."
+    },
+    {
+      "id": "dynanca-210-q004",
+      "category": "Algebra",
+      "concept": "Finding all rational roots of a cubic polynomial",
+      "learningObjective": "Determine all rational roots of a cubic polynomial by factoring after finding one root.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find all rational roots of \\(2x^3-x^2-7x+6=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-2,1,\\frac{3}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-\\frac{3}{2},-1,2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Test \\(x=1\\): \\(2-1-7+6=0\\), so \\(x=1\\) is a root. Divide by \\(x-1\\):\n\\[\n2x^3-x^2-7x+6=(x-1)(2x^2+x-6)\n\\]\nFactor \\(2x^2+x-6=(2x-3)(x+2)\\). Therefore the roots are \\(x=-2,1,\\frac{3}{2}\\).",
+      "hint": "Use the Rational Root Theorem to find one root, then factor the remaining quadratic."
+    },
+    {
+      "id": "dynanca-210-q005",
+      "category": "Algebra",
+      "concept": "Applying the Rational Root Theorem with a leading coefficient other than \\(1\\)",
+      "learningObjective": "List all possible rational roots when the leading coefficient is not \\(1\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which list gives all possible rational roots of \\(3x^4-2x^3+5x-10=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\pm1,\\pm2,\\pm5,\\pm10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\pm1,\\pm2,\\pm5,\\pm10,\\pm\\frac{1}{3},\\pm\\frac{2}{3},\\pm\\frac{5}{3},\\pm\\frac{10}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The constant term is \\(-10\\), whose positive divisors are \\(1,2,5,10\\). The leading coefficient is \\(3\\), whose positive divisors are \\(1,3\\). Possible rational roots are \\(\\frac{p}{q}\\) where \\(p\\) divides \\(10\\) and \\(q\\) divides \\(3\\). This gives \\(\\pm1,\\pm2,\\pm5,\\pm10,\\pm\\frac{1}{3},\\pm\\frac{2}{3},\\pm\\frac{5}{3},\\pm\\frac{10}{3}\\). Therefore option B is correct.",
+      "hint": "Include fractions formed by dividing each factor of the constant term by each factor of the leading coefficient."
+    },
+    {
+      "id": "dynanca-210-q006",
+      "category": "Algebra",
+      "concept": "Testing a candidate rational root",
+      "learningObjective": "Identify which candidate value is a rational root of a polynomial.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which of the following is a rational root of \\(2x^3-5x^2-4x+3=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Test \\(x=-1\\):\n\\[\n2(-1)^3-5(-1)^2-4(-1)+3=-2-5+4+3=0\n\\]\nSo \\(x=-1\\) is a rational root. Test \\(x=1\\):\n\\[\n2(1)^3-5(1)^2-4(1)+3=2-5-4+3=-4\\ne 0\n\\]\nTherefore the correct choice is \\(x=-1\\).",
+      "hint": "Substitute each candidate into the polynomial and check whether the result is zero."
+    },
+    {
+      "id": "dynanca-210-q007",
+      "category": "Algebra",
+      "concept": "Solving cubic equations with integer roots",
+      "learningObjective": "Solve a cubic equation by factoring into three linear factors.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x^3-2x^2-x+2=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-1,1,2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-2,-1,1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Test \\(x=1\\): \\(1-2-1+2=0\\), so \\(x=1\\) is a root. Divide by \\(x-1\\):\n\\[\nx^3-2x^2-x+2=(x-1)(x^2-x-2)\n\\]\nFactor \\(x^2-x-2=(x-2)(x+1)\\). Therefore the roots are \\(x=-1,1,2\\).",
+      "hint": "Find one integer root, then factor the resulting quadratic."
+    },
+    {
+      "id": "dynanca-210-q008",
+      "category": "Algebra",
+      "concept": "Finding rational roots including a fractional root",
+      "learningObjective": "Determine all rational roots of a cubic polynomial, including a fractional root.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find all rational roots of \\(2x^3+3x^2-8x+3=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-3,\\frac{1}{2},1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-1,-\\frac{1}{2},3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Test \\(x=1\\): \\(2+3-8+3=0\\), so \\(x=1\\) is a root. Divide by \\(x-1\\):\n\\[\n2x^3+3x^2-8x+3=(x-1)(2x^2+5x-3)\n\\]\nFactor \\(2x^2+5x-3=(2x-1)(x+3)\\). Therefore the roots are \\(x=-3,\\frac{1}{2},1\\).",
+      "hint": "After finding one integer root, factor the remaining quadratic to find any fractional root."
+    },
+    {
+      "id": "dynanca-210-q009",
+      "category": "Algebra",
+      "concept": "Finding rational roots of a quartic polynomial",
+      "learningObjective": "Solve a quartic equation by substitution and factoring to find all rational roots.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find all rational roots of \\(x^4-5x^2+4=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=\\pm1,\\pm2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=\\pm1,\\pm4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(y=x^2\\). Then the equation becomes\n\\[\ny^2-5y+4=0\n\\]\nFactor: \\((y-1)(y-4)=0\\), so \\(y=1\\) or \\(y=4\\). Since \\(y=x^2\\), we get \\(x^2=1\\) or \\(x^2=4\\). Therefore \\(x=\\pm1,\\pm2\\).",
+      "hint": "Use the substitution \\(y=x^2\\) to reduce the quartic to a quadratic equation."
+    },
+    {
+      "id": "dynanca-210-q010",
+      "category": "Algebra",
+      "concept": "Identifying a fractional rational root",
+      "learningObjective": "Identify a fractional rational root of a cubic polynomial by factoring.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Which of the following is a rational root of \\(3x^3-x^2-12x+4=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-\\frac{1}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=\\frac{1}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor by grouping:\n\\[\n3x^3-x^2-12x+4=x^2(3x-1)-4(3x-1)=(3x-1)(x^2-4)\n\\]\nThen \\(x^2-4=(x-2)(x+2)\\), so the roots are \\(x=\\frac{1}{3},2,-2\\). Therefore \\(x=\\frac{1}{3}\\) is a rational root. Testing \\(x=-\\frac{1}{3}\\) gives \\(\\frac{70}{9}\\ne 0\\).",
+      "hint": "Factor by grouping to expose a linear factor whose root may be fractional."
+    }
+  ]
+}

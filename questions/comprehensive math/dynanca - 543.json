@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-543",
+  "category": "Comprehensive Mathematics",
+  "title": "543. Sets, Logic, Reasoning & Proof: Interpreting Formal Proof Checker Feedback",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-543-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "What a proof checker verifies",
+      "learningObjective": "Describe what a formal proof checker verifies.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What does a formal proof checker verify about a submitted proof?",
+      "options": [
+        {
+          "label": "A",
+          "text": "That the conclusion is true in several test cases"
+        },
+        {
+          "label": "B",
+          "text": "That every step follows from earlier lines by a permitted rule"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A proof checker examines the proof line by line and accepts a line only when it is a premise, an assumption, or the result of applying a permitted rule to earlier lines. It does not test examples; a statement that holds in some test cases may still be unproved or false.",
+      "hint": "A checker works with rules of inference, not with examples."
+    },
+    {
+      "id": "dynanca-543-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A rejected use of modus ponens",
+      "learningObjective": "Interpret a checker message about a misapplied inference rule.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Analysis",
+      "question": "A proof has three lines: line 1 is the premise \\(p\\implies q\\), line 2 is the premise \\(q\\), and line 3 concludes \\(p\\) \"by modus ponens from lines 1 and 2\". The checker rejects line 3. What is the error?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nothing is wrong with the reasoning; the two lines only need to be cited in the opposite order."
+        },
+        {
+          "label": "B",
+          "text": "Modus ponens needs \\(p\\) together with \\(p\\implies q\\), and it yields \\(q\\); from \\(q\\) nothing about \\(p\\) follows."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Modus ponens goes from \\(p\\) and \\(p\\implies q\\) to \\(q\\). Line 3 tries to go backwards, from \\(q\\) and \\(p\\implies q\\) to \\(p\\). That inference is invalid: when \\(p\\) is false and \\(q\\) is true, both premises are true and the conclusion is false.",
+      "hint": "Find truth values that make both premises true and the conclusion false."
+    },
+    {
+      "id": "dynanca-543-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A remaining goal",
+      "learningObjective": "Interpret a checker message about an unfinished proof.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "The goal of a proof is \\(p\\land q\\). After the last line, the checker reports: \"Unfinished proof. Remaining goal: \\(q\\).\" What does this message mean?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The proof is complete, and \\(q\\) is an additional fact found by the checker."
+        },
+        {
+          "label": "B",
+          "text": "The proof is incomplete; \\(q\\) still has to be proved."
+        }
+      ],
+      "answer": "B",
+      "explanation": "To prove \\(p\\land q\\), both \\(p\\) and \\(q\\) must be proved. The message says that one of these subgoals, \\(q\\), has not yet been established, so the proof is not accepted. A remaining goal is something still to be done, not something the checker has derived.",
+      "hint": "A goal is a statement that the proof still owes."
+    },
+    {
+      "id": "dynanca-543-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Citing a later line",
+      "learningObjective": "Interpret a checker message about the order of proof lines.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A checker reports: \"Line 4 cites line 6. A line may cite only earlier lines.\" What is the appropriate repair?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Keep the order and state on line 4 that line 6 will be proved later."
+        },
+        {
+          "label": "B",
+          "text": "Reorder the proof so that the cited statement is proved before it is used."
+        }
+      ],
+      "answer": "B",
+      "explanation": "In a formal proof, each line may depend only on lines that come before it; otherwise an argument could be circular. The repair is to establish the cited statement earlier, without using line 4 in its proof, and then cite it.",
+      "hint": "Think about what could go wrong if a line could rely on something that is only shown afterwards."
+    },
+    {
+      "id": "dynanca-543-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An open assumption",
+      "learningObjective": "Interpret a checker message about an assumption that was not discharged.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "To prove \\(p\\implies q\\), a proof assumes \\(p\\) on line 1, derives \\(q\\) on line 5, and stops. The checker reports: \"The assumption on line 1 is still open.\" What does this mean?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The assumption \\(p\\) is false, so line 1 has to be deleted."
+        },
+        {
+          "label": "B",
+          "text": "Line 5 depends on the assumption \\(p\\); the proof must end by concluding \\(p\\implies q\\), which closes the assumption."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Deriving \\(q\\) under the assumption \\(p\\) does not prove \\(q\\) outright; it proves that \\(q\\) holds if \\(p\\) does. The final step, often called implication introduction, concludes \\(p\\implies q\\) and discharges the assumption. The message does not say that the assumption is false.",
+      "hint": "Ask which statement has been proved without any remaining assumption."
+    },
+    {
+      "id": "dynanca-543-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A missing case",
+      "learningObjective": "Interpret a checker message about an incomplete proof by cases.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "From the premises \\(p\\lor q\\) and \\(p\\implies r\\), a proof concludes \\(r\\) by cases. The checker reports: \"Case \\(q\\) is missing.\" Why is the checker right?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The case \\(p\\) must be written out twice, once for each premise."
+        },
+        {
+          "label": "B",
+          "text": "The conclusion \\(r\\) must also be derived in the case \\(q\\); otherwise \\(r\\) does not follow."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Proof by cases from \\(p\\lor q\\) needs a derivation of the conclusion from \\(p\\) and another from \\(q\\). Only the first is available. Without something like \\(q\\implies r\\), the inference fails: when \\(p\\) is false, \\(q\\) is true, and \\(r\\) is false, both premises are true and \\(r\\) is false.",
+      "hint": "Look for truth values that make both premises true while \\(r\\) is false."
+    },
+    {
+      "id": "dynanca-543-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Generalising from an assumption",
+      "learningObjective": "Interpret a checker message about an invalid universal generalisation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A proof assumes \\(P(c)\\) for a particular object \\(c\\) and then concludes \\(\\forall x\\,P(x)\\). The checker reports: \"Cannot generalise: \\(c\\) occurs in an open assumption.\" Why is the step rejected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P(c)\\) was assumed for one particular object, so it says nothing about the other objects."
+        },
+        {
+          "label": "B",
+          "text": "The step is correct once the letter \\(c\\) is renamed to \\(x\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Universal generalisation is allowed only when \\(c\\) is arbitrary, meaning that nothing special has been assumed about it. Here \\(P(c)\\) itself is an assumption about \\(c\\). In a model with domain \\(\\{1,2\\}\\) where \\(P\\) holds only for \\(1\\), the assumption \\(P(1)\\) is true and \\(\\forall x\\,P(x)\\) is false. Renaming a letter does not change the logic.",
+      "hint": "Ask whether what was proved for \\(c\\) would work equally for any other object."
+    },
+    {
+      "id": "dynanca-543-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Equivalent but not identical",
+      "learningObjective": "Interpret a checker message about a mismatch between proved and expected statements.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "A proof establishes \\(p\\land q\\), but the theorem to be proved is \\(q\\land p\\). The checker reports: \"Mismatch: expected \\(q\\land p\\), found \\(p\\land q\\).\" What does this message indicate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The two statements are equivalent but not identical; a further step that swaps the two parts is needed."
+        },
+        {
+          "label": "B",
+          "text": "The statement that was proved is false."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A proof checker compares formulas exactly as written. \\(p\\land q\\) and \\(q\\land p\\) have the same truth table, but they are different formulas, so the checker asks for an explicit step: extract \\(q\\) and \\(p\\) from \\(p\\land q\\) and combine them in the other order.",
+      "hint": "Compare the truth tables of the two formulas, and then compare how they are written."
+    },
+    {
+      "id": "dynanca-543-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Reusing a witness name",
+      "learningObjective": "Interpret a checker message about a name used for two witnesses.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "From the premises \\(\\exists x\\,P(x)\\) and \\(\\exists x\\,Q(x)\\), a proof names a witness \\(a\\) with \\(P(a)\\), then uses the same name \\(a\\) for a witness with \\(Q(a)\\), and concludes \\(\\exists x\\,(P(x)\\land Q(x))\\). The checker reports: \"The name \\(a\\) is already in use.\" Why does this matter?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is only a matter of style; the conclusion follows from the premises anyway."
+        },
+        {
+          "label": "B",
+          "text": "The two witnesses may be different objects, so the conclusion does not follow from the premises."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each existential premise guarantees some witness, but not the same one. A new name must be used for the second witness. In a model with domain \\(\\{1,2\\}\\) where \\(P\\) holds only for \\(1\\) and \\(Q\\) only for \\(2\\), both premises are true and \\(\\exists x\\,(P(x)\\land Q(x))\\) is false.",
+      "hint": "Try to build a small model in which both premises are true and the conclusion is false."
+    },
+    {
+      "id": "dynanca-543-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A correct proof of the wrong statement",
+      "learningObjective": "Interpret a checker report in which the proved statement differs from the expected theorem.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A checker accepts every line of a proof and then reports: \"Proved: \\(p\\implies q\\). Expected: \\(q\\implies p\\).\" What is the correct interpretation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The required theorem is proved, because every line was accepted."
+        },
+        {
+          "label": "B",
+          "text": "The proof is correct, but it proves the converse of the required statement."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each line is valid, but the final statement is not the one that was to be proved. An implication and its converse are not equivalent: when \\(p\\) is false and \\(q\\) is true, \\(p\\implies q\\) is true and \\(q\\implies p\\) is false. So a proof of one is not a proof of the other.",
+      "hint": "Compare the truth tables of an implication and its converse."
+    }
+  ]
+}

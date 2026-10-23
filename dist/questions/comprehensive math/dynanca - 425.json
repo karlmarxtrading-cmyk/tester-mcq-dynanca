@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-425",
+  "category": "Comprehensive Mathematics",
+  "title": "425. Trigonometry & Periodic Models: Verifying Trigonometric Identities",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-425-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Meaning of an identity",
+      "learningObjective": "Distinguish an identity from an equation that holds only for some values.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What does it mean to say that a trigonometric equation is an identity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is true for at least one value of the variable."
+        },
+        {
+          "label": "B",
+          "text": "It is true for every value of the variable for which both sides are defined."
+        }
+      ],
+      "answer": "B",
+      "explanation": "An identity holds for all values of the variable in the common domain of both sides. An equation that is true only for some values, such as \\(\\sin\\theta=\\frac{1}{2}\\), is a conditional equation, not an identity.",
+      "hint": "Think about how many values of the variable must satisfy the equation."
+    },
+    {
+      "id": "dynanca-425-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Recognising an identity",
+      "learningObjective": "Decide which of two equations is an identity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which equation is an identity, wherever both sides are defined?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\tan\\theta+\\cot\\theta=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\tan\\theta\\cos\\theta=\\sin\\theta\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta}\\), the product \\(\\tan\\theta\\cos\\theta\\) equals \\(\\sin\\theta\\) whenever \\(\\cos\\theta\\ne 0\\), so the first equation is an identity. The second fails, for example, at \\(\\theta=45^\\circ\\), where \\(\\tan\\theta+\\cot\\theta=1+1=2\\).",
+      "hint": "Simplify the left side of each equation, and test a convenient angle such as \\(45^\\circ\\)."
+    },
+    {
+      "id": "dynanca-425-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Disproving a false identity",
+      "learningObjective": "Choose values that show a proposed equation is not an identity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A student claims that \\(\\sin(A+B)=\\sin A+\\sin B\\) for all angles. Which choice of angles shows that the claim is false?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A=0^\\circ\\) and \\(B=90^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A=90^\\circ\\) and \\(B=90^\\circ\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(A=B=90^\\circ\\): the left side is \\(\\sin 180^\\circ=0\\) and the right side is \\(1+1=2\\), so the equation fails and the claim is false. For \\(A=0^\\circ\\) and \\(B=90^\\circ\\) both sides equal \\(1\\), so that choice does not expose the error.",
+      "hint": "A counterexample must make the two sides different; evaluate both sides for each choice."
+    },
+    {
+      "id": "dynanca-425-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "First step in a verification",
+      "learningObjective": "Select a valid first rewriting when verifying an identity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "To verify \\(\\left(1-\\cos^2\\theta\\right)\\csc\\theta=\\sin\\theta\\), which rewriting of the left side is a valid first step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\cos^2\\theta\\csc\\theta\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sin^2\\theta\\csc\\theta\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the Pythagorean identity, \\(1-\\cos^2\\theta=\\sin^2\\theta\\), so the left side becomes \\(\\sin^2\\theta\\csc\\theta=\\sin^2\\theta\\cdot\\frac{1}{\\sin\\theta}=\\sin\\theta\\), which is the right side. Replacing \\(1-\\cos^2\\theta\\) by \\(\\cos^2\\theta\\) is not valid.",
+      "hint": "Use \\(\\sin^2\\theta+\\cos^2\\theta=1\\) to rewrite the expression in the parentheses."
+    },
+    {
+      "id": "dynanca-425-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Valid method of verification",
+      "learningObjective": "Identify a logically valid way to verify an identity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which procedure is a valid way to verify a trigonometric identity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Transform one side into the other using known identities and algebra."
+        },
+        {
+          "label": "B",
+          "text": "Check that both sides agree for \\(\\theta=30^\\circ\\) and \\(\\theta=45^\\circ\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "An identity must hold for every admissible value, so it is verified by a chain of valid transformations from one side to the other. Agreement at a few test angles is not a proof: for example, \\(\\sin\\theta=\\sin^2\\theta\\) is true at \\(\\theta=0^\\circ\\) and \\(\\theta=90^\\circ\\) but is not an identity.",
+      "hint": "Ask whether checking finitely many angles can guarantee truth for all angles."
+    },
+    {
+      "id": "dynanca-425-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Common-denominator step",
+      "learningObjective": "Carry out the common-denominator step in a verification correctly.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "To verify \\(\\sec\\theta-\\cos\\theta=\\sin\\theta\\tan\\theta\\), the left side is written as a single fraction. Which fraction is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1-\\cos\\theta}{\\cos\\theta}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1-\\cos^2\\theta}{\\cos\\theta}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Write \\(\\sec\\theta=\\frac{1}{\\cos\\theta}\\) and \\(\\cos\\theta=\\frac{\\cos^2\\theta}{\\cos\\theta}\\). Subtracting gives \\(\\frac{1-\\cos^2\\theta}{\\cos\\theta}=\\frac{\\sin^2\\theta}{\\cos\\theta}=\\sin\\theta\\tan\\theta\\). The second term must be multiplied by \\(\\cos\\theta\\) in both numerator and denominator, which produces \\(\\cos^2\\theta\\).",
+      "hint": "To give \\(\\cos\\theta\\) the denominator \\(\\cos\\theta\\), multiply its numerator and denominator by \\(\\cos\\theta\\)."
+    },
+    {
+      "id": "dynanca-425-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Deciding whether an equation is an identity",
+      "learningObjective": "Justify by factoring that a proposed equation is an identity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Is \\(\\cos^4\\theta-\\sin^4\\theta=\\cos 2\\theta\\) an identity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; at \\(\\theta=45^\\circ\\) the left side is \\(0\\) but the right side is \\(1\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; the left side factors as \\((\\cos^2\\theta-\\sin^2\\theta)(\\cos^2\\theta+\\sin^2\\theta)\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factoring gives \\((\\cos^2\\theta-\\sin^2\\theta)(\\cos^2\\theta+\\sin^2\\theta)=(\\cos^2\\theta-\\sin^2\\theta)\\cdot 1=\\cos 2\\theta\\), so the equation is an identity. At \\(\\theta=45^\\circ\\) both sides equal \\(0\\), because \\(\\cos 90^\\circ=0\\); the claimed counterexample evaluates the right side incorrectly.",
+      "hint": "Factor the left side as a difference of squares and evaluate \\(\\cos 2\\theta\\) carefully at \\(\\theta=45^\\circ\\)."
+    },
+    {
+      "id": "dynanca-425-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Multiplying by a conjugate",
+      "learningObjective": "Use a conjugate factor correctly when verifying an identity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "To verify \\(\\frac{\\cos\\theta}{1+\\sin\\theta}=\\frac{1-\\sin\\theta}{\\cos\\theta}\\), the numerator and denominator of the left side are multiplied by \\(1-\\sin\\theta\\). What does the denominator become?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\cos^2\\theta\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1+\\sin^2\\theta\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The denominator is \\((1+\\sin\\theta)(1-\\sin\\theta)=1-\\sin^2\\theta=\\cos^2\\theta\\). The left side becomes \\(\\frac{\\cos\\theta(1-\\sin\\theta)}{\\cos^2\\theta}=\\frac{1-\\sin\\theta}{\\cos\\theta}\\), which is the right side. The product of conjugates is a difference of squares, not a sum.",
+      "hint": "Use \\((a+b)(a-b)=a^2-b^2\\), then apply a Pythagorean identity."
+    },
+    {
+      "id": "dynanca-425-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Domain of an identity",
+      "learningObjective": "Determine the angles at which the two sides of an identity are undefined.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The identity \\(\\sec^2\\theta-\\tan^2\\theta=1\\) holds wherever its left side is defined. For which angles is the left side undefined, where \\(k\\) is any integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\theta=180^\\circ k\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\theta=90^\\circ+180^\\circ k\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Both \\(\\sec\\theta=\\frac{1}{\\cos\\theta}\\) and \\(\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta}\\) are undefined exactly when \\(\\cos\\theta=0\\), that is, at \\(\\theta=90^\\circ+180^\\circ k\\). At \\(\\theta=180^\\circ k\\) the cosine is \\(\\pm 1\\), so both functions are defined there.",
+      "hint": "Find the angles where the common denominator \\(\\cos\\theta\\) is zero."
+    },
+    {
+      "id": "dynanca-425-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "A square root that hides a sign",
+      "learningObjective": "Judge whether an equation involving a square root is an identity.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A student claims that \\(\\sqrt{1-\\sin^2\\theta}=\\cos\\theta\\) is an identity for all real \\(\\theta\\). Which evaluation is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The claim is true; it follows from \\(\\sin^2\\theta+\\cos^2\\theta=1\\) by taking the square root of both sides for every \\(\\theta\\)."
+        },
+        {
+          "label": "B",
+          "text": "The claim is false; the left side equals \\(\\left|\\cos\\theta\\right|\\), so it fails when \\(\\cos\\theta<0\\), for example at \\(\\theta=180^\\circ\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "From the Pythagorean identity, \\(1-\\sin^2\\theta=\\cos^2\\theta\\), and \\(\\sqrt{\\cos^2\\theta}=\\left|\\cos\\theta\\right|\\) because a principal square root is never negative. At \\(\\theta=180^\\circ\\) the left side is \\(\\sqrt{1-0}=1\\) while \\(\\cos 180^\\circ=-1\\). So the equation is not an identity.",
+      "hint": "A principal square root is never negative; test an angle where the cosine is negative."
+    }
+  ]
+}

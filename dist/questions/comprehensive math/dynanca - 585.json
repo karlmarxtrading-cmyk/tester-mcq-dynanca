@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-585",
+  "category": "Comprehensive Mathematics",
+  "title": "585. Discrete Mathematics, Counting & Graph Theory: Graph Connected Components",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-585-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Definition of connected",
+      "learningObjective": "State what it means for a graph to be connected.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "When is an undirected graph called connected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When every two vertices are joined by a path"
+        },
+        {
+          "label": "B",
+          "text": "When every two vertices are joined by an edge"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Connectedness asks for a route between any two vertices, possibly through other vertices. Requiring an edge between every two vertices is much stronger; that describes a complete graph. A path with three vertices is connected but not complete.",
+      "hint": "Two vertices may be linked through intermediate vertices."
+    },
+    {
+      "id": "dynanca-585-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting components",
+      "learningObjective": "Count the connected components of a small graph.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D,E\\) and edges \\(AB\\), \\(BC\\), and \\(DE\\). How many connected components does it have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The vertices \\(A\\), \\(B\\), \\(C\\) are linked by \\(AB\\) and \\(BC\\), forming one component. The vertices \\(D\\) and \\(E\\) are linked by \\(DE\\), forming a second. No edge joins the two groups, so there are \\(2\\) components. The number \\(3\\) is the number of edges.",
+      "hint": "Group together the vertices that can reach one another."
+    },
+    {
+      "id": "dynanca-585-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The component of a vertex",
+      "learningObjective": "Find the connected component that contains a given vertex.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D,E,F,G\\) and edges \\(AB\\), \\(BC\\), \\(DE\\), and \\(EF\\). Which set is the connected component that contains \\(A\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{A,B,C\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{A,B\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The component of \\(A\\) consists of all vertices that can be reached from \\(A\\) by a path. \\(B\\) is reached by the edge \\(AB\\), and \\(C\\) by continuing along \\(BC\\); no other vertex can be reached. The set \\(\\{A,B\\}\\) contains only the direct neighbours of \\(A\\) and misses \\(C\\).",
+      "hint": "Include every vertex that can be reached, not only the neighbours."
+    },
+    {
+      "id": "dynanca-585-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Isolated vertices as components",
+      "learningObjective": "Count components when a vertex lies on no edge.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D,E,F,G\\) and edges \\(AB\\), \\(BC\\), \\(DE\\), and \\(EF\\). How many connected components does it have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The components are \\(\\{A,B,C\\}\\), \\(\\{D,E,F\\}\\), and \\(\\{G\\}\\). The vertex \\(G\\) lies on no edge, but it still forms a component by itself. Forgetting it gives \\(2\\).",
+      "hint": "A vertex with no edges is a component on its own."
+    },
+    {
+      "id": "dynanca-585-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Adding an edge between components",
+      "learningObjective": "Find the effect of a new edge on the number of components.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A graph has \\(5\\) connected components. One new edge is added, joining two vertices that lie in different components. How many components does the new graph have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The new edge merges the two components of its endpoints into one and leaves the other components unchanged. So the number of components drops by exactly \\(1\\), from \\(5\\) to \\(4\\). A single edge can never merge more than two components.",
+      "hint": "One edge has only two endpoints."
+    },
+    {
+      "id": "dynanca-585-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Edges needed to connect a graph",
+      "learningObjective": "Find the fewest edges that make a graph connected.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A graph has \\(4\\) connected components. What is the smallest number of edges that must be added to make it connected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each added edge can reduce the number of components by at most \\(1\\). Going from \\(4\\) components to \\(1\\) therefore needs at least \\(3\\) edges, and \\(3\\) suffice: join the first component to the second, the second to the third, and the third to the fourth.",
+      "hint": "Each new edge merges at most two components."
+    },
+    {
+      "id": "dynanca-585-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A lower bound for components",
+      "learningObjective": "Bound the number of components from the numbers of vertices and edges.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A graph has \\(10\\) vertices and \\(6\\) edges. What is the smallest number of connected components it can have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "With no edges there are \\(10\\) components, and each edge reduces the number by at most \\(1\\). So \\(6\\) edges leave at least \\(10-6=4\\) components. This is attained when no edge closes a cycle, for example by a path with \\(7\\) vertices together with \\(3\\) isolated vertices.",
+      "hint": "Start with no edges and add them one at a time."
+    },
+    {
+      "id": "dynanca-585-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Components as equivalence classes",
+      "learningObjective": "Explain why the components partition the vertex set.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Why do the connected components of a graph partition its vertex set?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because \"is joined by a path to\" is an equivalence relation on the vertices."
+        },
+        {
+          "label": "B",
+          "text": "Because all components have the same number of vertices."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every vertex is joined to itself by a path of length \\(0\\); a path can be traversed backwards; and two paths can be combined into a walk, which contains a path. So the relation is reflexive, symmetric, and transitive, and its equivalence classes, the components, partition the vertices. Components may have different sizes.",
+      "hint": "Check the three defining properties of an equivalence relation for \"is joined by a path to\"."
+    },
+    {
+      "id": "dynanca-585-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An edge whose removal disconnects",
+      "learningObjective": "Find the edge whose removal disconnects a small graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A connected graph has vertices \\(A,B,C,D\\) and edges \\(AB\\), \\(BC\\), \\(CA\\), and \\(CD\\). The removal of which edge disconnects the graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(AB\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(CD\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The edge \\(CD\\) is the only link between \\(D\\) and the rest of the graph, so removing it isolates \\(D\\). The edge \\(AB\\) lies on the cycle \\(A,B,C,A\\); after its removal, \\(A\\) and \\(B\\) are still joined through \\(C\\).",
+      "hint": "An edge on a cycle can be bypassed; look for an edge that lies on no cycle."
+    },
+    {
+      "id": "dynanca-585-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Most edges with two components",
+      "learningObjective": "Find the largest number of edges of a disconnected simple graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A simple graph has \\(6\\) vertices and exactly \\(2\\) connected components. What is the largest possible number of edges?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If the components have \\(k\\) and \\(6-k\\) vertices, the graph has at most \\(\\binom{k}{2}+\\binom{6-k}{2}\\) edges. This gives \\(10\\) for the sizes \\(1\\) and \\(5\\), \\(7\\) for \\(2\\) and \\(4\\), and \\(6\\) for \\(3\\) and \\(3\\). The largest value is \\(10\\): a complete graph on \\(5\\) vertices together with one isolated vertex. Splitting the vertices evenly gives only \\(6\\).",
+      "hint": "Compare the possible sizes of the two components."
+    }
+  ]
+}

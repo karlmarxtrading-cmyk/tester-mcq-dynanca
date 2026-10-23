@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-583",
+  "category": "Comprehensive Mathematics",
+  "title": "583. Discrete Mathematics, Counting & Graph Theory: Walks Trails and Paths",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-583-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Definition of a path",
+      "learningObjective": "Distinguish a path from other walks.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A walk in a graph is a sequence of vertices in which consecutive vertices are adjacent. Which walks are called paths?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The walks in which no vertex is repeated"
+        },
+        {
+          "label": "B",
+          "text": "The walks whose first and last vertices coincide"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A path is a walk that visits no vertex twice. A walk whose first and last vertices coincide is called closed; it repeats its starting vertex, so it is not a path.",
+      "hint": "In a path, every vertex is visited at most once."
+    },
+    {
+      "id": "dynanca-583-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Definition of a trail",
+      "learningObjective": "Distinguish a trail from a path.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which walks are called trails?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The walks in which no edge is repeated; vertices may be repeated"
+        },
+        {
+          "label": "B",
+          "text": "The walks in which no vertex is repeated"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A trail may pass through a vertex several times, but it never uses the same edge twice. Walks with no repeated vertex are paths. Every path is a trail, but a trail need not be a path.",
+      "hint": "A trail restricts the reuse of edges, not of vertices."
+    },
+    {
+      "id": "dynanca-583-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Classifying a walk",
+      "learningObjective": "Classify a walk as a trail or a path.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D\\) and edges \\(AB\\), \\(BC\\), \\(CD\\), \\(DA\\), and \\(BD\\). How is the walk \\(A,B,D,C,B\\) classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is a path."
+        },
+        {
+          "label": "B",
+          "text": "It is a trail but not a path."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The walk uses the edges \\(AB\\), \\(BD\\), \\(DC\\), and \\(CB\\), which are four different edges, so it is a trail. The vertex \\(B\\) is visited twice, so it is not a path.",
+      "hint": "Check separately whether an edge is repeated and whether a vertex is repeated."
+    },
+    {
+      "id": "dynanca-583-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Length of a walk",
+      "learningObjective": "Find the length of a walk.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The length of a walk is the number of edges it traverses, counted with repetition. What is the length of the walk \\(A,B,C,D,B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A walk that lists \\(5\\) vertices takes \\(4\\) steps, one between each pair of consecutive vertices: \\(AB\\), \\(BC\\), \\(CD\\), \\(DB\\). So its length is \\(4\\). The number \\(5\\) counts the vertices listed, not the edges traversed.",
+      "hint": "Count the steps between consecutive vertices."
+    },
+    {
+      "id": "dynanca-583-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A walk that is not a trail",
+      "learningObjective": "Recognise a walk that repeats an edge.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A graph has vertices \\(A,B,C,D\\) and edges \\(AB\\), \\(BC\\), \\(CD\\), \\(DA\\), and \\(BD\\). How is the walk \\(A,B,A,D\\) classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is a walk but not a trail."
+        },
+        {
+          "label": "B",
+          "text": "It is a trail but not a path."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The walk uses \\(AB\\), then \\(BA\\), then \\(AD\\). The steps \\(AB\\) and \\(BA\\) traverse the same edge, so an edge is repeated and the walk is not a trail. It is still a walk, because consecutive vertices are adjacent.",
+      "hint": "Write down the edge used in each step and look for a repetition."
+    },
+    {
+      "id": "dynanca-583-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A sequence that is not a walk",
+      "learningObjective": "Check whether a sequence of vertices is a walk.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D\\) and edges \\(AB\\), \\(BC\\), \\(CD\\), \\(DA\\), and \\(BD\\). Is the sequence \\(A,C,D\\) a walk in this graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because \\(A\\), \\(C\\), and \\(D\\) are all vertices of the graph."
+        },
+        {
+          "label": "B",
+          "text": "No, because \\(A\\) and \\(C\\) are not adjacent."
+        }
+      ],
+      "answer": "B",
+      "explanation": "In a walk, every two consecutive vertices must be joined by an edge. The graph has no edge \\(AC\\), so the step from \\(A\\) to \\(C\\) is not possible. Being vertices of the graph is not enough.",
+      "hint": "Check each pair of consecutive vertices against the edge list."
+    },
+    {
+      "id": "dynanca-583-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Paths are trails",
+      "learningObjective": "Explain why every path is a trail.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Is every path a trail?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; a path may use the same edge twice as long as its vertices are different."
+        },
+        {
+          "label": "B",
+          "text": "Yes; if no vertex is repeated, then no edge can be repeated either."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using an edge twice would mean visiting its two endpoints twice. A path visits no vertex twice, so it cannot repeat an edge, and it is therefore a trail. The converse fails: a trail may revisit a vertex.",
+      "hint": "Ask what repeating an edge would imply about its endpoints."
+    },
+    {
+      "id": "dynanca-583-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting paths between two vertices",
+      "learningObjective": "Count the paths between two vertices of a small graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A graph has vertices \\(A,B,C,D\\) and edges \\(AB\\), \\(BC\\), \\(CD\\), \\(DA\\), and \\(BD\\). How many different paths lead from \\(A\\) to \\(C\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The paths are \\(A,B,C\\); \\(A,D,C\\); \\(A,B,D,C\\); and \\(A,D,B,C\\). There are \\(4\\). Counting only the two shortest paths gives \\(2\\), but the paths through the edge \\(BD\\) also count.",
+      "hint": "Besides the two direct routes around the square, consider routes that use the diagonal \\(BD\\)."
+    },
+    {
+      "id": "dynanca-583-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "From a walk to a path",
+      "learningObjective": "Explain how a walk between two vertices yields a path.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A walk from \\(u\\) to \\(v\\), with \\(u\\ne v\\), visits some vertex \\(w\\) twice. What can be concluded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There is no path from \\(u\\) to \\(v\\)."
+        },
+        {
+          "label": "B",
+          "text": "Cutting out the part of the walk between the two visits to \\(w\\) gives a shorter walk from \\(u\\) to \\(v\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The part of the walk between the first and the second visit to \\(w\\) starts and ends at \\(w\\), so it can be removed without breaking the walk. Repeating this removes all repeated vertices and leaves a path. So whenever a walk from \\(u\\) to \\(v\\) exists, a path from \\(u\\) to \\(v\\) exists too.",
+      "hint": "The portion between the two visits to \\(w\\) returns to where it started."
+    },
+    {
+      "id": "dynanca-583-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The longest trail",
+      "learningObjective": "Find the largest number of edges in a trail of a small graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A graph has vertices \\(A,B,C,D\\) and edges \\(AB\\), \\(BC\\), \\(CD\\), \\(DA\\), and \\(BD\\). What is the largest number of edges in a trail of this graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The trail \\(B,A,D,B,C,D\\) uses the edges \\(BA\\), \\(AD\\), \\(DB\\), \\(BC\\), and \\(CD\\), which are all \\(5\\) edges of the graph, each once. No trail can have more edges than the graph has. The number \\(3\\) is the largest number of edges in a path, since a path visits each of the \\(4\\) vertices at most once.",
+      "hint": "A trail may revisit vertices; try to start at a vertex of odd degree."
+    }
+  ]
+}

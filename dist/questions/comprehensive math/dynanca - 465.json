@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-465",
+  "category": "Comprehensive Mathematics",
+  "title": "465. Sets, Logic, Reasoning & Proof: Set Representation by Listing",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-465-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Listing a small set of integers",
+      "learningObjective": "Write a set of positive integers by listing its elements.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Which listing gives the set of positive integers less than \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1,2,3,4,5\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,2,3,4\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The positive integers less than \\(5\\) are \\(1\\), \\(2\\), \\(3\\), and \\(4\\). The number \\(5\\) is not less than \\(5\\), so it is not included.",
+      "hint": "Check whether the boundary value itself satisfies \"less than\"."
+    },
+    {
+      "id": "dynanca-465-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Order in a listing",
+      "learningObjective": "Recognise that the order of listing does not change a set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which statement about the listings \\(\\{1,2,3\\}\\) and \\(\\{3,1,2\\}\\) is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They describe the same set."
+        },
+        {
+          "label": "B",
+          "text": "They describe different sets, because the order differs."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A set is determined only by which objects are its elements. Both listings contain exactly the elements \\(1\\), \\(2\\), and \\(3\\), so they are the same set. Order matters for ordered pairs and sequences, not for sets.",
+      "hint": "Compare which elements appear, ignoring the order."
+    },
+    {
+      "id": "dynanca-465-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Repetition in a listing",
+      "learningObjective": "Recognise that repeating an element does not change a set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many elements does the set \\(\\{1,1,2\\}\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Writing an element more than once does not add a new element. The set \\(\\{1,1,2\\}\\) equals \\(\\{1,2\\}\\), which has \\(2\\) elements. The number \\(3\\) counts the symbols written, not the distinct elements.",
+      "hint": "Count distinct elements only."
+    },
+    {
+      "id": "dynanca-465-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Listing from an inequality",
+      "learningObjective": "Convert a description with a strict and a non-strict inequality into a listing.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which listing equals \\(\\{x\\in\\mathbb{Z}\\mid -2<x\\le 2\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{-1,0,1,2\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{-2,-1,0,1,2\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The condition \\(-2<x\\) excludes \\(-2\\), while \\(x\\le 2\\) includes \\(2\\). The integers satisfying both are \\(-1,0,1,2\\). Including \\(-2\\) ignores the strict inequality on the left.",
+      "hint": "Check each endpoint separately against its own inequality sign."
+    },
+    {
+      "id": "dynanca-465-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Letters of a word as a set",
+      "learningObjective": "List the set of letters of a word without repetition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which listing gives the set of letters used in the word LEVEL?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{\\text{L},\\text{E},\\text{V}\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{\\text{L},\\text{E},\\text{V},\\text{E},\\text{L}\\}\\) with five elements"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The word uses only three different letters: L, E, and V. A set lists each element once, so the set is \\(\\{\\text{L},\\text{E},\\text{V}\\}\\) with \\(3\\) elements. Writing the repeated letters again does not create five elements.",
+      "hint": "Write each different letter once."
+    },
+    {
+      "id": "dynanca-465-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Reading an ellipsis",
+      "learningObjective": "Interpret a listing with an ellipsis and decide membership.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The set \\(S=\\{1,4,9,16,\\ldots,100\\}\\) continues the pattern of perfect squares. Which number is an element of \\(S\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(50\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(49\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The pattern lists \\(1^2,2^2,3^2,\\ldots,10^2\\). Since \\(49=7^2\\), it is an element of \\(S\\). The number \\(50\\) is not a perfect square, because \\(7^2=49\\) and \\(8^2=64\\), so it is not in \\(S\\).",
+      "hint": "Identify the rule that generates the listed elements."
+    },
+    {
+      "id": "dynanca-465-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Listing a solution set",
+      "learningObjective": "List the set of solutions of a quadratic equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which listing equals \\(\\{x\\in\\mathbb{R}\\mid x^2-5x+6=0\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{-2,-3\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{2,3\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor: \\(x^2-5x+6=(x-2)(x-3)\\). The solutions are \\(x=2\\) and \\(x=3\\), so the set is \\(\\{2,3\\}\\). The values \\(-2\\) and \\(-3\\) are solutions of \\(x^2+5x+6=0\\) instead; for example \\((-2)^2-5(-2)+6=20\\ne 0\\).",
+      "hint": "Factor the quadratic, or substitute each candidate into the equation."
+    },
+    {
+      "id": "dynanca-465-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Listing the values of an expression",
+      "learningObjective": "List the set of values an expression takes on a given set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which listing equals \\(\\{n^2\\mid n\\in\\{-2,-1,0,1,2\\}\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{0,1,4\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{-4,-1,0,1,4\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Square each value: \\((-2)^2=4\\), \\((-1)^2=1\\), \\(0^2=0\\), \\(1^2=1\\), \\(2^2=4\\). The distinct results are \\(0\\), \\(1\\), and \\(4\\). A square is never negative, so \\(-4\\) and \\(-1\\) cannot appear.",
+      "hint": "Compute the expression for each value of \\(n\\), then remove repeated results."
+    },
+    {
+      "id": "dynanca-465-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Set of prime factors",
+      "learningObjective": "List the set of prime factors of a number.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "Which listing gives the set of prime factors of \\(60\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{2,3,5\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{2,3,5,6\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The prime factorisation is \\(60=2\\cdot 2\\cdot 3\\cdot 5\\). The primes that occur are \\(2\\), \\(3\\), and \\(5\\); the repeated \\(2\\) is listed once. The number \\(6\\) divides \\(60\\) but is not prime, so it is not a prime factor.",
+      "hint": "Factor the number into primes and list each prime once."
+    },
+    {
+      "id": "dynanca-465-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Listing from a remainder condition",
+      "learningObjective": "List a set defined by a remainder condition and an upper bound.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Which listing gives the set of positive integers \\(x\\le 20\\) that leave remainder \\(2\\) when divided by \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{7,12,17,22\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{2,7,12,17\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Numbers with remainder \\(2\\) on division by \\(5\\) have the form \\(5k+2\\). For \\(k=0,1,2,3\\) this gives \\(2,7,12,17\\), all at most \\(20\\); the next value, \\(22\\), is too large. The number \\(2\\) itself qualifies, because \\(2=5\\cdot 0+2\\).",
+      "hint": "Write the numbers as \\(5k+2\\) and start with \\(k=0\\)."
+    }
+  ]
+}

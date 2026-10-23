@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-479",
+  "category": "Comprehensive Mathematics",
+  "title": "479. Sets, Logic, Reasoning & Proof: Cartesian Product of Sets",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-479-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of the Cartesian product",
+      "learningObjective": "State what the elements of a Cartesian product are.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What are the elements of the Cartesian product \\(A\\times B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All elements that belong to both \\(A\\) and \\(B\\)"
+        },
+        {
+          "label": "B",
+          "text": "All ordered pairs \\((a,b)\\) with \\(a\\in A\\) and \\(b\\in B\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The Cartesian product \\(A\\times B\\) is the set of ordered pairs whose first component comes from \\(A\\) and whose second component comes from \\(B\\). The elements that belong to both sets form the intersection \\(A\\cap B\\), which is a different construction.",
+      "hint": "The elements of a product are pairs, not single elements of the two sets."
+    },
+    {
+      "id": "dynanca-479-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Product with a one-element set",
+      "learningObjective": "List a small Cartesian product with the components in the correct order.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\{1,2\\}\\times\\{a\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{(1,a),(2,a)\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{(a,1),(a,2)\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first component of each pair comes from \\(\\{1,2\\}\\) and the second from \\(\\{a\\}\\). This gives the pairs \\((1,a)\\) and \\((2,a)\\). The pairs \\((a,1)\\) and \\((a,2)\\) have the components in the reverse order and belong to \\(\\{a\\}\\times\\{1,2\\}\\).",
+      "hint": "The set written first supplies the first component of each pair."
+    },
+    {
+      "id": "dynanca-479-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Cardinality of a product",
+      "learningObjective": "Compute the number of elements of a Cartesian product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Sets \\(A\\) and \\(B\\) have \\(3\\) and \\(4\\) elements. How many elements does \\(A\\times B\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each of the \\(3\\) elements of \\(A\\) can be paired with each of the \\(4\\) elements of \\(B\\), giving \\(3\\cdot 4=12\\) ordered pairs. Adding the sizes gives \\(7\\), which is the size of a union of disjoint sets, not of a product.",
+      "hint": "For every choice of the first component, count the choices of the second."
+    },
+    {
+      "id": "dynanca-479-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Membership in a product",
+      "learningObjective": "Decide which ordered pair belongs to a given Cartesian product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which ordered pair is an element of \\(\\{1,2\\}\\times\\{3,4\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A pair \\((a,b)\\) is in the product when \\(a\\in\\{1,2\\}\\) and \\(b\\in\\{3,4\\}\\). For \\((2,3)\\), both conditions hold. For \\((3,2)\\), the first component \\(3\\) is not in \\(\\{1,2\\}\\), so the pair is not in the product.",
+      "hint": "Check the first component against the first set and the second component against the second set."
+    },
+    {
+      "id": "dynanca-479-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Order of the factors",
+      "learningObjective": "Decide whether the Cartesian product is commutative.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Is \\(A\\times B=B\\times A\\) for all sets \\(A\\) and \\(B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; for example \\(\\{1\\}\\times\\{2\\}=\\{(1,2)\\}\\), but \\(\\{2\\}\\times\\{1\\}=\\{(2,1)\\}\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; both products contain the same pairs of elements."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Ordered pairs are equal only when their first components agree and their second components agree, so \\((1,2)\\ne(2,1)\\). Hence \\(\\{1\\}\\times\\{2\\}\\ne\\{2\\}\\times\\{1\\}\\), and the Cartesian product is not commutative in general. Equality holds only in special cases, such as \\(A=B\\).",
+      "hint": "Compare the ordered pairs \\((1,2)\\) and \\((2,1)\\)."
+    },
+    {
+      "id": "dynanca-479-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Product with the empty set",
+      "learningObjective": "Find the Cartesian product of a set with the empty set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "For every set \\(A\\), what is \\(A\\times\\varnothing\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\varnothing\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A pair in \\(A\\times\\varnothing\\) would need a second component taken from \\(\\varnothing\\), but the empty set has no elements. So no such pair exists and the product is empty. The count agrees: \\(|A|\\cdot 0=0\\).",
+      "hint": "Try to write down one ordered pair whose second component is in the empty set."
+    },
+    {
+      "id": "dynanca-479-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Product of a set with itself",
+      "learningObjective": "Count the ordered pairs formed from one set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A set \\(A\\) has \\(5\\) elements. How many elements does \\(A\\times A\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(25\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each of the \\(5\\) choices for the first component can be combined with each of the \\(5\\) choices for the second, including the same element. So \\(|A\\times A|=5\\cdot 5=25\\). The value \\(10=5+5\\) adds the sizes instead of multiplying.",
+      "hint": "The two components are chosen independently, and they may be equal."
+    },
+    {
+      "id": "dynanca-479-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Product of three sets",
+      "learningObjective": "Count the ordered triples in a threefold Cartesian product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many elements does \\(\\{0,1\\}\\times\\{0,1\\}\\times\\{0,1\\}\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An element is an ordered triple \\((a,b,c)\\) with each component equal to \\(0\\) or \\(1\\). There are \\(2\\cdot 2\\cdot 2=8\\) such triples. Adding \\(2+2+2=6\\) does not count combinations of independent choices.",
+      "hint": "Multiply the number of choices for each of the three components."
+    },
+    {
+      "id": "dynanca-479-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Size of a factor from the size of a product",
+      "learningObjective": "Find the size of one factor of a Cartesian product.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "The product \\(A\\times B\\) has \\(12\\) elements, and \\(A\\) has \\(3\\) elements. How many elements does \\(B\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(|A\\times B|=|A|\\cdot|B|\\), \\(12=3\\cdot|B|\\) and \\(|B|=4\\). Subtracting, \\(12-3=9\\), treats the product as if sizes were added, which is incorrect.",
+      "hint": "Use the multiplication rule for the size of a product and solve for the unknown factor."
+    },
+    {
+      "id": "dynanca-479-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Intersection of two products",
+      "learningObjective": "Determine the common elements of two Cartesian products taken in opposite orders.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(A=\\{1,2\\}\\) and \\(B=\\{2,3\\}\\). What is \\((A\\times B)\\cap(B\\times A)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{(2,2)\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A pair \\((x,y)\\) is in \\(A\\times B\\) when \\(x\\in A\\) and \\(y\\in B\\), and in \\(B\\times A\\) when \\(x\\in B\\) and \\(y\\in A\\). Both hold exactly when \\(x\\) and \\(y\\) are in \\(A\\cap B=\\{2\\}\\). So the only common pair is \\((2,2)\\). The intersection is not empty, because \\(A\\) and \\(B\\) share the element \\(2\\).",
+      "hint": "Write the conditions on each component for both products and combine them."
+    }
+  ]
+}

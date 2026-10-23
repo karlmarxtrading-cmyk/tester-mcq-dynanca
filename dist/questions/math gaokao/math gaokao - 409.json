@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-409",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 409",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-409-q001",
+      "category": "Probability",
+      "concept": "Classical Probability Model for Independent Trials",
+      "learningObjective": "Model two independent coin tosses and compute the probability of at least one head.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A fair coin is tossed twice, independently. What is the probability of getting at least one head?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sample space for two tosses is \\(\\{HH, HT, TH, TT\\}\\). The event \"at least one head\" contains \\(HH\\), \\(HT\\), and \\(TH\\), so its probability is \\(\\frac{3}{4}\\). Equivalently, the complement \"no heads\" is \\(TT\\), with probability \\(\\frac{1}{4}\\), so the required probability is \\(1-\\frac{1}{4}=\\frac{3}{4}\\).",
+      "hint": "List all four equally likely outcomes, or use the complement event \"no heads\"."
+    },
+    {
+      "id": "math-gaokao-409-q002",
+      "category": "Probability",
+      "concept": "Equally Likely Outcomes Model",
+      "learningObjective": "Compute the probability of a sum event when a fair die is rolled twice.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A fair six-sided die is rolled twice, independently. What is the probability that the sum of the two rolls is \\(7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{6}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{36}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(6 \\times 6 = 36\\) equally likely ordered outcomes. The outcomes with sum \\(7\\) are \\((1,6)\\), \\((2,5)\\), \\((3,4)\\), \\((4,3)\\), \\((5,2)\\), and \\((6,1)\\), giving \\(6\\) favorable outcomes. Thus the probability is \\(\\frac{6}{36}=\\frac{1}{6}\\).",
+      "hint": "Count all ordered pairs of rolls whose values add to \\(7\\), then divide by the total number of ordered pairs."
+    },
+    {
+      "id": "math-gaokao-409-q003",
+      "category": "Probability",
+      "concept": "Conditional Probability Model",
+      "learningObjective": "Apply the conditional probability formula in a student-course selection context.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In a school, \\(60\\%\\) of students take mathematics, and \\(25\\%\\) of students take both mathematics and physics. Given that a randomly selected student takes mathematics, what is the probability that the student also takes physics?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{12}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(M\\) be the event that a student takes mathematics, and let \\(P\\) be the event that a student takes physics. We are given \\(P(M)=0.60\\) and \\(P(M\\cap P)=0.25\\). Therefore,\n\\[\n\\begin{aligned}\nP(P\\mid M)&=\\frac{P(M\\cap P)}{P(M)} \\\\\n&=\\frac{0.25}{0.60} \\\\\n&=\\frac{25}{60} \\\\\n&=\\frac{5}{12}.\n\\end{aligned}\n\\]",
+      "hint": "Use the conditional probability formula \\(P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}\\)."
+    },
+    {
+      "id": "math-gaokao-409-q004",
+      "category": "Probability",
+      "concept": "Binomial Probability Model",
+      "learningObjective": "Compute the probability of exactly two successes in four independent trials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In four independent trials, the probability of success in each trial is \\(\\frac{1}{3}\\). What is the probability of exactly two successes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{4}{27}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{8}{27}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "This is a binomial model with \\(n=4\\), \\(k=2\\), and \\(p=\\frac{1}{3}\\). Thus\n\\[\n\\begin{aligned}\nP(X=2)&=\\binom{4}{2}\\left(\\frac{1}{3}\\right)^2\\left(\\frac{2}{3}\\right)^2 \\\\\n&=6\\cdot \\frac{1}{9}\\cdot \\frac{4}{9} \\\\\n&=\\frac{24}{81} \\\\\n&=\\frac{8}{27}.\n\\end{aligned}\n\\]",
+      "hint": "Use the binomial probability formula \\(P(X=k)=\\binom{n}{k}p^k(1-p)^{n-k}\\)."
+    },
+    {
+      "id": "math-gaokao-409-q005",
+      "category": "Probability",
+      "concept": "Expected Value of a Discrete Random Variable",
+      "learningObjective": "Calculate the expected value from a given probability distribution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A discrete random variable \\(X\\) has the distribution\n\\[\nP(X=1)=0.2,\\quad P(X=2)=0.5,\\quad P(X=3)=0.3.\n\\]\nWhat is \\(E(X)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2.1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2.0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expected value is\n\\[\n\\begin{aligned}\nE(X)&=1(0.2)+2(0.5)+3(0.3) \\\\\n&=0.2+1.0+0.9 \\\\\n&=2.1.\n\\end{aligned}\n\\]",
+      "hint": "Multiply each possible value by its probability, then add the results."
+    },
+    {
+      "id": "math-gaokao-409-q006",
+      "category": "Probability",
+      "concept": "Independent Events Probability Model",
+      "learningObjective": "Model repeated independent days and compute the probability of no defective items.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "On each day, the probability that a machine produces at least one defective item is \\(0.1\\). These daily events are independent. What is the probability that no defective item is produced on three consecutive days?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.729\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.271\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of no defective item on one day is \\(1-0.1=0.9\\). Since the days are independent, the probability of no defective item on all three days is\n\\[\n0.9^3=0.729.\n\\]",
+      "hint": "Treat each day as an independent event and multiply the probabilities of no defect."
+    },
+    {
+      "id": "math-gaokao-409-q007",
+      "category": "Probability",
+      "concept": "Hypergeometric Probability Model",
+      "learningObjective": "Compute the probability of drawing two white balls without replacement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A bag contains \\(5\\) white balls and \\(3\\) black balls. Two balls are drawn at random without replacement. What is the probability that both drawn balls are white?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{5}{14}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{28}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total number of ways to choose \\(2\\) balls from \\(8\\) is \\(\\binom{8}{2}=28\\). The number of ways to choose \\(2\\) white balls from \\(5\\) is \\(\\binom{5}{2}=10\\). Therefore,\n\\[\n\\begin{aligned}\nP(\\text{both white})&=\\frac{\\binom{5}{2}}{\\binom{8}{2}} \\\\\n&=\\frac{10}{28} \\\\\n&=\\frac{5}{14}.\n\\end{aligned}\n\\]",
+      "hint": "Count combinations of choosing two white balls and divide by the total combinations of choosing two balls."
+    },
+    {
+      "id": "math-gaokao-409-q008",
+      "category": "Probability",
+      "concept": "Variance of a Binomial Distribution",
+      "learningObjective": "Compute the variance of a binomial random variable using \\(np(1-p)\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(X\\) be a binomial random variable with \\(n=10\\) and \\(p=0.4\\). What is the variance of \\(X\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2.4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For a binomial random variable, the variance is\n\\[\n\\operatorname{Var}(X)=np(1-p).\n\\]\nSubstituting \\(n=10\\) and \\(p=0.4\\),\n\\[\n\\operatorname{Var}(X)=10(0.4)(0.6)=2.4.\n\\]",
+      "hint": "Use the binomial variance formula \\(\\operatorname{Var}(X)=np(1-p)\\)."
+    },
+    {
+      "id": "math-gaokao-409-q009",
+      "category": "Probability",
+      "concept": "Bayes' Theorem in a Two-Machine Model",
+      "learningObjective": "Use Bayes' theorem to find the probability that a defective item came from a particular machine.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A factory has two machines. Machine A produces \\(60\\%\\) of the items and has a defect rate of \\(2\\%\\). Machine B produces \\(40\\%\\) of the items and has a defect rate of \\(5\\%\\). A randomly selected item is found to be defective. What is the probability that it was produced by Machine A?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{8}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{4}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(A\\) be the event that an item is produced by Machine A, and let \\(D\\) be the event that it is defective. Then\n\\[\nP(A\\mid D)=\\frac{P(A)P(D\\mid A)}{P(A)P(D\\mid A)+P(B)P(D\\mid B)}.\n\\]\nThus\n\\[\n\\begin{aligned}\nP(A\\mid D)&=\\frac{0.60\\cdot 0.02}{0.60\\cdot 0.02+0.40\\cdot 0.05} \\\\\n&=\\frac{0.012}{0.012+0.020} \\\\\n&=\\frac{0.012}{0.032} \\\\\n&=\\frac{3}{8}.\n\\end{aligned}\n\\]",
+      "hint": "Use Bayes' theorem or draw a two-stage probability tree for the two machines and their defect rates."
+    },
+    {
+      "id": "math-gaokao-409-q010",
+      "category": "Probability",
+      "concept": "Geometric Probability Model",
+      "learningObjective": "Compute the probability that the first success occurs on the third independent trial.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In a sequence of independent Bernoulli trials, the probability of success in each trial is \\(0.6\\). What is the probability that the first success occurs on the third trial?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.096\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.144\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For the first success to occur on the third trial, the first two trials must be failures and the third trial must be a success. The probability is\n\\[\n\\begin{aligned}\n(1-0.6)^2(0.6)&=(0.4)^2(0.6) \\\\\n&=0.16\\cdot 0.6 \\\\\n&=0.096.\n\\end{aligned}\n\\]",
+      "hint": "Identify what must happen before the first success, then use the independence of the trials."
+    }
+  ]
+}

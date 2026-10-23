@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-577",
+  "category": "Comprehensive Mathematics",
+  "title": "577. Discrete Mathematics, Counting & Graph Theory: Undirected Graph Representations",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-577-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Edges as unordered pairs",
+      "learningObjective": "State that an edge of an undirected graph has no direction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In an undirected graph, how are the descriptions \"the edge joining \\(u\\) and \\(v\\)\" and \"the edge joining \\(v\\) and \\(u\\)\" related?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They describe two different edges."
+        },
+        {
+          "label": "B",
+          "text": "They describe the same edge."
+        }
+      ],
+      "answer": "B",
+      "explanation": "An edge of an undirected graph is an unordered pair of vertices; it has no direction. So naming the endpoints in either order describes the same edge. Order matters only in directed graphs.",
+      "hint": "An undirected edge has two endpoints but no arrow."
+    },
+    {
+      "id": "dynanca-577-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Reading an edge list",
+      "learningObjective": "Decide from an edge list which vertices are not adjacent.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D\\) and edges \\(AB\\), \\(AC\\), \\(BC\\), and \\(CD\\). Which pair of vertices is not adjacent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(C\\) and \\(D\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\) and \\(D\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Two vertices are adjacent when an edge joins them. The edge list contains \\(CD\\), so \\(C\\) and \\(D\\) are adjacent. No edge in the list joins \\(A\\) and \\(D\\), so they are not adjacent.",
+      "hint": "Search the edge list for an edge with the two given endpoints."
+    },
+    {
+      "id": "dynanca-577-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A row of the adjacency matrix",
+      "learningObjective": "Write a row of the adjacency matrix from an edge list.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(1,2,3,4\\) and edges \\(\\{1,2\\}\\), \\(\\{1,3\\}\\), \\(\\{2,3\\}\\), and \\(\\{3,4\\}\\). In its adjacency matrix, with rows and columns in the order \\(1,2,3,4\\), what is the row of vertex \\(3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,1,0,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,1,0,0)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Vertex \\(3\\) is adjacent to \\(1\\), \\(2\\), and \\(4\\), so its row has \\(1\\) in columns \\(1\\), \\(2\\), and \\(4\\), and \\(0\\) in column \\(3\\), because there is no loop. The row \\((1,1,0,0)\\) omits the edge \\(\\{3,4\\}\\).",
+      "hint": "List the neighbours of vertex \\(3\\), then mark their columns."
+    },
+    {
+      "id": "dynanca-577-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Ones in the adjacency matrix",
+      "learningObjective": "Relate the number of ones in the adjacency matrix to the number of edges.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A simple undirected graph has \\(4\\) edges. How many entries of its adjacency matrix are equal to \\(1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An edge joining \\(u\\) and \\(v\\) is recorded twice: in row \\(u\\), column \\(v\\) and in row \\(v\\), column \\(u\\). So \\(4\\) edges produce \\(2\\cdot 4=8\\) entries equal to \\(1\\). Counting each edge only once gives \\(4\\), which would be right for the arcs of a directed graph.",
+      "hint": "Each edge appears in two positions of the matrix."
+    },
+    {
+      "id": "dynanca-577-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Edges of a complete graph",
+      "learningObjective": "Count the edges of a complete graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In the complete graph on \\(5\\) vertices, every two different vertices are joined by an edge. How many edges does it have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There is one edge for each unordered pair of vertices, so the number of edges is \\(\\binom{5}{2}=\\dfrac{5\\cdot 4}{2}=10\\). The number \\(20=5\\cdot 4\\) counts ordered pairs, so it counts every edge twice.",
+      "hint": "Count unordered pairs of vertices."
+    },
+    {
+      "id": "dynanca-577-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Recognising a graph from its matrix",
+      "learningObjective": "Identify the graph described by a small adjacency matrix.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A graph on the vertices \\(1,2,3\\) has the adjacency matrix \\(\\begin{pmatrix}0&1&1\\\\1&0&0\\\\1&0&0\\end{pmatrix}\\). Which description fits the graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A triangle"
+        },
+        {
+          "label": "B",
+          "text": "A path in which vertex \\(1\\) is the middle vertex"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Row \\(1\\) shows that vertex \\(1\\) is adjacent to \\(2\\) and \\(3\\); rows \\(2\\) and \\(3\\) show that these two vertices are adjacent only to \\(1\\). So the edges are \\(\\{1,2\\}\\) and \\(\\{1,3\\}\\): a path from \\(2\\) through \\(1\\) to \\(3\\). A triangle would also need the edge \\(\\{2,3\\}\\).",
+      "hint": "List the edges by reading the entries above the main diagonal."
+    },
+    {
+      "id": "dynanca-577-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Why the matrix is symmetric",
+      "learningObjective": "Explain the symmetry of the adjacency matrix of an undirected graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Why is the adjacency matrix of an undirected graph symmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All vertices of an undirected graph have the same degree."
+        },
+        {
+          "label": "B",
+          "text": "An edge joining \\(u\\) and \\(v\\) gives \\(1\\) both in row \\(u\\), column \\(v\\) and in row \\(v\\), column \\(u\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Adjacency in an undirected graph is mutual: \\(u\\) is adjacent to \\(v\\) exactly when \\(v\\) is adjacent to \\(u\\). So the entries in mirrored positions are always equal, which is what symmetry means. Vertices of an undirected graph may have different degrees; that has nothing to do with symmetry.",
+      "hint": "Think about what one edge contributes to the matrix."
+    },
+    {
+      "id": "dynanca-577-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Incidence matrix",
+      "learningObjective": "Count the ones in the incidence matrix of a graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Procedural",
+      "question": "The incidence matrix of a graph without loops has one row for each vertex and one column for each edge; an entry is \\(1\\) when the vertex is an endpoint of the edge. For a graph with \\(5\\) vertices and \\(7\\) edges, how many entries are equal to \\(1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(14\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(35\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each edge has exactly two endpoints, so each column contains exactly two entries equal to \\(1\\). With \\(7\\) columns there are \\(2\\cdot 7=14\\) such entries. The number \\(35=5\\cdot 7\\) is the total number of entries of the matrix.",
+      "hint": "Count the ones column by column."
+    },
+    {
+      "id": "dynanca-577-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Edges of the complement",
+      "learningObjective": "Count the edges of the complement of a graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A simple graph on \\(5\\) vertices has \\(4\\) edges. Its complement has the same vertices, and two vertices are adjacent in the complement exactly when they are not adjacent in the graph. How many edges does the complement have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Among \\(5\\) vertices there are \\(\\binom{5}{2}=10\\) pairs. Each pair is an edge of exactly one of the two graphs, so the complement has \\(10-4=6\\) edges. The complement does not in general have the same number of edges as the graph.",
+      "hint": "Every pair of vertices is an edge in exactly one of the two graphs."
+    },
+    {
+      "id": "dynanca-577-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting graphs on a fixed vertex set",
+      "learningObjective": "Count the simple graphs on four labelled vertices.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many different simple undirected graphs have the vertex set \\(\\{1,2,3,4\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(64\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(\\binom{4}{2}=6\\) possible edges, and a graph is determined by deciding, for each of them, whether it is present. This gives \\(2^6=64\\) graphs. The number \\(16=2^4\\) would count subsets of the vertices, not sets of edges.",
+      "hint": "First count the possible edges, then decide for each one whether to include it."
+    }
+  ]
+}

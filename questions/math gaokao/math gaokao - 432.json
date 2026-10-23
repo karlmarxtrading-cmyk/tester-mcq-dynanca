@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-432",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 432",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-432-q001",
+      "category": "Mathematical Reasoning",
+      "concept": "Existence and Uniqueness for Linear Equations",
+      "learningObjective": "Determine when a parameterized linear equation has a unique real solution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For which real values of \\(m\\) does the equation \\((m-2)x=3\\) have a unique real solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m\\ne 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(m=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If \\(m-2\\ne0\\), then \\(x=\\frac{3}{m-2}\\) is the only real solution. If \\(m-2=0\\), the equation becomes \\(0=3\\), which has no solution. Therefore the equation has a unique real solution exactly when \\(m\\ne2\\).",
+      "hint": "Consider whether the coefficient of \\(x\\) is zero or nonzero."
+    },
+    {
+      "id": "math-gaokao-432-q002",
+      "category": "Mathematical Reasoning",
+      "concept": "Existence of Two Distinct Real Roots of a Quadratic",
+      "learningObjective": "Use the discriminant to determine when a quadratic equation has two distinct real roots.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The equation \\(x^2+2x+k=0\\) has two distinct real roots if and only if",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k<1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k\\le1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The discriminant is \\[\n\\begin{aligned}\n\\Delta&=2^2-4(1)(k) \\\\\n&=4-4k \\\\\n&=4(1-k)\n\\end{aligned}\n\\]. Two distinct real roots require \\(\\Delta>0\\), so \\(1-k>0\\), hence \\(k<1\\). If \\(k=1\\), the discriminant is \\(0\\) and the equation has a repeated real root, not two distinct real roots.",
+      "hint": "Recall that a quadratic has two distinct real roots exactly when its discriminant is positive."
+    },
+    {
+      "id": "math-gaokao-432-q003",
+      "category": "Mathematical Reasoning",
+      "concept": "Uniqueness in a Linear System",
+      "learningObjective": "Analyze a parameterized linear system to determine whether a unique solution can exist.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Consider the system\n\\[\n\\begin{cases}\nx+y=3,\\\\\n2x+2y=k.\n\\end{cases}\n\\]\nWhich statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The system has a unique real solution for every real \\(k\\)."
+        },
+        {
+          "label": "B",
+          "text": "The system has no unique real solution for any real \\(k\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The second equation is equivalent to \\(2(x+y)=k\\). Comparing with the first equation, if \\(k=6\\), the two equations represent the same line and there are infinitely many solutions. If \\(k\\ne6\\), the equations represent parallel distinct lines and there is no solution. In neither case is the solution unique. Therefore the system has no unique real solution for any real \\(k\\).",
+      "hint": "Compare the left-hand sides of the two equations and consider the possible values of \\(k\\)."
+    },
+    {
+      "id": "math-gaokao-432-q004",
+      "category": "Mathematical Reasoning",
+      "concept": "Existence and Uniqueness of Real Roots of a Cubic",
+      "learningObjective": "Determine a parameter condition for a cubic equation to have exactly one distinct real root.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The equation \\(x^3-3x+m=0\\) has exactly one distinct real root if and only if",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m<-2\\) or \\(m>2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2<m<2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(f(x)=x^3-3x+m\\). Then \\(f'(x)=3x^2-3=3(x-1)(x+1)\\), so the critical points are \\(x=-1\\) and \\(x=1\\). The local maximum is \\(f(-1)=m+2\\), and the local minimum is \\(f(1)=m-2\\). A cubic with positive leading coefficient has exactly one distinct real root precisely when both local extrema lie on the same side of the \\(x\\)-axis. This happens when \\(m+2<0\\) or \\(m-2>0\\), that is, \\(m<-2\\) or \\(m>2\\). At \\(m=-2\\) or \\(m=2\\), a repeated root occurs, giving only two distinct real roots.",
+      "hint": "Use the derivative to locate the local maximum and local minimum, then examine their signs."
+    },
+    {
+      "id": "math-gaokao-432-q005",
+      "category": "Mathematical Reasoning",
+      "concept": "Existence and Uniqueness for a Transcendental Equation",
+      "learningObjective": "Use monotonicity to prove that an equation has exactly one real solution for every parameter value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which statement about the equation \\(e^x+x=a\\) for real \\(a\\) is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There are real values of \\(a\\) for which the equation has no real solution."
+        },
+        {
+          "label": "B",
+          "text": "For every real \\(a\\), the equation has exactly one real solution."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(g(x)=e^x+x\\). Then \\(g'(x)=e^x+1>0\\) for all real \\(x\\), so \\(g\\) is strictly increasing. Also, as \\(x\\to-\\infty\\), \\(g(x)\\to-\\infty\\), and as \\(x\\to\\infty\\), \\(g(x)\\to\\infty\\). Therefore the range of \\(g\\) is all real numbers, and because \\(g\\) is strictly increasing, each real value \\(a\\) is attained exactly once. Hence the equation has exactly one real solution for every real \\(a\\).",
+      "hint": "Study the monotonicity and range of the function defined by the left-hand side."
+    },
+    {
+      "id": "math-gaokao-432-q006",
+      "category": "Mathematical Reasoning",
+      "concept": "Parameter Conditions for Exactly Two Solutions",
+      "learningObjective": "Determine parameter values for which an absolute-value equation has exactly two distinct real solutions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For which real values of \\(m\\) does the equation \\(|x-1|=mx+2\\) have exactly two distinct real solutions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m<-1\\) or \\(m>1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1<m<1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Solve by cases. If \\(x\\ge1\\), then \\(x-1=mx+2\\), so \\((1-m)x=3\\) and \\(x=\\frac{3}{1-m}\\), provided \\(x\\ge1\\). If \\(x<1\\), then \\(1-x=mx+2\\), so \\(-(m+1)x=1\\) and \\(x=-\\frac{1}{m+1}\\), provided \\(x<1\\). Checking the validity conditions shows that both solutions are valid exactly when \\(-1<m<1\\). Outside this interval, exactly one of the two case-solutions is valid, or a boundary case gives only one distinct solution. Thus exactly two distinct real solutions occur precisely for \\(-1<m<1\\).",
+      "hint": "Split the equation into the cases \\(x\\ge1\\) and \\(x<1\\), then check which case-solutions satisfy their case conditions."
+    },
+    {
+      "id": "math-gaokao-432-q007",
+      "category": "Mathematical Reasoning",
+      "concept": "Three Distinct Real Roots of a Cubic",
+      "learningObjective": "Determine a parameter interval for which a cubic equation has three distinct real roots.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The equation \\(x^3-6x^2+9x+a=0\\) has three distinct real roots if and only if",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-4<a<0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a<-4\\) or \\(a>0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(f(x)=x^3-6x^2+9x+a\\). Then \\(f'(x)=3x^2-12x+9=3(x-1)(x-3)\\), so the critical points are \\(x=1\\) and \\(x=3\\). The local maximum is \\(f(1)=4+a\\), and the local minimum is \\(f(3)=a\\). For three distinct real roots, the local maximum must be positive and the local minimum must be negative: \\(4+a>0\\) and \\(a<0\\). This gives \\(-4<a<0\\). At the endpoints, a repeated root appears, so there are not three distinct real roots.",
+      "hint": "Find the local maximum and local minimum, then require the graph to cross the \\(x\\)-axis three times."
+    },
+    {
+      "id": "math-gaokao-432-q008",
+      "category": "Mathematical Reasoning",
+      "concept": "Uniqueness of a Fixed-Point-Type Equation",
+      "learningObjective": "Prove that an equation involving a trigonometric function has exactly one real solution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The equation \\(\\cos x=x\\) has",
+      "options": [
+        {
+          "label": "A",
+          "text": "infinitely many real solutions."
+        },
+        {
+          "label": "B",
+          "text": "exactly one real solution."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(f(x)=\\cos x-x\\). Then \\(f'(x)=-\\sin x-1\\le0\\), and \\(f'\\) is zero only at isolated points, so \\(f\\) is strictly decreasing. Also \\(f(0)=1>0\\), while \\(f(\\frac{\\pi}{2})=-\\frac{\\pi}{2}<0\\). By continuity, there is at least one real solution. Since \\(f\\) is strictly decreasing, there cannot be more than one. Hence the equation has exactly one real solution.",
+      "hint": "Consider the function \\(f(x)=\\cos x-x\\) and examine its monotonicity and values at two convenient points."
+    },
+    {
+      "id": "math-gaokao-432-q009",
+      "category": "Mathematical Reasoning",
+      "concept": "Unique Real Solution of a Quadratic",
+      "learningObjective": "Use the discriminant to find parameter values for which a quadratic equation has a unique real solution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The equation \\(x^2+ax+a^2-1=0\\) has a unique real solution if and only if",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a=\\pm \\frac{2}{\\sqrt{3}}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a=\\pm2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A quadratic equation has a unique real solution exactly when its discriminant is zero. Here\n\\[\n\\begin{aligned}\n\\Delta&=a^2-4(a^2-1) \\\\\n&=a^2-4a^2+4 \\\\\n&=-3a^2+4.\n\\end{aligned}\n\\]\nSetting \\(\\Delta=0\\) gives \\(3a^2=4\\), so \\(a^2=\\frac{4}{3}\\) and \\(a=\\pm\\frac{2}{\\sqrt{3}}\\). Therefore the equation has a unique real solution exactly for these two values.",
+      "hint": "Set the discriminant of the quadratic equal to zero."
+    },
+    {
+      "id": "math-gaokao-432-q010",
+      "category": "Mathematical Reasoning",
+      "concept": "Uniqueness for All Parameter Values",
+      "learningObjective": "Determine a parameter condition ensuring that a cubic equation has exactly one real solution for every real constant term.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For which real values of \\(a\\) does the equation \\(x^3+ax+b=0\\) have exactly one real solution for every real number \\(b\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a>0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a\\ge0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(f(x)=x^3+ax+b\\). If \\(a\\ge0\\), then \\(f'(x)=3x^2+a\\ge0\\). For \\(a>0\\), \\(f\\) is strictly increasing, so it has exactly one real root for every \\(b\\). For \\(a=0\\), \\(f(x)=x^3+b\\), which is also strictly increasing and has exactly one real root for every \\(b\\). If \\(a<0\\), then \\(f\\) has two critical points, and for suitable \\(b\\) the graph can cross the \\(x\\)-axis three times, so the equation does not have exactly one real solution for every \\(b\\). Hence the required condition is \\(a\\ge0\\).",
+      "hint": "Examine the derivative \\(3x^2+a\\) and consider separately \\(a>0\\), \\(a=0\\), and \\(a<0\\)."
+    }
+  ]
+}

@@ -1,0 +1,4411 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "algebra-09",
+  "category": "Mathematics for Computing",
+  "title": "Complex Numbers, Sequences & Algebraic Problem Solving",
+  "description": "Explore essential mathematical concepts through carefully crafted questions. Strengthen your understanding, practice your reasoning, and learn at your own pace.",
+  "questionCount": 200,
+  "questions": [
+    {
+      "id": "algebra-09-q001",
+      "category": "Advanced Complex Numbers",
+      "concept": "Complex Number Addition",
+      "learningObjective": "Add two complex numbers expressed in rectangular form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\((3+2i) + (1-5i)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4 - 3i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4 + 7i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Add the real parts and the imaginary parts separately:\n\\[\n(3+2i)+(1-5i) = (3+1) + (2-5)i = 4 - 3i.\n\\]\nThe correct option is therefore \\(4 - 3i\\), which is option A.",
+      "hint": "Combine the real parts together and the imaginary parts together."
+    },
+    {
+      "id": "algebra-09-q002",
+      "category": "Advanced Complex Numbers",
+      "concept": "Modulus of a Complex Number",
+      "learningObjective": "Compute the modulus of a complex number in rectangular form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the modulus of \\(z = 3 + 4i\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The modulus is given by \\(|z| = \\sqrt{a^2 + b^2}\\) for \\(z = a + bi\\).\nHere \\(a = 3\\) and \\(b = 4\\), so\n\\[\n|z| = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5.\n\\]\nThe correct option is A.",
+      "hint": "Use the formula \\(|a+bi| = \\sqrt{a^2+b^2}\\)."
+    },
+    {
+      "id": "algebra-09-q003",
+      "category": "Advanced Complex Numbers",
+      "concept": "Complex Conjugate",
+      "learningObjective": "Determine the conjugate of a complex number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(z = 2 - 3i\\), what is \\(\\overline{z}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2 + 3i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2 + 3i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The conjugate of \\(a + bi\\) is \\(a - bi\\). Reversing the sign of the imaginary part of \\(2 - 3i\\) gives\n\\[\n\\overline{z} = 2 + 3i.\n\\]\nThe correct option is A.",
+      "hint": "The conjugate changes only the sign of the imaginary part."
+    },
+    {
+      "id": "algebra-09-q004",
+      "category": "Advanced Complex Numbers",
+      "concept": "Multiplication of Complex Numbers",
+      "learningObjective": "Multiply two conjugate complex numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\((1+i)(1-i)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Expand the product:\n\\[\n(1+i)(1-i) = 1 - i + i - i^2 = 1 - i^2.\n\\]\nSince \\(i^2 = -1\\), this equals \\(1 - (-1) = 2\\).\nThe correct option is A.",
+      "hint": "Recall that \\(i^2 = -1\\) and that \\((a+bi)(a-bi) = a^2 + b^2\\)."
+    },
+    {
+      "id": "algebra-09-q005",
+      "category": "Advanced Complex Numbers",
+      "concept": "Division of Complex Numbers",
+      "learningObjective": "Divide one complex number by another using the conjugate of the denominator.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Express \\(\\dfrac{2i}{1+i}\\) in the form \\(a+bi\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1 - i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1 + i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiply numerator and denominator by the conjugate \\(1-i\\):\n\\[\n\\frac{2i}{1+i} \\cdot \\frac{1-i}{1-i} = \\frac{2i(1-i)}{1^2+1^2} = \\frac{2i - 2i^2}{2}.\n\\]\nSince \\(i^2 = -1\\), the numerator becomes \\(2i + 2 = 2 + 2i\\), so\n\\[\n\\frac{2+2i}{2} = 1 + i.\n\\]\nThe correct option is B.",
+      "hint": "Multiply numerator and denominator by the conjugate of the denominator."
+    },
+    {
+      "id": "algebra-09-q006",
+      "category": "Advanced Complex Numbers",
+      "concept": "Powers of the Imaginary Unit",
+      "learningObjective": "Evaluate a high power of \\(i\\) by reducing the exponent modulo 4.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(i^{2023}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The powers of \\(i\\) repeat with period 4. Write \\(2023 = 4 \\cdot 505 + 3\\), so\n\\[\ni^{2023} = i^{4\\cdot 505 + 3} = (i^4)^{505} \\cdot i^3 = 1 \\cdot i^3 = -i.\n\\]\nThe correct option is B.",
+      "hint": "Reduce the exponent modulo 4 and use the pattern \\(i, -1, -i, 1\\)."
+    },
+    {
+      "id": "algebra-09-q007",
+      "category": "Advanced Complex Numbers",
+      "concept": "Modulus of a Complex Number",
+      "learningObjective": "Compute the modulus of a complex number with negative real part.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(|-2 + 2i|\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\sqrt{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\[\n|-2+2i| = \\sqrt{(-2)^2 + 2^2} = \\sqrt{4 + 4} = \\sqrt{8} = 2\\sqrt{2}.\n\\]\nThe correct option is B.",
+      "hint": "Square both components, add, then take the square root."
+    },
+    {
+      "id": "algebra-09-q008",
+      "category": "Advanced Complex Numbers",
+      "concept": "Argument of a Complex Number",
+      "learningObjective": "Identify the principal argument of a purely imaginary number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the principal argument of \\(z = i\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\dfrac{\\pi}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\pi\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The point \\(i = 0 + 1i\\) lies on the positive imaginary axis. Its angle measured counterclockwise from the positive real axis is\n\\[\n\\arg(i) = \\frac{\\pi}{2}.\n\\]\nThe correct option is A.",
+      "hint": "Locate the point on the Argand plane and read its angle from the positive real axis."
+    },
+    {
+      "id": "algebra-09-q009",
+      "category": "Advanced Complex Numbers",
+      "concept": "Polar Form of a Complex Number",
+      "learningObjective": "Convert a complex number in the second quadrant to polar form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Write \\(z = -1 + i\\) in polar form.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{2}\\left(\\cos\\dfrac{3\\pi}{4} + i\\sin\\dfrac{3\\pi}{4}\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{2}\\left(\\cos\\dfrac{\\pi}{4} + i\\sin\\dfrac{\\pi}{4}\\right)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The modulus is\n\\[\n|z| = \\sqrt{(-1)^2 + 1^2} = \\sqrt{2}.\n\\]\nSince the point \\((-1,1)\\) lies in the second quadrant, the argument is\n\\[\n\\arg(z) = \\pi - \\frac{\\pi}{4} = \\frac{3\\pi}{4}.\n\\]\nTherefore \\(z = \\sqrt{2}\\left(\\cos\\frac{3\\pi}{4} + i\\sin\\frac{3\\pi}{4}\\right)\\).\nThe correct option is A.",
+      "hint": "Determine the quadrant first, then compute the reference angle."
+    },
+    {
+      "id": "algebra-09-q010",
+      "category": "Advanced Complex Numbers",
+      "concept": "Powers of Complex Numbers",
+      "learningObjective": "Compute a power of a complex number by direct squaring.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\((1+i)^2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Expand using the binomial identity:\n\\[\n(1+i)^2 = 1 + 2i + i^2 = 1 + 2i - 1 = 2i.\n\\]\nThe correct option is B.",
+      "hint": "Expand the square and replace \\(i^2\\) with \\(-1\\)."
+    },
+    {
+      "id": "algebra-09-q011",
+      "category": "Advanced Complex Numbers",
+      "concept": "De Moivre's Theorem",
+      "learningObjective": "Apply De Moivre's theorem to compute a power of a trigonometric complex number.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Compute \\(\\left(\\cos\\dfrac{\\pi}{6} + i\\sin\\dfrac{\\pi}{6}\\right)^{6}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By De Moivre's theorem,\n\\[\n\\left(\\cos\\theta + i\\sin\\theta\\right)^n = \\cos(n\\theta) + i\\sin(n\\theta).\n\\]\nWith \\(\\theta = \\frac{\\pi}{6}\\) and \\(n = 6\\),\n\\[\n\\cos\\pi + i\\sin\\pi = -1 + 0i = -1.\n\\]\nThe correct option is A.",
+      "hint": "Multiply the angle by the exponent and then evaluate the cosine and sine."
+    },
+    {
+      "id": "algebra-09-q012",
+      "category": "Advanced Complex Numbers",
+      "concept": "Complex Roots of a Quadratic Equation",
+      "learningObjective": "Solve an equation of the form \\(z^2 = c\\) with negative real \\(c\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(z^2 = -4\\) over the complex numbers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(z = 2i\\) or \\(z = -2i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(z = 2\\) or \\(z = -2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Write \\(-4 = 4i^2\\). Then\n\\[\nz^2 = 4i^2 \\implies z = \\pm 2i.\n\\]\nThe correct option is A.",
+      "hint": "Express the negative number as a positive number times \\(i^2\\)."
+    },
+    {
+      "id": "algebra-09-q013",
+      "category": "Advanced Complex Numbers",
+      "concept": "Quadratic Equations with Complex Roots",
+      "learningObjective": "Find the complex roots of a quadratic equation with a negative discriminant.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the roots of \\(x^2 + 2x + 5 = 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x = -1 \\pm 2i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x = 1 \\pm 2i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the quadratic formula:\n\\[\nx = \\frac{-2 \\pm \\sqrt{4 - 20}}{2} = \\frac{-2 \\pm \\sqrt{-16}}{2} = \\frac{-2 \\pm 4i}{2} = -1 \\pm 2i.\n\\]\nThe correct option is A.",
+      "hint": "Compute the discriminant first; if it is negative, the square root introduces \\(i\\)."
+    },
+    {
+      "id": "algebra-09-q014",
+      "category": "Advanced Complex Numbers",
+      "concept": "Sum of Roots of a Quadratic",
+      "learningObjective": "Determine the sum of the roots of a quadratic equation using Vieta's formulas.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the sum of the roots of \\(z^2 - 6z + 13 = 0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(az^2 + bz + c = 0\\), the sum of the roots is \\(-\\frac{b}{a}\\).\nHere \\(a = 1\\), \\(b = -6\\), so\n\\[\n-\\frac{-6}{1} = 6.\n\\]\nThe correct option is B.",
+      "hint": "Use Vieta's formula: sum of roots equals \\(-b/a\\)."
+    },
+    {
+      "id": "algebra-09-q015",
+      "category": "Advanced Complex Numbers",
+      "concept": "Product of Roots of a Quadratic",
+      "learningObjective": "Determine the product of the roots of a quadratic equation using Vieta's formulas.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the product of the roots of \\(z^2 - 4z + 13 = 0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-13\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(13\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(az^2 + bz + c = 0\\), the product of the roots is \\(\\frac{c}{a}\\).\nHere \\(a = 1\\), \\(c = 13\\), so\n\\[\n\\frac{13}{1} = 13.\n\\]\nThe correct option is B.",
+      "hint": "Use Vieta's formula: product of roots equals \\(c/a\\)."
+    },
+    {
+      "id": "algebra-09-q016",
+      "category": "Advanced Complex Numbers",
+      "concept": "Modulus Properties",
+      "learningObjective": "Apply the multiplicative property of the modulus.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(|z| = 3\\), what is \\(|z^4|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(81\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The modulus is multiplicative: \\(|z^n| = |z|^n\\). Therefore\n\\[\n|z^4| = |z|^4 = 3^4 = 81.\n\\]\nThe correct option is B.",
+      "hint": "Use the property \\(|z^n| = |z|^n\\)."
+    },
+    {
+      "id": "algebra-09-q017",
+      "category": "Advanced Complex Numbers",
+      "concept": "Loci in the Complex Plane",
+      "learningObjective": "Identify the geometric locus of a circle equation in the complex plane.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Describe the locus of points \\(z\\) satisfying \\(|z - 3| = 5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "A circle centered at \\(3\\) with radius \\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "A circle centered at \\(-3\\) with radius \\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation \\(|z - z_0| = r\\) represents a circle centered at \\(z_0\\) with radius \\(r\\).\nHere \\(z_0 = 3\\) and \\(r = 5\\), so the locus is a circle centered at \\(3\\) with radius \\(5\\).\nThe correct option is A.",
+      "hint": "Compare with the general form \\(|z - z_0| = r\\)."
+    },
+    {
+      "id": "algebra-09-q018",
+      "category": "Advanced Complex Numbers",
+      "concept": "Loci in the Complex Plane",
+      "learningObjective": "Identify the locus of points equidistant from two conjugate imaginary points.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Describe the locus of \\(z\\) satisfying \\(|z - i| = |z + i|\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "The real axis"
+        },
+        {
+          "label": "B",
+          "text": "The imaginary axis"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(z = x + yi\\). Then \\(|z - i|^2 = x^2 + (y-1)^2\\) and \\(|z + i|^2 = x^2 + (y+1)^2\\).\nSetting them equal:\n\\[\nx^2 + (y-1)^2 = x^2 + (y+1)^2 \\implies -2y = 2y \\implies y = 0.\n\\]\nThus the locus is the real axis.\nThe correct option is A.",
+      "hint": "Write \\(z = x+yi\\) and square both sides to remove the modulus."
+    },
+    {
+      "id": "algebra-09-q019",
+      "category": "Advanced Complex Numbers",
+      "concept": "Powers of Complex Numbers",
+      "learningObjective": "Compute a fourth power of a complex number using repeated squaring.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\((1+i)^4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First, \\((1+i)^2 = 2i\\). Therefore\n\\[\n(1+i)^4 = \\left((1+i)^2\\right)^2 = (2i)^2 = 4i^2 = -4.\n\\]\nThe correct option is A.",
+      "hint": "Compute \\((1+i)^2\\) first, then square the result."
+    },
+    {
+      "id": "algebra-09-q020",
+      "category": "Advanced Complex Numbers",
+      "concept": "Conjugate Product",
+      "learningObjective": "Use the identity \\(z\\overline{z} = |z|^2\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "If \\(z = 3 + 4i\\), find \\(z\\overline{z}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(25\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(z\\overline{z} = |z|^2\\):\n\\[\nz\\overline{z} = 3^2 + 4^2 = 9 + 16 = 25.\n\\]\nThe correct option is A.",
+      "hint": "Recall that \\(z\\overline{z}\\) equals the square of the modulus."
+    },
+    {
+      "id": "algebra-09-q021",
+      "category": "Advanced Complex Numbers",
+      "concept": "Real Part of a Complex Product",
+      "learningObjective": "Determine the real part of the product of two complex numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the real part of \\((2+3i)(1-i)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Expand the product:\n\\[\n(2+3i)(1-i) = 2 - 2i + 3i - 3i^2 = 2 + i + 3 = 5 + i.\n\\]\nThe real part is \\(5\\).\nThe correct option is B.",
+      "hint": "Expand the product fully and identify the term without \\(i\\)."
+    },
+    {
+      "id": "algebra-09-q022",
+      "category": "Advanced Complex Numbers",
+      "concept": "Imaginary Part of a Complex Power",
+      "learningObjective": "Determine the imaginary part of a cube of a complex number.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the imaginary part of \\((1+i)^3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\((1+i)^2 = 2i\\),\n\\[\n(1+i)^3 = (1+i)^2(1+i) = 2i(1+i) = 2i + 2i^2 = -2 + 2i.\n\\]\nThe imaginary part is \\(2\\).\nThe correct option is B.",
+      "hint": "Use \\((1+i)^2 = 2i\\) first."
+    },
+    {
+      "id": "algebra-09-q023",
+      "category": "Advanced Complex Numbers",
+      "concept": "Equations Involving Conjugates",
+      "learningObjective": "Solve a linear equation involving a complex number and its conjugate.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find \\(z\\) if \\(z + 2\\overline{z} = 3 + i\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(z = 1 - i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(z = 1 + i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(z = a + bi\\), so \\(\\overline{z} = a - bi\\). Then\n\\[\nz + 2\\overline{z} = (a+bi) + 2(a-bi) = 3a - bi.\n\\]\nSetting this equal to \\(3 + i\\):\n\\[\n3a = 3 \\implies a = 1, \\qquad -b = 1 \\implies b = -1.\n\\]\nThus \\(z = 1 - i\\).\nThe correct option is A.",
+      "hint": "Write \\(z = a + bi\\) and equate the real and imaginary parts separately."
+    },
+    {
+      "id": "algebra-09-q024",
+      "category": "Advanced Complex Numbers",
+      "concept": "Square Roots of a Complex Number",
+      "learningObjective": "Find the square roots of a purely imaginary complex number.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find all \\(z\\) such that \\(z^2 = 2i\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(z = \\pm(1 - i)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(z = \\pm(1 + i)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(z = a + bi\\). Then \\(z^2 = a^2 - b^2 + 2abi = 2i\\). Equate real and imaginary parts:\n\\[\na^2 - b^2 = 0, \\qquad 2ab = 2.\n\\]\nFrom \\(a^2 = b^2\\), we get \\(a = b\\) or \\(a = -b\\). Since \\(ab = 1\\), we need \\(a = b\\), giving \\(a^2 = 1\\), so \\(a = b = \\pm 1\\).\nThus \\(z = \\pm(1+i)\\).\nThe correct option is B.",
+      "hint": "Write \\(z = a+bi\\) and equate real and imaginary parts of \\(z^2\\)."
+    },
+    {
+      "id": "algebra-09-q025",
+      "category": "Advanced Complex Numbers",
+      "concept": "Modulus of a Quotient",
+      "learningObjective": "Apply \\(|z_1/z_2| = |z_1|/|z_2|\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Compute \\(\\left|\\dfrac{6+8i}{1+i}\\right|\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\sqrt{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using \\(|z_1/z_2| = |z_1|/|z_2|\\):\n\\[\n|6+8i| = 10, \\qquad |1+i| = \\sqrt{2}.\n\\]\nTherefore\n\\[\n\\left|\\frac{6+8i}{1+i}\\right| = \\frac{10}{\\sqrt{2}} = 5\\sqrt{2}.\n\\]\nThe correct option is A.",
+      "hint": "Compute the modulus of the numerator and denominator separately."
+    },
+    {
+      "id": "algebra-09-q026",
+      "category": "Advanced Complex Numbers",
+      "concept": "Argument of a Product",
+      "learningObjective": "Apply the property \\(\\arg(z_1 z_2) = \\arg(z_1) + \\arg(z_2)\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(\\arg(z_1) = \\dfrac{\\pi}{4}\\) and \\(\\arg(z_2) = \\dfrac{\\pi}{3}\\), what is \\(\\arg(z_1 z_2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\dfrac{\\pi}{12}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\dfrac{7\\pi}{12}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For complex numbers,\n\\[\n\\arg(z_1 z_2) = \\arg(z_1) + \\arg(z_2) = \\frac{\\pi}{4} + \\frac{\\pi}{3} = \\frac{3\\pi}{12} + \\frac{4\\pi}{12} = \\frac{7\\pi}{12}.\n\\]\nThe correct option is B.",
+      "hint": "Add the two arguments together."
+    },
+    {
+      "id": "algebra-09-q027",
+      "category": "Advanced Complex Numbers",
+      "concept": "Trigonometric to Rectangular Form",
+      "learningObjective": "Convert a complex number in trigonometric form to rectangular form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Write \\(2\\left(\\cos\\dfrac{\\pi}{3} + i\\sin\\dfrac{\\pi}{3}\\right)\\) in rectangular form.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1 + i\\sqrt{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1 - i\\sqrt{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Evaluate the trigonometric functions:\n\\[\n\\cos\\frac{\\pi}{3} = \\frac{1}{2}, \\qquad \\sin\\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2}.\n\\]\nMultiplying by the modulus \\(2\\):\n\\[\n2\\cdot\\frac{1}{2} + 2\\cdot\\frac{\\sqrt{3}}{2}i = 1 + i\\sqrt{3}.\n\\]\nThe correct option is A.",
+      "hint": "Substitute the exact values of cosine and sine, then multiply by the modulus."
+    },
+    {
+      "id": "algebra-09-q028",
+      "category": "Advanced Complex Numbers",
+      "concept": "De Moivre's Theorem",
+      "learningObjective": "Apply De Moivre's theorem with a fraction of \\(2\\pi\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Compute \\(\\left(\\cos\\dfrac{2\\pi}{3} + i\\sin\\dfrac{2\\pi}{3}\\right)^{3}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By De Moivre's theorem,\n\\[\n\\left(\\cos\\frac{2\\pi}{3} + i\\sin\\frac{2\\pi}{3}\\right)^{3} = \\cos(2\\pi) + i\\sin(2\\pi) = 1 + 0i = 1.\n\\]\nThe correct option is B.",
+      "hint": "Multiply the angle \\(\\frac{2\\pi}{3}\\) by \\(3\\) and evaluate."
+    },
+    {
+      "id": "algebra-09-q029",
+      "category": "Advanced Complex Numbers",
+      "concept": "Cube Roots of Unity",
+      "learningObjective": "Use the property that the non-real cube roots of unity sum to \\(-1\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(\\omega\\) is a non-real cube root of unity, what is \\(\\omega + \\omega^{2}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The cube roots of unity satisfy \\(1 + \\omega + \\omega^{2} = 0\\). Hence\n\\[\n\\omega + \\omega^{2} = -1.\n\\]\nThe correct option is A.",
+      "hint": "Recall that \\(1 + \\omega + \\omega^{2} = 0\\)."
+    },
+    {
+      "id": "algebra-09-q030",
+      "category": "Advanced Complex Numbers",
+      "concept": "Geometric Interpretation of Multiplication",
+      "learningObjective": "Interpret multiplication by \\(i\\) as a rotation in the complex plane.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "What geometric transformation does multiplication by \\(i\\) represent in the complex plane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A rotation by \\(90^{\\circ}\\) counterclockwise"
+        },
+        {
+          "label": "B",
+          "text": "A reflection across the real axis"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiplying \\(z = re^{i\\theta}\\) by \\(i = e^{i\\pi/2}\\) gives \\(re^{i(\\theta + \\pi/2)}\\). The argument increases by \\(\\frac{\\pi}{2}\\), which corresponds to a rotation by \\(90^{\\circ}\\) counterclockwise.\nThe correct option is A.",
+      "hint": "Write \\(i\\) in polar form and examine what happens to the argument."
+    },
+    {
+      "id": "algebra-09-q031",
+      "category": "Advanced Complex Numbers",
+      "concept": "Complex Conjugate Root Theorem",
+      "learningObjective": "Identify a second root of a real polynomial given one complex root.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A polynomial with real coefficients has \\(2 + 3i\\) as a root. What other root must it also have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2 - 3i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2 + 3i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For polynomials with real coefficients, non-real roots occur in conjugate pairs. Since \\(2+3i\\) is a root, its conjugate \\(2-3i\\) must also be a root.\nThe correct option is A.",
+      "hint": "Use the complex conjugate root theorem for real polynomials."
+    },
+    {
+      "id": "algebra-09-q032",
+      "category": "Advanced Complex Numbers",
+      "concept": "Loci in the Complex Plane",
+      "learningObjective": "Identify the geometric region described by a complex inequality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Describe the region in the complex plane given by \\(|z - 1| \\le 3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "The circle of radius \\(3\\) centered at \\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "The closed disk of radius \\(3\\) centered at \\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The equation \\(|z - 1| = 3\\) describes a circle centered at \\(1\\) with radius \\(3\\). The inequality \\(|z - 1| \\le 3\\) includes all points inside or on that circle, which is the closed disk of radius \\(3\\) centered at \\(1\\).\nThe correct option is B.",
+      "hint": "Think about whether the inequality includes points inside the circle."
+    },
+    {
+      "id": "algebra-09-q033",
+      "category": "Advanced Complex Numbers",
+      "concept": "Subtraction of Complex Numbers",
+      "learningObjective": "Compute the difference of two complex numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(z_1 = 2 + 3i\\) and \\(z_2 = 4 - i\\), find \\(z_1 - z_2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2 - 4i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2 + 4i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtract componentwise:\n\\[\nz_1 - z_2 = (2 - 4) + (3 - (-1))i = -2 + 4i.\n\\]\nThe correct option is B.",
+      "hint": "Subtract the real parts and the imaginary parts separately."
+    },
+    {
+      "id": "algebra-09-q034",
+      "category": "Advanced Complex Numbers",
+      "concept": "Powers of Complex Numbers",
+      "learningObjective": "Square a complex number in rectangular form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\((1 - i)^2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Expand the square:\n\\[\n(1 - i)^2 = 1 - 2i + i^2 = 1 - 2i - 1 = -2i.\n\\]\nThe correct option is A.",
+      "hint": "Expand the square and replace \\(i^2\\) with \\(-1\\)."
+    },
+    {
+      "id": "algebra-09-q035",
+      "category": "Advanced Complex Numbers",
+      "concept": "Reciprocal of a Unit Complex Number",
+      "learningObjective": "Use the identity \\(z + z^{-1} = 2\\cos\\theta\\) for \\(z = \\cos\\theta + i\\sin\\theta\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(z = \\cos\\theta + i\\sin\\theta\\), what is \\(z + \\dfrac{1}{z}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\cos\\theta\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2i\\sin\\theta\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(z = e^{i\\theta}\\), we have \\(\\dfrac{1}{z} = e^{-i\\theta} = \\cos\\theta - i\\sin\\theta\\). Therefore\n\\[\nz + \\frac{1}{z} = (\\cos\\theta + i\\sin\\theta) + (\\cos\\theta - i\\sin\\theta) = 2\\cos\\theta.\n\\]\nThe correct option is A.",
+      "hint": "Use \\(1/z = \\overline{z}\\) when \\(|z| = 1\\)."
+    },
+    {
+      "id": "algebra-09-q036",
+      "category": "Advanced Complex Numbers",
+      "concept": "Unit Modulus Property",
+      "learningObjective": "Relate the conjugate and reciprocal of a unit modulus complex number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(|z| = 1\\) and \\(z \\neq 0\\), which expression is equal to \\(\\overline{z}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\dfrac{1}{z}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-z\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For any nonzero complex number, \\(z\\overline{z} = |z|^2\\). If \\(|z| = 1\\), then \\(z\\overline{z} = 1\\), so\n\\[\n\\overline{z} = \\frac{1}{z}.\n\\]\nThe correct option is A.",
+      "hint": "Start from \\(z\\overline{z} = |z|^2\\) and use \\(|z| = 1\\)."
+    },
+    {
+      "id": "algebra-09-q037",
+      "category": "Advanced Complex Numbers",
+      "concept": "Modulus of a Real Number",
+      "learningObjective": "Compute the modulus of a negative real number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(|-5|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The modulus of a real number is its absolute value, which is always non-negative. Hence\n\\[\n|-5| = 5.\n\\]\nThe correct option is A.",
+      "hint": "The modulus represents distance, so it cannot be negative."
+    },
+    {
+      "id": "algebra-09-q038",
+      "category": "Advanced Complex Numbers",
+      "concept": "Argument of a Complex Number",
+      "learningObjective": "Identify the principal argument of a negative real number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the principal argument of \\(z = -1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\pi\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The point \\(-1\\) lies on the negative real axis. Its principal argument is\n\\[\n\\arg(-1) = \\pi.\n\\]\nThe correct option is B.",
+      "hint": "Locate the point on the negative real axis and read the angle from the positive real axis."
+    },
+    {
+      "id": "algebra-09-q039",
+      "category": "Advanced Complex Numbers",
+      "concept": "Products in Polar Form",
+      "learningObjective": "Multiply two complex numbers given in polar form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(z_1 = 2\\left(\\cos\\dfrac{\\pi}{6} + i\\sin\\dfrac{\\pi}{6}\\right)\\) and \\(z_2 = 3\\left(\\cos\\dfrac{\\pi}{3} + i\\sin\\dfrac{\\pi}{3}\\right)\\). Compute \\(z_1 z_2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "When multiplying in polar form, multiply the moduli and add the arguments:\n\\[\nz_1 z_2 = 6\\left(\\cos\\left(\\frac{\\pi}{6}+\\frac{\\pi}{3}\\right) + i\\sin\\left(\\frac{\\pi}{6}+\\frac{\\pi}{3}\\right)\\right) = 6\\left(\\cos\\frac{\\pi}{2} + i\\sin\\frac{\\pi}{2}\\right) = 6i.\n\\]\nThe correct option is B.",
+      "hint": "Multiply the moduli and add the arguments."
+    },
+    {
+      "id": "algebra-09-q040",
+      "category": "Advanced Complex Numbers",
+      "concept": "Quotients in Polar Form",
+      "learningObjective": "Divide two complex numbers given in polar form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Compute \\(\\dfrac{8\\left(\\cos\\frac{2\\pi}{3} + i\\sin\\frac{2\\pi}{3}\\right)}{2\\left(\\cos\\frac{\\pi}{3} + i\\sin\\frac{\\pi}{3}\\right)}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2 + 2i\\sqrt{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2 - 2i\\sqrt{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide the moduli and subtract the arguments:\n\\[\n\\frac{8}{2}\\left(\\cos\\left(\\frac{2\\pi}{3} - \\frac{\\pi}{3}\\right) + i\\sin\\left(\\frac{2\\pi}{3} - \\frac{\\pi}{3}\\right)\\right) = 4\\left(\\cos\\frac{\\pi}{3} + i\\sin\\frac{\\pi}{3}\\right).\n\\]\nSince \\(\\cos\\frac{\\pi}{3} = \\frac{1}{2}\\) and \\(\\sin\\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2}\\),\n\\[\n4\\cdot\\frac{1}{2} + 4\\cdot\\frac{\\sqrt{3}}{2}i = 2 + 2i\\sqrt{3}.\n\\]\nThe correct option is A.",
+      "hint": "Divide the moduli and subtract the arguments."
+    },
+    {
+      "id": "algebra-09-q041",
+      "category": "Advanced Complex Numbers",
+      "concept": "De Moivre's Theorem",
+      "learningObjective": "Compute a high power of a complex number using polar form.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Compute \\((\\sqrt{3} + i)^{6}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-64\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(64\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Write \\(\\sqrt{3} + i = 2\\left(\\cos\\frac{\\pi}{6} + i\\sin\\frac{\\pi}{6}\\right)\\). Then\n\\[\n(\\sqrt{3}+i)^6 = 2^6\\left(\\cos\\frac{6\\pi}{6} + i\\sin\\frac{6\\pi}{6}\\right) = 64(\\cos\\pi + i\\sin\\pi) = 64(-1) = -64.\n\\]\nThe correct option is A.",
+      "hint": "First convert \\(\\sqrt{3}+i\\) to polar form, then apply De Moivre's theorem."
+    },
+    {
+      "id": "algebra-09-q042",
+      "category": "Advanced Complex Numbers",
+      "concept": "Roots of a Complex Equation",
+      "learningObjective": "Determine the number of distinct complex solutions of \\(z^n = c\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many distinct complex solutions does the equation \\(z^{4} = 16\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A polynomial equation of degree \\(n\\) has exactly \\(n\\) complex roots counted with multiplicity. Since \\(z^4 - 16 = 0\\) has degree \\(4\\), it has \\(4\\) distinct roots: \\(2, -2, 2i, -2i\\).\nThe correct option is A.",
+      "hint": "The fundamental theorem of algebra guarantees \\(n\\) roots for a degree-\\(n\\) polynomial."
+    },
+    {
+      "id": "algebra-09-q043",
+      "category": "Advanced Complex Numbers",
+      "concept": "Roots of Complex Numbers",
+      "learningObjective": "Identify a solution of a cubic equation with complex solutions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Which of the following is a solution of \\(z^{3} = 8i\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{3} - i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Write \\(8i = 8\\left(\\cos\\frac{\\pi}{2} + i\\sin\\frac{\\pi}{2}\\right)\\). Its cube roots have modulus \\(2\\) and arguments\n\\[\n\\frac{\\pi}{6}, \\quad \\frac{\\pi}{6} + \\frac{2\\pi}{3} = \\frac{5\\pi}{6}, \\quad \\frac{\\pi}{6} + \\frac{4\\pi}{3} = \\frac{3\\pi}{2}.\n\\]\nThe root with argument \\(\\frac{3\\pi}{2}\\) is \\(2\\left(\\cos\\frac{3\\pi}{2} + i\\sin\\frac{3\\pi}{2}\\right) = -2i\\).\nVerification: \\((-2i)^3 = -8i^3 = -8(-i) = 8i\\).\nThe correct option is B.",
+      "hint": "Convert \\(8i\\) to polar form and use the cube root formula."
+    },
+    {
+      "id": "algebra-09-q044",
+      "category": "Advanced Complex Numbers",
+      "concept": "Loci in the Complex Plane",
+      "learningObjective": "Identify the locus described by an argument equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "What is the locus of points \\(z\\) satisfying \\(\\arg(z - 1) = \\dfrac{\\pi}{4}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The full line through \\(1\\) with slope \\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "The ray starting at \\(1\\) with direction \\(\\frac{\\pi}{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The equation \\(\\arg(z - z_0) = \\theta\\) describes the ray starting at \\(z_0\\) in the direction of angle \\(\\theta\\). Here \\(z_0 = 1\\) and \\(\\theta = \\frac{\\pi}{4}\\), so the locus is the ray starting at \\(1\\) with direction \\(\\frac{\\pi}{4}\\).\nThe correct option is B.",
+      "hint": "Remember that an argument equation defines a ray, not a full line."
+    },
+    {
+      "id": "algebra-09-q045",
+      "category": "Advanced Complex Numbers",
+      "concept": "Powers in Polar Form",
+      "learningObjective": "Compute a cube of a complex number given in polar form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(z = 2\\left(\\cos 30^{\\circ} + i\\sin 30^{\\circ}\\right)\\), compute \\(z^{3}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By De Moivre's theorem,\n\\[\nz^3 = 2^3\\left(\\cos(3 \\cdot 30^{\\circ}) + i\\sin(3 \\cdot 30^{\\circ})\\right) = 8(\\cos 90^{\\circ} + i\\sin 90^{\\circ}) = 8i.\n\\]\nThe correct option is A.",
+      "hint": "Cube the modulus and triple the angle."
+    },
+    {
+      "id": "algebra-09-q046",
+      "category": "Advanced Complex Numbers",
+      "concept": "Triangle Inequality",
+      "learningObjective": "State the triangle inequality for complex numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For complex numbers \\(z_1\\) and \\(z_2\\), which inequality is always true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(|z_1 + z_2| \\le |z_1| + |z_2|\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(|z_1 + z_2| \\ge |z_1| + |z_2|\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The triangle inequality states that for any complex numbers,\n\\[\n|z_1 + z_2| \\le |z_1| + |z_2|.\n\\]\nEquality holds when \\(z_1\\) and \\(z_2\\) have the same argument.\nThe correct option is A.",
+      "hint": "Recall the geometric interpretation of the modulus as a length."
+    },
+    {
+      "id": "algebra-09-q047",
+      "category": "Advanced Complex Numbers",
+      "concept": "Distance Between Complex Numbers",
+      "learningObjective": "Compute the distance between two points in the complex plane.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the distance between the points \\(z_1 = 1 + 2i\\) and \\(z_2 = 4 - 2i\\) in the complex plane.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The distance is \\(|z_1 - z_2|\\):\n\\[\nz_1 - z_2 = (1-4) + (2-(-2))i = -3 + 4i,\n\\]\nso\n\\[\n|z_1 - z_2| = \\sqrt{(-3)^2 + 4^2} = \\sqrt{9+16} = 5.\n\\]\nThe correct option is B.",
+      "hint": "Use the modulus of the difference of the two complex numbers."
+    },
+    {
+      "id": "algebra-09-q048",
+      "category": "Advanced Complex Numbers",
+      "concept": "Solving Complex Equations",
+      "learningObjective": "Determine real parameters \\(x\\) and \\(y\\) in a complex equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "If \\((x + yi)(2 + i) = 3 + 4i\\) with \\(x, y\\) real, what is the value of \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Expand the left side:\n\\[\n(x+yi)(2+i) = 2x + xi + 2yi + yi^2 = (2x - y) + (x + 2y)i.\n\\]\nEquate real and imaginary parts with \\(3+4i\\):\n\\[\n2x - y = 3, \\qquad x + 2y = 4.\n\\]\nFrom the first equation, \\(y = 2x - 3\\). Substituting into the second:\n\\[\nx + 2(2x - 3) = 4 \\implies 5x - 6 = 4 \\implies x = 2.\n\\]\nThe correct option is B.",
+      "hint": "Expand and compare the real and imaginary parts."
+    },
+    {
+      "id": "algebra-09-q049",
+      "category": "Advanced Complex Numbers",
+      "concept": "Evaluating Complex Expressions",
+      "learningObjective": "Evaluate a quadratic expression in a complex number.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(z = 1 + i\\), compute \\(z^{2} + 2z\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2 + 4i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2 - 4i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First, \\(z^2 = (1+i)^2 = 2i\\). Also \\(2z = 2 + 2i\\). Therefore\n\\[\nz^2 + 2z = 2i + 2 + 2i = 2 + 4i.\n\\]\nThe correct option is A.",
+      "hint": "Compute \\(z^2\\) first, then add \\(2z\\)."
+    },
+    {
+      "id": "algebra-09-q050",
+      "category": "Advanced Complex Numbers",
+      "concept": "Powers of Unit Complex Numbers",
+      "learningObjective": "Simplify a product of powers and conjugates of a unit complex number.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "If \\(|z| = 1\\), simplify \\(z^{5}\\overline{z}^{3}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(z^{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(z^{8}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(|z| = 1\\), we have \\(\\overline{z} = z^{-1}\\). Therefore\n\\[\n\\overline{z}^{3} = z^{-3},\n\\]\nso\n\\[\nz^{5}\\overline{z}^{3} = z^{5} \\cdot z^{-3} = z^{2}.\n\\]\nThe correct option is A.",
+      "hint": "Use \\(\\overline{z} = 1/z\\) for \\(|z| = 1\\)."
+    },
+    {
+      "id": "algebra-09-q051",
+      "category": "Advanced Complex Numbers",
+      "concept": "Modulus of a Quotient",
+      "learningObjective": "Compute the modulus of a complex quotient.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute the modulus of \\(z = \\dfrac{1+i}{1-i}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Simplify:\n\\[\n\\frac{1+i}{1-i} = \\frac{(1+i)^2}{(1-i)(1+i)} = \\frac{2i}{2} = i.\n\\]\nThen \\(|z| = |i| = 1\\).\nThe correct option is A.",
+      "hint": "Simplify the quotient by multiplying by the conjugate of the denominator."
+    },
+    {
+      "id": "algebra-09-q052",
+      "category": "Advanced Complex Numbers",
+      "concept": "Principal Argument",
+      "learningObjective": "Determine the principal argument of a complex number in the first quadrant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the principal argument of \\(z = 1 + i\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\dfrac{3\\pi}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\dfrac{\\pi}{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(1+i\\) lies in the first quadrant with equal real and imaginary parts, its argument is\n\\[\n\\arg(1+i) = \\frac{\\pi}{4}.\n\\]\nThe correct option is B.",
+      "hint": "Locate the point in the first quadrant and use \\(\\tan\\theta = b/a\\)."
+    },
+    {
+      "id": "algebra-09-q053",
+      "category": "Advanced Complex Numbers",
+      "concept": "Modulus of Complex Roots",
+      "learningObjective": "Determine the modulus of the roots of a quadratic equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "The equation \\(z^{2} + z + 1 = 0\\) has two complex roots. What is the modulus of each root?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The roots are\n\\[\nz = \\frac{-1 \\pm \\sqrt{1-4}}{2} = \\frac{-1 \\pm i\\sqrt{3}}{2}.\n\\]\nFor each root,\n\\[\n|z| = \\sqrt{\\left(-\\frac{1}{2}\\right)^2 + \\left(\\frac{\\sqrt{3}}{2}\\right)^2} = \\sqrt{\\frac{1}{4} + \\frac{3}{4}} = 1.\n\\]\nThe correct option is A.",
+      "hint": "Compute the roots with the quadratic formula, then find each modulus."
+    },
+    {
+      "id": "algebra-09-q054",
+      "category": "Advanced Complex Numbers",
+      "concept": "Modulus of a Power",
+      "learningObjective": "Compute the modulus of a power of a complex number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(|z| = 2\\), what is \\(|z^{3}|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using \\(|z^n| = |z|^n\\),\n\\[\n|z^3| = 2^3 = 8.\n\\]\nThe correct option is A.",
+      "hint": "Cube the given modulus."
+    },
+    {
+      "id": "algebra-09-q055",
+      "category": "Advanced Complex Numbers",
+      "concept": "Conjugate Products",
+      "learningObjective": "Multiply a complex number by its conjugate.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\((2+i)(2-i)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the difference of squares:\n\\[\n(2+i)(2-i) = 2^2 - (i)^2 = 4 - (-1) = 5.\n\\]\nThe correct option is A.",
+      "hint": "Apply \\((a+bi)(a-bi) = a^2 + b^2\\)."
+    },
+    {
+      "id": "algebra-09-q056",
+      "category": "Advanced Complex Numbers",
+      "concept": "Sum with Conjugate",
+      "learningObjective": "Compute the sum of a complex number and its conjugate.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(z = 1 + i\\), what is \\(z + \\overline{z}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(\\overline{z} = 1 - i\\),\n\\[\nz + \\overline{z} = (1+i) + (1-i) = 2.\n\\]\nThe correct option is A.",
+      "hint": "The imaginary parts cancel when adding a number and its conjugate."
+    },
+    {
+      "id": "algebra-09-q057",
+      "category": "Advanced Complex Numbers",
+      "concept": "De Moivre's Theorem",
+      "learningObjective": "Apply De Moivre's theorem with a \\(45^{\\circ}\\) angle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\(\\left(\\cos 45^{\\circ} + i\\sin 45^{\\circ}\\right)^{4}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By De Moivre's theorem,\n\\[\n\\left(\\cos 45^{\\circ} + i\\sin 45^{\\circ}\\right)^4 = \\cos 180^{\\circ} + i\\sin 180^{\\circ} = -1.\n\\]\nThe correct option is B.",
+      "hint": "Multiply the angle \\(45^{\\circ}\\) by \\(4\\)."
+    },
+    {
+      "id": "algebra-09-q058",
+      "category": "Advanced Complex Numbers",
+      "concept": "Sum with Conjugate",
+      "learningObjective": "Compute the sum of a complex number and its conjugate.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(z = 3 - 4i\\), what is \\(z + \\overline{z}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Here \\(\\overline{z} = 3 + 4i\\), so\n\\[\nz + \\overline{z} = (3-4i) + (3+4i) = 6.\n\\]\nThe correct option is A.",
+      "hint": "Add the real parts and observe that the imaginary parts cancel."
+    },
+    {
+      "id": "algebra-09-q059",
+      "category": "Advanced Complex Numbers",
+      "concept": "Loci in the Complex Plane",
+      "learningObjective": "Identify the center of a circle given by a complex equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the center of the circle described by \\(|z - 2i| = 3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation \\(|z - z_0| = r\\) represents a circle centered at \\(z_0\\). Here \\(z_0 = 2i\\), so the center is \\(2i\\).\nThe correct option is A.",
+      "hint": "Compare the equation with the general form \\(|z - z_0| = r\\)."
+    },
+    {
+      "id": "algebra-09-q060",
+      "category": "Advanced Complex Numbers",
+      "concept": "Conjugate of a Quotient",
+      "learningObjective": "Compute the conjugate of a complex quotient.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Compute the conjugate of \\(\\dfrac{1+i}{2-i}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\dfrac{1}{5} - \\dfrac{3}{5}i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\dfrac{1}{5} + \\dfrac{3}{5}i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First simplify:\n\\[\n\\frac{1+i}{2-i} = \\frac{(1+i)(2+i)}{(2-i)(2+i)} = \\frac{2 + i + 2i + i^2}{5} = \\frac{1 + 3i}{5} = \\frac{1}{5} + \\frac{3}{5}i.\n\\]\nTaking the conjugate reverses the sign of the imaginary part:\n\\[\n\\overline{\\frac{1+i}{2-i}} = \\frac{1}{5} - \\frac{3}{5}i.\n\\]\nThe correct option is A.",
+      "hint": "Simplify the quotient first, then take the conjugate."
+    },
+    {
+      "id": "algebra-09-q061",
+      "category": "Advanced Complex Numbers",
+      "concept": "Roots of Unity",
+      "learningObjective": "Determine the number of complex solutions of \\(z^n = 1\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many distinct complex solutions does \\(z^{3} = 1\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The equation \\(z^3 - 1 = 0\\) has degree \\(3\\), so it has \\(3\\) distinct complex roots: \\(1\\), \\(\\omega\\), and \\(\\omega^2\\), where \\(\\omega\\) is a non-real cube root of unity.\nThe correct option is B.",
+      "hint": "A degree-\\(n\\) polynomial equation has exactly \\(n\\) complex roots."
+    },
+    {
+      "id": "algebra-09-q062",
+      "category": "Advanced Complex Numbers",
+      "concept": "Squaring Complex Numbers",
+      "learningObjective": "Compute the square of a complex number in rectangular form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(z = 2 - i\\), compute \\(z^{2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3 - 4i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3 + 4i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\[\n(2-i)^2 = 4 - 4i + i^2 = 4 - 4i - 1 = 3 - 4i.\n\\]\nThe correct option is A.",
+      "hint": "Expand using \\((a-b)^2 = a^2 - 2ab + b^2\\)."
+    },
+    {
+      "id": "algebra-09-q063",
+      "category": "Advanced Complex Numbers",
+      "concept": "Powers of the Imaginary Unit",
+      "learningObjective": "Evaluate a sum of powers of \\(i\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\(i^{2} + i^{4}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(i^2 = -1\\) and \\(i^4 = (i^2)^2 = 1\\),\n\\[\ni^2 + i^4 = -1 + 1 = 0.\n\\]\nThe correct option is B.",
+      "hint": "Recall that \\(i^2 = -1\\) and \\(i^4 = 1\\)."
+    },
+    {
+      "id": "algebra-09-q064",
+      "category": "Advanced Complex Numbers",
+      "concept": "Solving Complex Linear Equations",
+      "learningObjective": "Solve a linear equation involving a complex number.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(z\\) if \\(z(1+i) = 2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1 - i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1 + i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide both sides by \\(1+i\\):\n\\[\nz = \\frac{2}{1+i} = \\frac{2(1-i)}{(1+i)(1-i)} = \\frac{2(1-i)}{2} = 1 - i.\n\\]\nThe correct option is A.",
+      "hint": "Multiply the numerator and denominator by the conjugate of \\(1+i\\)."
+    },
+    {
+      "id": "algebra-09-q065",
+      "category": "Advanced Complex Numbers",
+      "concept": "Modulus of a Product",
+      "learningObjective": "Apply \\(|z_1 z_2| = |z_1||z_2|\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Compute \\(|(3-4i)(5+12i)|\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(65\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the multiplicative property of the modulus:\n\\[\n|3-4i| = \\sqrt{9+16} = 5, \\qquad |5+12i| = \\sqrt{25+144} = 13.\n\\]\nTherefore\n\\[\n|(3-4i)(5+12i)| = 5 \\cdot 13 = 65.\n\\]\nThe correct option is A.",
+      "hint": "Find the modulus of each factor first."
+    },
+    {
+      "id": "algebra-09-q066",
+      "category": "Advanced Complex Numbers",
+      "concept": "Polar to Rectangular Form",
+      "learningObjective": "Convert a complex number given in polar form to rectangular form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Write \\(4\\left(\\cos\\pi + i\\sin\\pi\\right)\\) in rectangular form.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(\\cos\\pi = -1\\) and \\(\\sin\\pi = 0\\),\n\\[\n4(\\cos\\pi + i\\sin\\pi) = 4(-1 + 0i) = -4.\n\\]\nThe correct option is A.",
+      "hint": "Evaluate cosine and sine at \\(\\pi\\)."
+    },
+    {
+      "id": "algebra-09-q067",
+      "category": "Advanced Complex Numbers",
+      "concept": "Quotients in Polar Form",
+      "learningObjective": "Divide complex numbers given in polar form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Given \\(z_1 = \\cos\\dfrac{\\pi}{2} + i\\sin\\dfrac{\\pi}{2}\\) and \\(z_2 = \\cos\\dfrac{\\pi}{4} + i\\sin\\dfrac{\\pi}{4}\\), compute \\(\\dfrac{z_1}{z_2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\cos\\dfrac{3\\pi}{4} + i\\sin\\dfrac{3\\pi}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\cos\\dfrac{\\pi}{4} + i\\sin\\dfrac{\\pi}{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Dividing in polar form subtracts the arguments:\n\\[\n\\frac{z_1}{z_2} = \\cos\\left(\\frac{\\pi}{2} - \\frac{\\pi}{4}\\right) + i\\sin\\left(\\frac{\\pi}{2} - \\frac{\\pi}{4}\\right) = \\cos\\frac{\\pi}{4} + i\\sin\\frac{\\pi}{4}.\n\\]\nThe correct option is B.",
+      "hint": "Subtract the argument of the denominator from the argument of the numerator."
+    },
+    {
+      "id": "algebra-09-q068",
+      "category": "Advanced Complex Numbers",
+      "concept": "Square Roots of a Complex Number",
+      "learningObjective": "Determine the sum of the two square roots of a complex number.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(z_1\\) and \\(z_2\\) are the two square roots of a nonzero complex number \\(w\\), what is \\(z_1 + z_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(w\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The two square roots of \\(w\\) are opposites of each other: if \\(z_1^2 = w\\), then \\((-z_1)^2 = w\\), so \\(z_2 = -z_1\\). Therefore\n\\[\nz_1 + z_2 = z_1 - z_1 = 0.\n\\]\nThe correct option is A.",
+      "hint": "Consider the relationship between the two square roots of a number."
+    },
+    {
+      "id": "algebra-09-q069",
+      "category": "Advanced Complex Numbers",
+      "concept": "Purely Imaginary Numbers",
+      "learningObjective": "Characterize complex numbers satisfying \\(z + \\overline{z} = 0\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(z + \\overline{z} = 0\\) and \\(z \\neq 0\\), what type of complex number is \\(z\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Purely imaginary"
+        },
+        {
+          "label": "B",
+          "text": "A positive real number"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Write \\(z = a + bi\\). Then \\(z + \\overline{z} = 2a = 0\\), so \\(a = 0\\). Since \\(z \\neq 0\\), we have \\(b \\neq 0\\). Thus \\(z = bi\\) is purely imaginary.\nThe correct option is A.",
+      "hint": "Write \\(z = a + bi\\) and compute \\(z + \\overline{z}\\)."
+    },
+    {
+      "id": "algebra-09-q070",
+      "category": "Advanced Complex Numbers",
+      "concept": "Maximum Modulus on a Circle",
+      "learningObjective": "Determine the maximum value of \\(|z|\\) on a circle in the complex plane.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The complex number \\(z\\) satisfies \\(|z - i| = 2\\). What is the maximum possible value of \\(|z|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The locus \\(|z - i| = 2\\) is a circle centered at \\(i\\) with radius \\(2\\). The maximum distance from the origin to a point on this circle equals the distance from the origin to the center plus the radius:\n\\[\n|i| + 2 = 1 + 2 = 3.\n\\]\nThe correct option is A.",
+      "hint": "Use the geometry of a circle in the complex plane."
+    },
+    {
+      "id": "algebra-09-q071",
+      "category": "Advanced Sequences",
+      "concept": "Arithmetic Sequence General Term",
+      "learningObjective": "Compute a term of an arithmetic sequence using its general formula.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An arithmetic sequence has first term \\(5\\) and common difference \\(3\\). Find the \\(10\\)th term.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(29\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(32\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The general term of an arithmetic sequence is \\(a_n = a_1 + (n-1)d\\). Therefore\n\\[\na_{10} = 5 + 9 \\cdot 3 = 5 + 27 = 32.\n\\]\nThe correct option is B.",
+      "hint": "Use \\(a_n = a_1 + (n-1)d\\)."
+    },
+    {
+      "id": "algebra-09-q072",
+      "category": "Advanced Sequences",
+      "concept": "Sum of an Arithmetic Series",
+      "learningObjective": "Compute the sum of an arithmetic series.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum \\(2 + 5 + 8 + \\cdots + 29\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(150\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(155\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "This is an arithmetic series with \\(a_1 = 2\\), \\(d = 3\\), and last term \\(29\\). Find \\(n\\):\n\\[\n29 = 2 + (n-1)3 \\implies 27 = 3(n-1) \\implies n = 10.\n\\]\nThe sum is\n\\[\nS_{10} = \\frac{10(2+29)}{2} = 5 \\cdot 31 = 155.\n\\]\nThe correct option is B.",
+      "hint": "First determine the number of terms, then apply the sum formula."
+    },
+    {
+      "id": "algebra-09-q073",
+      "category": "Advanced Sequences",
+      "concept": "Geometric Sequence General Term",
+      "learningObjective": "Compute a term of a geometric sequence using its general formula.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The geometric sequence \\(3, 6, 12, \\ldots\\) has common ratio \\(2\\). Find its \\(6\\)th term.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(48\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(96\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The general term is \\(a_n = a_1 r^{n-1}\\). Thus\n\\[\na_6 = 3 \\cdot 2^{5} = 3 \\cdot 32 = 96.\n\\]\nThe correct option is B.",
+      "hint": "Use \\(a_n = a_1 r^{n-1}\\)."
+    },
+    {
+      "id": "algebra-09-q074",
+      "category": "Advanced Sequences",
+      "concept": "Sum of a Geometric Series",
+      "learningObjective": "Compute a finite geometric sum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\(1 + 2 + 4 + \\cdots + 2^{8}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(255\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(511\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "This is a geometric series with \\(a_1 = 1\\), \\(r = 2\\), and \\(9\\) terms (from \\(2^0\\) to \\(2^8\\)). The sum is\n\\[\nS_9 = \\frac{1(2^{9} - 1)}{2-1} = 2^9 - 1 = 512 - 1 = 511.\n\\]\nThe correct option is B.",
+      "hint": "Use \\(S_n = \\dfrac{a(r^n - 1)}{r-1}\\) with \\(n = 9\\)."
+    },
+    {
+      "id": "algebra-09-q075",
+      "category": "Advanced Sequences",
+      "concept": "Infinite Geometric Series",
+      "learningObjective": "Compute the sum of an infinite convergent geometric series.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the sum of the infinite geometric series \\(3 + 1 + \\dfrac{1}{3} + \\cdots\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\dfrac{9}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Here \\(a = 3\\) and \\(r = \\dfrac{1}{3}\\). Since \\(|r| < 1\\), the sum converges to\n\\[\nS = \\frac{a}{1-r} = \\frac{3}{1 - \\frac{1}{3}} = \\frac{3}{\\frac{2}{3}} = \\frac{9}{2}.\n\\]\nThe correct option is B.",
+      "hint": "Use \\(S = \\dfrac{a}{1-r}\\) for \\(|r| < 1\\)."
+    },
+    {
+      "id": "algebra-09-q076",
+      "category": "Advanced Sequences",
+      "concept": "Limit of a Sequence",
+      "learningObjective": "Determine the limit of a rational sequence as \\(n \\to \\infty\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\displaystyle\\lim_{n\\to\\infty} \\frac{2n+1}{n+3}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\infty\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide numerator and denominator by \\(n\\):\n\\[\n\\frac{2n+1}{n+3} = \\frac{2 + \\frac{1}{n}}{1 + \\frac{3}{n}}.\n\\]\nAs \\(n \\to \\infty\\), both \\(\\frac{1}{n}\\) and \\(\\frac{3}{n}\\) tend to \\(0\\), so the limit is\n\\[\n\\frac{2}{1} = 2.\n\\]\nThe correct option is A.",
+      "hint": "Divide numerator and denominator by \\(n\\)."
+    },
+    {
+      "id": "algebra-09-q077",
+      "category": "Advanced Sequences",
+      "concept": "Recursive Sequences",
+      "learningObjective": "Compute a term of a recursively defined arithmetic sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A sequence is defined by \\(a_1 = 2\\) and \\(a_{n+1} = a_n + 4\\). Find \\(a_5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(14\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(18\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute each term in turn:\n\\[\na_2 = 6, \\quad a_3 = 10, \\quad a_4 = 14, \\quad a_5 = 18.\n\\]\nThe correct option is B.",
+      "hint": "Apply the recurrence one step at a time."
+    },
+    {
+      "id": "algebra-09-q078",
+      "category": "Advanced Sequences",
+      "concept": "Recursive Sequences",
+      "learningObjective": "Compute a term of a linear recurrence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(a_1 = 1\\) and \\(a_{n+1} = 2a_n + 1\\). Find \\(a_4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute iteratively:\n\\[\na_2 = 2(1)+1 = 3, \\quad a_3 = 2(3)+1 = 7, \\quad a_4 = 2(7)+1 = 15.\n\\]\nThe correct option is B.",
+      "hint": "Use each term to compute the next."
+    },
+    {
+      "id": "algebra-09-q079",
+      "category": "Advanced Sequences",
+      "concept": "Fibonacci-Type Recurrence",
+      "learningObjective": "Compute a term of a second-order recurrence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(a_1 = 1\\), \\(a_2 = 1\\), and \\(a_n = a_{n-1} + a_{n-2}\\) for \\(n \\ge 3\\). Find \\(a_7\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(13\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute the sequence:\n\\[\na_3 = 2, \\quad a_4 = 3, \\quad a_5 = 5, \\quad a_6 = 8, \\quad a_7 = 13.\n\\]\nThe correct option is B.",
+      "hint": "Each term is the sum of the two preceding terms."
+    },
+    {
+      "id": "algebra-09-q080",
+      "category": "Advanced Sequences",
+      "concept": "Monotonicity",
+      "learningObjective": "Determine whether a given sequence is increasing or decreasing.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Is the sequence \\(a_n = \\dfrac{n}{n+1}\\) increasing or decreasing?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Increasing"
+        },
+        {
+          "label": "B",
+          "text": "Decreasing"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Consider\n\\[\na_{n+1} - a_n = \\frac{n+1}{n+2} - \\frac{n}{n+1} = \\frac{(n+1)^2 - n(n+2)}{(n+2)(n+1)} = \\frac{1}{(n+2)(n+1)} > 0.\n\\]\nSince each difference is positive, the sequence is increasing.\nThe correct option is A.",
+      "hint": "Examine the sign of \\(a_{n+1} - a_n\\)."
+    },
+    {
+      "id": "algebra-09-q081",
+      "category": "Advanced Sequences",
+      "concept": "Boundedness",
+      "learningObjective": "Determine whether a given sequence is bounded.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Is the sequence \\(a_n = (-1)^{n}\\) bounded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, it is unbounded"
+        },
+        {
+          "label": "B",
+          "text": "Yes, it is bounded"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every term of the sequence is either \\(1\\) or \\(-1\\), so \\(|a_n| = 1\\) for all \\(n\\). Hence the sequence is bounded (between \\(-1\\) and \\(1\\)).\nThe correct option is B.",
+      "hint": "Check the range of values the terms can take."
+    },
+    {
+      "id": "algebra-09-q082",
+      "category": "Advanced Sequences",
+      "concept": "Sum of an Arithmetic Series",
+      "learningObjective": "Use the arithmetic sum formula with given first term and common difference.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For an arithmetic sequence with first term \\(3\\) and common difference \\(4\\), find the sum of the first \\(5\\) terms.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(55\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(50\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the formula\n\\[\nS_n = \\frac{n}{2}\\left(2a_1 + (n-1)d\\right).\n\\]\nSubstituting \\(n = 5\\), \\(a_1 = 3\\), \\(d = 4\\):\n\\[\nS_5 = \\frac{5}{2}\\left(6 + 16\\right) = \\frac{5}{2} \\cdot 22 = 55.\n\\]\nThe correct option is A.",
+      "hint": "Use \\(S_n = \\dfrac{n}{2}(2a_1 + (n-1)d)\\)."
+    },
+    {
+      "id": "algebra-09-q083",
+      "category": "Advanced Sequences",
+      "concept": "Telescoping Series",
+      "learningObjective": "Evaluate a telescoping sum of the form \\(\\sum \\frac{1}{k(k+1)}\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Compute \\(\\displaystyle\\sum_{k=1}^{9} \\frac{1}{k(k+1)}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\dfrac{9}{10}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\dfrac{1}{10}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use partial fractions:\n\\[\n\\frac{1}{k(k+1)} = \\frac{1}{k} - \\frac{1}{k+1}.\n\\]\nThe sum telescopes:\n\\[\n\\sum_{k=1}^{9}\\left(\\frac{1}{k} - \\frac{1}{k+1}\\right) = 1 - \\frac{1}{10} = \\frac{9}{10}.\n\\]\nThe correct option is A.",
+      "hint": "Write each term as the difference of two fractions."
+    },
+    {
+      "id": "algebra-09-q084",
+      "category": "Advanced Sequences",
+      "concept": "Geometric Mean",
+      "learningObjective": "Compute the geometric mean of two positive numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the geometric mean of \\(4\\) and \\(16\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The geometric mean of \\(a\\) and \\(b\\) is \\(\\sqrt{ab}\\). Here\n\\[\n\\sqrt{4 \\cdot 16} = \\sqrt{64} = 8.\n\\]\nThe correct option is A.",
+      "hint": "Use the formula \\(\\sqrt{ab}\\)."
+    },
+    {
+      "id": "algebra-09-q085",
+      "category": "Advanced Sequences",
+      "concept": "Arithmetic Sequence Applications",
+      "learningObjective": "Use the arithmetic mean property to find a missing term.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Three numbers form an arithmetic sequence whose arithmetic mean is \\(12\\). If the first number is \\(8\\), what is the third number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(14\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If the arithmetic mean of the three numbers is \\(12\\), their sum is \\(3 \\cdot 12 = 36\\). Let the numbers be \\(8, 12, x\\). Then\n\\[\n8 + 12 + x = 36 \\implies x = 16.\n\\]\nThe correct option is B.",
+      "hint": "The sum of three numbers equals three times their arithmetic mean."
+    },
+    {
+      "id": "algebra-09-q086",
+      "category": "Advanced Sequences",
+      "concept": "Recursive Sequences",
+      "learningObjective": "Compute a term of a geometric recurrence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(a_1 = 5\\) and \\(a_{n+1} = 3a_n\\). Find \\(a_4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(45\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(135\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute iteratively:\n\\[\na_2 = 15, \\quad a_3 = 45, \\quad a_4 = 135.\n\\]\nThe correct option is B.",
+      "hint": "Multiply by \\(3\\) at each step."
+    },
+    {
+      "id": "algebra-09-q087",
+      "category": "Advanced Sequences",
+      "concept": "Convergence of Sequences",
+      "learningObjective": "Determine the limit of a simple convergent sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Does the sequence \\(a_n = \\dfrac{1}{n}\\) converge, and if so, to what value?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It diverges"
+        },
+        {
+          "label": "B",
+          "text": "It converges to \\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "As \\(n\\) increases without bound, \\(\\dfrac{1}{n}\\) becomes arbitrarily close to \\(0\\). Hence the sequence converges to \\(0\\).\nThe correct option is B.",
+      "hint": "Think about what happens to \\(1/n\\) as \\(n\\) grows very large."
+    },
+    {
+      "id": "algebra-09-q088",
+      "category": "Advanced Sequences",
+      "concept": "Sequence Inequalities",
+      "learningObjective": "Determine the smallest index satisfying a linear inequality in a sequence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For the sequence \\(a_n = 3n - 2\\), find the smallest \\(n\\) such that \\(a_n > 100\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(34\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(35\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Solve the inequality:\n\\[\n3n - 2 > 100 \\implies 3n > 102 \\implies n > 34.\n\\]\nThe smallest integer satisfying this is \\(n = 35\\).\nThe correct option is B.",
+      "hint": "Solve the inequality for \\(n\\) and take the smallest integer greater than the boundary."
+    },
+    {
+      "id": "algebra-09-q089",
+      "category": "Advanced Sequences",
+      "concept": "Sum of a Geometric Series",
+      "learningObjective": "Compute a finite geometric sum using the standard formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute the sum of the first \\(4\\) terms of the geometric sequence with first term \\(2\\) and common ratio \\(3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(40\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(80\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use\n\\[\nS_n = \\frac{a(r^n - 1)}{r - 1} = \\frac{2(3^4 - 1)}{3 - 1} = \\frac{2(81-1)}{2} = 80.\n\\]\nThe correct option is B.",
+      "hint": "Use \\(S_n = \\dfrac{a(r^n - 1)}{r-1}\\)."
+    },
+    {
+      "id": "algebra-09-q090",
+      "category": "Advanced Sequences",
+      "concept": "Monotonicity",
+      "learningObjective": "Determine the monotonicity of a sequence defined by a sum of powers.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Is the sequence \\(a_n = 2^{n} + 3^{n}\\) increasing or decreasing?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Increasing"
+        },
+        {
+          "label": "B",
+          "text": "Decreasing"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For each \\(n\\),\n\\[\na_{n+1} - a_n = (2^{n+1} + 3^{n+1}) - (2^{n} + 3^{n}) = 2^{n} + 2 \\cdot 3^{n} > 0.\n\\]\nSince every difference is positive, the sequence is increasing.\nThe correct option is A.",
+      "hint": "Compare \\(a_{n+1}\\) and \\(a_n\\)."
+    },
+    {
+      "id": "algebra-09-q091",
+      "category": "Advanced Sequences",
+      "concept": "Limit of a Rational Sequence",
+      "learningObjective": "Determine the limit of a rational sequence at infinity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\displaystyle\\lim_{n\\to\\infty} \\frac{3n^{2} + 2}{n^{2} + 1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Divide numerator and denominator by \\(n^2\\):\n\\[\n\\frac{3 + \\frac{2}{n^2}}{1 + \\frac{1}{n^2}}.\n\\]\nAs \\(n\\to\\infty\\), the fractions tend to \\(0\\), so the limit is \\(\\dfrac{3}{1} = 3\\).\nThe correct option is B.",
+      "hint": "Divide numerator and denominator by the highest power of \\(n\\)."
+    },
+    {
+      "id": "algebra-09-q092",
+      "category": "Advanced Sequences",
+      "concept": "Recursive Sequences",
+      "learningObjective": "Compute a term of a halving recurrence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(a_1 = 8\\) and \\(a_{n+1} = \\dfrac{a_n}{2}\\). Find \\(a_4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Compute iteratively:\n\\[\na_2 = 4, \\quad a_3 = 2, \\quad a_4 = 1.\n\\]\nThe correct option is A.",
+      "hint": "Halve the value at each step."
+    },
+    {
+      "id": "algebra-09-q093",
+      "category": "Advanced Sequences",
+      "concept": "Sum of Odd Integers",
+      "learningObjective": "Compute the sum of the first \\(n\\) odd integers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum of the first \\(20\\) positive odd integers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(400\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(380\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sum of the first \\(n\\) odd integers is \\(n^2\\). Thus\n\\[\n1 + 3 + 5 + \\cdots + 39 = 20^2 = 400.\n\\]\nThe correct option is A.",
+      "hint": "Recall that the sum of the first \\(n\\) odd integers equals \\(n^2\\)."
+    },
+    {
+      "id": "algebra-09-q094",
+      "category": "Advanced Sequences",
+      "concept": "Geometric Sequences",
+      "learningObjective": "Determine the next term of a geometric sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the next term of the sequence \\(2, 6, 18, 54, \\ldots\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(108\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(162\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The common ratio is \\(6/2 = 3\\). The next term is\n\\[\n54 \\cdot 3 = 162.\n\\]\nThe correct option is B.",
+      "hint": "Find the common ratio by dividing consecutive terms."
+    },
+    {
+      "id": "algebra-09-q095",
+      "category": "Advanced Sequences",
+      "concept": "Explicit Formulas",
+      "learningObjective": "Identify the pattern and compute a term of the sequence of squares.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The sequence \\(1, 4, 9, 16, \\ldots\\) satisfies \\(a_n = n^{2}\\). What is \\(a_{10}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(90\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(100\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(n = 10\\):\n\\[\na_{10} = 10^2 = 100.\n\\]\nThe correct option is B.",
+      "hint": "Substitute \\(n = 10\\) into the formula."
+    },
+    {
+      "id": "algebra-09-q096",
+      "category": "Advanced Sequences",
+      "concept": "Sum of Squares",
+      "learningObjective": "Apply the formula for the sum of the first \\(n\\) squares.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Compute \\(1^{2} + 2^{2} + 3^{2} + 4^{2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(25\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the formula\n\\[\n\\sum_{k=1}^{n} k^2 = \\frac{n(n+1)(2n+1)}{6}.\n\\]\nWith \\(n = 4\\):\n\\[\n\\frac{4 \\cdot 5 \\cdot 9}{6} = 30.\n\\]\nThe correct option is A.",
+      "hint": "Use \\(\\sum k^2 = \\dfrac{n(n+1)(2n+1)}{6}\\)."
+    },
+    {
+      "id": "algebra-09-q097",
+      "category": "Advanced Sequences",
+      "concept": "Explicit Formulas",
+      "learningObjective": "Evaluate a quadratic sequence formula.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A sequence is given by \\(a_n = n^{2} - n\\). Find \\(a_5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(n = 5\\):\n\\[\na_5 = 5^2 - 5 = 25 - 5 = 20.\n\\]\nThe correct option is A.",
+      "hint": "Substitute \\(n = 5\\) into the formula."
+    },
+    {
+      "id": "algebra-09-q098",
+      "category": "Advanced Sequences",
+      "concept": "Limits of Sequences",
+      "learningObjective": "Compute the limit of a simple rational sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\displaystyle\\lim_{n\\to\\infty} \\frac{n+1}{2n}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\dfrac{1}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Divide numerator and denominator by \\(n\\):\n\\[\n\\frac{n+1}{2n} = \\frac{1 + \\frac{1}{n}}{2}.\n\\]\nAs \\(n\\to\\infty\\), \\(\\frac{1}{n} \\to 0\\), so the limit is \\(\\dfrac{1}{2}\\).\nThe correct option is B.",
+      "hint": "Divide numerator and denominator by \\(n\\)."
+    },
+    {
+      "id": "algebra-09-q099",
+      "category": "Advanced Sequences",
+      "concept": "Partial Sums and Terms",
+      "learningObjective": "Recover a term of a sequence from its partial sum formula.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The partial sums of a sequence are given by \\(S_n = n^{2}\\). Find \\(a_5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(n \\ge 2\\),\n\\[\na_n = S_n - S_{n-1} = n^2 - (n-1)^2 = 2n - 1.\n\\]\nThus \\(a_5 = 2(5) - 1 = 9\\).\nThe correct option is B.",
+      "hint": "Use \\(a_n = S_n - S_{n-1}\\)."
+    },
+    {
+      "id": "algebra-09-q100",
+      "category": "Advanced Sequences",
+      "concept": "Arithmetic Sequences",
+      "learningObjective": "Determine a term of an arithmetic sequence from two given terms.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "An arithmetic sequence has \\(a_1 = 7\\) and \\(a_5 = 23\\). Find \\(a_{10}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(39\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(43\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The common difference satisfies\n\\[\na_5 = a_1 + 4d \\implies 23 = 7 + 4d \\implies d = 4.\n\\]\nThen\n\\[\na_{10} = a_1 + 9d = 7 + 36 = 43.\n\\]\nThe correct option is B.",
+      "hint": "First find the common difference using the two given terms."
+    },
+    {
+      "id": "algebra-09-q101",
+      "category": "Advanced Sequences",
+      "concept": "Geometric Sequences",
+      "learningObjective": "Determine a term of a geometric sequence from two given terms.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A geometric sequence has \\(a_1 = 2\\) and \\(a_4 = 54\\). Find \\(a_2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(a_4 = a_1 r^{3}\\):\n\\[\n54 = 2 r^{3} \\implies r^{3} = 27 \\implies r = 3.\n\\]\nThen\n\\[\na_2 = a_1 r = 2 \\cdot 3 = 6.\n\\]\nThe correct option is A.",
+      "hint": "Use \\(a_4 = a_1 r^{3}\\) to find \\(r\\)."
+    },
+    {
+      "id": "algebra-09-q102",
+      "category": "Advanced Sequences",
+      "concept": "Infinite Geometric Series",
+      "learningObjective": "Compute the sum of an infinite geometric series.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the sum of the infinite series \\(5 + 1 + \\dfrac{1}{5} + \\cdots\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\dfrac{25}{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Here \\(a = 5\\) and \\(r = \\dfrac{1}{5}\\). Since \\(|r| < 1\\),\n\\[\nS = \\frac{a}{1-r} = \\frac{5}{1 - \\frac{1}{5}} = \\frac{5}{\\frac{4}{5}} = \\frac{25}{4}.\n\\]\nThe correct option is B.",
+      "hint": "Use \\(S = \\dfrac{a}{1-r}\\)."
+    },
+    {
+      "id": "algebra-09-q103",
+      "category": "Advanced Sequences",
+      "concept": "Limits of Sequences",
+      "learningObjective": "Compute the limit of a rational sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\displaystyle\\lim_{n\\to\\infty} \\frac{n}{n^{2}+1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide numerator and denominator by \\(n^2\\):\n\\[\n\\frac{n}{n^{2}+1} = \\frac{\\frac{1}{n}}{1 + \\frac{1}{n^{2}}}.\n\\]\nAs \\(n\\to\\infty\\), the numerator tends to \\(0\\) and the denominator to \\(1\\), so the limit is \\(0\\).\nThe correct option is A.",
+      "hint": "Divide numerator and denominator by the highest power of \\(n\\)."
+    },
+    {
+      "id": "algebra-09-q104",
+      "category": "Advanced Sequences",
+      "concept": "Arithmetic Sequences",
+      "learningObjective": "Identify the common difference of an arithmetic sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The sequence \\(a_n = 2n + 1\\) is arithmetic. What is its common difference?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute consecutive terms:\n\\[\na_1 = 3, \\quad a_2 = 5, \\quad a_3 = 7.\n\\]\nThe common difference is \\(5 - 3 = 2\\).\nThe correct option is B.",
+      "hint": "Subtract a term from the next term."
+    },
+    {
+      "id": "algebra-09-q105",
+      "category": "Advanced Sequences",
+      "concept": "Telescoping Series",
+      "learningObjective": "Evaluate a telescoping sum.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Compute \\(\\displaystyle\\sum_{k=1}^{100} \\left(\\frac{1}{k} - \\frac{1}{k+1}\\right)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\dfrac{1}{101}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\dfrac{100}{101}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sum telescopes:\n\\[\n\\sum_{k=1}^{100}\\left(\\frac{1}{k} - \\frac{1}{k+1}\\right) = 1 - \\frac{1}{101} = \\frac{100}{101}.\n\\]\nThe correct option is B.",
+      "hint": "Write out the first few terms to see the cancellation."
+    },
+    {
+      "id": "algebra-09-q106",
+      "category": "Advanced Sequences",
+      "concept": "Recursive Sequences",
+      "learningObjective": "Compute a term of a recurrence with a variable increment.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(a_1 = 1\\) and \\(a_{n+1} = a_n + 2n\\). Find \\(a_3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute iteratively:\n\\[\na_2 = a_1 + 2(1) = 3, \\quad a_3 = a_2 + 2(2) = 3 + 4 = 7.\n\\]\nThe correct option is B.",
+      "hint": "Substitute \\(n = 1\\) and then \\(n = 2\\) into the recurrence."
+    },
+    {
+      "id": "algebra-09-q107",
+      "category": "Advanced Sequences",
+      "concept": "Boundedness",
+      "learningObjective": "Determine whether a sequence is bounded above.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Is the sequence \\(2, 4, 6, 8, \\ldots\\) bounded above?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The terms \\(a_n = 2n\\) grow without bound as \\(n\\) increases. Therefore the sequence is not bounded above.\nThe correct option is B.",
+      "hint": "Check whether the terms can become arbitrarily large."
+    },
+    {
+      "id": "algebra-09-q108",
+      "category": "Advanced Sequences",
+      "concept": "Arithmetic Sequences",
+      "learningObjective": "Compute a term of an arithmetic sequence with a negative first term.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "An arithmetic sequence has first term \\(-3\\) and common difference \\(5\\). Find its \\(12\\)th term.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(47\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(52\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(a_n = a_1 + (n-1)d\\):\n\\[\na_{12} = -3 + 11 \\cdot 5 = -3 + 55 = 52.\n\\]\nThe correct option is B.",
+      "hint": "Substitute carefully into \\(a_n = a_1 + (n-1)d\\)."
+    },
+    {
+      "id": "algebra-09-q109",
+      "category": "Advanced Sequences",
+      "concept": "Monotonicity and Boundedness",
+      "learningObjective": "Determine monotonicity and an upper bound of a sequence.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Consider the sequence \\(a_n = 1 - \\dfrac{1}{n}\\) for \\(n \\ge 1\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is decreasing and bounded above by \\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "It is increasing and bounded above by \\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For each \\(n\\),\n\\[\na_{n+1} - a_n = \\left(1 - \\frac{1}{n+1}\\right) - \\left(1 - \\frac{1}{n}\\right) = \\frac{1}{n} - \\frac{1}{n+1} > 0,\n\\]\nso the sequence is increasing. Also \\(a_n < 1\\) for every \\(n\\), so \\(1\\) is an upper bound.\nThe correct option is B.",
+      "hint": "Compare \\(a_{n+1}\\) with \\(a_n\\) and check the largest possible value."
+    },
+    {
+      "id": "algebra-09-q110",
+      "category": "Advanced Sequences",
+      "concept": "Sum of an Arithmetic Series",
+      "learningObjective": "Compute the sum of an arithmetic series with an odd number of terms.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\(1 + 4 + 7 + \\cdots + 31\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(176\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(160\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Here \\(a_1 = 1\\), \\(d = 3\\), and last term \\(31\\). Find \\(n\\):\n\\[\n31 = 1 + (n-1)3 \\implies n - 1 = 10 \\implies n = 11.\n\\]\nThe sum is\n\\[\nS_{11} = \\frac{11(1+31)}{2} = \\frac{11 \\cdot 32}{2} = 176.\n\\]\nThe correct option is A.",
+      "hint": "First find the number of terms, then apply the arithmetic sum formula."
+    },
+    {
+      "id": "algebra-09-q111",
+      "category": "Advanced Sequences",
+      "concept": "Geometric Sequences",
+      "learningObjective": "Find a term of a geometric sequence from two non-adjacent terms.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A geometric sequence has \\(a_3 = 12\\) and \\(a_5 = 48\\). Find \\(a_7\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(192\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(96\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(a_5 = a_3 r^{2}\\),\n\\[\n48 = 12 r^{2} \\implies r^{2} = 4,\n\\]\nso mathematically \\(r = \\pm 2\\). However,\n\\[\na_7 = a_5 r^{2}\n\\]\ndepends only on \\(r^2\\), not on the sign of \\(r\\). Therefore\n\\[\na_7 = 48 \\cdot 4 = 192.\n\\]\nThe correct option is A.",
+      "hint": "Use the ratio between the two given terms to find \\(r\\)."
+    },
+    {
+      "id": "algebra-09-q112",
+      "category": "Advanced Sequences",
+      "concept": "Oscillating Sequences",
+      "learningObjective": "Determine the convergence of an alternating sequence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Does the sequence \\(a_n = 3 + (-1)^{n}\\) have a limit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, the limit does not exist"
+        },
+        {
+          "label": "B",
+          "text": "Yes, the limit is \\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sequence alternates between \\(4\\) (for even \\(n\\)) and \\(2\\) (for odd \\(n\\)). Since the terms do not approach a single value, the limit does not exist.\nThe correct option is A.",
+      "hint": "List the first few terms and see whether they approach a single value."
+    },
+    {
+      "id": "algebra-09-q113",
+      "category": "Advanced Sequences",
+      "concept": "Sum of Even Integers",
+      "learningObjective": "Compute the sum of the first \\(n\\) positive even integers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum of the first \\(50\\) positive even integers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2450\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2550\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sum is\n\\[\n2 + 4 + 6 + \\cdots + 100 = 2(1 + 2 + \\cdots + 50) = 2 \\cdot \\frac{50 \\cdot 51}{2} = 2550.\n\\]\nThe correct option is B.",
+      "hint": "Factor out \\(2\\) and use the sum of the first \\(50\\) integers."
+    },
+    {
+      "id": "algebra-09-q114",
+      "category": "Advanced Sequences",
+      "concept": "Factorial Ratios",
+      "learningObjective": "Simplify a ratio of consecutive factorials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(a_n = \\dfrac{n!}{(n+1)!}\\), find \\(a_4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\dfrac{1}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\dfrac{1}{5}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Simplify the ratio:\n\\[\n\\frac{n!}{(n+1)!} = \\frac{1}{n+1}.\n\\]\nThus\n\\[\na_4 = \\frac{1}{5}.\n\\]\nThe correct option is B.",
+      "hint": "Use \\((n+1)! = (n+1) \\cdot n!\\)."
+    },
+    {
+      "id": "algebra-09-q115",
+      "category": "Advanced Sequences",
+      "concept": "Limits of Exponential Sequences",
+      "learningObjective": "Determine the limit of an exponential ratio.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Find \\(\\displaystyle\\lim_{n\\to\\infty} \\frac{2^{n}}{3^{n}}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\infty\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Write\n\\[\n\\frac{2^n}{3^n} = \\left(\\frac{2}{3}\\right)^{n}.\n\\]\nSince \\(0 < \\frac{2}{3} < 1\\), this expression tends to \\(0\\) as \\(n \\to \\infty\\).\nThe correct option is B.",
+      "hint": "Rewrite the expression as a single power."
+    },
+    {
+      "id": "algebra-09-q116",
+      "category": "Advanced Sequences",
+      "concept": "Recursive Sequences",
+      "learningObjective": "Compute a term of an affine recurrence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(a_1 = 2\\) and \\(a_{n+1} = 2a_n - 1\\). Find \\(a_4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute iteratively:\n\\[\na_2 = 3, \\quad a_3 = 5, \\quad a_4 = 9.\n\\]\nThe correct option is B.",
+      "hint": "Apply the recurrence step by step."
+    },
+    {
+      "id": "algebra-09-q117",
+      "category": "Advanced Sequences",
+      "concept": "Geometric Series",
+      "learningObjective": "Compute a finite geometric sum directly.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\(1 + 3 + 9 + 27 + 81\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(121\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "This is a geometric series with \\(a = 1\\), \\(r = 3\\), and \\(n = 5\\):\n\\[\nS_5 = \\frac{3^{5} - 1}{3 - 1} = \\frac{243 - 1}{2} = 121.\n\\]\nThe correct option is B.",
+      "hint": "Use \\(S_n = \\dfrac{r^n - 1}{r-1}\\) with \\(r = 3\\)."
+    },
+    {
+      "id": "algebra-09-q118",
+      "category": "Advanced Sequences",
+      "concept": "Limits of Alternating Sequences",
+      "learningObjective": "Determine the limit of an alternating sequence whose magnitude decreases.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Find \\(\\displaystyle\\lim_{n\\to\\infty} \\frac{(-1)^{n}}{n}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The terms have absolute value \\(\\dfrac{1}{n}\\), which tends to \\(0\\). Since the magnitude tends to \\(0\\), the sequence converges to \\(0\\), regardless of the alternating sign.\nThe correct option is A.",
+      "hint": "Consider the absolute value of each term."
+    },
+    {
+      "id": "algebra-09-q119",
+      "category": "Advanced Sequences",
+      "concept": "Arithmetic Sequences",
+      "learningObjective": "Determine the first term of an arithmetic sequence from two given terms.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "An arithmetic sequence has \\(a_3 = 10\\) and \\(a_7 = 26\\). Find \\(a_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The difference between the terms is\n\\[\na_7 - a_3 = 4d = 26 - 10 = 16 \\implies d = 4.\n\\]\nThen\n\\[\na_1 = a_3 - 2d = 10 - 8 = 2.\n\\]\nThe correct option is A.",
+      "hint": "Use \\(a_7 - a_3 = 4d\\) to find the common difference."
+    },
+    {
+      "id": "algebra-09-q120",
+      "category": "Advanced Sequences",
+      "concept": "Geometric Sequences",
+      "learningObjective": "Determine a term of a geometric sequence from two given terms.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A geometric sequence has \\(a_2 = 6\\) and \\(a_4 = 24\\), and its common ratio is positive. Find \\(a_5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(48\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(96\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(a_4 = a_2 r^{2}\\),\n\\[\n24 = 6 r^{2} \\implies r^{2} = 4.\n\\]\nBecause the common ratio is stated to be positive, \\(r = 2\\); the negative possibility \\(r = -2\\) is excluded by the condition. Then\n\\[\na_5 = a_4 r = 24 \\cdot 2 = 48.\n\\]\nThe correct option is A.",
+      "hint": "Use \\(a_4 = a_2 r^{2}\\) to find the positive common ratio."
+    },
+    {
+      "id": "algebra-09-q121",
+      "category": "Advanced Sequences",
+      "concept": "Infinite Geometric Series",
+      "learningObjective": "Compute the sum of an infinite geometric series with a negative ratio.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the sum of the infinite series \\(1 - \\dfrac{1}{2} + \\dfrac{1}{4} - \\dfrac{1}{8} + \\cdots\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\dfrac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\dfrac{2}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Here \\(a = 1\\) and \\(r = -\\dfrac{1}{2}\\). Since \\(|r| < 1\\),\n\\[\nS = \\frac{a}{1-r} = \\frac{1}{1 - \\left(-\\frac{1}{2}\\right)} = \\frac{1}{\\frac{3}{2}} = \\frac{2}{3}.\n\\]\nThe correct option is B.",
+      "hint": "Substitute \\(r = -\\dfrac{1}{2}\\) into \\(S = \\dfrac{a}{1-r}\\)."
+    },
+    {
+      "id": "algebra-09-q122",
+      "category": "Advanced Sequences",
+      "concept": "Recursive Sequences",
+      "learningObjective": "Compute a term of a nonlinear recurrence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(a_1 = 3\\) and \\(a_{n+1} = a_n^{2} - 1\\). Find \\(a_3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(63\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(62\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Compute iteratively:\n\\[\na_2 = 3^2 - 1 = 8, \\quad a_3 = 8^2 - 1 = 64 - 1 = 63.\n\\]\nThe correct option is A.",
+      "hint": "Square the previous term and subtract \\(1\\)."
+    },
+    {
+      "id": "algebra-09-q123",
+      "category": "Advanced Sequences",
+      "concept": "Partial Sums and Terms",
+      "learningObjective": "Recover a term from a quadratic partial sum formula.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The partial sums of a sequence are \\(S_n = 3n^{2} + 2n\\). Find \\(a_{10}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(53\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(59\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(n \\ge 2\\),\n\\[\na_n = S_n - S_{n-1} = (3n^{2} + 2n) - (3(n-1)^{2} + 2(n-1)).\n\\]\nExpanding:\n\\[\n= 3n^{2} + 2n - 3(n^{2} - 2n + 1) - 2n + 2 = 6n - 1.\n\\]\nThus\n\\[\na_{10} = 6(10) - 1 = 59.\n\\]\nThe correct option is B.",
+      "hint": "Use \\(a_n = S_n - S_{n-1}\\)."
+    },
+    {
+      "id": "algebra-09-q124",
+      "category": "Advanced Sequences",
+      "concept": "Boundedness",
+      "learningObjective": "Determine the minimum value of a quadratic sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the minimum value of the sequence \\(a_n = (n-1)^2 + 1\\) for positive integers \\(n\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(n \\ge 1\\), \\((n-1)^2 \\ge 0\\), so\n\\[\na_n = (n-1)^2 + 1 \\ge 1.\n\\]\nThe minimum is attained at \\(n = 1\\), giving \\(a_1 = 1\\).\nThe correct option is A.",
+      "hint": "Complete the square and identify the smallest possible value."
+    },
+    {
+      "id": "algebra-09-q125",
+      "category": "Advanced Sequences",
+      "concept": "Sum of an Arithmetic Series",
+      "learningObjective": "Compute the sum of the first \\(n\\) terms of an arithmetic sequence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the sum of the first \\(10\\) terms of the arithmetic sequence \\(5, 8, 11, \\ldots\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(175\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(185\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Here \\(a_1 = 5\\), \\(d = 3\\), \\(n = 10\\). Use\n\\[\nS_n = \\frac{n}{2}\\left(2a_1 + (n-1)d\\right) = \\frac{10}{2}\\left(10 + 9 \\cdot 3\\right) = 5 \\cdot 37 = 185.\n\\]\nThe correct option is B.",
+      "hint": "Use \\(S_n = \\dfrac{n}{2}(2a_1 + (n-1)d)\\)."
+    },
+    {
+      "id": "algebra-09-q126",
+      "category": "Advanced Sequences",
+      "concept": "Sum of Odd Integers",
+      "learningObjective": "Apply the formula for the sum of the first \\(n\\) odd integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Compute \\(1 + 3 + 5 + \\cdots + 29\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(200\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(225\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first \\(n\\) odd integers sum to \\(n^2\\). Since \\(29 = 2n - 1\\) gives \\(n = 15\\),\n\\[\n1 + 3 + 5 + \\cdots + 29 = 15^{2} = 225.\n\\]\nThe correct option is B.",
+      "hint": "Determine how many odd integers are in the sum, then use \\(n^2\\)."
+    },
+    {
+      "id": "algebra-09-q127",
+      "category": "Advanced Sequences",
+      "concept": "Limits of Sequences",
+      "learningObjective": "Determine the limit of a rational sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\displaystyle\\lim_{n\\to\\infty} \\frac{n-1}{n}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rewrite:\n\\[\n\\frac{n-1}{n} = 1 - \\frac{1}{n}.\n\\]\nAs \\(n\\to\\infty\\), \\(\\frac{1}{n} \\to 0\\), so the limit is \\(1\\).\nThe correct option is A.",
+      "hint": "Rewrite the expression as \\(1 - \\dfrac{1}{n}\\)."
+    },
+    {
+      "id": "algebra-09-q128",
+      "category": "Advanced Sequences",
+      "concept": "Geometric Sequences",
+      "learningObjective": "Find a term of a geometric sequence with a fractional common ratio.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A geometric sequence has \\(a_1 = 81\\) and \\(a_5 = 1\\). Find \\(a_3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(27\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(a_5 = a_1 r^{4}\\):\n\\[\n1 = 81 r^{4} \\implies r^{4} = \\frac{1}{81},\n\\]\nso mathematically \\(r = \\pm \\frac{1}{3}\\). Since\n\\[\na_3 = a_1 r^{2},\n\\]\nonly \\(r^2\\) matters, and\n\\[\nr^{2} = \\frac{1}{9}.\n\\]\nThus\n\\[\na_3 = 81 \\cdot \\frac{1}{9} = 9.\n\\]\nThe correct option is B.",
+      "hint": "Find \\(r^2\\) from \\(a_5 = a_1 r^{4}\\)."
+    },
+    {
+      "id": "algebra-09-q129",
+      "category": "Advanced Sequences",
+      "concept": "Fibonacci-Type Recurrence",
+      "learningObjective": "Compute a term of a second-order recurrence with different initial values.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(a_1 = 2\\), \\(a_2 = 3\\), and \\(a_n = a_{n-1} + a_{n-2}\\) for \\(n \\ge 3\\). Find \\(a_5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(13\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(11\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Compute iteratively:\n\\[\na_3 = 5, \\quad a_4 = 8, \\quad a_5 = 13.\n\\]\nThe correct option is A.",
+      "hint": "Add the two preceding terms to get the next term."
+    },
+    {
+      "id": "algebra-09-q130",
+      "category": "Advanced Sequences",
+      "concept": "Infinite Geometric Series",
+      "learningObjective": "Compute the sum of an infinite geometric series with a negative fractional ratio.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the sum of the infinite series \\(4 - 2 + 1 - \\dfrac{1}{2} + \\cdots\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\dfrac{8}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Here \\(a = 4\\) and \\(r = -\\dfrac{1}{2}\\). Since \\(|r| < 1\\),\n\\[\nS = \\frac{a}{1-r} = \\frac{4}{1 - \\left(-\\frac{1}{2}\\right)} = \\frac{4}{\\frac{3}{2}} = \\frac{8}{3}.\n\\]\nThe correct option is A.",
+      "hint": "Substitute \\(a = 4\\) and \\(r = -\\dfrac{1}{2}\\) into \\(S = \\dfrac{a}{1-r}\\)."
+    },
+    {
+      "id": "algebra-09-q131",
+      "category": "Advanced Sequences",
+      "concept": "Geometric Sequences",
+      "learningObjective": "Compute a term of a geometric sequence with doubling ratio.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The sequence \\(5, 10, 20, 40, \\ldots\\) has \\(a_n = 5 \\cdot 2^{n-1}\\). Find \\(a_8\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(320\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(640\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(n = 8\\):\n\\[\na_8 = 5 \\cdot 2^{7} = 5 \\cdot 128 = 640.\n\\]\nThe correct option is B.",
+      "hint": "Substitute \\(n = 8\\) and evaluate \\(2^7\\)."
+    },
+    {
+      "id": "algebra-09-q132",
+      "category": "Advanced Sequences",
+      "concept": "Limits of Rational Sequences",
+      "learningObjective": "Determine the limit of a rational sequence at infinity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\displaystyle\\lim_{n\\to\\infty} \\frac{n^{2} + 3n}{2n^{2} - 1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\dfrac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide numerator and denominator by \\(n^2\\):\n\\[\n\\frac{1 + \\frac{3}{n}}{2 - \\frac{1}{n^{2}}}.\n\\]\nAs \\(n \\to \\infty\\), the fractions tend to \\(0\\), so the limit is \\(\\dfrac{1}{2}\\).\nThe correct option is A.",
+      "hint": "Divide by the highest power of \\(n\\) in the denominator."
+    },
+    {
+      "id": "algebra-09-q133",
+      "category": "Advanced Sequences",
+      "concept": "Partial Sums and Terms",
+      "learningObjective": "Recover a term from an exponential partial sum formula.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The partial sums of a sequence are \\(S_n = 2^{n} - 1\\). Find \\(a_5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(n \\ge 2\\),\n\\[\na_n = S_n - S_{n-1} = (2^{n} - 1) - (2^{n-1} - 1) = 2^{n-1}.\n\\]\nThus\n\\[\na_5 = 2^{4} = 16.\n\\]\nThe correct option is B.",
+      "hint": "Use \\(a_n = S_n - S_{n-1}\\) and simplify."
+    },
+    {
+      "id": "algebra-09-q134",
+      "category": "Advanced Sequences",
+      "concept": "Sum of an Arithmetic Series",
+      "learningObjective": "Compute the sum of the first \\(n\\) terms of an arithmetic sequence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum of the first \\(10\\) terms of the arithmetic sequence \\(3, 7, 11, \\ldots\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(200\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(210\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Here \\(a_1 = 3\\), \\(d = 4\\), \\(n = 10\\). Thus\n\\[\nS_{10} = \\frac{10}{2}\\left(2 \\cdot 3 + 9 \\cdot 4\\right) = 5(6 + 36) = 210.\n\\]\nThe correct option is B.",
+      "hint": "Apply the arithmetic sum formula."
+    },
+    {
+      "id": "algebra-09-q135",
+      "category": "Advanced Sequences",
+      "concept": "Sum of an Arithmetic Series",
+      "learningObjective": "Compute the sum of an arithmetic series with a negative common difference.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For the arithmetic sequence with \\(a_1 = 10\\) and \\(d = -2\\), find the sum of the first \\(6\\) terms.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(30\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use\n\\[\nS_n = \\frac{n}{2}\\left(2a_1 + (n-1)d\\right) = \\frac{6}{2}\\left(20 + 5(-2)\\right) = 3(10) = 30.\n\\]\nThe correct option is B.",
+      "hint": "Substitute carefully, noting the negative difference."
+    },
+    {
+      "id": "algebra-09-q136",
+      "category": "Advanced Sequences",
+      "concept": "Limits of Sequences",
+      "learningObjective": "Determine the limit of a rational sequence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\displaystyle\\lim_{n\\to\\infty} \\frac{2n}{n+1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Divide numerator and denominator by \\(n\\):\n\\[\n\\frac{2n}{n+1} = \\frac{2}{1 + \\frac{1}{n}}.\n\\]\nAs \\(n\\to\\infty\\), \\(\\frac{1}{n} \\to 0\\), so the limit is \\(2\\).\nThe correct option is B.",
+      "hint": "Divide numerator and denominator by \\(n\\)."
+    },
+    {
+      "id": "algebra-09-q137",
+      "category": "Advanced Sequences",
+      "concept": "Arithmetic Sequences",
+      "learningObjective": "Determine the common difference from two terms.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An arithmetic sequence has \\(a_1 = 5\\) and \\(a_3 = 13\\). Find its common difference.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using \\(a_3 = a_1 + 2d\\):\n\\[\n13 = 5 + 2d \\implies 2d = 8 \\implies d = 4.\n\\]\nThe correct option is A.",
+      "hint": "Use \\(a_3 = a_1 + 2d\\)."
+    },
+    {
+      "id": "algebra-09-q138",
+      "category": "Advanced Sequences",
+      "concept": "Infinite Geometric Series",
+      "learningObjective": "Determine the common ratio from the sum and first term.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "An infinite geometric series has first term \\(4\\) and sum \\(12\\). Find its common ratio \\(r\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\dfrac{2}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\dfrac{1}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(S = \\dfrac{a}{1-r}\\):\n\\[\n12 = \\frac{4}{1-r} \\implies 1 - r = \\frac{1}{3} \\implies r = \\frac{2}{3}.\n\\]\nThe correct option is A.",
+      "hint": "Rearrange \\(S = \\dfrac{a}{1-r}\\) to solve for \\(r\\)."
+    },
+    {
+      "id": "algebra-09-q139",
+      "category": "Advanced Sequences",
+      "concept": "Recursive Sequences",
+      "learningObjective": "Compute a term of an affine recurrence with a positive multiplier.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(a_1 = 1\\) and \\(a_{n+1} = 3a_n + 2\\). Find \\(a_3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(17\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Compute iteratively:\n\\[\na_2 = 3(1) + 2 = 5, \\quad a_3 = 3(5) + 2 = 17.\n\\]\nThe correct option is A.",
+      "hint": "Apply the recurrence one step at a time."
+    },
+    {
+      "id": "algebra-09-q140",
+      "category": "Advanced Sequences",
+      "concept": "Sum of a Geometric Series",
+      "learningObjective": "Compute the sum of consecutive powers of \\(2\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Compute \\(1 + 2 + 4 + \\cdots + 2^{6}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(63\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(127\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "This is a geometric series with \\(a = 1\\), \\(r = 2\\), and \\(n = 7\\) terms. Thus\n\\[\nS_7 = \\frac{2^{7} - 1}{2 - 1} = 128 - 1 = 127.\n\\]\nThe correct option is B.",
+      "hint": "Count the number of terms, then use the geometric sum formula."
+    },
+    {
+      "id": "algebra-09-q141",
+      "category": "Algebraic Problem Solving",
+      "concept": "Factoring Quadratic Expressions",
+      "learningObjective": "Identify a factor of a quadratic expression.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Which of the following is a factor of \\(x^{2} - 5x + 6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x - 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x - 2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor the quadratic:\n\\[\nx^2 - 5x + 6 = (x-2)(x-3).\n\\]\nTherefore \\(x - 2\\) is a factor.\nThe correct option is B.",
+      "hint": "Find two numbers whose product is \\(6\\) and whose sum is \\(-5\\)."
+    },
+    {
+      "id": "algebra-09-q142",
+      "category": "Algebraic Problem Solving",
+      "concept": "Solving Quadratic Equations",
+      "learningObjective": "Find the smaller root of a quadratic equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x^{2} - 7x + 12 = 0\\). What is the smaller root?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor:\n\\[\nx^2 - 7x + 12 = (x-3)(x-4) = 0.\n\\]\nThus \\(x = 3\\) or \\(x = 4\\). The smaller root is \\(3\\).\nThe correct option is A.",
+      "hint": "Factor the quadratic and identify both roots."
+    },
+    {
+      "id": "algebra-09-q143",
+      "category": "Algebraic Problem Solving",
+      "concept": "Linear Equations",
+      "learningObjective": "Solve a linear equation with variables on both sides.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(2x + 5 = 3x - 1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtract \\(2x\\) from both sides:\n\\[\n5 = x - 1.\n\\]\nAdd \\(1\\) to both sides:\n\\[\nx = 6.\n\\]\nThe correct option is B.",
+      "hint": "Collect the variable terms on one side and the constants on the other."
+    },
+    {
+      "id": "algebra-09-q144",
+      "category": "Algebraic Problem Solving",
+      "concept": "Binomial Expansion",
+      "learningObjective": "Determine the coefficient of a term in a squared binomial.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Expand \\((x+3)^{2}\\). What is the coefficient of \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\[\n(x+3)^2 = x^2 + 2 \\cdot 3x + 9 = x^2 + 6x + 9.\n\\]\nThe coefficient of \\(x\\) is \\(6\\).\nThe correct option is B.",
+      "hint": "Use \\((a+b)^2 = a^2 + 2ab + b^2\\)."
+    },
+    {
+      "id": "algebra-09-q145",
+      "category": "Algebraic Problem Solving",
+      "concept": "Systems of Linear Equations",
+      "learningObjective": "Solve a system of two linear equations by elimination.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system \\(x + y = 7\\), \\(x - y = 1\\). What is \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Add the two equations:\n\\[\n(x+y) + (x-y) = 7 + 1 \\implies 2x = 8 \\implies x = 4.\n\\]\nThe correct option is A.",
+      "hint": "Add the two equations to eliminate \\(y\\)."
+    },
+    {
+      "id": "algebra-09-q146",
+      "category": "Algebraic Problem Solving",
+      "concept": "Quadratic Equations",
+      "learningObjective": "Solve a simple quadratic equation with a positive root.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x^{2} = 49\\) for the positive value of \\(x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Taking the square root of both sides gives \\(x = \\pm 7\\). The positive value is \\(x = 7\\).\nThe correct option is B.",
+      "hint": "Take the square root of both sides."
+    },
+    {
+      "id": "algebra-09-q147",
+      "category": "Algebraic Problem Solving",
+      "concept": "Simplifying Rational Expressions",
+      "learningObjective": "Simplify a difference of squares divided by a linear factor.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Simplify \\(\\dfrac{x^{2} - 9}{x - 3}\\) for \\(x \\neq 3\\). Then evaluate at \\(x = 5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor the numerator:\n\\[\nx^2 - 9 = (x-3)(x+3).\n\\]\nTherefore\n\\[\n\\frac{(x-3)(x+3)}{x-3} = x + 3.\n\\]\nAt \\(x = 5\\), this equals \\(8\\).\nThe correct option is B.",
+      "hint": "Factor the numerator as a difference of squares."
+    },
+    {
+      "id": "algebra-09-q148",
+      "category": "Algebraic Problem Solving",
+      "concept": "Symmetric Expressions",
+      "learningObjective": "Use the identity \\(x^2 + \\frac{1}{x^2} = \\left(x+\\frac{1}{x}\\right)^2 - 2\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "If \\(x + \\dfrac{1}{x} = 3\\), find \\(x^{2} + \\dfrac{1}{x^{2}}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Square the given equation:\n\\[\n\\left(x + \\frac{1}{x}\\right)^2 = x^2 + 2 + \\frac{1}{x^2} = 9.\n\\]\nTherefore\n\\[\nx^2 + \\frac{1}{x^2} = 9 - 2 = 7.\n\\]\nThe correct option is B.",
+      "hint": "Square \\(x + \\dfrac{1}{x}\\) and isolate the desired expression."
+    },
+    {
+      "id": "algebra-09-q149",
+      "category": "Algebraic Problem Solving",
+      "concept": "Exponential Equations",
+      "learningObjective": "Solve a simple exponential equation by matching bases.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(3^{x+1} = 81\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(81 = 3^{4}\\), the equation becomes\n\\[\n3^{x+1} = 3^{4} \\implies x + 1 = 4 \\implies x = 3.\n\\]\nThe correct option is B.",
+      "hint": "Write \\(81\\) as a power of \\(3\\)."
+    },
+    {
+      "id": "algebra-09-q150",
+      "category": "Algebraic Problem Solving",
+      "concept": "Factoring Differences of Cubes",
+      "learningObjective": "Identify a factor of a difference of cubes.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which of the following is a factor of \\(x^{3} - 8\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x - 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x + 2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the difference of cubes formula \\(a^3 - b^3 = (a-b)(a^2 + ab + b^2)\\). With \\(a = x\\) and \\(b = 2\\):\n\\[\nx^3 - 8 = (x-2)(x^2 + 2x + 4).\n\\]\nHence \\(x-2\\) is a factor.\nThe correct option is A.",
+      "hint": "Apply the difference of cubes formula."
+    },
+    {
+      "id": "algebra-09-q151",
+      "category": "Algebraic Problem Solving",
+      "concept": "Sum of Roots",
+      "learningObjective": "Determine the sum of the roots of a factored quadratic.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The equation \\((x-1)(x+2) = 0\\) has roots \\(1\\) and \\(-2\\). What is their sum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sum of the roots:\n\\[\n1 + (-2) = -1.\n\\]\nThe correct option is B.",
+      "hint": "Add the two roots directly."
+    },
+    {
+      "id": "algebra-09-q152",
+      "category": "Algebraic Problem Solving",
+      "concept": "Simplifying Algebraic Fractions",
+      "learningObjective": "Simplify a rational monomial expression.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Simplify \\(\\dfrac{2x^{2}y}{4xy^{2}}\\) and evaluate at \\(x = 4\\), \\(y = 1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Simplify:\n\\[\n\\frac{2x^{2}y}{4xy^{2}} = \\frac{x}{2y}.\n\\]\nAt \\(x = 4\\), \\(y = 1\\):\n\\[\n\\frac{4}{2(1)} = 2.\n\\]\nThe correct option is A.",
+      "hint": "Cancel common factors of \\(x\\) and \\(y\\)."
+    },
+    {
+      "id": "algebra-09-q153",
+      "category": "Algebraic Problem Solving",
+      "concept": "Symmetric Identities",
+      "learningObjective": "Use \\(a^2 + b^2 = (a+b)^2 - 2ab\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(a + b = 10\\) and \\(ab = 21\\), find \\(a^{2} + b^{2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(58\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the identity\n\\[\na^2 + b^2 = (a+b)^2 - 2ab = 10^2 - 2(21) = 100 - 42 = 58.\n\\]\nThe correct option is A.",
+      "hint": "Use \\(a^2 + b^2 = (a+b)^2 - 2ab\\)."
+    },
+    {
+      "id": "algebra-09-q154",
+      "category": "Algebraic Problem Solving",
+      "concept": "Absolute Value Equations",
+      "learningObjective": "Solve a simple absolute value equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(|x - 3| = 5\\). What is the larger solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The equation \\(|x-3| = 5\\) gives two cases:\n\\[\nx - 3 = 5 \\implies x = 8, \\qquad x - 3 = -5 \\implies x = -2.\n\\]\nThe larger solution is \\(x = 8\\).\nThe correct option is B.",
+      "hint": "Consider both positive and negative cases for the expression inside the absolute value."
+    },
+    {
+      "id": "algebra-09-q155",
+      "category": "Algebraic Problem Solving",
+      "concept": "Rational Equations",
+      "learningObjective": "Solve a rational equation with a single fraction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\dfrac{1}{x-2} = 3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\dfrac{7}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\dfrac{5}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Cross-multiply:\n\\[\n1 = 3(x-2) \\implies 1 = 3x - 6 \\implies 3x = 7 \\implies x = \\frac{7}{3}.\n\\]\nThe correct option is A.",
+      "hint": "Multiply both sides by \\(x-2\\)."
+    },
+    {
+      "id": "algebra-09-q156",
+      "category": "Algebraic Problem Solving",
+      "concept": "Quadratic Inequalities",
+      "learningObjective": "Solve a quadratic inequality of the form \\(x^2 < c\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(x^{2} - 4 < 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x > 2\\) or \\(x < -2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2 < x < 2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expression \\(x^2 - 4 = (x-2)(x+2)\\) is negative when the two factors have opposite signs, which occurs precisely when \\(-2 < x < 2\\).\nThe correct option is B.",
+      "hint": "Factor the left side and examine the sign of the product."
+    },
+    {
+      "id": "algebra-09-q157",
+      "category": "Algebraic Problem Solving",
+      "concept": "Quadratic Inequalities",
+      "learningObjective": "Solve a quadratic inequality of the form \\(x^2 + bx + c > 0\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(x^{2} - 5x + 6 > 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2 < x < 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x < 2\\) or \\(x > 3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor:\n\\[\nx^2 - 5x + 6 = (x-2)(x-3).\n\\]\nThe product is positive when both factors are positive or both are negative, i.e. when \\(x > 3\\) or \\(x < 2\\).\nThe correct option is B.",
+      "hint": "Determine the intervals where the factored expression is positive."
+    },
+    {
+      "id": "algebra-09-q158",
+      "category": "Algebraic Problem Solving",
+      "concept": "Radical Equations",
+      "learningObjective": "Solve a simple square root equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\sqrt{x+4} = 3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Square both sides:\n\\[\nx + 4 = 9 \\implies x = 5.\n\\]\nCheck: \\(\\sqrt{5+4} = \\sqrt{9} = 3\\). So \\(x = 5\\) is valid.\nThe correct option is A.",
+      "hint": "Square both sides and check the solution."
+    },
+    {
+      "id": "algebra-09-q159",
+      "category": "Algebraic Problem Solving",
+      "concept": "Exponential Equations",
+      "learningObjective": "Solve a simple exponential equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(2^{x} = 8\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(8 = 2^{3}\\), we have\n\\[\n2^{x} = 2^{3} \\implies x = 3.\n\\]\nThe correct option is B.",
+      "hint": "Express \\(8\\) as a power of \\(2\\)."
+    },
+    {
+      "id": "algebra-09-q160",
+      "category": "Algebraic Problem Solving",
+      "concept": "Remainder Theorem",
+      "learningObjective": "Use the remainder theorem to find the remainder of a polynomial division.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the remainder when \\(x^{3} - 3x + 2\\) is divided by \\(x - 1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the remainder theorem, the remainder equals \\(p(1)\\) where \\(p(x) = x^3 - 3x + 2\\). Thus\n\\[\np(1) = 1 - 3 + 2 = 0.\n\\]\nThe remainder is \\(0\\).\nThe correct option is B.",
+      "hint": "Evaluate the polynomial at \\(x = 1\\)."
+    },
+    {
+      "id": "algebra-09-q161",
+      "category": "Algebraic Problem Solving",
+      "concept": "Factoring Difference of Squares",
+      "learningObjective": "Factor a difference of squares with a leading coefficient.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Factor \\(4x^{2} - 9\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2x-3)(2x+3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((4x-3)(x+3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Write \\(4x^2 - 9 = (2x)^2 - 3^2\\) and use the difference of squares:\n\\[\n(2x-3)(2x+3).\n\\]\nThe correct option is A.",
+      "hint": "Recognize \\(4x^2\\) as \\((2x)^2\\) and \\(9\\) as \\(3^2\\)."
+    },
+    {
+      "id": "algebra-09-q162",
+      "category": "Algebraic Problem Solving",
+      "concept": "Perfect Square Trinomials",
+      "learningObjective": "Solve a quadratic equation that is a perfect square.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x^{2} + 4x + 4 = 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The left side is a perfect square:\n\\[\nx^2 + 4x + 4 = (x+2)^2 = 0 \\implies x = -2.\n\\]\nThe correct option is B.",
+      "hint": "Recognize the perfect square \\((x+2)^2\\)."
+    },
+    {
+      "id": "algebra-09-q163",
+      "category": "Algebraic Problem Solving",
+      "concept": "Evaluating Polynomial Functions",
+      "learningObjective": "Evaluate a quadratic function at a given point.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x) = 2x^{2} - 3x + 1\\), find \\(f(2)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x = 2\\):\n\\[\nf(2) = 2(4) - 3(2) + 1 = 8 - 6 + 1 = 3.\n\\]\nThe correct option is A.",
+      "hint": "Substitute \\(x = 2\\) carefully and simplify."
+    },
+    {
+      "id": "algebra-09-q164",
+      "category": "Algebraic Problem Solving",
+      "concept": "Systems of Linear Equations",
+      "learningObjective": "Solve a system of two linear equations.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system \\(2x + y = 10\\), \\(x - y = 2\\). What is \\(y\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Add the two equations:\n\\[\n(2x + y) + (x - y) = 12 \\implies 3x = 12 \\implies x = 4.\n\\]\nThen from \\(x - y = 2\\), we get \\(4 - y = 2 \\implies y = 2\\).\nThe correct option is B.",
+      "hint": "Add the equations to eliminate \\(y\\), then substitute back."
+    },
+    {
+      "id": "algebra-09-q165",
+      "category": "Algebraic Problem Solving",
+      "concept": "Rational Equations",
+      "learningObjective": "Solve a linear equation involving two fractions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\dfrac{x+1}{2} = \\dfrac{x-1}{3}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Cross-multiply:\n\\[\n3(x+1) = 2(x-1) \\implies 3x + 3 = 2x - 2 \\implies x = -5.\n\\]\nThe correct option is B.",
+      "hint": "Cross-multiply to clear the fractions."
+    },
+    {
+      "id": "algebra-09-q166",
+      "category": "Algebraic Problem Solving",
+      "concept": "Simplifying Rational Expressions",
+      "learningObjective": "Simplify a rational expression by factoring.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Simplify \\(\\dfrac{x^{2} + 5x + 6}{x + 2}\\) for \\(x \\neq -2\\). Then evaluate at \\(x = 2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor the numerator:\n\\[\nx^2 + 5x + 6 = (x+2)(x+3).\n\\]\nThus\n\\[\n\\frac{(x+2)(x+3)}{x+2} = x + 3.\n\\]\nAt \\(x = 2\\), this equals \\(5\\).\nThe correct option is B.",
+      "hint": "Factor the numerator and cancel the common factor."
+    },
+    {
+      "id": "algebra-09-q167",
+      "category": "Algebraic Problem Solving",
+      "concept": "Cubic Equations",
+      "learningObjective": "Solve a simple cubic equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x^{3} = 27\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Taking the cube root of both sides:\n\\[\nx = \\sqrt[3]{27} = 3.\n\\]\nThe correct option is A.",
+      "hint": "Find the number whose cube is \\(27\\)."
+    },
+    {
+      "id": "algebra-09-q168",
+      "category": "Algebraic Problem Solving",
+      "concept": "Systems of Linear Equations",
+      "learningObjective": "Solve a system of two linear equations with a sum and difference.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(a - b = 4\\) and \\(a + b = 10\\), find \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Add the two equations:\n\\[\n(a-b) + (a+b) = 4 + 10 \\implies 2a = 14 \\implies a = 7.\n\\]\nThe correct option is A.",
+      "hint": "Add the two equations to eliminate \\(b\\)."
+    },
+    {
+      "id": "algebra-09-q169",
+      "category": "Algebraic Problem Solving",
+      "concept": "Vieta's Formulas",
+      "learningObjective": "Find the sum of the roots of a quadratic equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum of the roots of \\(x^{2} - 8x + 15 = 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By Vieta's formula, the sum of the roots is \\(-\\dfrac{b}{a} = -\\dfrac{-8}{1} = 8\\).\nThe correct option is B.",
+      "hint": "Use the relationship between coefficients and roots."
+    },
+    {
+      "id": "algebra-09-q170",
+      "category": "Algebraic Problem Solving",
+      "concept": "Quadratic Equations",
+      "learningObjective": "Solve a quadratic equation given in completed-square form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\((x-2)^{2} = 9\\). What is the positive solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Taking the square root of both sides:\n\\[\nx - 2 = \\pm 3.\n\\]\nSo \\(x = 5\\) or \\(x = -1\\). The positive solution is \\(x = 5\\).\nThe correct option is B.",
+      "hint": "Take the square root of both sides, remembering the \\(\\pm\\) sign."
+    },
+    {
+      "id": "algebra-09-q171",
+      "category": "Algebraic Problem Solving",
+      "concept": "Linear Equations with Fractions",
+      "learningObjective": "Solve a linear equation involving fractions with different denominators.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\dfrac{x}{3} + \\dfrac{x}{6} = 5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Combine the fractions:\n\\[\n\\frac{2x}{6} + \\frac{x}{6} = \\frac{3x}{6} = \\frac{x}{2} = 5 \\implies x = 10.\n\\]\nThe correct option is A.",
+      "hint": "Find a common denominator and combine the fractions."
+    },
+    {
+      "id": "algebra-09-q172",
+      "category": "Algebraic Problem Solving",
+      "concept": "Factoring Quadratic Expressions",
+      "learningObjective": "Factor a quadratic trinomial with a negative constant term.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Factor \\(x^{2} + x - 12\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((x-4)(x+3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((x+4)(x-3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "We need two numbers whose product is \\(-12\\) and whose sum is \\(1\\). These are \\(4\\) and \\(-3\\), so\n\\[\nx^2 + x - 12 = (x+4)(x-3).\n\\]\nThe correct option is B.",
+      "hint": "Find two integers with product \\(-12\\) and sum \\(1\\)."
+    },
+    {
+      "id": "algebra-09-q173",
+      "category": "Algebraic Problem Solving",
+      "concept": "Linear Inequalities",
+      "learningObjective": "Solve a simple linear inequality.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(3x - 2 < 7\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x > 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x < 3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Add \\(2\\) to both sides:\n\\[\n3x < 9 \\implies x < 3.\n\\]\nThe correct option is B.",
+      "hint": "Isolate \\(x\\) by performing the same operation on both sides."
+    },
+    {
+      "id": "algebra-09-q174",
+      "category": "Algebraic Problem Solving",
+      "concept": "Simplifying Monomials",
+      "learningObjective": "Simplify a quotient of monomials with powers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Simplify \\(\\dfrac{a^{3}b^{2}}{ab}\\) and evaluate at \\(a = 2\\), \\(b = 3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Simplify the expression:\n\\[\n\\frac{a^{3}b^{2}}{ab} = a^{2}b.\n\\]\nAt \\(a = 2\\), \\(b = 3\\):\n\\[\n(2)^2(3) = 4 \\cdot 3 = 12.\n\\]\nThe correct option is A.",
+      "hint": "Subtract the exponents of like bases."
+    },
+    {
+      "id": "algebra-09-q175",
+      "category": "Algebraic Problem Solving",
+      "concept": "Difference of Squares",
+      "learningObjective": "Use the difference of squares identity to find a difference.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "If \\(x^{2} - y^{2} = 20\\) and \\(x + y = 5\\), find \\(x - y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use the identity \\(x^2 - y^2 = (x+y)(x-y)\\):\n\\[\n20 = 5(x-y) \\implies x-y = 4.\n\\]\nThe correct option is B.",
+      "hint": "Factor \\(x^2 - y^2\\) as \\((x+y)(x-y)\\)."
+    },
+    {
+      "id": "algebra-09-q176",
+      "category": "Algebraic Problem Solving",
+      "concept": "Rational Equations",
+      "learningObjective": "Solve a rational equation with a constant on the right side.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\dfrac{2}{x+1} = 4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\dfrac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\dfrac{1}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Cross-multiply:\n\\[\n2 = 4(x+1) \\implies x + 1 = \\frac{1}{2} \\implies x = -\\frac{1}{2}.\n\\]\nThe correct option is A.",
+      "hint": "Multiply both sides by \\(x+1\\), then isolate \\(x\\)."
+    },
+    {
+      "id": "algebra-09-q177",
+      "category": "Algebraic Problem Solving",
+      "concept": "Binomial Expansion",
+      "learningObjective": "Evaluate a squared binomial expression.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(x + y = 6\\), find \\((x+y)^{2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(36\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\[\n(x+y)^2 = 6^2 = 36.\n\\]\nThe correct option is B.",
+      "hint": "Substitute the given value directly."
+    },
+    {
+      "id": "algebra-09-q178",
+      "category": "Algebraic Problem Solving",
+      "concept": "Quadratic Equations",
+      "learningObjective": "Find the larger root of a quadratic equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x^{2} - 2x - 8 = 0\\). What is the larger root?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor:\n\\[\nx^2 - 2x - 8 = (x-4)(x+2) = 0.\n\\]\nThus \\(x = 4\\) or \\(x = -2\\). The larger root is \\(4\\).\nThe correct option is A.",
+      "hint": "Factor the quadratic expression."
+    },
+    {
+      "id": "algebra-09-q179",
+      "category": "Algebraic Problem Solving",
+      "concept": "Laws of Exponents",
+      "learningObjective": "Simplify a power of a power divided by another power.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Simplify \\(\\dfrac{(x^{3})^{2}}{x^{4}}\\) and evaluate at \\(x = 3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(27\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Simplify:\n\\[\n\\frac{(x^3)^2}{x^4} = \\frac{x^{6}}{x^{4}} = x^{2}.\n\\]\nAt \\(x = 3\\):\n\\[\n3^{2} = 9.\n\\]\nThe correct option is A.",
+      "hint": "Apply the power rule, then subtract the exponents."
+    },
+    {
+      "id": "algebra-09-q180",
+      "category": "Algebraic Problem Solving",
+      "concept": "Symmetric Identities",
+      "learningObjective": "Use the identity \\(x^2 + y^2 = (x+y)^2 - 2xy\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(x + y = 5\\) and \\(xy = 6\\), find \\(x^{2} + y^{2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(13\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(25\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use\n\\[\nx^2 + y^2 = (x+y)^2 - 2xy = 25 - 12 = 13.\n\\]\nThe correct option is A.",
+      "hint": "Use \\(x^2 + y^2 = (x+y)^2 - 2xy\\)."
+    },
+    {
+      "id": "algebra-09-q181",
+      "category": "Algebraic Problem Solving",
+      "concept": "Radical Equations",
+      "learningObjective": "Solve a square root equation with a linear expression inside.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\sqrt{2x+1} = 5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Square both sides:\n\\[\n2x + 1 = 25 \\implies 2x = 24 \\implies x = 12.\n\\]\nCheck: \\(\\sqrt{2(12)+1} = \\sqrt{25} = 5\\).\nThe correct option is A.",
+      "hint": "Square both sides, then solve the resulting linear equation."
+    },
+    {
+      "id": "algebra-09-q182",
+      "category": "Algebraic Problem Solving",
+      "concept": "Factoring Quadratic Expressions",
+      "learningObjective": "Factor a quadratic trinomial with a leading coefficient greater than \\(1\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Factor \\(2x^{2} + 7x + 3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2x+1)(x+3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2x+3)(x+1)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Check the expansion of \\((2x+1)(x+3)\\):\n\\[\n2x \\cdot x + 2x \\cdot 3 + 1 \\cdot x + 1 \\cdot 3 = 2x^{2} + 6x + x + 3 = 2x^{2} + 7x + 3.\n\\]\nSo the correct factorization is \\((2x+1)(x+3)\\).\nThe correct option is A.",
+      "hint": "Try factoring by grouping or test the expansion of each option."
+    },
+    {
+      "id": "algebra-09-q183",
+      "category": "Algebraic Problem Solving",
+      "concept": "Rational Equations",
+      "learningObjective": "Solve a rational equation with variable in both numerator and denominator.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\dfrac{x+2}{x-1} = 2\\) for \\(x \\neq 1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Cross-multiply:\n\\[\nx + 2 = 2(x-1) = 2x - 2.\n\\]\nRearrange:\n\\[\n2 + 2 = 2x - x \\implies x = 4.\n\\]\nThe correct option is B.",
+      "hint": "Cross-multiply, then collect the terms in \\(x\\)."
+    },
+    {
+      "id": "algebra-09-q184",
+      "category": "Algebraic Problem Solving",
+      "concept": "Linear Equations",
+      "learningObjective": "Solve a linear equation with variables on both sides.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(5x - 3 = 2x + 9\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtract \\(2x\\) from both sides:\n\\[\n3x - 3 = 9.\n\\]\nAdd \\(3\\):\n\\[\n3x = 12 \\implies x = 4.\n\\]\nThe correct option is B.",
+      "hint": "Collect the variable terms on one side."
+    },
+    {
+      "id": "algebra-09-q185",
+      "category": "Algebraic Problem Solving",
+      "concept": "Simplifying Rational Expressions",
+      "learningObjective": "Simplify a rational expression involving a difference of squares and a perfect square.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Simplify \\(\\dfrac{x^{2} - 4}{x^{2} + 4x + 4}\\) for \\(x \\neq -2\\). Then evaluate at \\(x = 6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\dfrac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor numerator and denominator:\n\\[\n\\frac{x^2 - 4}{x^2 + 4x + 4} = \\frac{(x-2)(x+2)}{(x+2)^2} = \\frac{x-2}{x+2}.\n\\]\nAt \\(x = 6\\):\n\\[\n\\frac{6-2}{6+2} = \\frac{4}{8} = \\frac{1}{2}.\n\\]\nThe correct option is A.",
+      "hint": "Factor both numerator and denominator, then cancel."
+    },
+    {
+      "id": "algebra-09-q186",
+      "category": "Algebraic Problem Solving",
+      "concept": "Absolute Value Equations",
+      "learningObjective": "Solve an absolute value equation with a linear expression.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(|2x - 1| = 7\\). What is the positive solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Two cases:\n\\[\n2x - 1 = 7 \\implies x = 4, \\qquad 2x - 1 = -7 \\implies x = -3.\n\\]\nThe positive solution is \\(x = 4\\).\nThe correct option is A.",
+      "hint": "Consider both the positive and negative cases."
+    },
+    {
+      "id": "algebra-09-q187",
+      "category": "Algebraic Problem Solving",
+      "concept": "Discriminant of a Quadratic",
+      "learningObjective": "Compute the discriminant of a quadratic equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the discriminant of \\(x^{2} - 6x + 9 = 0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The discriminant is \\(\\Delta = b^2 - 4ac\\). Here \\(a = 1\\), \\(b = -6\\), \\(c = 9\\):\n\\[\n\\Delta = (-6)^2 - 4(1)(9) = 36 - 36 = 0.\n\\]\nThe correct option is B.",
+      "hint": "Use \\(\\Delta = b^2 - 4ac\\)."
+    },
+    {
+      "id": "algebra-09-q188",
+      "category": "Algebraic Problem Solving",
+      "concept": "Evaluating Polynomial Functions",
+      "learningObjective": "Evaluate a cubic function at a given point.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(p(x) = x^{3} - 4x\\), find \\(p(2)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x = 2\\):\n\\[\np(2) = 2^{3} - 4(2) = 8 - 8 = 0.\n\\]\nThe correct option is A.",
+      "hint": "Substitute \\(x = 2\\) and simplify carefully."
+    },
+    {
+      "id": "algebra-09-q189",
+      "category": "Algebraic Problem Solving",
+      "concept": "Quadratic Equations",
+      "learningObjective": "Find the larger root of a quadratic equation with two negative roots.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x^{2} + 6x + 5 = 0\\). What is the larger root?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor:\n\\[\nx^2 + 6x + 5 = (x+1)(x+5) = 0.\n\\]\nThus \\(x = -1\\) or \\(x = -5\\). The larger root is \\(-1\\).\nThe correct option is A.",
+      "hint": "Factor the quadratic and compare the two roots."
+    },
+    {
+      "id": "algebra-09-q190",
+      "category": "Algebraic Problem Solving",
+      "concept": "Systems of Linear Equations",
+      "learningObjective": "Solve a system of two linear equations by substitution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system \\(x + 2y = 8\\), \\(3x - y = 3\\). What is \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From the first equation, \\(x = 8 - 2y\\). Substitute into the second:\n\\[\n3(8 - 2y) - y = 3 \\implies 24 - 7y = 3 \\implies y = 3.\n\\]\nThen \\(x = 8 - 2(3) = 2\\).\nThe correct option is B.",
+      "hint": "Express \\(x\\) in terms of \\(y\\) and substitute."
+    },
+    {
+      "id": "algebra-09-q191",
+      "category": "Algebraic Problem Solving",
+      "concept": "Algebraic Simplification",
+      "learningObjective": "Simplify a linear expression with parentheses.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Simplify \\(3(x+2) - 2(x-1)\\) and evaluate at \\(x = 2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Expand and combine like terms:\n\\[\n3(x+2) - 2(x-1) = 3x + 6 - 2x + 2 = x + 8.\n\\]\nAt \\(x = 2\\):\n\\[\n2 + 8 = 10.\n\\]\nThe correct option is A.",
+      "hint": "Distribute each coefficient, then combine like terms."
+    },
+    {
+      "id": "algebra-09-q192",
+      "category": "Algebraic Problem Solving",
+      "concept": "Composite Functions",
+      "learningObjective": "Evaluate a composition of two functions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(f(x) = x^{2} + 1\\) and \\(g(x) = 2x\\), find \\(f(g(1))\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First compute \\(g(1) = 2(1) = 2\\). Then\n\\[\nf(g(1)) = f(2) = 2^{2} + 1 = 5.\n\\]\nThe correct option is A.",
+      "hint": "Evaluate the inner function first, then apply the outer function."
+    },
+    {
+      "id": "algebra-09-q193",
+      "category": "Algebraic Problem Solving",
+      "concept": "Exponential Equations",
+      "learningObjective": "Solve an exponential equation with a negative exponent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(4^{x} = \\dfrac{1}{16}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Write both sides as powers of \\(4\\):\n\\[\n4^{x} = 4^{-2} \\implies x = -2.\n\\]\nThe correct option is B.",
+      "hint": "Express \\(\\dfrac{1}{16}\\) as a power of \\(4\\)."
+    },
+    {
+      "id": "algebra-09-q194",
+      "category": "Algebraic Problem Solving",
+      "concept": "Binomial Expansion",
+      "learningObjective": "Determine a coefficient in the expansion of a cubed binomial.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Expand \\((x-2)^{3}\\). What is the coefficient of \\(x^{2}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use the binomial expansion:\n\\[\n(x-2)^3 = x^3 - 3x^{2}(2) + 3x(4) - 8 = x^3 - 6x^{2} + 12x - 8.\n\\]\nThe coefficient of \\(x^2\\) is \\(-6\\).\nThe correct option is B.",
+      "hint": "Use \\((a-b)^3 = a^3 - 3a^2 b + 3ab^2 - b^3\\)."
+    },
+    {
+      "id": "algebra-09-q195",
+      "category": "Algebraic Problem Solving",
+      "concept": "Linear Equations with Fractions",
+      "learningObjective": "Solve a linear equation with two fractions having different denominators.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\dfrac{x}{2} - \\dfrac{x}{3} = 1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Combine the fractions:\n\\[\n\\frac{x}{2} - \\frac{x}{3} = \\frac{3x - 2x}{6} = \\frac{x}{6} = 1 \\implies x = 6.\n\\]\nThe correct option is B.",
+      "hint": "Use a common denominator of \\(6\\)."
+    },
+    {
+      "id": "algebra-09-q196",
+      "category": "Algebraic Problem Solving",
+      "concept": "Ratio and Proportion",
+      "learningObjective": "Use a ratio to find an unknown quantity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(\\dfrac{a}{b} = \\dfrac{3}{4}\\) and \\(b = 12\\), find \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Given \\(\\dfrac{a}{12} = \\dfrac{3}{4}\\), cross-multiply:\n\\[\n4a = 36 \\implies a = 9.\n\\]\nThe correct option is B.",
+      "hint": "Substitute \\(b = 12\\) and cross-multiply."
+    },
+    {
+      "id": "algebra-09-q197",
+      "category": "Algebraic Problem Solving",
+      "concept": "Exponential Equations",
+      "learningObjective": "Solve an exponential equation of the form \\(a^{kx} = a^m\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(2^{2x} = 16\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Write \\(16 = 2^{4}\\). Then\n\\[\n2^{2x} = 2^{4} \\implies 2x = 4 \\implies x = 2.\n\\]\nThe correct option is B.",
+      "hint": "Express \\(16\\) as a power of \\(2\\), then equate exponents."
+    },
+    {
+      "id": "algebra-09-q198",
+      "category": "Algebraic Problem Solving",
+      "concept": "Difference of Squares",
+      "learningObjective": "Simplify a difference of two squared binomials.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Simplify \\((x+1)^{2} - (x-1)^{2}\\) and evaluate at \\(x = 3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Expand each square:\n\\[\n(x+1)^2 = x^2 + 2x + 1, \\qquad (x-1)^2 = x^2 - 2x + 1.\n\\]\nSubtracting:\n\\[\n(x^2 + 2x + 1) - (x^2 - 2x + 1) = 4x.\n\\]\nAt \\(x = 3\\), this equals \\(12\\).\nThe correct option is A.",
+      "hint": "Expand both squares and subtract, or use the difference of squares identity."
+    },
+    {
+      "id": "algebra-09-q199",
+      "category": "Algebraic Problem Solving",
+      "concept": "Linear Equations",
+      "learningObjective": "Solve a linear equation with parentheses on both sides.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(3(x-2) = 2(x+1)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Expand both sides:\n\\[\n3x - 6 = 2x + 2.\n\\]\nSubtract \\(2x\\) from both sides:\n\\[\nx - 6 = 2 \\implies x = 8.\n\\]\nThe correct option is A.",
+      "hint": "Expand the parentheses first, then collect the variable terms."
+    },
+    {
+      "id": "algebra-09-q200",
+      "category": "Algebraic Problem Solving",
+      "concept": "Symmetric Identities",
+      "learningObjective": "Use the identity \\((x-y)^2 = x^2 + y^2 - 2xy\\) to find \\(xy\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "If \\(x^{2} + y^{2} = 25\\) and \\(x - y = 1\\), find \\(xy\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Square the given difference:\n\\[\n(x-y)^2 = x^2 + y^2 - 2xy.\n\\]\nSubstituting \\(x - y = 1\\) and \\(x^2 + y^2 = 25\\):\n\\[\n1 = 25 - 2xy \\implies 2xy = 24 \\implies xy = 12.\n\\]\nThe correct option is A.",
+      "hint": "Square \\(x - y\\) and substitute the given values."
+    }
+  ]
+}

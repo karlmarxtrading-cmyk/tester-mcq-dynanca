@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-447",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 447",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-447-q001",
+      "category": "Probability and Combinatorics",
+      "concept": "Combinations",
+      "learningObjective": "Count the number of \\(3\\)-element subsets of a \\(5\\)-element set using combinations.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many different \\(3\\)-element subsets can be chosen from a set with \\(5\\) elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number of \\(3\\)-element subsets of a \\(5\\)-element set is \\(\\binom{5}{3}=\\frac{5\\cdot4\\cdot3}{3\\cdot2\\cdot1}=10\\).",
+      "hint": "Use the combination formula \\(\\binom{n}{r}\\) because order does not matter."
+    },
+    {
+      "id": "math-gaokao-447-q002",
+      "category": "Probability and Combinatorics",
+      "concept": "Multiplication Principle",
+      "learningObjective": "Count ordered arrangements when repetition is allowed.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A password consists of \\(4\\) characters, and each character is chosen independently from \\(3\\) possible symbols. Repetition is allowed. How many different passwords are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(64\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(81\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the multiplication principle, each of the \\(4\\) positions has \\(3\\) choices. Thus the number of passwords is \\(3^4=81\\).",
+      "hint": "Multiply the number of choices for each position."
+    },
+    {
+      "id": "math-gaokao-447-q003",
+      "category": "Probability and Combinatorics",
+      "concept": "Probability with Combinations",
+      "learningObjective": "Compute the probability of drawing two red balls without replacement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A bag contains \\(4\\) red balls and \\(6\\) blue balls. Two balls are drawn at random without replacement. What is the probability that both balls are red?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{2}{15}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{4}{15}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total number of ways to draw \\(2\\) balls from \\(10\\) is \\(\\binom{10}{2}=45\\). The number of ways to draw \\(2\\) red balls from \\(4\\) is \\(\\binom{4}{2}=6\\). Therefore the probability is \\(\\frac{6}{45}=\\frac{2}{15}\\).",
+      "hint": "Count favorable combinations and divide by the total number of combinations."
+    },
+    {
+      "id": "math-gaokao-447-q004",
+      "category": "Probability and Combinatorics",
+      "concept": "Probability of an Odd Sum",
+      "learningObjective": "Use parity and combinations to find the probability that the sum of two selected numbers is odd.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "From the set \\(\\{1,2,3,4,5\\}\\), two distinct numbers are selected at random. What is the probability that their sum is odd?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{2}{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{5}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total number of ways to choose \\(2\\) distinct numbers from \\(5\\) is \\(\\binom{5}{2}=10\\). The sum is odd exactly when one number is odd and the other is even. There are \\(3\\) odd numbers and \\(2\\) even numbers, giving \\(3\\cdot2=6\\) favorable pairs. Thus the probability is \\(\\frac{6}{10}=\\frac{3}{5}\\).",
+      "hint": "An odd sum occurs exactly when one selected number is odd and the other is even."
+    },
+    {
+      "id": "math-gaokao-447-q005",
+      "category": "Probability and Combinatorics",
+      "concept": "Binomial Probability",
+      "learningObjective": "Compute the probability of exactly two heads in four tosses of a fair coin.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A fair coin is tossed independently \\(4\\) times. What is the probability of getting exactly \\(2\\) heads?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{8}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(2^4=16\\) equally likely sequences of \\(4\\) tosses. The number of sequences with exactly \\(2\\) heads is \\(\\binom{4}{2}=6\\). Therefore the probability is \\(\\frac{6}{16}=\\frac{3}{8}\\).",
+      "hint": "Count the number of sequences with exactly two heads and divide by the total number of sequences."
+    },
+    {
+      "id": "math-gaokao-447-q006",
+      "category": "Probability and Combinatorics",
+      "concept": "Inclusion-Exclusion Counting",
+      "learningObjective": "Count integers divisible by \\(2\\) or \\(3\\) using the inclusion-exclusion principle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many integers from \\(1\\) to \\(100\\) inclusive are divisible by \\(2\\) or \\(3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(66\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(67\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(\\left\\lfloor\\frac{100}{2}\\right\\rfloor=50\\) multiples of \\(2\\), \\(\\left\\lfloor\\frac{100}{3}\\right\\rfloor=33\\) multiples of \\(3\\), and \\(\\left\\lfloor\\frac{100}{6}\\right\\rfloor=16\\) multiples of both \\(2\\) and \\(3\\). By inclusion-exclusion, the number is \\(50+33-16=67\\).",
+      "hint": "Add the counts for divisibility by \\(2\\) and by \\(3\\), then subtract the count for divisibility by both."
+    },
+    {
+      "id": "math-gaokao-447-q007",
+      "category": "Probability and Combinatorics",
+      "concept": "Permutations with Repeated Letters",
+      "learningObjective": "Count distinct arrangements of letters when one letter is repeated.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many distinct arrangements are there of the letters in the word AAB?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The word AAB has \\(3\\) letters, with A repeated twice. The number of distinct arrangements is \\(\\frac{3!}{2!}=3\\), namely AAB, ABA, and BAA.",
+      "hint": "Divide the total number of permutations by the factorial of the repeated-letter count."
+    },
+    {
+      "id": "math-gaokao-447-q008",
+      "category": "Probability and Combinatorics",
+      "concept": "Probability without Replacement",
+      "learningObjective": "Find the probability of drawing one white and one black ball without replacement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "An urn contains \\(5\\) white balls and \\(3\\) black balls. Two balls are drawn at random without replacement. What is the probability that one ball is white and one ball is black?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{5}{14}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{15}{28}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total number of ways to draw \\(2\\) balls from \\(8\\) is \\(\\binom{8}{2}=28\\). To get one white and one black, there are \\(5\\cdot3=15\\) favorable pairs. Thus the probability is \\(\\frac{15}{28}\\).",
+      "hint": "Count the favorable mixed-color pairs and divide by all possible pairs."
+    },
+    {
+      "id": "math-gaokao-447-q009",
+      "category": "Probability and Combinatorics",
+      "concept": "Derangements",
+      "learningObjective": "Compute the probability that a random permutation of four numbers has no fixed point.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A permutation of the numbers \\(1,2,3,4\\) is chosen uniformly at random. What is the probability that no number is in its original position?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{8}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total number of permutations of \\(4\\) numbers is \\(4!=24\\). The number of derangements of \\(4\\) objects is \\(!4=4!\\left(1-1+\\frac{1}{2!}-\\frac{1}{3!}+\\frac{1}{4!}\\right)=9\\). Therefore the probability is \\(\\frac{9}{24}=\\frac{3}{8}\\).",
+      "hint": "Use the derangement formula or inclusion-exclusion to count permutations with no fixed point."
+    },
+    {
+      "id": "math-gaokao-447-q010",
+      "category": "Probability and Combinatorics",
+      "concept": "Expected Value in Sampling without Replacement",
+      "learningObjective": "Find the expected number of women in a randomly chosen committee using hypergeometric expectation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A committee of \\(3\\) people is selected at random from \\(4\\) men and \\(3\\) women. Let \\(X\\) be the number of women selected. What is \\(E(X)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{9}{7}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{6}{7}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number of women selected follows a hypergeometric distribution with \\(n=3\\), \\(K=3\\), and \\(N=7\\). Its expectation is \\[\n\\begin{aligned}\nE(X)&=n\\cdot\\frac{K}{N} \\\\\n&=3\\cdot\\frac{3}{7} \\\\\n&=\\frac{9}{7}\n\\end{aligned}\n\\].",
+      "hint": "Use the expected-value formula for sampling without replacement, or use linearity of expectation."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-598",
+  "category": "Comprehensive Mathematics",
+  "title": "598. Discrete Mathematics, Counting & Graph Theory: Minimum Spanning Trees by Prim Algorithm",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-598-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The rule of the algorithm",
+      "learningObjective": "State how the algorithm of Prim builds a spanning tree.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does the algorithm of Prim build a minimum spanning tree?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It examines all edges in order of increasing weight and accepts every edge that closes no cycle."
+        },
+        {
+          "label": "B",
+          "text": "It grows a single tree from a start vertex, each time adding the cheapest edge with exactly one endpoint in the tree."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The algorithm of Prim keeps one connected tree. At each step it looks at the edges that lead from the tree to a vertex outside it and adds the cheapest of them, so the tree gains one vertex per step. Going through all edges sorted by weight is the method of Kruskal.",
+      "hint": "This algorithm always keeps the chosen edges connected."
+    },
+    {
+      "id": "dynanca-598-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The first edge",
+      "learningObjective": "Identify the first edge added from a given start vertex.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A weighted graph has the edges \\(AB:2\\), \\(AC:3\\), \\(BC:1\\), \\(BD:4\\), \\(CD:5\\), \\(CE:6\\), and \\(DE:7\\), where the number after each edge is its weight. The algorithm of Prim starts at \\(A\\). Which edge is added first?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(AB\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(BC\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "At the start the tree consists of \\(A\\) alone, so only the edges at \\(A\\) are candidates: \\(AB\\) with weight \\(2\\) and \\(AC\\) with weight \\(3\\). The cheaper one, \\(AB\\), is added. The edge \\(BC\\) is the lightest edge of the whole graph, but it does not touch the tree yet.",
+      "hint": "Only edges that touch the current tree can be added."
+    },
+    {
+      "id": "dynanca-598-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The second edge",
+      "learningObjective": "Identify the second edge added from a given start vertex.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A weighted graph has the edges \\(AB:2\\), \\(AC:3\\), \\(BC:1\\), \\(BD:4\\), \\(CD:5\\), \\(CE:6\\), and \\(DE:7\\), where the number after each edge is its weight. The algorithm of Prim starts at \\(A\\) and has added \\(AB\\). Which edge is added next?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(BC\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(AC\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The tree now contains \\(A\\) and \\(B\\). The edges with exactly one endpoint in the tree are \\(AC\\) with weight \\(3\\), \\(BC\\) with weight \\(1\\), and \\(BD\\) with weight \\(4\\). The cheapest is \\(BC\\). The edge \\(AC\\) also reaches \\(C\\), but at a higher cost.",
+      "hint": "List every edge that leads from \\(A\\) or \\(B\\) to a vertex outside the tree."
+    },
+    {
+      "id": "dynanca-598-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The whole sequence",
+      "learningObjective": "List the edges added by the algorithm in order.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A weighted graph has the edges \\(AB:2\\), \\(AC:3\\), \\(BC:1\\), \\(BD:4\\), \\(CD:5\\), \\(CE:6\\), and \\(DE:7\\), where the number after each edge is its weight. The algorithm of Prim starts at \\(A\\). In which order are the edges added?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(BC,\\ AB,\\ BD,\\ CE\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(AB,\\ BC,\\ BD,\\ CE\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(A\\) the cheapest edge is \\(AB\\). From the tree \\(\\{A,B\\}\\) the cheapest outgoing edge is \\(BC\\). From \\(\\{A,B,C\\}\\) the candidates are \\(BD\\), \\(CD\\), and \\(CE\\), and \\(BD\\) is cheapest. Finally \\(E\\) is reached by \\(CE\\), which is cheaper than \\(DE\\). The order beginning with \\(BC\\) is the order of Kruskal, which starts with the globally lightest edge.",
+      "hint": "The first edge must touch the start vertex."
+    },
+    {
+      "id": "dynanca-598-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Weight of the tree",
+      "learningObjective": "Find the total weight of the spanning tree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A weighted graph has the edges \\(AB:2\\), \\(AC:3\\), \\(BC:1\\), \\(BD:4\\), \\(CD:5\\), \\(CE:6\\), and \\(DE:7\\), where the number after each edge is its weight. What is the total weight of a minimum spanning tree?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(13\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The algorithm of Prim, started at \\(A\\), adds \\(AB\\), \\(BC\\), \\(BD\\), and \\(CE\\), with total weight \\(2+1+4+6=13\\). Using \\(AC\\) in place of \\(BC\\) to reach \\(C\\) would give \\(2+3+4+6=15\\), which is not minimal.",
+      "hint": "Add the weights of the four edges chosen by the algorithm."
+    },
+    {
+      "id": "dynanca-598-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Another start vertex",
+      "learningObjective": "Identify the first edge added when the start vertex is changed.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A weighted graph has the edges \\(AB:2\\), \\(AC:3\\), \\(BC:1\\), \\(BD:4\\), \\(CD:5\\), \\(CE:6\\), and \\(DE:7\\), where the number after each edge is its weight. The algorithm of Prim starts at \\(D\\). Which edge is added first?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(BC\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(BD\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "With the tree consisting of \\(D\\) alone, the candidates are the edges at \\(D\\): \\(BD\\) with weight \\(4\\), \\(CD\\) with weight \\(5\\), and \\(DE\\) with weight \\(7\\). The cheapest is \\(BD\\). The edge \\(BC\\) becomes a candidate only after \\(B\\) has joined the tree.",
+      "hint": "Compare only the edges at the start vertex."
+    },
+    {
+      "id": "dynanca-598-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Independence of the start",
+      "learningObjective": "Decide whether the weight of the result depends on the start vertex.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Does the total weight of the tree produced by the algorithm of Prim depend on the start vertex?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; a start vertex with heavy edges leads to a heavier tree."
+        },
+        {
+          "label": "B",
+          "text": "No; from every start vertex the algorithm produces a minimum spanning tree, and all of these have the same weight."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The algorithm is correct for every start vertex: it always returns a spanning tree of minimum total weight. The order in which edges are added changes with the start, and when several minimum spanning trees exist the tree itself may change, but the total weight is always the minimum.",
+      "hint": "The result is always a minimum spanning tree, whatever the start."
+    },
+    {
+      "id": "dynanca-598-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An edge that is never added",
+      "learningObjective": "Explain why an edge inside the tree is not a candidate.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A weighted graph has the edges \\(AB:2\\), \\(AC:3\\), \\(BC:1\\), \\(BD:4\\), \\(CD:5\\), \\(CE:6\\), and \\(DE:7\\), where the number after each edge is its weight. The algorithm of Prim, started at \\(A\\), has added \\(AB\\) and \\(BC\\). Why is \\(AC\\), now the lightest unused edge, not added next?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Its weight is larger than the weight of \\(AB\\)."
+        },
+        {
+          "label": "B",
+          "text": "Both of its endpoints are already in the tree, so it would close a cycle."
+        }
+      ],
+      "answer": "B",
+      "explanation": "An edge is a candidate only if exactly one of its endpoints lies in the tree. After \\(AB\\) and \\(BC\\) have been added, both \\(A\\) and \\(C\\) are in the tree, so \\(AC\\) would close the cycle \\(A,B,C,A\\) and add no new vertex. Comparing its weight with that of an edge already chosen is not part of the rule.",
+      "hint": "Check on which side of the tree boundary the two endpoints lie."
+    },
+    {
+      "id": "dynanca-598-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Order in which vertices join",
+      "learningObjective": "Give the order in which the vertices enter the tree.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A weighted graph has the edges \\(WX:5\\), \\(WY:2\\), \\(XY:3\\), \\(XZ:1\\), and \\(YZ:6\\), where the number after each edge is its weight. The algorithm of Prim starts at \\(W\\). In which order do the vertices join the tree?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(W,\\ Y,\\ X,\\ Z\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(W,\\ X,\\ Y,\\ Z\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(W\\) the candidates are \\(WX\\) with weight \\(5\\) and \\(WY\\) with weight \\(2\\), so \\(Y\\) joins first. From \\(\\{W,Y\\}\\) the candidates are \\(WX\\) with \\(5\\), \\(XY\\) with \\(3\\), and \\(YZ\\) with \\(6\\), so \\(X\\) joins through \\(XY\\). Finally \\(Z\\) joins through \\(XZ\\) with weight \\(1\\). The total weight is \\(2+3+1=6\\).",
+      "hint": "At each step compare all edges that leave the current tree."
+    },
+    {
+      "id": "dynanca-598-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two algorithms, one tree",
+      "learningObjective": "Compare the trees produced by two algorithms when all weights differ.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A connected graph has edge weights that are all different. Do the algorithms of Prim and Kruskal produce the same spanning tree?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; they add edges in different orders, so they end with different trees."
+        },
+        {
+          "label": "B",
+          "text": "Yes; with all weights different the minimum spanning tree is unique, and both algorithms find it."
+        }
+      ],
+      "answer": "B",
+      "explanation": "When no two edges have the same weight, there is exactly one minimum spanning tree. Both algorithms are guaranteed to return a minimum spanning tree, so they return this same tree, although they generally add its edges in different orders.",
+      "hint": "Ask how many minimum spanning trees exist when all weights are different."
+    }
+  ]
+}

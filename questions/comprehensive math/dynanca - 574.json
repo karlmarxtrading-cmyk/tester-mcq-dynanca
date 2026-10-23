@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-574",
+  "category": "Comprehensive Mathematics",
+  "title": "574. Discrete Mathematics, Counting & Graph Theory: Iterative versus Recursive Definitions",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-574-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Parts of a recursive definition",
+      "learningObjective": "State what a recursive definition of a sequence must contain.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A recursive definition of a sequence gives a rule that relates \\(a_n\\) to earlier terms. What else must it give?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A formula for \\(a_n\\) in terms of \\(n\\) alone"
+        },
+        {
+          "label": "B",
+          "text": "One or more initial values"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The rule only says how to pass from earlier terms to the next one, so the sequence is fixed only when starting values are given. For example, the rule \\(a_n=a_{n-1}+2\\) gives \\(1,3,5,7\\) when \\(a_0=1\\) but \\(5,7,9,11\\) when \\(a_0=5\\). A formula in terms of \\(n\\) alone is an explicit definition, which is a different way of defining the sequence.",
+      "hint": "Ask how the very first term would be found from the rule alone."
+    },
+    {
+      "id": "dynanca-574-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Computing a term recursively",
+      "learningObjective": "Compute a term of a recursively defined sequence step by step.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A sequence is defined by \\(a_1=3\\) and \\(a_n=a_{n-1}+4\\) for \\(n\\ge 2\\). What is \\(a_4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(19\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Apply the rule three times: \\(a_2=3+4=7\\), \\(a_3=7+4=11\\), and \\(a_4=11+4=15\\). The value \\(19\\) is \\(a_5\\); it results from applying the rule once too often.",
+      "hint": "Count how many times the rule must be applied to go from \\(a_1\\) to \\(a_4\\)."
+    },
+    {
+      "id": "dynanca-574-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "From a recursive rule to an explicit formula",
+      "learningObjective": "Find an explicit formula for a sequence with a constant difference.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A sequence is defined by \\(a_1=3\\) and \\(a_n=a_{n-1}+4\\) for \\(n\\ge 2\\). Which explicit formula gives \\(a_n\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_n=4n+3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a_n=4n-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Starting from \\(a_1=3\\), the rule adds \\(4\\) a total of \\(n-1\\) times, so \\(a_n=3+4(n-1)=4n-1\\). The formula \\(4n+3\\) adds \\(4\\) once too often; it gives \\(7\\) for \\(n=1\\) instead of \\(3\\).",
+      "hint": "Test each formula with \\(n=1\\)."
+    },
+    {
+      "id": "dynanca-574-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "From an explicit formula to a recursive rule",
+      "learningObjective": "Write a recursive definition for a geometric sequence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A sequence is given explicitly by \\(a_n=3\\cdot 4^n\\) for \\(n\\ge 0\\). Which recursive definition describes the same sequence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_0=3\\) and \\(a_n=4a_{n-1}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a_0=4\\) and \\(a_n=3a_{n-1}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The explicit formula gives \\(a_0=3\\cdot 4^0=3\\), and \\(a_n=3\\cdot 4^n=4\\cdot\\left(3\\cdot 4^{n-1}\\right)=4a_{n-1}\\). So the starting value is \\(3\\) and each term is \\(4\\) times the previous one. The other definition exchanges the roles of the two numbers and gives \\(4,12,36\\) instead of \\(3,12,48\\).",
+      "hint": "Compute \\(a_0\\) from the formula, then compare \\(a_n\\) with \\(a_{n-1}\\)."
+    },
+    {
+      "id": "dynanca-574-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A recursively defined sum",
+      "learningObjective": "Evaluate a recursively defined sum of squares.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function is defined by \\(S(0)=0\\) and \\(S(n)=S(n-1)+n^2\\) for \\(n\\ge 1\\). What is \\(S(4)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(30\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Unfold the rule: \\(S(1)=0+1=1\\), \\(S(2)=1+4=5\\), \\(S(3)=5+9=14\\), and \\(S(4)=14+16=30\\). The value \\(16\\) is only the last term \\(4^2\\) that is added, not the accumulated sum.",
+      "hint": "Each value is the previous value plus one new square."
+    },
+    {
+      "id": "dynanca-574-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Advantage of an explicit formula",
+      "learningObjective": "Use an explicit formula to find a distant term directly.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A sequence is defined by \\(a_1=2\\) and \\(a_n=a_{n-1}+5\\). Its explicit formula is \\(a_n=5n-3\\). What is \\(a_{100}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(497\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(502\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The explicit formula gives the term at once: \\(a_{100}=5\\cdot 100-3=497\\). With the recursive rule alone, all \\(99\\) earlier steps would have to be carried out. The value \\(502\\) is \\(a_{101}\\).",
+      "hint": "Substitute \\(n=100\\) into the explicit formula."
+    },
+    {
+      "id": "dynanca-574-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Do two definitions agree",
+      "learningObjective": "Decide whether a recursive and an explicit definition give the same sequence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "One sequence is defined by \\(b_1=2\\) and \\(b_n=b_{n-1}+2n\\) for \\(n\\ge 2\\); another is given by \\(c_n=n(n+1)\\). Do they define the same sequence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; they agree for \\(n=1\\) and \\(n=2\\) but differ from \\(n=3\\) on."
+        },
+        {
+          "label": "B",
+          "text": "Yes; \\(c_1=2\\), and \\(c_n-c_{n-1}=2n\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Check the starting value: \\(c_1=1\\cdot 2=2=b_1\\). Check the rule: \\(c_n-c_{n-1}=n(n+1)-(n-1)n=2n\\). So \\(c_n\\) satisfies the same starting value and the same rule as \\(b_n\\), and the two sequences are equal. For instance both give \\(2,6,12,20\\).",
+      "hint": "Verify that the explicit formula has the right first term and obeys the recursive rule."
+    },
+    {
+      "id": "dynanca-574-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two initial values",
+      "learningObjective": "Compute a term of a sequence whose rule uses the two previous terms.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Procedural",
+      "question": "A sequence is defined by \\(a_1=1\\), \\(a_2=3\\), and \\(a_n=a_{n-1}+a_{n-2}\\) for \\(n\\ge 3\\). What is \\(a_6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(18\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(29\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The terms are \\(a_3=3+1=4\\), \\(a_4=4+3=7\\), \\(a_5=7+4=11\\), and \\(a_6=11+7=18\\). The value \\(29\\) is \\(a_7\\). Because the rule refers to two earlier terms, two initial values are needed.",
+      "hint": "Write the terms one by one; each new term is the sum of the two before it."
+    },
+    {
+      "id": "dynanca-574-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A loop as a recursive rule",
+      "learningObjective": "Trace a repeated update and relate it to a recursive definition.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A variable starts with the value \\(x=1\\). The update \"replace \\(x\\) by \\(3x-1\\)\" is then carried out \\(4\\) times. What is the final value of \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(41\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(14\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The loop computes the sequence \\(x_0=1\\), \\(x_k=3x_{k-1}-1\\): \\(x_1=2\\), \\(x_2=5\\), \\(x_3=14\\), \\(x_4=41\\). The value \\(14\\) is reached after only \\(3\\) updates.",
+      "hint": "Write down the value of \\(x\\) after each update."
+    },
+    {
+      "id": "dynanca-574-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Checking a proposed explicit formula",
+      "learningObjective": "Test a proposed explicit formula against the initial value.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A sequence is defined by \\(a_1=1\\) and \\(a_n=2a_{n-1}\\) for \\(n\\ge 2\\). A student claims that \\(a_n=2^n\\). Is the claim correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the correct formula is \\(a_n=2^{n-1}\\), because \\(a_1=1\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; each term is twice the previous one, exactly as for \\(2^n\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The formula \\(2^n\\) does satisfy the rule \\(a_n=2a_{n-1}\\), but it gives \\(2\\) for \\(n=1\\), not \\(1\\). An explicit formula must match the initial value as well as the rule. Starting from \\(a_1=1\\), the terms are \\(1,2,4,8\\), which is \\(a_n=2^{n-1}\\).",
+      "hint": "Check the first term given by the proposed formula."
+    }
+  ]
+}

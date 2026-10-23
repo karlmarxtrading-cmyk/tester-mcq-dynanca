@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-440",
+  "category": "Comprehensive Mathematics",
+  "title": "440. Trigonometry & Periodic Models: Triangle Area Using Sine",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-440-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Area formula with an included angle",
+      "learningObjective": "State the formula for the area of a triangle from two sides and the included angle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a triangle, sides \\(a\\) and \\(b\\) include the angle \\(C\\). Which formula gives the area of the triangle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}ab\\cos C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}ab\\sin C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Taking \\(a\\) as the base, the height is \\(b\\sin C\\), so the area is \\(\\frac{1}{2}\\cdot a\\cdot b\\sin C\\). The cosine version fails for a right angle: with \\(C=90^\\circ\\) it would give area \\(0\\), while the true area is \\(\\frac{1}{2}ab\\).",
+      "hint": "Express the height in terms of \\(b\\) and \\(C\\), or test both formulas with \\(C=90^\\circ\\)."
+    },
+    {
+      "id": "dynanca-440-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Area with a thirty-degree angle",
+      "learningObjective": "Compute a triangle area from two sides and the included angle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A triangle has sides \\(6\\) and \\(8\\) with an included angle of \\(30^\\circ\\). What is its area?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The area is \\(\\frac{1}{2}\\cdot 6\\cdot 8\\cdot\\sin 30^\\circ=\\frac{1}{2}\\cdot 48\\cdot\\frac{1}{2}=12\\). Omitting the factor \\(\\frac{1}{2}\\) of the formula gives \\(24\\), which is incorrect.",
+      "hint": "Use \\(\\frac{1}{2}ab\\sin C\\); there are two separate factors of one half here."
+    },
+    {
+      "id": "dynanca-440-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Area with a sixty-degree angle",
+      "learningObjective": "Compute a triangle area with an exact radical value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A triangle has sides \\(5\\) and \\(4\\) with an included angle of \\(60^\\circ\\). What is its area?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\sqrt{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The area is \\(\\frac{1}{2}\\cdot 5\\cdot 4\\cdot\\sin 60^\\circ=10\\cdot\\frac{\\sqrt{3}}{2}=5\\sqrt{3}\\approx 8.66\\). Using \\(\\cos 60^\\circ=\\frac{1}{2}\\) in place of the sine gives \\(5\\), which is incorrect.",
+      "hint": "The area formula uses the sine of the included angle."
+    },
+    {
+      "id": "dynanca-440-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Area with an obtuse angle",
+      "learningObjective": "Compute a triangle area when the included angle is obtuse.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A triangle has sides \\(6\\) and \\(10\\) with an included angle of \\(150^\\circ\\). What is its area?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\sqrt{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(\\sin 150^\\circ=\\sin 30^\\circ=\\frac{1}{2}\\), the area is \\(\\frac{1}{2}\\cdot 6\\cdot 10\\cdot\\frac{1}{2}=15\\). The value \\(15\\sqrt{3}\\) uses \\(\\frac{\\sqrt{3}}{2}\\), the sine of \\(60^\\circ\\) or \\(120^\\circ\\).",
+      "hint": "Use the reference angle to evaluate the sine of the obtuse angle."
+    },
+    {
+      "id": "dynanca-440-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Angle from a given area",
+      "learningObjective": "Find the possible included angles from an area and two sides.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A triangle has sides \\(6\\) and \\(8\\) and area \\(12\\). Which values of the included angle \\(C\\) are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(C=30^\\circ\\) only"
+        },
+        {
+          "label": "B",
+          "text": "\\(C=30^\\circ\\) or \\(C=150^\\circ\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(12=\\frac{1}{2}\\cdot 6\\cdot 8\\cdot\\sin C\\), \\(\\sin C=\\frac{12}{24}=\\frac{1}{2}\\). An angle of a triangle lies between \\(0^\\circ\\) and \\(180^\\circ\\), and both \\(30^\\circ\\) and \\(150^\\circ\\) have sine \\(\\frac{1}{2}\\). Each gives a valid triangle, so both are possible.",
+      "hint": "Solve for \\(\\sin C\\), then list every angle between \\(0^\\circ\\) and \\(180^\\circ\\) with that sine."
+    },
+    {
+      "id": "dynanca-440-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Side from a given area",
+      "learningObjective": "Find a side from an area, another side, and the included angle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A triangle has area \\(9\\sqrt{3}\\). Two of its sides are \\(6\\) and \\(b\\), and they include an angle of \\(60^\\circ\\). What is \\(b\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(9\\sqrt{3}=\\frac{1}{2}\\cdot 6\\cdot b\\cdot\\frac{\\sqrt{3}}{2}=\\frac{3\\sqrt{3}}{2}b\\), \\(b=9\\sqrt{3}\\cdot\\frac{2}{3\\sqrt{3}}=6\\). Forgetting the factor \\(\\frac{1}{2}\\) in the formula gives \\(3\\sqrt{3}\\,b=9\\sqrt{3}\\) and \\(b=3\\), which is incorrect.",
+      "hint": "Write the area formula with the unknown side, simplify the coefficient of \\(b\\), and solve."
+    },
+    {
+      "id": "dynanca-440-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Area of an equilateral triangle",
+      "learningObjective": "Apply the sine area formula to an equilateral triangle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the area of an equilateral triangle with side \\(4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\sqrt{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\sqrt{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every angle is \\(60^\\circ\\), so the area is \\(\\frac{1}{2}\\cdot 4\\cdot 4\\cdot\\sin 60^\\circ=8\\cdot\\frac{\\sqrt{3}}{2}=4\\sqrt{3}\\approx 6.93\\). Omitting the factor \\(\\frac{1}{2}\\) of the formula gives \\(8\\sqrt{3}\\), which is incorrect.",
+      "hint": "Use two sides and the \\(60^\\circ\\) angle between them."
+    },
+    {
+      "id": "dynanca-440-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Area of a parallelogram",
+      "learningObjective": "Extend the sine area formula from a triangle to a parallelogram.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A parallelogram has adjacent sides \\(5\\) and \\(8\\) that meet at an angle of \\(30^\\circ\\). What is its area?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A diagonal splits the parallelogram into two congruent triangles, each with area \\(\\frac{1}{2}\\cdot 5\\cdot 8\\cdot\\sin 30^\\circ=10\\). The parallelogram therefore has area \\(2\\cdot 10=20\\), which equals \\(ab\\sin\\theta\\). The value \\(10\\) is the area of only one of the two triangles.",
+      "hint": "Split the parallelogram into two congruent triangles with a diagonal."
+    },
+    {
+      "id": "dynanca-440-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Angle giving the largest area",
+      "learningObjective": "Reason about how the area depends on the included angle.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Two sides of a triangle have fixed lengths \\(7\\) and \\(10\\). For which included angle \\(C\\) is the area largest, and what is that area?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(C=90^\\circ\\), giving area \\(35\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(C=60^\\circ\\), giving area \\(\\frac{35\\sqrt{3}}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The area is \\(\\frac{1}{2}\\cdot 7\\cdot 10\\cdot\\sin C=35\\sin C\\). For \\(0^\\circ<C<180^\\circ\\) the sine is largest when \\(C=90^\\circ\\), where \\(\\sin C=1\\) and the area is \\(35\\). For \\(C=60^\\circ\\) the area is \\(\\frac{35\\sqrt{3}}{2}\\approx 30.3\\), which is smaller.",
+      "hint": "Write the area as a constant times \\(\\sin C\\) and find the largest possible value of the sine."
+    },
+    {
+      "id": "dynanca-440-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Area from one side and two angles",
+      "learningObjective": "Combine the Law of Sines with the sine area formula.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In triangle \\(ABC\\), \\(a=8\\), \\(B=45^\\circ\\), and \\(C=105^\\circ\\). What is the area of the triangle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\sqrt{3}-16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\sqrt{3}+16\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First, \\(A=180^\\circ-45^\\circ-105^\\circ=30^\\circ\\). By the Law of Sines, \\(b=\\frac{8\\sin 45^\\circ}{\\sin 30^\\circ}=8\\sqrt{2}\\). Then the area is \\(\\frac{1}{2}ab\\sin C=\\frac{1}{2}\\cdot 8\\cdot 8\\sqrt{2}\\cdot\\sin 105^\\circ\\). With \\(\\sin 105^\\circ=\\frac{\\sqrt{6}+\\sqrt{2}}{4}\\), this equals \\(8\\sqrt{2}\\left(\\sqrt{6}+\\sqrt{2}\\right)=16\\sqrt{3}+16\\approx 43.7\\). Using \\(\\frac{\\sqrt{6}-\\sqrt{2}}{4}\\), the sine of \\(15^\\circ\\), gives the incorrect \\(16\\sqrt{3}-16\\).",
+      "hint": "Find angle \\(A\\), then side \\(b\\) with the Law of Sines, and finally use \\(\\frac{1}{2}ab\\sin C\\)."
+    }
+  ]
+}

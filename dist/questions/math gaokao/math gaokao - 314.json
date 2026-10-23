@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-314",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 314",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-314-q001",
+      "category": "Probability",
+      "concept": "Binomial Probability for Exactly Two Successes",
+      "learningObjective": "Compute the probability of exactly two successes in a fixed number of independent trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A fair coin is tossed \\(3\\) times. Find the probability of getting exactly \\(2\\) heads.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{8}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{8}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number of heads follows a binomial distribution with \\(n=3\\), \\(p=\\frac12\\), and \\(k=2\\). Thus,\n\\[\nP(X=2)=\\binom{3}{2}\\left(\\frac12\\right)^2\\left(\\frac12\\right)^1\n=3\\cdot\\frac14\\cdot\\frac12\n=\\frac{3}{8}.\n\\]",
+      "hint": "Use the binomial coefficient to count the arrangements of two heads among three tosses."
+    },
+    {
+      "id": "math-gaokao-314-q002",
+      "category": "Probability",
+      "concept": "Binomial Probability for Exactly One Success",
+      "learningObjective": "Compute the probability of exactly one success in repeated independent trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A fair die is rolled \\(4\\) times. Find the probability of getting a \\(6\\) exactly once.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{25}{324}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{125}{324}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of getting a \\(6\\) is \\(\\frac16\\), and the probability of not getting a \\(6\\) is \\(\\frac56\\). Using the binomial formula with \\(n=4\\), \\(k=1\\),\n\\[\nP(X=1)=\\binom{4}{1}\\left(\\frac16\\right)^1\\left(\\frac56\\right)^3\n=4\\cdot\\frac16\\cdot\\frac{125}{216}\n=\\frac{500}{1296}\n=\\frac{125}{324}.\n\\]",
+      "hint": "Use the binomial formula with \\(p=\\frac16\\) and \\(q=\\frac56\\)."
+    },
+    {
+      "id": "math-gaokao-314-q003",
+      "category": "Probability",
+      "concept": "Probability of At Least One Success",
+      "learningObjective": "Use the complement rule to find the probability of at least one success in repeated independent trials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A biased coin has probability \\(\\frac14\\) of landing heads. It is tossed \\(3\\) times. Find the probability of getting at least one head.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{37}{64}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{27}{64}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The complement of “at least one head” is “no heads.” Since the probability of tails is \\(\\frac34\\),\n\\[\nP(\\text{no heads})=\\left(\\frac34\\right)^3=\\frac{27}{64}.\n\\]\nTherefore,\n\\[\nP(\\text{at least one head})=1-\\frac{27}{64}=\\frac{37}{64}.\n\\]",
+      "hint": "Consider the complement event “no heads” and use independence."
+    },
+    {
+      "id": "math-gaokao-314-q004",
+      "category": "Probability",
+      "concept": "Probability of No Successes",
+      "learningObjective": "Compute the probability that an event never occurs in repeated independent trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An experiment succeeds with probability \\(0.2\\). It is repeated \\(5\\) times independently. Find the probability of no successes.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.4096\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.32768\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of failure in one trial is \\(1-0.2=0.8\\). For no successes in \\(5\\) independent trials,\n\\[\nP(\\text{no successes})=(0.8)^5=0.32768.\n\\]",
+      "hint": "Multiply the probability of failure in each trial."
+    },
+    {
+      "id": "math-gaokao-314-q005",
+      "category": "Probability",
+      "concept": "Binomial Probability for Exactly Two Successes",
+      "learningObjective": "Compute the probability of exactly two successes in four independent trials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "An event occurs with probability \\(\\frac13\\) in each of \\(4\\) independent trials. Find the probability that it occurs exactly twice.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{4}{27}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{8}{27}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the binomial formula with \\(n=4\\), \\(k=2\\), \\(p=\\frac13\\), and \\(q=\\frac23\\),\n\\[\nP(X=2)=\\binom{4}{2}\\left(\\frac13\\right)^2\\left(\\frac23\\right)^2\n=6\\cdot\\frac19\\cdot\\frac49\n=\\frac{24}{81}\n=\\frac{8}{27}.\n\\]",
+      "hint": "Use \\(P(X=2)=\\binom{4}{2}\\left(\\frac13\\right)^2\\left(\\frac23\\right)^2\\)."
+    },
+    {
+      "id": "math-gaokao-314-q006",
+      "category": "Probability",
+      "concept": "Probability of At Least Two Successes",
+      "learningObjective": "Use complements to compute the probability of at least two successes in four independent trials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A fair coin is tossed \\(4\\) times. Find the probability of getting at least \\(2\\) heads.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{5}{16}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{11}{16}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The complement of “at least two heads” is “0 or 1 head.” Since there are \\(2^4=16\\) equally likely outcomes,\n\\[\nP(0\\text{ heads})=\\frac{1}{16},\\qquad\nP(1\\text{ head})=\\frac{4}{16}.\n\\]\nThus,\n\\[\nP(\\text{at least 2 heads})=1-\\frac{1}{16}-\\frac{4}{16}=\\frac{11}{16}.\n\\]",
+      "hint": "Use the complement and count the cases with 0 or 1 head."
+    },
+    {
+      "id": "math-gaokao-314-q007",
+      "category": "Probability",
+      "concept": "Probability of All Successes",
+      "learningObjective": "Compute the probability that every trial results in success.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A fair coin is tossed \\(5\\) times. Find the probability that all tosses are heads.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{32}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{32}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each toss is independent with probability \\(\\frac12\\) of heads. Therefore,\n\\[\nP(\\text{all heads})=\\left(\\frac12\\right)^5=\\frac{1}{32}.\n\\]",
+      "hint": "All five tosses must be heads; multiply the probabilities."
+    },
+    {
+      "id": "math-gaokao-314-q008",
+      "category": "Probability",
+      "concept": "Binomial Probability for Exactly Three Successes",
+      "learningObjective": "Compute the probability of exactly three successes in five independent trials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A fair coin is tossed \\(5\\) times. Find the probability of getting exactly \\(3\\) heads.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{5}{32}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{16}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the binomial formula with \\(n=5\\), \\(k=3\\), \\(p=\\frac12\\),\n\\[\nP(X=3)=\\binom{5}{3}\\left(\\frac12\\right)^3\\left(\\frac12\\right)^2\n=10\\cdot\\frac{1}{32}\n=\\frac{10}{32}\n=\\frac{5}{16}.\n\\]",
+      "hint": "Use the binomial coefficient to count arrangements of exactly three heads."
+    },
+    {
+      "id": "math-gaokao-314-q009",
+      "category": "Probability",
+      "concept": "Probability of At Most One Success",
+      "learningObjective": "Compute the probability of at most one success in three independent trials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "An event occurs with probability \\(0.1\\) in each of \\(3\\) independent trials. Find the probability that it occurs at most once.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.972\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.729\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "“At most once” means 0 or 1 success. Thus,\n\\[\nP(X=0)=(0.9)^3=0.729,\n\\]\nand\n\\[\nP(X=1)=\\binom{3}{1}(0.1)(0.9)^2=3\\cdot0.1\\cdot0.81=0.243.\n\\]\nTherefore,\n\\[\nP(X\\le 1)=0.729+0.243=0.972.\n\\]",
+      "hint": "At most one success means 0 or 1 success; add those two probabilities."
+    },
+    {
+      "id": "math-gaokao-314-q010",
+      "category": "Probability",
+      "concept": "Probability of At Least Four Successes",
+      "learningObjective": "Apply the binomial formula to compute a cumulative probability for repeated independent trials.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A basketball player makes each free throw independently with probability \\(0.8\\). She takes \\(5\\) free throws. Find the probability that she makes at least \\(4\\) of them.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.67232\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.73728\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "At least \\(4\\) made means exactly \\(4\\) or exactly \\(5\\) made. Using the binomial formula,\n\\[\nP(X=4)=\\binom{5}{4}(0.8)^4(0.2)=5(0.4096)(0.2)=0.4096,\n\\]\nand\n\\[\nP(X=5)=(0.8)^5=0.32768.\n\\]\nTherefore,\n\\[\nP(X\\ge 4)=0.4096+0.32768=0.73728.\n\\]",
+      "hint": "At least four made means exactly 4 or exactly 5 made; use the binomial formula for each and add."
+    }
+  ]
+}

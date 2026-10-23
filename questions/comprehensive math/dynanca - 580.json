@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-580",
+  "category": "Comprehensive Mathematics",
+  "title": "580. Discrete Mathematics, Counting & Graph Theory: Vertex Degree in Undirected Graphs",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-580-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Definition of degree",
+      "learningObjective": "State the definition of the degree of a vertex.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In an undirected graph without loops, what is the degree of a vertex?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The number of edges that have the vertex as an endpoint"
+        },
+        {
+          "label": "B",
+          "text": "The number of vertices that are not adjacent to the vertex"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The degree of a vertex counts the edges that meet it. In a simple graph this is the same as the number of its neighbours. The vertices that are not adjacent to it play no part in the definition.",
+      "hint": "The degree measures how many edges meet at the vertex."
+    },
+    {
+      "id": "dynanca-580-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Degree from an edge list",
+      "learningObjective": "Find the degree of a vertex from an edge list.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D\\) and edges \\(AB\\), \\(AC\\), \\(AD\\), and \\(BC\\). What is the degree of \\(A\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The edges with \\(A\\) as an endpoint are \\(AB\\), \\(AC\\), and \\(AD\\), so the degree of \\(A\\) is \\(3\\). The edge \\(BC\\) does not meet \\(A\\); the number \\(4\\) is the total number of edges of the graph.",
+      "hint": "Count only the edges whose name contains \\(A\\)."
+    },
+    {
+      "id": "dynanca-580-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Degree sequence",
+      "learningObjective": "Find the degree sequence of a small graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D\\) and edges \\(AB\\), \\(BC\\), \\(CD\\), \\(DA\\), and \\(AC\\). What are the degrees of its vertices, listed in decreasing order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3,2,2,2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3,3,2,2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(A\\) lies on \\(AB\\), \\(DA\\), \\(AC\\) and has degree \\(3\\); \\(C\\) lies on \\(BC\\), \\(CD\\), \\(AC\\) and has degree \\(3\\); \\(B\\) and \\(D\\) have degree \\(2\\). The list \\(3,2,2,2\\) has sum \\(9\\), which is impossible for a graph with \\(5\\) edges, because the degrees must add up to \\(10\\).",
+      "hint": "Count the edges at each vertex, and check that the degrees add up to twice the number of edges."
+    },
+    {
+      "id": "dynanca-580-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Degrees in a complete graph",
+      "learningObjective": "Find the degree of each vertex of a complete graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In the complete graph on \\(6\\) vertices, every two different vertices are adjacent. What is the degree of each vertex?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each vertex is adjacent to all the other vertices, and there are \\(6-1=5\\) of them. A vertex is not adjacent to itself, so the degree is not \\(6\\).",
+      "hint": "A vertex is joined to every vertex except itself."
+    },
+    {
+      "id": "dynanca-580-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Isolated vertices",
+      "learningObjective": "Count the vertices of degree zero.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A graph has vertices \\(P,Q,R,S,T\\) and edges \\(PQ\\), \\(QR\\), and \\(RP\\). How many isolated vertices, that is, vertices of degree \\(0\\), does it have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The edges involve only \\(P\\), \\(Q\\), and \\(R\\), each of which has degree \\(2\\). The vertices \\(S\\) and \\(T\\) lie on no edge, so they have degree \\(0\\). There are \\(2\\) isolated vertices; \\(3\\) is the number of vertices that are not isolated.",
+      "hint": "Find the vertices that appear in no edge."
+    },
+    {
+      "id": "dynanca-580-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Loops and degree",
+      "learningObjective": "Find the degree of a vertex that carries a loop.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "In a graph, a vertex \\(v\\) carries one loop and is also an endpoint of two other edges. With the convention that a loop contributes \\(2\\) to the degree, what is the degree of \\(v\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A loop has both of its ends at \\(v\\), so it contributes \\(2\\). The two other edges contribute \\(1\\) each. The degree is \\(2+1+1=4\\). Counting the loop only once gives \\(3\\), which would break the rule that the degrees add up to twice the number of edges.",
+      "hint": "Count the ends of edges at the vertex, not the edges."
+    },
+    {
+      "id": "dynanca-580-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Largest possible degree",
+      "learningObjective": "Find the largest possible degree in a simple graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is the largest possible degree of a vertex in a simple graph with \\(7\\) vertices?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In a simple graph there are no loops and no repeated edges, so a vertex can be adjacent to each of the other \\(6\\) vertices at most once. Hence the largest possible degree is \\(6\\).",
+      "hint": "A vertex of a simple graph has at most one edge to each other vertex."
+    },
+    {
+      "id": "dynanca-580-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An impossible degree list",
+      "learningObjective": "Decide whether a list of degrees can occur in a simple graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Can a simple graph with \\(4\\) vertices have the degrees \\(3,3,1,1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; two vertices of degree \\(3\\) are adjacent to every other vertex, so each remaining vertex has degree at least \\(2\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; the degrees add up to \\(8\\), an even number, so such a graph exists."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A vertex of degree \\(3\\) in a simple graph with \\(4\\) vertices is adjacent to all three other vertices. With two such vertices, each of the other two vertices is adjacent to both of them and therefore has degree at least \\(2\\), not \\(1\\). An even sum of degrees is necessary but not sufficient.",
+      "hint": "Work out which vertices a vertex of degree \\(3\\) must be adjacent to."
+    },
+    {
+      "id": "dynanca-580-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Degree in the complement",
+      "learningObjective": "Find the degree of a vertex in the complement of a graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A simple graph has \\(8\\) vertices, and a vertex \\(v\\) has degree \\(3\\). In the complement, two vertices are adjacent exactly when they are not adjacent in the graph. What is the degree of \\(v\\) in the complement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Besides \\(v\\) there are \\(7\\) other vertices. In the graph, \\(v\\) is adjacent to \\(3\\) of them, so in the complement it is adjacent to the remaining \\(7-3=4\\). The value \\(5=8-3\\) forgets that \\(v\\) is not adjacent to itself in either graph.",
+      "hint": "Each of the other vertices is a neighbour of \\(v\\) in exactly one of the two graphs."
+    },
+    {
+      "id": "dynanca-580-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two vertices of equal degree",
+      "learningObjective": "Show that the degrees in a simple graph cannot all be different.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Can the \\(5\\) vertices of a simple graph have \\(5\\) different degrees?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; the degrees \\(0,1,2,3,4\\) are all different and all possible."
+        },
+        {
+          "label": "B",
+          "text": "No; the degrees would be \\(0,1,2,3,4\\), but a vertex of degree \\(4\\) is adjacent to all others, so no vertex has degree \\(0\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "In a simple graph with \\(5\\) vertices each degree is between \\(0\\) and \\(4\\), so five different degrees would have to be exactly \\(0,1,2,3,4\\). A vertex of degree \\(4\\) is adjacent to every other vertex, including the one supposed to have degree \\(0\\), which is a contradiction. So two vertices always share a degree.",
+      "hint": "Ask whether degree \\(0\\) and degree \\(4\\) can occur in the same graph on \\(5\\) vertices."
+    }
+  ]
+}

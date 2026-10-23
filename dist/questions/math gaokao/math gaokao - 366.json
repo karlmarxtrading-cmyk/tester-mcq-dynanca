@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-366",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 366",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-366-q001",
+      "category": "Combinatorics",
+      "concept": "Binomial Expansion Coefficient",
+      "learningObjective": "Find the coefficient of a specified power in a binomial expansion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the coefficient of \\(x^2\\) in the expansion of \\((1+x)^6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(14\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The coefficient of \\(x^2\\) in \\((1+x)^6\\) is\n\\[\n\\binom{6}{2}=\\frac{6\\cdot 5}{2}=15.\n\\]\nThus the correct option is B.",
+      "hint": "Use the binomial theorem and identify the term containing \\(x^2\\)."
+    },
+    {
+      "id": "math-gaokao-366-q002",
+      "category": "Combinatorics",
+      "concept": "General Term of a Binomial Expansion",
+      "learningObjective": "Determine a coefficient in the expansion of \\((a+x)^n\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the coefficient of \\(x^3\\) in the expansion of \\((2+x)^5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(40\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(80\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The general term in \\((2+x)^5\\) is\n\\[\n\\binom{5}{k}2^{5-k}x^k.\n\\]\nFor the coefficient of \\(x^3\\), take \\(k=3\\):\n\\[\n\\binom{5}{3}2^{2}=10\\cdot 4=40.\n\\]\nThus the correct option is A.",
+      "hint": "Use the general term \\(\\binom{5}{k}2^{5-k}x^k\\) and choose the correct \\(k\\)."
+    },
+    {
+      "id": "math-gaokao-366-q003",
+      "category": "Combinatorics",
+      "concept": "Constant Term in a Binomial Expansion",
+      "learningObjective": "Find the term independent of \\(x\\) in a binomial expansion involving negative powers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For \\(x\\ne0\\), find the constant term in the expansion of \\(\\left(x+\\frac{1}{x}\\right)^6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The general term is\n\\[\n\\binom{6}{k}x^{6-k}\\left(\\frac{1}{x}\\right)^k = \\binom{6}{k}x^{6-2k}.\n\\]\nFor a constant term, the exponent of \\(x\\) must be \\(0\\):\n\\[\n6-2k=0 \\implies k=3.\n\\]\nThus the constant term is\n\\[\n\\binom{6}{3}=20.\n\\]\nSo the correct option is A.",
+      "hint": "Write the general term and set the exponent of \\(x\\) equal to zero."
+    },
+    {
+      "id": "math-gaokao-366-q004",
+      "category": "Combinatorics",
+      "concept": "Coefficient with a Scaled Variable",
+      "learningObjective": "Find a coefficient in the expansion of \\((1+ax)^n\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the coefficient of \\(x^5\\) in the expansion of \\((1+2x)^7\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(336\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(672\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The general term is\n\\[\n\\binom{7}{k}(2x)^k=\\binom{7}{k}2^kx^k.\n\\]\nFor the coefficient of \\(x^5\\), take \\(k=5\\):\n\\[\n\\binom{7}{5}2^5=21\\cdot 32=672.\n\\]\nThus the correct option is B.",
+      "hint": "Use the general term \\(\\binom{7}{k}(2x)^k\\) and substitute \\(k=5\\)."
+    },
+    {
+      "id": "math-gaokao-366-q005",
+      "category": "Combinatorics",
+      "concept": "Sum of Binomial Coefficients",
+      "learningObjective": "Evaluate the sum of all coefficients in a binomial expansion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the sum of all coefficients in the expansion of \\((1-3x)^5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(32\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-32\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sum of all coefficients is obtained by setting \\(x=1\\):\n\\[\n\\begin{aligned}\n(1-3\\cdot 1)^5&=(1-3)^5 \\\\\n&=(-2)^5 \\\\\n&=-32.\n\\end{aligned}\n\\]\nThus the correct option is B.",
+      "hint": "Substitute \\(x=1\\) into the expansion to obtain the sum of its coefficients."
+    },
+    {
+      "id": "math-gaokao-366-q006",
+      "category": "Combinatorics",
+      "concept": "Middle Term of a Binomial Expansion",
+      "learningObjective": "Determine the coefficient of the middle term in an even-degree binomial expansion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the coefficient of the middle term in the expansion of \\((x+2)^6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(160\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(120\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since the exponent is \\(6\\), there are \\(7\\) terms. The middle term is the fourth term, corresponding to \\(k=3\\) in the general term\n\\[\n\\binom{6}{k}x^{6-k}2^k.\n\\]\nThus the middle-term coefficient is\n\\[\n\\binom{6}{3}2^3=20\\cdot 8=160.\n\\]\nSo the correct option is A.",
+      "hint": "For \\((x+2)^6\\), the middle term corresponds to \\(k=3\\) in the general term."
+    },
+    {
+      "id": "math-gaokao-366-q007",
+      "category": "Combinatorics",
+      "concept": "Coefficient with a Negative Sign",
+      "learningObjective": "Find a coefficient in the expansion of \\((1-x)^n\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the coefficient of \\(x^2\\) in the expansion of \\((1-x)^8\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-28\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(28\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The general term is\n\\[\n\\binom{8}{k}(-x)^k=\\binom{8}{k}(-1)^kx^k.\n\\]\nFor the coefficient of \\(x^2\\), take \\(k=2\\):\n\\[\n\\binom{8}{2}(-1)^2=\\frac{8\\cdot 7}{2}\\cdot 1=28.\n\\]\nThus the correct option is B.",
+      "hint": "Use the general term \\(\\binom{8}{k}(-x)^k\\) and remember that \\((-1)^2=1\\)."
+    },
+    {
+      "id": "math-gaokao-366-q008",
+      "category": "Combinatorics",
+      "concept": "Term Independent of the Variable",
+      "learningObjective": "Determine the term independent of \\(x\\) in a binomial expansion with reciprocal powers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For \\(x\\ne0\\), find the term independent of \\(x\\) in the expansion of \\(\\left(2x-\\frac{1}{x^2}\\right)^6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(240\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The general term is\n\\[\n\\binom{6}{k}(2x)^{6-k}\\left(-\\frac{1}{x^2}\\right)^k = \\binom{6}{k}2^{6-k}(-1)^k x^{6-3k}.\n\\]\nFor the term independent of \\(x\\), set\n\\[\n6-3k=0 \\implies k=2.\n\\]\nThus the required term is\n\\[\n\\binom{6}{2}2^{4}(-1)^2=15\\cdot 16=240.\n\\]\nSo the correct option is B.",
+      "hint": "Write the general term and set the exponent of \\(x\\) equal to zero."
+    },
+    {
+      "id": "math-gaokao-366-q009",
+      "category": "Combinatorics",
+      "concept": "Coefficient in a Trinomial Expansion",
+      "learningObjective": "Use binomial grouping to find a coefficient in a trinomial expansion.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the coefficient of \\(x^4\\) in the expansion of \\((1+x+x^2)^5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(45\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(50\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Write\n\\[\n(1+x+x^2)^5=(1+x(1+x))^5.\n\\]\nUsing the binomial theorem, the coefficient of \\(x^4\\) comes from\n\\[\n\\binom{5}{k}x^k(1+x)^k\n\\]\nwith \\(k\\le 4\\). The contribution for each \\(k\\) is the coefficient of \\(x^{4-k}\\) in \\((1+x)^k\\):\n\\[\n\\begin{aligned}\nk&=0:\\ \\binom{5}{0}\\binom{0}{4}=0, \\\\\nk&=1:\\ \\binom{5}{1}\\binom{1}{3}=0, \\\\\nk&=2:\\ \\binom{5}{2}\\binom{2}{2}=10\\cdot 1=10, \\\\\nk&=3:\\ \\binom{5}{3}\\binom{3}{1}=10\\cdot 3=30, \\\\\nk&=4:\\ \\binom{5}{4}\\binom{4}{0}=5\\cdot 1=5.\n\\end{aligned}\n\\]\nThe total coefficient is\n\\[\n10+30+5=45.\n\\]\nThus the correct option is A.",
+      "hint": "Group the expression as \\((1+x(1+x))^5\\) and use the binomial theorem."
+    },
+    {
+      "id": "math-gaokao-366-q010",
+      "category": "Combinatorics",
+      "concept": "Product of Binomial Expansions",
+      "learningObjective": "Find a coefficient in a product of two binomial expansions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the coefficient of \\(x^3\\) in the expansion of \\((1+x)^4(1-x)^5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the binomial theorem,\n\\[\n(1+x)^4=\\sum_{i=0}^{4}\\binom{4}{i}x^i, \\qquad (1-x)^5=\\sum_{j=0}^{5}\\binom{5}{j}(-1)^jx^j.\n\\]\nThe coefficient of \\(x^3\\) is obtained from terms with \\(i+j=3\\):\n\\[\n\\binom{4}{0}\\binom{5}{3}(-1)^3 +\\binom{4}{1}\\binom{5}{2}(-1)^2 +\\binom{4}{2}\\binom{5}{1}(-1)^1 +\\binom{4}{3}\\binom{5}{0}(-1)^0.\n\\]\nCompute:\n\\[\n-10+40-30+4=4.\n\\]\nThus the correct option is A.",
+      "hint": "Multiply the two binomial expansions and collect the terms whose exponents add to \\(3\\)."
+    }
+  ]
+}

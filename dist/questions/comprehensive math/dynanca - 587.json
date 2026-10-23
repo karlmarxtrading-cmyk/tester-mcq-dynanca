@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-587",
+  "category": "Comprehensive Mathematics",
+  "title": "587. Discrete Mathematics, Counting & Graph Theory: Graph Isomorphism of Small Graphs",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-587-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Definition of isomorphism",
+      "learningObjective": "State what an isomorphism between two graphs is.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is an isomorphism between two graphs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Any function between their vertex sets, provided the graphs have the same number of edges"
+        },
+        {
+          "label": "B",
+          "text": "A bijection between their vertex sets under which two vertices are adjacent exactly when their images are adjacent"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An isomorphism matches the vertices of the two graphs one-to-one in such a way that edges correspond to edges and non-edges to non-edges. Equal numbers of edges are necessary but far from sufficient.",
+      "hint": "An isomorphism must preserve which pairs of vertices are adjacent."
+    },
+    {
+      "id": "dynanca-587-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two paths with different names",
+      "learningObjective": "Decide whether two small graphs with different vertex names are isomorphic.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Graph \\(G\\) has vertices \\(A,B,C\\) and edges \\(AB\\), \\(BC\\). Graph \\(H\\) has vertices \\(X,Y,Z\\) and edges \\(XY\\), \\(XZ\\). Are \\(G\\) and \\(H\\) isomorphic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; send \\(B\\) to \\(X\\), and \\(A\\), \\(C\\) to \\(Y\\), \\(Z\\)."
+        },
+        {
+          "label": "B",
+          "text": "No; the edges of the two graphs have different names."
+        }
+      ],
+      "answer": "A",
+      "explanation": "In \\(G\\) the vertex \\(B\\) is adjacent to both others; in \\(H\\) the vertex \\(X\\) is. The map \\(B\\mapsto X\\), \\(A\\mapsto Y\\), \\(C\\mapsto Z\\) sends the edges \\(AB\\), \\(BC\\) to \\(XY\\), \\(XZ\\), and the non-adjacent pair \\(A,C\\) to the non-adjacent pair \\(Y,Z\\). Names of vertices play no role in isomorphism.",
+      "hint": "Match the middle vertices of the two graphs."
+    },
+    {
+      "id": "dynanca-587-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Different numbers of edges",
+      "learningObjective": "Use the number of edges to show that two graphs are not isomorphic.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Graph \\(G\\) is a triangle with vertices \\(A,B,C\\). Graph \\(H\\) has vertices \\(X,Y,Z\\) and edges \\(XY\\), \\(YZ\\). Are \\(G\\) and \\(H\\) isomorphic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; \\(G\\) has \\(3\\) edges and \\(H\\) has \\(2\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; both graphs have \\(3\\) vertices."
+        }
+      ],
+      "answer": "A",
+      "explanation": "An isomorphism matches edges with edges one-to-one, so isomorphic graphs have the same number of edges. Here the numbers are \\(3\\) and \\(2\\), so no isomorphism exists. Having the same number of vertices is necessary but not sufficient.",
+      "hint": "Compare the numbers of edges."
+    },
+    {
+      "id": "dynanca-587-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Same size, different degrees",
+      "learningObjective": "Use degrees to show that two graphs are not isomorphic.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Graph \\(G\\) is a path with \\(4\\) vertices and \\(3\\) edges. Graph \\(H\\) has \\(4\\) vertices, one of which is adjacent to each of the other three, and no further edges. Are \\(G\\) and \\(H\\) isomorphic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; \\(H\\) has a vertex of degree \\(3\\), and \\(G\\) has none."
+        },
+        {
+          "label": "B",
+          "text": "Yes; both graphs have \\(4\\) vertices and \\(3\\) edges."
+        }
+      ],
+      "answer": "A",
+      "explanation": "An isomorphism preserves the degree of every vertex. The degrees in \\(G\\) are \\(1,2,2,1\\), while in \\(H\\) they are \\(3,1,1,1\\). Since \\(G\\) has no vertex of degree \\(3\\), the graphs are not isomorphic, although their numbers of vertices and edges agree.",
+      "hint": "Compare the lists of degrees."
+    },
+    {
+      "id": "dynanca-587-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Properties preserved by isomorphism",
+      "learningObjective": "Identify a property that isomorphic graphs must share.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which property must two isomorphic graphs have in common?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The names of the vertices"
+        },
+        {
+          "label": "B",
+          "text": "The list of vertex degrees, apart from order"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An isomorphism sends each vertex to a vertex with the same number of neighbours, so the degrees, listed without regard to order, agree. The names of the vertices are not a structural property; relabelling a graph always gives an isomorphic graph.",
+      "hint": "Ask which features depend only on the pattern of adjacency."
+    },
+    {
+      "id": "dynanca-587-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two drawings of a cycle",
+      "learningObjective": "Decide whether two graphs on four vertices are isomorphic.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Graph \\(G\\) has vertices \\(1,2,3,4\\) and edges \\(\\{1,2\\},\\{2,3\\},\\{3,4\\},\\{4,1\\}\\). Graph \\(H\\) has vertices \\(A,B,C,D\\) and edges \\(AC\\), \\(CB\\), \\(BD\\), \\(DA\\). Are \\(G\\) and \\(H\\) isomorphic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; in \\(H\\) the vertices \\(A\\) and \\(B\\) are not adjacent, but in \\(G\\) the vertices \\(1\\) and \\(2\\) are."
+        },
+        {
+          "label": "B",
+          "text": "Yes; both are cycles of length \\(4\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "In \\(H\\) the edges form the cycle \\(A,C,B,D,A\\). Sending \\(1,2,3,4\\) to \\(A,C,B,D\\) in this order maps the cycle \\(1,2,3,4,1\\) onto it, so the graphs are isomorphic. An isomorphism need not send \\(1\\) and \\(2\\) to \\(A\\) and \\(B\\).",
+      "hint": "Follow the edges of \\(H\\) around and see what shape they form."
+    },
+    {
+      "id": "dynanca-587-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Choosing the right matching",
+      "learningObjective": "Decide which matching of vertices is an isomorphism.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Graph \\(G\\) has edges \\(AB\\), \\(BC\\), \\(CD\\). Graph \\(H\\) has vertices \\(1,2,3,4\\) and edges \\(\\{1,3\\},\\{3,2\\},\\{2,4\\}\\). Which matching of vertices is an isomorphism from \\(G\\) to \\(H\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\mapsto 1,\\ B\\mapsto 2,\\ C\\mapsto 3,\\ D\\mapsto 4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\mapsto 1,\\ B\\mapsto 3,\\ C\\mapsto 2,\\ D\\mapsto 4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Under the first matching the edges \\(AB\\), \\(BC\\), \\(CD\\) become \\(\\{1,3\\}\\), \\(\\{3,2\\}\\), \\(\\{2,4\\}\\), exactly the edges of \\(H\\). Under the second matching \\(AB\\) becomes \\(\\{1,2\\}\\), which is not an edge of \\(H\\), so that matching is not an isomorphism.",
+      "hint": "Apply each matching to the edges of \\(G\\) and compare with the edges of \\(H\\)."
+    },
+    {
+      "id": "dynanca-587-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Equal degrees, different structure",
+      "learningObjective": "Recognise that equal degree lists do not guarantee isomorphism.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Graph \\(G\\) is a cycle with \\(6\\) vertices. Graph \\(H\\) consists of two separate triangles. Every vertex of both graphs has degree \\(2\\). Are \\(G\\) and \\(H\\) isomorphic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; \\(G\\) is connected and \\(H\\) is not."
+        },
+        {
+          "label": "B",
+          "text": "Yes; both have \\(6\\) vertices, \\(6\\) edges, and all degrees equal to \\(2\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "An isomorphism maps paths to paths, so it preserves connectedness. \\(G\\) is connected, while \\(H\\) has two components, so they are not isomorphic. Equal numbers of vertices and edges and equal degree lists are necessary conditions, but they are not sufficient.",
+      "hint": "Look for a structural property, beyond the degrees, in which the two graphs differ."
+    },
+    {
+      "id": "dynanca-587-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Graphs on three vertices",
+      "learningObjective": "Count the simple graphs on three vertices up to isomorphism.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many simple graphs with \\(3\\) vertices are there if isomorphic graphs are counted as the same?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A graph with \\(3\\) vertices has \\(0\\), \\(1\\), \\(2\\), or \\(3\\) edges, and any two graphs with the same number of edges are isomorphic: no edges, a single edge, a path, or a triangle. That gives \\(4\\) graphs. The number \\(8=2^3\\) counts the graphs on three labelled vertices, where isomorphic graphs are counted separately.",
+      "hint": "Classify the graphs by their number of edges."
+    },
+    {
+      "id": "dynanca-587-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A graph and its complement",
+      "learningObjective": "Decide whether a path with four vertices is isomorphic to its complement.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Graph \\(G\\) is the path with vertices \\(1,2,3,4\\) and edges \\(\\{1,2\\},\\{2,3\\},\\{3,4\\}\\). Its complement has the same vertices and exactly the edges that \\(G\\) lacks. Is \\(G\\) isomorphic to its complement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; the complement has the edges \\(\\{1,3\\},\\{1,4\\},\\{2,4\\}\\), which form the path \\(3,1,4,2\\)."
+        },
+        {
+          "label": "B",
+          "text": "No; a graph and its complement have no edge in common, so they cannot be isomorphic."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Among the \\(6\\) pairs of vertices, \\(G\\) uses \\(3\\), and the complement uses the other \\(3\\): \\(\\{1,3\\}\\), \\(\\{1,4\\}\\), \\(\\{2,4\\}\\). These form the path \\(3,1,4,2\\), again a path with \\(4\\) vertices. Isomorphism compares structure, not the particular edges, so sharing no edge is no obstacle.",
+      "hint": "List the three edges of the complement and see what graph they form."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-10",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 10",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-10-q001",
+      "category": "Sets",
+      "concept": "Venn Diagram Regions and Complements",
+      "learningObjective": "Identify the region represented by \\(A^c \\cap B\\) in a two-set Venn diagram.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a two-set Venn diagram with sets \\(A\\) and \\(B\\), which region represents \\(A^c \\cap B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The region inside \\(A\\) but outside \\(B\\)"
+        },
+        {
+          "label": "B",
+          "text": "The region inside \\(B\\) but outside \\(A\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The notation \\(A^c\\) means the complement of \\(A\\), so it consists of all elements not in \\(A\\). Intersecting this with \\(B\\) gives the elements that are in \\(B\\) and also not in \\(A\\). In a two-set Venn diagram, this is exactly the region inside \\(B\\) but outside \\(A\\).",
+      "hint": "Recall that \\(A^c\\) consists of elements not in \\(A\\)."
+    },
+    {
+      "id": "math-gaokao-10-q002",
+      "category": "Sets",
+      "concept": "Intersection of Sets",
+      "learningObjective": "Determine \\(A \\cap B\\) for two given finite sets.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A=\\{1,2,3,4\\}\\) and \\(B=\\{3,4,5,6\\}\\). Which set represents the shaded region \\(A \\cap B\\) in a Venn diagram?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{3,4\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,2,5,6\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The intersection \\(A \\cap B\\) consists of all elements that belong to both \\(A\\) and \\(B\\). Comparing the two sets, the common elements are \\(3\\) and \\(4\\). Therefore,\n\\[\nA \\cap B=\\{3,4\\}.\n\\]",
+      "hint": "The intersection contains only the elements common to both sets."
+    },
+    {
+      "id": "math-gaokao-10-q003",
+      "category": "Sets",
+      "concept": "Inclusion-Exclusion for Two Sets",
+      "learningObjective": "Use the two-set inclusion-exclusion formula to find the cardinality of a union.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For two sets \\(A\\) and \\(B\\), \\(n(A)=18\\), \\(n(B)=14\\), and \\(n(A\\cap B)=6\\). What is \\(n(A\\cup B)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(32\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(26\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the two-set inclusion-exclusion formula,\n\\[\nn(A\\cup B)=n(A)+n(B)-n(A\\cap B).\n\\]\nSubstituting the given values,\n\\[\nn(A\\cup B)=18+14-6=26.\n\\]",
+      "hint": "Use the two-set inclusion-exclusion principle."
+    },
+    {
+      "id": "math-gaokao-10-q004",
+      "category": "Sets",
+      "concept": "Venn Diagram Word Problem with Two Sets",
+      "learningObjective": "Find the number of elements outside both sets in a two-set Venn diagram problem.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In a group of \\(40\\) students, \\(25\\) like tea, \\(20\\) like coffee, and \\(10\\) like both. How many students like neither tea nor coffee?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number of students who like at least one of tea or coffee is\n\\[\nn(T\\cup C)=n(T)+n(C)-n(T\\cap C)=25+20-10=35.\n\\]\nSince there are \\(40\\) students in total, the number who like neither is\n\\[\n40-35=5.\n\\]",
+      "hint": "First find the number who like at least one of tea or coffee."
+    },
+    {
+      "id": "math-gaokao-10-q005",
+      "category": "Sets",
+      "concept": "Three-Set Venn Diagram Regions",
+      "learningObjective": "Interpret the region \\(A\\cap B\\cap C^c\\) in a three-set Venn diagram.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In a three-set Venn diagram with sets \\(A\\), \\(B\\), and \\(C\\), which description matches the region \\(A\\cap B\\cap C^c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Elements in both \\(A\\) and \\(B\\) but not in \\(C\\)"
+        },
+        {
+          "label": "B",
+          "text": "Elements in \\(A\\) or \\(B\\) but not in \\(C\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The set \\(C^c\\) consists of all elements not in \\(C\\). Therefore,\n\\[\nA\\cap B\\cap C^c\n\\]\ncontains elements that are in \\(A\\), in \\(B\\), and not in \\(C\\). In a three-set Venn diagram, this is the region where \\(A\\) and \\(B\\) overlap but \\(C\\) is excluded.",
+      "hint": "Recall that \\(C^c\\) means the complement of \\(C\\)."
+    },
+    {
+      "id": "math-gaokao-10-q006",
+      "category": "Sets",
+      "concept": "Inclusion-Exclusion for Two Sets",
+      "learningObjective": "Find the intersection cardinality using the union cardinality and the two-set inclusion-exclusion formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In a universal set \\(U\\), \\(n(U)=50\\), \\(n(A)=30\\), \\(n(B)=25\\), and \\(n(A\\cup B)=40\\). Find \\(n(A\\cap B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the inclusion-exclusion formula,\n\\[\nn(A\\cup B)=n(A)+n(B)-n(A\\cap B).\n\\]\nSubstitute the known values:\n\\[\n40=30+25-n(A\\cap B).\n\\]\nThus,\n\\[\nn(A\\cap B)=55-40=15.\n\\]",
+      "hint": "Use \\(n(A\\cup B)=n(A)+n(B)-n(A\\cap B)\\)."
+    },
+    {
+      "id": "math-gaokao-10-q007",
+      "category": "Sets",
+      "concept": "Exactly One of Two Sets",
+      "learningObjective": "Use a two-set Venn diagram to count elements belonging to exactly one of two sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In a survey of students, \\(60\\) study Physics, \\(45\\) study Chemistry, and \\(30\\) study both. How many study exactly one of the two subjects?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(45\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(75\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number who study only Physics is\n\\[\n60-30=30.\n\\]\nThe number who study only Chemistry is\n\\[\n45-30=15.\n\\]\nTherefore, the number who study exactly one of the two subjects is\n\\[\n30+15=45.\n\\]",
+      "hint": "Find the number who study only Physics and only Chemistry separately."
+    },
+    {
+      "id": "math-gaokao-10-q008",
+      "category": "Sets",
+      "concept": "Partitioning a Union in a Venn Diagram",
+      "learningObjective": "Use the three disjoint regions \\(A\\setminus B\\), \\(B\\setminus A\\), and \\(A\\cap B\\) to find a union cardinality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "For two sets \\(A\\) and \\(B\\), \\(n(A\\setminus B)=12\\), \\(n(B\\setminus A)=8\\), and \\(n(A\\cap B)=5\\). What is \\(n(A\\cup B)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(25\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The union \\(A\\cup B\\) is partitioned into three disjoint regions:\n\\[\nA\\setminus B,\\quad B\\setminus A,\\quad A\\cap B.\n\\]\nTherefore,\n\\[\nn(A\\cup B)=n(A\\setminus B)+n(B\\setminus A)+n(A\\cap B).\n\\]\nSubstituting the given values,\n\\[\nn(A\\cup B)=12+8+5=25.\n\\]",
+      "hint": "The three regions \\(A\\setminus B\\), \\(B\\setminus A\\), and \\(A\\cap B\\) partition the union."
+    },
+    {
+      "id": "math-gaokao-10-q009",
+      "category": "Sets",
+      "concept": "Inclusion-Exclusion for Three Sets",
+      "learningObjective": "Apply the three-set inclusion-exclusion formula to find the cardinality of a union.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In a Venn diagram of three sets \\(A\\), \\(B\\), and \\(C\\), the following cardinalities are known:\n\\[\nn(A)=20,\\quad n(B)=18,\\quad n(C)=16,\n\\]\n\\[\nn(A\\cap B)=7,\\quad n(A\\cap C)=6,\\quad n(B\\cap C)=5,\n\\]\nand\n\\[\nn(A\\cap B\\cap C)=2.\n\\]\nFind \\(n(A\\cup B\\cup C)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(38\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the three-set inclusion-exclusion formula,\n\\[\nn(A\\cup B\\cup C)=n(A)+n(B)+n(C)-n(A\\cap B)-n(A\\cap C)-n(B\\cap C)+n(A\\cap B\\cap C).\n\\]\nSubstituting the values,\n\\[\nn(A\\cup B\\cup C)=20+18+16-7-6-5+2.\n\\]\nThus,\n\\[\nn(A\\cup B\\cup C)=54-18+2=38.\n\\]",
+      "hint": "Use the three-set inclusion-exclusion formula and substitute the given cardinalities."
+    },
+    {
+      "id": "math-gaokao-10-q010",
+      "category": "Sets",
+      "concept": "Venn Diagram with Neither Set",
+      "learningObjective": "Determine the intersection cardinality from the number of elements outside both sets in a two-set Venn diagram.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "In a universal set \\(U\\), \\(n(U)=80\\), \\(n(A)=45\\), and \\(n(B)=35\\). If \\(20\\) elements belong to neither \\(A\\) nor \\(B\\), find \\(n(A\\cap B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(x=n(A\\cap B)\\). By inclusion-exclusion,\n\\[\nn(A\\cup B)=n(A)+n(B)-x=45+35-x=80-x.\n\\]\nThe number of elements belonging to neither \\(A\\) nor \\(B\\) is\n\\[\nn(U)-n(A\\cup B)=80-(80-x)=x.\n\\]\nGiven that this number is \\(20\\), we get\n\\[\nx=20.\n\\]\nTherefore, \\(n(A\\cap B)=20\\).",
+      "hint": "Let \\(x=n(A\\cap B)\\). Express \\(n(A\\cup B)\\) using inclusion-exclusion, then relate it to the \\(20\\) elements outside both sets."
+    }
+  ]
+}

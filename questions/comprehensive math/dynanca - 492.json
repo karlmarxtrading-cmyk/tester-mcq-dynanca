@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-492",
+  "category": "Comprehensive Mathematics",
+  "title": "492. Sets, Logic, Reasoning & Proof: Truth Tables for Compound Propositions",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-492-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Rows for two variables",
+      "learningObjective": "Count the rows of a truth table with two propositional variables.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many rows does a truth table for a compound proposition in the two variables \\(p\\) and \\(q\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each variable can be true or false independently, so there are \\(2\\cdot 2=4\\) combinations: \\((T,T)\\), \\((T,F)\\), \\((F,T)\\), \\((F,F)\\). Two rows would cover only one variable.",
+      "hint": "Multiply the number of possible truth values for each variable."
+    },
+    {
+      "id": "dynanca-492-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Rows for three variables",
+      "learningObjective": "Count the rows of a truth table with three propositional variables.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many rows does a truth table for a compound proposition in the three variables \\(p\\), \\(q\\), and \\(r\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each of the three variables has \\(2\\) possible truth values, giving \\(2\\cdot 2\\cdot 2=2^3=8\\) rows. The value \\(6=2\\cdot 3\\) multiplies the number of values by the number of variables, which is incorrect.",
+      "hint": "Use a power of \\(2\\), not a product with the number of variables."
+    },
+    {
+      "id": "dynanca-492-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Column of a disjunction with a negation",
+      "learningObjective": "Compute the truth table column of a disjunction containing a negated variable.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The rows are ordered by \\((p,q)\\) as \\((T,T)\\), \\((T,F)\\), \\((F,T)\\), \\((F,F)\\). What is the column for \\(p\\lor\\neg q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(T,\\ T,\\ F,\\ T\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(T,\\ F,\\ T,\\ T\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The column of \\(\\neg q\\) is \\(F,T,F,T\\). Combining with \\(p\\) (\\(T,T,F,F\\)) by \"or\" gives \\(T,T,F,T\\): the disjunction is false only in the row \\((F,T)\\), where \\(p\\) is false and \\(\\neg q\\) is false. The column \\(T,F,T,T\\) belongs to \\(\\neg p\\lor q\\).",
+      "hint": "Write the column for \\(\\neg q\\) first, then combine it with the column for \\(p\\)."
+    },
+    {
+      "id": "dynanca-492-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Column of a conjunction with a negation",
+      "learningObjective": "Compute the truth table column of a conjunction containing a negated variable.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The rows are ordered by \\((p,q)\\) as \\((T,T)\\), \\((T,F)\\), \\((F,T)\\), \\((F,F)\\). What is the column for \\(\\neg p\\land q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(F,\\ F,\\ T,\\ F\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(F,\\ T,\\ F,\\ F\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The column of \\(\\neg p\\) is \\(F,F,T,T\\). A conjunction is true only where both parts are true: \\(\\neg p\\) and \\(q\\) are both true only in the row \\((F,T)\\). So the column is \\(F,F,T,F\\). The column \\(F,T,F,F\\) belongs to \\(p\\land\\neg q\\).",
+      "hint": "Find the single row in which \\(p\\) is false and \\(q\\) is true."
+    },
+    {
+      "id": "dynanca-492-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Evaluating one row with three variables",
+      "learningObjective": "Evaluate a compound proposition for one assignment of three variables.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(p\\) be true, \\(q\\) be false, and \\(r\\) be false. What is the truth value of \\((p\\lor q)\\implies r\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First, \\(p\\lor q\\) is true because \\(p\\) is true. Then the conditional has a true hypothesis and the false conclusion \\(r\\), so it is false.",
+      "hint": "Evaluate the parentheses first, then apply the rule for a conditional."
+    },
+    {
+      "id": "dynanca-492-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting true rows",
+      "learningObjective": "Count the rows in which a compound proposition is true.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "In how many of the four rows of its truth table is \\((p\\lor q)\\land\\neg p\\) true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The factor \\(\\neg p\\) requires \\(p\\) to be false, which leaves the rows \\((F,T)\\) and \\((F,F)\\). In those rows \\(p\\lor q\\) is true only when \\(q\\) is true, that is, in the row \\((F,T)\\). So the proposition is true in exactly \\(1\\) row.",
+      "hint": "Use \\(\\neg p\\) to restrict the rows first, then test \\(p\\lor q\\) in the remaining rows."
+    },
+    {
+      "id": "dynanca-492-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Column of a negated conjunction",
+      "learningObjective": "Compute the truth table column of the negation of a conjunction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The rows are ordered by \\((p,q)\\) as \\((T,T)\\), \\((T,F)\\), \\((F,T)\\), \\((F,F)\\). What is the column for \\(\\neg(p\\land q)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(F,\\ F,\\ F,\\ T\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(F,\\ T,\\ T,\\ T\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The column of \\(p\\land q\\) is \\(T,F,F,F\\). Negating each entry gives \\(F,T,T,T\\). The column \\(F,F,F,T\\) belongs to \\(\\neg p\\land\\neg q\\), which is the negation of \\(p\\lor q\\), not of \\(p\\land q\\).",
+      "hint": "Write the column for the conjunction, then reverse every entry."
+    },
+    {
+      "id": "dynanca-492-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Rows for four variables",
+      "learningObjective": "Apply the row-count rule to four propositional variables.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many rows does a truth table for a compound proposition in four variables have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "With \\(n\\) variables there are \\(2^n\\) rows, because each added variable doubles the number of combinations. For \\(n=4\\) this is \\(2^4=16\\). The value \\(8=2\\cdot 4\\) is not a power of \\(2\\) with exponent \\(4\\).",
+      "hint": "Each new variable doubles the number of rows."
+    },
+    {
+      "id": "dynanca-492-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "True rows of a chain of conditionals",
+      "learningObjective": "Count the rows in which a conjunction of two conditionals is true.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "In how many of the eight rows of its truth table is \\((p\\implies q)\\land(q\\implies r)\\) true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Both conditionals must hold. If \\(p\\) is true, then \\(q\\) and \\(r\\) must be true: row \\((T,T,T)\\). If \\(p\\) is false and \\(q\\) is true, then \\(r\\) must be true: row \\((F,T,T)\\). If \\(p\\) and \\(q\\) are false, \\(r\\) may be either: rows \\((F,F,T)\\) and \\((F,F,F)\\). That is \\(4\\) rows. Each conditional alone is true in \\(6\\) rows, but both together hold in only \\(4\\).",
+      "hint": "Go through the cases according to the truth value of \\(p\\), then of \\(q\\)."
+    },
+    {
+      "id": "dynanca-492-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Column of a conditional between compound parts",
+      "learningObjective": "Compute the truth table column of a conditional whose parts are compound.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The rows are ordered by \\((p,q)\\) as \\((T,T)\\), \\((T,F)\\), \\((F,T)\\), \\((F,F)\\). What is the column for \\((p\\lor\\neg q)\\implies(p\\land q)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(T,\\ F,\\ T,\\ T\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(T,\\ F,\\ T,\\ F\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The hypothesis \\(p\\lor\\neg q\\) has column \\(T,T,F,T\\), and the conclusion \\(p\\land q\\) has column \\(T,F,F,F\\). Row by row: \\(T\\implies T\\) is \\(T\\); \\(T\\implies F\\) is \\(F\\); \\(F\\implies F\\) is \\(T\\); \\(T\\implies F\\) is \\(F\\). The column is \\(T,F,T,F\\). In the last row the hypothesis is true, because \\(\\neg q\\) is true there, so the conditional is false.",
+      "hint": "Build the columns for the hypothesis and the conclusion first, then apply the conditional row by row."
+    }
+  ]
+}

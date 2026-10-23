@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-588",
+  "category": "Comprehensive Mathematics",
+  "title": "588. Discrete Mathematics, Counting & Graph Theory: Tree Definitions and Properties",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-588-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Definition of a tree",
+      "learningObjective": "State the definition of a tree.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is a tree?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A connected graph with no cycles"
+        },
+        {
+          "label": "B",
+          "text": "A connected graph in which every vertex has degree \\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A tree is a graph that is connected and acyclic. A connected graph in which every vertex has degree \\(2\\) is a cycle, which is exactly what a tree must not contain.",
+      "hint": "A tree has two defining properties: one about reachability and one about cycles."
+    },
+    {
+      "id": "dynanca-588-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Edges of a tree",
+      "learningObjective": "Find the number of edges of a tree with a given number of vertices.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A tree has \\(12\\) vertices. How many edges does it have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(11\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A tree with \\(n\\) vertices has exactly \\(n-1\\) edges. With \\(12\\) vertices that is \\(11\\) edges. A connected graph with \\(12\\) vertices and \\(12\\) edges would contain a cycle.",
+      "hint": "A tree has one edge fewer than it has vertices."
+    },
+    {
+      "id": "dynanca-588-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Recognising a tree",
+      "learningObjective": "Decide whether a small graph is a tree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D,E\\) and edges \\(AB\\), \\(AC\\), \\(AD\\), and \\(DE\\). Is it a tree?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; it is connected and has \\(5\\) vertices and \\(4\\) edges."
+        },
+        {
+          "label": "B",
+          "text": "No; the vertex \\(A\\) has degree \\(3\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every vertex can be reached from \\(A\\), so the graph is connected. A connected graph with \\(n\\) vertices and \\(n-1\\) edges has no cycle, and here \\(n=5\\) with \\(4\\) edges. So the graph is a tree. A tree may have vertices of any degree.",
+      "hint": "Check connectedness and compare the number of edges with the number of vertices."
+    },
+    {
+      "id": "dynanca-588-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Paths in a tree",
+      "learningObjective": "State how many paths join two vertices of a tree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many paths join two given different vertices of a tree?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Exactly one"
+        },
+        {
+          "label": "B",
+          "text": "At least two"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A tree is connected, so there is at least one path. If two different paths joined the same two vertices, parts of them would together form a cycle, which a tree does not have. Hence the path is unique.",
+      "hint": "Two different routes between the same vertices would enclose a cycle."
+    },
+    {
+      "id": "dynanca-588-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Adding an edge to a tree",
+      "learningObjective": "Describe the effect of adding an edge to a tree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "An edge is added between two non-adjacent vertices of a tree. What is the result?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A graph with exactly one cycle"
+        },
+        {
+          "label": "B",
+          "text": "A disconnected graph"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The two vertices were already joined by exactly one path in the tree. The new edge together with that path forms a cycle, and it is the only cycle, because any cycle must use the new edge. Adding an edge never disconnects a graph.",
+      "hint": "The new edge closes the unique path between its endpoints."
+    },
+    {
+      "id": "dynanca-588-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Fewest leaves",
+      "learningObjective": "Find the smallest number of leaves of a tree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A leaf of a tree is a vertex of degree \\(1\\). What is the smallest possible number of leaves in a tree with \\(8\\) vertices?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every tree with at least two vertices has at least two leaves: the two ends of a longest path have degree \\(1\\). A path with \\(8\\) vertices has exactly \\(2\\) leaves, so \\(2\\) is attained. A tree with a single leaf does not exist.",
+      "hint": "Consider the two ends of a longest path in the tree."
+    },
+    {
+      "id": "dynanca-588-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Most leaves",
+      "learningObjective": "Find the largest number of leaves of a tree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the largest possible number of leaves in a tree with \\(8\\) vertices?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In a tree with \\(8\\) vertices not all vertices can be leaves, because then the degree sum would be \\(8\\), while it must be \\(2\\cdot 7=14\\). A star, in which one centre is adjacent to the other \\(7\\) vertices, has \\(7\\) leaves, and that is the maximum.",
+      "hint": "Think of a tree with one central vertex."
+    },
+    {
+      "id": "dynanca-588-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Leaves from the degree sum",
+      "learningObjective": "Use the degree sum of a tree to count its leaves.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A tree has \\(10\\) vertices, and every vertex has degree \\(1\\) or degree \\(3\\). How many leaves does it have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(a\\) be the number of leaves and \\(b\\) the number of vertices of degree \\(3\\). Then \\(a+b=10\\), and the degree sum gives \\(a+3b=2\\cdot 9=18\\). Subtracting, \\(2b=8\\), so \\(b=4\\) and \\(a=6\\). The value \\(4\\) is the number of vertices of degree \\(3\\).",
+      "hint": "Write one equation for the number of vertices and one for the sum of the degrees."
+    },
+    {
+      "id": "dynanca-588-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Removing edges from a tree",
+      "learningObjective": "Count the components after edges are removed from a tree.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A tree has \\(9\\) vertices. Two of its edges are removed. How many connected components does the remaining graph have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every edge of a tree is the only link between the two parts it joins, so removing one edge increases the number of components by exactly \\(1\\). Starting from \\(1\\) component, removing two edges gives \\(3\\). Equivalently, a forest with \\(9\\) vertices and \\(8-2=6\\) edges has \\(9-6=3\\) components.",
+      "hint": "Each removed edge of a tree splits one component into two."
+    },
+    {
+      "id": "dynanca-588-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting labelled trees",
+      "learningObjective": "Count the trees on four labelled vertices.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many different trees have the vertex set \\(\\{1,2,3,4\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A tree on \\(4\\) vertices is either a path or a star. A path is an ordering of the \\(4\\) vertices, where an ordering and its reverse give the same path: \\(\\dfrac{4!}{2}=12\\) paths. A star is determined by its centre: \\(4\\) stars. In total there are \\(12+4=16\\) trees. Counting only the paths gives \\(12\\).",
+      "hint": "Sort the trees by shape, then count the labellings of each shape."
+    }
+  ]
+}

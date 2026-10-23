@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-169",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 169",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-169-q001",
+      "category": "Vectors",
+      "concept": "Linear Combination in Component Form",
+      "learningObjective": "Compute a linear combination of two vectors given in component form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(\\vec{a}=(2,-1)\\) and \\(\\vec{b}=(1,3)\\). Find \\(2\\vec{a}-\\vec{b}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,5)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,-5)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First compute\n\\[\n2\\vec{a}=2(2,-1)=(4,-2).\n\\]\nThen\n\\[\n2\\vec{a}-\\vec{b}=(4,-2)-(1,3)=(4-1,\\;-2-3)=(3,-5).\n\\]",
+      "hint": "Multiply each component by the scalar first, then subtract corresponding components."
+    },
+    {
+      "id": "math-gaokao-169-q002",
+      "category": "Vectors",
+      "concept": "Solving Coefficients in a Linear Combination",
+      "learningObjective": "Determine coefficients that express a given vector as a linear combination of two vectors.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(\\vec{a}=(1,2)\\) and \\(\\vec{b}=(3,-1)\\). If \\(x\\vec{a}+y\\vec{b}=(5,3)\\), find \\(x+y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the linear combination,\n\\[\nx(1,2)+y(3,-1)=(x+3y,\\;2x-y)=(5,3).\n\\]\nThus\n\\[\nx+3y=5,\n\\]\nand\n\\[\n2x-y=3.\n\\]\nFrom the second equation, \\(y=2x-3\\). Substituting into the first,\n\\[\nx+3(2x-3)=5\n\\]\ngives\n\\[\n7x-9=5 \\quad\\Rightarrow\\quad x=2.\n\\]\nThen\n\\[\ny=2(2)-3=1.\n\\]\nTherefore,\n\\[\nx+y=2+1=3.\n\\]",
+      "hint": "Write the linear combination in component form and solve the resulting system."
+    },
+    {
+      "id": "math-gaokao-169-q003",
+      "category": "Vectors",
+      "concept": "Linear Combination in Unit-Vector Notation",
+      "learningObjective": "Compute a linear combination of vectors written in \\(\\vec{i},\\vec{j}\\) notation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(\\vec{a}=2\\vec{i}+\\vec{j}\\) and \\(\\vec{b}=\\vec{i}-3\\vec{j}\\). Find \\(3\\vec{a}-2\\vec{b}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\vec{i}-9\\vec{j}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\vec{i}+9\\vec{j}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First,\n\\[\n3\\vec{a}=3(2\\vec{i}+\\vec{j})=6\\vec{i}+3\\vec{j},\n\\]\nand\n\\[\n2\\vec{b}=2(\\vec{i}-3\\vec{j})=2\\vec{i}-6\\vec{j}.\n\\]\nThen\n\\[\n3\\vec{a}-2\\vec{b}\n=(6\\vec{i}+3\\vec{j})-(2\\vec{i}-6\\vec{j})\n=4\\vec{i}+9\\vec{j}.\n\\]",
+      "hint": "Distribute each scalar to the \\(\\vec{i}\\) and \\(\\vec{j}\\) components before subtracting."
+    },
+    {
+      "id": "math-gaokao-169-q004",
+      "category": "Vectors",
+      "concept": "Testing a Linear Combination",
+      "learningObjective": "Determine whether a vector can be expressed as a linear combination of two given vectors.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(\\vec{a}=(1,2)\\), \\(\\vec{b}=(2,3)\\), and \\(\\vec{c}=(4,7)\\). Is \\(\\vec{c}\\) a linear combination of \\(\\vec{a}\\) and \\(\\vec{b}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "A",
+      "explanation": "We need \\(x\\vec{a}+y\\vec{b}=\\vec{c}\\), that is,\n\\[\nx(1,2)+y(2,3)=(4,7).\n\\]\nThis gives\n\\[\nx+2y=4,\n\\]\nand\n\\[\n2x+3y=7.\n\\]\nFrom the first equation, \\(x=4-2y\\). Substituting into the second,\n\\[\n2(4-2y)+3y=7\n\\]\ngives\n\\[\n8-4y+3y=7 \\quad\\Rightarrow\\quad y=1.\n\\]\nThen\n\\[\nx=4-2(1)=2.\n\\]\nThus\n\\[\n\\vec{c}=2\\vec{a}+1\\vec{b},\n\\]\nso \\(\\vec{c}\\) is a linear combination of \\(\\vec{a}\\) and \\(\\vec{b}\\).",
+      "hint": "Set up a system of equations using the components of the vectors."
+    },
+    {
+      "id": "math-gaokao-169-q005",
+      "category": "Vectors",
+      "concept": "Coefficients of a Linear Combination",
+      "learningObjective": "Find coefficients in a linear combination and compute their difference.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Express \\((7,8)\\) as \\(x(1,1)+y(2,3)\\). Find \\(x-y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "We need\n\\[\nx(1,1)+y(2,3)=(x+2y,\\;x+3y)=(7,8).\n\\]\nThus\n\\[\nx+2y=7,\n\\]\nand\n\\[\nx+3y=8.\n\\]\nSubtracting the first equation from the second gives\n\\[\ny=1.\n\\]\nThen\n\\[\nx+2(1)=7 \\quad\\Rightarrow\\quad x=5.\n\\]\nTherefore,\n\\[\nx-y=5-1=4.\n\\]",
+      "hint": "Subtract the component equations to eliminate \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-169-q006",
+      "category": "Vectors",
+      "concept": "Solving Parameters in a Linear Combination",
+      "learningObjective": "Determine coefficients in a linear combination and find their sum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(\\vec{a}=(1,-2)\\) and \\(\\vec{b}=(-1,3)\\). If \\(m\\vec{a}+n\\vec{b}=(4,-7)\\), find \\(m+n\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the linear combination,\n\\[\nm(1,-2)+n(-1,3)=(m-n,\\;-2m+3n)=(4,-7).\n\\]\nThus\n\\[\nm-n=4,\n\\]\nand\n\\[\n-2m+3n=-7.\n\\]\nFrom the first equation, \\(m=n+4\\). Substituting into the second,\n\\[\n-2(n+4)+3n=-7\n\\]\ngives\n\\[\n-2n-8+3n=-7 \\quad\\Rightarrow\\quad n=1.\n\\]\nThen\n\\[\nm=1+4=5.\n\\]\nTherefore,\n\\[\nm+n=5+1=6.\n\\]",
+      "hint": "Solve the system formed by equating corresponding components."
+    },
+    {
+      "id": "math-gaokao-169-q007",
+      "category": "Vectors",
+      "concept": "Linear Dependence of Two Vectors",
+      "learningObjective": "Determine whether two vectors are linearly independent.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Are the vectors \\(\\vec{a}=(2,-1)\\) and \\(\\vec{b}=(-4,2)\\) linearly independent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Notice that\n\\[\n\\vec{b}=(-4,2)=-2(2,-1)=-2\\vec{a}.\n\\]\nSince one vector is a scalar multiple of the other, the vectors are linearly dependent. Therefore, they are not linearly independent.",
+      "hint": "Check whether one vector can be written as a scalar multiple of the other."
+    },
+    {
+      "id": "math-gaokao-169-q008",
+      "category": "Vectors",
+      "concept": "Nontrivial Linear Combination Equal to Zero",
+      "learningObjective": "Identify a linear dependence relation among two vectors.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(\\vec{a}=(1,2)\\) and \\(\\vec{b}=(2,4)\\). Which relation is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\vec{a}-2\\vec{b}=\\vec{0}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\vec{b}-2\\vec{a}=\\vec{0}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since\n\\[\n\\vec{b}=(2,4)=2(1,2)=2\\vec{a},\n\\]\nwe have\n\\[\n\\vec{b}-2\\vec{a}=\\vec{0}.\n\\]\nOption A would require \\(\\vec{a}=2\\vec{b}\\), which is false.",
+      "hint": "Compare the components of \\(\\vec{a}\\) and \\(\\vec{b}\\) to find the scalar relation."
+    },
+    {
+      "id": "math-gaokao-169-q009",
+      "category": "Vectors",
+      "concept": "Linear Combination of Standard Basis Vectors",
+      "learningObjective": "Express a vector as a linear combination of the standard basis vectors and find a sum of coefficients.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(\\vec{e}_1=(1,0)\\) and \\(\\vec{e}_2=(0,1)\\). If \\((3,-5)=x\\vec{e}_1+y\\vec{e}_2\\), find \\(x+y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "We have\n\\[\n(3,-5)=x(1,0)+y(0,1)=(x,y).\n\\]\nThus\n\\[\nx=3,\\qquad y=-5.\n\\]\nTherefore,\n\\[\nx+y=3+(-5)=-2.\n\\]",
+      "hint": "Use the fact that the standard basis vectors isolate the coordinates."
+    },
+    {
+      "id": "math-gaokao-169-q010",
+      "category": "Vectors",
+      "concept": "Linear Combination with Two Basis Vectors",
+      "learningObjective": "Express a vector as a linear combination of two vectors and compute a function of the coefficients.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(\\vec{a}=(1,2)\\) and \\(\\vec{b}=(-1,1)\\). If \\((4,5)=x\\vec{a}+y\\vec{b}\\), find \\(x^2+y^2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "We need\n\\[\nx(1,2)+y(-1,1)=(x-y,\\;2x+y)=(4,5).\n\\]\nThus\n\\[\nx-y=4,\n\\]\nand\n\\[\n2x+y=5.\n\\]\nAdding the two equations gives\n\\[\n3x=9 \\quad\\Rightarrow\\quad x=3.\n\\]\nThen\n\\[\n3-y=4 \\quad\\Rightarrow\\quad y=-1.\n\\]\nTherefore,\n\\[\nx^2+y^2=3^2+(-1)^2=9+1=10.\n\\]",
+      "hint": "Solve the component system for \\(x\\) and \\(y\\), then compute the required expression."
+    }
+  ]
+}

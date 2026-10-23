@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-532",
+  "category": "Comprehensive Mathematics",
+  "title": "532. Sets, Logic, Reasoning & Proof: Hasse Diagrams",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-532-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Meaning of an edge",
+      "learningObjective": "Interpret an edge of a Hasse diagram as a covering relation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In the Hasse diagram of a finite partially ordered set, an edge is drawn upward from \\(a\\) to \\(b\\). What does this edge mean?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a\\prec b\\), whether or not other elements lie strictly between them."
+        },
+        {
+          "label": "B",
+          "text": "\\(a\\prec b\\), and no element lies strictly between \\(a\\) and \\(b\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "An edge of a Hasse diagram records a covering pair: \\(b\\) is strictly above \\(a\\), and there is no element \\(c\\) with \\(a\\prec c\\prec b\\). Pairs that have an element in between are not drawn, because they follow from transitivity.",
+      "hint": "Think about which comparisons a Hasse diagram deliberately leaves out."
+    },
+    {
+      "id": "dynanca-532-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Pairs omitted from the diagram",
+      "learningObjective": "Identify the ordered pairs that a Hasse diagram does not draw.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A Hasse diagram of a finite partial order does not draw every pair of the order. Which pairs are left out?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The pairs \\((a,a)\\) and the pairs that follow from transitivity"
+        },
+        {
+          "label": "B",
+          "text": "The pairs \\((a,b)\\) in which \\(b\\) covers \\(a\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reflexive pairs \\((a,a)\\) are understood and need no loop, and a pair such as \\((1,3)\\) in the chain \\(1\\le 2\\le 3\\) can be recovered from the edges for \\((1,2)\\) and \\((2,3)\\). The covering pairs are exactly the ones that are drawn.",
+      "hint": "The diagram keeps only the comparisons that cannot be recovered from other comparisons."
+    },
+    {
+      "id": "dynanca-532-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting edges for divisors",
+      "learningObjective": "Count the edges in the Hasse diagram of a set of divisors.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The divisors of \\(12\\) are ordered by divisibility. How many edges does the Hasse diagram of this ordered set have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The divisors are \\(1,2,3,4,6,12\\). The covering pairs are \\((1,2)\\), \\((1,3)\\), \\((2,4)\\), \\((2,6)\\), \\((3,6)\\), \\((4,12)\\), and \\((6,12)\\), so there are \\(7\\) edges. The number \\(12\\) counts all pairs \\((a,b)\\) with \\(a\\ne b\\) and \\(a\\mid b\\), including pairs such as \\((1,12)\\) that follow from transitivity.",
+      "hint": "Join two divisors only when their quotient is a prime number."
+    },
+    {
+      "id": "dynanca-532-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An edge that is not drawn",
+      "learningObjective": "Decide whether two comparable elements are joined by an edge.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The set \\(\\{1,2,4,8\\}\\) is ordered by divisibility. Does its Hasse diagram contain an edge joining \\(2\\) and \\(8\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because \\(2\\) divides \\(8\\)."
+        },
+        {
+          "label": "B",
+          "text": "No, because \\(4\\) lies strictly between \\(2\\) and \\(8\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(2\\mid 4\\) and \\(4\\mid 8\\), the element \\(4\\) lies strictly between \\(2\\) and \\(8\\). The relation \\(2\\mid 8\\) follows from transitivity and is not drawn. The diagram is a vertical chain with edges from \\(1\\) to \\(2\\), from \\(2\\) to \\(4\\), and from \\(4\\) to \\(8\\).",
+      "hint": "Look for an element of the set, other than the two given numbers, that is a multiple of \\(2\\) and a divisor of \\(8\\)."
+    },
+    {
+      "id": "dynanca-532-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting edges for subsets",
+      "learningObjective": "Count the edges in the Hasse diagram of a power set ordered by inclusion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The subsets of \\(\\{1,2,3\\}\\) are ordered by \\(\\subseteq\\). How many edges does the Hasse diagram have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(19\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An edge joins two subsets exactly when one is obtained from the other by adding a single element. Each of the \\(8\\) subsets has \\(3\\) neighbours of this kind, and each edge is counted from both ends, so the number of edges is \\(\\dfrac{8\\cdot 3}{2}=12\\). The number \\(19\\) counts all pairs \\(S\\subsetneq T\\), most of which follow from transitivity.",
+      "hint": "Two subsets are joined exactly when they differ by a single element."
+    },
+    {
+      "id": "dynanca-532-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Reading a comparison from a path",
+      "learningObjective": "Read an order relation from an upward path in a described Hasse diagram.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A Hasse diagram has elements \\(a,b,c,d\\) and exactly four edges, drawn upward from \\(a\\) to \\(b\\), from \\(a\\) to \\(c\\), from \\(b\\) to \\(d\\), and from \\(c\\) to \\(d\\). Is \\(a\\preceq d\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because no edge joins \\(a\\) and \\(d\\) directly."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because an upward path leads from \\(a\\) through \\(b\\) to \\(d\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "In a Hasse diagram, \\(x\\preceq y\\) holds exactly when \\(x=y\\) or some path that only goes upward leads from \\(x\\) to \\(y\\). The path from \\(a\\) to \\(b\\) to \\(d\\) shows \\(a\\preceq d\\) by transitivity. A direct edge is absent precisely because the comparison is implied.",
+      "hint": "Comparisons are read from upward paths, not only from single edges."
+    },
+    {
+      "id": "dynanca-532-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Incomparable elements in a diagram",
+      "learningObjective": "Decide from a described Hasse diagram whether two elements are comparable.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A Hasse diagram has elements \\(p,q,r,s,t\\) and exactly four edges, drawn upward from \\(p\\) to \\(q\\), from \\(p\\) to \\(r\\), from \\(q\\) to \\(s\\), and from \\(r\\) to \\(t\\). Are \\(s\\) and \\(t\\) comparable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because both lie above \\(p\\)."
+        },
+        {
+          "label": "B",
+          "text": "No, because no path that only goes upward joins \\(s\\) and \\(t\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Two elements are comparable only if an upward path leads from one to the other. No edge goes upward from \\(s\\), and none goes upward from \\(t\\), so neither is below the other. Having a common element below them, here \\(p\\), does not make two elements comparable.",
+      "hint": "Try to travel from one of the two elements to the other without ever going downward."
+    },
+    {
+      "id": "dynanca-532-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Elements directly below a given element",
+      "learningObjective": "Find the elements covered by a given element.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The set \\(\\{1,2,3,6,12,18\\}\\) is ordered by divisibility. In its Hasse diagram, which elements are joined to \\(6\\) by an edge from below?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\) and \\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\), \\(2\\), and \\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The elements strictly below \\(6\\) are \\(1\\), \\(2\\), and \\(3\\). Nothing lies strictly between \\(2\\) and \\(6\\), or between \\(3\\) and \\(6\\), so those two edges are drawn. The element \\(1\\) is not joined to \\(6\\), because \\(2\\) lies strictly between them.",
+      "hint": "An element directly below \\(6\\) must have no other element between it and \\(6\\)."
+    },
+    {
+      "id": "dynanca-532-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Diagram of a chain",
+      "learningObjective": "Count the edges in the Hasse diagram of a totally ordered set.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A set of \\(5\\) elements is totally ordered, so that its elements form a single chain. How many edges does its Hasse diagram have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In a chain \\(a_1\\prec a_2\\prec a_3\\prec a_4\\prec a_5\\), each element is covered only by the next one, so the diagram is a vertical path with \\(4\\) edges. The number \\(10\\) counts all pairs \\(a_i\\prec a_j\\), most of which follow from transitivity.",
+      "hint": "Each element except the top one is joined only to the element immediately above it."
+    },
+    {
+      "id": "dynanca-532-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "No triangles in a Hasse diagram",
+      "learningObjective": "Explain why three elements cannot be pairwise joined by edges.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Can the Hasse diagram of a partial order contain three elements that are joined to one another by three edges, forming a triangle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because one of the three comparisons would follow from the other two and would not be drawn."
+        },
+        {
+          "label": "B",
+          "text": "Yes, whenever three elements satisfy \\(a\\prec b\\prec c\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "If three elements were pairwise joined, they would be pairwise comparable, so they could be named with \\(a\\prec b\\prec c\\). Then \\(b\\) lies strictly between \\(a\\) and \\(c\\), so \\(c\\) does not cover \\(a\\), and no edge joins \\(a\\) and \\(c\\). Hence a triangle is impossible.",
+      "hint": "Three pairwise comparable elements form a chain; ask which of them is in the middle."
+    }
+  ]
+}

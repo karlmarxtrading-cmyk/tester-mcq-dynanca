@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-458",
+  "category": "Comprehensive Mathematics",
+  "title": "458. Trigonometry & Periodic Models: Complex Exponential Representation of a Sinusoid",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-458-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Real part of a complex exponential",
+      "learningObjective": "Identify the real part of a complex exponential with a real angle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For real \\(\\omega\\) and \\(t\\), what is the real part of \\(e^{i\\omega t}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\cos(\\omega t)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sin(\\omega t)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By Euler's formula, \\(e^{i\\omega t}=\\cos(\\omega t)+i\\sin(\\omega t)\\). The real part is the term without \\(i\\), namely \\(\\cos(\\omega t)\\). The sine is the imaginary part.",
+      "hint": "Write the exponential with Euler's formula and pick out the term that is not multiplied by \\(i\\)."
+    },
+    {
+      "id": "dynanca-458-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Imaginary part of a complex exponential",
+      "learningObjective": "Identify the imaginary part of a complex exponential with a real angle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For real \\(\\omega\\) and \\(t\\), what is the imaginary part of \\(e^{i\\omega t}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\cos(\\omega t)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sin(\\omega t)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By Euler's formula, \\(e^{i\\omega t}=\\cos(\\omega t)+i\\sin(\\omega t)\\). The imaginary part is the coefficient of \\(i\\), namely \\(\\sin(\\omega t)\\). The cosine is the real part.",
+      "hint": "The imaginary part is the real number that multiplies \\(i\\)."
+    },
+    {
+      "id": "dynanca-458-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Cosine written with exponentials",
+      "learningObjective": "Express a cosine as a combination of two complex exponentials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For real \\(\\theta\\), which expression equals \\(\\cos\\theta\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{e^{i\\theta}+e^{-i\\theta}}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{e^{i\\theta}-e^{-i\\theta}}{2i}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Adding \\(e^{i\\theta}=\\cos\\theta+i\\sin\\theta\\) and \\(e^{-i\\theta}=\\cos\\theta-i\\sin\\theta\\) gives \\(2\\cos\\theta\\), so \\(\\cos\\theta=\\frac{e^{i\\theta}+e^{-i\\theta}}{2}\\). Subtracting the two instead gives \\(2i\\sin\\theta\\), so the other expression equals \\(\\sin\\theta\\).",
+      "hint": "Add the Euler formulas for \\(\\theta\\) and \\(-\\theta\\)."
+    },
+    {
+      "id": "dynanca-458-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Sine written with exponentials",
+      "learningObjective": "Express a sine as a combination of two complex exponentials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For real \\(\\theta\\), which expression equals \\(\\sin\\theta\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{e^{i\\theta}-e^{-i\\theta}}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{e^{i\\theta}-e^{-i\\theta}}{2i}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtracting \\(e^{-i\\theta}=\\cos\\theta-i\\sin\\theta\\) from \\(e^{i\\theta}=\\cos\\theta+i\\sin\\theta\\) gives \\(2i\\sin\\theta\\). Dividing by \\(2i\\) gives \\(\\sin\\theta\\). Dividing by \\(2\\) only leaves \\(i\\sin\\theta\\), which is not a real number for most \\(\\theta\\).",
+      "hint": "Subtract the Euler formulas for \\(\\theta\\) and \\(-\\theta\\), and note the factor \\(i\\) that remains."
+    },
+    {
+      "id": "dynanca-458-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Complex amplitude of a sinusoid",
+      "learningObjective": "Identify the complex amplitude that represents a cosine with a phase constant.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The signal \\(3\\cos\\left(2t+\\frac{\\pi}{4}\\right)\\) is written as the real part of \\(C\\,e^{2it}\\). What is the complex constant \\(C\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(C=3e^{-i\\pi/4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(C=3e^{i\\pi/4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(3\\cos\\left(2t+\\frac{\\pi}{4}\\right)\\) is the real part of \\(3e^{i(2t+\\pi/4)}=3e^{i\\pi/4}e^{2it}\\), the constant is \\(C=3e^{i\\pi/4}\\). Its modulus \\(3\\) is the amplitude and its argument \\(\\frac{\\pi}{4}\\) is the phase constant. The constant \\(3e^{-i\\pi/4}\\) would represent \\(3\\cos\\left(2t-\\frac{\\pi}{4}\\right)\\).",
+      "hint": "Split the exponent \\(i\\left(2t+\\frac{\\pi}{4}\\right)\\) into a part with \\(t\\) and a constant part."
+    },
+    {
+      "id": "dynanca-458-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Evaluating a signal from its complex form",
+      "learningObjective": "Evaluate the real part of a complex exponential signal at time zero.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A signal is the real part of \\(2e^{i\\pi/3}e^{it}\\). What is the value of the signal at \\(t=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "At \\(t=0\\) the complex value is \\(2e^{i\\pi/3}=2\\left(\\cos\\frac{\\pi}{3}+i\\sin\\frac{\\pi}{3}\\right)=1+\\sqrt{3}\\,i\\). The signal is the real part, which is \\(1\\). The number \\(\\sqrt{3}\\) is the imaginary part.",
+      "hint": "Evaluate the complex number at \\(t=0\\) and take its real part."
+    },
+    {
+      "id": "dynanca-458-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Amplitude from a complex coefficient",
+      "learningObjective": "Find the amplitude of a sinusoid from its complex amplitude in rectangular form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A signal is the real part of \\((3+4i)e^{i\\omega t}\\) with \\(\\omega>0\\). What is the amplitude of the signal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The amplitude of the real sinusoid is the modulus of the complex coefficient: \\(|3+4i|=\\sqrt{3^2+4^2}=5\\). Explicitly, the real part is \\(3\\cos(\\omega t)-4\\sin(\\omega t)\\), a sinusoid of amplitude \\(5\\). Adding the real and imaginary parts gives \\(7\\), which is not the modulus.",
+      "hint": "The amplitude is the modulus of the complex coefficient."
+    },
+    {
+      "id": "dynanca-458-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Complex amplitude of a sine",
+      "learningObjective": "Represent a sine as the real part of a complex exponential with a suitable coefficient.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The signal \\(\\sin(\\omega t)\\) is written as the real part of \\(C\\,e^{i\\omega t}\\). What is \\(C\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(C=i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(C=-i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute \\(-i\\,e^{i\\omega t}=-i\\cos(\\omega t)-i^2\\sin(\\omega t)=\\sin(\\omega t)-i\\cos(\\omega t)\\), whose real part is \\(\\sin(\\omega t)\\). Equivalently, \\(\\sin(\\omega t)=\\cos\\left(\\omega t-\\frac{\\pi}{2}\\right)\\) and \\(e^{-i\\pi/2}=-i\\). With \\(C=i\\) the real part would be \\(-\\sin(\\omega t)\\).",
+      "hint": "Multiply out \\(C(\\cos\\omega t+i\\sin\\omega t)\\) for each candidate and take the real part."
+    },
+    {
+      "id": "dynanca-458-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Adding sinusoids with complex amplitudes",
+      "learningObjective": "Add a cosine and a sine by adding their complex amplitudes.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Using \\(\\cos t=\\operatorname{Re}\\left(e^{it}\\right)\\) and \\(\\sin t=\\operatorname{Re}\\left(-i\\,e^{it}\\right)\\), the sum \\(\\cos t+\\sin t\\) is the real part of \\((1-i)e^{it}\\). Which single cosine equals \\(\\cos t+\\sin t\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{2}\\cos\\left(t-\\frac{\\pi}{4}\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{2}\\cos\\left(t+\\frac{\\pi}{4}\\right)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The complex amplitude \\(1-i\\) has modulus \\(\\sqrt{2}\\) and argument \\(-\\frac{\\pi}{4}\\), so \\(1-i=\\sqrt{2}\\,e^{-i\\pi/4}\\). The sum is the real part of \\(\\sqrt{2}\\,e^{i(t-\\pi/4)}\\), which is \\(\\sqrt{2}\\cos\\left(t-\\frac{\\pi}{4}\\right)\\). The version with \\(t+\\frac{\\pi}{4}\\) equals \\(\\cos t-\\sin t\\).",
+      "hint": "Write \\(1-i\\) in polar form; its argument becomes the phase constant."
+    },
+    {
+      "id": "dynanca-458-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Differentiation in complex form",
+      "learningObjective": "Describe the effect of differentiation on the complex amplitude of a sinusoid.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A signal is the real part of \\(C\\,e^{i\\omega t}\\), where \\(C\\) is a complex constant and \\(\\omega>0\\). Its derivative with respect to \\(t\\) is the real part of \\(C'e^{i\\omega t}\\). How is \\(C'\\) related to \\(C\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(C'=\\omega C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(C'=i\\omega C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiating gives \\(\\frac{d}{dt}\\left(C\\,e^{i\\omega t}\\right)=i\\omega C\\,e^{i\\omega t}\\), and taking the real part commutes with differentiation in \\(t\\). So \\(C'=i\\omega C\\): the amplitude is multiplied by \\(\\omega\\), and the factor \\(i=e^{i\\pi/2}\\) advances the phase by \\(\\frac{\\pi}{2}\\). Omitting the factor \\(i\\) would leave the phase unchanged, which is wrong because the derivative of a cosine is not a cosine of the same phase.",
+      "hint": "Differentiate the exponential with the chain rule and keep every factor."
+    }
+  ]
+}

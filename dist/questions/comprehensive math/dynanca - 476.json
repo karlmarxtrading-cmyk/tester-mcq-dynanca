@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-476",
+  "category": "Comprehensive Mathematics",
+  "title": "476. Sets, Logic, Reasoning & Proof: Complement Relative to a Universal Set",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-476-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of complement",
+      "learningObjective": "State which elements belong to the complement of a set in a universal set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(A\\) be a subset of a universal set \\(U\\). Which elements belong to the complement \\(A^{c}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The elements of \\(U\\) that are not in \\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "The elements of \\(A\\) that are not in \\(U\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The complement of \\(A\\) relative to \\(U\\) is \\(A^{c}=U\\setminus A\\): everything in the universal set that lies outside \\(A\\). Since \\(A\\subseteq U\\), there are no elements of \\(A\\) outside \\(U\\), so the other description always gives the empty set.",
+      "hint": "The complement is taken inside the universal set."
+    },
+    {
+      "id": "dynanca-476-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Complement in a small universal set",
+      "learningObjective": "Compute a complement in a listed universal set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(U=\\{1,2,3,4,5,6\\}\\) and \\(A=\\{1,2,3\\}\\). What is \\(A^{c}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{4,5,6\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,2,3,4,5,6\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Remove the elements \\(1\\), \\(2\\), and \\(3\\) of \\(A\\) from \\(U\\). The elements \\(4\\), \\(5\\), and \\(6\\) remain, so \\(A^{c}=\\{4,5,6\\}\\). The whole set \\(U\\) would be the complement only of the empty set.",
+      "hint": "Delete the elements of \\(A\\) from the list for \\(U\\)."
+    },
+    {
+      "id": "dynanca-476-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Complement of the even numbers",
+      "learningObjective": "Compute the complement of a set described by a property.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(U=\\{1,2,\\ldots,10\\}\\) and let \\(A\\) be the set of even numbers in \\(U\\). What is \\(A^{c}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1,3,5,7,9,11\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,3,5,7,9\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The even numbers in \\(U\\) are \\(2,4,6,8,10\\). The remaining elements of \\(U\\) are \\(1,3,5,7,9\\). The number \\(11\\) is odd, but it is not in \\(U\\), so it cannot belong to the complement.",
+      "hint": "Every element of a complement must belong to the universal set."
+    },
+    {
+      "id": "dynanca-476-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Complement of a complement",
+      "learningObjective": "Simplify a double complement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For a subset \\(A\\) of a universal set \\(U\\), what is \\((A^{c})^{c}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(U\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The set \\(A^{c}\\) contains the elements of \\(U\\) outside \\(A\\). Its complement contains the elements of \\(U\\) outside \\(A^{c}\\), which are exactly the elements of \\(A\\). So \\((A^{c})^{c}=A\\).",
+      "hint": "Try a small example such as \\(U=\\{1,2,3\\}\\) and \\(A=\\{1\\}\\)."
+    },
+    {
+      "id": "dynanca-476-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Complement of the universal set",
+      "learningObjective": "Find the complement of the universal set itself.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the complement \\(U^{c}\\) of the universal set \\(U\\), taken relative to \\(U\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\varnothing\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(U\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The complement consists of the elements of \\(U\\) that are not in \\(U\\). There are none, so \\(U^{c}=\\varnothing\\). Similarly, \\(\\varnothing^{c}=U\\).",
+      "hint": "Ask which elements of \\(U\\) lie outside \\(U\\)."
+    },
+    {
+      "id": "dynanca-476-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Union of a set and its complement",
+      "learningObjective": "Simplify the union of a set with its complement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For a subset \\(A\\) of a universal set \\(U\\), what is \\(A\\cup A^{c}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(U\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every element of \\(U\\) is either in \\(A\\) or not in \\(A\\). In the first case it is in \\(A\\), and in the second case it is in \\(A^{c}\\). So every element of \\(U\\) is in the union, and \\(A\\cup A^{c}=U\\).",
+      "hint": "Each element of the universal set is either inside \\(A\\) or outside it."
+    },
+    {
+      "id": "dynanca-476-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Intersection of a set and its complement",
+      "learningObjective": "Simplify the intersection of a set with its complement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For a subset \\(A\\) of a universal set \\(U\\), what is \\(A\\cap A^{c}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(U\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An element of the intersection would have to be in \\(A\\) and, at the same time, not in \\(A\\). That is impossible, so the intersection has no elements: \\(A\\cap A^{c}=\\varnothing\\).",
+      "hint": "Can an element be inside \\(A\\) and outside \\(A\\) at once?"
+    },
+    {
+      "id": "dynanca-476-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Cardinality of a complement",
+      "learningObjective": "Compute the number of elements of a complement in a finite universal set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A universal set \\(U\\) has \\(20\\) elements, and \\(A\\subseteq U\\) has \\(7\\) elements. How many elements does \\(A^{c}\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(27\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(13\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sets \\(A\\) and \\(A^{c}\\) are disjoint and together make up \\(U\\), so \\(|A|+|A^{c}|=|U|\\). Hence \\(|A^{c}|=20-7=13\\). Adding instead gives \\(27\\), which exceeds the size of \\(U\\) and is impossible.",
+      "hint": "The set and its complement together fill the universal set without overlap."
+    },
+    {
+      "id": "dynanca-476-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Dependence on the universal set",
+      "learningObjective": "Recognise that a complement depends on the chosen universal set.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(A=\\{1,2\\}\\). Does the complement \\(A^{c}\\) depend on the choice of the universal set \\(U\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the complement is determined by \\(A\\) alone and is always \\(\\{3\\}\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; for \\(U=\\{1,2,3\\}\\) it is \\(\\{3\\}\\), and for \\(U=\\{1,2,3,4\\}\\) it is \\(\\{3,4\\}\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The complement is \\(U\\setminus A\\), so it changes when \\(U\\) changes. With \\(U=\\{1,2,3\\}\\) the only element outside \\(A\\) is \\(3\\); with \\(U=\\{1,2,3,4\\}\\) the elements outside \\(A\\) are \\(3\\) and \\(4\\). The universal set must therefore always be stated.",
+      "hint": "Compute \\(U\\setminus A\\) for two different universal sets."
+    },
+    {
+      "id": "dynanca-476-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Complement of an interval",
+      "learningObjective": "Find the complement of an interval of real numbers with correct endpoint behaviour.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "Let the universal set be \\(\\mathbb{R}\\) and let \\(A=(-\\infty,2]\\). What is \\(A^{c}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([2,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,\\infty)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The set \\(A\\) contains all real numbers with \\(x\\le 2\\). Its complement contains the real numbers that do not satisfy this, that is, those with \\(x>2\\): the interval \\((2,\\infty)\\). The number \\(2\\) belongs to \\(A\\), so it cannot belong to \\(A^{c}\\).",
+      "hint": "The negation of \\(x\\le 2\\) is a strict inequality."
+    }
+  ]
+}

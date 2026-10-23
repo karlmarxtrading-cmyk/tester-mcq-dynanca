@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-364",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 364",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-364-q001",
+      "category": "Combinatorics",
+      "concept": "Evaluation of a Binomial Coefficient",
+      "learningObjective": "Compute a binomial coefficient using the factorial formula.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\binom{11}{4}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(330\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(165\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the factorial definition,\n\\[\n\\binom{11}{4}=\\frac{11\\cdot10\\cdot9\\cdot8}{4\\cdot3\\cdot2\\cdot1}=330.\n\\]\nThe distractor \\(165\\) is \\(\\binom{11}{3}\\), which selects the wrong number of elements.",
+      "hint": "Use \\(\\binom{n}{k}=\\frac{n!}{k!(n-k)!}\\) and cancel the largest factorial."
+    },
+    {
+      "id": "math-gaokao-364-q002",
+      "category": "Combinatorics",
+      "concept": "Evaluation of a Binomial Coefficient",
+      "learningObjective": "Evaluate a binomial coefficient with a small lower index.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\binom{12}{2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(66\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(132\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Choosing two elements without order gives\n\\[\n\\binom{12}{2}=\\frac{12\\cdot11}{2}=66.\n\\]\nThe distractor \\(132\\) counts both orders of each pair.",
+      "hint": "Compute the product of two descending factors, then divide by \\(2!\\)."
+    },
+    {
+      "id": "math-gaokao-364-q003",
+      "category": "Combinatorics",
+      "concept": "Evaluation of a Binomial Coefficient",
+      "learningObjective": "Evaluate a binomial coefficient with a moderate lower index.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\binom{9}{3}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(72\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(84\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the factorial formula, \\(\\binom{9}{3}=\\frac{9!}{3!6!}=\\frac{9\\cdot8\\cdot7}{3\\cdot2\\cdot1}=84\\). The distractor is the product of only the first two descending factors, rather than the required binomial coefficient.",
+      "hint": "Expand the factorial ratio and cancel the common factorial before multiplying."
+    },
+    {
+      "id": "math-gaokao-364-q004",
+      "category": "Combinatorics",
+      "concept": "Binomial Coefficient in a Binomial Expansion",
+      "learningObjective": "Find the coefficient of a specified term in a binomial expansion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the coefficient of \\(x^3y^4\\) in the expansion of \\((x+y)^7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(21\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(35\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In the expansion of \\((x+y)^7\\), the term containing \\(x^3y^4\\) is\n\\[\n\\binom{7}{3}x^3y^4.\n\\]\nTherefore, the coefficient is\n\\[\n\\binom{7}{3}=\\frac{7\\cdot 6\\cdot 5}{3\\cdot 2\\cdot 1}=35.\n\\]\nThus the correct option is B.",
+      "hint": "Use the general term \\(\\binom{7}{k}x^{7-k}y^k\\) and choose \\(k\\) so that the exponent of \\(y\\) is \\(4\\)."
+    },
+    {
+      "id": "math-gaokao-364-q005",
+      "category": "Combinatorics",
+      "concept": "Symmetry of Binomial Coefficients",
+      "learningObjective": "Use the symmetry identity to evaluate a binomial coefficient.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Evaluate \\(\\binom{100}{98}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4950\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9900\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the symmetry identity \\(\\binom{n}{k}=\\binom{n}{n-k}\\),\n\\[\n\\binom{100}{98}=\\binom{100}{2}.\n\\]\nThen\n\\[\n\\binom{100}{2}=\\frac{100\\cdot 99}{2}=4950.\n\\]\nThus the correct option is A.",
+      "hint": "Use \\(\\binom{n}{k}=\\binom{n}{n-k}\\) to replace the lower index with a smaller number."
+    },
+    {
+      "id": "math-gaokao-364-q006",
+      "category": "Combinatorics",
+      "concept": "Symmetry of Binomial Coefficients",
+      "learningObjective": "Apply symmetry to simplify and evaluate a binomial coefficient.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\binom{15}{13}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(210\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(105\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By symmetry,\n\\[\n\\binom{15}{13}=\\binom{15}{2}.\n\\]\nThen\n\\[\n\\binom{15}{2}=\\frac{15\\cdot 14}{2}=105.\n\\]\nThus the correct option is B.",
+      "hint": "Since \\(15-13=2\\), rewrite the coefficient as \\(\\binom{15}{2}\\)."
+    },
+    {
+      "id": "math-gaokao-364-q007",
+      "category": "Combinatorics",
+      "concept": "Coefficient in a Binomial Expansion",
+      "learningObjective": "Determine a coefficient in the expansion of \\((1+x)^n\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In the expansion of \\((1+x)^9\\), what is the coefficient of \\(x^4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(84\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(126\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The coefficient of \\(x^4\\) in \\((1+x)^9\\) is\n\\[\n\\binom{9}{4}=\\frac{9\\cdot 8\\cdot 7\\cdot 6}{4\\cdot 3\\cdot 2\\cdot 1}=126.\n\\]\nThus the correct option is B.",
+      "hint": "The coefficient of \\(x^k\\) in \\((1+x)^n\\) is \\(\\binom{n}{k}\\)."
+    },
+    {
+      "id": "math-gaokao-364-q008",
+      "category": "Combinatorics",
+      "concept": "Sum of Binomial Coefficients",
+      "learningObjective": "Use the binomial theorem to evaluate a row sum of binomial coefficients.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Find \\(\\sum_{k=0}^{5}\\binom{5}{k}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(31\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(32\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the binomial theorem,\n\\[\n\\sum_{k=0}^{5}\\binom{5}{k}=2^5=32.\n\\]\nThus the correct option is B.",
+      "hint": "Set \\(x=1\\) in the expansion of \\((1+x)^5\\)."
+    },
+    {
+      "id": "math-gaokao-364-q009",
+      "category": "Combinatorics",
+      "concept": "Solving an Equation Involving a Binomial Coefficient",
+      "learningObjective": "Determine a positive integer \\(n\\) from a given binomial coefficient equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(\\binom{n}{2}=28\\) and \\(n\\) is a positive integer, find \\(n\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the formula,\n\\[\n\\binom{n}{2}=\\frac{n(n-1)}{2}=28.\n\\]\nSo\n\\[\nn(n-1)=56,\n\\]\nwhich gives\n\\[\nn^2-n-56=0.\n\\]\nFactoring,\n\\[\n(n-8)(n+7)=0.\n\\]\nSince \\(n\\) is positive, \\(n=8\\). Thus the correct option is A.",
+      "hint": "Write \\(\\binom{n}{2}\\) as \\(\\frac{n(n-1)}{2}\\), then solve the resulting quadratic."
+    },
+    {
+      "id": "math-gaokao-364-q010",
+      "category": "Combinatorics",
+      "concept": "Weighted Sum of Binomial Coefficients",
+      "learningObjective": "Apply the identity for \\(\\sum k\\binom{n}{k}\\) to evaluate a weighted binomial sum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Evaluate \\(\\sum_{k=0}^{6} k\\binom{6}{k}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(192\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(384\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the identity\n\\[\n\\sum_{k=0}^{n} k\\binom{n}{k}=n2^{n-1}.\n\\]\nFor \\(n=6\\),\n\\[\n\\begin{aligned}\n\\sum_{k=0}^{6} k\\binom{6}{k}&=6\\cdot 2^{5} \\\\\n&=6\\cdot 32 \\\\\n&=192.\n\\end{aligned}\n\\]\nThus the correct option is A.",
+      "hint": "Use the identity \\(\\sum_{k=0}^{n} k\\binom{n}{k}=n2^{n-1}\\), or differentiate \\((1+x)^n\\) and substitute \\(x=1\\)."
+    }
+  ]
+}

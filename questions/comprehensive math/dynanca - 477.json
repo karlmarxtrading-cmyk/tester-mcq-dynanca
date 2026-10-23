@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-477",
+  "category": "Comprehensive Mathematics",
+  "title": "477. Sets, Logic, Reasoning & Proof: Symmetric Difference",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-477-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of symmetric difference",
+      "learningObjective": "State which elements belong to the symmetric difference of two sets.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which elements belong to the symmetric difference \\(A\\,\\triangle\\,B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The elements that are in exactly one of \\(A\\) and \\(B\\)"
+        },
+        {
+          "label": "B",
+          "text": "The elements that are in both \\(A\\) and \\(B\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The symmetric difference is \\(A\\,\\triangle\\,B=(A\\setminus B)\\cup(B\\setminus A)\\): elements that belong to one of the sets but not to the other. The elements that are in both sets form the intersection and are excluded from the symmetric difference.",
+      "hint": "The symmetric difference leaves out the common elements."
+    },
+    {
+      "id": "dynanca-477-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Symmetric difference of two listed sets",
+      "learningObjective": "Compute a symmetric difference of two finite sets.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\{1,2,3\\}\\,\\triangle\\,\\{3,4\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{3\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,2,4\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The elements \\(1\\) and \\(2\\) are only in the first set, and \\(4\\) is only in the second. The element \\(3\\) is in both and is therefore excluded. So the symmetric difference is \\(\\{1,2,4\\}\\). The set \\(\\{3\\}\\) is the intersection.",
+      "hint": "Remove the common elements from the union."
+    },
+    {
+      "id": "dynanca-477-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Symmetric difference of a set with itself",
+      "learningObjective": "Simplify the symmetric difference of a set with itself.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "For every set \\(A\\), what is \\(A\\,\\triangle\\,A\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every element of \\(A\\) is in both copies of \\(A\\), so no element is in exactly one of them. Hence \\(A\\,\\triangle\\,A=\\varnothing\\).",
+      "hint": "Ask whether any element is in one copy but not the other."
+    },
+    {
+      "id": "dynanca-477-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Symmetric difference with the empty set",
+      "learningObjective": "Simplify the symmetric difference of a set and the empty set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "For every set \\(A\\), what is \\(A\\,\\triangle\\,\\varnothing\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The elements in exactly one of \\(A\\) and \\(\\varnothing\\) are precisely the elements of \\(A\\), since nothing is in \\(\\varnothing\\). So \\(A\\,\\triangle\\,\\varnothing=A\\); the empty set acts as a neutral element for this operation.",
+      "hint": "Since the empty set has no elements, decide which elements are in exactly one of the two sets."
+    },
+    {
+      "id": "dynanca-477-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Formula with union and intersection",
+      "learningObjective": "Express the symmetric difference through union and intersection.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which expression always equals \\(A\\,\\triangle\\,B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((A\\cup B)\\setminus(A\\cap B)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((A\\cup B)\\cup(A\\cap B)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The union contains the elements in at least one set; removing the intersection deletes those in both. What remains are the elements in exactly one set, which is the symmetric difference. The second expression equals \\(A\\cup B\\), because the intersection is already contained in the union.",
+      "hint": "Start from the elements in at least one set and take away those in both."
+    },
+    {
+      "id": "dynanca-477-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Symmetric difference of overlapping sets",
+      "learningObjective": "Compute the symmetric difference of two sets with several common elements.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\{1,2,3,4\\}\\,\\triangle\\,\\{3,4,5,6\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1,2,5,6\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,2,3,4,5,6\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The common elements are \\(3\\) and \\(4\\). Removing them from the union \\(\\{1,2,3,4,5,6\\}\\) leaves \\(\\{1,2,5,6\\}\\). The union itself still contains the common elements, so it is not the symmetric difference.",
+      "hint": "Find the intersection first, then delete it from the union."
+    },
+    {
+      "id": "dynanca-477-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Commutativity of symmetric difference",
+      "learningObjective": "Decide whether the symmetric difference depends on the order of the sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Is \\(A\\,\\triangle\\,B=B\\,\\triangle\\,A\\) for all sets \\(A\\) and \\(B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because \"in exactly one of the two sets\" does not depend on the order."
+        },
+        {
+          "label": "B",
+          "text": "No, because it behaves like the set difference, which depends on the order."
+        }
+      ],
+      "answer": "A",
+      "explanation": "By definition, \\(A\\,\\triangle\\,B=(A\\setminus B)\\cup(B\\setminus A)\\) and \\(B\\,\\triangle\\,A=(B\\setminus A)\\cup(A\\setminus B)\\). These are unions of the same two sets, so they are equal. The ordinary difference \\(A\\setminus B\\) depends on the order, but the symmetric difference combines both orders.",
+      "hint": "Write out the definition for both orders and compare."
+    },
+    {
+      "id": "dynanca-477-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Cardinality of a symmetric difference",
+      "learningObjective": "Compute the size of a symmetric difference from the sizes of the sets and their intersection.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Finite sets satisfy \\(|A|=5\\), \\(|B|=4\\), and \\(|A\\cap B|=2\\). What is \\(|A\\,\\triangle\\,B|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The elements only in \\(A\\) number \\(5-2=3\\), and the elements only in \\(B\\) number \\(4-2=2\\). So \\(|A\\,\\triangle\\,B|=3+2=5\\). Equivalently, \\(|A|+|B|-2|A\\cap B|=9-4=5\\). The value \\(7\\) is \\(|A\\cup B|\\), which subtracts the intersection only once.",
+      "hint": "The common elements must be removed from both sets, not just once."
+    },
+    {
+      "id": "dynanca-477-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Empty symmetric difference",
+      "learningObjective": "Characterise when a symmetric difference is empty.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Suppose \\(A\\,\\triangle\\,B=\\varnothing\\). What follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\cap B=\\varnothing\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A=B\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If \\(A\\,\\triangle\\,B=\\varnothing\\), then \\(A\\setminus B=\\varnothing\\) and \\(B\\setminus A=\\varnothing\\). The first says \\(A\\subseteq B\\) and the second says \\(B\\subseteq A\\), so \\(A=B\\). Disjoint sets behave in the opposite way: for them the symmetric difference is the whole union.",
+      "hint": "An empty symmetric difference means that no element lies in only one of the sets."
+    },
+    {
+      "id": "dynanca-477-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Applying a symmetric difference twice",
+      "learningObjective": "Evaluate a repeated symmetric difference with the same set.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(A=\\{1,2\\}\\) and \\(B=\\{2,3\\}\\). What is \\((A\\,\\triangle\\,B)\\,\\triangle\\,B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1,2\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,3\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First, \\(A\\,\\triangle\\,B=\\{1,3\\}\\). Then \\(\\{1,3\\}\\,\\triangle\\,\\{2,3\\}\\): the element \\(3\\) is common and is removed, while \\(1\\) and \\(2\\) are each in exactly one set, giving \\(\\{1,2\\}\\). The result is \\(A\\) again; taking the symmetric difference with \\(B\\) twice undoes itself. The set \\(\\{1,3\\}\\) is only the intermediate result.",
+      "hint": "Compute the inner symmetric difference first, then apply the operation once more."
+    }
+  ]
+}

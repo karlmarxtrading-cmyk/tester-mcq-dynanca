@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-7",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 7",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-7-q001",
+      "category": "Sets",
+      "concept": "Intersection of Finite Sets",
+      "learningObjective": "Find the intersection of two finite sets given in roster notation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(A=\\{1,2,3\\}\\) and \\(B=\\{2,3,4\\}\\). What is \\(A\\cap B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1,4\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{2,3\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The intersection \\(A\\cap B\\) contains exactly the elements that belong to both \\(A\\) and \\(B\\). Comparing \\(A=\\{1,2,3\\}\\) and \\(B=\\{2,3,4\\}\\), the common elements are \\(2\\) and \\(3\\). Therefore \\(A\\cap B=\\{2,3\\}\\).",
+      "hint": "List the elements that appear in both sets."
+    },
+    {
+      "id": "math-gaokao-7-q002",
+      "category": "Sets",
+      "concept": "Intersection with the Empty Set",
+      "learningObjective": "Apply the identity property of the empty set under intersection.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For any set \\(A\\), what is \\(A\\cap\\varnothing\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\varnothing\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The empty set \\(\\varnothing\\) has no elements. Therefore no element can belong to both \\(A\\) and \\(\\varnothing\\). Hence \\(A\\cap\\varnothing=\\varnothing\\).",
+      "hint": "Recall that the empty set contains no elements."
+    },
+    {
+      "id": "math-gaokao-7-q003",
+      "category": "Sets",
+      "concept": "Intersection of Intervals",
+      "learningObjective": "Determine the intersection of two overlapping real intervals.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A=[1,4)\\) and \\(B=(2,5]\\). What is \\(A\\cap B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([2,4]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The interval \\(A=[1,4)\\) contains all real numbers from \\(1\\) up to but not including \\(4\\). The interval \\(B=(2,5]\\) contains all real numbers greater than \\(2\\) up to and including \\(5\\). Their common part consists of real numbers greater than \\(2\\) and less than \\(4\\). Therefore \\(A\\cap B=(2,4)\\).",
+      "hint": "Find the overlap of the two intervals and check which endpoints are included."
+    },
+    {
+      "id": "math-gaokao-7-q004",
+      "category": "Sets",
+      "concept": "Intersection of Sets Given in Set-Builder Notation",
+      "learningObjective": "Convert two sets from set-builder notation to roster form and find their intersection.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(A=\\{x\\in\\mathbb Z\\mid -1\\le x\\le 3\\}\\) and \\(B=\\{x\\in\\mathbb N^+\\mid x<4\\}\\). What is \\(A\\cap B\\) in roster form?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{-1,0,1,2,3\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,2,3\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The set \\(A\\) consists of the integers from \\(-1\\) to \\(3\\), so \\(A=\\{-1,0,1,2,3\\}\\). The set \\(B\\) consists of positive integers less than \\(4\\), so \\(B=\\{1,2,3\\}\\). The common elements are \\(1,2,3\\). Therefore \\(A\\cap B=\\{1,2,3\\}\\).",
+      "hint": "Write each set in roster form first, then identify the elements they share."
+    },
+    {
+      "id": "math-gaokao-7-q005",
+      "category": "Sets",
+      "concept": "Cardinality of an Intersection",
+      "learningObjective": "Use the inclusion–exclusion principle to find the number of elements in an intersection.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(A\\) and \\(B\\) be finite sets with \\(|A|=10\\), \\(|B|=8\\), and \\(|A\\cup B|=14\\). How many elements are in \\(A\\cap B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the inclusion–exclusion principle,\n\\[\n|A\\cup B|=|A|+|B|-|A\\cap B|.\n\\]\nSubstituting the given values gives\n\\[\n14=10+8-|A\\cap B|.\n\\]\nThus\n\\[\n|A\\cap B|=10+8-14=4.\n\\]\nTherefore \\(A\\cap B\\) has \\(4\\) elements.",
+      "hint": "Use the formula relating the sizes of two sets, their union, and their intersection."
+    },
+    {
+      "id": "math-gaokao-7-q006",
+      "category": "Sets",
+      "concept": "Intersection with the Universal Set",
+      "learningObjective": "Apply the property of the universal set under intersection.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(U\\) be the universal set and \\(A\\subseteq U\\). What is \\(A\\cap U\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(U\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(A\\subseteq U\\), every element of \\(A\\) is already an element of \\(U\\). Therefore the elements common to \\(A\\) and \\(U\\) are exactly the elements of \\(A\\). Hence \\(A\\cap U=A\\).",
+      "hint": "Consider which elements belong to both \\(A\\) and the universal set."
+    },
+    {
+      "id": "math-gaokao-7-q007",
+      "category": "Sets",
+      "concept": "Disjoint Sets",
+      "learningObjective": "Determine the intersection of two disjoint finite sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(A=\\{1,2\\}\\) and \\(B=\\{3,4\\}\\). What is \\(A\\cap B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\varnothing\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,2,3,4\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sets \\(A=\\{1,2\\}\\) and \\(B=\\{3,4\\}\\) have no common elements. Therefore their intersection is the empty set, so \\(A\\cap B=\\varnothing\\).",
+      "hint": "Check whether any element appears in both sets."
+    },
+    {
+      "id": "math-gaokao-7-q008",
+      "category": "Sets",
+      "concept": "Parameter from an Intersection Condition",
+      "learningObjective": "Determine an unknown element that makes an intersection equal to a given set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(A=\\{1,2,a\\}\\) and \\(B=\\{1,3\\}\\). If \\(A\\cap B=\\{1,3\\}\\), what is the value of \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(A\\cap B=\\{1,3\\}\\), the element \\(3\\) must belong to both \\(A\\) and \\(B\\). Since \\(3\\in B\\) already, we need \\(3\\in A\\). The set \\(A=\\{1,2,a\\}\\) contains \\(3\\) only if \\(a=3\\). Checking, if \\(a=3\\), then \\(A=\\{1,2,3\\}\\) and \\(A\\cap B=\\{1,3\\}\\), as required. Therefore \\(a=3\\).",
+      "hint": "Use the fact that every element of the given intersection must belong to both sets."
+    },
+    {
+      "id": "math-gaokao-7-q009",
+      "category": "Sets",
+      "concept": "Intersection of Unbounded and Bounded Intervals",
+      "learningObjective": "Determine the simplified interval form of the intersection of two real intervals.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(A=(-\\infty,3]\\) and \\(B=(0,5)\\). What is \\(A\\cap B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0,3]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([0,3]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The interval \\(A=(-\\infty,3]\\) contains all real numbers less than or equal to \\(3\\). The interval \\(B=(0,5)\\) contains all real numbers greater than \\(0\\) and less than \\(5\\). Their common part consists of real numbers greater than \\(0\\) and at most \\(3\\). Therefore\n\\[\nA\\cap B=(0,3].\n\\]",
+      "hint": "Find the overlapping region and check whether \\(0\\) and \\(3\\) belong to both intervals."
+    },
+    {
+      "id": "math-gaokao-7-q010",
+      "category": "Sets",
+      "concept": "Intersection of Integer Sets Defined by Inequalities",
+      "learningObjective": "Convert two sets defined by inequalities over the integers into roster form and find their intersection.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(A=\\{x\\in\\mathbb Z\\mid x^2\\le 9\\}\\) and \\(B=\\{x\\in\\mathbb Z\\mid -2<x\\le 4\\}\\). What is \\(A\\cap B\\) in roster form?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{-2,-1,0,1,2,3\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{-1,0,1,2,3\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inequality \\(x^2\\le 9\\) is equivalent to \\(-3\\le x\\le 3\\), so\n\\[\nA=\\{-3,-2,-1,0,1,2,3\\}.\n\\]\nThe inequality \\(-2<x\\le 4\\) gives the integers\n\\[\nB=\\{-1,0,1,2,3,4\\}.\n\\]\nThe common elements are \\(-1,0,1,2,3\\). Therefore\n\\[\nA\\cap B=\\{-1,0,1,2,3\\}.\n\\]",
+      "hint": "Write both sets in roster form first, then list the elements that appear in both."
+    }
+  ]
+}

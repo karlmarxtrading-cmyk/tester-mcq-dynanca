@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-110",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 110",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-110-q001",
+      "category": "Functions",
+      "concept": "Vertical Asymptotes of Rational Functions",
+      "learningObjective": "Determine the vertical asymptote of a simple rational function by finding where the denominator is zero.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the vertical asymptote of the graph of\n\\[\nf(x)=\\frac{1}{x-3}.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A vertical asymptote occurs where the denominator is zero and the numerator is not zero. Set the denominator equal to zero:\n\\[\nx-3=0 \\implies x=3.\n\\]\nAt \\(x=3\\), the numerator is \\(1\\neq 0\\). Therefore, the vertical asymptote is\n\\[\nx=3.\n\\]",
+      "hint": "Set the denominator equal to zero and check that the numerator does not also vanish there."
+    },
+    {
+      "id": "math-gaokao-110-q002",
+      "category": "Functions",
+      "concept": "Horizontal Asymptotes of Rational Functions",
+      "learningObjective": "Determine the horizontal asymptote of a rational function when the numerator and denominator have the same degree.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the horizontal asymptote of the graph of\n\\[\nf(x)=\\frac{2x+1}{x-5}.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The numerator and denominator both have degree \\(1\\). When the degrees are equal, the horizontal asymptote is the ratio of the leading coefficients:\n\\[\ny=\\frac{2}{1}=2.\n\\]\nTherefore, the horizontal asymptote is\n\\[\ny=2.\n\\]",
+      "hint": "Compare the degrees of the numerator and denominator, then use the leading coefficients."
+    },
+    {
+      "id": "math-gaokao-110-q003",
+      "category": "Functions",
+      "concept": "Vertical Asymptotes of Rational Functions",
+      "learningObjective": "Find all vertical asymptotes of a rational function whose denominator has two distinct real zeros.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find all vertical asymptotes of\n\\[\nf(x)=\\frac{x+1}{x^2-4}.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2\\) only"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2\\) and \\(x=-2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor the denominator:\n\\[\nx^2-4=(x-2)(x+2).\n\\]\nThe denominator is zero when\n\\[\nx=2 \\quad \\text{or} \\quad x=-2.\n\\]\nCheck the numerator at these values:\n\\[\nx+1=3 \\quad \\text{when } x=2,\n\\]\nand\n\\[\nx+1=-1 \\quad \\text{when } x=-2.\n\\]\nThe numerator is nonzero at both values, so both are vertical asymptotes. Therefore, the vertical asymptotes are\n\\[\nx=2 \\quad \\text{and} \\quad x=-2.\n\\]",
+      "hint": "Factor the denominator and exclude any zeros that are also zeros of the numerator."
+    },
+    {
+      "id": "math-gaokao-110-q004",
+      "category": "Functions",
+      "concept": "Horizontal Asymptotes of Rational Functions",
+      "learningObjective": "Determine the horizontal asymptote of a rational function whose numerator and denominator have the same degree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the horizontal asymptote of\n\\[\nf(x)=\\frac{3x^2-1}{x^2+2x}.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The numerator and denominator both have degree \\(2\\). When the degrees are equal, the horizontal asymptote is determined by the ratio of the leading coefficients:\n\\[\ny=\\frac{3}{1}=3.\n\\]\nTherefore, the horizontal asymptote is\n\\[\ny=3.\n\\]",
+      "hint": "Look only at the highest-degree terms in the numerator and denominator."
+    },
+    {
+      "id": "math-gaokao-110-q005",
+      "category": "Functions",
+      "concept": "Slant Asymptotes of Rational Functions",
+      "learningObjective": "Find the slant asymptote of a rational function by polynomial division.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the slant asymptote of\n\\[\nf(x)=\\frac{x^2+1}{x-1}.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=x+1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Perform polynomial division:\n\\[\nx^2+1=(x-1)(x+1)+2.\n\\]\nThus\n\\[\nf(x)=x+1+\\frac{2}{x-1}.\n\\]\nAs \\(x\\to\\infty\\) or \\(x\\to-\\infty\\),\n\\[\n\\frac{2}{x-1}\\to 0.\n\\]\nTherefore, the slant asymptote is\n\\[\ny=x+1.\n\\]",
+      "hint": "Divide the numerator by the denominator and ignore the remainder term for large \\(|x|\\)."
+    },
+    {
+      "id": "math-gaokao-110-q006",
+      "category": "Functions",
+      "concept": "Horizontal Asymptotes of Rational Functions",
+      "learningObjective": "Determine the horizontal asymptote when the degree of the numerator is less than the degree of the denominator.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the horizontal asymptote of\n\\[\nf(x)=\\frac{5x+2}{2x^2+1}.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=\\frac{5}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The numerator has degree \\(1\\), while the denominator has degree \\(2\\). Since the degree of the numerator is less than the degree of the denominator, the horizontal asymptote is\n\\[\ny=0.\n\\]\nEquivalently, as \\(x\\to\\pm\\infty\\), the denominator grows faster than the numerator, so \\(f(x)\\to 0\\).",
+      "hint": "Compare the degrees of the numerator and denominator."
+    },
+    {
+      "id": "math-gaokao-110-q007",
+      "category": "Functions",
+      "concept": "Intersection with a Horizontal Asymptote",
+      "learningObjective": "Determine whether the graph of a rational function crosses its horizontal asymptote.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The function\n\\[\nf(x)=\\frac{x^2-1}{x^2+1}\n\\]\nhas horizontal asymptote \\(y=1\\). Does its graph cross this horizontal asymptote?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It does not cross the horizontal asymptote."
+        },
+        {
+          "label": "B",
+          "text": "It crosses the horizontal asymptote at \\(x=0\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "To check for an intersection with \\(y=1\\), solve\n\\[\n\\frac{x^2-1}{x^2+1}=1.\n\\]\nMultiply both sides by \\(x^2+1\\):\n\\[\nx^2-1=x^2+1.\n\\]\nSubtract \\(x^2\\) from both sides:\n\\[\n-1=1,\n\\]\nwhich is impossible. Therefore, the graph does not cross the horizontal asymptote \\(y=1\\).",
+      "hint": "Set the function equal to the horizontal asymptote and see whether the resulting equation has a real solution."
+    },
+    {
+      "id": "math-gaokao-110-q008",
+      "category": "Functions",
+      "concept": "Asymptotes of Rational Functions with Parameters",
+      "learningObjective": "Determine a parameter in a rational function from its vertical and horizontal asymptotes.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "The function\n\\[\nf(x)=\\frac{ax+3}{x+b}\n\\]\nhas vertical asymptote \\(x=2\\) and horizontal asymptote \\(y=-1\\). Find \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a=-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a=1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The vertical asymptote occurs where the denominator is zero:\n\\[\nx+b=0 \\implies x=-b.\n\\]\nSince the vertical asymptote is \\(x=2\\), we get\n\\[\n-b=2 \\implies b=-2.\n\\]\nThe numerator and denominator both have degree \\(1\\), so the horizontal asymptote is the ratio of the leading coefficients:\n\\[\ny=\\frac{a}{1}=a.\n\\]\nSince the horizontal asymptote is \\(y=-1\\), we have\n\\[\na=-1.\n\\]",
+      "hint": "Use the vertical asymptote to find \\(b\\), then use the horizontal asymptote to find \\(a\\)."
+    },
+    {
+      "id": "math-gaokao-110-q009",
+      "category": "Functions",
+      "concept": "Vertical Asymptotes and Holes in Rational Functions",
+      "learningObjective": "Distinguish between a vertical asymptote and a removable discontinuity after factoring.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Find all vertical asymptotes of\n\\[\nf(x)=\\frac{x^2-4}{x^2-x-6}.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-2\\) and \\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3\\) only"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor the numerator and denominator:\n\\[\nx^2-4=(x-2)(x+2),\n\\]\nand\n\\[\nx^2-x-6=(x-3)(x+2).\n\\]\nThus\n\\[\nf(x)=\\frac{(x-2)(x+2)}{(x-3)(x+2)}.\n\\]\nThe factor \\(x+2\\) cancels, so \\(x=-2\\) is a hole, not a vertical asymptote. The remaining denominator factor \\(x-3\\) gives a vertical asymptote at\n\\[\nx=3.\n\\]\nTherefore, the only vertical asymptote is \\(x=3\\).",
+      "hint": "Factor first, then cancel common factors before identifying vertical asymptotes."
+    },
+    {
+      "id": "math-gaokao-110-q010",
+      "category": "Functions",
+      "concept": "Local Behavior Near a Vertical Asymptote",
+      "learningObjective": "Determine the one-sided asymptotic behavior of a rational function near a vertical asymptote.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For\n\\[\nf(x)=\\frac{x+2}{x^2-1},\n\\]\nwhat is the behavior of \\(f(x)\\) as \\(x\\to 1^+\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(x)\\to +\\infty\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f(x)\\to -\\infty\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor the denominator:\n\\[\nx^2-1=(x-1)(x+1).\n\\]\nAs \\(x\\to 1^+\\), we have\n\\[\nx-1>0, \\qquad x+1>0, \\qquad x+2>0.\n\\]\nTherefore, the denominator approaches \\(0\\) through positive values, while the numerator approaches \\(3>0\\). Hence\n\\[\nf(x)\\to +\\infty.\n\\]\nSo as \\(x\\to 1^+\\),\n\\[\nf(x)\\to +\\infty.\n\\]",
+      "hint": "Determine the signs of the numerator and each factor of the denominator as \\(x\\) approaches \\(1\\) from the right."
+    }
+  ]
+}

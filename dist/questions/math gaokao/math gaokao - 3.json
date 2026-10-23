@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-3",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 3",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-3-q001",
+      "category": "Sets",
+      "concept": "Number of Proper Subsets",
+      "learningObjective": "Determine the number of proper subsets of a finite set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(S=\\{a,b,c\\}\\). How many proper subsets does \\(S\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A set with \\(n\\) elements has \\(2^n\\) subsets in total. Since \\(S\\) has \\(3\\) elements, it has \\(2^3=8\\) subsets. A proper subset is any subset except the set itself, so the number of proper subsets is \\(8-1=7\\).",
+      "hint": "Count all subsets first, then exclude the original set itself."
+    },
+    {
+      "id": "math-gaokao-3-q002",
+      "category": "Sets",
+      "concept": "Number of Subsets",
+      "learningObjective": "Use the formula for the total number of subsets of a finite set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many subsets does the set \\(A=\\{1,2,3,4\\}\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A set with \\(n\\) elements has \\(2^n\\) subsets. Since \\(A\\) has \\(4\\) elements, the number of subsets is \\(2^4=16\\). This count includes both the empty set and \\(A\\) itself.",
+      "hint": "Use the formula \\(2^n\\), where \\(n\\) is the number of elements in the set."
+    },
+    {
+      "id": "math-gaokao-3-q003",
+      "category": "Sets",
+      "concept": "Proper Subset Recognition",
+      "learningObjective": "Identify a proper subset of a given finite set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(A=\\{1,2,3\\}\\). Which of the following is a proper subset of \\(A\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1,2\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,2,3\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A proper subset of \\(A\\) must be a subset of \\(A\\) but not equal to \\(A\\). The set \\(\\{1,2\\}\\) is contained in \\(A\\) and is not equal to \\(A\\), so it is a proper subset. The set \\(\\{1,2,3\\}\\) is equal to \\(A\\), so it is not a proper subset.",
+      "hint": "Recall that a proper subset must be strictly smaller than the original set."
+    },
+    {
+      "id": "math-gaokao-3-q004",
+      "category": "Sets",
+      "concept": "Number of Proper Subsets from Set-Builder Notation",
+      "learningObjective": "Convert a set from set-builder notation to roster form and count its proper subsets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A=\\{x\\in\\mathbb Z\\mid |x|<2\\}\\). How many proper subsets does \\(A\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The integers satisfying \\(|x|<2\\) are \\(-1,0,1\\). Thus \\(A=\\{-1,0,1\\}\\), which has \\(3\\) elements. The total number of subsets is \\(2^3=8\\). Excluding \\(A\\) itself gives \\(8-1=7\\) proper subsets.",
+      "hint": "First list the elements of \\(A\\), then use the proper-subset formula."
+    },
+    {
+      "id": "math-gaokao-3-q005",
+      "category": "Sets",
+      "concept": "Determining Cardinality from Number of Proper Subsets",
+      "learningObjective": "Find the number of elements of a finite set given its number of proper subsets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A finite set \\(S\\) has exactly \\(15\\) proper subsets. How many elements does \\(S\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If \\(S\\) has \\(n\\) elements, then it has \\(2^n\\) subsets and \\(2^n-1\\) proper subsets. Setting \\(2^n-1=15\\) gives \\(2^n=16\\), so \\(n=4\\). Therefore \\(S\\) has \\(4\\) elements.",
+      "hint": "Set up an equation using \\(2^n-1\\) for the number of proper subsets."
+    },
+    {
+      "id": "math-gaokao-3-q006",
+      "category": "Sets",
+      "concept": "Counting Subsets Containing a Given Element",
+      "learningObjective": "Count the subsets of a finite set that contain a specified element.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(A=\\{1,2,3,4\\}\\). How many subsets of \\(A\\) contain the element \\(1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Any subset of \\(A\\) that contains \\(1\\) is formed by choosing any subset of the remaining elements \\(\\{2,3,4\\}\\) and then including \\(1\\). Since \\(\\{2,3,4\\}\\) has \\(3\\) elements, it has \\(2^3=8\\) subsets. Therefore there are \\(8\\) subsets of \\(A\\) that contain \\(1\\).",
+      "hint": "Fix \\(1\\) as included, then count all possible choices from the remaining elements."
+    },
+    {
+      "id": "math-gaokao-3-q007",
+      "category": "Sets",
+      "concept": "Nonempty Proper Subsets",
+      "learningObjective": "Count the nonempty proper subsets of a small finite set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(A=\\{a,b\\}\\). How many nonempty proper subsets does \\(A\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The proper subsets of \\(A=\\{a,b\\}\\) are \\(\\varnothing\\), \\(\\{a\\}\\), and \\(\\{b\\}\\). Among these, the nonempty proper subsets are \\(\\{a\\}\\) and \\(\\{b\\}\\). Therefore there are \\(2\\) nonempty proper subsets.",
+      "hint": "List all proper subsets first, then remove the empty set."
+    },
+    {
+      "id": "math-gaokao-3-q008",
+      "category": "Sets",
+      "concept": "Proper Subsets of a Set Given in Set-Builder Notation",
+      "learningObjective": "Convert a set from set-builder notation to roster form and determine its number of proper subsets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A=\\{x\\in\\mathbb N^+\\mid x<5\\}\\). How many proper subsets does \\(A\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The positive integers less than \\(5\\) are \\(1,2,3,4\\). Thus \\(A=\\{1,2,3,4\\}\\), which has \\(4\\) elements. The total number of subsets is \\(2^4=16\\). Excluding \\(A\\) itself gives \\(16-1=15\\) proper subsets.",
+      "hint": "Write \\(A\\) in roster form, then apply the proper-subset formula."
+    },
+    {
+      "id": "math-gaokao-3-q009",
+      "category": "Sets",
+      "concept": "Counting Subsets with a Fixed Number of Elements",
+      "learningObjective": "Count the subsets of a finite set that have exactly two elements.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(A=\\{1,2,3,4,5\\}\\). How many subsets of \\(A\\) have exactly \\(2\\) elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A \\(2\\)-element subset is determined by choosing \\(2\\) elements from the \\(5\\) elements of \\(A\\). The number of such choices is \\(\\binom{5}{2}=\\frac{5\\cdot 4}{2}=10\\). Therefore there are \\(10\\) subsets of \\(A\\) with exactly \\(2\\) elements.",
+      "hint": "Choose two elements from five without regard to order."
+    },
+    {
+      "id": "math-gaokao-3-q010",
+      "category": "Sets",
+      "concept": "Proper Subsets Containing a Specified Element",
+      "learningObjective": "Count the proper subsets of a finite set that contain a given element.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(A=\\{1,2,3,4\\}\\). How many proper subsets of \\(A\\) contain the element \\(4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A subset of \\(A\\) that contains \\(4\\) is formed by choosing any subset of \\(\\{1,2,3\\}\\) and including \\(4\\). Since \\(\\{1,2,3\\}\\) has \\(3\\) elements, there are \\(2^3=8\\) such subsets in total. One of these is \\(A=\\{1,2,3,4\\}\\) itself, which is not a proper subset. Therefore the number of proper subsets containing \\(4\\) is \\(8-1=7\\).",
+      "hint": "Count all subsets containing \\(4\\), then exclude the original set \\(A\\)."
+    }
+  ]
+}

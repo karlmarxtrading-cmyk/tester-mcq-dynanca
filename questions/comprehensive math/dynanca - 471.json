@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-471",
+  "category": "Comprehensive Mathematics",
+  "title": "471. Sets, Logic, Reasoning & Proof: Power Set of a Finite Set",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-471-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of the power set",
+      "learningObjective": "State what the elements of a power set are.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the power set \\(\\mathcal{P}(S)\\) of a set \\(S\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The set of all subsets of \\(S\\)"
+        },
+        {
+          "label": "B",
+          "text": "The set of all elements of \\(S\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The power set of \\(S\\) is the set whose elements are exactly the subsets of \\(S\\), including \\(\\varnothing\\) and \\(S\\) itself. The set of all elements of \\(S\\) is simply \\(S\\).",
+      "hint": "The elements of a power set are themselves sets."
+    },
+    {
+      "id": "dynanca-471-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Power set of a one-element set",
+      "learningObjective": "List the power set of a set with one element.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\mathcal{P}(\\{a\\})\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{\\{a\\}\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{\\varnothing,\\{a\\}\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The set \\(\\{a\\}\\) has \\(2^1=2\\) subsets: the empty set and \\(\\{a\\}\\) itself. So \\(\\mathcal{P}(\\{a\\})=\\{\\varnothing,\\{a\\}\\}\\). Leaving out \\(\\varnothing\\) omits a subset.",
+      "hint": "Remember that the empty set is a subset of every set."
+    },
+    {
+      "id": "dynanca-471-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Cardinality of a power set",
+      "learningObjective": "Compute the number of elements of the power set of a four-element set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A set \\(S\\) has \\(4\\) elements. How many elements does \\(\\mathcal{P}(S)\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A set with \\(n\\) elements has \\(2^n\\) subsets. For \\(n=4\\) this is \\(2^4=16\\). The value \\(8=2\\cdot 4\\) multiplies instead of using a power.",
+      "hint": "Each element is either in a subset or not; multiply these choices over all elements."
+    },
+    {
+      "id": "dynanca-471-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Elements of a power set",
+      "learningObjective": "Decide which object is an element of a given power set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which object is an element of \\(\\mathcal{P}(\\{1,2,3\\})\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,3\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The elements of \\(\\mathcal{P}(\\{1,2,3\\})\\) are the subsets of \\(\\{1,2,3\\}\\). The set \\(\\{1,3\\}\\) is such a subset. The number \\(3\\) is an element of \\(\\{1,2,3\\}\\), not a subset of it, so it is not an element of the power set.",
+      "hint": "An element of the power set must be a set, not a number."
+    },
+    {
+      "id": "dynanca-471-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Power set of the empty set",
+      "learningObjective": "Find the power set of the empty set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "What is \\(\\mathcal{P}(\\varnothing)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{\\varnothing\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The only subset of \\(\\varnothing\\) is \\(\\varnothing\\) itself. So the power set has exactly one element: \\(\\mathcal{P}(\\varnothing)=\\{\\varnothing\\}\\). This agrees with the count \\(2^0=1\\); the power set of any set is never empty.",
+      "hint": "Count the subsets of the empty set with the formula \\(2^n\\)."
+    },
+    {
+      "id": "dynanca-471-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Size of a set from its power set",
+      "learningObjective": "Find the number of elements of a set from the size of its power set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The power set of a set \\(S\\) has \\(32\\) elements. How many elements does \\(S\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If \\(S\\) has \\(n\\) elements, then \\(\\mathcal{P}(S)\\) has \\(2^n\\) elements. Solving \\(2^n=32\\) gives \\(n=5\\). Halving \\(32\\) gives \\(16\\), which is the size of the power set of a set with \\(4\\) elements.",
+      "hint": "Solve \\(2^n=32\\) for \\(n\\)."
+    },
+    {
+      "id": "dynanca-471-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Membership in a power set",
+      "learningObjective": "Distinguish a subset from an element when working with a power set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(A=\\{1,2\\}\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\in\\mathcal{P}(A)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1\\}\\in\\mathcal{P}(A)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The elements of \\(\\mathcal{P}(A)\\) are \\(\\varnothing\\), \\(\\{1\\}\\), \\(\\{2\\}\\), and \\(\\{1,2\\}\\). The set \\(\\{1\\}\\) is one of them. The number \\(1\\) is an element of \\(A\\), but it is not a subset of \\(A\\) and so is not an element of \\(\\mathcal{P}(A)\\).",
+      "hint": "List the four elements of \\(\\mathcal{P}(A)\\) and look for each candidate."
+    },
+    {
+      "id": "dynanca-471-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Elements every power set contains",
+      "learningObjective": "Identify the two subsets that belong to every power set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For an arbitrary set \\(A\\), which objects are always elements of \\(\\mathcal{P}(A)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\) but not \\(\\varnothing\\)"
+        },
+        {
+          "label": "B",
+          "text": "Both \\(\\varnothing\\) and \\(A\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The empty set is a subset of every set, and every set is a subset of itself. So both \\(\\varnothing\\) and \\(A\\) are subsets of \\(A\\) and hence elements of \\(\\mathcal{P}(A)\\). When \\(A=\\varnothing\\) these two coincide.",
+      "hint": "Recall the two subsets that every set has."
+    },
+    {
+      "id": "dynanca-471-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Power set of a power set",
+      "learningObjective": "Count the elements of an iterated power set.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many elements does \\(\\mathcal{P}(\\mathcal{P}(\\{1\\}))\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First, \\(\\mathcal{P}(\\{1\\})=\\{\\varnothing,\\{1\\}\\}\\) has \\(2\\) elements. The power set of a \\(2\\)-element set has \\(2^2=4\\) elements. Explicitly they are \\(\\varnothing\\), \\(\\{\\varnothing\\}\\), \\(\\{\\{1\\}\\}\\), and \\(\\{\\varnothing,\\{1\\}\\}\\).",
+      "hint": "Find the size of the inner power set first, then apply \\(2^n\\) again."
+    },
+    {
+      "id": "dynanca-471-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Subsets of a given size",
+      "learningObjective": "Count the elements of a power set that have exactly two elements.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many elements of \\(\\mathcal{P}(\\{1,2,3,4\\})\\) are sets with exactly \\(2\\) elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A \\(2\\)-element subset is chosen by selecting \\(2\\) of the \\(4\\) elements without regard to order: \\(\\binom{4}{2}=6\\). The subsets are \\(\\{1,2\\}\\), \\(\\{1,3\\}\\), \\(\\{1,4\\}\\), \\(\\{2,3\\}\\), \\(\\{2,4\\}\\), \\(\\{3,4\\}\\). The value \\(12=4\\cdot 3\\) counts ordered choices, so each subset is counted twice.",
+      "hint": "A subset does not depend on the order in which its elements are chosen."
+    }
+  ]
+}

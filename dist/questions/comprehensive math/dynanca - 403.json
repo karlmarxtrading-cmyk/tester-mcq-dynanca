@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-403",
+  "category": "Comprehensive Mathematics",
+  "title": "403. Geometry, Spatial Thinking & Measurement: Homogeneous Coordinates for Planar Translation",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-403-q001",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Homogeneous coordinates of a planar point",
+      "learningObjective": "Write a Cartesian point of the plane in homogeneous coordinates.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In homogeneous coordinates, a point \\((x,y)\\) of the plane is written as a column with three entries. Which column represents the point \\((3,-2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,-2,0)^{T}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,-2,1)^{T}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A point \\((x,y)\\) is represented by \\((x,y,1)^{T}\\), so \\((3,-2)\\) becomes \\((3,-2,1)^{T}\\). A third entry of \\(0\\) represents a direction rather than a point, and translations leave it unchanged.",
+      "hint": "Recall which value of the third coordinate marks a point rather than a direction."
+    },
+    {
+      "id": "dynanca-403-q002",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Translation matrix in homogeneous form",
+      "learningObjective": "Identify the three-by-three matrix that translates the plane by a given vector.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which matrix translates every point of the plane by the vector \\((4,5)\\) when points are written as \\((x,y,1)^{T}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix}1&0&4\\\\0&1&5\\\\0&0&1\\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix}4&0&0\\\\0&5&0\\\\0&0&1\\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The matrix \\(\\begin{pmatrix}1&0&4\\\\0&1&5\\\\0&0&1\\end{pmatrix}\\) sends \\((x,y,1)^{T}\\) to \\((x+4,\\,y+5,\\,1)^{T}\\), which is the required translation. The diagonal matrix with entries \\(4\\) and \\(5\\) sends \\((x,y,1)^{T}\\) to \\((4x,5y,1)^{T}\\), which is a scaling.",
+      "hint": "Multiply each candidate matrix by \\((x,y,1)^{T}\\) and see which one adds the vector."
+    },
+    {
+      "id": "dynanca-403-q003",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Applying a translation matrix",
+      "learningObjective": "Multiply a translation matrix by a homogeneous point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(T=\\begin{pmatrix}1&0&2\\\\0&1&-3\\\\0&0&1\\end{pmatrix}\\). What is \\(T\\,(1,4,1)^{T}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,1,1)^{T}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,-12,1)^{T}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Row by row: \\(1\\cdot 1+0\\cdot 4+2\\cdot 1=3\\), \\(0\\cdot 1+1\\cdot 4+(-3)\\cdot 1=1\\), and \\(0+0+1=1\\). The result \\((3,1,1)^{T}\\) is the point \\((1,4)\\) moved by \\((2,-3)\\).",
+      "hint": "Carry out the matrix-vector product row by row; the third column multiplies the final entry \\(1\\)."
+    },
+    {
+      "id": "dynanca-403-q004",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Why translation needs an extra coordinate",
+      "learningObjective": "Explain why a nonzero translation of the plane is not a two-by-two matrix map.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Why can no \\(2\\times 2\\) matrix \\(M\\) satisfy \\(M\\mathbf{p}=\\mathbf{p}+\\mathbf{d}\\) for every point \\(\\mathbf{p}\\) of the plane when \\(\\mathbf{d}\\ne\\mathbf{0}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because \\(M\\mathbf{0}=\\mathbf{0}\\) for every matrix \\(M\\), whereas the translation sends \\(\\mathbf{0}\\) to \\(\\mathbf{d}\\)."
+        },
+        {
+          "label": "B",
+          "text": "Because every \\(2\\times 2\\) matrix has determinant \\(1\\), whereas a translation has determinant \\(0\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Any matrix product with the zero vector is the zero vector, so a \\(2\\times 2\\) matrix map fixes the origin. A translation by \\(\\mathbf{d}\\ne\\mathbf{0}\\) moves the origin to \\(\\mathbf{d}\\), so it cannot be such a map. The statement about determinants is false, since \\(2\\times 2\\) matrices can have any determinant.",
+      "hint": "Test what any matrix does to the origin and compare with what the translation does to it."
+    },
+    {
+      "id": "dynanca-403-q005",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Composing two translations",
+      "learningObjective": "Multiply two translation matrices and read off the combined translation vector.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(T(a,b)=\\begin{pmatrix}1&0&a\\\\0&1&b\\\\0&0&1\\end{pmatrix}\\). What is the third column of the product \\(T(1,2)\\,T(3,-5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,-10,1)^{T}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((4,-3,1)^{T}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Translating by \\((3,-5)\\) and then by \\((1,2)\\) translates by the sum \\((4,-3)\\). Direct multiplication confirms this: the third column of the product is \\((1\\cdot 3+1,\\ -5+2,\\ 1)^{T}=(4,-3,1)^{T}\\). Translation vectors add; they are not multiplied entry by entry.",
+      "hint": "Think about the net effect of performing one translation after another."
+    },
+    {
+      "id": "dynanca-403-q006",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Inverse of a translation matrix",
+      "learningObjective": "Find the translation that undoes a given homogeneous translation matrix.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "The matrix \\(\\begin{pmatrix}1&0&6\\\\0&1&-1\\\\0&0&1\\end{pmatrix}\\) translates by \\((6,-1)\\). By which vector does its inverse matrix translate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-6,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\left(\\frac{1}{6},-1\\right)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "To undo a shift by \\((6,-1)\\), shift by the opposite vector \\((-6,1)\\). Indeed, the translation matrices for \\((6,-1)\\) and \\((-6,1)\\) multiply to a translation by \\((0,0)\\), which is the identity matrix. Taking reciprocals of the entries does not invert a translation.",
+      "hint": "Ask which movement returns every point to where it started."
+    },
+    {
+      "id": "dynanca-403-q007",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Translating a direction vector",
+      "learningObjective": "Determine the effect of a translation matrix on a homogeneous vector whose last coordinate is zero.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(T\\) be the homogeneous matrix of the translation by \\((5,7)\\). What is \\(T\\,(2,3,0)^{T}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((7,10,0)^{T}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,3,0)^{T}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The third column \\((5,7,1)^{T}\\) of \\(T\\) is multiplied by the last entry of the vector, which is \\(0\\). Hence nothing is added: \\(T\\,(2,3,0)^{T}=(2,3,0)^{T}\\). This is why a last coordinate of \\(0\\) is used for directions, which are unaffected by translation.",
+      "hint": "Look at which column of \\(T\\) carries the translation and at the entry of the vector that multiplies it."
+    },
+    {
+      "id": "dynanca-403-q008",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Finding a translation from a point and its image",
+      "learningObjective": "Determine the translation vector that maps one given point to another.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A translation of the plane maps the point \\((2,5)\\) to the point \\((-1,9)\\). Which translation vector \\((a,b)\\) appears in the third column of its homogeneous matrix?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((a,b)=(3,-4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((a,b)=(-3,4)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The translation adds \\((a,b)\\) to every point, so \\((2+a,\\,5+b)=(-1,9)\\). Hence \\(a=-1-2=-3\\) and \\(b=9-5=4\\). The vector is the image minus the original point, not the reverse.",
+      "hint": "Subtract the coordinates of the original point from those of its image."
+    },
+    {
+      "id": "dynanca-403-q009",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Translation with a non-unit last coordinate",
+      "learningObjective": "Apply a translation matrix to a homogeneous point whose last coordinate is not one and convert back to Cartesian form.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "The homogeneous column \\((6,-4,2)^{T}\\) represents the Cartesian point \\(\\left(\\frac{6}{2},\\frac{-4}{2}\\right)=(3,-2)\\). After multiplying this column by the matrix of the translation by \\((1,1)\\), which Cartesian point does the result represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((7,-3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((4,-1)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The product is \\((6+1\\cdot 2,\\ -4+1\\cdot 2,\\ 2)^{T}=(8,-2,2)^{T}\\). Dividing by the last coordinate gives \\(\\left(\\frac{8}{2},\\frac{-2}{2}\\right)=(4,-1)\\), which is exactly \\((3,-2)\\) moved by \\((1,1)\\). Adding \\(1\\) to the first two entries without using the last coordinate, and not dividing, leads to the wrong point.",
+      "hint": "The translation column is multiplied by the last coordinate; divide by the last coordinate at the end."
+    },
+    {
+      "id": "dynanca-403-q010",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Order of rotation and translation",
+      "learningObjective": "Evaluate a product of a homogeneous translation matrix and rotation matrix and recognise that the order matters.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(R\\) be the homogeneous matrix of the counterclockwise rotation by \\(90^\\circ\\) about the origin, and let \\(T\\) be the homogeneous matrix of the translation by \\((2,0)\\). Which Cartesian point is the image of \\((1,0)\\) under the product \\(TR\\), where \\(R\\) acts first?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,1)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Apply \\(R\\) first: \\((1,0)\\) rotates to \\((0,1)\\). Then apply \\(T\\): \\((0,1)\\) moves to \\((2,1)\\). Reversing the order would translate \\((1,0)\\) to \\((3,0)\\) and then rotate it to \\((0,3)\\), which is the image under \\(RT\\), not under \\(TR\\).",
+      "hint": "In the product \\(TR\\) acting on a column vector, the matrix written on the right is applied first."
+    }
+  ]
+}

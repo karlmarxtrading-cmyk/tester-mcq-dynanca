@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-569",
+  "category": "Comprehensive Mathematics",
+  "title": "569. Discrete Mathematics, Counting & Graph Theory: Stars and Bars for Positive Integers",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-569-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two positive unknowns",
+      "learningObjective": "Count the positive integer solutions of an equation with two unknowns.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many pairs \\((x,y)\\) of positive integers satisfy \\(x+y=5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The value of \\(x\\) can be \\(1,2,3\\), or \\(4\\), and then \\(y=5-x\\) is also positive. So there are \\(4\\) solutions. The number \\(6\\) also counts \\((0,5)\\) and \\((5,0)\\), in which one unknown is not positive.",
+      "hint": "Neither unknown may be \\(0\\)."
+    },
+    {
+      "id": "dynanca-569-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Three positive unknowns",
+      "learningObjective": "Count the positive integer solutions of an equation with three unknowns.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many triples \\((x,y,z)\\) of positive integers satisfy \\(x+y+z=5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(21\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Place \\(5\\) stars in a row; there are \\(4\\) gaps between neighbouring stars, and choosing \\(2\\) of them for bars gives three nonempty groups. So the count is \\(\\binom{4}{2}=6\\). The number \\(21=\\binom{7}{2}\\) counts the solutions in nonnegative integers.",
+      "hint": "Bars may only be placed in the gaps between stars, at most one bar in each gap."
+    },
+    {
+      "id": "dynanca-569-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A larger sum with positive unknowns",
+      "learningObjective": "Apply the positive-solution count to three unknowns.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many triples \\((x_1,x_2,x_3)\\) of positive integers satisfy \\(x_1+x_2+x_3=10\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(66\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Ten stars have \\(9\\) gaps, and \\(2\\) of them receive a bar: \\(\\binom{9}{2}=36\\). The number \\(66=\\binom{12}{2}\\) counts the solutions in which unknowns may be \\(0\\).",
+      "hint": "Choose two of the nine gaps between the ten stars."
+    },
+    {
+      "id": "dynanca-569-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Reducing to the nonnegative case",
+      "learningObjective": "Convert a problem about positive solutions into one about nonnegative solutions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "To count the positive integer solutions of \\(x_1+x_2+\\cdots+x_k=n\\), one substitutes new unknowns to obtain an equation in nonnegative integers. Which substitution and new equation are correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y_i=x_i+1\\), giving \\(y_1+\\cdots+y_k=n+k\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y_i=x_i-1\\), giving \\(y_1+\\cdots+y_k=n-k\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If each \\(x_i\\ge 1\\), then \\(y_i=x_i-1\\ge 0\\), and the sum decreases by \\(1\\) for each of the \\(k\\) unknowns: \\(y_1+\\cdots+y_k=n-k\\). Conversely every nonnegative solution of this equation gives a positive solution of the original one. The other substitution would make each \\(y_i\\ge 2\\), not merely nonnegative.",
+      "hint": "Subtract the required minimum from each unknown."
+    },
+    {
+      "id": "dynanca-569-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Everyone receives a coin",
+      "learningObjective": "Count distributions of identical objects in which nobody is left out.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In how many ways can \\(10\\) identical coins be given to \\(4\\) people so that everyone receives at least one coin?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(84\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(286\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A distribution is a solution of \\(x_1+x_2+x_3+x_4=10\\) in positive integers: \\(\\binom{9}{3}=84\\). The number \\(286=\\binom{13}{3}\\) also counts the distributions in which some people receive nothing.",
+      "hint": "Give each person one coin first, or choose three of the nine gaps."
+    },
+    {
+      "id": "dynanca-569-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Cutting a row into groups",
+      "learningObjective": "Count the ways to cut a row of objects into nonempty consecutive groups.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Seven stones lie in a row. In how many ways can the row be cut into \\(3\\) nonempty groups of consecutive stones?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(6\\) gaps between neighbouring stones, and the row is cut at \\(2\\) of them: \\(\\binom{6}{2}=15\\). The number \\(36=\\binom{9}{2}\\) would allow empty groups.",
+      "hint": "Count the gaps between the stones and choose where to cut."
+    },
+    {
+      "id": "dynanca-569-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Ordered sums with a fixed number of terms",
+      "learningObjective": "Count ordered sums with a prescribed number of positive terms.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "In how many ways can \\(6\\) be written as an ordered sum of exactly \\(3\\) positive integers, where sums such as \\(1+2+3\\) and \\(3+2+1\\) count as different?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(28\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The ordered sums are the positive solutions of \\(x_1+x_2+x_3=6\\): \\(\\binom{5}{2}=10\\). The number \\(28=\\binom{8}{2}\\) would also allow terms equal to \\(0\\).",
+      "hint": "Each term is at least \\(1\\), and the order of the terms matters."
+    },
+    {
+      "id": "dynanca-569-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Too many unknowns",
+      "learningObjective": "Recognise when an equation has no positive solutions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many quadruples \\((x_1,x_2,x_3,x_4)\\) of positive integers satisfy \\(x_1+x_2+x_3+x_4=3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Four positive integers have a sum of at least \\(4\\), so the sum cannot be \\(3\\). There are no solutions. The number \\(20=\\binom{6}{3}\\) counts the solutions in nonnegative integers.",
+      "hint": "Find the smallest possible value of a sum of four positive integers."
+    },
+    {
+      "id": "dynanca-569-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A larger minimum",
+      "learningObjective": "Count solutions in which every unknown is at least three.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many integer triples \\((x,y,z)\\) satisfy \\(x+y+z=15\\) with each unknown at least \\(3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(28\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(91\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=x'+3\\), \\(y=y'+3\\), \\(z=z'+3\\) with nonnegative \\(x',y',z'\\). Then \\(x'+y'+z'=6\\), which has \\(\\binom{8}{2}=28\\) solutions. The number \\(91=\\binom{14}{2}\\) counts the solutions in which each unknown is only required to be at least \\(1\\).",
+      "hint": "Subtract the required minimum from each unknown, then count nonnegative solutions."
+    },
+    {
+      "id": "dynanca-569-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Odd unknowns",
+      "learningObjective": "Count solutions in which every unknown is an odd positive integer.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many triples \\((x,y,z)\\) of odd positive integers satisfy \\(x+y+z=11\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(45\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Write \\(x=2a+1\\), \\(y=2b+1\\), \\(z=2c+1\\) with nonnegative integers \\(a,b,c\\). Then \\(2(a+b+c)+3=11\\), so \\(a+b+c=4\\), which has \\(\\binom{6}{2}=15\\) solutions. The number \\(45=\\binom{10}{2}\\) counts all positive solutions, odd or not.",
+      "hint": "Write each odd positive integer as twice a nonnegative integer plus one."
+    }
+  ]
+}

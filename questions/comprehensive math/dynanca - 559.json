@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-559",
+  "category": "Comprehensive Mathematics",
+  "title": "559. Discrete Mathematics, Counting & Graph Theory: Multinomial Coefficients",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-559-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Evaluating a multinomial coefficient",
+      "learningObjective": "Evaluate a multinomial coefficient from its factorial formula.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The multinomial coefficient is defined by \\(\\dbinom{n}{a,b,c}=\\dfrac{n!}{a!\\,b!\\,c!}\\) for \\(a+b+c=n\\). What is \\(\\dbinom{5}{3,1,1}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(120\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(\\dbinom{5}{3,1,1}=\\dfrac{5!}{3!\\,1!\\,1!}=\\dfrac{120}{6}=20\\). The number \\(120=5!\\) is only the numerator.",
+      "hint": "Divide \\(5!\\) by the product of the three factorials."
+    },
+    {
+      "id": "dynanca-559-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A coefficient with one large part",
+      "learningObjective": "Evaluate a multinomial coefficient with parts four, one and one.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "With \\(\\dbinom{n}{a,b,c}=\\dfrac{n!}{a!\\,b!\\,c!}\\), what is \\(\\dbinom{6}{4,1,1}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(360\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(\\dbinom{6}{4,1,1}=\\dfrac{6!}{4!\\,1!\\,1!}=\\dfrac{720}{24}=30\\). The number \\(360=\\dfrac{720}{2}\\) divides by \\(2!\\) instead of \\(4!\\).",
+      "hint": "The largest factorial in the denominator is \\(4!\\)."
+    },
+    {
+      "id": "dynanca-559-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Three parts",
+      "learningObjective": "Evaluate a multinomial coefficient with three parts greater than one.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "With \\(\\dbinom{n}{a,b,c}=\\dfrac{n!}{a!\\,b!\\,c!}\\), what is \\(\\dbinom{7}{3,2,2}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(420\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(210\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(\\dbinom{7}{3,2,2}=\\dfrac{7!}{3!\\,2!\\,2!}=\\dfrac{5040}{6\\cdot 2\\cdot 2}=210\\). The number \\(420\\) results from dividing by only one of the two factors \\(2!\\).",
+      "hint": "The denominator is \\(3!\\cdot 2!\\cdot 2!\\)."
+    },
+    {
+      "id": "dynanca-559-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Labelled teams",
+      "learningObjective": "Count the ways to split a group into labelled teams of given sizes.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Six players are divided into three teams of \\(2\\), named Red, Green, and Blue. In how many ways can this be done?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(90\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Choose the Red team in \\(\\binom{6}{2}=15\\) ways, then the Green team in \\(\\binom{4}{2}=6\\) ways; the Blue team is then determined. This gives \\(15\\cdot 6=90=\\dfrac{6!}{2!\\,2!\\,2!}\\). The number \\(15\\) would be the count if the three teams had no names, since then the \\(3!\\) ways of naming them would not be distinguished.",
+      "hint": "The teams have names, so giving the same pairs different team names counts as a different division."
+    },
+    {
+      "id": "dynanca-559-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A coefficient in a trinomial expansion",
+      "learningObjective": "Find a coefficient in the expansion of a power of a trinomial.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the coefficient of \\(x^2yz\\) in the expansion of \\((x+y+z)^4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The coefficient of \\(x^ay^bz^c\\) in \\((x+y+z)^n\\) is \\(\\dfrac{n!}{a!\\,b!\\,c!}\\). Here it is \\(\\dfrac{4!}{2!\\,1!\\,1!}=12\\). The number \\(24=4!\\) forgets to divide by \\(2!\\) for the repeated factor \\(x\\).",
+      "hint": "Divide \\(4!\\) by the factorials of the three exponents."
+    },
+    {
+      "id": "dynanca-559-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Another trinomial coefficient",
+      "learningObjective": "Find a coefficient with two repeated exponents in a trinomial expansion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the coefficient of \\(x^2y^2z\\) in the expansion of \\((x+y+z)^5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The coefficient is \\(\\dfrac{5!}{2!\\,2!\\,1!}=\\dfrac{120}{4}=30\\). The number \\(10=\\binom{5}{2}\\) only chooses which two of the five factors supply \\(x\\); the positions for \\(y\\) among the remaining three factors must also be chosen, in \\(\\binom{3}{2}=3\\) ways.",
+      "hint": "Choose the factors that supply \\(x\\), then, among the rest, those that supply \\(y\\)."
+    },
+    {
+      "id": "dynanca-559-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Number of terms of a trinomial power",
+      "learningObjective": "Count the different terms in the expansion of a power of a trinomial.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "After like terms are collected, how many terms does the expansion of \\((x+y+z)^4\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(81\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each term has the form \\(x^ay^bz^c\\) with nonnegative integers satisfying \\(a+b+c=4\\). The number of such triples is \\(\\binom{4+2}{2}=15\\). The number \\(81=3^4\\) counts the products formed before like terms are collected.",
+      "hint": "Count the possible triples of exponents."
+    },
+    {
+      "id": "dynanca-559-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A product of binomial coefficients",
+      "learningObjective": "Write a multinomial coefficient as a product of binomial coefficients.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which product is equal to \\(\\dbinom{9}{4,3,2}=\\dfrac{9!}{4!\\,3!\\,2!}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\binom{9}{4}\\binom{9}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\binom{9}{4}\\binom{5}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Choose the \\(4\\) objects of the first group from \\(9\\), then the \\(3\\) objects of the second group from the \\(5\\) that remain; the last \\(2\\) form the third group. This gives \\(\\binom{9}{4}\\binom{5}{3}=126\\cdot 10=1260\\), which equals \\(\\dfrac{9!}{4!\\,3!\\,2!}\\). In the other product the second choice is wrongly made from all \\(9\\) objects.",
+      "hint": "After the first group is chosen, fewer objects remain for the second group."
+    },
+    {
+      "id": "dynanca-559-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Distributing books",
+      "learningObjective": "Count distributions of distinct objects into groups of prescribed sizes.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "Eight different books are given to three children so that Ana receives \\(3\\), Ben receives \\(3\\), and Cara receives \\(2\\). In how many ways can this be done?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1120\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(560\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number of distributions is \\(\\dfrac{8!}{3!\\,3!\\,2!}=\\dfrac{40320}{72}=560\\). Equivalently, \\(\\binom{8}{3}\\binom{5}{3}=56\\cdot 10=560\\). The number \\(1120\\) omits the factor \\(2!\\) for Cara's books.",
+      "hint": "Choose Ana's books, then Ben's books from those that remain."
+    },
+    {
+      "id": "dynanca-559-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A coefficient with a constant term present",
+      "learningObjective": "Find a coefficient in a trinomial power that contains a constant.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "What is the coefficient of \\(x^2y^3\\) in the expansion of \\((1+x+y)^6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "To obtain \\(x^2y^3\\) from six factors, \\(2\\) factors supply \\(x\\), \\(3\\) supply \\(y\\), and the remaining \\(1\\) supplies the constant \\(1\\). The number of ways is \\(\\dfrac{6!}{1!\\,2!\\,3!}=60\\). The number \\(10=\\dfrac{5!}{2!\\,3!}\\) forgets that there are six factors, one of which contributes \\(1\\).",
+      "hint": "Account for all six factors, including the one that contributes the constant."
+    }
+  ]
+}

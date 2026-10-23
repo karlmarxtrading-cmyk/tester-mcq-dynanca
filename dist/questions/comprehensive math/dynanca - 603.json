@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-603",
+  "category": "Comprehensive Mathematics",
+  "title": "603. Discrete Mathematics, Counting & Graph Theory: Maximum Flow on Small Networks",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-603-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The capacity constraint",
+      "learningObjective": "State the capacity constraint of a flow.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a flow network, what does the capacity constraint require of the flow on each arc?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is equal to the capacity of the arc."
+        },
+        {
+          "label": "B",
+          "text": "It is at least \\(0\\) and at most the capacity of the arc."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The flow on an arc may take any value from \\(0\\) up to the capacity of the arc. Arcs need not be filled completely; an arc whose flow equals its capacity is called saturated, and in most flows only some arcs are saturated.",
+      "hint": "The capacity is an upper limit, not a required amount."
+    },
+    {
+      "id": "dynanca-603-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A single route",
+      "learningObjective": "Find the maximum flow along a single route.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A network has the arcs \\(S\\to A\\) with capacity \\(5\\) and \\(A\\to T\\) with capacity \\(3\\). What is the value of a maximum flow from \\(S\\) to \\(T\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Everything that enters \\(A\\) must leave it along \\(A\\to T\\), which carries at most \\(3\\). So at most \\(3\\) units can be sent, and \\(3\\) units are possible. The capacity \\(5\\) of the first arc cannot be fully used.",
+      "hint": "A route can carry no more than its smallest capacity."
+    },
+    {
+      "id": "dynanca-603-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two separate routes",
+      "learningObjective": "Find the maximum flow along two routes that share no arc.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A network has the arcs \\(S\\to A\\) with capacity \\(5\\), \\(A\\to T\\) with capacity \\(3\\), \\(S\\to B\\) with capacity \\(2\\), and \\(B\\to T\\) with capacity \\(4\\). What is the value of a maximum flow from \\(S\\) to \\(T\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The route through \\(A\\) carries at most \\(\\min(5,3)=3\\) units, and the route through \\(B\\) carries at most \\(\\min(2,4)=2\\) units. The routes share no arc, so the maximum flow is \\(3+2=5\\). The value \\(7\\) adds the capacities of the arcs leaving \\(S\\) and ignores the limits further along.",
+      "hint": "Find the smallest capacity on each route, then add."
+    },
+    {
+      "id": "dynanca-603-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A network with a cross arc",
+      "learningObjective": "Find the maximum flow of a network with four vertices.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A network has the arcs \\(S\\to A\\) with capacity \\(4\\), \\(S\\to B\\) with capacity \\(3\\), \\(A\\to B\\) with capacity \\(2\\), \\(A\\to T\\) with capacity \\(3\\), and \\(B\\to T\\) with capacity \\(4\\). What is the value of a maximum flow from \\(S\\) to \\(T\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "At most \\(4+3=7\\) units can leave \\(S\\). This value is attained: send \\(4\\) along \\(S\\to A\\), of which \\(3\\) continue along \\(A\\to T\\) and \\(1\\) along \\(A\\to B\\); send \\(3\\) along \\(S\\to B\\); then \\(B\\) forwards \\(1+3=4\\) along \\(B\\to T\\). All capacities are respected, so the maximum flow is \\(7\\).",
+      "hint": "Begin with the total capacity of the arcs that leave \\(S\\)."
+    },
+    {
+      "id": "dynanca-603-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The bottleneck of a route",
+      "learningObjective": "Find how much additional flow a route can carry.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Along the route \\(S,A,B,T\\) the unused capacities of the arcs \\(S\\to A\\), \\(A\\to B\\), and \\(B\\to T\\) are \\(4\\), \\(2\\), and \\(4\\). By how much can the flow along this route be increased?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The same additional amount has to pass through all three arcs, so it cannot exceed the smallest unused capacity, which is \\(2\\) on \\(A\\to B\\). Increasing by \\(4\\) would overload that arc.",
+      "hint": "The increase is limited by the arc with the least room."
+    },
+    {
+      "id": "dynanca-603-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Using a cross arc",
+      "learningObjective": "Find a maximum flow that needs an arc between the two inner vertices.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A network has the arcs \\(S\\to A\\) with capacity \\(3\\), \\(S\\to B\\) with capacity \\(2\\), \\(A\\to B\\) with capacity \\(1\\), \\(A\\to T\\) with capacity \\(2\\), and \\(B\\to T\\) with capacity \\(3\\). What is the value of a maximum flow from \\(S\\) to \\(T\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Send \\(3\\) along \\(S\\to A\\); of these, \\(2\\) go on along \\(A\\to T\\) and \\(1\\) along \\(A\\to B\\). Send \\(2\\) along \\(S\\to B\\); then \\(B\\) forwards \\(1+2=3\\) along \\(B\\to T\\). The value is \\(5\\), which equals the total capacity leaving \\(S\\), so it is maximal. Without the arc \\(A\\to B\\) only \\(2+2=4\\) units would arrive.",
+      "hint": "Use the arc \\(A\\to B\\) to pass on what \\(A\\to T\\) cannot carry."
+    },
+    {
+      "id": "dynanca-603-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Maximum flow and minimum cut",
+      "learningObjective": "State the relation between maximum flows and minimum cuts.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "According to the max-flow min-cut theorem, what does the value of a maximum flow from \\(S\\) to \\(T\\) equal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The sum of the capacities of all arcs of the network"
+        },
+        {
+          "label": "B",
+          "text": "The smallest capacity of a cut that separates \\(S\\) from \\(T\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A cut divides the vertices into a part containing \\(S\\) and a part containing \\(T\\); its capacity is the total capacity of the arcs from the first part to the second. No flow can exceed the capacity of any cut, and the theorem says that the largest flow value equals the smallest cut capacity. The sum of all capacities is usually far larger.",
+      "hint": "Every unit of flow must cross from the side of \\(S\\) to the side of \\(T\\)."
+    },
+    {
+      "id": "dynanca-603-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Rerouting flow",
+      "learningObjective": "Find an augmenting route that cancels flow on an arc.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A network has the arcs \\(S\\to A\\), \\(S\\to B\\), \\(A\\to B\\), \\(A\\to T\\), and \\(B\\to T\\), each with capacity \\(1\\). A flow sends \\(1\\) unit along the route \\(S,A,B,T\\). Which change raises the value of the flow to \\(2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Send \\(1\\) unit along \\(S\\to B\\) and \\(A\\to T\\), and cancel the unit on \\(A\\to B\\)."
+        },
+        {
+          "label": "B",
+          "text": "Send \\(1\\) more unit along \\(S\\to A\\) and \\(A\\to T\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "After the change, \\(S\\to A\\) and \\(A\\to T\\) carry one unit, and \\(S\\to B\\) and \\(B\\to T\\) carry another, so the value is \\(2\\) and every vertex is balanced. In the residual network this is the augmenting route \\(S,B,A,T\\), which goes backwards along \\(A\\to B\\). The arc \\(S\\to A\\) is already saturated, so no more flow can be sent along it.",
+      "hint": "Check which arcs are already full, and consider undoing flow on \\(A\\to B\\)."
+    },
+    {
+      "id": "dynanca-603-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Saturated arcs",
+      "learningObjective": "Identify arcs that are saturated in every maximum flow.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A network has the arcs \\(S\\to A\\) with capacity \\(4\\), \\(S\\to B\\) with capacity \\(3\\), \\(A\\to B\\) with capacity \\(2\\), \\(A\\to T\\) with capacity \\(3\\), and \\(B\\to T\\) with capacity \\(4\\); its maximum flow has value \\(7\\). Which arcs are saturated in every maximum flow?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\to B\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(S\\to A\\) and \\(S\\to B\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The arcs leaving \\(S\\) have total capacity \\(4+3=7\\), which equals the value of a maximum flow. A flow of value \\(7\\) must therefore fill both of them completely. The arc \\(A\\to B\\) is not saturated: \\(A\\) receives \\(4\\) and passes \\(3\\) to \\(T\\), so only \\(1\\) of its \\(2\\) units of capacity is used.",
+      "hint": "Compare the value of the flow with the total capacity of the arcs that leave \\(S\\)."
+    },
+    {
+      "id": "dynanca-603-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A network with six vertices",
+      "learningObjective": "Find the maximum flow of a larger network.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A network has the arcs \\(S\\to A\\) with capacity \\(4\\), \\(S\\to B\\) with capacity \\(2\\), \\(A\\to C\\) with capacity \\(2\\), \\(A\\to B\\) with capacity \\(1\\), \\(B\\to D\\) with capacity \\(3\\), \\(D\\to C\\) with capacity \\(1\\), \\(C\\to T\\) with capacity \\(3\\), and \\(D\\to T\\) with capacity \\(2\\). What is the value of a maximum flow from \\(S\\) to \\(T\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Only the arcs \\(A\\to C\\) and \\(B\\to D\\), with total capacity \\(2+3=5\\), lead from \\(\\{S,A,B\\}\\) to the other vertices, so no flow exceeds \\(5\\). The value \\(5\\) is attained: \\(3\\) along \\(S\\to A\\), split into \\(2\\) on \\(A\\to C\\) and \\(1\\) on \\(A\\to B\\); \\(2\\) along \\(S\\to B\\); \\(3\\) along \\(B\\to D\\), split into \\(2\\) on \\(D\\to T\\) and \\(1\\) on \\(D\\to C\\); and \\(3\\) along \\(C\\to T\\). The value \\(6\\) is the capacity leaving \\(S\\), which cannot all be forwarded.",
+      "hint": "Look at the arcs that lead out of the set \\(\\{S,A,B\\}\\)."
+    }
+  ]
+}

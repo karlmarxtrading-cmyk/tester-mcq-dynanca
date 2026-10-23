@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-395",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 395",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-395-q001",
+      "category": "Number Theory",
+      "concept": "Definition of Congruence",
+      "learningObjective": "Determine whether two integers are congruent modulo a given positive integer.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which of the following congruences is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(23 \\equiv 3 \\pmod{7}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(23 \\equiv 2 \\pmod{7}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A congruence \\(a \\equiv b \\pmod{m}\\) is true exactly when \\(m\\) divides \\(a-b\\). For A, \\(23-3=20\\), and \\(7 \\nmid 20\\), so A is false. For B, \\(23-2=21\\), and \\(7 \\mid 21\\), so \\(23 \\equiv 2 \\pmod{7}\\). Thus B is the true congruence.",
+      "hint": "Check whether the modulus divides the difference of the two numbers in each statement."
+    },
+    {
+      "id": "math-gaokao-395-q002",
+      "category": "Number Theory",
+      "concept": "Remainder from Division",
+      "learningObjective": "Compute the least nonnegative residue of an integer modulo a positive integer.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(123 \\bmod 7\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(7 \\cdot 17 = 119\\), we have \\(123 - 119 = 4\\). Therefore \\(123 \\equiv 4 \\pmod{7}\\), so the remainder is \\(4\\).",
+      "hint": "Divide \\(123\\) by \\(7\\) and look at the remainder."
+    },
+    {
+      "id": "math-gaokao-395-q003",
+      "category": "Number Theory",
+      "concept": "Multiplication in Congruences",
+      "learningObjective": "Compute the residue of a multiple given a congruence class.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(x \\equiv 3 \\pmod{8}\\), what is \\(5x \\bmod 8\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using congruence multiplication, \\(5x \\equiv 5 \\cdot 3 = 15 \\pmod{8}\\). Since \\(15 = 8 + 7\\), we get \\(15 \\equiv 7 \\pmod{8}\\). Hence \\(5x \\bmod 8 = 7\\).",
+      "hint": "Replace \\(x\\) by its residue modulo \\(8\\), then multiply."
+    },
+    {
+      "id": "math-gaokao-395-q004",
+      "category": "Number Theory",
+      "concept": "Linear Congruence",
+      "learningObjective": "Solve a linear congruence modulo a composite modulus.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(3x \\equiv 6 \\pmod{9}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x \\equiv 2,5,8 \\pmod{9}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x \\equiv 2 \\pmod{9}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The congruence is \\(3x \\equiv 6 \\pmod{9}\\). Since \\(\\gcd(3,9)=3\\) divides \\(6\\), divide the congruence and the modulus by \\(3\\) to obtain \\(x \\equiv 2 \\pmod{3}\\). Modulo \\(9\\), this means \\(x \\equiv 2, 5, 8 \\pmod{9}\\). Option B is incomplete because it omits \\(5\\) and \\(8\\).",
+      "hint": "First divide the congruence by the greatest common divisor of the coefficient and the modulus."
+    },
+    {
+      "id": "math-gaokao-395-q005",
+      "category": "Number Theory",
+      "concept": "Congruence and Units Digits",
+      "learningObjective": "Use modular arithmetic to find the units digit of a power.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the units digit of \\(7^{2024}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The units digit is \\(7^{2024} \\bmod 10\\). Powers of \\(7\\) modulo \\(10\\) cycle as \\(7, 9, 3, 1\\) with period \\(4\\). Since \\(2024 \\equiv 0 \\pmod{4}\\), we have \\(7^{2024} \\equiv 7^4 \\equiv 1 \\pmod{10}\\). Therefore the units digit is \\(1\\).",
+      "hint": "Find the repeating pattern of the units digits of powers of \\(7\\)."
+    },
+    {
+      "id": "math-gaokao-395-q006",
+      "category": "Number Theory",
+      "concept": "Residue of a Power",
+      "learningObjective": "Compute a power modulo a small modulus using modular multiplication.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(3^4 \\bmod 5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First, \\(3^2 = 9 \\equiv 4 \\pmod{5}\\). Then \\(3^4 = (3^2)^2 \\equiv 4^2 = 16 \\equiv 1 \\pmod{5}\\). Thus \\(3^4 \\bmod 5 = 1\\).",
+      "hint": "Compute \\(3^2\\) modulo \\(5\\) first, then square that residue."
+    },
+    {
+      "id": "math-gaokao-395-q007",
+      "category": "Number Theory",
+      "concept": "Multiplication of Congruence Classes",
+      "learningObjective": "Compute a product modulo \\(m\\) from given residues.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "If \\(a \\equiv 4 \\pmod{7}\\) and \\(b \\equiv 6 \\pmod{7}\\), what is \\(ab \\bmod 7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiplying the congruences gives \\(ab \\equiv 4 \\cdot 6 = 24 \\pmod{7}\\). Since \\(24 = 21 + 3\\) and \\(21\\) is a multiple of \\(7\\), we have \\(24 \\equiv 3 \\pmod{7}\\). Therefore \\(ab \\bmod 7 = 3\\).",
+      "hint": "Multiply the given residues, then reduce the product modulo \\(7\\)."
+    },
+    {
+      "id": "math-gaokao-395-q008",
+      "category": "Number Theory",
+      "concept": "Modular Inverse",
+      "learningObjective": "Find the least positive solution of a linear congruence of the form \\(ax \\equiv 1 \\pmod{m}\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the least positive integer \\(x\\) such that \\(5x \\equiv 1 \\pmod{12}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Test \\(x=5\\): \\(5 \\cdot 5 = 25\\), and \\(25 = 2 \\cdot 12 + 1\\), so \\(25 \\equiv 1 \\pmod{12}\\). Thus \\(x=5\\) works. For \\(x=7\\), \\(5 \\cdot 7 = 35 \\equiv 11 \\pmod{12}\\), so \\(x=7\\) does not work. Hence the least positive solution is \\(x=5\\).",
+      "hint": "Look for a multiple of \\(5\\) that is one more than a multiple of \\(12\\)."
+    },
+    {
+      "id": "math-gaokao-395-q009",
+      "category": "Number Theory",
+      "concept": "Simple System of Congruences",
+      "learningObjective": "Determine a residue modulo \\(15\\) from two congruences modulo \\(3\\) and \\(5\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(x \\equiv 2 \\pmod{3}\\) and \\(x \\equiv 3 \\pmod{5}\\), what is \\(x \\bmod 15\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(11\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The solution modulo \\(15\\) is unique. Check \\(x=8\\): \\(8 \\equiv 2 \\pmod{3}\\) and \\(8 \\equiv 3 \\pmod{5}\\), so \\(x \\equiv 8 \\pmod{15}\\). For \\(x=11\\), \\(11 \\equiv 2 \\pmod{3}\\) but \\(11 \\equiv 1 \\pmod{5}\\), so \\(11\\) is not a solution. Therefore the residue is \\(8\\).",
+      "hint": "Find a number between \\(0\\) and \\(14\\) that satisfies both given congruences."
+    },
+    {
+      "id": "math-gaokao-395-q010",
+      "category": "Number Theory",
+      "concept": "Modular Exponentiation",
+      "learningObjective": "Compute a large power modulo a small modulus using periodicity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the remainder when \\(3^{101}\\) is divided by \\(7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Powers of \\(3\\) modulo \\(7\\) repeat with period \\(6\\), and \\(101\\equiv5\\pmod6\\). Therefore\n\\[\n3^{101}\\equiv3^5=243\\equiv5\\pmod7.\n\\]\nThe distractor \\(4\\) is the remainder of \\(3^{100}\\), not \\(3^{101}\\).",
+      "hint": "Find the period of the powers modulo the divisor, then reduce the exponent by that period."
+    }
+  ]
+}

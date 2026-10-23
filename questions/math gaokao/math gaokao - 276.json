@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-276",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 276",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-276-q001",
+      "category": "Calculus",
+      "concept": "Continuity of Polynomial Functions on an Interval",
+      "learningObjective": "Identify intervals on which a polynomial function is continuous.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The function \\(f(x)=x^3-2x+1\\) is continuous on which interval?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only on \\((0,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "On \\((-\\infty,\\infty)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Polynomial functions are continuous at every real number. Therefore, \\(f(x)=x^3-2x+1\\) is continuous on every interval contained in \\(\\mathbb{R}\\), including the entire real line \\((-\\infty,\\infty)\\).",
+      "hint": "Recall whether polynomial functions can have points of discontinuity."
+    },
+    {
+      "id": "math-gaokao-276-q002",
+      "category": "Calculus",
+      "concept": "Continuity of a Rational Function on an Interval",
+      "learningObjective": "Determine an interval of continuity for a rational function by excluding zeros of the denominator.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For \\(f(x)=\\frac{1}{x-2}\\), which interval is contained in its domain and is an interval of continuity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([2,\\infty)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The denominator \\(x-2\\) is zero at \\(x=2\\), so \\(f\\) is undefined at \\(x=2\\). On the interval \\((2,\\infty)\\), the denominator is never zero, and the function is continuous. The interval \\([2,\\infty)\\) includes \\(x=2\\), where \\(f\\) is not defined, so it cannot be an interval of continuity for \\(f\\).",
+      "hint": "A rational function is continuous wherever its denominator is nonzero."
+    },
+    {
+      "id": "math-gaokao-276-q003",
+      "category": "Calculus",
+      "concept": "Piecewise Continuity at a Joining Point",
+      "learningObjective": "Find a parameter so that a piecewise function is continuous on the entire real line.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx^2, & x<1,\\\\\nax+1, & x\\ge 1.\n\\end{cases}\n\\]\nFind \\(a\\) so that \\(f\\) is continuous on \\(\\mathbb{R}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For continuity at \\(x=1\\), the left-hand limit must equal the value from the right-hand piece:\n\\[\n\\lim_{x\\to 1^-}f(x)=\\lim_{x\\to 1^-}x^2=1.\n\\]\nAlso,\n\\[\nf(1)=a(1)+1=a+1.\n\\]\nThus we need\n\\[\na+1=1,\n\\]\nso\n\\[\na=0.\n\\]",
+      "hint": "Compare the left-hand limit and the value of the right-hand piece at \\(x=1\\)."
+    },
+    {
+      "id": "math-gaokao-276-q004",
+      "category": "Calculus",
+      "concept": "Continuity of a Function Involving a Square Root on an Interval",
+      "learningObjective": "Determine an interval of continuity for a reciprocal square-root function by requiring the radicand to be positive.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=\\frac{1}{\\sqrt{x-3}}\\). Which interval is an interval of continuity of \\(f\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([3,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,\\infty)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expression \\(\\sqrt{x-3}\\) appears in the denominator, so we need\n\\[\nx-3>0.\n\\]\nThus,\n\\[\nx>3.\n\\]\nTherefore, the domain is \\((3,\\infty)\\), and on this interval \\(f\\) is continuous. The interval \\([3,\\infty)\\) includes \\(x=3\\), where \\(f\\) is undefined.",
+      "hint": "The radicand must be positive when the square root appears in a denominator."
+    },
+    {
+      "id": "math-gaokao-276-q005",
+      "category": "Calculus",
+      "concept": "Continuity of Trigonometric Functions on an Interval",
+      "learningObjective": "Identify an interval of continuity for the tangent function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "On which interval is \\(f(x)=\\tan x\\) continuous?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left(-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\left[-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since\n\\[\n\\tan x=\\frac{\\sin x}{\\cos x},\n\\]\nthe tangent function is undefined where \\(\\cos x=0\\). In the displayed interval, \\(\\cos x=0\\) at \\(x=\\pm\\frac{\\pi}{2}\\). Hence \\(\\tan x\\) is continuous on the open interval\n\\[\n\\left(-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right),\n\\]\nbut not on the closed interval that includes the endpoints.",
+      "hint": "Find where \\(\\cos x=0\\) inside the given interval."
+    },
+    {
+      "id": "math-gaokao-276-q006",
+      "category": "Calculus",
+      "concept": "Continuity of a Piecewise Function on a Closed Interval",
+      "learningObjective": "Verify continuity of a piecewise function on a closed interval by checking the joining point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx+1, & 0\\le x<1,\\\\\n3x-1, & 1\\le x\\le 2.\n\\end{cases}\n\\]\nIs \\(f\\) continuous on \\([0,2]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "A",
+      "explanation": "On \\([0,1)\\), the function is \\(x+1\\), which is continuous. On \\([1,2]\\), the function is \\(3x-1\\), which is also continuous. At the joining point \\(x=1\\),\n\\[\n\\lim_{x\\to 1^-}f(x)=1+1=2,\n\\]\nand\n\\[\nf(1)=3(1)-1=2.\n\\]\nThe one-sided limits and the function value agree, so \\(f\\) is continuous at \\(x=1\\). Therefore, \\(f\\) is continuous on \\([0,2]\\).",
+      "hint": "Check continuity at the joining point \\(x=1\\) and note that each piece is linear."
+    },
+    {
+      "id": "math-gaokao-276-q007",
+      "category": "Calculus",
+      "concept": "Removing a Removable Discontinuity to Ensure Continuity on an Interval",
+      "learningObjective": "Find a value at a point that makes a rational piecewise function continuous on the real line.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let\n\\[\nf(x)=\\frac{x^2-1}{x-1}\\quad (x\\ne 1),\n\\]\nand let \\(f(1)=k\\). Find \\(k\\) so that \\(f\\) is continuous on \\(\\mathbb{R}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(x\\ne 1\\),\n\\[\n\\frac{x^2-1}{x-1}\n=\n\\frac{(x-1)(x+1)}{x-1}\n=\nx+1.\n\\]\nTherefore,\n\\[\n\\lim_{x\\to 1}\\frac{x^2-1}{x-1}\n=\n\\lim_{x\\to 1}(x+1)=2.\n\\]\nFor continuity at \\(x=1\\), we need\n\\[\nf(1)=\\lim_{x\\to 1}f(x).\n\\]\nHence,\n\\[\nk=2.\n\\]",
+      "hint": "Simplify the rational expression for \\(x\\ne 1\\), then evaluate the limit at \\(x=1\\)."
+    },
+    {
+      "id": "math-gaokao-276-q008",
+      "category": "Calculus",
+      "concept": "Continuity of an Exponential Piecewise Function on an Interval",
+      "learningObjective": "Determine a parameter in an exponential expression so that a piecewise function is continuous at the origin.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let\n\\[\nf(x)=\\frac{e^{ax}-1}{x}\\quad (x\\ne 0),\n\\]\nand let \\(f(0)=2\\). Find \\(a\\) so that \\(f\\) is continuous on \\(\\mathbb{R}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the standard limit\n\\[\n\\lim_{t\\to 0}\\frac{e^t-1}{t}=1,\n\\]\nwith \\(t=ax\\), we get\n\\[\n\\lim_{x\\to 0}\\frac{e^{ax}-1}{x}\n=\na\\lim_{x\\to 0}\\frac{e^{ax}-1}{ax}\n=\na.\n\\]\nFor continuity at \\(x=0\\), we need\n\\[\na=f(0)=2.\n\\]\nThus,\n\\[\na=2.\n\\]",
+      "hint": "Use the standard limit \\(\\lim_{t\\to 0}\\frac{e^t-1}{t}=1\\)."
+    },
+    {
+      "id": "math-gaokao-276-q009",
+      "category": "Calculus",
+      "concept": "Continuity of an Oscillatory Piecewise Function at a Point",
+      "learningObjective": "Determine continuity at the origin by using the squeeze theorem.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let\n\\[\nf(x)=x\\sin\\frac{1}{x}\\quad (x\\ne 0),\n\\]\nand let \\(f(0)=0\\). Is \\(f\\) continuous on \\(\\mathbb{R}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No"
+        },
+        {
+          "label": "B",
+          "text": "Yes"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(x\\ne 0\\), the function is continuous as a product and composition of continuous functions. At \\(x=0\\), use the bound\n\\[\n\\left|x\\sin\\frac{1}{x}\\right|\\le |x|.\n\\]\nAs \\(x\\to 0\\), \\(|x|\\to 0\\), so by the squeeze theorem,\n\\[\n\\lim_{x\\to 0}x\\sin\\frac{1}{x}=0.\n\\]\nSince \\(f(0)=0\\), the function is continuous at \\(x=0\\). Therefore, \\(f\\) is continuous on \\(\\mathbb{R}\\).",
+      "hint": "Bound the sine factor and apply the squeeze theorem."
+    },
+    {
+      "id": "math-gaokao-276-q010",
+      "category": "Calculus",
+      "concept": "Parameter Selection for Continuity of a Trigonometric Piecewise Function",
+      "learningObjective": "Find a positive parameter so that a trigonometric piecewise function is continuous at the origin.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let\n\\[\nf(x)=\\frac{1-\\cos(ax)}{x^2}\\quad (x\\ne 0),\n\\]\nand let \\(f(0)=\\frac{1}{2}\\). Find the positive value of \\(a\\) so that \\(f\\) is continuous on \\(\\mathbb{R}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the standard limit\n\\[\n\\lim_{u\\to 0}\\frac{1-\\cos u}{u^2}=\\frac{1}{2},\n\\]\nwith \\(u=ax\\), we get\n\\[\n\\lim_{x\\to 0}\\frac{1-\\cos(ax)}{x^2}\n=\na^2\\lim_{x\\to 0}\\frac{1-\\cos(ax)}{(ax)^2}\n=\n\\frac{a^2}{2}.\n\\]\nFor continuity at \\(x=0\\), we need\n\\[\n\\frac{a^2}{2}=\\frac{1}{2}.\n\\]\nThus,\n\\[\na^2=1.\n\\]\nSince \\(a>0\\), we obtain\n\\[\na=1.\n\\]",
+      "hint": "Use the standard limit \\(\\lim_{u\\to 0}\\frac{1-\\cos u}{u^2}=\\frac{1}{2}\\)."
+    }
+  ]
+}

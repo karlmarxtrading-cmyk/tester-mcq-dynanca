@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-609",
+  "category": "Comprehensive Mathematics",
+  "title": "609. Discrete Mathematics, Counting & Graph Theory: Representing Binary Decisions as Logic Gates",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-609-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Both conditions required",
+      "learningObjective": "Choose the gate for a decision that needs two conditions.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An alarm sounds exactly when the door is open and the system is armed. Which gate, applied to the signals \"door open\" and \"system armed\", models this decision?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An AND gate"
+        },
+        {
+          "label": "B",
+          "text": "An OR gate"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The alarm requires both conditions at once, which is what an AND gate tests: its output is \\(1\\) only when both inputs are \\(1\\). An OR gate would sound the alarm whenever the door is open, even with the system switched off.",
+      "hint": "Ask whether one of the conditions alone is enough."
+    },
+    {
+      "id": "dynanca-609-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Either condition suffices",
+      "learningObjective": "Choose the gate for a decision that needs at least one condition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A lamp turns on exactly when at least one of two buttons is pressed. Which gate, applied to the two button signals, models this decision?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An AND gate"
+        },
+        {
+          "label": "B",
+          "text": "An OR gate"
+        }
+      ],
+      "answer": "B",
+      "explanation": "One pressed button is enough, and pressing both also turns the lamp on. That is the behaviour of an OR gate. An AND gate would require both buttons to be pressed together.",
+      "hint": "Ask whether a single pressed button already turns the lamp on."
+    },
+    {
+      "id": "dynanca-609-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A condition that must be absent",
+      "learningObjective": "Choose the gate for a decision triggered by the absence of a signal.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A sensor gives the signal \\(w=1\\) when a room is warm and \\(w=0\\) otherwise. A heater must be on exactly when the room is not warm. How is the heater signal obtained from \\(w\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By a NOT gate applied to \\(w\\)"
+        },
+        {
+          "label": "B",
+          "text": "By an AND gate with \\(w\\) on both inputs"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The heater signal is the opposite of \\(w\\): it is \\(1\\) when \\(w=0\\) and \\(0\\) when \\(w=1\\). A NOT gate produces exactly this. An AND gate with \\(w\\) on both inputs outputs \\(w\\) itself, which would heat the room when it is already warm.",
+      "hint": "The output must be the opposite of the input."
+    },
+    {
+      "id": "dynanca-609-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two switches for one light",
+      "learningObjective": "Choose the gate for a light controlled by two switches.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A staircase light is controlled by two switches, one at each end. The light is on exactly when the two switches are in different positions. Which gate, applied to the two switch signals, models this?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An XOR gate"
+        },
+        {
+          "label": "B",
+          "text": "An OR gate"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An XOR gate outputs \\(1\\) exactly when its inputs differ, so flipping either switch always changes the state of the light. An OR gate would keep the light on when both switches are in position \\(1\\), and then flipping one switch would not turn it off.",
+      "hint": "Check what should happen when both switches are in position \\(1\\)."
+    },
+    {
+      "id": "dynanca-609-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A safety condition",
+      "learningObjective": "Write a Boolean expression for a machine with a guard and a stop button.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A machine may run exactly when its guard is closed and the stop button is not pressed. Let \\(g=1\\) mean \"guard closed\" and \\(s=1\\) mean \"stop button pressed\". Which expression is \\(1\\) exactly when the machine may run?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(g\\,\\overline{s}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\overline{g}\\,s\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The machine needs \\(g=1\\) and \\(s=0\\). The product \\(g\\,\\overline{s}\\) is \\(1\\) in exactly this case, because \\(\\overline{s}=1\\) when \\(s=0\\). The expression \\(\\overline{g}\\,s\\) is \\(1\\) when the guard is open and the stop button is pressed, which is the opposite situation.",
+      "hint": "Complement the signal that must be absent."
+    },
+    {
+      "id": "dynanca-609-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A warning signal",
+      "learningObjective": "Find the inputs for which a warning is given.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A warning light is controlled by the expression \\(e\\,\\overline{b}\\), where \\(e=1\\) means \"engine running\" and \\(b=1\\) means \"seat belt fastened\". For which inputs is the warning light on?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(e=1\\) and \\(b=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(e=1\\) and \\(b=1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The product \\(e\\,\\overline{b}\\) is \\(1\\) only when \\(e=1\\) and \\(\\overline{b}=1\\), that is, when the engine is running and the belt is not fastened. With \\(b=1\\) the factor \\(\\overline{b}\\) is \\(0\\), so the light stays off.",
+      "hint": "Both factors of the product must be \\(1\\)."
+    },
+    {
+      "id": "dynanca-609-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A vote of three",
+      "learningObjective": "Write a Boolean expression for a majority decision.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A proposal passes exactly when at least two of three members vote yes. With \\(x,y,z\\) equal to \\(1\\) for a yes vote, which expression is \\(1\\) exactly when the proposal passes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(xy+xz+yz\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x y z\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "At least two yes votes means that some pair of members both vote yes; the three products \\(xy\\), \\(xz\\), \\(yz\\) test the three pairs, and their sum is \\(1\\) when at least one pair agrees on yes. The product \\(x y z\\) is \\(1\\) only for a unanimous yes, so it rejects proposals supported by exactly two members.",
+      "hint": "A proposal with exactly two yes votes must pass."
+    },
+    {
+      "id": "dynanca-609-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting the accepting cases",
+      "learningObjective": "Count the input combinations accepted by an access rule.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "Access is granted exactly when the card is valid and, in addition, the code is correct or the fingerprint matches. With signals \\(c\\), \\(p\\), \\(f\\) for these three conditions, access is \\(c(p+f)\\). For how many of the \\(8\\) input combinations is access granted?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Access needs \\(c=1\\), and then at least one of \\(p\\), \\(f\\) must be \\(1\\). With \\(c=1\\) there are \\(4\\) combinations of \\(p\\) and \\(f\\), of which only \\(p=f=0\\) fails. So access is granted in \\(3\\) cases. The count \\(5\\) results from reading the rule as \\(cp+f\\), which would grant access on the fingerprint alone, without a valid card.",
+      "hint": "Fix \\(c=1\\) and count the pairs \\((p,f)\\) that satisfy the bracket."
+    },
+    {
+      "id": "dynanca-609-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An overriding condition",
+      "learningObjective": "Write a Boolean expression with a condition that blocks the output.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A fan runs exactly when the temperature is high or the humidity is high, but never while the window is open. With \\(t=1\\), \\(h=1\\), \\(w=1\\) for \"temperature high\", \"humidity high\", \"window open\", which expression describes the fan?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(t+h\\,\\overline{w}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((t+h)\\,\\overline{w}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The open window must block the fan in every case, so \\(\\overline{w}\\) has to multiply the whole condition \\(t+h\\). In \\(t+h\\,\\overline{w}\\) the window blocks only the humidity signal: for \\(t=1\\) and \\(w=1\\) that expression is \\(1\\), so the fan would run with the window open.",
+      "hint": "Test both expressions with a high temperature and an open window."
+    },
+    {
+      "id": "dynanca-609-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A decision that ignores an input",
+      "learningObjective": "Find the simplest circuit for a decision table.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A decision depends on two signals \\(x\\) and \\(y\\). The answer is yes exactly in the cases \\((x,y)=(1,0)\\) and \\((x,y)=(1,1)\\). What is the simplest circuit for this decision?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An AND gate with inputs \\(x\\) and \\(y\\)."
+        },
+        {
+          "label": "B",
+          "text": "A direct connection carrying \\(x\\); the signal \\(y\\) is not needed."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The yes cases are exactly those with \\(x=1\\), whatever the value of \\(y\\): \\(x\\,\\overline{y}+xy=x(\\overline{y}+y)=x\\). So the output is simply \\(x\\), and no gate is required. An AND gate would answer no in the case \\((1,0)\\), which should be yes.",
+      "hint": "Compare the two yes cases and see which signal changes between them."
+    }
+  ]
+}

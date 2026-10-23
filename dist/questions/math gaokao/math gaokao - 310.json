@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-310",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 310",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-310-q001",
+      "category": "Probability",
+      "concept": "Multiplication Rule for Two Events",
+      "learningObjective": "Compute the probability of an intersection using the general multiplication rule.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A\\) and \\(B\\) be events with \\(P(A)=0.5\\) and \\(P(B\\mid A)=0.6\\). Find \\(P(A\\cap B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.50\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.30\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use the general multiplication rule:\n\\[\nP(A\\cap B)=P(A)P(B\\mid A).\n\\]\nSubstitute the given values:\n\\[\nP(A\\cap B)=0.5\\times0.6=0.30.\n\\]",
+      "hint": "Use the multiplication rule that involves the conditional probability \\(P(B\\mid A)\\)."
+    },
+    {
+      "id": "math-gaokao-310-q002",
+      "category": "Probability",
+      "concept": "Multiplication Rule Using a Conditional Probability",
+      "learningObjective": "Compute an intersection probability from \\(P(B)\\) and \\(P(A\\mid B)\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A\\) and \\(B\\) be events with \\(P(B)=0.7\\) and \\(P(A\\mid B)=0.4\\). Find \\(P(A\\cap B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.28\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.30\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the multiplication rule,\n\\[\nP(A\\cap B)=P(B)P(A\\mid B).\n\\]\nSubstitute the given values:\n\\[\nP(A\\cap B)=0.7\\times0.4=0.28.\n\\]",
+      "hint": "Use the multiplication rule with \\(B\\) as the conditioning event."
+    },
+    {
+      "id": "math-gaokao-310-q003",
+      "category": "Probability",
+      "concept": "Multiplication Rule for Independent Events",
+      "learningObjective": "Compute the intersection probability of two independent events.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(A\\) and \\(B\\) are independent events with \\(P(A)=\\frac23\\) and \\(P(B)=\\frac35\\), find \\(P(A\\cap B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac25\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For independent events,\n\\[\nP(A\\cap B)=P(A)P(B).\n\\]\nThus,\n\\[\nP(A\\cap B)=\\frac23\\times\\frac35=\\frac25.\n\\]",
+      "hint": "For independent events, multiply the two event probabilities directly."
+    },
+    {
+      "id": "math-gaokao-310-q004",
+      "category": "Probability",
+      "concept": "Sequential Draws Without Replacement",
+      "learningObjective": "Apply the multiplication rule to find the probability of two successes in draws without replacement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A bag contains \\(5\\) red balls and \\(4\\) blue balls. Two balls are drawn without replacement. Find the probability that both balls are red.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{25}{81}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{18}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability that the first ball is red is \\(\\frac59\\). After one red ball is removed, \\(4\\) red balls remain among \\(8\\) balls, so the conditional probability that the second ball is red is \\(\\frac48\\). Therefore,\n\\[\nP(\\text{both red})=\\frac59\\times\\frac48=\\frac{20}{72}=\\frac{5}{18}.\n\\]",
+      "hint": "After the first draw, the total number of balls decreases by one."
+    },
+    {
+      "id": "math-gaokao-310-q005",
+      "category": "Probability",
+      "concept": "Multiplication Rule for Three Events",
+      "learningObjective": "Compute the probability of a three-event intersection using a chain of conditional probabilities.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A\\), \\(B\\), and \\(C\\) be events with \\(P(A)=0.8\\), \\(P(B\\mid A)=0.5\\), and \\(P(C\\mid A\\cap B)=0.3\\). Find \\(P(A\\cap B\\cap C)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.24\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the multiplication rule for three events,\n\\[\nP(A\\cap B\\cap C)=P(A)P(B\\mid A)P(C\\mid A\\cap B).\n\\]\nSubstitute the given values:\n\\[\nP(A\\cap B\\cap C)=0.8\\times0.5\\times0.3=0.12.\n\\]",
+      "hint": "Multiply the probabilities along the conditional chain."
+    },
+    {
+      "id": "math-gaokao-310-q006",
+      "category": "Probability",
+      "concept": "Intersection with a Complement",
+      "learningObjective": "Use independence and the complement rule to compute \\(P(A\\cap B')\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "\\(A\\) and \\(B\\) are independent events with \\(P(A)=0.4\\) and \\(P(B)=0.7\\). Find \\(P(A\\cap B')\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.28\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(B'\\) is the complement of \\(B\\),\n\\[\nP(B')=1-0.7=0.3.\n\\]\nBecause \\(A\\) and \\(B\\) are independent, \\(A\\) and \\(B'\\) are also independent. Hence,\n\\[\nP(A\\cap B')=P(A)P(B')=0.4\\times0.3=0.12.\n\\]",
+      "hint": "First find \\(P(B')\\), then use independence to multiply."
+    },
+    {
+      "id": "math-gaokao-310-q007",
+      "category": "Probability",
+      "concept": "Dependent Sequential Events",
+      "learningObjective": "Apply the multiplication rule to a two-stage draw without replacement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "An urn contains \\(6\\) white balls and \\(4\\) black balls. Two balls are drawn without replacement. Find the probability that the first ball is white and the second ball is black.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{4}{15}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2}{5}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability that the first ball is white is \\(\\frac{6}{10}\\). After a white ball is drawn, \\(4\\) black balls remain among \\(9\\) balls, so the conditional probability that the second ball is black is \\(\\frac49\\). Thus,\n\\[\nP(\\text{white then black})=\\frac{6}{10}\\times\\frac49=\\frac{24}{90}=\\frac{4}{15}.\n\\]",
+      "hint": "Use the multiplication rule with the second draw conditional on the first."
+    },
+    {
+      "id": "math-gaokao-310-q008",
+      "category": "Probability",
+      "concept": "Total Probability via Multiplication Rule",
+      "learningObjective": "Use the multiplication rule and total probability to compute a probability on the second draw.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A bag contains \\(3\\) red balls and \\(7\\) blue balls. Two balls are drawn without replacement. Find the probability that the second ball is red.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{10}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The second ball can be red in two ways: first red then red, or first blue then red. Using the multiplication rule,\n\\[\nP(R_1\\cap R_2)=\\frac{3}{10}\\times\\frac{2}{9}=\\frac{6}{90},\n\\]\nand\n\\[\nP(B_1\\cap R_2)=\\frac{7}{10}\\times\\frac{3}{9}=\\frac{21}{90}.\n\\]\nTherefore,\n\\[\nP(R_2)=\\frac{6}{90}+\\frac{21}{90}=\\frac{27}{90}=\\frac{3}{10}.\n\\]",
+      "hint": "Split the event “second ball is red” according to the color of the first ball."
+    },
+    {
+      "id": "math-gaokao-310-q009",
+      "category": "Probability",
+      "concept": "Same-Color Probability in Sequential Draws",
+      "learningObjective": "Use the multiplication rule to compute the probability that two drawn balls have the same color.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "An urn contains \\(5\\) red balls and \\(3\\) green balls. Two balls are drawn without replacement. Find the probability that both balls have the same color.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{13}{28}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{15}{28}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The balls have the same color if both are red or both are green.\nUsing the multiplication rule,\n\\[\nP(RR)=\\frac58\\times\\frac47=\\frac{20}{56},\n\\]\nand\n\\[\nP(GG)=\\frac38\\times\\frac27=\\frac{6}{56}.\n\\]\nThus,\n\\[\nP(\\text{same color})=\\frac{20}{56}+\\frac{6}{56}=\\frac{26}{56}=\\frac{13}{28}.\n\\]",
+      "hint": "Add the probabilities of drawing two red balls and two green balls."
+    },
+    {
+      "id": "math-gaokao-310-q010",
+      "category": "Probability",
+      "concept": "Total Probability with Multiplication Rule",
+      "learningObjective": "Apply the multiplication rule along branches to compute an overall probability.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A box is chosen at random: Box \\(A\\) is chosen with probability \\(0.4\\), and Box \\(B\\) is chosen with probability \\(0.6\\). Box \\(A\\) contains \\(3\\) red and \\(7\\) blue balls. Box \\(B\\) contains \\(5\\) red and \\(5\\) blue balls. One ball is drawn from the chosen box. Find the probability that the ball is red.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.48\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.42\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use the multiplication rule along each branch and then add:\n\\[\nP(\\text{red})=P(A)P(\\text{red}\\mid A)+P(B)P(\\text{red}\\mid B).\n\\]\nHere,\n\\[\nP(\\text{red})=0.4\\times0.3+0.6\\times0.5=0.12+0.30=0.42.\n\\]",
+      "hint": "Find the probability of drawing red from each box, then weight by the probability of choosing that box."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-581",
+  "category": "Comprehensive Mathematics",
+  "title": "581. Discrete Mathematics, Counting & Graph Theory: In-Degree and Out-Degree in Directed Graphs",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-581-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Definition of in-degree",
+      "learningObjective": "State the definition of the in-degree of a vertex.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a directed graph, what is the in-degree of a vertex \\(v\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The number of arcs that start at \\(v\\)"
+        },
+        {
+          "label": "B",
+          "text": "The number of arcs that end at \\(v\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The in-degree counts the arcs that point into the vertex, that is, the arcs with head \\(v\\). The number of arcs that start at \\(v\\) is the out-degree.",
+      "hint": "The word \"in\" refers to arcs coming into the vertex."
+    },
+    {
+      "id": "dynanca-581-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Computing an in-degree",
+      "learningObjective": "Find the in-degree of a vertex from a list of arcs.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A directed graph has arcs \\(A\\to B\\), \\(B\\to C\\), \\(C\\to D\\), \\(D\\to B\\), and \\(A\\to D\\). What is the in-degree of \\(B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The arcs that end at \\(B\\) are \\(A\\to B\\) and \\(D\\to B\\), so the in-degree of \\(B\\) is \\(2\\). The value \\(1\\) is the out-degree of \\(B\\), from the single arc \\(B\\to C\\).",
+      "hint": "Count the arcs whose arrow points at \\(B\\)."
+    },
+    {
+      "id": "dynanca-581-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Largest in-degree",
+      "learningObjective": "Find the vertex with the largest in-degree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A directed graph has arcs \\(1\\to 2\\), \\(1\\to 3\\), \\(1\\to 4\\), \\(2\\to 3\\), and \\(4\\to 3\\). Which vertex has the largest in-degree?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Vertex \\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "Vertex \\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The arcs \\(1\\to 3\\), \\(2\\to 3\\), and \\(4\\to 3\\) end at vertex \\(3\\), so its in-degree is \\(3\\). Vertex \\(1\\) has in-degree \\(0\\); it has the largest out-degree, \\(3\\), which is a different quantity.",
+      "hint": "For each vertex, count the arcs that end there."
+    },
+    {
+      "id": "dynanca-581-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "In-degrees and the number of arcs",
+      "learningObjective": "Find the number of arcs from the list of in-degrees.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The four vertices of a directed graph have in-degrees \\(2,1,0,3\\). How many arcs does the graph have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every arc ends at exactly one vertex, so each arc is counted exactly once when the in-degrees are added. The number of arcs is \\(2+1+0+3=6\\). Doubling is not needed here; the factor \\(2\\) belongs to the degree sum of undirected graphs.",
+      "hint": "Each arc has exactly one head."
+    },
+    {
+      "id": "dynanca-581-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Sources and sinks",
+      "learningObjective": "Identify a sink of a small directed graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A directed graph has arcs \\(P\\to Q\\), \\(P\\to R\\), \\(Q\\to S\\), and \\(R\\to S\\). A sink is a vertex with out-degree \\(0\\). Which vertex is a sink?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(S\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(P\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "No arc starts at \\(S\\), so its out-degree is \\(0\\) and it is a sink. The vertex \\(P\\) has out-degree \\(2\\); it has in-degree \\(0\\), which makes it a source, not a sink.",
+      "hint": "Look for the vertex from which no arc leaves."
+    },
+    {
+      "id": "dynanca-581-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Matching totals",
+      "learningObjective": "Use the equality of the in-degree and out-degree totals.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The four vertices of a directed graph have out-degrees \\(3,1,2,0\\). Which list can be the list of their in-degrees?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1,2,1,2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2,2,2,2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every arc has one tail and one head, so the out-degrees and the in-degrees both add up to the number of arcs. The out-degrees add up to \\(6\\). The list \\(1,2,1,2\\) also has sum \\(6\\), while \\(2,2,2,2\\) has sum \\(8\\) and is impossible.",
+      "hint": "Compare the sum of the out-degrees with the sum of each proposed list."
+    },
+    {
+      "id": "dynanca-581-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A loop in a directed graph",
+      "learningObjective": "Find the in-degree and out-degree of a vertex with a loop.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A vertex \\(v\\) of a directed graph carries a loop \\(v\\to v\\) and lies on two further arcs, \\(v\\to w\\) and \\(u\\to v\\). What are the in-degree and the out-degree of \\(v\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In-degree \\(1\\) and out-degree \\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "In-degree \\(2\\) and out-degree \\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The loop both starts and ends at \\(v\\), so it adds \\(1\\) to the out-degree and \\(1\\) to the in-degree. With \\(v\\to w\\) the out-degree is \\(2\\), and with \\(u\\to v\\) the in-degree is \\(2\\). Ignoring the loop gives \\(1\\) and \\(1\\).",
+      "hint": "A loop leaves the vertex and also enters it."
+    },
+    {
+      "id": "dynanca-581-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Out-degrees in a tournament",
+      "learningObjective": "Find a missing out-degree in a round-robin tournament.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "In a tournament on \\(5\\) vertices, every pair of vertices is joined by exactly one arc. Four of the vertices have out-degrees \\(4,3,2,1\\). What is the out-degree of the fifth vertex?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There is one arc for each of the \\(\\binom{5}{2}=10\\) pairs of vertices, so the out-degrees add up to \\(10\\). Four of them add up to \\(4+3+2+1=10\\), so the fifth out-degree is \\(0\\).",
+      "hint": "Find the total number of arcs first."
+    },
+    {
+      "id": "dynanca-581-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Balanced vertices",
+      "learningObjective": "Compare in-degrees and out-degrees read from an adjacency matrix.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A directed graph on the vertices \\(1,2,3,4\\) has the adjacency matrix \\(\\begin{pmatrix}0&1&1&0\\\\0&0&1&0\\\\0&0&0&1\\\\1&0&0&0\\end{pmatrix}\\), where row \\(i\\), column \\(j\\) holds \\(1\\) exactly when there is an arc \\(i\\to j\\). How many vertices have equal in-degree and out-degree?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Row sums give the out-degrees \\(2,1,1,1\\), and column sums give the in-degrees \\(1,1,2,1\\). They agree for vertices \\(2\\) and \\(4\\) only: vertex \\(1\\) has out-degree \\(2\\) but in-degree \\(1\\), and vertex \\(3\\) has out-degree \\(1\\) but in-degree \\(2\\).",
+      "hint": "Compare each row sum with the sum of the column that has the same number."
+    },
+    {
+      "id": "dynanca-581-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Average in-degree",
+      "learningObjective": "Find the average in-degree when every out-degree is known.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In a directed graph with \\(6\\) vertices, every vertex has out-degree \\(2\\). What is the average in-degree of the vertices?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The out-degrees add up to \\(6\\cdot 2=12\\), which is the number of arcs. The in-degrees also add up to the number of arcs, \\(12\\), so their average is \\(\\dfrac{12}{6}=2\\). Individual in-degrees may differ, but their average is forced.",
+      "hint": "The in-degrees and the out-degrees have the same total."
+    }
+  ]
+}

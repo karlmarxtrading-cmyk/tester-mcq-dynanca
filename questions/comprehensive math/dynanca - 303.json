@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-303",
+  "category": "Comprehensive Mathematics",
+  "title": "303. Functions, Graphs & Transformations: Local versus Global Extrema from Graphs",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-303-q001",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Local Maximum from Nearby Values",
+      "learningObjective": "Identify a local maximum by comparing a point with nearby points on a graph.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A graph consists of straight line segments joining \\((1,4)\\), \\((2,7)\\), and \\((3,5)\\), and also contains the point \\((5,9)\\). On this graph, the point \\((2,7)\\) is higher than the nearby points \\((1,4)\\) and \\((3,5)\\). Based only on this information, which conclusion is justified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The point \\((2,7)\\) is a local maximum."
+        },
+        {
+          "label": "B",
+          "text": "The point \\((2,7)\\) must be a global maximum."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The adjacent line segments rise to \\((2,7)\\) and then fall, so this point is a local maximum. It is not a global maximum because the graph also contains \\((5,9)\\), whose height is larger.",
+      "hint": "Compare the point only with points close to it to decide whether the extremum is local."
+    },
+    {
+      "id": "dynanca-303-q002",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Local Minimum from Graph Behavior",
+      "learningObjective": "Identify a local minimum from a change from decreasing to increasing.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A continuous function has \\(f(1)=3\\), decreases on \\((0,1)\\), and increases on \\((1,2)\\). It also has \\(f(4)=1\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1\\) is a global minimizer."
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1\\) is a local minimizer."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Continuity and the change from decreasing to increasing show that \\(f(1)=3\\) is a local minimum. It is not a global minimum because \\(f(4)=1<3\\).",
+      "hint": "A local minimum often occurs where the graph stops falling and starts rising."
+    },
+    {
+      "id": "dynanca-303-q003",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Local and Global Maximum",
+      "learningObjective": "Distinguish a local maximum from a global maximum using a global inequality.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "For a function \\(f\\), the graph satisfies \\(f(x)\\le 5\\) for all \\(x\\), and \\(f(2)=5\\). At \\(x=2\\), the graph is also higher than the nearby points. Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2\\) is both a local maximum and a global maximum."
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2\\) is a local maximum but not a global maximum."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(f(2)=5\\) and \\(f(x)\\le 5\\) for all \\(x\\), the value \\(5\\) is the greatest value of the function, so \\(x=2\\) is a global maximum. It is also higher than nearby points, so it is a local maximum as well. Therefore, it is both a local maximum and a global maximum.",
+      "hint": "A global maximum is the highest value over the entire graph, not just nearby."
+    },
+    {
+      "id": "dynanca-303-q004",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Global Minimum from Lowest Point",
+      "learningObjective": "Identify a global minimum from a described lowest point of a graph.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The graph of \\(f\\) has its lowest point at \\(x=-1\\) with value \\(-4\\), and \\(f(x)>-4\\) for all other \\(x\\). Which statement correctly describes \\(x=-1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is a local minimum only."
+        },
+        {
+          "label": "B",
+          "text": "It is a global minimum."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Because \\(-4\\) is the smallest value of the function on the entire graph, \\(x=-1\\) is a global minimum. It is also a local minimum, but the statement that it is a global minimum correctly describes its role over the whole graph.",
+      "hint": "Compare the point with all other values, not only nearby ones."
+    },
+    {
+      "id": "dynanca-303-q005",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Greatest Value among Listed Points",
+      "learningObjective": "Identify the greatest value among a set of points from a table.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "The table lists several points on the graph of \\(f\\): \\(x=0,1,2,3,4\\) with \\(f(x)=2,5,3,4,1\\). Among the listed points, which point has the greatest value?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,5)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,4)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Among the listed values \\(2,5,3,4,1\\), the greatest is \\(5\\), which occurs at \\(x=1\\). Therefore, \\((1,5)\\) has the greatest value among the listed points.",
+      "hint": "Compare the \\(f(x)\\)-values in the list and choose the largest one."
+    },
+    {
+      "id": "dynanca-303-q006",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Global Minimum on a Closed Interval",
+      "learningObjective": "Determine the global minimum of a piecewise linear graph on a closed interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A graph consists of line segments joining \\((-2,3)\\), \\((0,1)\\), \\((2,-2)\\), and \\((4,0)\\). On the interval \\([-2,4]\\), which point is the global minimum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,-2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,1)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The \\(y\\)-values of the listed points are \\(3,1,-2,0\\). The smallest \\(y\\)-value is \\(-2\\), which occurs at \\(x=2\\). Since the graph is formed by line segments, the lowest point on the interval is \\((2,-2)\\), so it is the global minimum.",
+      "hint": "Find the point with the smallest \\(y\\)-value on the entire given interval."
+    },
+    {
+      "id": "dynanca-303-q007",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Local Maximum versus Global Maximum",
+      "learningObjective": "Determine whether a local maximum is a global maximum from the end behavior of a graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A graph has a local maximum at \\(x=0\\) with value \\(2\\). As \\(x\\to\\infty\\), the graph continues upward without bound. Is the local maximum at \\(x=0\\) a global maximum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, it is not a global maximum."
+        },
+        {
+          "label": "B",
+          "text": "Yes, it is a global maximum."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A global maximum must be the highest value of the function over its entire domain. Although \\(x=0\\) is a local maximum, the graph eventually rises above \\(2\\) as \\(x\\to\\infty\\). Therefore, the local maximum at \\(x=0\\) is not a global maximum.",
+      "hint": "Check whether any other part of the graph can reach a higher value."
+    },
+    {
+      "id": "dynanca-303-q008",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Local Minimum versus Global Minimum",
+      "learningObjective": "Determine whether a local minimum is a global minimum from the end behavior of a graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A graph has a local minimum at \\(x=1\\) with value \\(-3\\). As \\(x\\to -\\infty\\), the graph continues downward without bound. Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The point at \\(x=1\\) is a global minimum."
+        },
+        {
+          "label": "B",
+          "text": "The point at \\(x=1\\) is not a global minimum."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A global minimum must be the lowest value of the function over its entire domain. The graph eventually goes below \\(-3\\) as \\(x\\to -\\infty\\), so \\(-3\\) is not the lowest value overall. Thus, the local minimum at \\(x=1\\) is not a global minimum.",
+      "hint": "Compare the local minimum with the behavior of the graph far to the left."
+    },
+    {
+      "id": "dynanca-303-q009",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Global Maximum on a Closed Interval",
+      "learningObjective": "Select the global maximum on a closed interval from several local extrema and endpoint values.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "On the interval \\([-3,3]\\), a continuous graph has no interior local extrema other than the following: local maxima at \\(x=-2\\) with value \\(4\\) and at \\(x=2\\) with value \\(5\\), and a local minimum at \\(x=0\\) with value \\(-1\\). The endpoint values are \\(f(-3)=2\\) and \\(f(3)=1\\). What is the global maximum on \\([-3,3]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\) at \\(x=-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\) at \\(x=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The largest value among the listed values \\(4,5,-1,2,1\\) is \\(5\\), which occurs at \\(x=2\\). Therefore, the global maximum on \\([-3,3]\\) is \\(5\\) at \\(x=2\\).",
+      "hint": "Compare all local maximum values and endpoint values on the interval."
+    },
+    {
+      "id": "dynanca-303-q010",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Global Maximum and Global Minimum on a Closed Interval",
+      "learningObjective": "Identify both the global maximum and the global minimum on a closed interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "On \\([-3,3]\\), a continuous graph has no interior local extrema other than the following: a local maximum at \\(x=-1\\) with value \\(6\\) and a local minimum at \\(x=1\\) with value \\(-2\\). The endpoint values are \\(f(-3)=3\\) and \\(f(3)=0\\). Which pair correctly lists the global maximum and global minimum on \\([-3,3]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Global maximum \\(6\\) at \\(x=-1\\); global minimum \\(-2\\) at \\(x=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "Global maximum \\(3\\) at \\(x=-3\\); global minimum \\(-2\\) at \\(x=1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The values on the interval include the local maximum \\(6\\), the local minimum \\(-2\\), and the endpoint values \\(3\\) and \\(0\\). The largest value is \\(6\\) at \\(x=-1\\), so this is the global maximum. The smallest value is \\(-2\\) at \\(x=1\\), so this is the global minimum. Thus, option A is correct.",
+      "hint": "List all candidate high and low values, including local extrema and endpoints."
+    }
+  ]
+}

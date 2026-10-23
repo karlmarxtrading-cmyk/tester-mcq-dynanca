@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-295",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 295",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-295-q001",
+      "category": "Calculus",
+      "concept": "Intervals of Increase and Decrease",
+      "learningObjective": "Determine the interval on which a cubic function is decreasing by using its derivative.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=x^3-3x^2+1\\), on which interval is \\(f\\) decreasing?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,2)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2-6x=3x(x-2).\n\\]\nThe critical points are \\(x=0\\) and \\(x=2\\). The sign of \\(f'(x)\\) is negative between these points, so \\(f\\) is decreasing on \\((0,2)\\).",
+      "hint": "Find the critical points first, then test the sign of the derivative between them."
+    },
+    {
+      "id": "math-gaokao-295-q002",
+      "category": "Calculus",
+      "concept": "Local Extrema via Derivatives",
+      "learningObjective": "Identify the location of a local maximum of a cubic function using the second derivative.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=x^3-6x^2+9x\\), at which value of \\(x\\) does \\(f\\) have a local maximum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2-12x+9=3(x-1)(x-3).\n\\]\nThe critical points are \\(x=1\\) and \\(x=3\\). The second derivative is\n\\[\nf''(x)=6x-12.\n\\]\nAt \\(x=1\\), \\(f''(1)=-6<0\\), so \\(x=1\\) gives a local maximum. At \\(x=3\\), \\(f''(3)=6>0\\), which gives a local minimum.",
+      "hint": "Use the first derivative to find critical points, then use the second derivative to classify them."
+    },
+    {
+      "id": "math-gaokao-295-q003",
+      "category": "Calculus",
+      "concept": "Concavity and Points of Inflection",
+      "learningObjective": "Determine the point of inflection of a cubic function by using the second derivative.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the point of inflection of \\(f(x)=x^3-3x^2+2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,2)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Differentiate twice:\n\\[\nf'(x)=3x^2-6x,\n\\]\n\\[\nf''(x)=6x-6.\n\\]\nSet \\(f''(x)=0\\):\n\\[\n6x-6=0 \\implies x=1.\n\\]\nSince \\(f''(x)\\) changes sign at \\(x=1\\), this is a point of inflection. Evaluate:\n\\[\nf(1)=1^3-3(1)^2+2=1-3+2=0.\n\\]\nThus the point of inflection is \\((1,0)\\).",
+      "hint": "A point of inflection occurs where the second derivative changes sign."
+    },
+    {
+      "id": "math-gaokao-295-q004",
+      "category": "Calculus",
+      "concept": "Local Minimum Value",
+      "learningObjective": "Find the local minimum value of a cubic function using the second derivative test.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the local minimum value of \\(f(x)=x^3-3x+1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2-3=3(x^2-1).\n\\]\nThe critical points are \\(x=-1\\) and \\(x=1\\). The second derivative is\n\\[\nf''(x)=6x.\n\\]\nAt \\(x=1\\), \\(f''(1)=6>0\\), so \\(x=1\\) gives a local minimum. Evaluate:\n\\[\nf(1)=1^3-3(1)+1=1-3+1=-1.\n\\]\nThus the local minimum value is \\(-1\\).",
+      "hint": "Find the critical points and use the second derivative to identify the local minimum."
+    },
+    {
+      "id": "math-gaokao-295-q005",
+      "category": "Calculus",
+      "concept": "Concavity Intervals of a Quartic Function",
+      "learningObjective": "Determine the interval on which a quartic function is concave down using its second derivative.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For \\(f(x)=x^4-2x^2\\), on which interval is \\(f\\) concave down?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left(\\frac{1}{\\sqrt{3}},\\infty\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\left(-\\frac{1}{\\sqrt{3}},\\frac{1}{\\sqrt{3}}\\right)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate twice:\n\\[\nf'(x)=4x^3-4x,\n\\]\n\\[\nf''(x)=12x^2-4=4(3x^2-1).\n\\]\nThe function is concave down where \\(f''(x)<0\\):\n\\[\n12x^2-4<0 \\implies x^2<\\frac{1}{3}.\n\\]\nThus\n\\[\n-\\frac{1}{\\sqrt{3}}<x<\\frac{1}{\\sqrt{3}}.\n\\]\nSo \\(f\\) is concave down on \\(\\left(-\\frac{1}{\\sqrt{3}},\\frac{1}{\\sqrt{3}}\\right)\\).",
+      "hint": "Concavity is determined by the sign of the second derivative."
+    },
+    {
+      "id": "math-gaokao-295-q006",
+      "category": "Calculus",
+      "concept": "Increasing Intervals from a Derivative",
+      "learningObjective": "Determine the interval on which a function is increasing given its derivative.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(f'(x)=x^2-4\\), on which interval is \\(f\\) increasing?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-\\infty,-2)\\cup(2,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-2,2)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The function \\(f\\) is increasing where \\(f'(x)>0\\):\n\\[\nx^2-4>0.\n\\]\nThis inequality holds when\n\\[\nx<-2 \\quad \\text{or} \\quad x>2.\n\\]\nTherefore \\(f\\) is increasing on \\((-\\infty,-2)\\cup(2,\\infty)\\).",
+      "hint": "Set the derivative greater than zero and solve the resulting inequality."
+    },
+    {
+      "id": "math-gaokao-295-q007",
+      "category": "Calculus",
+      "concept": "Parameter Condition for Two Critical Points",
+      "learningObjective": "Determine the parameter values for which a cubic function has two distinct critical points.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For which values of \\(a\\) does \\(f(x)=x^3+ax^2+3x\\) have two distinct critical points?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(|a|>3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(|a|<3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2+2ax+3.\n\\]\nCritical points occur where \\(f'(x)=0\\). For two distinct real critical points, the quadratic \\(3x^2+2ax+3=0\\) must have two distinct real roots. Its discriminant is\n\\[\n\\Delta=(2a)^2-4(3)(3)=4a^2-36.\n\\]\nWe need \\(\\Delta>0\\):\n\\[\n4a^2-36>0 \\implies a^2>9 \\implies |a|>3.\n\\]\nThus \\(f\\) has two distinct critical points exactly when \\(|a|>3\\).",
+      "hint": "A quadratic has two distinct real roots when its discriminant is positive."
+    },
+    {
+      "id": "math-gaokao-295-q008",
+      "category": "Calculus",
+      "concept": "Number of Real Roots from Extrema",
+      "learningObjective": "Use the local extrema of a cubic function to determine the number of distinct real roots.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How many distinct real roots does the equation \\(x^3-3x^2+1=0\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(f(x)=x^3-3x^2+1\\). Differentiate:\n\\[\nf'(x)=3x^2-6x=3x(x-2).\n\\]\nThe critical points are \\(x=0\\) and \\(x=2\\). Evaluate:\n\\[\nf(0)=1,\n\\]\n\\[\nf(2)=8-12+1=-3.\n\\]\nSince \\(f(0)=1>0\\) and \\(f(2)=-3<0\\), the local maximum at \\(x=0\\) is positive and the local minimum at \\(x=2\\) is negative. A cubic with a positive local maximum and a negative local minimum crosses the \\(x\\)-axis three times. Therefore the equation has \\(3\\) distinct real roots.",
+      "hint": "Examine the signs of the local maximum and local minimum of the cubic."
+    },
+    {
+      "id": "math-gaokao-295-q009",
+      "category": "Calculus",
+      "concept": "Absolute Minimum on a Closed Interval",
+      "learningObjective": "Find the absolute minimum value of a function on a closed interval by checking critical points and endpoints.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the minimum value of \\(f(x)=x^3-3x^2+2\\) on the interval \\([-1,3]\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2-6x=3x(x-2).\n\\]\nThe critical points in \\([-1,3]\\) are \\(x=0\\) and \\(x=2\\). Evaluate \\(f\\) at the critical points and endpoints:\n\\[\nf(-1)=-1-3+2=-2,\n\\]\n\\[\nf(0)=2,\n\\]\n\\[\nf(2)=8-12+2=-2,\n\\]\n\\[\nf(3)=27-27+2=2.\n\\]\nThe smallest value is \\(-2\\). Therefore the minimum value on \\([-1,3]\\) is \\(-2\\).",
+      "hint": "For a closed interval, compare the values at all critical points and endpoints."
+    },
+    {
+      "id": "math-gaokao-295-q010",
+      "category": "Calculus",
+      "concept": "Maximum of a Rational Function via Derivative",
+      "learningObjective": "Find the maximum value of a rational function by using its derivative and sign analysis.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the maximum value of \\(f(x)=\\frac{x}{x^2+1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Differentiate using the quotient rule:\n\\[\nf'(x)=\\frac{(1)(x^2+1)-x(2x)}{(x^2+1)^2}\n=\\frac{x^2+1-2x^2}{(x^2+1)^2}\n=\\frac{1-x^2}{(x^2+1)^2}.\n\\]\nSet \\(f'(x)=0\\):\n\\[\n1-x^2=0 \\implies x=\\pm 1.\n\\]\nThe denominator is always positive, so the sign of \\(f'(x)\\) is the sign of \\(1-x^2\\). Thus \\(f\\) increases on \\((-1,1)\\) and decreases outside this interval. Hence \\(x=1\\) gives a maximum. Evaluate:\n\\[\nf(1)=\\frac{1}{1^2+1}=\\frac{1}{2}.\n\\]\nSo the maximum value is \\(\\frac{1}{2}\\).",
+      "hint": "Use the quotient rule to find the derivative, then analyze the sign of the derivative."
+    }
+  ]
+}

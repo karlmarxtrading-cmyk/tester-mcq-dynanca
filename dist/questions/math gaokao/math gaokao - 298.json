@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-298",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 298",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-298-q001",
+      "category": "Calculus",
+      "concept": "Fundamental Theorem of Calculus for Variable Upper Limit",
+      "learningObjective": "Find the derivative of an accumulation function using the Fundamental Theorem of Calculus.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(F(x)=\\int_{0}^{x}(t^2+1)\\,dt\\), find \\(F'(x)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x^2+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the Fundamental Theorem of Calculus, if\n\\[\nF(x)=\\int_{a}^{x} f(t)\\,dt,\n\\]\nthen\n\\[\nF'(x)=f(x).\n\\]\nHere the integrand is \\(f(t)=t^2+1\\), so\n\\[\nF'(x)=x^2+1.\n\\]",
+      "hint": "Differentiate an accumulation function by substituting the upper limit into the integrand."
+    },
+    {
+      "id": "math-gaokao-298-q002",
+      "category": "Calculus",
+      "concept": "Evaluating a Definite Integral by the Fundamental Theorem of Calculus",
+      "learningObjective": "Evaluate a definite integral by finding an antiderivative and applying the Fundamental Theorem of Calculus.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\int_{0}^{2}(2x+1)\\,dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An antiderivative of \\(2x+1\\) is \\(x^2+x\\). Therefore,\n\\[\n\\int_{0}^{2}(2x+1)\\,dx\n=\\left[x^2+x\\right]_{0}^{2}\n=(2^2+2)-(0^2+0)\n=6.\n\\]",
+      "hint": "Find an antiderivative first, then evaluate it at the upper and lower limits and subtract."
+    },
+    {
+      "id": "math-gaokao-298-q003",
+      "category": "Calculus",
+      "concept": "Derivative of an Integral with Variable Upper Limit",
+      "learningObjective": "Apply the Fundamental Theorem of Calculus to differentiate an integral with a square-root integrand.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\frac{d}{dx}\\int_{1}^{x}\\sqrt{t^2+1}\\,dt\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{x^2+1}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^2+1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the Fundamental Theorem of Calculus,\n\\[\n\\frac{d}{dx}\\int_{a}^{x} f(t)\\,dt=f(x).\n\\]\nHere \\(f(t)=\\sqrt{t^2+1}\\), so\n\\[\n\\frac{d}{dx}\\int_{1}^{x}\\sqrt{t^2+1}\\,dt=\\sqrt{x^2+1}.\n\\]",
+      "hint": "Replace \\(t\\) in the integrand by the upper limit \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-298-q004",
+      "category": "Calculus",
+      "concept": "Definite Integral of a Power Function",
+      "learningObjective": "Evaluate a definite integral of a cubic derivative expression using the Fundamental Theorem of Calculus.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\int_{1}^{3}3x^2\\,dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(26\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An antiderivative of \\(3x^2\\) is \\(x^3\\). Hence,\n\\[\n\\int_{1}^{3}3x^2\\,dx\n=\\left[x^3\\right]_{1}^{3}\n=3^3-1^3\n=27-1=26.\n\\]",
+      "hint": "Use the power rule for antiderivatives before applying the limits."
+    },
+    {
+      "id": "math-gaokao-298-q005",
+      "category": "Calculus",
+      "concept": "Fundamental Theorem of Calculus with Variable Lower Limit",
+      "learningObjective": "Differentiate an integral whose lower limit is variable by applying the Fundamental Theorem of Calculus with a sign change.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(F(x)=\\int_{x}^{2}\\cos t\\,dt\\), find \\(F'(x)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\cos x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\cos x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rewrite the integral with the variable limit on top:\n\\[\nF(x)=\\int_{x}^{2}\\cos t\\,dt=-\\int_{2}^{x}\\cos t\\,dt.\n\\]\nBy the Fundamental Theorem of Calculus,\n\\[\nF'(x)=-\\cos x.\n\\]\nEquivalently, differentiating with respect to a variable lower limit introduces a minus sign.",
+      "hint": "When the variable is the lower limit, applying the Fundamental Theorem of Calculus gives a negative sign."
+    },
+    {
+      "id": "math-gaokao-298-q006",
+      "category": "Calculus",
+      "concept": "Definite Integral of a Trigonometric Function",
+      "learningObjective": "Evaluate a definite integral of \\(\\sin x\\) using the Fundamental Theorem of Calculus.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\int_{0}^{\\pi}\\sin x\\,dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An antiderivative of \\(\\sin x\\) is \\(-\\cos x\\). Therefore,\n\\[\n\\int_{0}^{\\pi}\\sin x\\,dx\n=\\left[-\\cos x\\right]_{0}^{\\pi}\n=-\\cos\\pi-(-\\cos0)\n=-(-1)+1\n=2.\n\\]",
+      "hint": "Recall that the derivative of \\(-\\cos x\\) is \\(\\sin x\\)."
+    },
+    {
+      "id": "math-gaokao-298-q007",
+      "category": "Calculus",
+      "concept": "Fundamental Theorem of Calculus with Chain Rule",
+      "learningObjective": "Differentiate an integral with a variable upper limit that is a function of \\(x\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find \\(\\frac{d}{dx}\\int_{0}^{x^2}e^t\\,dt\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(e^{x^2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2x e^{x^2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(u=x^2\\). By the Fundamental Theorem of Calculus and the chain rule,\n\\[\n\\frac{d}{dx}\\int_{0}^{x^2}e^t\\,dt\n=e^{x^2}\\cdot \\frac{d}{dx}(x^2)\n=e^{x^2}\\cdot 2x\n=2x e^{x^2}.\n\\]",
+      "hint": "Apply the Fundamental Theorem of Calculus and then multiply by the derivative of the upper limit."
+    },
+    {
+      "id": "math-gaokao-298-q008",
+      "category": "Calculus",
+      "concept": "Definite Integral of a Polynomial over a Symmetric Interval",
+      "learningObjective": "Evaluate a definite integral by using the Fundamental Theorem of Calculus and symmetry of odd terms.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Evaluate \\(\\int_{-1}^{1}(x^3+1)\\,dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An antiderivative of \\(x^3+1\\) is \\(\\frac{x^4}{4}+x\\). Thus,\n\\[\n\\int_{-1}^{1}(x^3+1)\\,dx\n=\\left[\\frac{x^4}{4}+x\\right]_{-1}^{1}.\n\\]\nEvaluate:\n\\[\n\\left(\\frac{1}{4}+1\\right)-\\left(\\frac{1}{4}-1\\right)\n=\\frac{5}{4}-\\left(-\\frac{3}{4}\\right)\n=2.\n\\]\nAlternatively, \\(\\int_{-1}^{1}x^3\\,dx=0\\) because \\(x^3\\) is odd, and \\(\\int_{-1}^{1}1\\,dx=2\\).",
+      "hint": "Split the integral into an odd part and a constant part, or antidifferentiate term by term."
+    },
+    {
+      "id": "math-gaokao-298-q009",
+      "category": "Calculus",
+      "concept": "Locating a Local Minimum of an Accumulation Function",
+      "learningObjective": "Use the Fundamental Theorem of Calculus to find the critical point of an accumulation function and classify it.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(F(x)=\\int_{0}^{x}(t^2-4)\\,dt\\). At which value of \\(x\\) does \\(F\\) have a local minimum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the Fundamental Theorem of Calculus,\n\\[\nF'(x)=x^2-4.\n\\]\nSet \\(F'(x)=0\\):\n\\[\nx^2-4=0 \\implies x=\\pm 2.\n\\]\nDifferentiate again:\n\\[\nF''(x)=2x.\n\\]\nAt \\(x=2\\), \\(F''(2)=4>0\\), so \\(x=2\\) gives a local minimum. At \\(x=-2\\), \\(F''(-2)=-4<0\\), so \\(x=-2\\) gives a local maximum.",
+      "hint": "Differentiate the accumulation function first, then use the second derivative to classify critical points."
+    },
+    {
+      "id": "math-gaokao-298-q010",
+      "category": "Calculus",
+      "concept": "Fundamental Theorem of Calculus with Two Variable Limits",
+      "learningObjective": "Differentiate an integral whose upper and lower limits both depend on \\(x\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find \\(\\frac{d}{dx}\\int_{x}^{x^2}\\sin t\\,dt\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2x\\cos(x^2)-\\cos x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2x\\sin(x^2)-\\sin x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Split the integral at a constant, for example \\(0\\):\n\\[\n\\int_{x}^{x^2}\\sin t\\,dt\n=\\int_{0}^{x^2}\\sin t\\,dt-\\int_{0}^{x}\\sin t\\,dt.\n\\]\nBy the Fundamental Theorem of Calculus and the chain rule,\n\\[\n\\frac{d}{dx}\\int_{0}^{x^2}\\sin t\\,dt\n=\\sin(x^2)\\cdot 2x,\n\\]\nand\n\\[\n\\frac{d}{dx}\\int_{0}^{x}\\sin t\\,dt\n=\\sin x.\n\\]\nTherefore,\n\\[\n\\frac{d}{dx}\\int_{x}^{x^2}\\sin t\\,dt\n=2x\\sin(x^2)-\\sin x.\n\\]",
+      "hint": "Split the integral into two integrals with a fixed lower limit, then apply the Fundamental Theorem of Calculus and the chain rule."
+    }
+  ]
+}

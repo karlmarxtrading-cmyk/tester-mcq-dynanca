@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-489",
+  "category": "Comprehensive Mathematics",
+  "title": "489. Sets, Logic, Reasoning & Proof: Exclusive Or",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-489-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Truth condition for exclusive or",
+      "learningObjective": "State when an exclusive or is true.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "When is the exclusive or \\(p\\oplus q\\) true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When at least one of \\(p\\) and \\(q\\) is true"
+        },
+        {
+          "label": "B",
+          "text": "When exactly one of \\(p\\) and \\(q\\) is true"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The exclusive or is true when one part is true and the other is false. Unlike the inclusive or \\(p\\lor q\\), it is false when both parts are true.",
+      "hint": "The word \"exclusive\" rules out the case in which both parts hold."
+    },
+    {
+      "id": "dynanca-489-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Exclusive or of two true propositions",
+      "learningObjective": "Evaluate an exclusive or when both parts are true.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Both \\(p\\) and \\(q\\) are true. What is the truth value of \\(p\\oplus q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "True"
+        },
+        {
+          "label": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The exclusive or requires exactly one true part. Here two parts are true, so \\(p\\oplus q\\) is false. The inclusive or \\(p\\lor q\\) would be true in this case.",
+      "hint": "Count how many of the two parts are true."
+    },
+    {
+      "id": "dynanca-489-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Truth table column of exclusive or",
+      "learningObjective": "Write the truth table column of the exclusive or.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The rows of a truth table are ordered by \\((p,q)\\) as \\((T,T)\\), \\((T,F)\\), \\((F,T)\\), \\((F,F)\\). What is the column for \\(p\\oplus q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(F,\\ T,\\ T,\\ F\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(T,\\ T,\\ T,\\ F\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The exclusive or is true exactly when the two truth values differ: rows \\((T,F)\\) and \\((F,T)\\). It is false when they agree: rows \\((T,T)\\) and \\((F,F)\\). So the column is \\(F,T,T,F\\). The column \\(T,T,T,F\\) belongs to the inclusive or.",
+      "hint": "Mark the rows in which \\(p\\) and \\(q\\) have different truth values."
+    },
+    {
+      "id": "dynanca-489-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Exclusive or in everyday language",
+      "learningObjective": "Recognise a sentence whose \"or\" is exclusive.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A menu states: \"The meal includes soup or salad, but not both.\" Which connective represents this \"or\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The exclusive or \\(\\oplus\\)"
+        },
+        {
+          "label": "B",
+          "text": "The inclusive or \\(\\lor\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The phrase \"but not both\" excludes the case in which soup and salad are both included. The sentence is true when exactly one is included, which is the exclusive or. The inclusive or would also allow both.",
+      "hint": "Decide whether the sentence allows both options at once."
+    },
+    {
+      "id": "dynanca-489-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Exclusive or through other connectives",
+      "learningObjective": "Express the exclusive or with conjunction, disjunction, and negation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which compound proposition is logically equivalent to \\(p\\oplus q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((p\\lor q)\\land\\neg(p\\land q)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((p\\lor q)\\land(p\\land q)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\"Exactly one is true\" means \"at least one is true\" and \"not both are true\": \\((p\\lor q)\\land\\neg(p\\land q)\\). The other expression requires both \\(p\\lor q\\) and \\(p\\land q\\), which is the same as \\(p\\land q\\); it is true exactly when both are true, where the exclusive or is false.",
+      "hint": "Translate \"exactly one\" as \"at least one, but not both\"."
+    },
+    {
+      "id": "dynanca-489-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Exclusive or of a proposition with itself",
+      "learningObjective": "Simplify the exclusive or of a proposition with itself.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which statement about \\(p\\oplus p\\) is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is always false."
+        },
+        {
+          "label": "B",
+          "text": "It has the same truth value as \\(p\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The two parts of \\(p\\oplus p\\) always have the same truth value, so it is never the case that exactly one of them is true. Hence \\(p\\oplus p\\) is false whether \\(p\\) is true or false.",
+      "hint": "Ask whether the two parts can ever have different truth values."
+    },
+    {
+      "id": "dynanca-489-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Exclusive or with a false proposition",
+      "learningObjective": "Simplify the exclusive or of a proposition with a false proposition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(F\\) denote a proposition that is always false. Which proposition is logically equivalent to \\(p\\oplus F\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\neg p\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If \\(p\\) is true, exactly one of \\(p\\) and \\(F\\) is true, so \\(p\\oplus F\\) is true. If \\(p\\) is false, neither is true, so \\(p\\oplus F\\) is false. In both cases the value equals that of \\(p\\).",
+      "hint": "Check the two cases \\(p\\) true and \\(p\\) false."
+    },
+    {
+      "id": "dynanca-489-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Exclusive or with a true proposition",
+      "learningObjective": "Simplify the exclusive or of a proposition with a true proposition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(T\\) denote a proposition that is always true. Which proposition is logically equivalent to \\(p\\oplus T\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\neg p\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If \\(p\\) is true, both parts are true, so \\(p\\oplus T\\) is false. If \\(p\\) is false, exactly one part is true, so \\(p\\oplus T\\) is true. In both cases the value is the opposite of \\(p\\), that is, \\(\\neg p\\).",
+      "hint": "Check the two cases \\(p\\) true and \\(p\\) false."
+    },
+    {
+      "id": "dynanca-489-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Exclusive or and the biconditional",
+      "learningObjective": "Relate the exclusive or to the biconditional.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Which proposition involving the biconditional is logically equivalent to \\(p\\oplus q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\neg(p\\iff q)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\iff q\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The biconditional \\(p\\iff q\\) is true exactly when \\(p\\) and \\(q\\) have the same truth value. The exclusive or is true exactly when they have different truth values. So the exclusive or is the negation of the biconditional.",
+      "hint": "Compare the rows in which each connective is true."
+    },
+    {
+      "id": "dynanca-489-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Applying exclusive or twice",
+      "learningObjective": "Simplify a repeated exclusive or with the same proposition.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Which proposition is logically equivalent to \\((p\\oplus q)\\oplus q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(q\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Check the four cases. For \\((p,q)=(T,T)\\): \\(F\\oplus T=T\\). For \\((T,F)\\): \\(T\\oplus F=T\\). For \\((F,T)\\): \\(T\\oplus T=F\\). For \\((F,F)\\): \\(F\\oplus F=F\\). The results \\(T,T,F,F\\) match the values of \\(p\\). Applying the exclusive or with \\(q\\) twice cancels out.",
+      "hint": "Build the truth table row by row, evaluating the inner exclusive or first."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-502",
+  "category": "Comprehensive Mathematics",
+  "title": "502. Sets, Logic, Reasoning & Proof: Domains of Quantification",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-502-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An existential statement in two domains",
+      "learningObjective": "Decide in which domain an existential statement is true.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "In which domain is the statement \\(\\exists x,\\ x^2=2\\) true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The real numbers"
+        },
+        {
+          "label": "B",
+          "text": "The rational numbers"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Over the real numbers the witness \\(x=\\sqrt{2}\\) exists, so the statement is true. Over the rational numbers there is no witness, because \\(\\sqrt{2}\\) and \\(-\\sqrt{2}\\) are irrational. The truth value of a quantified statement can depend on the domain.",
+      "hint": "Find the solutions of the equation and check which number system contains them."
+    },
+    {
+      "id": "dynanca-502-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A universal statement in two domains",
+      "learningObjective": "Decide in which domain a universal statement is true.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "In which domain is the statement \\(\\forall x,\\ x\\ge 0\\) true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The integers"
+        },
+        {
+          "label": "B",
+          "text": "The positive integers"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every positive integer is at least \\(1\\), hence at least \\(0\\), so the statement is true in that domain. Over all integers it is false, because \\(-1\\) is an integer and \\(-1\\ge 0\\) is false.",
+      "hint": "Look for an element of each domain that violates the inequality."
+    },
+    {
+      "id": "dynanca-502-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An equation over the integers",
+      "learningObjective": "Evaluate an existential statement in a domain that does not contain the solution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "With the integers as domain, what is the truth value of \\(\\exists x,\\ 2x=1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "True"
+        },
+        {
+          "label": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The only number satisfying \\(2x=1\\) is \\(x=\\frac{1}{2}\\), which is not an integer. So no element of the domain is a witness, and the statement is false. Over the rational numbers the same statement would be true.",
+      "hint": "Solve the equation and check whether the solution lies in the domain."
+    },
+    {
+      "id": "dynanca-502-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An inequality over the real numbers",
+      "learningObjective": "Evaluate a universal statement whose truth changes when the domain is enlarged.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "With the real numbers as domain, what is the truth value of \\(\\forall x,\\ x^2\\ge x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False; for \\(x=\\frac{1}{2}\\), \\(x^2=\\frac{1}{4}<\\frac{1}{2}\\)."
+        },
+        {
+          "label": "B",
+          "text": "True; squaring a number never makes it smaller."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For real numbers strictly between \\(0\\) and \\(1\\), squaring makes the number smaller: \\(\\left(\\frac{1}{2}\\right)^2=\\frac{1}{4}\\). So \\(x=\\frac{1}{2}\\) is a counterexample and the statement is false over \\(\\mathbb{R}\\). The same inequality is true when the domain is restricted to the integers.",
+      "hint": "Test a number between \\(0\\) and \\(1\\)."
+    },
+    {
+      "id": "dynanca-502-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An equation over the positive integers",
+      "learningObjective": "Evaluate an existential statement in a domain without negative numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "With the positive integers as domain, what is the truth value of \\(\\exists x,\\ x+5=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "True"
+        },
+        {
+          "label": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The equation \\(x+5=2\\) has the single solution \\(x=-3\\), which is not a positive integer. For every positive integer \\(x\\), \\(x+5\\ge 6\\). So the statement is false in this domain; over all integers it would be true.",
+      "hint": "Solve the equation and compare the solution with the domain."
+    },
+    {
+      "id": "dynanca-502-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Restricted universal quantifier",
+      "learningObjective": "Rewrite a universal statement with a restricted domain using an unrestricted quantifier.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Which statement is equivalent to \\(\\forall x>0,\\ P(x)\\), where \\(x\\) ranges over the real numbers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\forall x\\,\\left(x>0\\land P(x)\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\forall x\\,\\left(x>0\\implies P(x)\\right)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The restricted statement claims \\(P(x)\\) only for positive \\(x\\): if \\(x\\) is positive, then \\(P(x)\\) holds. That is a universally quantified conditional. The version with \"and\" claims that every real number is positive, which is false regardless of \\(P\\).",
+      "hint": "A restriction on a universal quantifier becomes the hypothesis of a conditional."
+    },
+    {
+      "id": "dynanca-502-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Restricted existential quantifier",
+      "learningObjective": "Rewrite an existential statement with a restricted domain using an unrestricted quantifier.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Which statement is equivalent to \\(\\exists x>0,\\ P(x)\\), where \\(x\\) ranges over the real numbers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\exists x\\,\\left(x>0\\implies P(x)\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\exists x\\,\\left(x>0\\land P(x)\\right)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The restricted statement claims that some positive number has property \\(P\\): there is an \\(x\\) that is positive and satisfies \\(P(x)\\). The version with a conditional is true as soon as some non-positive number exists, because the conditional has a false hypothesis there; so it says almost nothing.",
+      "hint": "A restriction on an existential quantifier is joined to the property with \"and\"."
+    },
+    {
+      "id": "dynanca-502-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Choosing a finite domain",
+      "learningObjective": "Decide for which finite domain a universal statement is true.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For which domain \\(D\\) is the statement \\(\\forall x\\in D,\\ x\\text{ is even}\\) true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(D=\\{2,4,7\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(D=\\{2,4,6\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In \\(\\{2,4,6\\}\\) every element is even, so the statement is true. In \\(\\{2,4,7\\}\\) the element \\(7\\) is odd, which is a counterexample, so the statement is false for that domain.",
+      "hint": "Check every element of each proposed domain."
+    },
+    {
+      "id": "dynanca-502-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Multiplicative inverses in different domains",
+      "learningObjective": "Decide in which domain every element has a multiplicative inverse.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "In which domain is the statement \\(\\forall x\\,\\exists y,\\ xy=1\\) true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The non-zero rational numbers"
+        },
+        {
+          "label": "B",
+          "text": "The non-zero integers"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a non-zero rational number \\(x=\\frac{a}{b}\\), the number \\(y=\\frac{b}{a}\\) is a non-zero rational with \\(xy=1\\), so the statement is true in that domain. Among the non-zero integers it fails: for \\(x=2\\) the required \\(y=\\frac{1}{2}\\) is not an integer.",
+      "hint": "For \\(x=2\\), find the \\(y\\) that is required and check whether it lies in the domain."
+    },
+    {
+      "id": "dynanca-502-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Largest domain for a universal equation",
+      "learningObjective": "Determine the set of real numbers on which a universal equation holds.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Which is the largest set \\(D\\) of real numbers for which the statement \\(\\forall x\\in D,\\ x^2=x\\) is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(D=\\{0,1\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(D=\\{-1,0,1\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation \\(x^2=x\\) is equivalent to \\(x(x-1)=0\\), whose solutions are \\(x=0\\) and \\(x=1\\). The statement is true exactly when every element of \\(D\\) is a solution, so the largest possible domain is \\(\\{0,1\\}\\). The number \\(-1\\) is not a solution, since \\((-1)^2=1\\ne -1\\).",
+      "hint": "Solve the equation; the domain may contain only its solutions."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-319",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 319",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-319-q001",
+      "category": "Probability",
+      "concept": "Valid Probability Distribution",
+      "learningObjective": "Identify whether a discrete probability table satisfies the conditions for a probability distribution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which of the following tables defines a valid probability distribution for a discrete random variable \\(X\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P(X=0)=0.2,\\ P(X=1)=0.3,\\ P(X=2)=0.4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(P(X=0)=0.1,\\ P(X=1)=0.4,\\ P(X=2)=0.5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A valid discrete probability distribution must have all probabilities nonnegative and their sum equal to \\(1\\).\nFor option A,\n\\[\n0.2+0.3+0.4=0.9\\neq 1,\n\\]\nso A is not a valid probability distribution.\nFor option B,\n\\[\n0.1+0.4+0.5=1,\n\\]\nand all probabilities are nonnegative, so B is valid.",
+      "hint": "Check that every probability is nonnegative and that the total probability equals \\(1\\)."
+    },
+    {
+      "id": "math-gaokao-319-q002",
+      "category": "Probability",
+      "concept": "Missing Probability in a Discrete Distribution",
+      "learningObjective": "Determine an unknown probability by using the fact that all probabilities sum to \\(1\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A discrete random variable \\(X\\) has distribution \\(P(X=0)=0.2\\), \\(P(X=1)=0.3\\), \\(P(X=2)=p\\), and \\(P(X=3)=0.1\\). Find \\(p\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For a probability distribution, the sum of all probabilities is \\(1\\). Thus\n\\[\n0.2+0.3+p+0.1=1.\n\\]\nThe known probabilities sum to\n\\[\n0.2+0.3+0.1=0.6,\n\\]\nso\n\\[\np=1-0.6=0.4.\n\\]",
+      "hint": "Use the condition that the total probability over all possible values of \\(X\\) must equal \\(1\\)."
+    },
+    {
+      "id": "math-gaokao-319-q003",
+      "category": "Probability",
+      "concept": "Expected Value of a Discrete Random Variable",
+      "learningObjective": "Compute the expected value of a discrete random variable from its distribution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A discrete random variable \\(X\\) has distribution \\(P(X=1)=\\frac12\\), \\(P(X=2)=\\frac14\\), and \\(P(X=3)=\\frac14\\). Find \\(E(X)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac74\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expected value is\n\\[\nE(X)=\\sum xP(X=x).\n\\]\nTherefore,\n\\[\nE(X)=1\\cdot\\frac12+2\\cdot\\frac14+3\\cdot\\frac14\n=\\frac12+\\frac12+\\frac34\n=\\frac74.\n\\]",
+      "hint": "Multiply each value of \\(X\\) by its probability, then add the results."
+    },
+    {
+      "id": "math-gaokao-319-q004",
+      "category": "Probability",
+      "concept": "Variance of a Two-Point Distribution",
+      "learningObjective": "Compute the variance of a simple discrete random variable.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A discrete random variable \\(X\\) has \\(P(X=0)=0.4\\) and \\(P(X=1)=0.6\\). Find \\(\\operatorname{Var}(X)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.24\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First find the mean:\n\\[\nE(X)=0\\cdot0.4+1\\cdot0.6=0.6.\n\\]\nSince \\(X\\) takes only \\(0\\) and \\(1\\), we have \\(X^2=X\\), so\n\\[\nE(X^2)=E(X)=0.6.\n\\]\nThus\n\\[\n\\operatorname{Var}(X)=E(X^2)-[E(X)]^2\n=0.6-(0.6)^2\n=0.6-0.36\n=0.24.\n\\]",
+      "hint": "For a \\(0\\)-\\(1\\) random variable, the variance can be found from \\(p(1-p)\\), where \\(p=P(X=1)\\)."
+    },
+    {
+      "id": "math-gaokao-319-q005",
+      "category": "Probability",
+      "concept": "Binomial Probability",
+      "learningObjective": "Compute a binomial probability for given parameters \\(n\\) and \\(p\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(X\\sim B\\left(4,\\frac12\\right)\\), find \\(P(X=2)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac14\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac38\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For a binomial random variable,\n\\[\nP(X=k)=\\binom{n}{k}p^k(1-p)^{n-k}.\n\\]\nHere \\(n=4\\), \\(k=2\\), and \\(p=\\frac12\\), so\n\\[\nP(X=2)=\\binom{4}{2}\\left(\\frac12\\right)^2\\left(\\frac12\\right)^2.\n\\]\nSince \\(\\binom{4}{2}=6\\),\n\\[\nP(X=2)=6\\cdot\\frac1{16}=\\frac{6}{16}=\\frac38.\n\\]",
+      "hint": "Use the binomial probability formula with \\(n=4\\), \\(k=2\\), and \\(p=\\frac12\\)."
+    },
+    {
+      "id": "math-gaokao-319-q006",
+      "category": "Probability",
+      "concept": "Parameters of a Binomial Distribution",
+      "learningObjective": "Determine the number of trials \\(n\\) from the mean and variance of a binomial distribution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For \\(X\\sim B(n,p)\\), \\(E(X)=6\\) and \\(\\operatorname{Var}(X)=4\\). Find \\(n\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(18\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For a binomial distribution,\n\\[\nE(X)=np,\\qquad \\operatorname{Var}(X)=np(1-p).\n\\]\nGiven \\(E(X)=6\\), we have\n\\[\nnp=6.\n\\]\nGiven \\(\\operatorname{Var}(X)=4\\), we have\n\\[\nnp(1-p)=4.\n\\]\nSubstitute \\(np=6\\):\n\\[\n6(1-p)=4.\n\\]\nThus\n\\[\n1-p=\\frac23,\n\\]\nso\n\\[\np=\\frac13.\n\\]\nThen\n\\[\nn=\\frac{np}{p}=\\frac{6}{\\frac13}=18.\n\\]",
+      "hint": "Use the formulas \\(E(X)=np\\) and \\(\\operatorname{Var}(X)=np(1-p)\\), then solve for \\(p\\) first."
+    },
+    {
+      "id": "math-gaokao-319-q007",
+      "category": "Probability",
+      "concept": "Normalization Constant of a Discrete Distribution",
+      "learningObjective": "Determine a constant so that a given expression defines a valid probability distribution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A discrete random variable \\(X\\) takes values \\(1,2,3\\) with \\(P(X=k)=ck\\) for \\(k=1,2,3\\). Find \\(c\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac13\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probabilities must sum to \\(1\\). Therefore,\n\\[\nP(X=1)+P(X=2)+P(X=3)=1.\n\\]\nUsing \\(P(X=k)=ck\\),\n\\[\nc(1)+c(2)+c(3)=1.\n\\]\nSo\n\\[\n6c=1,\n\\]\nwhich gives\n\\[\nc=\\frac16.\n\\]",
+      "hint": "Write the three probabilities in terms of \\(c\\), then impose the total probability condition."
+    },
+    {
+      "id": "math-gaokao-319-q008",
+      "category": "Probability",
+      "concept": "Conditional Probability from a Discrete Distribution",
+      "learningObjective": "Compute a conditional probability using a given discrete probability distribution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A discrete random variable \\(X\\) has \\(P(X=0)=0.1\\), \\(P(X=1)=0.4\\), and \\(P(X=2)=0.5\\). Find \\(P(X=1\\mid X\\le 1)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the definition of conditional probability,\n\\[\nP(X=1\\mid X\\le 1)=\\frac{P(X=1\\cap X\\le 1)}{P(X\\le 1)}.\n\\]\nSince \\(X=1\\) implies \\(X\\le 1\\),\n\\[\nP(X=1\\cap X\\le 1)=P(X=1)=0.4.\n\\]\nAlso,\n\\[\nP(X\\le 1)=P(X=0)+P(X=1)=0.1+0.4=0.5.\n\\]\nTherefore,\n\\[\nP(X=1\\mid X\\le 1)=\\frac{0.4}{0.5}=0.8.\n\\]",
+      "hint": "Use \\(P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}\\), and first compute \\(P(X\\le 1)\\)."
+    },
+    {
+      "id": "math-gaokao-319-q009",
+      "category": "Probability",
+      "concept": "Expectation of a Function of a Random Variable",
+      "learningObjective": "Compute the expected value of a function of a discrete random variable.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A discrete random variable \\(X\\) has \\(P(X=-1)=\\frac14\\), \\(P(X=0)=\\frac12\\), and \\(P(X=1)=\\frac14\\). Find \\(E(X^2+1)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac32\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By linearity of expectation,\n\\[\nE(X^2+1)=E(X^2)+1.\n\\]\nCompute \\(E(X^2)\\):\n\\[\nE(X^2)=(-1)^2\\cdot\\frac14+0^2\\cdot\\frac12+1^2\\cdot\\frac14\n=\\frac14+0+\\frac14\n=\\frac12.\n\\]\nTherefore,\n\\[\nE(X^2+1)=\\frac12+1=\\frac32.\n\\]",
+      "hint": "Use \\(E(X^2+1)=E(X^2)+1\\), and compute \\(E(X^2)\\) from the distribution table."
+    },
+    {
+      "id": "math-gaokao-319-q010",
+      "category": "Probability",
+      "concept": "Parameter Determination from Expectation",
+      "learningObjective": "Determine an unknown probability parameter using the mean condition.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A discrete random variable \\(X\\) takes values \\(0,1,2\\) with \\(P(X=0)=a\\), \\(P(X=1)=a\\), and \\(P(X=2)=b\\). If \\(E(X)=1\\), find \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac13\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac14\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since the probabilities must sum to \\(1\\),\n\\[\na+a+b=1,\n\\]\nso\n\\[\n2a+b=1.\n\\]\nThe expected value is\n\\[\nE(X)=0\\cdot a+1\\cdot a+2\\cdot b=a+2b.\n\\]\nGiven \\(E(X)=1\\),\n\\[\na+2b=1.\n\\]\nFrom \\(2a+b=1\\), we get \\(b=1-2a\\). Substitute into \\(a+2b=1\\):\n\\[\na+2(1-2a)=1.\n\\]\nThus\n\\[\na+2-4a=1,\n\\]\nso\n\\[\n-3a=-1,\n\\]\nand therefore\n\\[\na=\\frac13.\n\\]",
+      "hint": "Use the total probability condition and the formula for \\(E(X)\\), then solve the resulting system for \\(a\\)."
+    }
+  ]
+}

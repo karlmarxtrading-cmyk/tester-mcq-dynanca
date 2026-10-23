@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-130",
+  "category": "Comprehensive Mathematics",
+  "title": "130. Quantitative Relationships & Measurement: Combining Absolute Measurement Uncertainties",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-130-q001",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Adding Absolute Uncertainties in a Sum",
+      "learningObjective": "Determine the maximum absolute uncertainty of a sum of two measurements.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "Two lengths are measured as \\((5.0 \\pm 0.1)\\text{ cm}\\) and \\((3.0 \\pm 0.2)\\text{ cm}\\). What is their sum with the correct absolute uncertainty? Treat each stated uncertainty as a maximum absolute bound; use linear worst-case propagation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((8.0 \\pm 0.3)\\text{ cm}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((8.0 \\pm 0.1)\\text{ cm}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "When quantities are added, their absolute uncertainties add. The measured values give \\(5.0+3.0=8.0\\text{ cm}\\). The absolute uncertainty is \\(0.1+0.2=0.3\\text{ cm}\\). Therefore, the sum is \\((8.0 \\pm 0.3)\\text{ cm}\\). The alternative uncertainty \\(0.1\\text{ cm}\\) subtracts the bounds, \\(0.2-0.1=0.1\\), although both measurements can err in the same direction, so their maximum contributions must be added.",
+      "hint": "Separate the nominal calculation from the maximum error-bound calculation."
+    },
+    {
+      "id": "dynanca-130-q002",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Adding Absolute Uncertainties for Masses",
+      "learningObjective": "Calculate the total mass and its maximum absolute uncertainty when two masses are combined.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "A mass is recorded as \\((12.5 \\pm 0.1)\\text{ g}\\) and another as \\((7.3 \\pm 0.2)\\text{ g}\\). What is the total mass with the correct absolute uncertainty? Treat each stated uncertainty as a maximum absolute bound; use linear worst-case propagation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((19.8 \\pm 0.3)\\text{ g}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((19.8 \\pm 0.1)\\text{ g}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total mass is \\(12.5+7.3=19.8\\text{ g}\\). Since the masses are added, their absolute uncertainties add: \\(0.1+0.2=0.3\\text{ g}\\). Therefore, the total mass is \\((19.8 \\pm 0.3)\\text{ g}\\). The alternative uncertainty \\(0.1\\text{ g}\\) subtracts the bounds, \\(0.2-0.1=0.1\\), although both measurements can err in the same direction, so their maximum contributions must be added.",
+      "hint": "Consider which endpoint choices make the result largest or smallest."
+    },
+    {
+      "id": "dynanca-130-q003",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Adding Absolute Uncertainties in a Difference",
+      "learningObjective": "Determine the maximum absolute uncertainty of a difference of two measurements.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "A length is \\((15.0 \\pm 0.2)\\text{ cm}\\), and a shorter length is \\((6.0 \\pm 0.1)\\text{ cm}\\). What is their difference with the correct absolute uncertainty? Treat each stated uncertainty as a maximum absolute bound; use linear worst-case propagation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((9.0 \\pm 0.3)\\text{ cm}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((9.0 \\pm 0.1)\\text{ cm}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The difference in measured values is \\(15.0-6.0=9.0\\text{ cm}\\). For a difference, the absolute uncertainties still add: \\(0.2+0.1=0.3\\text{ cm}\\). Therefore, the difference is \\((9.0 \\pm 0.3)\\text{ cm}\\). The alternative \\((9.0 \\pm 0.1)\\text{ cm}\\) subtracts or omits an uncertainty contribution; a subtracted measurement can still vary in either direction, so its maximum contribution must be added.",
+      "hint": "A subtracted measurement can vary in either direction."
+    },
+    {
+      "id": "dynanca-130-q004",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Adding Absolute Uncertainties for Times",
+      "learningObjective": "Calculate the total time and its maximum absolute uncertainty when two time intervals are added.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A process takes \\((20.0 \\pm 0.3)\\text{ s}\\), and then another step takes \\((5.0 \\pm 0.4)\\text{ s}\\). What is the total time with the correct absolute uncertainty? Treat each stated uncertainty as a maximum absolute bound; use linear worst-case propagation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((25.0 \\pm 0.1)\\text{ s}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((25.0 \\pm 0.7)\\text{ s}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total measured time is \\(20.0+5.0=25.0\\text{ s}\\). The absolute uncertainties add: \\(0.3+0.4=0.7\\text{ s}\\). Therefore, the total time is \\((25.0 \\pm 0.7)\\text{ s}\\). The alternative uncertainty \\(0.1\\text{ s}\\) subtracts the bounds, \\(0.4-0.3=0.1\\), although both measurements can err in the same direction, so their maximum contributions must be added.",
+      "hint": "Separate the nominal calculation from the maximum error-bound calculation."
+    },
+    {
+      "id": "dynanca-130-q005",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Adding Absolute Uncertainties in a Difference",
+      "learningObjective": "Calculate the difference of two masses and its maximum absolute uncertainty.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A full container has mass \\((50 \\pm 2)\\text{ kg}\\), and the same container when empty has mass \\((30 \\pm 3)\\text{ kg}\\). What is the mass of the contents with the correct absolute uncertainty? Treat each stated uncertainty as a maximum absolute bound; use linear worst-case propagation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((20 \\pm 5)\\text{ kg}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((20 \\pm 1)\\text{ kg}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The mass of the contents is \\(50-30=20\\text{ kg}\\). Since this is a difference, the absolute uncertainties add: \\(2+3=5\\text{ kg}\\). Therefore, the mass is \\((20 \\pm 5)\\text{ kg}\\). The alternative \\((20 \\pm 1)\\text{ kg}\\) subtracts or omits an uncertainty contribution; a subtracted measurement can still vary in either direction, so its maximum contribution must be added.",
+      "hint": "Consider which endpoint choices make the result largest or smallest."
+    },
+    {
+      "id": "dynanca-130-q006",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Adding Absolute Uncertainties for Three Measurements",
+      "learningObjective": "Determine the maximum absolute uncertainty when three measured quantities are added.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Three measurements are \\((1.2 \\pm 0.1)\\), \\((2.3 \\pm 0.2)\\), and \\((3.4 \\pm 0.3)\\), all in metres. What is their sum with the correct absolute uncertainty? Treat each stated uncertainty as a maximum absolute bound; use linear worst-case propagation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((6.9 \\pm 0.6)\\text{ m}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((6.9 \\pm 0.3)\\text{ m}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sum of the measured values is \\(1.2+2.3+3.4=6.9\\text{ m}\\). The absolute uncertainties add: \\(0.1+0.2+0.3=0.6\\text{ m}\\). Therefore, the sum is \\((6.9 \\pm 0.6)\\text{ m}\\). The alternative \\((6.9 \\pm 0.3)\\text{ m}\\) uses only the largest individual uncertainty instead of adding all maximum contributions.",
+      "hint": "Consider how far each of the three measurements can push the total in the same direction."
+    },
+    {
+      "id": "dynanca-130-q007",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Total Length and Maximum Absolute Uncertainty",
+      "learningObjective": "Calculate the total length of two segments and its maximum absolute uncertainty.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A path has two segments: \\((10.0 \\pm 0.2)\\text{ m}\\) and \\((4.5 \\pm 0.3)\\text{ m}\\). What is the total length with the correct absolute uncertainty? Treat each stated uncertainty as a maximum absolute bound; use linear worst-case propagation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((14.5 \\pm 0.5)\\text{ m}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((14.5 \\pm 0.1)\\text{ m}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total length is \\(10.0+4.5=14.5\\text{ m}\\). The absolute uncertainties add: \\(0.2+0.3=0.5\\text{ m}\\). Therefore, the total length is \\((14.5 \\pm 0.5)\\text{ m}\\). The alternative uncertainty \\(0.1\\text{ m}\\) subtracts the bounds, \\(0.3-0.2=0.1\\), although both measurements can err in the same direction, so their maximum contributions must be added.",
+      "hint": "Separate the nominal calculation from the maximum error-bound calculation."
+    },
+    {
+      "id": "dynanca-130-q008",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Maximum Absolute Uncertainty in a Combined Sum and Difference",
+      "learningObjective": "Determine the maximum absolute uncertainty of \\(x=a+b-c\\) from three measurements.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A quantity is given by \\(x=a+b-c\\), where \\(a=(8.0 \\pm 0.2)\\text{ cm}\\), \\(b=(5.0 \\pm 0.1)\\text{ cm}\\), and \\(c=(2.0 \\pm 0.3)\\text{ cm}\\). What is \\(x\\) with the correct absolute uncertainty? Treat each stated uncertainty as a maximum absolute bound; use linear worst-case propagation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((11.0\\pm0.0)\\text{ cm}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((11.0 \\pm 0.6)\\text{ cm}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The value is \\(x=8.0+5.0-2.0=11.0\\text{ cm}\\). In both addition and subtraction, absolute uncertainties add. Therefore, the uncertainty is \\(0.2+0.1+0.3=0.6\\text{ cm}\\). Hence, \\(x=(11.0 \\pm 0.6)\\text{ cm}\\). The alternative combines the bounds with the nominal signs, \\(0.2+0.1-0.3=0.0\\), instead of adding their maximum contributions.",
+      "hint": "Consider which endpoint choices make the result largest or smallest."
+    },
+    {
+      "id": "dynanca-130-q009",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Maximum Absolute Uncertainty of a Three-Term Sum",
+      "learningObjective": "Calculate the maximum absolute uncertainty of a sum of three decimal measurements.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Three measurements are \\((2.50 \\pm 0.02)\\text{ m}\\), \\((1.20 \\pm 0.03)\\text{ m}\\), and \\((0.80 \\pm 0.04)\\text{ m}\\). What is their sum with the correct absolute uncertainty? Treat each stated uncertainty as a maximum absolute bound; use linear worst-case propagation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((4.50 \\pm 0.05)\\text{ m}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((4.50 \\pm 0.09)\\text{ m}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sum of the measured values is \\(2.50+1.20+0.80=4.50\\text{ m}\\). The absolute uncertainties add: \\(0.02+0.03+0.04=0.09\\text{ m}\\). Therefore, the sum is \\((4.50 \\pm 0.09)\\text{ m}\\). The alternative bound \\(0.05\\text{ m}\\) adds only the first two contributions, \\(0.02+0.03=0.05\\), and omits the third.",
+      "hint": "Check that the bound of every measurement is included in the worst-case total."
+    },
+    {
+      "id": "dynanca-130-q010",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Maximum Absolute Uncertainty with an Exact Multiplier",
+      "learningObjective": "Determine the maximum absolute uncertainty of \\(x=a+2b\\) using the rules for exact multipliers and sums.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A quantity is \\(x=a+2b\\), where \\(a=(5.0 \\pm 0.1)\\text{ cm}\\) and \\(b=(3.0 \\pm 0.2)\\text{ cm}\\). What is \\(x\\) with the correct absolute uncertainty? Treat each stated uncertainty as a maximum absolute bound; use linear worst-case propagation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((11.0 \\pm 0.5)\\text{ cm}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((11.0 \\pm 0.3)\\text{ cm}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The value is \\(x=5.0+2(3.0)=11.0\\text{ cm}\\). The exact multiplier \\(2\\) multiplies the absolute uncertainty of \\(b\\): \\(2\\times 0.2=0.4\\text{ cm}\\). Then the uncertainties add: \\(0.1+0.4=0.5\\text{ cm}\\). Therefore, \\(x=(11.0 \\pm 0.5)\\text{ cm}\\). The alternative \\((11.0 \\pm 0.3)\\text{ cm}\\) does not multiply the uncertainty of the repeated term by its coefficient.",
+      "hint": "Check how the coefficient of the second measurement affects its bound."
+    }
+  ]
+}

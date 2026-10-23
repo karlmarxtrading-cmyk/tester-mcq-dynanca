@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-306",
+  "category": "Comprehensive Mathematics",
+  "title": "306. Functions, Graphs & Transformations: Determining Asymptotic Behavior from Graphs",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-306-q001",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Horizontal Asymptote of a Rational Function",
+      "learningObjective": "Determine the horizontal asymptote of a rational function from its algebraic rule.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The graph of \\(f(x)=\\frac{2x+1}{x-3}\\) has a horizontal asymptote. What is the equation of this horizontal asymptote?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For a rational function, compare the degrees of the numerator and denominator. Here both have degree 1. The horizontal asymptote is the ratio of the leading coefficients: \\(2/1=2\\). Therefore, as \\(x\\to\\pm\\infty\\), \\(f(x)\\to 2\\), so the horizontal asymptote is \\(y=2\\).",
+      "hint": "When numerator and denominator have the same degree, use the ratio of the leading coefficients."
+    },
+    {
+      "id": "dynanca-306-q002",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Vertical Asymptote of a Rational Function",
+      "learningObjective": "Determine the vertical asymptote of a rational function by locating the zero of the denominator.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The graph of \\(f(x)=\\frac{1}{x+4}\\) has a vertical asymptote. What is its equation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A vertical asymptote occurs where the denominator is zero and the numerator is nonzero. Set \\(x+4=0\\), so \\(x=-4\\). As \\(x\\to -4\\), the values of \\(f(x)\\) become unbounded. Thus the vertical asymptote is \\(x=-4\\).",
+      "hint": "Set the denominator equal to zero and solve for \\(x\\)."
+    },
+    {
+      "id": "dynanca-306-q003",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "End Behavior of a Polynomial Function",
+      "learningObjective": "Determine the end behavior of a polynomial function from its leading term.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The graph of \\(f(x)=3x^4-x^2+1\\) is considered as \\(x\\to -\\infty\\). What is the asymptotic end behavior of the graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(x)\\to -\\infty\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f(x)\\to +\\infty\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For large \\(|x|\\), the leading term \\(3x^4\\) dominates. Since the degree 4 is even and the leading coefficient 3 is positive, \\(3x^4\\to +\\infty\\) as \\(x\\to -\\infty\\). Therefore, \\(f(x)\\to +\\infty\\).",
+      "hint": "Look at the degree and sign of the leading term."
+    },
+    {
+      "id": "dynanca-306-q004",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Horizontal Asymptote of an Exponential Function",
+      "learningObjective": "Identify the horizontal asymptote of an exponential function from its rule.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The graph of \\(f(x)=2^{-x}+3\\) approaches a horizontal asymptote as \\(x\\to +\\infty\\). What is the equation of this horizontal asymptote?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "As \\(x\\to +\\infty\\), \\(2^{-x}\\to 0\\). Therefore, \\(f(x)=2^{-x}+3\\to 0+3=3\\). So the graph approaches the horizontal line \\(y=3\\).",
+      "hint": "Determine the limit of the exponential term as \\(x\\to +\\infty\\)."
+    },
+    {
+      "id": "dynanca-306-q005",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Vertical Asymptote After Simplifying a Rational Function",
+      "learningObjective": "Determine the vertical asymptote of a rational function after canceling a common factor.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The graph of \\(f(x)=\\frac{x+1}{x^2-1}\\) has one vertical asymptote. What is its equation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor the denominator: \\(x^2-1=(x-1)(x+1)\\). Then\n\\[\nf(x)=\\frac{x+1}{(x-1)(x+1)}=\\frac{1}{x-1}\n\\]\nfor \\(x\\ne -1\\). The factor \\(x+1\\) cancels, so \\(x=-1\\) is a hole, not a vertical asymptote. The remaining denominator \\(x-1\\) is zero at \\(x=1\\), so the vertical asymptote is \\(x=1\\).",
+      "hint": "Factor and cancel common factors before locating vertical asymptotes."
+    },
+    {
+      "id": "dynanca-306-q006",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Horizontal Asymptote of a Rational Function with Equal Degrees",
+      "learningObjective": "Determine the horizontal asymptote of a rational function when numerator and denominator have the same degree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The graph of \\(f(x)=\\frac{3x^2+2}{x^2-5}\\) has a horizontal asymptote. What is its equation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The numerator and denominator both have degree 2. For equal degrees, the horizontal asymptote is the ratio of the leading coefficients: \\(\\frac{3}{1}=3\\). Therefore, as \\(x\\to\\pm\\infty\\), \\(f(x)\\to 3\\), so the horizontal asymptote is \\(y=3\\).",
+      "hint": "Compare the degrees first, then use the leading coefficients if the degrees are equal."
+    },
+    {
+      "id": "dynanca-306-q007",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Horizontal Asymptote When Denominator Degree Is Larger",
+      "learningObjective": "Determine the horizontal asymptote of a rational function when the denominator degree is greater than the numerator degree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The graph of \\(f(x)=\\frac{2x+1}{x^2+3}\\) has a horizontal asymptote. What is its equation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The numerator has degree 1 and the denominator has degree 2. Since the denominator degree is larger, the function tends to \\(0\\) as \\(x\\to\\pm\\infty\\). Therefore, the horizontal asymptote is \\(y=0\\).",
+      "hint": "If the denominator degree is larger, the graph approaches the \\(x\\)-axis at infinity."
+    },
+    {
+      "id": "dynanca-306-q008",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Identifying a Vertical Asymptote from a Graph Description",
+      "learningObjective": "Identify the equation of a vertical asymptote from a description of the graph's behavior.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The graph of a function \\(f\\) has a vertical asymptote at \\(x=-3\\). As \\(x\\to -3^{-}\\), \\(f(x)\\to -\\infty\\), and as \\(x\\to -3^{+}\\), \\(f(x)\\to +\\infty\\). Which line is the vertical asymptote?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=-3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A vertical asymptote is a vertical line, so its equation has the form \\(x=a\\). The described unbounded behavior occurs at \\(x=-3\\), so the vertical asymptote is the line \\(x=-3\\). The line \\(y=-3\\) is horizontal, not vertical.",
+      "hint": "Vertical asymptotes are written as \\(x=a\\), not \\(y=a\\)."
+    },
+    {
+      "id": "dynanca-306-q009",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Oblique Asymptote of a Rational Function",
+      "learningObjective": "Determine the oblique asymptote of a rational function by polynomial division.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The graph of \\(f(x)=\\frac{x^2+1}{x-2}\\) has an oblique asymptote. What is its equation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=x-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=x+2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Divide \\(x^2+1\\) by \\(x-2\\):\n\\[\nx^2+1=(x-2)(x+2)+5.\n\\]\nThus\n\\[\nf(x)=x+2+\\frac{5}{x-2}.\n\\]\nAs \\(x\\to\\pm\\infty\\), \\(\\frac{5}{x-2}\\to 0\\), so the graph approaches the line \\(y=x+2\\). Therefore, the oblique asymptote is \\(y=x+2\\).",
+      "hint": "Perform polynomial division and identify the linear part of the result."
+    },
+    {
+      "id": "dynanca-306-q010",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Behavior Near a Vertical Asymptote",
+      "learningObjective": "Determine the one-sided asymptotic behavior of a rational function near a vertical asymptote.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "The graph of \\(f(x)=\\frac{1}{x-2}\\) has a vertical asymptote at \\(x=2\\). Which statement correctly describes the behavior as \\(x\\to 2^{+}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(x)\\to +\\infty\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f(x)\\to -\\infty\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "As \\(x\\to 2^{+}\\), the values of \\(x-2\\) are positive and approach \\(0\\). Therefore, \\(\\frac{1}{x-2}\\) becomes a large positive number, so \\(f(x)\\to +\\infty\\). Hence the correct behavior is \\(f(x)\\to +\\infty\\).",
+      "hint": "Check the sign of the denominator when \\(x\\) is just to the right of \\(2\\)."
+    }
+  ]
+}

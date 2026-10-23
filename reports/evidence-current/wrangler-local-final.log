@@ -1,0 +1,95 @@
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mProxy environment variables detected. We'll use your proxy for fetch requests.[0m
+
+
+
+ ⛅️ wrangler 4.149.0
+────────────────────
+No Functions. Shimming...
+✨ Parsed 1 valid header rule.
+Your Worker has access to the following bindings:
+Binding                                                                   Resource                  Mode
+env.CF_PAGES ("1")                                                        Environment Variable      local
+env.CF_PAGES_BRANCH ("local")                                             Environment Variable      local
+env.CF_PAGES_COMMIT_SHA ("0000000000000000000000000000000000000...")      Environment Variable      local
+env.CF_PAGES_URL ("https://00000000.dynanca-real-mcq-loc...")             Environment Variable      local
+
+⎔ Starting local server...
+[wrangler:warn] Unable to fetch the `Request.cf` object! Falling back to a default placeholder...
+TimeoutError: The operation was aborted due to timeout
+    at new DOMException (node:internal/per_context/domexception:76:18)
+    at Timeout._onTimeout (node:internal/abort_controller:210:9)
+    at listOnTimeout (node:internal/timers:635:17)
+    at process.processTimers (node:internal/timers:571:7)
+    at /workspace/scratch/4cac8e48f4b2/project/REAL MCQ/node_modules/undici/index.js:157:7
+    at async setupCf (/workspace/scratch/4cac8e48f4b2/project/REAL MCQ/node_modules/miniflare/dist/src/index.js:78690:17)
+    at async #assembleConfig (/workspace/scratch/4cac8e48f4b2/project/REAL MCQ/node_modules/miniflare/dist/src/index.js:134170:21)
+    at async #assembleAndUpdateConfigInternal (/workspace/scratch/4cac8e48f4b2/project/REAL MCQ/node_modules/miniflare/dist/src/index.js:134569:21)
+    at async #assembleAndUpdateConfig (/workspace/scratch/4cac8e48f4b2/project/REAL MCQ/node_modules/miniflare/dist/src/index.js:134556:7)
+    at async /workspace/scratch/4cac8e48f4b2/project/REAL MCQ/node_modules/miniflare/dist/src/index.js:133333:7
+    at async Mutex.runWith (/workspace/scratch/4cac8e48f4b2/project/REAL MCQ/node_modules/miniflare/dist/src/index.js:80693:16)
+[wrangler:warn] Unable to fetch the `Request.cf` object! Falling back to a default placeholder...
+TimeoutError: The operation was aborted due to timeout
+    at new DOMException (node:internal/per_context/domexception:76:18)
+    at Timeout._onTimeout (node:internal/abort_controller:210:9)
+    at listOnTimeout (node:internal/timers:635:17)
+    at process.processTimers (node:internal/timers:571:7)
+    at /workspace/scratch/4cac8e48f4b2/project/REAL MCQ/node_modules/undici/index.js:157:7
+    at async setupCf (/workspace/scratch/4cac8e48f4b2/project/REAL MCQ/node_modules/miniflare/dist/src/index.js:78690:17)
+    at async #assembleConfig (/workspace/scratch/4cac8e48f4b2/project/REAL MCQ/node_modules/miniflare/dist/src/index.js:134170:21)
+    at async #assembleAndUpdateConfigInternal (/workspace/scratch/4cac8e48f4b2/project/REAL MCQ/node_modules/miniflare/dist/src/index.js:134569:21)
+    at async #assembleAndUpdateConfig (/workspace/scratch/4cac8e48f4b2/project/REAL MCQ/node_modules/miniflare/dist/src/index.js:134556:7)
+    at async /workspace/scratch/4cac8e48f4b2/project/REAL MCQ/node_modules/miniflare/dist/src/index.js:133333:7
+    at async Mutex.runWith (/workspace/scratch/4cac8e48f4b2/project/REAL MCQ/node_modules/miniflare/dist/src/index.js:80693:16)
+    at async #waitForReady (/workspace/scratch/4cac8e48f4b2/project/REAL MCQ/node_modules/miniflare/dist/src/index.js:134764:5)
+    at async #onBundleComplete (/workspace/scratch/4cac8e48f4b2/project/REAL MCQ/node_modules/wrangler/wrangler-dist/cli.js:370258:33)
+    at async Mutex.runWith (/workspace/scratch/4cac8e48f4b2/project/REAL MCQ/node_modules/miniflare/dist/src/index.js:80693:16)
+[wrangler:info] Ready on http://127.0.0.1:8790
+[wrangler:info] GET / 200 OK (12ms)
+[wrangler:info] GET /assets/css/catalog.css 200 OK (6ms)
+[wrangler:info] GET /assets/js/theme.js 200 OK (5ms)
+[wrangler:info] GET /assets/img/logo-dynanca.png 200 OK (7ms)
+[wrangler:info] GET /assets/js/manifest.js 200 OK (4ms)
+[wrangler:info] GET /assets/js/catalog-model.js 200 OK (4ms)
+[wrangler:info] GET /assets/js/catalog.js 200 OK (5ms)
+[wrangler:info] GET /master-manifest.json 200 OK (9ms)
+[wrangler:info] GET /assets/data/bank-index.json 200 OK (14ms)
+[wrangler:info] GET /practice/index.html 308 Permanent Redirect (5ms)
+[wrangler:info] GET /practice/ 200 OK (4ms)
+[wrangler:info] GET /assets/css/shell.css 200 OK (24ms)
+[wrangler:info] GET /practice/practices.css 200 OK (26ms)
+[wrangler:info] GET /assets/css/practice-status.css 200 OK (26ms)
+[wrangler:info] GET /practice/practice-state.js 200 OK (28ms)
+[wrangler:info] GET /practice/venn-renderer.js 200 OK (29ms)
+[wrangler:info] GET /assets/js/theme.js 304 Not Modified (31ms)
+[wrangler:info] GET /practice/math-visuals.js 200 OK (3ms)
+[wrangler:info] GET /practice/practice-engine.js 200 OK (6ms)
+[wrangler:info] GET /practice/data-loader.js 200 OK (8ms)
+[wrangler:info] GET /assets/js/shell.js 200 OK (8ms)
+[wrangler:info] GET /assets/js/reset-progress.js 200 OK (8ms)
+[wrangler:info] GET /assets/js/manifest.js 304 Not Modified (10ms)
+[wrangler:info] GET /assets/vendor/mathjax/tex-chtml-full.js 200 OK (16ms)
+[wrangler:info] GET /assets/img/logo-dynanca.png 304 Not Modified (40ms)
+[wrangler:info] GET /master-manifest.json 304 Not Modified (20ms)
+[wrangler:info] GET /questions/computer%20science/ml.json 200 OK (5ms)
+[wrangler:info] GET /practice/ 304 Not Modified (3ms)
+[wrangler:info] GET /assets/css/shell.css 304 Not Modified (10ms)
+[wrangler:info] GET /practice/practices.css 304 Not Modified (9ms)
+[wrangler:info] GET /assets/css/practice-status.css 304 Not Modified (10ms)
+[wrangler:info] GET /practice/venn-renderer.js 304 Not Modified (11ms)
+[wrangler:info] GET /assets/js/theme.js 304 Not Modified (11ms)
+[wrangler:info] GET /practice/practice-state.js 304 Not Modified (11ms)
+[wrangler:info] GET /practice/math-visuals.js 304 Not Modified (6ms)
+[wrangler:info] GET /practice/practice-engine.js 304 Not Modified (6ms)
+[wrangler:info] GET /assets/js/manifest.js 304 Not Modified (8ms)
+[wrangler:info] GET /practice/data-loader.js 304 Not Modified (8ms)
+[wrangler:info] GET /assets/vendor/mathjax/tex-chtml-full.js 304 Not Modified (12ms)
+[wrangler:info] GET /assets/js/shell.js 304 Not Modified (10ms)
+[wrangler:info] GET /assets/js/reset-progress.js 304 Not Modified (10ms)
+[wrangler:info] GET /assets/img/logo-dynanca.png 304 Not Modified (14ms)
+[wrangler:info] GET /master-manifest.json 304 Not Modified (18ms)
+[wrangler:info] GET /questions/computer%20science/ml.json 304 Not Modified (6ms)
+[wrangler:info] GET /not-a-page 404 Not Found (6ms)
+[wrangler:info] GET /package.json 404 Not Found (3ms)
+[wrangler:info] GET /audit/CONTENT_AUDIT.json 404 Not Found (4ms)
+[wrangler:info] GET /master-manifest.json 200 OK (7ms)
+[wrangler:info] GET /questions/comprehensive%20math/dynanca%20-%20300.json 200 OK (4ms)

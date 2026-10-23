@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-556",
+  "category": "Comprehensive Mathematics",
+  "title": "556. Discrete Mathematics, Counting & Graph Theory: Binomial Coefficients",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-556-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Evaluating a binomial coefficient",
+      "learningObjective": "Evaluate a small binomial coefficient from its factorial formula.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The binomial coefficient is defined by \\(\\binom{n}{k}=\\dfrac{n!}{k!\\,(n-k)!}\\). What is \\(\\binom{5}{2}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(\\binom{5}{2}=\\dfrac{5!}{2!\\,3!}=\\dfrac{120}{2\\cdot 6}=10\\). The number \\(20=\\dfrac{5!}{3!}\\) omits the factor \\(2!\\) in the denominator.",
+      "hint": "Both \\(k!\\) and \\((n-k)!\\) appear in the denominator."
+    },
+    {
+      "id": "dynanca-556-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The ends of a row",
+      "learningObjective": "Evaluate a binomial coefficient with lower index zero.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\binom{9}{0}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the formula, \\(\\binom{9}{0}=\\dfrac{9!}{0!\\,9!}=1\\), because \\(0!=1\\). In counting terms, there is exactly one way to choose nothing from \\(9\\) objects: take none. The value is not \\(0\\).",
+      "hint": "Recall the value of \\(0!\\), or count the ways to choose no object."
+    },
+    {
+      "id": "dynanca-556-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A coefficient with lower index four",
+      "learningObjective": "Evaluate a binomial coefficient by cancelling factorials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\binom{9}{4}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3024\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(126\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(\\binom{9}{4}=\\dfrac{9\\cdot 8\\cdot 7\\cdot 6}{4\\cdot 3\\cdot 2\\cdot 1}=\\dfrac{3024}{24}=126\\). The number \\(3024\\) is only the numerator; the division by \\(4!\\) is still required.",
+      "hint": "Write four decreasing factors in the numerator and \\(4!\\) in the denominator."
+    },
+    {
+      "id": "dynanca-556-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Symmetry",
+      "learningObjective": "Use the symmetry of binomial coefficients.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which binomial coefficient is equal to \\(\\binom{15}{4}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\binom{15}{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\binom{15}{11}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Choosing \\(4\\) objects from \\(15\\) is the same as choosing the \\(11\\) objects that are left out, so \\(\\binom{15}{4}=\\binom{15}{11}\\). In general \\(\\binom{n}{k}=\\binom{n}{n-k}\\). The coefficient \\(\\binom{15}{5}=3003\\) differs from \\(\\binom{15}{4}=1365\\).",
+      "hint": "Compare choosing objects with choosing the objects that are not taken."
+    },
+    {
+      "id": "dynanca-556-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A coefficient with lower index two",
+      "learningObjective": "Evaluate a binomial coefficient with lower index two.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is \\(\\binom{20}{2}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(380\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(190\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(\\binom{20}{2}=\\dfrac{20\\cdot 19}{2}=190\\). The number \\(380=20\\cdot 19\\) is the number of ordered pairs; the division by \\(2!\\) has been forgotten.",
+      "hint": "Use \\(\\binom{n}{2}=\\dfrac{n(n-1)}{2}\\)."
+    },
+    {
+      "id": "dynanca-556-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "From one coefficient to the next",
+      "learningObjective": "Compute a binomial coefficient from its neighbour in the same row.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Given that \\(\\binom{10}{3}=120\\), what is \\(\\binom{10}{4}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(210\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(160\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Neighbouring coefficients satisfy \\(\\binom{n}{k+1}=\\binom{n}{k}\\cdot\\dfrac{n-k}{k+1}\\). With \\(n=10\\) and \\(k=3\\): \\(\\binom{10}{4}=120\\cdot\\dfrac{7}{4}=210\\). The number \\(160=120\\cdot\\dfrac{4}{3}\\) uses the wrong ratio.",
+      "hint": "Compare the factorial formulas of the two coefficients and cancel the common factors."
+    },
+    {
+      "id": "dynanca-556-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The largest coefficient in a row",
+      "learningObjective": "Locate the largest binomial coefficient for a fixed upper index.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "For which value of \\(k\\) is \\(\\binom{8}{k}\\) largest?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The coefficients \\(\\binom{8}{k}\\) for \\(k=0,\\dots,8\\) are \\(1,8,28,56,70,56,28,8,1\\). They increase up to the middle and then decrease symmetrically, so the largest is \\(\\binom{8}{4}=70\\). At \\(k=8\\) the value is only \\(1\\).",
+      "hint": "List the whole row, or use its symmetry."
+    },
+    {
+      "id": "dynanca-556-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The absorption identity",
+      "learningObjective": "Recognise an identity for a binomial coefficient multiplied by its lower index.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For \\(1\\le k\\le n\\), which expression is equal to \\(k\\binom{n}{k}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n\\binom{n-1}{k-1}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n\\binom{n}{k-1}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Count the ways to choose a committee of \\(k\\) from \\(n\\) people and then a chair from the committee: \\(k\\binom{n}{k}\\). Alternatively choose the chair first, in \\(n\\) ways, and then the other \\(k-1\\) members from the remaining \\(n-1\\) people: \\(n\\binom{n-1}{k-1}\\). Both count the same thing. A check with \\(n=4\\), \\(k=2\\) gives \\(2\\cdot 6=12=4\\cdot 3\\), while \\(n\\binom{n}{k-1}=4\\cdot 4=16\\).",
+      "hint": "Test each candidate with small values such as \\(n=4\\) and \\(k=2\\)."
+    },
+    {
+      "id": "dynanca-556-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An equation between two coefficients",
+      "learningObjective": "Solve an equation relating two binomial coefficients.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "For which positive integer \\(n\\) is \\(\\binom{n}{3}=4\\binom{n}{2}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n=12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n=14\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Dividing, \\(\\dfrac{\\binom{n}{3}}{\\binom{n}{2}}=\\dfrac{n-2}{3}\\). Setting this equal to \\(4\\) gives \\(n-2=12\\), so \\(n=14\\). Check: \\(\\binom{14}{3}=364\\) and \\(4\\binom{14}{2}=4\\cdot 91=364\\). For \\(n=12\\) the two sides are \\(220\\) and \\(264\\).",
+      "hint": "Form the quotient of the two coefficients and simplify it."
+    },
+    {
+      "id": "dynanca-556-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Equal coefficients",
+      "learningObjective": "Use symmetry to solve an equation between binomial coefficients.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For which positive integer \\(n\\) is \\(\\binom{n}{2}=\\binom{n}{5}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n=7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n=10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Within one row, \\(\\binom{n}{j}=\\binom{n}{k}\\) with \\(j\\ne k\\) happens exactly when \\(j+k=n\\), by symmetry and because the row increases up to its middle. So \\(n=2+5=7\\): \\(\\binom{7}{2}=\\binom{7}{5}=21\\). For \\(n=10\\), \\(\\binom{10}{2}=45\\) but \\(\\binom{10}{5}=252\\).",
+      "hint": "Two different positions in the same row hold equal coefficients when they are mirror images of each other."
+    }
+  ]
+}

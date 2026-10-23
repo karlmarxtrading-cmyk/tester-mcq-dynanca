@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-85",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 85",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-85-q001",
+      "category": "Functions",
+      "concept": "Minimum Value of a Quadratic Function",
+      "learningObjective": "Find the minimum value of a quadratic function by completing the square.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the minimum value of \\(f(x)=x^2-4x+5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Complete the square:\n\\[\nf(x)=x^2-4x+5=(x-2)^2+1.\n\\]\nSince \\((x-2)^2\\ge 0\\) for all real \\(x\\), the smallest value occurs when \\((x-2)^2=0\\), giving\n\\[\nf_{\\min}=1.\n\\]\nTherefore, the minimum value is \\(1\\).",
+      "hint": "Rewrite the quadratic in completed-square form to identify its smallest possible value."
+    },
+    {
+      "id": "math-gaokao-85-q002",
+      "category": "Functions",
+      "concept": "Maximum Value of a Quadratic Function",
+      "learningObjective": "Find the maximum value of a downward-opening quadratic function by completing the square.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the maximum value of \\(f(x)=-x^2+6x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Complete the square:\n\\[\nf(x)=-x^2+6x=-(x^2-6x)=-\\bigl((x-3)^2-9\\bigr)=-(x-3)^2+9.\n\\]\nSince \\(-(x-3)^2\\le 0\\) for all real \\(x\\), the largest value occurs when \\((x-3)^2=0\\), giving\n\\[\nf_{\\max}=9.\n\\]\nTherefore, the maximum value is \\(9\\).",
+      "hint": "Complete the square and note that the negative square term reduces the value from a fixed upper number."
+    },
+    {
+      "id": "math-gaokao-85-q003",
+      "category": "Functions",
+      "concept": "Minimum Value on a Closed Interval",
+      "learningObjective": "Find the minimum value of a quadratic function on a closed interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the minimum value of \\(f(x)=x^2-2x+3\\) on the interval \\([0,3]\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Complete the square:\n\\[\nf(x)=x^2-2x+3=(x-1)^2+2.\n\\]\nThe vertex is at \\(x=1\\), which lies in \\([0,3]\\). Thus the minimum value is\n\\[\nf(1)=(1-1)^2+2=2.\n\\]\nChecking the endpoints:\n\\[\nf(0)=3,\\qquad f(3)=9-6+3=6,\n\\]\nboth larger than \\(2\\). Therefore, the minimum value is \\(2\\).",
+      "hint": "Find the vertex of the parabola and check whether it lies inside the given interval."
+    },
+    {
+      "id": "math-gaokao-85-q004",
+      "category": "Functions",
+      "concept": "Maximum and Minimum of a Cubic on a Closed Interval",
+      "learningObjective": "Determine the maximum and minimum values of a cubic function on a closed interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the maximum and minimum values of \\(f(x)=x^3-3x\\) on \\([-2,2]\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "Maximum \\(2\\), minimum \\(-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "Maximum \\(3\\), minimum \\(-3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Find the critical points:\n\\[\nf'(x)=3x^2-3=3(x^2-1),\n\\]\nso \\(f'(x)=0\\) at \\(x=-1\\) and \\(x=1\\). Evaluate \\(f\\) at the critical points and endpoints:\n\\[\nf(-2)=(-8)+6=-2,\n\\]\n\\[\nf(-1)=-1+3=2,\n\\]\n\\[\nf(1)=1-3=-2,\n\\]\n\\[\nf(2)=8-6=2.\n\\]\nThus the maximum value is \\(2\\) and the minimum value is \\(-2\\).",
+      "hint": "Use derivatives to locate critical points, then compare values at critical points and endpoints."
+    },
+    {
+      "id": "math-gaokao-85-q005",
+      "category": "Functions",
+      "concept": "Maximum and Minimum of a Trigonometric Function",
+      "learningObjective": "Determine the maximum and minimum values of a function involving \\(\\sin x\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the maximum and minimum values of \\(f(x)=3+2\\sin x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "Maximum \\(3\\), minimum \\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "Maximum \\(5\\), minimum \\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since\n\\[\n-1\\le \\sin x\\le 1,\n\\]\nmultiplying by \\(2\\) gives\n\\[\n-2\\le 2\\sin x\\le 2.\n\\]\nAdding \\(3\\) gives\n\\[\n1\\le 3+2\\sin x\\le 5.\n\\]\nThus the maximum value is \\(5\\) and the minimum value is \\(1\\).",
+      "hint": "Start from the range of \\(\\sin x\\), then apply the operations in the expression."
+    },
+    {
+      "id": "math-gaokao-85-q006",
+      "category": "Functions",
+      "concept": "Maximum and Minimum of an Exponential Function",
+      "learningObjective": "Determine the maximum and minimum values of an exponential function on a closed interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the maximum and minimum values of \\(f(x)=2^x\\) on \\([1,3]\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "Maximum \\(6\\), minimum \\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "Maximum \\(8\\), minimum \\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The function \\(f(x)=2^x\\) is increasing on \\(\\mathbb{R}\\), so on \\([1,3]\\) its minimum occurs at \\(x=1\\) and its maximum occurs at \\(x=3\\).\n\\[\nf(1)=2^1=2,\n\\]\n\\[\nf(3)=2^3=8.\n\\]\nTherefore, the maximum value is \\(8\\) and the minimum value is \\(2\\).",
+      "hint": "Determine whether the exponential function is increasing or decreasing on the interval."
+    },
+    {
+      "id": "math-gaokao-85-q007",
+      "category": "Functions",
+      "concept": "Parameter from a Minimum Value",
+      "learningObjective": "Determine a parameter so that a quadratic function has a specified minimum value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The function \\(f(x)=x^2-2ax+3\\) has minimum value \\(2\\). Find all possible values of \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a=\\pm 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a=1\\) only"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Complete the square:\n\\[\nf(x)=x^2-2ax+3=(x-a)^2+3-a^2.\n\\]\nThe minimum value is\n\\[\n3-a^2.\n\\]\nGiven that this minimum is \\(2\\), we set\n\\[\n3-a^2=2.\n\\]\nThen\n\\[\na^2=1,\n\\]\nso\n\\[\na=\\pm 1.\n\\]\nTherefore, the possible values are \\(a=1\\) and \\(a=-1\\).",
+      "hint": "Write the quadratic in completed-square form and set its minimum expression equal to the given value."
+    },
+    {
+      "id": "math-gaokao-85-q008",
+      "category": "Functions",
+      "concept": "Maximum and Minimum of a Rational Function",
+      "learningObjective": "Determine the maximum and minimum values of \\(f(x)=\\dfrac{x}{x^2+1}\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the maximum and minimum values of \\(f(x)=\\dfrac{x}{x^2+1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "Maximum \\(1\\), minimum \\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "Maximum \\(\\dfrac{1}{2}\\), minimum \\(-\\dfrac{1}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For all real \\(x\\),\n\\[\n(|x|-1)^2\\ge 0.\n\\]\nExpanding gives\n\\[\nx^2-2|x|+1\\ge 0,\n\\]\nso\n\\[\nx^2+1\\ge 2|x|.\n\\]\nTherefore,\n\\[\n|f(x)|=\\frac{|x|}{x^2+1}\\le \\frac{|x|}{2|x|}=\\frac{1}{2}\n\\]\nfor \\(x\\ne 0\\). The inequality also holds at \\(x=0\\).\nEquality occurs when \\(|x|=1\\), that is, \\(x=1\\) or \\(x=-1\\). Thus\n\\[\nf(1)=\\frac{1}{2},\\qquad f(-1)=-\\frac{1}{2}.\n\\]\nSo the maximum value is \\(\\dfrac{1}{2}\\) and the minimum value is \\(-\\dfrac{1}{2}\\).",
+      "hint": "Compare \\(x^2+1\\) with \\(2|x|\\), then estimate the absolute value of the function."
+    },
+    {
+      "id": "math-gaokao-85-q009",
+      "category": "Functions",
+      "concept": "Maximum and Minimum of an Absolute Value Function",
+      "learningObjective": "Determine the maximum and minimum values of a sum of absolute values on a closed interval.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Find the maximum and minimum values of \\(f(x)=|x-1|+|x-3|\\) on \\([0,4]\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "Maximum \\(4\\), minimum \\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "Maximum \\(3\\), minimum \\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Consider the three intervals determined by \\(1\\) and \\(3\\).\nFor \\(0\\le x\\le 1\\):\n\\[\nf(x)=(1-x)+(3-x)=4-2x,\n\\]\nwhich decreases from \\(4\\) at \\(x=0\\) to \\(2\\) at \\(x=1\\).\nFor \\(1\\le x\\le 3\\):\n\\[\nf(x)=(x-1)+(3-x)=2.\n\\]\nFor \\(3\\le x\\le 4\\):\n\\[\nf(x)=(x-1)+(x-3)=2x-4,\n\\]\nwhich increases from \\(2\\) at \\(x=3\\) to \\(4\\) at \\(x=4\\).\nThus the maximum value is \\(4\\) and the minimum value is \\(2\\).",
+      "hint": "Break the interval at the points where the expressions inside the absolute values change sign."
+    },
+    {
+      "id": "math-gaokao-85-q010",
+      "category": "Functions",
+      "concept": "Maximum and Minimum on a Closed Interval",
+      "learningObjective": "Determine the maximum and minimum values of \\(f(x)=x+\\dfrac{1}{x}\\) on a closed interval.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the minimum and maximum values of \\(f(x)=x+\\dfrac{1}{x}\\) on \\([1,3]\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "Minimum \\(2\\), maximum \\(\\dfrac{10}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "Minimum \\(2\\), maximum \\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Differentiate:\n\\[\nf'(x)=1-\\frac{1}{x^2}.\n\\]\nOn \\([1,3]\\), \\(f'(x)\\ge 0\\) because \\(x^2\\ge 1\\). Thus \\(f\\) is increasing on \\([1,3]\\).\nTherefore, the minimum occurs at \\(x=1\\) and the maximum occurs at \\(x=3\\).\n\\[\nf(1)=1+1=2,\n\\]\n\\[\nf(3)=3+\\frac{1}{3}=\\frac{10}{3}.\n\\]\nSo the minimum value is \\(2\\) and the maximum value is \\(\\dfrac{10}{3}\\).",
+      "hint": "Use the derivative to determine whether the function is increasing or decreasing on the interval."
+    }
+  ]
+}

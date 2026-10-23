@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-568",
+  "category": "Comprehensive Mathematics",
+  "title": "568. Discrete Mathematics, Counting & Graph Theory: Stars and Bars for Nonnegative Integers",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-568-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two nonnegative unknowns",
+      "learningObjective": "Count the nonnegative integer solutions of an equation with two unknowns.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many pairs \\((x,y)\\) of nonnegative integers satisfy \\(x+y=4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The value of \\(x\\) can be \\(0,1,2,3\\), or \\(4\\), and each choice determines \\(y=4-x\\). So there are \\(5\\) solutions: \\((0,4),(1,3),(2,2),(3,1),(4,0)\\). The number \\(4\\) leaves out one of the solutions that contain a zero.",
+      "hint": "List the possible values of \\(x\\), not forgetting \\(0\\)."
+    },
+    {
+      "id": "dynanca-568-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Three nonnegative unknowns",
+      "learningObjective": "Count the nonnegative integer solutions of an equation with three unknowns.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many triples \\((x,y,z)\\) of nonnegative integers satisfy \\(x+y+z=3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Represent a solution by \\(3\\) stars and \\(2\\) bars in a row; the bars split the stars into three groups. The number of arrangements is \\(\\binom{5}{2}=10\\). The number \\(6\\) counts only the solutions that use the values \\(0,1,2\\) in some order and misses solutions such as \\((1,1,1)\\) and \\((3,0,0)\\).",
+      "hint": "Arrange three stars and two bars in a row."
+    },
+    {
+      "id": "dynanca-568-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A larger sum",
+      "learningObjective": "Apply the stars-and-bars count to three unknowns.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many triples \\((x_1,x_2,x_3)\\) of nonnegative integers satisfy \\(x_1+x_2+x_3=8\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(45\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(21\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "With \\(8\\) stars and \\(2\\) bars there are \\(\\binom{10}{2}=45\\) arrangements, one for each solution. The number \\(21=\\binom{7}{2}\\) counts only the solutions in which every unknown is at least \\(1\\).",
+      "hint": "Use \\(8\\) stars and \\(2\\) bars, and choose the positions of the bars."
+    },
+    {
+      "id": "dynanca-568-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The general count",
+      "learningObjective": "State the number of nonnegative integer solutions in general.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many solutions in nonnegative integers does \\(x_1+x_2+\\cdots+x_k=n\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\binom{n+k-1}{k-1}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\binom{n-1}{k-1}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A solution corresponds to a row of \\(n\\) stars and \\(k-1\\) bars, and the bars can occupy any \\(k-1\\) of the \\(n+k-1\\) positions. So the count is \\(\\binom{n+k-1}{k-1}\\). The expression \\(\\binom{n-1}{k-1}\\) counts the solutions in positive integers; for \\(n=2\\), \\(k=2\\) it gives \\(1\\), although \\((0,2),(1,1),(2,0)\\) are three nonnegative solutions.",
+      "hint": "Test both expressions with \\(n=2\\) and \\(k=2\\)."
+    },
+    {
+      "id": "dynanca-568-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Sharing identical sweets",
+      "learningObjective": "Model a distribution of identical objects as an equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In how many ways can \\(9\\) identical sweets be shared among \\(4\\) children, if a child may receive none?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(84\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(220\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A distribution is a solution of \\(x_1+x_2+x_3+x_4=9\\) in nonnegative integers, so the count is \\(\\binom{9+3}{3}=\\binom{12}{3}=220\\). The number \\(84=\\binom{9}{3}\\) is not the count for this problem.",
+      "hint": "Use \\(9\\) stars and \\(3\\) bars."
+    },
+    {
+      "id": "dynanca-568-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Reading a diagram of stars and bars",
+      "learningObjective": "Translate a stars-and-bars string into a solution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In the stars-and-bars method for \\(x_1+x_2+x_3=6\\), which solution \\((x_1,x_2,x_3)\\) is represented by the string \\(\\ast\\ast\\mid\\ast\\mid\\ast\\ast\\ast\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,1,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,1,3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The bars separate the stars into three groups, read from left to right: \\(2\\) stars, then \\(1\\) star, then \\(3\\) stars. So the string represents \\((2,1,3)\\). Reading the groups from right to left would give \\((3,1,2)\\), which is a different solution.",
+      "hint": "Count the stars before the first bar, between the bars, and after the second bar."
+    },
+    {
+      "id": "dynanca-568-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "One unknown bounded above",
+      "learningObjective": "Count solutions when one unknown has an upper bound.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "How many triples \\((x,y,z)\\) of nonnegative integers satisfy \\(x+y+z=5\\) and \\(x\\le 1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(21\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(11\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Split by the value of \\(x\\). If \\(x=0\\), then \\(y+z=5\\) has \\(6\\) solutions. If \\(x=1\\), then \\(y+z=4\\) has \\(5\\) solutions. The total is \\(6+5=11\\). The number \\(21=\\binom{7}{2}\\) counts all solutions without the bound on \\(x\\).",
+      "hint": "Treat the two allowed values of \\(x\\) as separate cases."
+    },
+    {
+      "id": "dynanca-568-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An inequality",
+      "learningObjective": "Count solutions of an inequality by adding a slack variable.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many triples \\((x,y,z)\\) of nonnegative integers satisfy \\(x+y+z\\le 3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Introduce a fourth nonnegative unknown \\(w=3-x-y-z\\). The solutions of the inequality correspond exactly to the solutions of \\(x+y+z+w=3\\), of which there are \\(\\binom{6}{3}=20\\). The number \\(10\\) counts only the solutions with \\(x+y+z=3\\) exactly.",
+      "hint": "Add a new unknown that measures how far the sum is below \\(3\\)."
+    },
+    {
+      "id": "dynanca-568-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Lower bounds on some unknowns",
+      "learningObjective": "Remove lower bounds by substitution before counting.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many integer triples \\((x,y,z)\\) satisfy \\(x+y+z=9\\) with \\(x\\ge 3\\), \\(y\\ge 1\\), and \\(z\\ge 0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(55\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(21\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x=x'+3\\) and \\(y=y'+1\\) with \\(x',y'\\ge 0\\). The equation becomes \\(x'+y'+z=5\\), which has \\(\\binom{7}{2}=21\\) solutions in nonnegative integers. The number \\(55=\\binom{11}{2}\\) ignores the lower bounds.",
+      "hint": "Give \\(x\\) and \\(y\\) their required minimum first, then distribute what remains."
+    },
+    {
+      "id": "dynanca-568-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Upper bounds on every unknown",
+      "learningObjective": "Count solutions with an upper bound on each unknown by complement.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many triples \\((x,y,z)\\) of nonnegative integers satisfy \\(x+y+z=10\\) with each unknown at most \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(21\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(66\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Without the bounds there are \\(\\binom{12}{2}=66\\) solutions. Count those with \\(x\\ge 6\\): putting \\(x=x'+6\\) gives \\(x'+y+z=4\\), with \\(\\binom{6}{2}=15\\) solutions; the same holds for \\(y\\) and for \\(z\\). Two unknowns cannot both be at least \\(6\\), since the sum is \\(10\\). So \\(3\\cdot 15=45\\) solutions violate a bound, and \\(66-45=21\\) remain. The number \\(66\\) ignores the bounds.",
+      "hint": "Subtract the solutions in which some unknown is at least \\(6\\); check whether two unknowns can exceed the bound together."
+    }
+  ]
+}

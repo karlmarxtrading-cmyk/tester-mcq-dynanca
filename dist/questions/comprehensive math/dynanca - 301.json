@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-301",
+  "category": "Comprehensive Mathematics",
+  "title": "301. Functions, Graphs & Transformations: Testing Symmetry from an Algebraic Rule",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-301-q001",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Even Functions and y-Axis Symmetry",
+      "learningObjective": "Determine whether a polynomial function is even by comparing \\(f(-x)\\) with \\(f(x)\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For the function \\(f(x)=x^4-3x^2+2\\), which symmetry does its graph have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Symmetry about the origin"
+        },
+        {
+          "label": "B",
+          "text": "Symmetry about the \\(y\\)-axis"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute \\(f(-x)\\):\n\\[\nf(-x)=(-x)^4-3(-x)^2+2=x^4-3x^2+2=f(x).\n\\]\nSince \\(f(-x)=f(x)\\) for all \\(x\\), the function is even, so its graph is symmetric about the \\(y\\)-axis.",
+      "hint": "Replace \\(x\\) by \\(-x\\) in the rule and compare the result with the original expression."
+    },
+    {
+      "id": "dynanca-301-q002",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Definition of Even Symmetry",
+      "learningObjective": "Identify the graphical symmetry corresponding to the algebraic condition \\(f(-x)=f(x)\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For a function \\(f\\), the condition \\(f(-x)=f(x)\\) for every \\(x\\) in its domain means that the graph of \\(f\\) is symmetric about which feature?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The origin"
+        },
+        {
+          "label": "B",
+          "text": "The \\(y\\)-axis"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The equation \\(f(-x)=f(x)\\) is the defining condition for an even function. For every point \\((x,f(x))\\) on the graph, the point \\((-x,f(x))\\) is also on the graph. This mirror-image pairing across the \\(y\\)-axis shows that the graph is symmetric about the \\(y\\)-axis.",
+      "hint": "Recall the standard algebraic tests for symmetry about the \\(y\\)-axis and about the origin."
+    },
+    {
+      "id": "dynanca-301-q003",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Odd Functions and Origin Symmetry",
+      "learningObjective": "Test a polynomial function for origin symmetry by comparing \\(f(-x)\\) with \\(-f(x)\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The function is given by \\(f(x)=x^3-x\\). Which symmetry does its graph have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Symmetry about the \\(y\\)-axis"
+        },
+        {
+          "label": "B",
+          "text": "Symmetry about the origin"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute \\(f(-x)\\):\n\\[\nf(-x)=(-x)^3-(-x)=-x^3+x=-(x^3-x)=-f(x).\n\\]\nSince \\(f(-x)=-f(x)\\) for all \\(x\\), the function is odd, so its graph is symmetric about the origin.",
+      "hint": "Calculate \\(f(-x)\\), then compare it with both \\(f(x)\\) and \\(-f(x)\\)."
+    },
+    {
+      "id": "dynanca-301-q004",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Symmetry About a Vertical Line",
+      "learningObjective": "Determine the vertical line of symmetry of a quadratic function from its completed-square form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The graph of \\(f(x)=(x-1)^2+2\\) has line symmetry about which vertical line?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A graph is symmetric about the vertical line \\(x=a\\) if \\(f(a+t)=f(a-t)\\) for all \\(t\\).\nHere, with \\(a=1\\),\n\\[\nf(1+t)=t^2+2,\\qquad f(1-t)=(-t)^2+2=t^2+2.\n\\]\nThus \\(f(1+t)=f(1-t)\\), so the axis of symmetry is \\(x=1\\).",
+      "hint": "For a vertical line \\(x=a\\), test whether \\(f(a+t)\\) and \\(f(a-t)\\) are equal."
+    },
+    {
+      "id": "dynanca-301-q005",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Algebraic Condition for Vertical-Line Symmetry",
+      "learningObjective": "Convert the condition \\(f(2-x)=f(x)\\) into the corresponding vertical line of symmetry.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A function satisfies \\(f(2-x)=f(x)\\) for all \\(x\\). Which line is guaranteed to be an axis of symmetry of its graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For symmetry about the vertical line \\(x=a\\), the condition is\n\\[\nf(2a-x)=f(x).\n\\]\nComparing with \\(f(2-x)=f(x)\\), we have \\(2a=2\\), so \\(a=1\\). Therefore, the graph is symmetric about the line \\(x=1\\).",
+      "hint": "Match the given expression \\(2-x\\) with the standard form \\(2a-x\\)."
+    },
+    {
+      "id": "dynanca-301-q006",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Point Symmetry from a Cubic Transformation",
+      "learningObjective": "Identify the center of symmetry of a transformed cubic function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The graph of \\(f(x)=x^3-3x^2+3x-1\\) is symmetric about which point?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,1)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Notice that\n\\[\nf(x)=x^3-3x^2+3x-1=(x-1)^3.\n\\]\nLet \\(t=x-1\\). Then\n\\[\nf(1+t)=t^3,\\qquad f(1-t)=(-t)^3=-t^3.\n\\]\nThus \\(f(1+t)+f(1-t)=0\\), which is the condition for symmetry about the point \\((1,0)\\).",
+      "hint": "Rewrite the polynomial as a power of \\(x-1\\), then compare values at \\(1+t\\) and \\(1-t\\)."
+    },
+    {
+      "id": "dynanca-301-q007",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Center of Symmetry from an Algebraic Rule",
+      "learningObjective": "Determine the center of symmetry from a condition of the form \\(f(2a-x)+f(x)=2b\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(f(4-x)+f(x)=6\\) for all \\(x\\), what is the center of symmetry of the graph of \\(f\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,6)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For symmetry about the point \\((a,b)\\), the algebraic condition is\n\\[\nf(2a-x)+f(x)=2b.\n\\]\nComparing with \\(f(4-x)+f(x)=6\\), we get \\(2a=4\\) and \\(2b=6\\). Hence \\(a=2\\) and \\(b=3\\). The center of symmetry is \\((2,3)\\).",
+      "hint": "Use the standard point-symmetry condition and compare coefficients carefully."
+    },
+    {
+      "id": "dynanca-301-q008",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Symmetry of an Absolute-Value Function",
+      "learningObjective": "Determine the vertical line of symmetry of an absolute-value function from its algebraic rule.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "The graph of \\(f(x)=|x-2|\\) is symmetric about which line?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Check symmetry about \\(x=2\\). Let \\(t\\) be any real number. Then\n\\[\nf(2+t)=|t|,\\qquad f(2-t)=|-t|=|t|.\n\\]\nSo \\(f(2+t)=f(2-t)\\), which means the graph is symmetric about the vertical line \\(x=2\\).",
+      "hint": "The expression inside the absolute value is zero at the center of symmetry."
+    },
+    {
+      "id": "dynanca-301-q009",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Axis of Symmetry of a Quadratic Function",
+      "learningObjective": "Find the axis of symmetry of a quadratic function by completing the square.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=x^2+4x+5\\), which vertical line is an axis of symmetry of the graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Complete the square:\n\\[\nf(x)=x^2+4x+5=(x+2)^2+1.\n\\]\nNow test \\(x=-2\\). For any \\(t\\),\n\\[\nf(-2+t)=t^2+1,\\qquad f(-2-t)=(-t)^2+1=t^2+1.\n\\]\nThus \\(f(-2+t)=f(-2-t)\\), so the axis of symmetry is \\(x=-2\\).",
+      "hint": "Rewrite the quadratic in the form \\((x-h)^2+k\\), then read the symmetry line from \\(h\\)."
+    },
+    {
+      "id": "dynanca-301-q010",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Point Symmetry of a Translated Odd-Type Function",
+      "learningObjective": "Analyze a transformed polynomial to determine its center of symmetry.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The graph of \\(f(x)=(x-3)^5+(x-3)^3+2\\) is symmetric about which point?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,0)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(t=x-3\\). Then\n\\[\nf(3+t)=t^5+t^3+2,\n\\]\nand\n\\[\nf(3-t)=(-t)^5+(-t)^3+2=-t^5-t^3+2.\n\\]\nAdding,\n\\[\nf(3+t)+f(3-t)=4.\n\\]\nFor symmetry about \\((a,b)\\), we need \\(f(a+t)+f(a-t)=2b\\). Here \\(a=3\\) and \\(2b=4\\), so \\(b=2\\). Therefore, the center of symmetry is \\((3,2)\\).",
+      "hint": "Shift the variable by setting \\(t=x-3\\), then examine how the expression changes when \\(t\\) is replaced by \\(-t\\)."
+    }
+  ]
+}

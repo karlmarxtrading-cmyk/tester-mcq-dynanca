@@ -1,0 +1,22 @@
+name: CI
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+jobs:
+  quality-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - run: npm ci
+      - name: Verify committed index before preparation
+        run: npm run verify:index
+      - name: Install pinned Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Complete release gate against built dist
+        run: npm run prepare:release
+      - name: Source data and committed generated files remain unchanged
+        run: git diff --exit-code

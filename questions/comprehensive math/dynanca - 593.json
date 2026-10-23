@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-593",
+  "category": "Comprehensive Mathematics",
+  "title": "593. Discrete Mathematics, Counting & Graph Theory: Shortest Paths in Unweighted Graphs",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-593-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Distance in an unweighted graph",
+      "learningObjective": "State the definition of distance in an unweighted graph.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In an unweighted graph, what is the distance between two vertices?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The number of vertices on a shortest path between them"
+        },
+        {
+          "label": "B",
+          "text": "The number of edges on a shortest path between them"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Distance counts steps, that is, edges. A shortest path with \\(k\\) edges passes through \\(k+1\\) vertices, including both ends, so counting vertices gives a value that is too large by \\(1\\).",
+      "hint": "Adjacent vertices are at distance \\(1\\)."
+    },
+    {
+      "id": "dynanca-593-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Distance along a path",
+      "learningObjective": "Find the distance between the ends of a path graph.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph is the path with vertices \\(A,B,C,D,E\\) and edges \\(AB\\), \\(BC\\), \\(CD\\), \\(DE\\). What is the distance from \\(A\\) to \\(E\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The only path from \\(A\\) to \\(E\\) is \\(A,B,C,D,E\\), which has \\(4\\) edges. The number \\(5\\) counts the vertices on the path.",
+      "hint": "Count the edges between the two ends."
+    },
+    {
+      "id": "dynanca-593-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Choosing the shorter route",
+      "learningObjective": "Find the distance between two vertices joined by routes of different lengths.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D,E,F,G\\) and edges \\(AB\\), \\(AC\\), \\(BD\\), \\(CD\\), \\(DE\\), \\(EF\\), \\(CG\\), and \\(GF\\). What is the distance from \\(A\\) to \\(F\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The path \\(A,C,G,F\\) has \\(3\\) edges. No shorter path exists, because \\(F\\) is adjacent only to \\(E\\) and \\(G\\), and neither of these is adjacent to \\(A\\) or at distance \\(1\\) from it. The path \\(A,B,D,E,F\\) has \\(4\\) edges, but it is not a shortest path.",
+      "hint": "Look for a route that passes through \\(G\\)."
+    },
+    {
+      "id": "dynanca-593-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Several shortest paths",
+      "learningObjective": "Count the shortest paths between two vertices.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D,E,F,G\\) and edges \\(AB\\), \\(AC\\), \\(BD\\), \\(CD\\), \\(DE\\), \\(EF\\), \\(CG\\), and \\(GF\\). How many shortest paths lead from \\(A\\) to \\(D\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The vertices \\(A\\) and \\(D\\) are not adjacent, so the distance is at least \\(2\\). The paths \\(A,B,D\\) and \\(A,C,D\\) both have \\(2\\) edges, so there are \\(2\\) shortest paths. A shortest path need not be unique.",
+      "hint": "Check every neighbour of \\(A\\) to see whether it is adjacent to \\(D\\)."
+    },
+    {
+      "id": "dynanca-593-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Distance on a cycle",
+      "learningObjective": "Find the distance between two vertices of a cycle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The vertices \\(1,2,\\dots,8\\) form a cycle in this order, so that \\(8\\) is also adjacent to \\(1\\). What is the distance between the vertices \\(1\\) and \\(6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Going from \\(1\\) through \\(2,3,4,5\\) to \\(6\\) takes \\(5\\) edges. Going the other way, \\(1,8,7,6\\), takes only \\(3\\) edges. The distance is the smaller of the two, \\(3\\).",
+      "hint": "A cycle offers two routes between any two vertices; compare them."
+    },
+    {
+      "id": "dynanca-593-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Distance in a grid",
+      "learningObjective": "Find the distance between opposite corners of a grid graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Nine points are arranged in \\(3\\) rows and \\(3\\) columns, and each point is joined to its nearest neighbours in the same row and in the same column. What is the distance between two opposite corners?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each edge changes either the row or the column by one step. Moving from one corner to the opposite corner requires \\(2\\) steps across and \\(2\\) steps down, so at least \\(4\\) edges, and \\(4\\) edges suffice. A distance of \\(2\\) would require diagonal edges, which the graph does not have.",
+      "hint": "Count how many row steps and how many column steps are needed."
+    },
+    {
+      "id": "dynanca-593-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Parts of shortest paths",
+      "learningObjective": "Decide whether an initial part of a shortest path is itself shortest.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A shortest path from \\(u\\) to \\(v\\) passes through a vertex \\(w\\). Is the part of this path from \\(u\\) to \\(w\\) a shortest path from \\(u\\) to \\(w\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; only the whole path is guaranteed to be shortest."
+        },
+        {
+          "label": "B",
+          "text": "Yes; a shorter route from \\(u\\) to \\(w\\) would give a shorter route from \\(u\\) to \\(v\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Suppose some route from \\(u\\) to \\(w\\) were shorter than the first part of the path. Following it and then the remaining part from \\(w\\) to \\(v\\) would give a walk from \\(u\\) to \\(v\\) with fewer edges than the shortest path, which is impossible. So every initial part of a shortest path is itself shortest.",
+      "hint": "Assume a shorter route to \\(w\\) exists and see what it implies for the route to \\(v\\)."
+    },
+    {
+      "id": "dynanca-593-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Diameter of a cycle",
+      "learningObjective": "Find the largest distance between two vertices of a cycle.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The diameter of a connected graph is the largest distance between two of its vertices. What is the diameter of a cycle with \\(7\\) vertices?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Between two vertices of the cycle there are two routes, whose lengths add up to \\(7\\). The distance is the smaller of the two lengths, which is at most \\(3\\), and the value \\(3\\) occurs for the routes of lengths \\(3\\) and \\(4\\). So the diameter is \\(3\\). The value \\(6\\) is the length of the longer route between two adjacent vertices.",
+      "hint": "The two routes between a pair of vertices have lengths that add up to \\(7\\)."
+    },
+    {
+      "id": "dynanca-593-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Effect of a shortcut",
+      "learningObjective": "Find a distance after an edge is added to a path.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A graph is the path with vertices \\(A,B,C,D,E,F\\) and edges \\(AB\\), \\(BC\\), \\(CD\\), \\(DE\\), \\(EF\\). The edge \\(BE\\) is added. What is the distance from \\(A\\) to \\(F\\) in the new graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Before the edge is added, the distance is \\(5\\). The new edge allows the route \\(A,B,E,F\\), which has \\(3\\) edges. No route with \\(2\\) edges exists, because \\(A\\) is adjacent only to \\(B\\), and \\(B\\) is not adjacent to \\(F\\).",
+      "hint": "Use the new edge to skip the middle of the path."
+    },
+    {
+      "id": "dynanca-593-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Shortest paths in a complete bipartite graph",
+      "learningObjective": "Count shortest paths between two vertices on the same side.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In a complete bipartite graph, each of the vertices \\(A,B,C\\) is adjacent to each of the vertices \\(X,Y,Z\\), and there are no other edges. How many shortest paths lead from \\(A\\) to \\(B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The vertices \\(A\\) and \\(B\\) are not adjacent, so the distance is at least \\(2\\). Each of \\(X\\), \\(Y\\), \\(Z\\) is adjacent to both, giving the paths \\(A,X,B\\); \\(A,Y,B\\); and \\(A,Z,B\\) of length \\(2\\). So there are \\(3\\) shortest paths.",
+      "hint": "Any common neighbour of \\(A\\) and \\(B\\) gives a path with two edges."
+    }
+  ]
+}

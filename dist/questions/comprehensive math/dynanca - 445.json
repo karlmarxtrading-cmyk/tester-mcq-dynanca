@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-445",
+  "category": "Comprehensive Mathematics",
+  "title": "445. Trigonometry & Periodic Models: Reflections of Trigonometric Graphs",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-445-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Reflection in the x-axis",
+      "learningObjective": "Identify the reflection produced by a negative sign in front of a sine.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How is the graph of \\(y=-\\sin x\\) related to the graph of \\(y=\\sin x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is the reflection in the \\(x\\)-axis."
+        },
+        {
+          "label": "B",
+          "text": "It is a shift of \\(1\\) unit down."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiplying the function by \\(-1\\) changes the sign of every \\(y\\)-value, so each point \\((x,y)\\) moves to \\((x,-y)\\). This is a reflection in the \\(x\\)-axis. A shift of \\(1\\) unit down would be \\(y=\\sin x-1\\).",
+      "hint": "Compare the \\(y\\)-values of the two functions at the same \\(x\\)."
+    },
+    {
+      "id": "dynanca-445-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Reflection of cosine in the y-axis",
+      "learningObjective": "Describe the effect of replacing the variable by its opposite in a cosine.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The graph of \\(y=\\cos x\\) is reflected in the \\(y\\)-axis, giving \\(y=\\cos(-x)\\). Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The new graph is the graph of \\(y=-\\cos x\\)."
+        },
+        {
+          "label": "B",
+          "text": "The new graph is identical to the graph of \\(y=\\cos x\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Cosine is an even function, so \\(\\cos(-x)=\\cos x\\) for every \\(x\\). The graph of \\(y=\\cos x\\) is symmetric about the \\(y\\)-axis, and reflecting it in that axis leaves it unchanged. The graph of \\(y=-\\cos x\\) is the reflection in the \\(x\\)-axis instead.",
+      "hint": "Use the even identity for cosine."
+    },
+    {
+      "id": "dynanca-445-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Reflection of sine in the y-axis",
+      "learningObjective": "Relate the two reflections of the sine graph using the odd identity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The graph of \\(y=\\sin x\\) is reflected in the \\(y\\)-axis, giving \\(y=\\sin(-x)\\). Which function has the same graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=\\sin x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=-\\sin x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sine is odd, so \\(\\sin(-x)=-\\sin x\\). Thus reflecting the sine graph in the \\(y\\)-axis gives the same graph as reflecting it in the \\(x\\)-axis. The graph is not unchanged: at \\(x=\\frac{\\pi}{2}\\) the new function equals \\(-1\\), not \\(1\\).",
+      "hint": "Use the odd identity for sine and test the point \\(x=\\frac{\\pi}{2}\\)."
+    },
+    {
+      "id": "dynanca-445-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Value of a reflected cosine",
+      "learningObjective": "Evaluate a reflected cosine at a given point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the value of \\(y=-\\cos x\\) at \\(x=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(\\cos 0=1\\), the value is \\(-\\cos 0=-1\\). The reflection in the \\(x\\)-axis turns the maximum of \\(y=\\cos x\\) at \\(x=0\\) into a minimum.",
+      "hint": "Evaluate the cosine first, then apply the negative sign."
+    },
+    {
+      "id": "dynanca-445-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Maximum of a reflected and stretched sine",
+      "learningObjective": "Locate the maximum of a sine graph that has been reflected in the x-axis.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For \\(0\\le x<2\\pi\\), at which value of \\(x\\) does \\(y=-2\\sin x\\) reach its maximum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=\\frac{\\pi}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=\\frac{3\\pi}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The function \\(-2\\sin x\\) is largest when \\(\\sin x\\) is smallest, that is, when \\(\\sin x=-1\\) at \\(x=\\frac{3\\pi}{2}\\). There \\(y=-2\\cdot(-1)=2\\). At \\(x=\\frac{\\pi}{2}\\) the value is \\(-2\\), which is the minimum.",
+      "hint": "After a reflection in the \\(x\\)-axis, maxima and minima exchange places."
+    },
+    {
+      "id": "dynanca-445-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Monotonicity of a reflected tangent",
+      "learningObjective": "Determine whether a reflected tangent is increasing or decreasing.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "On the interval \\(-\\frac{\\pi}{2}<x<\\frac{\\pi}{2}\\), how does \\(y=-\\tan x\\) behave?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is increasing."
+        },
+        {
+          "label": "B",
+          "text": "It is decreasing."
+        }
+      ],
+      "answer": "B",
+      "explanation": "On this interval \\(y=\\tan x\\) is increasing. Multiplying by \\(-1\\) reflects the graph in the \\(x\\)-axis and reverses the order of the values, so \\(y=-\\tan x\\) is decreasing. For example, its values at \\(x=-\\frac{\\pi}{4}\\), \\(0\\), and \\(\\frac{\\pi}{4}\\) are \\(1\\), \\(0\\), and \\(-1\\).",
+      "hint": "Evaluate the function at \\(-\\frac{\\pi}{4}\\), \\(0\\), and \\(\\frac{\\pi}{4}\\) and compare."
+    },
+    {
+      "id": "dynanca-445-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Reflection combined with a vertical shift",
+      "learningObjective": "Evaluate a reflected and vertically shifted cosine.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the value of \\(y=-\\cos x+3\\) at \\(x=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "At \\(x=0\\), \\(\\cos 0=1\\), so \\(y=-1+3=2\\). This is the minimum of the function, because the reflection turns the maximum of the cosine into a minimum before the graph is raised by \\(3\\). The value \\(4\\) ignores the negative sign.",
+      "hint": "Apply the negative sign to the cosine before adding the constant."
+    },
+    {
+      "id": "dynanca-445-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Reflecting a shifted graph in the x-axis",
+      "learningObjective": "Reflect an entire expression, including its constant term, in the x-axis.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The graph of \\(y=\\sin x+2\\) is reflected in the \\(x\\)-axis. Which rule describes the new graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=-\\sin x-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=-\\sin x+2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A reflection in the \\(x\\)-axis replaces \\(y\\) by \\(-y\\), so the whole right side is multiplied by \\(-1\\): \\(y=-(\\sin x+2)=-\\sin x-2\\). The midline \\(y=2\\) is also reflected, to \\(y=-2\\). Changing only the sign of the sine leaves the midline at \\(y=2\\), which is not a reflection in the \\(x\\)-axis.",
+      "hint": "Multiply the entire expression by \\(-1\\), not just the trigonometric term."
+    },
+    {
+      "id": "dynanca-445-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Reflecting a shifted sine in the y-axis",
+      "learningObjective": "Apply a reflection in the y-axis to a horizontally shifted sine and simplify.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The graph of \\(y=\\sin\\left(x-\\frac{\\pi}{3}\\right)\\) is reflected in the \\(y\\)-axis. Which rule describes the new graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=-\\sin\\left(x+\\frac{\\pi}{3}\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=\\sin\\left(x+\\frac{\\pi}{3}\\right)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A reflection in the \\(y\\)-axis replaces \\(x\\) by \\(-x\\): \\(y=\\sin\\left(-x-\\frac{\\pi}{3}\\right)=\\sin\\left(-\\left(x+\\frac{\\pi}{3}\\right)\\right)\\). Since sine is odd, this equals \\(-\\sin\\left(x+\\frac{\\pi}{3}\\right)\\). Omitting the negative sign in front ignores the odd identity.",
+      "hint": "Replace \\(x\\) by \\(-x\\), factor out \\(-1\\) inside the sine, and use the fact that sine is odd."
+    },
+    {
+      "id": "dynanca-445-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "A reflection written as a shift",
+      "learningObjective": "Express a reflected cosine as a horizontally shifted cosine.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which function has the same graph as \\(y=-\\cos x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=\\cos\\left(x-\\frac{\\pi}{2}\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=\\cos(x-\\pi)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the difference formula, \\(\\cos(x-\\pi)=\\cos x\\cos\\pi+\\sin x\\sin\\pi=-\\cos x\\). So a shift of half a period has the same effect as a reflection in the \\(x\\)-axis. In contrast, \\(\\cos\\left(x-\\frac{\\pi}{2}\\right)=\\sin x\\), which is a different graph.",
+      "hint": "A shift by half a period turns every maximum into a minimum; expand each candidate with a difference formula."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-273",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 273",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-273-q001",
+      "category": "Calculus",
+      "concept": "Limit of a Rational Function at Infinity",
+      "learningObjective": "Evaluate the limit at infinity of a rational function by comparing leading terms.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\displaystyle \\lim_{x\\to\\infty} \\frac{3x^2-2x+1}{5x^2+4}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a rational function as \\(x\\to\\infty\\), compare the highest-degree terms in the numerator and denominator. The numerator has leading term \\(3x^2\\), and the denominator has leading term \\(5x^2\\). Therefore,\n\\[\n\\lim_{x\\to\\infty} \\frac{3x^2-2x+1}{5x^2+4}\n=\n\\lim_{x\\to\\infty} \\frac{3x^2}{5x^2}\n=\n\\frac{3}{5}.\n\\]\nThe lower-degree terms do not affect the limit at infinity.",
+      "hint": "Divide the numerator and denominator by the highest power of \\(x\\) appearing in the denominator."
+    },
+    {
+      "id": "math-gaokao-273-q002",
+      "category": "Calculus",
+      "concept": "Limit at Infinity Involving a Square Root",
+      "learningObjective": "Evaluate a limit at infinity by dividing by \\(x\\) and simplifying a square-root expression.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\displaystyle \\lim_{x\\to\\infty} \\frac{2x+1}{\\sqrt{x^2+3x}+x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(x>0\\), \\(\\sqrt{x^2+3x}=x\\sqrt{1+\\frac{3}{x}}\\). Divide numerator and denominator by \\(x\\):\n\\[\n\\frac{2x+1}{\\sqrt{x^2+3x}+x}\n=\n\\frac{2+\\frac{1}{x}}{\\sqrt{1+\\frac{3}{x}}+1}.\n\\]\nAs \\(x\\to\\infty\\), \\(\\frac{1}{x}\\to 0\\) and \\(\\frac{3}{x}\\to 0\\). Hence the limit is\n\\[\n\\frac{2+0}{\\sqrt{1+0}+1}\n=\n\\frac{2}{2}\n=\n1.\n\\]",
+      "hint": "Divide both numerator and denominator by \\(x\\), and use \\(\\sqrt{x^2+3x}=x\\sqrt{1+\\frac{3}{x}}\\) for \\(x>0\\)."
+    },
+    {
+      "id": "math-gaokao-273-q003",
+      "category": "Calculus",
+      "concept": "Limit at Infinity by Rationalization",
+      "learningObjective": "Evaluate a limit at infinity involving a difference of square-root expressions by rationalizing.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\displaystyle \\lim_{x\\to\\infty} \\left(\\sqrt{x^2+5x}-x\\right)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rationalize the expression:\n\\[\n\\sqrt{x^2+5x}-x\n=\n\\frac{(\\sqrt{x^2+5x}-x)(\\sqrt{x^2+5x}+x)}{\\sqrt{x^2+5x}+x}\n=\n\\frac{x^2+5x-x^2}{\\sqrt{x^2+5x}+x}\n=\n\\frac{5x}{\\sqrt{x^2+5x}+x}.\n\\]\nDivide numerator and denominator by \\(x\\) for \\(x>0\\):\n\\[\n\\frac{5x}{\\sqrt{x^2+5x}+x}\n=\n\\frac{5}{\\sqrt{1+\\frac{5}{x}}+1}.\n\\]\nAs \\(x\\to\\infty\\), \\(\\frac{5}{x}\\to 0\\), so the limit is\n\\[\n\\frac{5}{\\sqrt{1}+1}\n=\n\\frac{5}{2}.\n\\]",
+      "hint": "Multiply by the conjugate \\(\\sqrt{x^2+5x}+x\\) and then divide numerator and denominator by \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-273-q004",
+      "category": "Calculus",
+      "concept": "Limit at Infinity of Exponential Expressions",
+      "learningObjective": "Evaluate a limit at infinity involving exponential terms by factoring out the dominant exponential.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\displaystyle \\lim_{x\\to\\infty} \\frac{e^{2x}+3e^x}{2e^{2x}-e^x+1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The dominant exponential term is \\(e^{2x}\\). Divide numerator and denominator by \\(e^{2x}\\):\n\\[\n\\frac{e^{2x}+3e^x}{2e^{2x}-e^x+1}\n=\n\\frac{1+3e^{-x}}{2-e^{-x}+e^{-2x}}.\n\\]\nAs \\(x\\to\\infty\\), \\(e^{-x}\\to 0\\) and \\(e^{-2x}\\to 0\\). Therefore,\n\\[\n\\lim_{x\\to\\infty} \\frac{e^{2x}+3e^x}{2e^{2x}-e^x+1}\n=\n\\frac{1+0}{2-0+0}\n=\n\\frac{1}{2}.\n\\]",
+      "hint": "Divide numerator and denominator by the fastest-growing term, \\(e^{2x}\\)."
+    },
+    {
+      "id": "math-gaokao-273-q005",
+      "category": "Calculus",
+      "concept": "Limit at Infinity with Bounded Trigonometric Terms",
+      "learningObjective": "Evaluate a limit at infinity when a bounded trigonometric expression is divided by \\(x\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Evaluate \\(\\displaystyle \\lim_{x\\to\\infty} \\frac{x+\\sin x}{2x-\\cos x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide numerator and denominator by \\(x\\):\n\\[\n\\frac{x+\\sin x}{2x-\\cos x}\n=\n\\frac{1+\\frac{\\sin x}{x}}{2-\\frac{\\cos x}{x}}.\n\\]\nSince \\(|\\sin x|\\le 1\\) and \\(|\\cos x|\\le 1\\), we have\n\\[\n\\lim_{x\\to\\infty}\\frac{\\sin x}{x}=0,\n\\qquad\n\\lim_{x\\to\\infty}\\frac{\\cos x}{x}=0.\n\\]\nThus,\n\\[\n\\lim_{x\\to\\infty} \\frac{x+\\sin x}{2x-\\cos x}\n=\n\\frac{1+0}{2-0}\n=\n\\frac{1}{2}.\n\\]",
+      "hint": "Divide numerator and denominator by \\(x\\), then use the fact that sine and cosine are bounded."
+    },
+    {
+      "id": "math-gaokao-273-q006",
+      "category": "Calculus",
+      "concept": "Limit at Infinity Involving the Arctangent Function",
+      "learningObjective": "Evaluate a limit at infinity by using the boundedness of \\(\\arctan x\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Evaluate \\(\\displaystyle \\lim_{x\\to\\infty} \\frac{\\arctan x}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{\\pi}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Although \\(\\arctan x\\to \\frac{\\pi}{2}\\) as \\(x\\to\\infty\\), the function \\(\\arctan x\\) is bounded:\n\\[\n-\\frac{\\pi}{2}<\\arctan x<\\frac{\\pi}{2}.\n\\]\nTherefore,\n\\[\n0\\le \\left|\\frac{\\arctan x}{x}\\right| \\le \\frac{\\pi/2}{x}.\n\\]\nAs \\(x\\to\\infty\\), \\(\\frac{\\pi/2}{x}\\to 0\\). By the squeeze theorem,\n\\[\n\\lim_{x\\to\\infty} \\frac{\\arctan x}{x}=0.\n\\]",
+      "hint": "Use the fact that \\(\\arctan x\\) is bounded between \\(-\\frac{\\pi}{2}\\) and \\(\\frac{\\pi}{2}\\)."
+    },
+    {
+      "id": "math-gaokao-273-q007",
+      "category": "Calculus",
+      "concept": "Parameter Determination from a Limit at Infinity",
+      "learningObjective": "Find a parameter so that an exponential-type limit at infinity equals a given value.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Find the real number \\(a\\) such that\n\\[\n\\lim_{x\\to\\infty} \\left(\\frac{x+a}{x-a}\\right)^x = e^4.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rewrite the base:\n\\[\n\\frac{x+a}{x-a}\n=\n\\frac{1+\\frac{a}{x}}{1-\\frac{a}{x}}.\n\\]\nFor large \\(x\\),\n\\[\n\\frac{1+\\frac{a}{x}}{1-\\frac{a}{x}}\n\\approx 1+\\frac{2a}{x}.\n\\]\nThus,\n\\[\n\\left(\\frac{x+a}{x-a}\\right)^x\n\\to e^{2a}.\n\\]\nWe need \\(e^{2a}=e^4\\), so \\(2a=4\\), giving \\(a=2\\).",
+      "hint": "Write \\(\\frac{x+a}{x-a}\\) in the form \\(1+\\frac{2a}{x-a}\\) and use the standard limit \\(\\left(1+\\frac{u}{x}\\right)^x\\to e^u\\)."
+    },
+    {
+      "id": "math-gaokao-273-q008",
+      "category": "Calculus",
+      "concept": "Limit at Infinity of a Difference of Square Roots with Parameters",
+      "learningObjective": "Evaluate a limit at infinity involving two square-root expressions with different linear terms.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Evaluate \\(\\displaystyle \\lim_{x\\to\\infty} \\left(\\sqrt{x^2+7x}-\\sqrt{x^2+3x}\\right)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rationalize the difference:\n\\[\n\\sqrt{x^2+7x}-\\sqrt{x^2+3x}\n=\n\\frac{(x^2+7x)-(x^2+3x)}{\\sqrt{x^2+7x}+\\sqrt{x^2+3x}}\n=\n\\frac{4x}{\\sqrt{x^2+7x}+\\sqrt{x^2+3x}}.\n\\]\nDivide numerator and denominator by \\(x\\) for \\(x>0\\):\n\\[\n\\frac{4}{\\sqrt{1+\\frac{7}{x}}+\\sqrt{1+\\frac{3}{x}}}.\n\\]\nAs \\(x\\to\\infty\\), the denominator tends to \\(\\sqrt{1}+\\sqrt{1}=2\\). Hence the limit is\n\\[\n\\frac{4}{2}=2.\n\\]",
+      "hint": "Multiply by the conjugate \\(\\sqrt{x^2+7x}+\\sqrt{x^2+3x}\\), then divide by \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-273-q009",
+      "category": "Calculus",
+      "concept": "Limit at Infinity of a Polynomial Difference",
+      "learningObjective": "Evaluate a limit at infinity by identifying the leading coefficient of a difference of powers.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Evaluate \\(\\displaystyle \\lim_{x\\to\\infty} \\frac{(x+1)^{10}-(x-1)^{10}}{x^9}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Expand the two powers and keep the highest-degree terms that survive after division by \\(x^9\\):\n\\[\n(x+1)^{10}=x^{10}+10x^9+45x^8+\\cdots,\n\\]\n\\[\n(x-1)^{10}=x^{10}-10x^9+45x^8-\\cdots.\n\\]\nSubtracting gives\n\\[\n(x+1)^{10}-(x-1)^{10}=20x^9+\\text{lower-degree terms}.\n\\]\nTherefore,\n\\[\n\\frac{(x+1)^{10}-(x-1)^{10}}{x^9}\n=\n20+\\text{terms tending to }0.\n\\]\nSo the limit is \\(20\\).",
+      "hint": "Use the binomial expansion and focus on the \\(x^9\\)-terms in the difference."
+    },
+    {
+      "id": "math-gaokao-273-q010",
+      "category": "Calculus",
+      "concept": "Limit at Infinity Using a Standard Exponential Limit",
+      "learningObjective": "Evaluate a limit at infinity by transforming it into the standard limit \\(\\frac{e^t-1}{t}\\to 1\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Evaluate \\(\\displaystyle \\lim_{x\\to\\infty} x\\left(e^{1/x}-1\\right)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(e\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(t=\\frac{1}{x}\\). As \\(x\\to\\infty\\), \\(t\\to 0^+\\). Then\n\\[\nx\\left(e^{1/x}-1\\right)\n=\n\\frac{e^t-1}{t}.\n\\]\nUsing the standard limit\n\\[\n\\lim_{t\\to 0}\\frac{e^t-1}{t}=1,\n\\]\nwe obtain\n\\[\n\\lim_{x\\to\\infty} x\\left(e^{1/x}-1\\right)=1.\n\\]",
+      "hint": "Substitute \\(t=\\frac{1}{x}\\) and recall the standard limit \\(\\lim_{t\\to 0}\\frac{e^t-1}{t}\\)."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-264",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 264",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-264-q001",
+      "category": "Solid Geometry",
+      "concept": "Isoperimetric Property of the Sphere",
+      "learningObjective": "Identify the solid that minimizes surface area for a fixed volume.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Among all solids with a fixed volume, which shape has the smallest surface area?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A sphere"
+        },
+        {
+          "label": "B",
+          "text": "A cube"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a fixed volume, the sphere minimizes surface area. This is the three-dimensional isoperimetric inequality. A cube with the same volume has larger surface area than the corresponding sphere.",
+      "hint": "Recall the shape that is most efficient in enclosing a given volume."
+    },
+    {
+      "id": "math-gaokao-264-q002",
+      "category": "Solid Geometry",
+      "concept": "Optimization of a Closed Rectangular Box with Square Base",
+      "learningObjective": "Determine the height that minimizes the surface area of a closed rectangular box with square base and fixed volume.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A closed rectangular box has a square base and volume \\(64\\). Find the height that minimizes its surface area.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let the square base have side length \\(x\\) and let the height be \\(h\\). Then\n\\[\nx^2h=64 \\implies h=\\frac{64}{x^2}.\n\\]\nThe surface area is\n\\[\nS=2x^2+4xh=2x^2+4x\\cdot \\frac{64}{x^2}=2x^2+\\frac{256}{x}.\n\\]\nDifferentiate:\n\\[\nS'(x)=4x-\\frac{256}{x^2}.\n\\]\nSet \\(S'(x)=0\\):\n\\[\n4x=\\frac{256}{x^2}\\implies 4x^3=256\\implies x^3=64\\implies x=4.\n\\]\nThen\n\\[\nh=\\frac{64}{4^2}=4.\n\\]",
+      "hint": "Express the height in terms of the base side using the volume condition, then minimize the surface area."
+    },
+    {
+      "id": "math-gaokao-264-q003",
+      "category": "Solid Geometry",
+      "concept": "Optimization of a Closed Cylinder",
+      "learningObjective": "Determine the radius that minimizes the surface area of a closed cylinder with fixed volume.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A closed right circular cylinder has volume \\(16\\pi\\). Find the radius that minimizes its surface area.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The volume condition is\n\\[\n\\pi r^2h=16\\pi \\implies r^2h=16 \\implies h=\\frac{16}{r^2}.\n\\]\nThe surface area is\n\\[\nS=2\\pi r^2+2\\pi rh\n=2\\pi\\left(r^2+r\\cdot \\frac{16}{r^2}\\right)\n=2\\pi\\left(r^2+\\frac{16}{r}\\right).\n\\]\nDifferentiate the expression inside the parentheses:\n\\[\n2r-\\frac{16}{r^2}=0\n\\implies 2r^3=16\n\\implies r^3=8\n\\implies r=2.\n\\]",
+      "hint": "Use the volume to express \\(h\\) in terms of \\(r\\), then minimize the surface area."
+    },
+    {
+      "id": "math-gaokao-264-q004",
+      "category": "Solid Geometry",
+      "concept": "Optimization of an Open-Top Cylinder",
+      "learningObjective": "Determine the radius that minimizes the surface area of an open-top cylinder with fixed volume.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "An open-top right circular cylinder has volume \\(27\\pi\\). Find the radius that minimizes its surface area.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The volume condition is\n\\[\n\\pi r^2h=27\\pi \\implies r^2h=27 \\implies h=\\frac{27}{r^2}.\n\\]\nSince the cylinder is open at the top, its surface area is\n\\[\nS=\\pi r^2+2\\pi rh\n=\\pi\\left(r^2+2r\\cdot \\frac{27}{r^2}\\right)\n=\\pi\\left(r^2+\\frac{54}{r}\\right).\n\\]\nDifferentiate the expression inside the parentheses:\n\\[\n2r-\\frac{54}{r^2}=0\n\\implies 2r^3=54\n\\implies r^3=27\n\\implies r=3.\n\\]",
+      "hint": "For an open-top cylinder, include only one circular base in the surface area."
+    },
+    {
+      "id": "math-gaokao-264-q005",
+      "category": "Solid Geometry",
+      "concept": "Maximizing Volume of a Closed Box with Fixed Surface Area",
+      "learningObjective": "Determine the maximum volume of a closed rectangular box with square base and fixed surface area.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A closed rectangular box has a square base and total surface area \\(24\\). Find its maximum volume.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let the square base have side length \\(x\\) and let the height be \\(h\\). The surface area is\n\\[\n2x^2+4xh=24 \\implies x^2+2xh=12 \\implies h=\\frac{12-x^2}{2x}.\n\\]\nThe volume is\n\\[\nV=x^2h=x^2\\cdot \\frac{12-x^2}{2x}\n=\\frac{12x-x^3}{2}=6x-\\frac{x^3}{2}.\n\\]\nDifferentiate:\n\\[\nV'(x)=6-\\frac{3x^2}{2}.\n\\]\nSet \\(V'(x)=0\\):\n\\[\n6=\\frac{3x^2}{2}\\implies x^2=4\\implies x=2.\n\\]\nThen\n\\[\nh=\\frac{12-4}{4}=2,\n\\]\nso\n\\[\nV=2^2\\cdot 2=8.\n\\]",
+      "hint": "Use the surface-area condition to express the height in terms of the base side, then maximize the volume."
+    },
+    {
+      "id": "math-gaokao-264-q006",
+      "category": "Solid Geometry",
+      "concept": "Maximum Volume of a Cylinder Inscribed in a Sphere",
+      "learningObjective": "Determine the maximum volume of a right circular cylinder inscribed in a sphere.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A right circular cylinder is inscribed in a sphere of radius \\(3\\). Find its maximum volume.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\pi\\sqrt{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\pi\\sqrt{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let the cylinder have radius \\(r\\) and height \\(h\\). Since it is inscribed in a sphere of radius \\(3\\),\n\\[\nr^2+\\left(\\frac{h}{2}\\right)^2=3^2=9.\n\\]\nThus\n\\[\nr^2=9-\\frac{h^2}{4}.\n\\]\nThe volume is\n\\[\nV=\\pi r^2h=\\pi\\left(9-\\frac{h^2}{4}\\right)h\n=\\pi\\left(9h-\\frac{h^3}{4}\\right).\n\\]\nDifferentiate:\n\\[\nV'(h)=\\pi\\left(9-\\frac{3h^2}{4}\\right).\n\\]\nSet \\(V'(h)=0\\):\n\\[\n9=\\frac{3h^2}{4}\\implies h^2=12\\implies h=2\\sqrt{3}.\n\\]\nThen\n\\[\nr^2=9-\\frac{12}{4}=6.\n\\]\nTherefore\n\\[\nV=\\pi\\cdot 6\\cdot 2\\sqrt{3}=12\\pi\\sqrt{3}.\n\\]",
+      "hint": "Use the right triangle formed by the sphere radius, the cylinder radius, and half the cylinder height."
+    },
+    {
+      "id": "math-gaokao-264-q007",
+      "category": "Solid Geometry",
+      "concept": "Maximum Volume of a Cone Inscribed in a Sphere",
+      "learningObjective": "Determine the maximum volume of a right circular cone inscribed in a sphere.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A right circular cone is inscribed in a sphere of radius \\(3\\). Find its maximum volume.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{32\\pi}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\pi\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let the cone have height \\(h\\) and base radius \\(r\\). If the cone is inscribed in a sphere of radius \\(3\\), then\n\\[\nr^2=2Rh-h^2=6h-h^2.\n\\]\nThe volume is\n\\[\nV=\\frac{1}{3}\\pi r^2h\n=\\frac{\\pi}{3}(6h^2-h^3).\n\\]\nDifferentiate:\n\\[\nV'(h)=\\frac{\\pi}{3}(12h-3h^2).\n\\]\nSet \\(V'(h)=0\\):\n\\[\n12h-3h^2=0\\implies 3h(4-h)=0\\implies h=4.\n\\]\nThen\n\\[\nr^2=6(4)-4^2=24-16=8.\n\\]\nThus\n\\[\nV=\\frac{1}{3}\\pi\\cdot 8\\cdot 4=\\frac{32\\pi}{3}.\n\\]",
+      "hint": "Express the base radius in terms of the cone height using the sphere condition."
+    },
+    {
+      "id": "math-gaokao-264-q008",
+      "category": "Solid Geometry",
+      "concept": "Optimization of an Open Rectangular Tank with Square Base",
+      "learningObjective": "Determine the base side length that minimizes the surface area of an open rectangular tank with fixed volume.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "An open rectangular tank has a square base and volume \\(32\\). Find the base side length that minimizes its surface area.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let the square base have side length \\(x\\) and let the height be \\(h\\). Then\n\\[\nx^2h=32 \\implies h=\\frac{32}{x^2}.\n\\]\nThe surface area of the open tank is\n\\[\nS=x^2+4xh=x^2+4x\\cdot \\frac{32}{x^2}=x^2+\\frac{128}{x}.\n\\]\nDifferentiate:\n\\[\nS'(x)=2x-\\frac{128}{x^2}.\n\\]\nSet \\(S'(x)=0\\):\n\\[\n2x=\\frac{128}{x^2}\\implies 2x^3=128\\implies x^3=64\\implies x=4.\n\\]",
+      "hint": "For an open tank, the surface area includes the square base and the four side walls, but not a top."
+    },
+    {
+      "id": "math-gaokao-264-q009",
+      "category": "Solid Geometry",
+      "concept": "Maximizing Volume of an Open Box with Fixed Surface Area",
+      "learningObjective": "Determine the maximum volume of an open rectangular box with square base and fixed surface area.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "An open rectangular box has a square base and total surface area \\(48\\). Find its maximum volume.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(32\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let the square base have side length \\(x\\) and let the height be \\(h\\). The surface area is\n\\[\nx^2+4xh=48 \\implies h=\\frac{48-x^2}{4x}.\n\\]\nThe volume is\n\\[\nV=x^2h=x^2\\cdot \\frac{48-x^2}{4x}\n=\\frac{48x-x^3}{4}=12x-\\frac{x^3}{4}.\n\\]\nDifferentiate:\n\\[\nV'(x)=12-\\frac{3x^2}{4}.\n\\]\nSet \\(V'(x)=0\\):\n\\[\n12=\\frac{3x^2}{4}\\implies x^2=16\\implies x=4.\n\\]\nThen\n\\[\nh=\\frac{48-16}{16}=2,\n\\]\nand\n\\[\nV=4^2\\cdot 2=32.\n\\]",
+      "hint": "Use the surface-area condition to express the height in terms of the base side, then maximize the volume."
+    },
+    {
+      "id": "math-gaokao-264-q010",
+      "category": "Solid Geometry",
+      "concept": "Maximizing Volume of an Open-Top Cylinder with Fixed Surface Area",
+      "learningObjective": "Determine the maximum volume of an open-top cylinder with fixed surface area.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "An open-top right circular cylinder is made from \\(108\\pi\\text{ square units}\\) of material. Find its maximum volume.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(216\\pi\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(108\\pi\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let the cylinder have radius \\(r\\) and height \\(h\\). Since the top is open, the surface area is\n\\[\n\\pi r^2+2\\pi rh=108\\pi.\n\\]\nDivide by \\(\\pi\\):\n\\[\nr^2+2rh=108 \\implies h=\\frac{108-r^2}{2r}.\n\\]\nThe volume is\n\\[\nV=\\pi r^2h\n=\\pi r^2\\cdot \\frac{108-r^2}{2r}\n=\\pi\\left(54r-\\frac{r^3}{2}\\right).\n\\]\nDifferentiate:\n\\[\nV'(r)=\\pi\\left(54-\\frac{3r^2}{2}\\right).\n\\]\nSet \\(V'(r)=0\\):\n\\[\n54=\\frac{3r^2}{2}\\implies r^2=36\\implies r=6.\n\\]\nThen\n\\[\nh=\\frac{108-36}{12}=6.\n\\]\nThus\n\\[\nV=\\pi\\cdot 6^2\\cdot 6=216\\pi.\n\\]",
+      "hint": "Use the fixed surface area to express the height in terms of the radius, then maximize the volume."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-396",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 396",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-396-q001",
+      "category": "Number Theory",
+      "concept": "Integer Solutions of a Linear Equation",
+      "learningObjective": "Identify an ordered pair of integers that satisfies a given linear equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Which ordered pair \\((x,y)\\) is an integer solution of the equation \\(2x+3y=7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,1)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute each ordered pair into \\(2x+3y=7\\).\nFor A: \\(2(1)+3(1)=2+3=5\\ne 7\\).\nFor B: \\(2(2)+3(1)=4+3=7\\), so \\((2,1)\\) satisfies the equation.\nTherefore, the correct option is B.",
+      "hint": "Substitute each ordered pair into the equation and check whether the left-hand side equals \\(7\\)."
+    },
+    {
+      "id": "math-gaokao-396-q002",
+      "category": "Number Theory",
+      "concept": "Solving a Linear Equation in Integers",
+      "learningObjective": "Find the integer value of one variable in a linear equation after substituting a given integer value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(x\\) and \\(y\\) are integers and \\(5x+2y=3\\), what is \\(x\\) when \\(y=4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(y=4\\) into \\(5x+2y=3\\):\n\\[\n\\begin{aligned}\n5x+2(4)&=3 \\\\\n5x+8&=3 \\\\\n5x&=-5 \\\\\nx&=-1\n\\end{aligned}\n\\]\nThus, \\(x=-1\\), so the correct option is B.",
+      "hint": "Substitute the given value of \\(y\\) and solve the resulting one-variable linear equation for \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-396-q003",
+      "category": "Number Theory",
+      "concept": "Integer Solutions of a Difference of Squares",
+      "learningObjective": "Determine the number of integer ordered pairs satisfying a difference-of-squares equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many ordered pairs of integers \\((x,y)\\) satisfy \\(x^2-y^2=12\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor the left side:\n\\[\nx^2-y^2=(x-y)(x+y)=12\n\\]\nLet \\(u=x-y\\) and \\(v=x+y\\). Then \\(uv=12\\). Since \\(x\\) and \\(y\\) are integers, \\(u\\) and \\(v\\) must have the same parity. Because \\(12\\) is even, both factors must be even.\nThe even factor pairs of \\(12\\) are:\n\\[\n(2,6),\\ (6,2),\\ (-2,-6),\\ (-6,-2)\n\\]\nEach pair gives one integer solution \\((x,y)\\). Therefore, there are \\(4\\) ordered pairs. The correct option is A.",
+      "hint": "Factor \\(x^2-y^2\\) as a difference of squares and consider factor pairs of \\(12\\) with the same parity."
+    },
+    {
+      "id": "math-gaokao-396-q004",
+      "category": "Number Theory",
+      "concept": "Linear Congruence",
+      "learningObjective": "Solve a linear congruence modulo \\(7\\) and find the smallest positive integer solution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the smallest positive integer \\(x\\) satisfying \\(3x \\equiv 5 \\pmod{7}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "We need \\(3x\\equiv 5\\pmod{7}\\). The inverse of \\(3\\) modulo \\(7\\) is \\(5\\), because\n\\[\n3\\cdot 5=15\\equiv 1\\pmod{7}\n\\]\nMultiply both sides by \\(5\\):\n\\[\nx\\equiv 5\\cdot 5=25\\equiv 4\\pmod{7}\n\\]\nThe smallest positive integer satisfying this congruence is \\(4\\). Indeed, \\(3\\cdot 4=12\\equiv 5\\pmod{7}\\). Thus, the correct option is A.",
+      "hint": "Multiply both sides of the congruence by the modular inverse of \\(3\\) modulo \\(7\\)."
+    },
+    {
+      "id": "math-gaokao-396-q005",
+      "category": "Number Theory",
+      "concept": "Integer Roots of a Quadratic Equation",
+      "learningObjective": "Determine the number of integer parameter values for which a quadratic equation has integer roots.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many integer values of \\(k\\) make the equation \\(x^2+kx+1=0\\) have integer roots?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Suppose the integer roots are \\(r\\) and \\(s\\). By Vieta's formulas,\n\\[\nrs=1,\\qquad r+s=-k\n\\]\nSince \\(r\\) and \\(s\\) are integers and \\(rs=1\\), the only possibilities are \\((r,s)=(1,1)\\) or \\((-1,-1)\\).\nFor \\((1,1)\\), \\(r+s=2\\), so \\(-k=2\\), giving \\(k=-2\\).\nFor \\((-1,-1)\\), \\(r+s=-2\\), so \\(-k=-2\\), giving \\(k=2\\).\nThus, there are \\(2\\) integer values of \\(k\\). The correct option is B.",
+      "hint": "Use Vieta's formulas to relate the integer roots to the constant term and the coefficient of the linear term."
+    },
+    {
+      "id": "math-gaokao-396-q006",
+      "category": "Number Theory",
+      "concept": "Linear Diophantine Equation Solvability",
+      "learningObjective": "Determine the condition on a parameter for a linear Diophantine equation to have integer solutions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "For which integers \\(a\\) does the equation \\(ax+3y=5\\) have integer solutions \\((x,y)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a\\) is not divisible by \\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a\\) is divisible by \\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A linear Diophantine equation \\(ax+3y=5\\) has integer solutions if and only if\n\\[\n\\gcd(a,3)\\mid 5\n\\]\nNow \\(\\gcd(a,3)\\) is either \\(1\\) or \\(3\\). Since \\(3\\nmid 5\\), we must have\n\\[\n\\gcd(a,3)=1\n\\]\nThis happens exactly when \\(a\\) is not divisible by \\(3\\). Therefore, the correct option is A.",
+      "hint": "Recall the condition for a linear Diophantine equation \\(ax+by=c\\) to have integer solutions."
+    },
+    {
+      "id": "math-gaokao-396-q007",
+      "category": "Number Theory",
+      "concept": "Positive Integer Solutions of a Linear Equation",
+      "learningObjective": "Count the positive integer solutions of a two-variable linear equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many positive integer solutions \\((x,y)\\) does \\(2x+3y=30\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Solve for \\(y\\):\n\\[\n\\begin{aligned}\n3y&=30-2x \\\\\ny&=\\frac{30-2x}{3}\n\\end{aligned}\n\\]\nFor \\(y\\) to be a positive integer, we need \\(30-2x>0\\), so \\(x<15\\). Also, \\(30-2x\\) must be divisible by \\(3\\). Since \\(30\\) is divisible by \\(3\\), we need \\(2x\\equiv 0\\pmod{3}\\), so \\(x\\equiv 0\\pmod{3}\\).\nThe positive multiples of \\(3\\) less than \\(15\\) are:\n\\[\n3,\\ 6,\\ 9,\\ 12\n\\]\nThey give:\n\\[\nx=3\\Rightarrow y=8,\\quad x=6\\Rightarrow y=6,\\quad x=9\\Rightarrow y=4,\\quad x=12\\Rightarrow y=2\n\\]\nThus, there are \\(4\\) positive integer solutions. The correct option is B.",
+      "hint": "Solve for one variable and impose the positivity and divisibility conditions."
+    },
+    {
+      "id": "math-gaokao-396-q008",
+      "category": "Number Theory",
+      "concept": "Integer Solutions of a Difference of Cubes",
+      "learningObjective": "Determine the number of integer ordered pairs satisfying a difference-of-cubes equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many ordered pairs of integers \\((x,y)\\) satisfy \\(x^3-y^3=7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor the difference of cubes:\n\\[\nx^3-y^3=(x-y)(x^2+xy+y^2)=7\n\\]\nThe factor \\(x^2+xy+y^2\\) is positive for all integer pairs except \\((0,0)\\), which does not satisfy the equation. Since \\(7\\) is prime, the only positive factor possibilities are:\n\\[\nx-y=1,\\quad x^2+xy+y^2=7\n\\]\nor\n\\[\nx-y=7,\\quad x^2+xy+y^2=1\n\\]\nCase \\(1\\): \\(x=y+1\\). Then\n\\[\n\\begin{aligned}\n(y+1)^2+(y+1)y+y^2&=7 \\\\\n3y^2+3y+1&=7 \\\\\ny^2+y-2&=0 \\\\\n(y-1)(y+2)&=0\n\\end{aligned}\n\\]\nSo \\(y=1\\) or \\(y=-2\\), giving \\((x,y)=(2,1)\\) and \\((-1,-2)\\).\nCase \\(2\\): \\(x=y+7\\). Then\n\\[\n\\begin{aligned}\n(y+7)^2+(y+7)y+y^2&=1 \\\\\n3y^2+21y+49&=1 \\\\\ny^2+7y+16&=0\n\\end{aligned}\n\\]\nThis has discriminant \\(49-64=-15<0\\), so no integer solutions.\nNegative factor pairs are impossible because \\(x^2+xy+y^2>0\\). Therefore, there are exactly \\(2\\) integer ordered pairs. The correct option is A.",
+      "hint": "Factor \\(x^3-y^3\\) and use the prime factorization of \\(7\\)."
+    },
+    {
+      "id": "math-gaokao-396-q009",
+      "category": "Number Theory",
+      "concept": "Integer Solutions of a Sum of Squares",
+      "learningObjective": "Count the integer ordered pairs satisfying a two-variable quadratic equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many ordered pairs of integers \\((x,y)\\) satisfy \\(x^2+y^2=25\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "List the integer squares not exceeding \\(25\\):\n\\[\n0,\\ 1,\\ 4,\\ 9,\\ 16,\\ 25\n\\]\nWe need two squares whose sum is \\(25\\). The possibilities are:\n\\[\n\\begin{aligned}\n0^2+5^2&=25,\\qquad 5^2+0^2=25 \\\\\n3^2+4^2&=25,\\qquad 4^2+3^2=25\n\\end{aligned}\n\\]\nFor \\(0^2+5^2\\), the ordered pairs are \\((\\pm 5,0)\\) and \\((0,\\pm 5)\\), giving \\(4\\) solutions.\nFor \\(3^2+4^2\\), the ordered pairs are \\((\\pm 3,\\pm 4)\\) and \\((\\pm 4,\\pm 3)\\), giving \\(8\\) solutions.\nThus, the total number of ordered pairs is\n\\[\n4+8=12\n\\]\nThe correct option is A.",
+      "hint": "List the integer squares up to \\(25\\) and count all ordered pairs that sum to \\(25\\)."
+    },
+    {
+      "id": "math-gaokao-396-q010",
+      "category": "Number Theory",
+      "concept": "Integer Solutions of a Factored Quadratic Equation",
+      "learningObjective": "Solve and count the integer ordered pairs satisfying a quadratic equation that factors into linear factors.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many ordered pairs of integers \\((x,y)\\) satisfy \\(x^2-3xy+2y^2=7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor the quadratic expression:\n\\[\nx^2-3xy+2y^2=(x-y)(x-2y)=7\n\\]\nLet\n\\[\nu=x-y,\\qquad v=x-2y\n\\]\nThen \\(uv=7\\). Since \\(7\\) is prime, the integer factor pairs \\((u,v)\\) are:\n\\[\n(1,7),\\ (7,1),\\ (-1,-7),\\ (-7,-1)\n\\]\nFor each pair, we can recover \\(x\\) and \\(y\\) from\n\\[\ny=u-v,\\qquad x=2u-v\n\\]\nFor example, \\((u,v)=(1,7)\\) gives \\(y=-6\\) and \\(x=-5\\). Each of the four factor pairs gives a distinct integer ordered pair \\((x,y)\\). Therefore, there are \\(4\\) integer ordered pairs. The correct option is B.",
+      "hint": "Factor the quadratic expression into two linear factors and consider the integer factor pairs of \\(7\\)."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> dynanca-mcq@1.1.0 test:browser
+> playwright test --config=tests/browser/playwright.config.js tests/browser/release-audit.spec.js --reporter=list
+
+
+Running 14 tests using 1 worker
+
+(node:32) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:32) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 320px light: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.7s)
+  ✓   2 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 320px dark: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.4s)
+  ✓   3 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 390px light: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.4s)
+  ✓   4 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 390px dark: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.3s)
+  ✓   5 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 768px light: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.3s)
+  ✓   6 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 768px dark: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.4s)
+  ✓   7 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 1280px light: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.4s)
+  ✓   8 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 1280px dark: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.3s)
+  ✓   9 [chromium] › tests/browser/release-audit.spec.js:89:1 › all 100 ML questions complete once, persist and end without a navigation loop (7.7s)
+  ✓  10 [chromium] › tests/browser/release-audit.spec.js:111:1 › Venn names and rich text remain text under malicious HTML, with the real CSP intact (279ms)
+  ✓  11 [chromium] › tests/browser/release-audit.spec.js:132:1 › optional bar charts show both signs inside the SVG and escape title/caption text (297ms)
+  ✓  12 [chromium] › tests/browser/release-audit.spec.js:156:1 › normalizing a directory URL preserves the manifest bank ID query (212ms)
+  ✓  13 [chromium] › tests/browser/release-audit.spec.js:163:1 › every shipped Venn diagram fits its universe and has legible, separate labels at all four widths (954ms)
+  ✓  14 [chromium] › tests/browser/release-audit.spec.js:211:1 › contrast measurement catches low-opacity text despite its opaque colour value (177ms)
+
+  14 passed (21.9s)

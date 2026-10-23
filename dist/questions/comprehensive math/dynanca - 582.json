@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-582",
+  "category": "Comprehensive Mathematics",
+  "title": "582. Discrete Mathematics, Counting & Graph Theory: Handshaking Lemma",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-582-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Statement of the lemma",
+      "learningObjective": "State the handshaking lemma.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "According to the handshaking lemma, what does the sum of the degrees of all vertices of a graph equal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Twice the number of edges"
+        },
+        {
+          "label": "B",
+          "text": "The number of edges"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every edge has two ends, and each end adds \\(1\\) to the degree of a vertex. So when all degrees are added, every edge is counted exactly twice, and the sum equals twice the number of edges.",
+      "hint": "Think about how many endpoints one edge has."
+    },
+    {
+      "id": "dynanca-582-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Degree sum from the number of edges",
+      "learningObjective": "Find the sum of the degrees of a graph with a given number of edges.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has \\(7\\) edges. What is the sum of the degrees of its vertices?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(14\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the handshaking lemma the degree sum is twice the number of edges: \\(2\\cdot 7=14\\). The value \\(7\\) counts each edge only once, although each edge contributes to the degrees of two vertices.",
+      "hint": "Each edge contributes to two degrees."
+    },
+    {
+      "id": "dynanca-582-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Number of edges from the degrees",
+      "learningObjective": "Find the number of edges from the list of degrees.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The vertices of a graph have degrees \\(3,3,2,2,2\\). How many edges does the graph have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The degrees add up to \\(3+3+2+2+2=12\\). By the handshaking lemma this is twice the number of edges, so there are \\(\\dfrac{12}{2}=6\\) edges.",
+      "hint": "Add the degrees, then remember that every edge was counted twice."
+    },
+    {
+      "id": "dynanca-582-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An odd degree sum",
+      "learningObjective": "Decide whether a list of degrees can belong to a graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Can the vertices of a graph have the degrees \\(3,3,3,2,2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because the degrees add up to \\(13\\), which is odd."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because no degree exceeds the number of other vertices."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sum of the degrees of any graph equals twice the number of edges, so it must be even. Here the sum is \\(3+3+3+2+2=13\\), which is odd, so no graph has these degrees.",
+      "hint": "Add the degrees and check whether the total is even."
+    },
+    {
+      "id": "dynanca-582-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Vertices of odd degree",
+      "learningObjective": "Use the lemma to restrict the number of vertices of odd degree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A graph has exactly \\(k\\) vertices of odd degree. Which value of \\(k\\) is impossible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The degree sum is even. The vertices of even degree contribute an even amount, so the vertices of odd degree must also contribute an even amount, which requires an even number of them. Hence \\(k=3\\) is impossible, while \\(k=4\\) occurs, for example in the complete graph on \\(4\\) vertices.",
+      "hint": "A sum of odd numbers is even only when the number of terms is even."
+    },
+    {
+      "id": "dynanca-582-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Edges of a regular graph",
+      "learningObjective": "Count the edges of a graph in which all degrees are equal.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A graph has \\(9\\) vertices, and every vertex has degree \\(4\\). How many edges does it have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(18\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(36\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The degree sum is \\(9\\cdot 4=36\\), and by the handshaking lemma this is twice the number of edges. So the graph has \\(\\dfrac{36}{2}=18\\) edges.",
+      "hint": "Compute the degree sum, then halve it."
+    },
+    {
+      "id": "dynanca-582-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A missing degree",
+      "learningObjective": "Find an unknown degree from the number of edges.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has \\(6\\) vertices and \\(10\\) edges. Five of the vertices have degrees \\(4,4,3,3,2\\). What is the degree of the sixth vertex?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The degree sum is \\(2\\cdot 10=20\\). The five known degrees add up to \\(4+4+3+3+2=16\\), so the sixth vertex has degree \\(20-16=4\\).",
+      "hint": "Find the total of all six degrees from the number of edges."
+    },
+    {
+      "id": "dynanca-582-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A regular graph that cannot exist",
+      "learningObjective": "Use parity to exclude a regular graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Is there a graph with \\(9\\) vertices in which every vertex has degree \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; a vertex of a graph with \\(9\\) vertices can have any degree from \\(0\\) to \\(8\\)."
+        },
+        {
+          "label": "B",
+          "text": "No; the degree sum would be \\(45\\), which is odd."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The degree sum would be \\(9\\cdot 5=45\\). A degree sum is always twice the number of edges, hence even, so no such graph exists. Each single vertex could have degree \\(5\\), but not all nine at once.",
+      "hint": "Multiply the number of vertices by the common degree and check the parity."
+    },
+    {
+      "id": "dynanca-582-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Vertices of a regular graph",
+      "learningObjective": "Find the number of vertices from the number of edges and the common degree.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A graph has \\(14\\) edges, and every vertex has degree \\(4\\). How many vertices does it have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(14\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If there are \\(n\\) vertices, the degree sum is \\(4n\\), and it equals \\(2\\cdot 14=28\\). So \\(n=7\\). A graph of this kind exists: place \\(7\\) vertices on a circle and join each one to the two nearest vertices on either side.",
+      "hint": "Write the degree sum in two ways and solve for the number of vertices."
+    },
+    {
+      "id": "dynanca-582-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Mixed degrees",
+      "learningObjective": "Find the number of vertices from the number of edges and two degree values.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A graph has \\(15\\) edges. Exactly \\(3\\) of its vertices have degree \\(4\\), and all the other vertices have degree \\(3\\). How many vertices does the graph have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The degree sum is \\(2\\cdot 15=30\\). The three vertices of degree \\(4\\) contribute \\(12\\), leaving \\(18\\) for the vertices of degree \\(3\\), so there are \\(\\dfrac{18}{3}=6\\) of those. In total the graph has \\(3+6=9\\) vertices; \\(6\\) is only the number of vertices of degree \\(3\\).",
+      "hint": "Subtract the contribution of the vertices of degree \\(4\\) from the degree sum."
+    }
+  ]
+}

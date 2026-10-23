@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-595",
+  "category": "Comprehensive Mathematics",
+  "title": "595. Discrete Mathematics, Counting & Graph Theory: Bellman-Ford Relaxation Traces",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-595-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Relaxing an arc",
+      "learningObjective": "State what it means to relax an arc.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(d(x)\\) denote the current distance estimate of a vertex \\(x\\). What does relaxing an arc \\(u\\to v\\) of weight \\(w\\) do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It replaces \\(d(u)\\) by \\(d(v)+w\\), whatever the current values are."
+        },
+        {
+          "label": "B",
+          "text": "If \\(d(u)+w<d(v)\\), it replaces \\(d(v)\\) by \\(d(u)+w\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Relaxation tests whether reaching \\(v\\) through \\(u\\) is better than the best route to \\(v\\) known so far. If it is, the estimate of \\(v\\) is lowered to \\(d(u)+w\\); otherwise nothing changes. The estimate of \\(u\\) is never changed by relaxing an arc that leaves \\(u\\).",
+      "hint": "The arc points to \\(v\\), so it can only improve the estimate of \\(v\\)."
+    },
+    {
+      "id": "dynanca-595-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A relaxation that improves",
+      "learningObjective": "Carry out a relaxation that lowers an estimate.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The current estimates are \\(d(u)=5\\) and \\(d(v)=9\\), and the arc \\(u\\to v\\) has weight \\(3\\). What is \\(d(v)\\) after this arc is relaxed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Through \\(u\\), the vertex \\(v\\) can be reached with total \\(5+3=8\\). Since \\(8<9\\), the estimate is lowered to \\(8\\). It would stay at \\(9\\) only if the route through \\(u\\) were not better.",
+      "hint": "Compare \\(d(u)\\) plus the weight with the current \\(d(v)\\)."
+    },
+    {
+      "id": "dynanca-595-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A relaxation that changes nothing",
+      "learningObjective": "Carry out a relaxation that leaves an estimate unchanged.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The current estimates are \\(d(u)=5\\) and \\(d(v)=7\\), and the arc \\(u\\to v\\) has weight \\(3\\). What is \\(d(v)\\) after this arc is relaxed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Through \\(u\\), the vertex \\(v\\) would be reached with total \\(5+3=8\\). Since \\(8\\) is not smaller than the current estimate \\(7\\), nothing changes. Relaxation never increases an estimate.",
+      "hint": "An estimate is replaced only by a smaller value."
+    },
+    {
+      "id": "dynanca-595-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "One pass over the arcs",
+      "learningObjective": "Trace one pass of the Bellman-Ford algorithm.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A directed graph has the arcs \\(A\\to B\\) of weight \\(4\\), \\(A\\to C\\) of weight \\(2\\), \\(C\\to B\\) of weight \\(1\\), \\(B\\to D\\) of weight \\(3\\), and \\(C\\to D\\) of weight \\(6\\). Initially \\(d(A)=0\\) and all other estimates are infinite. The arcs are relaxed once each, in the order listed. What is \\(d(B)\\) after this pass?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Relaxing \\(A\\to B\\) gives \\(d(B)=4\\); relaxing \\(A\\to C\\) gives \\(d(C)=2\\); relaxing \\(C\\to B\\) compares \\(2+1=3\\) with \\(4\\) and lowers \\(d(B)\\) to \\(3\\). The later arcs do not change \\(d(B)\\). The value \\(4\\) is only the first estimate.",
+      "hint": "Follow the arcs in the listed order and update the estimates one at a time."
+    },
+    {
+      "id": "dynanca-595-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The order of the arcs matters",
+      "learningObjective": "Trace one pass with the arcs in an unfavourable order.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A directed graph has the arcs \\(A\\to B\\) of weight \\(4\\), \\(A\\to C\\) of weight \\(2\\), \\(C\\to B\\) of weight \\(1\\), and \\(B\\to D\\) of weight \\(3\\). Initially \\(d(A)=0\\) and all other estimates are infinite. In one pass the arcs are relaxed in the order \\(B\\to D\\), \\(C\\to B\\), \\(A\\to C\\), \\(A\\to B\\). What is \\(d(D)\\) after this pass?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is \\(6\\)."
+        },
+        {
+          "label": "B",
+          "text": "It is still infinite."
+        }
+      ],
+      "answer": "B",
+      "explanation": "When \\(B\\to D\\) is relaxed, \\(d(B)\\) is still infinite, so nothing happens; the same holds for \\(C\\to B\\). Then \\(A\\to C\\) gives \\(d(C)=2\\) and \\(A\\to B\\) gives \\(d(B)=4\\). The vertex \\(D\\) has not been reached yet. Its final value \\(6\\) appears only in later passes, which is why several passes are needed.",
+      "hint": "An arc can pass on a finite estimate only if its starting vertex already has one."
+    },
+    {
+      "id": "dynanca-595-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Number of passes",
+      "learningObjective": "State how many passes the Bellman-Ford algorithm needs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The Bellman-Ford algorithm is run on a directed graph with \\(6\\) vertices and no negative cycle. How many passes over all arcs are enough to guarantee correct shortest distances?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A shortest path that repeats no vertex has at most \\(6-1=5\\) arcs, and after \\(k\\) passes all shortest paths with at most \\(k\\) arcs have been accounted for. So \\(5\\) passes suffice. A sixth pass is used only as a test: if it still changes an estimate, the graph has a negative cycle.",
+      "hint": "Think about the largest number of arcs on a path that repeats no vertex."
+    },
+    {
+      "id": "dynanca-595-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Why that many passes",
+      "learningObjective": "Explain the bound on the number of passes.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Why do \\(n-1\\) passes suffice for a directed graph with \\(n\\) vertices and no negative cycle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A shortest path can be chosen with at most \\(n-1\\) arcs, and pass number \\(k\\) settles all shortest paths with at most \\(k\\) arcs."
+        },
+        {
+          "label": "B",
+          "text": "Each pass permanently removes one vertex from the graph, so after \\(n-1\\) passes only one vertex is left."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Without negative cycles, repeating a vertex never shortens a route, so some shortest path to each vertex repeats no vertex and has at most \\(n-1\\) arcs. Each pass extends the correctly settled paths by at least one more arc. No vertex is removed from the graph during the algorithm.",
+      "hint": "Relate the number of passes to the number of arcs on a shortest path."
+    },
+    {
+      "id": "dynanca-595-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A negative arc",
+      "learningObjective": "Trace one pass in a graph with a negative arc.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Procedural",
+      "question": "A directed graph has the arcs \\(A\\to B\\) of weight \\(5\\), \\(A\\to C\\) of weight \\(2\\), \\(B\\to C\\) of weight \\(-4\\), and \\(C\\to D\\) of weight \\(3\\). Initially \\(d(A)=0\\) and all other estimates are infinite. The arcs are relaxed once each, in the order listed. What is \\(d(D)\\) after this pass?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Relaxing \\(A\\to B\\) gives \\(d(B)=5\\), and \\(A\\to C\\) gives \\(d(C)=2\\). Relaxing \\(B\\to C\\) compares \\(5+(-4)=1\\) with \\(2\\) and lowers \\(d(C)\\) to \\(1\\). Finally \\(C\\to D\\) gives \\(d(D)=1+3=4\\). The value \\(5\\) uses the earlier estimate \\(d(C)=2\\) and ignores the improvement through the negative arc.",
+      "hint": "Update \\(d(C)\\) with the negative arc before relaxing the arc into \\(D\\)."
+    },
+    {
+      "id": "dynanca-595-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A negative cycle",
+      "learningObjective": "Recognise a negative cycle reachable from the source.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A directed graph has the arcs \\(A\\to B\\) of weight \\(1\\), \\(B\\to C\\) of weight \\(-3\\), and \\(C\\to B\\) of weight \\(1\\). What does the Bellman-Ford algorithm, started at \\(A\\), report?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A negative cycle reachable from \\(A\\): the cycle \\(B,C,B\\) has total weight \\(-2\\)."
+        },
+        {
+          "label": "B",
+          "text": "The shortest distance from \\(A\\) to \\(C\\) is \\(-2\\), and no further improvement is possible."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The cycle \\(B\\to C\\to B\\) has weight \\(-3+1=-2\\). Each time it is traversed, the estimates of \\(B\\) and \\(C\\) drop by \\(2\\), so they never settle and no shortest distance exists. The algorithm detects this because an arc can still be relaxed after \\(n-1=2\\) passes. The value \\(-2\\) is only the estimate of \\(C\\) after the first pass.",
+      "hint": "Add the weights around the cycle formed by \\(B\\) and \\(C\\)."
+    },
+    {
+      "id": "dynanca-595-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting the passes needed",
+      "learningObjective": "Find how many passes are needed for a path whose arcs are listed backwards.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A directed graph has the arcs \\(A\\to B\\), \\(B\\to C\\), and \\(C\\to D\\), each of weight \\(1\\). In every pass the arcs are relaxed in the order \\(C\\to D\\), \\(B\\to C\\), \\(A\\to B\\). Starting from \\(d(A)=0\\) and infinite estimates elsewhere, after how many passes does \\(d(D)\\) first reach its final value \\(3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In the first pass only \\(A\\to B\\) has an effect, giving \\(d(B)=1\\). In the second pass \\(B\\to C\\) gives \\(d(C)=2\\), but \\(C\\to D\\) was relaxed earlier in that pass, while \\(d(C)\\) was still infinite. In the third pass \\(C\\to D\\) gives \\(d(D)=3\\). With this order, each pass advances the information by only one arc.",
+      "hint": "In each pass, check which arcs start at a vertex that already has a finite estimate at that moment."
+    }
+  ]
+}

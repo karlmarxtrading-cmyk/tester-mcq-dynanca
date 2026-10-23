@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-150",
+  "category": "Comprehensive Mathematics",
+  "title": "150. Quantitative Relationships & Measurement: Compound Interest with Multiple Compounding Periods",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-150-q001",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Compound Interest with Semiannual Compounding",
+      "learningObjective": "Calculate the final amount when interest is compounded semiannually.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A principal of \\(1{,}000\\text{ yuan}\\) is invested at \\(4\\%\\) nominal annual interest compounded semiannually. What is the amount after \\(1\\text{ year}\\)? Round money to two decimal places.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1{,}040.00\\text{ yuan}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1{,}040.40\\text{ yuan}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(A=P\\left(1+\\frac{r}{n}\\right)^{nt}\\) with \\(P=1{,}000\\), \\(r=0.04\\), \\(n=2\\), and \\(t=1\\). Then\n\\[\nA=1{,}000\\left(1+\\frac{0.04}{2}\\right)^{2}=1{,}000(1.02)^2=1{,}000\\times 1.0404=1{,}040.40\n\\]\nTherefore, the amount is \\(1{,}040.40\\text{ yuan}\\). Option A incorrectly treats the interest as simple interest.",
+      "hint": "Identify the rate per compounding period and the number of periods."
+    },
+    {
+      "id": "dynanca-150-q002",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Compound Interest with Quarterly Compounding",
+      "learningObjective": "Calculate the final amount when interest is compounded quarterly.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A principal of \\(2{,}000\\text{ yuan}\\) is invested at \\(6\\%\\) nominal annual interest compounded quarterly. What is the amount after \\(1\\text{ year}\\)? Round money to two decimal places.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2{,}122.73\\text{ yuan}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2{,}120.00\\text{ yuan}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are four quarterly periods at \\(\\frac{0.06}{4}=0.015\\) per period. The amount is \\(2{,}000(1.015)^4\\approx 2{,}122.73\\text{ yuan}\\). The alternative \\(2{,}120.00\\text{ yuan}\\) uses simple interest, \\(2{,}000(1+0.06)=2{,}120\\), omitting interest on interest.",
+      "hint": "Distinguish a nominal annual rate from an effective annual rate."
+    },
+    {
+      "id": "dynanca-150-q003",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Compound Interest with Monthly Compounding",
+      "learningObjective": "Calculate the compound interest earned when interest is compounded monthly.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A principal of \\(5{,}000\\text{ yuan}\\) is invested at \\(3\\%\\) nominal annual interest compounded monthly for \\(2\\text{ years}\\). How much compound interest is earned? Round money to two decimal places.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(300.00\\text{ yuan}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(308.79\\text{ yuan}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The monthly rate is \\(\\frac{0.03}{12}=0.0025\\), with \\(24\\) periods. The interest is \\(5{,}000(1.0025)^{24}-5{,}000\\approx 308.79\\text{ yuan}\\). The alternative \\(300.00\\text{ yuan}\\) uses simple interest, \\(5{,}000\\times 0.03\\times 2=300\\).",
+      "hint": "Find the final amount using the monthly rate and the number of months, then subtract the principal."
+    },
+    {
+      "id": "dynanca-150-q004",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Present Value with Quarterly Compounding",
+      "learningObjective": "Determine the principal needed today to reach a given future amount under quarterly compounding.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How much must be invested now at \\(8\\%\\) nominal annual interest compounded quarterly to have \\(5{,}000\\text{ yuan}\\) in \\(3\\text{ years}\\)? Round money to two decimal places.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3{,}942.47\\text{ yuan}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4{,}032.26\\text{ yuan}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The quarterly rate is \\(\\frac{0.08}{4}=0.02\\), with \\(4\\times 3=12\\) periods. The present value is \\(\\frac{5{,}000}{1.02^{12}}\\approx 3{,}942.47\\text{ yuan}\\). The alternative \\(4{,}032.26\\text{ yuan}\\) uses simple discounting, \\(\\frac{5{,}000}{1+0.08\\times 3}\\approx 4{,}032.26\\), instead of quarterly compounding.",
+      "hint": "Identify the rate per compounding period and the number of periods."
+    },
+    {
+      "id": "dynanca-150-q005",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Comparing Effective Annual Rates",
+      "learningObjective": "Determine which compounding frequency yields a higher effective annual rate.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which investment has the higher effective annual rate: \\(8\\%\\) compounded quarterly or \\(8\\%\\) compounded annually? The quoted rates are nominal annual rates.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\%\\) compounded quarterly"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\%\\) compounded annually"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The quarterly option has effective annual rate \\(((1.02)^4-1)\\times 100\\%=8.243216\\%\\), greater than the annually compounded rate of \\(8\\%\\). The annual option has fewer opportunities to earn interest on accumulated interest.",
+      "hint": "Distinguish a nominal annual rate from an effective annual rate."
+    },
+    {
+      "id": "dynanca-150-q006",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Time to Double with Monthly Compounding",
+      "learningObjective": "Determine the time needed for an investment to double under monthly compounding.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How long will it take for an investment to double at \\(6\\%\\) nominal annual interest compounded monthly? Use the compound-growth model and round the time in years to one decimal place.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12.0\\text{ years}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(11.6\\text{ years}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The doubling equation is \\((1.005)^{12t}=2\\). Taking logarithms gives \\(t=\\frac{\\ln 2}{12\\ln(1.005)}\\approx 11.6\\text{ years}\\). The alternative \\(12.0\\text{ years}\\) comes from the approximate Rule of \\(72\\), \\(\\frac{72}{6}=12\\), rather than the specified compound-growth model.",
+      "hint": "Write a doubling condition using the periodic growth factor."
+    },
+    {
+      "id": "dynanca-150-q007",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Nominal Rate from Effective Annual Rate",
+      "learningObjective": "Determine the nominal annual rate compounded semiannually that gives a specified effective annual rate.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "What nominal annual rate compounded semiannually gives an effective annual rate of \\(10\\%\\)? Round the percentage to two decimal places.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10.00\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9.76\\%\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The effective annual factor must satisfy \\(\\left(1+\\frac{r}{2}\\right)^2=1.10\\). Thus \\(r=2(\\sqrt{1.10}-1)\\), or \\(r\\times 100\\%\\approx 9.76\\%\\). The alternative \\(10.00\\%\\) treats the effective annual rate as the nominal rate; semiannual compounding makes these rates differ.",
+      "hint": "Write the one-year accumulation factor in terms of the nominal rate."
+    },
+    {
+      "id": "dynanca-150-q008",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Compound Interest with Daily Compounding",
+      "learningObjective": "Calculate the final amount when interest is compounded daily.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A principal of \\(1{,}000\\text{ yuan}\\) is invested at \\(5\\%\\) nominal annual interest compounded daily for \\(1\\text{ year}\\). What is the amount after \\(1\\text{ year}\\)? (Use \\(365\\text{ days}\\) in a year.) Round money to two decimal places.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1{,}051.27\\text{ yuan}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1{,}050.00\\text{ yuan}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(365\\) periods at \\(\\frac{0.05}{365}\\) each. The amount is \\(1{,}000\\left(1+\\frac{0.05}{365}\\right)^{365}\\approx 1{,}051.27\\text{ yuan}\\). The alternative \\(1{,}050.00\\text{ yuan}\\) uses simple interest over the year.",
+      "hint": "Distinguish a nominal annual rate from an effective annual rate."
+    },
+    {
+      "id": "dynanca-150-q009",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Effective Annual Rate from Monthly Compounding",
+      "learningObjective": "Calculate the effective annual rate for a nominal rate compounded monthly.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the effective annual rate for a nominal rate of \\(12\\%\\) compounded monthly? Round the percentage to two decimal places.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12.00\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12.68\\%\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The monthly rate is \\(\\frac{0.12}{12}=0.01\\). The effective annual rate is \\(((1.01)^{12}-1)\\times 100\\%\\approx 12.68\\%\\). The alternative \\(12.00\\%\\) is the nominal rate and ignores interest on interest during the year.",
+      "hint": "Decide whether the required unknown is a final value, a present value, a rate, or a time."
+    },
+    {
+      "id": "dynanca-150-q010",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Present Value with Semiannual Compounding",
+      "learningObjective": "Determine the present value needed to reach a future amount under semiannual compounding.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How much must be invested now at \\(5\\%\\) nominal annual interest compounded semiannually to have \\(10{,}000\\text{ yuan}\\) in \\(4\\text{ years}\\)? Round money to two decimal places.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8{,}207.47\\text{ yuan}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8{,}333.33\\text{ yuan}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The half-year rate is \\(\\frac{0.05}{2}=0.025\\), with \\(2\\times 4=8\\) periods. The present value is \\(\\frac{10{,}000}{1.025^8}\\approx 8{,}207.47\\text{ yuan}\\). The alternative \\(8{,}333.33\\text{ yuan}\\) uses simple discounting, \\(\\frac{10{,}000}{1+0.05\\times 4}\\approx 8{,}333.33\\), instead of semiannual compounding.",
+      "hint": "Identify the rate per compounding period and the number of periods."
+    }
+  ]
+}

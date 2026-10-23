@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-561",
+  "category": "Comprehensive Mathematics",
+  "title": "561. Discrete Mathematics, Counting & Graph Theory: Inclusion-Exclusion for Three Sets",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-561-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The sign of the triple intersection",
+      "learningObjective": "State how the triple intersection enters the formula for three sets.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In the inclusion-exclusion formula for \\(|A\\cup B\\cup C|\\), the sizes of the three sets are added and the sizes of the three pairwise intersections are subtracted. What is done with \\(|A\\cap B\\cap C|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is subtracted."
+        },
+        {
+          "label": "B",
+          "text": "It is added."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The formula is \\(|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|\\). An element in all three sets is counted \\(3\\) times, then removed \\(3\\) times, so it must be added back once.",
+      "hint": "Follow an element that lies in all three sets through the first six terms."
+    },
+    {
+      "id": "dynanca-561-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Applying the formula",
+      "learningObjective": "Apply the inclusion-exclusion formula for three sets to given sizes.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Sets \\(A\\), \\(B\\), \\(C\\) each have \\(10\\) elements. Each pairwise intersection has \\(4\\) elements, and \\(|A\\cap B\\cap C|=2\\). What is \\(|A\\cup B\\cup C|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(|A\\cup B\\cup C|=10+10+10-4-4-4+2=20\\). The number \\(16\\) results from subtracting the triple intersection instead of adding it.",
+      "hint": "Add the three sizes, subtract the three pairwise intersections, then add the triple intersection."
+    },
+    {
+      "id": "dynanca-561-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Multiples of two, three or five",
+      "learningObjective": "Count integers divisible by at least one of three numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many integers from \\(1\\) to \\(100\\) are divisible by at least one of \\(2\\), \\(3\\), \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(71\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(74\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiples: \\(50\\) of \\(2\\), \\(33\\) of \\(3\\), \\(20\\) of \\(5\\). Common multiples: \\(16\\) of \\(6\\), \\(10\\) of \\(10\\), \\(6\\) of \\(15\\), and \\(3\\) of \\(30\\). So the count is \\(50+33+20-16-10-6+3=74\\). The number \\(71\\) omits the final term \\(+3\\).",
+      "hint": "After subtracting the three pairwise overlaps, add back the multiples of \\(30\\)."
+    },
+    {
+      "id": "dynanca-561-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Three subjects",
+      "learningObjective": "Count the members of a group that belong to none of three subgroups.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Of \\(120\\) students, \\(60\\) take mathematics, \\(50\\) take physics, and \\(40\\) take chemistry; \\(25\\) take mathematics and physics, \\(20\\) take mathematics and chemistry, \\(15\\) take physics and chemistry, and \\(10\\) take all three. How many take none of the three subjects?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number taking at least one subject is \\(60+50+40-25-20-15+10=100\\). So \\(120-100=20\\) take none. The number \\(30\\) omits the term \\(+10\\) for the students taking all three.",
+      "hint": "Find how many take at least one subject, using all seven terms of the formula."
+    },
+    {
+      "id": "dynanca-561-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Finding the triple intersection",
+      "learningObjective": "Find the size of a triple intersection from the other terms of the formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Sets \\(A\\), \\(B\\), \\(C\\) have \\(30\\), \\(25\\), and \\(20\\) elements. The pairwise intersections have \\(10\\), \\(8\\), and \\(12\\) elements, and \\(|A\\cup B\\cup C|=50\\). What is \\(|A\\cap B\\cap C|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The formula gives \\(50=30+25+20-10-8-12+|A\\cap B\\cap C|=45+|A\\cap B\\cap C|\\), so \\(|A\\cap B\\cap C|=5\\). The number \\(15\\) is larger than the pairwise intersections of \\(10\\) and \\(8\\) elements, which is impossible.",
+      "hint": "Substitute the known values into the formula and solve for the remaining term."
+    },
+    {
+      "id": "dynanca-561-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Exactly one of three",
+      "learningObjective": "Count the elements that belong to exactly one of three sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Sets \\(A\\), \\(B\\), \\(C\\) have \\(20\\), \\(18\\), and \\(15\\) elements; \\(|A\\cap B|=7\\), \\(|A\\cap C|=6\\), \\(|B\\cap C|=5\\), and \\(|A\\cap B\\cap C|=3\\). How many elements belong to exactly one of the three sets?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(38\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(26\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Elements in exactly two sets: \\(7-3=4\\), \\(6-3=3\\), and \\(5-3=2\\). Elements only in \\(A\\): \\(20-4-3-3=10\\); only in \\(B\\): \\(18-4-2-3=9\\); only in \\(C\\): \\(15-3-2-3=7\\). So \\(10+9+7=26\\) elements belong to exactly one set. The number \\(38\\) is the size of the union.",
+      "hint": "Work outward from the triple intersection, region by region."
+    },
+    {
+      "id": "dynanca-561-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Coprime to thirty",
+      "learningObjective": "Count integers divisible by none of three primes.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many integers from \\(1\\) to \\(60\\) are divisible by none of \\(2\\), \\(3\\), \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Divisible by at least one: \\(30+20+12-10-6-4+2=44\\). So \\(60-44=16\\) integers are divisible by none of them. The number \\(20\\) results from subtracting the multiples of \\(30\\) instead of adding them back.",
+      "hint": "Count the integers divisible by at least one of the three primes, then take the complement."
+    },
+    {
+      "id": "dynanca-561-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting an element of two sets",
+      "learningObjective": "Trace how often an element is counted by the formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "An element belongs to \\(A\\) and \\(B\\) but not to \\(C\\). What is its total contribution to \\(|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The element is counted in \\(|A|\\) and in \\(|B|\\), contributing \\(2\\), and it is counted once in \\(|A\\cap B|\\), which is subtracted. It appears in no other term. So its total contribution is \\(2-1=1\\), as required for an element of the union.",
+      "hint": "Go through the seven terms and note in which of them the element is counted."
+    },
+    {
+      "id": "dynanca-561-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Multiples of three, five or seven",
+      "learningObjective": "Apply the three-set formula to a longer range of integers.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many integers from \\(1\\) to \\(210\\) are divisible by at least one of \\(3\\), \\(5\\), \\(7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(112\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(114\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiples: \\(70\\) of \\(3\\), \\(42\\) of \\(5\\), \\(30\\) of \\(7\\). Common multiples: \\(14\\) of \\(15\\), \\(10\\) of \\(21\\), \\(6\\) of \\(35\\), and \\(2\\) of \\(105\\). The count is \\(70+42+30-14-10-6+2=114\\). The number \\(112\\) omits the term \\(+2\\).",
+      "hint": "The numbers divisible by all three are the multiples of \\(105\\)."
+    },
+    {
+      "id": "dynanca-561-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "At least two of three",
+      "learningObjective": "Count the elements that belong to at least two of three sets.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Sets \\(A\\), \\(B\\), \\(C\\) satisfy \\(|A\\cap B|=9\\), \\(|A\\cap C|=8\\), \\(|B\\cap C|=7\\), and \\(|A\\cap B\\cap C|=4\\). How many elements belong to at least two of the three sets?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Elements in exactly two sets number \\((9-4)+(8-4)+(7-4)=12\\), and \\(4\\) elements are in all three, so \\(12+4=16\\) elements are in at least two sets. Equivalently, \\(9+8+7-2\\cdot 4=16\\). The number \\(20=24-4\\) removes the triple intersection only once, although it is counted three times in \\(9+8+7\\).",
+      "hint": "An element of all three sets is counted in each of the three pairwise intersections."
+    }
+  ]
+}

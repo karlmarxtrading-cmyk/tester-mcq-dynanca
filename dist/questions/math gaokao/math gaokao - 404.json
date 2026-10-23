@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-404",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 404",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-404-q001",
+      "category": "Mathematical Modeling",
+      "concept": "Linear Cost Model",
+      "learningObjective": "Construct and use a linear function to model a total cost with a fixed fee and a variable rate.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A taxi company charges a fixed fee of \\(8\\text{ yuan}\\) plus \\(2.5\\text{ yuan}\\) per kilometer. If the distance traveled increases by \\(4\\text{ km}\\), by how much does the total fare increase?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\text{ yuan}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\text{ yuan}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Model the fare by \\(F(x)=8+2.5x\\), where \\(x\\) is the distance in kilometers. Then \\[\n\\begin{aligned}\nF(x+4)-F(x)&=[8+2.5(x+4)]-[8+2.5x] \\\\\n&=2.5\\cdot4 \\\\\n&=10\n\\end{aligned}\n\\]. Thus the fare increases by \\(10\\text{ yuan}\\).",
+      "hint": "Write the fare as a linear function of distance and compare \\(F(x+4)\\) with \\(F(x)\\)."
+    },
+    {
+      "id": "math-gaokao-404-q002",
+      "category": "Mathematical Modeling",
+      "concept": "Linear Function Representation",
+      "learningObjective": "Translate a monthly cost situation into a linear function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A phone plan costs \\(30\\text{ yuan}\\) per month plus \\(0.2\\text{ yuan}\\) per minute of calls. Let \\(m\\) be the number of minutes used in a month. Which function models the monthly cost \\(C(m)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(C(m)=30+0.2m\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(C(m)=30m+0.2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The monthly cost consists of a fixed \\(30\\text{ yuan}\\) charge plus \\(0.2\\text{ yuan}\\) for each minute \\(m\\). Therefore the linear model is \\(C(m)=30+0.2m\\).",
+      "hint": "Identify the fixed part and the part that changes with the number of minutes."
+    },
+    {
+      "id": "math-gaokao-404-q003",
+      "category": "Mathematical Modeling",
+      "concept": "Quadratic Revenue Model",
+      "learningObjective": "Maximize revenue modeled by a quadratic function derived from a linear demand equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A company models demand for a product by \\(q=120-3p\\), where \\(p\\) is the price in yuan and \\(q\\) is the quantity sold. The revenue is \\(R(p)=pq\\). What price maximizes revenue? Assume \\(0\\le p\\le40\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\text{ yuan}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\text{ yuan}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(q=120-3p\\) into \\(R=pq\\): \\(R(p)=p(120-3p)=-3p^2+120p\\). This quadratic has its maximum at \\(p=-\\frac{120}{2(-3)}=20\\). Therefore the price that maximizes revenue is \\(20\\text{ yuan}\\).",
+      "hint": "Write revenue as a quadratic function of price and locate its vertex."
+    },
+    {
+      "id": "math-gaokao-404-q004",
+      "category": "Mathematical Modeling",
+      "concept": "Exponential Growth Model",
+      "learningObjective": "Evaluate an exponential population model at a given time.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A bacteria population is modeled by \\(P(t)=500(1.2)^t\\), where \\(t\\) is in hours. What is the population after \\(2\\) hours?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(720\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(700\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(t=2\\) into the model: \\[\n\\begin{aligned}\nP(2)&=500(1.2)^2 \\\\\n&=500\\cdot1.44 \\\\\n&=720\n\\end{aligned}\n\\]. Thus the population after \\(2\\) hours is \\(720\\).",
+      "hint": "Substitute the given time into the exponential expression and evaluate the power first."
+    },
+    {
+      "id": "math-gaokao-404-q005",
+      "category": "Mathematical Modeling",
+      "concept": "Stepwise Parking Cost with Partial-Hour Charges",
+      "learningObjective": "Compute a parking charge when each additional hour or part of an hour is charged as a full hour.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A parking lot charges \\(10\\text{ yuan}\\) for the first \\(2\\) hours and \\(4\\text{ yuan}\\) for each additional hour or part thereof. Let \\(C(t)\\) be the cost for \\(t>2\\) hours. If a car is parked for \\(5\\) hours, what is the cost?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(22\\text{ yuan}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(26\\text{ yuan}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first \\(2\\) hours cost \\(10\\) yuan. Each additional hour or part of an hour costs \\(4\\) yuan, so the number of charged additional hours must be rounded up. For \\(t>2\\),\n\\[\nC(t)=10+4\\left\\lceil t-2\\right\\rceil,\n\\]\nwhere \\(\\lceil u\\rceil\\) is the smallest integer greater than or equal to \\(u\\). Therefore,\n\\[\n\\begin{aligned}\nC(5)&=10+4\\lceil5-2\\rceil\\\\\n&=10+4\\cdot3\\\\\n&=22.\n\\end{aligned}\n\\]\nThe parking charge is \\(22\\) yuan.",
+      "hint": "Subtract the first \\(2\\) hours from the parking time. Round any remaining fraction of an hour up before applying the additional hourly charge."
+    },
+    {
+      "id": "math-gaokao-404-q006",
+      "category": "Mathematical Modeling",
+      "concept": "Inverse Square Model",
+      "learningObjective": "Use an inverse square function to determine light intensity at a new distance.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The intensity \\(I\\) of light at a distance \\(d\\) from a source is modeled by \\(I=\\frac{k}{d^2}\\). If \\(I=80\\) when \\(d=2\\), what is \\(I\\) when \\(d=4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(40\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using \\(I=\\frac{k}{d^2}\\) with \\(I=80\\) and \\(d=2\\), we get \\(80=\\frac{k}{4}\\), so \\(k=320\\). Then when \\(d=4\\), \\[\n\\begin{aligned}\nI&=\\frac{320}{4^2} \\\\\n&=\\frac{320}{16} \\\\\n&=20\n\\end{aligned}\n\\]. Thus \\(I=20\\).",
+      "hint": "First determine the constant \\(k\\) from the given pair of values."
+    },
+    {
+      "id": "math-gaokao-404-q007",
+      "category": "Mathematical Modeling",
+      "concept": "Break-Even Analysis with Linear Functions",
+      "learningObjective": "Determine how a change in fixed cost affects the break-even quantity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A factory has fixed costs of \\(200\\text{ yuan}\\) and variable cost \\(5\\text{ yuan}\\) per unit. Each unit sells for \\(9\\text{ yuan}\\). If fixed costs increase by \\(100\\text{ yuan}\\), by how many units does the break-even point increase?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\) units"
+        },
+        {
+          "label": "B",
+          "text": "\\(25\\) units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Before the increase, break-even satisfies \\(9x=5x+200\\), so \\(4x=200\\) and \\(x=50\\). After fixed costs increase by \\(100\\), the new fixed cost is \\(300\\), so \\(9x=5x+300\\), giving \\(4x=300\\) and \\(x=75\\). The increase is \\(75-50=25\\) units.",
+      "hint": "Set revenue equal to total cost before and after the fixed-cost change."
+    },
+    {
+      "id": "math-gaokao-404-q008",
+      "category": "Mathematical Modeling",
+      "concept": "Quadratic Projectile Model",
+      "learningObjective": "Find the maximum height from a quadratic model of vertical motion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A ball is thrown upward. Its height in meters after \\(t\\) seconds is modeled by \\(h(t)=-5t^2+20t+1\\). What is the maximum height?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\text{ m}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(21\\text{ m}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The graph of \\(h(t)=-5t^2+20t+1\\) is a parabola opening downward. Its maximum occurs at \\(t=-\\frac{20}{2(-5)}=2\\). Then \\[\n\\begin{aligned}\nh(2)&=-5(2)^2+20(2)+1 \\\\\n&=-20+40+1 \\\\\n&=21\n\\end{aligned}\n\\]. Therefore the maximum height is \\(21\\text{ m}\\).",
+      "hint": "Find the time at the vertex of the quadratic, then substitute it into the height function."
+    },
+    {
+      "id": "math-gaokao-404-q009",
+      "category": "Mathematical Modeling",
+      "concept": "Exponential Decay Model",
+      "learningObjective": "Determine the first whole year when an exponentially decaying value falls below a given threshold.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A machine's value is modeled by \\(V(t)=12000(0.8)^t\\), where \\(t\\) is years. After how many whole years is the value first less than \\(6000\\text{ yuan}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Evaluate the model at successive whole years. \\[\n\\begin{aligned}\nV(3)&=12000(0.8)^3 \\\\\n&=12000(0.512) \\\\\n&=6144\n\\end{aligned}\n\\], which is not less than \\(6000\\). \\[\n\\begin{aligned}\nV(4)&=12000(0.8)^4 \\\\\n&=12000(0.4096) \\\\\n&=4915.2\n\\end{aligned}\n\\], which is less than \\(6000\\). Therefore the value first falls below \\(6000\\text{ yuan}\\) after \\(4\\) whole years.",
+      "hint": "Check the value year by year until it drops below the threshold."
+    },
+    {
+      "id": "math-gaokao-404-q010",
+      "category": "Mathematical Modeling",
+      "concept": "Quadratic Optimization with a Constraint",
+      "learningObjective": "Maximize area using a quadratic model under a fixed fencing constraint.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A farmer uses \\(40\\) meters of fencing to build a rectangular enclosure against a barn. The barn forms one side, so fencing is needed for only the other three sides. Let \\(x\\) be the width perpendicular to the barn. What is the maximum possible area of the enclosure?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(200\\) square meters"
+        },
+        {
+          "label": "B",
+          "text": "\\(400\\) square meters"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The fencing covers two widths \\(x\\) and one length parallel to the barn. Thus the length is \\(40-2x\\). The area is \\(A(x)=x(40-2x)=-2x^2+40x\\). This quadratic has its maximum at \\(x=-\\frac{40}{2(-2)}=10\\). Then \\(A(10)=10(40-20)=200\\). Therefore the maximum possible area is \\(200\\) square meters.",
+      "hint": "Express the length parallel to the barn in terms of \\(x\\), then write area as a quadratic function of \\(x\\)."
+    }
+  ]
+}

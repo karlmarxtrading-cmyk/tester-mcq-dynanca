@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-433",
+  "category": "Comprehensive Mathematics",
+  "title": "433. Trigonometry & Periodic Models: Principal Ranges of Inverse Trigonometric Functions",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-433-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Range of inverse sine",
+      "learningObjective": "State the principal range of the inverse sine function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the range of \\(y=\\sin^{-1}x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{\\pi}{2}\\le y\\le\\frac{\\pi}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\le y\\le\\pi\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The inverse sine returns the unique angle in \\(\\left[-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right]\\) whose sine is \\(x\\). On this interval the sine is one-to-one and takes every value from \\(-1\\) to \\(1\\). The interval \\([0,\\pi]\\) is the range of the inverse cosine.",
+      "hint": "Recall the interval on which sine is restricted so that it becomes one-to-one."
+    },
+    {
+      "id": "dynanca-433-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Range of inverse cosine",
+      "learningObjective": "State the principal range of the inverse cosine function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the range of \\(y=\\cos^{-1}x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{\\pi}{2}\\le y\\le\\frac{\\pi}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\le y\\le\\pi\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inverse cosine returns the unique angle in \\([0,\\pi]\\) whose cosine is \\(x\\). On this interval the cosine decreases from \\(1\\) to \\(-1\\), so it is one-to-one. The interval \\(\\left[-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right]\\) would not work, because the cosine is not one-to-one there.",
+      "hint": "Find an interval on which the cosine takes each value from \\(-1\\) to \\(1\\) exactly once."
+    },
+    {
+      "id": "dynanca-433-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Range of inverse tangent",
+      "learningObjective": "State the principal range of the inverse tangent function, including endpoint behaviour.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the range of \\(y=\\tan^{-1}x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{\\pi}{2}\\le y\\le\\frac{\\pi}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\frac{\\pi}{2}<y<\\frac{\\pi}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inverse tangent returns the angle strictly between \\(-\\frac{\\pi}{2}\\) and \\(\\frac{\\pi}{2}\\) whose tangent is \\(x\\). The endpoints are excluded because the tangent is undefined at \\(\\pm\\frac{\\pi}{2}\\), so no real \\(x\\) has those angles as its inverse tangent.",
+      "hint": "Ask whether the tangent is defined at the two endpoint angles."
+    },
+    {
+      "id": "dynanca-433-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Inverse sine of a negative number",
+      "learningObjective": "Evaluate an inverse sine using its principal range.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the exact value of \\(\\sin^{-1}\\left(-\\frac{1}{2}\\right)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{7\\pi}{6}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\frac{\\pi}{6}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The value must lie in \\(\\left[-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right]\\). In that interval, \\(\\sin\\left(-\\frac{\\pi}{6}\\right)=-\\frac{1}{2}\\), so the answer is \\(-\\frac{\\pi}{6}\\). Although \\(\\sin\\frac{7\\pi}{6}=-\\frac{1}{2}\\) as well, \\(\\frac{7\\pi}{6}\\) is outside the principal range.",
+      "hint": "The answer must lie in the range of the inverse sine; negative inputs give negative angles."
+    },
+    {
+      "id": "dynanca-433-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Inverse cosine of a negative number",
+      "learningObjective": "Evaluate an inverse cosine using its principal range.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the exact value of \\(\\cos^{-1}\\left(-\\frac{1}{2}\\right)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{\\pi}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2\\pi}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The value must lie in \\([0,\\pi]\\). In that interval, \\(\\cos\\frac{2\\pi}{3}=-\\frac{1}{2}\\), so the answer is \\(\\frac{2\\pi}{3}\\). The inverse cosine is never negative, and in any case \\(\\cos\\left(-\\frac{\\pi}{3}\\right)=+\\frac{1}{2}\\).",
+      "hint": "For a negative input, the inverse cosine gives an angle in Quadrant II."
+    },
+    {
+      "id": "dynanca-433-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Inverse tangent of a negative number",
+      "learningObjective": "Evaluate an inverse tangent using its principal range.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the exact value of \\(\\tan^{-1}(-1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3\\pi}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\frac{\\pi}{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The value must lie in \\(\\left(-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right)\\). In that interval, \\(\\tan\\left(-\\frac{\\pi}{4}\\right)=-1\\), so the answer is \\(-\\frac{\\pi}{4}\\). The angle \\(\\frac{3\\pi}{4}\\) also has tangent \\(-1\\), but it lies outside the principal range.",
+      "hint": "The inverse tangent of a negative number is a negative angle between \\(-\\frac{\\pi}{2}\\) and \\(0\\)."
+    },
+    {
+      "id": "dynanca-433-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Reason for restricting the domain",
+      "learningObjective": "Explain why sine must be restricted before an inverse function is defined.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Why is the sine restricted to \\(\\left[-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right]\\) when the inverse sine is defined?",
+      "options": [
+        {
+          "label": "A",
+          "text": "On this interval the sine is always positive."
+        },
+        {
+          "label": "B",
+          "text": "On this interval the sine is one-to-one and still takes every value from \\(-1\\) to \\(1\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A function has an inverse function only if it is one-to-one. On all real numbers the sine repeats values, but on \\(\\left[-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right]\\) it increases from \\(-1\\) to \\(1\\), taking each value exactly once. It is not always positive there; for example \\(\\sin\\left(-\\frac{\\pi}{6}\\right)=-\\frac{1}{2}\\).",
+      "hint": "An inverse function exists only when each output comes from exactly one input."
+    },
+    {
+      "id": "dynanca-433-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Values that an inverse cosine cannot take",
+      "learningObjective": "Use the principal range to rule out a proposed value of an inverse cosine.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which number cannot be a value of \\(\\cos^{-1}x\\) for any real \\(x\\) in its domain?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{\\pi}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3\\pi}{4}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The range of the inverse cosine is \\([0,\\pi]\\), which contains no negative numbers, so \\(-\\frac{\\pi}{4}\\) is never a value. The number \\(\\frac{3\\pi}{4}\\) is in the range; it equals \\(\\cos^{-1}\\left(-\\frac{\\sqrt{2}}{2}\\right)\\).",
+      "hint": "Compare each number with the range of the inverse cosine."
+    },
+    {
+      "id": "dynanca-433-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Inverse sine of a sine outside the range",
+      "learningObjective": "Simplify a composition of inverse sine and sine when the angle is outside the principal range.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "What is the exact value of \\(\\sin^{-1}\\left(\\sin\\frac{5\\pi}{6}\\right)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{5\\pi}{6}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{\\pi}{6}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First, \\(\\sin\\frac{5\\pi}{6}=\\frac{1}{2}\\). Then \\(\\sin^{-1}\\left(\\frac{1}{2}\\right)=\\frac{\\pi}{6}\\), the angle in \\(\\left[-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right]\\) with that sine. The functions cancel only when the angle is already in the principal range, and \\(\\frac{5\\pi}{6}\\) is not.",
+      "hint": "Evaluate the inner sine first, then find the angle in the principal range with that sine."
+    },
+    {
+      "id": "dynanca-433-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Inverse cosine of a cosine outside the range",
+      "learningObjective": "Simplify a composition of inverse cosine and cosine when the angle is outside the principal range.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "What is the exact value of \\(\\cos^{-1}\\left(\\cos\\frac{4\\pi}{3}\\right)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{4\\pi}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2\\pi}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First, \\(\\cos\\frac{4\\pi}{3}=-\\frac{1}{2}\\). Then \\(\\cos^{-1}\\left(-\\frac{1}{2}\\right)=\\frac{2\\pi}{3}\\), the angle in \\([0,\\pi]\\) with that cosine. The angle \\(\\frac{4\\pi}{3}\\) is greater than \\(\\pi\\), so it cannot be an output of the inverse cosine.",
+      "hint": "Evaluate the inner cosine first, then choose the angle between \\(0\\) and \\(\\pi\\) with that cosine."
+    }
+  ]
+}

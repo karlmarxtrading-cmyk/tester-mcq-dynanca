@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-352",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 352",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-352-q001",
+      "category": "Combinatorics",
+      "concept": "Basic Combination Formula",
+      "learningObjective": "Compute a combination using the standard binomial coefficient formula.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Compute \\(\\binom{7}{3}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(21\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(35\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the combination formula,\n\\[\n\\begin{aligned}\n\\binom{7}{3}&=\\frac{7!}{3!4!} \\\\\n&=\\frac{7\\cdot 6\\cdot 5}{3\\cdot 2\\cdot 1} \\\\\n&=35.\n\\end{aligned}\n\\]\nTherefore, the correct value is \\(35\\).",
+      "hint": "Use the formula \\(\\binom{n}{r}=\\frac{n!}{r!(n-r)!}\\)."
+    },
+    {
+      "id": "math-gaokao-352-q002",
+      "category": "Combinatorics",
+      "concept": "Unordered Selection",
+      "learningObjective": "Determine the number of committees of a fixed size chosen from a set of distinct people.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A committee of \\(3\\) students is to be selected from \\(8\\) distinct students. How many different committees can be formed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(56\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(336\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since the order of the selected students does not matter, this is a combination problem:\n\\[\n\\binom{8}{3}=\\frac{8\\cdot 7\\cdot 6}{3\\cdot 2\\cdot 1}=56.\n\\]\nThe value \\(336\\) would count ordered selections, which is not appropriate for a committee.",
+      "hint": "Decide whether the order of selection matters; a committee is an unordered selection."
+    },
+    {
+      "id": "math-gaokao-352-q003",
+      "category": "Combinatorics",
+      "concept": "Combination Counting",
+      "learningObjective": "Count the number of ways to choose a subset of a given size from distinct objects.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "From \\(10\\) distinct books, in how many ways can a student choose \\(4\\) books?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5040\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(210\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Choosing books is an unordered selection, so use combinations:\n\\[\n\\binom{10}{4}=\\frac{10\\cdot 9\\cdot 8\\cdot 7}{4\\cdot 3\\cdot 2\\cdot 1}=210.\n\\]\nThe value \\(5040\\) is \\(10P4\\), which counts ordered choices.",
+      "hint": "Use combinations because the order in which the books are chosen does not matter."
+    },
+    {
+      "id": "math-gaokao-352-q004",
+      "category": "Combinatorics",
+      "concept": "Combinations in Card Hands",
+      "learningObjective": "Compute the number of unordered card hands from a standard deck.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many different \\(5\\)-card hands can be dealt from a standard \\(52\\)-card deck?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(311{,}875{,}200\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2{,}598{,}960\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A hand is unordered, so the number of hands is\n\\[\n\\begin{aligned}\n\\binom{52}{5}&=\\frac{52\\cdot 51\\cdot 50\\cdot 49\\cdot 48}{5\\cdot 4\\cdot 3\\cdot 2\\cdot 1} \\\\\n&=2,598,960.\n\\end{aligned}\n\\]\nThe value \\(311,875,200\\) is \\(52P5\\), which counts ordered hands.",
+      "hint": "A card hand is unordered, so use a combination rather than a permutation."
+    },
+    {
+      "id": "math-gaokao-352-q005",
+      "category": "Combinatorics",
+      "concept": "Combinations with Categories",
+      "learningObjective": "Count selections with prescribed numbers from two distinct groups.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A team of \\(4\\) is selected from \\(6\\) men and \\(5\\) women. How many teams contain exactly \\(2\\) men and \\(2\\) women?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(150\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(75\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Choose \\(2\\) men from \\(6\\) and \\(2\\) women from \\(5\\):\n\\[\n\\binom{6}{2}\\binom{5}{2}=15\\cdot 10=150.\n\\]\nThus, there are \\(150\\) such teams.",
+      "hint": "Choose the men and women separately, then multiply the two combination counts."
+    },
+    {
+      "id": "math-gaokao-352-q006",
+      "category": "Combinatorics",
+      "concept": "Geometric Counting with Combinations",
+      "learningObjective": "Use combinations to count the diagonals of a convex polygon.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many diagonals does a convex octagon have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(28\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(\\binom{8}{2}=28\\) segments joining pairs of vertices. Of these, \\(8\\) are sides of the octagon. Therefore, the number of diagonals is\n\\[\n28-8=20.\n\\]",
+      "hint": "Count all pairs of vertices, then subtract the sides of the polygon."
+    },
+    {
+      "id": "math-gaokao-352-q007",
+      "category": "Combinatorics",
+      "concept": "Complementary Counting",
+      "learningObjective": "Count selections satisfying an at-least condition by subtracting the complement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "There are \\(5\\) distinct red balls and \\(4\\) distinct blue balls. In how many ways can \\(3\\) balls be chosen so that at least one is blue?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(74\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(84\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Total ways to choose any \\(3\\) balls from \\(9\\):\n\\[\n\\binom{9}{3}=84.\n\\]\nWays to choose \\(3\\) balls with no blue balls, i.e., all red:\n\\[\n\\binom{5}{3}=10.\n\\]\nThus, the number with at least one blue ball is\n\\[\n84-10=74.\n\\]",
+      "hint": "Use complementary counting: subtract the selections with no blue balls from all selections."
+    },
+    {
+      "id": "math-gaokao-352-q008",
+      "category": "Combinatorics",
+      "concept": "Selections from a Multiset",
+      "learningObjective": "Count unordered selections when letters have limited multiplicities.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How many different selections of \\(3\\) letters can be made from the letters of the word BANANA, if only the letters present and their available multiplicities matter?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The word BANANA has three A's, two N's, and one B. Count triples by cases.\nWithout B: choose \\(3\\) letters from A's and N's. The possible count pairs \\((A,N)\\) are\n\\[\n(3,0),\\ (2,1),\\ (1,2),\n\\]\ngiving \\(3\\) selections.\nWith B: choose \\(2\\) more letters from A's and N's. The possible count pairs are\n\\[\n(2,0),\\ (1,1),\\ (0,2),\n\\]\ngiving \\(3\\) selections.\nTherefore, the total number is\n\\[\n3+3=6.\n\\]",
+      "hint": "Split into cases depending on whether the single B is selected, and track the maximum numbers of A's and N's."
+    },
+    {
+      "id": "math-gaokao-352-q009",
+      "category": "Combinatorics",
+      "concept": "Combinations with Upper Bounds",
+      "learningObjective": "Count nonnegative integer solutions to a linear equation under upper-bound restrictions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many nonnegative integer solutions are there to \\(x_1+x_2+x_3+x_4=10\\) with \\(x_i\\le 3\\) for each \\(i\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set \\(d_i=3-x_i\\). Since \\(0\\le x_i\\le 3\\), each \\(d_i\\) is a nonnegative integer. Then\n\\[\n\\begin{aligned}\nd_1+d_2+d_3+d_4&=(3-x_1)+(3-x_2)+(3-x_3)+(3-x_4) \\\\\n&=12-10 \\\\\n&=2.\n\\end{aligned}\n\\]\nThe number of nonnegative integer solutions to this equation is\n\\[\n\\binom{2+4-1}{4-1}=\\binom{5}{3}=10.\n\\]\nThus, there are \\(10\\) solutions. Conversely, any nonnegative solution for the deficits has \\(d_i\\le2\\), since their sum is \\(2\\). Hence \\(x_i=3-d_i\\) lies between \\(1\\) and \\(3\\), so every counted deficit solution satisfies the original restrictions.",
+      "hint": "Transform each condition \\(x_i\\le 3\\) into a nonnegative deficit variable."
+    },
+    {
+      "id": "math-gaokao-352-q010",
+      "category": "Combinatorics",
+      "concept": "Nonconsecutive Selections",
+      "learningObjective": "Count subsets with no two consecutive elements by a transformation to an ordinary combination.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many ways are there to choose \\(4\\) numbers from \\(\\{1,2,\\dots,10\\}\\) such that no two chosen numbers are consecutive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(35\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(56\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let the chosen numbers be\n\\[\na_1<a_2<a_3<a_4.\n\\]\nThe condition that no two are consecutive means \\(a_{i+1}\\ge a_i+2\\). Define\n\\[\nb_i=a_i-(i-1).\n\\]\nThen\n\\[\n\\begin{aligned}\n1&\\le b_1<b_2<b_3<b_4 \\\\\n&\\le 10-3 \\\\\n&=7.\n\\end{aligned}\n\\]\nThus, choosing the original numbers is equivalent to choosing \\(4\\) distinct numbers from \\(\\{1,2,\\dots,7\\}\\). The number of ways is\n\\[\n\\binom{7}{4}=35.\n\\]\nTherefore, the answer is \\(35\\).",
+      "hint": "Subtract \\(0,1,2,3\\) from the ordered chosen numbers to convert the nonconsecutive condition into an ordinary subset problem."
+    }
+  ]
+}

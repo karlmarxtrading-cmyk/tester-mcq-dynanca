@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-105",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 105",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-105-q001",
+      "category": "Functions",
+      "concept": "Monotonicity of a Logarithmic Graph",
+      "learningObjective": "Identify the direction of a logarithmic graph when its base is greater than 1.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Consider the graph of \\(f(x)=\\log_4 x\\). Which statement correctly describes the graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The graph is strictly increasing on \\((0,\\infty)\\)."
+        },
+        {
+          "label": "B",
+          "text": "The graph is strictly decreasing on \\((0,\\infty)\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a logarithmic function \\(f(x)=\\log_a x\\), the graph is strictly increasing when \\(a>1\\).\nHere, the base is \\(4>1\\). Therefore, as \\(x\\) increases through the domain \\((0,\\infty)\\), the value of \\(\\log_4 x\\) increases.\nFor example,\n\\[\n\\log_4 1=0\n\\]\nand\n\\[\n\\log_4 4=1.\n\\]\nThus, the graph is strictly increasing on \\((0,\\infty)\\), so option A is correct.",
+      "hint": "Recall how the base of a logarithmic function determines whether its graph increases or decreases."
+    },
+    {
+      "id": "math-gaokao-105-q002",
+      "category": "Functions",
+      "concept": "Graph of a Logarithmic Function with Base Between 0 and 1",
+      "learningObjective": "Determine the direction of a logarithmic graph when its base lies between 0 and 1.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Consider the graph of\n\\[\nf(x)=\\log_{\\frac{1}{3}}x.\n\\]\nWhich statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The graph is strictly increasing on its domain."
+        },
+        {
+          "label": "B",
+          "text": "The graph is strictly decreasing on its domain."
+        }
+      ],
+      "answer": "B",
+      "explanation": "For a logarithmic function \\(f(x)=\\log_a x\\), the graph is strictly decreasing when\n\\[\n0<a<1.\n\\]\nHere,\n\\[\na=\\frac{1}{3},\n\\]\nwhich satisfies this condition.\nThe graph also passes through\n\\[\n(1,0)\n\\]\nand\n\\[\n\\left(\\frac{1}{3},1\\right).\n\\]\nAs the input increases from \\(\\frac{1}{3}\\) to \\(1\\), the output decreases from \\(1\\) to \\(0\\).\nTherefore, the graph is strictly decreasing on \\((0,\\infty)\\), so option B is correct.",
+      "hint": "Compare the given base with \\(1\\), then recall the corresponding monotonicity rule for logarithmic functions."
+    },
+    {
+      "id": "math-gaokao-105-q003",
+      "category": "Functions",
+      "concept": "Vertical Asymptote of a Transformed Logarithmic Graph",
+      "learningObjective": "Determine the vertical asymptote of a horizontally translated logarithmic graph.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "What is the vertical asymptote of the graph\n\\[\ng(x)=\\log_2(x-4)+2?\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The parent function \\(f(x)=\\log_2 x\\) has vertical asymptote\n\\[\nx=0.\n\\]\nIn the transformed function\n\\[\ng(x)=\\log_2(x-4)+2,\n\\]\nthe expression inside the logarithm is \\(x-4\\).\nThe logarithm is defined only when\n\\[\nx-4>0,\n\\]\nso\n\\[\nx>4.\n\\]\nAs \\(x\\) approaches \\(4\\) from the right, the logarithmic expression approaches negative infinity. Therefore, the vertical asymptote is\n\\[\nx=4.\n\\]\nThe outside constant \\(+2\\) does not change the vertical asymptote.\nThus, option B is correct.",
+      "hint": "Find the boundary of the logarithm's domain by examining the expression inside the logarithm."
+    },
+    {
+      "id": "math-gaokao-105-q004",
+      "category": "Functions",
+      "concept": "Domain of a Reflected and Translated Logarithmic Graph",
+      "learningObjective": "Determine the domain of a logarithmic graph with a linear expression inside the logarithm.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Determine the domain of\n\\[\ng(x)=\\ln(7-2x).\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-\\infty,\\frac{7}{2})\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((\\frac{7}{2},\\infty)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The natural logarithm is defined for positive arguments.\nTherefore, the condition for the given function is\n\\[\n7-2x>0.\n\\]\nSubtracting \\(7\\) gives\n\\[\n-2x>-7.\n\\]\nDividing by \\(-2\\) reverses the inequality:\n\\[\nx<\\frac{7}{2}.\n\\]\nHence, the domain is\n\\[\n\\left(-\\infty,\\frac{7}{2}\\right).\n\\]\nThe boundary \\(x=\\frac{7}{2}\\) is excluded because the logarithm of zero is undefined.\nTherefore, option A is correct.",
+      "hint": "Require the logarithm's argument to be positive, and pay attention to the inequality direction when dividing by a negative number."
+    },
+    {
+      "id": "math-gaokao-105-q005",
+      "category": "Functions",
+      "concept": "Horizontal Translation of a Logarithmic Graph",
+      "learningObjective": "Identify the horizontal translation represented by a change to the input of a logarithmic function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "The graph of \\(f(x)=\\log_5 x\\) is transformed into\n\\[\ng(x)=\\log_5(x+2).\n\\]\nWhich transformation maps the graph of \\(f\\) to the graph of \\(g\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A translation 2 units to the left"
+        },
+        {
+          "label": "B",
+          "text": "A translation 2 units to the right"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A horizontal translation of a function has the form\n\\[\ng(x)=f(x-h),\n\\]\nwhere a positive \\(h\\) represents a translation to the right.\nHere,\n\\[\ng(x)=f(x+2)=f(x-(-2)).\n\\]\nThus,\n\\[\nh=-2,\n\\]\nwhich represents a translation 2 units to the left.\nThe parent graph's vertical asymptote \\(x=0\\) also moves to \\(x=-2\\), confirming the translation.\nTherefore, option A is correct.",
+      "hint": "Compare the transformed input with the standard form \\(f(x-h)\\)."
+    },
+    {
+      "id": "math-gaokao-105-q006",
+      "category": "Functions",
+      "concept": "Intercepts of a Vertically Translated Logarithmic Graph",
+      "learningObjective": "Determine the \\(x\\)-intercept of a logarithmic graph after a vertical translation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the \\(x\\)-intercept of the graph\n\n\\[\ng(x)=\\log_2 x-3?\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((8,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((\\frac{1}{8},0)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "At an \\(x\\)-intercept, the function value is zero. Set\n\n\\[\n\\log_2 x-3=0.\n\\]\n\nThen\n\n\\[\n\\log_2 x=3.\n\\]\n\nConverting to exponential form gives\n\n\\[\nx=2^3=8.\n\\]\n\nTherefore, the \\(x\\)-intercept is \\((8,0)\\). Thus, option A is correct.",
+      "hint": "Set the output equal to zero, then convert the resulting logarithmic equation into exponential form."
+    },
+    {
+      "id": "math-gaokao-105-q007",
+      "category": "Functions",
+      "concept": "Reflection of a Logarithmic Graph",
+      "learningObjective": "Distinguish reflection across the \\(y\\)-axis from reflection across the \\(x\\)-axis for a logarithmic function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(f(x)=\\log_3 x\\). The function\n\\[\ng(x)=\\log_3(-x)\n\\]\nis obtained from \\(f\\) by which transformation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reflection across the \\(x\\)-axis"
+        },
+        {
+          "label": "B",
+          "text": "Reflection across the \\(y\\)-axis"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Reflection across the \\(y\\)-axis is represented by\n\n\\[\ng(x)=f(-x).\n\\]\n\nSubstituting \\(-x\\) into the parent function gives\n\n\\[\nf(-x)=\\log_3(-x).\n\\]\n\nTherefore, the given graph is the reflection of \\(f(x)=\\log_3 x\\) across the \\(y\\)-axis. The domain also changes from \\(x>0\\) to \\(x<0\\), consistent with reflection across the \\(y\\)-axis. Reflection across the \\(x\\)-axis would instead produce\n\n\\[\n-\\log_3 x.\n\\]\n\nThus, option B is correct.",
+      "hint": "Determine whether the transformation changes the function's input or its output."
+    },
+    {
+      "id": "math-gaokao-105-q008",
+      "category": "Functions",
+      "concept": "Range of a Transformed Logarithmic Graph",
+      "learningObjective": "Determine whether reflections and translations change the range of a logarithmic function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Determine the range of\n\\[\ng(x)=-\\log_2(5-x)+4.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-\\infty,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\infty,4)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The function is defined when\n\\[\n5-x>0,\n\\]\nso its domain is \\(x<5\\).\nAs \\(x\\to5^-\\), the argument \\(5-x\\to0^+\\), giving\n\\[\n\\log_2(5-x)\\to-\\infty.\n\\]\nConsequently,\n\\[\ng(x)=-\\log_2(5-x)+4\\to\\infty.\n\\]\nAs \\(x\\to-\\infty\\), the argument \\(5-x\\to\\infty\\), giving\n\\[\n\\log_2(5-x)\\to\\infty.\n\\]\nTherefore,\n\\[\ng(x)\\to-\\infty.\n\\]\nThe function is continuous on its domain and takes every real output value between these limits.\nHence, its range is\n\\[\n(-\\infty,\\infty).\n\\]\nThus, option A is correct.",
+      "hint": "Consider the possible outputs of the parent logarithmic function and how the reflection and vertical translation affect them."
+    },
+    {
+      "id": "math-gaokao-105-q009",
+      "category": "Functions",
+      "concept": "Recovering a Logarithmic Graph from Its Asymptote and Points",
+      "learningObjective": "Determine the base and translation parameters of a logarithmic graph using its vertical asymptote and two points.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A logarithmic function has the form\n\\[\ng(x)=\\log_b(x-h)+k,\n\\]\nwhere \\(b>0\\) and \\(b\\ne1\\).\nIts graph has vertical asymptote \\(x=2\\) and passes through the points \\((3,0)\\) and \\((6,2)\\).\nWhich ordered triple \\((b,h,k)\\) is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((4,2,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,2,0)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The vertical asymptote of\n\\[\ng(x)=\\log_b(x-h)+k\n\\]\nis \\(x=h\\).\nSince the given asymptote is \\(x=2\\),\n\\[\nh=2.\n\\]\nUsing the point \\((3,0)\\),\n\\[\n0=\\log_b(3-2)+k.\n\\]\nBecause \\(\\log_b1=0\\),\n\\[\nk=0.\n\\]\nNow use the point \\((6,2)\\):\n\\[\n2=\\log_b(6-2).\n\\]\nThus,\n\\[\n2=\\log_b4.\n\\]\nConverting to exponential form gives\n\\[\nb^2=4.\n\\]\nThe base must be positive, so\n\\[\nb=2.\n\\]\nTherefore,\n\\[\n(b,h,k)=(2,2,0).\n\\]\nThus, option B is correct.",
+      "hint": "First use the vertical asymptote to determine the horizontal translation. Then substitute the given points to determine the remaining parameters."
+    },
+    {
+      "id": "math-gaokao-105-q010",
+      "category": "Functions",
+      "concept": "Intersection of Two Logarithmic Graphs",
+      "learningObjective": "Determine the intersection of two logarithmic graphs by equating their functions and checking the common domain.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The graphs of\n\n\\[\nf(x)=\\log_2 x\n\\]\n\nand\n\n\\[\ng(x)=\\log_2(x-3)+2\n\\]\n\nintersect at exactly one point. What is the \\(x\\)-coordinate of their intersection?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "At an intersection, the two functions have equal output values:\n\\[\n\\log_2 x=\\log_2(x-3)+2.\n\\]\nThe common domain requires\n\\[\nx>3.\n\\]\nSince \\(2=\\log_2 4\\), the equation becomes\n\\[\n\\log_2 x=\\log_2(x-3)+\\log_2 4.\n\\]\nUsing the product rule,\n\\[\n\\log_2 x=\\log_2(4(x-3)).\n\\]\nBecause the logarithmic function with base \\(2\\) is one-to-one,\n\\[\nx=4(x-3).\n\\]\nExpanding gives\n\\[\nx=4x-12.\n\\]\nTherefore,\n\\[\n3x=12,\n\\]\nso\n\\[\nx=4.\n\\]\nThis satisfies the common domain condition \\(x>3\\).\nChecking the original functions:\n\\[\nf(4)=\\log_2 4=2,\n\\]\nand\n\\[\ng(4)=\\log_2 1+2=2.\n\\]\nThus, the graphs intersect at \\((4,2)\\), and option B is correct.",
+      "hint": "Equate the two functions, express the outside constant as a logarithm, and check that any resulting solution belongs to the common domain."
+    }
+  ]
+}

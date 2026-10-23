@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-575",
+  "category": "Comprehensive Mathematics",
+  "title": "575. Discrete Mathematics, Counting & Graph Theory: Relations Represented by Boolean Matrices",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-575-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Meaning of a matrix entry",
+      "learningObjective": "Interpret an entry of the Boolean matrix of a relation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A relation \\(R\\) on \\(\\{1,2,3\\}\\) is represented by a Boolean matrix whose rows and columns are listed in the order \\(1,2,3\\); row \\(i\\), column \\(j\\) holds \\(1\\) exactly when \\(i\\) is related to \\(j\\). The entry in row \\(2\\), column \\(3\\) is \\(1\\). What does this mean?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,2)\\in R\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,3)\\in R\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The row gives the first component and the column gives the second component of the pair. So a \\(1\\) in row \\(2\\), column \\(3\\) says that \\((2,3)\\in R\\). The pair \\((3,2)\\) would be recorded in row \\(3\\), column \\(2\\).",
+      "hint": "Rows correspond to the first component of a pair."
+    },
+    {
+      "id": "dynanca-575-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Matrix of a listed relation",
+      "learningObjective": "Write the Boolean matrix of a relation given as a set of pairs.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(R=\\{(1,2),(2,2),(3,1)\\}\\) on \\(\\{1,2,3\\}\\). With rows and columns in the order \\(1,2,3\\), where row \\(i\\), column \\(j\\) holds \\(1\\) exactly when \\((i,j)\\in R\\), which matrix represents \\(R\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix}0&0&1\\\\1&1&0\\\\0&0&0\\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix}0&1&0\\\\0&1&0\\\\1&0&0\\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The pair \\((1,2)\\) puts a \\(1\\) in row \\(1\\), column \\(2\\); \\((2,2)\\) puts a \\(1\\) in row \\(2\\), column \\(2\\); and \\((3,1)\\) puts a \\(1\\) in row \\(3\\), column \\(1\\). All other entries are \\(0\\). The other matrix has rows and columns exchanged; it represents the inverse relation.",
+      "hint": "Place one entry \\(1\\) for each pair, using the first component as the row."
+    },
+    {
+      "id": "dynanca-575-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting pairs from a matrix",
+      "learningObjective": "Count the ordered pairs of a relation from its Boolean matrix.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A relation \\(R\\) on \\(\\{1,2,3\\}\\) has the Boolean matrix \\(\\begin{pmatrix}1&1&0\\\\0&0&1\\\\0&0&1\\end{pmatrix}\\). How many ordered pairs does \\(R\\) contain?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each entry \\(1\\) stands for one ordered pair. The matrix has four entries equal to \\(1\\), for the pairs \\((1,1)\\), \\((1,2)\\), \\((2,3)\\), and \\((3,3)\\). The number \\(5\\) counts the entries equal to \\(0\\), which are the pairs not in \\(R\\).",
+      "hint": "Count the entries equal to \\(1\\)."
+    },
+    {
+      "id": "dynanca-575-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Reflexivity from the diagonal",
+      "learningObjective": "Decide from a Boolean matrix whether a relation is reflexive.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A relation \\(R\\) on \\(\\{1,2,3\\}\\) has the Boolean matrix \\(\\begin{pmatrix}1&1&0\\\\0&1&0\\\\0&0&0\\end{pmatrix}\\). Is \\(R\\) reflexive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because the entry in row \\(3\\), column \\(3\\) is \\(0\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because rows \\(1\\) and \\(2\\) have a \\(1\\) on the diagonal."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A relation is reflexive exactly when every diagonal entry of its matrix is \\(1\\). Here the third diagonal entry is \\(0\\), so \\((3,3)\\notin R\\) and \\(R\\) is not reflexive. Having some diagonal entries equal to \\(1\\) is not enough.",
+      "hint": "Look at every entry on the main diagonal."
+    },
+    {
+      "id": "dynanca-575-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Symmetry from the matrix",
+      "learningObjective": "Decide from a Boolean matrix whether a relation is symmetric.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A relation \\(R\\) on \\(\\{1,2,3\\}\\) has the Boolean matrix \\(M=\\begin{pmatrix}0&1&1\\\\1&0&0\\\\1&0&1\\end{pmatrix}\\). Is \\(R\\) symmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because not every diagonal entry is \\(1\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because \\(M\\) is equal to its transpose."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A relation is symmetric exactly when the entry in row \\(i\\), column \\(j\\) always equals the entry in row \\(j\\), column \\(i\\), that is, when the matrix equals its transpose. This holds here. The diagonal entries decide reflexivity, not symmetry.",
+      "hint": "Compare each entry with the entry in the mirrored position across the main diagonal."
+    },
+    {
+      "id": "dynanca-575-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Matrix of the inverse relation",
+      "learningObjective": "Find the Boolean matrix of an inverse relation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A relation \\(R\\) on \\(\\{1,2,3\\}\\) has the Boolean matrix \\(\\begin{pmatrix}0&1&0\\\\0&0&1\\\\0&0&0\\end{pmatrix}\\). Which matrix represents the inverse relation \\(R^{-1}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix}0&0&0\\\\1&0&0\\\\0&1&0\\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix}1&0&1\\\\1&1&0\\\\1&1&1\\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The inverse relation reverses every pair, so rows and columns change places: its matrix is the transpose. Here \\(R=\\{(1,2),(2,3)\\}\\) and \\(R^{-1}=\\{(2,1),(3,2)\\}\\), with entries \\(1\\) in row \\(2\\), column \\(1\\) and in row \\(3\\), column \\(2\\). The other matrix exchanges zeros and ones; it represents the complement of \\(R\\).",
+      "hint": "Reversing each pair exchanges the roles of rows and columns."
+    },
+    {
+      "id": "dynanca-575-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Matrix of a union",
+      "learningObjective": "Find the Boolean matrix of the union of two relations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Relations \\(R\\) and \\(S\\) on \\(\\{1,2\\}\\) have the Boolean matrices \\(M_R=\\begin{pmatrix}1&0\\\\1&0\\end{pmatrix}\\) and \\(M_S=\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}\\). Which matrix represents \\(R\\cup S\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix}1&1\\\\1&0\\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix}0&0\\\\1&0\\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A pair is in \\(R\\cup S\\) when it is in \\(R\\) or in \\(S\\), so each entry of the matrix is \\(1\\) when at least one of the two corresponding entries is \\(1\\). The other matrix has a \\(1\\) only where both entries are \\(1\\); it represents \\(R\\cap S\\).",
+      "hint": "Combine corresponding entries with \"or\"."
+    },
+    {
+      "id": "dynanca-575-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Boolean product",
+      "learningObjective": "Compute the Boolean product of two Boolean matrices.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Procedural",
+      "question": "The Boolean product of two Boolean matrices has \\(1\\) in row \\(i\\), column \\(j\\) exactly when, for some \\(k\\), the first matrix has \\(1\\) in row \\(i\\), column \\(k\\) and the second has \\(1\\) in row \\(k\\), column \\(j\\). What is the Boolean product of \\(\\begin{pmatrix}1&0\\\\1&1\\end{pmatrix}\\) and \\(\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}\\), in this order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix}0&1\\\\1&1\\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix}0&0\\\\1&0\\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Row \\(1\\) of the first matrix has its only \\(1\\) in column \\(1\\), so row \\(1\\) of the product copies row \\(1\\) of the second matrix: \\(0,1\\). Row \\(2\\) of the first matrix has \\(1\\) in both columns, so row \\(2\\) of the product has \\(1\\) wherever row \\(1\\) or row \\(2\\) of the second matrix has \\(1\\): \\(1,1\\). The other matrix multiplies corresponding entries only, which is not the Boolean product.",
+      "hint": "For each row of the first matrix, combine with \"or\" those rows of the second matrix that it selects."
+    },
+    {
+      "id": "dynanca-575-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Transitivity from the Boolean square",
+      "learningObjective": "Use the Boolean product of a matrix with itself to test transitivity.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A relation \\(R\\) on \\(\\{1,2,3\\}\\) has the Boolean matrix \\(M=\\begin{pmatrix}0&1&0\\\\0&0&1\\\\0&0&0\\end{pmatrix}\\). The Boolean product of \\(M\\) with itself has a \\(1\\) in row \\(1\\), column \\(3\\). Is \\(R\\) transitive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; \\((1,2)\\) and \\((2,3)\\) are in \\(R\\), but \\((1,3)\\) is not."
+        },
+        {
+          "label": "B",
+          "text": "Yes; the Boolean product of \\(M\\) with itself contains only one entry \\(1\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A \\(1\\) in row \\(1\\), column \\(3\\) of the Boolean product means that some \\(k\\) has \\((1,k)\\in R\\) and \\((k,3)\\in R\\); here \\(k=2\\). Transitivity would require \\((1,3)\\in R\\), but \\(M\\) has \\(0\\) in row \\(1\\), column \\(3\\). A relation is transitive exactly when every \\(1\\) of the Boolean product is also a \\(1\\) of \\(M\\).",
+      "hint": "Compare the position of the \\(1\\) in the product with the same position in \\(M\\)."
+    },
+    {
+      "id": "dynanca-575-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting symmetric matrices",
+      "learningObjective": "Count the Boolean matrices that represent symmetric relations on a small set.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many \\(2\\times 2\\) Boolean matrices represent symmetric relations on a set with \\(2\\) elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A symmetric matrix is determined by its two diagonal entries and by the single value shared by the two off-diagonal entries. That is \\(3\\) free choices of \\(0\\) or \\(1\\), giving \\(2^3=8\\) matrices. The number \\(16=2^4\\) counts all \\(2\\times 2\\) Boolean matrices, including those whose off-diagonal entries differ.",
+      "hint": "The two off-diagonal entries must be equal, so they count as one choice."
+    }
+  ]
+}

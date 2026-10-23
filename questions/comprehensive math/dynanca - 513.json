@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-513",
+  "category": "Comprehensive Mathematics",
+  "title": "513. Sets, Logic, Reasoning & Proof: Uniqueness Proofs",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-513-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Structure of a uniqueness proof",
+      "learningObjective": "Describe the standard way to prove uniqueness.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How is it usually proved that at most one object has a given property?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assume that two objects have the property and show that they must be equal."
+        },
+        {
+          "label": "B",
+          "text": "Exhibit one object that has the property."
+        }
+      ],
+      "answer": "A",
+      "explanation": "To prove uniqueness, suppose \\(a\\) and \\(b\\) both have the property and deduce \\(a=b\\). Exhibiting one object with the property proves existence, not uniqueness; there could still be others.",
+      "hint": "Uniqueness is about ruling out a second object."
+    },
+    {
+      "id": "dynanca-513-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Uniqueness for a linear equation",
+      "learningObjective": "Set up a uniqueness argument for the solution of a linear equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Which argument proves that the equation \\(2x+3=11\\) has at most one real solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "If \\(2a+3=11\\) and \\(2b+3=11\\), then \\(2a=2b\\), so \\(a=b\\)."
+        },
+        {
+          "label": "B",
+          "text": "Substituting \\(x=4\\) gives \\(2\\cdot 4+3=11\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Assuming that \\(a\\) and \\(b\\) are both solutions and deducing \\(a=b\\) shows that two different solutions cannot exist. Checking that \\(x=4\\) works proves only that a solution exists; it does not rule out another one.",
+      "hint": "Decide which argument excludes the possibility of a second solution."
+    },
+    {
+      "id": "dynanca-513-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Uniqueness of the additive identity",
+      "learningObjective": "Identify the key equation in the proof that the additive identity is unique.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Suppose \\(0\\) and \\(0'\\) are both additive identities of a number system: \\(x+0=x\\) and \\(0'+x=x\\) for every \\(x\\). Which chain of equalities proves \\(0=0'\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0'=0'+0=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0+0=0\\) and \\(0'+0'=0'\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(0\\) is an identity, \\(0'+0=0'\\). Since \\(0'\\) is an identity, \\(0'+0=0\\). The same expression \\(0'+0\\) equals both, so \\(0'=0\\). The equations \\(0+0=0\\) and \\(0'+0'=0'\\) are true, but they never compare the two identities with each other.",
+      "hint": "Combine the two candidates in one sum and evaluate it using each identity property in turn."
+    },
+    {
+      "id": "dynanca-513-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Exactly one",
+      "learningObjective": "Identify the two parts of a proof that exactly one object exists.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "What must be proved to establish that exactly one object has a given property?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both existence (at least one such object) and uniqueness (at most one such object)"
+        },
+        {
+          "label": "B",
+          "text": "Uniqueness only (at most one such object)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\"Exactly one\" means \"at least one and at most one\". Proving only that at most one exists leaves open the possibility that none exists. For example, at most one real number satisfies \\(x+1=x\\), simply because no real number does.",
+      "hint": "Consider a property that no object has; what does \"at most one\" say then?"
+    },
+    {
+      "id": "dynanca-513-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A solution that is not unique",
+      "learningObjective": "Decide whether a quadratic equation has a unique real solution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Is the real solution of the equation \\(x^2=4\\) unique?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; the only solution is \\(2\\)."
+        },
+        {
+          "label": "B",
+          "text": "No; both \\(2\\) and \\(-2\\) are solutions."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(2^2=4\\) and \\((-2)^2=4\\), there are two different real solutions. Uniqueness fails as soon as two different objects with the property are found.",
+      "hint": "Check whether a negative number also satisfies the equation."
+    },
+    {
+      "id": "dynanca-513-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Uniqueness among positive numbers",
+      "learningObjective": "Justify uniqueness of a positive solution by factoring.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Suppose \\(a>0\\), \\(b>0\\), and \\(a^2=b^2\\). Which argument proves \\(a=b\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((a-b)(a+b)=0\\) and \\(a+b>0\\), so \\(a-b=0\\)."
+        },
+        {
+          "label": "B",
+          "text": "Equal squares always come from equal numbers."
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(a^2=b^2\\) we get \\(a^2-b^2=(a-b)(a+b)=0\\). Because \\(a\\) and \\(b\\) are positive, \\(a+b>0\\), so the other factor must be zero: \\(a=b\\). The general claim \"equal squares come from equal numbers\" is false, as \\(2^2=(-2)^2\\) shows; positivity is essential.",
+      "hint": "Factor \\(a^2-b^2\\) and use the fact that both numbers are positive."
+    },
+    {
+      "id": "dynanca-513-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Uniqueness of an additive inverse",
+      "learningObjective": "Identify the property used in the proof that additive inverses are unique.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Suppose \\(b\\) and \\(c\\) are both additive inverses of \\(a\\). The proof of \\(b=c\\) runs \\(b=b+0=b+(a+c)=(b+a)+c=0+c=c\\). Which property justifies the step \\(b+(a+c)=(b+a)+c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Commutativity of addition"
+        },
+        {
+          "label": "B",
+          "text": "Associativity of addition"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The step regroups the same three terms in the same order, moving only the parentheses; that is the associative law \\(x+(y+z)=(x+y)+z\\). Commutativity would be needed to change the order of terms, which this step does not do.",
+      "hint": "Compare the two sides: has the order of the terms changed, or only the grouping?"
+    },
+    {
+      "id": "dynanca-513-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Uniqueness for a cubic equation",
+      "learningObjective": "Justify uniqueness of a real solution using monotonicity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Is the real solution of \\(x^3=8\\) unique?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; the function \\(x\\mapsto x^3\\) is strictly increasing, so two different real numbers cannot have the same cube."
+        },
+        {
+          "label": "B",
+          "text": "No; a cubic equation always has three different real solutions."
+        }
+      ],
+      "answer": "A",
+      "explanation": "If \\(a<b\\), then \\(a^3<b^3\\), so different real numbers have different cubes. Hence at most one real number has cube \\(8\\), and \\(x=2\\) is that number. A cubic equation has three solutions among the complex numbers counted with multiplicity, but they need not all be real; here the other two are not real.",
+      "hint": "Ask whether two different real numbers can have the same cube."
+    },
+    {
+      "id": "dynanca-513-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Uniqueness without existence",
+      "learningObjective": "Recognise that a uniqueness argument does not prove existence.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A proof shows: \"if \\(a\\) and \\(b\\) are both solutions of a certain equation, then \\(a=b\\)\". Does this prove that the equation has a solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; it shows only that there is at most one solution."
+        },
+        {
+          "label": "B",
+          "text": "Yes; it shows that there is exactly one solution."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The argument is conditional: it starts from the assumption that solutions exist and concludes that they coincide. If the equation has no solution at all, the argument is still correct. Existence must be proved separately, for example by exhibiting a solution.",
+      "hint": "Would the argument still be valid if the equation had no solutions?"
+    },
+    {
+      "id": "dynanca-513-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A unique fixed point",
+      "learningObjective": "Find and justify the unique fixed point of a linear function.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(f(x)=2x-3\\). How many real numbers \\(x\\) satisfy \\(f(x)=x\\), and which?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Exactly one: \\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "Exactly one: \\(x=-3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation \\(2x-3=x\\) is equivalent to \\(x=3\\). So if \\(a\\) is a fixed point, then \\(a=3\\) (uniqueness), and \\(f(3)=6-3=3\\) shows that \\(3\\) really is a fixed point (existence). For \\(x=-3\\), \\(f(-3)=-9\\ne -3\\).",
+      "hint": "Solve \\(f(x)=x\\), then check the solution in the original function."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-274",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 274",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-274-q001",
+      "category": "Calculus",
+      "concept": "Horizontal Asymptote of a Rational Function",
+      "learningObjective": "Determine the horizontal asymptote of a rational function by comparing leading coefficients.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Find the horizontal asymptote of \\(f(x)=\\frac{2x^2+3}{x^2-1}\\) as \\(x\\to\\infty\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For a rational function, the end behavior as \\(x\\to\\infty\\) is determined by the highest-degree terms. The numerator has leading term \\(2x^2\\), and the denominator has leading term \\(x^2\\). Therefore,\n\\[\n\\lim_{x\\to\\infty}\\frac{2x^2+3}{x^2-1}\n=\n\\lim_{x\\to\\infty}\\frac{2x^2}{x^2}\n=\n2.\n\\]\nThus the horizontal asymptote is \\(y=2\\).",
+      "hint": "Compare the degrees and leading coefficients of the numerator and denominator."
+    },
+    {
+      "id": "math-gaokao-274-q002",
+      "category": "Calculus",
+      "concept": "Limit at Infinity with Higher Denominator Degree",
+      "learningObjective": "Evaluate the limit at infinity of a rational function whose denominator degree is larger than its numerator degree.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\displaystyle \\lim_{x\\to\\infty}\\frac{3x+1}{x^2+2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide numerator and denominator by \\(x^2\\):\n\\[\n\\frac{3x+1}{x^2+2}\n=\n\\frac{\\frac{3}{x}+\\frac{1}{x^2}}{1+\\frac{2}{x^2}}.\n\\]\nAs \\(x\\to\\infty\\), \\(\\frac{3}{x}\\to 0\\), \\(\\frac{1}{x^2}\\to 0\\), and \\(\\frac{2}{x^2}\\to 0\\). Hence,\n\\[\n\\lim_{x\\to\\infty}\\frac{3x+1}{x^2+2}=0.\n\\]",
+      "hint": "Divide numerator and denominator by the highest power of \\(x\\) in the denominator."
+    },
+    {
+      "id": "math-gaokao-274-q003",
+      "category": "Calculus",
+      "concept": "Asymptotic Behavior of a Difference Involving a Square Root",
+      "learningObjective": "Evaluate the limit at infinity of a difference between a square-root expression and a linear term.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\displaystyle \\lim_{x\\to\\infty}\\left(\\sqrt{x^2+4x}-x\\right)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rationalize the expression:\n\\[\n\\sqrt{x^2+4x}-x\n=\n\\frac{(\\sqrt{x^2+4x}-x)(\\sqrt{x^2+4x}+x)}{\\sqrt{x^2+4x}+x}\n=\n\\frac{4x}{\\sqrt{x^2+4x}+x}.\n\\]\nDivide numerator and denominator by \\(x\\) for \\(x>0\\):\n\\[\n\\frac{4x}{\\sqrt{x^2+4x}+x}\n=\n\\frac{4}{\\sqrt{1+\\frac{4}{x}}+1}.\n\\]\nAs \\(x\\to\\infty\\), \\(\\frac{4}{x}\\to 0\\), so the limit is\n\\[\n\\frac{4}{\\sqrt{1}+1}=\\frac{4}{2}=2.\n\\]",
+      "hint": "Multiply by the conjugate \\(\\sqrt{x^2+4x}+x\\), then divide numerator and denominator by \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-274-q004",
+      "category": "Calculus",
+      "concept": "Dominant Exponential Term in a Limit at Infinity",
+      "learningObjective": "Evaluate a limit at infinity by factoring out the dominant exponential term.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\displaystyle \\lim_{x\\to\\infty}\\frac{e^{3x}+2e^x}{4e^{3x}-e^x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The dominant term is \\(e^{3x}\\). Divide numerator and denominator by \\(e^{3x}\\):\n\\[\n\\frac{e^{3x}+2e^x}{4e^{3x}-e^x}\n=\n\\frac{1+2e^{-2x}}{4-e^{-2x}}.\n\\]\nAs \\(x\\to\\infty\\), \\(e^{-2x}\\to 0\\). Therefore,\n\\[\n\\lim_{x\\to\\infty}\\frac{e^{3x}+2e^x}{4e^{3x}-e^x}\n=\n\\frac{1+0}{4-0}\n=\n\\frac{1}{4}.\n\\]",
+      "hint": "Divide numerator and denominator by the fastest-growing exponential term."
+    },
+    {
+      "id": "math-gaokao-274-q005",
+      "category": "Calculus",
+      "concept": "Growth Comparison Between Logarithmic and Linear Functions",
+      "learningObjective": "Evaluate the limit at infinity of a logarithmic function divided by a linear function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Evaluate \\(\\displaystyle \\lim_{x\\to\\infty}\\frac{\\ln x}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The logarithmic function grows more slowly than any positive power of \\(x\\). A standard limit at infinity is\n\\[\n\\lim_{x\\to\\infty}\\frac{\\ln x}{x}=0.\n\\]\nThis can also be seen from L'Hôpital's rule, since both numerator and denominator tend to infinity:\n\\[\n\\lim_{x\\to\\infty}\\frac{\\ln x}{x}\n=\n\\lim_{x\\to\\infty}\\frac{\\frac{1}{x}}{1}\n=\n\\lim_{x\\to\\infty}\\frac{1}{x}=0.\n\\]",
+      "hint": "Compare the growth rates of \\(\\ln x\\) and \\(x\\), or apply L'Hôpital's rule."
+    },
+    {
+      "id": "math-gaokao-274-q006",
+      "category": "Calculus",
+      "concept": "Oblique Asymptote of a Rational Function",
+      "learningObjective": "Determine the oblique asymptote of a rational function by polynomial division.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the oblique asymptote of \\(f(x)=\\frac{x^2+3x+1}{x+1}\\) as \\(x\\to\\infty\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=x+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=x+2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Perform polynomial division:\n\\[\n\\frac{x^2+3x+1}{x+1}\n=\nx+2-\\frac{1}{x+1}.\n\\]\nAs \\(x\\to\\infty\\), the term \\(-\\frac{1}{x+1}\\to 0\\). Therefore, the graph approaches the line\n\\[\ny=x+2.\n\\]\nSo the oblique asymptote is \\(y=x+2\\).",
+      "hint": "Divide the numerator by the denominator and identify the linear part."
+    },
+    {
+      "id": "math-gaokao-274-q007",
+      "category": "Calculus",
+      "concept": "Parameter Condition for a Horizontal Asymptote",
+      "learningObjective": "Find a parameter so that a rational function has a specified limit at infinity.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Find the real number \\(a\\) such that\n\\[\n\\lim_{x\\to\\infty}\\frac{ax^2+2x+1}{3x^2-x+5}=2.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For large \\(x\\), the limit of the rational function is determined by the ratio of the leading coefficients:\n\\[\n\\lim_{x\\to\\infty}\\frac{ax^2+2x+1}{3x^2-x+5}\n=\n\\frac{a}{3}.\n\\]\nWe need \\(\\frac{a}{3}=2\\), so\n\\[\na=6.\n\\]",
+      "hint": "Compare the leading coefficients of the numerator and denominator."
+    },
+    {
+      "id": "math-gaokao-274-q008",
+      "category": "Calculus",
+      "concept": "Asymptotic Expansion of a Square-Root Expression",
+      "learningObjective": "Evaluate a limit at infinity involving the difference between a square root and its linear asymptotic approximation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Evaluate \\(\\displaystyle \\lim_{x\\to\\infty}\\left(\\sqrt{x^2+5x}-\\left(x+\\frac{5}{2}\\right)\\right)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{5}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use the expansion\n\\[\n\\sqrt{x^2+5x}\n=\nx\\sqrt{1+\\frac{5}{x}}\n=\nx\\left(1+\\frac{5}{2x}-\\frac{25}{8x^2}+\\cdots\\right)\n=\nx+\\frac{5}{2}-\\frac{25}{8x}+\\cdots.\n\\]\nTherefore,\n\\[\n\\sqrt{x^2+5x}-\\left(x+\\frac{5}{2}\\right)\n=\n-\\frac{25}{8x}+\\cdots.\n\\]\nAs \\(x\\to\\infty\\), this expression tends to \\(0\\). Hence the limit is \\(0\\).",
+      "hint": "Use the binomial expansion \\(\\sqrt{1+t}=1+\\frac{t}{2}-\\frac{t^2}{8}+\\cdots\\) for small \\(t\\)."
+    },
+    {
+      "id": "math-gaokao-274-q009",
+      "category": "Calculus",
+      "concept": "Asymptotic Behavior of an Exponential Power Expression",
+      "learningObjective": "Evaluate a limit at infinity of the form \\(\\left(\\frac{x+a}{x+b}\\right)^x\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Evaluate \\(\\displaystyle \\lim_{x\\to\\infty}\\left(\\frac{x+3}{x-1}\\right)^{x+2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(e^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(e^4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rewrite the base:\n\\[\n\\frac{x+3}{x-1}\n=\n\\frac{1+\\frac{3}{x}}{1-\\frac{1}{x}}.\n\\]\nFor large \\(x\\),\n\\[\n\\ln\\left(\\frac{x+3}{x-1}\\right)\n=\n\\ln\\left(1+\\frac{3}{x}\\right)-\\ln\\left(1-\\frac{1}{x}\\right)\n\\approx\n\\frac{3}{x}+\\frac{1}{x}\n=\n\\frac{4}{x}.\n\\]\nThus,\n\\[\n(x+2)\\ln\\left(\\frac{x+3}{x-1}\\right)\n\\approx\n(x+2)\\cdot\\frac{4}{x}\n\\to 4.\n\\]\nTherefore,\n\\[\n\\left(\\frac{x+3}{x-1}\\right)^{x+2}\\to e^4.\n\\]",
+      "hint": "Take the natural logarithm of the expression and use \\(\\ln(1+u)\\approx u\\) for small \\(u\\)."
+    },
+    {
+      "id": "math-gaokao-274-q010",
+      "category": "Calculus",
+      "concept": "Asymptotic Behavior of \\(x(\\sqrt{x^2+1}-x)\\)",
+      "learningObjective": "Evaluate a limit at infinity by rationalizing a square-root difference and using asymptotic reasoning.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Evaluate \\(\\displaystyle \\lim_{x\\to\\infty}x\\left(\\sqrt{x^2+1}-x\\right)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rationalize the expression inside the limit:\n\\[\nx\\left(\\sqrt{x^2+1}-x\\right)\n=\nx\\cdot\\frac{(\\sqrt{x^2+1}-x)(\\sqrt{x^2+1}+x)}{\\sqrt{x^2+1}+x}\n=\nx\\cdot\\frac{1}{\\sqrt{x^2+1}+x}.\n\\]\nThus,\n\\[\nx\\left(\\sqrt{x^2+1}-x\\right)\n=\n\\frac{x}{\\sqrt{x^2+1}+x}.\n\\]\nDivide numerator and denominator by \\(x\\):\n\\[\n\\frac{x}{\\sqrt{x^2+1}+x}\n=\n\\frac{1}{\\sqrt{1+\\frac{1}{x^2}}+1}.\n\\]\nAs \\(x\\to\\infty\\), \\(\\frac{1}{x^2}\\to 0\\), so the limit is\n\\[\n\\frac{1}{\\sqrt{1}+1}=\\frac{1}{2}.\n\\]",
+      "hint": "Multiply by the conjugate \\(\\sqrt{x^2+1}+x\\), then divide numerator and denominator by \\(x\\)."
+    }
+  ]
+}

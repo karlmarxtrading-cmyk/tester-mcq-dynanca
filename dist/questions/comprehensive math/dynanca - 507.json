@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-507",
+  "category": "Comprehensive Mathematics",
+  "title": "507. Sets, Logic, Reasoning & Proof: Direct Proof of an Integer Divisibility Claim",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-507-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of divisibility",
+      "learningObjective": "State the definition of one integer dividing another.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For integers \\(a\\) and \\(b\\) with \\(a\\ne 0\\), what does \\(a\\mid b\\) mean?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There is an integer \\(k\\) with \\(b=ak\\)."
+        },
+        {
+          "label": "B",
+          "text": "There is an integer \\(k\\) with \\(a=bk\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement \\(a\\mid b\\) (\"\\(a\\) divides \\(b\\)\") means that \\(b\\) is an integer multiple of \\(a\\): \\(b=ak\\) for some integer \\(k\\). For example \\(3\\mid 12\\) because \\(12=3\\cdot 4\\). The other equation would say that \\(a\\) is a multiple of \\(b\\), that is, \\(b\\mid a\\).",
+      "hint": "Test both candidate definitions with \\(a=3\\) and \\(b=12\\)."
+    },
+    {
+      "id": "dynanca-507-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Starting a direct proof",
+      "learningObjective": "Choose the correct opening assumption of a direct proof.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A direct proof of \"if \\(n\\) is even, then \\(n^2\\) is even\" begins with which step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assume \\(n\\) is even, so \\(n=2k\\) for some integer \\(k\\)."
+        },
+        {
+          "label": "B",
+          "text": "Assume \\(n^2\\) is even, so \\(n^2=2k\\) for some integer \\(k\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A direct proof of a conditional starts by assuming the hypothesis and then derives the conclusion. Here the hypothesis is \"\\(n\\) is even\", which by definition means \\(n=2k\\). Assuming that \\(n^2\\) is even would assume what has to be proved.",
+      "hint": "In a direct proof, the hypothesis is assumed and the conclusion is derived."
+    },
+    {
+      "id": "dynanca-507-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Exhibiting the required integer",
+      "learningObjective": "Complete a direct proof by naming the integer that shows divisibility.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In a proof that \\(n^2\\) is even when \\(n=2k\\), one writes \\(n^2=4k^2=2m\\). Which integer \\(m\\) shows that \\(n^2\\) is even?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m=2k^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(m=4k^2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(n^2=4k^2=2\\cdot(2k^2)\\), the integer \\(m=2k^2\\) satisfies \\(n^2=2m\\), which is the definition of \\(n^2\\) being even. The choice \\(m=4k^2\\) would give \\(2m=8k^2\\), which is not \\(n^2\\).",
+      "hint": "Factor exactly one \\(2\\) out of \\(4k^2\\)."
+    },
+    {
+      "id": "dynanca-507-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Divisibility of a sum",
+      "learningObjective": "Carry out the key step in proving that a common divisor divides a sum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Suppose \\(a\\mid b\\) and \\(a\\mid c\\), so \\(b=am\\) and \\(c=an\\) for integers \\(m\\) and \\(n\\). Which equation shows that \\(a\\mid(b+c)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(b+c=a(mn)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(b+c=a(m+n)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Adding the two equations gives \\(b+c=am+an=a(m+n)\\). Since \\(m+n\\) is an integer, \\(a\\) divides \\(b+c\\). The expression \\(a(mn)\\) is not equal to \\(b+c\\) in general; for example, with \\(a=1\\), \\(m=2\\), \\(n=3\\) it gives \\(6\\) instead of \\(5\\).",
+      "hint": "Substitute the two equations and factor out \\(a\\)."
+    },
+    {
+      "id": "dynanca-507-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Divisibility of a multiple",
+      "learningObjective": "Carry out the key step in proving that a divisor of a number divides its multiples.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Suppose \\(a\\mid b\\), so \\(b=am\\) for an integer \\(m\\), and let \\(c\\) be any integer. Which equation shows that \\(a\\mid bc\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(bc=(a+c)m\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(bc=a(mc)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiply \\(b=am\\) by \\(c\\): \\(bc=(am)c=a(mc)\\). Since \\(mc\\) is an integer, \\(a\\) divides \\(bc\\). The expression \\((a+c)m=am+cm\\) is \\(b+cm\\), not \\(bc\\).",
+      "hint": "Multiply the equation \\(b=am\\) by \\(c\\) and regroup the factors."
+    },
+    {
+      "id": "dynanca-507-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Sum of two odd integers",
+      "learningObjective": "Complete the algebra in a direct proof about the sum of two odd integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(x=2a+1\\) and \\(y=2b+1\\) be odd integers. Which expression for \\(x+y\\) shows that the sum is even?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x+y=2(a+b+1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x+y=2(a+b)+1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Adding gives \\(x+y=2a+1+2b+1=2a+2b+2=2(a+b+1)\\). Since \\(a+b+1\\) is an integer, the sum is even. The expression \\(2(a+b)+1\\) drops one of the two units and would describe an odd number.",
+      "hint": "Add the two expressions carefully; there are two terms equal to \\(1\\)."
+    },
+    {
+      "id": "dynanca-507-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Product of two odd integers",
+      "learningObjective": "Complete the algebra in a direct proof about the product of two odd integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(x=2a+1\\) and \\(y=2b+1\\) be odd integers. Which expression for \\(xy\\) shows that the product is odd?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(xy=2(2ab+a+b)+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(xy=4ab+1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Expanding gives \\(xy=(2a+1)(2b+1)=4ab+2a+2b+1=2(2ab+a+b)+1\\), which has the form \\(2m+1\\) with \\(m\\) an integer, so it is odd. The expression \\(4ab+1\\) omits the middle terms \\(2a\\) and \\(2b\\) of the expansion.",
+      "hint": "Expand the product completely, including both middle terms."
+    },
+    {
+      "id": "dynanca-507-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Transitivity of divisibility",
+      "learningObjective": "Carry out the key step in proving that divisibility is transitive.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Suppose \\(a\\mid b\\) and \\(b\\mid c\\), so \\(b=am\\) and \\(c=bn\\) for integers \\(m\\) and \\(n\\). Which equation shows that \\(a\\mid c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(c=a(mn)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(c=a(m+n)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(b=am\\) into \\(c=bn\\): \\(c=(am)n=a(mn)\\). Since \\(mn\\) is an integer, \\(a\\) divides \\(c\\). The sum \\(m+n\\) is not the right multiplier; for \\(a=2\\), \\(b=4\\), \\(c=12\\) we have \\(m=2\\), \\(n=3\\), and \\(2\\cdot 6=12\\) but \\(2\\cdot 5=10\\).",
+      "hint": "Replace \\(b\\) in the second equation by its expression from the first."
+    },
+    {
+      "id": "dynanca-507-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Divisibility by eight",
+      "learningObjective": "Justify the final step of a direct proof that uses consecutive integers.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For an odd integer \\(n=2k+1\\), one finds \\(n^2-1=4k(k+1)\\). Why does this show that \\(8\\mid(n^2-1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The product \\(4k(k+1)\\) is at least \\(8\\) whenever \\(k\\ge 1\\)."
+        },
+        {
+          "label": "B",
+          "text": "One of the consecutive integers \\(k\\) and \\(k+1\\) is even, so \\(k(k+1)=2j\\) and \\(n^2-1=8j\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Of two consecutive integers exactly one is even, so \\(k(k+1)\\) is even: \\(k(k+1)=2j\\) for an integer \\(j\\). Then \\(n^2-1=4\\cdot 2j=8j\\), which is the definition of divisibility by \\(8\\). Being at least \\(8\\) has nothing to do with being a multiple of \\(8\\); for example \\(12\\ge 8\\) is not a multiple of \\(8\\).",
+      "hint": "Divisibility needs an equation of the form \\(8j\\); look at the parity of \\(k(k+1)\\)."
+    },
+    {
+      "id": "dynanca-507-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Using a factorisation",
+      "learningObjective": "Use a factorisation to pass divisibility from one expression to another.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Suppose \\(5\\mid(n-2)\\), so \\(n-2=5k\\) for an integer \\(k\\). Which computation proves that \\(5\\mid(n^2-4)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n^2-4=(n-2)^2=25k^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n^2-4=(n-2)(n+2)=5k(n+2)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The difference of squares factors as \\(n^2-4=(n-2)(n+2)\\). Substituting \\(n-2=5k\\) gives \\(n^2-4=5\\cdot k(n+2)\\), and \\(k(n+2)\\) is an integer, so \\(5\\) divides \\(n^2-4\\). The equation \\(n^2-4=(n-2)^2\\) is false, since \\((n-2)^2=n^2-4n+4\\).",
+      "hint": "Factor \\(n^2-4\\) as a difference of squares."
+    }
+  ]
+}

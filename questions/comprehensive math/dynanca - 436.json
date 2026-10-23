@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-436",
+  "category": "Comprehensive Mathematics",
+  "title": "436. Trigonometry & Periodic Models: Law of Sines for Missing Sides",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-436-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Statement of the Law of Sines",
+      "learningObjective": "State the Law of Sines for a triangle with standard labels.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In triangle \\(ABC\\), sides \\(a\\) and \\(b\\) are opposite angles \\(A\\) and \\(B\\). Which relation is the Law of Sines?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{a}{\\cos A}=\\frac{b}{\\cos B}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{a}{\\sin A}=\\frac{b}{\\sin B}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The Law of Sines states that each side divided by the sine of its opposite angle gives the same value: \\(\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}\\). The version with cosines fails in general; for a triangle with angles \\(30^\\circ\\), \\(60^\\circ\\), \\(90^\\circ\\) and sides \\(1\\), \\(\\sqrt{3}\\), \\(2\\), the cosine ratios are \\(\\frac{2}{\\sqrt{3}}\\) and \\(2\\sqrt{3}\\).",
+      "hint": "Test each relation on the triangle with angles \\(30^\\circ\\), \\(60^\\circ\\), \\(90^\\circ\\) and sides \\(1\\), \\(\\sqrt{3}\\), \\(2\\)."
+    },
+    {
+      "id": "dynanca-436-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Missing side from two angles and a side",
+      "learningObjective": "Use the Law of Sines to find a side opposite a known angle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In triangle \\(ABC\\), \\(A=30^\\circ\\), \\(B=45^\\circ\\), and \\(a=10\\). What is \\(b\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\sqrt{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\sqrt{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the Law of Sines, \\(b=\\frac{a\\sin B}{\\sin A}=\\frac{10\\cdot\\frac{\\sqrt{2}}{2}}{\\frac{1}{2}}=10\\sqrt{2}\\). The larger angle \\(B\\) must be opposite the longer side, so \\(b>a\\); the value \\(5\\sqrt{2}\\approx 7.07\\) is too small.",
+      "hint": "Solve \\(\\frac{a}{\\sin A}=\\frac{b}{\\sin B}\\) for \\(b\\); the larger angle is opposite the longer side."
+    },
+    {
+      "id": "dynanca-436-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Missing side with standard angles",
+      "learningObjective": "Apply the Law of Sines with exact values and simplify the radical.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In triangle \\(ABC\\), \\(A=60^\\circ\\), \\(B=45^\\circ\\), and \\(b=8\\). What is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\sqrt{6}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{8\\sqrt{6}}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the Law of Sines, \\(a=\\frac{b\\sin A}{\\sin B}=\\frac{8\\cdot\\frac{\\sqrt{3}}{2}}{\\frac{\\sqrt{2}}{2}}=\\frac{8\\sqrt{3}}{\\sqrt{2}}=4\\sqrt{6}\\approx 9.80\\). Inverting the ratio of sines gives \\(\\frac{8\\sqrt{6}}{3}\\approx 6.53\\), which is less than \\(b\\) even though \\(A>B\\).",
+      "hint": "The unknown side goes with the sine of its own opposite angle in the numerator."
+    },
+    {
+      "id": "dynanca-436-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Finding the third angle first",
+      "learningObjective": "Use the angle sum of a triangle before applying the Law of Sines.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In triangle \\(ABC\\), \\(A=75^\\circ\\), \\(B=45^\\circ\\), and \\(c=6\\). What is \\(b\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\sqrt{6}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\sqrt{6}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The third angle is \\(C=180^\\circ-75^\\circ-45^\\circ=60^\\circ\\). Then \\(b=\\frac{c\\sin B}{\\sin C}=\\frac{6\\cdot\\frac{\\sqrt{2}}{2}}{\\frac{\\sqrt{3}}{2}}=\\frac{6\\sqrt{2}}{\\sqrt{3}}=2\\sqrt{6}\\approx 4.90\\). Inverting the ratio gives \\(3\\sqrt{6}\\approx 7.35\\), which would make \\(b>c\\) although \\(B<C\\).",
+      "hint": "The side \\(c\\) must be paired with its opposite angle \\(C\\), which has to be found first."
+    },
+    {
+      "id": "dynanca-436-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Missing side with decimal sines",
+      "learningObjective": "Apply the Law of Sines using given decimal values of sines.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In triangle \\(ABC\\), \\(A=40^\\circ\\), \\(B=60^\\circ\\), and \\(a=7\\). Using \\(\\sin 40^\\circ\\approx 0.643\\) and \\(\\sin 60^\\circ\\approx 0.866\\), what is \\(b\\) to one decimal place?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5.2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9.4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the Law of Sines, \\(b=\\frac{a\\sin B}{\\sin A}\\approx\\frac{7\\cdot 0.866}{0.643}\\approx 9.43\\approx 9.4\\). Since \\(B>A\\), side \\(b\\) must be longer than \\(a=7\\). The value \\(5.2\\) comes from inverting the ratio of sines.",
+      "hint": "Decide in advance whether \\(b\\) should be longer or shorter than \\(a\\) by comparing the opposite angles."
+    },
+    {
+      "id": "dynanca-436-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Distance by triangulation",
+      "learningObjective": "Use the Law of Sines to find a distance from two sighting angles.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Observers \\(A\\) and \\(B\\) stand \\(100\\text{ m}\\) apart. A tree at \\(C\\) is seen so that angle \\(A\\) of triangle \\(ABC\\) is \\(50^\\circ\\) and angle \\(B\\) is \\(60^\\circ\\). Using \\(\\sin 60^\\circ\\approx 0.866\\) and \\(\\sin 70^\\circ\\approx 0.940\\), what is the distance \\(AC\\), to the nearest metre?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(92\\text{ m}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(109\\text{ m}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The third angle is \\(C=180^\\circ-50^\\circ-60^\\circ=70^\\circ\\), and it is opposite \\(AB=100\\text{ m}\\). Side \\(AC\\) is opposite angle \\(B\\), so \\(AC=\\frac{100\\sin 60^\\circ}{\\sin 70^\\circ}\\approx\\frac{86.6}{0.940}\\approx 92\\text{ m}\\). Inverting the ratio of sines gives about \\(109\\text{ m}\\), which is impossible here: \\(AC\\) is opposite the smaller angle \\(60^\\circ\\), so it must be shorter than \\(AB\\), the side opposite \\(70^\\circ\\).",
+      "hint": "Identify which angle is opposite the side \\(AC\\) and which angle is opposite the known side."
+    },
+    {
+      "id": "dynanca-436-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "When the Law of Sines applies directly",
+      "learningObjective": "Identify given information for which the Law of Sines finds a side immediately.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For which set of given measurements can the Law of Sines be used at once to find a missing side of a triangle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two angles and one side"
+        },
+        {
+          "label": "B",
+          "text": "Two sides and the angle between them"
+        }
+      ],
+      "answer": "A",
+      "explanation": "With two angles the third angle is known, so the given side can be paired with its opposite angle and any other side found from \\(\\frac{a}{\\sin A}=\\frac{b}{\\sin B}\\). With two sides and the included angle, no side is paired with a known opposite angle, so the Law of Cosines is needed first.",
+      "hint": "The Law of Sines needs at least one side together with its opposite angle."
+    },
+    {
+      "id": "dynanca-436-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Law of Sines in a right triangle",
+      "learningObjective": "Check that the Law of Sines agrees with right-triangle trigonometry.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In triangle \\(ABC\\), \\(A=30^\\circ\\), \\(C=90^\\circ\\), and \\(c=20\\). What is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\sqrt{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the Law of Sines, \\(a=\\frac{c\\sin A}{\\sin C}=\\frac{20\\cdot\\frac{1}{2}}{1}=10\\). This agrees with right-triangle trigonometry, where the side opposite \\(30^\\circ\\) is half the hypotenuse. The value \\(10\\sqrt{3}\\) is side \\(b\\), opposite the \\(60^\\circ\\) angle.",
+      "hint": "Pair \\(c\\) with \\(\\sin C\\), and recall the value of \\(\\sin 90^\\circ\\)."
+    },
+    {
+      "id": "dynanca-436-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Side opposite an angle found by subtraction",
+      "learningObjective": "Combine the angle sum with the Law of Sines when an obtuse angle is present.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "In triangle \\(ABC\\), \\(A=45^\\circ\\), \\(B=105^\\circ\\), and \\(c=6\\). What is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\sqrt{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\sqrt{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The third angle is \\(C=180^\\circ-45^\\circ-105^\\circ=30^\\circ\\). Then \\(a=\\frac{c\\sin A}{\\sin C}=\\frac{6\\cdot\\frac{\\sqrt{2}}{2}}{\\frac{1}{2}}=6\\sqrt{2}\\approx 8.49\\). Since \\(A>C\\), side \\(a\\) must be longer than \\(c=6\\); the value \\(3\\sqrt{2}\\approx 4.24\\) is too small.",
+      "hint": "Find angle \\(C\\) first; it is the angle opposite the given side."
+    },
+    {
+      "id": "dynanca-436-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Base of an isosceles triangle",
+      "learningObjective": "Use the Law of Sines to find the third side of an isosceles triangle.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In triangle \\(ABC\\), \\(A=30^\\circ\\), \\(B=30^\\circ\\), and \\(a=5\\). What is \\(c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{5\\sqrt{3}}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\sqrt{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The third angle is \\(C=180^\\circ-30^\\circ-30^\\circ=120^\\circ\\). Then \\(c=\\frac{a\\sin C}{\\sin A}=\\frac{5\\cdot\\frac{\\sqrt{3}}{2}}{\\frac{1}{2}}=5\\sqrt{3}\\approx 8.66\\). The largest angle is opposite the longest side, so \\(c\\) must exceed \\(5\\); the value \\(\\frac{5\\sqrt{3}}{3}\\approx 2.89\\) comes from inverting the ratio.",
+      "hint": "Find angle \\(C\\), recall that \\(\\sin 120^\\circ=\\sin 60^\\circ\\), and expect \\(c\\) to be the longest side."
+    }
+  ]
+}

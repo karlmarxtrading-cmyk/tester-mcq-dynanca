@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-58",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 58",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-58-q001",
+      "category": "Algebra",
+      "concept": "Logarithmic Inequality with Base Greater Than 1",
+      "learningObjective": "Solve a basic logarithmic inequality by applying the domain condition and comparing arguments.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the inequality \\(\\log_2(x-1)<3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([1,9)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,9)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The logarithm requires\n\\[\nx-1>0 \\Rightarrow x>1.\n\\]\nSince the base \\(2>1\\), the logarithmic function is increasing, so\n\\[\n\\log_2(x-1)<3=\\log_2 8\n\\]\nis equivalent to\n\\[\nx-1<8 \\Rightarrow x<9.\n\\]\nCombining \\(x>1\\) and \\(x<9\\), the solution is\n\\[\n(1,9).\n\\]\nThus option B is correct.",
+      "hint": "First impose the condition that the argument of the logarithm is positive, then compare the arguments because the base is greater than \\(1\\)."
+    },
+    {
+      "id": "math-gaokao-58-q002",
+      "category": "Algebra",
+      "concept": "Logarithmic Inequality with Base Between 0 and 1",
+      "learningObjective": "Solve a logarithmic inequality with a base less than \\(1\\) by reversing the inequality sign.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the inequality \\(\\log_{1/2}(x+2)\\ge -1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-2,0]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([-2,0)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The logarithm requires\n\\[\nx+2>0 \\Rightarrow x>-2.\n\\]\nAlso,\n\\[\n-1=\\log_{1/2}2.\n\\]\nSince the base \\(\\frac12\\) lies between \\(0\\) and \\(1\\), the logarithmic function is decreasing. Therefore,\n\\[\n\\log_{1/2}(x+2)\\ge \\log_{1/2}2\n\\]\nis equivalent to\n\\[\nx+2\\le 2 \\Rightarrow x\\le 0.\n\\]\nCombining \\(x>-2\\) and \\(x\\le 0\\), the solution is\n\\[\n(-2,0].\n\\]\nThus option A is correct.",
+      "hint": "Because the base is less than \\(1\\), reverse the inequality sign when comparing the arguments."
+    },
+    {
+      "id": "math-gaokao-58-q003",
+      "category": "Algebra",
+      "concept": "Logarithmic Inequality with a Quadratic Argument",
+      "learningObjective": "Solve a logarithmic inequality by intersecting the domain of the logarithm with the solution of the resulting quadratic inequality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the inequality \\(\\log_3(x^2-4)<1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-\\sqrt7,-2)\\cup(2,\\sqrt7)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\sqrt7,\\sqrt7)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The logarithm requires\n\\[\nx^2-4>0 \\Rightarrow x<-2 \\text{ or } x>2.\n\\]\nSince the base \\(3>1\\), the inequality is equivalent to\n\\[\nx^2-4<3.\n\\]\nThus\n\\[\nx^2<7 \\Rightarrow -\\sqrt7<x<\\sqrt7.\n\\]\nIntersecting \\(-\\sqrt7<x<\\sqrt7\\) with \\(x<-2\\) or \\(x>2\\), we get\n\\[\n(-\\sqrt7,-2)\\cup(2,\\sqrt7).\n\\]\nThus option A is correct.",
+      "hint": "Find the domain of the logarithm first, then solve the resulting quadratic inequality and intersect the two conditions."
+    },
+    {
+      "id": "math-gaokao-58-q004",
+      "category": "Algebra",
+      "concept": "Logarithmic Inequality with Base Less Than 1 and Quadratic Argument",
+      "learningObjective": "Solve a logarithmic inequality with a base less than \\(1\\) and a quadratic argument.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Solve the inequality \\(\\log_{1/2}(x^2-2x)<-1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1-\\sqrt3,1+\\sqrt3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\infty,1-\\sqrt3)\\cup(1+\\sqrt3,\\infty)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The logarithm requires\n\\[\nx^2-2x>0 \\Rightarrow x<0 \\text{ or } x>2.\n\\]\nAlso,\n\\[\n-1=\\log_{1/2}2.\n\\]\nSince the base \\(\\frac12\\) is less than \\(1\\), the logarithmic function is decreasing, so\n\\[\n\\log_{1/2}(x^2-2x)<\\log_{1/2}2\n\\]\nis equivalent to\n\\[\nx^2-2x>2.\n\\]\nRearrange:\n\\[\nx^2-2x-2>0.\n\\]\nThe roots are\n\\[\nx=1\\pm\\sqrt3.\n\\]\nThus\n\\[\nx<1-\\sqrt3 \\quad \\text{or} \\quad x>1+\\sqrt3.\n\\]\nIntersecting this with the domain \\(x<0\\) or \\(x>2\\), the solution remains\n\\[\n(-\\infty,1-\\sqrt3)\\cup(1+\\sqrt3,\\infty).\n\\]\nThus option B is correct.",
+      "hint": "Because the base is less than \\(1\\), reverse the inequality sign; then solve the resulting quadratic inequality and intersect with the domain."
+    },
+    {
+      "id": "math-gaokao-58-q005",
+      "category": "Algebra",
+      "concept": "Logarithmic Inequality Involving a Sum of Logarithms",
+      "learningObjective": "Combine logarithms and solve the resulting logarithmic inequality with a domain restriction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve the inequality \\(\\log_2(x+1)+\\log_2(x-1)<3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-3,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The logarithms require\n\\[\nx+1>0 \\Rightarrow x>-1,\\qquad x-1>0 \\Rightarrow x>1.\n\\]\nThus \\(x>1\\).\nCombine the logarithms:\n\\[\n\\log_2((x+1)(x-1))<3.\n\\]\nSince the base \\(2>1\\), this is equivalent to\n\\[\n(x+1)(x-1)<2^3=8.\n\\]\nExpand:\n\\[\nx^2-1<8 \\Rightarrow x^2<9 \\Rightarrow -3<x<3.\n\\]\nIntersecting with \\(x>1\\), the solution is\n\\[\n(1,3).\n\\]\nThus option A is correct.",
+      "hint": "First determine the common domain of the logarithms, then combine them into a single logarithm before comparing arguments."
+    },
+    {
+      "id": "math-gaokao-58-q006",
+      "category": "Algebra",
+      "concept": "Logarithmic Inequality with Base Less Than 1",
+      "learningObjective": "Solve a logarithmic inequality with a base less than \\(1\\) by reversing the inequality sign and applying the domain condition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the inequality \\(\\log_{1/3}(2x-1)\\ge -2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left[\\frac12,5\\right]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\left(\\frac12,5\\right]\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The logarithm requires\n\\[\n2x-1>0 \\Rightarrow x>\\frac12.\n\\]\nAlso,\n\\[\n-2=\\log_{1/3}9.\n\\]\nSince the base \\(\\frac13\\) is less than \\(1\\), the logarithmic function is decreasing. Therefore,\n\\[\n\\log_{1/3}(2x-1)\\ge \\log_{1/3}9\n\\]\nis equivalent to\n\\[\n2x-1\\le 9.\n\\]\nSolve:\n\\[\n2x\\le 10 \\Rightarrow x\\le 5.\n\\]\nCombining \\(x>\\frac12\\) and \\(x\\le 5\\), the solution is\n\\[\n\\left(\\frac12,5\\right].\n\\]\nThus option B is correct.",
+      "hint": "Because the base is less than \\(1\\), reverse the inequality sign when comparing the arguments, and remember the logarithm’s domain condition."
+    },
+    {
+      "id": "math-gaokao-58-q007",
+      "category": "Algebra",
+      "concept": "Logarithmic Inequality with Quadratic Argument and Base Greater Than 1",
+      "learningObjective": "Solve a logarithmic inequality with a quadratic argument and intersect with the domain.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Solve the inequality \\(\\log_2(x^2-3x)>2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-1,4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\infty,-1)\\cup(4,\\infty)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The logarithm requires\n\\[\nx^2-3x>0 \\Rightarrow x(x-3)>0 \\Rightarrow x<0 \\text{ or } x>3.\n\\]\nSince the base \\(2>1\\), the inequality is equivalent to\n\\[\nx^2-3x>2^2=4.\n\\]\nRearrange:\n\\[\nx^2-3x-4>0.\n\\]\nFactor:\n\\[\n(x-4)(x+1)>0.\n\\]\nThus\n\\[\nx<-1 \\quad \\text{or} \\quad x>4.\n\\]\nIntersecting this with the domain \\(x<0\\) or \\(x>3\\), we get\n\\[\n(-\\infty,-1)\\cup(4,\\infty).\n\\]\nThus option B is correct.",
+      "hint": "Find the domain of the logarithm first, then solve the quadratic inequality obtained after comparing the argument with \\(2^2\\)."
+    },
+    {
+      "id": "math-gaokao-58-q008",
+      "category": "Algebra",
+      "concept": "Logarithmic Inequality with Base Less Than 1 and Quadratic Argument",
+      "learningObjective": "Solve a logarithmic inequality with a base less than \\(1\\) and determine the correct inclusion of endpoints.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve the inequality \\(\\log_{1/2}(x^2-5x+6)\\ge -2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left(\\frac{5-\\sqrt{17}}{2},2\\right)\\cup\\left(3,\\frac{5+\\sqrt{17}}{2}\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\left[\\frac{5-\\sqrt{17}}{2},2\\right)\\cup\\left(3,\\frac{5+\\sqrt{17}}{2}\\right]\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The logarithm requires\n\\[\nx^2-5x+6>0 \\Rightarrow (x-2)(x-3)>0 \\Rightarrow x<2 \\text{ or } x>3.\n\\]\nAlso,\n\\[\n-2=\\log_{1/2}4.\n\\]\nSince the base \\(\\frac12\\) is less than \\(1\\), the logarithmic function is decreasing, so\n\\[\n\\log_{1/2}(x^2-5x+6)\\ge \\log_{1/2}4\n\\]\nis equivalent to\n\\[\nx^2-5x+6\\le 4.\n\\]\nRearrange:\n\\[\nx^2-5x+2\\le 0.\n\\]\nThe roots are\n\\[\nx=\\frac{5\\pm\\sqrt{17}}{2}.\n\\]\nThus\n\\[\n\\frac{5-\\sqrt{17}}{2}\\le x\\le \\frac{5+\\sqrt{17}}{2}.\n\\]\nIntersecting this with the domain \\(x<2\\) or \\(x>3\\), we get\n\\[\n\\left[\\frac{5-\\sqrt{17}}{2},2\\right)\\cup\\left(3,\\frac{5+\\sqrt{17}}{2}\\right].\n\\]\nThus option B is correct.",
+      "hint": "Reverse the inequality sign because the base is less than \\(1\\), then intersect the resulting closed interval with the domain of the logarithm."
+    },
+    {
+      "id": "math-gaokao-58-q009",
+      "category": "Algebra",
+      "concept": "Logarithmic Inequality Involving a Sum of Logarithms",
+      "learningObjective": "Combine logarithms and solve the resulting inequality while respecting the domain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the inequality \\(\\log_2(x-1)+\\log_2(x-2)\\le 1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,3]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([2,3]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The logarithms require\n\\[\nx-1>0 \\Rightarrow x>1,\\qquad x-2>0 \\Rightarrow x>2.\n\\]\nThus \\(x>2\\).\nCombine the logarithms:\n\\[\n\\log_2((x-1)(x-2))\\le 1.\n\\]\nSince the base \\(2>1\\), this is equivalent to\n\\[\n(x-1)(x-2)\\le 2^1=2.\n\\]\nExpand:\n\\[\nx^2-3x+2\\le 2 \\Rightarrow x^2-3x\\le 0 \\Rightarrow x(x-3)\\le 0.\n\\]\nThus\n\\[\n0\\le x\\le 3.\n\\]\nIntersecting with \\(x>2\\), the solution is\n\\[\n(2,3].\n\\]\nThus option A is correct.",
+      "hint": "Determine the common domain of the logarithms first, then combine them and compare the argument with \\(2^1\\)."
+    },
+    {
+      "id": "math-gaokao-58-q010",
+      "category": "Algebra",
+      "concept": "Logarithmic Inequality Comparing Two Logarithms with Base Less Than 1",
+      "learningObjective": "Solve a logarithmic inequality by comparing arguments and reversing the inequality sign due to the base.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the inequality \\(\\log_{1/2}(x+1)>\\log_{1/2}(2x-1)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\left(\\frac12,2\\right)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The logarithms require\n\\[\nx+1>0 \\Rightarrow x>-1,\\qquad 2x-1>0 \\Rightarrow x>\\frac12.\n\\]\nThus \\(x>\\frac12\\).\nSince the base \\(\\frac12\\) is less than \\(1\\), the logarithmic function is decreasing. Therefore,\n\\[\n\\log_{1/2}(x+1)>\\log_{1/2}(2x-1)\n\\]\nis equivalent to\n\\[\nx+1<2x-1.\n\\]\nSolve:\n\\[\n2<x \\Rightarrow x>2.\n\\]\nIntersecting \\(x>2\\) with the domain \\(x>\\frac12\\), the solution is\n\\[\n(2,\\infty).\n\\]\nThus option A is correct.",
+      "hint": "Because the base is less than \\(1\\), reverse the inequality sign when comparing the arguments, and first determine the domain."
+    }
+  ]
+}

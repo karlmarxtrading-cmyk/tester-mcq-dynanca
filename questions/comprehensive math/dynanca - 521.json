@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-521",
+  "category": "Comprehensive Mathematics",
+  "title": "521. Sets, Logic, Reasoning & Proof: Distinguishing Examples from Proofs",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-521-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Finitely many checks for a universal claim",
+      "learningObjective": "Recognise that a few verified cases do not prove a statement about all integers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A statement is claimed for every positive integer \\(n\\). It has been checked for \\(n=1\\), \\(2\\), and \\(3\\). Is the statement proved?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; infinitely many cases remain unchecked."
+        },
+        {
+          "label": "B",
+          "text": "Yes; three confirming cases establish the pattern."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A universal statement covers all positive integers, and three verified cases leave all the others open. The statement may fail later, as many examples in mathematics show. A proof must give an argument that works for an arbitrary \\(n\\).",
+      "hint": "Compare the number of cases checked with the number of cases claimed."
+    },
+    {
+      "id": "dynanca-521-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "One example for an existence claim",
+      "learningObjective": "Recognise that a single example proves an existence statement.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Does the example \\(x=3\\) prove the statement \"there exists an integer \\(x\\) with \\(x^2=9\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; an existence statement is proved by one example that satisfies the condition."
+        },
+        {
+          "label": "B",
+          "text": "No; an example can never be a proof."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement claims only that some integer has the property. Since \\(3^2=9\\), the integer \\(3\\) is such an integer, and exhibiting it is a complete proof. Examples fail as proofs only for universal statements.",
+      "hint": "Ask what kind of statement is being proved: \"for all\" or \"there exists\"."
+    },
+    {
+      "id": "dynanca-521-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "One counterexample for a universal claim",
+      "learningObjective": "Recognise that one counterexample disproves a universal statement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many counterexamples are needed to disprove the statement \"every prime number is odd\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One is enough, for example the prime \\(2\\)."
+        },
+        {
+          "label": "B",
+          "text": "Several are needed, to show that the failure is not an exception."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement claims that all primes are odd. A single prime that is not odd contradicts this, and \\(2\\) is such a prime. In mathematics there are no tolerated exceptions to a universal statement: one counterexample makes it false.",
+      "hint": "A universal statement allows no exceptions at all."
+    },
+    {
+      "id": "dynanca-521-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A pattern that breaks at the third case",
+      "learningObjective": "Evaluate a conclusion drawn from two confirming cases.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A student checks that \\(2^n\\ge n^2\\) holds for \\(n=1\\) and \\(n=2\\) and concludes that it holds for every positive integer \\(n\\). Is the conclusion justified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; for \\(n=3\\) the inequality fails, since \\(2^3=8<9=3^2\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; two consecutive confirming cases show that the pattern continues."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The cases \\(n=1\\) (\\(2\\ge 1\\)) and \\(n=2\\) (\\(4\\ge 4\\)) are true, but \\(n=3\\) gives \\(8\\ge 9\\), which is false. Checking examples cannot establish a universal statement, and here the very next case is a counterexample.",
+      "hint": "Test the next value of \\(n\\)."
+    },
+    {
+      "id": "dynanca-521-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Proof versus list of examples",
+      "learningObjective": "Decide which of two texts is a proof of a statement about all even integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which text is a proof that the sum of two even integers is always even?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"Let the integers be \\(2a\\) and \\(2b\\). Then \\(2a+2b=2(a+b)\\), which is even.\""
+        },
+        {
+          "label": "B",
+          "text": "\"\\(2+4=6\\), \\(6+8=14\\), and \\(10+12=22\\); all the sums are even.\""
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first text treats two arbitrary even integers and shows by algebra that their sum is twice an integer, so it covers every case. The second text checks three particular sums; it illustrates the statement but says nothing about the infinitely many other pairs.",
+      "hint": "Ask which text applies to every pair of even integers."
+    },
+    {
+      "id": "dynanca-521-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Checking every case of a finite claim",
+      "learningObjective": "Recognise that exhaustive checking proves a statement about a finite set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The statement \"every integer \\(n\\) from \\(1\\) to \\(5\\) satisfies \\(n^2<30\\)\" is verified by computing \\(1,4,9,16,25\\). Is this a proof?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; checking cases is never a proof."
+        },
+        {
+          "label": "B",
+          "text": "Yes; all cases of the statement have been checked."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The statement concerns only the five integers \\(1,2,3,4,5\\). Verifying the property for each of them covers every case, so the verification is a complete proof (a proof by exhaustion). Checking cases fails as a proof only when some cases are left unchecked.",
+      "hint": "Count how many cases the statement covers and how many were checked."
+    },
+    {
+      "id": "dynanca-521-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Starting with an arbitrary element",
+      "learningObjective": "Choose a starting point suitable for proving a universal statement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which opening is appropriate for a proof that the square of every odd integer is odd?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"Let \\(n=7\\).\""
+        },
+        {
+          "label": "B",
+          "text": "\"Let \\(n=2k+1\\), where \\(k\\) is an arbitrary integer.\""
+        }
+      ],
+      "answer": "B",
+      "explanation": "To prove a statement about all odd integers, the argument must apply to an arbitrary one, written \\(n=2k+1\\) with \\(k\\) unspecified. Then \\(n^2=2(2k^2+2k)+1\\) is odd for every \\(k\\). Starting with \\(n=7\\) would prove the statement for the single number \\(7\\) only.",
+      "hint": "The opening must represent every odd integer, not one particular odd integer."
+    },
+    {
+      "id": "dynanca-521-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "What examples can do",
+      "learningObjective": "Describe the legitimate role of examples for a universal statement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What can examples legitimately accomplish with respect to a universal statement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They can suggest that the statement may be true, or refute it if one of them is a counterexample."
+        },
+        {
+          "label": "B",
+          "text": "They can prove the statement, provided that enough of them are checked."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Examples are valuable for forming conjectures and for testing them: a single counterexample refutes a universal statement. But no number of confirming examples proves a statement about infinitely many cases; that requires a general argument.",
+      "hint": "Compare what one failing example shows with what many confirming examples show."
+    },
+    {
+      "id": "dynanca-521-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An example that is a complete proof",
+      "learningObjective": "Recognise an existence statement about irrational numbers that is proved by an example.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Is the statement \"there exist irrational numbers \\(a\\) and \\(b\\) such that \\(a+b\\) is rational\" proved by the example \\(a=\\sqrt{2}\\), \\(b=-\\sqrt{2}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; both numbers are irrational and their sum is \\(0\\), which is rational."
+        },
+        {
+          "label": "B",
+          "text": "No; one example cannot prove a statement about irrational numbers."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement is an existence statement, so one pair with the required properties proves it. Here \\(\\sqrt{2}\\) and \\(-\\sqrt{2}\\) are irrational, and \\(\\sqrt{2}+(-\\sqrt{2})=0\\) is rational. An example is insufficient only for statements about all irrational numbers.",
+      "hint": "Decide whether the statement begins with \"for all\" or \"there exist\"."
+    },
+    {
+      "id": "dynanca-521-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A conjecture refuted by the next case",
+      "learningObjective": "Evaluate a universal claim based on three confirming cases with factorials.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A student observes that \\(n!+1\\) is prime for \\(n=1,2,3\\) (the values are \\(2\\), \\(3\\), \\(7\\)) and claims that \\(n!+1\\) is prime for every positive integer \\(n\\). Which evaluation is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The claim is justified, because three consecutive cases confirm it."
+        },
+        {
+          "label": "B",
+          "text": "The claim is unjustified and false: for \\(n=4\\), \\(4!+1=25=5\\cdot 5\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Three confirming cases do not prove a universal claim. Testing the next case gives \\(4!+1=24+1=25\\), which is not prime. This counterexample shows that the claim is false.",
+      "hint": "Compute the next case and test whether the result is prime."
+    }
+  ]
+}

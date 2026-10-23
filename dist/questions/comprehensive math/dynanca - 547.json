@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-547",
+  "category": "Comprehensive Mathematics",
+  "title": "547. Discrete Mathematics, Counting & Graph Theory: Permutations of Distinct Objects",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-547-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Arranging books",
+      "learningObjective": "Count the orders of a small set of distinct objects.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In how many orders can \\(4\\) different books be placed in a row on a shelf?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first place can be filled in \\(4\\) ways, the second in \\(3\\), the third in \\(2\\), and the last in \\(1\\), so there are \\(4!=24\\) orders. The number \\(16=4^2\\) does not correspond to this situation.",
+      "hint": "After a book is placed, it is no longer available for the next place."
+    },
+    {
+      "id": "dynanca-547-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two ordered positions",
+      "learningObjective": "Count ordered selections of two from a small group.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A club of \\(5\\) members elects a president and a secretary, who must be different people. In how many ways can this be done?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(5\\) choices for president and then \\(4\\) for secretary, so \\(5\\cdot 4=20\\) ways. The number \\(10\\) counts unordered pairs of members, but here the two positions are different, so order matters.",
+      "hint": "Swapping the two people gives a different result."
+    },
+    {
+      "id": "dynanca-547-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Arrangements of three from seven",
+      "learningObjective": "Evaluate the number of ordered selections of three objects from seven.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(P(n,r)\\) denote the number of ordered arrangements of \\(r\\) objects chosen from \\(n\\) different objects. What is \\(P(7,3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(35\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(210\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(P(7,3)=7\\cdot 6\\cdot 5=210\\): there are \\(7\\) choices for the first position, \\(6\\) for the second, and \\(5\\) for the third. The number \\(35\\) is the number of unordered selections of \\(3\\) from \\(7\\).",
+      "hint": "Multiply three consecutive decreasing integers, starting from \\(7\\)."
+    },
+    {
+      "id": "dynanca-547-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A quotient of factorials",
+      "learningObjective": "Simplify a quotient of two factorials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the value of \\(\\dfrac{8!}{6!}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(28\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(56\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(8!=8\\cdot 7\\cdot 6!\\), the factor \\(6!\\) cancels and \\(\\dfrac{8!}{6!}=8\\cdot 7=56\\). The number \\(28\\) is \\(\\dfrac{8\\cdot 7}{2}\\), which would be the number of unordered pairs.",
+      "hint": "Write \\(8!\\) as a product that ends with \\(6!\\)."
+    },
+    {
+      "id": "dynanca-547-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Medals",
+      "learningObjective": "Count the ways to award three ranked prizes.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Ten runners compete in a race with no ties. In how many ways can the gold, silver, and bronze medals be awarded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(720\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The gold medal can go to any of \\(10\\) runners, the silver to any of the remaining \\(9\\), and the bronze to any of the remaining \\(8\\): \\(10\\cdot 9\\cdot 8=720\\). The number \\(120\\) counts sets of three medallists without regard to which medal each receives.",
+      "hint": "The three medals are different, so the order of the three runners matters."
+    },
+    {
+      "id": "dynanca-547-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Arranging the letters of a word",
+      "learningObjective": "Count the arrangements of the letters of a word with all letters different.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In how many ways can the letters of the word PLANET be arranged in a row?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(720\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The word has \\(6\\) different letters, so the number of arrangements is \\(6!=720\\). The number \\(36=6^2\\) has no meaning for this question.",
+      "hint": "Check that no letter of the word is repeated, then count the orders of six different objects."
+    },
+    {
+      "id": "dynanca-547-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Four letters from a longer word",
+      "learningObjective": "Count arrangements that use only some of the letters of a word.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "How many arrangements of \\(4\\) letters can be formed from the letters of the word NUMBER, using no letter more than once?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(360\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The word has \\(6\\) different letters, and \\(4\\) positions are filled in order: \\(6\\cdot 5\\cdot 4\\cdot 3=360\\). The number \\(15\\) counts the unordered choices of \\(4\\) letters and ignores their order.",
+      "hint": "Fill four positions one after another from six different letters."
+    },
+    {
+      "id": "dynanca-547-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Solving for the number of objects",
+      "learningObjective": "Find the number of objects from a given number of ordered pairs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(P(n,2)\\) denote the number of ordered arrangements of \\(2\\) objects chosen from \\(n\\) different objects. If \\(P(n,2)=42\\), what is \\(n\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n=7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n=21\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(P(n,2)=n(n-1)\\). The equation \\(n(n-1)=42\\) has the positive solution \\(n=7\\), since \\(7\\cdot 6=42\\). Dividing \\(42\\) by \\(2\\) gives \\(21\\), which does not satisfy the equation: \\(21\\cdot 20=420\\).",
+      "hint": "Look for two consecutive integers whose product is \\(42\\)."
+    },
+    {
+      "id": "dynanca-547-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "One element before another",
+      "learningObjective": "Count permutations in which one given element precedes another.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "In how many permutations of \\(1,2,3,4,5\\) does \\(1\\) appear somewhere to the left of \\(2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Exchanging the positions of \\(1\\) and \\(2\\) pairs each permutation in which \\(1\\) is left of \\(2\\) with one in which \\(1\\) is right of \\(2\\). So exactly half of the \\(5!=120\\) permutations qualify: \\(60\\). The number \\(24=4!\\) counts only the permutations in which \\(1\\) and \\(2\\) are adjacent in that order.",
+      "hint": "Compare the permutations with \\(1\\) before \\(2\\) and those with \\(2\\) before \\(1\\); neither kind can be more numerous."
+    },
+    {
+      "id": "dynanca-547-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Dictionary order",
+      "learningObjective": "Find the permutation in a given position of the dictionary order.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The \\(24\\) permutations of the digits \\(1,2,3,4\\) are written as four-digit numbers in increasing order. Which number is in position \\(10\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2341\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2413\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first \\(3!=6\\) numbers begin with \\(1\\). The next six begin with \\(2\\): \\(2134\\), \\(2143\\), \\(2314\\), \\(2341\\), \\(2413\\), \\(2431\\). These occupy positions \\(7\\) to \\(12\\), so position \\(10\\) holds \\(2341\\). The number \\(2413\\) is in position \\(11\\).",
+      "hint": "Count how many numbers begin with \\(1\\), then list the numbers beginning with \\(2\\) in order."
+    }
+  ]
+}

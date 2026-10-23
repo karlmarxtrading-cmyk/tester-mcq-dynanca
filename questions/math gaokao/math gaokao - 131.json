@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-131",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 131",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-131-q001",
+      "category": "Algebra",
+      "concept": "Mathematical Induction",
+      "learningObjective": "Identify the correct base case for an induction proof of a sum formula.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "To prove by mathematical induction that\n\\[\n1+3+5+\\cdots+(2n-1)=n^2\n\\]\nfor every positive integer \\(n\\), what is the correct base case?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The base case is \\(n=0\\): \\(0=0^2\\)."
+        },
+        {
+          "label": "B",
+          "text": "The base case is \\(n=1\\): \\(1=1^2\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The statement is asserted for every positive integer \\(n\\), so the first value to check is \\(n=1\\). For \\(n=1\\), the left side is \\(1\\), and the right side is\n\\[\n1^2=1.\n\\]\nThus the base case is \\(n=1\\), and it is true.",
+      "hint": "The base case is the smallest value of \\(n\\) for which the statement is claimed."
+    },
+    {
+      "id": "math-gaokao-131-q002",
+      "category": "Algebra",
+      "concept": "Mathematical Induction",
+      "learningObjective": "Determine the goal of the inductive step in an inequality proof.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Suppose we are proving by induction that\n\\[\n2^n>n\n\\]\nfor every positive integer \\(n\\). After assuming that\n\\[\n2^k>k\n\\]\nfor some positive integer \\(k\\), what must be shown in the inductive step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2^{k+1}>k\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2^{k+1}>k+1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inductive step must prove the statement for \\(n=k+1\\). Since the statement is \\(2^n>n\\), the goal for \\(n=k+1\\) is\n\\[\n2^{k+1}>k+1.\n\\]\nTherefore, option B is the required goal.",
+      "hint": "Replace \\(n\\) by \\(k+1\\) in the original inequality."
+    },
+    {
+      "id": "math-gaokao-131-q003",
+      "category": "Algebra",
+      "concept": "Mathematical Induction",
+      "learningObjective": "Verify the base case for an induction proof of a divisibility statement.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "To prove by induction that\n\\[\nn^3-n\n\\]\nis divisible by \\(3\\) for every positive integer \\(n\\), which is the correct base case?",
+      "options": [
+        {
+          "label": "A",
+          "text": "For \\(n=0\\), \\(0^3-0=0\\), which is divisible by \\(3\\)."
+        },
+        {
+          "label": "B",
+          "text": "For \\(n=1\\), \\(1^3-1=0\\), which is divisible by \\(3\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The statement is claimed for every positive integer \\(n\\), so the base case is \\(n=1\\). Substituting \\(n=1\\),\n\\[\n1^3-1=1-1=0,\n\\]\nand \\(0\\) is divisible by \\(3\\). Therefore, the correct base case is \\(n=1\\).",
+      "hint": "Use the smallest positive integer for the base case."
+    },
+    {
+      "id": "math-gaokao-131-q004",
+      "category": "Algebra",
+      "concept": "Mathematical Induction",
+      "learningObjective": "Identify the term to add in the inductive step of a sum formula.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "To prove by induction that\n\\[\n1+2+3+\\cdots+n=\\frac{n(n+1)}{2}\n\\]\nfor every positive integer \\(n\\), assume the formula holds for \\(n=k\\). What should be added to both sides to obtain the formula for \\(n=k+1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sum for \\(n=k+1\\) is obtained by adding the next term, namely \\(k+1\\), to the sum for \\(n=k\\):\n\\[\n1+2+\\cdots+k+(k+1).\n\\]\nTherefore, we add \\(k+1\\) to both sides of the assumed formula.",
+      "hint": "Look at the new term that appears when \\(n\\) increases from \\(k\\) to \\(k+1\\)."
+    },
+    {
+      "id": "math-gaokao-131-q005",
+      "category": "Algebra",
+      "concept": "Mathematical Induction",
+      "learningObjective": "Form the left side of the inductive step for a geometric sum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "To prove by induction that\n\\[\n1+2+2^2+\\cdots+2^{n-1}=2^n-1\n\\]\nfor every positive integer \\(n\\), assume the formula holds for \\(n=k\\). What is the left side for \\(n=k+1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2^k-1)+2^k\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2^k-1)+2^{k+1}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sum for \\(n=k\\) is\n\\[\n1+2+2^2+\\cdots+2^{k-1}=2^k-1.\n\\]\nFor \\(n=k+1\\), we add the next term, which is \\(2^k\\). Therefore, the left side becomes\n\\[\n(2^k-1)+2^k.\n\\]\nSo option A is correct.",
+      "hint": "The new term added when \\(n\\) increases from \\(k\\) to \\(k+1\\) is \\(2^k\\)."
+    },
+    {
+      "id": "math-gaokao-131-q006",
+      "category": "Algebra",
+      "concept": "Mathematical Induction",
+      "learningObjective": "Check the base case of an exponential inequality.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "To prove by induction that\n\\[\n3^n>n^2\n\\]\nfor every positive integer \\(n\\), which is the correct base case?",
+      "options": [
+        {
+          "label": "A",
+          "text": "For \\(n=1\\), \\(3^1=3>1=1^2\\), so the statement is true."
+        },
+        {
+          "label": "B",
+          "text": "For \\(n=1\\), \\(3^1=3<1=1^2\\), so the statement is true."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(n=1\\), the left side is\n\\[\n3^1=3,\n\\]\nand the right side is\n\\[\n1^2=1.\n\\]\nSince \\(3>1\\), the inequality \\(3^1>1^2\\) is true. Therefore, option A is correct.",
+      "hint": "Substitute \\(n=1\\) into both sides and compare the numbers."
+    },
+    {
+      "id": "math-gaokao-131-q007",
+      "category": "Algebra",
+      "concept": "Mathematical Induction",
+      "learningObjective": "Verify the base case for an induction proof involving factorials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "To prove by induction that\n\\[\nn!>2^{n-1}\n\\]\nfor every integer \\(n\\ge 3\\), which is the correct base case?",
+      "options": [
+        {
+          "label": "A",
+          "text": "For \\(n=3\\), \\(3!=6>4=2^{3-1}\\), so the statement is true."
+        },
+        {
+          "label": "B",
+          "text": "For \\(n=3\\), \\(3!=6<4=2^{3-1}\\), so the statement is true."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(n=3\\),\n\\[\n3!=6\n\\]\nand\n\\[\n2^{3-1}=2^2=4.\n\\]\nSince \\(6>4\\), the inequality \\(3!>2^{3-1}\\) is true. Therefore, option A is correct.",
+      "hint": "Compute \\(3!\\) and \\(2^{3-1}\\) separately, then compare."
+    },
+    {
+      "id": "math-gaokao-131-q008",
+      "category": "Algebra",
+      "concept": "Mathematical Induction",
+      "learningObjective": "Identify the two essential parts of a proof by mathematical induction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a proof by mathematical induction, which two parts are required?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only the base case is needed."
+        },
+        {
+          "label": "B",
+          "text": "Both the base case and the inductive step are needed."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A proof by mathematical induction requires:\n1. the base case, showing the statement is true for the initial value;\n2. the inductive step, showing that if the statement is true for \\(n=k\\), then it is true for \\(n=k+1\\).\nTherefore, both parts are required, so option B is correct.",
+      "hint": "Recall the standard structure of a proof by induction."
+    },
+    {
+      "id": "math-gaokao-131-q009",
+      "category": "Algebra",
+      "concept": "Mathematical Induction",
+      "learningObjective": "Complete the inductive step of an inequality proof using an inequality chain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Suppose we are proving by induction that\n\\[\n2^n\\ge n+1\n\\]\nfor every positive integer \\(n\\). Assume that\n\\[\n2^k\\ge k+1\n\\]\nfor some positive integer \\(k\\). Which inequality chain correctly completes the inductive step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2^{k+1}=2\\cdot 2^k\\ge 2(k+1)\\ge k+2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2^{k+1}=2\\cdot 2^k\\ge k+1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From the inductive hypothesis,\n\\[\n2^k\\ge k+1.\n\\]\nMultiplying by \\(2\\),\n\\[\n2^{k+1}=2\\cdot 2^k\\ge 2(k+1).\n\\]\nSince \\(k\\ge 1\\),\n\\[\n2(k+1)=2k+2\\ge k+2.\n\\]\nThus\n\\[\n2^{k+1}\\ge k+2,\n\\]\nwhich is the statement for \\(n=k+1\\). Therefore, option A is correct.",
+      "hint": "Multiply the inductive hypothesis by \\(2\\), then compare \\(2(k+1)\\) with \\(k+2\\)."
+    },
+    {
+      "id": "math-gaokao-131-q010",
+      "category": "Algebra",
+      "concept": "Mathematical Induction",
+      "learningObjective": "Form and simplify the inductive step for a telescoping sum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "To prove by induction that\n\\[\n\\frac{1}{1\\cdot 2}+\\frac{1}{2\\cdot 3}+\\cdots+\\frac{1}{n(n+1)}=\\frac{n}{n+1}\n\\]\nfor every positive integer \\(n\\), assume the formula holds for \\(n=k\\). Which expression correctly represents the sum for \\(n=k+1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{k}{k+1}+\\frac{1}{k+1}=\\frac{k+1}{k+2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{k}{k+1}+\\frac{1}{(k+1)(k+2)}=\\frac{k+1}{k+2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(n=k\\), the sum is\n\\[\n\\frac{k}{k+1}.\n\\]\nFor \\(n=k+1\\), we add the next term, which is\n\\[\n\\frac{1}{(k+1)(k+2)}.\n\\]\nTherefore, the sum becomes\n\\[\n\\frac{k}{k+1}+\\frac{1}{(k+1)(k+2)}.\n\\]\nSimplify:\n\\[\n\\frac{k}{k+1}+\\frac{1}{(k+1)(k+2)}\n=\\frac{k(k+2)+1}{(k+1)(k+2)}\n=\\frac{k^2+2k+1}{(k+1)(k+2)}\n=\\frac{(k+1)^2}{(k+1)(k+2)}\n=\\frac{k+1}{k+2}.\n\\]\nThus option B is correct.",
+      "hint": "The new term added when \\(n\\) increases from \\(k\\) to \\(k+1\\) is \\(\\frac{1}{(k+1)(k+2)}\\)."
+    }
+  ]
+}

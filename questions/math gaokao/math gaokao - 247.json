@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-247",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 247",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-247-q001",
+      "category": "Solid Geometry",
+      "concept": "Angle between intersecting lines in a cube",
+      "learningObjective": "Determine the angle between a face diagonal and a side of a cube.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\), find the angle between lines \\(AC\\) and \\(AB\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(45^\\circ\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The face \\(ABCD\\) is a square. In right triangle \\(ABC\\), we have \\(AB=BC\\), so \\(\\angle BAC=45^\\circ\\). Since \\(AB\\) and \\(AC\\) lie in this face and meet at \\(A\\), the angle between the two lines is \\(45^\\circ\\).",
+      "hint": "Look at the square face containing both lines and use the right isosceles triangle formed there."
+    },
+    {
+      "id": "math-gaokao-247-q002",
+      "category": "Solid Geometry",
+      "concept": "Angle between skew face diagonals in a cube",
+      "learningObjective": "Compute the angle between two skew diagonals of adjacent cube faces using direction vectors.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\), find the angle between lines \\(AB_1\\) and \\(BC_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(45^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60^\\circ\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use coordinates: \\(A(0,0,0)\\), \\(B(1,0,0)\\), \\(C(1,1,0)\\), \\(B_1(1,0,1)\\), \\(C_1(1,1,1)\\). Then\n\\[\n\\overrightarrow{AB_1}=(1,0,1),\\qquad \\overrightarrow{BC_1}=(0,1,1).\n\\]\nTheir dot product is \\(1\\), and both vectors have length \\(\\sqrt{2}\\). Thus\n\\[\n\\cos\\theta=\\frac{1}{\\sqrt{2}\\sqrt{2}}=\\frac{1}{2},\n\\]\nso \\(\\theta=60^\\circ\\).",
+      "hint": "Use cube coordinates or translate one line so the two lines meet, then compare their direction vectors."
+    },
+    {
+      "id": "math-gaokao-247-q003",
+      "category": "Solid Geometry",
+      "concept": "Angle between perpendicular lines in a cube",
+      "learningObjective": "Show that two specified diagonals in a cube are perpendicular.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\), find the angle between lines \\(AC\\) and \\(B_1D_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(90^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60^\\circ\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use coordinates: \\(A(0,0,0)\\), \\(C(1,1,0)\\), \\(B_1(1,0,1)\\), \\(D_1(0,1,1)\\). Then\n\\[\n\\overrightarrow{AC}=(1,1,0),\\qquad \\overrightarrow{B_1D_1}=(-1,1,0).\n\\]\nTheir dot product is\n\\[\n(1)(-1)+(1)(1)+0=0.\n\\]\nTherefore the lines are perpendicular, so the angle is \\(90^\\circ\\).",
+      "hint": "The two direction vectors are parallel to diagonals of the square base; check their dot product."
+    },
+    {
+      "id": "math-gaokao-247-q004",
+      "category": "Solid Geometry",
+      "concept": "Angle between skew diagonals in a cube",
+      "learningObjective": "Determine whether two skew diagonals in a cube are perpendicular.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\), find the angle between lines \\(AB_1\\) and \\(CD_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(90^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(45^\\circ\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use coordinates: \\(A(0,0,0)\\), \\(B_1(1,0,1)\\), \\(C(1,1,0)\\), \\(D_1(0,1,1)\\). Then\n\\[\n\\overrightarrow{AB_1}=(1,0,1),\\qquad \\overrightarrow{CD_1}=(-1,0,1).\n\\]\nTheir dot product is\n\\[\n(1)(-1)+(0)(0)+(1)(1)=0.\n\\]\nThus the lines are perpendicular, so the angle is \\(90^\\circ\\).",
+      "hint": "Compute the dot product of suitable direction vectors for the two lines."
+    },
+    {
+      "id": "math-gaokao-247-q005",
+      "category": "Solid Geometry",
+      "concept": "Angle between skew lines in a cube",
+      "learningObjective": "Compute the angle between two skew lines in a cube using direction vectors.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\), find the angle between lines \\(A_1B\\) and \\(B_1C\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(45^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60^\\circ\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use coordinates: \\(A_1(0,0,1)\\), \\(B(1,0,0)\\), \\(B_1(1,0,1)\\), \\(C(1,1,0)\\). Then\n\\[\n\\overrightarrow{A_1B}=(1,0,-1),\\qquad \\overrightarrow{B_1C}=(0,1,-1).\n\\]\nTheir dot product is \\(1\\), and both vectors have length \\(\\sqrt{2}\\). Hence\n\\[\n\\cos\\theta=\\frac{1}{\\sqrt{2}\\sqrt{2}}=\\frac{1}{2},\n\\]\nso \\(\\theta=60^\\circ\\).",
+      "hint": "Translate the lines to a common point or use their direction vectors and the absolute dot product."
+    },
+    {
+      "id": "math-gaokao-247-q006",
+      "category": "Solid Geometry",
+      "concept": "Angle between lines parallel to face diagonals",
+      "learningObjective": "Determine the angle between two lines in a cube by comparing direction vectors.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\), find the angle between lines \\(A_1C_1\\) and \\(BD\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(90^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60^\\circ\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "We have\n\\[\n\\overrightarrow{A_1C_1}=(1,1,0).\n\\]\nAlso, with \\(B(1,0,0)\\) and \\(D(0,1,0)\\),\n\\[\n\\overrightarrow{BD}=(-1,1,0).\n\\]\nTheir dot product is\n\\[\n(1)(-1)+(1)(1)+0=0.\n\\]\nTherefore the lines are perpendicular, so the angle is \\(90^\\circ\\).",
+      "hint": "Both lines are parallel to diagonals of square faces; compare their direction vectors."
+    },
+    {
+      "id": "math-gaokao-247-q007",
+      "category": "Solid Geometry",
+      "concept": "Angle between a body diagonal and a face diagonal in a cube",
+      "learningObjective": "Compute the angle between a space diagonal and a face diagonal of a cube.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\), find the angle between lines \\(A_1B\\) and \\(AC_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(90^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60^\\circ\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use coordinates:\n\\[\n\\overrightarrow{A_1B}=(1,0,-1),\\qquad \\overrightarrow{AC_1}=(1,1,1).\n\\]\nTheir dot product is\n\\[\n(1)(1)+(0)(1)+(-1)(1)=0.\n\\]\nThus the two lines are perpendicular, so the angle is \\(90^\\circ\\).",
+      "hint": "Use coordinate vectors for a cube and test the dot product."
+    },
+    {
+      "id": "math-gaokao-247-q008",
+      "category": "Solid Geometry",
+      "concept": "Angle between opposite edges of a regular tetrahedron",
+      "learningObjective": "Determine the angle between two opposite edges of a regular tetrahedron.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In a regular tetrahedron \\(ABCD\\), find the angle between lines \\(AB\\) and \\(CD\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(90^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60^\\circ\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Place\n\\[\nA(0,0,0),\\quad B(1,0,0),\\quad C\\left(\\frac{1}{2},\\frac{\\sqrt{3}}{2},0\\right),\\quad D\\left(\\frac{1}{2},\\frac{\\sqrt{3}}{6},\\sqrt{\\frac{2}{3}}\\right).\n\\]\nThen\n\\[\n\\overrightarrow{AB}=(1,0,0),\n\\]\nand\n\\[\n\\overrightarrow{CD}=\\left(0,-\\frac{\\sqrt{3}}{3},\\sqrt{\\frac{2}{3}}\\right).\n\\]\nTheir dot product is \\(0\\), so \\(AB\\perp CD\\). Therefore the angle is \\(90^\\circ\\).",
+      "hint": "Use coordinates for a regular tetrahedron or argue from symmetry and vectors for opposite edges."
+    },
+    {
+      "id": "math-gaokao-247-q009",
+      "category": "Solid Geometry",
+      "concept": "Angle between skew diagonals in a rectangular box",
+      "learningObjective": "Compute the angle between two space diagonals of a rectangular box.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In rectangular box \\(ABCD-A_1B_1C_1D_1\\), \\(AB=2\\), \\(AD=1\\), \\(AA_1=2\\). Find the angle between lines \\(AC_1\\) and \\(BD_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arccos\\frac{1}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arccos\\frac{1}{9}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use coordinates:\n\\[\nA(0,0,0),\\quad B(2,0,0),\\quad D(0,1,0),\\quad C_1(2,1,2),\\quad D_1(0,1,2).\n\\]\nThen\n\\[\n\\overrightarrow{AC_1}=(2,1,2),\\qquad \\overrightarrow{BD_1}=(-2,1,2).\n\\]\nTheir dot product is\n\\[\n(2)(-2)+(1)(1)+(2)(2)=1.\n\\]\nAlso,\n\\[\n|\\overrightarrow{AC_1}|=3,\\qquad |\\overrightarrow{BD_1}|=3.\n\\]\nThus\n\\[\n\\cos\\theta=\\frac{1}{3\\cdot 3}=\\frac{1}{9},\n\\]\nso \\(\\theta=\\arccos\\frac{1}{9}\\).",
+      "hint": "Put the box in coordinates and use \\(\\cos\\theta=\\frac{|u\\cdot v|}{|u||v|}\\)."
+    },
+    {
+      "id": "math-gaokao-247-q010",
+      "category": "Solid Geometry",
+      "concept": "Angle between a line to a midpoint and a space diagonal",
+      "learningObjective": "Determine the angle between a line through a cube midpoint and a space diagonal.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), let \\(M\\) be the midpoint of \\(CC_1\\). Find the angle between lines \\(AM\\) and \\(BD_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arccos\\frac{\\sqrt{3}}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arccos\\frac{\\sqrt{3}}{9}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use coordinates:\n\\[\nA(0,0,0),\\quad B(1,0,0),\\quad C(1,1,0),\\quad C_1(1,1,1),\\quad D_1(0,1,1).\n\\]\nSince \\(M\\) is the midpoint of \\(CC_1\\),\n\\[\nM\\left(1,1,\\frac{1}{2}\\right).\n\\]\nThus\n\\[\n\\overrightarrow{AM}=\\left(1,1,\\frac{1}{2}\\right),\\qquad \\overrightarrow{BD_1}=(-1,1,1).\n\\]\nTheir dot product is\n\\[\n(1)(-1)+(1)(1)+\\left(\\frac{1}{2}\\right)(1)=\\frac{1}{2}.\n\\]\nAlso,\n\\[\n|\\overrightarrow{AM}|=\\sqrt{1+1+\\frac{1}{4}}=\\frac{3}{2},\n\\]\nand\n\\[\n|\\overrightarrow{BD_1}|=\\sqrt{3}.\n\\]\nTherefore\n\\[\n\\cos\\theta=\\frac{\\frac{1}{2}}{\\frac{3}{2}\\sqrt{3}}\n=\\frac{1}{3\\sqrt{3}}\n=\\frac{\\sqrt{3}}{9}.\n\\]\nHence \\(\\theta=\\arccos\\frac{\\sqrt{3}}{9}\\).",
+      "hint": "Use coordinates and the formula for the angle between two lines via direction vectors."
+    }
+  ]
+}

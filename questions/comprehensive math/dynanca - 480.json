@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-480",
+  "category": "Comprehensive Mathematics",
+  "title": "480. Sets, Logic, Reasoning & Proof: Venn Diagrams for Two Sets",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-480-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Region for an intersection",
+      "learningObjective": "Identify the region of a two-circle Venn diagram that represents an intersection.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Two overlapping circles inside a rectangle represent sets \\(A\\) and \\(B\\) in a universal set \\(U\\). Which region represents \\(A\\cap B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The region inside at least one of the circles"
+        },
+        {
+          "label": "B",
+          "text": "The region inside both circles"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The intersection contains the elements that belong to both sets, so it is represented by the overlap, the part of the diagram inside both circles. The region inside at least one circle represents the union \\(A\\cup B\\).",
+      "hint": "An element of the intersection must lie in circle \\(A\\) and in circle \\(B\\) at once."
+    },
+    {
+      "id": "dynanca-480-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Number of regions",
+      "learningObjective": "Count the regions formed by two overlapping circles inside a rectangle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A Venn diagram shows two overlapping circles \\(A\\) and \\(B\\) inside a rectangle \\(U\\). Into how many regions is the rectangle divided?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The regions are: inside \\(A\\) only, inside \\(B\\) only, inside both circles, and outside both circles. That is \\(4\\) regions, one for each combination of being in or out of \\(A\\) and in or out of \\(B\\) (\\(2\\cdot 2=4\\)). Counting \\(3\\) forgets the region outside both circles.",
+      "hint": "Each element is either in or not in \\(A\\), and either in or not in \\(B\\)."
+    },
+    {
+      "id": "dynanca-480-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Region inside one circle only",
+      "learningObjective": "Name the set represented by the part of one circle outside the other.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In a two-circle Venn diagram for sets \\(A\\) and \\(B\\), which set is represented by the region inside \\(A\\) but outside \\(B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\setminus B\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(B\\setminus A\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The region inside \\(A\\) but outside \\(B\\) contains the elements that are in \\(A\\) and not in \\(B\\), which is the definition of \\(A\\setminus B\\). The set \\(B\\setminus A\\) is represented by the region inside \\(B\\) but outside \\(A\\).",
+      "hint": "Read the description of the region as a pair of membership conditions."
+    },
+    {
+      "id": "dynanca-480-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Region outside both circles",
+      "learningObjective": "Name the set represented by the region outside both circles.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In a two-circle Venn diagram for sets \\(A\\) and \\(B\\) in a universal set \\(U\\), which set is represented by the region outside both circles?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((A\\cup B)^{c}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A^{c}\\cup B^{c}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The region outside both circles contains the elements that are in neither \\(A\\) nor \\(B\\), which is the complement of the union, \\((A\\cup B)^{c}\\). The set \\(A^{c}\\cup B^{c}\\) is larger: it also includes the regions inside exactly one circle, and it equals \\((A\\cap B)^{c}\\).",
+      "hint": "Decide whether an element inside \\(A\\) only belongs to each candidate set."
+    },
+    {
+      "id": "dynanca-480-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Size of a set from region counts",
+      "learningObjective": "Add region counts of a Venn diagram to find the size of one set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A two-circle Venn diagram shows these numbers of elements: \\(5\\) in \\(A\\) only, \\(3\\) in both \\(A\\) and \\(B\\), \\(4\\) in \\(B\\) only, and \\(8\\) outside both circles. How many elements does \\(A\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Circle \\(A\\) consists of two regions: the part outside \\(B\\), with \\(5\\) elements, and the overlap, with \\(3\\) elements. So \\(|A|=5+3=8\\). The number \\(5\\) counts only the elements that are in \\(A\\) and not in \\(B\\).",
+      "hint": "The circle for \\(A\\) includes the overlap."
+    },
+    {
+      "id": "dynanca-480-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Size of a union from region counts",
+      "learningObjective": "Add region counts of a Venn diagram to find the size of a union.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A two-circle Venn diagram shows \\(6\\) elements in \\(A\\) only, \\(2\\) in both \\(A\\) and \\(B\\), \\(7\\) in \\(B\\) only, and \\(5\\) outside both circles. How many elements does \\(A\\cup B\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The union consists of the three regions inside at least one circle: \\(6+2+7=15\\). The \\(5\\) elements outside both circles are not in the union. The total \\(20\\) is the size of the universal set.",
+      "hint": "Add only the regions that lie inside at least one circle."
+    },
+    {
+      "id": "dynanca-480-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Size of the universal set from region counts",
+      "learningObjective": "Add all region counts of a Venn diagram.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A two-circle Venn diagram shows \\(9\\) elements in \\(A\\) only, \\(4\\) in both \\(A\\) and \\(B\\), \\(6\\) in \\(B\\) only, and \\(11\\) outside both circles. How many elements does the universal set have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(19\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(30\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The four regions are disjoint and together make up the universal set, so \\(|U|=9+4+6+11=30\\). The number \\(19=9+4+6\\) is \\(|A\\cup B|\\), which leaves out the elements outside both circles.",
+      "hint": "The universal set includes the region outside both circles."
+    },
+    {
+      "id": "dynanca-480-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Placing elements in the overlap",
+      "learningObjective": "Decide which elements belong in the overlap of a Venn diagram.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(U=\\{1,2,\\ldots,8\\}\\), \\(A=\\{1,2,3,4\\}\\), and \\(B=\\{3,4,5\\}\\). Which elements are written in the overlap of the two circles?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\) and \\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\) and \\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The overlap represents \\(A\\cap B\\), the elements in both sets. The elements \\(3\\) and \\(4\\) appear in both listings. The elements \\(1\\) and \\(2\\) are in \\(A\\) only, so they are written in the part of circle \\(A\\) outside \\(B\\).",
+      "hint": "Find the elements that are listed in both sets."
+    },
+    {
+      "id": "dynanca-480-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Placing elements outside both circles",
+      "learningObjective": "Decide which elements lie outside both circles of a Venn diagram.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(U=\\{1,2,\\ldots,8\\}\\), \\(A=\\{1,2,3,4\\}\\), and \\(B=\\{3,4,5\\}\\). Which elements are written outside both circles?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\), \\(6\\), \\(7\\), and \\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\), \\(7\\), and \\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The elements outside both circles are those of \\(U\\) that are in neither \\(A\\) nor \\(B\\). Since \\(A\\cup B=\\{1,2,3,4,5\\}\\), the remaining elements are \\(6\\), \\(7\\), and \\(8\\). The element \\(5\\) is in \\(B\\), so it is written inside circle \\(B\\), not outside both circles.",
+      "hint": "Find the union first, then remove it from the universal set."
+    },
+    {
+      "id": "dynanca-480-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Venn diagram of a subset relation",
+      "learningObjective": "Relate a subset relation to an empty region of a Venn diagram.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Sets \\(A\\) and \\(B\\) are drawn as two overlapping circles, and it is known that \\(A\\subseteq B\\). Which region must contain no elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The region inside \\(B\\) but outside \\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "The region inside \\(A\\) but outside \\(B\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If \\(A\\subseteq B\\), every element of \\(A\\) is also in \\(B\\), so no element can be inside \\(A\\) and outside \\(B\\). That region, which represents \\(A\\setminus B\\), is empty. The region inside \\(B\\) but outside \\(A\\) may contain elements, for example when \\(A=\\{1\\}\\) and \\(B=\\{1,2\\}\\).",
+      "hint": "Ask where an element of \\(A\\) is allowed to be drawn."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-472",
+  "category": "Comprehensive Mathematics",
+  "title": "472. Sets, Logic, Reasoning & Proof: Equality of Sets",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-472-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Criterion for equality of sets",
+      "learningObjective": "State when two sets are equal.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "When are two sets \\(A\\) and \\(B\\) equal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When \\(A\\) and \\(B\\) have the same number of elements"
+        },
+        {
+          "label": "B",
+          "text": "When \\(A\\subseteq B\\) and \\(B\\subseteq A\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Two sets are equal exactly when they have the same elements, which means each is a subset of the other. Having the same number of elements is not enough: \\(\\{1,2\\}\\) and \\(\\{3,4\\}\\) both have two elements but are different sets.",
+      "hint": "Test the candidate criteria on \\(\\{1,2\\}\\) and \\(\\{3,4\\}\\)."
+    },
+    {
+      "id": "dynanca-472-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Equality across notations",
+      "learningObjective": "Decide whether a listing and a set-builder description give the same set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A=\\{2,4,6\\}\\) and \\(B=\\{x\\in\\mathbb{Z}\\mid x\\text{ is even and }1<x<7\\}\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\ne B\\), because the sets are written in different notations"
+        },
+        {
+          "label": "B",
+          "text": "\\(A=B\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The even integers strictly between \\(1\\) and \\(7\\) are \\(2\\), \\(4\\), and \\(6\\), so \\(B=\\{2,4,6\\}=A\\). Equality of sets depends only on the elements, not on how the sets are described.",
+      "hint": "Write the second set as a listing and compare element by element."
+    },
+    {
+      "id": "dynanca-472-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Same size but different sets",
+      "learningObjective": "Recognise that equal cardinality does not imply equality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(A=\\{1,2,3\\}\\) and \\(B=\\{4,5,6\\}\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A=B\\), because both sets have three elements"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\ne B\\), although both sets have three elements"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Equality requires the same elements. The element \\(1\\) belongs to \\(A\\) but not to \\(B\\), so the sets are different. Having equal cardinality means only that the elements can be paired off, not that they are the same.",
+      "hint": "Find an element of one set and check whether it belongs to the other."
+    },
+    {
+      "id": "dynanca-472-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Solution set of an equation",
+      "learningObjective": "Identify the listing equal to a solution set over the real numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which set equals \\(\\{x\\in\\mathbb{R}\\mid x^2=4\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{-2,2\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{2\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation \\(x^2=4\\) has the two real solutions \\(x=2\\) and \\(x=-2\\), since \\((-2)^2=4\\) as well. So the set is \\(\\{-2,2\\}\\). The set \\(\\{2\\}\\) omits a solution and is therefore a proper subset, not an equal set.",
+      "hint": "Check whether a negative number can also satisfy the equation."
+    },
+    {
+      "id": "dynanca-472-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Method for proving equality",
+      "learningObjective": "Choose the standard method for proving that two sets are equal.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which method proves that two sets \\(A\\) and \\(B\\) are equal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Show that \\(A\\) and \\(B\\) have the same cardinality."
+        },
+        {
+          "label": "B",
+          "text": "Show that every element of \\(A\\) is in \\(B\\), and that every element of \\(B\\) is in \\(A\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Equality means \\(A\\subseteq B\\) and \\(B\\subseteq A\\), so proving both inclusions (the double-inclusion method) establishes \\(A=B\\). Equal cardinality does not suffice; for example \\(\\{1\\}\\) and \\(\\{2\\}\\) have the same cardinality but are not equal.",
+      "hint": "Recall that equality of sets is equivalent to two inclusions."
+    },
+    {
+      "id": "dynanca-472-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A number and the set containing it",
+      "learningObjective": "Decide whether two sets with a nested element are equal.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(A=\\{1,\\{2\\}\\}\\) and \\(B=\\{1,2\\}\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A=B\\), because both sets involve only the numbers \\(1\\) and \\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\ne B\\), because \\(\\{2\\}\\) and \\(2\\) are different objects"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The elements of \\(A\\) are \\(1\\) and the set \\(\\{2\\}\\); the elements of \\(B\\) are \\(1\\) and the number \\(2\\). The number \\(2\\) is in \\(B\\) but not in \\(A\\), so the sets are different. A set containing a number is not the same object as the number.",
+      "hint": "List the elements of each set exactly and compare them."
+    },
+    {
+      "id": "dynanca-472-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Two descriptions of one set",
+      "learningObjective": "Show that two different conditions define the same set of integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(A=\\{x\\in\\mathbb{Z}\\mid x^2-1=0\\}\\) and \\(B=\\{x\\in\\mathbb{Z}\\mid |x|=1\\}\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A=B\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\ne B\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation \\(x^2-1=0\\) gives \\(x=1\\) or \\(x=-1\\), so \\(A=\\{-1,1\\}\\). The condition \\(|x|=1\\) also gives \\(x=1\\) or \\(x=-1\\), so \\(B=\\{-1,1\\}\\). The two sets have the same elements and are equal.",
+      "hint": "Find the elements of each set separately, then compare."
+    },
+    {
+      "id": "dynanca-472-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Inclusion with equal finite cardinality",
+      "learningObjective": "Deduce equality from inclusion together with equal finite size.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Finite sets \\(A\\) and \\(B\\) satisfy \\(A\\subseteq B\\), and each has exactly \\(5\\) elements. What can be concluded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A=B\\)"
+        },
+        {
+          "label": "B",
+          "text": "Nothing can be concluded about equality."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(A\\subseteq B\\), the five elements of \\(A\\) are five different elements of \\(B\\). But \\(B\\) has only five elements, so these are all of them, and \\(B\\subseteq A\\). Hence \\(A=B\\). For finite sets, inclusion together with equal cardinality forces equality.",
+      "hint": "Ask whether \\(B\\) can have an element that is not in \\(A\\)."
+    },
+    {
+      "id": "dynanca-472-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Two formulas for one infinite set",
+      "learningObjective": "Decide whether two formula descriptions give the same infinite set.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(A=\\{2k\\mid k\\in\\mathbb{Z}\\}\\) and \\(B=\\{2k+2\\mid k\\in\\mathbb{Z}\\}\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A=B\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\ne B\\), because \\(B\\) does not contain \\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both sets are the set of all even integers. Any element \\(2k+2=2(k+1)\\) of \\(B\\) is in \\(A\\), and any element \\(2k=2(k-1)+2\\) of \\(A\\) is in \\(B\\). In particular \\(0\\in B\\), obtained with \\(k=-1\\). Since \\(k\\) ranges over all integers, the shift by \\(2\\) does not change the set.",
+      "hint": "Remember that \\(k\\) may be negative; try \\(k=-1\\) in the second formula."
+    },
+    {
+      "id": "dynanca-472-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A real solution set and an integer interval",
+      "learningObjective": "Compare a solution set over the reals with a set of integers.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(A=\\{x\\in\\mathbb{R}\\mid x^2-3x+2=0\\}\\) and \\(B=\\{x\\in\\mathbb{Z}\\mid 0<x<3\\}\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A=B\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\ne B\\), because \\(A\\) is a set of real numbers and \\(B\\) is a set of integers"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factoring gives \\((x-1)(x-2)=0\\), so \\(A=\\{1,2\\}\\). The integers strictly between \\(0\\) and \\(3\\) are \\(1\\) and \\(2\\), so \\(B=\\{1,2\\}\\). The sets have the same elements and are equal; the number \\(1\\) is the same object whether it is called a real number or an integer.",
+      "hint": "Determine the elements of each set; the universe named in the description does not matter once the elements are known."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "name": "verify-protected",
+    "command": "npm run verify:protected",
+    "started": "2026-10-08T11:25:19.956583+00:00",
+    "status": "COMPLETED",
+    "log": "verify-protected.log",
+    "exitCode": 0,
+    "durationSeconds": 0.23,
+    "finished": "2026-10-08T11:25:20.191126+00:00"
+  },
+  {
+    "name": "verify-mathjax",
+    "command": "npm run verify:mathjax",
+    "started": "2026-10-08T11:25:20.191575+00:00",
+    "status": "COMPLETED",
+    "log": "verify-mathjax.log",
+    "exitCode": 0,
+    "durationSeconds": 0.2,
+    "finished": "2026-10-08T11:25:20.395280+00:00"
+  },
+  {
+    "name": "verify-csp",
+    "command": "npm run verify:csp",
+    "started": "2026-10-08T11:25:20.395581+00:00",
+    "status": "COMPLETED",
+    "log": "verify-csp.log",
+    "exitCode": 0,
+    "durationSeconds": 0.17,
+    "finished": "2026-10-08T11:25:20.561908+00:00"
+  },
+  {
+    "name": "verify-index",
+    "command": "npm run verify:index",
+    "started": "2026-10-08T11:25:20.562317+00:00",
+    "status": "COMPLETED",
+    "log": "verify-index.log",
+    "exitCode": 0,
+    "durationSeconds": 0.28,
+    "finished": "2026-10-08T11:25:20.843618+00:00"
+  },
+  {
+    "name": "validate-shipped",
+    "command": "npm run validate:shipped",
+    "started": "2026-10-08T11:25:20.843993+00:00",
+    "status": "COMPLETED",
+    "log": "validate-shipped.log",
+    "exitCode": 0,
+    "durationSeconds": 0.52,
+    "finished": "2026-10-08T11:25:21.368337+00:00"
+  },
+  {
+    "name": "test",
+    "command": "npm test",
+    "started": "2026-10-08T11:25:21.368659+00:00",
+    "status": "COMPLETED",
+    "log": "test.log",
+    "exitCode": 0,
+    "durationSeconds": 5.95,
+    "finished": "2026-10-08T11:25:27.315254+00:00"
+  },
+  {
+    "name": "build",
+    "command": "npm run build",
+    "started": "2026-10-08T11:25:27.315691+00:00",
+    "status": "COMPLETED",
+    "log": "build.log",
+    "exitCode": 0,
+    "durationSeconds": 1.55,
+    "finished": "2026-10-08T11:25:28.864169+00:00"
+  },
+  {
+    "name": "browser",
+    "command": "npm run test:browser -- --reporter=list,json",
+    "started": "2026-10-08T11:25:28.864636+00:00",
+    "status": "COMPLETED",
+    "log": "browser.log",
+    "exitCode": 1,
+    "durationSeconds": 29.33,
+    "finished": "2026-10-08T11:25:58.196583+00:00"
+  },
+  {
+    "name": "validate",
+    "command": "npm run validate",
+    "started": "2026-10-08T11:25:58.196936+00:00",
+    "status": "COMPLETED",
+    "log": "validate.log",
+    "exitCode": 1,
+    "durationSeconds": 0.54,
+    "finished": "2026-10-08T11:25:58.734349+00:00"
+  },
+  {
+    "name": "audit-content",
+    "command": "python3 tools/qa/audit-content.py",
+    "started": "2026-10-08T11:25:58.734741+00:00",
+    "status": "COMPLETED",
+    "log": "audit-content.log",
+    "exitCode": 0,
+    "durationSeconds": 3.26,
+    "finished": "2026-10-08T11:26:01.990858+00:00"
+  },
+  {
+    "name": "audit-mathjax-content",
+    "command": "node tools/qa/audit-mathjax.js",
+    "started": "2026-10-08T11:26:01.991459+00:00",
+    "status": "COMPLETED",
+    "log": "audit-mathjax-content.log",
+    "exitCode": 0,
+    "durationSeconds": 30.86,
+    "finished": "2026-10-08T11:26:32.855068+00:00"
+  },
+  {
+    "name": "npm-audit",
+    "command": "npm audit --json",
+    "started": "2026-10-08T11:26:32.855646+00:00",
+    "status": "COMPLETED",
+    "log": "npm-audit.log",
+    "exitCode": 0,
+    "durationSeconds": 9.94,
+    "finished": "2026-10-08T11:26:42.794266+00:00"
+  },
+  {
+    "name": "browser-evidence",
+    "command": "npm run qa:evidence -- --out audit/browser-evidence",
+    "started": "2026-10-08T11:26:42.794865+00:00",
+    "status": "COMPLETED",
+    "log": "browser-evidence.log",
+    "exitCode": 0,
+    "durationSeconds": 45.83,
+    "finished": "2026-10-08T11:27:28.623472+00:00"
+  }
+]

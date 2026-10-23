@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-591",
+  "category": "Comprehensive Mathematics",
+  "title": "591. Discrete Mathematics, Counting & Graph Theory: Breadth-First Search Traces",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-591-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The data structure behind the search",
+      "learningObjective": "Name the data structure that controls breadth-first search.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Breadth-first search keeps the discovered vertices that still have to be processed in a list. In which order are they taken from this list?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Last in, first out: the vertex discovered most recently is processed next."
+        },
+        {
+          "label": "B",
+          "text": "First in, first out: the vertex that has waited longest is processed next."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Breadth-first search uses a queue. Vertices are processed in the order in which they were discovered, so all vertices at distance \\(1\\) from the start are handled before any vertex at distance \\(2\\), and so on. Taking the most recently discovered vertex first is the rule of a stack, which leads to depth-first search.",
+      "hint": "The search finishes one level before moving on to the next."
+    },
+    {
+      "id": "dynanca-591-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A first trace",
+      "learningObjective": "Trace breadth-first search on a small graph.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D\\) and edges \\(AB\\), \\(AC\\), and \\(BD\\). Breadth-first search starts at \\(A\\) and considers neighbours in alphabetical order. In which order are the vertices visited?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A,\\ B,\\ D,\\ C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A,\\ B,\\ C,\\ D\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(A\\) the search discovers \\(B\\) and \\(C\\). It then processes \\(B\\), discovering \\(D\\), and then \\(C\\), which has no new neighbour. The order of visits is \\(A,B,C,D\\). The order \\(A,B,D,C\\) goes deeper from \\(B\\) before visiting \\(C\\), which is what depth-first search does.",
+      "hint": "Visit all neighbours of the start before any vertex that is two steps away."
+    },
+    {
+      "id": "dynanca-591-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Tracing a larger graph",
+      "learningObjective": "Trace breadth-first search on a graph with six vertices.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D,E,F\\) and edges \\(AC\\), \\(AD\\), \\(BC\\), \\(BE\\), \\(CF\\), \\(DE\\), and \\(EF\\). Breadth-first search starts at \\(A\\) and considers neighbours in alphabetical order. In which order are the vertices visited?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A,\\ C,\\ B,\\ E,\\ D,\\ F\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A,\\ C,\\ D,\\ B,\\ F,\\ E\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(A\\): discover \\(C\\), \\(D\\). Process \\(C\\): its neighbours are \\(A\\), \\(B\\), \\(F\\), so discover \\(B\\), \\(F\\). Process \\(D\\): its neighbours are \\(A\\), \\(E\\), so discover \\(E\\). The remaining vertices add nothing new. The order is \\(A,C,D,B,F,E\\). The other order follows one branch deep before returning, which is depth-first search.",
+      "hint": "Keep a queue: add newly discovered vertices at the back and take the next vertex from the front."
+    },
+    {
+      "id": "dynanca-591-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Vertices at distance two",
+      "learningObjective": "Find the vertices at a given distance from the start.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D,E,F\\) and edges \\(AC\\), \\(AD\\), \\(BC\\), \\(BE\\), \\(CF\\), \\(DE\\), and \\(EF\\). Which vertices are at distance \\(2\\) from \\(A\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(B\\), \\(E\\), and \\(F\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(B\\) and \\(F\\) only"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The neighbours of \\(A\\) are \\(C\\) and \\(D\\), at distance \\(1\\). From \\(C\\) the vertices \\(B\\) and \\(F\\) are reached, and from \\(D\\) the vertex \\(E\\), all at distance \\(2\\). Leaving out \\(E\\) overlooks the route \\(A,D,E\\).",
+      "hint": "Look at the neighbours of both vertices that are adjacent to \\(A\\)."
+    },
+    {
+      "id": "dynanca-591-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Who discovers a vertex",
+      "learningObjective": "Identify the vertex from which another vertex is discovered.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A graph has vertices \\(A,B,C,D,E,F\\) and edges \\(AC\\), \\(AD\\), \\(BC\\), \\(BE\\), \\(CF\\), \\(DE\\), and \\(EF\\). Breadth-first search starts at \\(A\\) and considers neighbours in alphabetical order. From which vertex is \\(E\\) discovered?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(B\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(D\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "After \\(A\\), the queue holds \\(C\\), \\(D\\). Processing \\(C\\) discovers \\(B\\) and \\(F\\), which join the queue behind \\(D\\). Next \\(D\\) is processed, and its undiscovered neighbour \\(E\\) is found. When \\(B\\) is processed later, \\(E\\) has already been discovered.",
+      "hint": "Determine which of the neighbours of \\(E\\) is processed first."
+    },
+    {
+      "id": "dynanca-591-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Contents of the queue",
+      "learningObjective": "Give the contents of the queue at a stage of breadth-first search.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A graph has vertices \\(A,B,C,D,E,F\\) and edges \\(AC\\), \\(AD\\), \\(BC\\), \\(BE\\), \\(CF\\), \\(DE\\), and \\(EF\\). Breadth-first search starts at \\(A\\) and considers neighbours in alphabetical order. What does the queue contain, from front to back, immediately after \\(A\\) and \\(C\\) have been processed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(D,\\ B,\\ F\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(B,\\ F,\\ D\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Processing \\(A\\) puts \\(C\\) and \\(D\\) into the queue. Then \\(C\\) is removed from the front, and its undiscovered neighbours \\(B\\) and \\(F\\) are added at the back. So the queue reads \\(D,B,F\\). New vertices always join behind those that are already waiting.",
+      "hint": "New vertices are added at the back of the queue."
+    },
+    {
+      "id": "dynanca-591-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Why the search finds shortest routes",
+      "learningObjective": "Explain why breadth-first search gives fewest-edge distances.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In an unweighted graph, does breadth-first search from a vertex \\(s\\) reach every vertex along a route with the fewest possible edges?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; only depth-first search finds routes with the fewest edges."
+        },
+        {
+          "label": "B",
+          "text": "Yes; vertices are discovered in order of increasing distance from \\(s\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Breadth-first search discovers all vertices at distance \\(1\\) first, then all at distance \\(2\\), and so on, so each vertex is first reached by a route with the fewest edges. Depth-first search follows one branch as far as possible and may reach a nearby vertex by a long detour.",
+      "hint": "Think about the order in which the levels are completed."
+    },
+    {
+      "id": "dynanca-591-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Starting from another vertex",
+      "learningObjective": "Trace breadth-first search from a different start vertex.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D,E,F\\) and edges \\(AC\\), \\(AD\\), \\(BC\\), \\(BE\\), \\(CF\\), \\(DE\\), and \\(EF\\). Breadth-first search starts at \\(E\\) and considers neighbours in alphabetical order. In which order are the vertices visited?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(E,\\ B,\\ C,\\ A,\\ D,\\ F\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(E,\\ B,\\ D,\\ F,\\ C,\\ A\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(E\\): discover \\(B\\), \\(D\\), \\(F\\). Process \\(B\\): its neighbours are \\(C\\) and \\(E\\), so discover \\(C\\). Process \\(D\\): its neighbours are \\(A\\) and \\(E\\), so discover \\(A\\). Process \\(F\\): nothing new. The order is \\(E,B,D,F,C,A\\). The other order follows \\(B\\) to \\(C\\) to \\(A\\) before visiting the remaining neighbours of \\(E\\), as depth-first search would.",
+      "hint": "All three neighbours of \\(E\\) are visited before any vertex at distance \\(2\\)."
+    },
+    {
+      "id": "dynanca-591-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The last level",
+      "learningObjective": "Find the largest distance from the start vertex.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A graph has vertices \\(A,B,C,D,E,F\\) and edges \\(AC\\), \\(AD\\), \\(BC\\), \\(BE\\), \\(CF\\), \\(DE\\), and \\(EF\\). What is the largest distance from \\(A\\) to another vertex?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Breadth-first search from \\(A\\) finds \\(C\\) and \\(D\\) at distance \\(1\\), and \\(B\\), \\(F\\), \\(E\\) at distance \\(2\\). All six vertices are then accounted for, so no vertex is at distance \\(3\\). Although routes with three edges exist, for example \\(A,C,B,E\\), the distance uses the shortest route, here \\(A,D,E\\).",
+      "hint": "Distance means the number of edges on a shortest route."
+    },
+    {
+      "id": "dynanca-591-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Search in a disconnected graph",
+      "learningObjective": "Count the vertices reached by breadth-first search in a disconnected graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A graph has vertices \\(1,2,3,4,5,6,7\\) and edges \\(\\{1,2\\},\\{1,3\\},\\{2,4\\},\\{5,6\\},\\{6,7\\}\\). How many vertices does breadth-first search visit when it starts at vertex \\(1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Starting at \\(1\\), the search discovers \\(2\\) and \\(3\\), and then \\(4\\) from \\(2\\). No edge leads from these vertices to \\(5\\), \\(6\\), or \\(7\\), so the search stops after visiting \\(4\\) vertices: exactly the connected component of the start vertex. To visit all \\(7\\) vertices, a new search would have to be started in the other component.",
+      "hint": "The search can reach only vertices that are joined to the start by a path."
+    }
+  ]
+}

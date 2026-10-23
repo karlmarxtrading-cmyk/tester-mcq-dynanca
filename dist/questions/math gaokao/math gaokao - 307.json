@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-307",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 307",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-307-q001",
+      "category": "Probability",
+      "concept": "Union of Two Events",
+      "learningObjective": "Use the addition rule to calculate \\(P(A\\cup B)\\) from \\(P(A)\\), \\(P(B)\\), and \\(P(A\\cap B)\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A\\) and \\(B\\) be events with \\(P(A)=0.5\\), \\(P(B)=0.4\\), and \\(P(A\\cap B)=0.2\\). Find \\(P(A\\cup B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the addition rule for two events:\n\\[\nP(A\\cup B)=P(A)+P(B)-P(A\\cap B).\n\\]\nSubstitute the given values:\n\\[\nP(A\\cup B)=0.5+0.4-0.2=0.7.\n\\]",
+      "hint": "Use the formula \\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B)\\)."
+    },
+    {
+      "id": "math-gaokao-307-q002",
+      "category": "Probability",
+      "concept": "Union of Mutually Exclusive Events",
+      "learningObjective": "Calculate the probability of the union of two mutually exclusive events.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) and \\(B\\) are mutually exclusive with \\(P(A)=\\frac13\\) and \\(P(B)=\\frac14\\), find \\(P(A\\cup B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{7}{12}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{12}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(A\\) and \\(B\\) are mutually exclusive, \\(P(A\\cap B)=0\\). Therefore,\n\\[\nP(A\\cup B)=P(A)+P(B)=\\frac13+\\frac14=\\frac{4}{12}+\\frac{3}{12}=\\frac{7}{12}.\n\\]",
+      "hint": "For mutually exclusive events, the intersection probability is zero."
+    },
+    {
+      "id": "math-gaokao-307-q003",
+      "category": "Probability",
+      "concept": "Intersection from Union Probability",
+      "learningObjective": "Use the addition rule to determine \\(P(A\\cap B)\\) when \\(P(A)\\), \\(P(B)\\), and \\(P(A\\cup B)\\) are known.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Events \\(A\\) and \\(B\\) satisfy \\(P(A)=0.6\\), \\(P(B)=0.5\\), and \\(P(A\\cup B)=0.8\\). Find \\(P(A\\cap B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the addition rule,\n\\[\nP(A\\cup B)=P(A)+P(B)-P(A\\cap B).\n\\]\nSubstitute the known values:\n\\[\n0.8=0.6+0.5-P(A\\cap B).\n\\]\nThus,\n\\[\nP(A\\cap B)=1.1-0.8=0.3.\n\\]",
+      "hint": "Rearrange the addition rule to solve for \\(P(A\\cap B)\\)."
+    },
+    {
+      "id": "math-gaokao-307-q004",
+      "category": "Probability",
+      "concept": "Union of Independent Events",
+      "learningObjective": "Use independence to find the intersection and then the union of two events.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "\\(A\\) and \\(B\\) are independent events with \\(P(A)=0.4\\) and \\(P(B)=0.5\\). Find \\(P(A\\cup B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Because \\(A\\) and \\(B\\) are independent,\n\\[\nP(A\\cap B)=P(A)P(B)=0.4\\times 0.5=0.2.\n\\]\nThen, by the addition rule,\n\\[\nP(A\\cup B)=0.4+0.5-0.2=0.7.\n\\]",
+      "hint": "For independent events, multiply probabilities to find the intersection."
+    },
+    {
+      "id": "math-gaokao-307-q005",
+      "category": "Probability",
+      "concept": "Complement of a Union",
+      "learningObjective": "Use De Morgan's law and the complement rule to find the probability that neither of two events occurs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(P(A)=0.7\\), \\(P(B)=0.4\\), and \\(P(A\\cap B)=0.3\\). Find \\(P(A'\\cap B')\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By De Morgan's law,\n\\[\nA'\\cap B'=(A\\cup B)'.\n\\]\nFirst find \\(P(A\\cup B)\\):\n\\[\nP(A\\cup B)=0.7+0.4-0.3=0.8.\n\\]\nTherefore,\n\\[\nP(A'\\cap B')=1-P(A\\cup B)=1-0.8=0.2.\n\\]",
+      "hint": "Use De Morgan's law and the complement rule."
+    },
+    {
+      "id": "math-gaokao-307-q006",
+      "category": "Probability",
+      "concept": "Event Difference Using Intersection",
+      "learningObjective": "Compute the probability that \\(A\\) occurs but \\(B\\) does not, using \\(P(A)\\) and \\(P(A\\cap B)\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Given \\(P(A)=0.5\\), \\(P(B)=0.6\\), and \\(P(A\\cup B)=0.8\\), find \\(P(A\\cap B')\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First find \\(P(A\\cap B)\\):\n\\[\n0.8=0.5+0.6-P(A\\cap B),\n\\]\nso\n\\[\nP(A\\cap B)=0.3.\n\\]\nThen\n\\[\nP(A\\cap B')=P(A)-P(A\\cap B)=0.5-0.3=0.2.\n\\]",
+      "hint": "First find \\(P(A\\cap B)\\), then subtract it from \\(P(A)\\)."
+    },
+    {
+      "id": "math-gaokao-307-q007",
+      "category": "Probability",
+      "concept": "Union Using Conditional Probability",
+      "learningObjective": "Use conditional probability to find an intersection and then the union of two events.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For events \\(A\\) and \\(B\\), \\(P(A)=0.5\\), \\(P(B)=0.3\\), and \\(P(A\\mid B)=0.4\\). Find \\(P(A\\cup B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.68\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.80\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using conditional probability,\n\\[\nP(A\\cap B)=P(A\\mid B)P(B)=0.4\\times 0.3=0.12.\n\\]\nThen\n\\[\nP(A\\cup B)=P(A)+P(B)-P(A\\cap B)\n=0.5+0.3-0.12=0.68.\n\\]",
+      "hint": "Use \\(P(A\\cap B)=P(A\\mid B)P(B)\\)."
+    },
+    {
+      "id": "math-gaokao-307-q008",
+      "category": "Probability",
+      "concept": "Complement of an Intersection",
+      "learningObjective": "Use De Morgan's law to find \\(P(A\\cup B)\\) from \\(P(A'\\cap B')\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(P(A')=0.3\\), \\(P(B')=0.4\\), and \\(P(A'\\cap B')=0.1\\). Find \\(P(A\\cup B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By De Morgan's law,\n\\[\nA'\\cap B'=(A\\cup B)'.\n\\]\nTherefore,\n\\[\nP(A\\cup B)=1-P(A'\\cap B')=1-0.1=0.9.\n\\]\nThe values \\(P(A')=0.3\\) and \\(P(B')=0.4\\) are not needed.",
+      "hint": "Recognize that \\(A'\\cap B'\\) is the complement of \\(A\\cup B\\)."
+    },
+    {
+      "id": "math-gaokao-307-q009",
+      "category": "Probability",
+      "concept": "Union of Three Events",
+      "learningObjective": "Apply the inclusion-exclusion principle to find the probability of the union of three events.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For events \\(A\\), \\(B\\), and \\(C\\):\n\\[\nP(A)=0.5,\\quad P(B)=0.4,\\quad P(C)=0.3,\n\\]\n\\[\nP(A\\cap B)=0.2,\\quad P(A\\cap C)=0.1,\\quad P(B\\cap C)=0.1,\n\\]\nand\n\\[\nP(A\\cap B\\cap C)=0.05.\n\\]\nFind \\(P(A\\cup B\\cup C)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.75\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.85\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By inclusion-exclusion for three events,\n\\[\nP(A\\cup B\\cup C)=P(A)+P(B)+P(C)\n-P(A\\cap B)-P(A\\cap C)-P(B\\cap C)\n+P(A\\cap B\\cap C).\n\\]\nSubstitute:\n\\[\n0.5+0.4+0.3-0.2-0.1-0.1+0.05=0.85.\n\\]",
+      "hint": "Use inclusion-exclusion for three events: add single probabilities, subtract pairwise intersections, and add back the triple intersection."
+    },
+    {
+      "id": "math-gaokao-307-q010",
+      "category": "Probability",
+      "concept": "Exactly One of Two Independent Events",
+      "learningObjective": "Calculate the probability that exactly one of two independent events occurs.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Events \\(A\\) and \\(B\\) are independent with \\(P(A)=0.6\\) and \\(P(B)=0.4\\). Find the probability that exactly one of \\(A\\) and \\(B\\) occurs.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.52\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.76\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Exactly one occurs means either \\(A\\cap B'\\) or \\(A'\\cap B\\). Since \\(A\\) and \\(B\\) are independent,\n\\[\nP(A\\cap B')=P(A)(1-P(B))=0.6\\times 0.6=0.36,\n\\]\nand\n\\[\nP(A'\\cap B)=(1-P(A))P(B)=0.4\\times 0.4=0.16.\n\\]\nThus,\n\\[\nP(\\text{exactly one})=0.36+0.16=0.52.\n\\]",
+      "hint": "Exactly one occurs means \\(A\\cap B'\\) or \\(A'\\cap B\\); use independence to compute these two probabilities."
+    }
+  ]
+}

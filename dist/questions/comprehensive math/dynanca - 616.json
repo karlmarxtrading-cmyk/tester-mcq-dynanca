@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-616",
+  "category": "Comprehensive Mathematics",
+  "title": "616. Discrete Mathematics, Counting & Graph Theory: Analyzing Recursive Algorithm Call Counts",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-616-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A chain of calls",
+      "learningObjective": "Count the calls made by a simple recursive procedure.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A recursive procedure for the factorial calls itself with the argument \\(n-1\\) whenever \\(n\\ge 1\\) and makes no further call when \\(n=0\\). How many calls are made in total, including the first, to compute the factorial of \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The calls have the arguments \\(5,4,3,2,1,0\\), one after another. That is \\(6\\) calls. The count \\(5\\) leaves out the final call with argument \\(0\\), which makes no further call but is still a call.",
+      "hint": "Write down the argument of every call, down to the base case."
+    },
+    {
+      "id": "dynanca-616-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A linear recurrence for calls",
+      "learningObjective": "Solve the recurrence for the number of calls of a linear recursion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The number of calls made by a recursive procedure satisfies \\(C(n)=C(n-1)+1\\) for \\(n\\ge 1\\), with \\(C(0)=1\\). Which formula gives \\(C(n)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(C(n)=n+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(C(n)=2^n\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each increase of \\(n\\) by \\(1\\) adds exactly one call, so starting from \\(C(0)=1\\) we get \\(C(n)=1+n\\). The formula \\(2^n\\) would arise if each call made two further calls.",
+      "hint": "Compute \\(C(1)\\), \\(C(2)\\), \\(C(3)\\) and look at the pattern."
+    },
+    {
+      "id": "dynanca-616-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The naive Fibonacci procedure",
+      "learningObjective": "Count the calls made by the naive recursive Fibonacci procedure.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A recursive procedure \\(f(n)\\) returns at once when \\(n\\le 1\\); otherwise it calls \\(f(n-1)\\) and \\(f(n-2)\\). How many calls are made in total, including the first, to evaluate \\(f(5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(C(n)\\) be the number of calls. Then \\(C(0)=C(1)=1\\) and \\(C(n)=1+C(n-1)+C(n-2)\\). So \\(C(2)=3\\), \\(C(3)=5\\), \\(C(4)=9\\), and \\(C(5)=1+9+5=15\\). The value \\(9\\) is \\(C(4)\\), the calls made for the argument \\(4\\) only.",
+      "hint": "Build a table of the number of calls for the arguments \\(0,1,2,3,4,5\\)."
+    },
+    {
+      "id": "dynanca-616-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Setting up the recurrence",
+      "learningObjective": "Write the recurrence for the number of calls of a binary recursion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A recursive procedure \\(f(n)\\) returns at once when \\(n\\le 1\\); otherwise it calls \\(f(n-1)\\) and \\(f(n-2)\\). Let \\(C(n)\\) be the total number of calls made to evaluate \\(f(n)\\), including the first. Which recurrence holds for \\(n\\ge 2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(C(n)=C(n-1)+C(n-2)+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(C(n)=C(n-1)+C(n-2)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The call \\(f(n)\\) itself counts as one call, and it triggers all the calls made for \\(f(n-1)\\) and all those made for \\(f(n-2)\\). Hence \\(C(n)=1+C(n-1)+C(n-2)\\). Leaving out the \\(1\\) forgets the call that started the two subcomputations.",
+      "hint": "Do not forget to count the call that makes the two recursive calls."
+    },
+    {
+      "id": "dynanca-616-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two calls on half the input",
+      "learningObjective": "Count the calls of a procedure that halves its input and branches twice.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A recursive procedure \\(g(n)\\) makes no further call when \\(n=1\\); otherwise it calls \\(g\\!\\left(\\dfrac{n}{2}\\right)\\) twice. How many calls are made in total, including the first, to evaluate \\(g(8)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There is \\(1\\) call with argument \\(8\\), then \\(2\\) calls with argument \\(4\\), \\(4\\) calls with argument \\(2\\), and \\(8\\) calls with argument \\(1\\). The total is \\(1+2+4+8=15\\). The value \\(8\\) counts only the calls at the last level.",
+      "hint": "Count the calls level by level; the number doubles at each level."
+    },
+    {
+      "id": "dynanca-616-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "One call on half the input",
+      "learningObjective": "Count the calls of a procedure that halves its input without branching.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A recursive procedure \\(h(n)\\) makes no further call when \\(n=1\\); otherwise it calls \\(h\\!\\left(\\dfrac{n}{2}\\right)\\) once. How many calls are made in total, including the first, to evaluate \\(h(16)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The arguments of the calls are \\(16,8,4,2,1\\), so there are \\(5\\) calls. Because the input is halved each time, the number of calls is \\(\\log_2 16+1=5\\). A count of \\(16\\) would arise only if the argument decreased by \\(1\\) in each call.",
+      "hint": "List the arguments of the successive calls."
+    },
+    {
+      "id": "dynanca-616-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two calls on a smaller input",
+      "learningObjective": "Count the calls of a procedure that calls itself twice with a decreased argument.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A recursive procedure \\(s(n)\\) makes no further call when \\(n=0\\); otherwise it calls \\(s(n-1)\\) twice. How many calls are made in total, including the first, to evaluate \\(s(4)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(31\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The numbers of calls with arguments \\(4,3,2,1,0\\) are \\(1,2,4,8,16\\). The total is \\(1+2+4+8+16=31=2^5-1\\). The value \\(16\\) counts only the calls with argument \\(0\\).",
+      "hint": "The number of calls doubles each time the argument decreases by \\(1\\)."
+    },
+    {
+      "id": "dynanca-616-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Remembering results",
+      "learningObjective": "Count the different arguments evaluated when results are stored.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A recursive procedure \\(f(n)\\) returns at once when \\(n\\le 1\\); otherwise it needs \\(f(n-1)\\) and \\(f(n-2)\\). If every computed value is stored and reused instead of being recomputed, for how many different arguments is a value computed during the evaluation of \\(f(30)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(31\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(30\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The only arguments that ever occur are \\(0,1,2,\\dots,30\\), and with stored results each of them is computed once. That is \\(31\\) arguments. Without storing results, the procedure would make \\(2692537\\) calls for the same input, because the same values are recomputed again and again.",
+      "hint": "List the arguments that can occur, including \\(0\\)."
+    },
+    {
+      "id": "dynanca-616-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Three calls on a smaller input",
+      "learningObjective": "Count the calls of a procedure that calls itself three times.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A recursive procedure \\(r(n)\\) makes no further call when \\(n=0\\); otherwise it calls \\(r(n-1)\\) three times. How many calls are made in total, including the first, to evaluate \\(r(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(40\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(27\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The numbers of calls with arguments \\(3,2,1,0\\) are \\(1,3,9,27\\). The total is \\(1+3+9+27=40\\). The value \\(27\\) counts only the calls with argument \\(0\\), at the last level.",
+      "hint": "Add up the calls at every level, not only at the last one."
+    },
+    {
+      "id": "dynanca-616-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The Euclidean algorithm",
+      "learningObjective": "Count the calls made by the recursive Euclidean algorithm.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A recursive procedure \\(g(a,b)\\) returns \\(a\\) when \\(b=0\\); otherwise it calls \\(g(b,r)\\), where \\(r\\) is the remainder of \\(a\\) on division by \\(b\\). How many calls are made in total, including the first, to evaluate \\(g(21,13)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The successive calls are \\(g(21,13)\\), \\(g(13,8)\\), \\(g(8,5)\\), \\(g(5,3)\\), \\(g(3,2)\\), \\(g(2,1)\\), and \\(g(1,0)\\), which returns \\(1\\). That is \\(7\\) calls. The count \\(6\\) leaves out the final call with \\(b=0\\).",
+      "hint": "Write down each pair of arguments until the second argument is \\(0\\)."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-549",
+  "category": "Comprehensive Mathematics",
+  "title": "549. Discrete Mathematics, Counting & Graph Theory: Circular Permutations",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-549-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Seating around a table",
+      "learningObjective": "Count the arrangements of a small group around a round table.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Four people sit around a round table. Two seatings are considered the same if one is a rotation of the other. How many different seatings are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Fix one person's seat to remove the rotations; the other three people can then be arranged in \\(3!=6\\) ways. Equivalently, each seating corresponds to \\(4\\) of the \\(4!=24\\) rows, and \\(\\dfrac{24}{4}=6\\). The number \\(24\\) counts rotations as different.",
+      "hint": "Seat one person first; where that person sits does not matter."
+    },
+    {
+      "id": "dynanca-549-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Five people at a round table",
+      "learningObjective": "Apply the circular permutation formula.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In how many ways can \\(5\\) people be seated around a round table, if rotations of a seating are considered the same?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(n\\) people around a round table there are \\((n-1)!\\) seatings. With \\(n=5\\) this gives \\(4!=24\\). The number \\(120=5!\\) is the number of arrangements in a row.",
+      "hint": "Fix one person and arrange the others."
+    },
+    {
+      "id": "dynanca-549-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Six people at a round table",
+      "learningObjective": "Apply the circular permutation formula to six people.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Six delegates sit around a round table, and rotations of a seating are considered the same. How many seatings are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(720\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Fixing one delegate removes the rotations, and the remaining five can be arranged in \\(5!=120\\) ways. The number \\(720=6!\\) counts each circular seating \\(6\\) times, once for each rotation.",
+      "hint": "Each circular seating corresponds to six different rows."
+    },
+    {
+      "id": "dynanca-549-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Why one factor disappears",
+      "learningObjective": "Explain the division by the number of rotations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The number of seatings of \\(n\\) people around a round table, with rotations considered the same, is \\(\\dfrac{n!}{n}\\). What does the division by \\(n\\) account for?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Each circular seating can be read as \\(n\\) different rows, one for each starting person."
+        },
+        {
+          "label": "B",
+          "text": "One of the \\(n\\) people must be left without a seat."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Cutting a circular seating open at each of the \\(n\\) people gives \\(n\\) different rows, all representing the same seating. So the \\(n!\\) rows fall into groups of \\(n\\), and the number of seatings is \\(\\dfrac{n!}{n}=(n-1)!\\). Everybody is seated; nobody is left out.",
+      "hint": "Count how many rows produce the same circle when their ends are joined."
+    },
+    {
+      "id": "dynanca-549-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Keys on a ring",
+      "learningObjective": "Count arrangements on a ring that may be turned over.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Seven different keys are placed on a key ring. Two arrangements are the same if one can be obtained from the other by rotating the ring or turning it over. How many arrangements are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(720\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(360\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Up to rotation there are \\((7-1)!=720\\) arrangements. Turning the ring over pairs each arrangement with its mirror image, and for seven keys these two are always different. So the count is \\(\\dfrac{720}{2}=360\\). The number \\(720\\) ignores that the ring can be turned over.",
+      "hint": "Start with the round-table count, then identify each arrangement with its mirror image."
+    },
+    {
+      "id": "dynanca-549-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two neighbours at a round table",
+      "learningObjective": "Count circular seatings in which two given people sit together.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Five people sit around a round table, with rotations considered the same. In how many seatings do two particular people sit next to each other?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(48\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Glue the two people into one block. Then \\(4\\) objects are arranged around the table in \\((4-1)!=6\\) ways, and the pair can sit in \\(2\\) internal orders, giving \\(6\\cdot 2=12\\). The number \\(48=4!\\cdot 2\\) arranges the blocks in a row instead of around a table.",
+      "hint": "Treat the pair as one object, apply the circular formula, then order the pair."
+    },
+    {
+      "id": "dynanca-549-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two people apart at a round table",
+      "learningObjective": "Count circular seatings in which two given people are not neighbours.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Six people sit around a round table, with rotations considered the same. In how many seatings are two particular people not next to each other?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(48\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(72\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(5!=120\\) seatings in all. With the two people glued into a block there are \\((5-1)!\\cdot 2=48\\) seatings in which they are neighbours. So \\(120-48=72\\) seatings keep them apart. The number \\(48\\) counts the seatings in which they sit together.",
+      "hint": "Subtract the seatings in which the two sit together from all seatings."
+    },
+    {
+      "id": "dynanca-549-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Alternating seating",
+      "learningObjective": "Count circular seatings in which two groups alternate.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Three men and three women sit around a round table so that men and women alternate, with rotations considered the same. How many seatings are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Seat the men first: around a round table this can be done in \\((3-1)!=2\\) ways. The three women then take the three gaps between the men, which are now distinguishable, in \\(3!=6\\) ways. The total is \\(2\\cdot 6=12\\). The number \\(36=3!\\cdot 3!\\) does not remove the rotations.",
+      "hint": "Seat one group around the table first; the gaps between them then become distinct places."
+    },
+    {
+      "id": "dynanca-549-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Numbered seats",
+      "learningObjective": "Decide how numbering the seats changes a circular count.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Five people sit at a round table whose seats are numbered \\(1\\) to \\(5\\), so that seatings differing by a rotation are considered different. How many seatings are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(120\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Because the seats are numbered, moving everybody one seat along gives a different assignment of people to seats. The count is simply the number of ways to assign \\(5\\) people to \\(5\\) labelled seats: \\(5!=120\\). The formula \\((5-1)!=24\\) applies only when rotations are considered the same.",
+      "hint": "Decide whether a rotation changes who sits in seat \\(1\\)."
+    },
+    {
+      "id": "dynanca-549-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Couples at a round table",
+      "learningObjective": "Count circular seatings in which several pairs must stay together.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Four couples sit around a round table, with rotations considered the same. In how many seatings does every person sit next to their partner?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(96\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(384\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Treat each couple as a block. The \\(4\\) blocks can be arranged around the table in \\((4-1)!=6\\) ways, and each couple can sit in \\(2\\) internal orders, giving \\(6\\cdot 2^4=96\\). The number \\(384=4!\\cdot 2^4\\) arranges the blocks in a row and does not remove the rotations.",
+      "hint": "Arrange the four couples as blocks around the table, then order the two people in each block."
+    }
+  ]
+}

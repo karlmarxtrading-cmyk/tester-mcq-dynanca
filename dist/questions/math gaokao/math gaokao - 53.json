@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-53",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 53",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-53-q001",
+      "category": "Algebra",
+      "concept": "Quadratic Polynomial Inequality",
+      "learningObjective": "Solve a factored quadratic inequality by using sign intervals.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the inequality \\((x-1)(x+3)\\le 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([-3,1]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\infty,-3]\\cup[1,\\infty)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expression \\((x-1)(x+3)\\) has zeros at \\(x=1\\) and \\(x=-3\\). Since the corresponding parabola opens upward, the product is less than or equal to zero between the two roots, including the endpoints:\n\\[\n-3\\le x\\le 1.\n\\]\nIn interval notation, this is\n\\[\n[-3,1].\n\\]\nThus option A is correct.",
+      "hint": "Find the zeros of each factor, then determine where the product is non-positive."
+    },
+    {
+      "id": "math-gaokao-53-q002",
+      "category": "Algebra",
+      "concept": "Cubic Polynomial Inequality",
+      "learningObjective": "Solve a cubic polynomial inequality by factoring and testing sign intervals.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the inequality \\(x^3-x\\ge 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-\\infty,-1]\\cup[0,1]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([-1,0]\\cup[1,\\infty)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor the polynomial:\n\\[\nx^3-x=x(x^2-1)=x(x-1)(x+1).\n\\]\nThe zeros are \\(x=-1\\), \\(x=0\\), and \\(x=1\\). Testing the sign on the intervals separated by these zeros gives:\n\\[\n(-\\infty,-1):\\quad -,\\qquad (-1,0):\\quad +,\\qquad (0,1):\\quad -,\\qquad (1,\\infty):\\quad +.\n\\]\nSince the inequality is \\(\\ge 0\\), include the zeros. Therefore,\n\\[\nx\\in[-1,0]\\cup[1,\\infty).\n\\]\nThus option B is correct.",
+      "hint": "Factor the cubic completely, then determine the sign of the product on each interval between consecutive zeros."
+    },
+    {
+      "id": "math-gaokao-53-q003",
+      "category": "Algebra",
+      "concept": "Cubic Polynomial Inequality with Three Distinct Roots",
+      "learningObjective": "Solve a cubic inequality by factoring out a common monomial factor and using a sign chart.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the inequality \\(x^3-4x^2+3x<0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0,1)\\cup(3,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\infty,0)\\cup(1,3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor the polynomial:\n\\[\nx^3-4x^2+3x=x(x^2-4x+3)=x(x-1)(x-3).\n\\]\nThe zeros are \\(x=0\\), \\(x=1\\), and \\(x=3\\). Testing the sign on the intervals gives:\n\\[\n(-\\infty,0):\\quad -,\\qquad (0,1):\\quad +,\\qquad (1,3):\\quad -,\\qquad (3,\\infty):\\quad +.\n\\]\nSince the inequality is strict, \\(<0\\), the solution is\n\\[\n(-\\infty,0)\\cup(1,3).\n\\]\nThus option B is correct.",
+      "hint": "Factor the cubic completely, then check the sign of the product in each interval determined by its roots."
+    },
+    {
+      "id": "math-gaokao-53-q004",
+      "category": "Algebra",
+      "concept": "Polynomial Inequality with a Repeated Root",
+      "learningObjective": "Solve a polynomial inequality involving a squared factor and interpret the effect of a repeated root.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve the inequality \\((x+2)^2(x-4)\\le 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-\\infty,4]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([-2,4]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The factor \\((x+2)^2\\) is always non-negative, and it equals zero only at \\(x=-2\\). The sign of the product is therefore controlled by \\(x-4\\), except that \\(x=-2\\) also gives equality.\nFor \\(x<4\\), we have \\(x-4<0\\), so\n\\[\n(x+2)^2(x-4)\\le 0.\n\\]\nFor \\(x=4\\), the product is \\(0\\). For \\(x>4\\), the product is positive. Therefore, the solution set is\n\\[\n(-\\infty,4].\n\\]\nThus option A is correct.",
+      "hint": "A squared factor is never negative; determine where the remaining factor makes the product non-positive."
+    },
+    {
+      "id": "math-gaokao-53-q005",
+      "category": "Algebra",
+      "concept": "Quartic Polynomial Inequality Reducible to a Quadratic Inequality",
+      "learningObjective": "Solve a quartic inequality by substituting \\(t=x^2\\) and interpreting the resulting interval for \\(x\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve the inequality \\(x^4-10x^2+9\\le 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([-3,3]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([-3,-1]\\cup[1,3]\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(t=x^2\\), where \\(t\\ge 0\\). Then\n\\[\nx^4-10x^2+9=t^2-10t+9=(t-1)(t-9).\n\\]\nThe inequality becomes\n\\[\n(t-1)(t-9)\\le 0.\n\\]\nThus\n\\[\n1\\le t\\le 9.\n\\]\nSince \\(t=x^2\\), this means\n\\[\n1\\le x^2\\le 9.\n\\]\nTherefore,\n\\[\n-3\\le x\\le -1 \\quad \\text{or} \\quad 1\\le x\\le 3.\n\\]\nIn interval notation, this is\n\\[\n[-3,-1]\\cup[1,3].\n\\]\nThus option B is correct.",
+      "hint": "Substitute \\(t=x^2\\) to reduce the quartic inequality to a quadratic inequality in \\(t\\), then convert back to \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-53-q006",
+      "category": "Algebra",
+      "concept": "Polynomial Inequality with Odd Multiplicity",
+      "learningObjective": "Solve a polynomial inequality involving factors with odd multiplicity and determine the correct sign intervals.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Solve the inequality \\((x-1)^3(x+2)>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-\\infty,-2)\\cup(1,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-2,1)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The zeros are \\(x=-2\\) and \\(x=1\\). The factor \\((x-1)^3\\) has odd multiplicity, and \\((x+2)\\) has odd multiplicity, so the sign changes at each zero.\nTesting the sign on the intervals gives:\n\\[\n(-\\infty,-2):\\quad +,\\qquad (-2,1):\\quad -,\\qquad (1,\\infty):\\quad +.\n\\]\nSince the inequality is \\(>0\\), the solution is\n\\[\n(-\\infty,-2)\\cup(1,\\infty).\n\\]\nThus option A is correct.",
+      "hint": "Determine the zeros and test the sign of the product on each interval between them."
+    },
+    {
+      "id": "math-gaokao-53-q007",
+      "category": "Algebra",
+      "concept": "Parameter Condition for a Quartic Polynomial to Be Always Positive",
+      "learningObjective": "Determine the range of a parameter so that a quartic polynomial is positive for all real numbers.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Find all real values of \\(m\\) such that \\(x^4-2x^2+m>0\\) for every real number \\(x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m\\ge 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(m>1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(t=x^2\\), where \\(t\\ge 0\\). Then\n\\[\nx^4-2x^2+m=t^2-2t+m=(t-1)^2+m-1.\n\\]\nThe minimum value of \\((t-1)^2+m-1\\) occurs when \\(t=1\\), giving minimum\n\\[\nm-1.\n\\]\nFor the expression to be positive for every real \\(x\\), we need\n\\[\nm-1>0.\n\\]\nTherefore,\n\\[\nm>1.\n\\]\nThus option B is correct.",
+      "hint": "Substitute \\(t=x^2\\) and complete the square to find the minimum value of the expression."
+    },
+    {
+      "id": "math-gaokao-53-q008",
+      "category": "Algebra",
+      "concept": "Parameter from a Given Polynomial Inequality Solution Set",
+      "learningObjective": "Determine a parameter value from a polynomial inequality whose solution set is given.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "If the solution set of \\(x^2(x-a)\\ge 0\\) is \\(\\{0\\}\\cup[2,\\infty)\\), find \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(x^2\\ge 0\\) for all real \\(x\\), the sign of \\(x^2(x-a)\\) is determined by \\(x-a\\), except that \\(x=0\\) always gives equality.\nFor the solution set to include \\([2,\\infty)\\), we need \\(x-a\\ge 0\\) for \\(x\\ge 2\\), which means the boundary is \\(a=2\\). Checking:\n\\[\nx^2(x-2)\\ge 0\n\\]\nholds exactly when \\(x=0\\) or \\(x\\ge 2\\). Therefore, the solution set is\n\\[\n\\{0\\}\\cup[2,\\infty).\n\\]\nThus \\(a=2\\), so option A is correct.",
+      "hint": "Use the fact that \\(x^2\\) is non-negative and determine where \\(x-a\\) changes sign."
+    },
+    {
+      "id": "math-gaokao-53-q009",
+      "category": "Algebra",
+      "concept": "Quartic Polynomial Inequality with Four Distinct Roots",
+      "learningObjective": "Solve a quartic inequality by factoring into linear factors and using a sign chart.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the inequality \\((x^2-1)(x^2-4)>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-2,-1)\\cup(1,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\infty,-2)\\cup(-1,1)\\cup(2,\\infty)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor completely:\n\\[\n(x^2-1)(x^2-4)=(x-1)(x+1)(x-2)(x+2).\n\\]\nThe zeros are \\(x=-2\\), \\(x=-1\\), \\(x=1\\), and \\(x=2\\). Testing the sign on the intervals gives:\n\\[\n(-\\infty,-2):\\quad +,\\qquad (-2,-1):\\quad -,\\qquad (-1,1):\\quad +,\\qquad (1,2):\\quad -,\\qquad (2,\\infty):\\quad +.\n\\]\nSince the inequality is \\(>0\\), the solution is\n\\[\n(-\\infty,-2)\\cup(-1,1)\\cup(2,\\infty).\n\\]\nThus option B is correct.",
+      "hint": "Factor the quartic into four linear factors, then determine the sign on each interval between consecutive zeros."
+    },
+    {
+      "id": "math-gaokao-53-q010",
+      "category": "Algebra",
+      "concept": "Reconstructing a Cubic Polynomial Inequality from Its Solution Set",
+      "learningObjective": "Determine a parameter in a cubic polynomial inequality from its given solution set.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "If the solution set of \\(x^3+ax^2-x-a\\ge 0\\) is \\([-2,-1]\\cup[1,\\infty)\\), find \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor the polynomial by grouping:\n\\[\nx^3+ax^2-x-a=x^2(x+a)-1(x+a)=(x+a)(x^2-1).\n\\]\nThus\n\\[\nx^3+ax^2-x-a=(x+a)(x-1)(x+1).\n\\]\nThe roots are \\(-a\\), \\(-1\\), and \\(1\\). The given solution set is\n\\[\n[-2,-1]\\cup[1,\\infty),\n\\]\nso the remaining root must be \\(-2\\). Therefore,\n\\[\n-a=-2 \\quad \\Rightarrow \\quad a=2.\n\\]\nChecking, \\(a=2\\) gives\n\\[\n(x+2)(x-1)(x+1)\\ge 0,\n\\]\nwhose solution set is indeed \\([-2,-1]\\cup[1,\\infty)\\). Thus option A is correct.",
+      "hint": "Factor the cubic by grouping, then match its roots with the endpoints of the given solution intervals."
+    }
+  ]
+}

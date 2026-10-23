@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-349",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 349",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-349-q001",
+      "category": "Combinatorics",
+      "concept": "Fundamental Counting Principle",
+      "learningObjective": "Use the multiplication principle to count two-course meal combinations.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A restaurant offers 3 different appetizers and 4 different main dishes. If a customer chooses one appetizer and one main dish, how many different two-course meals are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The choice of appetizer and the choice of main dish are independent. By the fundamental counting principle, the total number of meals is\n\\[\n3 \\times 4 = 12\n\\]\nSo there are \\(12\\) possible two-course meals.",
+      "hint": "Multiply the number of choices for the appetizer by the number of choices for the main dish."
+    },
+    {
+      "id": "math-gaokao-349-q002",
+      "category": "Combinatorics",
+      "concept": "Independent Choices in a Sequence",
+      "learningObjective": "Count passwords formed by one letter and one digit using the multiplication principle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A code consists of one letter chosen from 5 available letters, followed by one digit chosen from 10 available digits. How many different codes are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(50\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(5\\) choices for the letter and \\(10\\) choices for the digit. Since the choices are independent, the total number of codes is\n\\[\n5 \\times 10 = 50\n\\]\nThus there are \\(50\\) possible codes.",
+      "hint": "Treat the letter position and the digit position as separate stages, then multiply the numbers of choices."
+    },
+    {
+      "id": "math-gaokao-349-q003",
+      "category": "Combinatorics",
+      "concept": "Multiplication Principle for Two Categories",
+      "learningObjective": "Count selections of one item from each of two distinct categories.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A bookstore has 6 different mathematics books and 4 different physics books. In how many ways can a student choose one mathematics book and one physics book?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The student chooses one of \\(6\\) mathematics books and one of \\(4\\) physics books. By the fundamental counting principle, the number of ways is\n\\[\n6 \\times 4 = 24\n\\]\nSo there are \\(24\\) possible choices.",
+      "hint": "Multiply the number of mathematics books by the number of physics books."
+    },
+    {
+      "id": "math-gaokao-349-q004",
+      "category": "Combinatorics",
+      "concept": "Counting with Repetition Allowed",
+      "learningObjective": "Count license plates with repeated letters and digits using powers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A license plate consists of 2 letters followed by 3 digits. If letters and digits may be repeated, how many different license plates are possible? Assume there are 26 letters and 10 digits.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(676000\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(468000\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each of the first two positions has \\(26\\) choices, and each of the last three positions has \\(10\\) choices. Repetition is allowed, so the total number is\n\\[\n26^2 \\times 10^3 = 676 \\times 1000 = 676000\n\\]\nThus there are \\(676000\\) possible license plates.",
+      "hint": "Count each position independently and multiply the numbers of choices."
+    },
+    {
+      "id": "math-gaokao-349-q005",
+      "category": "Combinatorics",
+      "concept": "Counting Without Replacement",
+      "learningObjective": "Count assignments of two distinct roles from a group without allowing the same person to hold both roles.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A committee of 8 people must choose 1 chair and 1 secretary. If the same person cannot hold both positions, how many different assignments are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(64\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(56\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(8\\) choices for chair. After the chair is chosen, only \\(7\\) people remain eligible for secretary. Therefore, the number of assignments is\n\\[\n8 \\times 7 = 56\n\\]\nSo there are \\(56\\) possible assignments.",
+      "hint": "After choosing the first person, one fewer person is available for the second position."
+    },
+    {
+      "id": "math-gaokao-349-q006",
+      "category": "Combinatorics",
+      "concept": "Multi-Stage Counting",
+      "learningObjective": "Count pizza choices using several independent options.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A pizza shop offers 4 sizes, 3 types of crust, and 5 toppings. If a customer chooses one size, one crust, and exactly one topping, how many different pizzas can be ordered?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The customer makes three independent choices: size, crust, and topping. By the fundamental counting principle, the total number of pizzas is\n\\[\n4 \\times 3 \\times 5 = 60\n\\]\nSo there are \\(60\\) possible pizzas.",
+      "hint": "Multiply the number of sizes, crusts, and toppings."
+    },
+    {
+      "id": "math-gaokao-349-q007",
+      "category": "Combinatorics",
+      "concept": "Counting Without Repetition",
+      "learningObjective": "Count four-digit PINs with distinct digits chosen from 1 to 9.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A 4-digit PIN is formed using digits from \\(1\\) to \\(9\\), and no digit may be repeated. How many such PINs are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6561\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3024\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(9\\) choices for the first digit. Since repetition is not allowed, there are then \\(8\\) choices for the second digit, \\(7\\) for the third, and \\(6\\) for the fourth. Thus the number of PINs is\n\\[\n9 \\times 8 \\times 7 \\times 6 = 3024\n\\]\nSo there are \\(3024\\) possible PINs.",
+      "hint": "Reduce the number of available digits after each position is filled."
+    },
+    {
+      "id": "math-gaokao-349-q008",
+      "category": "Combinatorics",
+      "concept": "Counting with Return Restrictions",
+      "learningObjective": "Count round-trip routes when no road may be used more than once.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "There are 4 different roads from town \\(X\\) to town \\(Y\\), and 3 different roads from town \\(Y\\) to town \\(Z\\). A traveler goes from \\(X\\) to \\(Z\\) through \\(Y\\), then returns from \\(Z\\) to \\(X\\) through \\(Y\\). If no road may be used more than once, how many different round trips are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(72\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(144\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For the outbound trip, there are \\(4\\) choices from \\(X\\) to \\(Y\\) and \\(3\\) choices from \\(Y\\) to \\(Z\\), giving\n\\[\n4 \\times 3 = 12\n\\]\noutbound route pairs. For the return trip, the road from \\(Z\\) to \\(Y\\) cannot be the same as the outbound \\(Y\\) to \\(Z\\) road, so there are \\(3-1=2\\) choices. Similarly, the road from \\(Y\\) to \\(X\\) cannot be the same as the outbound \\(X\\) to \\(Y\\) road, so there are \\(4-1=3\\) choices. Thus each outbound pair allows\n\\[\n2 \\times 3 = 6\n\\]\nreturn pairs. The total number of round trips is\n\\[\n12 \\times 6 = 72\n\\]\nSo there are \\(72\\) possible round trips.",
+      "hint": "Count the outbound choices first, then determine how many return choices remain after excluding the roads already used."
+    },
+    {
+      "id": "math-gaokao-349-q009",
+      "category": "Combinatorics",
+      "concept": "Counting Restricted Three-Digit Numbers",
+      "learningObjective": "Count even three-digit numbers with distinct digits from a given set.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How many even 3-digit positive integers can be formed using the digits \\(1,2,3,4,5\\) if no digit may be repeated?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(18\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number must end in an even digit, so the units digit is either \\(2\\) or \\(4\\).\nIf the units digit is \\(2\\), there are \\(4\\) choices for the hundreds digit and then \\(3\\) choices for the tens digit, giving\n\\[\n4 \\times 3 = 12\n\\]\nnumbers.\nIf the units digit is \\(4\\), the same reasoning gives another\n\\[\n4 \\times 3 = 12\n\\]\nnumbers.\nThus the total is\n\\[\n12+12=24\n\\]\nSo there are \\(24\\) such numbers.",
+      "hint": "Split the count according to the possible units digits, then count the remaining positions."
+    },
+    {
+      "id": "math-gaokao-349-q010",
+      "category": "Combinatorics",
+      "concept": "Counting Codes with Positional Restrictions",
+      "learningObjective": "Count four-letter codes with restrictions on the first and last letters.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A 4-letter code is formed using the letters \\(A,B,C,D,E\\). Repetition is allowed. If the first letter must be \\(A\\) or \\(B\\), and the last letter must be \\(C\\) or \\(D\\), how many different codes are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(100\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(80\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(2\\) choices for the first letter and \\(2\\) choices for the last letter. The middle two positions each have \\(5\\) choices because repetition is allowed. Therefore, the total number of codes is\n\\[\n2 \\times 5 \\times 5 \\times 2 = 100\n\\]\nSo there are \\(100\\) possible codes.",
+      "hint": "Count the restricted positions first, then multiply by the choices for the unrestricted middle positions."
+    }
+  ]
+}

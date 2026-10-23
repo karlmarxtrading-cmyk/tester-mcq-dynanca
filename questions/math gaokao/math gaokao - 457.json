@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-457",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 457",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-457-q001",
+      "category": "Mathematical Modeling and Applications",
+      "concept": "Quadratic Optimization",
+      "learningObjective": "Determine the production level that maximizes profit using a quadratic profit function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A company produces a product. The cost function is \\(C(x) = 100 + 2x + 0.1x^2\\) (in thousands of dollars) for \\(x\\) hundred units. The revenue is \\(R(x) = 5x\\) (in thousands of dollars). Find the production level \\(x\\) (in hundreds) that maximizes profit.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The profit function is \\[\n\\begin{aligned}\nP(x) &= R(x) - C(x) \\\\\n&= 5x - (100 + 2x + 0.1x^2) \\\\\n&= -0.1x^2 + 3x - 100\n\\end{aligned}\n\\]. This is a downward-opening parabola. The maximum profit occurs at the vertex, where \\[\n\\begin{aligned}\nx &= -\\frac{b}{2a} \\\\\n&= -\\frac{3}{2(-0.1)} \\\\\n&= 15\n\\end{aligned}\n\\]. Thus, the production level that maximizes profit is \\(15\\) hundred units.",
+      "hint": "Formulate the profit function by subtracting the cost function from the revenue function, and then find the vertex of the resulting quadratic function."
+    },
+    {
+      "id": "math-gaokao-457-q002",
+      "category": "Mathematical Modeling and Applications",
+      "concept": "Exponential Decay",
+      "learningObjective": "Calculate the remaining mass of a radioactive substance after a given time using an exponential decay model.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A radioactive substance decays such that its mass halves every \\(10\\) years. If the initial mass is \\(800\\) grams, what is the mass after \\(30\\) years?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(200\\) grams"
+        },
+        {
+          "label": "B",
+          "text": "\\(100\\) grams"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The mass of the substance after \\(t\\) years is given by the formula \\(M(t) = M_0 \\left(\\frac{1}{2}\\right)^{\\frac{t}{10}}\\), where \\(M_0 = 800\\) grams. Substituting \\(t = 30\\), we get \\[\n\\begin{aligned}\nM(30) &= 800 \\left(\\frac{1}{2}\\right)^{\\frac{30}{10}} \\\\\n&= 800 \\left(\\frac{1}{2}\\right)^3 \\\\\n&= 800 \\times \\frac{1}{8} \\\\\n&= 100\n\\end{aligned}\n\\] grams.",
+      "hint": "Use the exponential decay formula \\(M(t) = M_0 \\left(\\frac{1}{2}\\right)^{\\frac{t}{h}}\\), where \\(h\\) is the half-life."
+    },
+    {
+      "id": "math-gaokao-457-q003",
+      "category": "Mathematical Modeling and Applications",
+      "concept": "Linear Programming Constraints",
+      "learningObjective": "Translate real-world resource limitations into a system of linear inequalities.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A factory produces chairs and tables. Each chair requires \\(2\\) hours of carpentry and \\(1\\) hour of finishing. Each table requires \\(3\\) hours of carpentry and \\(2\\) hours of finishing. The factory has at most \\(120\\) hours of carpentry and \\(80\\) hours of finishing available per week. If \\(x\\) is the number of chairs and \\(y\\) is the number of tables, which system of inequalities represents the carpentry and finishing constraints? Assume \\(x\\) and \\(y\\) are nonnegative integers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\[\n\\begin{cases}\n2x + 3y \\le 120 \\\\\nx + 2y \\le 80\n\\end{cases}\n\\]"
+        },
+        {
+          "label": "B",
+          "text": "\\[\n\\begin{cases}\n2x + 3y \\ge 120 \\\\\nx + 2y \\ge 80\n\\end{cases}\n\\]"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total carpentry time for \\(x\\) chairs and \\(y\\) tables is \\(2x + 3y\\). Since the available carpentry time is at most \\(120\\) hours, the inequality is \\(2x + 3y \\le 120\\). The total finishing time is \\(1x + 2y\\), and with at most \\(80\\) hours available, the inequality is \\(x + 2y \\le 80\\). Therefore, the correct system is \\(2x + 3y \\le 120\\) and \\(x + 2y \\le 80\\).",
+      "hint": "Calculate the resource hours used by the proposed production quantities and compare each total with its available capacity."
+    },
+    {
+      "id": "math-gaokao-457-q004",
+      "category": "Mathematical Modeling and Applications",
+      "concept": "Trigonometric Modeling",
+      "learningObjective": "Determine the maximum value of a quantity modeled by a sinusoidal function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The depth of water at a harbor is modeled by \\(d(t) = 3 \\sin\\left(\\frac{\\pi}{6} t\\right) + 10\\), where \\(d\\) is in meters and \\(t\\) is the time in hours after midnight. What is the maximum depth of the water in the harbor?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(13\\) meters"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\) meters"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sine function, \\(\\sin(\\theta)\\), oscillates between \\(-1\\) and \\(1\\). The maximum value of \\(\\sin\\left(\\frac{\\pi}{6} t\\right)\\) is \\(1\\). Substituting this into the depth model gives the maximum depth: \\(d_{\\text{max}} = 3(1) + 10 = 13\\) meters.",
+      "hint": "Recall that the maximum value of the sine function is \\(1\\), and use it to find the maximum value of the entire expression."
+    },
+    {
+      "id": "math-gaokao-457-q005",
+      "category": "Mathematical Modeling and Applications",
+      "concept": "Geometric Sequence",
+      "learningObjective": "Calculate the future value of a quantity that grows exponentially over discrete time intervals.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A population of bacteria doubles every hour. If the initial population is \\(50\\), what is the population after \\(4\\) hours?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(400\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(800\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The population after \\(n\\) hours can be modeled by the geometric sequence formula \\(P_n = P_0 \\times r^n\\), where \\(P_0 = 50\\) and the common ratio \\(r = 2\\). After \\(4\\) hours, the population is \\[\n\\begin{aligned}\nP_4 &= 50 \\times 2^4 \\\\\n&= 50 \\times 16 \\\\\n&= 800\n\\end{aligned}\n\\].",
+      "hint": "Use the formula for the \\(n\\)-th term of a geometric sequence, where the initial value is multiplied by the growth factor raised to the power of the number of periods."
+    },
+    {
+      "id": "math-gaokao-457-q006",
+      "category": "Mathematical Modeling and Applications",
+      "concept": "Quadratic Optimization (Geometry)",
+      "learningObjective": "Maximize the area of a rectangular region subject to a perimeter constraint using quadratic functions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A farmer has \\(100\\) meters of fencing to enclose a rectangular garden against a straight river. No fencing is needed along the river. What is the maximum area that can be enclosed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2500\\) square meters"
+        },
+        {
+          "label": "B",
+          "text": "\\(1250\\) square meters"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(x\\) be the width of the garden perpendicular to the river, and \\(y\\) be the length parallel to the river. The fencing constraint is \\(2x + y = 100\\), so \\(y = 100 - 2x\\). The area is \\[\n\\begin{aligned}\nA &= xy \\\\\n&= x(100 - 2x) \\\\\n&= -2x^2 + 100x\n\\end{aligned}\n\\]. This is a downward-opening parabola. The maximum area occurs at \\(x = -\\frac{100}{2(-2)} = 25\\). Substituting \\(x = 25\\) gives \\(y = 100 - 2(25) = 50\\). The maximum area is \\(25 \\times 50 = 1250\\) square meters.",
+      "hint": "Express the length of the rectangle in terms of its width using the fencing constraint, then write the area as a quadratic function of the width and find its vertex."
+    },
+    {
+      "id": "math-gaokao-457-q007",
+      "category": "Mathematical Modeling and Applications",
+      "concept": "Probability Without Replacement",
+      "learningObjective": "Calculate the probability of dependent events occurring in sequence without replacement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A box contains \\(6\\) red balls and \\(3\\) blue balls. Two balls are drawn uniformly at random without replacement. What is the probability that both balls are red?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{5}{12}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{4}{9}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first draw is red with probability \\(6/9\\). After a red draw, \\(5\\) of the \\(8\\) remaining balls are red. Thus the required probability is \\(\\frac{6}{9}\\cdot\\frac{5}{8}=\\frac{5}{12}\\). The distractor uses \\((6/9)^2=4/9\\), as though replacement occurred.",
+      "hint": "Calculate the probability of the first event, then update the total number of items and the number of successful outcomes for the second event before multiplying the probabilities."
+    },
+    {
+      "id": "math-gaokao-457-q008",
+      "category": "Mathematical Modeling and Applications",
+      "concept": "Quadratic Equation (Projectile Motion)",
+      "learningObjective": "Determine the time at which a projectile hits the ground by solving a quadratic equation derived from a kinematic model.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The height of a projectile is given by \\(h(t) = -5t^2 + 20t + 25\\), where \\(h\\) is in meters and \\(t\\) is in seconds. At what time does the projectile hit the ground?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\) seconds"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\) seconds"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The projectile hits the ground when its height \\(h(t)\\) is \\(0\\). Setting the equation to zero gives \\(-5t^2 + 20t + 25 = 0\\). Dividing the entire equation by \\(-5\\) yields \\(t^2 - 4t - 5 = 0\\). Factoring the quadratic equation gives \\((t - 5)(t + 1) = 0\\). The solutions are \\(t = 5\\) and \\(t = -1\\). Since time must be non-negative, the projectile hits the ground at \\(t = 5\\) seconds.",
+      "hint": "Set the height function to zero to find when the projectile reaches the ground, then solve the resulting quadratic equation and discard any negative time values."
+    },
+    {
+      "id": "math-gaokao-457-q009",
+      "category": "Mathematical Modeling and Applications",
+      "concept": "Statistical Variance",
+      "learningObjective": "Calculate the variance of a discrete data set to measure its dispersion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A company tracks the daily sales of a product over \\(5\\) days: \\(10\\), \\(12\\), \\(14\\), \\(16\\), \\(18\\). Treat these five days as the complete population. What is the population variance of the daily sales?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First, calculate the mean of the data set: \\[\n\\begin{aligned}\n\\mu &= \\frac{10 + 12 + 14 + 16 + 18}{5} \\\\\n&= \\frac{70}{5} \\\\\n&= 14\n\\end{aligned}\n\\]. Next, calculate the squared differences from the mean for each data point: \\((10-14)^2 = 16\\), \\((12-14)^2 = 4\\), \\((14-14)^2 = 0\\), \\((16-14)^2 = 4\\), \\((18-14)^2 = 16\\). The variance is the average of these squared differences: \\[\n\\begin{aligned}\n\\sigma^2 &= \\frac{16 + 4 + 0 + 4 + 16}{5} \\\\\n&= \\frac{40}{5} \\\\\n&= 8\n\\end{aligned}\n\\].",
+      "hint": "Find the mean of the data set first, then compute the squared deviation of each data point from the mean, and finally average those squared deviations."
+    },
+    {
+      "id": "math-gaokao-457-q010",
+      "category": "Mathematical Modeling and Applications",
+      "concept": "Piecewise Function Modeling",
+      "learningObjective": "Construct a piecewise function to model a real-world pricing structure with a base fee and incremental charges.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A courier company charges for shipping a package as follows: \\(10\\text{ USD}\\) for the first kilogram, and \\(2\\text{ USD}\\) for each additional kilogram. Which piecewise function \\(C(x)\\) represents the cost in dollars for a package weighing \\(x\\) kilograms, where \\(x\\) is a positive integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\[\nC(x) = \\begin{cases} 10, & 0 < x \\le 1 \\\\ 2x + 10, & x > 1 \\end{cases}\n\\]"
+        },
+        {
+          "label": "B",
+          "text": "\\[\nC(x) = \\begin{cases} 10, & 0 < x \\le 1 \\\\ 2x + 8, & x > 1 \\end{cases}\n\\]"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For a package weighing \\(x\\) kilograms where \\(0 < x \\le 1\\), the cost is a flat \\(10\\text{ USD}\\). For \\(x > 1\\), the cost includes the \\(10\\text{ USD}\\) base fee for the first kilogram, plus \\(2\\text{ USD}\\) for each of the remaining \\((x - 1)\\) kilograms. The cost function for \\(x > 1\\) is \\[\n\\begin{aligned}\nC(x) &= 10 + 2(x - 1) \\\\\n&= 10 + 2x - 2 \\\\\n&= 2x + 8\n\\end{aligned}\n\\]. Therefore, the correct piecewise function is \\(C(x) = 10\\) for \\(0 < x \\le 1\\) and \\(C(x) = 2x + 8\\) for \\(x > 1\\).",
+      "hint": "Separate the charge for the first kilogram from the charge for the remaining weight, then check the boundary case."
+    }
+  ]
+}

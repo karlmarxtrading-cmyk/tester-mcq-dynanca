@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-615",
+  "category": "Comprehensive Mathematics",
+  "title": "615. Discrete Mathematics, Counting & Graph Theory: Comparing Graph Algorithm Running Times",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-615-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Breadth-first search with lists",
+      "learningObjective": "State the running time of breadth-first search on adjacency lists.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A graph with \\(n\\) vertices and \\(m\\) edges is stored by adjacency lists. To what is the running time of breadth-first search proportional?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To \\(n+m\\)"
+        },
+        {
+          "label": "B",
+          "text": "To \\(n\\cdot m\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Breadth-first search handles each vertex once and looks at each adjacency-list entry once. The lists have \\(2m\\) entries in total, so the work is proportional to \\(n+m\\). The search does not rescan all edges for every vertex, which is what a running time proportional to \\(n\\cdot m\\) would mean.",
+      "hint": "Count how often each vertex and each list entry is looked at."
+    },
+    {
+      "id": "dynanca-615-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Neighbours in a matrix",
+      "learningObjective": "Count the entries examined to find the neighbours of one vertex.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph with \\(n\\) vertices and \\(m\\) edges is stored by an adjacency matrix. How many entries must be examined to find all neighbours of one vertex?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The neighbours of a vertex are read from its row, and a row has one entry for each of the \\(n\\) vertices, so \\(n\\) entries are examined whether the vertex has many neighbours or few. The number of edges of the graph does not change the length of a row.",
+      "hint": "Think about the length of one row of the matrix."
+    },
+    {
+      "id": "dynanca-615-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A sparse graph",
+      "learningObjective": "Compare step counts for two representations of a sparse graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has \\(n=500\\) vertices and \\(m=1500\\) edges. Breadth-first search takes about \\(n+m\\) steps with adjacency lists and about \\(n^2\\) steps with an adjacency matrix. What are these two numbers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(250000\\) with lists and \\(2000\\) with a matrix"
+        },
+        {
+          "label": "B",
+          "text": "\\(2000\\) with lists and \\(250000\\) with a matrix"
+        }
+      ],
+      "answer": "B",
+      "explanation": "With lists the count is \\(500+1500=2000\\). With a matrix, each of the \\(500\\) vertices requires scanning a row of \\(500\\) entries, giving \\(500^2=250000\\). For a graph with few edges, adjacency lists are far more economical.",
+      "hint": "Substitute the numbers into each formula."
+    },
+    {
+      "id": "dynanca-615-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two shortest-path algorithms",
+      "learningObjective": "Compare two shortest-path algorithms on a sparse graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "For a sparse graph with non-negative edge weights, the algorithm of Dijkstra with a binary heap takes time proportional to \\((n+m)\\log n\\), and the Bellman-Ford algorithm takes time proportional to \\(n\\cdot m\\). Which is faster for large graphs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The algorithm of Dijkstra"
+        },
+        {
+          "label": "B",
+          "text": "The Bellman-Ford algorithm"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For large \\(n\\), the factor \\(\\log n\\) is far smaller than \\(n\\). With \\(n=1000\\) and \\(m=3000\\), for example, \\((n+m)\\log_2 n\\) is about \\(4000\\cdot 10=40000\\), while \\(n\\cdot m=3000000\\). So the algorithm of Dijkstra is much faster whenever it is applicable.",
+      "hint": "Compare \\(\\log n\\) with \\(n\\) for a large value of \\(n\\)."
+    },
+    {
+      "id": "dynanca-615-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting relaxations",
+      "learningObjective": "Count the relaxations performed by the Bellman-Ford algorithm.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The Bellman-Ford algorithm makes \\(n-1\\) passes, and each pass relaxes all \\(m\\) arcs. How many relaxations are performed for \\(n=100\\) and \\(m=500\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(49500\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(600\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(100-1=99\\) passes with \\(500\\) relaxations each, so \\(99\\cdot 500=49500\\) relaxations. The value \\(600\\) adds \\(n\\) and \\(m\\); it would count a single visit to every vertex and every arc.",
+      "hint": "Multiply the number of passes by the number of arcs."
+    },
+    {
+      "id": "dynanca-615-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Why the slower algorithm is still used",
+      "learningObjective": "Explain when the Bellman-Ford algorithm is preferred.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The Bellman-Ford algorithm is slower than the algorithm of Dijkstra. Why is it still used?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It needs no information about the weights of the arcs."
+        },
+        {
+          "label": "B",
+          "text": "It works with negative arc weights and can detect negative cycles."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The algorithm of Dijkstra is correct only when all weights are non-negative. The Bellman-Ford algorithm remains correct when some weights are negative, provided there is no negative cycle, and it reports a negative cycle when one can be reached from the source. Both algorithms depend on the weights.",
+      "hint": "Recall the restriction under which the algorithm of Dijkstra is correct."
+    },
+    {
+      "id": "dynanca-615-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The costly step of the algorithm of Kruskal",
+      "learningObjective": "Identify the dominant step in the algorithm of Kruskal.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In a standard implementation of the algorithm of Kruskal on a graph with \\(m\\) edges, which step dominates the running time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sorting the edges by weight, which takes time proportional to \\(m\\log m\\)"
+        },
+        {
+          "label": "B",
+          "text": "Adding the accepted edges to the tree, which takes time proportional to \\(m^2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The edges are first sorted, which takes time proportional to \\(m\\log m\\). With a suitable structure for keeping track of the components, the tests and merges that follow take less time in total than the sorting. So sorting dominates. Adding an accepted edge is a single cheap operation, and only \\(n-1\\) edges are added.",
+      "hint": "Compare the work of sorting with the work done per edge afterwards."
+    },
+    {
+      "id": "dynanca-615-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A dense graph",
+      "learningObjective": "Find the running time of breadth-first search on a complete graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Breadth-first search with adjacency lists takes time proportional to \\(n+m\\). To what is this proportional for the complete graph on \\(n\\) vertices?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To \\(n^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "To \\(n\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The complete graph has \\(m=\\dfrac{n(n-1)}{2}\\) edges, so \\(n+m=n+\\dfrac{n(n-1)}{2}=\\dfrac{n^2+n}{2}\\), which grows in proportion to \\(n^2\\). For a dense graph, the number of edges, not the number of vertices, determines the running time.",
+      "hint": "Express the number of edges of the complete graph in terms of \\(n\\)."
+    },
+    {
+      "id": "dynanca-615-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Brute force over orderings",
+      "learningObjective": "Count the orderings examined by a brute-force search.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A brute-force search for a Hamiltonian path examines every ordering of the vertices. How many orderings are there for a graph with \\(12\\) vertices?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4096\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(479001600\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number of orderings of \\(12\\) vertices is \\(12!=479001600\\). The value \\(4096=2^{12}\\) is the number of subsets of the vertices, which is much smaller. Factorial growth makes this brute-force approach impractical even for graphs of moderate size.",
+      "hint": "Count the arrangements of \\(12\\) different objects in a row."
+    },
+    {
+      "id": "dynanca-615-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A search from every vertex",
+      "learningObjective": "Count the steps of running a search from every vertex.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "To find the distances between all pairs of vertices of an unweighted graph, breadth-first search is run once from every vertex, each run taking about \\(n+m\\) steps. About how many steps are needed in total for \\(n=100\\) and \\(m=300\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(400\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(40000\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "One run takes about \\(100+300=400\\) steps, and there are \\(100\\) runs, one from each vertex, so the total is about \\(100\\cdot 400=40000\\) steps. The value \\(400\\) is the cost of a single run, which yields the distances from one vertex only.",
+      "hint": "Multiply the cost of one run by the number of start vertices."
+    }
+  ]
+}

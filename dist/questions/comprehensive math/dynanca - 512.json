@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-512",
+  "category": "Comprehensive Mathematics",
+  "title": "512. Sets, Logic, Reasoning & Proof: Existence Proofs by Construction",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-512-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "What a constructive existence proof does",
+      "learningObjective": "Describe a proof of existence by construction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does a constructive proof establish a statement of the form \"there exists \\(x\\) with property \\(P\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It exhibits a specific \\(x\\) and verifies that this \\(x\\) has property \\(P\\)."
+        },
+        {
+          "label": "B",
+          "text": "It verifies property \\(P\\) for every possible \\(x\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "An existence statement is proved constructively by producing a witness and checking that it satisfies the required property. It is not necessary, and for infinite domains not possible, to examine every element.",
+      "hint": "One suitable example is enough to prove that something exists."
+    },
+    {
+      "id": "dynanca-512-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A witness for an even prime",
+      "learningObjective": "Choose a witness for a simple existence statement.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Which number is a witness for the statement \"there exists an even prime number\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number \\(2\\) is even and prime, since its only positive divisors are \\(1\\) and \\(2\\). So it proves the statement. The number \\(4\\) is even but not prime, because \\(4=2\\cdot 2\\).",
+      "hint": "The witness must have both properties named in the statement."
+    },
+    {
+      "id": "dynanca-512-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A witness for a linear equation in integers",
+      "learningObjective": "Choose integers that prove an existence statement about a linear equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which pair is a witness for the statement \"there exist integers \\(x\\) and \\(y\\) with \\(3x+5y=1\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2\\) and \\(y=-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1\\) and \\(y=1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(x=2\\), \\(y=-1\\): \\(3\\cdot 2+5\\cdot(-1)=6-5=1\\), so the pair satisfies the equation. For \\(x=1\\), \\(y=1\\): \\(3+5=8\\ne 1\\), so that pair is not a witness.",
+      "hint": "Substitute each pair into the equation."
+    },
+    {
+      "id": "dynanca-512-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A witness for a quadratic equation",
+      "learningObjective": "Choose an integer that proves an existence statement about a quadratic equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which integer is a witness for the statement \"there exists an integer \\(n\\) with \\(n^2=n+6\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(n=3\\): \\(3^2=9\\) and \\(3+6=9\\), so the equation holds. For \\(n=2\\): \\(2^2=4\\) but \\(2+6=8\\), so it fails. (The integer \\(-2\\) is another witness, but one is enough.)",
+      "hint": "Substitute each candidate into both sides of the equation."
+    },
+    {
+      "id": "dynanca-512-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Constructing a number between two rationals",
+      "learningObjective": "Construct a rational number between two given rational numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "To prove that between any two rational numbers \\(a<b\\) there is another rational number, which number can be constructed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{a+b}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a+b\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The average \\(\\frac{a+b}{2}\\) is rational, because sums and quotients of rational numbers (with non-zero divisor) are rational. Moreover \\(a<\\frac{a+b}{2}<b\\), since \\(a<b\\). The number \\(a+b\\) need not lie between them; for \\(a=1\\), \\(b=2\\) it is \\(3\\).",
+      "hint": "Think of the midpoint of the two numbers on the number line."
+    },
+    {
+      "id": "dynanca-512-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An irrational number with a rational square",
+      "learningObjective": "Choose a witness for an existence statement about irrational numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which number is a witness for the statement \"there exists an irrational number whose square is rational\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number \\(\\sqrt{2}\\) is irrational, and its square is \\(2\\), which is rational. So it is a witness. The number \\(\\frac{1}{2}\\) has a rational square, but it is itself rational, so it does not satisfy the first requirement.",
+      "hint": "The witness must be irrational and must have a rational square."
+    },
+    {
+      "id": "dynanca-512-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A square that is a sum of two squares",
+      "learningObjective": "Choose a witness for an existence statement about perfect squares.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which equation is a witness for the statement \"some perfect square is the sum of two positive perfect squares\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(49=24+25\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(25=9+16\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In \\(25=9+16\\), all three numbers are perfect squares: \\(5^2\\), \\(3^2\\), and \\(4^2\\). In \\(49=24+25\\), the number \\(24\\) is not a perfect square, so that equation does not show what is required.",
+      "hint": "Check that every number in the equation is a perfect square."
+    },
+    {
+      "id": "dynanca-512-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Verifying the witness",
+      "learningObjective": "Identify the step that completes a constructive existence proof.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "To prove \"there exist integers \\(x\\) and \\(y\\) with \\(3x+5y=1\\)\", the values \\(x=2\\) and \\(y=-1\\) are proposed. What remains to be done?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Verify that \\(3\\cdot 2+5\\cdot(-1)=1\\)."
+        },
+        {
+          "label": "B",
+          "text": "Show that no other pair of integers satisfies the equation."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A constructive proof consists of a witness together with a verification that it has the required property. Here the check \\(6-5=1\\) completes the proof. Uniqueness is not part of an existence statement; in fact other solutions exist, such as \\(x=-3\\), \\(y=2\\).",
+      "hint": "An existence statement does not claim that the object is the only one."
+    },
+    {
+      "id": "dynanca-512-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Consecutive composite numbers",
+      "learningObjective": "Justify a construction of consecutive composite numbers.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For a positive integer \\(n\\), consider the numbers \\((n+1)!+k\\) for \\(k=2,3,\\ldots,n+1\\). Why is each of these \\(n\\) consecutive numbers composite?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The number \\((n+1)!+k\\) is divisible by \\(k\\), and it is larger than \\(k\\)."
+        },
+        {
+          "label": "B",
+          "text": "The number \\((n+1)!+k\\) is very large, and large numbers are composite."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(2\\le k\\le n+1\\), the factorial \\((n+1)!\\) contains the factor \\(k\\), so \\((n+1)!+k=k\\left(\\frac{(n+1)!}{k}+1\\right)\\) is a multiple of \\(k\\). Being greater than \\(k\\ge 2\\), it has a divisor other than \\(1\\) and itself, so it is composite. Size alone proves nothing; there are arbitrarily large primes.",
+      "hint": "Look for a common factor of the two terms \\((n+1)!\\) and \\(k\\)."
+    },
+    {
+      "id": "dynanca-512-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A function that undoes itself",
+      "learningObjective": "Choose a witness for an existence statement about functions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Which function is a witness for the statement \"there exists a function \\(f\\colon\\mathbb{R}\\to\\mathbb{R}\\), different from the identity, with \\(f(f(x))=x\\) for every real \\(x\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(x)=-x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f(x)=2x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(f(x)=-x\\): \\(f(f(x))=-(-x)=x\\) for every \\(x\\), and \\(f\\) is not the identity, since \\(f(1)=-1\\). For \\(f(x)=2x\\): \\(f(f(x))=4x\\), which equals \\(x\\) only when \\(x=0\\), so the condition fails.",
+      "hint": "Compute \\(f(f(x))\\) for each candidate."
+    }
+  ]
+}

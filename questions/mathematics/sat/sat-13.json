@@ -1,0 +1,771 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "mathematics-sat-13",
+  "title": "SAT 13 · Rounding and estimation",
+  "category": "SAT Mathematics",
+  "description": "A/B reasoning practice. Difficulty is editorial, not standardized SAT calibration.",
+  "questionCount": 18,
+  "questions": [
+    {
+      "id": "sat-q0217",
+      "title": "Estimating a Classroom Book Total",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "A teacher records the numbers of books read at four classroom stations. Estimate the total number of books by rounding each count to the nearest ten, then adding the rounded values. Choose A or B and show the rounding steps.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(200\\) books"
+        },
+        {
+          "label": "B",
+          "text": "\\(180\\) books"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rounding to the nearest ten gives \\(47\\to50\\), \\(68\\to70\\), \\(31\\to30\\), and \\(52\\to50\\). The estimated total is \\(50+70+30+50=200\\) books. Choice B, \\(180\\), comes from truncating instead of rounding: \\(40+60+30+50=180\\) rounds \\(47\\) and \\(68\\) down although their ones digits are at least 5. The exact total, \\(198\\), confirms that \\(200\\) is the reasonable estimate.",
+      "visuals": [
+        {
+          "id": "sat-q0217-v1",
+          "type": "DATA_CHART",
+          "data": {
+            "kind": "bar",
+            "xLabel": "Station",
+            "yLabel": "Books read",
+            "bars": [
+              {
+                "label": "Station 1",
+                "value": 47
+              },
+              {
+                "label": "Station 2",
+                "value": 68
+              },
+              {
+                "label": "Station 3",
+                "value": 31
+              },
+              {
+                "label": "Station 4",
+                "value": 52
+              }
+            ],
+            "chart": "bar",
+            "labels": [
+              "Station 1",
+              "Station 2",
+              "Station 3",
+              "Station 4"
+            ],
+            "values": [
+              47,
+              68,
+              31,
+              52
+            ],
+            "axes": {
+              "xLabel": "Station",
+              "yLabel": "Books read"
+            }
+          },
+          "alt": "Bar chart of book counts at four stations: 47, 68, 31, and 52 books."
+        }
+      ],
+      "hint": "Round each bar's value to the nearest ten by looking at its ones digit (5 or more rounds up), then add the four rounded values."
+    },
+    {
+      "id": "sat-q0218",
+      "title": "Rounding to the Nearest Hundred",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "Round \\(1{,}476\\) to the nearest hundred. Use the tens digit to decide whether the hundreds digit stays the same or increases. Choose A or B and explain your decision.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1{,}400\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1{,}500\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The hundreds digit is \\(4\\), and the tens digit is \\(7\\). Because \\(7\\ge5\\), increase the hundreds digit from 4 to 5 and replace the tens and ones digits with zeros. Thus \\(1{,}476\\) rounds to \\(1{,}500\\). Choice A would be correct only if the tens digit were less than 5.",
+      "hint": "Identify the hundreds digit and the single digit to its right; only that right-hand digit decides whether the hundreds digit changes."
+    },
+    {
+      "id": "sat-q0219",
+      "title": "Estimating the Ribbon Needed",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "A craft project uses three ribbon pieces measuring \\(28\\) cm, \\(34\\) cm, and \\(41\\) cm. Estimate the total length by rounding each measurement to the nearest ten centimeters before adding. Choose A or B and show the calculation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(90\\) cm"
+        },
+        {
+          "label": "B",
+          "text": "\\(100\\) cm"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The lengths round to \\(30\\) cm, \\(30\\) cm, and \\(40\\) cm. Their estimated sum is \\(30+30+40=100\\) cm. Choice A, \\(90\\) cm, comes from rounding \\(28\\) down to \\(20\\) instead of up to \\(30\\). The exact total is \\(28+34+41=103\\) cm, which is consistent with an estimate of about 100 cm.",
+      "hint": "Round each of the three lengths to the nearest ten centimeters using its ones digit, and only then add."
+    },
+    {
+      "id": "sat-q0220",
+      "title": "Bounds for a Rounded Parcel Mass",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "A parcel's mass is reported as \\(250\\) g after rounding the exact mass \\(m\\) to the nearest ten grams. Assume positive halfway values round up. Which interval contains every possible exact mass? Choose A or B and explain why one endpoint is included and the other is not.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(245\\le m<255\\) g"
+        },
+        {
+          "label": "B",
+          "text": "\\(240\\le m<250\\) g"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every value from \\(245\\) g up to but not including \\(255\\) g rounds to \\(250\\) g under the stated rule. The lower endpoint \\(245\\) is included because a halfway value rounds up to 250; \\(255\\) is excluded because it rounds to 260. Choice B includes 240 g, which rounds to 240 g, and excludes 252 g, which rounds to 250 g. Its part [245,250) does round to 250 g, but B is not the complete interval. A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0220-v1",
+          "type": "MAPPING",
+          "data": {
+            "left": {
+              "label": "Exact mass (g)",
+              "elements": [
+                245,
+                250,
+                254.9
+              ]
+            },
+            "right": {
+              "label": "Rounded mass (g)",
+              "elements": [
+                250
+              ]
+            },
+            "arrows": [
+              [
+                245,
+                250
+              ],
+              [
+                250,
+                250
+              ],
+              [
+                254.9,
+                250
+              ]
+            ]
+          },
+          "alt": "Representative exact masses of 245 g, 250 g, and 254.9 g all round to 250 g to the nearest ten."
+        }
+      ],
+      "hint": "Locate the halfway values on either side of the reported mass, then apply the stated halfway rule to each endpoint."
+    },
+    {
+      "id": "sat-q0221",
+      "title": "Absolute Error After Rounding",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "A calculator displays \\(7.846\\). The value is rounded to the nearest hundredth, giving \\(7.85\\). What is the absolute rounding error? Choose A or B and calculate the difference between the rounded and original values.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.04\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.004\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Absolute error is the nonnegative difference between the rounded value and the original value: \\(|7.850-7.846|=0.004\\). Choice A is ten times as large and comes from misplacing the decimal point.",
+      "hint": "Write both numbers to three decimal places so the digits line up, subtract, and keep the nonnegative difference."
+    },
+    {
+      "id": "sat-q0222",
+      "title": "Interval for a Rounded Length",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "A length is recorded as \\(12.4\\) cm to the nearest tenth of a centimeter. Assume positive halfway values round up. Let \\(L\\) be the exact length. Which interval is correct? Choose A or B and justify the rounding limits.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12.35\\le L<12.45\\) cm"
+        },
+        {
+          "label": "B",
+          "text": "\\(12.4\\le L<12.5\\) cm"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Values from \\(12.35\\) cm up to but not including \\(12.45\\) cm round to \\(12.4\\) cm. The lower midpoint rounds up to 12.4, while the upper midpoint rounds up to 12.5 and therefore is excluded. Choice B incorrectly uses the displayed rounded value as the lower boundary.",
+      "hint": "Find the two values halfway between 12.4 and its neighbouring tenths, then use the round-up rule to decide which of those halfway values rounds to 12.4."
+    },
+    {
+      "id": "sat-q0223",
+      "title": "Estimating a Total from Rounded Prices",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "Three items have exact prices \\(\\$248\\), \\(\\$352\\), and \\(\\$497\\). Estimate the total by rounding each price to the nearest hundred dollars before adding. Choose A or B and show each rounded price.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\$1{,}100\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\$1{,}000\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The prices round to \\(\\$200\\), \\(\\$400\\), and \\(\\$500\\), respectively. Adding gives an estimated total of \\(200+400+500=1{,}100\\) dollars. Choice B, \\(\\$1{,}000\\), comes from rounding \\(\\$352\\) down to \\(\\$300\\); its tens digit is 5, so it rounds up to \\(\\$400\\). The exact total is \\(\\$1{,}097\\), which is close to the estimate.",
+      "visuals": [
+        {
+          "id": "sat-q0223-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Exact price ($)",
+              "Rounded to nearest $100"
+            ],
+            "rows": [
+              [
+                248,
+                200
+              ],
+              [
+                352,
+                400
+              ],
+              [
+                497,
+                500
+              ]
+            ],
+            "headers": [
+              "Exact price ($)",
+              "Rounded to nearest $100"
+            ]
+          },
+          "alt": "A table pairing exact prices 248, 352, and 497 dollars with rounded estimates 200, 400, and 500 dollars."
+        }
+      ],
+      "hint": "For each price, look at the tens digit to decide whether it rounds down or up to a hundred, then add the rounded prices."
+    },
+    {
+      "id": "sat-q0224",
+      "title": "Percent Error in a Travel Estimate",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "A trip's actual distance is \\(80\\) km, while an initial estimate is \\(76\\) km. Calculate the percent error using \\(\\frac{|\\text{estimate}-\\text{actual}|}{\\text{actual}}\\times100\\%\\). Choose A or B and show the calculation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\%\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The absolute error is \\(|76-80|=4\\) km. The percent error is \\(\\frac{4}{80}\\times100\\%=5\\%\\), so A is correct. B treats the numerical absolute error, 4 km, as a percentage without dividing by the actual distance.",
+      "hint": "Find the absolute difference, then divide by the actual distance before converting to a percentage."
+    },
+    {
+      "id": "sat-q0225",
+      "title": "Reading Signed Error from a Graph",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "A positive quantity \\(x\\) is rounded to the nearest ten. For values with \\(5\\le x<15\\), the rounded estimate is 10. Define signed error as \\(E=\\text{estimate}-\\text{exact value}\\), so \\(E(x)=10-x\\) on this interval. What is the signed error when \\(x=12.4\\)? Choose A or B and use the graph or equation to justify the sign.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2.4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2.4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=12.4\\) into the signed-error rule: \\(E=10-12.4=-2.4\\). The estimate is 2.4 units below the exact value, so the signed error is negative. Choice B gives the magnitude of the error but not its sign.",
+      "visuals": [
+        {
+          "id": "sat-q0225-v1",
+          "type": "FUNCTION_GRAPH",
+          "data": {
+            "axes": {
+              "xMin": 5,
+              "xMax": 15,
+              "yMin": -5,
+              "yMax": 5
+            },
+            "curves": [
+              {
+                "expression": "10-x",
+                "label": "E(x)=10-x"
+              }
+            ],
+            "points": [
+              {
+                "x": 10,
+                "y": 0,
+                "label": "Zero error"
+              },
+              {
+                "x": 12.4,
+                "y": -2.4,
+                "label": "At x=12.4"
+              }
+            ]
+          },
+          "alt": "The line E(x)=10-x crosses zero at x=10 and has value negative 2.4 at x=12.4; the line describes signed error on 5 ≤ x < 15."
+        }
+      ],
+      "hint": "Substitute the given value into the error rule and decide whether the estimate lies above or below the exact value."
+    },
+    {
+      "id": "sat-q0226",
+      "title": "Measurements Meeting Error Conditions",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "A set contains 20 recorded measurements. Set \\(A\\) contains measurements whose absolute error is at most \\(0.02\\) when rounded to the nearest tenth. Set \\(B\\) contains measurements whose absolute error is at most \\(0.25\\) when rounded to the nearest whole number. The Venn diagram records how many measurements lie in each region. How many measurements satisfy exactly one of the two conditions? Choose A or B and explain which regions must be added.\n\n For positive halfway values, round up.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\) measurements"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\) measurements"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Exactly one condition means belonging to set \\(A\\) only or set \\(B\\) only. Add those two regions: \\(4+5=9\\) measurements. Choice A counts every measurement in at least one set, including the 6 that satisfy both conditions.",
+      "visuals": [
+        {
+          "id": "sat-q0226-v1",
+          "type": "VENN",
+          "data": {
+            "universe": {
+              "label": "Recorded measurements",
+              "total": 20
+            },
+            "sets": [
+              {
+                "id": "A",
+                "label": "Tenth-rounding error ≤ 0.02",
+                "elements": []
+              },
+              {
+                "id": "B",
+                "label": "Whole-number-rounding error ≤ 0.25",
+                "elements": []
+              }
+            ],
+            "regions": {
+              "A_only": 4,
+              "B_only": 5,
+              "intersection": 6,
+              "outside": 5
+            }
+          },
+          "alt": "Of 20 measurements, 4 satisfy only the first error condition, 5 only the second, 6 both conditions, and 5 neither condition."
+        }
+      ],
+      "hint": "Identify the two non-overlapping regions that satisfy one condition but not both."
+    },
+    {
+      "id": "sat-q0227",
+      "title": "Area Bounds from Rounded Dimensions",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "A rectangle's length is reported as \\(8.2\\) cm and its width as \\(5.6\\) cm, each rounded to the nearest tenth. Assume positive halfway values round up. What interval contains every possible exact area \\(S\\)? Choose A or B and multiply the dimension bounds.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(45.2325\\le S<46.6125\\) cm\\(^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(45.5\\le S<46.0\\) cm\\(^2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The exact length satisfies \\(8.15\\le L<8.25\\), and the exact width satisfies \\(5.55\\le W<5.65\\). Both dimensions are positive, so the smallest possible area is \\(8.15\\times5.55=45.2325\\) cm\\(^2\\), while the upper product \\(8.25\\times5.65=46.6125\\) cm\\(^2\\) is not attained. Therefore \\(45.2325\\le S<46.6125\\). Choice B excludes possible areas near the ends of the interval.",
+      "visuals": [
+        {
+          "id": "sat-q0227-v1",
+          "type": "GEOMETRY_2D",
+          "data": {
+            "units": "cm",
+            "points": [
+              {
+                "id": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "x": 8.2,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "x": 8.2,
+                "y": 5.6
+              },
+              {
+                "id": "D",
+                "x": 0,
+                "y": 5.6
+              }
+            ],
+            "segments": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "D"
+              ],
+              [
+                "D",
+                "A"
+              ]
+            ]
+          },
+          "alt": "A rectangle representing displayed dimensions 8.2 cm by 5.6 cm; each displayed dimension is rounded to the nearest tenth, so its exact value lies in a nearby interval."
+        }
+      ],
+      "hint": "Write the interval of possible exact values for each dimension; then pair the smallest values together and the largest values together, and note which endpoint can actually occur."
+    },
+    {
+      "id": "sat-q0228",
+      "title": "Percent Error for a Long-Distance Estimate",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "A route is actually \\(125\\) km long, but a planning estimate gives \\(120\\) km. Using the actual distance in the denominator, what is the percent error? Choose A or B and justify the calculation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\%\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The absolute error is \\(|120-125|=5\\) km. The percent error is \\(\\frac{5}{125}\\times100\\%=4\\%\\), so B is correct. A treats the numerical absolute error, 5 km, as a percentage. Dividing by the estimate would instead give \\(\\frac{5}{120}\\times100\\%=\\frac{25}{6}\\%\\), which is not 5%.",
+      "hint": "Use the actual distance, rather than the estimate, as the reference whole for percent error."
+    },
+    {
+      "id": "sat-q0229",
+      "title": "Combining Three Rounded Masses",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "Each of three bags has a mass reported as \\(250\\) g, rounded to the nearest ten grams. Assume positive halfway values round up. If the bags' exact masses are \\(m_1,m_2,m_3\\), which interval contains their total mass \\(T=m_1+m_2+m_3\\)? Choose A or B and explain how the three individual bounds combine.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(730\\le T<760\\) g"
+        },
+        {
+          "label": "B",
+          "text": "\\(735\\le T<765\\) g"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each bag's exact mass satisfies \\(245\\le m_i<255\\) g. Adding the three lower bounds gives \\(T\\ge3(245)=735\\) g, and adding the upper bounds gives \\(T<3(255)=765\\) g because no individual mass can equal 255 g. Choice A is wrong at both ends: \\(730\\) g is below the true minimum of \\(735\\) g, and A excludes possible totals such as \\(3(254)=762\\) g.",
+      "visuals": [
+        {
+          "id": "sat-q0229-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Bag",
+              "Reported mass (g)",
+              "Exact-mass interval (g)"
+            ],
+            "rows": [
+              [
+                1,
+                250,
+                "[245, 255)"
+              ],
+              [
+                2,
+                250,
+                "[245, 255)"
+              ],
+              [
+                3,
+                250,
+                "[245, 255)"
+              ]
+            ],
+            "headers": [
+              "Bag",
+              "Reported mass (g)",
+              "Exact-mass interval (g)"
+            ]
+          },
+          "alt": "Three bags each have reported mass 250 g; each exact mass is at least 245 g and less than 255 g."
+        }
+      ],
+      "hint": "Write the interval for one bag's exact mass, then add the three lower bounds and the three upper bounds, keeping track of which bound is excluded."
+    },
+    {
+      "id": "sat-q0230",
+      "title": "Bounds for a Total from Rounded Prices",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "Three item prices are displayed as \\(\\$100\\), \\(\\$300\\), and \\(\\$300\\), each rounded to the nearest hundred dollars. Assume positive halfway values round up. Based only on these displayed prices, which interval is guaranteed to contain the exact combined price \\(P\\)? Choose A or B and justify the lowest and highest possible totals.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\$550\\le P<\\$850\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\$600\\le P<\\$800\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A displayed price of \\(\\$100\\) comes from an exact price in \\([50,150)\\); each displayed \\(\\$300\\) price comes from \\([250,350)\\). Adding the lower bounds gives \\(50+250+250=550\\), and the upper total is strictly less than \\(150+350+350=850\\). Thus \\(\\$550\\le P<\\$850\\). Choice B is too narrow to include every price consistent with the rounded displays.",
+      "hint": "Find the interval of exact prices that would display as each rounded price, then add all the lower bounds and all the upper bounds."
+    },
+    {
+      "id": "sat-q0231",
+      "title": "Area of a Square with a Rounded Side",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "The side length of a square is reported as \\(3.7\\) cm to the nearest tenth. Assume positive halfway values round up. Let \\(s\\) be the exact side length and \\(A=s^2\\) the area. Which interval contains all possible exact areas? Choose A or B and explain why squaring the positive endpoints preserves the order.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(13.5\\le A<14.0\\) cm\\(^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(13.3225\\le A<14.0625\\) cm\\(^2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rounding to \\(3.7\\) cm means \\(3.65\\le s<3.75\\). Since all these lengths are positive, squaring gives \\(3.65^2\\le s^2<3.75^2\\), or \\(13.3225\\le A<14.0625\\) cm\\(^2\\). Choice A omits possible areas near both ends of the true interval.",
+      "visuals": [
+        {
+          "id": "sat-q0231-v1",
+          "type": "GEOMETRY_2D",
+          "data": {
+            "units": "cm",
+            "points": [
+              {
+                "id": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "x": 3.7,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "x": 3.7,
+                "y": 3.7
+              },
+              {
+                "id": "D",
+                "x": 0,
+                "y": 3.7
+              }
+            ],
+            "segments": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "D"
+              ],
+              [
+                "D",
+                "A"
+              ]
+            ]
+          },
+          "alt": "A square with displayed side length 3.7 cm; its exact side length lies from 3.65 cm inclusive to 3.75 cm exclusive."
+        }
+      ],
+      "hint": "Find the interval for the exact side length, then square both endpoints; because the side is positive, squaring keeps the inequalities in the same direction."
+    },
+    {
+      "id": "sat-q0232",
+      "title": "A Guaranteed Speed Interval",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "A car's distance is recorded as \\(246\\) km to the nearest kilometer, and its travel time is recorded as \\(3.2\\) hours to the nearest tenth. Assume positive halfway values round up. The average speed is \\(v=d/t\\). Which interval is guaranteed to contain every possible speed? Choose A or B and use the most extreme possible distance and time values.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(75.5<v<78.3\\) km/h"
+        },
+        {
+          "label": "B",
+          "text": "\\(76<v<78\\) km/h"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For positive quantities, speed is smallest with the smallest distance and largest time, and largest with the largest distance and smallest time. The limiting values are \\(245.5/3.25\\approx75.54\\) and \\(246.5/3.15\\approx78.25\\) km/h. The distance upper bound and time upper bound are excluded, so every possible speed lies strictly between 75.5 and 78.3 km/h. Choice B is too narrow; valid speeds can be below 76 or above 78.",
+      "visuals": [
+        {
+          "id": "sat-q0232-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Quantity",
+              "Displayed value",
+              "Exact-value interval"
+            ],
+            "rows": [
+              [
+                "Distance (km)",
+                246,
+                "[245.5, 246.5)"
+              ],
+              [
+                "Time (h)",
+                3.2,
+                "[3.15, 3.25)"
+              ]
+            ],
+            "headers": [
+              "Quantity",
+              "Displayed value",
+              "Exact-value interval"
+            ]
+          },
+          "alt": "Distance 246 km rounded to the nearest kilometer means 245.5 ≤ d < 246.5; time 3.2 hours rounded to the nearest tenth means 3.15 ≤ t < 3.25."
+        }
+      ],
+      "hint": "List the exact-value interval for distance and for time. Speed is smallest with the least distance over the greatest time, and largest the other way round."
+    },
+    {
+      "id": "sat-q0233",
+      "title": "A Strict Bound on Area Error",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "A rectangular sign has displayed dimensions \\(12.3\\) cm by \\(4.8\\) cm, both rounded to the nearest tenth. Assume positive halfway values round up. The estimated area is \\(12.3\\times4.8=59.04\\) cm\\(^2\\). Which statement about the absolute difference between the exact area and \\(59.04\\) cm\\(^2\\) is correct? Choose A or B and justify whether the greatest limiting error can actually be attained.",
+      "options": [
+        {
+          "label": "A",
+          "text": "The absolute area error can equal \\(0.8575\\) cm\\(^2\\)."
+        },
+        {
+          "label": "B",
+          "text": "The absolute area error is always strictly less than \\(0.8575\\) cm\\(^2\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The exact dimensions satisfy \\(12.25\\le L<12.35\\) and \\(4.75\\le W<4.85\\). Thus the exact area lies in \\([12.25\\times4.75,\\,12.35\\times4.85)=[58.1875,59.8975)\\) cm\\(^2\\). The estimate is 59.04, so the error below it is at most \\(59.04-58.1875=0.8525\\), while the error above it is strictly less than \\(59.8975-59.04=0.8575\\). The limiting value 0.8575 is not attained because the upper dimension bounds are excluded. Choice A is therefore false and choice B is correct.",
+      "hint": "Find the smallest and largest possible exact areas from the dimension intervals, compare each with 59.04, and check whether the larger of the two gaps can actually occur."
+    },
+    {
+      "id": "sat-q0234",
+      "title": "Bounds on the Difference of Two Lengths",
+      "category": "MATH",
+      "concept": "Rounding and estimation",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rounding and estimation and justify the selected answer.",
+      "question": "Two lengths are displayed as \\(18.6\\) m and \\(7.4\\) m, each rounded to the nearest tenth. Assume positive halfway values round up. Let their exact values be \\(a\\) and \\(b\\), and define \\(D=a-b\\). Which statement gives the tight interval for the difference? Choose A or B and explain why neither endpoint can be reached.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(11.10<D<11.30\\) m"
+        },
+        {
+          "label": "B",
+          "text": "\\(11.10\\le D\\le11.30\\) m"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The bounds are \\(18.55\\le a<18.65\\) and \\(7.35\\le b<7.45\\). The difference is smallest as \\(a\\) approaches 18.55 and \\(b\\) approaches 7.45, giving a limiting value of \\(11.10\\), but \\(b=7.45\\) is excluded, so \\(D>11.10\\). It is largest as \\(a\\) approaches 18.65 and \\(b=7.35\\), giving a limiting value of \\(11.30\\), but \\(a=18.65\\) is excluded, so \\(D<11.30\\). Choice B incorrectly includes both unattainable endpoints.",
+      "hint": "Write intervals for a and b. The difference is smallest when a is smallest and b is largest; check whether those extreme values are actually allowed."
+    }
+  ]
+}

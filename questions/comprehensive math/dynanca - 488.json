@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-488",
+  "category": "Comprehensive Mathematics",
+  "title": "488. Sets, Logic, Reasoning & Proof: Conjunction and Disjunction",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-488-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Truth condition for a conjunction",
+      "learningObjective": "State when a conjunction is true.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "When is the conjunction \\(p\\land q\\) true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only when both \\(p\\) and \\(q\\) are true"
+        },
+        {
+          "label": "B",
+          "text": "Whenever at least one of \\(p\\) and \\(q\\) is true"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The conjunction \"\\(p\\) and \\(q\\)\" asserts both parts, so it is true only when \\(p\\) is true and \\(q\\) is true. Being true when at least one part is true describes the disjunction \\(p\\lor q\\).",
+      "hint": "The word \"and\" requires both parts to hold."
+    },
+    {
+      "id": "dynanca-488-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Truth condition for a disjunction",
+      "learningObjective": "State when a disjunction is false.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "When is the disjunction \\(p\\lor q\\) false?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only when both \\(p\\) and \\(q\\) are false"
+        },
+        {
+          "label": "B",
+          "text": "Whenever at least one of \\(p\\) and \\(q\\) is false"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The disjunction \"\\(p\\) or \\(q\\)\" is true as soon as one of its parts is true. So it is false only when \\(p\\) is false and \\(q\\) is false. If just one part is false and the other is true, the disjunction is still true.",
+      "hint": "The word \"or\" in logic is satisfied by one true part."
+    },
+    {
+      "id": "dynanca-488-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Mixed truth values",
+      "learningObjective": "Evaluate a conjunction and a disjunction for given truth values.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(p\\) be true and \\(q\\) be false. What are the truth values of \\(p\\land q\\) and \\(p\\lor q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\land q\\) is false and \\(p\\lor q\\) is true."
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\land q\\) is true and \\(p\\lor q\\) is false."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The conjunction needs both parts true, but \\(q\\) is false, so \\(p\\land q\\) is false. The disjunction needs at least one part true, and \\(p\\) is true, so \\(p\\lor q\\) is true.",
+      "hint": "Apply the truth conditions of \"and\" and \"or\" separately."
+    },
+    {
+      "id": "dynanca-488-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Conjunction of arithmetic statements",
+      "learningObjective": "Determine the truth value of a conjunction of two arithmetic statements.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the truth value of the statement \"\\(3\\) is odd and \\(4\\) is prime\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "True"
+        },
+        {
+          "label": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first part, \"\\(3\\) is odd\", is true. The second part, \"\\(4\\) is prime\", is false because \\(4=2\\cdot 2\\). A conjunction is true only when both parts are true, so the statement is false.",
+      "hint": "Find the truth value of each part, then combine them with \"and\"."
+    },
+    {
+      "id": "dynanca-488-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Disjunction of arithmetic statements",
+      "learningObjective": "Determine the truth value of a disjunction of two arithmetic statements.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the truth value of the statement \"\\(9\\) is prime or \\(9\\) is a perfect square\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first part is false, since \\(9=3\\cdot 3\\) is not prime. The second part is true, since \\(9=3^2\\). A disjunction is true when at least one part is true, so the statement is true.",
+      "hint": "A disjunction needs only one true part."
+    },
+    {
+      "id": "dynanca-488-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Inclusive meaning of or",
+      "learningObjective": "Evaluate a disjunction when both parts are true.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In logic, what is the truth value of \\(p\\lor q\\) when \\(p\\) and \\(q\\) are both true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "True"
+        },
+        {
+          "label": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The logical \"or\" is inclusive: \\(p\\lor q\\) is true when \\(p\\) is true, when \\(q\\) is true, or when both are true. The reading that excludes the case of both being true is a different connective, the exclusive or.",
+      "hint": "Recall that the standard logical \"or\" allows both parts to hold."
+    },
+    {
+      "id": "dynanca-488-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting true rows of a conjunction",
+      "learningObjective": "Count the rows of a truth table in which a conjunction is true.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The truth table of \\(p\\land q\\) has four rows, one for each combination of truth values of \\(p\\) and \\(q\\). In how many rows is \\(p\\land q\\) true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The conjunction is true only in the row where \\(p\\) and \\(q\\) are both true. In the other three rows at least one part is false, so the conjunction is false. The number \\(3\\) is the count of true rows for the disjunction \\(p\\lor q\\).",
+      "hint": "List the four combinations and mark those in which both parts are true."
+    },
+    {
+      "id": "dynanca-488-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A compound inequality with and",
+      "learningObjective": "Evaluate a conjunction of two inequalities at a boundary value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For \\(x=5\\), what is the truth value of the statement \"\\(x>2\\) and \\(x<5\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(x=5\\), the part \\(x>2\\) is true, but the part \\(x<5\\) is false, because \\(5\\) is not less than \\(5\\). Since one part is false, the conjunction is false.",
+      "hint": "Check each inequality separately; pay attention to the strict inequality at the boundary."
+    },
+    {
+      "id": "dynanca-488-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A compound inequality with or",
+      "learningObjective": "Evaluate a disjunction of two inequalities at a value between the bounds.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "For \\(x=2\\), what is the truth value of the statement \"\\(x<1\\) or \\(x>3\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(x=2\\), the part \\(x<1\\) is false and the part \\(x>3\\) is also false. A disjunction with both parts false is false. The number \\(2\\) lies between \\(1\\) and \\(3\\), outside both regions described.",
+      "hint": "A disjunction is false only when every part is false; check both parts."
+    },
+    {
+      "id": "dynanca-488-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Combining three propositions",
+      "learningObjective": "Evaluate a compound proposition with a conjunction inside a disjunction.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(p\\) be true, \\(q\\) be false, and \\(r\\) be false. What is the truth value of \\(p\\lor(q\\land r)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First evaluate the part in parentheses: \\(q\\land r\\) is false, since both parts are false. Then \\(p\\lor(\\text{false})\\) is true, because \\(p\\) is true. Grouping differently, \\((p\\lor q)\\land r\\) would be false, so the position of the parentheses matters.",
+      "hint": "Evaluate the expression inside the parentheses first."
+    }
+  ]
+}

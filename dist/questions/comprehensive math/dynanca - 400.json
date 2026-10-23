@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-400",
+  "category": "Comprehensive Mathematics",
+  "title": "400. Geometry, Spatial Thinking & Measurement: Orientation Test for Three Planar Points",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-400-q001",
+      "category": "Geometry",
+      "concept": "Positive orientation determinant",
+      "learningObjective": "Classify an ordered point triple using a positive determinant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In standard Cartesian coordinates, what is the orientation of the ordered triple \\(A=(0,0)\\), \\(B=(4,0)\\), \\(C=(1,3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Counterclockwise"
+        },
+        {
+          "label": "B",
+          "text": "Clockwise"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The determinant \\((B_x-A_x)(C_y-A_y)-(B_y-A_y)(C_x-A_x)\\) is \\(4(3)-0(1)=12>0\\), so the orientation is counterclockwise.",
+      "hint": "Use the sign of the two-dimensional displacement determinant."
+    },
+    {
+      "id": "dynanca-400-q002",
+      "category": "Geometry",
+      "concept": "Negative orientation determinant",
+      "learningObjective": "Classify a point triple whose determinant is negative.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In standard Cartesian coordinates, what is the orientation of \\(A=(0,0)\\), \\(B=(2,5)\\), \\(C=(3,1)\\), in that order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Clockwise"
+        },
+        {
+          "label": "B",
+          "text": "Counterclockwise"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The determinant is \\(2(1)-5(3)=-13<0\\), giving clockwise orientation.",
+      "hint": "Preserve the stated order of the second and third points."
+    },
+    {
+      "id": "dynanca-400-q003",
+      "category": "Geometry",
+      "concept": "Collinearity from zero orientation",
+      "learningObjective": "Distinguish the zero determinant case from either turning direction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "In standard Cartesian coordinates, how should \\(A=(1,1)\\), \\(B=(3,3)\\), \\(C=(5,5)\\) be classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Counterclockwise"
+        },
+        {
+          "label": "B",
+          "text": "Collinear"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The displacement vectors are \\(\\langle2,2\\rangle\\) and \\(\\langle4,4\\rangle\\), whose determinant is \\(2(4)-2(4)=0\\). The points are collinear.",
+      "hint": "A zero determinant needs a separate classification."
+    },
+    {
+      "id": "dynanca-400-q004",
+      "category": "Geometry",
+      "concept": "Orientation with shifted coordinates",
+      "learningObjective": "Subtract a non-origin reference point before testing orientation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In standard Cartesian coordinates, what is the orientation of \\(A=(-2,1)\\), \\(B=(1,2)\\), \\(C=(0,5)\\), in that order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Counterclockwise"
+        },
+        {
+          "label": "B",
+          "text": "Clockwise"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Relative to \\(A\\), the vectors are \\(\\langle3,1\\rangle\\) and \\(\\langle2,4\\rangle\\). Their determinant is \\(12-2=10>0\\), so the orientation is counterclockwise.",
+      "hint": "Form both displacement vectors from the same first point."
+    },
+    {
+      "id": "dynanca-400-q005",
+      "category": "Geometry",
+      "concept": "Clockwise orientation with mixed signs",
+      "learningObjective": "Compute the signed determinant from mixed-sign point coordinates.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In standard Cartesian coordinates, what is the orientation of \\(A=(1,-1)\\), \\(B=(4,2)\\), \\(C=(5,0)\\), in that order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Counterclockwise"
+        },
+        {
+          "label": "B",
+          "text": "Clockwise"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The displacement vectors are \\(\\langle3,3\\rangle\\) and \\(\\langle4,1\\rangle\\). The determinant is \\(3-12=-9<0\\), indicating clockwise orientation.",
+      "hint": "Subtract the first point before multiplying the components."
+    },
+    {
+      "id": "dynanca-400-q006",
+      "category": "Geometry",
+      "concept": "Exact signed orientation value",
+      "learningObjective": "Calculate the determinant in the prescribed point order.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(A=(2,3)\\), \\(B=(5,4)\\), and \\(C=(3,7)\\), what is \\(D=(B_x-A_x)(C_y-A_y)-(B_y-A_y)(C_x-A_x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(11\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-11\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The differences are \\(B-A=(3,1)\\) and \\(C-A=(1,4)\\). Thus \\(D=3(4)-1(1)=11\\).",
+      "hint": "Keep the subtraction order of the two component products consistent."
+    },
+    {
+      "id": "dynanca-400-q007",
+      "category": "Geometry",
+      "concept": "Parameter range for counterclockwise orientation",
+      "learningObjective": "Solve a determinant-sign inequality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In standard Cartesian coordinates, \\(A=(0,0)\\), \\(B=(2,1)\\), and \\(C=(3,k)\\). Which condition makes the ordered triple counterclockwise?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k<\\frac{3}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k>\\frac{3}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The determinant is \\(2k-3\\). Counterclockwise orientation requires \\(2k-3>0\\), giving \\(k>\\frac{3}{2}\\). Equality would mean collinearity.",
+      "hint": "Express the determinant as a function of the parameter."
+    },
+    {
+      "id": "dynanca-400-q008",
+      "category": "Geometry",
+      "concept": "Parameter for collinearity",
+      "learningObjective": "Solve a zero-determinant equation with a shifted reference point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The points \\(A=(-1,2)\\), \\(B=(3,0)\\), and \\(C=(1,t)\\) are collinear. What is \\(t\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The determinant is \\(4(t-2)-(-2)(2)=4t-4\\). Collinearity requires zero, so \\(t=1\\).",
+      "hint": "Use a zero determinant after forming the two vectors from the first point."
+    },
+    {
+      "id": "dynanca-400-q009",
+      "category": "Geometry",
+      "concept": "Orientation under common translation",
+      "learningObjective": "Check orientation after all points receive the same shift.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In standard Cartesian coordinates, \\(A=(-2,3)\\), \\(B=(3,1)\\), and \\(C=(1,7)\\) are each translated by \\(\\langle10,-7\\rangle\\). What is the ordered orientation of their images?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Clockwise"
+        },
+        {
+          "label": "B",
+          "text": "Counterclockwise"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A common translation preserves displacement vectors. Here they are \\(\\langle5,-2\\rangle\\) and \\(\\langle3,4\\rangle\\), with determinant \\(20+6=26>0\\), so the images are counterclockwise.",
+      "hint": "Check what a common shift does to coordinate differences."
+    },
+    {
+      "id": "dynanca-400-q010",
+      "category": "Geometry",
+      "concept": "Exact orientation near collinearity",
+      "learningObjective": "Avoid rounding a small nonzero orientation determinant to zero.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "In standard Cartesian coordinates, \\(A=(0,0)\\), \\(B=(1,1)\\), and \\(C=\\left(2,2+\\frac{1}{1000}\\right)\\) have exact coordinates. How is their ordered orientation classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Collinear"
+        },
+        {
+          "label": "B",
+          "text": "Counterclockwise"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The exact determinant is \\(1\\left(2+\\frac{1}{1000}\\right)-1(2)=\\frac{1}{1000}>0\\). It is small but nonzero, so the orientation is counterclockwise.",
+      "hint": "Keep the fractional coordinate exact when computing the sign."
+    }
+  ]
+}

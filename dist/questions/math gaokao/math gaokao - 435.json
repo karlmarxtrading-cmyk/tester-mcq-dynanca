@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-435",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 435",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-435-q001",
+      "category": "Mathematical Reasoning",
+      "concept": "Error detection in radical equations",
+      "learningObjective": "Identify an extraneous solution introduced by squaring both sides of a radical equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A student solves \\(\\sqrt{x+2}=x\\) as follows:\nStep 1: Square both sides to get \\(x+2=x^2\\).\nStep 2: Rearrange to \\(x^2-x-2=0\\).\nStep 3: Factor to get \\((x-2)(x+1)=0\\).\nStep 4: Conclude \\(x=2\\) or \\(x=-1\\), and both satisfy the original equation.\nWhich statement identifies the error in the student's solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Step 1 is invalid because squaring both sides always changes the equation into one with no valid solutions."
+        },
+        {
+          "label": "B",
+          "text": "Step 4 is incorrect because \\(x=-1\\) does not satisfy the original equation, so it is an extraneous solution."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Squaring both sides is allowed, but it can introduce extraneous solutions. Check both candidates in \\(\\sqrt{x+2}=x\\). For \\(x=2\\), \\(\\sqrt{4}=2\\), so it works. For \\(x=-1\\), \\(\\sqrt{1}=1\\), but the right side is \\(-1\\), so \\(1\\ne -1\\). Thus \\(x=-1\\) is extraneous, and only \\(x=2\\) is a solution. The error is in Step 4.",
+      "hint": "After solving a squared equation, substitute each candidate back into the original equation."
+    },
+    {
+      "id": "math-gaokao-435-q002",
+      "category": "Mathematical Reasoning",
+      "concept": "Error detection in linear inequalities",
+      "learningObjective": "Identify the error of not reversing an inequality when dividing by a negative number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A student solves \\(-2x+3<7\\) as follows:\nStep 1: Subtract \\(3\\) from both sides: \\(-2x<4\\).\nStep 2: Divide both sides by \\(-2\\): \\(x<-2\\).\nWhich statement identifies the error?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Step 1 is wrong because subtracting \\(3\\) should give \\(-2x<10\\)."
+        },
+        {
+          "label": "B",
+          "text": "Step 2 is wrong because dividing by a negative number requires reversing the inequality, giving \\(x>-2\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(-2x+3<7\\), subtracting \\(3\\) gives \\(-2x<4\\). Dividing both sides by \\(-2\\) requires reversing the inequality sign, so \\(-2x<4\\) becomes \\(x>-2\\). The student kept the same direction and incorrectly obtained \\(x<-2\\). Therefore, the error is in Step 2.",
+      "hint": "Test how the order of two unequal numbers changes when both are multiplied by the same negative number."
+    },
+    {
+      "id": "math-gaokao-435-q003",
+      "category": "Mathematical Reasoning",
+      "concept": "Error detection in logarithmic equations",
+      "learningObjective": "Identify a solution rejected by the domain of a logarithmic equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A student solves \\(\\log_2(x-1)+\\log_2(x-3)=3\\) as follows:\nStep 1: Combine logs: \\(\\log_2((x-1)(x-3))=3\\).\nStep 2: Convert: \\((x-1)(x-3)=8\\).\nStep 3: Expand: \\(x^2-4x+3=8\\), so \\(x^2-4x-5=0\\).\nStep 4: Factor: \\((x-5)(x+1)=0\\), so \\(x=5\\) or \\(x=-1\\). The student accepts both.\nWhich statement identifies the error?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Step 1 is invalid because logarithms with the same base can never be combined into the logarithm of a product."
+        },
+        {
+          "label": "B",
+          "text": "Step 4 is incorrect because \\(x=-1\\) is outside the domain \\(x>3\\), so only \\(x=5\\) is valid."
+        }
+      ],
+      "answer": "B",
+      "explanation": "For the logarithms to be defined, we need \\(x-1>0\\) and \\(x-3>0\\), so \\(x>3\\). The algebraic solutions are \\(x=5\\) and \\(x=-1\\). Checking the domain, \\(x=-1\\) is not allowed because it does not satisfy \\(x>3\\). The value \\(x=5\\) is valid: \\(\\log_2 4+\\log_2 2=2+1=3\\). Thus the error is accepting \\(x=-1\\).",
+      "hint": "Before accepting solutions of a logarithmic equation, check that every logarithm is defined."
+    },
+    {
+      "id": "math-gaokao-435-q004",
+      "category": "Mathematical Reasoning",
+      "concept": "Error detection in differentiation using the product rule",
+      "learningObjective": "Identify omission of the product rule in differentiating a product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A student differentiates \\(f(x)=x^2\\sin x\\) and writes \\(f'(x)=2x\\cos x\\). Which statement identifies the error?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The derivative is wrong because the product rule is required: \\(f'(x)=2x\\sin x+x^2\\cos x\\)."
+        },
+        {
+          "label": "B",
+          "text": "The derivative is wrong because the derivative of \\(\\sin x\\) is \\(-\\cos x\\), so \\(f'(x)=-2x\\cos x\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For differentiable functions \\(u\\) and \\(v\\), the product rule is\n\\[\n(uv)'=u'v+uv'.\n\\]\nUsing \\(u=x^2\\) and \\(v=\\sin x\\), we obtain\n\\[\nf'(x)=2x\\sin x+x^2\\cos x.\n\\]\nThe student's expression \\(2x\\cos x\\) comes from multiplying the two derivatives, as though \\((uv)'=u'v'\\). That is not the product rule. Option B also uses an incorrect derivative: \\((\\sin x)'=\\cos x\\), not \\(-\\cos x\\).",
+      "hint": "For a product of two functions, use the product rule."
+    },
+    {
+      "id": "math-gaokao-435-q005",
+      "category": "Mathematical Reasoning",
+      "concept": "Error detection in trigonometric signs by quadrant",
+      "learningObjective": "Identify an incorrect sign for a trigonometric ratio in a given quadrant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A student solves: If \\(\\sin\\theta=\\frac{3}{5}\\) and \\(\\theta\\) is in Quadrant II, then \\(\\cos\\theta=\\sqrt{1-\\left(\\frac{3}{5}\\right)^2}=\\frac{4}{5}\\). Which statement identifies the error?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The sign is wrong; in Quadrant II, \\(\\cos\\theta<0\\), so \\(\\cos\\theta=-\\frac{4}{5}\\)."
+        },
+        {
+          "label": "B",
+          "text": "The sign is wrong; in Quadrant II, \\(\\cos\\theta>0\\), so \\(\\cos\\theta=\\frac{4}{5}\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using \\(\\sin^2\\theta+\\cos^2\\theta=1\\), we get \\(\\cos^2\\theta=1-\\left(\\frac{3}{5}\\right)^2=\\frac{16}{25}\\), so \\(\\cos\\theta=\\pm\\frac{4}{5}\\). In Quadrant II, cosine is negative, so \\(\\cos\\theta=-\\frac{4}{5}\\). The student chose the positive sign incorrectly.",
+      "hint": "Use the Pythagorean identity and determine the sign from the quadrant."
+    },
+    {
+      "id": "math-gaokao-435-q006",
+      "category": "Mathematical Reasoning",
+      "concept": "Error detection in definite integration by substitution",
+      "learningObjective": "Identify failure to change limits when using u-substitution in a definite integral.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A student evaluates \\(\\int_0^2 (2x+1)^2\\,dx\\) as follows:\nStep 1: Let \\(u=2x+1\\), so \\(du=2\\,dx\\) and \\(dx=\\frac{du}{2}\\).\nStep 2: Keep the limits \\(0\\) and \\(2\\): \\[\n\\int_0^2 u^2\\cdot\\frac{\\,du}{2}=\\left[\\frac{u^3}{6}\\right]_0^2=\\frac{8}{6}=\\frac{4}{3}\n\\].\nWhich statement identifies the error?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The limits must be changed to \\(u=1\\) and \\(u=5\\); the correct value is \\(\\frac{1}{2}\\int_1^5 u^2\\,du=\\frac{62}{3}\\)."
+        },
+        {
+          "label": "B",
+          "text": "The substitution is wrong because \\(du=2\\,dx\\) should be \\(du=\\frac{dx}{2}\\), so the correct value is \\(2\\int_0^2 u^2\\,du=\\frac{16}{3}\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "When \\(x=0\\), \\(u=2(0)+1=1\\). When \\(x=2\\), \\(u=2(2)+1=5\\). Therefore the \\(u\\)-limits are \\(1\\) and \\(5\\), not \\(0\\) and \\(2\\). The correct integral is \\[\n\\frac{1}{2}\\int_1^5 u^2\\,du=\\frac{1}{2}\\left[\\frac{u^3}{3}\\right]_1^5=\\frac{1}{2}\\cdot\\frac{124}{3}=\\frac{62}{3}\n\\]. The student failed to change the limits.",
+      "hint": "When using substitution in a definite integral, either change the limits or convert back before evaluating."
+    },
+    {
+      "id": "math-gaokao-435-q007",
+      "category": "Mathematical Reasoning",
+      "concept": "Error detection in probability of compound events",
+      "learningObjective": "Identify incorrect addition of probabilities for non-mutually exclusive events.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A student solves: A fair coin is tossed independently \\(3\\) times. The probability of getting at least one head is \\(3\\cdot\\frac{1}{2}=\\frac{3}{2}\\). Which statement identifies the error?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The error is that the probability of a head on one toss should be \\(1\\), so the answer should be \\(3\\)."
+        },
+        {
+          "label": "B",
+          "text": "The error is adding probabilities of overlapping events; the correct probability is \\(1-\\left(\\frac{1}{2}\\right)^3=\\frac{7}{8}\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The events of getting a head on different tosses overlap, so their probabilities cannot simply be added. The complement of \"at least one head\" is \"no heads,\" which has probability \\(\\left(\\frac{1}{2}\\right)^3=\\frac{1}{8}\\). Therefore the correct probability is \\(1-\\frac{1}{8}=\\frac{7}{8}\\). The student's result \\(\\frac{3}{2}\\) is impossible because a probability cannot exceed \\(1\\).",
+      "hint": "The complement of \"at least one head\" is \"no heads.\""
+    },
+    {
+      "id": "math-gaokao-435-q008",
+      "category": "Mathematical Reasoning",
+      "concept": "Error detection in absolute value equations",
+      "learningObjective": "Identify an extraneous solution introduced by squaring an absolute value equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A student solves \\(|x-2|=3x\\) by squaring both sides:\n\\[\n\\begin{aligned}\n(x-2)^2&=9x^2 \\\\\nx^2-4x+4&=9x^2 \\\\\n8x^2+4x-4&=0 \\\\\n2x^2+x-1&=0 \\\\\n(2x-1)(x+1)&=0\n\\end{aligned}\n\\]\nso \\(x=\\frac{1}{2}\\) or \\(x=-1\\). The student accepts both.\nWhich statement identifies the error?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The solution \\(x=-1\\) must be rejected because it makes the right side \\(3x\\) negative while the left side is nonnegative."
+        },
+        {
+          "label": "B",
+          "text": "The solution \\(x=\\frac{1}{2}\\) must be rejected because squaring both sides is not valid for absolute value equations."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Squaring can introduce extraneous solutions. Check both candidates in the original equation \\(|x-2|=3x\\). For \\(x=\\frac{1}{2}\\), \\(\\left|\\frac{1}{2}-2\\right|=\\frac{3}{2}\\) and \\(3x=\\frac{3}{2}\\), so it works. For \\(x=-1\\), \\(|-1-2|=3\\), but \\(3x=-3\\), so it does not work. Thus \\(x=-1\\) is extraneous and must be rejected.",
+      "hint": "Squaring an equation can introduce extraneous solutions, so check each candidate in the original equation."
+    },
+    {
+      "id": "math-gaokao-435-q009",
+      "category": "Mathematical Reasoning",
+      "concept": "Error detection in radical inequalities",
+      "learningObjective": "Identify an invalid squaring step and determine the correct solution set of a radical inequality.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A student solves \\(\\sqrt{x+3}>x+1\\) as follows:\nStep 1: Square both sides: \\(x+3>(x+1)^2\\).\nStep 2: Expand and rearrange: \\(x+3>x^2+2x+1\\), so \\(x^2+x-2<0\\).\nStep 3: Factor: \\((x+2)(x-1)<0\\), so \\(-2<x<1\\).\nWhich statement identifies the error?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Step 3 is wrong because \\((x+2)(x-1)<0\\) gives \\(x<-2\\) or \\(x>1\\)."
+        },
+        {
+          "label": "B",
+          "text": "Step 1 is invalid without considering \\(x+1\\ge0\\); the correct solution set is \\(-3\\le x<1\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The square root requires \\(x+3\\ge0\\), so \\(x\\ge -3\\). Squaring \\(\\sqrt{x+3}>x+1\\) is not automatically valid when \\(x+1\\) is negative. If \\(x+1<0\\), then the inequality is true whenever the square root is defined, giving \\(-3\\le x<-1\\). If \\(x+1\\ge0\\), squaring is valid and gives \\(x+3>(x+1)^2\\), so \\(x^2+x-2<0\\), hence \\(-2<x<1\\). Intersecting with \\(x\\ge -1\\) gives \\(-1\\le x<1\\). Combining both cases gives \\(-3\\le x<1\\).",
+      "hint": "Consider separately whether the right-hand side \\(x+1\\) is negative or nonnegative before squaring."
+    },
+    {
+      "id": "math-gaokao-435-q010",
+      "category": "Mathematical Reasoning",
+      "concept": "Error detection in rational inequalities",
+      "learningObjective": "Identify the error of multiplying an inequality by an expression whose sign is unknown.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A student solves \\(\\frac{1}{x-1}>2\\) by multiplying both sides by \\(x-1\\):\n\\[\n1>2(x-1)\n\\]\n\\[\n1>2x-2\n\\]\n\\[\n3>2x\n\\]\n\\(x<\\frac{3}{2}\\).\nWhich statement identifies the error?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The student failed to consider the sign of \\(x-1\\) and exclude \\(x=1\\). For \\(x<1\\), the inequality must reverse; checking both sign cases gives \\(1<x<\\frac{3}{2}\\)."
+        },
+        {
+          "label": "B",
+          "text": "The error is only arithmetic; the correct solution is \\(x>\\frac{3}{2}\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expression \\(x-1\\) can be positive or negative, so multiplying both sides by it without considering its sign is invalid. Rewrite the inequality as \\(\\frac{1}{x-1}-2>0\\), which gives \\(\\frac{3-2x}{x-1}>0\\). The critical values are \\(x=1\\) and \\(x=\\frac{3}{2}\\). Testing intervals shows that the inequality holds only for \\(1<x<\\frac{3}{2}\\). The student's answer \\(x<\\frac{3}{2}\\) incorrectly includes values where \\(x-1<0\\).",
+      "hint": "Multiplying an inequality by an expression whose sign is unknown can change the direction of the inequality."
+    }
+  ]
+}

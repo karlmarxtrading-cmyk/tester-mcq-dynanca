@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-531",
+  "category": "Comprehensive Mathematics",
+  "title": "531. Sets, Logic, Reasoning & Proof: Partial Orders",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-531-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of a partial order",
+      "learningObjective": "State the three properties of a partial order.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which three properties define a partial order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reflexive, symmetric, and transitive"
+        },
+        {
+          "label": "B",
+          "text": "Reflexive, antisymmetric, and transitive"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A partial order is a relation that is reflexive, antisymmetric, and transitive. Replacing antisymmetry by symmetry gives the definition of an equivalence relation.",
+      "hint": "A partial order behaves like \"is less than or equal to\"."
+    },
+    {
+      "id": "dynanca-531-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The usual order as a partial order",
+      "learningObjective": "Recognise the usual order on the integers as a partial order.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Is the relation \\(\\le\\) on the integers a partial order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; it is reflexive, antisymmetric, and transitive."
+        },
+        {
+          "label": "B",
+          "text": "No; it is not symmetric."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The relation \\(\\le\\) satisfies \\(a\\le a\\); if \\(a\\le b\\) and \\(b\\le a\\) then \\(a=b\\); and if \\(a\\le b\\) and \\(b\\le c\\) then \\(a\\le c\\). So it is a partial order. A partial order is not required to be symmetric; it must be antisymmetric instead.",
+      "hint": "Check the three properties in the definition of a partial order."
+    },
+    {
+      "id": "dynanca-531-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The strict order",
+      "learningObjective": "Decide whether the strict order satisfies the definition of a partial order.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "With a partial order defined as a reflexive, antisymmetric, and transitive relation, is \\(<\\) on the integers a partial order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; it is not reflexive, because \\(a<a\\) is false."
+        },
+        {
+          "label": "B",
+          "text": "Yes; it is antisymmetric and transitive."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The relation \\(<\\) is transitive and (vacuously) antisymmetric, but the definition also demands reflexivity, and \\(a<a\\) never holds. So \\(<\\) is not a partial order in this sense; it is called a strict order.",
+      "hint": "Check every property in the stated definition, including reflexivity."
+    },
+    {
+      "id": "dynanca-531-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Incomparable elements under divisibility",
+      "learningObjective": "Decide whether two elements are comparable in the divisibility order.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The positive integers are partially ordered by divisibility. Are \\(2\\) and \\(3\\) comparable in this order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; \\(2\\) does not divide \\(3\\), and \\(3\\) does not divide \\(2\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; \\(2\\) is less than \\(3\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Two elements are comparable when one is related to the other. Here the relation is divisibility, not the usual order: neither \\(2\\mid 3\\) nor \\(3\\mid 2\\) holds, so \\(2\\) and \\(3\\) are incomparable. This is why the order is called partial.",
+      "hint": "Use the relation of the given order, which is divisibility."
+    },
+    {
+      "id": "dynanca-531-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Incomparable subsets",
+      "learningObjective": "Identify a pair of incomparable elements in an inclusion order.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The subsets of \\(\\{1,2\\}\\) are partially ordered by \\(\\subseteq\\). Which pair of subsets is incomparable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1\\}\\) and \\(\\{1,2\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1\\}\\) and \\(\\{2\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Neither \\(\\{1\\}\\subseteq\\{2\\}\\) nor \\(\\{2\\}\\subseteq\\{1\\}\\) holds, so these two subsets are incomparable. The subsets \\(\\{1\\}\\) and \\(\\{1,2\\}\\) are comparable, because \\(\\{1\\}\\subseteq\\{1,2\\}\\).",
+      "hint": "Check for each pair whether one set is contained in the other."
+    },
+    {
+      "id": "dynanca-531-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Total orders",
+      "learningObjective": "Decide which partially ordered set is totally ordered.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A partial order is called a total order if every two elements are comparable. Which of the following is a total order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The positive integers with divisibility"
+        },
+        {
+          "label": "B",
+          "text": "The integers with \\(\\le\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For any two integers \\(a\\) and \\(b\\), either \\(a\\le b\\) or \\(b\\le a\\), so \\(\\le\\) is a total order. Under divisibility, \\(2\\) and \\(3\\) are incomparable, so that order is partial but not total.",
+      "hint": "Look for two elements that are not comparable."
+    },
+    {
+      "id": "dynanca-531-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A listed relation that is not a partial order",
+      "learningObjective": "Identify the property that a listed relation lacks.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Is \\(R=\\{(1,1),(2,2),(3,3),(1,2),(2,3)\\}\\) a partial order on \\(\\{1,2,3\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; \\((1,2)\\) and \\((2,3)\\) are in \\(R\\), but \\((1,3)\\) is not, so \\(R\\) is not transitive."
+        },
+        {
+          "label": "B",
+          "text": "Yes; \\(R\\) is reflexive and antisymmetric."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The relation is reflexive and antisymmetric, but the chain \\((1,2)\\), \\((2,3)\\) requires \\((1,3)\\), which is missing. Without transitivity the relation is not a partial order. Adding \\((1,3)\\) would make it one.",
+      "hint": "Check transitivity by combining pairs that link up."
+    },
+    {
+      "id": "dynanca-531-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Using antisymmetry",
+      "learningObjective": "Draw the conclusion of antisymmetry in a partially ordered set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In a partially ordered set with order \\(\\preceq\\), suppose \\(a\\preceq b\\) and \\(b\\preceq a\\). What follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a=b\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a\\) and \\(b\\) are incomparable."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A partial order is antisymmetric: if \\(a\\preceq b\\) and \\(b\\preceq a\\), then \\(a=b\\). The elements are certainly comparable, since each is related to the other; incomparable elements are those related in neither direction.",
+      "hint": "Apply the antisymmetry property directly."
+    },
+    {
+      "id": "dynanca-531-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The product order",
+      "learningObjective": "Decide comparability in a componentwise order on pairs.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "On \\(\\mathbb{Z}\\times\\mathbb{Z}\\), define \\((a,b)\\preceq(c,d)\\) when \\(a\\le c\\) and \\(b\\le d\\). Are \\((1,2)\\) and \\((2,1)\\) comparable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; \\((1,2)\\preceq(2,1)\\) because \\(1\\le 2\\)."
+        },
+        {
+          "label": "B",
+          "text": "No; \\((1,2)\\preceq(2,1)\\) fails because \\(2\\le 1\\) is false, and \\((2,1)\\preceq(1,2)\\) fails because \\(2\\le 1\\) is false."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The order requires both components to satisfy the inequality. For \\((1,2)\\preceq(2,1)\\): \\(1\\le 2\\) holds, but \\(2\\le 1\\) does not. For \\((2,1)\\preceq(1,2)\\): \\(2\\le 1\\) fails at once. So neither relation holds and the pairs are incomparable.",
+      "hint": "Both coordinate conditions must hold at the same time."
+    },
+    {
+      "id": "dynanca-531-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Partial order and equivalence relation together",
+      "learningObjective": "Determine which relations are both partial orders and equivalence relations.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Can a relation on a set \\(A\\) be both a partial order and an equivalence relation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; symmetry and antisymmetry can never hold together."
+        },
+        {
+          "label": "B",
+          "text": "Yes, but only the equality relation \\(\\{(a,a)\\mid a\\in A\\}\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Such a relation would be reflexive, symmetric, antisymmetric, and transitive. If \\((a,b)\\) is in it, symmetry gives \\((b,a)\\), and antisymmetry then forces \\(a=b\\). So it contains only pairs \\((a,a)\\), and by reflexivity it contains all of them: it is the equality relation, which indeed has all the required properties.",
+      "hint": "Combine symmetry and antisymmetry for a pair \\((a,b)\\) in the relation."
+    }
+  ]
+}

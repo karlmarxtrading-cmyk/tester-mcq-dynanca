@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-262",
+  "category": "Comprehensive Mathematics",
+  "title": "262. Functions, Graphs & Transformations: Quadratic Graph Opening and Width",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-262-q001",
+      "category": "Functions",
+      "concept": "Number of X-Intercepts from the Discriminant",
+      "learningObjective": "Use the sign of the discriminant to decide how many \\(x\\)-intercepts a quadratic graph has.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many \\(x\\)-intercepts does the graph of \\(y=x^2-4x+5\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two \\(x\\)-intercepts"
+        },
+        {
+          "label": "B",
+          "text": "No \\(x\\)-intercepts"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Here \\(a=1\\), \\(b=-4\\), and \\(c=5\\). The discriminant is \\(b^2-4ac=(-4)^2-4(1)(5)=16-20=-4\\). Since the discriminant is negative, the equation \\(x^2-4x+5=0\\) has no real solutions, so the graph does not meet the \\(x\\)-axis. Option A comes from computing \\(b^2+4ac=16+20=36\\) instead of \\(b^2-4ac\\), which gives a positive value. Therefore option B is correct.",
+      "hint": "Compute the discriminant \\(b^2-4ac\\) and look at its sign."
+    },
+    {
+      "id": "dynanca-262-q002",
+      "category": "Functions",
+      "concept": "Discriminant Equal to Zero",
+      "learningObjective": "Recognize from a zero discriminant that a quadratic graph touches the \\(x\\)-axis at exactly one point.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many \\(x\\)-intercepts does the graph of \\(y=4x^2-12x+9\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Exactly one \\(x\\)-intercept"
+        },
+        {
+          "label": "B",
+          "text": "Two \\(x\\)-intercepts"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Here \\(a=4\\), \\(b=-12\\), and \\(c=9\\). The discriminant is \\(b^2-4ac=(-12)^2-4(4)(9)=144-144=0\\). A zero discriminant means the graph touches the \\(x\\)-axis at exactly one point; indeed \\(4x^2-12x+9=(2x-3)^2\\), so the only \\(x\\)-intercept is at \\(x=\\frac{3}{2}\\). Option B comes from forgetting the factor \\(a=4\\) and computing \\(b^2-4c=144-36=108\\), which is positive. Therefore option A is correct.",
+      "hint": "Use all three coefficients, including \\(a\\), when you compute \\(b^2-4ac\\)."
+    },
+    {
+      "id": "dynanca-262-q003",
+      "category": "Functions",
+      "concept": "X-Intercepts from a Factored Form with a Non-Monic Factor",
+      "learningObjective": "Determine the \\(x\\)-intercepts of a quadratic function written as a product of linear factors whose \\(x\\)-coefficient is not \\(1\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What are the \\(x\\)-intercepts of the graph of \\(y=(2x-3)(x+1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left(\\frac{3}{2},0\\right)\\) and \\((-1,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,0)\\) and \\((-1,0)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(y=0\\): \\((2x-3)(x+1)=0\\). By the zero-product property, \\(2x-3=0\\) or \\(x+1=0\\). The first equation gives \\(2x=3\\), so \\(x=\\frac{3}{2}\\); the second gives \\(x=-1\\). Therefore the \\(x\\)-intercepts are \\(\\left(\\frac{3}{2},0\\right)\\) and \\((-1,0)\\). Option B comes from solving \\(2x-3=0\\) as \\(x=3\\), forgetting to divide by \\(2\\). Therefore option A is correct.",
+      "hint": "Solve each factor equal to zero completely, including the coefficient of \\(x\\)."
+    },
+    {
+      "id": "dynanca-262-q004",
+      "category": "Functions",
+      "concept": "Irrational X-Intercepts by the Quadratic Formula",
+      "learningObjective": "Find irrational \\(x\\)-intercepts of a quadratic graph using the quadratic formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What are the \\(x\\)-intercepts of the graph of \\(y=x^2-4x+1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-2-\\sqrt{3},0)\\) and \\((-2+\\sqrt{3},0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2-\\sqrt{3},0)\\) and \\((2+\\sqrt{3},0)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The quadratic does not factor over the integers, so use the quadratic formula with \\(a=1\\), \\(b=-4\\), and \\(c=1\\). The discriminant is \\(b^2-4ac=(-4)^2-4(1)(1)=12\\), so\n\\[\nx=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}=\\frac{4\\pm\\sqrt{12}}{2}=\\frac{4\\pm 2\\sqrt{3}}{2}=2\\pm\\sqrt{3}\n\\]\nTherefore the \\(x\\)-intercepts are \\((2-\\sqrt{3},0)\\) and \\((2+\\sqrt{3},0)\\). Option A comes from using \\(b=-4\\) instead of \\(-b=4\\) in the numerator. Therefore option B is correct.",
+      "hint": "Use the quadratic formula and pay attention to the sign of \\(-b\\)."
+    },
+    {
+      "id": "dynanca-262-q005",
+      "category": "Functions",
+      "concept": "Second X-Intercept from the Axis of Symmetry",
+      "learningObjective": "Use the symmetry of a parabola to find the second \\(x\\)-intercept from one \\(x\\)-intercept and the axis of symmetry.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A parabola has axis of symmetry \\(x=3\\) and one \\(x\\)-intercept at \\((-1,0)\\). Where is its other \\(x\\)-intercept?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((4,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((7,0)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The two \\(x\\)-intercepts are the same distance from the axis of symmetry. The distance from \\(x=-1\\) to \\(x=3\\) is \\(3-(-1)=4\\), so the other intercept is \\(4\\) units on the other side of the axis: \\(x=3+4=7\\). Check: the midpoint of the intercepts is \\(\\frac{-1+7}{2}=3\\). Option A comes from taking the distance \\(4\\) itself as the \\(x\\)-coordinate instead of adding it to the axis value \\(3\\). Therefore option B is correct.",
+      "hint": "The axis of symmetry lies exactly halfway between the two \\(x\\)-intercepts."
+    },
+    {
+      "id": "dynanca-262-q006",
+      "category": "Functions",
+      "concept": "Distance Between the X-Intercepts",
+      "learningObjective": "Calculate the distance between the two \\(x\\)-intercepts of a quadratic graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the distance between the two \\(x\\)-intercepts of the graph of \\(y=x^2+2x-24\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor the quadratic: \\(x^2+2x-24=(x+6)(x-4)\\). Setting \\(y=0\\) gives \\(x=-6\\) or \\(x=4\\). The distance between the intercepts \\((-6,0)\\) and \\((4,0)\\) is \\(4-(-6)=10\\). Option B comes from computing \\(6-4=2\\), ignoring that one intercept lies on the negative side of the \\(y\\)-axis. Therefore option A is correct.",
+      "hint": "Find both \\(x\\)-intercepts first, then subtract the smaller \\(x\\)-coordinate from the larger one."
+    },
+    {
+      "id": "dynanca-262-q007",
+      "category": "Functions",
+      "concept": "X-Intercepts after a Vertical Translation",
+      "learningObjective": "Determine the \\(x\\)-intercepts of a quadratic graph after it is translated vertically.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The graph of \\(y=x^2-4x\\) is translated \\(3\\) units up. What are the \\(x\\)-intercepts of the new graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,0)\\) and \\((7,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,0)\\) and \\((3,0)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Translating a graph \\(3\\) units up adds \\(3\\) to the function, so the new graph is \\(y=x^2-4x+3\\). Set \\(y=0\\): \\(x^2-4x+3=(x-1)(x-3)=0\\), so \\(x=1\\) or \\(x=3\\). Therefore the new \\(x\\)-intercepts are \\((1,0)\\) and \\((3,0)\\). Option A comes from moving the original intercepts \\((0,0)\\) and \\((4,0)\\) \\(3\\) units to the right, treating the vertical translation as a horizontal one. Therefore option B is correct.",
+      "hint": "Write the equation of the translated graph first, then set it equal to zero."
+    },
+    {
+      "id": "dynanca-262-q008",
+      "category": "Functions",
+      "concept": "Sum of the X-Intercepts from the Coefficients",
+      "learningObjective": "Use the relation between the sum of the \\(x\\)-intercepts and the coefficients to determine a quadratic and its \\(x\\)-intercepts.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The graph of \\(y=x^2+bx+c\\) has two \\(x\\)-intercepts whose sum is \\(7\\), and its \\(y\\)-intercept is \\((0,10)\\). What are the \\(x\\)-intercepts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,0)\\) and \\((5,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-2,0)\\) and \\((-5,0)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(y=ax^2+bx+c\\), the sum of the \\(x\\)-intercepts is \\(-\\frac{b}{a}\\). Here \\(a=1\\), so \\(-b=7\\) and \\(b=-7\\). The \\(y\\)-intercept \\((0,10)\\) gives \\(c=10\\). The function is \\(y=x^2-7x+10=(x-2)(x-5)\\), so the \\(x\\)-intercepts are \\((2,0)\\) and \\((5,0)\\), whose sum is \\(7\\). Option B comes from taking the sum as \\(b\\) instead of \\(-\\frac{b}{a}\\), which gives \\(b=7\\) and \\(y=x^2+7x+10=(x+2)(x+5)\\); those intercepts add up to \\(-7\\), not \\(7\\). Therefore option A is correct.",
+      "hint": "Recall how the sum of the solutions of \\(ax^2+bx+c=0\\) depends on \\(a\\) and \\(b\\), and remember the sign."
+    },
+    {
+      "id": "dynanca-262-q009",
+      "category": "Functions",
+      "concept": "Parameter for a Graph Tangent to the X-Axis",
+      "learningObjective": "Find the parameter value that makes a quadratic graph touch the \\(x\\)-axis at exactly one point.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For which positive value of \\(k\\) does the graph of \\(y=2x^2+kx+8\\) touch the \\(x\\)-axis at exactly one point?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The graph touches the \\(x\\)-axis at exactly one point when the discriminant is zero:\n\\[\n\\begin{aligned}\nk^2-4(2)(8) &= 0\\\\\nk^2 &= 64\\\\\nk &= \\pm 8\n\\end{aligned}\n\\]\nThe positive value is \\(k=8\\). Check: \\(2x^2+8x+8=2(x+2)^2\\), which touches the \\(x\\)-axis only at \\((-2,0)\\). Option B comes from dropping the factor \\(4\\) in \\(4ac\\): \\(k^2-2(8)=0\\) gives \\(k=4\\), but then \\(b^2-4ac=16-64=-48<0\\) and the graph has no \\(x\\)-intercepts. Therefore option A is correct.",
+      "hint": "Set the discriminant \\(b^2-4ac\\) equal to zero and solve for \\(k\\)."
+    },
+    {
+      "id": "dynanca-262-q010",
+      "category": "Functions",
+      "concept": "Parameter Range for Two X-Intercepts",
+      "learningObjective": "Determine the range of a parameter for which a quadratic graph has two \\(x\\)-intercepts.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "For which values of \\(c\\) does the graph of \\(y=x^2-6x+c\\) have two \\(x\\)-intercepts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(c<9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(c>9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The graph has two \\(x\\)-intercepts when the discriminant is positive. Set up this inequality, simplify it, subtract \\(36\\) from both sides, and then divide by \\(-4\\), which reverses the inequality sign:\n\\[\n\\begin{aligned}\n(-6)^2-4(1)(c) &> 0\\\\\n36-4c &> 0\\\\\n-4c &> -36\\\\\nc &< 9\n\\end{aligned}\n\\]\nFor example, \\(c=8\\) gives a discriminant of \\(36-32=4>0\\), while \\(c=10\\) gives \\(36-40=-4<0\\). Option B comes from dividing \\(-4c>-36\\) by \\(-4\\) without reversing the inequality sign. Therefore option A is correct.",
+      "hint": "Require \\(b^2-4ac>0\\) and be careful when you divide an inequality by a negative number."
+    }
+  ]
+}

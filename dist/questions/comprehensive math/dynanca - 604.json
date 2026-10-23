@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-604",
+  "category": "Comprehensive Mathematics",
+  "title": "604. Discrete Mathematics, Counting & Graph Theory: Minimum Cut Capacity",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-604-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Arcs that count in a cut",
+      "learningObjective": "State which arcs contribute to the capacity of a cut.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A cut of a flow network divides the vertices into a source side, which contains \\(S\\), and a sink side, which contains \\(T\\). Which arcs contribute to the capacity of the cut?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The arcs that go from the source side to the sink side"
+        },
+        {
+          "label": "B",
+          "text": "All arcs that have at least one endpoint on the source side"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The capacity of a cut is the total capacity of the arcs that lead from the source side to the sink side. Arcs inside one side do not cross the cut, and arcs that lead back from the sink side to the source side are not counted.",
+      "hint": "Only arcs that carry flow forward across the division matter."
+    },
+    {
+      "id": "dynanca-604-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The cut around the source",
+      "learningObjective": "Find the capacity of the cut whose source side is the source alone.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A network has the arcs \\(S\\to A\\) with capacity \\(9\\), \\(S\\to B\\) with capacity \\(3\\), \\(A\\to B\\) with capacity \\(2\\), \\(A\\to T\\) with capacity \\(4\\), and \\(B\\to T\\) with capacity \\(8\\). What is the capacity of the cut whose source side is \\(\\{S\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The arcs leaving \\(\\{S\\}\\) are \\(S\\to A\\) and \\(S\\to B\\), with capacities \\(9\\) and \\(3\\). The capacity of the cut is \\(9+3=12\\). Taking only the larger arc gives \\(9\\), which leaves out \\(S\\to B\\).",
+      "hint": "Add the capacities of all arcs that leave \\(S\\)."
+    },
+    {
+      "id": "dynanca-604-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A cut with two vertices on the source side",
+      "learningObjective": "Find the capacity of a cut with a given source side.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A network has the arcs \\(S\\to A\\) with capacity \\(9\\), \\(S\\to B\\) with capacity \\(3\\), \\(A\\to B\\) with capacity \\(2\\), \\(A\\to T\\) with capacity \\(4\\), and \\(B\\to T\\) with capacity \\(8\\). What is the capacity of the cut whose source side is \\(\\{S,A\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(18\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The arcs from \\(\\{S,A\\}\\) to \\(\\{B,T\\}\\) are \\(S\\to B\\), \\(A\\to B\\), and \\(A\\to T\\), so the capacity is \\(3+2+4=9\\). The arc \\(S\\to A\\) lies inside the source side and does not cross the cut; adding its capacity gives \\(18\\), which is wrong.",
+      "hint": "Leave out arcs whose two endpoints are on the same side."
+    },
+    {
+      "id": "dynanca-604-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A backward arc",
+      "learningObjective": "Find the capacity of a cut that is crossed by a backward arc.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A network has the arcs \\(S\\to A\\) with capacity \\(9\\), \\(S\\to B\\) with capacity \\(3\\), \\(A\\to B\\) with capacity \\(2\\), \\(A\\to T\\) with capacity \\(4\\), and \\(B\\to T\\) with capacity \\(8\\). What is the capacity of the cut whose source side is \\(\\{S,B\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(19\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(17\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The arcs from \\(\\{S,B\\}\\) to \\(\\{A,T\\}\\) are \\(S\\to A\\) and \\(B\\to T\\), so the capacity is \\(9+8=17\\). The arc \\(A\\to B\\) crosses the cut in the opposite direction, from the sink side to the source side, and is not counted. Including it gives \\(19\\).",
+      "hint": "Check the direction of every arc that crosses the cut."
+    },
+    {
+      "id": "dynanca-604-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The cut around the sink",
+      "learningObjective": "Find the capacity of the cut whose sink side is the sink alone.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A network has the arcs \\(S\\to A\\) with capacity \\(9\\), \\(S\\to B\\) with capacity \\(3\\), \\(A\\to B\\) with capacity \\(2\\), \\(A\\to T\\) with capacity \\(4\\), and \\(B\\to T\\) with capacity \\(8\\). What is the capacity of the cut whose source side is \\(\\{S,A,B\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(14\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sink side is \\(\\{T\\}\\), so the arcs crossing the cut are those entering \\(T\\): \\(A\\to T\\) and \\(B\\to T\\). The capacity is \\(4+8=12\\). The arc \\(A\\to B\\) stays inside the source side; adding its capacity gives \\(14\\).",
+      "hint": "Add the capacities of the arcs that enter \\(T\\)."
+    },
+    {
+      "id": "dynanca-604-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The minimum cut",
+      "learningObjective": "Find the minimum cut capacity of a small network.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A network has the arcs \\(S\\to A\\) with capacity \\(9\\), \\(S\\to B\\) with capacity \\(3\\), \\(A\\to B\\) with capacity \\(2\\), \\(A\\to T\\) with capacity \\(4\\), and \\(B\\to T\\) with capacity \\(8\\). What is the smallest capacity of a cut separating \\(S\\) from \\(T\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are four cuts, with source sides \\(\\{S\\}\\), \\(\\{S,A\\}\\), \\(\\{S,B\\}\\), and \\(\\{S,A,B\\}\\). Their capacities are \\(12\\), \\(9\\), \\(17\\), and \\(12\\). The smallest is \\(9\\), for the source side \\(\\{S,A\\}\\). The two cuts of capacity \\(12\\), around the source and around the sink, are not minimal.",
+      "hint": "Compute the capacity of each of the four cuts."
+    },
+    {
+      "id": "dynanca-604-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting cuts",
+      "learningObjective": "Count the cuts of a network with a given number of inner vertices.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A network has a source \\(S\\), a sink \\(T\\), and \\(4\\) other vertices. How many cuts separate \\(S\\) from \\(T\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A cut is determined by its source side, which contains \\(S\\), does not contain \\(T\\), and contains any selection of the other vertices. Each of the \\(4\\) other vertices is either on the source side or not, so there are \\(2^4=16\\) cuts. The number \\(6\\) is the number of vertices.",
+      "hint": "Decide independently, for each inner vertex, on which side it lies."
+    },
+    {
+      "id": "dynanca-604-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A flow and a cut of equal size",
+      "learningObjective": "Draw the conclusion from a flow value that equals a cut capacity.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "In a network, a flow of value \\(9\\) and a cut of capacity \\(9\\) have been found. What can be concluded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The flow is a maximum flow, and the cut is a minimum cut."
+        },
+        {
+          "label": "B",
+          "text": "Nothing; a flow of larger value may still exist."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every unit of flow must cross every cut, so no flow has a value greater than the capacity of any cut. A flow of value \\(9\\) cannot be exceeded when some cut has capacity \\(9\\), and no cut can have capacity below the value of an existing flow. So both are optimal.",
+      "hint": "Compare the value of any flow with the capacity of any cut."
+    },
+    {
+      "id": "dynanca-604-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Enlarging an arc outside the minimum cut",
+      "learningObjective": "Predict the effect of raising a capacity that is not in the minimum cut.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A network has the arcs \\(S\\to A\\) with capacity \\(9\\), \\(S\\to B\\) with capacity \\(3\\), \\(A\\to B\\) with capacity \\(2\\), \\(A\\to T\\) with capacity \\(4\\), and \\(B\\to T\\) with capacity \\(8\\); its maximum flow has value \\(9\\). The capacity of \\(S\\to A\\) is raised from \\(9\\) to \\(20\\). What is the value of a maximum flow now?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The cut with source side \\(\\{S,A\\}\\) has capacity \\(3+2+4=9\\), and the arc \\(S\\to A\\) does not cross it. Raising the capacity of \\(S\\to A\\) leaves this cut unchanged, so the maximum flow is still at most \\(9\\), and \\(9\\) is still attained. Extra capacity helps only on arcs of a minimum cut.",
+      "hint": "Check whether the enlarged arc crosses the cut of smallest capacity."
+    },
+    {
+      "id": "dynanca-604-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The arc worth enlarging",
+      "learningObjective": "Find the arc whose enlargement increases the maximum flow.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A network has the arcs \\(S\\to A\\) with capacity \\(9\\), \\(S\\to B\\) with capacity \\(3\\), \\(A\\to B\\) with capacity \\(2\\), \\(A\\to T\\) with capacity \\(4\\), and \\(B\\to T\\) with capacity \\(8\\). Raising the capacity of which arc by \\(1\\) increases the value of a maximum flow?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(S\\to A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\to T\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The only minimum cut has source side \\(\\{S,A\\}\\) and capacity \\(9\\); the other cuts have capacities \\(12\\), \\(17\\), and \\(12\\). The maximum flow grows only if this cut grows, so the arc must be one of \\(S\\to B\\), \\(A\\to B\\), \\(A\\to T\\). Raising \\(A\\to T\\) to \\(5\\) gives a minimum cut, and so a maximum flow, of \\(10\\). The arc \\(S\\to A\\) does not cross the minimum cut.",
+      "hint": "Find the minimum cut and list the arcs that cross it."
+    }
+  ]
+}

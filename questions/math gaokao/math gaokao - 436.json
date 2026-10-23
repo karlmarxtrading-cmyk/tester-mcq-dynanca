@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-436",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 436",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-436-q001",
+      "category": "Algebra and Functions",
+      "concept": "Domain of a Function",
+      "learningObjective": "Determine the domain of a function involving a square root, a logarithm, and a rational denominator.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the domain of the function \\(f(x)=\\frac{\\sqrt{x+2}}{\\ln(5-x)}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([-2,4)\\cup(4,5)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-2,4)\\cup(4,5)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For the square root, \\(x+2\\ge 0\\), so \\(x\\ge -2\\).\nFor the logarithm, \\(5-x>0\\), so \\(x<5\\).\nFor the denominator, \\(\\ln(5-x)\\ne 0\\), so \\(5-x\\ne 1\\), hence \\(x\\ne 4\\).\nCombining these conditions gives \\([-2,4)\\cup(4,5)\\).",
+      "hint": "Check separately the square-root condition, the logarithm condition, and the nonzero denominator condition."
+    },
+    {
+      "id": "math-gaokao-436-q002",
+      "category": "Algebra and Functions",
+      "concept": "Inverse Function",
+      "learningObjective": "Find the inverse of a linear function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x)=3x-5\\), what is \\(f^{-1}(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{x-5}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{x+5}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(y=3x-5\\). To find the inverse, solve for \\(x\\):\n\\[\ny=3x-5 \\implies y+5=3x \\implies x=\\frac{y+5}{3}.\n\\]\nTherefore \\(f^{-1}(x)=\\frac{x+5}{3}\\).",
+      "hint": "Swap \\(x\\) and \\(y\\), then solve the resulting equation for \\(y\\)."
+    },
+    {
+      "id": "math-gaokao-436-q003",
+      "category": "Algebra and Functions",
+      "concept": "Composite Functions",
+      "learningObjective": "Evaluate a composite function at a given value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(f(x)=x^2-2x+1\\) and \\(g(x)=2x-1\\). Find \\(f(g(2))\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First compute \\(g(2)=2(2)-1=3\\).\nThen \\[\n\\begin{aligned}\nf(g(2))&=f(3) \\\\\n&=3^2-2(3)+1 \\\\\n&=9-6+1 \\\\\n&=4\n\\end{aligned}\n\\].",
+      "hint": "Evaluate the inner function first, then substitute its value into the outer function."
+    },
+    {
+      "id": "math-gaokao-436-q004",
+      "category": "Algebra and Functions",
+      "concept": "Quadratic Function Minimum",
+      "learningObjective": "Determine the minimum value of a quadratic function by completing the square.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For real \\(x\\), what is the minimum value of \\(f(x)=x^2-6x+14\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(14\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Completing the square gives \\(f(x)=(x-3)^2+5\\). The squared term is nonnegative and equals zero at \\(x=3\\), so the minimum is \\(5\\). The constant term \\(14\\) is the value at \\(x=0\\), not the minimum.",
+      "hint": "Rewrite the quadratic in the form \\((x-h)^2+k\\)."
+    },
+    {
+      "id": "math-gaokao-436-q005",
+      "category": "Algebra and Functions",
+      "concept": "Exponential Equation",
+      "learningObjective": "Solve an exponential equation by substitution and find the sum of its real solutions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the sum of all real solutions of the equation \\(4^x-5\\cdot 2^x+4=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(t=2^x\\), where \\(t>0\\). Then \\(4^x=t^2\\), so the equation becomes\n\\[\nt^2-5t+4=0.\n\\]\nFactoring gives \\((t-1)(t-4)=0\\), so \\(t=1\\) or \\(t=4\\).\nThus \\(2^x=1\\) gives \\(x=0\\), and \\(2^x=4\\) gives \\(x=2\\).\nThe sum of the real solutions is \\(0+2=2\\).",
+      "hint": "Use the substitution \\(t=2^x\\), then solve the resulting quadratic equation."
+    },
+    {
+      "id": "math-gaokao-436-q006",
+      "category": "Algebra and Functions",
+      "concept": "Logarithmic Inequality",
+      "learningObjective": "Solve a logarithmic inequality with a linear argument.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve the inequality \\(\\log_2(x-1)<3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,8)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,9)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The logarithm requires \\(x-1>0\\), so \\(x>1\\).\nSince the base \\(2\\) is greater than \\(1\\), the inequality \\(\\log_2(x-1)<3\\) is equivalent to\n\\[\nx-1<2^3=8.\n\\]\nThus \\(x<9\\). Combining with \\(x>1\\), the solution is \\((1,9)\\).",
+      "hint": "First state the domain of the logarithm, then convert the inequality using the base."
+    },
+    {
+      "id": "math-gaokao-436-q007",
+      "category": "Algebra and Functions",
+      "concept": "Monotonicity and Parameter Conditions",
+      "learningObjective": "Determine the parameter condition for a cubic function to be increasing on all real numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The function \\(f(x)=x^3-3mx+2\\) is increasing on \\(\\mathbb{R}\\). What condition must \\(m\\) satisfy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m\\ge 0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(m\\le 0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The derivative is \\(f'(x)=3x^2-3m\\). If \\(m<0\\), it is positive everywhere. If \\(m=0\\), the function is \\(x^3\\), which is strictly increasing. If \\(m>0\\), the derivative is negative on \\((-\\sqrt{m},\\sqrt{m})\\), so the function decreases there. Thus exactly \\(m\\le0\\) works.",
+      "hint": "Differentiate the function and require the derivative to be nonnegative for every real \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-436-q008",
+      "category": "Algebra and Functions",
+      "concept": "Absolute Value Inequality",
+      "learningObjective": "Solve a linear absolute value inequality and express the solution as an interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the inequality \\(|3x-2|\\le7\\) for real \\(x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left[-\\frac{5}{3},3\\right]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\left[-3,\\frac{5}{3}\\right]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rewrite the absolute value condition as\n\\[\n-7\\le3x-2\\le7.\n\\]\nAdding \\(2\\) to every part and dividing by \\(3\\) gives\n\\[\n-5\\le3x\\le9,\\qquad-\\frac{5}{3}\\le x\\le3.\n\\]\nThus the solution is \\(\\left[-\\frac{5}{3},3\\right]\\). Option B results from subtracting \\(2\\) rather than adding it.",
+      "hint": "Rewrite the absolute value inequality as a compound inequality."
+    },
+    {
+      "id": "math-gaokao-436-q009",
+      "category": "Algebra and Functions",
+      "concept": "Quadratic Inequality with a Parameter",
+      "learningObjective": "Find the parameter range for which a quadratic function is always positive.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "For what values of \\(a\\) is \\(f(x)=x^2-2ax+a+2>0\\) for all real \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-1,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-2,1)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since the leading coefficient is positive, \\(f(x)>0\\) for all real \\(x\\) exactly when the discriminant is negative:\n\\[\n\\begin{aligned}\n\\Delta&=(-2a)^2-4(1)(a+2) \\\\\n&=4a^2-4a-8 \\\\\n&=4(a^2-a-2).\n\\end{aligned}\n\\]\nWe need\n\\[\na^2-a-2<0.\n\\]\nFactoring gives \\((a-2)(a+1)<0\\), so\n\\[\n-1<a<2.\n\\]\nThus \\(a\\in(-1,2)\\).",
+      "hint": "Use the discriminant condition for a quadratic with positive leading coefficient to be always positive."
+    },
+    {
+      "id": "math-gaokao-436-q010",
+      "category": "Algebra and Functions",
+      "concept": "Range of a Quadratic Function on a Closed Interval",
+      "learningObjective": "Determine the range of a quadratic function restricted to a closed interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Find the range of \\(f(x)=x^2-4x+6\\) on the interval \\([0,3]\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([3,6]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([2,6]\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Complete the square:\n\\[\nf(x)=x^2-4x+6=(x-2)^2+2.\n\\]\nThe vertex is at \\(x=2\\), which lies in \\([0,3]\\), so the minimum value is \\(2\\).\nEvaluate the endpoints:\n\\[\nf(0)=6,\\qquad f(3)=9-12+6=3.\n\\]\nThe maximum value on \\([0,3]\\) is \\(6\\). Therefore the range is \\([2,6]\\).",
+      "hint": "Find the vertex value and compare it with the function values at the interval endpoints."
+    }
+  ]
+}

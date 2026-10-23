@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-309",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 309",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-309-q001",
+      "category": "Probability",
+      "concept": "Independence of Two Events",
+      "learningObjective": "Determine whether two events are independent by comparing \\(P(A\\cap B)\\) with \\(P(A)P(B)\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(A\\) and \\(B\\) be events with \\(P(A)=0.5\\), \\(P(B)=0.4\\), and \\(P(A\\cap B)=0.3\\). Are \\(A\\) and \\(B\\) independent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because \\(P(A\\cap B)=P(A)P(B)\\)."
+        },
+        {
+          "label": "B",
+          "text": "No, because \\(P(A\\cap B)\\neq P(A)P(B)\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Two events are independent exactly when\n\\[\nP(A\\cap B)=P(A)P(B).\n\\]\nHere,\n\\[\nP(A)P(B)=0.5\\times 0.4=0.2.\n\\]\nBut \\(P(A\\cap B)=0.3\\), and \\(0.3\\neq 0.2\\). Therefore \\(A\\) and \\(B\\) are not independent.",
+      "hint": "Compare the given intersection probability with the product of the individual probabilities."
+    },
+    {
+      "id": "math-gaokao-309-q002",
+      "category": "Probability",
+      "concept": "Intersection of Independent Events",
+      "learningObjective": "Compute \\(P(A\\cap B)\\) for independent events using the multiplication rule.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(A\\) and \\(B\\) are independent events with \\(P(A)=0.3\\) and \\(P(B)=0.2\\), find \\(P(A\\cap B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.06\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For independent events,\n\\[\nP(A\\cap B)=P(A)P(B).\n\\]\nSubstitute the given probabilities:\n\\[\nP(A\\cap B)=0.3\\times 0.2=0.06.\n\\]",
+      "hint": "Use the multiplication rule for independent events."
+    },
+    {
+      "id": "math-gaokao-309-q003",
+      "category": "Probability",
+      "concept": "Union of Independent Events",
+      "learningObjective": "Find \\(P(A\\cup B)\\) for independent events by first computing the intersection.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(A\\) and \\(B\\) be independent events with \\(P(A)=0.4\\) and \\(P(B)=0.5\\). Find \\(P(A\\cup B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(A\\) and \\(B\\) are independent,\n\\[\nP(A\\cap B)=0.4\\times 0.5=0.2.\n\\]\nThen, by the addition rule,\n\\[\nP(A\\cup B)=P(A)+P(B)-P(A\\cap B)\n=0.4+0.5-0.2=0.7.\n\\]",
+      "hint": "First find the intersection probability, then use the addition rule for unions."
+    },
+    {
+      "id": "math-gaokao-309-q004",
+      "category": "Probability",
+      "concept": "Finding an Unknown Probability Under Independence",
+      "learningObjective": "Determine an unknown event probability from a union probability under independence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "\\(A\\) and \\(B\\) are independent events with \\(P(A)=0.2\\) and \\(P(A\\cup B)=0.6\\). Find \\(P(B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(P(B)=x\\). Since \\(A\\) and \\(B\\) are independent,\n\\[\nP(A\\cap B)=0.2x.\n\\]\nUsing the addition rule,\n\\[\n0.6=0.2+x-0.2x.\n\\]\nThus,\n\\[\n0.6=0.2+0.8x,\n\\]\nso\n\\[\n0.8x=0.4 \\quad\\Longrightarrow\\quad x=0.5.\n\\]\nTherefore, \\(P(B)=0.5\\).",
+      "hint": "Let \\(P(B)=x\\), express the intersection using independence, and substitute into the addition rule."
+    },
+    {
+      "id": "math-gaokao-309-q005",
+      "category": "Probability",
+      "concept": "Probability of One Event and the Complement of Another",
+      "learningObjective": "Compute \\(P(A\\cap B')\\) for independent events using the complement rule.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "\\(A\\) and \\(B\\) are independent events with \\(P(A)=\\frac23\\) and \\(P(B)=\\frac35\\). Find \\(P(A\\cap B')\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac25\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{4}{15}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(B'\\) is the complement of \\(B\\),\n\\[\nP(B')=1-\\frac35=\\frac25.\n\\]\nBecause \\(A\\) and \\(B\\) are independent, \\(A\\) and \\(B'\\) are also independent. Hence,\n\\[\nP(A\\cap B')=P(A)P(B')\n=\\frac23\\times\\frac25=\\frac{4}{15}.\n\\]",
+      "hint": "Use the complement rule for \\(B\\), then multiply probabilities using independence."
+    },
+    {
+      "id": "math-gaokao-309-q006",
+      "category": "Probability",
+      "concept": "Intersection of Complements of Independent Events",
+      "learningObjective": "Compute \\(P(A'\\cap B')\\) for independent events.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "\\(A\\) and \\(B\\) are independent events with \\(P(A)=0.7\\) and \\(P(B)=0.6\\). Find \\(P(A'\\cap B')\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.18\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First find the complements:\n\\[\nP(A')=1-0.7=0.3,\\qquad P(B')=1-0.6=0.4.\n\\]\nSince \\(A\\) and \\(B\\) are independent, \\(A'\\) and \\(B'\\) are also independent. Therefore,\n\\[\nP(A'\\cap B')=P(A')P(B')=0.3\\times0.4=0.12.\n\\]",
+      "hint": "Use the complement rule for both events, then apply independence."
+    },
+    {
+      "id": "math-gaokao-309-q007",
+      "category": "Probability",
+      "concept": "Conditional Probability and Independence",
+      "learningObjective": "Identify the conditional probability statement that characterizes independence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) and \\(B\\) are independent events with \\(P(B)>0\\), which statement must be true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P(A\\mid B)=P(A)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(P(A\\mid B)=P(B)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Because \\(P(B)>0\\), the conditional probability \\(P(A\\mid B)\\) is defined. Independence gives \\(P(A\\cap B)=P(A)P(B)\\), so\n\\[\nP(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}\n=\\frac{P(A)P(B)}{P(B)}\n=P(A).\n\\]",
+      "hint": "Use independence together with the definition of conditional probability, noting that the conditioning event has positive probability."
+    },
+    {
+      "id": "math-gaokao-309-q008",
+      "category": "Probability",
+      "concept": "Testing Independence from a Union Probability",
+      "learningObjective": "Determine whether two events are independent using given union and individual probabilities.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Given \\(P(A)=0.5\\), \\(P(B)=0.4\\), and \\(P(A\\cup B)=0.7\\), are \\(A\\) and \\(B\\) independent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because \\(P(A\\cap B)\\neq P(A)P(B)\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because \\(P(A\\cap B)=P(A)P(B)\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "First find the intersection:\n\\[\nP(A\\cap B)=P(A)+P(B)-P(A\\cup B)\n=0.5+0.4-0.7=0.2.\n\\]\nNow compute the product:\n\\[\nP(A)P(B)=0.5\\times0.4=0.2.\n\\]\nSince \\(P(A\\cap B)=P(A)P(B)\\), the events \\(A\\) and \\(B\\) are independent.",
+      "hint": "Use the addition rule to find \\(P(A\\cap B)\\), then compare it with \\(P(A)P(B)\\)."
+    },
+    {
+      "id": "math-gaokao-309-q009",
+      "category": "Probability",
+      "concept": "Independence in Repeated Trials",
+      "learningObjective": "Recognize independence in two independent tosses of a fair coin.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A fair coin is tossed twice. Let \\(A\\) be the event that the first toss is heads, and let \\(B\\) be the event that the second toss is heads. Are \\(A\\) and \\(B\\) independent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because the outcome of one toss does not affect the other."
+        },
+        {
+          "label": "B",
+          "text": "No, because both events involve heads."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The two tosses are separate trials, so the result of the first toss does not change the probability of the second toss. Hence,\n\\[\nP(B\\mid A)=P(B)=\\frac12.\n\\]\nTherefore, \\(A\\) and \\(B\\) are independent.",
+      "hint": "Consider whether knowing the first toss changes the probability of the second toss."
+    },
+    {
+      "id": "math-gaokao-309-q010",
+      "category": "Probability",
+      "concept": "Complement of an Intersection of Independent Events",
+      "learningObjective": "Use De Morgan's law and independence to compute \\(P(A'\\cup B')\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "\\(A\\) and \\(B\\) are independent events with \\(P(A)=0.6\\) and \\(P(B)=0.5\\). Find \\(P(A'\\cup B')\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By De Morgan's law,\n\\[\nA'\\cup B'=(A\\cap B)'.\n\\]\nSince \\(A\\) and \\(B\\) are independent,\n\\[\nP(A\\cap B)=P(A)P(B)=0.6\\times0.5=0.3.\n\\]\nTherefore,\n\\[\nP(A'\\cup B')=1-P(A\\cap B)=1-0.3=0.7.\n\\]",
+      "hint": "Use De Morgan's law to rewrite \\(A'\\cup B'\\), then use independence to find \\(P(A\\cap B)\\)."
+    }
+  ]
+}

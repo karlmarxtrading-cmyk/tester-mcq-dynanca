@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-308",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 308",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-308-q001",
+      "category": "Probability",
+      "concept": "Definition of Conditional Probability",
+      "learningObjective": "Compute a conditional probability from the intersection and the conditioning event.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A\\) and \\(B\\) be events with \\(P(A\\cap B)=0.2\\) and \\(P(B)=0.5\\). Find \\(P(A\\mid B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the definition of conditional probability,\n\\[\nP(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}.\n\\]\nSubstitute the given values:\n\\[\nP(A\\mid B)=\\frac{0.2}{0.5}=0.4.\n\\]",
+      "hint": "Use the definition of conditional probability with \\(B\\) as the conditioning event."
+    },
+    {
+      "id": "math-gaokao-308-q002",
+      "category": "Probability",
+      "concept": "Conditional Probability from an Intersection",
+      "learningObjective": "Compute \\(P(B\\mid A)\\) using the intersection probability and \\(P(A)\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Given \\(P(A)=0.6\\), \\(P(B)=0.5\\), and \\(P(A\\cap B)=0.3\\), find \\(P(B\\mid A)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the definition of conditional probability,\n\\[\nP(B\\mid A)=\\frac{P(A\\cap B)}{P(A)}.\n\\]\nSubstitute the known values:\n\\[\nP(B\\mid A)=\\frac{0.3}{0.6}=0.5.\n\\]",
+      "hint": "The denominator is the probability of the event that is given to have occurred."
+    },
+    {
+      "id": "math-gaokao-308-q003",
+      "category": "Probability",
+      "concept": "Multiplication Rule for Conditional Probability",
+      "learningObjective": "Use the multiplication rule to find \\(P(A\\cap B)\\) from \\(P(A)\\) and \\(P(B\\mid A)\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Given \\(P(A)=0.4\\) and \\(P(B\\mid A)=0.3\\), find \\(P(A\\cap B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.70\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The multiplication rule states\n\\[\nP(A\\cap B)=P(A)P(B\\mid A).\n\\]\nSubstitute the given values:\n\\[\nP(A\\cap B)=0.4\\times 0.3=0.12.\n\\]",
+      "hint": "Rearrange the conditional probability formula to express the intersection probability."
+    },
+    {
+      "id": "math-gaokao-308-q004",
+      "category": "Probability",
+      "concept": "Finding a Conditioning Probability",
+      "learningObjective": "Determine \\(P(B)\\) from \\(P(A\\cap B)\\) and \\(P(A\\mid B)\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Given \\(P(A\\cap B)=0.18\\) and \\(P(A\\mid B)=0.6\\), find \\(P(B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.108\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.30\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the definition of conditional probability,\n\\[\nP(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}.\n\\]\nThus,\n\\[\n0.6=\\frac{0.18}{P(B)}.\n\\]\nSolving for \\(P(B)\\),\n\\[\nP(B)=\\frac{0.18}{0.6}=0.30.\n\\]",
+      "hint": "Substitute the known values into the conditional probability formula and solve for the unknown probability."
+    },
+    {
+      "id": "math-gaokao-308-q005",
+      "category": "Probability",
+      "concept": "Law of Total Probability",
+      "learningObjective": "Use the law of total probability with a partition \\(B\\) and \\(B'\\) to find \\(P(A)\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(B\\) and \\(B'\\) partition the sample space. Suppose \\(P(B)=0.8\\), \\(P(A\\mid B)=0.5\\), and \\(P(A\\mid B')=0.2\\). Find \\(P(A)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.56\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.44\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the law of total probability,\n\\[\nP(A)=P(A\\mid B)P(B)+P(A\\mid B')P(B').\n\\]\nSince \\(P(B')=1-0.8=0.2\\),\n\\[\nP(A)=0.5\\times 0.8+0.2\\times 0.2=0.4+0.04=0.44.\n\\]",
+      "hint": "Split the event \\(A\\) according to whether \\(B\\) occurs or does not occur."
+    },
+    {
+      "id": "math-gaokao-308-q006",
+      "category": "Probability",
+      "concept": "Bayes' Theorem with Two Hypotheses",
+      "learningObjective": "Compute a reverse conditional probability \\(P(A\\mid B)\\) using \\(P(B\\mid A)\\), \\(P(B\\mid A')\\), and \\(P(A)\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Given \\(P(A)=0.5\\), \\(P(B\\mid A)=0.4\\), and \\(P(B\\mid A')=0.2\\), find \\(P(A\\mid B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First find \\(P(B)\\) using the law of total probability:\n\\[\nP(B)=P(B\\mid A)P(A)+P(B\\mid A')P(A')\n=0.4\\times 0.5+0.2\\times 0.5=0.2+0.1=0.3.\n\\]\nAlso,\n\\[\nP(A\\cap B)=P(B\\mid A)P(A)=0.4\\times 0.5=0.2.\n\\]\nTherefore,\n\\[\nP(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}=\\frac{0.2}{0.3}=\\frac{2}{3}.\n\\]",
+      "hint": "Find \\(P(B)\\) first, then use the definition of conditional probability."
+    },
+    {
+      "id": "math-gaokao-308-q007",
+      "category": "Probability",
+      "concept": "Independence and Conditional Probability",
+      "learningObjective": "Use independence to evaluate a conditional probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) and \\(B\\) are independent events with \\(P(A)=0.3\\) and \\(P(B)=0.5\\), find \\(P(A\\mid B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For independent events, the occurrence of \\(B\\) does not change the probability of \\(A\\). Hence,\n\\[\nP(A\\mid B)=P(A)=0.3.\n\\]\nEquivalently,\n\\[\nP(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}\n=\\frac{P(A)P(B)}{P(B)}\n=P(A)=0.3.\n\\]",
+      "hint": "Recall what independence implies about a conditional probability."
+    },
+    {
+      "id": "math-gaokao-308-q008",
+      "category": "Probability",
+      "concept": "Conditional Probability with Equally Likely Outcomes",
+      "learningObjective": "Compute a conditional probability by restricting the sample space to a given event.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A fair die is rolled twice. Given that the sum of the two rolls is \\(6\\), find the probability that the first roll is \\(2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{6}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{5}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The outcomes with sum \\(6\\) are\n\\[\n(1,5),\\ (2,4),\\ (3,3),\\ (4,2),\\ (5,1).\n\\]\nThere are \\(5\\) equally likely outcomes in the conditioned sample space.\nAmong these, the first roll is \\(2\\) only for \\((2,4)\\), which is \\(1\\) outcome.\nTherefore,\n\\[\nP(\\text{first roll is }2\\mid \\text{sum is }6)=\\frac{1}{5}.\n\\]",
+      "hint": "List all ordered pairs whose sum is \\(6\\), then count those with first roll \\(2\\)."
+    },
+    {
+      "id": "math-gaokao-308-q009",
+      "category": "Probability",
+      "concept": "Conditional Probability Without Replacement",
+      "learningObjective": "Update the sample space after a known first draw and compute a conditional probability.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "An urn contains \\(5\\) red balls and \\(3\\) blue balls. Two balls are drawn without replacement. Given that the first ball drawn is red, find the probability that the second ball is blue.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{8}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{7}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "After a red ball is drawn first, the urn contains\n\\[\n4 \\text{ red balls} \\quad \\text{and} \\quad 3 \\text{ blue balls},\n\\]\nfor a total of \\(7\\) balls.\nThus, the conditional probability that the second ball is blue is\n\\[\n\\frac{3}{7}.\n\\]",
+      "hint": "Remove one red ball from the urn before counting the remaining balls."
+    },
+    {
+      "id": "math-gaokao-308-q010",
+      "category": "Probability",
+      "concept": "Bayes' Theorem in a Quality-Control Setting",
+      "learningObjective": "Apply Bayes' theorem to find the probability that a defective item came from a particular source.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A factory has two machines. Machine A produces \\(60\\%\\) of the bolts and has a defect rate of \\(2\\%\\). Machine B produces \\(40\\%\\) of the bolts and has a defect rate of \\(5\\%\\). A randomly selected bolt is found to be defective. Find the probability that it was produced by Machine B.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{5}{8}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{8}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(D\\) be the event that a bolt is defective. By the law of total probability,\n\\[\nP(D)=0.60\\times 0.02+0.40\\times 0.05=0.012+0.020=0.032.\n\\]\nThe probability that a defective bolt came from Machine B is\n\\[\nP(B\\mid D)=\\frac{P(B\\cap D)}{P(D)}\n=\\frac{0.40\\times 0.05}{0.032}\n=\\frac{0.020}{0.032}\n=\\frac{5}{8}.\n\\]",
+      "hint": "First compute the overall probability that a randomly selected bolt is defective."
+    }
+  ]
+}

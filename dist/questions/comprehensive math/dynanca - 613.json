@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-613",
+  "category": "Comprehensive Mathematics",
+  "title": "613. Discrete Mathematics, Counting & Graph Theory: Counting with Modular Constraints",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-613-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A residue class in a range",
+      "learningObjective": "Count the integers in a range with a given remainder.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many integers from \\(1\\) to \\(30\\) leave remainder \\(2\\) on division by \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The integers are \\(2,7,12,17,22,27\\), which is \\(6\\) numbers. The range from \\(1\\) to \\(30\\) consists of \\(6\\) complete blocks of \\(5\\) consecutive integers, and each block contains exactly one number with remainder \\(2\\).",
+      "hint": "Split the range into blocks of five consecutive integers."
+    },
+    {
+      "id": "dynanca-613-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Multiples in a range",
+      "learningObjective": "Count the multiples of a number in a range.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many integers from \\(1\\) to \\(50\\) are divisible by \\(6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The multiples of \\(6\\) up to \\(50\\) are \\(6,12,\\dots,48\\), that is, \\(6\\cdot 1\\) to \\(6\\cdot 8\\). So there are \\(8\\) of them. The next multiple, \\(54\\), is already larger than \\(50\\).",
+      "hint": "Divide \\(50\\) by \\(6\\) and take the whole part."
+    },
+    {
+      "id": "dynanca-613-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An incomplete last block",
+      "learningObjective": "Count a residue class when the range is not a whole number of blocks.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many integers from \\(1\\) to \\(100\\) leave remainder \\(1\\) on division by \\(7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(14\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The numbers are \\(1,8,15,\\dots,99\\), that is, \\(7k+1\\) for \\(k=0,1,\\dots,14\\), which is \\(15\\) numbers. The range contains \\(14\\) complete blocks of \\(7\\), giving \\(14\\) such numbers up to \\(98\\), and the remaining numbers \\(99\\) and \\(100\\) add one more, namely \\(99\\).",
+      "hint": "After counting the complete blocks, check the leftover numbers at the end."
+    },
+    {
+      "id": "dynanca-613-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Pairs with a divisible sum",
+      "learningObjective": "Count pairs whose sum is divisible by three.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Two distinguishable dice are rolled. In how many of the \\(36\\) outcomes is the sum divisible by \\(3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(18\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each remainder \\(0,1,2\\) on division by \\(3\\) occurs for exactly \\(2\\) faces of a die. Whatever the first die shows, exactly \\(2\\) faces of the second die make the sum divisible by \\(3\\). So there are \\(6\\cdot 2=12\\) outcomes.",
+      "hint": "For a fixed first die, count the faces of the second die that complete the sum."
+    },
+    {
+      "id": "dynanca-613-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Digit sums",
+      "learningObjective": "Count two-digit numbers with a digit sum divisible by nine.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "How many integers from \\(10\\) to \\(99\\) have a digit sum divisible by \\(9\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A number and its digit sum leave the same remainder on division by \\(9\\), so these are exactly the multiples of \\(9\\) from \\(10\\) to \\(99\\): \\(18,27,\\dots,99\\), that is, \\(9\\cdot 2\\) to \\(9\\cdot 11\\). There are \\(10\\) of them. The count \\(9\\) overlooks \\(99\\), whose digit sum is \\(18\\).",
+      "hint": "Use the divisibility rule for \\(9\\) and count multiples of \\(9\\) in the range."
+    },
+    {
+      "id": "dynanca-613-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Three-digit multiples",
+      "learningObjective": "Count the three-digit multiples of four.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many integers from \\(100\\) to \\(999\\) are divisible by \\(4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(225\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(250\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(900\\) integers from \\(100\\) to \\(999\\), and \\(100\\) is itself divisible by \\(4\\), so the range splits into \\(225\\) complete blocks of \\(4\\) consecutive integers, each containing exactly one multiple of \\(4\\). The value \\(250\\) would be \\(\\dfrac{1000}{4}\\), which also counts the multiples below \\(100\\).",
+      "hint": "Count the integers in the range first, then group them in blocks of four."
+    },
+    {
+      "id": "dynanca-613-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Consecutive integers",
+      "learningObjective": "Count the multiples of four among consecutive integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many of twelve consecutive integers \\(n,n+1,\\dots,n+11\\) are divisible by \\(4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Either \\(3\\) or \\(4\\), depending on \\(n\\)"
+        },
+        {
+          "label": "B",
+          "text": "Exactly \\(3\\), whatever the value of \\(n\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Twelve consecutive integers split into three blocks of four consecutive integers. Each block contains every remainder \\(0,1,2,3\\) exactly once, so exactly one multiple of \\(4\\). Hence the count is exactly \\(3\\) for every starting value \\(n\\).",
+      "hint": "Group the twelve integers into blocks of four."
+    },
+    {
+      "id": "dynanca-613-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Strings with a constraint on the number of ones",
+      "learningObjective": "Count binary strings whose number of ones is divisible by three.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many binary strings of length \\(6\\) have a number of ones that is divisible by \\(3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(22\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(21\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number of ones must be \\(0\\), \\(3\\), or \\(6\\). There are \\(\\binom{6}{0}=1\\) string with no ones, \\(\\binom{6}{3}=20\\) strings with three ones, and \\(\\binom{6}{6}=1\\) string with six ones, for a total of \\(22\\). The count \\(21\\) forgets that \\(0\\) is divisible by \\(3\\), or forgets the string of six ones.",
+      "hint": "List the allowed numbers of ones, remembering that \\(0\\) is divisible by \\(3\\)."
+    },
+    {
+      "id": "dynanca-613-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Subsets with an even sum",
+      "learningObjective": "Count the subsets of a small set whose element sum is even.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How many subsets of \\(\\{1,2,3,4,5,6\\}\\), including the empty set, have an even sum of elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(31\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(32\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Pair each subset with the subset obtained by inserting \\(1\\) if it is absent and removing \\(1\\) if it is present. This changes the sum by \\(1\\), so each pair contains one subset with even sum and one with odd sum. Hence exactly half of the \\(2^6=64\\) subsets have an even sum: \\(32\\). The empty set, with sum \\(0\\), is among them.",
+      "hint": "Toggle the element \\(1\\) and see what happens to the parity of the sum."
+    },
+    {
+      "id": "dynanca-613-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A linear congruence in two digits",
+      "learningObjective": "Count pairs of digits that satisfy a congruence.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many pairs \\((x,y)\\) of digits, each from \\(0\\) to \\(9\\), satisfy \\(x+2y\\equiv 0\\pmod 5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Fix \\(y\\) in any of \\(10\\) ways. Then \\(x\\) must leave a prescribed remainder on division by \\(5\\), namely the remainder of \\(-2y\\). Among the digits \\(0\\) to \\(9\\) each remainder occurs exactly twice, so there are \\(2\\) choices for \\(x\\). The total is \\(10\\cdot 2=20\\). The value \\(10\\) allows only one \\(x\\) for each \\(y\\).",
+      "hint": "For a fixed \\(y\\), count the digits \\(x\\) with the required remainder."
+    }
+  ]
+}

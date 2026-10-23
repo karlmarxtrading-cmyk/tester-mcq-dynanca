@@ -1,0 +1,34 @@
+  ok - label keys identify exactly one correct option when distractor text equals the key
+  ok - numeric index keys have one winner despite numeric option text
+  ok - text answer compatibility remains available when no label matches
+  ok - runtime bank validation rejects null question
+  ok - runtime bank validation rejects duplicate ids
+  ok - runtime bank validation rejects empty text
+  ok - runtime bank validation rejects duplicate labels
+  ok - runtime bank validation rejects missing answer
+  ok - runtime bank validation rejects unknown answer
+  ok - runtime bank validation rejects malformed option
+  ok - runtime validation accepts all shipped banks and preserves all records
+  ok - manifest safety rejects browser-reinterpreted path "questions/%2e%2e/master-manifest.json"
+  ok - manifest safety rejects browser-reinterpreted path "questions/x.json?redirect=../"
+  ok - manifest safety rejects browser-reinterpreted path "questions/x.json#fragment"
+  ok - manifest safety rejects browser-reinterpreted path "questions/./a.json"
+  ok - manifest safety rejects browser-reinterpreted path "questions//a.json"
+  ok - manifest safety rejects browser-reinterpreted path "questions/x\u0000.json"
+  ok - spaces and uppercase names remain valid unencoded paths
+  ok - media scheme detection rejects embedded control characters
+  ok - preview routing cannot point at the actual production branch
+  ok - production routing uses the API value instead of guessing main
+  ok - Git-integrated projects fail Direct Upload configuration without mutation
+  ok - multiple authenticated accounts require explicit selection
+  ok - unknown account and unknown CLI arguments fail closed
+  ok - deployment gate rejects changed assets or failed preflight
+Production build PASS: 1369 files in dist; 0 declared pending banks.
+  ok - production build copies only the runtime allowlist and leaves pending banks pending
+Production build PASS: 1369 files in dist; 0 declared pending banks.
+  ok - two builds have identical bytes and deterministic release manifests
+  ok - preflight detects internal files accidentally added to dist
+  ok - preflight detects missing fonts and changed stylesheet bytes
+  ok - preflight detects broken URLs and case-sensitive asset references
+
+30 release tests passed, 0 failed.

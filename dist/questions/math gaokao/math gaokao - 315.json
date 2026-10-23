@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-315",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 315",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-315-q001",
+      "category": "Probability",
+      "concept": "Bernoulli Trials and Binomial Probability",
+      "learningObjective": "Compute the probability of exactly a specified number of successes in independent Bernoulli trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "In 6 independent Bernoulli trials, the probability of success in each trial is \\(\\frac{1}{3}\\). Find the probability of exactly 2 successes.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{80}{243}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{160}{243}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For independent Bernoulli trials, the probability of exactly \\(k\\) successes in \\(n\\) trials is\n\\[\n\\binom{n}{k}p^k(1-p)^{n-k}.\n\\]\nHere \\(n=6\\), \\(k=2\\), and \\(p=\\frac{1}{3}\\). Thus\n\\[\n\\binom{6}{2}\\left(\\frac{1}{3}\\right)^2\\left(\\frac{2}{3}\\right)^4\n=15\\cdot\\frac{1}{9}\\cdot\\frac{16}{81}\n=\\frac{240}{729}\n=\\frac{80}{243}.\n\\]\nSo the correct probability is \\(\\frac{80}{243}\\).",
+      "hint": "Use the binomial probability formula with \\(n=6\\), \\(k=2\\), and \\(p=\\frac{1}{3}\\)."
+    },
+    {
+      "id": "math-gaokao-315-q002",
+      "category": "Probability",
+      "concept": "Binomial Probability Calculation",
+      "learningObjective": "Calculate the probability of exactly three successes in five Bernoulli trials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A Bernoulli experiment is repeated 5 times independently. The probability of success in each trial is \\(0.4\\). Find the probability of exactly 3 successes.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{216}{625}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{144}{625}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the binomial probability formula with \\(n=5\\), \\(k=3\\), and \\(p=0.4\\),\n\\[\nP(X=3)=\\binom{5}{3}(0.4)^3(0.6)^2.\n\\]\nCompute\n\\[\n\\binom{5}{3}=10,\\quad (0.4)^3=0.064,\\quad (0.6)^2=0.36.\n\\]\nTherefore\n\\[\nP(X=3)=10\\cdot 0.064\\cdot 0.36=0.2304=\\frac{144}{625}.\n\\]\nHence the correct probability is \\(\\frac{144}{625}\\).",
+      "hint": "Apply the binomial formula with \\(n=5\\), \\(k=3\\), \\(p=0.4\\), and \\(1-p=0.6\\)."
+    },
+    {
+      "id": "math-gaokao-315-q003",
+      "category": "Probability",
+      "concept": "At Least One Success in Bernoulli Trials",
+      "learningObjective": "Determine the number of trials needed for a given probability of at least one success.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In a sequence of independent Bernoulli trials, the probability of success in each trial is \\(0.2\\). The probability that at least one success occurs in \\(n\\) trials is \\(0.488\\). Find \\(n\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of at least one success in \\(n\\) trials is\n\\[\n1-(1-p)^n.\n\\]\nHere \\(p=0.2\\), so\n\\[\n1-(0.8)^n=0.488.\n\\]\nThus\n\\[\n(0.8)^n=1-0.488=0.512.\n\\]\nSince\n\\[\n0.8^3=0.512,\n\\]\nwe get \\(n=3\\).",
+      "hint": "Use the complement rule: the probability of at least one success is \\(1\\) minus the probability of no successes."
+    },
+    {
+      "id": "math-gaokao-315-q004",
+      "category": "Probability",
+      "concept": "Mean and Variance of a Binomial Random Variable",
+      "learningObjective": "Find the variance of the number of successes in independent Bernoulli trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(X\\) be the number of successes in 20 independent Bernoulli trials with success probability \\(0.3\\). Find \\(\\operatorname{Var}(X)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4.2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a binomial random variable \\(X\\) with \\(n\\) independent Bernoulli trials and success probability \\(p\\),\n\\[\n\\operatorname{Var}(X)=np(1-p).\n\\]\nHere \\(n=20\\) and \\(p=0.3\\), so\n\\[\n\\operatorname{Var}(X)=20\\cdot 0.3\\cdot 0.7=4.2.\n\\]\nTherefore the variance is \\(4.2\\).",
+      "hint": "Recall that the variance of a binomial random variable is \\(np(1-p)\\)."
+    },
+    {
+      "id": "math-gaokao-315-q005",
+      "category": "Probability",
+      "concept": "Probability of Zero Successes",
+      "learningObjective": "Compute the probability of no successes in repeated Bernoulli trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A Bernoulli trial is repeated 4 times independently. The probability of success in each trial is \\(0.25\\). Find the probability of no successes.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{81}{256}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{27}{256}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of no successes in \\(n\\) trials is\n\\[\n(1-p)^n.\n\\]\nHere \\(n=4\\) and \\(p=0.25\\), so\n\\[\n(1-0.25)^4=(0.75)^4.\n\\]\nCompute\n\\[\n(0.75)^4=\\left(\\frac{3}{4}\\right)^4=\\frac{81}{256}.\n\\]\nThus the probability of no successes is \\(\\frac{81}{256}\\).",
+      "hint": "The event “no successes” means every trial is a failure, so multiply the failure probabilities."
+    },
+    {
+      "id": "math-gaokao-315-q006",
+      "category": "Probability",
+      "concept": "Exactly One Success in Bernoulli Trials",
+      "learningObjective": "Compute the probability of exactly one success in a small number of Bernoulli trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In 3 independent Bernoulli trials, the probability of success in each trial is \\(0.5\\). Find the probability of exactly 1 success.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{8}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{8}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the binomial probability formula with \\(n=3\\), \\(k=1\\), and \\(p=0.5\\),\n\\[\nP(X=1)=\\binom{3}{1}(0.5)^1(0.5)^2.\n\\]\nSince \\(\\binom{3}{1}=3\\) and \\((0.5)^3=\\frac{1}{8}\\),\n\\[\nP(X=1)=3\\cdot\\frac{1}{8}=\\frac{3}{8}.\n\\]\nTherefore the probability is \\(\\frac{3}{8}\\).",
+      "hint": "Choose which one of the three trials is the success, then multiply by the probability of that outcome."
+    },
+    {
+      "id": "math-gaokao-315-q007",
+      "category": "Probability",
+      "concept": "Conditional Probability in Bernoulli Trials",
+      "learningObjective": "Find a conditional probability involving exactly two successes given at least one success.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "In 3 independent Bernoulli trials, the probability of success in each trial is \\(\\frac{1}{3}\\). Given that at least one success occurs, find the probability that exactly two successes occur.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{2}{19}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{6}{19}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First compute the probability of at least one success:\n\\[\nP(\\text{at least one})=1-\\left(\\frac{2}{3}\\right)^3\n=1-\\frac{8}{27}\n=\\frac{19}{27}.\n\\]\nThe probability of exactly two successes is\n\\[\nP(X=2)=\\binom{3}{2}\\left(\\frac{1}{3}\\right)^2\\left(\\frac{2}{3}\\right)\n=3\\cdot\\frac{1}{9}\\cdot\\frac{2}{3}\n=\\frac{6}{27}\n=\\frac{2}{9}.\n\\]\nTherefore the conditional probability is\n\\[\nP(X=2\\mid X\\ge 1)=\\frac{P(X=2)}{P(X\\ge 1)}\n=\\frac{\\frac{2}{9}}{\\frac{19}{27}}\n=\\frac{6}{19}.\n\\]\nSo the correct probability is \\(\\frac{6}{19}\\).",
+      "hint": "Use \\(P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}\\). Here \\(A\\) is “exactly two successes” and \\(B\\) is “at least one success.”"
+    },
+    {
+      "id": "math-gaokao-315-q008",
+      "category": "Probability",
+      "concept": "Waiting Time in Bernoulli Trials",
+      "learningObjective": "Compute the probability that the first success occurs on a specified trial.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Independent Bernoulli trials are performed with success probability \\(\\frac{1}{4}\\). Find the probability that the first success occurs on the third trial.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{64}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{9}{64}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For the first success to occur on the third trial, the first two trials must be failures and the third trial must be a success.\nThe probability is\n\\[\n\\left(1-\\frac{1}{4}\\right)^2\\cdot\\frac{1}{4}\n=\\left(\\frac{3}{4}\\right)^2\\cdot\\frac{1}{4}\n=\\frac{9}{16}\\cdot\\frac{1}{4}\n=\\frac{9}{64}.\n\\]\nThus the required probability is \\(\\frac{9}{64}\\).",
+      "hint": "The first two trials must fail, and the third trial must succeed."
+    },
+    {
+      "id": "math-gaokao-315-q009",
+      "category": "Probability",
+      "concept": "Comparing Binomial Probabilities",
+      "learningObjective": "Compare probabilities of two different numbers of successes in symmetric Bernoulli trials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(X\\) be the number of successes in 10 independent Bernoulli trials with success probability \\(0.5\\). Which comparison is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P(X=6)>P(X=5)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(P(X=5)>P(X=6)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(n=10\\) and \\(p=0.5\\),\n\\[\nP(X=k)=\\binom{10}{k}\\left(\\frac{1}{2}\\right)^{10}.\n\\]\nThus\n\\[\nP(X=5)=\\binom{10}{5}\\left(\\frac{1}{2}\\right)^{10}\n=\\frac{252}{1024},\n\\]\nand\n\\[\nP(X=6)=\\binom{10}{6}\\left(\\frac{1}{2}\\right)^{10}\n=\\frac{210}{1024}.\n\\]\nSince \\(252>210\\), we have\n\\[\nP(X=5)>P(X=6).\n\\]\nTherefore the true comparison is \\(P(X=5)>P(X=6)\\).",
+      "hint": "Compare the binomial coefficients \\(\\binom{10}{5}\\) and \\(\\binom{10}{6}\\) when \\(p=0.5\\)."
+    },
+    {
+      "id": "math-gaokao-315-q010",
+      "category": "Probability",
+      "concept": "Number of Trials for a Given Probability",
+      "learningObjective": "Determine the smallest number of Bernoulli trials needed for the probability of at least one success to exceed a given value.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the smallest positive integer \\(n\\) such that the probability of at least one success in \\(n\\) independent Bernoulli trials with success probability \\(0.1\\) exceeds \\(0.99\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(44\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(43\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of at least one success in \\(n\\) trials is\n\\[\n1-(0.9)^n.\n\\]\nWe need\n\\[\n1-(0.9)^n>0.99.\n\\]\nThus\n\\[\n(0.9)^n<0.01.\n\\]\nTaking logarithms,\n\\[\nn\\ln(0.9)<\\ln(0.01).\n\\]\nSince \\(\\ln(0.9)<0\\), dividing reverses the inequality:\n\\[\nn>\\frac{\\ln(0.01)}{\\ln(0.9)}.\n\\]\nNumerically,\n\\[\n\\frac{\\ln(0.01)}{\\ln(0.9)}\\approx 43.7.\n\\]\nTherefore the smallest integer \\(n\\) is \\(44\\). Checking, \\(0.9^{43}\\approx 0.0106>0.01\\), while \\(0.9^{44}\\approx 0.0095<0.01\\).",
+      "hint": "Use the complement rule \\(P(\\text{at least one})=1-(1-p)^n\\), then solve the resulting inequality for \\(n\\)."
+    }
+  ]
+}

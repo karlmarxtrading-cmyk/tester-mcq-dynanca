@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-515",
+  "category": "Comprehensive Mathematics",
+  "title": "515. Sets, Logic, Reasoning & Proof: Mathematical Induction Step",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-515-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The inductive hypothesis",
+      "learningObjective": "State what is assumed in the inductive step.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In the inductive step of a proof that \\(P(n)\\) holds for all \\(n\\ge 1\\), what is assumed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P(k)\\) is true for one arbitrary integer \\(k\\ge 1\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(P(n)\\) is true for every integer \\(n\\ge 1\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The inductive hypothesis assumes the statement for a single, arbitrary value \\(k\\). From it, the statement for \\(k+1\\) is derived. Assuming \\(P(n)\\) for every \\(n\\) would be assuming the very statement that is to be proved.",
+      "hint": "The assumption concerns one unspecified value, not all values."
+    },
+    {
+      "id": "dynanca-515-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Goal of the inductive step",
+      "learningObjective": "State what must be derived in the inductive step.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In the inductive step, after assuming \\(P(k)\\), what must be proved?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P(k+1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(P(1)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The inductive step shows that the truth of the statement for \\(k\\) forces its truth for the next value, \\(k+1\\). The statement \\(P(1)\\) is the base case, which is checked separately.",
+      "hint": "The step moves from one value to the next."
+    },
+    {
+      "id": "dynanca-515-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Adding the next term",
+      "learningObjective": "Form the left side for the next case in an induction about a sum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Assume \\(1+2+\\cdots+k=\\frac{k(k+1)}{2}\\). Using this, what is \\(1+2+\\cdots+k+(k+1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{k(k+1)}{2}+(k+1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{k(k+1)}{2}+k\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sum up to \\(k+1\\) is the sum up to \\(k\\) plus the new term \\(k+1\\). Replacing the sum up to \\(k\\) by the inductive hypothesis gives \\(\\frac{k(k+1)}{2}+(k+1)\\). The term added is \\(k+1\\), not \\(k\\).",
+      "hint": "Identify the single new term that distinguishes the two sums."
+    },
+    {
+      "id": "dynanca-515-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Simplifying to the target form",
+      "learningObjective": "Simplify the expression obtained in the inductive step to the required form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which expression equals \\(\\frac{k(k+1)}{2}+(k+1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{(k+1)^2}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{(k+1)(k+2)}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor out \\(k+1\\): \\(\\frac{k(k+1)}{2}+(k+1)=(k+1)\\left(\\frac{k}{2}+1\\right)=\\frac{(k+1)(k+2)}{2}\\). This is the formula \\(\\frac{n(n+1)}{2}\\) with \\(n=k+1\\), as required. The expression \\(\\frac{(k+1)^2}{2}\\) is different; for \\(k=1\\) it gives \\(2\\) instead of \\(3\\).",
+      "hint": "Factor out the common factor \\(k+1\\) and combine the remaining terms."
+    },
+    {
+      "id": "dynanca-515-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Stating the next case",
+      "learningObjective": "Write the statement that the inductive step must reach.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For the statement \\(P(n)\\): \"\\(1+2+\\cdots+n=\\frac{n(n+1)}{2}\\)\", what does \\(P(k+1)\\) say?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1+2+\\cdots+(k+1)=\\frac{k(k+1)}{2}+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1+2+\\cdots+(k+1)=\\frac{(k+1)(k+2)}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The statement \\(P(k+1)\\) is obtained by replacing \\(n\\) with \\(k+1\\) everywhere: the sum ends at \\(k+1\\), and the right side becomes \\(\\frac{(k+1)((k+1)+1)}{2}=\\frac{(k+1)(k+2)}{2}\\). Adding \\(1\\) to the old right side is not what the formula says.",
+      "hint": "Replace every occurrence of \\(n\\) by \\(k+1\\)."
+    },
+    {
+      "id": "dynanca-515-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An inequality in the inductive step",
+      "learningObjective": "Choose a correct chain of inequalities for an inductive step.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Assume \\(2^k>k\\) for some integer \\(k\\ge 1\\). Which chain proves \\(2^{k+1}>k+1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2^{k+1}=2^k+1>k+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2^{k+1}=2\\cdot 2^k>2k\\ge k+1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(2^{k+1}=2\\cdot 2^k\\) and \\(2^k>k\\), we get \\(2^{k+1}>2k\\). For \\(k\\ge 1\\), \\(2k=k+k\\ge k+1\\). Together these give \\(2^{k+1}>k+1\\). The second chain starts from the false equation \\(2^{k+1}=2^k+1\\); raising the exponent by one doubles the power.",
+      "hint": "Increasing the exponent by \\(1\\) multiplies the power by \\(2\\)."
+    },
+    {
+      "id": "dynanca-515-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Assuming the conclusion",
+      "learningObjective": "Identify the logical flaw of starting from the statement to be proved.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "In an inductive step, a student starts from the equation \\(P(k+1)\\), transforms it, and arrives at the true statement \\(0=0\\). The student concludes that \\(P(k+1)\\) is proved. What is wrong?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The argument assumes what is to be proved; deriving a true statement from \\(P(k+1)\\) does not show that \\(P(k+1)\\) is true."
+        },
+        {
+          "label": "B",
+          "text": "Nothing; reaching a true statement always proves the starting equation."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A true statement can follow from a false one: from \\(1=2\\), multiplying both sides by \\(0\\) gives \\(0=0\\). So ending with something true says nothing about the starting equation, unless every step can be reversed. A correct step starts from the hypothesis \\(P(k)\\) and derives \\(P(k+1)\\).",
+      "hint": "Consider what follows when both sides of the false equation \\(1=2\\) are multiplied by \\(0\\)."
+    },
+    {
+      "id": "dynanca-515-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The next odd number",
+      "learningObjective": "Identify the term added in the inductive step for a sum of odd numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Assume \\(1+3+5+\\cdots+(2k-1)=k^2\\). Which term is added to both sides to reach the case \\(k+1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2k\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2k+1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The \\(n\\)th odd number is \\(2n-1\\). For \\(n=k+1\\) this is \\(2(k+1)-1=2k+1\\). Adding it gives \\(k^2+2k+1=(k+1)^2\\), which is the statement for \\(k+1\\). The number \\(2k\\) is even and does not belong to the sum.",
+      "hint": "Substitute \\(n=k+1\\) into the general term \\(2n-1\\)."
+    },
+    {
+      "id": "dynanca-515-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Rewriting for divisibility",
+      "learningObjective": "Rewrite the next case so that the inductive hypothesis can be used.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Assume that \\(3\\) divides \\(4^k-1\\). Which identity allows the conclusion that \\(3\\) divides \\(4^{k+1}-1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4^{k+1}-1=4\\left(4^k-1\\right)+3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4^{k+1}-1=4\\left(4^k-1\\right)-3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Expanding the right side: \\(4(4^k-1)+3=4^{k+1}-4+3=4^{k+1}-1\\), so the first identity is correct. Both terms on its right are divisible by \\(3\\) (the first by the hypothesis), hence so is the sum. The second expression equals \\(4^{k+1}-7\\), which is not \\(4^{k+1}-1\\).",
+      "hint": "Expand each right side and compare with \\(4^{k+1}-1\\)."
+    },
+    {
+      "id": "dynanca-515-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A step that fails for one value",
+      "learningObjective": "Locate the value for which a faulty inductive step breaks down.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A faulty argument claims that in every group of \\(n\\) numbers all numbers are equal. Step: in a group of \\(k+1\\) numbers, the first \\(k\\) are equal by hypothesis and the last \\(k\\) are equal by hypothesis; since these two subgroups share a number, all \\(k+1\\) are equal. For which \\(k\\) does this step fail?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=1\\), because the first \\(1\\) number and the last \\(1\\) number of a group of \\(2\\) have nothing in common."
+        },
+        {
+          "label": "B",
+          "text": "No value of \\(k\\); the step is correct, and only the base case is wrong."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The step needs the two subgroups of size \\(k\\) to overlap, which requires \\(k+k>k+1\\), that is, \\(k\\ge 2\\). For \\(k=1\\), a group of \\(2\\) numbers splits into its first number and its last number, with no common member, so nothing links them. The base case \\(n=1\\) is true; the whole argument collapses at the step from \\(1\\) to \\(2\\).",
+      "hint": "Check whether the two subgroups overlap when the larger group has only \\(2\\) numbers."
+    }
+  ]
+}

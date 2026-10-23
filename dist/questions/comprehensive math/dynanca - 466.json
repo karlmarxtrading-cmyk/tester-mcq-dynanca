@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-466",
+  "category": "Comprehensive Mathematics",
+  "title": "466. Sets, Logic, Reasoning & Proof: Set Representation by Set-Builder Notation",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-466-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Reading set-builder notation",
+      "learningObjective": "Interpret the vertical bar in set-builder notation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In the notation \\(\\{x\\in\\mathbb{Z}\\mid x>3\\}\\), how is the vertical bar read?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"divides\""
+        },
+        {
+          "label": "B",
+          "text": "\"such that\""
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set-builder notation has the form \\(\\{\\text{element}\\mid\\text{condition}\\}\\). The bar separates the description of the elements from the condition they must satisfy and is read \"such that\". The whole expression reads \"the set of all integers \\(x\\) such that \\(x\\) is greater than \\(3\\)\".",
+      "hint": "The bar separates the kind of object from the condition it must satisfy."
+    },
+    {
+      "id": "dynanca-466-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Builder form of a listed set",
+      "learningObjective": "Choose the set-builder description that matches a listing.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Here \\(\\mathbb{Z}^{+}\\) denotes the positive integers. Which description equals \\(\\{1,2,3,4\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{x\\in\\mathbb{Z}^{+}\\mid x<4\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{x\\in\\mathbb{Z}^{+}\\mid x\\le 4\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The positive integers with \\(x\\le 4\\) are \\(1,2,3,4\\), which matches the listing. With the strict condition \\(x<4\\) the element \\(4\\) would be missing, giving \\(\\{1,2,3\\}\\).",
+      "hint": "Test the largest listed element against each condition."
+    },
+    {
+      "id": "dynanca-466-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Listing from a quadratic inequality",
+      "learningObjective": "Convert a set-builder description with a squared variable into a listing.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which listing equals \\(\\{x\\in\\mathbb{Z}\\mid x^2\\le 4\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{0,1,2\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{-2,-1,0,1,2\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An integer satisfies \\(x^2\\le 4\\) exactly when \\(-2\\le x\\le 2\\). So the set is \\(\\{-2,-1,0,1,2\\}\\). Negative integers must be included, because \\((-2)^2=4\\) and \\((-1)^2=1\\) also satisfy the condition.",
+      "hint": "Remember that negative integers have positive squares."
+    },
+    {
+      "id": "dynanca-466-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Builder form for odd numbers",
+      "learningObjective": "Choose a formula form of set-builder notation for the positive odd integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Here \\(\\mathbb{Z}^{+}=\\{1,2,3,\\ldots\\}\\). Which description equals the set of all positive odd integers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{2k+1\\mid k\\in\\mathbb{Z}^{+}\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{2k-1\\mid k\\in\\mathbb{Z}^{+}\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(k=1,2,3,\\ldots\\) the expression \\(2k-1\\) gives \\(1,3,5,\\ldots\\), which is every positive odd integer. The expression \\(2k+1\\) gives \\(3,5,7,\\ldots\\) and misses the odd number \\(1\\), because \\(k\\) starts at \\(1\\).",
+      "hint": "Substitute the smallest allowed value of \\(k\\) into each formula."
+    },
+    {
+      "id": "dynanca-466-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Builder form for multiples",
+      "learningObjective": "Describe a set of multiples with a formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Here \\(\\mathbb{Z}^{+}=\\{1,2,3,\\ldots\\}\\). Which description equals \\(\\{3,6,9,12,\\ldots\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{k+3\\mid k\\in\\mathbb{Z}^{+}\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{3k\\mid k\\in\\mathbb{Z}^{+}\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The listed numbers are the positive multiples of \\(3\\): \\(3\\cdot 1,3\\cdot 2,3\\cdot 3,\\ldots\\), which is \\(\\{3k\\mid k\\in\\mathbb{Z}^{+}\\}\\). The expression \\(k+3\\) gives \\(4,5,6,\\ldots\\), every integer greater than \\(3\\), which is a different set.",
+      "hint": "Compute the first three values of each formula."
+    },
+    {
+      "id": "dynanca-466-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A condition no real number satisfies",
+      "learningObjective": "Recognise a set-builder description of the empty set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which set equals \\(\\{x\\in\\mathbb{R}\\mid x^2=-1\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{-1\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The square of every real number is at least \\(0\\), so no real \\(x\\) satisfies \\(x^2=-1\\). The set therefore has no elements and equals \\(\\varnothing\\). The number \\(-1\\) is not a solution, since \\((-1)^2=1\\).",
+      "hint": "Consider the sign of the square of a real number."
+    },
+    {
+      "id": "dynanca-466-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Builder notation and intervals",
+      "learningObjective": "Match a set-builder description of real numbers with interval notation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which interval equals \\(\\{x\\in\\mathbb{R}\\mid 1<x\\le 5\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,5]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([1,5)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The strict inequality \\(1<x\\) excludes \\(1\\), shown by a round bracket, and \\(x\\le 5\\) includes \\(5\\), shown by a square bracket. So the set is \\((1,5]\\). The interval \\([1,5)\\) includes \\(1\\) and excludes \\(5\\), which is the reverse.",
+      "hint": "A square bracket means the endpoint is included."
+    },
+    {
+      "id": "dynanca-466-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Condition with no integer solution",
+      "learningObjective": "Evaluate a set-builder description whose equation has no solution in the stated universe.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Which set equals \\(\\{x\\in\\mathbb{Z}\\mid 2x+1=6\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{2.5\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Solving \\(2x+1=6\\) gives \\(x=2.5\\). The description requires \\(x\\in\\mathbb{Z}\\), and \\(2.5\\) is not an integer, so no element satisfies the condition and the set is empty. The left side \\(2x+1\\) is odd for every integer \\(x\\), so it can never equal \\(6\\).",
+      "hint": "After solving the equation, check that the solution belongs to the set named before the bar."
+    },
+    {
+      "id": "dynanca-466-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A set of ordered pairs",
+      "learningObjective": "Count the elements of a set of ordered pairs described in set-builder notation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many elements does the set \\(\\{(x,y)\\in\\mathbb{Z}\\times\\mathbb{Z}\\mid x\\ge 0,\\ y\\ge 0,\\ x+y=2\\}\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The pairs of non-negative integers with sum \\(2\\) are \\((0,2)\\), \\((1,1)\\), and \\((2,0)\\). The pairs \\((0,2)\\) and \\((2,0)\\) are different ordered pairs, so there are \\(3\\) elements.",
+      "hint": "List the possible values of \\(x\\) and find the matching \\(y\\) for each."
+    },
+    {
+      "id": "dynanca-466-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Formula form versus condition form",
+      "learningObjective": "Distinguish a set of values of a formula from a set of indices.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Here \\(\\mathbb{Z}^{+}=\\{1,2,3,\\ldots\\}\\). Which description equals \\(\\{1,4,9,16,25,36,49\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{n^2\\mid n\\in\\mathbb{Z}^{+},\\ n\\le 7\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{n\\in\\mathbb{Z}^{+}\\mid n^2\\le 49\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In the first description the elements are the squares \\(n^2\\) for \\(n=1,\\ldots,7\\), which gives \\(1,4,9,16,25,36,49\\). In the second description the elements are the numbers \\(n\\) themselves with \\(n^2\\le 49\\), which gives \\(\\{1,2,3,4,5,6,7\\}\\). What stands before the bar determines what the elements are.",
+      "hint": "Look at the expression before the bar: it tells which objects are collected."
+    }
+  ]
+}

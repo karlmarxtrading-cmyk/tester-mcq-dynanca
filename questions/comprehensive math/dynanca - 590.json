@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-590",
+  "category": "Comprehensive Mathematics",
+  "title": "590. Discrete Mathematics, Counting & Graph Theory: Binary Tree Traversals",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-590-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Preorder",
+      "learningObjective": "State the order of visits in a preorder traversal.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In which order does a preorder traversal of a binary tree visit the parts of the tree?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The root, then the left subtree, then the right subtree"
+        },
+        {
+          "label": "B",
+          "text": "The left subtree, then the root, then the right subtree"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Preorder visits the root before either subtree, and then treats the left subtree and the right subtree in the same way. Visiting the root between the two subtrees is the inorder traversal.",
+      "hint": "The prefix \"pre\" says when the root is visited."
+    },
+    {
+      "id": "dynanca-590-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Inorder of a three-node tree",
+      "learningObjective": "Find the inorder traversal of a small binary tree.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A binary tree has root \\(1\\), whose left child is \\(2\\) and whose right child is \\(3\\). What is its inorder traversal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2,\\ 1,\\ 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1,\\ 2,\\ 3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Inorder visits the left subtree, then the root, then the right subtree. The left subtree is the single node \\(2\\) and the right subtree is the single node \\(3\\), so the order is \\(2,1,3\\). The order \\(1,2,3\\) is the preorder traversal.",
+      "hint": "In an inorder traversal the root comes between its two subtrees."
+    },
+    {
+      "id": "dynanca-590-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Preorder of a six-node tree",
+      "learningObjective": "Find the preorder traversal of a described binary tree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A binary tree has root \\(A\\) with left child \\(B\\) and right child \\(C\\). The node \\(B\\) has left child \\(D\\) and right child \\(E\\). The node \\(C\\) has no left child, and its right child is \\(F\\). What is the preorder traversal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A,\\ B,\\ C,\\ D,\\ E,\\ F\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A,\\ B,\\ D,\\ E,\\ C,\\ F\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Preorder visits \\(A\\), then the whole left subtree in preorder, \\(B,D,E\\), and then the whole right subtree in preorder, \\(C,F\\). The order \\(A,B,C,D,E,F\\) goes level by level, which is a different traversal.",
+      "hint": "After the root, finish the entire left subtree before entering the right subtree."
+    },
+    {
+      "id": "dynanca-590-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Inorder of a six-node tree",
+      "learningObjective": "Find the inorder traversal of a described binary tree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A binary tree has root \\(A\\) with left child \\(B\\) and right child \\(C\\). The node \\(B\\) has left child \\(D\\) and right child \\(E\\). The node \\(C\\) has no left child, and its right child is \\(F\\). What is the inorder traversal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(D,\\ B,\\ E,\\ A,\\ F,\\ C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(D,\\ B,\\ E,\\ A,\\ C,\\ F\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The left subtree of \\(A\\) is traversed first, giving \\(D,B,E\\); then \\(A\\); then the right subtree. In the right subtree, \\(C\\) has no left child, so \\(C\\) is visited before its right child \\(F\\), giving \\(C,F\\). The order ending in \\(F,C\\) would be correct if \\(F\\) were the left child of \\(C\\).",
+      "hint": "At the node \\(C\\), remember which side its only child is on."
+    },
+    {
+      "id": "dynanca-590-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Postorder of a six-node tree",
+      "learningObjective": "Find the postorder traversal of a described binary tree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A binary tree has root \\(A\\) with left child \\(B\\) and right child \\(C\\). The node \\(B\\) has left child \\(D\\) and right child \\(E\\). The node \\(C\\) has no left child, and its right child is \\(F\\). What is the postorder traversal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(D,\\ E,\\ B,\\ C,\\ F,\\ A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(D,\\ E,\\ B,\\ F,\\ C,\\ A\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Postorder visits the left subtree, then the right subtree, and the root last. The left subtree gives \\(D,E,B\\). In the right subtree the child \\(F\\) is visited before \\(C\\), giving \\(F,C\\). Finally \\(A\\). The order with \\(C\\) before \\(F\\) visits a node before its child, which postorder never does.",
+      "hint": "In postorder every node comes after all the nodes below it."
+    },
+    {
+      "id": "dynanca-590-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The root in each traversal",
+      "learningObjective": "Identify the traversal that visits the root last.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Which traversal of a binary tree always visits the root last?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Postorder"
+        },
+        {
+          "label": "B",
+          "text": "Inorder"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Postorder visits both subtrees before the root, so the root is the last node visited. Inorder visits the root after the left subtree but before the right subtree, so the root is last only when the right subtree is empty.",
+      "hint": "Recall where each traversal places the root relative to the two subtrees."
+    },
+    {
+      "id": "dynanca-590-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Traversals of a search tree",
+      "learningObjective": "Find the preorder traversal of a binary search tree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A binary search tree has root \\(5\\). The left child of \\(5\\) is \\(3\\), whose left child is \\(1\\) and whose right child is \\(4\\). The right child of \\(5\\) is \\(8\\), which has no children. What is the preorder traversal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1,\\ 3,\\ 4,\\ 5,\\ 8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5,\\ 3,\\ 1,\\ 4,\\ 8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Preorder visits the root \\(5\\), then the left subtree in preorder, \\(3,1,4\\), then the right subtree, \\(8\\). The increasing order \\(1,3,4,5,8\\) is the inorder traversal; in a binary search tree, inorder always lists the keys in increasing order.",
+      "hint": "Preorder starts with the root, not with the smallest key."
+    },
+    {
+      "id": "dynanca-590-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Rebuilding a small tree",
+      "learningObjective": "Use two traversals to determine a third.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A binary tree with three nodes has preorder \\(A,B,C\\) and inorder \\(B,A,C\\). What is its postorder traversal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(C,\\ B,\\ A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(B,\\ C,\\ A\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Preorder starts with the root, so the root is \\(A\\). In the inorder list, \\(B\\) stands to the left of \\(A\\) and \\(C\\) to the right, so \\(B\\) is the left child and \\(C\\) the right child. Postorder visits left, right, root: \\(B,C,A\\).",
+      "hint": "The first entry of the preorder list is the root; locate it in the inorder list."
+    },
+    {
+      "id": "dynanca-590-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An expression tree",
+      "learningObjective": "Read an arithmetic expression tree in postorder.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "An expression tree has root \\(\\times\\). The left child of the root is \\(+\\), whose children are the leaves \\(2\\) (left) and \\(3\\) (right). The right child of the root is the leaf \\(4\\). Which sequence is the postorder traversal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2,\\ 3,\\ +,\\ 4,\\ \\times\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2,\\ +,\\ 3,\\ \\times,\\ 4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Postorder visits the left subtree, \\(2,3,+\\), then the right subtree, \\(4\\), and finally the root \\(\\times\\). Read as a calculation, it says: add \\(2\\) and \\(3\\), then multiply by \\(4\\), which gives \\(20\\). The sequence \\(2,+,3,\\times,4\\) is the inorder traversal.",
+      "hint": "In postorder, an operation appears after both of the values it combines."
+    },
+    {
+      "id": "dynanca-590-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Rebuilding a five-node tree",
+      "learningObjective": "Reconstruct a binary tree from its preorder and inorder traversals.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A binary tree has preorder \\(A,B,D,C,E\\) and inorder \\(D,B,A,C,E\\). What is its postorder traversal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(D,\\ B,\\ E,\\ C,\\ A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(D,\\ B,\\ C,\\ E,\\ A\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The root is \\(A\\). In the inorder list, \\(D,B\\) lie to its left and \\(C,E\\) to its right. The left subtree has preorder \\(B,D\\) and inorder \\(D,B\\), so \\(B\\) is its root with left child \\(D\\). The right subtree has preorder \\(C,E\\) and inorder \\(C,E\\), so \\(C\\) is its root with right child \\(E\\). Postorder: \\(D,B\\) for the left subtree, \\(E,C\\) for the right subtree, then \\(A\\).",
+      "hint": "Split the inorder list at the root, then treat each part in the same way."
+    }
+  ]
+}

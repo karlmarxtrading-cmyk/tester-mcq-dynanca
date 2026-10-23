@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-228",
+  "category": "Comprehensive Mathematics",
+  "title": "228. Algebra, Equations & Inequalities: Parameter Conditions in Rational Equations",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-228-q001",
+      "category": "Algebra",
+      "concept": "Parameter condition for a solution of a rational equation",
+      "learningObjective": "Determine the parameter value for which a given value satisfies a rational equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For which value of \\(k\\) is \\(x=2\\) a solution of \\(\\frac{x+k}{x-1}=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=2\\) into the equation:\n\\[\n\\frac{2+k}{2-1}=0\n\\]\nSince \\(2-1=1\\), this gives \\(2+k=0\\), so \\(k=-2\\). The domain excludes \\(x=1\\), and \\(2\\ne 1\\), so the solution is valid.",
+      "hint": "Substitute the given value of \\(x\\) into the equation and solve for \\(k\\)."
+    },
+    {
+      "id": "dynanca-228-q002",
+      "category": "Algebra",
+      "concept": "Parameter condition for no solution of a rational equation",
+      "learningObjective": "Determine the parameter value that makes a rational equation have no solution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For which value of \\(k\\) does \\(\\frac{x+k}{x-1}=2\\) have no solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain excludes \\(x=1\\). Clear the denominator:\n\\[\nx+k=2(x-1)=2x-2\n\\]\nRearranging gives \\(x=k+2\\). This candidate is excluded when \\(x=1\\), so \\(k+2=1\\), which gives \\(k=-1\\). When \\(k=-1\\), the equation becomes \\(\\frac{x-1}{x-1}=2\\), which is impossible for \\(x\\ne 1\\). Therefore the equation has no solution.",
+      "hint": "Clear the denominator, solve for \\(x\\) in terms of \\(k\\), then set the candidate equal to the excluded value."
+    },
+    {
+      "id": "dynanca-228-q003",
+      "category": "Algebra",
+      "concept": "Parameter condition for exactly one solution of a rational equation",
+      "learningObjective": "Determine the parameter condition for a rational equation to have exactly one solution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For which values of \\(k\\) does \\(\\frac{x+k}{x-2}=3\\) have exactly one solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k\\ne -2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=-2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain excludes \\(x=2\\). Clear the denominator:\n\\[\nx+k=3(x-2)=3x-6\n\\]\nRearranging gives \\(2x=k+6\\), so \\(x=\\frac{k+6}{2}\\). This candidate is excluded when\n\\[\n\\frac{k+6}{2}=2\n\\]\nwhich gives \\(k+6=4\\), so \\(k=-2\\). For every \\(k\\ne -2\\), the candidate is valid and unique. Therefore the equation has exactly one solution when \\(k\\ne -2\\).",
+      "hint": "Find the candidate solution in terms of \\(k\\), then exclude the value that makes the denominator zero."
+    },
+    {
+      "id": "dynanca-228-q004",
+      "category": "Algebra",
+      "concept": "Parameter condition for no solution of a rational equation",
+      "learningObjective": "Determine the parameter value that makes a rational equation have no solution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For which value of \\(k\\) does \\(\\frac{x+k}{x+3}=0\\) have no solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=-3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain excludes \\(x=-3\\). The equation requires the numerator to be zero:\n\\[\nx+k=0\n\\]\nso \\(x=-k\\). This candidate is excluded when \\(-k=-3\\), which gives \\(k=3\\). When \\(k=3\\), the equation becomes \\(\\frac{x+3}{x+3}=0\\), which is impossible for \\(x\\ne -3\\). Therefore the equation has no solution.",
+      "hint": "Set the numerator equal to zero, then set that root equal to the excluded denominator value."
+    },
+    {
+      "id": "dynanca-228-q005",
+      "category": "Algebra",
+      "concept": "Parameter condition for exactly one solution with a quadratic denominator",
+      "learningObjective": "Determine the parameter values for which a rational equation has exactly one solution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For which values of \\(k\\) does \\(\\frac{x+k}{x^2-1}=0\\) have exactly one solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=1\\) or \\(k=-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k\\ne 1\\) and \\(k\\ne -1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain excludes \\(x=1\\) and \\(x=-1\\). The equation requires the numerator to be zero:\n\\[\nx+k=0\n\\]\nso \\(x=-k\\). This candidate is valid unless \\(-k=1\\) or \\(-k=-1\\), which means \\(k=-1\\) or \\(k=1\\). For all other values of \\(k\\), \\(x=-k\\) is a single valid solution. Therefore the equation has exactly one solution when \\(k\\ne 1\\) and \\(k\\ne -1\\).",
+      "hint": "Find the numerator root, then exclude values that make it equal to any denominator zero."
+    },
+    {
+      "id": "dynanca-228-q006",
+      "category": "Algebra",
+      "concept": "Parameter condition for no solution with a quadratic denominator",
+      "learningObjective": "Determine the parameter values that make a rational equation have no solution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For which values of \\(k\\) does \\(\\frac{x+k}{x^2-4}=0\\) have no solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=2\\) or \\(k=-2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain excludes \\(x=2\\) and \\(x=-2\\). The equation requires the numerator to be zero:\n\\[\nx+k=0\n\\]\nso \\(x=-k\\). There is no solution when this candidate is excluded, so \\(-k=2\\) or \\(-k=-2\\). This gives \\(k=-2\\) or \\(k=2\\). Therefore the equation has no solution when \\(k=2\\) or \\(k=-2\\).",
+      "hint": "Set the numerator root equal to each excluded denominator value."
+    },
+    {
+      "id": "dynanca-228-q007",
+      "category": "Algebra",
+      "concept": "Parameter condition for existence of a solution",
+      "learningObjective": "Determine the parameter condition for a rational equation to have at least one solution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For which values of \\(k\\) does \\(\\frac{x+k}{x-1}=0\\) have at least one solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k\\ne -1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=-1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain excludes \\(x=1\\). The equation requires the numerator to be zero:\n\\[\nx+k=0\n\\]\nso \\(x=-k\\). This candidate is valid unless \\(-k=1\\), which gives \\(k=-1\\). Therefore the equation has at least one solution for all \\(k\\ne -1\\). When \\(k=-1\\), the numerator root is \\(x=1\\), which is excluded, so there is no solution.",
+      "hint": "Find the numerator root, then exclude the value that makes it equal to the denominator zero."
+    },
+    {
+      "id": "dynanca-228-q008",
+      "category": "Algebra",
+      "concept": "Parameter condition for exactly one solution of a rational equation reducible to quadratic",
+      "learningObjective": "Determine the parameter value for which a rational equation has exactly one solution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Which of the following values of \\(k\\) makes \\(\\frac{x+k}{x-2}=x\\) have exactly one solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=-\\frac{9}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=\\frac{9}{4}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain excludes \\(x=2\\). Multiply by \\(x-2\\), then rearrange:\n\\[\n\\begin{aligned}\nx+k &= x(x-2)=x^2-2x\\\\\nx^2-3x-k &= 0\n\\end{aligned}\n\\]\nA zero discriminant gives a single candidate root:\n\\[\n9+4k=0\n\\]\nso \\(k=-\\frac{9}{4}\\). The corresponding root is \\(x=\\frac{3}{2}\\), which is not excluded because \\(x\\ne 2\\). Therefore the equation has exactly one valid solution. Exactly one solution can also occur when one root of \\(x^2-3x-k=0\\) is the excluded value \\(x=2\\), i.e. \\(k=-2\\) (roots \\(1\\) and \\(2\\)); this value is not among the options. For \\(k=\\frac{9}{4}\\), the discriminant is \\(18>0\\) and neither root equals \\(2\\), so there are two solutions.",
+      "hint": "Clear the denominator, set the quadratic discriminant equal to zero, and check the excluded value."
+    },
+    {
+      "id": "dynanca-228-q009",
+      "category": "Algebra",
+      "concept": "Parameter condition for no solution of a rational equation",
+      "learningObjective": "Determine the parameter value that makes a rational equation have no solution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For which value of \\(k\\) does \\(\\frac{2x+k}{x-1}=3\\) have no solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=-2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain excludes \\(x=1\\). Clear the denominator:\n\\[\n2x+k=3(x-1)=3x-3\n\\]\nRearranging gives \\(x=k+3\\). This candidate is excluded when \\(x=1\\), so \\(k+3=1\\), which gives \\(k=-2\\). When \\(k=-2\\), the equation becomes \\(\\frac{2x-2}{x-1}=3\\), which simplifies to \\(2=3\\) for \\(x\\ne 1\\), so there is no solution.",
+      "hint": "Solve for \\(x\\) in terms of \\(k\\), then set the candidate equal to the excluded denominator value."
+    },
+    {
+      "id": "dynanca-228-q010",
+      "category": "Algebra",
+      "concept": "Parameter condition for exactly one solution of a rational equation reducible to quadratic",
+      "learningObjective": "Determine the parameter value for which a rational equation has exactly one solution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Which of the following values of \\(k\\) makes \\(\\frac{x+k}{x-4}=x\\) have exactly one solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=\\frac{25}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=-\\frac{25}{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain excludes \\(x=4\\). Multiply by \\(x-4\\), then rearrange:\n\\[\n\\begin{aligned}\nx+k &= x(x-4)=x^2-4x\\\\\nx^2-5x-k &= 0\n\\end{aligned}\n\\]\nA zero discriminant gives a single candidate root:\n\\[\n25+4k=0\n\\]\nso \\(k=-\\frac{25}{4}\\). The corresponding root is \\(x=\\frac{5}{2}\\), which is not excluded because \\(x\\ne 4\\). Therefore the equation has exactly one valid solution. Exactly one solution also occurs when one root of \\(x^2-5x-k=0\\) is the excluded value \\(x=4\\), i.e. \\(k=-4\\) (roots \\(1\\) and \\(4\\)); this value is not among the options. For \\(k=\\frac{25}{4}\\), the discriminant is \\(50>0\\) and neither root equals \\(4\\), so there are two solutions.",
+      "hint": "Clear the denominator, set the quadratic discriminant equal to zero, and check the excluded value."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-18",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 18",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-18-q001",
+      "category": "Logic",
+      "concept": "Negation of a Universal Statement",
+      "learningObjective": "Negate a universal statement over the real numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the negation of \\(\\forall x\\in\\mathbb{R},\\,x^2\\ge 0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\forall x\\in\\mathbb{R},\\,x^2<0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\exists x\\in\\mathbb{R},\\,x^2<0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The negation of a universal statement\n\\[\n\\forall x\\in\\mathbb{R},\\,P(x)\n\\]\nis the existential statement\n\\[\n\\exists x\\in\\mathbb{R},\\,\\neg P(x).\n\\]\nHere \\(P(x)\\) is \\(x^2\\ge 0\\), so \\(\\neg P(x)\\) is \\(x^2<0\\). Therefore, the negation is\n\\[\n\\exists x\\in\\mathbb{R},\\,x^2<0.\n\\]",
+      "hint": "Change “for all” to “there exists” and negate the inner condition."
+    },
+    {
+      "id": "math-gaokao-18-q002",
+      "category": "Logic",
+      "concept": "Negation of an Existential Statement",
+      "learningObjective": "Negate an existential statement over the real numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the negation of \\(\\exists x\\in\\mathbb{R},\\,x^2=-1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\forall x\\in\\mathbb{R},\\,x^2=-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\forall x\\in\\mathbb{R},\\,x^2\\ne -1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The negation of an existential statement\n\\[\n\\exists x\\in\\mathbb{R},\\,P(x)\n\\]\nis the universal statement\n\\[\n\\forall x\\in\\mathbb{R},\\,\\neg P(x).\n\\]\nHere \\(P(x)\\) is \\(x^2=-1\\), so \\(\\neg P(x)\\) is \\(x^2\\ne -1\\). Therefore, the negation is\n\\[\n\\forall x\\in\\mathbb{R},\\,x^2\\ne -1.\n\\]",
+      "hint": "Change “there exists” to “for all” and negate the inner condition."
+    },
+    {
+      "id": "math-gaokao-18-q003",
+      "category": "Logic",
+      "concept": "Negation of a Universal Statement in Words",
+      "learningObjective": "Negate a universal statement expressed in ordinary language.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is the negation of the statement “Every prime number is odd”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There exists a prime number that is not odd."
+        },
+        {
+          "label": "B",
+          "text": "No prime number is odd."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The original statement is universal: every prime number has the property of being odd. The negation of a universal statement is existential with the property negated. Therefore, the negation is: there exists at least one prime number that is not odd. This is exactly option A. Option B is a much stronger statement and is not the negation.",
+      "hint": "Negate “every” to “there exists at least one” and negate the property “is odd.”"
+    },
+    {
+      "id": "math-gaokao-18-q004",
+      "category": "Logic",
+      "concept": "Negation of an Existential Statement over Integers",
+      "learningObjective": "Negate an existential statement involving integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the negation of \\(\\exists n\\in\\mathbb{Z},\\,n^2=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\exists n\\in\\mathbb{Z},\\,n^2\\ne 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\forall n\\in\\mathbb{Z},\\,n^2\\ne 2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The negation of\n\\[\n\\exists n\\in\\mathbb{Z},\\,n^2=2\n\\]\nis\n\\[\n\\forall n\\in\\mathbb{Z},\\,n^2\\ne 2.\n\\]\nThe quantifier changes from “there exists” to “for all,” and the condition \\(n^2=2\\) is negated to \\(n^2\\ne 2\\). Option A is not the negation because it still uses an existential quantifier.",
+      "hint": "Negate the quantifier first, then negate the equation inside."
+    },
+    {
+      "id": "math-gaokao-18-q005",
+      "category": "Logic",
+      "concept": "Negation of a Quantified Implication",
+      "learningObjective": "Negate a universally quantified implication.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is the negation of \\(\\forall x\\in\\mathbb{R},\\,(x>0\\implies x^2>0)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\exists x\\in\\mathbb{R},\\,(x>0\\land x^2\\le 0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\exists x\\in\\mathbb{R},\\,(x\\le 0\\land x^2>0)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The negation of a universal statement is existential:\n\\[\n\\neg\\bigl(\\forall x\\in\\mathbb{R},\\,P(x)\\bigr)\n\\equiv\n\\exists x\\in\\mathbb{R},\\,\\neg P(x).\n\\]\nHere \\(P(x)\\) is \\(x>0\\implies x^2>0\\). The negation of an implication \\(A\\implies B\\) is \\(A\\land\\neg B\\). Thus\n\\[\n\\neg(x>0\\implies x^2>0)\n\\equiv\nx>0\\land x^2\\le 0.\n\\]\nTherefore, the negation is\n\\[\n\\exists x\\in\\mathbb{R},\\,(x>0\\land x^2\\le 0).\n\\]",
+      "hint": "Use the fact that the negation of \\(A\\implies B\\) is \\(A\\land\\neg B\\)."
+    },
+    {
+      "id": "math-gaokao-18-q006",
+      "category": "Logic",
+      "concept": "Negation of Nested Quantifiers",
+      "learningObjective": "Negate a quantified statement with three alternating quantifiers.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "What is the negation of\n\\[\n\\forall \\varepsilon>0,\\,\\exists N\\in\\mathbb{N},\\,\\forall n\\ge N,\\,|a_n-L|<\\varepsilon?\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\exists \\varepsilon>0,\\,\\forall N\\in\\mathbb{N},\\,\\exists n\\ge N,\\,|a_n-L|\\ge \\varepsilon\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\forall \\varepsilon>0,\\,\\exists N\\in\\mathbb{N},\\,\\forall n\\ge N,\\,|a_n-L|\\ge \\varepsilon\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Negating a quantified statement reverses each quantifier in order and negates the final condition. Thus\n\\[\n\\neg\\bigl(\\forall \\varepsilon>0,\\,\\exists N\\in\\mathbb{N},\\,\\forall n\\ge N,\\,|a_n-L|<\\varepsilon\\bigr)\n\\]\nbecomes\n\\[\n\\exists \\varepsilon>0,\\,\\forall N\\in\\mathbb{N},\\,\\exists n\\ge N,\\,|a_n-L|\\ge \\varepsilon.\n\\]\nOption B does not reverse the first two quantifiers and is not the negation.",
+      "hint": "Reverse each quantifier from left to right and negate the innermost inequality."
+    },
+    {
+      "id": "math-gaokao-18-q007",
+      "category": "Logic",
+      "concept": "Negation of Two-Quantifier Statements",
+      "learningObjective": "Negate a statement of the form \\(\\exists x\\,\\forall y\\,P(x,y)\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is the negation of \\(\\exists x\\,\\forall y\\,P(x,y)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\forall x\\,\\exists y\\,\\neg P(x,y)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\exists x\\,\\forall y\\,\\neg P(x,y)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The negation of an existential statement is universal, and the negation of a universal statement is existential. Therefore,\n\\[\n\\neg\\bigl(\\exists x\\,\\forall y\\,P(x,y)\\bigr)\n\\equiv\n\\forall x\\,\\exists y\\,\\neg P(x,y).\n\\]\nEach quantifier changes to its dual while the variable order \\(x\\), then \\(y\\), is preserved, and the predicate is negated.",
+      "hint": "Replace \\(\\exists\\) by \\(\\forall\\), replace the following \\(\\forall\\) by \\(\\exists\\), preserve the variable order, and negate the predicate."
+    },
+    {
+      "id": "math-gaokao-18-q008",
+      "category": "Logic",
+      "concept": "Negation of Bounded Quantifiers",
+      "learningObjective": "Negate a quantified statement with bounded variables.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "What is the negation of \\(\\forall x\\in A,\\,\\exists y\\in B,\\,P(x,y)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\exists x\\in A,\\,\\forall y\\in B,\\,\\neg P(x,y)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\forall x\\in A,\\,\\exists y\\in B,\\,\\neg P(x,y)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The original statement has the form\n\\[\n\\forall x\\in A,\\,\\exists y\\in B,\\,P(x,y).\n\\]\nIts negation is\n\\[\n\\exists x\\in A,\\,\\forall y\\in B,\\,\\neg P(x,y).\n\\]\nThe universal quantifier becomes existential, the existential quantifier becomes universal, and the predicate is negated.",
+      "hint": "Negate each quantifier in order and negate the final statement."
+    },
+    {
+      "id": "math-gaokao-18-q009",
+      "category": "Logic",
+      "concept": "Truth Value of Quantified Statements",
+      "learningObjective": "Determine which quantified statement is false over a finite domain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(D=\\{1,2,3,4,5\\}\\). Which statement is false?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\forall x\\in D,\\,x^2\\le 25\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\exists x\\in D,\\,x^2=30\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For statement A, the largest element of \\(D\\) is \\(5\\), and \\(5^2=25\\). Thus for every \\(x\\in D\\), \\(x^2\\le 25\\), so A is true. For statement B, the squares of elements of \\(D\\) are\n\\[\n1,4,9,16,25,\n\\]\nnone of which equals \\(30\\). Therefore, no element of \\(D\\) satisfies \\(x^2=30\\), so B is false.",
+      "hint": "Check each element of the finite domain \\(D\\) in both statements."
+    },
+    {
+      "id": "math-gaokao-18-q010",
+      "category": "Logic",
+      "concept": "Negation of Quantified Statements",
+      "learningObjective": "Negate a statement with an existential quantifier followed by a universal quantifier.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "What is the negation of \\(\\exists x\\in\\mathbb{R},\\,\\forall y\\in\\mathbb{R},\\,x+y=y\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\exists x\\in\\mathbb{R},\\,\\forall y\\in\\mathbb{R},\\,x+y\\ne y\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\forall x\\in\\mathbb{R},\\,\\exists y\\in\\mathbb{R},\\,x+y\\ne y\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The original statement has the form\n\\[\n\\exists x\\in\\mathbb{R},\\,\\forall y\\in\\mathbb{R},\\,P(x,y),\n\\]\nwhere \\(P(x,y)\\) is \\(x+y=y\\). Negating it changes each quantifier to its dual while preserving the order of the variables:\n\\[\n\\forall x\\in\\mathbb{R},\\,\\exists y\\in\\mathbb{R},\\,\\neg P(x,y).\n\\]\nSince \\(\\neg(x+y=y)\\) is \\(x+y\\ne y\\), the negation is\n\\[\n\\forall x\\in\\mathbb{R},\\,\\exists y\\in\\mathbb{R},\\,x+y\\ne y.\n\\]\nOption A does not change the quantifier types and is therefore not the negation.",
+      "hint": "Change \\(\\exists x\\,\\forall y\\) to \\(\\forall x\\,\\exists y\\), preserving the variable order, and negate the equation."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-538",
+  "category": "Comprehensive Mathematics",
+  "title": "538. Sets, Logic, Reasoning & Proof: Elementary Axiom-Based Reasoning",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-538-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "What an axiom is",
+      "learningObjective": "Describe the role of an axiom in an axiomatic system.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In an axiomatic system, what is an axiom?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A statement that has been proved from the definitions"
+        },
+        {
+          "label": "B",
+          "text": "A statement accepted without proof and used as a starting point"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Axioms are the starting assumptions of a theory; they are not proved inside the theory. Statements that are proved from the axioms, the definitions, and earlier results are called theorems.",
+      "hint": "Every chain of proofs has to start somewhere."
+    },
+    {
+      "id": "dynanca-538-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Reading a successor axiom",
+      "learningObjective": "Interpret an axiom about successors as a property of a function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "An axiom about the natural numbers states that \\(S(m)=S(n)\\) implies \\(m=n\\), where \\(S(n)\\) is the successor of \\(n\\). What does this axiom say about the function \\(S\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(S\\) is one-to-one."
+        },
+        {
+          "label": "B",
+          "text": "\\(S\\) is onto."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement \"equal outputs force equal inputs\" is exactly the definition of a one-to-one function. It says nothing about whether every natural number is a successor; in the usual natural numbers the first number is not the successor of any number, so \\(S\\) is not onto.",
+      "hint": "Compare the axiom with the definition of a one-to-one function."
+    },
+    {
+      "id": "dynanca-538-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Naming the axiom used",
+      "learningObjective": "Identify the axiom that justifies an algebraic equality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which axiom of arithmetic justifies the equality \\(a\\cdot(b+c)=a\\cdot b+a\\cdot c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The distributive law"
+        },
+        {
+          "label": "B",
+          "text": "The associative law of multiplication"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The distributive law states that multiplication distributes over addition: \\(a\\cdot(b+c)=a\\cdot b+a\\cdot c\\). The associative law of multiplication, \\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\), involves no addition.",
+      "hint": "The equality links multiplication with addition."
+    },
+    {
+      "id": "dynanca-538-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Justifying a step in a proof",
+      "learningObjective": "Identify the axiom behind the first step of a proof about zero.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A proof that \\(a\\cdot 0=0\\) begins with the step \\(a\\cdot 0=a\\cdot(0+0)\\). Which axiom justifies this step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The additive identity axiom, which gives \\(0+0=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "The commutative law of multiplication"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The additive identity axiom says \\(x+0=x\\) for every \\(x\\); with \\(x=0\\) it gives \\(0+0=0\\), so \\(0\\) may be replaced by \\(0+0\\). The proof continues with the distributive law, \\(a\\cdot(0+0)=a\\cdot 0+a\\cdot 0\\), and then cancels \\(a\\cdot 0\\) from both sides.",
+      "hint": "The step replaces \\(0\\) by an expression equal to it."
+    },
+    {
+      "id": "dynanca-538-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Testing an axiom in a small system",
+      "learningObjective": "Check whether a small system of points and lines satisfies an axiom.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "An axiom states: \"Every two distinct points lie on exactly one common line.\" A system has points \\(1,2,3\\) and lines \\(\\{1,2\\}\\) and \\(\\{2,3\\}\\). Does the system satisfy the axiom?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because points \\(1\\) and \\(3\\) lie on no common line."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because each line contains two points."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The axiom must be checked for every pair of distinct points. The pairs \\(1,2\\) and \\(2,3\\) each lie on one line, but no line contains both \\(1\\) and \\(3\\). So the axiom fails. That each line has two points is a different statement.",
+      "hint": "Check all three pairs of points."
+    },
+    {
+      "id": "dynanca-538-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting lines from axioms",
+      "learningObjective": "Deduce the number of lines in a small system from its axioms.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A system satisfies two axioms: every two distinct points lie on exactly one common line, and every line contains exactly two points. If there are exactly \\(3\\) points, how many lines are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each line is determined by the two points on it, and each pair of distinct points gives exactly one line. With \\(3\\) points there are \\(3\\) pairs, so there are \\(3\\) lines. The number \\(6\\) would count ordered pairs, treating the line through \\(P\\) and \\(Q\\) as different from the line through \\(Q\\) and \\(P\\).",
+      "hint": "Count the unordered pairs of points."
+    },
+    {
+      "id": "dynanca-538-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A consequence of an incidence axiom",
+      "learningObjective": "Decide whether a statement about lines follows from an axiom about points.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Assume only this axiom: every two distinct points lie on exactly one common line. Does it follow that two distinct lines have at most one point in common?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the axiom speaks about points on a line, not about lines meeting."
+        },
+        {
+          "label": "B",
+          "text": "Yes; two common points would lie on two different lines, contradicting the axiom."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Suppose two distinct lines had two distinct points \\(P\\) and \\(Q\\) in common. Then \\(P\\) and \\(Q\\) would lie on two different common lines, contradicting \"exactly one\". So distinct lines share at most one point. A statement can follow from an axiom even when it is worded from a different point of view.",
+      "hint": "Assume two lines share two points and apply the axiom to those two points."
+    },
+    {
+      "id": "dynanca-538-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A model that blocks a conclusion",
+      "learningObjective": "Use a model to show that a statement does not follow from given axioms.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Consider two axioms for an operation \\(*\\): it is associative, and it has an identity element. Multiplication of \\(2\\times 2\\) real matrices satisfies both. What does this model show about the statement \"\\(a*b=b*a\\) for all \\(a\\) and \\(b\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It follows from the two axioms, because the model satisfies them."
+        },
+        {
+          "label": "B",
+          "text": "It does not follow from the two axioms, because the model satisfies them but is not commutative."
+        }
+      ],
+      "answer": "B",
+      "explanation": "If commutativity followed from the axioms, it would hold in every model of the axioms. Matrix multiplication is associative and has an identity matrix, yet some matrices satisfy \\(AB\\ne BA\\). So commutativity is not a consequence of the two axioms.",
+      "hint": "A consequence of the axioms must be true in every system in which the axioms are true."
+    },
+    {
+      "id": "dynanca-538-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Deriving asymmetry",
+      "learningObjective": "Derive a property of an order relation from two axioms.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "A relation \\(<\\) satisfies two axioms: \\(a<a\\) never holds, and \\(a<b\\) together with \\(b<c\\) implies \\(a<c\\). Does it follow that \\(a<b\\) and \\(b<a\\) cannot both hold?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; a third axiom is needed to exclude this."
+        },
+        {
+          "label": "B",
+          "text": "Yes; together they would give \\(a<a\\) by the second axiom, contradicting the first."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Suppose \\(a<b\\) and \\(b<a\\). Applying the second axiom with \\(c=a\\) gives \\(a<a\\), which the first axiom forbids. So the two statements cannot both hold; no additional axiom is required.",
+      "hint": "Apply the transitivity axiom to the two inequalities."
+    },
+    {
+      "id": "dynanca-538-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting incidences",
+      "learningObjective": "Deduce the number of lines by counting point-line incidences in two ways.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A system satisfies two axioms: every point lies on exactly two lines, and every line contains exactly two points. If there are exactly \\(4\\) points, how many lines are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Count the pairs consisting of a point and a line through it. Counting by points gives \\(4\\cdot 2=8\\) such pairs; counting by lines gives \\(2L\\), where \\(L\\) is the number of lines. So \\(2L=8\\) and \\(L=4\\). The number \\(8\\) is the number of point-line pairs, not the number of lines. The four sides of a square, with its vertices as the points, form such a system.",
+      "hint": "Count the point-line incidences in two ways."
+    }
+  ]
+}

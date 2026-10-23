@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-283",
+  "category": "Comprehensive Mathematics",
+  "title": "283. Functions, Graphs & Transformations: One-Sided Behavior at Piecewise Boundaries",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-283-q001",
+      "category": "Functions & Graphs",
+      "concept": "Left-Hand Limit of a Piecewise Function",
+      "learningObjective": "Evaluate the left-hand limit of a piecewise function at a boundary point.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx+1, & x<1\\\\\n3x-1, & x\\ge 1\n\\end{cases}\n\\]\nWhat is \\(\\lim_{x\\to 1^{-}}f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(x<1\\), the function is given by \\(f(x)=x+1\\). As \\(x\\) approaches \\(1\\) from the left, \\(x+1\\) approaches \\(1+1=2\\). Therefore, \\(\\lim_{x\\to 1^{-}}f(x)=2\\).",
+      "hint": "Use the expression for \\(f(x)\\) that is valid when \\(x<1\\)."
+    },
+    {
+      "id": "dynanca-283-q002",
+      "category": "Functions & Graphs",
+      "concept": "Function Value at a Boundary Point",
+      "learningObjective": "Evaluate a piecewise function at its boundary point.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx^2, & x<2\\\\\n2x, & x\\ge 2\n\\end{cases}\n\\]\nWhat is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "At \\(x=2\\), the condition \\(x\\ge 2\\) applies, so use the second piece: \\(f(2)=2(2)=4\\). The value \\(2\\) is just the input, not the output; note that here even the first piece would give \\(2^2=4\\), but the correct rule at \\(x=2\\) is the second piece.",
+      "hint": "Check which inequality is satisfied by the input value before substituting."
+    },
+    {
+      "id": "dynanca-283-q003",
+      "category": "Functions & Graphs",
+      "concept": "Continuity at a Piecewise Boundary",
+      "learningObjective": "Determine whether a piecewise function is continuous at a given boundary point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx^2, & x<2\\\\\n2x, & x\\ge 2\n\\end{cases}\n\\]\nIs \\(f\\) continuous at \\(x=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No"
+        },
+        {
+          "label": "B",
+          "text": "Yes"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Check the left-hand limit, right-hand limit, and function value at \\(x=2\\). As \\(x\\to 2^{-}\\), \\(f(x)=x^2\\to 4\\). As \\(x\\to 2^{+}\\), \\(f(x)=2x\\to 4\\). Also, \\(f(2)=2(2)=4\\). Since the left-hand limit, right-hand limit, and function value all equal \\(4\\), the function is continuous at \\(x=2\\).",
+      "hint": "Compare the left-hand limit, right-hand limit, and the actual function value at the boundary point."
+    },
+    {
+      "id": "dynanca-283-q004",
+      "category": "Functions & Graphs",
+      "concept": "Right-Hand Limit of a Piecewise Function",
+      "learningObjective": "Evaluate the right-hand limit of a piecewise function at a boundary point.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\n2x+1, & x<0\\\\\nx^2+1, & x\\ge 0\n\\end{cases}\n\\]\nWhat is \\(\\lim_{x\\to 0^{+}}f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(x\\ge 0\\), the function is given by \\(f(x)=x^2+1\\). As \\(x\\) approaches \\(0\\) from the right, \\(x^2+1\\) approaches \\(0^2+1=1\\). Therefore, \\(\\lim_{x\\to 0^{+}}f(x)=1\\).",
+      "hint": "Use the expression for \\(f(x)\\) that is valid when \\(x\\ge 0\\)."
+    },
+    {
+      "id": "dynanca-283-q005",
+      "category": "Functions & Graphs",
+      "concept": "Left-Hand Limit at a Jump Discontinuity",
+      "learningObjective": "Evaluate the left-hand limit of a piecewise function at a jump discontinuity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx+2, & x<1\\\\\n4, & x\\ge 1\n\\end{cases}\n\\]\nWhat is \\(\\lim_{x\\to 1^{-}}f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(x<1\\), the function is given by \\(f(x)=x+2\\). As \\(x\\) approaches \\(1\\) from the left, \\(x+2\\) approaches \\(1+2=3\\). Therefore, \\(\\lim_{x\\to 1^{-}}f(x)=3\\).",
+      "hint": "Use the expression for \\(f(x)\\) that is valid when \\(x<1\\)."
+    },
+    {
+      "id": "dynanca-283-q006",
+      "category": "Functions & Graphs",
+      "concept": "Right-Hand Limit at a Jump Discontinuity",
+      "learningObjective": "Evaluate the right-hand limit of a piecewise function at a jump discontinuity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx+2, & x<1\\\\\n4, & x\\ge 1\n\\end{cases}\n\\]\nWhat is \\(\\lim_{x\\to 1^{+}}f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(x\\ge 1\\), the function is given by \\(f(x)=4\\). As \\(x\\) approaches \\(1\\) from the right, the function value remains \\(4\\). Therefore, \\(\\lim_{x\\to 1^{+}}f(x)=4\\).",
+      "hint": "Use the expression for \\(f(x)\\) that is valid when \\(x\\ge 1\\)."
+    },
+    {
+      "id": "dynanca-283-q007",
+      "category": "Functions & Graphs",
+      "concept": "Function Value at a Boundary Point",
+      "learningObjective": "Evaluate a piecewise function at its boundary point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx^2, & x<2\\\\\n3x-2, & x\\ge 2\n\\end{cases}\n\\]\nWhat is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "At \\(x=2\\), the condition \\(x\\ge 2\\) applies, so use the second piece: \\(f(2)=3(2)-2=6-2=4\\). The value \\(2\\) is just the input, not the output; note that here even the first piece would give \\(2^2=4\\), but the correct rule at \\(x=2\\) is the second piece.",
+      "hint": "Check which inequality is satisfied by the input value before substituting."
+    },
+    {
+      "id": "dynanca-283-q008",
+      "category": "Functions & Graphs",
+      "concept": "Left-Hand Limit of a Piecewise Function",
+      "learningObjective": "Evaluate the left-hand limit of a piecewise function at a boundary point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx^2+1, & x<2\\\\\n3x-1, & x\\ge 2\n\\end{cases}\n\\]\nWhat is \\(\\lim_{x\\to 2^{-}}f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(x<2\\), the function is given by \\(f(x)=x^2+1\\). As \\(x\\) approaches \\(2\\) from the left, \\(x^2+1\\) approaches \\(2^2+1=4+1=5\\). Therefore, \\(\\lim_{x\\to 2^{-}}f(x)=5\\).",
+      "hint": "Use the expression for \\(f(x)\\) that is valid when \\(x<2\\)."
+    },
+    {
+      "id": "dynanca-283-q009",
+      "category": "Functions & Graphs",
+      "concept": "Continuity Condition for a Parameter",
+      "learningObjective": "Determine the parameter value that makes a piecewise function continuous at a boundary point.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nax-1, & x<2\\\\\nx+3, & x\\ge 2\n\\end{cases}\n\\]\nWhat value of \\(a\\) makes \\(f\\) continuous at \\(x=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For continuity at \\(x=2\\), the left-hand limit must equal the right-hand limit and the function value. The left-hand limit is \\(a(2)-1=2a-1\\). The right-hand limit and function value at \\(x=2\\) are \\(2+3=5\\). Set \\(2a-1=5\\), so \\(2a=6\\) and \\(a=3\\). Option B, \\(\\frac{5}{2}\\), comes from setting \\(2a=5\\) and forgetting the \\(-1\\).",
+      "hint": "Set the expression from the left piece at \\(x=2\\) equal to the expression from the right piece at \\(x=2\\)."
+    },
+    {
+      "id": "dynanca-283-q010",
+      "category": "Functions & Graphs",
+      "concept": "Continuity at a Boundary Point",
+      "learningObjective": "Determine whether a piecewise function is continuous at a boundary point by comparing one-sided limits and function value.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx^2, & x<0\\\\\nx+1, & x\\ge 0\n\\end{cases}\n\\]\nIs \\(f\\) continuous at \\(x=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No"
+        },
+        {
+          "label": "B",
+          "text": "Yes"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Check the left-hand limit, right-hand limit, and function value at \\(x=0\\). As \\(x\\to 0^{-}\\), \\(f(x)=x^2\\to 0\\). As \\(x\\to 0^{+}\\), \\(f(x)=x+1\\to 1\\). Also, \\(f(0)=0+1=1\\). Since the left-hand limit \\(0\\) is not equal to the right-hand limit and function value \\(1\\), the function is not continuous at \\(x=0\\).",
+      "hint": "Compare the left-hand limit, right-hand limit, and the actual function value at the boundary point."
+    }
+  ]
+}

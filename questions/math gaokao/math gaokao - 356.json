@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-356",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 356",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-356-q001",
+      "category": "Combinatorics",
+      "concept": "Circular permutations of distinct objects",
+      "learningObjective": "Compute the number of circular arrangements of distinct objects when rotations are identified.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In how many ways can \\(9\\) distinct students be seated around a circular table if rotations of the same seating are considered identical?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(362880\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(40320\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Fix one student as a reference point to remove rotational repetition. The remaining \\(8\\) students can be arranged in\n\\[\n8!=40320\n\\]\nways. The distractor \\(9!=362880\\) treats rotated copies as different arrangements.",
+      "hint": "Fix one student as a reference point, then arrange the remaining students around the circle."
+    },
+    {
+      "id": "math-gaokao-356-q002",
+      "category": "Combinatorics",
+      "concept": "Circular permutations on a ring with reflection identified",
+      "learningObjective": "Count circular arrangements of distinct keys when clockwise and counterclockwise orders are considered the same.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In how many ways can \\(5\\) distinct keys be arranged on a circular key ring if rotations are identical and clockwise and counterclockwise orders are considered the same?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First count circular arrangements up to rotation: \\((5-1)!=4!=24\\). Since clockwise and counterclockwise orders are considered the same, each arrangement is paired with its reverse, so divide by \\(2\\). The number is \\(\\frac{24}{2}=12\\).",
+      "hint": "Count arrangements up to rotation first, then account for reversing the order around the ring."
+    },
+    {
+      "id": "math-gaokao-356-q003",
+      "category": "Combinatorics",
+      "concept": "Alternating circular arrangements",
+      "learningObjective": "Count circular arrangements of two groups with alternating genders.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Four distinct boys and four distinct girls sit around a circular table with alternating genders. Rotations are considered identical. How many seating arrangements are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(288\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(144\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Arrange the four boys around the circle first. The number of circular arrangements of the boys is \\((4-1)!=3!=6\\). There are now \\(4\\) gaps between consecutive boys, and the \\(4\\) girls must occupy these gaps. The girls can be arranged in these gaps in \\(4!=24\\) ways. Therefore the total number of arrangements is \\(6 \\times 24=144\\).",
+      "hint": "Arrange one gender around the circle first, then place the other gender in the gaps between them."
+    },
+    {
+      "id": "math-gaokao-356-q004",
+      "category": "Combinatorics",
+      "concept": "Circular arrangements with an adjacency condition",
+      "learningObjective": "Count circular arrangements in which two specified people must be adjacent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In how many ways can \\(7\\) distinct people be seated around a circular table if two particular people must sit next to each other? Rotations are considered identical.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(240\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(480\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Treat the two specified people as one block. This block plus the other \\(5\\) people gives \\(6\\) units to arrange around the circle. The number of circular arrangements of these \\(6\\) units is \\((6-1)!=5!=120\\). The two people inside the block can be ordered in \\(2!\\) ways. Hence the total number is \\(120 \\times 2=240\\).",
+      "hint": "Combine the two people who must be adjacent into a single block before arranging around the circle."
+    },
+    {
+      "id": "math-gaokao-356-q005",
+      "category": "Combinatorics",
+      "concept": "Circular arrangements with a non-adjacency condition",
+      "learningObjective": "Count circular arrangements in which two specified people are not adjacent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Eight distinct people sit around a circular table. How many arrangements have two particular people not sitting next to each other, if rotations are considered identical?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2880\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3600\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total number of circular arrangements of \\(8\\) distinct people is \\((8-1)!=7!=5040\\). To count arrangements where the two particular people are adjacent, treat them as one block. Then there are \\(7\\) units around the circle, giving \\((7-1)!=6!=720\\) circular arrangements. The two people inside the block can be ordered in \\(2!\\) ways, so there are \\(720 \\times 2=1440\\) adjacent arrangements. Therefore the number of non-adjacent arrangements is \\(5040-1440=3600\\).",
+      "hint": "Count all circular arrangements first, then subtract the cases where the two specified people are adjacent."
+    },
+    {
+      "id": "math-gaokao-356-q006",
+      "category": "Combinatorics",
+      "concept": "Circular arrangements with a fixed seat",
+      "learningObjective": "Count arrangements when one person's seat is fixed.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Six distinct people are seated around a circular table. If one particular person must sit in a specified seat, how many seating arrangements are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Fixing the particular person in a specified seat removes the rotational symmetry. The remaining five people can be arranged in the five remaining seats in \\(5!=120\\) ways.",
+      "hint": "Once one person is fixed at a marked seat, treat the remaining seats as distinct positions."
+    },
+    {
+      "id": "math-gaokao-356-q007",
+      "category": "Combinatorics",
+      "concept": "Circular arrangements with identical objects",
+      "learningObjective": "Count circular arrangements of identical beads of two colors up to rotation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Three identical red beads and three identical blue beads are arranged in a circle. If rotations are considered identical and reflections are considered different, how many distinct arrangements are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use Burnside's lemma on the \\(6\\) positions. The identity fixes \\(\\binom{6}{3}=20\\) arrangements. Rotations by \\(1\\) or \\(5\\) positions fix none. Rotations by \\(2\\) or \\(4\\) positions have two cycles of length \\(3\\); to have exactly three red beads, one cycle must be red and the other blue, giving \\(2\\) fixed arrangements each. Rotation by \\(3\\) positions has three cycles of length \\(2\\), so it cannot have exactly three red beads. Thus the number of distinct arrangements is\n\\[\n\\frac{20+2+2}{6}=\\frac{24}{6}=4.\n\\]",
+      "hint": "Use Burnside's lemma or list the patterns up to rotation while keeping track of the total number of red beads."
+    },
+    {
+      "id": "math-gaokao-356-q008",
+      "category": "Combinatorics",
+      "concept": "Circular arrangements with a non-adjacency condition",
+      "learningObjective": "Count circular arrangements of \\(5\\) people where two specified people are not adjacent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In how many ways can \\(5\\) distinct people sit around a circular table if two particular people must not sit next to each other? Rotations are considered identical.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total number of circular arrangements of \\(5\\) distinct people is \\((5-1)!=4!=24\\). If the two particular people are adjacent, treat them as one block. Then there are \\(4\\) units around the circle, giving \\((4-1)!=3!=6\\) circular arrangements. The two people inside the block can be ordered in \\(2!\\) ways, so there are \\(6 \\times 2=12\\) adjacent arrangements. Therefore the number of non-adjacent arrangements is \\(24-12=12\\).",
+      "hint": "Subtract the arrangements where the two specified people are adjacent from all circular arrangements."
+    },
+    {
+      "id": "math-gaokao-356-q009",
+      "category": "Combinatorics",
+      "concept": "Circular arrangements of blocks",
+      "learningObjective": "Count circular arrangements of couples when each couple must sit together.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Five married couples sit around a circular table. If each couple must sit together and rotations are considered identical, how many seating arrangements are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(384\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(768\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Treat each couple as one block. There are \\(5\\) blocks to arrange around the circle, which can be done in \\((5-1)!=4!=24\\) ways. Within each couple, the two people can be ordered in \\(2!\\) ways, so the internal arrangements contribute \\(2^5=32\\) possibilities. Therefore the total number of seating arrangements is \\(24 \\times 32=768\\).",
+      "hint": "Treat each couple as one block, then account for the two possible orders within every couple."
+    },
+    {
+      "id": "math-gaokao-356-q010",
+      "category": "Combinatorics",
+      "concept": "Circular arrangements with combined positional restrictions",
+      "learningObjective": "Count circular arrangements satisfying both an opposite-seat condition and an adjacency condition.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Six distinct people are seated around a circular table. In how many arrangements are two particular people, A and B, seated opposite each other, and another two particular people, C and D, seated next to each other? Rotations are considered identical.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Fix A at a reference seat. Then B must occupy the opposite seat. The remaining four seats form two adjacent pairs, one on each side of the diameter through A and B. For C and D to sit next to each other, they must occupy one of these two adjacent pairs. There are \\(2\\) choices for the pair, and \\(2!\\) orders within that pair, giving \\(2 \\times 2=4\\) ways. The remaining two people can occupy the remaining two seats in \\(2!=2\\) ways. Thus the total number of arrangements is \\(4 \\times 2=8\\).",
+      "hint": "Fix A first, determine B's forced opposite seat, then examine which remaining pairs of seats are adjacent."
+    }
+  ]
+}

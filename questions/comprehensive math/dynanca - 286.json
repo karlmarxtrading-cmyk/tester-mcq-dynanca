@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-286",
+  "category": "Comprehensive Mathematics",
+  "title": "286. Functions, Graphs & Transformations: Determining the Domain of Composite Functions",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-286-q001",
+      "category": "Functions & Graphs",
+      "concept": "Domain of a Composite Function with a Rational Outer Function",
+      "learningObjective": "Determine the domain of \\(f(g(x))\\) when the outer function has a denominator.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=\\frac{1}{x}\\) and \\(g(x)=x-2\\). What is the domain of \\(f(g(x))\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\ne 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "All real numbers"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Compose the functions: \\(f(g(x))=\\frac{1}{x-2}\\). The denominator cannot be zero, so \\(x-2\\ne0\\), which gives \\(x\\ne2\\). Therefore, the domain is all real numbers except \\(2\\).",
+      "hint": "First form \\(f(g(x))\\), then exclude any values that make a denominator zero."
+    },
+    {
+      "id": "dynanca-286-q002",
+      "category": "Functions & Graphs",
+      "concept": "Domain of a Composite Function with a Square Root Outer Function",
+      "learningObjective": "Determine the domain of \\(f(g(x))\\) when the outer function is a square root.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(f(x)=\\sqrt{x}\\) and \\(g(x)=x+3\\). What is the domain of \\(f(g(x))\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\ge 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\ge -3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compose the functions: \\(f(g(x))=\\sqrt{x+3}\\). The expression under the square root must be nonnegative, so \\(x+3\\ge0\\). Solving gives \\(x\\ge -3\\). Therefore, the domain is \\(x\\ge -3\\).",
+      "hint": "Set the expression inside the square root greater than or equal to zero."
+    },
+    {
+      "id": "dynanca-286-q003",
+      "category": "Functions & Graphs",
+      "concept": "Domain of a Square Root Composite with a Quadratic Inner Function",
+      "learningObjective": "Determine the domain of \\(f(g(x))\\) when the inner function is quadratic.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(f(x)=\\sqrt{x-1}\\) and \\(g(x)=x^2\\). What is the domain of \\(f(g(x))\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All real numbers"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\le -1\\) or \\(x\\ge 1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compose the functions: \\(f(g(x))=\\sqrt{x^2-1}\\). The expression under the square root must be nonnegative, so \\(x^2-1\\ge0\\). This gives \\(x^2\\ge1\\), so \\(x\\le -1\\) or \\(x\\ge1\\). Therefore, the domain is \\(x\\le -1\\) or \\(x\\ge1\\).",
+      "hint": "Solve the inequality formed by requiring the expression under the square root to be nonnegative."
+    },
+    {
+      "id": "dynanca-286-q004",
+      "category": "Functions & Graphs",
+      "concept": "Domain of a Composite Function with a Square Root Inner Function",
+      "learningObjective": "Determine the domain of \\(f(g(x))\\) when the inner function involves a square root and the outer function has a denominator.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=\\frac{1}{x-1}\\) and \\(g(x)=\\sqrt{x}\\). What is the domain of \\(f(g(x))\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\ge0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\ge0\\) and \\(x\\ne1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compose the functions: \\(f(g(x))=\\frac{1}{\\sqrt{x}-1}\\). The inner function \\(g(x)=\\sqrt{x}\\) requires \\(x\\ge0\\). The denominator \\(\\sqrt{x}-1\\) cannot be zero, so \\(\\sqrt{x}\\ne1\\), which gives \\(x\\ne1\\). Therefore, the domain is \\(x\\ge0\\) and \\(x\\ne1\\).",
+      "hint": "Combine the domain condition from the square root with the condition that the denominator is not zero."
+    },
+    {
+      "id": "dynanca-286-q005",
+      "category": "Functions & Graphs",
+      "concept": "Domain of a Square Root Composite with a Rational Inner Function",
+      "learningObjective": "Determine the domain of \\(f(g(x))\\) when the inner function is rational and the outer function is a square root.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=\\sqrt{x}\\) and \\(g(x)=\\frac{1}{x-2}\\). What is the domain of \\(f(g(x))\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\ne2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x>2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compose the functions: \\(f(g(x))=\\sqrt{\\frac{1}{x-2}}\\). The inner function requires \\(x\\ne2\\). Also, the expression under the square root must be nonnegative, so \\(\\frac{1}{x-2}\\ge0\\). This inequality holds when \\(x-2>0\\), which gives \\(x>2\\). Therefore, the domain is \\(x>2\\).",
+      "hint": "Find where the rational expression inside the square root is defined and nonnegative."
+    },
+    {
+      "id": "dynanca-286-q006",
+      "category": "Functions & Graphs",
+      "concept": "Domain of a Composite Function with Two Rational Functions",
+      "learningObjective": "Determine the domain of \\(f(g(x))\\) when both functions are rational.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(f(x)=\\frac{1}{x+2}\\) and \\(g(x)=\\frac{3}{x-1}\\). What is the domain of \\(f(g(x))\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\ne1\\) and \\(x\\ne-\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\ne1\\) only"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Compose the functions:\n\\[\nf(g(x))=\\frac{1}{\\frac{3}{x-1}+2}\n\\]\nThe inner function requires \\(x\\ne1\\). Also, the denominator of the composition cannot be zero; simplify:\n\\[\n\\begin{aligned}\n\\frac{3}{x-1}+2 &\\ne 0\\\\\n\\frac{3+2(x-1)}{x-1} &\\ne 0\\\\\n\\frac{2x+1}{x-1} &\\ne 0\n\\end{aligned}\n\\]\nThus \\(2x+1\\ne0\\), so \\(x\\ne-\\frac{1}{2}\\). Therefore, the domain is \\(x\\ne1\\) and \\(x\\ne-\\frac{1}{2}\\).",
+      "hint": "Exclude values that make either denominator zero."
+    },
+    {
+      "id": "dynanca-286-q007",
+      "category": "Functions & Graphs",
+      "concept": "Domain of a Square Root Composite with a Quadratic Expression",
+      "learningObjective": "Determine the domain of \\(f(g(x))\\) by solving a quadratic inequality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(f(x)=\\sqrt{4-x}\\) and \\(g(x)=x^2\\). What is the domain of \\(f(g(x))\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\le x\\le2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\le -2\\) or \\(x\\ge2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Compose the functions: \\(f(g(x))=\\sqrt{4-x^2}\\). The expression under the square root must be nonnegative, so \\(4-x^2\\ge0\\). This gives \\(x^2\\le4\\), so \\(-2\\le x\\le2\\). Therefore, the domain is \\(-2\\le x\\le2\\).",
+      "hint": "Solve the inequality \\(4-x^2\\ge0\\) and interpret it on the number line."
+    },
+    {
+      "id": "dynanca-286-q008",
+      "category": "Functions & Graphs",
+      "concept": "Domain of a Logarithmic Composite Function",
+      "learningObjective": "Determine the domain of \\(f(g(x))\\) when the outer function is a natural logarithm.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=\\ln x\\) and \\(g(x)=x-5\\). What is the domain of \\(f(g(x))\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x>5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x>0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Compose the functions: \\(f(g(x))=\\ln(x-5)\\). The logarithm requires its input to be positive, so \\(x-5>0\\). Solving gives \\(x>5\\). Therefore, the domain is \\(x>5\\).",
+      "hint": "The input of a logarithm must be strictly positive."
+    },
+    {
+      "id": "dynanca-286-q009",
+      "category": "Functions & Graphs",
+      "concept": "Domain of a Square Root Composite with a Rational Inner Function",
+      "learningObjective": "Determine the domain of \\(f(g(x))\\) by combining a square root condition with a rational function condition.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(f(x)=\\sqrt{x-1}\\) and \\(g(x)=\\frac{1}{x-3}\\). What is the domain of \\(f(g(x))\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3<x\\le4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\ge4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Compose the functions:\n\\[\nf(g(x))=\\sqrt{\\frac{1}{x-3}-1}\n\\]\nThe inner function requires \\(x\\ne3\\). The expression under the square root must be nonnegative; simplify:\n\\[\n\\begin{aligned}\n\\frac{1}{x-3}-1 &\\ge 0\\\\\n\\frac{1-(x-3)}{x-3} &\\ge 0\\\\\n\\frac{4-x}{x-3} &\\ge 0\n\\end{aligned}\n\\]\nThe critical values are \\(3\\) and \\(4\\). Testing intervals gives \\(3<x\\le4\\). Therefore, the domain is \\(3<x\\le4\\).",
+      "hint": "Solve the inequality formed by the square root condition, and remember that the inner denominator cannot be zero."
+    },
+    {
+      "id": "dynanca-286-q010",
+      "category": "Functions & Graphs",
+      "concept": "Domain of a Square Root Composite with a Shifted Quadratic Expression",
+      "learningObjective": "Determine the domain of \\(f(g(x))\\) by solving an inequality involving a shifted square.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(f(x)=\\sqrt{9-x^2}\\) and \\(g(x)=x+1\\). What is the domain of \\(f(g(x))\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\le x\\le4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-4\\le x\\le2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compose the functions:\n\\[\nf(g(x))=\\sqrt{9-(x+1)^2}\n\\]\nThe expression under the square root must be nonnegative; rearrange, take square roots, then subtract \\(1\\) from each part:\n\\[\n\\begin{aligned}\n9-(x+1)^2 &\\ge 0\\\\\n(x+1)^2 &\\le 9\\\\\n-3\\le x+1 &\\le 3\\\\\n-4\\le x &\\le 2\n\\end{aligned}\n\\]\nTherefore, the domain is \\(-4\\le x\\le2\\).",
+      "hint": "Solve the inequality \\((x+1)^2\\le9\\) and then isolate \\(x\\)."
+    }
+  ]
+}

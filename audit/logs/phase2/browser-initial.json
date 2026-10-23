@@ -1,0 +1,3879 @@
+{
+  "config": {
+    "configFile": "/workspace/scratch/051c254e42f3/work/REAL MCQ/tests/browser/playwright.config.js",
+    "rootDir": "/workspace/scratch/051c254e42f3/work/REAL MCQ/tests/browser",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 10,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/051c254e42f3/work/REAL MCQ/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/scratch/051c254e42f3/work/REAL MCQ/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.spec\\.js$/"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "landing.spec.js",
+      "file": "landing.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Landing — first view",
+          "file": "landing.spec.js",
+          "line": 32,
+          "column": 6,
+          "specs": [
+            {
+              "title": "serves the real CSP, loads cleanly, and produces zero CSP violations or errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 700,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:10.657Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-df3ac1f698fdfd52fbd2",
+              "file": "landing.spec.js",
+              "line": 33,
+              "column": 3
+            },
+            {
+              "title": "official logo is loaded, undistorted and inside the first viewport at 1280px",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 223,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:11.497Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-f22b0fe808d8b8857334",
+              "file": "landing.spec.js",
+              "line": 47,
+              "column": 5
+            },
+            {
+              "title": "official logo is loaded, undistorted and inside the first viewport at 390px",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 205,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:11.738Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-80642f3dde32546a369b",
+              "file": "landing.spec.js",
+              "line": 47,
+              "column": 5
+            },
+            {
+              "title": "official logo is loaded, undistorted and inside the first viewport at 320px",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 262,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:11.956Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-08806b02de741a6651d8",
+              "file": "landing.spec.js",
+              "line": 47,
+              "column": 5
+            },
+            {
+              "title": "in dark mode the unmodified logo sits on a light plate",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 270,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:12.232Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-8e257bf1bc57f99c7efe",
+              "file": "landing.spec.js",
+              "line": 80,
+              "column": 3
+            },
+            {
+              "title": "one h1, a sensible heading order, landmarks and a working skip link",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 264,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:12.515Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-83b73c2ff248099ef085",
+              "file": "landing.spec.js",
+              "line": 90,
+              "column": 3
+            },
+            {
+              "title": "the primary action 'Browse practice' lands on the catalog, not hidden under the sticky header",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 291,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:12.790Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-750d68716dec4872db6b",
+              "file": "landing.spec.js",
+              "line": 111,
+              "column": 3
+            },
+            {
+              "title": "'How it works' navigation reaches four real steps and names only features that exist",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 289,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:13.093Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-77598b26241d10730b48",
+              "file": "landing.spec.js",
+              "line": 127,
+              "column": 3
+            },
+            {
+              "title": "all five collections are rendered from the manifest, in manifest order, with index-backed counts",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 299,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:13.399Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-9a23d40835972411a085",
+              "file": "landing.spec.js",
+              "line": 138,
+              "column": 3
+            },
+            {
+              "title": "opening the landing fetches two small data files — no question bank, no probe per bank, no engine, no MathJax",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 619,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:13.712Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-c5ee7710d28058afe93b",
+              "file": "landing.spec.js",
+              "line": 157,
+              "column": 3
+            },
+            {
+              "title": "with JavaScript disabled the page says so honestly and still shows the brand",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 178,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:14.340Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-c71ba249f7928e69d92e",
+              "file": "landing.spec.js",
+              "line": 173,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Catalog — search, filters, pagination",
+          "file": "landing.spec.js",
+          "line": 200,
+          "column": 6,
+          "specs": [
+            {
+              "title": "default view: first page of AVAILABLE banks in manifest order, with canonical links",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 237,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:14.526Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-4351e797160afe92af4d",
+              "file": "landing.spec.js",
+              "line": 201,
+              "column": 3
+            },
+            {
+              "title": "search is case-insensitive, trims input, and matches name, canonical id, collection and topic",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1751,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:14.773Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-e070e44fc7574e6b26c1",
+              "file": "landing.spec.js",
+              "line": 215,
+              "column": 3
+            },
+            {
+              "title": "typing never steals focus, and the clear button and Escape both reset the search",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 995,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:16.533Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-2ae1eab5d11363e7e533",
+              "file": "landing.spec.js",
+              "line": 237,
+              "column": 3
+            },
+            {
+              "title": "collection and topic filters come from the manifest; a flat collection shows no topic control",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 211,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:17.536Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-27da3163908c90b69e22",
+              "file": "landing.spec.js",
+              "line": 264,
+              "column": 3
+            },
+            {
+              "title": "query + collection + topic + availability combine, and the count always matches what is shown",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 579,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:17.756Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-f591992ef8c7b45a10a5",
+              "file": "landing.spec.js",
+              "line": 292,
+              "column": 3
+            },
+            {
+              "title": "clicking a collection card filters the catalog, marks the card current, and moves to the results",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 190,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:18.343Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-26bbb033ef84f739d400",
+              "file": "landing.spec.js",
+              "line": 312,
+              "column": 3
+            },
+            {
+              "title": "the verified question count is shown (math-gaokao-71: 150 questions in the bank and in the manifest)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 148,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:18.541Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-a29f3d0a89cb35e510a4",
+              "file": "landing.spec.js",
+              "line": 326,
+              "column": 3
+            },
+            {
+              "title": "pagination: 24 per page, real links, aria-current, clamped ranges, resets when a filter changes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 621,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:18.697Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-e6ddc23bbd224dd2bcca",
+              "file": "landing.spec.js",
+              "line": 335,
+              "column": 3
+            },
+            {
+              "title": "an out-of-range or malformed page / unknown filter in the URL is corrected to a valid view",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 222,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:19.324Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-031d8e1b60a819319e39",
+              "file": "landing.spec.js",
+              "line": 368,
+              "column": 3
+            },
+            {
+              "title": "on a phone the pager is Previous / 'Page X of Y' / Next with comfortable targets",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 204,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:19.556Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-3db77e32856b35ee8e14",
+              "file": "landing.spec.js",
+              "line": 379,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Catalog — availability",
+          "file": "landing.spec.js",
+          "line": 397,
+          "column": 6,
+          "specs": [
+            {
+              "title": "'Available' and 'All banks' are two clearly different counts taken from the data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 192,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:19.771Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-6797fe7dc7705081c5ce",
+              "file": "landing.spec.js",
+              "line": 398,
+              "column": 3
+            },
+            {
+              "title": "a bank that is not shipped has no link, no Start action, and says 'Not available in this release'",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 228,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:19.973Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-abcf27cc7adb197d0329",
+              "file": "landing.spec.js",
+              "line": 410,
+              "column": 3
+            },
+            {
+              "title": "switching to 'All banks' with the keyboard shows listed banks; the summary separates the two numbers",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 322,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:20.213Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-c46e6c3cdba5a5224a2a",
+              "file": "landing.spec.js",
+              "line": 428,
+              "column": 3
+            },
+            {
+              "title": "searching for a listed-but-unavailable bank explains why nothing shows and offers 'Show all banks'",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 573,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:20.545Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-8ea8880725aa872baa61",
+              "file": "landing.spec.js",
+              "line": 457,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Catalog — empty, loading and failure states",
+          "file": "landing.spec.js",
+          "line": 479,
+          "column": 6,
+          "specs": [
+            {
+              "title": "no results: a clear reason, working 'Clear search' and 'Reset filters', no leftover pager",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 858,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:21.128Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-bf8632c21b7cc54fcd96",
+              "file": "landing.spec.js",
+              "line": 480,
+              "column": 3
+            },
+            {
+              "title": "a failed catalog request ends in a readable error with a working 'Try again' — never a permanent spinner",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 362,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:21.995Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-8e8d14d781d4a14b345d",
+              "file": "landing.spec.js",
+              "line": 502,
+              "column": 3
+            },
+            {
+              "title": "a request that never answers hits the deadline; a late answer from it can never overwrite the retry",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 331,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:22.369Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-bada43c6be0967031553",
+              "file": "landing.spec.js",
+              "line": 530,
+              "column": 3
+            },
+            {
+              "title": "a malformed manifest (truncated JSON) is reported as a recoverable error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 284,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:22.708Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-40cedfc25bd039e8ceba",
+              "file": "landing.spec.js",
+              "line": 566,
+              "column": 5
+            },
+            {
+              "title": "a malformed manifest (wrong shape (subjects is not an array)) is reported as a recoverable error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 321,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:23.005Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-99f1650e0595259e469d",
+              "file": "landing.spec.js",
+              "line": 566,
+              "column": 5
+            },
+            {
+              "title": "a malformed manifest (an HTML page instead of JSON) is reported as a recoverable error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 240,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:23.338Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-9c68268d6e0c14dfc55b",
+              "file": "landing.spec.js",
+              "line": 566,
+              "column": 5
+            },
+            {
+              "title": "a missing or malformed availability index is an error with retry — never a guess about what can be opened",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 330,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:23.585Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-0cdfc8fdb0a7fecf484c",
+              "file": "landing.spec.js",
+              "line": 584,
+              "column": 3
+            },
+            {
+              "title": "an empty manifest shows an honest empty state",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 106,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:23.923Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-6ad0a6b5e5509f711272",
+              "file": "landing.spec.js",
+              "line": 604,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Catalog — manifest shapes and untrusted text",
+          "file": "landing.spec.js",
+          "line": 622,
+          "column": 6,
+          "specs": [
+            {
+              "title": "a never-seen collection with direct files, a topic and a subtopic renders through the same generic UI",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 202,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:24.056Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-b9dbb02b44be26bd90bd",
+              "file": "landing.spec.js",
+              "line": 640,
+              "column": 3
+            },
+            {
+              "title": "markup in manifest names is shown as text and never executed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 172,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:24.267Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-53b9a396ec9d87904882",
+              "file": "landing.spec.js",
+              "line": 667,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Catalog — URL state and history",
+          "file": "landing.spec.js",
+          "line": 691,
+          "column": 6,
+          "specs": [
+            {
+              "title": "a deep link restores query, collection, topic, availability and page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 233,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:24.448Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-b03b0d9ede69916b5248",
+              "file": "landing.spec.js",
+              "line": 692,
+              "column": 3
+            },
+            {
+              "title": "browser Back and Forward step through filter and page changes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 261,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:24.688Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-01f423e9fda85c41ee84",
+              "file": "landing.spec.js",
+              "line": 705,
+              "column": 3
+            },
+            {
+              "title": "typing in the search box does not flood the history: one Back leaves the search",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 606,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:24.956Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-53e4f65af67b2eec378f",
+              "file": "landing.spec.js",
+              "line": 731,
+              "column": 3
+            },
+            {
+              "title": "returning from a practice page (browser Back, and the page's own back link) restores the same catalog view",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 654,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:25.569Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-58921f442b7b667b1fd6",
+              "file": "landing.spec.js",
+              "line": 740,
+              "column": 3
+            },
+            {
+              "title": "a bank link is a normal link: it can be opened in a new tab and the catalog stays put",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 368,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:26.232Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-59970989faa8bd47bb4c",
+              "file": "landing.spec.js",
+              "line": 776,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Theme",
+          "file": "landing.spec.js",
+          "line": 794,
+          "column": 6,
+          "specs": [
+            {
+              "title": "defaults to the system setting and follows a live system change",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 414,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:26.609Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-587cef95c19508c4523c",
+              "file": "landing.spec.js",
+              "line": 795,
+              "column": 3
+            },
+            {
+              "title": "an explicit choice persists under the existing key and carries to the practice page and back",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 434,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:27.034Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-03e68f205dce847b4ce6",
+              "file": "landing.spec.js",
+              "line": 809,
+              "column": 3
+            },
+            {
+              "title": "the stored theme is applied before first paint (no flash of the wrong theme)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 83,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:27.478Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-9f234d451d94b525cb6c",
+              "file": "landing.spec.js",
+              "line": 832,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Storage robustness",
+          "file": "landing.spec.js",
+          "line": 847,
+          "column": 6,
+          "specs": [
+            {
+              "title": "with localStorage and sessionStorage denied the catalog, search and theme all still work",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 730,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:27.568Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-8acd3997b87049fd2e09",
+              "file": "landing.spec.js",
+              "line": 848,
+              "column": 3
+            },
+            {
+              "title": "corrupt stored values are ignored and left exactly as found",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 234,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:28.306Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-99c017f08477550cf79a",
+              "file": "landing.spec.js",
+              "line": 873,
+              "column": 3
+            },
+            {
+              "title": "a hostile 'return to catalog' value in sessionStorage is never used as a link",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 171,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:28.546Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-7b522be7e50cb10f0e00",
+              "file": "landing.spec.js",
+              "line": 901,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Continue practice (real local progress, read-only)",
+          "file": "landing.spec.js",
+          "line": 913,
+          "column": 6,
+          "specs": [
+            {
+              "title": "without saved answers there is no 'Continue practice' section at all",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 122,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:28.726Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-13a126c86d5f1d56914c",
+              "file": "landing.spec.js",
+              "line": 914,
+              "column": 3
+            },
+            {
+              "title": "answers given in a real practice session appear on the landing page, most recent first",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1276,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:28.855Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-e200a381531744ccef0b",
+              "file": "landing.spec.js",
+              "line": 922,
+              "column": 3
+            },
+            {
+              "title": "the landing page never writes, migrates or removes practice storage — every key stays byte-identical",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 323,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:30.138Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-76ebd6d9e0446adb0ade",
+              "file": "landing.spec.js",
+              "line": 957,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Not-found page",
+          "file": "landing.spec.js",
+          "line": 1001,
+          "column": 6,
+          "specs": [
+            {
+              "title": "an unknown address returns HTTP 404 with a branded page that leads back to the catalog",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 171,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:30.468Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-09c9f8f04077066d3b12",
+              "file": "landing.spec.js",
+              "line": 1002,
+              "column": 3
+            },
+            {
+              "title": "a missing bank file is a real 404, not a page disguised as JSON",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:30.648Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3370f39aa0d6cc6ba3dc-b80c0a4684dea30d9eed",
+              "file": "landing.spec.js",
+              "line": 1015,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "layout-a11y.spec.js",
+      "file": "layout-a11y.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Responsive layout — 320 to 1440 CSS px",
+          "file": "layout-a11y.spec.js",
+          "line": 53,
+          "column": 6,
+          "specs": [
+            {
+              "title": "320px: default, filtered, longest-title, empty and error views have no overflow, clipping or overlapping targets",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 675,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:10.702Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-f782ac98d7c2a7bf580c",
+              "file": "layout-a11y.spec.js",
+              "line": 55,
+              "column": 5
+            },
+            {
+              "title": "360px: default, filtered, longest-title, empty and error views have no overflow, clipping or overlapping targets",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 622,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:11.516Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-f26ef5dd1cdc484b2e61",
+              "file": "layout-a11y.spec.js",
+              "line": 55,
+              "column": 5
+            },
+            {
+              "title": "390px: default, filtered, longest-title, empty and error views have no overflow, clipping or overlapping targets",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 601,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:12.152Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-8e1e32740da500429723",
+              "file": "layout-a11y.spec.js",
+              "line": 55,
+              "column": 5
+            },
+            {
+              "title": "768px: default, filtered, longest-title, empty and error views have no overflow, clipping or overlapping targets",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 564,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:12.774Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-8691e536a49bc8da7e7e",
+              "file": "layout-a11y.spec.js",
+              "line": 55,
+              "column": 5
+            },
+            {
+              "title": "1024px: default, filtered, longest-title, empty and error views have no overflow, clipping or overlapping targets",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 565,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:13.356Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-1c034508c639bb79b7b3",
+              "file": "layout-a11y.spec.js",
+              "line": 55,
+              "column": 5
+            },
+            {
+              "title": "1280px: default, filtered, longest-title, empty and error views have no overflow, clipping or overlapping targets",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 431,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:13.944Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-9a20d661dacba83bcf99",
+              "file": "layout-a11y.spec.js",
+              "line": 55,
+              "column": 5
+            },
+            {
+              "title": "1440px: default, filtered, longest-title, empty and error views have no overflow, clipping or overlapping targets",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 633,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:14.382Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-6df781ee9a3600449b0f",
+              "file": "layout-a11y.spec.js",
+              "line": 55,
+              "column": 5
+            },
+            {
+              "title": "320px: practice page — loaded bank, unavailable bank and failed load stay inside the viewport",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 525,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:15.028Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-77866412118ef13f253f",
+              "file": "layout-a11y.spec.js",
+              "line": 98,
+              "column": 5
+            },
+            {
+              "title": "390px: practice page — loaded bank, unavailable bank and failed load stay inside the viewport",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 466,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:15.573Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-1db135240c0dbc272e64",
+              "file": "layout-a11y.spec.js",
+              "line": 98,
+              "column": 5
+            },
+            {
+              "title": "1280px: practice page — loaded bank, unavailable bank and failed load stay inside the viewport",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 393,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:16.048Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-30d810bc9a752ee8c8c7",
+              "file": "layout-a11y.spec.js",
+              "line": 98,
+              "column": 5
+            },
+            {
+              "title": "200% browser zoom (1280px window -> 640 CSS px, 768 -> 384, 640 -> 320): everything reflows",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 681,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:16.451Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-7711229ad76d697f7943",
+              "file": "layout-a11y.spec.js",
+              "line": 122,
+              "column": 3
+            },
+            {
+              "title": "text-only resize to 200% (root font size doubled) does not clip or overflow",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 183,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:17.139Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-564e3136beb2345a2dca",
+              "file": "layout-a11y.spec.js",
+              "line": 134,
+              "column": 3
+            },
+            {
+              "title": "layout is stable while loading: the logo box and catalog skeleton reserve their space (CLS < 0.1)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2439,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:17.333Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-c8cbfd4958d31bf6cb2e",
+              "file": "layout-a11y.spec.js",
+              "line": 148,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Keyboard",
+          "file": "layout-a11y.spec.js",
+          "line": 175,
+          "column": 6,
+          "specs": [
+            {
+              "title": "desktop: Tab reaches every control in a logical order, focus is always visible, nothing traps it",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 549,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:19.783Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-8a7b290a81394394aa18",
+              "file": "layout-a11y.spec.js",
+              "line": 217,
+              "column": 5
+            },
+            {
+              "title": "small phone: Tab reaches every control in a logical order, focus is always visible, nothing traps it",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 420,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:20.341Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-18a4f3c2bffd23006a6e",
+              "file": "layout-a11y.spec.js",
+              "line": 217,
+              "column": 5
+            },
+            {
+              "title": "a whole task with the keyboard only: search, filter, open a bank, come back",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 863,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:20.770Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-1fd236850ef8480d1605",
+              "file": "layout-a11y.spec.js",
+              "line": 236,
+              "column": 3
+            },
+            {
+              "title": "pagination by keyboard moves focus to the new results; unavailable cards are not tab stops",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 210,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:21.642Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-efeee508d9435afd3ce7",
+              "file": "layout-a11y.spec.js",
+              "line": 273,
+              "column": 3
+            },
+            {
+              "title": "the result summary is the only live region, and it announces the outcome of a search",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 545,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:21.859Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-ef0d8fd2d0026691e5a2",
+              "file": "layout-a11y.spec.js",
+              "line": 304,
+              "column": 3
+            },
+            {
+              "title": "selected states are exposed to assistive technology (aria-current, aria-pressed, checked)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 181,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:22.413Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-32272244c9ee034db6c6",
+              "file": "layout-a11y.spec.js",
+              "line": 315,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Motion preferences",
+          "file": "layout-a11y.spec.js",
+          "line": 330,
+          "column": 6,
+          "specs": [
+            {
+              "title": "reduced motion: no smooth scrolling, no pulsing skeleton, no transitions",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 207,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:22.603Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-07e7d5218971a427be61",
+              "file": "layout-a11y.spec.js",
+              "line": 331,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Colour contrast (WCAG 2.2 AA) on computed colours",
+          "file": "layout-a11y.spec.js",
+          "line": 357,
+          "column": 6,
+          "specs": [
+            {
+              "title": "light: every text and control boundary on the landing page meets AA in all catalog states",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 816,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:22.820Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-7b8599f284af79a0dc1a",
+              "file": "layout-a11y.spec.js",
+              "line": 366,
+              "column": 5
+            },
+            {
+              "title": "light: hover and focus states keep AA contrast and a visible focus ring",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1508,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:23.648Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-b4b878dd18652ee8d29d",
+              "file": "layout-a11y.spec.js",
+              "line": 410,
+              "column": 5
+            },
+            {
+              "title": "light: practice page status layer (back link, failure state) meets AA",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1107,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:25.164Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-555c2c771a49de149e98",
+              "file": "layout-a11y.spec.js",
+              "line": 457,
+              "column": 5
+            },
+            {
+              "title": "dark: every text and control boundary on the landing page meets AA in all catalog states",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 698,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:26.278Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-d4f4c235a85e15cd8621",
+              "file": "layout-a11y.spec.js",
+              "line": 366,
+              "column": 5
+            },
+            {
+              "title": "dark: hover and focus states keep AA contrast and a visible focus ring",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1435,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:26.984Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-6bc19591c81493856453",
+              "file": "layout-a11y.spec.js",
+              "line": 410,
+              "column": 5
+            },
+            {
+              "title": "dark: practice page status layer (back link, failure state) meets AA",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1117,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:28.426Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "27151b2b244dd744c387-1ceddd6e97fb30bf269e",
+              "file": "layout-a11y.spec.js",
+              "line": 457,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "practice.spec.js",
+      "file": "practice.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Practice — one real bank from every collection",
+          "file": "practice.spec.js",
+          "line": 77,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Mathematics: \"mathematics-algebra-first-math\" loads from its exact manifest path and renders a question",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1196,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:10.704Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-2988f2320f56523cbdcb",
+              "file": "practice.spec.js",
+              "line": 79,
+              "column": 5
+            },
+            {
+              "title": "Quiz: \"quiz-quiz-01\" loads from its exact manifest path and renders a question",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1181,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:12.041Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-80bbeeac3654626cd7d9",
+              "file": "practice.spec.js",
+              "line": 79,
+              "column": 5
+            },
+            {
+              "title": "Math gaokao: \"math-gaokao-1\" loads from its exact manifest path and renders a question",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1184,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:13.244Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-3c73f84cd0ca889c871c",
+              "file": "practice.spec.js",
+              "line": 79,
+              "column": 5
+            },
+            {
+              "title": "Comprehensive math: \"dynanca-1\" loads from its exact manifest path and renders a question",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1126,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:14.442Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-144d74b3aedecda64643",
+              "file": "practice.spec.js",
+              "line": 79,
+              "column": 5
+            },
+            {
+              "title": "Computer science: \"algorithms\" loads from its exact manifest path and renders a question",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 981,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:15.579Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-a6cbe48d0b40791cdc5e",
+              "file": "practice.spec.js",
+              "line": 79,
+              "column": 5
+            },
+            {
+              "title": "the legacy deep-link forms still work, and the brand link still goes home",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 657,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:16.573Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-ac50551fb3d7dca8017f",
+              "file": "practice.spec.js",
+              "line": 106,
+              "column": 3
+            },
+            {
+              "title": "every external request stays on the site's own origin (local MathJax, no CDN)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 969,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:17.251Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-ba98fc9b00049b6f39bb",
+              "file": "practice.spec.js",
+              "line": 123,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Practice — answer, hint, explanation, next, previous, review, completion",
+          "file": "practice.spec.js",
+          "line": 142,
+          "column": 6,
+          "specs": [
+            {
+              "title": "a complete run through the smallest shipped bank behaves as before",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1783,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:18.239Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-b704fc7fee95d989fb3c",
+              "file": "practice.spec.js",
+              "line": 143,
+              "column": 3
+            },
+            {
+              "title": "refresh resumes on the same question with progress and the Previous trail intact",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 930,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:20.041Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-25d1393671ff56a1449d",
+              "file": "practice.spec.js",
+              "line": 218,
+              "column": 3
+            },
+            {
+              "title": "Reset progress asks first, clears only this bank's keys, and leaves the theme and other banks alone",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 837,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:20.979Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-e99b5114432364dc4979",
+              "file": "practice.spec.js",
+              "line": 241,
+              "column": 3
+            },
+            {
+              "title": "an existing legacy 'gp-practice-v1' record is still migrated by the practice page exactly as before",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 286,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:21.826Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-aa14611e3502fc588f92",
+              "file": "practice.spec.js",
+              "line": 277,
+              "column": 3
+            },
+            {
+              "title": "using the landing page between two practice visits neither loses nor rewrites progress",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 932,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:22.121Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-16e7831de9cc3bb5cd35",
+              "file": "practice.spec.js",
+              "line": 293,
+              "column": 3
+            },
+            {
+              "title": "a corrupted attempt record does not crash the practice page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 342,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:23.061Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-0572827f6b7eff47afd4",
+              "file": "practice.spec.js",
+              "line": 325,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Practice — mathematics rendering is unchanged",
+          "file": "practice.spec.js",
+          "line": 342,
+          "column": 6,
+          "specs": [
+            {
+              "title": "inline math in the question text and in every option is typeset (no raw delimiters left)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1111,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:23.416Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-eec29df0f4145fe04693",
+              "file": "practice.spec.js",
+              "line": 346,
+              "column": 3
+            },
+            {
+              "title": "display math in a question is typeset as a display equation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1029,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:24.536Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-6e7ecf2a72c94f3b3054",
+              "file": "practice.spec.js",
+              "line": 372,
+              "column": 3
+            },
+            {
+              "title": "math inside a hint is typeset when the hint is opened",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1049,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:25.575Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-5cd448dddad1561b3151",
+              "file": "practice.spec.js",
+              "line": 384,
+              "column": 3
+            },
+            {
+              "title": "inline and display math inside an explanation are typeset after answering",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1072,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:26.635Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-04d66a2d371885e45ee5",
+              "file": "practice.spec.js",
+              "line": 398,
+              "column": 3
+            },
+            {
+              "title": "a Venn question renders its SVG diagram with the set names from the data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 317,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:27.718Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-550d737579a94ce18e0e",
+              "file": "practice.spec.js",
+              "line": 415,
+              "column": 3
+            },
+            {
+              "title": "the full practice + math + Venn flow produces zero CSP violations in both themes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5159,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:28.047Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-2565d4bcda837950b538",
+              "file": "practice.spec.js",
+              "line": 435,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Practice — loading failures are readable and recoverable",
+          "file": "practice.spec.js",
+          "line": 459,
+          "column": 6,
+          "specs": [
+            {
+              "title": "no ?quiz= in the address",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 258,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:33.213Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-87ab8acadbdc6efd5f91",
+              "file": "practice.spec.js",
+              "line": 490,
+              "column": 3
+            },
+            {
+              "title": "an id that is not in the manifest (ids are never guessed or slugified)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 263,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:33.477Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-49a27ce96c9156a3b76a",
+              "file": "practice.spec.js",
+              "line": 498,
+              "column": 3
+            },
+            {
+              "title": "a listed bank whose file is not in this release, opened directly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 399,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:33.748Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-c4b23d111f4c11c40cb8",
+              "file": "practice.spec.js",
+              "line": 507,
+              "column": 3
+            },
+            {
+              "title": "a host that answers a missing bank with an HTML page (HTTP 200) is still treated as not available",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 296,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:34.156Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-16d1dd23a4590905599f",
+              "file": "practice.spec.js",
+              "line": 520,
+              "column": 3
+            },
+            {
+              "title": "a network failure while downloading the bank can be retried and then works",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 466,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:34.459Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-b4b422c4da03368c7848",
+              "file": "practice.spec.js",
+              "line": 527,
+              "column": 3
+            },
+            {
+              "title": "a server error for the bank, a damaged bank file and an empty bank each get the right state",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 650,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:34.935Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-9bea57907097f34bb34a",
+              "file": "practice.spec.js",
+              "line": 543,
+              "column": 3
+            },
+            {
+              "title": "the catalog file failing or being malformed stops 'Loading…' with a retryable state",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 442,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:35.593Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-373e5fdfc4bc0509999b",
+              "file": "practice.spec.js",
+              "line": 561,
+              "column": 3
+            },
+            {
+              "title": "a download that never finishes hits the deadline instead of loading forever",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 234,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:36.044Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-adf73f78c31aaeb4b1f3",
+              "file": "practice.spec.js",
+              "line": 574,
+              "column": 3
+            },
+            {
+              "title": "with JavaScript disabled the practice page explains itself instead of showing 'Loading…'",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 73,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:36.287Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-c043c4f660f8171fbc52",
+              "file": "practice.spec.js",
+              "line": 585,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Computer science — the Algorithms bank end to end",
+          "file": "practice.spec.js",
+          "line": 603,
+          "column": 6,
+          "specs": [
+            {
+              "title": "visible under the default AVAILABLE filter with its verified count, opens, answers, explains, advances and survives a reload",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 5156,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#collectionGrid a[data-collection=\"computer science\"]').locator('.collection-card__count')\nExpected: \u001b[32m\"\u001b[7m1\u001b[27m bank available\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m2\u001b[27m bank\u001b[7ms\u001b[27m available\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#collectionGrid a[data-collection=\"computer science\"]').locator('.collection-card__count')\u001b[22m\n\u001b[2m    9 × locator resolved to <span class=\"collection-card__count\">2 banks available</span>\u001b[22m\n\u001b[2m      - unexpected value \"2 banks available\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#collectionGrid a[data-collection=\"computer science\"]').locator('.collection-card__count')\nExpected: \u001b[32m\"\u001b[7m1\u001b[27m bank available\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m2\u001b[27m bank\u001b[7ms\u001b[27m available\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#collectionGrid a[data-collection=\"computer science\"]').locator('.collection-card__count')\u001b[22m\n\u001b[2m    9 × locator resolved to <span class=\"collection-card__count\">2 banks available</span>\u001b[22m\n\u001b[2m      - unexpected value \"2 banks available\"\u001b[22m\n\n    at /workspace/scratch/051c254e42f3/work/REAL MCQ/tests/browser/practice.spec.js:613:69",
+                        "location": {
+                          "file": "/workspace/scratch/051c254e42f3/work/REAL MCQ/tests/browser/practice.spec.js",
+                          "column": 69,
+                          "line": 613
+                        },
+                        "snippet": "  611 |     const collectionCard = page.locator('#collectionGrid a[data-collection=\"computer science\"]');\n  612 |     await expect(collectionCard).toBeVisible();\n> 613 |     await expect(collectionCard.locator(\".collection-card__count\")).toHaveText(\"1 bank available\");\n      |                                                                     ^\n  614 |     await collectionCard.click();\n  615 |     await expect(page).toHaveURL(/\\?collection=computer%20science$/);\n  616 |     const card = page.locator('#bankGrid li[data-bank-id=\"algorithms\"]');"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspace/scratch/051c254e42f3/work/REAL MCQ/tests/browser/practice.spec.js",
+                            "column": 69,
+                            "line": 613
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#collectionGrid a[data-collection=\"computer science\"]').locator('.collection-card__count')\nExpected: \u001b[32m\"\u001b[7m1\u001b[27m bank available\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m2\u001b[27m bank\u001b[7ms\u001b[27m available\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#collectionGrid a[data-collection=\"computer science\"]').locator('.collection-card__count')\u001b[22m\n\u001b[2m    9 × locator resolved to <span class=\"collection-card__count\">2 banks available</span>\u001b[22m\n\u001b[2m      - unexpected value \"2 banks available\"\u001b[22m\n\n\n  611 |     const collectionCard = page.locator('#collectionGrid a[data-collection=\"computer science\"]');\n  612 |     await expect(collectionCard).toBeVisible();\n> 613 |     await expect(collectionCard.locator(\".collection-card__count\")).toHaveText(\"1 bank available\");\n      |                                                                     ^\n  614 |     await collectionCard.click();\n  615 |     await expect(page).toHaveURL(/\\?collection=computer%20science$/);\n  616 |     const card = page.locator('#bankGrid li[data-bank-id=\"algorithms\"]');\n    at /workspace/scratch/051c254e42f3/work/REAL MCQ/tests/browser/practice.spec.js:613:69"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-08T10:38:36.369Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspace/scratch/051c254e42f3/work/REAL MCQ/test-results/practice-Computer-science--daeae-ances-and-survives-a-reload-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspace/scratch/051c254e42f3/work/REAL MCQ/tests/browser/practice.spec.js",
+                        "column": 69,
+                        "line": 613
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a82b13b7c3b1c0abddfd-a90e5191f1a9050b1b71",
+              "file": "practice.spec.js",
+              "line": 604,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-08T10:38:09.666Z",
+    "duration": 31938.423,
+    "expected": 105,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

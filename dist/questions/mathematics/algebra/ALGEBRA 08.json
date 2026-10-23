@@ -1,0 +1,4411 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "algebra-08",
+  "category": "Mathematics for Computing",
+  "title": "Inequalities, Functional Equations & Nonlinear Systems",
+  "description": "Explore essential mathematical concepts through carefully crafted questions. Strengthen your understanding, practice your reasoning, and learn at your own pace.",
+  "questionCount": 200,
+  "questions": [
+    {
+      "id": "algebra-08-q001",
+      "category": "Algebra",
+      "concept": "AM-GM Inequality",
+      "learningObjective": "Apply the AM-GM inequality to find the minimum of a sum of reciprocals under a fixed sum constraint.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(x\\) and \\(y\\) be positive real numbers such that \\(x + y = 10\\). What is the minimum value of \\(\\frac{1}{x} + \\frac{1}{y}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2}{5}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the Cauchy-Schwarz inequality (or AM-HM),\n\\[\n\\left(\\frac{1}{x}+\\frac{1}{y}\\right)(x+y) \\ge (1+1)^2 = 4.\n\\]\nSince \\(x+y=10\\), we get \\(\\frac{1}{x}+\\frac{1}{y} \\ge \\frac{4}{10} = \\frac{2}{5}\\).\nEquality occurs when \\(x=y=5\\), so the minimum is \\(\\frac{2}{5}\\), which is option B.",
+      "hint": "Multiply the expression by \\((x+y)\\) and use the Cauchy-Schwarz inequality."
+    },
+    {
+      "id": "algebra-08-q002",
+      "category": "Algebra",
+      "concept": "AM-GM Inequality",
+      "learningObjective": "Determine the minimum value of an expression of the form \\(x + \\frac{a}{x}\\) for \\(x>0\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(x > 0\\), what is the minimum value of \\(x + \\frac{4}{x}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By AM-GM, \\(x + \\frac{4}{x} \\ge 2\\sqrt{x \\cdot \\frac{4}{x}} = 2\\sqrt{4} = 4\\).\nEquality occurs when \\(x = \\frac{4}{x}\\), i.e., \\(x=2\\). Hence the minimum is \\(4\\), which is option A.",
+      "hint": "Use AM-GM on the two positive terms."
+    },
+    {
+      "id": "algebra-08-q003",
+      "category": "Algebra",
+      "concept": "Triangle Inequality",
+      "learningObjective": "Identify a universally valid absolute-value inequality.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For all real numbers \\(x\\) and \\(y\\), which inequality is always true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(|x+y| \\ge |x| + |y|\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(|x+y| \\le |x| + |y|\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The triangle inequality states that for all real \\(x, y\\),\n\\[\n|x+y| \\le |x| + |y|.\n\\]\nFor example, \\(x=1, y=-1\\) gives \\(|0| \\le 2\\), true. Option A fails for the same example since \\(0 \\ge 2\\) is false. Hence B is correct.",
+      "hint": "Recall the standard triangle inequality for absolute values."
+    },
+    {
+      "id": "algebra-08-q004",
+      "category": "Algebra",
+      "concept": "Cauchy-Schwarz Inequality",
+      "learningObjective": "Apply Cauchy-Schwarz to bound a sum of squares given a linear constraint.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(a+b=6\\) for real numbers \\(a\\) and \\(b\\), what is the minimum value of \\(a^2+b^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(18\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(36\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By Cauchy-Schwarz, \\((a^2+b^2)(1^2+1^2) \\ge (a+b)^2 = 36\\).\nThus \\(a^2+b^2 \\ge 18\\). Equality when \\(a=b=3\\), so the minimum is \\(18\\), which is option A.",
+      "hint": "Apply Cauchy-Schwarz with the vectors \\((a,b)\\) and \\((1,1)\\)."
+    },
+    {
+      "id": "algebra-08-q005",
+      "category": "Algebra",
+      "concept": "AM-GM Inequality",
+      "learningObjective": "Find the minimum of a product given a fixed sum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For positive real numbers \\(x\\) and \\(y\\) with \\(x+y=8\\), what is the maximum value of \\(xy\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By AM-GM, \\(\\frac{x+y}{2} \\ge \\sqrt{xy}\\), so \\(\\sqrt{xy} \\le 4\\), hence \\(xy \\le 16\\).\nEquality when \\(x=y=4\\). Therefore the maximum is \\(16\\), which is option B.",
+      "hint": "Use AM-GM on \\(x\\) and \\(y\\)."
+    },
+    {
+      "id": "algebra-08-q006",
+      "category": "Algebra",
+      "concept": "Absolute Value Inequality",
+      "learningObjective": "Solve a basic absolute-value inequality.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the inequality \\(|x-3| < 5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2 < x < 8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x < 8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(|x-3|<5\\) is equivalent to \\(-5 < x-3 < 5\\).\nAdding 3 gives \\(-2 < x < 8\\). Option A is correct.",
+      "hint": "Rewrite the absolute-value inequality as a double inequality."
+    },
+    {
+      "id": "algebra-08-q007",
+      "category": "Algebra",
+      "concept": "Rational Inequality",
+      "learningObjective": "Solve a rational inequality by identifying critical points and testing intervals.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Solve the inequality \\(\\frac{x-1}{x+2} > 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x < -2\\) or \\(x > 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2 < x < 1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The critical points are \\(x=1\\) (numerator zero) and \\(x=-2\\) (denominator zero).\nTesting intervals:\n- \\(x<-2\\): numerator negative, denominator negative → positive.\n- \\(-2<x<1\\): numerator negative, denominator positive → negative.\n- \\(x>1\\): numerator positive, denominator positive → positive.\nThus the solution is \\(x<-2\\) or \\(x>1\\), which is option A.",
+      "hint": "Find the zeros of the numerator and denominator, then test each interval."
+    },
+    {
+      "id": "algebra-08-q008",
+      "category": "Algebra",
+      "concept": "Polynomial Inequality",
+      "learningObjective": "Solve a quadratic inequality by factoring.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x^2 - 5x + 6 < 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2 < x < 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x < 2\\) or \\(x > 3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor: \\(x^2-5x+6 = (x-2)(x-3)\\).\nThe parabola opens upward and is negative between the roots.\nThus \\(2 < x < 3\\), which is option A.",
+      "hint": "Factor the quadratic and determine where the product is negative."
+    },
+    {
+      "id": "algebra-08-q009",
+      "category": "Algebra",
+      "concept": "Parameter-Dependent Inequality",
+      "learningObjective": "Determine when a quadratic inequality holds for all real \\(x\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For which values of \\(k\\) does \\(x^2 + kx + 1 > 0\\) hold for all real \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2 < k < 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k > 2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A quadratic \\(ax^2+bx+c\\) with \\(a>0\\) is always positive iff its discriminant is negative.\nHere \\(\\Delta = k^2 - 4 < 0\\), so \\(k^2 < 4\\), giving \\(-2 < k < 2\\).\nThus option A is correct.",
+      "hint": "Use the discriminant condition for a positive definite quadratic."
+    },
+    {
+      "id": "algebra-08-q010",
+      "category": "Algebra",
+      "concept": "Inequality Involving Roots",
+      "learningObjective": "Solve an inequality involving a square root and a linear expression.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(\\sqrt{x+3} \\le x+1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x \\ge 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x \\ge -3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "We need \\(x+3 \\ge 0\\) and \\(x+1 \\ge 0\\), so \\(x \\ge -1\\).\nSquaring: \\(x+3 \\le (x+1)^2 = x^2+2x+1\\), so \\(0 \\le x^2+x-2 = (x+2)(x-1)\\).\nThis gives \\(x \\le -2\\) or \\(x \\ge 1\\). Intersecting with \\(x \\ge -1\\) yields \\(x \\ge 1\\).\nCheck \\(x=1\\): \\(\\sqrt{4}=2 \\le 2\\), true. Hence option A.",
+      "hint": "Ensure both sides are non-negative before squaring, then check the intersection with the domain."
+    },
+    {
+      "id": "algebra-08-q011",
+      "category": "Algebra",
+      "concept": "Inequality with Exponents",
+      "learningObjective": "Solve an exponential inequality using monotonicity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(2^x > 8\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x > 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x < 3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(8 = 2^3\\) and the base \\(2>1\\), the inequality \\(2^x > 2^3\\) gives \\(x > 3\\).\nOption A is correct.",
+      "hint": "Express both sides with the same base."
+    },
+    {
+      "id": "algebra-08-q012",
+      "category": "Algebra",
+      "concept": "Inequality with Logarithms",
+      "learningObjective": "Solve a logarithmic inequality using the domain and monotonicity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(\\log_2(x-1) < 3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x > 9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1 < x < 9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain requires \\(x-1>0\\), so \\(x>1\\).\nSince \\(\\log_2\\) is increasing, \\(\\log_2(x-1) < 3 = \\log_2 8\\) gives \\(x-1 < 8\\), so \\(x<9\\).\nCombining: \\(1<x<9\\), which is option B.",
+      "hint": "First determine the domain, then remove the logarithm using the base."
+    },
+    {
+      "id": "algebra-08-q013",
+      "category": "Algebra",
+      "concept": "Inequality System",
+      "learningObjective": "Solve a system of two linear inequalities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the system \\(x+2 > 0\\) and \\(2x-6 < 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2 < x < 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x > 3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x+2>0\\) gives \\(x>-2\\).\n\\(2x-6<0\\) gives \\(x<3\\).\nThe intersection is \\(-2<x<3\\), which is option A.",
+      "hint": "Solve each inequality separately, then intersect the solution sets."
+    },
+    {
+      "id": "algebra-08-q014",
+      "category": "Algebra",
+      "concept": "Maximum/Minimum Inequality",
+      "learningObjective": "Use AM-GM to find a minimum involving a sum and a reciprocal.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For \\(x>0\\), what is the minimum value of \\(x + \\frac{9}{x}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By AM-GM, \\(x + \\frac{9}{x} \\ge 2\\sqrt{9} = 6\\).\nEquality when \\(x=3\\). Hence the minimum is \\(6\\), which is option B.",
+      "hint": "Apply AM-GM to \\(x\\) and \\(\\frac{9}{x}\\)."
+    },
+    {
+      "id": "algebra-08-q015",
+      "category": "Algebra",
+      "concept": "Equality Condition in AM-GM",
+      "learningObjective": "Determine when equality holds in an AM-GM application.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For positive \\(a,b,c\\) with \\(a+b+c=3\\), AM-GM gives \\(a+b+c \\ge 3\\sqrt[3]{abc}\\). When does equality hold?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a=b=c=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a=3, b=0, c=0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Equality in AM-GM holds when all terms are equal: \\(a=b=c\\).\nWith \\(a+b+c=3\\), this gives \\(a=b=c=1\\).\nOption A is correct. Option B is invalid since \\(b=0\\) is not positive.",
+      "hint": "Recall the equality condition for AM-GM."
+    },
+    {
+      "id": "algebra-08-q016",
+      "category": "Algebra",
+      "concept": "Bounding Expressions",
+      "learningObjective": "Bound a rational expression using a known inequality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For \\(x>0\\), which inequality is always true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{x}{x+1} \\ge 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{x}{x+1} < 1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(x>0\\), \\(x+1>x\\), so \\(\\frac{x}{x+1}<1\\). Also \\(\\frac{x}{x+1}>0\\).\nOption A is false because \\(\\frac{x}{x+1}<1\\) always. Hence B is correct.",
+      "hint": "Compare the numerator and denominator."
+    },
+    {
+      "id": "algebra-08-q017",
+      "category": "Algebra",
+      "concept": "Substitution in Inequalities",
+      "learningObjective": "Use substitution to simplify and solve an inequality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(x^4 - 5x^2 + 4 < 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2 < x < -1\\) or \\(1 < x < 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1 < x < 1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(t=x^2\\). Then \\(t^2-5t+4<0\\), so \\((t-1)(t-4)<0\\), giving \\(1<t<4\\).\nThus \\(1<x^2<4\\), which means \\(1<|x|<2\\).\nSo \\(-2<x<-1\\) or \\(1<x<2\\), which is option A.",
+      "hint": "Substitute \\(t=x^2\\) to reduce the quartic to a quadratic."
+    },
+    {
+      "id": "algebra-08-q018",
+      "category": "Algebra",
+      "concept": "Symmetric Inequality",
+      "learningObjective": "Prove a symmetric inequality using AM-GM.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For positive \\(a,b\\), which is always true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{a}{b} + \\frac{b}{a} \\ge 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{a}{b} + \\frac{b}{a} \\le 2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By AM-GM, \\(\\frac{a}{b}+\\frac{b}{a} \\ge 2\\sqrt{\\frac{a}{b}\\cdot\\frac{b}{a}} = 2\\).\nEquality when \\(a=b\\). Hence option A is correct.",
+      "hint": "Apply AM-GM to the two positive terms."
+    },
+    {
+      "id": "algebra-08-q019",
+      "category": "Algebra",
+      "concept": "Optimization Through Inequalities",
+      "learningObjective": "Use an inequality to find the maximum of a product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For non-negative \\(x,y\\) with \\(2x+y=6\\), what is the maximum value of \\(xy\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{9}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By AM-GM, \\(2x+y \\ge 2\\sqrt{2xy}\\), so \\(6 \\ge 2\\sqrt{2xy}\\).\nThus \\(\\sqrt{2xy} \\le 3\\), so \\(2xy \\le 9\\), giving \\(xy \\le \\frac{9}{2}\\).\nEquality when \\(2x=y=3\\), i.e., \\(x=\\frac{3}{2}, y=3\\). Hence option B.",
+      "hint": "Apply AM-GM to \\(2x\\) and \\(y\\)."
+    },
+    {
+      "id": "algebra-08-q020",
+      "category": "Algebra",
+      "concept": "Domain Restrictions in Inequalities",
+      "learningObjective": "Determine the domain before solving an inequality.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the domain of the inequality \\(\\sqrt{5-x} > 1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x \\le 5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x \\ge 5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The square root requires \\(5-x \\ge 0\\), so \\(x \\le 5\\).\nOption A is correct.",
+      "hint": "The expression under a square root must be non-negative."
+    },
+    {
+      "id": "algebra-08-q021",
+      "category": "Algebra",
+      "concept": "Advanced Inequality Reasoning",
+      "learningObjective": "Determine the minimum of a sum of squares using Cauchy-Schwarz.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "If \\(a+b+c=6\\) for real \\(a,b,c\\), what is the minimum value of \\(a^2+b^2+c^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By Cauchy-Schwarz, \\((a^2+b^2+c^2)(1+1+1) \\ge (a+b+c)^2 = 36\\).\nThus \\(a^2+b^2+c^2 \\ge 12\\). Equality at \\(a=b=c=2\\).\nHence option B.",
+      "hint": "Apply Cauchy-Schwarz with the vector \\((1,1,1)\\)."
+    },
+    {
+      "id": "algebra-08-q022",
+      "category": "Algebra",
+      "concept": "Triangle Inequality",
+      "learningObjective": "Apply the reverse triangle inequality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For real \\(x,y\\), which is always true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(|x-y| \\ge ||x|-|y||\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(|x-y| \\le ||x|-|y||\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The reverse triangle inequality states \\(|x-y| \\ge ||x|-|y||\\).\nFor example, \\(x=2, y=-1\\): \\(|x-y|=3\\) while \\(||x|-|y||=|2-1|=1\\), so option B fails. Hence A is correct.",
+      "hint": "Recall the reverse triangle inequality."
+    },
+    {
+      "id": "algebra-08-q023",
+      "category": "Algebra",
+      "concept": "Rational Inequality",
+      "learningObjective": "Solve a rational inequality with a quadratic denominator.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(\\frac{x^2-4}{x^2-1} \\le 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2 \\le x < -1\\) or \\(1 < x \\le 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1 < x < 1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor: \\(\\frac{(x-2)(x+2)}{(x-1)(x+1)} \\le 0\\).\nCritical points: \\(-2,-1,1,2\\).\nTesting intervals:\n- \\(x<-2\\): positive/positive >0\n- \\(-2<x<-1\\): negative/positive <0\n- \\(-1<x<1\\): negative/negative >0\n- \\(1<x<2\\): negative/positive <0\n- \\(x>2\\): positive/positive >0\nInclude zeros of numerator: \\(x=-2,2\\). Exclude zeros of denominator: \\(x=-1,1\\).\nSolution: \\(-2 \\le x < -1\\) or \\(1 < x \\le 2\\). Option A.",
+      "hint": "Factor both numerator and denominator, then test intervals between critical points."
+    },
+    {
+      "id": "algebra-08-q024",
+      "category": "Algebra",
+      "concept": "AM-GM with Constraint",
+      "learningObjective": "Find the minimum of a sum given a product constraint.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For positive \\(x,y\\) with \\(xy=16\\), what is the minimum value of \\(x+y\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By AM-GM, \\(x+y \\ge 2\\sqrt{xy} = 2\\sqrt{16} = 8\\).\nEquality when \\(x=y=4\\). Hence option B.",
+      "hint": "Apply AM-GM to \\(x\\) and \\(y\\)."
+    },
+    {
+      "id": "algebra-08-q025",
+      "category": "Algebra",
+      "concept": "Polynomial Inequality",
+      "learningObjective": "Solve a cubic inequality by factoring.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(x^3 - x > 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1 < x < 0\\) or \\(x > 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x > 1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x^3-x = x(x-1)(x+1) > 0\\).\nCritical points: \\(-1,0,1\\).\nSign analysis:\n- \\(x<-1\\): negative\n- \\(-1<x<0\\): positive\n- \\(0<x<1\\): negative\n- \\(x>1\\): positive\nSolution: \\(-1<x<0\\) or \\(x>1\\). Option A.",
+      "hint": "Factor the cubic and test intervals determined by its roots."
+    },
+    {
+      "id": "algebra-08-q026",
+      "category": "Algebra",
+      "concept": "Cauchy-Schwarz Inequality",
+      "learningObjective": "Apply Cauchy-Schwarz to a sum with coefficients.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(2a+3b=12\\) for real \\(a,b\\), what is the minimum value of \\(a^2+b^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{144}{13}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By Cauchy-Schwarz, \\((a^2+b^2)(4+9) \\ge (2a+3b)^2 = 144\\).\nThus \\(a^2+b^2 \\ge \\frac{144}{13}\\), with equality when \\(a:b = 2:3\\).\nHence option B.",
+      "hint": "Use Cauchy-Schwarz with vectors \\((a,b)\\) and \\((2,3)\\)."
+    },
+    {
+      "id": "algebra-08-q027",
+      "category": "Algebra",
+      "concept": "Absolute Value Inequality",
+      "learningObjective": "Solve an absolute-value inequality with a quadratic expression.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(|x^2-4| \\le 3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x \\le -1\\) or \\(x \\ge 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(- \\sqrt{7} \\le x \\le -1\\) or \\(1 \\le x \\le \\sqrt{7}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(|x^2-4| \\le 3\\) means \\(-3 \\le x^2-4 \\le 3\\).\nAdd 4: \\(1 \\le x^2 \\le 7\\).\nThus \\(1 \\le |x| \\le \\sqrt{7}\\), so \\(-\\sqrt{7} \\le x \\le -1\\) or \\(1 \\le x \\le \\sqrt{7}\\).\nOption B.",
+      "hint": "Rewrite the absolute value inequality as a double inequality."
+    },
+    {
+      "id": "algebra-08-q028",
+      "category": "Algebra",
+      "concept": "Inequality with Roots",
+      "learningObjective": "Solve an inequality involving two square roots.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\sqrt{x+5} > \\sqrt{2x-1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x > 6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2} \\le x < 6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Domain: \\(x+5 \\ge 0\\) and \\(2x-1 \\ge 0\\), so \\(x \\ge \\frac{1}{2}\\).\nSquaring (both sides non-negative): \\(x+5 > 2x-1\\), so \\(6 > x\\), i.e., \\(x<6\\).\nIntersection: \\(\\frac{1}{2} \\le x < 6\\). Option B.",
+      "hint": "Determine the domain first, then square both sides."
+    },
+    {
+      "id": "algebra-08-q029",
+      "category": "Algebra",
+      "concept": "Parameterized Inequality",
+      "learningObjective": "Find parameter values for which an inequality holds for all \\(x\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For which \\(m\\) does \\(x^2 + 2mx + 4 > 0\\) hold for all real \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m > 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2 < m < 2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Discriminant: \\((2m)^2 - 16 < 0\\), so \\(4m^2 < 16\\), \\(m^2 < 4\\), giving \\(-2<m<2\\).\nOption B.",
+      "hint": "Use the discriminant condition for a positive definite quadratic."
+    },
+    {
+      "id": "algebra-08-q030",
+      "category": "Algebra",
+      "concept": "AM-GM Inequality",
+      "learningObjective": "Find the minimum of a sum of three terms using AM-GM.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For positive \\(a,b,c\\) with \\(a+b+c=6\\), what is the minimum value of \\(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By AM-HM, \\(\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c} \\ge \\frac{9}{a+b+c} = \\frac{9}{6} = \\frac{3}{2}\\).\nEquality at \\(a=b=c=2\\). Hence option A.",
+      "hint": "Use the AM-HM inequality or Cauchy-Schwarz."
+    },
+    {
+      "id": "algebra-08-q031",
+      "category": "Algebra",
+      "concept": "Inequality Involving Exponents",
+      "learningObjective": "Solve an inequality involving exponential expressions with different bases.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(3^x > 5^x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x>0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x<0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Divide by \\(5^x\\): \\((3/5)^x > 1\\). Since \\(0<3/5<1\\), this holds when \\(x<0\\).\nOption B.",
+      "hint": "Divide both sides by \\(5^x\\) and use properties of exponential functions with base less than 1."
+    },
+    {
+      "id": "algebra-08-q032",
+      "category": "Algebra",
+      "concept": "Inequality with Logarithms",
+      "learningObjective": "Solve a logarithmic inequality with a quadratic argument.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(\\log_3(x^2-2x) \\le 1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x \\le -1\\) or \\(x \\ge 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1 \\le x < 0\\) or \\(2 < x \\le 3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Domain: \\(x^2-2x>0\\), so \\(x<0\\) or \\(x>2\\).\n\\(\\log_3(x^2-2x) \\le 1 = \\log_3 3\\) gives \\(x^2-2x \\le 3\\), so \\(x^2-2x-3 \\le 0\\), \\((x-3)(x+1) \\le 0\\), giving \\(-1 \\le x \\le 3\\).\nIntersect with domain: \\(-1 \\le x < 0\\) or \\(2 < x \\le 3\\).\nOption B.",
+      "hint": "Find the domain first, then remove the logarithm and solve the resulting quadratic inequality."
+    },
+    {
+      "id": "algebra-08-q033",
+      "category": "Algebra",
+      "concept": "Symmetric Inequality",
+      "learningObjective": "Prove an inequality involving a sum of squares and a product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For all real \\(a,b\\), which is always true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a^2+b^2 \\ge 2ab\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a^2+b^2 \\le 2ab\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(a^2+b^2-2ab = (a-b)^2 \\ge 0\\), so \\(a^2+b^2 \\ge 2ab\\).\nOption A.",
+      "hint": "Consider \\((a-b)^2\\)."
+    },
+    {
+      "id": "algebra-08-q034",
+      "category": "Algebra",
+      "concept": "Optimization Through Inequalities",
+      "learningObjective": "Use AM-GM to maximize a product with a weighted sum constraint.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For positive \\(x,y\\) with \\(3x+4y=12\\), what is the maximum value of \\(xy\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By AM-GM, \\(3x+4y \\ge 2\\sqrt{12xy}\\). With \\(3x+4y=12\\):\n\\(12 \\ge 2\\sqrt{12xy}\\), so \\(\\sqrt{12xy} \\le 6\\), \\(12xy \\le 36\\), \\(xy \\le 3\\).\nEquality when \\(3x=4y=6\\), i.e., \\(x=2, y=\\frac{3}{2}\\). Hence option B.",
+      "hint": "Apply AM-GM to \\(3x\\) and \\(4y\\)."
+    },
+    {
+      "id": "algebra-08-q035",
+      "category": "Algebra",
+      "concept": "Domain Restrictions in Inequalities",
+      "learningObjective": "Solve an inequality involving a rational expression and a square root.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\frac{\\sqrt{x}}{x-1} > 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x > 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0 \\le x < 1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Domain: \\(x \\ge 0\\) and \\(x \\neq 1\\).\nThe numerator \\(\\sqrt{x} \\ge 0\\). For the fraction to be positive, numerator and denominator must have the same sign.\n- If \\(x>0\\) and \\(x-1>0\\), i.e., \\(x>1\\), the fraction is positive.\n- If \\(x=0\\), the fraction is 0, not >0.\n- If \\(0<x<1\\), numerator positive, denominator negative → negative.\nSo the solution is \\(x>1\\). Option A.",
+      "hint": "Consider the sign of the numerator and denominator separately."
+    },
+    {
+      "id": "algebra-08-q036",
+      "category": "Algebra",
+      "concept": "Cauchy-Schwarz Inequality",
+      "learningObjective": "Apply Cauchy-Schwarz to a sum of fractions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For positive \\(a,b,c\\), which inequality is always true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{a}{b}+\\frac{b}{c}+\\frac{c}{a} \\le 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{a}{b}+\\frac{b}{c}+\\frac{c}{a} \\ge 3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By AM-GM, \\(\\frac{a}{b}+\\frac{b}{c}+\\frac{c}{a} \\ge 3\\sqrt[3]{\\frac{a}{b}\\cdot\\frac{b}{c}\\cdot\\frac{c}{a}} = 3\\).\nOption B.",
+      "hint": "Apply AM-GM to the three positive terms."
+    },
+    {
+      "id": "algebra-08-q037",
+      "category": "Algebra",
+      "concept": "Polynomial Inequality",
+      "learningObjective": "Solve a quartic inequality using substitution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(x^4 - 3x^2 - 4 < 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2 < x < 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x < -2\\) or \\(x > 2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(t=x^2 \\ge 0\\). Then \\(t^2-3t-4<0\\), \\((t-4)(t+1)<0\\), so \\(-1<t<4\\).\nSince \\(t \\ge 0\\), we have \\(0 \\le t < 4\\), so \\(x^2<4\\), giving \\(-2<x<2\\).\nOption A.",
+      "hint": "Substitute \\(t=x^2\\) and solve the quadratic inequality."
+    },
+    {
+      "id": "algebra-08-q038",
+      "category": "Algebra",
+      "concept": "Parameter-Dependent Inequality",
+      "learningObjective": "Determine parameter values for which a rational inequality holds.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For which \\(k\\) does \\(x^2+kx+1 > 0\\) hold for all real \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k>2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2<k<2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Discriminant \\(k^2-4<0\\), so \\(-2<k<2\\).\nOption B.",
+      "hint": "Use the discriminant condition."
+    },
+    {
+      "id": "algebra-08-q039",
+      "category": "Algebra",
+      "concept": "Absolute Value Inequality",
+      "learningObjective": "Solve an absolute-value inequality involving a rational expression.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\left|\\frac{x-2}{x+1}\\right| < 2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-4<x<0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x<-4\\) or \\(x>0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(-2 < \\frac{x-2}{x+1} < 2\\).\nRight inequality: \\(\\frac{x-2}{x+1} < 2 \\Rightarrow \\frac{x+4}{x+1} > 0 \\Rightarrow x<-4\\) or \\(x>-1\\).\nLeft inequality: \\(\\frac{x-2}{x+1} > -2 \\Rightarrow \\frac{3x}{x+1} > 0 \\Rightarrow x<-1\\) or \\(x>0\\).\nIntersection: \\(x<-4\\) or \\(x>0\\).\nOption B.",
+      "hint": "Rewrite as a double inequality and solve each side separately."
+    },
+    {
+      "id": "algebra-08-q040",
+      "category": "Algebra",
+      "concept": "Inequality with Roots",
+      "learningObjective": "Solve an inequality involving a square root and a quadratic.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\sqrt{x^2-4} > x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x \\ge 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x \\le -2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Domain: \\(x \\le -2\\) or \\(x \\ge 2\\).\nIf \\(x \\ge 2\\), then \\(\\sqrt{x^2-4} < x\\), so no solution.\nIf \\(x \\le -2\\), LHS \\(\\ge 0\\) and RHS \\(<0\\), so LHS > RHS always.\nSolution: \\(x \\le -2\\). Option B.",
+      "hint": "Consider the sign of the right-hand side and the domain."
+    },
+    {
+      "id": "algebra-08-q041",
+      "category": "Algebra",
+      "concept": "AM-GM Inequality",
+      "learningObjective": "Find the minimum of a sum of squares plus a reciprocal.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For \\(x>0\\), what is the minimum value of \\(x^2 + \\frac{1}{x}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{2^{2/3}}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By AM-GM with three terms: \\(x^2 = x^2\\), and split \\(\\frac{1}{x} = \\frac{1}{2x} + \\frac{1}{2x}\\).\n\\(x^2 + \\frac{1}{2x} + \\frac{1}{2x} \\ge 3\\sqrt[3]{x^2 \\cdot \\frac{1}{2x} \\cdot \\frac{1}{2x}} = 3\\sqrt[3]{\\frac{1}{4}} = \\frac{3}{2^{2/3}}\\).\nEquality when \\(x^2 = \\frac{1}{2x}\\), i.e., \\(x^3 = \\frac{1}{2}\\), \\(x=2^{-1/3}\\).\nHence option B.",
+      "hint": "Split \\(\\frac{1}{x}\\) into two equal parts and apply AM-GM to three terms."
+    },
+    {
+      "id": "algebra-08-q042",
+      "category": "Algebra",
+      "concept": "Triangle Inequality",
+      "learningObjective": "Determine the maximum of an absolute value expression.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(|x| \\le 2\\) and \\(|y| \\le 3\\), what is the maximum value of \\(|x+y|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By triangle inequality, \\(|x+y| \\le |x|+|y| \\le 2+3=5\\).\nEquality when \\(x=2, y=3\\) (or both negative), so max is 5.\nOption A.",
+      "hint": "Use the triangle inequality."
+    },
+    {
+      "id": "algebra-08-q043",
+      "category": "Algebra",
+      "concept": "Rational Inequality",
+      "learningObjective": "Solve a rational inequality with a quadratic numerator.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(\\frac{x^2-1}{x+2} \\ge 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2 < x \\le -1\\) or \\(x \\ge 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x \\le -1\\) or \\(x \\ge 1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor: \\(\\frac{(x-1)(x+1)}{x+2} \\ge 0\\).\nCritical points: \\(-2,-1,1\\).\nSign analysis:\n- \\(x<-2\\): negative\n- \\(-2<x<-1\\): positive\n- \\(-1<x<1\\): negative\n- \\(x>1\\): positive\nInclude zeros of numerator: \\(x=-1,1\\). Exclude \\(x=-2\\).\nSolution: \\(-2<x \\le -1\\) or \\(x \\ge 1\\). Option A.",
+      "hint": "Factor the numerator and test intervals."
+    },
+    {
+      "id": "algebra-08-q044",
+      "category": "Algebra",
+      "concept": "Cauchy-Schwarz Inequality",
+      "learningObjective": "Apply Cauchy-Schwarz to a sum of fractions under a fixed sum constraint.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For positive \\(a,b\\) with \\(a+b=2\\), what is the minimum value of \\(\\frac{a^2}{b} + \\frac{b^2}{a}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{a+b}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a+b\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(a+b=2\\), Titu's lemma gives\n\\[\n\\frac{a^2}{b}+\\frac{b^2}{a} \\ge \\frac{(a+b)^2}{a+b}=a+b=2.\n\\]\nEquality when \\(a=b=1\\). So the minimum is \\(2=a+b\\). Option B.",
+      "hint": "Use Titu's lemma and the constraint \\(a+b=2\\)."
+    },
+    {
+      "id": "algebra-08-q045",
+      "category": "Algebra",
+      "concept": "Inequality with Exponents",
+      "learningObjective": "Solve an inequality involving a fractional exponent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(x^{2/3} > 4\\) for real \\(x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x > 8\\) or \\(x < -8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x > 8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x^{2/3} = (x^{1/3})^2 = |x|^{2/3}\\). So \\(|x|^{2/3} > 4\\) gives \\(|x| > 4^{3/2} = 8\\).\nThus \\(x>8\\) or \\(x<-8\\). Option A.",
+      "hint": "Note that \\(x^{2/3} = (x^{1/3})^2 \\ge 0\\) and depends on \\(|x|\\)."
+    },
+    {
+      "id": "algebra-08-q046",
+      "category": "Algebra",
+      "concept": "Parameterized Inequality",
+      "learningObjective": "Find parameter values for which a quadratic inequality has no real solutions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For which \\(m\\) does \\(x^2 - 2mx + m + 2 > 0\\) hold for all real \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1 < m < 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(m > 2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Discriminant: \\((-2m)^2 - 4(m+2) < 0\\), so \\(4m^2 - 4m - 8 < 0\\), \\(m^2 - m - 2 < 0\\), \\((m-2)(m+1) < 0\\).\nThus \\(-1 < m < 2\\). Option A.",
+      "hint": "Set the discriminant less than zero."
+    },
+    {
+      "id": "algebra-08-q047",
+      "category": "Algebra",
+      "concept": "AM-GM Inequality",
+      "learningObjective": "Find the minimum of a sum of three terms with a constraint.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For positive \\(a,b,c\\) with \\(abc=8\\), what is the minimum value of \\(a+b+c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By AM-GM, \\(a+b+c \\ge 3\\sqrt[3]{abc} = 3\\sqrt[3]{8} = 6\\).\nEquality at \\(a=b=c=2\\). Option B.",
+      "hint": "Apply AM-GM to \\(a,b,c\\)."
+    },
+    {
+      "id": "algebra-08-q048",
+      "category": "Algebra",
+      "concept": "Inequality Involving Roots",
+      "learningObjective": "Solve an inequality involving a square root and a linear expression.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(\\sqrt{2x+1} \\ge x-1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x \\ge 4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\frac{1}{2} \\le x \\le 4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Domain: \\(x \\ge -\\frac{1}{2}\\).\nIf \\(x-1 \\le 0\\), i.e., \\(x \\le 1\\), the inequality holds since LHS \\(\\ge 0\\) and RHS \\(\\le 0\\).\nSo \\(-\\frac{1}{2} \\le x \\le 1\\) works.\nFor \\(x>1\\), square: \\(2x+1 \\ge x^2-2x+1\\), so \\(0 \\ge x^2-4x = x(x-4)\\), giving \\(0 \\le x \\le 4\\). With \\(x>1\\), we get \\(1<x \\le 4\\).\nCombining: \\(-\\frac{1}{2} \\le x \\le 4\\). Option B.",
+      "hint": "Consider the case where the right-hand side is non-positive first, then square for the positive case."
+    },
+    {
+      "id": "algebra-08-q049",
+      "category": "Algebra",
+      "concept": "Absolute Value Inequality",
+      "learningObjective": "Solve an inequality involving two absolute values.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(|x-1| + |x+2| < 5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-3 < x < 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x < 2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Critical points: \\(-2, 1\\).\nCase \\(x<-2\\): \\(-(x-1)-(x+2)<5 \\Rightarrow -2x-1<5 \\Rightarrow -2x<6 \\Rightarrow x>-3\\). So \\(-3<x<-2\\).\nCase \\(-2 \\le x \\le 1\\): \\(-(x-1)+(x+2)<5 \\Rightarrow 3<5\\), always true. So \\(-2 \\le x \\le 1\\).\nCase \\(x>1\\): \\((x-1)+(x+2)<5 \\Rightarrow 2x+1<5 \\Rightarrow x<2\\). So \\(1<x<2\\).\nCombining: \\(-3<x<2\\). Option A.",
+      "hint": "Divide the real line into intervals based on the critical points \\(-2\\) and \\(1\\)."
+    },
+    {
+      "id": "algebra-08-q050",
+      "category": "Algebra",
+      "concept": "Optimization Through Inequalities",
+      "learningObjective": "Use Cauchy-Schwarz to find the minimum of a sum under a reciprocal constraint.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For positive \\(x,y\\) with \\(\\frac{1}{x}+\\frac{1}{y}=1\\), what is the minimum value of \\(x+y\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By Cauchy-Schwarz, \\((x+y)\\left(\\frac{1}{x}+\\frac{1}{y}\\right) \\ge (1+1)^2 = 4\\).\nSince \\(\\frac{1}{x}+\\frac{1}{y}=1\\), we get \\(x+y \\ge 4\\).\nEquality at \\(x=y=2\\). Option B.",
+      "hint": "Multiply \\(x+y\\) by \\(\\frac{1}{x}+\\frac{1}{y}\\) and use Cauchy-Schwarz."
+    },
+    {
+      "id": "algebra-08-q051",
+      "category": "Algebra",
+      "concept": "Functional Equation Substitution",
+      "learningObjective": "Use substitution to determine a function value from a functional equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A function \\(f\\) satisfies \\(f(x+1) = f(x) + 3\\) for all real \\(x\\), and \\(f(0)=2\\). What is \\(f(4)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(11\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(14\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(f(1)=f(0)+3=5\\), \\(f(2)=f(1)+3=8\\), \\(f(3)=11\\), \\(f(4)=14\\).\nOption B.",
+      "hint": "Apply the recurrence step by step from \\(x=0\\)."
+    },
+    {
+      "id": "algebra-08-q052",
+      "category": "Algebra",
+      "concept": "Functional Equation with Symmetry",
+      "learningObjective": "Determine a function value using symmetry in a functional equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function \\(f\\) satisfies \\(f(x)+f(1-x)=2\\) for all real \\(x\\). What is \\(f\\left(\\frac{1}{2}\\right)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(x=\\frac{1}{2}\\): \\(f(\\frac{1}{2})+f(\\frac{1}{2})=2\\), so \\(2f(\\frac{1}{2})=2\\), \\(f(\\frac{1}{2})=1\\).\nOption A.",
+      "hint": "Substitute \\(x=\\frac{1}{2}\\) into the equation."
+    },
+    {
+      "id": "algebra-08-q053",
+      "category": "Algebra",
+      "concept": "Linear Functional Equation",
+      "learningObjective": "Identify a function satisfying a linear functional equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(f(x+y)=f(x)+f(y)\\) for all real \\(x,y\\) and \\(f(1)=5\\), what is \\(f(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(f(3)=f(1+1+1)=f(1)+f(1)+f(1)=5+5+5=15\\).\nOption B.",
+      "hint": "Use the additive property repeatedly."
+    },
+    {
+      "id": "algebra-08-q054",
+      "category": "Algebra",
+      "concept": "Functional Equation with Composition",
+      "learningObjective": "Evaluate a composite functional equation at a specific value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function \\(f\\) satisfies \\(f(f(x))=x\\) for all real \\(x\\), and \\(f(3)=7\\). What is \\(f(7)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(f(f(x))=x\\), applying to \\(x=3\\): \\(f(f(3))=3\\). Since \\(f(3)=7\\), \\(f(7)=3\\).\nOption A.",
+      "hint": "Substitute \\(x=3\\) into the composition equation."
+    },
+    {
+      "id": "algebra-08-q055",
+      "category": "Algebra",
+      "concept": "Polynomial Functional Equation",
+      "learningObjective": "Determine the degree of a polynomial satisfying a functional equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(f\\) be a polynomial satisfying \\(f(x+1)-f(x)=2x\\) for all real \\(x\\). What is the degree of \\(f\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If \\(f\\) has degree \\(n\\), then \\(f(x+1)-f(x)\\) has degree \\(n-1\\).\nSince the right side has degree 1, \\(n-1=1\\), so \\(n=2\\).\nOption B.",
+      "hint": "Consider how the degree changes under the difference \\(f(x+1)-f(x)\\)."
+    },
+    {
+      "id": "algebra-08-q056",
+      "category": "Algebra",
+      "concept": "Functional Equation Substitution",
+      "learningObjective": "Use \\(x=0\\) and \\(y=0\\) substitutions to find a function value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A function \\(f\\) satisfies \\(f(x+y)=f(x)+f(y)+xy\\) for all real \\(x,y\\). If \\(f(0)=0\\), what is \\(f(2)\\) given \\(f(1)=3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(2)=f(1+1)=f(1)+f(1)+1\\cdot 1=3+3+1=7\\).\nOption A.",
+      "hint": "Substitute \\(x=y=1\\) into the equation."
+    },
+    {
+      "id": "algebra-08-q057",
+      "category": "Algebra",
+      "concept": "Functional Equation with Parameters",
+      "learningObjective": "Determine an unknown constant in a functional equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function \\(f\\) satisfies \\(f(x)=ax+b\\) for constants \\(a,b\\). If \\(f(1)=4\\) and \\(f(2)=7\\), what is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(2)-f(1)=a=7-4=3\\).\nOption A.",
+      "hint": "The coefficient \\(a\\) is the difference \\(f(2)-f(1)\\)."
+    },
+    {
+      "id": "algebra-08-q058",
+      "category": "Algebra",
+      "concept": "Functional Equation with Injectivity",
+      "learningObjective": "Use injectivity to derive a function value.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(f\\) be injective and satisfy \\(f(f(x))=x\\) for all \\(x\\). If \\(f(2)=5\\), what is \\(f(5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(f(2))=2\\), so \\(f(5)=2\\).\nOption A.",
+      "hint": "Apply the equation to \\(x=2\\)."
+    },
+    {
+      "id": "algebra-08-q059",
+      "category": "Algebra",
+      "concept": "Functional Equation with Substitution",
+      "learningObjective": "Determine a function value using a clever substitution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A function \\(f\\) satisfies \\(f(x)+2f(1-x)=x\\) for all real \\(x\\). What is \\(f(0)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set \\(x=0\\): \\(f(0)+2f(1)=0\\).\nSet \\(x=1\\): \\(f(1)+2f(0)=1\\).\nFrom first: \\(f(1)=-\\frac{1}{2}f(0)\\).\nSubstitute into second: \\(-\\frac{1}{2}f(0)+2f(0)=1\\), so \\(\\frac{3}{2}f(0)=1\\), \\(f(0)=\\frac{2}{3}\\).\nOption B.",
+      "hint": "Substitute \\(x=0\\) and \\(x=1\\) to get a system of two equations."
+    },
+    {
+      "id": "algebra-08-q060",
+      "category": "Algebra",
+      "concept": "Functional Equation with Quadratic Form",
+      "learningObjective": "Identify a quadratic function satisfying a functional equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A function \\(f\\) satisfies \\(f(x+1)+f(x-1)=2x^2+2\\) for all real \\(x\\). If \\(f\\) is a quadratic polynomial \\(f(x)=ax^2+bx+c\\), what is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(x+1)=a(x+1)^2+b(x+1)+c\\), \\(f(x-1)=a(x-1)^2+b(x-1)+c\\).\nSum: \\(a[(x+1)^2+(x-1)^2]+b[(x+1)+(x-1)]+2c = a(2x^2+2)+2bx+2c = 2ax^2+2bx+(2a+2c)\\).\nCompare with \\(2x^2+2\\): \\(2a=2\\), so \\(a=1\\).\nOption A.",
+      "hint": "Expand both terms and compare coefficients of \\(x^2\\)."
+    },
+    {
+      "id": "algebra-08-q061",
+      "category": "Algebra",
+      "concept": "Functional Equation with Additive Structure",
+      "learningObjective": "Determine a function value using additivity and a given value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x+y)=f(x)+f(y)\\) for all real \\(x,y\\) and \\(f(2)=6\\), what is \\(f(6)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(18\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(6)=f(2+2+2)=3f(2)=18\\).\nOption A.",
+      "hint": "Use additivity repeatedly."
+    },
+    {
+      "id": "algebra-08-q062",
+      "category": "Algebra",
+      "concept": "Functional Equation with Multiplicative Structure",
+      "learningObjective": "Determine a function value from a multiplicative functional equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function \\(f\\) satisfies \\(f(xy)=f(x)f(y)\\) for all positive \\(x,y\\). If \\(f(2)=3\\), what is \\(f(8)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(27\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(8)=f(2\\cdot 2\\cdot 2)=f(2)^3=27\\).\nOption A.",
+      "hint": "Express 8 as \\(2 \\cdot 2 \\cdot 2\\)."
+    },
+    {
+      "id": "algebra-08-q063",
+      "category": "Algebra",
+      "concept": "Functional Equation with Substitution",
+      "learningObjective": "Determine \\(f(0)\\) from a functional equation using substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A function \\(f\\) satisfies \\(f(x+y)=f(x)+f(y)+2xy\\) for all real \\(x,y\\). What is \\(f(0)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(x=y=0\\): \\(f(0)=f(0)+f(0)+0\\), so \\(f(0)=2f(0)\\), giving \\(f(0)=0\\).\nOption A.",
+      "hint": "Substitute \\(x=y=0\\)."
+    },
+    {
+      "id": "algebra-08-q064",
+      "category": "Algebra",
+      "concept": "Functional Equation with Injectivity",
+      "learningObjective": "Use injectivity to conclude equality of arguments.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "A function \\(f\\) is injective and satisfies \\(f(x+1)=f(x)+2\\) for all real \\(x\\). If \\(f(a)=f(b)\\), what can be concluded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a=b+2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a=b\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(f\\) is injective, \\(f(a)=f(b)\\) implies \\(a=b\\).\nOption B.",
+      "hint": "Recall the definition of injectivity."
+    },
+    {
+      "id": "algebra-08-q065",
+      "category": "Algebra",
+      "concept": "Functional Equation with Composition",
+      "learningObjective": "Evaluate a composite function using a functional equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function \\(f\\) satisfies \\(f(x+2)=f(x)+4\\) for all real \\(x\\), and \\(f(0)=1\\). What is \\(f(6)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(13\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(25\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(2)=f(0)+4=5\\), \\(f(4)=f(2)+4=9\\), \\(f(6)=f(4)+4=13\\).\nOption A.",
+      "hint": "Apply the recurrence step by step."
+    },
+    {
+      "id": "algebra-08-q066",
+      "category": "Algebra",
+      "concept": "Polynomial Functional Equation",
+      "learningObjective": "Determine a coefficient in a polynomial satisfying a functional equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A polynomial \\(f(x)=ax^2+bx+c\\) satisfies \\(f(x+1)-f(x)=4x+3\\) for all real \\(x\\). What is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(x+1)-f(x)=a[(x+1)^2-x^2]+b[(x+1)-x]=a(2x+1)+b=2ax+(a+b)\\).\nCompare with \\(4x+3\\): \\(2a=4\\), so \\(a=2\\).\nOption A.",
+      "hint": "Expand the difference and compare coefficients of \\(x\\)."
+    },
+    {
+      "id": "algebra-08-q067",
+      "category": "Algebra",
+      "concept": "Functional Equation with Symmetry",
+      "learningObjective": "Determine a function value using a symmetry relation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function \\(f\\) satisfies \\(f(x)=f(2-x)\\) for all real \\(x\\). If \\(f(0)=3\\), what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(x=0\\): \\(f(0)=f(2)\\), so \\(f(2)=3\\).\nOption A.",
+      "hint": "Substitute \\(x=0\\) into the symmetry equation."
+    },
+    {
+      "id": "algebra-08-q068",
+      "category": "Algebra",
+      "concept": "Functional Equation with Parameters",
+      "learningObjective": "Determine an unknown parameter in a functional equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A function \\(f(x)=ax+b\\) satisfies \\(f(f(x))=4x+3\\) for all real \\(x\\). What is \\(a\\) given \\(a>0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(f(f(x))=a(ax+b)+b=a^2x+ab+b\\).\nCompare with \\(4x+3\\): \\(a^2=4\\), so \\(a=2\\) (since \\(a>0\\)).\nOption B.",
+      "hint": "Compute \\(f(f(x))\\) and compare coefficients."
+    },
+    {
+      "id": "algebra-08-q069",
+      "category": "Algebra",
+      "concept": "Functional Equation with Substitution",
+      "learningObjective": "Solve a functional equation using two substitutions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A function \\(f\\) satisfies \\(f(x)+4f\\left(\\frac{1}{x}\\right)=5x\\) for all \\(x \\neq 0\\). What is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(x=2\\): \\(f(2)+4f(1/2)=10\\).\nSet \\(x=1/2\\): \\(f(1/2)+4f(2)=5/2\\).\nFrom the second equation: \\(f(1/2)=\\frac{5}{2}-4f(2)\\).\nSubstitute into the first: \\(f(2)+4\\left(\\frac{5}{2}-4f(2)\\right)=10\\), so \\(f(2)+10-16f(2)=10\\), giving \\(-15f(2)=0\\), so \\(f(2)=0\\).\nOption A.",
+      "hint": "Substitute \\(x=2\\) and \\(x=1/2\\), then eliminate \\(f(1/2)\\)."
+    },
+    {
+      "id": "algebra-08-q070",
+      "category": "Algebra",
+      "concept": "Functional Equation with Additive Structure",
+      "learningObjective": "Determine a function value using additivity and a specific value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(f(x+y)=f(x)+f(y)\\) for all real \\(x,y\\) and \\(f(3)=9\\), what is \\(f(1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(3)=f(1+1+1)=3f(1)=9\\), so \\(f(1)=3\\).\nOption A.",
+      "hint": "Express \\(f(3)\\) in terms of \\(f(1)\\)."
+    },
+    {
+      "id": "algebra-08-q071",
+      "category": "Algebra",
+      "concept": "Nonlinear System",
+      "learningObjective": "Solve a nonlinear system by substitution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve the system \\(x+y=5\\) and \\(xy=6\\) for real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3, y=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(x+y=5\\) and \\(xy=6\\), \\(x,y\\) are roots of \\(t^2-5t+6=0\\), so \\(t=2,3\\).\nSince \\(x>y\\), \\(x=3, y=2\\).\nOption B.",
+      "hint": "Use Vieta's formulas to form a quadratic equation."
+    },
+    {
+      "id": "algebra-08-q072",
+      "category": "Algebra",
+      "concept": "Symmetric System",
+      "learningObjective": "Solve a symmetric system using sum and product substitution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the system \\(x^2+y^2=13\\) and \\(xy=6\\) for real \\(x,y\\) with \\(x>y>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\((x+y)^2=x^2+y^2+2xy=13+12=25\\), so \\(x+y=5\\) (positive).\nThen \\(x,y\\) are roots of \\(t^2-5t+6=0\\), giving \\(t=2,3\\).\nSince \\(x>y\\), \\(x=3, y=2\\).\nOption A.",
+      "hint": "Use \\((x+y)^2=x^2+y^2+2xy\\)."
+    },
+    {
+      "id": "algebra-08-q073",
+      "category": "Algebra",
+      "concept": "System with Substitution",
+      "learningObjective": "Solve a system by introducing a substitution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the system \\(x+y+\\frac{1}{x}+\\frac{1}{y}=5\\) and \\(x+y=3\\) for positive \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=\\frac{3+\\sqrt{3}}{2}, y=\\frac{3-\\sqrt{3}}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(x+y=3\\), \\(\\frac{1}{x}+\\frac{1}{y}=\\frac{3}{xy}\\).\nFirst equation: \\(3+\\frac{3}{xy}=5 \\Rightarrow \\frac{3}{xy}=2 \\Rightarrow xy=\\frac{3}{2}\\).\nThen \\(x,y\\) are roots of \\(t^2-3t+\\frac{3}{2}=0\\), giving \\(t=\\frac{3\\pm\\sqrt{3}}{2}\\).\nOption B.",
+      "hint": "Use \\(x+y=3\\) to simplify the sum of reciprocals."
+    },
+    {
+      "id": "algebra-08-q074",
+      "category": "Algebra",
+      "concept": "Polynomial System",
+      "learningObjective": "Solve a polynomial system by elimination.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the system \\(x^2+y^2=10\\) and \\(x-y=2\\) for real \\(x,y\\) with \\(x>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, y=-1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(x-y=2\\), \\(x=y+2\\). Substitute: \\((y+2)^2+y^2=10\\), so \\(2y^2+4y+4=10\\), \\(2y^2+4y-6=0\\), \\(y^2+2y-3=0\\), \\((y+3)(y-1)=0\\).\nSo \\(y=1\\) or \\(y=-3\\).\nIf \\(y=1\\), \\(x=3\\). If \\(y=-3\\), \\(x=-1\\).\nWith \\(x>0\\), \\(x=3, y=1\\).\nOption A.",
+      "hint": "Substitute \\(x=y+2\\) into the first equation."
+    },
+    {
+      "id": "algebra-08-q075",
+      "category": "Algebra",
+      "concept": "Rational System",
+      "learningObjective": "Solve a rational system by clearing denominators.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\frac{1}{x}+\\frac{1}{y}=\\frac{5}{6}\\) and \\(x+y=5\\) for positive \\(x,y\\) with \\(x<y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(\\frac{x+y}{xy}=\\frac{5}{xy}=\\frac{5}{6}\\), so \\(xy=6\\).\n\\(x,y\\) are roots of \\(t^2-5t+6=0\\), \\(t=2,3\\). Since \\(x<y\\), \\(x=2, y=3\\).\nOption B.",
+      "hint": "Use the sum of reciprocals formula."
+    },
+    {
+      "id": "algebra-08-q076",
+      "category": "Algebra",
+      "concept": "System with Absolute Values",
+      "learningObjective": "Solve a system involving absolute values.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(|x|+y=5\\) and \\(x+|y|=3\\) for real \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1, y=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-1, y=4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Try \\(x<0, y>0\\): \\(-x+y=5\\) and \\(x+y=3\\).\nSubtracting: \\(-2x=2\\), so \\(x=-1\\). Then \\(y=4\\).\nCheck: \\(|-1|+4=5\\), \\(-1+|4|=3\\). Works.\nOption B.",
+      "hint": "Consider the signs of \\(x\\) and \\(y\\) separately."
+    },
+    {
+      "id": "algebra-08-q077",
+      "category": "Algebra",
+      "concept": "System with Exponents",
+      "learningObjective": "Solve a system involving exponential equations.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve the system \\(2^x \\cdot 4^y = 64\\) and \\(x+y=5\\) for real \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4, y=1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(2^x \\cdot 2^{2y} = 2^{x+2y} = 64 = 2^6\\), so \\(x+2y=6\\).\nWith \\(x+y=5\\), subtract: \\(y=1\\), \\(x=4\\).\nOption B.",
+      "hint": "Express both sides as powers of 2."
+    },
+    {
+      "id": "algebra-08-q078",
+      "category": "Algebra",
+      "concept": "System with Radicals",
+      "learningObjective": "Solve a system involving square roots.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the system \\(\\sqrt{x}+\\sqrt{y}=5\\) and \\(x+y=13\\) for non-negative \\(x,y\\) with \\(x<y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=4, y=9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=9, y=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(a=\\sqrt{x}, b=\\sqrt{y}\\). Then \\(a+b=5\\) and \\(a^2+b^2=13\\).\n\\((a+b)^2=25=a^2+b^2+2ab=13+2ab\\), so \\(2ab=12\\), \\(ab=6\\).\nThen \\(a,b\\) are roots of \\(t^2-5t+6=0\\), \\(t=2,3\\).\nSo \\(\\sqrt{x}=2, \\sqrt{y}=3\\) or vice versa, giving \\(x=4, y=9\\) or \\(x=9, y=4\\).\nSince \\(x<y\\), \\(x=4, y=9\\). Option A.",
+      "hint": "Substitute \\(a=\\sqrt{x}\\) and \\(b=\\sqrt{y}\\)."
+    },
+    {
+      "id": "algebra-08-q079",
+      "category": "Algebra",
+      "concept": "System with Parameters",
+      "learningObjective": "Determine a parameter for which a system has a unique solution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For which value of \\(k\\) does the system \\(x+y=4\\) and \\(x^2+y^2=k\\) have exactly one real solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x^2+y^2=(x+y)^2-2xy=16-2xy=k\\), so \\(xy=\\frac{16-k}{2}\\).\nFor exactly one solution, the quadratic \\(t^2-4t+\\frac{16-k}{2}=0\\) must have a double root.\nDiscriminant: \\(16-4\\cdot\\frac{16-k}{2}=16-2(16-k)=16-32+2k=2k-16=0\\), so \\(k=8\\).\nOption A.",
+      "hint": "Express \\(xy\\) in terms of \\(k\\) and set the discriminant to zero."
+    },
+    {
+      "id": "algebra-08-q080",
+      "category": "Algebra",
+      "concept": "Nonlinear System",
+      "learningObjective": "Solve a nonlinear system by factoring.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the system \\(x^2-y^2=0\\) and \\(x^2+y^2=8\\) for real \\(x,y\\) with \\(x>0, y>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=-2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x^2-y^2=0\\) gives \\(x=y\\) or \\(x=-y\\).\nWith \\(x>0, y>0\\), \\(x=y\\).\nThen \\(2x^2=8\\), \\(x^2=4\\), \\(x=2\\). So \\(x=2, y=2\\).\nOption A.",
+      "hint": "Factor the first equation."
+    },
+    {
+      "id": "algebra-08-q081",
+      "category": "Algebra",
+      "concept": "Symmetric System",
+      "learningObjective": "Solve a symmetric system using sum and product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(x+y=7\\) and \\(x^2+y^2=25\\) for real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=4, y=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3, y=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x^2+y^2=(x+y)^2-2xy=49-2xy=25\\), so \\(2xy=24\\), \\(xy=12\\).\n\\(x,y\\) are roots of \\(t^2-7t+12=0\\), \\(t=3,4\\).\nSince \\(x>y\\), \\(x=4, y=3\\).\nOption A.",
+      "hint": "Use \\((x+y)^2=x^2+y^2+2xy\\)."
+    },
+    {
+      "id": "algebra-08-q082",
+      "category": "Algebra",
+      "concept": "System with Substitution",
+      "learningObjective": "Solve a system by substituting a composite expression.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the system \\(x^2+y^2=5\\) and \\(x^4+y^4=17\\) for real \\(x,y\\) with \\(x>y>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, y=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\((x^2+y^2)^2=25=x^4+y^4+2x^2y^2=17+2x^2y^2\\), so \\(2x^2y^2=8\\), \\(x^2y^2=4\\), \\(xy=2\\) (positive).\nThen \\(x^2+y^2=5\\) and \\(xy=2\\) give \\((x+y)^2=5+4=9\\), \\(x+y=3\\).\n\\(x,y\\) are roots of \\(t^2-3t+2=0\\), \\(t=1,2\\).\nSince \\(x>y>0\\), \\(x=2, y=1\\).\nOption A.",
+      "hint": "Use \\((x^2+y^2)^2=x^4+y^4+2x^2y^2\\)."
+    },
+    {
+      "id": "algebra-08-q083",
+      "category": "Algebra",
+      "concept": "Rational System",
+      "learningObjective": "Solve a system involving rational expressions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the system \\(\\frac{x}{y}+\\frac{y}{x}=\\frac{5}{2}\\) and \\(x+y=3\\) for positive \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(\\frac{x}{y}+\\frac{y}{x}=\\frac{x^2+y^2}{xy}=\\frac{(x+y)^2-2xy}{xy}=\\frac{9-2xy}{xy}=\\frac{5}{2}\\).\nSo \\(2(9-2xy)=5xy\\), \\(18-4xy=5xy\\), \\(9xy=18\\), \\(xy=2\\).\nThen \\(x,y\\) are roots of \\(t^2-3t+2=0\\), \\(t=1,2\\).\nSince \\(x>y\\), \\(x=2, y=1\\).\nOption B.",
+      "hint": "Express \\(\\frac{x}{y}+\\frac{y}{x}\\) in terms of \\(x+y\\) and \\(xy\\)."
+    },
+    {
+      "id": "algebra-08-q084",
+      "category": "Algebra",
+      "concept": "System with Parameters",
+      "learningObjective": "Determine the number of solutions of a parameterized system.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For which value of \\(a\\) does \\(x+y=a\\) and \\(xy=4\\) have exactly one real solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a=4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The quadratic \\(t^2-at+4=0\\) has discriminant \\(a^2-16\\).\nFor one solution, \\(a^2-16=0\\), so \\(a=\\pm 4\\).\nAmong the options, \\(a=4\\) works.\nOption B.",
+      "hint": "Set the discriminant of the resulting quadratic to zero."
+    },
+    {
+      "id": "algebra-08-q085",
+      "category": "Algebra",
+      "concept": "Nonlinear System",
+      "learningObjective": "Solve a nonlinear system by elimination.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^2+xy=3\\) and \\(y^2+xy=6\\) for positive \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, y=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Adding: \\((x+y)^2=9\\), so \\(x+y=3\\).\nSubtracting: \\(y^2-x^2=3\\), \\((y-x)(y+x)=3\\), so \\(y-x=1\\).\nThus \\(y=2, x=1\\).\nOption B.",
+      "hint": "Add and subtract the two equations."
+    },
+    {
+      "id": "algebra-08-q086",
+      "category": "Algebra",
+      "concept": "System with Absolute Values",
+      "learningObjective": "Solve a system involving absolute values by case analysis.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve the system \\(|x-1|+|y|=3\\) and \\(x+y=2\\) for real \\(x,y\\) with \\(x>1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3, y=-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(x>1\\), \\(|x-1|=x-1\\).\nFrom \\(x+y=2\\), \\(y=2-x\\).\nFirst equation: \\(x-1+|2-x|=3\\).\nIf \\(x \\le 2\\), \\(|2-x|=2-x\\), so \\(x-1+2-x=1=3\\), impossible.\nIf \\(x>2\\), \\(|2-x|=x-2\\), so \\(x-1+x-2=2x-3=3\\), \\(2x=6\\), \\(x=3\\).\nThen \\(y=2-3=-1\\).\nSo \\(x=3, y=-1\\).\nOption B.",
+      "hint": "Use \\(x>1\\) to simplify \\(|x-1|\\), and consider the sign of \\(y\\)."
+    },
+    {
+      "id": "algebra-08-q087",
+      "category": "Algebra",
+      "concept": "Polynomial System",
+      "learningObjective": "Solve a polynomial system by substitution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the system \\(x^3+y^3=9\\) and \\(x+y=3\\) for real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, y=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x^3+y^3=(x+y)(x^2-xy+y^2)=3(x^2-xy+y^2)=9\\), so \\(x^2-xy+y^2=3\\).\nAlso \\((x+y)^2=9=x^2+2xy+y^2\\). Subtract: \\(3xy=6\\), \\(xy=2\\).\nThen \\(x,y\\) are roots of \\(t^2-3t+2=0\\), \\(t=1,2\\).\nSince \\(x>y\\), \\(x=2, y=1\\).\nOption A.",
+      "hint": "Use the factorization of \\(x^3+y^3\\)."
+    },
+    {
+      "id": "algebra-08-q088",
+      "category": "Algebra",
+      "concept": "System with Exponents",
+      "learningObjective": "Solve a system involving exponential expressions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve the system \\(3^x \\cdot 9^y = 81\\) and \\(x-y=1\\) for real \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, y=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(9^y=3^{2y}\\), so \\(3^{x+2y}=81=3^4\\), giving \\(x+2y=4\\).\nWith \\(x-y=1\\), add: \\(3y=3\\), \\(y=1\\), \\(x=2\\).\nOption A.",
+      "hint": "Express both sides as powers of 3."
+    },
+    {
+      "id": "algebra-08-q089",
+      "category": "Algebra",
+      "concept": "System with Radicals",
+      "learningObjective": "Solve a system involving a radical equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the system \\(\\sqrt{x+y}=4\\) and \\(x-y=4\\) for real \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=10, y=6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=6, y=10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(\\sqrt{x+y}=4\\) gives \\(x+y=16\\).\nWith \\(x-y=4\\), add: \\(2x=20\\), \\(x=10\\), \\(y=6\\).\nOption A.",
+      "hint": "Square the first equation and solve the linear system."
+    },
+    {
+      "id": "algebra-08-q090",
+      "category": "Algebra",
+      "concept": "System with Constraints",
+      "learningObjective": "Solve a system with a positivity constraint.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(x+y=6\\) and \\(xy=8\\) for positive \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=4, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x,y\\) are roots of \\(t^2-6t+8=0\\), \\(t=2,4\\).\nSince \\(x>y\\), \\(x=4, y=2\\).\nOption A.",
+      "hint": "Use Vieta's formulas."
+    },
+    {
+      "id": "algebra-08-q091",
+      "category": "Algebra",
+      "concept": "System with Elimination",
+      "learningObjective": "Solve a nonlinear system by elimination.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the system \\(x^2+y^2=20\\) and \\(x^2-y^2=12\\) for real \\(x,y\\) with \\(x>0, y>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=4, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Add: \\(2x^2=32\\), \\(x^2=16\\), \\(x=4\\).\nSubtract: \\(2y^2=8\\), \\(y^2=4\\), \\(y=2\\).\nOption A.",
+      "hint": "Add and subtract the equations."
+    },
+    {
+      "id": "algebra-08-q092",
+      "category": "Algebra",
+      "concept": "System with Factorization",
+      "learningObjective": "Solve a system by factoring one equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the system \\(x^2-y^2=8\\) and \\(x-y=2\\) for real \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, y=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x^2-y^2=(x-y)(x+y)=2(x+y)=8\\), so \\(x+y=4\\).\nWith \\(x-y=2\\), add: \\(2x=6\\), \\(x=3\\), \\(y=1\\).\nOption A.",
+      "hint": "Factor \\(x^2-y^2\\)."
+    },
+    {
+      "id": "algebra-08-q093",
+      "category": "Algebra",
+      "concept": "Symmetric System",
+      "learningObjective": "Solve a symmetric system with a quadratic constraint.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x+y=5\\) and \\(x^2+y^2=13\\) for real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3, y=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(x^2+y^2=(x+y)^2-2xy=25-2xy=13\\), so \\(2xy=12\\), \\(xy=6\\).\n\\(x,y\\) are roots of \\(t^2-5t+6=0\\), \\(t=2,3\\).\nSince \\(x>y\\), \\(x=3, y=2\\).\nOption B.",
+      "hint": "Use \\((x+y)^2=x^2+y^2+2xy\\)."
+    },
+    {
+      "id": "algebra-08-q094",
+      "category": "Algebra",
+      "concept": "System with Parameters",
+      "learningObjective": "Determine a parameter for which a system has no solution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For which value of \\(k\\) does the system \\(x+y=3\\) and \\(xy=k\\) have no real solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The quadratic \\(t^2-3t+k=0\\) has discriminant \\(9-4k\\).\nNo real solution when \\(9-4k<0\\), so \\(k>\\frac{9}{4}=2.25\\).\nAmong the options, \\(k=4\\) works.\nOption B.",
+      "hint": "Set the discriminant less than zero."
+    },
+    {
+      "id": "algebra-08-q095",
+      "category": "Algebra",
+      "concept": "Nonlinear System",
+      "learningObjective": "Solve a nonlinear system with a product constraint.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the system \\(x+y=4\\) and \\(x^2y+xy^2=12\\) for real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, y=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x^2y+xy^2=xy(x+y)=4xy=12\\), so \\(xy=3\\).\nThen \\(x,y\\) are roots of \\(t^2-4t+3=0\\), \\(t=1,3\\).\nSince \\(x>y\\), \\(x=3, y=1\\).\nOption A.",
+      "hint": "Factor \\(x^2y+xy^2\\)."
+    },
+    {
+      "id": "algebra-08-q096",
+      "category": "Algebra",
+      "concept": "System with Substitution",
+      "learningObjective": "Solve a system by substituting a sum and product.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x+y+\\sqrt{xy}=5\\) and \\(x+y=4\\) for positive \\(x,y\\) with \\(x<y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2-\\sqrt{3}, y=2+\\sqrt{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2+\\sqrt{3}, y=2-\\sqrt{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(x+y=4\\), \\(4+\\sqrt{xy}=5\\), so \\(\\sqrt{xy}=1\\), \\(xy=1\\).\n\\(x,y\\) are roots of \\(t^2-4t+1=0\\), \\(t=2\\pm\\sqrt{3}\\).\nSince \\(x<y\\), \\(x=2-\\sqrt{3}, y=2+\\sqrt{3}\\).\nOption A.",
+      "hint": "Substitute \\(x+y=4\\) into the first equation."
+    },
+    {
+      "id": "algebra-08-q097",
+      "category": "Algebra",
+      "concept": "System with Absolute Values",
+      "learningObjective": "Solve a system involving absolute values with a linear constraint.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(|x|+|y|=4\\) and \\(x-y=2\\) for real \\(x,y\\) with \\(x>0, y>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, y=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(x>0, y>0\\), \\(|x|+|y|=x+y=4\\).\nWith \\(x-y=2\\), add: \\(2x=6\\), \\(x=3\\), \\(y=1\\).\nOption A.",
+      "hint": "Remove the absolute values using the signs of \\(x\\) and \\(y\\)."
+    },
+    {
+      "id": "algebra-08-q098",
+      "category": "Algebra",
+      "concept": "Polynomial System",
+      "learningObjective": "Solve a polynomial system by substitution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the system \\(x^2+y=7\\) and \\(x+y^2=11\\) for positive real \\(x,y\\) with \\(x<y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(y=7-x^2\\) into \\(x+y^2=11\\):\n\\[\nx+(7-x^2)^2=11 \\Rightarrow x^4-14x^2+x+38=0\n\\]\n\\[\n\\Rightarrow (x-2)(x^3+2x^2-10x-19)=0.\n\\]\nSince \\(x,y>0\\), we have \\(0<x<\\sqrt7\\). On this interval the cubic factor is negative, so the only valid root is \\(x=2\\). Then \\(y=7-4=3\\), and \\(x<y\\). Option B.",
+      "hint": "Substitute \\(y=7-x^2\\), factor the resulting quartic, and use the positivity constraints."
+    },
+    {
+      "id": "algebra-08-q099",
+      "category": "Algebra",
+      "concept": "System with Elimination",
+      "learningObjective": "Solve a linear-quadratic system by substitution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the system \\(x^2+y^2=25\\) and \\(x-y=1\\) for real \\(x,y\\) with \\(x>0, y>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=4, y=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3, y=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(x-y=1\\), \\(x=y+1\\). Substitute: \\((y+1)^2+y^2=25\\), \\(2y^2+2y+1=25\\), \\(2y^2+2y-24=0\\), \\(y^2+y-12=0\\), \\((y+4)(y-3)=0\\).\n\\(y=3\\) or \\(y=-4\\). With \\(y>0\\), \\(y=3\\), \\(x=4\\).\nOption A.",
+      "hint": "Substitute \\(x=y+1\\) into the circle equation."
+    },
+    {
+      "id": "algebra-08-q100",
+      "category": "Algebra",
+      "concept": "Symmetric System",
+      "learningObjective": "Solve a symmetric system with a cubic constraint.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x+y=3\\) and \\(x^3+y^3=18\\) for real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=\\frac{3+\\sqrt5}{2}, y=\\frac{3-\\sqrt5}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=\\frac{3-\\sqrt5}{2}, y=\\frac{3+\\sqrt5}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x^3+y^3=(x+y)^3-3xy(x+y)=27-9xy=18\\), so \\(xy=1\\).\nThen \\(x,y\\) are roots of \\(t^2-3t+1=0\\), giving \\(t=\\frac{3\\pm\\sqrt5}{2}\\).\nSince \\(x>y\\), \\(x=\\frac{3+\\sqrt5}{2}, y=\\frac{3-\\sqrt5}{2}\\).\nOption A.",
+      "hint": "Use \\(x^3+y^3=(x+y)^3-3xy(x+y)\\)."
+    },
+    {
+      "id": "algebra-08-q101",
+      "category": "Algebra",
+      "concept": "Functional Equation with Substitution",
+      "learningObjective": "Determine a function value using a functional equation with a reciprocal argument.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A function \\(f\\) satisfies \\(2f(x)+f(1/x)=3x\\) for all \\(x\\neq 0\\). What is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{7}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\frac{7}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x=2\\): \\(2f(2)+f(1/2)=6\\).\n\\(x=1/2\\): \\(2f(1/2)+f(2)=3/2\\).\nMultiply first by 2: \\(4f(2)+2f(1/2)=12\\).\nSubtract second: \\(3f(2)=21/2\\), so \\(f(2)=7/2\\).\nOption A.",
+      "hint": "Substitute \\(x=2\\) and \\(x=1/2\\), then eliminate \\(f(1/2)\\)."
+    },
+    {
+      "id": "algebra-08-q102",
+      "category": "Algebra",
+      "concept": "Functional Equation with Composition",
+      "learningObjective": "Determine a function value using composition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function \\(f\\) satisfies \\(f(f(x))=2x+1\\) for all real \\(x\\). If \\(f(1)=3\\), what is \\(f(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(f(1))=2(1)+1=3\\). Since \\(f(1)=3\\), \\(f(3)=3\\).\nOption A.",
+      "hint": "Substitute \\(x=1\\) into the composition equation."
+    },
+    {
+      "id": "algebra-08-q103",
+      "category": "Algebra",
+      "concept": "Functional Equation with Additive Structure",
+      "learningObjective": "Determine a function value from an additive functional equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x+y)=f(x)+f(y)\\) for all real \\(x,y\\) and \\(f(4)=12\\), what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(f(4)=f(2+2)=2f(2)=12\\), so \\(f(2)=6\\).\nOption B.",
+      "hint": "Express \\(f(4)\\) in terms of \\(f(2)\\)."
+    },
+    {
+      "id": "algebra-08-q104",
+      "category": "Algebra",
+      "concept": "Functional Equation with Parameters",
+      "learningObjective": "Determine a parameter in a functional equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function \\(f(x)=ax+b\\) satisfies \\(f(1)=3\\) and \\(f(2)=5\\). What is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(2)-f(1)=a=5-3=2\\).\nOption A.",
+      "hint": "The coefficient \\(a\\) is the slope."
+    },
+    {
+      "id": "algebra-08-q105",
+      "category": "Algebra",
+      "concept": "Functional Equation with Substitution",
+      "learningObjective": "Determine a function value using a functional equation with a constant.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function \\(f\\) satisfies \\(f(x+1)=2f(x)\\) for all real \\(x\\), and \\(f(0)=3\\). What is \\(f(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(1)=2f(0)=6\\), \\(f(2)=2f(1)=12\\), \\(f(3)=2f(2)=24\\).\nOption A.",
+      "hint": "Apply the recurrence step by step."
+    },
+    {
+      "id": "algebra-08-q106",
+      "category": "Algebra",
+      "concept": "Functional Equation with Symmetry",
+      "learningObjective": "Determine a function value using a symmetry condition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A function \\(f\\) satisfies \\(f(x)=f(-x)\\) for all real \\(x\\). If \\(f(3)=7\\), what is \\(f(-3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(-3)=f(3)=7\\).\nOption A.",
+      "hint": "Use the evenness property."
+    },
+    {
+      "id": "algebra-08-q107",
+      "category": "Algebra",
+      "concept": "Polynomial Functional Equation",
+      "learningObjective": "Determine the leading coefficient of a polynomial satisfying a functional equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A polynomial \\(f(x)=ax^3+bx^2+cx+d\\) satisfies \\(f(x+1)-f(x)=3x^2+3x+1\\) for all real \\(x\\). What is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The difference of a cubic is quadratic with leading coefficient \\(3a\\).\nSo \\(3a=3\\), \\(a=1\\).\nOption B.",
+      "hint": "Consider the leading term of \\(f(x+1)-f(x)\\)."
+    },
+    {
+      "id": "algebra-08-q108",
+      "category": "Algebra",
+      "concept": "Functional Equation with Additive Structure",
+      "learningObjective": "Determine a function value using additivity and a negative input.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(f(x+y)=f(x)+f(y)\\) for all real \\(x,y\\) and \\(f(2)=5\\), what is \\(f(-2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(0)=f(2+(-2))=f(2)+f(-2)=0\\), so \\(f(-2)=-f(2)=-5\\).\nOption A.",
+      "hint": "Use \\(f(0)=0\\) for an additive function."
+    },
+    {
+      "id": "algebra-08-q109",
+      "category": "Algebra",
+      "concept": "Functional Equation with Parameters",
+      "learningObjective": "Determine a parameter in a functional equation with a quadratic form.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A function \\(f(x)=ax^2+bx+c\\) satisfies \\(f(0)=0\\), \\(f(1)=1\\), and \\(f(2)=4\\). What is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(0)=c=0\\). \\(f(1)=a+b=1\\). \\(f(2)=4a+2b=4\\).\nFrom first: \\(b=1-a\\). Substitute: \\(4a+2(1-a)=4\\), \\(4a+2-2a=4\\), \\(2a=2\\), \\(a=1\\).\nOption A.",
+      "hint": "Use the given values to set up a system."
+    },
+    {
+      "id": "algebra-08-q110",
+      "category": "Algebra",
+      "concept": "Functional Equation with Substitution",
+      "learningObjective": "Determine a function value using a functional equation with \\(x=0\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A function \\(f\\) satisfies \\(f(x)+f(0)=x^2\\) for all real \\(x\\). What is \\(f(0)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(x=0\\): \\(f(0)+f(0)=0\\), so \\(2f(0)=0\\), \\(f(0)=0\\).\nOption A.",
+      "hint": "Substitute \\(x=0\\)."
+    },
+    {
+      "id": "algebra-08-q111",
+      "category": "Algebra",
+      "concept": "Functional Equation with Composition",
+      "learningObjective": "Determine a function value using a composition equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A function \\(f\\) satisfies \\(f(f(x))=x^2-2\\) for all real \\(x\\), with \\(f(2) \\ge 0\\). What is \\(f(f(f(2)))\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(t=f(2)\\). Applying the equation at \\(x=2\\): \\(f(f(2))=2^2-2=2\\), so \\(f(t)=2\\).\nApply \\(f\\) to both sides: \\(f(f(t))=f(2)=t\\). Also, applying the equation at \\(x=t\\): \\(f(f(t))=t^2-2\\).\nSo \\(t=t^2-2\\), giving \\(t^2-t-2=0\\), i.e. \\((t-2)(t+1)=0\\), so \\(t=2\\) or \\(t=-1\\).\nSince \\(f(2) \\ge 0\\), \\(t=2\\).\nThen \\(f(f(f(2)))=f(f(t))=t^2-2=2^2-2=2\\).\nOption A.",
+      "hint": "Apply the composition equation at \\(x=2\\), then at \\(x=f(2)\\), and use the sign condition to pick the valid root."
+    },
+    {
+      "id": "algebra-08-q112",
+      "category": "Algebra",
+      "concept": "Functional Equation with Symmetry",
+      "learningObjective": "Determine a function value using an antisymmetry condition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function \\(f\\) satisfies \\(f(-x)=-f(x)\\) for all real \\(x\\). If \\(f(4)=9\\), what is \\(f(-4)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(-4)=-f(4)=-9\\).\nOption A.",
+      "hint": "Use the oddness property."
+    },
+    {
+      "id": "algebra-08-q113",
+      "category": "Algebra",
+      "concept": "Functional Equation with Substitution",
+      "learningObjective": "Solve a functional equation using two substitutions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A function \\(f\\) satisfies \\(f(x)+3f(1-x)=x\\) for all real \\(x\\). What is \\(f(0)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{8}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{8}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(x=0\\): \\(f(0)+3f(1)=0\\).\nSet \\(x=1\\): \\(f(1)+3f(0)=1\\).\nFrom the first equation, \\(f(1)=-\\frac{1}{3}f(0)\\).\nSubstitute into the second: \\(-\\frac{1}{3}f(0)+3f(0)=1\\), so \\(\\frac{8}{3}f(0)=1\\), giving \\(f(0)=\\frac{3}{8}\\).\nOption A.",
+      "hint": "Substitute \\(x=0\\) and \\(x=1\\) to form a system."
+    },
+    {
+      "id": "algebra-08-q114",
+      "category": "Algebra",
+      "concept": "Functional Equation with Additive Structure",
+      "learningObjective": "Determine a function value using additivity and a fractional input.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(f(x+y)=f(x)+f(y)\\) for all real \\(x,y\\) and \\(f(1)=2\\), what is \\(f\\left(\\frac{1}{2}\\right)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(1)=f(1/2+1/2)=2f(1/2)=2\\), so \\(f(1/2)=1\\).\nOption A.",
+      "hint": "Express \\(f(1)\\) in terms of \\(f(1/2)\\)."
+    },
+    {
+      "id": "algebra-08-q115",
+      "category": "Algebra",
+      "concept": "Functional Equation with Composition",
+      "learningObjective": "Determine a function value using a composition equation with a parameter.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A function \\(f\\) satisfies \\(f(f(x))=3x+2\\) for all real \\(x\\). If \\(f(0)=2\\), what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(f(f(0))=3(0)+2=2\\). Since \\(f(0)=2\\), \\(f(2)=2\\).\nOption B.",
+      "hint": "Substitute \\(x=0\\) into the composition equation."
+    },
+    {
+      "id": "algebra-08-q116",
+      "category": "Algebra",
+      "concept": "Functional Equation with Substitution",
+      "learningObjective": "Determine a function value using a functional equation with a square.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A function \\(f\\) satisfies \\(f(x)+f(-x)=2x^2\\) for all real \\(x\\). If \\(f\\) is even, what is \\(f(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(18\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(f\\) is even, \\(f(-3)=f(3)\\).\n\\(f(3)+f(-3)=2(3)^2=18\\), so \\(2f(3)=18\\), \\(f(3)=9\\).\nOption A.",
+      "hint": "Use the evenness property."
+    },
+    {
+      "id": "algebra-08-q117",
+      "category": "Algebra",
+      "concept": "Functional Equation with Parameters",
+      "learningObjective": "Determine a parameter in a functional equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A function \\(f(x)=ax^2+bx+c\\) satisfies \\(f(0)=1\\), \\(f(1)=2\\), and \\(f(-1)=4\\). What is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(f(0)=c=1\\).\n\\(f(1)=a+b+1=2\\), so \\(a+b=1\\).\n\\(f(-1)=a-b+1=4\\), so \\(a-b=3\\).\nAdd: \\(2a=4\\), \\(a=2\\).\nOption B.",
+      "hint": "Use the three conditions to form a system."
+    },
+    {
+      "id": "algebra-08-q118",
+      "category": "Algebra",
+      "concept": "Functional Equation with Substitution",
+      "learningObjective": "Determine a function value using a functional equation with a reciprocal.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A polynomial \\(f\\) satisfies \\(f(x)+f\\left(\\frac{1}{x}\\right)=x^2+\\frac{1}{x^2}\\) for all \\(x\\neq 0\\). What is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{4}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(f\\) is a polynomial, comparing the polynomial terms that can produce \\(x^2\\) and \\(x^{-2}\\) in \\(f(x)+f(1/x)\\) forces \\(f(x)=x^2\\) (constant and other powers are eliminated by the identity). Thus \\(f(2)=2^2=4\\).\nOption A.",
+      "hint": "Use the polynomial condition to compare terms; the reciprocal terms must match \\(x^{-2}\\) and \\(1/x^2\\)."
+    },
+    {
+      "id": "algebra-08-q119",
+      "category": "Algebra",
+      "concept": "Functional Equation with Additive Structure",
+      "learningObjective": "Determine a function value using additivity and a negative fraction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(f(x+y)=f(x)+f(y)\\) for all real \\(x,y\\) and \\(f(3)=6\\), what is \\(f(-3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(0)=f(3+(-3))=f(3)+f(-3)=0\\), so \\(f(-3)=-f(3)=-6\\).\nOption A.",
+      "hint": "Use \\(f(0)=0\\)."
+    },
+    {
+      "id": "algebra-08-q120",
+      "category": "Algebra",
+      "concept": "Functional Equation with Composition",
+      "learningObjective": "Determine a function value using a composition equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A function \\(f\\) satisfies \\(f(f(x))=x+3\\) for all real \\(x\\). If \\(f(1)=4\\), what is \\(f(4)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(f(1))=1+3=4\\). Since \\(f(1)=4\\), \\(f(4)=4\\).\nOption A.",
+      "hint": "Substitute \\(x=1\\)."
+    },
+    {
+      "id": "algebra-08-q121",
+      "category": "Algebra",
+      "concept": "Functional Equation with Substitution",
+      "learningObjective": "Determine a function value using a functional equation with a constant term.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function \\(f\\) satisfies \\(f(x+2)=f(x)+6\\) for all real \\(x\\), and \\(f(1)=2\\). What is \\(f(5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(14\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(3)=f(1)+6=8\\), \\(f(5)=f(3)+6=14\\).\nOption A.",
+      "hint": "Apply the recurrence from \\(x=1\\) to \\(x=5\\)."
+    },
+    {
+      "id": "algebra-08-q122",
+      "category": "Algebra",
+      "concept": "Functional Equation with Symmetry",
+      "learningObjective": "Determine a function value using a symmetry condition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A function \\(f\\) satisfies \\(f(2-x)=f(x)\\) for all real \\(x\\). If \\(f(0)=5\\), what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(x=0\\): \\(f(2)=f(0)=5\\).\nOption A.",
+      "hint": "Substitute \\(x=0\\)."
+    },
+    {
+      "id": "algebra-08-q123",
+      "category": "Algebra",
+      "concept": "Functional Equation with Parameters",
+      "learningObjective": "Determine a parameter in a linear functional equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A function \\(f(x)=ax+b\\) satisfies \\(f(0)=2\\) and \\(f(1)=5\\). What is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(0)=b=2\\). \\(f(1)=a+b=5\\), so \\(a=3\\).\nOption A.",
+      "hint": "Use the two given values."
+    },
+    {
+      "id": "algebra-08-q124",
+      "category": "Algebra",
+      "concept": "Functional Equation with Substitution",
+      "learningObjective": "Determine a function value using a functional equation with \\(x=1\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function \\(f\\) satisfies \\(f(x)+2f(1-x)=x^2\\) for all real \\(x\\). What is \\(f(1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{1}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x=1\\): \\(f(1)+2f(0)=1\\).\n\\(x=0\\): \\(f(0)+2f(1)=0\\), so \\(f(0)=-2f(1)\\).\nSubstitute: \\(f(1)-4f(1)=1\\), \\(-3f(1)=1\\), \\(f(1)=-1/3\\).\nOption A.",
+      "hint": "Substitute \\(x=1\\) and \\(x=0\\)."
+    },
+    {
+      "id": "algebra-08-q125",
+      "category": "Algebra",
+      "concept": "Functional Equation with Additive Structure",
+      "learningObjective": "Determine a function value using additivity and a specific value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x+y)=f(x)+f(y)\\) for all real \\(x,y\\) and \\(f(5)=20\\), what is \\(f(1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(f(5)=5f(1)=20\\), so \\(f(1)=4\\).\nOption B.",
+      "hint": "Express \\(f(5)\\) in terms of \\(f(1)\\)."
+    },
+    {
+      "id": "algebra-08-q126",
+      "category": "Algebra",
+      "concept": "Functional Equation with Composition",
+      "learningObjective": "Determine a function value using a composition equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function \\(f\\) satisfies \\(f(f(x))=x+1\\) for all real \\(x\\). If \\(f(2)=3\\), what is \\(f(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(f(f(2))=2+1=3\\). Since \\(f(2)=3\\), \\(f(3)=3\\).\nOption B.",
+      "hint": "Substitute \\(x=2\\) into the composition equation."
+    },
+    {
+      "id": "algebra-08-q127",
+      "category": "Algebra",
+      "concept": "Functional Equation with Substitution",
+      "learningObjective": "Determine a function value using a functional equation with a reciprocal and a constant.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A function \\(f\\) satisfies \\(3f(x)+f(1/x)=5x\\) for all \\(x\\neq 0\\). What is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{55}{16}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{55}{16}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(x=2\\): \\(3f(2)+f(1/2)=10\\).\n\\(x=1/2\\): \\(3f(1/2)+f(2)=5/2\\).\nMultiply first by 3: \\(9f(2)+3f(1/2)=30\\).\nSubtract second: \\(8f(2)=55/2\\), so \\(f(2)=55/16\\).\nOption B.",
+      "hint": "Substitute \\(x=2\\) and \\(x=1/2\\), then eliminate \\(f(1/2)\\)."
+    },
+    {
+      "id": "algebra-08-q128",
+      "category": "Algebra",
+      "concept": "Functional Equation with Parameters",
+      "learningObjective": "Determine a parameter in a quadratic functional equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A function \\(f(x)=ax^2+bx+c\\) satisfies \\(f(1)=0\\), \\(f(2)=0\\), and \\(f(0)=4\\). What is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(0)=c=4\\).\n\\(f(1)=a+b+4=0\\), so \\(a+b=-4\\).\n\\(f(2)=4a+2b+4=0\\), so \\(2a+b=-2\\).\nSubtract: \\(a=2\\).\nOption A.",
+      "hint": "Use the three conditions to form a system."
+    },
+    {
+      "id": "algebra-08-q129",
+      "category": "Algebra",
+      "concept": "Functional Equation with Substitution",
+      "learningObjective": "Determine a function value using a functional equation with a square.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function \\(f\\) satisfies \\(f(x)+f(-x)=2x^2+2\\) for all real \\(x\\). If \\(f\\) is even, what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(f\\) is even, \\(f(-2)=f(2)\\).\n\\(f(2)+f(-2)=2(4)+2=10\\), so \\(2f(2)=10\\), \\(f(2)=5\\).\nOption B.",
+      "hint": "Use the evenness property."
+    },
+    {
+      "id": "algebra-08-q130",
+      "category": "Algebra",
+      "concept": "Functional Equation with Additive Structure",
+      "learningObjective": "Determine a function value using additivity and a specific value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(f(x+y)=f(x)+f(y)\\) for all real \\(x,y\\) and \\(f(4)=12\\), what is \\(f(6)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(18\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(f(4)=4f(1)=12\\), so \\(f(1)=3\\).\n\\(f(6)=6f(1)=18\\).\nOption B.",
+      "hint": "Find \\(f(1)\\) first."
+    },
+    {
+      "id": "algebra-08-q131",
+      "category": "Algebra",
+      "concept": "Functional Equation with Composition",
+      "learningObjective": "Determine a function value using a composition equation with a linear expression.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A function \\(f\\) satisfies \\(f(f(x))=3x-1\\) for all real \\(x\\). If \\(f(2)=5\\), what is \\(f(5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(f(2))=3(2)-1=5\\). Since \\(f(2)=5\\), \\(f(5)=5\\).\nOption A.",
+      "hint": "Substitute \\(x=2\\) into the composition equation."
+    },
+    {
+      "id": "algebra-08-q132",
+      "category": "Algebra",
+      "concept": "Functional Equation with Substitution",
+      "learningObjective": "Determine a function value using a functional equation with a reciprocal and a constant.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A function \\(f\\) satisfies \\(f(x)+2f\\left(\\frac{1}{x}\\right)=3x\\) for all \\(x\\neq 0\\). What is \\(f(1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(x=1\\): \\(f(1)+2f(1)=3\\), so \\(3f(1)=3\\), \\(f(1)=1\\).\nOption A.",
+      "hint": "Substitute \\(x=1\\)."
+    },
+    {
+      "id": "algebra-08-q133",
+      "category": "Algebra",
+      "concept": "Functional Equation with Parameters",
+      "learningObjective": "Determine a parameter in a cubic functional equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A function \\(f(x)=ax^3+bx\\) satisfies \\(f(1)=3\\) and \\(f(2)=12\\). What is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(1)=a+b=3\\).\n\\(f(2)=8a+2b=12\\), so \\(4a+b=6\\).\nSubtract: \\(3a=3\\), \\(a=1\\).\nOption A.",
+      "hint": "Set up a system using the two conditions."
+    },
+    {
+      "id": "algebra-08-q134",
+      "category": "Algebra",
+      "concept": "Functional Equation with Substitution",
+      "learningObjective": "Determine a function value using a functional equation with a constant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A function \\(f\\) satisfies \\(f(x+1)=f(x)+4\\) for all real \\(x\\), and \\(f(0)=0\\). What is \\(f(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(f(1)=4\\), \\(f(2)=8\\), \\(f(3)=12\\).\nOption B.",
+      "hint": "Apply the recurrence step by step."
+    },
+    {
+      "id": "algebra-08-q135",
+      "category": "Algebra",
+      "concept": "Functional Equation with Symmetry",
+      "learningObjective": "Determine a function value using a symmetry condition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A function \\(f\\) satisfies \\(f(x)=f(4-x)\\) for all real \\(x\\). If \\(f(1)=6\\), what is \\(f(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set \\(x=1\\): \\(f(1)=f(3)\\), so \\(f(3)=6\\).\nOption B.",
+      "hint": "Substitute \\(x=1\\) into the symmetry equation."
+    },
+    {
+      "id": "algebra-08-q136",
+      "category": "Algebra",
+      "concept": "Functional Equation with Additive Structure",
+      "learningObjective": "Determine a function value using additivity and a negative input.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(f(x+y)=f(x)+f(y)\\) for all real \\(x,y\\) and \\(f(3)=9\\), what is \\(f(-3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(f(0)=f(3+(-3))=f(3)+f(-3)=0\\), so \\(f(-3)=-9\\).\nOption B.",
+      "hint": "Use \\(f(0)=0\\)."
+    },
+    {
+      "id": "algebra-08-q137",
+      "category": "Algebra",
+      "concept": "Functional Equation with Composition",
+      "learningObjective": "Determine a function value using a composition equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A function \\(f\\) satisfies \\(f(f(x))=x^2\\) for all real \\(x\\). If \\(f(2)=4\\), what is \\(f(4)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(f(2))=2^2=4\\). Since \\(f(2)=4\\), \\(f(4)=4\\).\nOption A.",
+      "hint": "Substitute \\(x=2\\)."
+    },
+    {
+      "id": "algebra-08-q138",
+      "category": "Algebra",
+      "concept": "Functional Equation with Parameters",
+      "learningObjective": "Determine a parameter in a quadratic functional equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A function \\(f(x)=ax^2+bx+c\\) satisfies \\(f(0)=1\\), \\(f(1)=4\\), and \\(f(2)=9\\). What is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(0)=c=1\\).\n\\(f(1)=a+b+1=4\\), so \\(a+b=3\\).\n\\(f(2)=4a+2b+1=9\\), so \\(2a+b=4\\).\nSubtract: \\(a=1\\).\nOption A.",
+      "hint": "Use the three conditions to form a system."
+    },
+    {
+      "id": "algebra-08-q139",
+      "category": "Algebra",
+      "concept": "Functional Equation with Substitution",
+      "learningObjective": "Determine a function value using a functional equation with a reciprocal.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A polynomial \\(f\\) satisfies \\(f(x)+f\\left(\\frac{1}{x}\\right)=x+\\frac{1}{x}\\) for all \\(x\\neq 0\\). What is \\(f(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(f\\) is a polynomial, the identity forces \\(f(x)=x\\) (the constant term and all powers other than \\(x\\) vanish). Thus \\(f(3)=3\\).\nOption A.",
+      "hint": "Use the polynomial condition to compare terms; only \\(x\\) can produce both \\(x\\) and \\(1/x\\)."
+    },
+    {
+      "id": "algebra-08-q140",
+      "category": "Algebra",
+      "concept": "Functional Equation with Additive Structure",
+      "learningObjective": "Determine a function value using additivity and a specific value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(f(x+y)=f(x)+f(y)\\) for all real \\(x,y\\) and \\(f(2)=10\\), what is \\(f(5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(25\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(f(2)=2f(1)=10\\), so \\(f(1)=5\\).\n\\(f(5)=5f(1)=25\\).\nOption A.",
+      "hint": "Find \\(f(1)\\) first."
+    },
+    {
+      "id": "algebra-08-q141",
+      "category": "Algebra",
+      "concept": "Nonlinear System",
+      "learningObjective": "Solve a nonlinear system by substitution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve the system \\(x+y=6\\) and \\(x^2-y^2=12\\) for real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4, y=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(x^2-y^2=(x-y)(x+y)=6(x-y)=12\\), so \\(x-y=2\\).\nWith \\(x+y=6\\), add: \\(2x=8\\), \\(x=4\\), \\(y=2\\).\nOption B.",
+      "hint": "Factor \\(x^2-y^2\\)."
+    },
+    {
+      "id": "algebra-08-q142",
+      "category": "Algebra",
+      "concept": "Symmetric System",
+      "learningObjective": "Solve a symmetric system using sum and product.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x+y=8\\) and \\(x^2+y^2=40\\) for real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=6, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x^2+y^2=(x+y)^2-2xy=64-2xy=40\\), so \\(2xy=24\\), \\(xy=12\\).\n\\(x,y\\) are roots of \\(t^2-8t+12=0\\), \\(t=2,6\\).\nSince \\(x>y\\), \\(x=6, y=2\\).\nOption A.",
+      "hint": "Use \\((x+y)^2=x^2+y^2+2xy\\)."
+    },
+    {
+      "id": "algebra-08-q143",
+      "category": "Algebra",
+      "concept": "System with Substitution",
+      "learningObjective": "Solve a system by substituting a composite expression.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^2+y^2=10\\) and \\(x^4+y^4=82\\) for real \\(x,y\\) with \\(x>y>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, y=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\((x^2+y^2)^2=100=x^4+y^4+2x^2y^2=82+2x^2y^2\\), so \\(2x^2y^2=18\\), \\(x^2y^2=9\\), and \\(xy=3\\).\nThen \\(x^2+y^2=10\\) and \\(xy=3\\) give \\((x+y)^2=16\\), so \\(x+y=4\\).\nThus \\(x,y\\) are roots of \\(t^2-4t+3=0\\), giving \\(t=1,3\\).\nSince \\(x>y>0\\), \\(x=3, y=1\\).\nOption A.",
+      "hint": "Use \\((x^2+y^2)^2=x^4+y^4+2x^2y^2\\)."
+    },
+    {
+      "id": "algebra-08-q144",
+      "category": "Algebra",
+      "concept": "Rational System",
+      "learningObjective": "Solve a rational system by clearing denominators.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\frac{1}{x}+\\frac{1}{y}=\\frac{5}{4}\\) and \\(x+y=5\\) for positive \\(x,y\\) with \\(x<y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1, y=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4, y=1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(\\frac{x+y}{xy}=\\frac{5}{xy}=\\frac{5}{4}\\), so \\(xy=4\\).\nThen \\(x,y\\) are roots of \\(t^2-5t+4=0\\), giving \\(t=1,4\\).\nSince \\(x<y\\), \\(x=1, y=4\\).\nOption A.",
+      "hint": "Use the sum of reciprocals formula."
+    },
+    {
+      "id": "algebra-08-q145",
+      "category": "Algebra",
+      "concept": "System with Absolute Values",
+      "learningObjective": "Solve a system involving absolute values.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(|x|+y=6\\) and \\(x+|y|=4\\) for real \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-1, y=5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, y=5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Try \\(x<0, y>0\\): \\(-x+y=6\\), \\(x+y=4\\). Subtract: \\(-2x=2\\), \\(x=-1\\), \\(y=5\\).\nCheck: \\(|-1|+5=6\\), \\(-1+|5|=4\\). Works.\nOption A.",
+      "hint": "Consider the signs of \\(x\\) and \\(y\\) separately."
+    },
+    {
+      "id": "algebra-08-q146",
+      "category": "Algebra",
+      "concept": "System with Exponents",
+      "learningObjective": "Solve a system involving exponential equations.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(2^x \\cdot 4^y = 128\\) and \\(x+y=6\\) for real \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=5, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4, y=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(2^x\\cdot 4^y=2^x\\cdot 2^{2y}=2^{x+2y}=128=2^7\\), so \\(x+2y=7\\).\nWith \\(x+y=6\\), subtract: \\(y=1\\), so \\(x=5\\).\nOption A.",
+      "hint": "Express both sides as powers of 2."
+    },
+    {
+      "id": "algebra-08-q147",
+      "category": "Algebra",
+      "concept": "System with Radicals",
+      "learningObjective": "Solve a system involving square roots.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\sqrt{x}+\\sqrt{y}=4\\) and \\(x+y=10\\) for non-negative \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=9, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, y=9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(a=\\sqrt{x}, b=\\sqrt{y}\\). \\(a+b=4\\), \\(a^2+b^2=10\\).\n\\((a+b)^2=16=a^2+b^2+2ab=10+2ab\\), so \\(2ab=6\\), \\(ab=3\\).\n\\(a,b\\) are roots of \\(t^2-4t+3=0\\), \\(t=1,3\\).\nSince \\(x>y\\), \\(\\sqrt{x}=3, \\sqrt{y}=1\\), so \\(x=9, y=1\\).\nOption A.",
+      "hint": "Substitute \\(a=\\sqrt{x}\\) and \\(b=\\sqrt{y}\\)."
+    },
+    {
+      "id": "algebra-08-q148",
+      "category": "Algebra",
+      "concept": "System with Parameters",
+      "learningObjective": "Determine a parameter for which a system has exactly one solution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For which value of \\(k\\) does the system \\(x+y=5\\) and \\(xy=k\\) have exactly one real solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=\\frac{25}{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The quadratic \\(t^2-5t+k=0\\) has discriminant \\(25-4k\\).\nOne solution when \\(25-4k=0\\), so \\(k=\\frac{25}{4}\\).\nOption B.",
+      "hint": "Set the discriminant to zero."
+    },
+    {
+      "id": "algebra-08-q149",
+      "category": "Algebra",
+      "concept": "Nonlinear System",
+      "learningObjective": "Solve a nonlinear system by elimination.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^2+xy=8\\) and \\(y^2+xy=4\\) for positive \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=\\frac{4}{\\sqrt{3}}, y=\\frac{2}{\\sqrt{3}}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Add: \\((x+y)^2=12\\), so \\(x+y=2\\sqrt{3}\\).\nSubtract: \\(x^2-y^2=4\\), \\((x-y)(x+y)=4\\), so \\(x-y=\\frac{2}{\\sqrt{3}}\\).\nSolving: \\(x=\\frac{4}{\\sqrt{3}}, y=\\frac{2}{\\sqrt{3}}\\).\nOption B.",
+      "hint": "Add and subtract the two equations."
+    },
+    {
+      "id": "algebra-08-q150",
+      "category": "Algebra",
+      "concept": "System with Absolute Values",
+      "learningObjective": "Solve a system involving absolute values by case analysis.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(|x-1|+|y|=4\\) and \\(x+y=3\\) for real \\(x,y\\) with \\(x>1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4, y=-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(x>1\\) gives \\(|x-1|=x-1\\). From \\(x+y=3\\), \\(y=3-x\\).\n\\(x-1+|3-x|=4\\).\nIf \\(x \\le 3\\): \\(x-1+3-x=2=4\\), impossible.\nIf \\(x>3\\): \\(x-1+x-3=2x-4=4\\), \\(x=4\\), \\(y=-1\\).\nOption B.",
+      "hint": "Use \\(x>1\\) to simplify \\(|x-1|\\), and consider the sign of \\(y\\)."
+    },
+    {
+      "id": "algebra-08-q151",
+      "category": "Algebra",
+      "concept": "Polynomial System",
+      "learningObjective": "Solve a polynomial system by substitution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^3+y^3=28\\) and \\(x+y=4\\) for real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1, y=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3, y=1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(x^3+y^3=(x+y)^3-3xy(x+y)=64-12xy=28\\), so \\(12xy=36\\), \\(xy=3\\).\n\\(x,y\\) are roots of \\(t^2-4t+3=0\\), \\(t=1,3\\).\nSince \\(x>y\\), \\(x=3, y=1\\).\nOption B.",
+      "hint": "Use the identity \\(x^3+y^3=(x+y)^3-3xy(x+y)\\)."
+    },
+    {
+      "id": "algebra-08-q152",
+      "category": "Algebra",
+      "concept": "System with Exponents",
+      "learningObjective": "Solve a system involving exponential expressions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(3^x \\cdot 3^y = 729\\) and \\(x-y=2\\) for real \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4, y=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(3^{x+y}=3^6\\), so \\(x+y=6\\). With \\(x-y=2\\), add: \\(2x=8\\), \\(x=4\\), \\(y=2\\).\nOption B.",
+      "hint": "Combine the exponential terms."
+    },
+    {
+      "id": "algebra-08-q153",
+      "category": "Algebra",
+      "concept": "System with Radicals",
+      "learningObjective": "Solve a system involving a radical equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\sqrt{x+y}=3\\) and \\(x-y=1\\) for real \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=5, y=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4, y=5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(\\sqrt{x+y}=3\\) gives \\(x+y=9\\). With \\(x-y=1\\), add: \\(2x=10\\), \\(x=5\\), \\(y=4\\).\nOption A.",
+      "hint": "Square the first equation."
+    },
+    {
+      "id": "algebra-08-q154",
+      "category": "Algebra",
+      "concept": "System with Constraints",
+      "learningObjective": "Solve a system with a positivity constraint.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(x+y=7\\) and \\(xy=10\\) for positive \\(x,y\\) with \\(x<y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=5, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(x,y\\) are roots of \\(t^2-7t+10=0\\), \\(t=2,5\\).\nSince \\(x<y\\), \\(x=2, y=5\\).\nOption B.",
+      "hint": "Use Vieta's formulas."
+    },
+    {
+      "id": "algebra-08-q155",
+      "category": "Algebra",
+      "concept": "System with Elimination",
+      "learningObjective": "Solve a nonlinear system by elimination.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^2+y^2=25\\) and \\(x^2-y^2=7\\) for real \\(x,y\\) with \\(x>0, y>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4, y=3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Add: \\(2x^2=32\\), \\(x^2=16\\), \\(x=4\\).\nSubtract: \\(2y^2=18\\), \\(y^2=9\\), \\(y=3\\).\nOption B.",
+      "hint": "Add and subtract the equations."
+    },
+    {
+      "id": "algebra-08-q156",
+      "category": "Algebra",
+      "concept": "System with Factorization",
+      "learningObjective": "Solve a system by factoring.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^2-y^2=15\\) and \\(x+y=5\\) for real \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=4, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, y=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x^2-y^2=(x-y)(x+y)=5(x-y)=15\\), so \\(x-y=3\\).\nWith \\(x+y=5\\), add: \\(2x=8\\), \\(x=4\\), \\(y=1\\).\nOption A.",
+      "hint": "Factor \\(x^2-y^2\\)."
+    },
+    {
+      "id": "algebra-08-q157",
+      "category": "Algebra",
+      "concept": "Symmetric System",
+      "learningObjective": "Solve a symmetric system with a cubic constraint.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x+y=4\\) and \\(x^3+y^3=40\\) for real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2+\\sqrt2, y=2-\\sqrt2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2-\\sqrt2, y=2+\\sqrt2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x^3+y^3=(x+y)^3-3xy(x+y)=64-12xy=40\\), so \\(12xy=24\\), \\(xy=2\\).\nThen \\(x,y\\) are roots of \\(t^2-4t+2=0\\), giving \\(t=2\\pm\\sqrt2\\).\nSince \\(x>y\\), \\(x=2+\\sqrt2, y=2-\\sqrt2\\).\nOption A.",
+      "hint": "Use \\(x^3+y^3=(x+y)^3-3xy(x+y)\\)."
+    },
+    {
+      "id": "algebra-08-q158",
+      "category": "Algebra",
+      "concept": "System with Parameters",
+      "learningObjective": "Determine a parameter for which a system has no solution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For which value of \\(k\\) does the system \\(x+y=2\\) and \\(xy=k\\) have no real solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The quadratic \\(t^2-2t+k=0\\) has discriminant \\(4-4k\\).\nNo real solution when \\(4-4k<0\\), so \\(k>1\\).\nAmong the options, \\(k=2\\) works.\nOption A.",
+      "hint": "Set the discriminant less than zero."
+    },
+    {
+      "id": "algebra-08-q159",
+      "category": "Algebra",
+      "concept": "Nonlinear System",
+      "learningObjective": "Solve a nonlinear system with a product constraint.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x+y=5\\) and \\(x^2y+xy^2=30\\) for real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(xy(x+y)=5xy=30\\), so \\(xy=6\\).\n\\(x,y\\) are roots of \\(t^2-5t+6=0\\), \\(t=2,3\\).\nSince \\(x>y\\), \\(x=3, y=2\\).\nOption A.",
+      "hint": "Factor \\(x^2y+xy^2\\)."
+    },
+    {
+      "id": "algebra-08-q160",
+      "category": "Algebra",
+      "concept": "System with Substitution",
+      "learningObjective": "Solve a system by substituting a sum and product.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x+y+\\sqrt{xy}=7\\) and \\(x+y=5\\) for positive \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=4, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, y=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(5+\\sqrt{xy}=7\\), so \\(\\sqrt{xy}=2\\), \\(xy=4\\).\n\\(x,y\\) are roots of \\(t^2-5t+4=0\\), \\(t=1,4\\).\nSince \\(x>y\\), \\(x=4, y=1\\).\nOption A.",
+      "hint": "Substitute \\(x+y=5\\) into the first equation."
+    },
+    {
+      "id": "algebra-08-q161",
+      "category": "Algebra",
+      "concept": "System with Absolute Values",
+      "learningObjective": "Solve a system involving absolute values with a linear constraint.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(|x|+|y|=5\\) and \\(x-y=1\\) for real \\(x,y\\) with \\(x>0, y>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3, y=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(x>0, y>0\\), \\(|x|+|y|=x+y=5\\).\nWith \\(x-y=1\\), add: \\(2x=6\\), \\(x=3\\), \\(y=2\\).\nOption B.",
+      "hint": "Remove the absolute values using the signs of \\(x\\) and \\(y\\)."
+    },
+    {
+      "id": "algebra-08-q162",
+      "category": "Algebra",
+      "concept": "Polynomial System",
+      "learningObjective": "Solve a polynomial system by substitution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^2+y=4\\) and \\(x+y^2=2\\) for nonnegative integers \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=0, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(x^2+y=4\\) and \\(x,y\\) are nonnegative integers, \\(x\\) can only be \\(0,1,2\\).\n- \\(x=0\\) gives \\(y=4\\), but \\(0+4^2=16\\neq2\\).\n- \\(x=1\\) gives \\(y=3\\), but \\(1+3^2=10\\neq2\\).\n- \\(x=2\\) gives \\(y=0\\), and \\(2+0^2=2\\).\nThus \\(x=2, y=0\\), and \\(x>y\\).\nOption B.",
+      "hint": "Use the first equation to limit the nonnegative integer possibilities for \\(x\\)."
+    },
+    {
+      "id": "algebra-08-q163",
+      "category": "Algebra",
+      "concept": "System with Elimination",
+      "learningObjective": "Solve a linear-quadratic system by substitution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^2+y^2=20\\) and \\(x-y=2\\) for real \\(x,y\\) with \\(x>0, y>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=4, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(x-y=2\\), \\(x=y+2\\). \\((y+2)^2+y^2=20\\), \\(2y^2+4y+4=20\\), \\(2y^2+4y-16=0\\), \\(y^2+2y-8=0\\), \\((y+4)(y-2)=0\\).\n\\(y=2\\), \\(x=4\\).\nOption A.",
+      "hint": "Substitute \\(x=y+2\\)."
+    },
+    {
+      "id": "algebra-08-q164",
+      "category": "Algebra",
+      "concept": "Symmetric System",
+      "learningObjective": "Solve a symmetric system with a quadratic constraint.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x+y=9\\) and \\(x^2+y^2=53\\) for real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=7, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x^2+y^2=(x+y)^2-2xy=81-2xy=53\\), so \\(2xy=28\\), \\(xy=14\\).\nThen \\(x,y\\) are roots of \\(t^2-9t+14=0\\), giving \\(t=2,7\\).\nSince \\(x>y\\), \\(x=7, y=2\\).\nOption A.",
+      "hint": "Use \\((x+y)^2=x^2+y^2+2xy\\)."
+    },
+    {
+      "id": "algebra-08-q165",
+      "category": "Algebra",
+      "concept": "System with Substitution",
+      "learningObjective": "Solve a system by substituting a composite expression.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^2+y^2=20\\) and \\(x^4+y^4=272\\) for real \\(x,y\\) with \\(x>y>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=4, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\((x^2+y^2)^2=400=x^4+y^4+2x^2y^2=272+2x^2y^2\\), so \\(2x^2y^2=128\\), \\(x^2y^2=64\\), and \\(xy=8\\).\nThen \\(x^2+y^2=20\\) and \\(xy=8\\) give \\((x+y)^2=36\\), so \\(x+y=6\\).\nThus \\(x,y\\) are roots of \\(t^2-6t+8=0\\), giving \\(t=2,4\\).\nSince \\(x>y>0\\), \\(x=4, y=2\\).\nOption A.",
+      "hint": "Use \\((x^2+y^2)^2=x^4+y^4+2x^2y^2\\)."
+    },
+    {
+      "id": "algebra-08-q166",
+      "category": "Algebra",
+      "concept": "Rational System",
+      "learningObjective": "Solve a rational system by clearing denominators.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\frac{1}{x}+\\frac{1}{y}=\\frac{7}{6}\\) and \\(x+y=7\\) for positive \\(x,y\\) with \\(x<y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1, y=6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=6, y=1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(\\frac{x+y}{xy}=\\frac{7}{xy}=\\frac{7}{6}\\), so \\(xy=6\\).\nThen \\(x,y\\) are roots of \\(t^2-7t+6=0\\), giving \\(t=1,6\\).\nSince \\(x<y\\), \\(x=1, y=6\\).\nOption A.",
+      "hint": "Use the sum of reciprocals formula."
+    },
+    {
+      "id": "algebra-08-q167",
+      "category": "Algebra",
+      "concept": "System with Absolute Values",
+      "learningObjective": "Solve a system involving absolute values.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(|x|+y=4\\) and \\(x+|y|=2\\) for real \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-1, y=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, y=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Try \\(x<0, y>0\\): \\(-x+y=4\\), \\(x+y=2\\). Subtract: \\(-2x=2\\), \\(x=-1\\), \\(y=3\\).\nCheck: \\(|-1|+3=4\\), \\(-1+|3|=2\\). Works.\nOption A.",
+      "hint": "Consider the signs of \\(x\\) and \\(y\\)."
+    },
+    {
+      "id": "algebra-08-q168",
+      "category": "Algebra",
+      "concept": "System with Exponents",
+      "learningObjective": "Solve a system involving exponential equations.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(2^x \\cdot 4^y = 32\\) and \\(x+y=4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3, y=1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(2^{x+2y}=2^5\\), so \\(x+2y=5\\). With \\(x+y=4\\), \\(y=1, x=3\\).\nOption B.",
+      "hint": "Express both sides as powers of 2."
+    },
+    {
+      "id": "algebra-08-q169",
+      "category": "Algebra",
+      "concept": "System with Radicals",
+      "learningObjective": "Solve a system involving square roots.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\sqrt{x}+\\sqrt{y}=6\\) and \\(x+y=20\\) for non-negative \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=16, y=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4, y=16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(a=\\sqrt{x}, b=\\sqrt{y}\\). Then \\(a+b=6\\) and \\(a^2+b^2=20\\).\n\\((a+b)^2=36=a^2+b^2+2ab=20+2ab\\), so \\(ab=8\\).\nThus \\(a,b\\) are roots of \\(t^2-6t+8=0\\), giving \\(t=2,4\\).\nSince \\(x>y\\), \\(\\sqrt{x}=4, \\sqrt{y}=2\\), so \\(x=16, y=4\\).\nOption A.",
+      "hint": "Substitute \\(a=\\sqrt{x}\\) and \\(b=\\sqrt{y}\\)."
+    },
+    {
+      "id": "algebra-08-q170",
+      "category": "Algebra",
+      "concept": "System with Parameters",
+      "learningObjective": "Determine a parameter for which a system has exactly one solution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For which value of \\(k\\) does the system \\(x+y=6\\) and \\(xy=k\\) have exactly one real solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Discriminant \\(36-4k=0\\), so \\(k=9\\).\nOption A.",
+      "hint": "Set the discriminant to zero."
+    },
+    {
+      "id": "algebra-08-q171",
+      "category": "Algebra",
+      "concept": "Nonlinear System",
+      "learningObjective": "Solve a nonlinear system by elimination.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^2+xy=6\\) and \\(y^2+xy=3\\) for positive \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Add: \\((x+y)^2=9\\), so \\(x+y=3\\).\nSubtract: \\(x^2-y^2=3\\), \\((x-y)(x+y)=3\\), so \\(x-y=1\\).\nSolving: \\(x=2, y=1\\).\nOption B.",
+      "hint": "Add and subtract the two equations."
+    },
+    {
+      "id": "algebra-08-q172",
+      "category": "Algebra",
+      "concept": "System with Absolute Values",
+      "learningObjective": "Solve a system involving absolute values by case analysis.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(|x-1|+|y|=3\\) and \\(x+y=2\\) for real \\(x,y\\) with \\(x<1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=0, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(x<1\\), \\(|x-1|=1-x\\). \\(y=2-x\\).\nFirst equation: \\(1-x+|2-x|=3\\).\nIf \\(x \\le 2\\), \\(|2-x|=2-x\\), so \\(1-x+2-x=3-2x=3\\), \\(x=0\\), \\(y=2\\).\nCheck: \\(|-1|+2=3\\), \\(0+2=2\\). Works.\nOption A.",
+      "hint": "Use \\(x<1\\) to simplify \\(|x-1|\\)."
+    },
+    {
+      "id": "algebra-08-q173",
+      "category": "Algebra",
+      "concept": "Polynomial System",
+      "learningObjective": "Solve a polynomial system by substitution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^3+y^3=35\\) and \\(x+y=5\\) for real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x^3+y^3=(x+y)^3-3xy(x+y)=125-15xy=35\\), so \\(15xy=90\\), \\(xy=6\\).\n\\(t^2-5t+6=0\\), \\(t=2,3\\).\nSince \\(x>y\\), \\(x=3, y=2\\).\nOption A.",
+      "hint": "Use \\(x^3+y^3=(x+y)^3-3xy(x+y)\\)."
+    },
+    {
+      "id": "algebra-08-q174",
+      "category": "Algebra",
+      "concept": "System with Exponents",
+      "learningObjective": "Solve a system involving exponential expressions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(7^x \\cdot 49^y = 343\\) and \\(x+y=2\\) for real \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(7^{x+2y}=7^3\\), so \\(x+2y=3\\). With \\(x+y=2\\), \\(y=1, x=1\\).\nOption A.",
+      "hint": "Express both sides as powers of 7."
+    },
+    {
+      "id": "algebra-08-q175",
+      "category": "Algebra",
+      "concept": "System with Radicals",
+      "learningObjective": "Solve a system involving a radical equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\sqrt{x+y}=4\\) and \\(x-y=2\\) for real \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=7, y=9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=9, y=7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(x+y=16\\), \\(x-y=2\\). Add: \\(2x=18\\), \\(x=9\\), \\(y=7\\).\nOption B.",
+      "hint": "Square the first equation."
+    },
+    {
+      "id": "algebra-08-q176",
+      "category": "Algebra",
+      "concept": "System with Constraints",
+      "learningObjective": "Solve a system with a positivity constraint.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(x+y=8\\) and \\(xy=12\\) for positive \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=6, y=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(t^2-8t+12=0\\), \\(t=2,6\\). Since \\(x>y\\), \\(x=6, y=2\\).\nOption B.",
+      "hint": "Use Vieta's formulas."
+    },
+    {
+      "id": "algebra-08-q177",
+      "category": "Algebra",
+      "concept": "System with Elimination",
+      "learningObjective": "Solve a nonlinear system by elimination.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^2+y^2=34\\) and \\(x^2-y^2=16\\) for real \\(x,y\\) with \\(x>0, y>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=5, y=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3, y=5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Add: \\(2x^2=50\\), \\(x^2=25\\), \\(x=5\\).\nSubtract: \\(2y^2=18\\), \\(y^2=9\\), \\(y=3\\).\nOption A.",
+      "hint": "Add and subtract the equations."
+    },
+    {
+      "id": "algebra-08-q178",
+      "category": "Algebra",
+      "concept": "System with Factorization",
+      "learningObjective": "Solve a system by factoring.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^2-y^2=24\\) and \\(x-y=4\\) for real \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=5, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, y=5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\((x-y)(x+y)=4(x+y)=24\\), so \\(x+y=6\\).\nWith \\(x-y=4\\), add: \\(2x=10\\), \\(x=5\\), \\(y=1\\).\nOption A.",
+      "hint": "Factor \\(x^2-y^2\\)."
+    },
+    {
+      "id": "algebra-08-q179",
+      "category": "Algebra",
+      "concept": "Symmetric System",
+      "learningObjective": "Solve a symmetric system with a cubic constraint.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x+y=6\\) and \\(x^3+y^3=72\\) for real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=5, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4, y=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(x^3+y^3=216-18xy=72\\), so \\(xy=8\\).\n\\(t^2-6t+8=0\\), \\(t=2,4\\). Since \\(x>y\\), \\(x=4, y=2\\).\nOption B.",
+      "hint": "Use \\(x^3+y^3=(x+y)^3-3xy(x+y)\\)."
+    },
+    {
+      "id": "algebra-08-q180",
+      "category": "Algebra",
+      "concept": "System with Parameters",
+      "learningObjective": "Determine a parameter for which a system has no solution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For which value of \\(k\\) does the system \\(x+y=4\\) and \\(xy=k\\) have no real solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Discriminant \\(16-4k<0\\), so \\(k>4\\). Among options, \\(k=5\\).\nOption A.",
+      "hint": "Set the discriminant less than zero."
+    },
+    {
+      "id": "algebra-08-q181",
+      "category": "Algebra",
+      "concept": "Nonlinear System",
+      "learningObjective": "Solve a nonlinear system with a product constraint.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x+y=6\\) and \\(x^2y+xy^2=24\\) for real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3+\\sqrt5, y=3-\\sqrt5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3-\\sqrt5, y=3+\\sqrt5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(x^2y+xy^2=xy(x+y)=6xy=24\\), so \\(xy=4\\).\nThen \\(x,y\\) are roots of \\(t^2-6t+4=0\\), giving \\(t=3\\pm\\sqrt5\\).\nSince \\(x>y\\), \\(x=3+\\sqrt5, y=3-\\sqrt5\\).\nOption A.",
+      "hint": "Factor \\(x^2y+xy^2\\)."
+    },
+    {
+      "id": "algebra-08-q182",
+      "category": "Algebra",
+      "concept": "System with Substitution",
+      "learningObjective": "Solve a system by substituting a sum and product.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x+y+\\sqrt{xy}=5\\) and \\(x+y=4\\) for positive \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2-\\sqrt{3}, y=2+\\sqrt{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2+\\sqrt{3}, y=2-\\sqrt{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(4+\\sqrt{xy}=5\\), \\(\\sqrt{xy}=1\\), \\(xy=1\\).\n\\(t^2-4t+1=0\\), \\(t=2\\pm\\sqrt{3}\\).\nSince \\(x>y\\), \\(x=2+\\sqrt{3}, y=2-\\sqrt{3}\\).\nOption B.",
+      "hint": "Substitute \\(x+y=4\\) into the first equation."
+    },
+    {
+      "id": "algebra-08-q183",
+      "category": "Algebra",
+      "concept": "System with Absolute Values",
+      "learningObjective": "Solve a system involving absolute values with a linear constraint.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(|x|+|y|=6\\) and \\(x-y=2\\) for real \\(x,y\\) with \\(x>0, y>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4, y=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(x+y=6\\), \\(x-y=2\\). Add: \\(2x=8\\), \\(x=4\\), \\(y=2\\).\nOption B.",
+      "hint": "Remove the absolute values."
+    },
+    {
+      "id": "algebra-08-q184",
+      "category": "Algebra",
+      "concept": "Polynomial System",
+      "learningObjective": "Solve a polynomial system by substitution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^2+y=5\\) and \\(x+y^2=3\\) for positive real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, y=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(y=5-x^2\\) into \\(x+y^2=3\\):\n\\[\nx+(5-x^2)^2=3 \\Rightarrow x^4-10x^2+x+22=0\n\\]\n\\[\n\\Rightarrow (x-2)(x^3+2x^2-6x-11)=0.\n\\]\nSince \\(x,y>0\\), we have \\(0<x<\\sqrt5\\). On this interval the cubic factor is negative, so the only valid root is \\(x=2\\). Then \\(y=5-4=1\\), and \\(x>y\\). Option A.",
+      "hint": "Substitute \\(y=5-x^2\\), factor, and use \\(x,y>0\\)."
+    },
+    {
+      "id": "algebra-08-q185",
+      "category": "Algebra",
+      "concept": "System with Elimination",
+      "learningObjective": "Solve a linear-quadratic system by substitution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^2+y^2=25\\) and \\(x+y=7\\) for real \\(x,y\\) with \\(x<y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=4, y=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3, y=4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(x^2+y^2=49-2xy=25\\), so \\(xy=12\\).\n\\(t^2-7t+12=0\\), \\(t=3,4\\). Since \\(x<y\\), \\(x=3, y=4\\).\nOption B.",
+      "hint": "Use \\((x+y)^2=x^2+y^2+2xy\\)."
+    },
+    {
+      "id": "algebra-08-q186",
+      "category": "Algebra",
+      "concept": "Symmetric System",
+      "learningObjective": "Solve a symmetric system with a quadratic constraint.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x+y=7\\) and \\(x^2+y^2=29\\) for real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=5, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(49-2xy=29\\), \\(2xy=20\\), \\(xy=10\\).\n\\(t^2-7t+10=0\\), \\(t=2,5\\).\n\\(x>y\\): \\(x=5, y=2\\).\nOption A.",
+      "hint": "Use \\((x+y)^2=x^2+y^2+2xy\\)."
+    },
+    {
+      "id": "algebra-08-q187",
+      "category": "Algebra",
+      "concept": "System with Substitution",
+      "learningObjective": "Solve a system by substituting a composite expression.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^2+y^2=13\\) and \\(x^4+y^4=97\\) for real \\(x,y\\) with \\(x>y>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3, y=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\((x^2+y^2)^2=169=x^4+y^4+2x^2y^2=97+2x^2y^2\\), so \\(2x^2y^2=72\\), \\(x^2y^2=36\\), \\(xy=6\\).\n\\(x^2,y^2\\) are roots of \\(t^2-13t+36=0\\), \\(t=4,9\\).\n\\(x>y>0\\): \\(x^2=9, y^2=4\\), \\(x=3, y=2\\).\nOption B.",
+      "hint": "Use \\((x^2+y^2)^2=x^4+y^4+2x^2y^2\\)."
+    },
+    {
+      "id": "algebra-08-q188",
+      "category": "Algebra",
+      "concept": "Rational System",
+      "learningObjective": "Solve a rational system by clearing denominators.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\frac{1}{x}+\\frac{1}{y}=\\frac{7}{12}\\) and \\(x+y=7\\) for positive \\(x,y\\) with \\(x<y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4, y=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(\\frac{7}{xy}=\\frac{7}{12}\\), \\(xy=12\\).\n\\(t^2-7t+12=0\\), \\(t=3,4\\).\n\\(x<y\\): \\(x=3, y=4\\).\nOption A.",
+      "hint": "Use the sum of reciprocals formula."
+    },
+    {
+      "id": "algebra-08-q189",
+      "category": "Algebra",
+      "concept": "System with Absolute Values",
+      "learningObjective": "Solve a system involving absolute values.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(|x|+y=5\\) and \\(x+|y|=1\\) for real \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1, y=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-2, y=3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Try \\(x<0, y>0\\): \\(-x+y=5\\), \\(x+y=1\\). Subtract: \\(-2x=4\\), \\(x=-2\\), \\(y=3\\).\nCheck: \\(|-2|+3=5\\), \\(-2+|3|=1\\). Works.\nOption B.",
+      "hint": "Consider the signs of \\(x\\) and \\(y\\)."
+    },
+    {
+      "id": "algebra-08-q190",
+      "category": "Algebra",
+      "concept": "System with Exponents",
+      "learningObjective": "Solve a system involving exponential equations.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(3^x \\cdot 9^y = 729\\) and \\(x+y=4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3, y=1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(3^{x+2y}=3^6\\), \\(x+2y=6\\). \\(x+y=4\\) → \\(y=2, x=2\\).\nOption A.",
+      "hint": "Express both sides as powers of 3."
+    },
+    {
+      "id": "algebra-08-q191",
+      "category": "Algebra",
+      "concept": "System with Radicals",
+      "learningObjective": "Solve a system involving square roots.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\sqrt{x}+\\sqrt{y}=5\\) and \\(x+y=17\\) for non-negative \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=16, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, y=16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(a=\\sqrt{x}, b=\\sqrt{y}\\). \\(a+b=5\\), \\(a^2+b^2=17\\).\n\\(25=17+2ab\\), \\(ab=4\\).\n\\(t^2-5t+4=0\\), \\(t=1,4\\).\n\\(x>y\\): \\(\\sqrt{x}=4, \\sqrt{y}=1\\), \\(x=16, y=1\\).\nOption A.",
+      "hint": "Substitute \\(a=\\sqrt{x}\\) and \\(b=\\sqrt{y}\\)."
+    },
+    {
+      "id": "algebra-08-q192",
+      "category": "Algebra",
+      "concept": "System with Parameters",
+      "learningObjective": "Determine a parameter for which a system has exactly one solution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For which value of \\(k\\) does the system \\(x+y=8\\) and \\(xy=k\\) have exactly one real solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=16\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Discriminant \\(64-4k=0\\), \\(k=16\\).\nOption B.",
+      "hint": "Set the discriminant to zero."
+    },
+    {
+      "id": "algebra-08-q193",
+      "category": "Algebra",
+      "concept": "Nonlinear System",
+      "learningObjective": "Solve a nonlinear system by elimination.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^2+xy=15\\) and \\(y^2+xy=10\\) for positive \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2, y=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3, y=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Add: \\((x+y)^2=25\\), \\(x+y=5\\).\nSubtract: \\(x^2-y^2=5\\), \\((x-y)(x+y)=5\\), \\(x-y=1\\).\nSolving: \\(x=3, y=2\\).\nOption B.",
+      "hint": "Add and subtract the two equations."
+    },
+    {
+      "id": "algebra-08-q194",
+      "category": "Algebra",
+      "concept": "System with Absolute Values",
+      "learningObjective": "Solve a system involving absolute values by case analysis.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(|x-1|+|y|=5\\) and \\(x+y=3\\) for real \\(x,y\\) with \\(x>1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=\\frac{9}{2}, y=-\\frac{3}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3, y=0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(x>1\\), \\(|x-1|=x-1\\). From \\(x+y=3\\), \\(y=3-x\\).\nThe first equation becomes \\(x-1+|3-x|=5\\).\nIf \\(x\\le3\\), then \\(|3-x|=3-x\\), so \\(x-1+3-x=2\\), impossible.\nIf \\(x>3\\), then \\(|3-x|=x-3\\), so \\(x-1+x-3=2x-4=5\\), giving \\(x=\\frac{9}{2}\\).\nThen \\(y=3-\\frac{9}{2}=-\\frac{3}{2}\\).\nOption A.",
+      "hint": "Use \\(x>1\\) to simplify \\(|x-1|\\), then consider the sign of \\(3-x\\)."
+    },
+    {
+      "id": "algebra-08-q195",
+      "category": "Algebra",
+      "concept": "Polynomial System",
+      "learningObjective": "Solve a polynomial system by substitution.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^3+y^3=65\\) and \\(x+y=5\\) for real \\(x,y\\) with \\(x>y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4, y=1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(x^3+y^3=125-15xy=65\\), \\(15xy=60\\), \\(xy=4\\).\n\\(t^2-5t+4=0\\), \\(t=1,4\\).\n\\(x>y\\): \\(x=4, y=1\\).\nOption B.",
+      "hint": "Use \\(x^3+y^3=(x+y)^3-3xy(x+y)\\)."
+    },
+    {
+      "id": "algebra-08-q196",
+      "category": "Algebra",
+      "concept": "System with Exponents",
+      "learningObjective": "Solve a system involving exponential equations.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Solve \\(2^x \\cdot 8^y = 256\\) and \\(x+y=4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2, y=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(2^{x+3y}=2^8\\), \\(x+3y=8\\). \\(x+y=4\\) → \\(2y=4\\), \\(y=2\\), \\(x=2\\).\nOption B.",
+      "hint": "Express both sides as powers of 2."
+    },
+    {
+      "id": "algebra-08-q197",
+      "category": "Algebra",
+      "concept": "System with Radicals",
+      "learningObjective": "Solve a system involving a radical equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\sqrt{x+y}=6\\) and \\(x-y=4\\) for real \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=16, y=20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=20, y=16\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(x+y=36\\), \\(x-y=4\\). Add: \\(2x=40\\), \\(x=20\\), \\(y=16\\).\nOption B.",
+      "hint": "Square the first equation."
+    },
+    {
+      "id": "algebra-08-q198",
+      "category": "Algebra",
+      "concept": "System with Constraints",
+      "learningObjective": "Solve a system with a positivity constraint.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(x+y=9\\) and \\(xy=18\\) for positive \\(x,y\\) with \\(x<y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=6, y=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(t^2-9t+18=0\\), \\(t=3,6\\). Since \\(x<y\\), \\(x=3, y=6\\).\nOption A.",
+      "hint": "Use Vieta's formulas."
+    },
+    {
+      "id": "algebra-08-q199",
+      "category": "Algebra",
+      "concept": "System with Elimination",
+      "learningObjective": "Solve a nonlinear system by elimination.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^2+y^2=41\\) and \\(x^2-y^2=9\\) for real \\(x,y\\) with \\(x>0, y>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=5, y=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4, y=5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Add: \\(2x^2=50\\), \\(x^2=25\\), \\(x=5\\).\nSubtract: \\(2y^2=32\\), \\(y^2=16\\), \\(y=4\\).\nOption A.",
+      "hint": "Add and subtract the equations."
+    },
+    {
+      "id": "algebra-08-q200",
+      "category": "Algebra",
+      "concept": "System with Factorization",
+      "learningObjective": "Solve a system by factoring.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(x^2-y^2=21\\) and \\(x+y=7\\) for real \\(x,y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3, y=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=5, y=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\((x-y)(x+y)=7(x-y)=21\\), \\(x-y=3\\).\n\\(x+y=7\\), \\(x-y=3\\). Add: \\(2x=10\\), \\(x=5\\), \\(y=2\\).\nOption B.",
+      "hint": "Factor \\(x^2-y^2\\)."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-182",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 182",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-182-q001",
+      "category": "Vectors",
+      "concept": "Vector Proof of Diagonals of a Parallelogram",
+      "learningObjective": "Use position vectors to prove that the diagonals of a parallelogram bisect each other.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In parallelogram \\(ABCD\\), let the position vectors of \\(A,B,C,D\\) be \\(\\vec{a},\\vec{b},\\vec{c},\\vec{d}\\). Which vector equality proves that the diagonals \\(AC\\) and \\(BD\\) bisect each other?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\vec{a}+\\vec{c}=\\vec{b}+\\vec{d}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\vec{a}+\\vec{b}=\\vec{c}+\\vec{d}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The midpoint of diagonal \\(AC\\) has position vector\n\\[\n\\frac{\\vec{a}+\\vec{c}}{2}.\n\\]\nThe midpoint of diagonal \\(BD\\) has position vector\n\\[\n\\frac{\\vec{b}+\\vec{d}}{2}.\n\\]\nThe diagonals bisect each other exactly when these midpoints coincide, so\n\\[\n\\frac{\\vec{a}+\\vec{c}}{2}=\\frac{\\vec{b}+\\vec{d}}{2}.\n\\]\nMultiplying by \\(2\\) gives\n\\[\n\\vec{a}+\\vec{c}=\\vec{b}+\\vec{d}.\n\\]\nThus option A is the required vector equality.",
+      "hint": "Compare the position vectors of the midpoints of the two diagonals."
+    },
+    {
+      "id": "math-gaokao-182-q002",
+      "category": "Vectors",
+      "concept": "Midsegment Theorem in a Triangle",
+      "learningObjective": "Use vectors to prove that the segment joining the midpoints of two sides of a triangle is parallel to the third side.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In triangle \\(ABC\\), \\(M\\) is the midpoint of \\(AB\\) and \\(N\\) is the midpoint of \\(BC\\). Which vector equation proves that \\(MN\\parallel AC\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\vec{MN}=\\frac{1}{2}\\vec{AC}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\vec{MN}=2\\vec{AC}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(M\\) is the midpoint of \\(AB\\),\n\\[\n\\vec{OM}=\\frac{\\vec{OA}+\\vec{OB}}{2}.\n\\]\nSince \\(N\\) is the midpoint of \\(BC\\),\n\\[\n\\vec{ON}=\\frac{\\vec{OB}+\\vec{OC}}{2}.\n\\]\nTherefore,\n\\[\n\\vec{MN}=\\vec{ON}-\\vec{OM}\n=\\frac{\\vec{OB}+\\vec{OC}}{2}-\\frac{\\vec{OA}+\\vec{OB}}{2}\n=\\frac{\\vec{OC}-\\vec{OA}}{2}\n=\\frac{1}{2}\\vec{AC}.\n\\]\nSince \\(\\vec{MN}\\) is a scalar multiple of \\(\\vec{AC}\\), the two vectors are parallel. Thus \\(MN\\parallel AC\\).",
+      "hint": "Express the midpoint vectors first, then subtract them."
+    },
+    {
+      "id": "math-gaokao-182-q003",
+      "category": "Vectors",
+      "concept": "Perpendicular Diagonals of a Rhombus",
+      "learningObjective": "Use the dot product to prove that the diagonals of a rhombus are perpendicular.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "In rhombus \\(ABCD\\), let \\(\\vec{AB}=\\vec{u}\\) and \\(\\vec{AD}=\\vec{v}\\), with \\(|\\vec{u}|=|\\vec{v}|\\). Which calculation proves that the diagonals \\(AC\\) and \\(BD\\) are perpendicular?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((\\vec{u}+\\vec{v})\\cdot(\\vec{v}-\\vec{u})=|\\vec{v}|^2-|\\vec{u}|^2=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((\\vec{u}+\\vec{v})\\cdot(\\vec{v}-\\vec{u})=|\\vec{u}|^2+|\\vec{v}|^2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In the rhombus,\n\\[\n\\vec{AC}=\\vec{u}+\\vec{v},\\qquad \\vec{BD}=\\vec{v}-\\vec{u}.\n\\]\nThen\n\\[\n(\\vec{u}+\\vec{v})\\cdot(\\vec{v}-\\vec{u})\n=\\vec{u}\\cdot\\vec{v}-\\vec{u}\\cdot\\vec{u}+\\vec{v}\\cdot\\vec{v}-\\vec{v}\\cdot\\vec{u}\n=|\\vec{v}|^2-|\\vec{u}|^2.\n\\]\nSince \\(|\\vec{u}|=|\\vec{v}|\\), this dot product is \\(0\\). Therefore,\n\\[\n\\vec{AC}\\cdot\\vec{BD}=0,\n\\]\nso the diagonals are perpendicular.",
+      "hint": "Write the diagonals in terms of the adjacent side vectors and compute their dot product."
+    },
+    {
+      "id": "math-gaokao-182-q004",
+      "category": "Vectors",
+      "concept": "Equal Diagonals of a Rectangle",
+      "learningObjective": "Use vectors to prove that the diagonals of a rectangle are equal in length.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In rectangle \\(ABCD\\), let \\(\\vec{AB}=\\vec{u}\\) and \\(\\vec{AD}=\\vec{v}\\), where \\(\\vec{u}\\cdot\\vec{v}=0\\). Which equation proves that the diagonals \\(AC\\) and \\(BD\\) have equal length?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(|\\vec{u}+\\vec{v}|^2=|\\vec{v}-\\vec{u}|^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(|\\vec{u}+\\vec{v}|^2=|\\vec{u}|^2-|\\vec{v}|^2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The diagonals are\n\\[\n\\vec{AC}=\\vec{u}+\\vec{v},\\qquad \\vec{BD}=\\vec{v}-\\vec{u}.\n\\]\nSince \\(\\vec{u}\\cdot\\vec{v}=0\\),\n\\[\n|\\vec{u}+\\vec{v}|^2=|\\vec{u}|^2+|\\vec{v}|^2+2\\vec{u}\\cdot\\vec{v}\n=|\\vec{u}|^2+|\\vec{v}|^2,\n\\]\nand\n\\[\n|\\vec{v}-\\vec{u}|^2=|\\vec{v}|^2+|\\vec{u}|^2-2\\vec{v}\\cdot\\vec{u}\n=|\\vec{u}|^2+|\\vec{v}|^2.\n\\]\nThus\n\\[\n|\\vec{u}+\\vec{v}|^2=|\\vec{v}-\\vec{u}|^2,\n\\]\nso the diagonals have equal length.",
+      "hint": "Expand the squared magnitudes of the two diagonal vectors and use perpendicularity."
+    },
+    {
+      "id": "math-gaokao-182-q005",
+      "category": "Vectors",
+      "concept": "Parallelogram Condition from Bisecting Diagonals",
+      "learningObjective": "Use a vector equality of midpoints to prove that a quadrilateral is a parallelogram.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In quadrilateral \\(ABCD\\), the position vectors satisfy\n\\[\n\\vec{a}+\\vec{c}=\\vec{b}+\\vec{d}.\n\\]\nWhich conclusion proves that \\(ABCD\\) is a parallelogram?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\vec{AB}=\\vec{CD}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\vec{AB}=\\vec{DC}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From\n\\[\n\\vec{a}+\\vec{c}=\\vec{b}+\\vec{d},\n\\]\nrearrange to get\n\\[\n\\vec{c}-\\vec{d}=\\vec{b}-\\vec{a}.\n\\]\nBut\n\\[\n\\vec{DC}=\\vec{c}-\\vec{d},\\qquad \\vec{AB}=\\vec{b}-\\vec{a}.\n\\]\nTherefore,\n\\[\n\\vec{AB}=\\vec{DC}.\n\\]\nThis means one pair of opposite sides are equal and parallel, so \\(ABCD\\) is a parallelogram. Thus option B is correct.",
+      "hint": "Rewrite the given equality as a relation between \\(\\vec{AB}\\) and \\(\\vec{DC}\\)."
+    },
+    {
+      "id": "math-gaokao-182-q006",
+      "category": "Vectors",
+      "concept": "Median Vector in a Triangle",
+      "learningObjective": "Use vectors to prove the median relation in a triangle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In triangle \\(ABC\\), \\(M\\) is the midpoint of \\(BC\\). Which vector identity is always true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\vec{AB}+\\vec{AC}=\\vec{AM}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\vec{AB}+\\vec{AC}=2\\vec{AM}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(M\\) is the midpoint of \\(BC\\),\n\\[\n\\vec{OM}=\\frac{\\vec{OB}+\\vec{OC}}{2}.\n\\]\nThen\n\\[\n\\vec{AM}=\\vec{OM}-\\vec{OA}\n=\\frac{\\vec{OB}+\\vec{OC}}{2}-\\vec{OA}\n=\\frac{\\vec{OB}+\\vec{OC}-2\\vec{OA}}{2}.\n\\]\nAlso,\n\\[\n\\vec{AB}+\\vec{AC}\n=(\\vec{OB}-\\vec{OA})+(\\vec{OC}-\\vec{OA})\n=\\vec{OB}+\\vec{OC}-2\\vec{OA}.\n\\]\nTherefore,\n\\[\n\\vec{AB}+\\vec{AC}=2\\vec{AM}.\n\\]\nThus option B is correct.",
+      "hint": "Express both \\(\\vec{AM}\\) and \\(\\vec{AB}+\\vec{AC}\\) in terms of the position vectors of \\(A,B,C\\)."
+    },
+    {
+      "id": "math-gaokao-182-q007",
+      "category": "Vectors",
+      "concept": "Opposite Sides Equal and Parallel",
+      "learningObjective": "Use a vector equality of opposite sides to prove that a quadrilateral is a parallelogram.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In quadrilateral \\(ABCD\\), suppose\n\\[\n\\vec{AB}=\\vec{DC}.\n\\]\nWhich conclusion follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\vec{AD}=\\vec{CB}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\vec{AD}=\\vec{BC}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From\n\\[\n\\vec{AB}=\\vec{DC},\n\\]\nwe have\n\\[\n\\vec{b}-\\vec{a}=\\vec{c}-\\vec{d}.\n\\]\nRearranging,\n\\[\n\\vec{d}-\\vec{a}=\\vec{c}-\\vec{b}.\n\\]\nBut\n\\[\n\\vec{AD}=\\vec{d}-\\vec{a},\\qquad \\vec{BC}=\\vec{c}-\\vec{b}.\n\\]\nTherefore,\n\\[\n\\vec{AD}=\\vec{BC}.\n\\]\nSo the other pair of opposite sides is also equal and parallel, proving \\(ABCD\\) is a parallelogram.",
+      "hint": "Rewrite \\(\\vec{AB}=\\vec{DC}\\) in terms of the position vectors and compare \\(\\vec{AD}\\) with \\(\\vec{BC}\\)."
+    },
+    {
+      "id": "math-gaokao-182-q008",
+      "category": "Vectors",
+      "concept": "Midsegment Theorem with Midpoints of Two Sides",
+      "learningObjective": "Use vectors to prove that the segment joining the midpoints of two sides is half the third side.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In triangle \\(ABC\\), \\(D\\) is the midpoint of \\(AB\\) and \\(E\\) is the midpoint of \\(AC\\). Which vector equation is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\vec{DE}=2\\vec{BC}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\vec{DE}=\\frac{1}{2}\\vec{BC}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(D\\) is the midpoint of \\(AB\\),\n\\[\n\\vec{OD}=\\frac{\\vec{OA}+\\vec{OB}}{2}.\n\\]\nSince \\(E\\) is the midpoint of \\(AC\\),\n\\[\n\\vec{OE}=\\frac{\\vec{OA}+\\vec{OC}}{2}.\n\\]\nThus\n\\[\n\\vec{DE}=\\vec{OE}-\\vec{OD}\n=\\frac{\\vec{OA}+\\vec{OC}}{2}-\\frac{\\vec{OA}+\\vec{OB}}{2}\n=\\frac{\\vec{OC}-\\vec{OB}}{2}\n=\\frac{1}{2}\\vec{BC}.\n\\]\nTherefore, option B is correct.",
+      "hint": "Write the midpoint vectors and subtract them."
+    },
+    {
+      "id": "math-gaokao-182-q009",
+      "category": "Vectors",
+      "concept": "Rhombus from Perpendicular Diagonals",
+      "learningObjective": "Use vectors to prove that a parallelogram with perpendicular diagonals is a rhombus.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "In parallelogram \\(ABCD\\), let \\(\\vec{AB}=\\vec{u}\\) and \\(\\vec{AD}=\\vec{v}\\). If the diagonals are perpendicular, which conclusion follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(|\\vec{u}|^2+|\\vec{v}|^2=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(|\\vec{u}|=|\\vec{v}|\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The diagonals are\n\\[\n\\vec{AC}=\\vec{u}+\\vec{v},\\qquad \\vec{BD}=\\vec{v}-\\vec{u}.\n\\]\nIf they are perpendicular, then\n\\[\n(\\vec{u}+\\vec{v})\\cdot(\\vec{v}-\\vec{u})=0.\n\\]\nExpanding,\n\\[\n|\\vec{v}|^2-|\\vec{u}|^2=0,\n\\]\nso\n\\[\n|\\vec{u}|=|\\vec{v}|.\n\\]\nThus the adjacent sides of the parallelogram are equal, which means the parallelogram is a rhombus.",
+      "hint": "Use the dot product of the two diagonals and simplify."
+    },
+    {
+      "id": "math-gaokao-182-q010",
+      "category": "Vectors",
+      "concept": "Angle in a Semicircle",
+      "learningObjective": "Use vectors to prove that an angle in a semicircle is a right angle.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(AB\\) be a diameter of a circle with center \\(O\\). Point \\(C\\) lies on the circle. Using vectors with \\(O\\) as the origin, which dot-product result proves that \\(\\angle ACB=90^\\circ\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\vec{CA}\\cdot\\vec{CB}=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\vec{CA}\\cdot\\vec{CB}=|\\vec{OC}|^2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(\\vec{OA}=-\\vec{u}\\) and \\(\\vec{OB}=\\vec{u}\\), so \\(|\\vec{u}|\\) is the radius. Since \\(C\\) lies on the circle,\n\\[\n|\\vec{OC}|=|\\vec{u}|.\n\\]\nNow\n\\[\n\\vec{CA}=\\vec{OA}-\\vec{OC}=-\\vec{u}-\\vec{c},\n\\]\nand\n\\[\n\\vec{CB}=\\vec{OB}-\\vec{OC}=\\vec{u}-\\vec{c}.\n\\]\nThen\n\\[\n\\vec{CA}\\cdot\\vec{CB}\n=(-\\vec{u}-\\vec{c})\\cdot(\\vec{u}-\\vec{c})\n=-|\\vec{u}|^2+|\\vec{c}|^2.\n\\]\nBecause \\(|\\vec{c}|=|\\vec{u}|\\), this dot product equals \\(0\\). Hence\n\\[\n\\vec{CA}\\cdot\\vec{CB}=0,\n\\]\nso \\(\\vec{CA}\\perp\\vec{CB}\\), and \\(\\angle ACB=90^\\circ\\).",
+      "hint": "Express \\(\\vec{CA}\\) and \\(\\vec{CB}\\) using the radius vector and the position vector of \\(C\\)."
+    }
+  ]
+}

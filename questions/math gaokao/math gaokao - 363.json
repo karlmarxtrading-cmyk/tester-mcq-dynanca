@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-363",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 363",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-363-q001",
+      "category": "Combinatorics",
+      "concept": "Recurrence for Binary Strings without Consecutive Ones",
+      "learningObjective": "Use a Fibonacci-type recurrence to count binary strings avoiding consecutive ones.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(a_n\\) be the number of binary strings of length \\(n\\) with no two consecutive \\(1\\)'s. Given \\(a_1=2\\), \\(a_2=3\\), and \\(a_n=a_{n-1}+a_{n-2}\\) for \\(n\\ge3\\), find \\(a_4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the recurrence, \\[\n\\begin{aligned}\na_3&=a_2+a_1 \\\\\n&=3+2 \\\\\n&=5\n\\end{aligned}\n\\], and then \\[\n\\begin{aligned}\na_4&=a_3+a_2 \\\\\n&=5+3 \\\\\n&=8\n\\end{aligned}\n\\]. Thus the correct option is B.",
+      "hint": "Apply the recurrence twice, starting from the given values \\(a_1\\) and \\(a_2\\)."
+    },
+    {
+      "id": "math-gaokao-363-q002",
+      "category": "Combinatorics",
+      "concept": "Recurrence for Staircase Climbing",
+      "learningObjective": "Apply a recurrence to count ways to climb stairs using \\(1\\)-step or \\(2\\)-step moves.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A staircase has \\(n\\) steps. Let \\(a_n\\) be the number of ways to reach the top if each move is either \\(1\\) step or \\(2\\) steps. Given \\(a_1=1\\), \\(a_2=2\\), and \\(a_n=a_{n-1}+a_{n-2}\\), find \\(a_6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(13\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute successive terms:\n\\[\na_3=2+1=3,\\quad a_4=3+2=5,\\quad a_5=5+3=8,\\quad a_6=8+5=13.\n\\]\nThus the correct option is B.",
+      "hint": "Each term is the sum of the previous two terms."
+    },
+    {
+      "id": "math-gaokao-363-q003",
+      "category": "Combinatorics",
+      "concept": "Solving a Linear Homogeneous Recurrence",
+      "learningObjective": "Determine a term of a recurrence using its characteristic equation or direct iteration.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A counting sequence satisfies \\(a_n=3a_{n-1}-2a_{n-2}\\) for \\(n\\ge2\\), with \\(a_0=0\\) and \\(a_1=1\\). Find \\(a_4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Compute directly:\n\\[\n\\begin{aligned}\na_2&=3(1)-2(0)=3, \\\\\na_3&=3(3)-2(1)=7, \\\\\na_4&=3(7)-2(3)=15.\n\\end{aligned}\n\\]\nThus the correct option is A.",
+      "hint": "Use the recurrence step by step, starting from \\(a_0\\) and \\(a_1\\)."
+    },
+    {
+      "id": "math-gaokao-363-q004",
+      "category": "Combinatorics",
+      "concept": "Recurrence for Nonempty Subsets",
+      "learningObjective": "Use a nonhomogeneous recurrence to count nonempty subsets of a finite set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(a_n\\) be the number of nonempty subsets of an \\(n\\)-element set. It satisfies \\(a_n=2a_{n-1}+1\\) for \\(n\\ge2\\), with \\(a_1=1\\). Find \\(a_5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(31\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the recurrence:\n\\[\n\\begin{aligned}\na_2&=2(1)+1=3, \\\\\na_3&=2(3)+1=7, \\\\\na_4&=2(7)+1=15, \\\\\na_5&=2(15)+1=31.\n\\end{aligned}\n\\]\nThus the correct option is B.",
+      "hint": "Repeatedly apply \\(a_n=2a_{n-1}+1\\) up to \\(n=5\\)."
+    },
+    {
+      "id": "math-gaokao-363-q005",
+      "category": "Combinatorics",
+      "concept": "Recurrence for Subsets without Consecutive Integers",
+      "learningObjective": "Use a Fibonacci-type recurrence to count subsets with no two consecutive elements.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(a_n\\) be the number of subsets of \\(\\{1,2,\\dots,n\\}\\) that contain no two consecutive integers. Given \\(a_1=2\\), \\(a_2=3\\), and \\(a_n=a_{n-1}+a_{n-2}\\), find \\(a_6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(21\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute successively:\n\\[\na_3=3+2=5,\\quad a_4=5+3=8,\\quad a_5=8+5=13,\\quad a_6=13+8=21.\n\\]\nThus the correct option is B.",
+      "hint": "Separate the valid subsets according to whether they contain \\(n\\)."
+    },
+    {
+      "id": "math-gaokao-363-q006",
+      "category": "Combinatorics",
+      "concept": "Linear Recurrence with Distinct Characteristic Roots",
+      "learningObjective": "Solve a second-order recurrence using its characteristic roots and initial values.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A counting sequence satisfies \\(a_n=5a_{n-1}-6a_{n-2}\\) for \\(n\\ge2\\), with \\(a_0=1\\) and \\(a_1=2\\). Find \\(a_4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(18\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The characteristic equation is\n\\[\nr^2-5r+6=0,\n\\]\nso \\(r=2\\) or \\(r=3\\). Using the initial values, the solution is \\(a_n=2^n\\). Therefore\n\\[\na_4=2^4=16.\n\\]\nThus the correct option is A.",
+      "hint": "Find the roots of \\(r^2-5r+6=0\\), then use the initial values."
+    },
+    {
+      "id": "math-gaokao-363-q007",
+      "category": "Combinatorics",
+      "concept": "Second-Order Recurrence with Coefficient \\(2\\)",
+      "learningObjective": "Compute later terms of a recurrence with coefficient \\(2\\) in the second-order term.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A counting sequence satisfies \\(a_n=a_{n-1}+2a_{n-2}\\) for \\(n\\ge2\\), with \\(a_0=1\\) and \\(a_1=1\\). Find \\(a_6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(42\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(43\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute successively:\n\\[\n\\begin{aligned}\na_2&=1+2(1)=3, \\\\\na_3&=3+2(1)=5, \\\\\na_4&=5+2(3)=11, \\\\\na_5&=11+2(5)=21, \\\\\na_6&=21+2(11)=43.\n\\end{aligned}\n\\]\nThus the correct option is B.",
+      "hint": "Use the recurrence repeatedly, keeping both previous terms."
+    },
+    {
+      "id": "math-gaokao-363-q008",
+      "category": "Combinatorics",
+      "concept": "Recurrence for Ternary Strings without Consecutive Zeros",
+      "learningObjective": "Apply a recurrence to count ternary strings avoiding the substring \\(00\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(a_n\\) be the number of ternary strings of length \\(n\\) over \\(\\{0,1,2\\}\\) that do not contain two consecutive \\(0\\)'s. Given \\(a_1=3\\), \\(a_2=8\\), and \\(a_n=2a_{n-1}+2a_{n-2}\\) for \\(n\\ge3\\), find \\(a_4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(64\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the recurrence:\n\\[\na_3=2a_2+2a_1=2(8)+2(3)=22,\n\\]\n\\[\n\\begin{aligned}\na_4&=2a_3+2a_2 \\\\\n&=2(22)+2(8) \\\\\n&=60.\n\\end{aligned}\n\\]\nThus the correct option is A.",
+      "hint": "Apply the recurrence first to find \\(a_3\\), then use \\(a_3\\) and \\(a_2\\) to find \\(a_4\\)."
+    },
+    {
+      "id": "math-gaokao-363-q009",
+      "category": "Combinatorics",
+      "concept": "Catalan Recurrence",
+      "learningObjective": "Use the Catalan recurrence to count valid sequences of paired parentheses.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(C_n\\) be the number of valid sequences of \\(n\\) pairs of parentheses, with \\(C_0=1\\) and\n\\[\nC_n=\\sum_{k=0}^{n-1} C_k C_{n-1-k}\\quad(n\\ge1).\n\\]\nFind \\(C_4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(14\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Compute the Catalan numbers:\n\\[\n\\begin{aligned}\nC_1&=C_0C_0=1, \\\\\nC_2&=C_0C_1+C_1C_0=1+1=2, \\\\\nC_3&=C_0C_2+C_1C_1+C_2C_0=2+1+2=5,\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\nC_4&=C_0C_3+C_1C_2+C_2C_1+C_3C_0 \\\\\n&=5+2+2+5 \\\\\n&=14.\n\\end{aligned}\n\\]\nThus the correct option is A.",
+      "hint": "Use the given convolution recurrence and build the values from \\(C_0\\) upward."
+    },
+    {
+      "id": "math-gaokao-363-q010",
+      "category": "Combinatorics",
+      "concept": "Recurrence for Compositions with Parts \\(1\\), \\(2\\), and \\(3\\)",
+      "learningObjective": "Use a third-order recurrence to count compositions of an integer.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(a_n\\) be the number of compositions of \\(n\\) using only parts \\(1,2,3\\), with \\(a_0=1\\) for the empty composition. It satisfies \\(a_n=a_{n-1}+a_{n-2}+a_{n-3}\\) for \\(n\\ge3\\). Given \\(a_0=1\\), \\(a_1=1\\), \\(a_2=2\\), find \\(a_6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(23\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute successively:\n\\[\n\\begin{aligned}\na_3&=a_2+a_1+a_0=2+1+1=4, \\\\\na_4&=a_3+a_2+a_1=4+2+1=7, \\\\\na_5&=a_4+a_3+a_2=7+4+2=13,\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\na_6&=a_5+a_4+a_3 \\\\\n&=13+7+4 \\\\\n&=24.\n\\end{aligned}\n\\]\nThus the correct option is B.",
+      "hint": "Each new term is the sum of the previous three terms."
+    }
+  ]
+}

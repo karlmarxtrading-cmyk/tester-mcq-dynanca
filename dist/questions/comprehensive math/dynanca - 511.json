@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-511",
+  "category": "Comprehensive Mathematics",
+  "title": "511. Sets, Logic, Reasoning & Proof: Proof by Cases",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-511-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Structure of a proof by cases",
+      "learningObjective": "Describe how a proof by cases is organised.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does a proof by cases establish a statement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It splits the situation into cases that together cover every possibility and proves the statement in each case."
+        },
+        {
+          "label": "B",
+          "text": "It proves the statement in one typical case and notes that the other cases are similar."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A proof by cases is valid only if the cases are exhaustive and the statement is proved in every one of them. Proving a single \"typical\" case leaves the other possibilities unproved, unless they are shown to reduce to it.",
+      "hint": "Ask what happens to a possibility that is not covered by any case."
+    },
+    {
+      "id": "dynanca-511-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Choosing exhaustive cases",
+      "learningObjective": "Select a pair of cases that covers all integers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "A statement about every integer \\(n\\) is to be proved by cases. Which pair of cases covers all integers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n\\) is positive; \\(n\\) is negative."
+        },
+        {
+          "label": "B",
+          "text": "\\(n\\) is even; \\(n\\) is odd."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every integer is either even or odd, so those two cases are exhaustive. The cases \"positive\" and \"negative\" leave out \\(n=0\\), which is neither positive nor negative, so a proof using only them would be incomplete.",
+      "hint": "Look for an integer that belongs to neither case."
+    },
+    {
+      "id": "dynanca-511-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The odd case of a parity proof",
+      "learningObjective": "Complete the algebra in one case of a proof by cases.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "To prove that \\(n^2+n\\) is even for every integer \\(n\\), consider the case \\(n=2k+1\\). Which computation shows that \\(n^2+n\\) is even in this case?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n^2+n=n(n+1)=(2k+1)(2k+2)=2(2k+1)(k+1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n^2+n=(2k+1)^2+2k=4k^2+6k+1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor \\(n^2+n=n(n+1)\\). With \\(n=2k+1\\), the second factor is \\(2k+2=2(k+1)\\), so the product is \\(2(2k+1)(k+1)\\), which is even. In the other computation \\(n\\) was replaced by \\(2k\\) instead of \\(2k+1\\) in the last term, and the result would be odd.",
+      "hint": "Factor the expression as \\(n(n+1)\\) before substituting."
+    },
+    {
+      "id": "dynanca-511-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The negative case for an absolute value",
+      "learningObjective": "Justify one case of a proof involving an absolute value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "To prove \\(|x|\\ge x\\) for every real \\(x\\), consider the case \\(x<0\\). Why does the inequality hold in this case?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Here \\(|x|=-x\\) is positive, while \\(x\\) is negative."
+        },
+        {
+          "label": "B",
+          "text": "Here \\(|x|=x\\), so the two sides are equal."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(x<0\\) the absolute value is \\(|x|=-x\\), which is positive. A positive number is greater than a negative one, so \\(|x|>x\\). The equation \\(|x|=x\\) holds in the other case, \\(x\\ge 0\\).",
+      "hint": "Recall the definition of \\(|x|\\) for negative \\(x\\)."
+    },
+    {
+      "id": "dynanca-511-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A missing case",
+      "learningObjective": "Detect a case that a proof by cases has left out.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A proof of a statement about all real numbers \\(x\\) treats the case \\(x>0\\) and the case \\(x<0\\). What is wrong?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The case \\(x=0\\) is not covered."
+        },
+        {
+          "label": "B",
+          "text": "Nothing; the two cases cover all real numbers."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number \\(0\\) is neither greater than \\(0\\) nor less than \\(0\\), so it belongs to neither case. The proof must also treat \\(x=0\\), or use cases such as \\(x\\ge 0\\) and \\(x<0\\), which are exhaustive.",
+      "hint": "Find a real number that satisfies neither inequality."
+    },
+    {
+      "id": "dynanca-511-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Squares modulo four",
+      "learningObjective": "Use cases to find the possible remainders of a square.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "By considering the cases \\(n=2k\\) and \\(n=2k+1\\), which remainders can \\(n^2\\) leave on division by \\(4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Any of \\(0\\), \\(1\\), \\(2\\), \\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "Only \\(0\\) or \\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If \\(n=2k\\), then \\(n^2=4k^2\\), with remainder \\(0\\). If \\(n=2k+1\\), then \\(n^2=4k^2+4k+1=4(k^2+k)+1\\), with remainder \\(1\\). These cases cover all integers, so a square never leaves remainder \\(2\\) or \\(3\\) on division by \\(4\\).",
+      "hint": "Square each form and write the result as a multiple of \\(4\\) plus a remainder."
+    },
+    {
+      "id": "dynanca-511-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Number of sign cases",
+      "learningObjective": "Count the cases needed when two real numbers are classified by sign.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A proof of \\(|xy|=|x|\\,|y|\\) splits according to whether each of \\(x\\) and \\(y\\) is non-negative or negative. How many cases arise?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are two possibilities for \\(x\\) (non-negative or negative) and two for \\(y\\), giving \\(2\\cdot 2=4\\) combinations: both non-negative, \\(x\\) non-negative and \\(y\\) negative, \\(x\\) negative and \\(y\\) non-negative, and both negative. Two cases would cover only one of the variables.",
+      "hint": "Multiply the number of possibilities for \\(x\\) by the number for \\(y\\)."
+    },
+    {
+      "id": "dynanca-511-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Overlapping cases",
+      "learningObjective": "Decide whether overlapping cases invalidate a proof by cases.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A proof about all real numbers \\(x\\) uses the cases \\(x\\ge 0\\) and \\(x\\le 0\\), which overlap at \\(x=0\\). Is this a flaw?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the cases only need to cover every possibility, and overlap does no harm."
+        },
+        {
+          "label": "B",
+          "text": "Yes; the cases of a proof must never have anything in common."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The requirement on the cases is that each possibility falls into at least one of them. Here every real number satisfies \\(x\\ge 0\\) or \\(x\\le 0\\). The number \\(0\\) is simply treated twice, which is harmless.",
+      "hint": "Check the essential requirement: is every real number in at least one case?"
+    },
+    {
+      "id": "dynanca-511-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Cases modulo three",
+      "learningObjective": "Identify the factor divisible by three in one case of a proof.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "To prove that \\(n^3-n=(n-1)n(n+1)\\) is divisible by \\(3\\), consider the cases \\(n=3k\\), \\(n=3k+1\\), and \\(n=3k+2\\). In the case \\(n=3k+1\\), which factor is divisible by \\(3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If \\(n=3k+1\\), then \\(n-1=3k\\), which is divisible by \\(3\\). The factor \\(n+1=3k+2\\) leaves remainder \\(2\\). In the case \\(n=3k+2\\) it is \\(n+1=3k+3\\) that is divisible by \\(3\\), and in the case \\(n=3k\\) it is \\(n\\) itself.",
+      "hint": "Substitute \\(n=3k+1\\) into each of the three factors."
+    },
+    {
+      "id": "dynanca-511-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The middle case of an absolute value inequality",
+      "learningObjective": "Evaluate an expression with two absolute values on the middle interval.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "To prove \\(|x-1|+|x+1|\\ge 2\\) for every real \\(x\\), consider the case \\(-1\\le x\\le 1\\). What does \\(|x-1|+|x+1|\\) equal in this case?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(-1\\le x\\le 1\\), \\(x-1\\le 0\\), so \\(|x-1|=1-x\\), and \\(x+1\\ge 0\\), so \\(|x+1|=x+1\\). The sum is \\((1-x)+(x+1)=2\\), so the inequality holds with equality. The value \\(2x\\) arises in the case \\(x>1\\), where both expressions inside the absolute values are positive.",
+      "hint": "Determine the sign of each expression inside an absolute value on this interval."
+    }
+  ]
+}

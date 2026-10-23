@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-354",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 354",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-354-q001",
+      "category": "Combinatorics",
+      "concept": "Permutations with a forbidden position",
+      "learningObjective": "Count arrangements of distinct objects when one object cannot occupy a specified position.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many ways can \\(5\\) distinct books be arranged on a shelf if one particular book cannot be placed first?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(96\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Without any restriction, the \\(5\\) distinct books can be arranged in \\(5! = 120\\) ways. If the particular book is placed first, the remaining \\(4\\) books can be arranged in \\(4! = 24\\) ways. Therefore, the number of valid arrangements is \\(120 - 24 = 96\\).",
+      "hint": "Count all possible arrangements first, then subtract the arrangements that violate the restriction."
+    },
+    {
+      "id": "math-gaokao-354-q002",
+      "category": "Combinatorics",
+      "concept": "Permutations with non-adjacency restriction",
+      "learningObjective": "Count linear arrangements of distinct people when two particular people are not adjacent.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "In how many ways can \\(5\\) distinct students be seated in a row if two particular students, Alice and Bob, are not adjacent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(48\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(72\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total number of arrangements of \\(5\\) distinct students is \\(5! = 120\\). To count arrangements where Alice and Bob are adjacent, treat them as one block. The block and the other \\(3\\) students give \\(4\\) objects, which can be arranged in \\(4!\\) ways, and Alice and Bob can be ordered in \\(2!\\) ways. Thus there are \\(4! \\cdot 2! = 24 \\cdot 2 = 48\\) adjacent arrangements. Therefore, the number of arrangements where they are not adjacent is \\(120 - 48 = 72\\).",
+      "hint": "Subtract the arrangements in which the two particular students form one block from the total arrangements."
+    },
+    {
+      "id": "math-gaokao-354-q003",
+      "category": "Combinatorics",
+      "concept": "Relative order restriction in permutations",
+      "learningObjective": "Count permutations where one specified item must appear before another specified item.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Six distinct runners finish a race. In how many possible finishing orders does runner A finish before runner B?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(360\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(720\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(6! = 720\\) total finishing orders. By symmetry, in exactly half of these orders runner A finishes before runner B, and in the other half runner B finishes before runner A. Hence the required number is \\(\\frac{720}{2} = 360\\).",
+      "hint": "Use symmetry: for any arrangement, exactly one of the two possible relative orders of the two runners occurs."
+    },
+    {
+      "id": "math-gaokao-354-q004",
+      "category": "Combinatorics",
+      "concept": "Block method for consecutive objects",
+      "learningObjective": "Count arrangements when three specified objects must remain together as a block.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In how many ways can \\(7\\) distinct people stand in a row if three particular people must stand together as a block?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(720\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1440\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Treat the three particular people as one block. Then the block and the remaining \\(4\\) people form \\(5\\) objects, which can be arranged in \\(5! = 120\\) ways. Inside the block, the three particular people can be arranged in \\(3! = 6\\) ways. Therefore, the total number of arrangements is \\(120 \\cdot 6 = 720\\).",
+      "hint": "Temporarily combine the three particular people into one object, then arrange the objects and finally arrange inside the block."
+    },
+    {
+      "id": "math-gaokao-354-q005",
+      "category": "Combinatorics",
+      "concept": "Gap method for non-adjacency",
+      "learningObjective": "Count arrangements of two groups when members of one group cannot be adjacent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Four distinct boys and three distinct girls are arranged in a row so that no two girls are adjacent. How many arrangements are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(720\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1440\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First arrange the \\(4\\) distinct boys: \\(4! = 24\\) ways. This creates \\(5\\) gaps around and between the boys:\n\\[\n\\_\\, B\\, \\_\\, B\\, \\_\\, B\\, \\_\\, B\\, \\_\n\\]\nTo prevent girls from being adjacent, choose \\(3\\) of these \\(5\\) gaps for the girls and arrange the \\(3\\) distinct girls in them. This can be done in \\(\\binom{5}{3} \\cdot 3! = 10 \\cdot 6 = 60\\) ways. Therefore, the total number of arrangements is \\(24 \\cdot 60 = 1440\\).",
+      "hint": "Arrange the boys first, then choose separate gaps for the girls, including the gaps before the first boy and after the last boy."
+    },
+    {
+      "id": "math-gaokao-354-q006",
+      "category": "Combinatorics",
+      "concept": "Multiple block restrictions",
+      "learningObjective": "Count shelf arrangements when books of each subject must remain together.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In how many ways can \\(5\\) distinct mathematics books and \\(3\\) distinct physics books be arranged on a shelf if all mathematics books must be together and all physics books must be together?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(720\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1440\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Treat the mathematics books as one block and the physics books as another block. The two blocks can be arranged in \\(2! = 2\\) ways. Inside the mathematics block, the \\(5\\) distinct books can be arranged in \\(5! = 120\\) ways. Inside the physics block, the \\(3\\) distinct books can be arranged in \\(3! = 6\\) ways. Thus the total number of arrangements is \\(2 \\cdot 120 \\cdot 6 = 1440\\).",
+      "hint": "Group each subject into a block, arrange the blocks, and then arrange the books within each block."
+    },
+    {
+      "id": "math-gaokao-354-q007",
+      "category": "Combinatorics",
+      "concept": "Restricted digit arrangements",
+      "learningObjective": "Count even four-digit numbers formed without repetition under an even-units restriction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many \\(4\\)-digit even numbers can be formed using the digits \\(1,2,3,4,5\\) without repetition?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(48\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a number to be even, its units digit must be even. From the available digits, the units digit can be \\(2\\) or \\(4\\), giving \\(2\\) choices. After choosing the units digit, \\(4\\) digits remain. The first three positions can be filled by arranging \\(3\\) of these \\(4\\) remaining digits, which gives \\(\\mathrm{P}(4,3) = 4 \\cdot 3 \\cdot 2 = 24\\) choices. Therefore, the total number of valid numbers is \\(2 \\cdot 24 = 48\\).",
+      "hint": "Choose the units digit first because it controls whether the number is even."
+    },
+    {
+      "id": "math-gaokao-354-q008",
+      "category": "Combinatorics",
+      "concept": "Arrangements with repeated letters and non-adjacency",
+      "learningObjective": "Count distinct letter arrangements of a word when identical letters cannot be adjacent.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How many distinct arrangements of the letters of the word SUCCESS have no two S's adjacent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The word SUCCESS has \\(3\\) S's and \\(4\\) non-S letters: U, C, C, E. First arrange the non-S letters. Since C appears twice, the number of distinct arrangements is \\(\\frac{4!}{2!} = 12\\). These \\(4\\) letters create \\(5\\) gaps:\n\\[\n\\_\\, X\\, \\_\\, X\\, \\_\\, X\\, \\_\\, X\\, \\_\n\\]\nTo keep the S's non-adjacent, choose \\(3\\) of these \\(5\\) gaps for the identical S's, which can be done in \\(\\binom{5}{3} = 10\\) ways. Hence the total number of valid arrangements is \\(12 \\cdot 10 = 120\\).",
+      "hint": "Arrange the non-S letters first, then place the S's into gaps so that no two S's are adjacent."
+    },
+    {
+      "id": "math-gaokao-354-q009",
+      "category": "Combinatorics",
+      "concept": "Circular arrangements with alternating genders",
+      "learningObjective": "Count circular seating arrangements of two groups under an alternating restriction.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Five distinct men and five distinct women sit around a circular table, alternating genders. How many distinct seating arrangements are possible if rotations are considered the same?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2880\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(14400\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Arrange the \\(5\\) distinct men around the circular table first. Since rotations are considered the same, the number of circular arrangements of the men is \\((5-1)! = 4! = 24\\). These men create \\(5\\) gaps between them. To alternate genders, place the \\(5\\) distinct women into these \\(5\\) gaps, which can be done in \\(5! = 120\\) ways. Therefore, the total number of seating arrangements is \\(24 \\cdot 120 = 2880\\).",
+      "hint": "Fix the circular order of one gender first, then place the other gender in the gaps."
+    },
+    {
+      "id": "math-gaokao-354-q010",
+      "category": "Combinatorics",
+      "concept": "Inclusion-exclusion for forbidden positions",
+      "learningObjective": "Count permutations when two specified elements are forbidden from two specified positions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many permutations of the digits \\(1,2,3,4,5,6\\) are there in which \\(1\\) is not in the first position and \\(2\\) is not in the second position?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(480\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(504\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(6! = 720\\) total permutations. Let \\(E_1\\) be the set of permutations with \\(1\\) in the first position, and \\(E_2\\) the set with \\(2\\) in the second position. We have \\(|E_1| = 5! = 120\\) and \\(|E_2| = 5! = 120\\). Also \\(|E_1 \\cap E_2| = 4! = 24\\), since after placing \\(1\\) first and \\(2\\) second, the remaining \\(4\\) digits can be arranged freely. By inclusion-exclusion, the number of permutations with at least one forbidden placement is \\(120 + 120 - 24 = 216\\). Therefore, the number with neither forbidden placement is \\(720 - 216 = 504\\).",
+      "hint": "Use inclusion-exclusion: subtract permutations with at least one forbidden placement, then add back the overlap."
+    }
+  ]
+}

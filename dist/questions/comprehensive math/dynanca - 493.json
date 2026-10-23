@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-493",
+  "category": "Comprehensive Mathematics",
+  "title": "493. Sets, Logic, Reasoning & Proof: Tautologies and Contradictions",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-493-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of a tautology",
+      "learningObjective": "State what it means for a compound proposition to be a tautology.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is a tautology?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A compound proposition that is true for at least one assignment of truth values to its variables"
+        },
+        {
+          "label": "B",
+          "text": "A compound proposition that is true for every assignment of truth values to its variables"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A tautology is true in every row of its truth table. A proposition that is true in at least one row is called satisfiable; it may still be false in other rows, so it need not be a tautology.",
+      "hint": "A tautology has no row with the value false."
+    },
+    {
+      "id": "dynanca-493-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Law of the excluded middle",
+      "learningObjective": "Classify the disjunction of a proposition and its negation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How is the proposition \\(p\\lor\\neg p\\) classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is a tautology."
+        },
+        {
+          "label": "B",
+          "text": "It is a contradiction."
+        }
+      ],
+      "answer": "A",
+      "explanation": "If \\(p\\) is true, the first part is true; if \\(p\\) is false, then \\(\\neg p\\) is true. In both cases the disjunction is true, so it is a tautology. A contradiction would be false in both cases.",
+      "hint": "Evaluate the proposition for \\(p\\) true and for \\(p\\) false."
+    },
+    {
+      "id": "dynanca-493-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A basic contradiction",
+      "learningObjective": "Classify the conjunction of a proposition and its negation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How is the proposition \\(p\\land\\neg p\\) classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is a contradiction."
+        },
+        {
+          "label": "B",
+          "text": "It is a tautology."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A conjunction needs both parts true, but \\(p\\) and \\(\\neg p\\) always have opposite truth values, so they are never both true. The proposition is false in every row, which makes it a contradiction.",
+      "hint": "Ask whether \\(p\\) and \\(\\neg p\\) can be true at the same time."
+    },
+    {
+      "id": "dynanca-493-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Recognising a tautology among conditionals",
+      "learningObjective": "Decide which of two conditionals is a tautology.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which proposition is a tautology?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\implies(p\\land q)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((p\\land q)\\implies p\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If \\(p\\land q\\) is true, then in particular \\(p\\) is true, so \\((p\\land q)\\implies p\\) can never have a true hypothesis and a false conclusion; it is a tautology. The other conditional fails when \\(p\\) is true and \\(q\\) is false: the hypothesis is true but \\(p\\land q\\) is false.",
+      "hint": "Look for an assignment that makes the hypothesis true and the conclusion false."
+    },
+    {
+      "id": "dynanca-493-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A proposition that is neither",
+      "learningObjective": "Classify a proposition that is true in some rows and false in others.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "How is the proposition \\(p\\lor q\\) classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is a tautology."
+        },
+        {
+          "label": "B",
+          "text": "It is neither a tautology nor a contradiction."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The disjunction \\(p\\lor q\\) is true in three rows and false in the row where \\(p\\) and \\(q\\) are both false. Since it is not true in every row, it is not a tautology; since it is not false in every row, it is not a contradiction. Such a proposition is called a contingency.",
+      "hint": "Check whether there is a row with the value false and a row with the value true."
+    },
+    {
+      "id": "dynanca-493-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Recognising a contradiction",
+      "learningObjective": "Decide which of two conjunctions is a contradiction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which proposition is a contradiction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((p\\lor q)\\land\\neg p\\land\\neg q\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((p\\lor q)\\land\\neg p\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The conditions \\(\\neg p\\) and \\(\\neg q\\) require both variables to be false, but then \\(p\\lor q\\) is false. So the first proposition is false in every row. The second proposition is true when \\(p\\) is false and \\(q\\) is true, so it is not a contradiction.",
+      "hint": "Try to find an assignment that makes all parts of the conjunction true."
+    },
+    {
+      "id": "dynanca-493-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negation of a tautology",
+      "learningObjective": "Classify the negation of a tautology.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The proposition \\(A\\) is a tautology. How is \\(\\neg A\\) classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is a tautology."
+        },
+        {
+          "label": "B",
+          "text": "It is a contradiction."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A tautology is true in every row. Negation reverses the truth value in each row, so \\(\\neg A\\) is false in every row, which is the definition of a contradiction.",
+      "hint": "Negation changes every entry of the truth table column."
+    },
+    {
+      "id": "dynanca-493-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Classifying a conditional with a disjunctive conclusion",
+      "learningObjective": "Classify a conditional whose conclusion contains its hypothesis.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How is the proposition \\(p\\implies(p\\lor q)\\) classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is a contradiction."
+        },
+        {
+          "label": "B",
+          "text": "It is a tautology."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The conditional could be false only if \\(p\\) were true and \\(p\\lor q\\) were false. But when \\(p\\) is true, \\(p\\lor q\\) is true. So no row makes the conditional false, and it is a tautology.",
+      "hint": "Ask whether the hypothesis can be true while the conclusion is false."
+    },
+    {
+      "id": "dynanca-493-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Tautology behind a valid argument form",
+      "learningObjective": "Decide which conditional built from an argument form is a tautology.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Which proposition built from the conditional \\(p\\implies q\\) is a tautology?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left((p\\implies q)\\land q\\right)\\implies p\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\left((p\\implies q)\\land p\\right)\\implies q\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In the first proposition, if \\(p\\implies q\\) and \\(p\\) are both true, then \\(q\\) must be true, so the conditional is never false. The second proposition fails when \\(p\\) is false and \\(q\\) is true: then \\(p\\implies q\\) and \\(q\\) are true, but the conclusion \\(p\\) is false.",
+      "hint": "For each candidate, try the assignment with \\(p\\) false and \\(q\\) true."
+    },
+    {
+      "id": "dynanca-493-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A disjunction of a conditional and its converse",
+      "learningObjective": "Classify the disjunction of a conditional with its converse.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How is the proposition \\((p\\implies q)\\lor(q\\implies p)\\) classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is false whenever \\(p\\) and \\(q\\) have different truth values."
+        },
+        {
+          "label": "B",
+          "text": "It is a tautology."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The conditional \\(p\\implies q\\) is false only for \\((T,F)\\), and \\(q\\implies p\\) is false only for \\((F,T)\\). These are different rows, so in every row at least one of the two conditionals is true. The disjunction is therefore true in all four rows.",
+      "hint": "Find the single false row of each conditional and check whether they coincide."
+    }
+  ]
+}

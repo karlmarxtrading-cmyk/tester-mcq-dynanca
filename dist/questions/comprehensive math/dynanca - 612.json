@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-612",
+  "category": "Comprehensive Mathematics",
+  "title": "612. Discrete Mathematics, Counting & Graph Theory: Generating Functions for Elementary Counting Problems",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-612-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Take it or leave it",
+      "learningObjective": "Choose the generating function for selecting from distinct objects.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Each of \\(3\\) different objects is either taken or not taken. Which generating function counts the selections according to the number of objects taken?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1+x)^3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1+x^3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each object contributes a factor \\(1+x\\): the term \\(1\\) for leaving it and the term \\(x\\) for taking it. Multiplying the three factors gives \\((1+x)^3\\), in which the coefficient of \\(x^k\\) counts the selections of \\(k\\) objects. The polynomial \\(1+x^3\\) allows only taking nothing or taking everything.",
+      "hint": "Write one factor for each object."
+    },
+    {
+      "id": "dynanca-612-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Reading the count",
+      "learningObjective": "Interpret a coefficient as a number of selections.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The generating function for selecting objects from \\(3\\) different objects is \\((1+x)^3=1+3x+3x^2+x^3\\). How many selections contain exactly \\(2\\) objects?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number of selections of \\(2\\) objects is the coefficient of \\(x^2\\), which is \\(3\\). Indeed, from objects \\(a,b,c\\) the selections are \\(\\{a,b\\}\\), \\(\\{a,c\\}\\), and \\(\\{b,c\\}\\). The exponent \\(2\\) is the size of the selection, not the count.",
+      "hint": "The exponent records the size; the coefficient records how many."
+    },
+    {
+      "id": "dynanca-612-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two dice",
+      "learningObjective": "Use a generating function to count the ways of rolling a total.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The generating function for the number shown by one die is \\(x+x^2+x^3+x^4+x^5+x^6\\). In the square of this polynomial, the coefficient of \\(x^5\\) counts the ways in which two distinguishable dice show a total of \\(5\\). What is it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The coefficient counts the pairs \\((i,j)\\) with \\(i+j=5\\) and \\(1\\le i,j\\le 6\\): \\((1,4)\\), \\((2,3)\\), \\((3,2)\\), \\((4,1)\\). There are \\(4\\). Each die shows at least \\(1\\), so pairs involving \\(0\\) do not occur.",
+      "hint": "List the ordered pairs of faces that add up to \\(5\\)."
+    },
+    {
+      "id": "dynanca-612-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Coins of two values",
+      "learningObjective": "Use a generating function to count ways of paying an amount.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The number of ways to pay an amount \\(n\\) with coins of values \\(1\\) and \\(2\\), where the order of the coins does not matter, is the coefficient of \\(x^n\\) in \\(\\dfrac{1}{(1-x)(1-x^2)}\\). What is this coefficient for \\(n=6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A payment is determined by the number of coins of value \\(2\\), which can be \\(0\\), \\(1\\), \\(2\\), or \\(3\\); the rest is paid with coins of value \\(1\\). So there are \\(4\\) ways. The count \\(3\\) leaves out the payment that uses no coin of value \\(2\\).",
+      "hint": "Decide how many coins of value \\(2\\) are used; the rest is forced."
+    },
+    {
+      "id": "dynanca-612-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Limited supplies",
+      "learningObjective": "Use a generating function with bounded factors.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A box contains \\(2\\) identical red balls and \\(3\\) identical blue balls. The number of ways to choose \\(3\\) balls is the coefficient of \\(x^3\\) in \\((1+x+x^2)(1+x+x^2+x^3)\\). What is this coefficient?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A choice is described by the numbers \\(r\\) of red and \\(b\\) of blue balls with \\(r+b=3\\), \\(0\\le r\\le 2\\), and \\(0\\le b\\le 3\\). The possibilities are \\((0,3)\\), \\((1,2)\\), and \\((2,1)\\), so the coefficient is \\(3\\). The pair \\((3,0)\\) is excluded, because only \\(2\\) red balls are available.",
+      "hint": "The first factor stops at \\(x^2\\) because there are only two red balls."
+    },
+    {
+      "id": "dynanca-612-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Setting up the factors",
+      "learningObjective": "Choose the generating function for a selection with two bounded kinds.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A basket is filled with between \\(0\\) and \\(4\\) identical apples and between \\(0\\) and \\(2\\) identical pears. Which generating function counts the baskets according to the total number of fruits?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1+x+x^2+x^3+x^4)(1+x+x^2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1+x)^4(1+x)^2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For identical fruits of one kind, only the number taken matters, so the apples contribute one term for each possible number from \\(0\\) to \\(4\\), and the pears one term for each number from \\(0\\) to \\(2\\). The product \\((1+x)^4(1+x)^2\\) would be right for \\(4\\) different apples and \\(2\\) different pears, each taken or not.",
+      "hint": "Identical objects of one kind are described by a single number."
+    },
+    {
+      "id": "dynanca-612-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Why the factors are multiplied",
+      "learningObjective": "Explain why independent choices correspond to a product of generating functions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Why are the generating functions of two independent choices multiplied?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The numbers of objects chosen in the two choices are multiplied."
+        },
+        {
+          "label": "B",
+          "text": "In a product the exponents add, just as the numbers of objects add, and the coefficients count the combined possibilities."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A term \\(x^i\\) from the first factor and a term \\(x^j\\) from the second multiply to \\(x^{i+j}\\), which records a combined selection of \\(i+j\\) objects. Collecting all such products with the same total exponent counts all ways to split that total between the two choices. The sizes of the selections are added, not multiplied.",
+      "hint": "Recall the rule for multiplying two powers of \\(x\\)."
+    },
+    {
+      "id": "dynanca-612-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Three bounded unknowns",
+      "learningObjective": "Count solutions of an equation with bounded unknowns by a generating function.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "The number of triples \\((a,b,c)\\) with \\(a+b+c=4\\) and each of \\(a,b,c\\) equal to \\(0\\), \\(1\\), or \\(2\\) is the coefficient of \\(x^4\\) in \\((1+x+x^2)^3\\). What is it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The triples are the arrangements of \\(2,2,0\\), of which there are \\(3\\), and the arrangements of \\(2,1,1\\), of which there are \\(3\\). So the coefficient is \\(6\\). The value \\(15\\) counts the solutions in nonnegative integers without the upper limit \\(2\\).",
+      "hint": "List the possible multisets of values first, then count their arrangements."
+    },
+    {
+      "id": "dynanca-612-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An even number of one kind",
+      "learningObjective": "Count selections in which one kind must appear an even number of times.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Fruit is chosen from apples and pears, with identical fruits of each kind, and the number of apples must be even. The number of ways to choose \\(n\\) fruits is the coefficient of \\(x^n\\) in \\(\\dfrac{1}{(1-x^2)(1-x)}\\). What is it for \\(n=4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number of apples can be \\(0\\), \\(2\\), or \\(4\\), and the pears make up the rest, so there are \\(3\\) selections. The value \\(5\\) counts all selections of \\(4\\) fruits without the parity condition, with \\(0\\) to \\(4\\) apples.",
+      "hint": "List the allowed numbers of apples."
+    },
+    {
+      "id": "dynanca-612-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Ordered sums",
+      "learningObjective": "Count ordered sums with restricted parts by a generating function.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The number of ways to write \\(n\\) as an ordered sum of parts equal to \\(1\\) or \\(3\\) is the coefficient of \\(x^n\\) in \\(\\dfrac{1}{1-x-x^3}\\). What is it for \\(n=6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(w_n\\) be the number of ordered sums. The last part is \\(1\\) or \\(3\\), so \\(w_n=w_{n-1}+w_{n-3}\\), with \\(w_0=w_1=w_2=1\\). Then \\(w_3=2\\), \\(w_4=3\\), \\(w_5=4\\), and \\(w_6=6\\). The value \\(3\\) counts the sums without regard to order: six parts \\(1\\); one part \\(3\\) with three parts \\(1\\); and two parts \\(3\\).",
+      "hint": "Condition on the last part to obtain a recurrence."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-529",
+  "category": "Comprehensive Mathematics",
+  "title": "529. Sets, Logic, Reasoning & Proof: Equivalence Relations",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-529-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of an equivalence relation",
+      "learningObjective": "State the three properties of an equivalence relation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which three properties define an equivalence relation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reflexive, antisymmetric, and transitive"
+        },
+        {
+          "label": "B",
+          "text": "Reflexive, symmetric, and transitive"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An equivalence relation is reflexive, symmetric, and transitive. A relation that is reflexive, antisymmetric, and transitive is a partial order, which is a different kind of relation.",
+      "hint": "An equivalence relation behaves like \"is the same as\" in some respect."
+    },
+    {
+      "id": "dynanca-529-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Equality as an equivalence relation",
+      "learningObjective": "Recognise equality as the basic example of an equivalence relation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Is the relation \\(=\\) on the integers an equivalence relation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; it relates each integer only to itself."
+        },
+        {
+          "label": "B",
+          "text": "Yes; it is reflexive, symmetric, and transitive."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Equality is reflexive (\\(a=a\\)), symmetric (if \\(a=b\\), then \\(b=a\\)), and transitive (if \\(a=b\\) and \\(b=c\\), then \\(a=c\\)). That each integer is related only to itself does not matter; the three properties are all that is required.",
+      "hint": "Check the three defining properties one by one."
+    },
+    {
+      "id": "dynanca-529-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The usual order is not an equivalence relation",
+      "learningObjective": "Identify the property that the relation less than or equal to lacks.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Is the relation \\(\\le\\) on the integers an equivalence relation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; it is reflexive and transitive."
+        },
+        {
+          "label": "B",
+          "text": "No; it is not symmetric, since \\(1\\le 2\\) but not \\(2\\le 1\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The relation \\(\\le\\) is reflexive and transitive, but an equivalence relation must also be symmetric. Since \\(1\\le 2\\) holds and \\(2\\le 1\\) does not, symmetry fails.",
+      "hint": "All three properties are required; check symmetry."
+    },
+    {
+      "id": "dynanca-529-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Congruence modulo three",
+      "learningObjective": "Recognise congruence modulo an integer as an equivalence relation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "On the integers, let \\(a\\) be related to \\(b\\) when \\(a-b\\) is divisible by \\(3\\). Is this an equivalence relation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; it is reflexive, symmetric, and transitive."
+        },
+        {
+          "label": "B",
+          "text": "No; it is not transitive."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reflexive: \\(a-a=0\\) is divisible by \\(3\\). Symmetric: if \\(3\\mid(a-b)\\), then \\(3\\mid(b-a)\\). Transitive: if \\(3\\mid(a-b)\\) and \\(3\\mid(b-c)\\), then \\(3\\) divides their sum \\(a-c\\). So the relation, congruence modulo \\(3\\), is an equivalence relation.",
+      "hint": "For transitivity, add the two differences \\(a-b\\) and \\(b-c\\)."
+    },
+    {
+      "id": "dynanca-529-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Checking a listed relation",
+      "learningObjective": "Verify the three properties for a relation given by a list of pairs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Is \\(R=\\{(1,1),(2,2),(3,3),(1,2),(2,1)\\}\\) an equivalence relation on \\(\\{1,2,3\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the element \\(3\\) is not related to \\(1\\) or \\(2\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; it is reflexive, symmetric, and transitive."
+        }
+      ],
+      "answer": "B",
+      "explanation": "All pairs \\((a,a)\\) are present, so \\(R\\) is reflexive. The pair \\((1,2)\\) is matched by \\((2,1)\\), so \\(R\\) is symmetric. Every chain, such as \\((1,2),(2,1)\\) giving \\((1,1)\\), has its direct pair, so \\(R\\) is transitive. An equivalence relation need not relate every element to every other; here \\(3\\) forms a class by itself.",
+      "hint": "Check reflexivity, symmetry, and transitivity separately."
+    },
+    {
+      "id": "dynanca-529-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A relation that fails transitivity",
+      "learningObjective": "Identify the property that a listed relation lacks.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Is \\(R=\\{(1,1),(2,2),(3,3),(1,2),(2,1),(2,3),(3,2)\\}\\) an equivalence relation on \\(\\{1,2,3\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; \\(R\\) is reflexive and symmetric."
+        },
+        {
+          "label": "B",
+          "text": "No; \\((1,2)\\) and \\((2,3)\\) are in \\(R\\), but \\((1,3)\\) is not, so \\(R\\) is not transitive."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The relation is reflexive and symmetric, but transitivity fails: the chain \\((1,2)\\), \\((2,3)\\) requires \\((1,3)\\), which is missing. All three properties are needed for an equivalence relation.",
+      "hint": "Look for a chain of two pairs whose direct pair is absent."
+    },
+    {
+      "id": "dynanca-529-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Having the same number of elements",
+      "learningObjective": "Recognise an equivalence relation defined by a shared property.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "On the collection of all finite sets, let \\(A\\) be related to \\(B\\) when \\(|A|=|B|\\). Is this an equivalence relation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; different sets can have the same number of elements."
+        },
+        {
+          "label": "B",
+          "text": "Yes; it is defined by equality of a quantity, so it is reflexive, symmetric, and transitive."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(|A|=|A|\\), the relation is reflexive; if \\(|A|=|B|\\) then \\(|B|=|A|\\), so it is symmetric; and if \\(|A|=|B|\\) and \\(|B|=|C|\\) then \\(|A|=|C|\\), so it is transitive. Any relation of the form \"has the same value of some quantity\" is an equivalence relation. That different sets are related is exactly what makes the relation interesting, not a defect.",
+      "hint": "The relation inherits its properties from the equality of the two cardinalities."
+    },
+    {
+      "id": "dynanca-529-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A relation defined by an odd difference",
+      "learningObjective": "Identify the property that a relation defined by an odd difference lacks.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "On the integers, let \\(a\\) be related to \\(b\\) when \\(a-b\\) is odd. Is this an equivalence relation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; it is symmetric, because \\(b-a\\) is odd whenever \\(a-b\\) is odd."
+        },
+        {
+          "label": "B",
+          "text": "No; it is not reflexive, because \\(a-a=0\\) is even."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Reflexivity would require \\(a-a=0\\) to be odd, which is false. So no integer is related to itself and the relation is not an equivalence relation. It is symmetric, but symmetry alone is not sufficient. (It is also not transitive: \\(1-2\\) and \\(2-3\\) are odd, but \\(1-3\\) is even.)",
+      "hint": "Check reflexivity first by computing \\(a-a\\)."
+    },
+    {
+      "id": "dynanca-529-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A relation defined by a positive product",
+      "learningObjective": "Decide whether a relation defined by a positive product is an equivalence relation on all real numbers.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "On the set of all real numbers, let \\(x\\) be related to \\(y\\) when \\(xy>0\\). Is this an equivalence relation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; it relates exactly the numbers that have the same sign."
+        },
+        {
+          "label": "B",
+          "text": "No; \\(0\\) is not related to itself, since \\(0\\cdot 0=0\\) is not positive."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Reflexivity requires \\(x\\cdot x>0\\) for every real \\(x\\). For \\(x=0\\) this fails, so the relation is not reflexive on \\(\\mathbb{R}\\). On the set of non-zero real numbers the same rule does give an equivalence relation, with the positive numbers and the negative numbers as its two classes.",
+      "hint": "Test reflexivity for every real number, including \\(0\\)."
+    },
+    {
+      "id": "dynanca-529-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting equivalence relations",
+      "learningObjective": "Count the equivalence relations on a three-element set.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many different equivalence relations are there on the set \\(\\{1,2,3\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each equivalence relation corresponds to a partition of the set into classes. The partitions of \\(\\{1,2,3\\}\\) are: three single elements; one pair and one single element (\\(3\\) ways, according to which element is alone); and all three together. That is \\(1+3+1=5\\). The number \\(8=2^3\\) counts subsets, not partitions.",
+      "hint": "Count the ways to split the set into non-empty classes."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-450",
+  "category": "Comprehensive Mathematics",
+  "title": "450. Trigonometry & Periodic Models: Modeling Seasonal Cycles with Sine Functions",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-450-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Angular coefficient for a yearly cycle",
+      "learningObjective": "Find the coefficient of time in a sine model with a period of twelve months.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A quantity repeats every \\(12\\) months and is modelled by \\(y=A\\sin(Bt)+D\\), where \\(t\\) is in months and \\(B>0\\). What is \\(B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(B=\\frac{\\pi}{12}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(B=\\frac{\\pi}{6}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The period is \\(\\frac{2\\pi}{B}=12\\), so \\(B=\\frac{2\\pi}{12}=\\frac{\\pi}{6}\\). The value \\(\\frac{\\pi}{12}\\) would give a period of \\(24\\) months.",
+      "hint": "Solve \\(\\frac{2\\pi}{B}=12\\) for \\(B\\)."
+    },
+    {
+      "id": "dynanca-450-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Amplitude and midline of a temperature cycle",
+      "learningObjective": "Find amplitude and midline from the highest and lowest monthly averages.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The average monthly temperature in a city varies between a low of \\(5^\\circ\\text{C}\\) and a high of \\(25^\\circ\\text{C}\\) over a year. In a sine model \\(T=A\\sin(Bt)+D\\) with \\(A>0\\), what are \\(A\\) and \\(D\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A=20\\) and \\(D=15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A=10\\) and \\(D=15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The amplitude is half the difference of the extremes: \\(A=\\frac{25-5}{2}=10\\). The midline is their average: \\(D=\\frac{25+5}{2}=15\\). The value \\(20\\) is the full difference between the high and the low, which is twice the amplitude.",
+      "hint": "The amplitude is half the range between the highest and lowest values."
+    },
+    {
+      "id": "dynanca-450-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Evaluating a seasonal model",
+      "learningObjective": "Evaluate a sine model of temperature at a given month.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The average temperature in a town is modelled by \\(T(t)=10\\sin\\left(\\frac{\\pi t}{6}\\right)+15\\), in degrees Celsius, where \\(t\\) is the number of months after the start of the model. What is \\(T(3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15^\\circ\\text{C}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(25^\\circ\\text{C}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(t=3\\): \\(\\frac{\\pi\\cdot 3}{6}=\\frac{\\pi}{2}\\), and \\(\\sin\\frac{\\pi}{2}=1\\). So \\(T(3)=10\\cdot 1+15=25^\\circ\\text{C}\\), which is the maximum of the model. The value \\(15^\\circ\\text{C}\\) is the midline, attained at \\(t=0\\) and \\(t=6\\).",
+      "hint": "Simplify the argument of the sine first, then evaluate."
+    },
+    {
+      "id": "dynanca-450-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Longest day in a daylight model",
+      "learningObjective": "Find the maximum value of a sinusoidal model of daylight hours.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "The number of hours of daylight on day \\(t\\) of the year in a certain town is modelled by \\(D(t)=12+3\\sin\\left(\\frac{2\\pi(t-80)}{365}\\right)\\). According to the model, how many hours of daylight does the longest day have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\text{ h}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\text{ h}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sine has maximum value \\(1\\), so the maximum of the model is \\(12+3\\cdot 1=15\\text{ h}\\). The value \\(12\\text{ h}\\) is the midline, the average amount of daylight over the year.",
+      "hint": "Replace the sine by its largest possible value."
+    },
+    {
+      "id": "dynanca-450-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Day of the longest daylight",
+      "learningObjective": "Solve for the time at which a sinusoidal model reaches its maximum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In the model \\(D(t)=12+3\\sin\\left(\\frac{2\\pi(t-80)}{365}\\right)\\), where \\(t\\) is the day of the year, on about which day does the maximum first occur?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Day \\(171\\)"
+        },
+        {
+          "label": "B",
+          "text": "Day \\(80\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The maximum occurs when the argument equals \\(\\frac{\\pi}{2}\\): \\(\\frac{2\\pi(t-80)}{365}=\\frac{\\pi}{2}\\), so \\(t-80=\\frac{365}{4}=91.25\\) and \\(t\\approx 171\\). On day \\(80\\) the argument is \\(0\\), so the model is on its midline, rising; that is not the maximum.",
+      "hint": "Set the argument of the sine equal to \\(\\frac{\\pi}{2}\\) and solve for \\(t\\)."
+    },
+    {
+      "id": "dynanca-450-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Coldest month in a temperature model",
+      "learningObjective": "Find when a sine model of temperature reaches its minimum within one year.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The temperature model \\(T(t)=10\\sin\\left(\\frac{\\pi t}{6}\\right)+15\\) has \\(t\\) in months with \\(0\\le t<12\\). At which value of \\(t\\) is the temperature lowest?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(t=6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(t=9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The minimum occurs when the sine equals \\(-1\\): \\(\\frac{\\pi t}{6}=\\frac{3\\pi}{2}\\), so \\(t=9\\), where \\(T=10\\cdot(-1)+15=5\\). At \\(t=6\\) the argument is \\(\\pi\\) and the sine is \\(0\\), so the temperature is at the midline value \\(15\\), not at its minimum.",
+      "hint": "The sine is smallest when its argument is \\(\\frac{3\\pi}{2}\\)."
+    },
+    {
+      "id": "dynanca-450-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Building a model from a peak month",
+      "learningObjective": "Choose a cosine model whose maximum occurs at a specified month.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A town has average temperature \\(18^\\circ\\text{C}\\) over the year, with a variation of \\(8^\\circ\\text{C}\\) above and below this value, a period of \\(12\\) months, and its warmest month at \\(t=7\\). Which model fits these facts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(T(t)=8\\cos\\left(\\frac{\\pi(t-7)}{6}\\right)+18\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(T(t)=8\\sin\\left(\\frac{\\pi(t-7)}{6}\\right)+18\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A cosine has its maximum where its argument is \\(0\\). In \\(8\\cos\\left(\\frac{\\pi(t-7)}{6}\\right)+18\\), the argument is \\(0\\) at \\(t=7\\), giving the maximum \\(8+18=26\\). The sine version equals \\(18\\) at \\(t=7\\), the midline value, so its warmest month is three months later.",
+      "hint": "Evaluate each model at \\(t=7\\) and compare with the maximum value \\(26\\)."
+    },
+    {
+      "id": "dynanca-450-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Months with a given temperature",
+      "learningObjective": "Solve a sine model for the times at which a given value occurs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For the model \\(T(t)=10\\sin\\left(\\frac{\\pi t}{6}\\right)+15\\) with \\(0\\le t<12\\), at which values of \\(t\\) is \\(T=20\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(t=1\\) and \\(t=11\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(t=1\\) and \\(t=5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set \\(10\\sin\\left(\\frac{\\pi t}{6}\\right)+15=20\\), so \\(\\sin\\left(\\frac{\\pi t}{6}\\right)=\\frac{1}{2}\\). Then \\(\\frac{\\pi t}{6}=\\frac{\\pi}{6}\\) or \\(\\frac{5\\pi}{6}\\), giving \\(t=1\\) or \\(t=5\\). At \\(t=11\\) the argument is \\(\\frac{11\\pi}{6}\\), where the sine is \\(-\\frac{1}{2}\\) and \\(T=10\\).",
+      "hint": "Isolate the sine, then find both angles in one period with that sine."
+    },
+    {
+      "id": "dynanca-450-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Evaluating a sales model",
+      "learningObjective": "Evaluate a cosine model of seasonal sales at a month opposite the peak.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "Monthly sales of a product, in thousands of units, are modelled by \\(S(t)=40+25\\cos\\left(\\frac{\\pi(t-12)}{6}\\right)\\), where \\(t=1,2,\\ldots,12\\) is the month number. What does the model give for \\(t=6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(65\\) thousand units"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\) thousand units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(t=6\\): the argument is \\(\\frac{\\pi(6-12)}{6}=-\\pi\\), and \\(\\cos(-\\pi)=-1\\). So \\(S(6)=40+25\\cdot(-1)=15\\). The value \\(65\\) is the maximum of the model, which occurs at \\(t=12\\), where the argument is \\(0\\).",
+      "hint": "Compute the argument of the cosine carefully; it is negative here, and cosine is even."
+    },
+    {
+      "id": "dynanca-450-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Length of the warm season",
+      "learningObjective": "Find how long a sine model stays above a given level in one period.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For the model \\(T(t)=10\\sin\\left(\\frac{\\pi t}{6}\\right)+15\\) with \\(t\\) in months, for how long during one \\(12\\)-month period is \\(T>20\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\) months"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\) months"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The condition \\(T>20\\) means \\(\\sin\\left(\\frac{\\pi t}{6}\\right)>\\frac{1}{2}\\), which holds when \\(\\frac{\\pi}{6}<\\frac{\\pi t}{6}<\\frac{5\\pi}{6}\\), that is, \\(1<t<5\\). This interval has length \\(4\\) months. A length of \\(6\\) months is the time for which \\(T\\) is above the midline value \\(15\\), not above \\(20\\).",
+      "hint": "Solve the equation \\(T=20\\) first, then decide between which two solutions the model is above \\(20\\)."
+    }
+  ]
+}

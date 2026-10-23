@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-526",
+  "category": "Comprehensive Mathematics",
+  "title": "526. Sets, Logic, Reasoning & Proof: Symmetric Relations",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-526-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of a symmetric relation",
+      "learningObjective": "State the definition of a symmetric relation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "When is a relation \\(R\\) on a set \\(A\\) symmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When \\((a,a)\\in R\\) for every \\(a\\in A\\)"
+        },
+        {
+          "label": "B",
+          "text": "When \\((a,b)\\in R\\) implies \\((b,a)\\in R\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A relation is symmetric when, for every pair it contains, it also contains the reversed pair. The condition \"\\((a,a)\\in R\\) for every \\(a\\)\" defines a reflexive relation.",
+      "hint": "Symmetry concerns a pair and its reversal."
+    },
+    {
+      "id": "dynanca-526-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Recognising a symmetric relation",
+      "learningObjective": "Decide which relation on a small set is symmetric.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Which relation on \\(\\{1,2,3\\}\\) is symmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{(1,2),(2,1),(3,3)\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{(1,2),(2,3)\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In the first relation, \\((1,2)\\) is matched by \\((2,1)\\), and \\((3,3)\\) is its own reversal, so the relation is symmetric. The second relation contains \\((1,2)\\) but not \\((2,1)\\), so it is not symmetric.",
+      "hint": "For each pair, look for the pair with the components exchanged."
+    },
+    {
+      "id": "dynanca-526-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Symmetry of inequality",
+      "learningObjective": "Decide whether the relation not equal to is symmetric.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Is the relation \\(a\\ne b\\) on the integers symmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because \\(a\\ne b\\) implies \\(b\\ne a\\)."
+        },
+        {
+          "label": "B",
+          "text": "No, because \\(a\\ne a\\) is false."
+        }
+      ],
+      "answer": "A",
+      "explanation": "If \\(a\\) is different from \\(b\\), then \\(b\\) is different from \\(a\\), so the reversed pair is always in the relation and the relation is symmetric. The fact that \\(a\\ne a\\) is false shows that the relation is not reflexive, which is a separate property.",
+      "hint": "Symmetry and reflexivity are different properties; test only the condition for symmetry."
+    },
+    {
+      "id": "dynanca-526-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Symmetry of the non-strict order",
+      "learningObjective": "Decide whether the relation less than or equal to is symmetric.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Is the relation \\(\\le\\) on the integers symmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; \\(1\\le 2\\) holds, but \\(2\\le 1\\) does not."
+        },
+        {
+          "label": "B",
+          "text": "Yes; \\(a\\le a\\) holds for every integer \\(a\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Symmetry would require \\(b\\le a\\) whenever \\(a\\le b\\). The pair \\((1,2)\\) is in the relation, but \\((2,1)\\) is not, so the relation is not symmetric. The property \\(a\\le a\\) is reflexivity.",
+      "hint": "Find a pair in the relation whose reversal is not in the relation."
+    },
+    {
+      "id": "dynanca-526-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A relation defined by a sum",
+      "learningObjective": "Decide whether a relation defined by a symmetric expression is symmetric.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "On the integers, let \\(a\\) be related to \\(b\\) when \\(a+b\\) is even. Is this relation symmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because the sum of two integers is not always even."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because \\(a+b=b+a\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "If \\(a+b\\) is even, then \\(b+a\\) is the same number and is also even, so \\(b\\) is related to \\(a\\). The relation is symmetric. That some sums are odd only means that some pairs are not in the relation; it does not affect symmetry.",
+      "hint": "Compare the condition for \\((a,b)\\) with the condition for \\((b,a)\\)."
+    },
+    {
+      "id": "dynanca-526-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Making a relation symmetric",
+      "learningObjective": "Find the pair missing from an almost symmetric relation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which ordered pair must be added to \\(\\{(1,2),(2,3),(3,2)\\}\\) to make the relation symmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The pairs \\((2,3)\\) and \\((3,2)\\) are reversals of each other. The pair \\((1,2)\\) has no reversal in the relation, so \\((2,1)\\) must be added. The pair \\((1,3)\\) would be relevant for transitivity, not for symmetry.",
+      "hint": "Find the pair whose reversal is not yet present."
+    },
+    {
+      "id": "dynanca-526-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Symmetry of divisibility",
+      "learningObjective": "Decide whether divisibility on the positive integers is symmetric.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "On the positive integers, is the relation \"\\(a\\) divides \\(b\\)\" symmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; if \\(a\\) divides \\(b\\), then \\(b\\) is a multiple of \\(a\\)."
+        },
+        {
+          "label": "B",
+          "text": "No; \\(2\\) divides \\(4\\), but \\(4\\) does not divide \\(2\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Symmetry would require that \\(b\\) divides \\(a\\) whenever \\(a\\) divides \\(b\\). Since \\(2\\mid 4\\) but \\(4\\nmid 2\\), the relation is not symmetric. Saying that \\(b\\) is a multiple of \\(a\\) only restates \\(a\\mid b\\); it does not give \\(b\\mid a\\).",
+      "hint": "Test the pair \\((2,4)\\) and its reversal."
+    },
+    {
+      "id": "dynanca-526-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Symmetric closure",
+      "learningObjective": "Form the smallest symmetric relation containing a given relation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the smallest symmetric relation that contains \\(\\{(1,2),(1,3)\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{(1,2),(1,3),(2,3)\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{(1,2),(2,1),(1,3),(3,1)\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "To make the relation symmetric, add the reversal of every pair: \\((2,1)\\) and \\((3,1)\\). No other pairs are needed. The set with \\((2,3)\\) added is still not symmetric, because it lacks \\((2,1)\\), \\((3,1)\\), and \\((3,2)\\).",
+      "hint": "Add exactly the reversed pairs that are missing."
+    },
+    {
+      "id": "dynanca-526-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting symmetric relations",
+      "learningObjective": "Count the symmetric relations on a two-element set.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How many symmetric relations are there on the set \\(\\{1,2\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The pairs \\((1,1)\\) and \\((2,2)\\) can each be included or not. The pairs \\((1,2)\\) and \\((2,1)\\) must be included together or left out together, which is one further choice. So there are \\(2\\cdot 2\\cdot 2=8\\) symmetric relations. The number \\(16\\) counts all relations on the set.",
+      "hint": "Treat \\((1,2)\\) and \\((2,1)\\) as a single unit."
+    },
+    {
+      "id": "dynanca-526-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Symmetry of the empty relation",
+      "learningObjective": "Decide whether a relation with no pairs is symmetric.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Is the empty relation \\(R=\\varnothing\\) on the set \\(\\{1,2\\}\\) symmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; there is no pair \\((a,b)\\in R\\) for which the condition could fail."
+        },
+        {
+          "label": "B",
+          "text": "No; a symmetric relation must contain at least one pair and its reversal."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Symmetry is a conditional requirement: for every pair in \\(R\\), the reversed pair must be in \\(R\\). The empty relation contains no pairs, so no pair violates the requirement, and the relation is symmetric (the condition holds vacuously).",
+      "hint": "To show that a relation is not symmetric, a pair without its reversal is needed."
+    }
+  ]
+}

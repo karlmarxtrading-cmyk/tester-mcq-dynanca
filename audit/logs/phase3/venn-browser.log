@@ -1,0 +1,45 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> dynanca-mcq@1.1.0 test:browser
+> playwright test --config=tests/browser/playwright.config.js tests/browser/release-audit.spec.js --grep every shipped Venn --reporter=list
+
+
+Running 1 test using 1 worker
+
+(node:31) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › tests/browser/release-audit.spec.js:161:1 › every shipped Venn diagram fits its universe and has legible, separate labels at all four widths (769ms)
+
+
+  1) [chromium] › tests/browser/release-audit.spec.js:161:1 › every shipped Venn diagram fits its universe and has legible, separate labels at all four widths 
+
+    Error: questions-mathematics-discrete-mathematics-sets-q092
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+    [32m- Expected  - 1[39m
+    [31m+ Received  + 6[39m
+
+    [32m- Array [][39m
+    [31m+ Array [[39m
+    [31m+   Array [[39m
+    [31m+     "Computer Science",[39m
+    [31m+     "5",[39m
+    [31m+   ],[39m
+    [31m+ ][39m
+
+      198 |     for (const row of audit) {
+      199 |       expect(row.circlesOutside, row.id).toBe(0);
+    > 200 |       expect(row.overlaps, row.id).toEqual([]);
+          |                                    ^
+      201 |       expect(row.outOfViewBox, row.id).toBe(0);
+      202 |     }
+      203 |     records.push({ width, checked: audit.length, findings: audit.filter((r) => r.circlesOutside || r.overlaps.length || r.outOfViewBox) });
+        at /workspace/scratch/051c254e42f3/work/REAL MCQ/tests/browser/release-audit.spec.js:200:36
+
+    Error Context: test-results/release-audit-every-shippe-36b47-e-labels-at-all-four-widths-chromium/error-context.md
+
+  1 failed
+    [chromium] › tests/browser/release-audit.spec.js:161:1 › every shipped Venn diagram fits its universe and has legible, separate labels at all four widths 

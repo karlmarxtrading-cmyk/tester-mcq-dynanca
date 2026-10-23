@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-362",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 362",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-362-q001",
+      "category": "Combinatorics",
+      "concept": "Counting monotone lattice paths between two points",
+      "learningObjective": "Determine the number of shortest lattice paths from one point to another using only right and up steps.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "How many shortest lattice paths are there from \\((0,0)\\) to \\((4,3)\\) if each step moves either one unit right or one unit up?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(21\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(35\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The path must contain \\(4\\) right steps and \\(3\\) up steps, for a total of \\(7\\) steps. The number of such paths is the number of ways to choose the positions of the \\(4\\) right steps among the \\(7\\) steps, which is \\(\\binom{7}{4}=35\\). Therefore, the correct answer is B.",
+      "hint": "Count the total number of steps, then choose positions for one type of step."
+    },
+    {
+      "id": "math-gaokao-362-q002",
+      "category": "Combinatorics",
+      "concept": "Counting monotone lattice paths between two points",
+      "learningObjective": "Compute the number of shortest lattice paths using a binomial coefficient.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many shortest lattice paths are there from \\((0,0)\\) to \\((5,2)\\) using only right and up steps?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(21\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(35\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The path needs \\(5\\) right steps and \\(2\\) up steps, so it has \\(7\\) steps in total. The number of paths is \\(\\binom{7}{5}=\\binom{7}{2}=21\\). Therefore, the correct answer is A.",
+      "hint": "Use the binomial coefficient \\(\\binom{m+n}{m}\\) for paths from \\((0,0)\\) to \\((m,n)\\)."
+    },
+    {
+      "id": "math-gaokao-362-q003",
+      "category": "Combinatorics",
+      "concept": "Lattice paths through a required intermediate point",
+      "learningObjective": "Count lattice paths that must pass through a specified lattice point by splitting the path into two segments.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many shortest lattice paths are there from \\((0,0)\\) to \\((6,4)\\) using only right and up steps if the path must pass through \\((2,2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(90\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Split the path at \\((2,2)\\). From \\((0,0)\\) to \\((2,2)\\), there are \\(\\binom{4}{2}=6\\) paths. From \\((2,2)\\) to \\((6,4)\\), the displacement is \\((4,2)\\), so there are \\(\\binom{6}{4}=15\\) paths. By the multiplication principle, the total number is \\(6 \\times 15 = 90\\). Therefore, the correct answer is B.",
+      "hint": "Split the path into two independent segments at the required point."
+    },
+    {
+      "id": "math-gaokao-362-q004",
+      "category": "Combinatorics",
+      "concept": "Lattice paths avoiding a forbidden point",
+      "learningObjective": "Count lattice paths that avoid a specified point by subtracting paths through that point from the total.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many shortest lattice paths are there from \\((0,0)\\) to \\((5,5)\\) using only right and up steps if the path does not pass through \\((2,3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(152\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(252\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total number of paths from \\((0,0)\\) to \\((5,5)\\) is \\(\\binom{10}{5}=252\\). The number of paths that pass through \\((2,3)\\) is \\(\\binom{5}{2} \\times \\binom{5}{3}=10 \\times 10=100\\). Therefore, the number of paths that avoid \\((2,3)\\) is \\(252-100=152\\). Hence, the correct answer is A.",
+      "hint": "Count all paths first, then subtract the paths that pass through the forbidden point."
+    },
+    {
+      "id": "math-gaokao-362-q005",
+      "category": "Combinatorics",
+      "concept": "Lattice paths bounded by a diagonal",
+      "learningObjective": "Count lattice paths that never go below the diagonal \\(y=x\\) using the Catalan number.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many monotone lattice paths from \\((0,0)\\) to \\((5,5)\\), using only unit right and up steps, satisfy \\(y\\ge x\\) at every point?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(42\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(252\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(\\binom{10}{5}=252\\) unrestricted paths. By the reflection principle, the number that stay on or above \\(y=x\\) is the fifth Catalan number:\n\\[\nC_5=\\frac{1}{6}\\binom{10}{5}=42.\n\\]\nThe distractor \\(252\\) ignores the boundary condition.",
+      "hint": "Use the Catalan number formula or the reflection principle for paths bounded by a diagonal."
+    },
+    {
+      "id": "math-gaokao-362-q006",
+      "category": "Combinatorics",
+      "concept": "Lattice paths bounded by a diagonal",
+      "learningObjective": "Count lattice paths that never go above the diagonal \\(y=x\\) using the Catalan number.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many monotone lattice paths from \\((0,0)\\) to \\((6,6)\\) using only right and up steps never go above the line \\(y=x\\)? That is, every point \\((x,y)\\) on the path satisfies \\(y \\le x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(132\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "This is the sixth Catalan number. The number of paths from \\((0,0)\\) to \\((6,6)\\) that stay on or below \\(y=x\\) is\n\\[\n\\begin{aligned}\nC_6&=\\frac{1}{7}\\binom{12}{6} \\\\\n&=\\frac{924}{7} \\\\\n&=132.\n\\end{aligned}\n\\]\nTherefore, the correct answer is B.",
+      "hint": "Use the Catalan number formula \\(C_n=\\frac{1}{n+1}\\binom{2n}{n}\\)."
+    },
+    {
+      "id": "math-gaokao-362-q007",
+      "category": "Combinatorics",
+      "concept": "Lattice paths with an upper diagonal boundary",
+      "learningObjective": "Count lattice paths from \\((0,0)\\) to \\((m,n)\\) that never go above \\(y=x\\) using the reflection principle.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many monotone lattice paths from \\((0,0)\\) to \\((7,3)\\) using only right and up steps never go above the line \\(y=x\\)? That is, every point \\((x,y)\\) on the path satisfies \\(y \\le x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(75\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(120\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total number of paths from \\((0,0)\\) to \\((7,3)\\) is \\(\\binom{10}{3}=120\\). By the reflection principle, the number of paths that go above \\(y=x\\) is \\(\\binom{10}{2}=45\\). Therefore, the number of valid paths is \\(120-45=75\\). Hence, the correct answer is A.",
+      "hint": "Use the reflection principle to subtract paths that cross the boundary \\(y=x\\)."
+    },
+    {
+      "id": "math-gaokao-362-q008",
+      "category": "Combinatorics",
+      "concept": "Lattice paths avoiding a forbidden point",
+      "learningObjective": "Count lattice paths that avoid a specified lattice point by subtracting the paths through it.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many shortest lattice paths are there from \\((0,0)\\) to \\((5,4)\\) using only right and up steps if the path does not pass through \\((2,2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(66\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total number of paths from \\((0,0)\\) to \\((5,4)\\) is \\(\\binom{9}{5}=126\\). The number of paths that pass through \\((2,2)\\) is \\(\\binom{4}{2} \\times \\binom{5}{3}=6 \\times 10=60\\). Therefore, the number of paths that avoid \\((2,2)\\) is \\(126-60=66\\). Thus, the correct answer is B.",
+      "hint": "Subtract the paths that pass through \\((2,2)\\) from the total number of paths."
+    },
+    {
+      "id": "math-gaokao-362-q009",
+      "category": "Combinatorics",
+      "concept": "Lattice paths through one point but avoiding another",
+      "learningObjective": "Count lattice paths satisfying an inclusion-exclusion condition involving two specified points.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How many monotone lattice paths from \\((0,0)\\) to \\((5,5)\\) using only right and up steps pass through \\((2,1)\\) but do not pass through \\((3,3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(51\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(54\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number of paths through \\((2,1)\\) is\n\\[\n\\binom{3}{2}\\binom{7}{3}=3 \\times 35=105.\n\\]\nThe number of paths that pass through both \\((2,1)\\) and \\((3,3)\\) is\n\\[\n\\binom{3}{2}\\binom{3}{1}\\binom{4}{2}=3 \\times 3 \\times 6=54.\n\\]\nTherefore, the number of paths that pass through \\((2,1)\\) but not \\((3,3)\\) is \\(105-54=51\\). Hence, the correct answer is A.",
+      "hint": "First count all paths through \\((2,1)\\), then subtract those that also pass through \\((3,3)\\)."
+    },
+    {
+      "id": "math-gaokao-362-q010",
+      "category": "Combinatorics",
+      "concept": "Catalan paths with a prescribed intermediate point",
+      "learningObjective": "Count lattice paths that stay above a diagonal and pass through a given point by splitting at that point.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many monotone lattice paths from \\((0,0)\\) to \\((4,4)\\) using only right and up steps satisfy \\(y \\ge x\\) at every point and pass through \\((1,2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(14\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Split the path at \\((1,2)\\). From \\((0,0)\\) to \\((1,2)\\), the only valid paths with \\(y \\ge x\\) are \\(\\text{UUR}\\) and \\(\\text{URU}\\), so there are \\(2\\) such paths. From \\((1,2)\\) to \\((4,4)\\), the displacement is \\((3,2)\\). Let \\(D=y-x\\). At \\((1,2)\\), \\(D=1\\), and the path must end with \\(D=0\\) after \\(3\\) right steps and \\(2\\) up steps while never having \\(D<0\\). The total number of such step sequences is \\(\\binom{5}{3}=10\\), and the reflection principle gives \\(\\binom{5}{1}=5\\) invalid sequences. Thus there are \\(10-5=5\\) valid continuations. Therefore, the total number is \\(2 \\times 5=10\\). Hence, the correct answer is A.",
+      "hint": "Split the path at \\((1,2)\\), and track the quantity \\(D=y-x\\) along the second segment."
+    }
+  ]
+}

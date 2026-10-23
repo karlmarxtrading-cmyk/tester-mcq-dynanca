@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-417",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 417",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-417-q001",
+      "category": "Mathematical Modeling",
+      "concept": "Constraints from Geometry in a Model",
+      "learningObjective": "Determine a necessary constraint on one variable from a given perimeter condition and a minimum width restriction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A rectangular garden has length \\(L\\) and width \\(W\\). The model fixes the perimeter at \\(40\\) meters and requires the width to be at least \\(5\\) meters. Which constraint on \\(L\\) is necessary?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(L \\ge 15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(L \\le 15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The perimeter condition gives \\(2(L+W)=40\\), so \\(L+W=20\\). Since \\(W\\ge 5\\), we have \\[\n\\begin{aligned}\nL&=20-W \\\\\n&\\le 20-5 \\\\\n&=15\n\\end{aligned}\n\\]. Therefore the necessary constraint is \\(L\\le 15\\), so option B is correct.",
+      "hint": "Use the perimeter equation to express \\(L\\) in terms of \\(W\\), then apply the condition \\(W\\ge 5\\)."
+    },
+    {
+      "id": "math-gaokao-417-q002",
+      "category": "Mathematical Modeling",
+      "concept": "Assumptions in a Linear Cost Model",
+      "learningObjective": "Identify the meaning of the slope and intercept in a linear cost model.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A linear cost model is \\(C(n)=20+3n\\), where \\(C(n)\\) is the cost in yuan for \\(n\\) items. Which assumption is built into this model?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Each additional item adds the same cost."
+        },
+        {
+          "label": "B",
+          "text": "The fixed cost \\(20\\) changes as \\(n\\) increases."
+        }
+      ],
+      "answer": "A",
+      "explanation": "In \\(C(n)=20+3n\\), the coefficient \\(3\\) multiplies \\(n\\), so each additional item increases the cost by the same amount, \\(3\\text{ yuan}\\). The number \\(20\\) is a fixed cost that does not depend on \\(n\\). Thus option A is correct.",
+      "hint": "Compare the roles of the constant term and the coefficient of \\(n\\) in a linear function."
+    },
+    {
+      "id": "math-gaokao-417-q003",
+      "category": "Mathematical Modeling",
+      "concept": "Domain Constraint of a Population Model",
+      "learningObjective": "Identify the time interval over which a population model is intended to be valid.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A population model is \\(P(t)=1000e^{0.02t}\\), where \\(t\\) is the number of years after \\(2020\\). The model is intended to be used only for the first \\(20\\) years after \\(2020\\). Which constraint on \\(t\\) should be imposed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\le t\\le 20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(t\\ge 20\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement says the model is intended only for the first \\(20\\) years after \\(2020\\). Therefore \\(t\\), the number of years after \\(2020\\), must satisfy \\(0\\le t\\le 20\\). Option A is correct.",
+      "hint": "Translate the phrase “first \\(20\\) years after \\(2020\\)” into an interval for \\(t\\)."
+    },
+    {
+      "id": "math-gaokao-417-q004",
+      "category": "Mathematical Modeling",
+      "concept": "Unit Consistency in a Model Parameter",
+      "learningObjective": "Adjust a model parameter when the input unit changes.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A fuel-consumption model is \\(F=kD\\), where \\(F\\) is in liters and \\(D\\) is in kilometers, so \\(k\\) is in liters per kilometer. If distance is instead measured in miles, what must be done to keep the model consistent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Keep \\(k\\) unchanged because \\(k\\) is a constant."
+        },
+        {
+          "label": "B",
+          "text": "Convert \\(k\\) to liters per mile."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The parameter \\(k\\) carries units of liters per unit distance. If \\(D\\) is measured in miles, then \\(k\\) must have units of liters per mile so that \\(kD\\) still gives liters. Keeping \\(k\\) unchanged would mix kilometers and miles. Thus option B is correct.",
+      "hint": "Check the units of \\(k\\) and \\(D\\) so that their product has units of liters."
+    },
+    {
+      "id": "math-gaokao-417-q005",
+      "category": "Mathematical Modeling",
+      "concept": "Validity Constraint of Hooke's Law",
+      "learningObjective": "Identify the physical condition under which a spring model remains valid.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A spring model uses Hooke's law \\(F=kx\\). Which condition is a necessary constraint for this model to remain valid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The displacement \\(x\\) goes beyond the elastic limit."
+        },
+        {
+          "label": "B",
+          "text": "The spring remains within its linear elastic range, where force is proportional to displacement."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Hooke's law \\(F=kx\\) assumes a constant force-to-displacement ratio over the range being modeled. The spring must remain in the linear elastic range. Beyond that range, proportionality is not guaranteed; going beyond the elastic limit does not preserve the stated model.",
+      "hint": "Recall that Hooke's law is a linear approximation valid under a certain physical limitation."
+    },
+    {
+      "id": "math-gaokao-417-q006",
+      "category": "Mathematical Modeling",
+      "concept": "System of Constraints in Production Planning",
+      "learningObjective": "Select the correct system of inequalities representing production constraints.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A factory produces \\(x\\) chairs and \\(y\\) tables. It uses \\(2x+3y\\le 120\\) units of wood and \\(x+y\\le 50\\) labor hours. The factory must produce at least \\(10\\) tables. Which system correctly includes all stated constraints? Assume \\(x\\) and \\(y\\) are nonnegative integers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\[\n\\begin{cases}\nx\\ge 0 \\\\\ny\\ge 10 \\\\\n2x+3y\\le 120 \\\\\nx+y\\le 50\n\\end{cases}\n\\]"
+        },
+        {
+          "label": "B",
+          "text": "\\[\n\\begin{cases}\nx\\ge 0 \\\\\ny\\le 10 \\\\\n2x+3y\\le 120 \\\\\nx+y\\le 50\n\\end{cases}\n\\]"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The phrase “at least \\(10\\) tables” means \\(y\\ge 10\\). The number of chairs must also be nonnegative, so \\(x\\ge 0\\). The wood and labor limits are already given as \\(2x+3y\\le 120\\) and \\(x+y\\le 50\\). Therefore the correct system is option A.",
+      "hint": "Translate “at least \\(10\\) tables” into an inequality involving \\(y\\)."
+    },
+    {
+      "id": "math-gaokao-417-q007",
+      "category": "Mathematical Modeling",
+      "concept": "Assumption of Unlimited Resources in Exponential Growth",
+      "learningObjective": "Identify a situation that violates the unlimited-resource assumption of exponential growth.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "An exponential growth model assumes that resources are unlimited. Which situation most directly violates this model assumption?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bacteria growing in a nutrient-rich environment during the early stage."
+        },
+        {
+          "label": "B",
+          "text": "A population living in a closed habitat with limited food."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Exponential growth assumes that resources do not restrict growth. A population in a closed habitat with limited food experiences resource limitation, so the unlimited-resource assumption is violated. Early bacterial growth in a nutrient-rich environment is closer to the exponential assumption. Thus option B is correct.",
+      "hint": "Look for a situation where a limited resource would eventually restrict growth."
+    },
+    {
+      "id": "math-gaokao-417-q008",
+      "category": "Mathematical Modeling",
+      "concept": "Time Constraint for a Projectile Model",
+      "learningObjective": "Determine the time interval for which a projectile-height model is physically valid.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A projectile-height model is \\(h(t)=h_0+v_0t-\\frac{1}{2}gt^2\\). Which constraint best describes the time interval for which the model applies until the object hits the ground?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(h(t)\\ge 0\\) for all real \\(t\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\le t\\le t_{\\text{impact}}\\), where \\(h(t_{\\text{impact}})=0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The model describes the projectile from launch until it hits the ground. Therefore the physically meaningful time interval begins at \\(t=0\\) and ends at the impact time \\(t_{\\text{impact}}\\), where \\(h(t_{\\text{impact}})=0\\). It is not valid for all real \\(t\\). Thus option B is correct.",
+      "hint": "Identify the starting time and the time when the height becomes zero at impact."
+    },
+    {
+      "id": "math-gaokao-417-q009",
+      "category": "Mathematical Modeling",
+      "concept": "Assumptions in a Loan Repayment Model",
+      "learningObjective": "Identify the key financial assumptions required by the standard loan payment formula.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The standard positive-rate, fixed-rate loan model uses \\(M=\\frac{Pr(1+r)^n}{(1+r)^n-1}\\), where \\(P\\) is the principal, \\(r>0\\) is the monthly interest rate, and \\(n\\) is the number of monthly payments. Which assumption is built into this model?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The monthly interest rate \\(r\\) may change from one month to the next."
+        },
+        {
+          "label": "B",
+          "text": "The monthly interest rate is constant, and the loan is repaid by \\(n\\) equal payments at the end of each month, with no additional fees."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The formula models an ordinary annuity that exactly repays the principal over \\(n\\) months. It assumes a fixed monthly interest rate, equal end-of-month payments, and no additional fees, so B is correct. A changing interest rate requires a different calculation.\nThe displayed formula is stated here for \\(r>0\\). At \\(r=0\\), repayment is instead \\(M=\\frac{P}{n}\\); direct substitution into the displayed quotient would give an undefined expression.",
+      "hint": "Check whether the rate and payment timing remain the same throughout the repayment period."
+    },
+    {
+      "id": "math-gaokao-417-q010",
+      "category": "Mathematical Modeling",
+      "concept": "Extrapolation Beyond Model Constraints",
+      "learningObjective": "Recognize when using a model outside its stated domain invalidates or weakens predictions.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A cost model is \\(C(x)=500+8x\\), where \\(0\\le x\\le 200\\). A manager uses the model to predict the cost for \\(x=250\\). What is the main modeling issue?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The prediction is an extrapolation beyond the stated constraint \\(0\\le x\\le 200\\), so the model assumptions may no longer hold."
+        },
+        {
+          "label": "B",
+          "text": "The slope \\(8\\) is too small for \\(x=250\\), so the cost must be higher."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The model is explicitly restricted to \\(0\\le x\\le 200\\). Using \\(x=250\\) goes outside that stated domain, so the prediction is an extrapolation. The main issue is not the slope value but the violation of the model’s constraint. Therefore option A is correct.",
+      "hint": "Compare the proposed input value with the stated domain of the model."
+    }
+  ]
+}

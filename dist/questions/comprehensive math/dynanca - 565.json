@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-565",
+  "category": "Comprehensive Mathematics",
+  "title": "565. Discrete Mathematics, Counting & Graph Theory: Counting by Bijection",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-565-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Matches in a knockout tournament",
+      "learningObjective": "Count matches by pairing each match with the player it eliminates.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Sixteen players enter a knockout tournament. Every match eliminates exactly one player, and the tournament ends when one player remains. How many matches are played?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Pair each match with the player it eliminates. Every match eliminates one player, and every player except the champion is eliminated in exactly one match. So the matches correspond one-to-one to the \\(15\\) eliminated players. The number \\(8\\) counts only the matches of the first round.",
+      "hint": "Count the players who must be eliminated."
+    },
+    {
+      "id": "dynanca-565-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Strings and subsets",
+      "learningObjective": "Count binary strings through their correspondence with subsets of positions.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Each binary string of length \\(5\\) with exactly two digits equal to \\(1\\) corresponds to the set of the two positions that hold a \\(1\\). This is a bijection onto the \\(2\\)-element subsets of \\(\\{1,2,3,4,5\\}\\). How many such strings are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A bijection shows that the two collections have the same size. The number of \\(2\\)-element subsets of a \\(5\\)-element set is \\(\\binom{5}{2}=10\\), so there are \\(10\\) strings. The number \\(20=5\\cdot 4\\) counts ordered pairs of positions.",
+      "hint": "Count the subsets instead of the strings."
+    },
+    {
+      "id": "dynanca-565-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Pairing divisors",
+      "learningObjective": "Use the pairing of a divisor with its complementary divisor.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The map \\(d\\mapsto\\dfrac{36}{d}\\) is a bijection from the divisors of \\(36\\) that are less than \\(6\\) onto the divisors of \\(36\\) that are greater than \\(6\\). The number \\(36\\) has \\(9\\) positive divisors. How many of them are less than \\(6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Apart from \\(6\\) itself, the divisors split into those less than \\(6\\) and those greater than \\(6\\), and the bijection shows the two groups have equal size. So each group has \\(\\dfrac{9-1}{2}=4\\) divisors. Indeed the divisors less than \\(6\\) are \\(1,2,3,4\\).",
+      "hint": "Remove the divisor \\(6\\), which is paired with itself, and split the rest evenly."
+    },
+    {
+      "id": "dynanca-565-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Even-sized and odd-sized subsets",
+      "learningObjective": "Use a toggling bijection to count subsets with an even number of elements.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For subsets of \\(\\{1,2,3,4,5,6\\}\\), the rule \"remove \\(1\\) if it is present, insert \\(1\\) if it is absent\" is a bijection between the subsets with an even number of elements and those with an odd number. How many subsets have an even number of elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(32\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(31\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The set has \\(2^6=64\\) subsets. The bijection shows that the even-sized and the odd-sized subsets are equally numerous, so each kind numbers \\(\\dfrac{64}{2}=32\\). The empty set has \\(0\\) elements and counts as even-sized, so nothing needs to be subtracted.",
+      "hint": "The bijection splits all subsets into two classes of equal size."
+    },
+    {
+      "id": "dynanca-565-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Ordered sums",
+      "learningObjective": "Count ordered sums through a correspondence with choices of cut points.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "An ordered sum of \\(5\\) is a way of writing \\(5\\) as a sum of positive integers in which the order matters, such as \\(2+3\\), \\(3+2\\), or \\(5\\) alone. Writing \\(5\\) as a row of five dots, each ordered sum corresponds to a choice of which of the \\(4\\) gaps between dots are cut. How many ordered sums of \\(5\\) are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each of the \\(4\\) gaps is either cut or not cut, and every choice gives a different ordered sum. So there are \\(2^4=16\\) ordered sums. The number \\(7\\) counts the sums when the order of the terms is ignored.",
+      "hint": "Count the ways to choose a set of gaps."
+    },
+    {
+      "id": "dynanca-565-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Crossing points of diagonals",
+      "learningObjective": "Count crossing points through a correspondence with sets of four vertices.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "In a convex hexagon, no three diagonals pass through a common interior point. Each interior crossing point of two diagonals corresponds to the set of the \\(4\\) endpoints of those diagonals, and every set of \\(4\\) vertices arises from exactly one crossing point. How many interior crossing points are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The correspondence is a bijection between crossing points and \\(4\\)-element sets of vertices, so the number of crossing points is \\(\\binom{6}{4}=15\\). The number \\(9\\) is the number of diagonals of a hexagon, a different quantity.",
+      "hint": "Count the sets of four vertices."
+    },
+    {
+      "id": "dynanca-565-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A map that is not a bijection",
+      "learningObjective": "Detect a correspondence that counts each object twice.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "To count the \\(2\\)-element subsets of \\(\\{1,2,3,4,5\\}\\), a student sends each ordered pair \\((a,b)\\) with \\(a\\ne b\\) to the subset \\(\\{a,b\\}\\) and concludes that there are \\(5\\cdot 4=20\\) subsets. What is wrong?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The map is not a bijection: each subset comes from two ordered pairs, so there are \\(10\\) subsets."
+        },
+        {
+          "label": "B",
+          "text": "Nothing is wrong: the map is a bijection, so there are \\(20\\) subsets."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The pairs \\((a,b)\\) and \\((b,a)\\) are different but are sent to the same subset. So every subset is the image of exactly \\(2\\) ordered pairs, and the number of subsets is \\(\\dfrac{20}{2}=10\\). Counting by correspondence requires knowing how many objects are sent to each image.",
+      "hint": "Find two different ordered pairs that are sent to the same subset."
+    },
+    {
+      "id": "dynanca-565-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Rectangles in a grid",
+      "learningObjective": "Count rectangles through a correspondence with pairs of grid lines.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A grid of unit squares has \\(3\\) rows and \\(4\\) columns, so it is bounded and divided by \\(4\\) horizontal and \\(5\\) vertical lines. Each rectangle formed by grid lines corresponds to a choice of two horizontal and two vertical lines. How many rectangles are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Two horizontal lines can be chosen in \\(\\binom{4}{2}=6\\) ways and two vertical lines in \\(\\binom{5}{2}=10\\) ways, and each such choice gives exactly one rectangle. So there are \\(6\\cdot 10=60\\) rectangles. The number \\(12\\) counts only the unit squares.",
+      "hint": "A rectangle is fixed by its top and bottom lines and its left and right lines."
+    },
+    {
+      "id": "dynanca-565-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Numbers with gaps",
+      "learningObjective": "Count selections with gaps by transforming them into unrestricted selections.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "The rule \\((a,b,c)\\mapsto(a,\\,b-1,\\,c-2)\\) is a bijection from the triples of integers with \\(1\\le a<b<c\\le 9\\), \\(b\\ge a+2\\), and \\(c\\ge b+2\\) onto the triples with \\(1\\le a'<b'<c'\\le 7\\). How many triples from \\(1\\) to \\(9\\) contain no two consecutive numbers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(35\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(84\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The bijection shows that such triples are as numerous as the \\(3\\)-element subsets of \\(\\{1,\\dots,7\\}\\), of which there are \\(\\binom{7}{3}=35\\). The number \\(84=\\binom{9}{3}\\) counts all triples from \\(1\\) to \\(9\\), including those with consecutive numbers.",
+      "hint": "Count the triples on the simpler side of the bijection."
+    },
+    {
+      "id": "dynanca-565-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Subsets with a given largest element",
+      "learningObjective": "Count subsets by removing their prescribed largest element.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many subsets of \\(\\{1,2,\\dots,10\\}\\) have \\(7\\) as their largest element?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(64\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(128\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Removing \\(7\\) from such a subset leaves an arbitrary subset of \\(\\{1,\\dots,6\\}\\), and putting \\(7\\) back reverses this. So these subsets correspond one-to-one to the subsets of a \\(6\\)-element set, of which there are \\(2^6=64\\). The number \\(128=2^7\\) counts all subsets of \\(\\{1,\\dots,7\\}\\), including those that do not contain \\(7\\).",
+      "hint": "Such a subset consists of \\(7\\) together with any selection of smaller numbers."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-159",
+  "category": "Comprehensive Mathematics",
+  "title": "159. Quantitative Relationships & Measurement: Identifying Misleading Chart Baselines",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-159-q001",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Recognizing a Misleading Non-Zero Baseline",
+      "learningObjective": "Identify a chart feature that can exaggerate differences between bars.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A bar chart compares the values \\(92\\) and \\(96\\). Which feature is most likely to make the difference between the bars look larger than it actually is?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both bars start at the same baseline of \\(0\\)."
+        },
+        {
+          "label": "B",
+          "text": "The vertical axis starts at \\(90\\) instead of \\(0\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "For a bar chart, bar length represents the value measured from the baseline. If the vertical axis starts at \\(90\\), the visible heights are \\(92-90=2\\) and \\(96-90=6\\). The \\(96\\) bar then looks three times as tall as the \\(92\\) bar, although \\(96\\) is only about \\(4\\%\\) larger than \\(92\\), so the difference looks much larger than it really is. Starting at \\(0\\) avoids this exaggeration. Therefore, B is correct.",
+      "hint": "Check whether the vertical axis starts at zero or at a value close to the data."
+    },
+    {
+      "id": "dynanca-159-q002",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Comparing Chart Baselines",
+      "learningObjective": "Determine which vertical-axis baseline is more likely to mislead.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which vertical-axis baseline is most likely to make a bar chart misleading when the data values are close together?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A baseline at \\(50\\)"
+        },
+        {
+          "label": "B",
+          "text": "A baseline at \\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A bar chart baseline at \\(0\\) shows the full size of each value. A baseline at \\(50\\) cuts off part of the scale, so bars for values near \\(50\\) are drawn only from \\(50\\) upward. This can make small differences look large. Therefore, A is correct.",
+      "hint": "Compare how much of each bar is hidden when the baseline is not zero."
+    },
+    {
+      "id": "dynanca-159-q003",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Effect of a Truncated Baseline",
+      "learningObjective": "Explain how a non-zero baseline affects visual comparison in a bar chart.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A bar chart's vertical axis starts at \\(80\\). What is the main risk of using this baseline?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Small differences between values may appear larger than they are."
+        },
+        {
+          "label": "B",
+          "text": "The bars no longer represent the data values at all."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A baseline at \\(80\\) truncates the vertical scale. The bars show only the part above \\(80\\), so values such as \\(82\\) and \\(86\\) are displayed as heights \\(2\\) and \\(6\\). The \\(86\\) bar then looks three times as tall as the \\(82\\) bar, although \\(86\\) is only about \\(5\\%\\) larger than \\(82\\). The bars still represent the data, but the visual comparison is distorted. Therefore, A is correct.",
+      "hint": "Focus on how much of each bar is shown above the baseline."
+    },
+    {
+      "id": "dynanca-159-q004",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Comparing Two Graphs of the Same Data",
+      "learningObjective": "Select which graph is more misleading when baselines differ.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Two bar graphs show the same values, \\(98\\) and \\(100\\). One graph has a vertical axis from \\(95\\) to \\(100\\), and the other has a vertical axis from \\(0\\) to \\(100\\). Which graph is more misleading?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The graph with the vertical axis from \\(95\\) to \\(100\\)"
+        },
+        {
+          "label": "B",
+          "text": "The graph with the vertical axis from \\(0\\) to \\(100\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The graph with the axis from \\(95\\) to \\(100\\) hides the lower part of the scale. The visible heights are \\(98-95=3\\) and \\(100-95=5\\), so the difference looks large. The graph from \\(0\\) to \\(100\\) shows the full values and does not exaggerate the difference. Therefore, A is correct.",
+      "hint": "Compare how much of the vertical scale is omitted in each graph."
+    },
+    {
+      "id": "dynanca-159-q005",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Visual Height Ratio from a Non-Zero Baseline",
+      "learningObjective": "Calculate the apparent height ratio created by a truncated baseline.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A bar chart uses a vertical axis starting at \\(90\\). The two bars have values \\(92\\) and \\(96\\). How many times as tall does the \\(96\\) bar appear compared with the \\(92\\) bar?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\) times"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\) times"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The apparent height of a bar is its value minus the baseline. The \\(92\\) bar appears \\(92-90=2\\) units tall, and the \\(96\\) bar appears \\(96-90=6\\) units tall. The apparent ratio is \\(6\\div 2=3\\). Therefore, the \\(96\\) bar appears \\(3\\) times as tall, so B is correct.",
+      "hint": "Subtract the baseline from each value before comparing the bar heights."
+    },
+    {
+      "id": "dynanca-159-q006",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Baseline Distortion in Bar Charts",
+      "learningObjective": "Distinguish when a non-zero baseline is especially misleading.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A bar chart and a line graph show the same data. For which chart is a non-zero vertical baseline especially likely to distort the perceived differences between values?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The line graph"
+        },
+        {
+          "label": "B",
+          "text": "The bar chart"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In a bar chart, the length of each bar is read from the baseline. If the baseline is not zero, the visible lengths do not match the actual values, so differences can be exaggerated. In a line graph, the positions of points show a trend, and a non-zero baseline may be acceptable if it is clearly labeled. Therefore, B is correct.",
+      "hint": "Consider which chart type uses bar length to represent the full value."
+    },
+    {
+      "id": "dynanca-159-q007",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Evaluating a Claim Based on Bar Heights",
+      "learningObjective": "Identify why a visual ratio claim is misleading under a truncated baseline.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A bar chart has a vertical axis from \\(100\\) to \\(120\\). The bars have values \\(105\\) and \\(115\\). A viewer says the \\(115\\) value must be about three times the \\(105\\) value because its bar is three times as tall. Why is this claim misleading?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The actual values are equal."
+        },
+        {
+          "label": "B",
+          "text": "The axis starts at \\(100\\), so the visual heights are \\(15\\) and \\(5\\), not the actual values."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The visible heights above the baseline are \\(115-100=15\\) and \\(105-100=5\\). This makes the \\(115\\) bar appear three times as tall, which exaggerates the real comparison. The actual ratio is only \\(115\\div 105\\approx 1.10\\). The actual values are not equal, and the problem is the non-zero baseline. Therefore, B is correct.",
+      "hint": "Find each bar's height above the baseline before judging the visual claim."
+    },
+    {
+      "id": "dynanca-159-q008",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Actual Ratio versus Apparent Ratio",
+      "learningObjective": "Calculate the actual ratio of two values shown on a truncated bar chart.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A bar chart uses a baseline of \\(300\\). The bars have values \\(320\\) and \\(400\\). On the chart, the \\(400\\) bar appears five times as tall as the \\(320\\) bar. What is the actual ratio of \\(400\\) to \\(320\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1.25\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5.0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The apparent heights above the baseline are \\(400-300=100\\) and \\(320-300=20\\), so the visual ratio is \\(5\\). However, the actual ratio is \\(400\\div 320=1.25\\). The truncated baseline creates the exaggerated visual ratio. Therefore, A is correct.",
+      "hint": "Divide the actual values, not the bar heights above the baseline."
+    },
+    {
+      "id": "dynanca-159-q009",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Choosing an Appropriate Baseline",
+      "learningObjective": "Select a baseline that avoids misleading bar comparisons.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A bar chart compares the values \\(1.2\\) and \\(1.5\\). Which vertical-axis baseline should be used to avoid exaggerating the difference?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1.0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A baseline of \\(0\\) shows the full size of each value. A baseline of \\(1.0\\) would truncate the scale and make the bars appear as heights \\(0.2\\) and \\(0.5\\), which exaggerates their difference. Therefore, the baseline should be \\(0\\), so A is correct.",
+      "hint": "Use the baseline that shows the whole value of each bar."
+    },
+    {
+      "id": "dynanca-159-q010",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Definition of a Misleading Chart Baseline",
+      "learningObjective": "Identify the best description of a misleading chart baseline.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Which statement best describes a misleading chart baseline?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A bar chart baseline above zero can exaggerate differences between values."
+        },
+        {
+          "label": "B",
+          "text": "Any non-zero baseline always changes the data values themselves."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A baseline above zero does not change the data values, but it changes how the bars are drawn. Because bar length is measured from the baseline, a non-zero baseline can make small differences look larger. Therefore, A is correct.",
+      "hint": "Consider whether the baseline affects the data values or only their visual display."
+    }
+  ]
+}

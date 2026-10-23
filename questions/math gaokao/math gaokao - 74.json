@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-74",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 74",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-74-q001",
+      "category": "Functions",
+      "concept": "Boundedness of Trigonometric Functions",
+      "learningObjective": "Identify a function that is bounded on the set of real numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which function is bounded on \\(\\mathbb{R}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(x)=\\sin x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f(x)=x^2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For every real number \\(x\\),\n\\[\n-1\\le \\sin x\\le 1.\n\\]\nThus \\(f(x)=\\sin x\\) is bounded on \\(\\mathbb{R}\\).\nHowever, \\(f(x)=x^2\\) can be arbitrarily large, so it is not bounded above on \\(\\mathbb{R}\\).\nTherefore, the bounded function is \\(f(x)=\\sin x\\).",
+      "hint": "Recall the range of the sine function and compare it with the behavior of \\(x^2\\)."
+    },
+    {
+      "id": "math-gaokao-74-q002",
+      "category": "Functions",
+      "concept": "Bounded Above",
+      "learningObjective": "Determine which function is bounded above on the real numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which function is bounded above on \\(\\mathbb{R}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(x)=x^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f(x)=1-x^2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(f(x)=1-x^2\\), since \\(x^2\\ge 0\\), we have\n\\[\n1-x^2\\le 1\n\\]\nfor every real \\(x\\). Hence \\(f\\) is bounded above by \\(1\\).\nFor \\(f(x)=x^2\\), the values become arbitrarily large as \\(|x|\\to\\infty\\), so it is not bounded above.\nTherefore, the function bounded above is \\(f(x)=1-x^2\\).",
+      "hint": "Check whether the function has an upper limit that its values cannot exceed."
+    },
+    {
+      "id": "math-gaokao-74-q003",
+      "category": "Functions",
+      "concept": "Boundedness of Rational Functions",
+      "learningObjective": "Determine the boundedness of a rational function with a positive denominator.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Consider \\(f(x)=\\dfrac{1}{x^2+1}\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f\\) is bounded and \\(0<f(x)\\le 1\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(f\\) is unbounded on \\(\\mathbb{R}\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(x^2\\ge 0\\), we have\n\\[\nx^2+1\\ge 1.\n\\]\nTherefore,\n\\[\n0<\\frac{1}{x^2+1}\\le 1.\n\\]\nSo \\(f(x)=\\dfrac{1}{x^2+1}\\) is bounded, with values between \\(0\\) and \\(1\\).\nThus statement A is correct.",
+      "hint": "Use the fact that \\(x^2+1\\) is always at least \\(1\\)."
+    },
+    {
+      "id": "math-gaokao-74-q004",
+      "category": "Functions",
+      "concept": "Boundedness of Cosine Expressions",
+      "learningObjective": "Find the maximum and minimum values of a function involving \\(\\cos x\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For \\(f(x)=3-2\\cos x\\), which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f\\) is bounded with maximum \\(5\\) and minimum \\(1\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(f\\) is unbounded because \\(\\cos x\\) can vary."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since\n\\[\n-1\\le \\cos x\\le 1,\n\\]\nmultiplying by \\(-2\\) reverses the inequalities:\n\\[\n-2\\le -2\\cos x\\le 2.\n\\]\nAdding \\(3\\) gives\n\\[\n1\\le 3-2\\cos x\\le 5.\n\\]\nThus \\(f(x)=3-2\\cos x\\) is bounded, with maximum \\(5\\) and minimum \\(1\\).",
+      "hint": "Start from the range of \\(\\cos x\\), then apply the operations in the expression."
+    },
+    {
+      "id": "math-gaokao-74-q005",
+      "category": "Functions",
+      "concept": "Bounded Below but Not Bounded Above",
+      "learningObjective": "Determine whether a quadratic function is bounded below, above, or both.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=x^2-4x+7\\), which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f\\) is bounded on \\(\\mathbb{R}\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(f\\) is bounded below but not bounded above."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Complete the square:\n\\[\nf(x)=x^2-4x+7=(x-2)^2+3.\n\\]\nSince \\((x-2)^2\\ge 0\\), we have\n\\[\nf(x)\\ge 3\n\\]\nfor all real \\(x\\). Thus \\(f\\) is bounded below.\nHowever, as \\(|x|\\to\\infty\\), \\((x-2)^2\\to\\infty\\), so \\(f(x)\\to\\infty\\). Hence \\(f\\) is not bounded above.\nTherefore, \\(f\\) is bounded below but not bounded above.",
+      "hint": "Rewrite the quadratic in completed-square form to identify its minimum."
+    },
+    {
+      "id": "math-gaokao-74-q006",
+      "category": "Functions",
+      "concept": "Boundedness on a Closed Interval",
+      "learningObjective": "Determine the maximum and minimum values of a cubic function on a closed interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "On the interval \\([-1,2]\\), consider \\(f(x)=x^3-3x\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f\\) is bounded, with maximum \\(2\\) and minimum \\(-2\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(f\\) is unbounded on \\([-1,2]\\) because it is cubic."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A continuous function on a closed interval is bounded. Compute the critical points:\n\\[\nf'(x)=3x^2-3=3(x^2-1).\n\\]\nThus \\(f'(x)=0\\) at \\(x=-1\\) and \\(x=1\\). On \\([-1,2]\\), the relevant points are \\(x=-1,1,2\\).\nEvaluate:\n\\[\nf(-1)=(-1)^3-3(-1)=-1+3=2,\n\\]\n\\[\nf(1)=1^3-3(1)=1-3=-2,\n\\]\n\\[\nf(2)=2^3-3(2)=8-6=2.\n\\]\nSo the maximum is \\(2\\) and the minimum is \\(-2\\). Hence \\(f\\) is bounded on \\([-1,2]\\).",
+      "hint": "Use derivatives to locate critical points, then evaluate the function at those points and endpoints."
+    },
+    {
+      "id": "math-gaokao-74-q007",
+      "category": "Functions",
+      "concept": "Parameter Conditions for Boundedness",
+      "learningObjective": "Determine for which parameter values a rational function is bounded.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For which values of \\(a\\) is \\(f(x)=\\dfrac{a}{x^2+1}\\) bounded on \\(\\mathbb{R}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only \\(a=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "All real \\(a\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For every real \\(x\\),\n\\[\nx^2+1\\ge 1.\n\\]\nTherefore,\n\\[\n\\left|\\frac{a}{x^2+1}\\right|\\le |a|.\n\\]\nThis bound holds for any real number \\(a\\). Hence \\(f(x)=\\dfrac{a}{x^2+1}\\) is bounded on \\(\\mathbb{R}\\) for all real \\(a\\).",
+      "hint": "The denominator \\(x^2+1\\) is always positive and never approaches \\(0\\)."
+    },
+    {
+      "id": "math-gaokao-74-q008",
+      "category": "Functions",
+      "concept": "Vertical Translation of Bounded Functions",
+      "learningObjective": "Determine whether adding a constant to a bounded function preserves boundedness.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(f(x)\\) is bounded on \\(\\mathbb{R}\\), what can be concluded about \\(g(x)=f(x)+2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(g\\) is bounded on \\(\\mathbb{R}\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(g\\) must be unbounded on \\(\\mathbb{R}\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(f\\) is bounded, there exists a real number \\(M\\) such that\n\\[\n|f(x)|\\le M\n\\]\nfor all real \\(x\\). Then\n\\[\n|g(x)|=|f(x)+2|\\le |f(x)|+2\\le M+2.\n\\]\nThus \\(g(x)=f(x)+2\\) is also bounded on \\(\\mathbb{R}\\).\nTherefore, statement A is correct.",
+      "hint": "Use the triangle inequality after applying the definition of boundedness to \\(f\\)."
+    },
+    {
+      "id": "math-gaokao-74-q009",
+      "category": "Functions",
+      "concept": "Boundedness of Trigonometric Combinations",
+      "learningObjective": "Determine the maximum value of a sum of sine and cosine functions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For \\(f(x)=\\sin x+\\cos x\\), which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f\\) is unbounded on \\(\\mathbb{R}\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(f\\) is bounded and its maximum value is \\(\\sqrt{2}\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use the identity\n\\[\n\\sin x+\\cos x=\\sqrt{2}\\sin\\left(x+\\frac{\\pi}{4}\\right).\n\\]\nSince the sine function has range \\([-1,1]\\),\n\\[\n-\\sqrt{2}\\le \\sqrt{2}\\sin\\left(x+\\frac{\\pi}{4}\\right)\\le \\sqrt{2}.\n\\]\nThus \\(f(x)=\\sin x+\\cos x\\) is bounded, and its maximum value is \\(\\sqrt{2}\\).",
+      "hint": "Rewrite the sum as a single sine function using a standard trigonometric identity."
+    },
+    {
+      "id": "math-gaokao-74-q010",
+      "category": "Functions",
+      "concept": "Boundedness of a Rational Function",
+      "learningObjective": "Prove that a rational function of the form \\(\\frac{x}{x^2+1}\\) is bounded and find a bound.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For \\(f(x)=\\dfrac{x}{x^2+1}\\), which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f\\) is unbounded above."
+        },
+        {
+          "label": "B",
+          "text": "\\(f\\) is bounded and \\(|f(x)|\\le \\dfrac{1}{2}\\) for all real \\(x\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "For all real \\(x\\),\n\\[\n(|x|-1)^2\\ge 0.\n\\]\nExpanding gives\n\\[\nx^2-2|x|+1\\ge 0,\n\\]\nso\n\\[\nx^2+1\\ge 2|x|.\n\\]\nTherefore,\n\\[\n|f(x)|=\\frac{|x|}{x^2+1}\\le \\frac{|x|}{2|x|}=\\frac{1}{2}\n\\]\nfor \\(x\\neq 0\\). The inequality also holds at \\(x=0\\).\nThus \\(f(x)=\\dfrac{x}{x^2+1}\\) is bounded and \\(|f(x)|\\le \\dfrac{1}{2}\\) for all real \\(x\\).",
+      "hint": "Compare \\(x^2+1\\) with \\(2|x|\\), then estimate the absolute value of the function."
+    }
+  ]
+}

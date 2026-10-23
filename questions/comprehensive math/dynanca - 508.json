@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-508",
+  "category": "Comprehensive Mathematics",
+  "title": "508. Sets, Logic, Reasoning & Proof: Proof by Contraposition",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-508-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "What is proved in a proof by contraposition",
+      "learningObjective": "State which conditional is proved in a proof by contraposition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "To prove \\(p\\implies q\\) by contraposition, which statement is proved directly?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\neg q\\implies\\neg p\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(q\\implies p\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A proof by contraposition proves the contrapositive \\(\\neg q\\implies\\neg p\\), which is logically equivalent to \\(p\\implies q\\). Proving the converse \\(q\\implies p\\) would establish a different statement.",
+      "hint": "The contrapositive negates both parts and exchanges them."
+    },
+    {
+      "id": "dynanca-508-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Opening assumption",
+      "learningObjective": "Choose the opening assumption of a proof by contraposition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The statement \"if \\(n^2\\) is even, then \\(n\\) is even\" is to be proved by contraposition. What is assumed at the start?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n^2\\) is even."
+        },
+        {
+          "label": "B",
+          "text": "\\(n\\) is odd."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The contrapositive is \"if \\(n\\) is not even, then \\(n^2\\) is not even\", that is, \"if \\(n\\) is odd, then \\(n^2\\) is odd\". Its proof starts by assuming that \\(n\\) is odd. Assuming that \\(n^2\\) is even would be the start of a direct proof of the original statement.",
+      "hint": "The proof starts from the negation of the original conclusion."
+    },
+    {
+      "id": "dynanca-508-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Writing the contrapositive",
+      "learningObjective": "Formulate the contrapositive of a statement about parity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For an integer \\(n\\), what is the contrapositive of \"if \\(n^2\\) is odd, then \\(n\\) is odd\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"If \\(n\\) is even, then \\(n^2\\) is even.\""
+        },
+        {
+          "label": "B",
+          "text": "\"If \\(n\\) is odd, then \\(n^2\\) is odd.\""
+        }
+      ],
+      "answer": "A",
+      "explanation": "Negate both parts and exchange them: \"not odd\" means \"even\" for integers, so the contrapositive is \"if \\(n\\) is even, then \\(n^2\\) is even\". The sentence \"if \\(n\\) is odd, then \\(n^2\\) is odd\" merely exchanges the parts; it is the converse.",
+      "hint": "Negate each part first, then swap."
+    },
+    {
+      "id": "dynanca-508-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Why the computation finishes the proof",
+      "learningObjective": "Explain how the final computation completes a proof by contraposition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "To prove \"if \\(n^2\\) is even, then \\(n\\) is even\" by contraposition, one assumes \\(n=2k+1\\) and computes \\(n^2=2(2k^2+2k)+1\\). Why does this complete the proof?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It shows that \\(n^2\\) is even, which is the original hypothesis."
+        },
+        {
+          "label": "B",
+          "text": "It shows that \\(n^2\\) is odd, which is the negation of the original hypothesis."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The contrapositive to be proved is \"if \\(n\\) is odd, then \\(n^2\\) is odd\". The computation writes \\(n^2\\) in the form \\(2m+1\\), so \\(n^2\\) is odd, that is, not even. This establishes the contrapositive and therefore the original statement.",
+      "hint": "Identify what the contrapositive requires as its conclusion."
+    },
+    {
+      "id": "dynanca-508-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Why contraposition is legitimate",
+      "learningObjective": "Give the logical reason a proof by contraposition is valid.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Why does proving \\(\\neg q\\implies\\neg p\\) establish \\(p\\implies q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A conditional is logically equivalent to its contrapositive."
+        },
+        {
+          "label": "B",
+          "text": "A conditional is logically equivalent to its converse."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statements \\(p\\implies q\\) and \\(\\neg q\\implies\\neg p\\) have the same truth value in every row of the truth table: each is false exactly when \\(p\\) is true and \\(q\\) is false. So proving one proves the other. A conditional is not equivalent to its converse.",
+      "hint": "Compare the single row in which each statement is false."
+    },
+    {
+      "id": "dynanca-508-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Contraposition with a linear expression",
+      "learningObjective": "Carry out the computation in a proof by contraposition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "To prove \"if \\(3n+2\\) is odd, then \\(n\\) is odd\" by contraposition, assume \\(n=2k\\). What does the computation give?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3n+2=2(3k+1)\\), so \\(3n+2\\) is even."
+        },
+        {
+          "label": "B",
+          "text": "\\(3n+2=6k+2\\), so \\(3n+2\\) is odd."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substituting \\(n=2k\\) gives \\(3n+2=6k+2=2(3k+1)\\), which is even. This proves the contrapositive \"if \\(n\\) is even, then \\(3n+2\\) is even\". The number \\(6k+2\\) is a sum of two even numbers and cannot be odd.",
+      "hint": "Substitute \\(n=2k\\) and factor out \\(2\\)."
+    },
+    {
+      "id": "dynanca-508-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Contrapositive with a conjunction in the conclusion",
+      "learningObjective": "Form the contrapositive when the conclusion is a conjunction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "For integers \\(x\\) and \\(y\\), what is the contrapositive of \"if \\(xy\\) is odd, then \\(x\\) and \\(y\\) are both odd\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"If \\(x\\) is even or \\(y\\) is even, then \\(xy\\) is even.\""
+        },
+        {
+          "label": "B",
+          "text": "\"If \\(x\\) is even and \\(y\\) is even, then \\(xy\\) is even.\""
+        }
+      ],
+      "answer": "A",
+      "explanation": "The negation of \"\\(x\\) and \\(y\\) are both odd\" is, by De Morgan's law, \"\\(x\\) is even or \\(y\\) is even\". The negation of \"\\(xy\\) is odd\" is \"\\(xy\\) is even\". Exchanging the parts gives the first sentence. The version with \"and\" covers only the case in which both are even and is not the contrapositive.",
+      "hint": "Negating \"both are odd\" gives \"at least one is even\"."
+    },
+    {
+      "id": "dynanca-508-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Contrapositive with a disjunction in the conclusion",
+      "learningObjective": "Form the contrapositive when the conclusion is a disjunction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "For real numbers \\(x\\) and \\(y\\), what is the contrapositive of \"if \\(x+y\\ge 10\\), then \\(x\\ge 5\\) or \\(y\\ge 5\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"If \\(x<5\\) or \\(y<5\\), then \\(x+y<10\\).\""
+        },
+        {
+          "label": "B",
+          "text": "\"If \\(x<5\\) and \\(y<5\\), then \\(x+y<10\\).\""
+        }
+      ],
+      "answer": "B",
+      "explanation": "The negation of \"\\(x\\ge 5\\) or \\(y\\ge 5\\)\" is \"\\(x<5\\) and \\(y<5\\)\", and the negation of \\(x+y\\ge 10\\) is \\(x+y<10\\). The contrapositive is easy to prove: adding \\(x<5\\) and \\(y<5\\) gives \\(x+y<10\\). The version with \"or\" is false; for \\(x=1\\) and \\(y=20\\) its hypothesis holds, but \\(x+y=21\\).",
+      "hint": "Negate the disjunction with De Morgan's law, then swap the parts."
+    },
+    {
+      "id": "dynanca-508-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Contraposition versus contradiction",
+      "learningObjective": "Distinguish the structure of a proof by contraposition from a proof by contradiction.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which description is a proof of \\(p\\implies q\\) by contraposition?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assume \\(\\neg q\\) and deduce \\(\\neg p\\)."
+        },
+        {
+          "label": "B",
+          "text": "Assume \\(p\\) and \\(\\neg q\\) and deduce a contradiction."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A proof by contraposition is a direct proof of \\(\\neg q\\implies\\neg p\\): it starts from \\(\\neg q\\) alone and ends with \\(\\neg p\\). Assuming both \\(p\\) and \\(\\neg q\\) and deriving a contradiction is the method of proof by contradiction, which is a different, though related, technique.",
+      "hint": "In contraposition, the original hypothesis \\(p\\) is not assumed."
+    },
+    {
+      "id": "dynanca-508-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Contraposition with cases modulo three",
+      "learningObjective": "Carry out the case computation in a contrapositive proof about divisibility by three.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "To prove \"if \\(n^2\\) is divisible by \\(3\\), then \\(n\\) is divisible by \\(3\\)\" by contraposition, one assumes \\(n=3k+1\\) or \\(n=3k+2\\). What remainder does \\(n^2\\) leave on division by \\(3\\) in these two cases?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Remainder \\(1\\) in both cases"
+        },
+        {
+          "label": "B",
+          "text": "Remainder \\(1\\) in the first case and remainder \\(2\\) in the second"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If \\(n=3k+1\\), then \\(n^2=9k^2+6k+1=3(3k^2+2k)+1\\). If \\(n=3k+2\\), then \\(n^2=9k^2+12k+4=3(3k^2+4k+1)+1\\). In both cases the remainder is \\(1\\), so \\(n^2\\) is not divisible by \\(3\\), which proves the contrapositive. A square never leaves remainder \\(2\\) on division by \\(3\\).",
+      "hint": "Expand each square and rewrite it as a multiple of \\(3\\) plus a remainder smaller than \\(3\\)."
+    }
+  ]
+}

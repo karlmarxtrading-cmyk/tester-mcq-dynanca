@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-90",
+  "category": "Comprehensive Mathematics",
+  "title": "90. Numeracy & Number Systems: Floating-Point Rounding Error in Basic Operations",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-90-q001",
+      "category": "Numeracy & Number Systems",
+      "concept": "Round-to-Nearest in a Binary Model",
+      "learningObjective": "Round an operation result to the available binary precision.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "Use a normalized binary floating-point model with three significant bits, including the leading one, and sufficient exponent range. Round each stored input and each operation result to the nearest representable value; halfway cases go to the value whose last significand bit is zero. What stored value results from \\(1+\\frac{1}{8}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{5}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inputs are exact in this model. Between \\(1\\) and \\(2\\), representable values are separated by \\(\\frac{1}{4}\\). The exact sum is \\(\\frac{9}{8}\\), halfway between \\(1.00_2=1\\) and \\(1.01_2=\\frac{5}{4}\\). Ties go to the final bit zero, so the result is \\(1\\). The other endpoint has final bit one.",
+      "hint": "Locate the two adjacent representable values and then apply the stated tie rule."
+    },
+    {
+      "id": "dynanca-90-q002",
+      "category": "Numeracy & Number Systems",
+      "concept": "Rounding a Sum Upward",
+      "learningObjective": "Round an exact sum that lies closer to the upper representable neighbor.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Use a normalized binary floating-point model with three significant bits, including the leading one, and sufficient exponent range. Round each stored input and each operation result to the nearest representable value; halfway cases go to the value whose last significand bit is zero. What stored value results from \\(1+\\frac{3}{16}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{5}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The exact sum is \\(\\frac{19}{16}\\). Its distances from \\(1\\) and \\(\\frac{5}{4}\\) are \\(\\frac{3}{16}\\) and \\(\\frac{1}{16}\\), respectively. Hence it rounds to \\(\\frac{5}{4}\\). The lower alternative is farther from the exact sum.",
+      "hint": "Compare the exact sum with neighboring values on the representable grid."
+    },
+    {
+      "id": "dynanca-90-q003",
+      "category": "Numeracy & Number Systems",
+      "concept": "Rounding Error in Multiplication",
+      "learningObjective": "Compare an exact product with its rounded stored value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Use a normalized binary floating-point model with three significant bits, including the leading one, and sufficient exponent range. Round each stored input and each operation result to the nearest representable value; halfway cases go to the value whose last significand bit is zero. What stored value results from \\(\\frac{3}{2}\\times\\frac{5}{4}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{7}{4}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both inputs are exact. Their product is \\(\\frac{15}{8}\\), halfway between \\(\\frac{7}{4}=1.11_2\\) and \\(2=1.00_2\\times 2^1\\). The latter has final significand bit zero, so the tie rounds to \\(2\\). The alternative has final bit one.",
+      "hint": "Compute the exact product and examine the tie at the exponent boundary."
+    },
+    {
+      "id": "dynanca-90-q004",
+      "category": "Numeracy & Number Systems",
+      "concept": "Rounding Error in Division",
+      "learningObjective": "Round an inexact quotient in a binary floating-point model.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Use a normalized binary floating-point model with three significant bits, including the leading one, and sufficient exponent range. Round each stored input and each operation result to the nearest representable value; halfway cases go to the value whose last significand bit is zero. What stored value results from \\(1\\div 3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{8}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{16}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inputs are exactly representable. Near \\(\\frac{1}{3}\\), the adjacent values are \\(\\frac{5}{16}\\) and \\(\\frac{3}{8}\\). Their distances from \\(\\frac{1}{3}\\) are \\(\\frac{1}{48}\\) and \\(\\frac{1}{24}\\), so the stored quotient is \\(\\frac{5}{16}\\). The other value is farther away.",
+      "hint": "Normalize the exact quotient to find the local spacing between representable values."
+    },
+    {
+      "id": "dynanca-90-q005",
+      "category": "Numeracy & Number Systems",
+      "concept": "Signed Rounding Error",
+      "learningObjective": "Determine stored-minus-exact error after rounding an operation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Use a normalized binary floating-point model with three significant bits, including the leading one, and sufficient exponent range. Round each stored input and each operation result to the nearest representable value; halfway cases go to the value whose last significand bit is zero. The stored result of \\(1+\\frac{5}{16}\\) is \\(\\frac{5}{4}\\). What is the signed error, defined as stored value minus exact result?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{1}{16}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{16}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The exact sum is \\(\\frac{21}{16}\\), while the stored value is \\(\\frac{20}{16}\\). Their difference is \\(\\frac{20}{16}-\\frac{21}{16}=-\\frac{1}{16}\\). The positive alternative reverses the requested subtraction.",
+      "hint": "Follow the stated sign convention when subtracting the exact result from the stored value."
+    },
+    {
+      "id": "dynanca-90-q006",
+      "category": "Numeracy & Number Systems",
+      "concept": "Absorption of a Small Addend",
+      "learningObjective": "Explain how a small exact addend can disappear after rounding.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Use a normalized binary floating-point model with three significant bits, including the leading one, and sufficient exponent range. Round each stored input and each operation result to the nearest representable value; halfway cases go to the value whose last significand bit is zero. What stored value results from \\(8+\\frac{1}{4}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Near \\(8\\), the three-bit spacing is \\(2\\), so the neighboring values are \\(8\\) and \\(10\\). The exact sum \\(\\frac{33}{4}=8.25\\) is closer to \\(8\\), so the stored result remains \\(8\\). The alternative rounds upward even though that endpoint is farther away.",
+      "hint": "Determine the representable spacing at the scale of the larger input."
+    },
+    {
+      "id": "dynanca-90-q007",
+      "category": "Numeracy & Number Systems",
+      "concept": "Rounding of an Input Before Subtraction",
+      "learningObjective": "Account for input rounding before carrying out arithmetic.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Use a normalized binary floating-point model with three significant bits, including the leading one, and sufficient exponent range. Round each stored input and each operation result to the nearest representable value; halfway cases go to the value whose last significand bit is zero. What stored value results from \\(\\frac{17}{16}-1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{16}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The input \\(\\frac{17}{16}\\) is closer to \\(1\\) than to \\(\\frac{5}{4}\\), so it is stored as \\(1\\). The operation is then \\(1-1=0\\). The alternative subtracts the unrounded input, contrary to the stated model.",
+      "hint": "Apply the input-storage rule before subtracting."
+    },
+    {
+      "id": "dynanca-90-q008",
+      "category": "Numeracy & Number Systems",
+      "concept": "A Sequence of Exact Binary Operations",
+      "learningObjective": "Identify an arithmetic sequence without rounding loss.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Use a normalized binary floating-point model with three significant bits, including the leading one, and sufficient exponent range. Round each stored input and each operation result to the nearest representable value; halfway cases go to the value whose last significand bit is zero. Which sequence stores its exact mathematical result?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left(2+\\frac{1}{8}\\right)-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}+\\frac{1}{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(\\frac{1}{2}+\\frac{1}{4}\\), the sum is \\(\\frac{3}{4}=1.10_2\\times 2^{-1}\\), which fits exactly. For \\(\\left(2+\\frac{1}{8}\\right)-2\\), the inner sum rounds from \\(\\frac{17}{8}\\) to \\(2\\), and the subsequent subtraction gives zero instead of the exact \\(\\frac{1}{8}\\).",
+      "hint": "Check representability after every operation, not only at the end."
+    },
+    {
+      "id": "dynanca-90-q009",
+      "category": "Numeracy & Number Systems",
+      "concept": "Relative Error of a Rounded Product",
+      "learningObjective": "Compute relative error using an independently calculated exact result.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Use a normalized binary floating-point model with three significant bits, including the leading one, and sufficient exponent range. Round each stored input and each operation result to the nearest representable value; halfway cases go to the value whose last significand bit is zero. The stored result of \\(\\frac{5}{4}\\times\\frac{5}{4}\\) is \\(\\frac{3}{2}\\). What is its relative error, using the exact product as the denominator?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{24}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{25}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The exact product is \\(\\frac{25}{16}\\), and the absolute error is \\(\\frac{25}{16}-\\frac{3}{2}=\\frac{1}{16}\\). Relative error is \\(\\frac{1}{16}\\div\\frac{25}{16}=\\frac{1}{25}\\). The alternative divides by the stored result instead: \\(\\frac{1}{16}\\div\\frac{3}{2}=\\frac{1}{24}\\).",
+      "hint": "Use the exact product, rather than the stored value, in the denominator."
+    },
+    {
+      "id": "dynanca-90-q010",
+      "category": "Numeracy & Number Systems",
+      "concept": "Failure of Associativity Under Rounding",
+      "learningObjective": "Compare two groupings of addition when intermediate values are rounded.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Use a normalized binary floating-point model with three significant bits, including the leading one, and sufficient exponent range. Round each stored input and each operation result to the nearest representable value; halfway cases go to the value whose last significand bit is zero. Compare the stored results of \\(\\left(2+\\frac{1}{4}\\right)+\\frac{1}{4}\\) and \\(2+\\left(\\frac{1}{4}+\\frac{1}{4}\\right)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both store \\(\\frac{5}{2}\\)."
+        },
+        {
+          "label": "B",
+          "text": "The first stores \\(2\\); the second stores \\(\\frac{5}{2}\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "In the first grouping, \\(2+\\frac{1}{4}\\) is a tie between \\(2=1.00_2\\times 2^1\\) and \\(\\frac{5}{2}=1.01_2\\times 2^1\\), so it rounds to \\(2\\); adding \\(\\frac{1}{4}\\) again stores \\(2\\). In the second grouping, \\(\\frac{1}{4}+\\frac{1}{4}=\\frac{1}{2}\\) is exact, and \\(2+\\frac{1}{2}=\\frac{5}{2}\\) is exact. The alternative assumes exact associativity survives intermediate rounding.",
+      "hint": "Evaluate each grouping separately and round after each addition."
+    }
+  ]
+}

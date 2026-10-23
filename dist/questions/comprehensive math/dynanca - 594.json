@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-594",
+  "category": "Comprehensive Mathematics",
+  "title": "594. Discrete Mathematics, Counting & Graph Theory: Dijkstra Algorithm on Small Graphs",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-594-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The selection rule",
+      "learningObjective": "State which vertex the algorithm of Dijkstra finalises next.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "At each step of the algorithm of Dijkstra, which vertex is finalised next?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The unfinalised vertex with the largest number of neighbours"
+        },
+        {
+          "label": "B",
+          "text": "The unfinalised vertex with the smallest tentative distance"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The algorithm keeps a tentative distance for every vertex and repeatedly finalises the unfinalised vertex whose tentative distance is smallest; with non-negative weights, that distance can no longer be improved. The number of neighbours plays no part in the choice.",
+      "hint": "The choice depends on the tentative distances only."
+    },
+    {
+      "id": "dynanca-594-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A direct edge versus a detour",
+      "learningObjective": "Find a shortest distance in a weighted triangle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A weighted graph has the edges \\(AB\\) of weight \\(2\\), \\(BC\\) of weight \\(3\\), and \\(AC\\) of weight \\(7\\). What is the shortest distance from \\(A\\) to \\(C\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The route \\(A,B,C\\) has total weight \\(2+3=5\\), which is less than the weight \\(7\\) of the direct edge \\(AC\\). In a weighted graph the route with the fewest edges is not necessarily the shortest.",
+      "hint": "Compare the direct edge with the route through \\(B\\)."
+    },
+    {
+      "id": "dynanca-594-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A shortest distance",
+      "learningObjective": "Find a shortest distance in a small weighted graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A weighted graph has the edges \\(AB:4\\), \\(AC:1\\), \\(BC:2\\), \\(BD:5\\), \\(CD:8\\), and \\(DE:3\\), where the number after each edge is its weight. What is the shortest distance from \\(A\\) to \\(B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The route \\(A,C,B\\) has weight \\(1+2=3\\), which is less than the weight \\(4\\) of the direct edge \\(AB\\). No other route is cheaper, so the shortest distance is \\(3\\).",
+      "hint": "Check whether passing through \\(C\\) is cheaper than the direct edge."
+    },
+    {
+      "id": "dynanca-594-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Order of finalisation",
+      "learningObjective": "Give the order in which the vertices are finalised.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A weighted graph has the edges \\(AB:4\\), \\(AC:1\\), \\(BC:2\\), \\(BD:5\\), \\(CD:8\\), and \\(DE:3\\), where the number after each edge is its weight. The algorithm of Dijkstra starts at \\(A\\). In which order are the vertices finalised?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A,\\ B,\\ C,\\ D,\\ E\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A,\\ C,\\ B,\\ D,\\ E\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "After \\(A\\), the tentative distances are \\(4\\) for \\(B\\) and \\(1\\) for \\(C\\), so \\(C\\) is finalised. From \\(C\\), the distance of \\(B\\) improves to \\(3\\) and \\(D\\) receives \\(9\\); \\(B\\) is finalised next. From \\(B\\), the distance of \\(D\\) improves to \\(8\\); \\(D\\) is finalised, and finally \\(E\\) with \\(11\\). Alphabetical order is not the rule.",
+      "hint": "After each step, compare the tentative distances of the vertices that are not yet finalised."
+    },
+    {
+      "id": "dynanca-594-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A tentative distance",
+      "learningObjective": "Find a tentative distance at an intermediate stage.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A weighted graph has the edges \\(AB:4\\), \\(AC:1\\), \\(BC:2\\), \\(BD:5\\), \\(CD:8\\), and \\(DE:3\\), where the number after each edge is its weight. The algorithm of Dijkstra starts at \\(A\\). What is the tentative distance of \\(D\\) immediately after \\(A\\) and \\(C\\) have been finalised?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "After \\(A\\) and \\(C\\) are finalised, the only known route to \\(D\\) is \\(A,C,D\\) with weight \\(1+8=9\\). The better value \\(8\\), from the route \\(A,C,B,D\\), is found only later, when \\(B\\) is finalised and its edges are examined.",
+      "hint": "Use only routes whose vertices before \\(D\\) have already been finalised."
+    },
+    {
+      "id": "dynanca-594-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The farthest vertex",
+      "learningObjective": "Find the shortest distance to the farthest vertex.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A weighted graph has the edges \\(AB:4\\), \\(AC:1\\), \\(BC:2\\), \\(BD:5\\), \\(CD:8\\), and \\(DE:3\\), where the number after each edge is its weight. What is the shortest distance from \\(A\\) to \\(E\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(11\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every route to \\(E\\) ends with the edge \\(DE\\), so the distance is the shortest distance to \\(D\\) plus \\(3\\). The shortest route to \\(D\\) is \\(A,C,B,D\\) with weight \\(1+2+5=8\\), giving \\(8+3=11\\). The value \\(12\\) comes from the route \\(A,C,D,E\\), which uses the heavier edge \\(CD\\).",
+      "hint": "First find the shortest distance to \\(D\\)."
+    },
+    {
+      "id": "dynanca-594-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Recovering a shortest path",
+      "learningObjective": "Identify the shortest path between two vertices.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A weighted graph has the edges \\(AB:4\\), \\(AC:1\\), \\(BC:2\\), \\(BD:5\\), \\(CD:8\\), and \\(DE:3\\), where the number after each edge is its weight. Which route is the shortest path from \\(A\\) to \\(D\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A,\\ C,\\ B,\\ D\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A,\\ C,\\ D\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The route \\(A,C,B,D\\) has weight \\(1+2+5=8\\). The route \\(A,C,D\\) has weight \\(1+8=9\\), and \\(A,B,D\\) has weight \\(4+5=9\\). So the route with three edges is the shortest, although it uses more edges than the others.",
+      "hint": "Add up the weights along each candidate route."
+    },
+    {
+      "id": "dynanca-594-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A negative weight",
+      "learningObjective": "Find the true shortest distance when an arc has negative weight.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "A directed graph has the arcs \\(A\\to B\\) of weight \\(2\\), \\(A\\to C\\) of weight \\(3\\), and \\(C\\to B\\) of weight \\(-2\\). The algorithm of Dijkstra, started at \\(A\\), finalises \\(B\\) first, with distance \\(2\\). What is the true shortest distance from \\(A\\) to \\(B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The route \\(A,C,B\\) has weight \\(3+(-2)=1\\), which is less than \\(2\\). The algorithm finalised \\(B\\) too early: it assumes that going through a vertex with a larger tentative distance, here \\(C\\), can never help, and that assumption fails when a weight is negative. This is why the algorithm requires non-negative weights.",
+      "hint": "Compute the weight of the route through \\(C\\)."
+    },
+    {
+      "id": "dynanca-594-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Fewest edges is not lightest",
+      "learningObjective": "Compare a direct edge with a longer but lighter route.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A weighted graph has the edges \\(AB:10\\), \\(AC:3\\), \\(CD:3\\), and \\(DB:3\\), where the number after each edge is its weight. Which route is the shortest path from \\(A\\) to \\(B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A,\\ B\\), because it has the fewest edges"
+        },
+        {
+          "label": "B",
+          "text": "\\(A,\\ C,\\ D,\\ B\\), with total weight \\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The direct edge has weight \\(10\\). The route \\(A,C,D,B\\) has weight \\(3+3+3=9\\), which is smaller. In a weighted graph, the length of a path is the sum of its weights, not the number of its edges.",
+      "hint": "Compare total weights, not numbers of edges."
+    },
+    {
+      "id": "dynanca-594-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A directed network",
+      "learningObjective": "Find a shortest distance in a directed weighted graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A directed graph has the arcs \\(S\\to A\\) of weight \\(7\\), \\(S\\to B\\) of weight \\(2\\), \\(B\\to A\\) of weight \\(3\\), \\(A\\to C\\) of weight \\(1\\), \\(B\\to C\\) of weight \\(8\\), \\(C\\to T\\) of weight \\(2\\), and \\(A\\to T\\) of weight \\(6\\). What is the shortest distance from \\(S\\) to \\(T\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The shortest distances are \\(2\\) to \\(B\\); \\(5\\) to \\(A\\), through \\(B\\); \\(6\\) to \\(C\\), through \\(A\\); and \\(8\\) to \\(T\\), through \\(C\\). The route is \\(S,B,A,C,T\\) with weight \\(2+3+1+2=8\\). The value \\(10\\) belongs to the route \\(S,A,C,T\\), which uses the expensive arc \\(S\\to A\\).",
+      "hint": "Check whether \\(A\\) is reached more cheaply through \\(B\\) than directly."
+    }
+  ]
+}

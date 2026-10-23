@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-514",
+  "category": "Comprehensive Mathematics",
+  "title": "514. Sets, Logic, Reasoning & Proof: Mathematical Induction Base Case",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-514-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Role of the base case",
+      "learningObjective": "State the purpose of the base case in a proof by induction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is done in the base case of a proof by mathematical induction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The statement is verified directly for the first value of \\(n\\)."
+        },
+        {
+          "label": "B",
+          "text": "The statement is assumed to be true for \\(n=k\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The base case checks the statement for the starting value, such as \\(n=1\\). Assuming the statement for \\(n=k\\) is the inductive hypothesis, which belongs to the inductive step. Both parts are needed: the base case starts the chain, and the step carries it forward.",
+      "hint": "The base case concerns one specific, smallest value of \\(n\\)."
+    },
+    {
+      "id": "dynanca-514-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Choosing the base value",
+      "learningObjective": "Identify the value of the variable used in the base case.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The statement \"\\(1+2+\\cdots+n=\\frac{n(n+1)}{2}\\) for every integer \\(n\\ge 1\\)\" is to be proved by induction. For which value of \\(n\\) is the base case checked?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement is claimed for all integers \\(n\\ge 1\\), so the first value is \\(n=1\\), and the base case checks it there. Starting at \\(n=2\\) would leave the case \\(n=1\\) unproved.",
+      "hint": "The base case uses the smallest value for which the statement is claimed."
+    },
+    {
+      "id": "dynanca-514-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Writing the base case equation",
+      "learningObjective": "Write the base case of an induction about a sum of odd numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The statement \"\\(1+3+5+\\cdots+(2n-1)=n^2\\) for every integer \\(n\\ge 1\\)\" is to be proved by induction. Which equation is the base case?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1+3=2^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1=1^2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(n=1\\) the sum has the single term \\(2\\cdot 1-1=1\\), and the right side is \\(1^2=1\\). So the base case is \\(1=1^2\\), which is true. The equation \\(1+3=2^2\\) is the case \\(n=2\\); it is true, but it is not the base case.",
+      "hint": "Substitute \\(n=1\\) on both sides; the sum then has only one term."
+    },
+    {
+      "id": "dynanca-514-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A base case that is not one",
+      "learningObjective": "Identify the base case when a statement starts at a larger value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The statement \"\\(2^n>n^2\\) for every integer \\(n\\ge 5\\)\" is to be proved by induction. Which inequality is the base case?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2^1>1^2\\), that is, \\(2>1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2^5>5^2\\), that is, \\(32>25\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The statement is claimed only for \\(n\\ge 5\\), so the base case is \\(n=5\\): \\(32>25\\), which is true. Starting at \\(n=1\\) would not help, because the inequality is false for \\(n=2,3,4\\) (for example \\(2^3=8<9\\)), so the chain would break.",
+      "hint": "Use the first value named in the statement."
+    },
+    {
+      "id": "dynanca-514-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Why the base case cannot be skipped",
+      "learningObjective": "Explain the failure of an induction whose base case is false.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(P(n)\\) be the statement \"\\(n=n+1\\)\". From \\(P(k)\\) one can derive \\(P(k+1)\\) by adding \\(1\\) to both sides. Why does this not prove \\(P(n)\\) for all \\(n\\ge 1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The base case fails: \\(P(1)\\) says \\(1=2\\), which is false."
+        },
+        {
+          "label": "B",
+          "text": "The inductive step is incorrect, because adding \\(1\\) to both sides is not allowed."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Adding \\(1\\) to both sides of \\(k=k+1\\) does give \\(k+1=k+2\\), so the step \\(P(k)\\implies P(k+1)\\) is correct. But the chain never starts, because \\(P(1)\\) is false. Without a true base case, the inductive step proves nothing.",
+      "hint": "Check the statement for \\(n=1\\)."
+    },
+    {
+      "id": "dynanca-514-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Finding a valid starting value",
+      "learningObjective": "Determine the smallest value for which an inequality holds so that it can serve as a base case.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the smallest positive integer \\(n\\) for which \\(n!>2^n\\) is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n=4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute: \\(1!=1<2\\), \\(2!=2<4\\), \\(3!=6<8\\), and \\(4!=24>16\\). So the inequality first holds for \\(n=4\\), which can serve as the base case of an induction for \\(n\\ge 4\\). For \\(n=3\\) the inequality is false.",
+      "hint": "Evaluate both sides for \\(n=1,2,3,4\\)."
+    },
+    {
+      "id": "dynanca-514-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A base case with the value zero",
+      "learningObjective": "Decide whether zero satisfies a divisibility claim in a base case.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The statement \"\\(6\\) divides \\(n^3-n\\) for every integer \\(n\\ge 1\\)\" is to be proved by induction. Is the base case \\(n=1\\) true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; \\(1^3-1=0\\) and \\(0=6\\cdot 0\\)."
+        },
+        {
+          "label": "B",
+          "text": "No; \\(1^3-1=0\\), and \\(0\\) is not divisible by any number."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(n=1\\), \\(n^3-n=0\\). The integer \\(0\\) is divisible by every non-zero integer, since \\(0=6\\cdot 0\\). So the base case holds.",
+      "hint": "Apply the definition of divisibility to the number \\(0\\)."
+    },
+    {
+      "id": "dynanca-514-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A gap below the base case",
+      "learningObjective": "Find the case left unproved when the base case starts too late.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A statement is claimed for all integers \\(n\\ge 0\\). A proof verifies it for \\(n=1\\) and shows that \\(P(k)\\) implies \\(P(k+1)\\) for every \\(k\\ge 1\\). Which case remains unproved?",
+      "options": [
+        {
+          "label": "A",
+          "text": "None; the proof is complete."
+        },
+        {
+          "label": "B",
+          "text": "\\(n=0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The base case \\(n=1\\) and the step for \\(k\\ge 1\\) establish the statement for \\(n=1,2,3,\\ldots\\). Nothing in the proof reaches \\(n=0\\), which is part of the claim. The base case must be the smallest value claimed, here \\(n=0\\), or \\(n=0\\) must be checked separately.",
+      "hint": "List the values of \\(n\\) that the base case and the step actually reach."
+    },
+    {
+      "id": "dynanca-514-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Two base cases",
+      "learningObjective": "Determine the base cases needed when the step uses two earlier cases.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "An inductive step proves \\(P(k+1)\\) from both \\(P(k)\\) and \\(P(k-1)\\), for every \\(k\\ge 2\\). Which base cases are needed to prove \\(P(n)\\) for all \\(n\\ge 1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P(1)\\) only"
+        },
+        {
+          "label": "B",
+          "text": "\\(P(1)\\) and \\(P(2)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first use of the step is for \\(k=2\\), where it derives \\(P(3)\\) from \\(P(2)\\) and \\(P(1)\\). Both of these must already be known, so two base cases are required. With only \\(P(1)\\), the statement \\(P(2)\\) is never established, because the step does not apply for \\(k=1\\).",
+      "hint": "Find the smallest \\(k\\) for which the step applies and see which earlier statements it needs."
+    },
+    {
+      "id": "dynanca-514-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A base case that holds with equality",
+      "learningObjective": "Decide whether a non-strict inequality is satisfied in the base case.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "The statement \"\\(3^n\\ge 2n+1\\) for every integer \\(n\\ge 1\\)\" is to be proved by induction. Is the base case satisfied?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; for \\(n=1\\) both sides equal \\(3\\), and \\(3\\ge 3\\) is true."
+        },
+        {
+          "label": "B",
+          "text": "No; for \\(n=1\\) both sides equal \\(3\\), and \\(3\\) is not greater than \\(3\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(n=1\\), \\(3^1=3\\) and \\(2\\cdot 1+1=3\\). The statement uses the non-strict inequality \\(\\ge\\), which allows equality, so \\(3\\ge 3\\) is true and the base case holds. Equality would be a problem only if the statement used the strict inequality \\(>\\).",
+      "hint": "Check whether the inequality in the statement is strict or non-strict."
+    }
+  ]
+}

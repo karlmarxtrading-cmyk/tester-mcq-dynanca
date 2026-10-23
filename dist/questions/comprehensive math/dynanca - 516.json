@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-516",
+  "category": "Comprehensive Mathematics",
+  "title": "516. Sets, Logic, Reasoning & Proof: Induction for Finite Sums",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-516-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Base case for a sum of even numbers",
+      "learningObjective": "Verify the base case of an induction about a sum of even numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The statement \"\\(2+4+6+\\cdots+2n=n(n+1)\\) for every integer \\(n\\ge 1\\)\" is to be proved by induction. In the base case \\(n=1\\), what do both sides equal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(n=1\\), the left side is the single term \\(2\\cdot 1=2\\), and the right side is \\(1\\cdot(1+1)=2\\). Both sides equal \\(2\\), so the base case holds.",
+      "hint": "Substitute \\(n=1\\) into the last term of the sum and into the formula."
+    },
+    {
+      "id": "dynanca-516-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Inductive hypothesis for a sum of odd numbers",
+      "learningObjective": "Write the inductive hypothesis for a sum formula in sigma notation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The statement \"\\(\\sum_{i=1}^{n}(2i-1)=n^2\\) for every integer \\(n\\ge 1\\)\" is to be proved by induction. What is the inductive hypothesis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sum_{i=1}^{k+1}(2i-1)=(k+1)^2\\) for some integer \\(k\\ge 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sum_{i=1}^{k}(2i-1)=k^2\\) for some integer \\(k\\ge 1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inductive hypothesis is the statement with \\(n\\) replaced by \\(k\\): \\(\\sum_{i=1}^{k}(2i-1)=k^2\\). The equation with \\(k+1\\) is what the inductive step has to prove, not what it assumes.",
+      "hint": "The hypothesis is the statement for \\(k\\); the goal is the statement for \\(k+1\\)."
+    },
+    {
+      "id": "dynanca-516-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Inductive step for a sum of even numbers",
+      "learningObjective": "Carry out the algebra of an inductive step for a sum of even numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Assume \\(2+4+\\cdots+2k=k(k+1)\\). Which computation completes the inductive step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k(k+1)+2(k+1)=(k+1)(k+2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k(k+1)+2k=(k+1)(k+2)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The next term of the sum is \\(2(k+1)\\). Adding it to the hypothesis gives \\(k(k+1)+2(k+1)=(k+1)(k+2)\\), which is the formula \\(n(n+1)\\) with \\(n=k+1\\). Adding \\(2k\\) repeats the last term already counted, and the claimed equality is false: \\(k(k+1)+2k=k^2+3k\\).",
+      "hint": "The term to add is the general term \\(2n\\) evaluated at \\(n=k+1\\)."
+    },
+    {
+      "id": "dynanca-516-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Term added for a sum of squares",
+      "learningObjective": "Identify the term added in the inductive step for a sum of squares.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "In an induction proof of \\(\\sum_{i=1}^{n}i^2=\\frac{n(n+1)(2n+1)}{6}\\), which term is added to both sides of the hypothesis for \\(n=k\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((k+1)^2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sum for \\(n=k+1\\) contains one more term than the sum for \\(n=k\\), namely the term with \\(i=k+1\\), which is \\((k+1)^2\\). The term \\(k^2\\) is already the last term of the sum for \\(n=k\\).",
+      "hint": "Evaluate the general term \\(i^2\\) at the new index."
+    },
+    {
+      "id": "dynanca-516-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Algebra for the sum of squares",
+      "learningObjective": "Simplify the expression in the inductive step for the sum of squares.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which expression equals \\(\\frac{k(k+1)(2k+1)}{6}+(k+1)^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{(k+1)(k+2)(2k+1)}{6}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{(k+1)(k+2)(2k+3)}{6}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor out \\(\\frac{k+1}{6}\\): \\(\\frac{k+1}{6}\\left[k(2k+1)+6(k+1)\\right]=\\frac{k+1}{6}\\left(2k^2+7k+6\\right)=\\frac{(k+1)(k+2)(2k+3)}{6}\\). This is the formula with \\(n=k+1\\), since \\(2(k+1)+1=2k+3\\). The other expression keeps \\(2k+1\\) unchanged and is not equal; for \\(k=1\\) it gives \\(3\\) instead of \\(5\\).",
+      "hint": "Factor out \\(\\frac{k+1}{6}\\) and factor the remaining quadratic."
+    },
+    {
+      "id": "dynanca-516-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Inductive step for powers of two",
+      "learningObjective": "Carry out the inductive step for a sum of powers of two.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Assume \\(1+2+4+\\cdots+2^k=2^{k+1}-1\\). Which computation completes the inductive step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left(2^{k+1}-1\\right)+2^{k+1}=2^{k+2}-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\left(2^{k+1}-1\\right)+2^{k+1}=2^{2k+2}-1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The next term is \\(2^{k+1}\\). Adding it gives \\(2^{k+1}+2^{k+1}-1=2\\cdot 2^{k+1}-1=2^{k+2}-1\\), which is the formula with \\(k\\) replaced by \\(k+1\\). Adding two equal powers doubles the power; it does not add the exponents, so \\(2^{2k+2}\\) is incorrect.",
+      "hint": "The sum of two equal powers of \\(2\\) is the next power of \\(2\\)."
+    },
+    {
+      "id": "dynanca-516-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Inductive step for a telescoping sum",
+      "learningObjective": "Carry out the inductive step for a sum of fractions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Assume \\(\\sum_{i=1}^{k}\\frac{1}{i(i+1)}=\\frac{k}{k+1}\\). What is \\(\\frac{k}{k+1}+\\frac{1}{(k+1)(k+2)}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{k+1}{k+2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{k}{k+2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the common denominator \\((k+1)(k+2)\\): \\(\\frac{k(k+2)+1}{(k+1)(k+2)}=\\frac{k^2+2k+1}{(k+1)(k+2)}=\\frac{(k+1)^2}{(k+1)(k+2)}=\\frac{k+1}{k+2}\\). This is the formula \\(\\frac{n}{n+1}\\) with \\(n=k+1\\).",
+      "hint": "Combine the fractions over the common denominator and recognise a perfect square in the numerator."
+    },
+    {
+      "id": "dynanca-516-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A formula that fails at the base case",
+      "learningObjective": "Recognise that a wrong formula cannot be proved because its base case fails.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Can induction prove the statement \"\\(\\sum_{i=1}^{n}(2i-1)=n^2+1\\) for every integer \\(n\\ge 1\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; adding \\(2k+1\\) to both sides of the case \\(n=k\\) gives the case \\(n=k+1\\)."
+        },
+        {
+          "label": "B",
+          "text": "No; the base case fails, because for \\(n=1\\) the left side is \\(1\\) and the right side is \\(2\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(n=1\\) the sum is \\(1\\), while \\(n^2+1=2\\), so the statement is false at the start. It is true that adding \\(2k+1\\) to both sides of \\(k^2+1\\) gives \\((k+1)^2+1\\), so the step would work, but a correct step cannot rescue a false base case.",
+      "hint": "Test the formula for \\(n=1\\) before attempting the step."
+    },
+    {
+      "id": "dynanca-516-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Algebra for the sum of cubes",
+      "learningObjective": "Simplify the expression in the inductive step for the sum of cubes.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "In an induction proof of \\(\\sum_{i=1}^{n}i^3=\\left(\\frac{n(n+1)}{2}\\right)^2\\), which expression equals \\(\\frac{k^2(k+1)^2}{4}+(k+1)^3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{(k+1)^2\\left(k^2+4\\right)}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{(k+1)^2(k+2)^2}{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor out \\(\\frac{(k+1)^2}{4}\\): \\(\\frac{(k+1)^2}{4}\\left[k^2+4(k+1)\\right]=\\frac{(k+1)^2}{4}\\left(k^2+4k+4\\right)=\\frac{(k+1)^2(k+2)^2}{4}\\). This equals \\(\\left(\\frac{(k+1)(k+2)}{2}\\right)^2\\), the formula for \\(n=k+1\\). The other expression drops the term \\(4k\\) from the bracket.",
+      "hint": "Factor out \\(\\frac{(k+1)^2}{4}\\); the bracket becomes a perfect square."
+    },
+    {
+      "id": "dynanca-516-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Inductive step with factorials",
+      "learningObjective": "Carry out the inductive step for a sum involving factorials.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Assume \\(\\sum_{i=1}^{k}i\\cdot i!=(k+1)!-1\\). What is \\((k+1)!-1+(k+1)(k+1)!\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2k+2)!-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((k+2)!-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor \\((k+1)!\\) from the two factorial terms: \\((k+1)!\\left[1+(k+1)\\right]-1=(k+2)(k+1)!-1=(k+2)!-1\\). This is the formula with \\(k\\) replaced by \\(k+1\\). Factorials do not combine by adding their arguments, so \\((2k+2)!\\) is incorrect.",
+      "hint": "Factor out \\((k+1)!\\) and use \\((k+2)!=(k+2)(k+1)!\\)."
+    }
+  ]
+}

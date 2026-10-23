@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-365",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 365",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-365-q001",
+      "category": "Combinatorics",
+      "concept": "Pascal's Rule for Binomial Coefficients",
+      "learningObjective": "Apply Pascal's identity to evaluate a binomial coefficient.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Using Pascal's identity \\(\\binom{n}{k}=\\binom{n-1}{k-1}+\\binom{n-1}{k}\\), evaluate \\(\\binom{6}{3}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By Pascal's identity,\n\\[\n\\binom{6}{3}=\\binom{5}{2}+\\binom{5}{3}.\n\\]\nNow \\(\\binom{5}{2}=10\\) and \\(\\binom{5}{3}=10\\). Hence\n\\[\n\\binom{6}{3}=10+10=20.\n\\]\nThus the correct option is B.",
+      "hint": "Write \\(\\binom{6}{3}\\) as the sum of two entries from row \\(5\\) of Pascal's triangle."
+    },
+    {
+      "id": "math-gaokao-365-q002",
+      "category": "Combinatorics",
+      "concept": "Pascal's Rule for Binomial Coefficients",
+      "learningObjective": "Evaluate a binomial coefficient by decomposing it using Pascal's identity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Using Pascal's identity, evaluate \\(\\binom{7}{4}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(35\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By Pascal's identity,\n\\[\n\\binom{7}{4}=\\binom{6}{3}+\\binom{6}{4}.\n\\]\nCompute \\(\\binom{6}{3}=20\\) and \\(\\binom{6}{4}=15\\). Therefore\n\\[\n\\binom{7}{4}=20+15=35.\n\\]\nThus the correct option is B.",
+      "hint": "Use \\(\\binom{7}{4}=\\binom{6}{3}+\\binom{6}{4}\\)."
+    },
+    {
+      "id": "math-gaokao-365-q003",
+      "category": "Combinatorics",
+      "concept": "Pascal's Rule for Binomial Coefficients",
+      "learningObjective": "Evaluate a binomial coefficient by applying Pascal's identity twice.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Using Pascal's identity, evaluate \\(\\binom{9}{5}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(126\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By Pascal's identity,\n\\[\n\\binom{9}{5}=\\binom{8}{4}+\\binom{8}{5}.\n\\]\nNow \\(\\binom{8}{4}=70\\) and \\(\\binom{8}{5}=56\\). Hence\n\\[\n\\binom{9}{5}=70+56=126.\n\\]\nThus the correct option is B.",
+      "hint": "Use the two entries directly above \\(\\binom{9}{5}\\) in Pascal's triangle."
+    },
+    {
+      "id": "math-gaokao-365-q004",
+      "category": "Combinatorics",
+      "concept": "Symmetry Identity for Binomial Coefficients",
+      "learningObjective": "Use the symmetry identity \\(\\binom{n}{k}=\\binom{n}{n-k}\\) to evaluate a binomial coefficient.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Using the symmetry identity \\(\\binom{n}{k}=\\binom{n}{n-k}\\), evaluate \\(\\binom{10}{7}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(210\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By symmetry,\n\\[\n\\binom{10}{7}=\\binom{10}{3}.\n\\]\nThen\n\\[\n\\binom{10}{3}=\\frac{10\\cdot 9\\cdot 8}{3\\cdot 2\\cdot 1}=120.\n\\]\nThus the correct option is A.",
+      "hint": "Replace \\(\\binom{10}{7}\\) with \\(\\binom{10}{3}\\), since \\(10-7=3\\)."
+    },
+    {
+      "id": "math-gaokao-365-q005",
+      "category": "Combinatorics",
+      "concept": "Hockey-Stick Identity",
+      "learningObjective": "Apply the hockey-stick identity to evaluate a sum of binomial coefficients.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Using the hockey-stick identity, evaluate\n\\[\n\\sum_{k=2}^{6}\\binom{k}{2}.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(35\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The hockey-stick identity states\n\\[\n\\sum_{k=r}^{n}\\binom{k}{r}=\\binom{n+1}{r+1}.\n\\]\nHere \\(r=2\\) and \\(n=6\\), so\n\\[\n\\sum_{k=2}^{6}\\binom{k}{2}=\\binom{7}{3}.\n\\]\nCompute\n\\[\n\\binom{7}{3}=\\frac{7\\cdot 6\\cdot 5}{3\\cdot 2\\cdot 1}=35.\n\\]\nThus the correct option is B.",
+      "hint": "Use \\(\\sum_{k=r}^{n}\\binom{k}{r}=\\binom{n+1}{r+1}\\) with \\(r=2\\) and \\(n=6\\)."
+    },
+    {
+      "id": "math-gaokao-365-q006",
+      "category": "Combinatorics",
+      "concept": "Sum of a Row of Pascal's Triangle",
+      "learningObjective": "Use the identity for the sum of binomial coefficients in a row.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Evaluate\n\\[\n\\sum_{k=0}^{6}\\binom{6}{k}.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(64\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(63\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the identity\n\\[\n\\sum_{k=0}^{n}\\binom{n}{k}=2^n,\n\\]\nwith \\(n=6\\), we get\n\\[\n\\sum_{k=0}^{6}\\binom{6}{k}=2^6=64.\n\\]\nThus the correct option is A.",
+      "hint": "Set \\(x=1\\) in the binomial expansion of \\((1+x)^6\\)."
+    },
+    {
+      "id": "math-gaokao-365-q007",
+      "category": "Combinatorics",
+      "concept": "Vandermonde's Identity",
+      "learningObjective": "Apply Vandermonde's identity to evaluate a convolution of binomial coefficients.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Using Vandermonde's identity, evaluate\n\\[\n\\sum_{k=0}^{2}\\binom{2}{k}\\binom{4}{3-k}.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Vandermonde's identity gives\n\\[\n\\sum_{k=0}^{r}\\binom{m}{k}\\binom{n}{r-k}=\\binom{m+n}{r}.\n\\]\nHere \\(m=2\\), \\(n=4\\), and \\(r=3\\). Therefore\n\\[\n\\sum_{k=0}^{2}\\binom{2}{k}\\binom{4}{3-k}=\\binom{6}{3}.\n\\]\nCompute\n\\[\n\\binom{6}{3}=\\frac{6\\cdot 5\\cdot 4}{3\\cdot 2\\cdot 1}=20.\n\\]\nThus the correct option is A.",
+      "hint": "Use Vandermonde's identity with \\(m=2\\), \\(n=4\\), and \\(r=3\\)."
+    },
+    {
+      "id": "math-gaokao-365-q008",
+      "category": "Combinatorics",
+      "concept": "Absorption Identity for Binomial Coefficients",
+      "learningObjective": "Use the identity \\(\\binom{n}{k}=\\frac{n}{k}\\binom{n-1}{k-1}\\) to evaluate a binomial coefficient.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Using the identity \\(\\binom{n}{k}=\\frac{n}{k}\\binom{n-1}{k-1}\\), evaluate \\(\\binom{9}{4}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(126\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(112\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Apply the stated identity with \\(n=9\\) and \\(k=4\\):\n\\[\n\\binom{9}{4}=\\frac{9}{4}\\binom{8}{3}=\\frac{9}{4}\\cdot56=126.\n\\]\nThe distractor \\(112\\) incorrectly uses \\(8/4\\) instead of \\(9/4\\).",
+      "hint": "Match the upper and lower indices to \\(n\\) and \\(k\\) before applying the given identity."
+    },
+    {
+      "id": "math-gaokao-365-q009",
+      "category": "Combinatorics",
+      "concept": "Weighted Sum of Binomial Coefficients",
+      "learningObjective": "Apply the identity \\(\\sum_{k=0}^{n}k\\binom{n}{k}=n2^{n-1}\\) to evaluate a weighted sum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Evaluate\n\\[\n\\sum_{k=1}^{5}k\\binom{5}{k}.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(75\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(80\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use the identity\n\\[\n\\sum_{k=0}^{n}k\\binom{n}{k}=n2^{n-1}.\n\\]\nFor \\(n=5\\),\n\\[\n\\begin{aligned}\n\\sum_{k=1}^{5}k\\binom{5}{k}&=5\\cdot 2^{4} \\\\\n&=5\\cdot 16 \\\\\n&=80.\n\\end{aligned}\n\\]\nThus the correct option is B.",
+      "hint": "Use \\(\\sum_{k=0}^{n}k\\binom{n}{k}=n2^{n-1}\\), or differentiate \\((1+x)^n\\) and substitute \\(x=1\\)."
+    },
+    {
+      "id": "math-gaokao-365-q010",
+      "category": "Combinatorics",
+      "concept": "Sum of Squares of Binomial Coefficients",
+      "learningObjective": "Apply the identity \\(\\sum_{k=0}^{n}\\binom{n}{k}^2=\\binom{2n}{n}\\) to evaluate a sum of squares.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Evaluate\n\\[\n\\sum_{k=0}^{4}\\binom{4}{k}^2.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(70\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(56\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the identity\n\\[\n\\sum_{k=0}^{n}\\binom{n}{k}^2=\\binom{2n}{n}.\n\\]\nFor \\(n=4\\),\n\\[\n\\sum_{k=0}^{4}\\binom{4}{k}^2=\\binom{8}{4}.\n\\]\nCompute\n\\[\n\\binom{8}{4}=\\frac{8\\cdot 7\\cdot 6\\cdot 5}{4\\cdot 3\\cdot 2\\cdot 1}=70.\n\\]\nThus the correct option is A.",
+      "hint": "Use \\(\\sum_{k=0}^{n}\\binom{n}{k}^2=\\binom{2n}{n}\\) with \\(n=4\\)."
+    }
+  ]
+}

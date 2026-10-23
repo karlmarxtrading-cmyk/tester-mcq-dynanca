@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-600",
+  "category": "Comprehensive Mathematics",
+  "title": "600. Discrete Mathematics, Counting & Graph Theory: Hamiltonian Paths in Small Graphs",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-600-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Definition of a Hamiltonian path",
+      "learningObjective": "State what a Hamiltonian path is.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is a Hamiltonian path of a graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A path that visits every vertex exactly once"
+        },
+        {
+          "label": "B",
+          "text": "A trail that uses every edge exactly once"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A Hamiltonian path passes through all vertices of the graph, each exactly once; it need not use all edges. A trail that uses every edge exactly once is an Euler path, which is a different notion.",
+      "hint": "The definition is about vertices, not about edges."
+    },
+    {
+      "id": "dynanca-600-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Checking a sequence",
+      "learningObjective": "Decide which sequence is a Hamiltonian path in a cycle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D\\) and edges \\(AB\\), \\(BC\\), \\(CD\\), and \\(DA\\). Which sequence is a Hamiltonian path?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A,\\ C,\\ B,\\ D\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A,\\ B,\\ C,\\ D\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In \\(A,B,C,D\\) consecutive vertices are joined by the edges \\(AB\\), \\(BC\\), and \\(CD\\), and every vertex appears once. The sequence \\(A,C,B,D\\) is not even a walk, because \\(A\\) and \\(C\\) are not adjacent, and neither are \\(B\\) and \\(D\\).",
+      "hint": "Check that each pair of consecutive vertices is an edge."
+    },
+    {
+      "id": "dynanca-600-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A star",
+      "learningObjective": "Decide whether a star has a Hamiltonian path.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has a centre \\(C\\) adjacent to each of the vertices \\(P\\), \\(Q\\), and \\(R\\), and no other edges. Does it have a Hamiltonian path?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; every connected graph has a Hamiltonian path."
+        },
+        {
+          "label": "B",
+          "text": "No; a path can pass through \\(C\\) only once and so can reach at most two of \\(P\\), \\(Q\\), \\(R\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The vertices \\(P\\), \\(Q\\), \\(R\\) are adjacent only to \\(C\\). A path uses at most two edges at \\(C\\), one to arrive and one to leave, so it can contain at most two of these three vertices. Hence no path visits all four vertices. Connectedness alone does not guarantee a Hamiltonian path.",
+      "hint": "Count how many edges at \\(C\\) a single path can use."
+    },
+    {
+      "id": "dynanca-600-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Choosing a Hamiltonian path",
+      "learningObjective": "Decide which sequence is a Hamiltonian path in a graph with five vertices.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A graph has vertices \\(A,B,C,D,E\\) and edges \\(AB\\), \\(BC\\), \\(CD\\), \\(BD\\), and \\(DE\\). Which sequence is a Hamiltonian path?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A,\\ B,\\ D,\\ C,\\ E\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A,\\ B,\\ C,\\ D,\\ E\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sequence \\(A,B,C,D,E\\) uses the edges \\(AB\\), \\(BC\\), \\(CD\\), and \\(DE\\) and visits each vertex once. The sequence \\(A,B,D,C,E\\) fails at its last step, because \\(C\\) and \\(E\\) are not adjacent.",
+      "hint": "Check the last step of each sequence against the edge list."
+    },
+    {
+      "id": "dynanca-600-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Hamiltonian paths in a complete graph",
+      "learningObjective": "Count the Hamiltonian paths of a complete graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In the complete graph on \\(4\\) vertices, how many sequences of vertices are Hamiltonian paths, if a path and its reverse are counted as different sequences?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every two vertices are adjacent, so every ordering of the \\(4\\) vertices is a Hamiltonian path. There are \\(4!=24\\) orderings. The number \\(12\\) would be correct if a path and its reverse were counted as the same.",
+      "hint": "In a complete graph, any ordering of the vertices is a path."
+    },
+    {
+      "id": "dynanca-600-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "From a cycle to a path",
+      "learningObjective": "Decide whether a Hamiltonian cycle yields a Hamiltonian path.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A graph has a Hamiltonian cycle, that is, a cycle through all its vertices. Must it have a Hamiltonian path?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; removing one edge from the cycle leaves a path through all vertices."
+        },
+        {
+          "label": "B",
+          "text": "No; a cycle and a path are different kinds of subgraph."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A Hamiltonian cycle visits every vertex once and returns to its start. Deleting any one of its edges leaves a path that still contains every vertex, which is a Hamiltonian path. The converse does not hold: a path graph has a Hamiltonian path but no Hamiltonian cycle.",
+      "hint": "Cut the cycle open at one edge."
+    },
+    {
+      "id": "dynanca-600-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Vertices of degree one",
+      "learningObjective": "Use vertices of degree one to rule out a Hamiltonian path.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A graph has three vertices of degree \\(1\\). Can it have a Hamiltonian path?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; a vertex of degree \\(1\\) can only be an end of the path, and a path has only two ends."
+        },
+        {
+          "label": "B",
+          "text": "Yes; vertices of degree \\(1\\) are the easiest ones to include in a path."
+        }
+      ],
+      "answer": "A",
+      "explanation": "An inner vertex of a path uses two different edges, so it must have degree at least \\(2\\). A vertex of degree \\(1\\) can therefore appear only as the first or the last vertex of a Hamiltonian path. With three such vertices, one of them cannot be placed.",
+      "hint": "Ask where on a path a vertex of degree \\(1\\) can stand."
+    },
+    {
+      "id": "dynanca-600-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Unequal sides",
+      "learningObjective": "Decide whether an unbalanced complete bipartite graph has a Hamiltonian path.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "In a complete bipartite graph, one side has \\(2\\) vertices and the other side has \\(4\\) vertices. Does the graph have a Hamiltonian path?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; a path alternates between the sides, so the side sizes can differ by at most \\(1\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; every vertex is adjacent to all vertices of the other side."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every edge joins the two sides, so the vertices of any path alternate between them. A path through all vertices would therefore have side sizes that are equal or differ by \\(1\\). Here the sizes are \\(2\\) and \\(4\\), so a Hamiltonian path is impossible.",
+      "hint": "Write down the pattern of sides along a path."
+    },
+    {
+      "id": "dynanca-600-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A path through the cube",
+      "learningObjective": "Decide which sequence of binary strings is a Hamiltonian path of the cube graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The vertices of a graph are the eight binary strings of length \\(3\\), and two strings are adjacent when they differ in exactly one position. Which sequence is a Hamiltonian path?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(000,\\ 001,\\ 011,\\ 010,\\ 110,\\ 111,\\ 101,\\ 100\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(000,\\ 001,\\ 010,\\ 011,\\ 100,\\ 101,\\ 110,\\ 111\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In the first sequence each string differs from the next in exactly one position, and all eight strings appear once. In the second sequence, which lists the strings in counting order, the step from \\(001\\) to \\(010\\) changes two positions, so those strings are not adjacent.",
+      "hint": "Compare consecutive strings position by position."
+    },
+    {
+      "id": "dynanca-600-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A complete graph with one edge removed",
+      "learningObjective": "Count the Hamiltonian paths after an edge is removed.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A graph has vertices \\(A,B,C,D\\) and every possible edge except \\(BD\\). How many sequences of vertices are Hamiltonian paths, if a path and its reverse are counted as different sequences?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(4!=24\\) orderings of the vertices. An ordering fails exactly when \\(B\\) and \\(D\\) are next to each other, since that step would need the missing edge. Treating \\(B\\) and \\(D\\) as a block gives \\(3!\\cdot 2=12\\) such orderings. So \\(24-12=12\\) orderings are Hamiltonian paths.",
+      "hint": "Count the orderings in which \\(B\\) and \\(D\\) stand next to each other and subtract."
+    }
+  ]
+}

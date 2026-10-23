@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-21",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 21",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-21-q001",
+      "category": "Logic",
+      "concept": "Subset Relation as a Logical Implication",
+      "learningObjective": "Identify the logical statement equivalent to \\(A\\subseteq B\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which statement is equivalent to \\(A\\subseteq B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\forall x,\\ (x\\in A \\lor x\\in B)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\forall x,\\ (x\\in A \\rightarrow x\\in B)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By definition, \\(A\\subseteq B\\) means every element of \\(A\\) is also an element of \\(B\\). In logical notation, this is written as\n\\[\n\\forall x,\\ (x\\in A \\rightarrow x\\in B).\n\\]\nOption A uses disjunction instead of implication, so it is not the correct translation.",
+      "hint": "Recall the definition of a subset in terms of elements."
+    },
+    {
+      "id": "math-gaokao-21-q002",
+      "category": "Logic",
+      "concept": "Negation of a Subset Statement",
+      "learningObjective": "Negate the statement \\(A\\subseteq B\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the negation of \\(A\\subseteq B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\forall x,\\ (x\\in A \\rightarrow x\\in B)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\exists x,\\ (x\\in A \\land x\\notin B)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The statement \\(A\\subseteq B\\) is\n\\[\n\\forall x,\\ (x\\in A \\rightarrow x\\in B).\n\\]\nIts negation is\n\\[\n\\exists x,\\ \\neg(x\\in A \\rightarrow x\\in B).\n\\]\nSince \\(\\neg(P\\rightarrow Q)\\equiv P\\land\\neg Q\\), this becomes\n\\[\n\\exists x,\\ (x\\in A \\land x\\notin B).\n\\]\nTherefore, the negation is option B.",
+      "hint": "Negate the universal statement and then negate the implication."
+    },
+    {
+      "id": "math-gaokao-21-q003",
+      "category": "Logic",
+      "concept": "Set Operations on Finite Sets",
+      "learningObjective": "Determine the intersection and union of two finite sets.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(U=\\{1,2,3,4\\}\\), \\(A=\\{1,2\\}\\), and \\(B=\\{2,3\\}\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\cap B=\\{2\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\cup B=\\{1,2,3,4\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The intersection \\(A\\cap B\\) consists of elements common to both sets. The only common element is \\(2\\), so\n\\[\nA\\cap B=\\{2\\}.\n\\]\nThe union \\(A\\cup B\\) is\n\\[\nA\\cup B=\\{1,2\\}\\cup\\{2,3\\}=\\{1,2,3\\},\n\\]\nwhich is not equal to \\(\\{1,2,3,4\\}\\). Therefore, option A is true and option B is false.",
+      "hint": "Find the common elements for the intersection, and combine all elements for the union."
+    },
+    {
+      "id": "math-gaokao-21-q004",
+      "category": "Logic",
+      "concept": "De Morgan's Law for Sets",
+      "learningObjective": "Identify the logical equivalence corresponding to \\((A\\cup B)^c=A^c\\cap B^c\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which logical equivalence corresponds to the set identity \\((A\\cup B)^c=A^c\\cap B^c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\neg(x\\in A \\lor x\\in B)\\equiv(x\\notin A \\land x\\notin B)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\neg(x\\in A \\land x\\in B)\\equiv(x\\notin A \\lor x\\notin B)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement \\(x\\in (A\\cup B)^c\\) is equivalent to\n\\[\n\\neg(x\\in A \\lor x\\in B).\n\\]\nBy De Morgan's law for logic,\n\\[\n\\neg(x\\in A \\lor x\\in B)\\equiv(x\\notin A \\land x\\notin B).\n\\]\nThus option A correctly expresses the set identity. Option B corresponds to the complement of an intersection, not a union.",
+      "hint": "Use De Morgan's law to negate a disjunction."
+    },
+    {
+      "id": "math-gaokao-21-q005",
+      "category": "Logic",
+      "concept": "Negation of an Existential Set Statement",
+      "learningObjective": "Negate the statement \\(\\exists x,\\ (x\\in A \\land x\\notin B)\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is the negation of \\(\\exists x,\\ (x\\in A \\land x\\notin B)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\exists x,\\ (x\\in A \\land x\\notin B)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\forall x,\\ (x\\in A \\rightarrow x\\in B)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The negation of an existential statement is universal. We have\n\\[\n\\neg\\bigl(\\exists x,\\ (x\\in A \\land x\\notin B)\\bigr)\n\\equiv\n\\forall x,\\ \\neg(x\\in A \\land x\\notin B).\n\\]\nBy De Morgan's law,\n\\[\n\\neg(x\\in A \\land x\\notin B)\\equiv(x\\notin A \\lor x\\in B).\n\\]\nThis is logically equivalent to\n\\[\n\\forall x,\\ (x\\in A \\rightarrow x\\in B).\n\\]\nTherefore, the negation is option B.",
+      "hint": "Negate the existential quantifier, then simplify the inner statement."
+    },
+    {
+      "id": "math-gaokao-21-q006",
+      "category": "Logic",
+      "concept": "Subset Relations Among Finite Sets",
+      "learningObjective": "Determine which subset relations hold among given finite sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(A=\\{1,2\\}\\), \\(B=\\{2,3\\}\\), and \\(C=\\{1,2,3\\}\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\subseteq C\\) and \\(B\\subseteq C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\subseteq B\\) and \\(B\\subseteq A\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Check the elements of \\(A=\\{1,2\\}\\). Both \\(1\\) and \\(2\\) belong to \\(C=\\{1,2,3\\}\\), so \\(A\\subseteq C\\). Similarly, both elements of \\(B=\\{2,3\\}\\) belong to \\(C\\), so \\(B\\subseteq C\\). Thus option A is true. For option B, \\(A\\subseteq B\\) is false because \\(1\\in A\\) but \\(1\\notin B\\). Also \\(B\\subseteq A\\) is false because \\(3\\in B\\) but \\(3\\notin A\\). Therefore, option B is false.",
+      "hint": "Check every element of each set against the proposed superset."
+    },
+    {
+      "id": "math-gaokao-21-q007",
+      "category": "Logic",
+      "concept": "Consequences of the Subset Relation",
+      "learningObjective": "Determine which set equality necessarily follows from \\(A\\subseteq B\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(A\\subseteq B\\), which statement is necessarily true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\cap B=A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\cup B=A\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(A\\subseteq B\\), every element of \\(A\\) is also an element of \\(B\\). Therefore, the common elements of \\(A\\) and \\(B\\) are exactly the elements of \\(A\\), so\n\\[\nA\\cap B=A.\n\\]\nThe union \\(A\\cup B\\) is actually \\(B\\), not \\(A\\), unless \\(A=B\\). Hence option B is not necessarily true.",
+      "hint": "Use the definition of subset to determine what happens to intersection and union."
+    },
+    {
+      "id": "math-gaokao-21-q008",
+      "category": "Logic",
+      "concept": "Set Equality as Mutual Subset",
+      "learningObjective": "Identify the condition equivalent to \\(A=B\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which condition is equivalent to \\(A=B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\subseteq B\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\subseteq B\\) and \\(B\\subseteq A\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Two sets are equal exactly when they contain the same elements. This happens if and only if each is a subset of the other:\n\\[\nA=B \\iff (A\\subseteq B \\land B\\subseteq A).\n\\]\nOption A only states one direction, so it is not sufficient for equality.",
+      "hint": "Recall that equality of sets requires mutual containment."
+    },
+    {
+      "id": "math-gaokao-21-q009",
+      "category": "Logic",
+      "concept": "Negation of a Universal Set Statement",
+      "learningObjective": "Negate the statement \\(\\forall x,\\ (x\\in A \\rightarrow P(x))\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "What is the negation of \\(\\forall x,\\ (x\\in A \\rightarrow P(x))\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\exists x,\\ (x\\in A \\land \\neg P(x))\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\forall x,\\ (x\\notin A \\lor \\neg P(x))\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The negation of a universal statement is existential:\n\\[\n\\neg\\bigl(\\forall x,\\ (x\\in A \\rightarrow P(x))\\bigr)\n\\equiv\n\\exists x,\\ \\neg(x\\in A \\rightarrow P(x)).\n\\]\nSince \\(\\neg(P\\rightarrow Q)\\equiv P\\land\\neg Q\\), we get\n\\[\n\\exists x,\\ (x\\in A \\land \\neg P(x)).\n\\]\nTherefore, the negation is option A. Option B is not the negation; it is logically equivalent to the original statement.",
+      "hint": "Negate the universal quantifier and then negate the implication."
+    },
+    {
+      "id": "math-gaokao-21-q010",
+      "category": "Logic",
+      "concept": "Disjoint Sets in Logical Form",
+      "learningObjective": "Identify the logical statement equivalent to \\(A\\cap B=\\varnothing\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Which statement is equivalent to \\(A\\cap B=\\varnothing\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\forall x,\\ (x\\in A \\rightarrow x\\in B)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\forall x,\\ (x\\notin A \\lor x\\notin B)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The statement \\(A\\cap B=\\varnothing\\) means that no element belongs to both \\(A\\) and \\(B\\). In logical form, this is\n\\[\n\\forall x,\\ \\neg(x\\in A \\land x\\in B).\n\\]\nBy De Morgan's law,\n\\[\n\\neg(x\\in A \\land x\\in B)\\equiv(x\\notin A \\lor x\\notin B).\n\\]\nTherefore,\n\\[\nA\\cap B=\\varnothing \\iff \\forall x,\\ (x\\notin A \\lor x\\notin B).\n\\]\nOption A says every element of \\(A\\) is in \\(B\\), which means \\(A\\subseteq B\\), not disjointness.",
+      "hint": "Translate “no element is in both sets” and apply De Morgan's law."
+    }
+  ]
+}

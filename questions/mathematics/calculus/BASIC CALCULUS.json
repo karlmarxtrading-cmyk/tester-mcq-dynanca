@@ -1,0 +1,1311 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "questions-mathematics-calculus-basic-calculus-01",
+  "category": "Mathematics for Computing",
+  "title": "Calculus Essentials: Limits, Derivatives & Integrals",
+  "description": "Explore essential mathematical concepts through carefully crafted questions. Strengthen your understanding, practice your reasoning, and learn at your own pace.",
+  "questionCount": 50,
+  "questions": [
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q001",
+      "category": "Basic Calculus",
+      "concept": "Limits",
+      "learningObjective": "Evaluate limits using factoring.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "Evaluate \\(\\lim_{x\\to 2}\\frac{x^2-4}{x-2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor the numerator: \\(\\frac{(x-2)(x+2)}{x-2}\\). Cancel \\(x-2\\) to get \\(x+2\\). Substitute \\(x=2\\) to get \\(4\\). The correct answer is B.",
+      "hint": "Factor the numerator as a difference of squares and cancel the common term."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q002",
+      "category": "Basic Calculus",
+      "concept": "Limits",
+      "learningObjective": "Evaluate limits involving rationalization.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "Evaluate \\(\\lim_{x\\to 0}\\frac{\\sqrt{x+4}-2}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiply numerator and denominator by \\(\\sqrt{x+4}+2\\). The numerator becomes \\(x+4-4=x\\). The expression simplifies to \\(\\frac{1}{\\sqrt{x+4}+2}\\). As \\(x\\to 0\\), this approaches \\(\\frac{1}{4}\\). The correct answer is A.",
+      "hint": "Multiply the numerator and denominator by the conjugate \\(\\sqrt{x+4}+2\\)."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q003",
+      "category": "Basic Calculus",
+      "concept": "Limits at Infinity",
+      "learningObjective": "Evaluate limits at infinity for rational functions.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "Evaluate \\(\\lim_{x\\to\\infty}\\frac{3x^2+2x}{5x^2-1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\infty\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide numerator and denominator by \\(x^2\\). The limit becomes \\(\\frac{3+2/x}{5-1/x^2}\\). As \\(x\\to\\infty\\), terms with \\(x\\) in the denominator approach \\(0\\), leaving \\(\\frac{3}{5}\\). The correct answer is A.",
+      "hint": "Divide the numerator and denominator by the highest power of \\(x\\), which is \\(x^2\\)."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q004",
+      "category": "Basic Calculus",
+      "concept": "Limits at Infinity",
+      "learningObjective": "Evaluate limits at infinity when the degree of the numerator is greater.",
+      "difficulty": "basic",
+      "cognitiveLevel": "reasoning",
+      "question": "Evaluate \\(\\lim_{x\\to\\infty}\\frac{2x^3-x}{x^2+4}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\infty\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Divide numerator and denominator by \\(x^3\\). The expression becomes \\(\\frac{2-1/x^2}{1/x+4/x^3}\\). As \\(x\\to\\infty\\), the numerator approaches \\(2\\) and the denominator approaches \\(0\\) from the positive side, so the limit is \\(\\infty\\). The correct answer is C.",
+      "hint": "Compare the degrees of the numerator and denominator. The degree of the numerator is greater."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q005",
+      "category": "Basic Calculus",
+      "concept": "Continuity",
+      "learningObjective": "Determine parameter values for removable discontinuity.",
+      "difficulty": "basic",
+      "cognitiveLevel": "reasoning",
+      "question": "For what value of \\(c\\) does the function \\(f(x)=\\frac{x^2-c}{x-3}\\) have a removable discontinuity at \\(x=3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "For \\(f(x)\\) to have a removable discontinuity at \\(x=3\\), the numerator must be zero when \\(x=3\\) so the factor \\((x-3)\\) can cancel. Thus, \\(3^2-c=0\\), which gives \\(c=9\\). When \\(c=9\\), \\(f(x)=\\frac{(x-3)(x+3)}{x-3}\\), which simplifies to \\(x+3\\) for \\(x \\neq 3\\), confirming a removable discontinuity at \\(x=3\\). The correct answer is C.",
+      "hint": "Set the numerator equal to zero at \\(x=3\\) so the discontinuity is removable."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q006",
+      "category": "Basic Calculus",
+      "concept": "One-Sided Limits",
+      "learningObjective": "Evaluate one-sided limits.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "Evaluate \\(\\lim_{x\\to 0^-}\\frac{1}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\infty\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\infty\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "As \\(x\\) approaches \\(0\\) from the left (negative values), \\(\\frac{1}{x}\\) becomes a very large negative number. Thus, the limit is \\(-\\infty\\). The correct answer is B.",
+      "hint": "Consider what happens to \\(\\frac{1}{x}\\) when \\(x\\) is a very small negative number."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q007",
+      "category": "Basic Calculus",
+      "concept": "Trigonometric Limits",
+      "learningObjective": "Evaluate limits involving sine.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "Evaluate \\(\\lim_{x\\to 0}\\frac{\\sin(3x)}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiply numerator and denominator by \\(3\\) to get \\(3\\frac{\\sin(3x)}{3x}\\). Using the standard limit \\(\\lim_{u\\to 0}\\frac{\\sin u}{u}=1\\) with \\(u=3x\\), the limit is \\(3(1)=3\\). The correct answer is B.",
+      "hint": "Rewrite the expression to use the standard limit \\(\\lim_{u\\to 0}\\frac{\\sin u}{u}=1\\)."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q008",
+      "category": "Basic Calculus",
+      "concept": "Definition of Derivative",
+      "learningObjective": "Apply the limit definition of the derivative.",
+      "difficulty": "basic",
+      "cognitiveLevel": "reasoning",
+      "question": "Using the limit definition of the derivative, what is \\(\\lim_{h\\to 0}\\frac{f(x+h)-f(x)}{h}\\) for \\(f(x)=x^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2x\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(x^2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(f(x)=x^2\\): \\(\\frac{(x+h)^2-x^2}{h} = \\frac{x^2+2xh+h^2-x^2}{h} = \\frac{2xh+h^2}{h} = 2x+h\\). As \\(h\\to 0\\), this approaches \\(2x\\). The correct answer is B.",
+      "hint": "Expand \\((x+h)^2\\) and simplify the fraction before taking the limit."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q009",
+      "category": "Basic Calculus",
+      "concept": "Power Rule",
+      "learningObjective": "Differentiate using the power rule.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "Find the derivative of \\(f(x)=x^5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5x^4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4x^5\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(x^4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the power rule \\(\\frac{d}{dx}x^n=nx^{n-1}\\), we get \\(f'(x)=5x^{5-1}=5x^4\\). The correct answer is A.",
+      "hint": "Apply the power rule by bringing the exponent down and subtracting one from the exponent."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q010",
+      "category": "Basic Calculus",
+      "concept": "Constant Rule",
+      "learningObjective": "Differentiate constant functions.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "Find the derivative of \\(f(x)=7\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The derivative of any constant is zero. Thus, \\(f'(x)=0\\). The correct answer is C.",
+      "hint": "Recall the constant rule for derivatives."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q011",
+      "category": "Basic Calculus",
+      "concept": "Sum Rule",
+      "learningObjective": "Differentiate polynomials using the sum rule.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "Find the derivative of \\(f(x)=x^3+4x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3x^2+4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^2+4\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(3x^3+4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the sum rule and power rule: \\(f'(x)=3x^2+4\\). The correct answer is A.",
+      "hint": "Differentiate each term separately using the power rule."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q012",
+      "category": "Basic Calculus",
+      "concept": "Product Rule",
+      "learningObjective": "Differentiate using the product rule.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "question": "Find the derivative of \\(f(x)=x^2e^x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2xe^x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^2e^x\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(e^x(x^2+2x)\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Using the product rule \\((uv)'=u'v+uv'\\): \\(f'(x)=2xe^x+x^2e^x = e^x(x^2+2x)\\). The correct answer is C.",
+      "hint": "Apply the product rule with \\(u=x^2\\) and \\(v=e^x\\)."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q013",
+      "category": "Basic Calculus",
+      "concept": "Quotient Rule",
+      "learningObjective": "Differentiate rational functions using the quotient rule.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "question": "Find the derivative of \\(f(x)=\\frac{x}{x+1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{(x+1)^2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{x}{(x+1)^2}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\frac{1}{x+1}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the quotient rule: \\(f'(x)=\\frac{(1)(x+1)-(x)(1)}{(x+1)^2} = \\frac{1}{(x+1)^2}\\). The correct answer is A.",
+      "hint": "Apply the quotient rule \\(\\left(\\frac{u}{v}\\right)'=\\frac{u'v-uv'}{v^2}\\)."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q014",
+      "category": "Basic Calculus",
+      "concept": "Chain Rule",
+      "learningObjective": "Differentiate composite functions using the chain rule.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "question": "Find the derivative of \\(f(x)=(2x+1)^3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3(2x+1)^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6(2x+1)^2\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(2(2x+1)^3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the chain rule: \\(f'(x)=3(2x+1)^2 \\cdot \\frac{d}{dx}(2x+1) = 3(2x+1)^2 \\cdot 2 = 6(2x+1)^2\\). The correct answer is B.",
+      "hint": "Apply the chain rule by differentiating the outer function and multiplying by the derivative of the inner function."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q015",
+      "category": "Basic Calculus",
+      "concept": "Polynomial Derivatives",
+      "learningObjective": "Differentiate polynomial functions.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "Find the derivative of \\(f(x)=4x^3-2x^2+5x-9\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12x^2-4x+5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12x^2-2x+5\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(4x^2-4x+5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Differentiate term by term: \\(f'(x)=12x^2-4x+5\\). The correct answer is A.",
+      "hint": "Apply the power rule to each term of the polynomial."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q016",
+      "category": "Basic Calculus",
+      "concept": "Rational Function Derivatives",
+      "learningObjective": "Differentiate rational functions.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "question": "Find the derivative of \\(f(x)=\\frac{2x+1}{x-2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{-5}{(x-2)^2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{(x-2)^2}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\frac{2}{(x-2)^2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the quotient rule: \\(f'(x)=\\frac{2(x-2)-(2x+1)(1)}{(x-2)^2} = \\frac{2x-4-2x-1}{(x-2)^2} = \\frac{-5}{(x-2)^2}\\). The correct answer is A.",
+      "hint": "Apply the quotient rule and simplify the numerator."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q017",
+      "category": "Basic Calculus",
+      "concept": "Derivatives of Roots",
+      "learningObjective": "Differentiate functions involving radicals.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "question": "Find the derivative of \\(f(x)=\\sqrt{3x+1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2\\sqrt{3x+1}}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{2\\sqrt{3x+1}}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\frac{3}{\\sqrt{3x+1}}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rewrite as \\(f(x)=(3x+1)^{1/2}\\). Using the chain rule: \\(f'(x)=\\frac{1}{2}(3x+1)^{-1/2} \\cdot 3 = \\frac{3}{2\\sqrt{3x+1}}\\). The correct answer is B.",
+      "hint": "Rewrite the square root as a fractional exponent and apply the chain rule."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q018",
+      "category": "Basic Calculus",
+      "concept": "Exponential Derivatives",
+      "learningObjective": "Differentiate basic exponential functions.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "question": "Find the derivative of \\(f(x)=e^{3x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(e^{3x}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3e^{3x}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(3xe^{3x-1}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the chain rule for exponentials: \\(f'(x)=e^{3x} \\cdot \\frac{d}{dx}(3x) = 3e^{3x}\\). The correct answer is B.",
+      "hint": "The derivative of \\(e^{u}\\) is \\(e^u \\cdot u'\\)."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q019",
+      "category": "Basic Calculus",
+      "concept": "Logarithmic Derivatives",
+      "learningObjective": "Differentiate basic logarithmic functions.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "question": "Find the derivative of \\(f(x)=\\ln(4x)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{4x}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{4}{x}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\frac{1}{x}\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Using the chain rule: \\(f'(x)=\\frac{1}{4x} \\cdot 4 = \\frac{1}{x}\\). Alternatively, \\(\\ln(4x)=\\ln 4+\\ln x\\), so the derivative is \\(\\frac{1}{x}\\). The correct answer is C.",
+      "hint": "Apply the chain rule or use logarithm properties to simplify first."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q020",
+      "category": "Basic Calculus",
+      "concept": "Tangent Lines",
+      "learningObjective": "Find the slope of a tangent line.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "question": "What is the slope of the tangent line to the curve \\(y=x^2\\) at \\(x=3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The derivative is \\(y'=2x\\). At \\(x=3\\), the slope is \\(2(3)=6\\). The correct answer is B.",
+      "hint": "Find the derivative of the function and evaluate it at the given \\(x\\)-value."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q021",
+      "category": "Basic Calculus",
+      "concept": "Tangent Lines",
+      "learningObjective": "Find the equation of a tangent line.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "problem-solving",
+      "question": "What is the equation of the tangent line to \\(y=x^2\\) at \\(x=1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=2x-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=2x+1\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(y=x+1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The slope is \\(y'(1)=2(1)=2\\). The point is \\((1,1)\\). Using point-slope form: \\(y-1=2(x-1)\\), which simplifies to \\(y=2x-1\\). The correct answer is A.",
+      "hint": "Find the slope using the derivative, then use the point-slope form of a line."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q022",
+      "category": "Basic Calculus",
+      "concept": "Normal Lines",
+      "learningObjective": "Find the slope of a normal line.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "reasoning",
+      "question": "What is the slope of the normal line to the curve \\(y=x^3\\) at \\(x=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\frac{1}{12}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(-12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The tangent slope is \\(y'=3x^2\\). At \\(x=2\\), \\(m_t=12\\). The normal slope is the negative reciprocal: \\(m_n=-\\frac{1}{12}\\). The correct answer is B.",
+      "hint": "Find the tangent slope first, then take the negative reciprocal for the normal line."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q023",
+      "category": "Basic Calculus",
+      "concept": "Rates of Change",
+      "learningObjective": "Calculate instantaneous rate of change.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "question": "A particle's position is given by \\(s(t)=t^2+3t\\). What is its velocity at \\(t=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Velocity is the derivative of position: \\(v(t)=s'(t)=2t+3\\). At \\(t=2\\), \\(v(2)=2(2)+3=7\\). The correct answer is B.",
+      "hint": "Differentiate the position function to find the velocity function."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q024",
+      "category": "Basic Calculus",
+      "concept": "Increasing and Decreasing Functions",
+      "learningObjective": "Determine intervals of increase and decrease.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "reasoning",
+      "question": "On what interval is the function \\(f(x)=x^2-4x+1\\) decreasing?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-\\infty, 2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2, \\infty)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\((-\\infty, \\infty)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The derivative is \\(f'(x)=2x-4\\). The function is decreasing when \\(f'(x) < 0\\), so \\(2x-4 < 0\\), which gives \\(x < 2\\). The interval is \\((-\\infty, 2)\\). The correct answer is A.",
+      "hint": "Find where the first derivative is negative."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q025",
+      "category": "Basic Calculus",
+      "concept": "Critical Points",
+      "learningObjective": "Find critical points of a function.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "question": "What are the critical points of \\(f(x)=x^3-3x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1, -1\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(x=3, -3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The derivative is \\(f'(x)=3x^2-3\\). Set \\(f'(x)=0\\): \\(3(x^2-1)=0\\), so \\(x=1\\) or \\(x=-1\\). The correct answer is B.",
+      "hint": "Find the derivative and set it equal to zero to solve for \\(x\\)."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q026",
+      "category": "Basic Calculus",
+      "concept": "Local Extrema",
+      "learningObjective": "Identify local minima and maxima.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "reasoning",
+      "question": "Where does the function \\(f(x)=x^2-6x+5\\) have a local minimum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-3\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(x=6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The derivative is \\(f'(x)=2x-6\\). Setting \\(f'(x)=0\\) gives \\(x=3\\). The second derivative is \\(f''(x)=2 > 0\\), confirming a local minimum at \\(x=3\\). The correct answer is A.",
+      "hint": "Find the critical point and use the second derivative test to confirm it is a minimum."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q027",
+      "category": "Basic Calculus",
+      "concept": "Optimization",
+      "learningObjective": "Solve basic optimization problems.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "problem-solving",
+      "question": "A rectangle has a perimeter of \\(20\\). What should its width be to maximize the area?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let width be \\(x\\) and length be \\(y\\). \\(2x+2y=20 \\implies y=10-x\\). Area \\(A=x(10-x)=10x-x^2\\). \\(A'=10-2x=0 \\implies x=5\\). The correct answer is B.",
+      "hint": "Express the area in terms of one variable using the perimeter constraint, then find the maximum."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q028",
+      "category": "Basic Calculus",
+      "concept": "Related Rates",
+      "learningObjective": "Solve basic related rates problems.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "problem-solving",
+      "question": "The radius of a circle increases at \\(2\\) cm/s. How fast is the area increasing when \\(r=3\\) cm?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\pi\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\pi\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(12\\pi\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Area \\(A=\\pi r^2\\). Differentiating with respect to time: \\(\\frac{dA}{dt}=2\\pi r \\frac{dr}{dt}\\). Substitute \\(r=3\\) and \\(\\frac{dr}{dt}=2\\): \\(\\frac{dA}{dt}=2\\pi(3)(2)=12\\pi\\). The correct answer is C.",
+      "hint": "Use the formula for the area of a circle and differentiate both sides with respect to time."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q029",
+      "category": "Basic Calculus",
+      "concept": "Antiderivatives",
+      "learningObjective": "Evaluate basic indefinite integrals.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "Evaluate the indefinite integral \\(\\int 3x^2 \\, dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6x+C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^3+C\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(3x^3+C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the power rule for integration: \\(\\int 3x^2 \\, dx = 3 \\frac{x^3}{3} + C = x^3+C\\). The correct answer is B.",
+      "hint": "Apply the power rule for integration: \\(\\int x^n \\, dx = \\frac{x^{n+1}}{n+1}+C\\)."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q030",
+      "category": "Basic Calculus",
+      "concept": "Power Rule for Integration",
+      "learningObjective": "Apply the power rule for integration.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "Evaluate the indefinite integral \\(\\int x^4 \\, dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4x^3+C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{x^5}{5}+C\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(5x^5+C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the power rule: \\(\\int x^4 \\, dx = \\frac{x^5}{5}+C\\). The correct answer is B.",
+      "hint": "Add one to the exponent and divide by the new exponent."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q031",
+      "category": "Basic Calculus",
+      "concept": "Logarithmic Integration",
+      "learningObjective": "Integrate reciprocal functions.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "Evaluate the indefinite integral \\(\\int \\frac{1}{x} \\, dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{x^2}+C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\ln|x|+C\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(e^x+C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The integral of \\(\\frac{1}{x}\\) is the natural logarithm of the absolute value of \\(x\\): \\(\\ln|x|+C\\). The correct answer is B.",
+      "hint": "Recall the standard integral for \\(x^{-1}\\)."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q032",
+      "category": "Basic Calculus",
+      "concept": "Exponential Integration",
+      "learningObjective": "Integrate basic exponential functions.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "Evaluate the indefinite integral \\(\\int e^{2x} \\, dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(e^{2x}+C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2e^{2x}+C\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\frac{1}{2}e^{2x}+C\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Using the rule for exponential functions: \\(\\int e^{kx} \\, dx = \\frac{1}{k}e^{kx}+C\\). Here, \\(k=2\\), so the integral is \\(\\frac{1}{2}e^{2x}+C\\). The correct answer is C.",
+      "hint": "Divide by the coefficient of \\(x\\) in the exponent."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q033",
+      "category": "Basic Calculus",
+      "concept": "Definite Integrals",
+      "learningObjective": "Evaluate basic definite integrals.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "question": "Evaluate the definite integral \\(\\int_0^2 3x^2 \\, dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The antiderivative is \\(x^3\\). Evaluate from \\(0\\) to \\(2\\): \\(2^3 - 0^3 = 8\\). The correct answer is C.",
+      "hint": "Find the antiderivative and apply the Fundamental Theorem of Calculus."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q034",
+      "category": "Basic Calculus",
+      "concept": "Fundamental Theorem of Calculus",
+      "learningObjective": "Apply the First Fundamental Theorem of Calculus.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "reasoning",
+      "question": "According to the Fundamental Theorem of Calculus, what is \\(\\frac{d}{dx}\\int_0^x \\sin(t) \\, dt\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\cos(x)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sin(x)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(-\\cos(x)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The Fundamental Theorem of Calculus states that \\(\\frac{d}{dx}\\int_a^x f(t) \\, dt = f(x)\\). Here, \\(f(t)=\\sin(t)\\), so the derivative is \\(\\sin(x)\\). The correct answer is B.",
+      "hint": "The derivative of the integral of a function from a constant to \\(x\\) is just the function evaluated at \\(x\\)."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q035",
+      "category": "Basic Calculus",
+      "concept": "Area Under a Curve",
+      "learningObjective": "Calculate area under a curve using definite integrals.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "question": "What is the area under the curve \\(y=x^2\\) from \\(x=0\\) to \\(x=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\frac{8}{3}\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The area is given by \\(\\int_0^2 x^2 \\, dx = \\left[\\frac{x^3}{3}\\right]_0^2 = \\frac{8}{3} - 0 = \\frac{8}{3}\\). The correct answer is C.",
+      "hint": "Set up the definite integral of the function over the given interval."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q036",
+      "category": "Basic Calculus",
+      "concept": "Integration by Substitution",
+      "learningObjective": "Evaluate integrals using basic u-substitution.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "problem-solving",
+      "question": "Evaluate the integral \\(\\int 2x(x^2+1)^3 \\, dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{(x^2+1)^4}{4}+C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((x^2+1)^4+C\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(4(x^2+1)^4+C\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(u=x^2+1\\), then \\(du=2x \\, dx\\). The integral becomes \\(\\int u^3 \\, du = \\frac{u^4}{4}+C = \\frac{(x^2+1)^4}{4}+C\\). The correct answer is A.",
+      "hint": "Use \\(u\\)-substitution with \\(u=x^2+1\\)."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q037",
+      "category": "Basic Calculus",
+      "concept": "Definite Integration by Substitution",
+      "learningObjective": "Evaluate definite integrals using u-substitution.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "problem-solving",
+      "question": "Evaluate the definite integral \\(\\int_0^1 2xe^{x^2} \\, dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(e\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(e-1\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(e+1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(u=x^2\\), \\(du=2x \\, dx\\). The limits change from \\(0\\) to \\(1\\). The integral is \\(\\int_0^1 e^u \\, du = \\left[e^u\\right]_0^1 = e^1 - e^0 = e-1\\). The correct answer is B.",
+      "hint": "Use \\(u\\)-substitution and remember to change the limits of integration."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q038",
+      "category": "Basic Calculus",
+      "concept": "Logarithmic Derivatives",
+      "learningObjective": "Differentiate composite logarithmic functions.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "question": "Find the derivative of \\(f(x)=\\ln(x^2+1)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{x^2+1}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2x}{x^2+1}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(2x\\ln(x^2+1)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the chain rule: \\(f'(x)=\\frac{1}{x^2+1} \\cdot \\frac{d}{dx}(x^2+1) = \\frac{2x}{x^2+1}\\). The correct answer is B.",
+      "hint": "Apply the chain rule for the natural logarithm."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q039",
+      "category": "Basic Calculus",
+      "concept": "Trigonometric Derivatives",
+      "learningObjective": "Differentiate composite trigonometric functions.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "question": "Find the derivative of \\(f(x)=\\sin(x^2)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\cos(x^2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2x\\cos(x^2)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(x^2\\cos(x^2)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the chain rule: \\(f'(x)=\\cos(x^2) \\cdot \\frac{d}{dx}(x^2) = 2x\\cos(x^2)\\). The correct answer is B.",
+      "hint": "Differentiate the outer trigonometric function and multiply by the derivative of the inner function."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q040",
+      "category": "Basic Calculus",
+      "concept": "Special Limits",
+      "learningObjective": "Evaluate the limit definition of e.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "reasoning",
+      "question": "Evaluate \\(\\lim_{x\\to\\infty}\\left(1+\\frac{1}{x}\\right)^x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(e\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\infty\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "This is a standard limit definition of the number \\(e\\). The limit is \\(e\\). The correct answer is B.",
+      "hint": "Recognize this as one of the standard limit definitions of Euler's number."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q041",
+      "category": "Basic Calculus",
+      "concept": "Second Derivatives",
+      "learningObjective": "Calculate second derivatives.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "question": "Find the second derivative of \\(f(x)=x^3-2x^2+x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6x-4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3x^2-4\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(6x+1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First derivative: \\(f'(x)=3x^2-4x+1\\). Second derivative: \\(f''(x)=6x-4\\). The correct answer is A.",
+      "hint": "Differentiate the function twice."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q042",
+      "category": "Basic Calculus",
+      "concept": "Concavity",
+      "learningObjective": "Determine intervals of concavity.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "reasoning",
+      "question": "On what interval is the function \\(f(x)=x^2-4x+3\\) concave up?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0, \\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\infty, \\infty)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\((2, \\infty)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The second derivative is \\(f''(x)=2\\). Since \\(f''(x) > 0\\) for all real \\(x\\), the function is concave up on \\((-\\infty, \\infty)\\). The correct answer is B.",
+      "hint": "Find the second derivative and determine where it is positive."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q043",
+      "category": "Basic Calculus",
+      "concept": "Inflection Points",
+      "learningObjective": "Identify inflection points.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "reasoning",
+      "question": "Where does the function \\(f(x)=x^3\\) have an inflection point?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(x=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The second derivative is \\(f''(x)=6x\\). Setting \\(f''(x)=0\\) gives \\(x=0\\). Since the concavity changes at \\(x=0\\), it is an inflection point. The correct answer is A.",
+      "hint": "Find where the second derivative is zero and changes sign."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q044",
+      "category": "Basic Calculus",
+      "concept": "Trigonometric Integration",
+      "learningObjective": "Integrate basic cosine functions.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "Evaluate the indefinite integral \\(\\int \\cos(x) \\, dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\sin(x)+C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sin(x)+C\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\cos(x)+C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The antiderivative of \\(\\cos(x)\\) is \\(\\sin(x)+C\\). The correct answer is B.",
+      "hint": "Recall the basic trigonometric integrals."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q045",
+      "category": "Basic Calculus",
+      "concept": "Trigonometric Integration",
+      "learningObjective": "Integrate basic sine functions.",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "question": "Evaluate the indefinite integral \\(\\int \\sin(x) \\, dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\cos(x)+C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\cos(x)+C\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(-\\sin(x)+C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The antiderivative of \\(\\sin(x)\\) is \\(-\\cos(x)+C\\). The correct answer is B.",
+      "hint": "Remember the negative sign when integrating sine."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q046",
+      "category": "Basic Calculus",
+      "concept": "Product Rule with Logarithms",
+      "learningObjective": "Differentiate products involving logarithms.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "question": "Find the derivative of \\(f(x)=x\\ln(x)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\ln(x)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{x}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\ln(x)+1\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Using the product rule: \\(f'(x)=1\\cdot\\ln(x) + x\\cdot\\frac{1}{x} = \\ln(x)+1\\). The correct answer is C.",
+      "hint": "Apply the product rule with \\(u=x\\) and \\(v=\\ln(x)\\)."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q047",
+      "category": "Basic Calculus",
+      "concept": "L'Hopital's Rule",
+      "learningObjective": "Evaluate indeterminate forms using L'Hopital's Rule.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "problem-solving",
+      "question": "Evaluate \\(\\lim_{x\\to 0}\\frac{e^x-1}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(e\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "This is an indeterminate form \\(\\frac{0}{0}\\). Using L'Hopital's Rule: \\(\\lim_{x\\to 0}\\frac{e^x}{1} = e^0 = 1\\). The correct answer is B.",
+      "hint": "Apply L'Hopital's Rule by differentiating the numerator and denominator."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q048",
+      "category": "Basic Calculus",
+      "concept": "Exponential Derivatives",
+      "learningObjective": "Differentiate exponential functions with arbitrary bases.",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "question": "Find the derivative of \\(f(x)=5^x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5^x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x5^{x-1}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(5^x\\ln(5)\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The derivative of an exponential function \\(a^x\\) is \\(a^x\\ln(a)\\). Thus, \\(f'(x)=5^x\\ln(5)\\). The correct answer is C.",
+      "hint": "Use the rule for differentiating exponential functions with base \\(a\\neq e\\)."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q049",
+      "category": "Basic Calculus",
+      "concept": "Area Between Curves",
+      "learningObjective": "Calculate the area between two curves.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "problem-solving",
+      "question": "What is the area between the curves \\(y=x\\) and \\(y=x^2\\) from \\(x=0\\) to \\(x=1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{3}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\frac{1}{6}\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The area is \\(\\int_0^1 (x-x^2) \\, dx = \\left[\\frac{x^2}{2}-\\frac{x^3}{3}\\right]_0^1 = \\frac{1}{2}-\\frac{1}{3} = \\frac{1}{6}\\). The correct answer is C.",
+      "hint": "Integrate the top curve minus the bottom curve over the given interval."
+    },
+    {
+      "id": "questions-mathematics-calculus-basic-calculus-01-q050",
+      "category": "Basic Calculus",
+      "concept": "Chain Rule with Exponentials",
+      "learningObjective": "Differentiate composite exponential functions.",
+      "difficulty": "moderate",
+      "cognitiveLevel": "application",
+      "question": "Find the derivative of \\(f(x)=e^{\\sin(x)}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(e^{\\sin(x)}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\cos(x)e^{\\sin(x)}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\sin(x)e^{\\sin(x)}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the chain rule: \\(f'(x)=e^{\\sin(x)} \\cdot \\frac{d}{dx}(\\sin(x)) = \\cos(x)e^{\\sin(x)}\\). The correct answer is B.",
+      "hint": "Apply the chain rule with the exponential function as the outer function."
+    }
+  ]
+}

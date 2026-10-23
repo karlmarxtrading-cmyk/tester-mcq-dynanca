@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-87",
+  "category": "Comprehensive Mathematics",
+  "title": "87. Numeracy & Number Systems: Overflow in Fixed-Width Unsigned Integers",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-87-q001",
+      "category": "Numeracy & Number Systems",
+      "concept": "Maximum Value of an 8-Bit Unsigned Integer",
+      "learningObjective": "Identify the maximum value representable by an 8-bit unsigned integer.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the maximum value that can be stored in an \\(8\\)-bit unsigned integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(256\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(255\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An \\(8\\)-bit unsigned integer uses \\(8\\) binary digits. The maximum value is obtained when all \\(8\\) bits are \\(1\\), which equals \\(2^8-1=256-1=255\\). The value \\(256\\) would require \\(9\\) bits.",
+      "hint": "Count how many different patterns \\(8\\) bits can form, and remember that the smallest stored value is \\(0\\)."
+    },
+    {
+      "id": "dynanca-87-q002",
+      "category": "Numeracy & Number Systems",
+      "concept": "Range of an 8-Bit Unsigned Integer",
+      "learningObjective": "Determine the range of values stored in an 8-bit unsigned integer.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which range correctly describes all values that can be stored in an \\(8\\)-bit unsigned integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\) to \\(255\\), inclusive"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\) to \\(256\\), inclusive"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An \\(8\\)-bit unsigned integer can represent zero and all positive integers up to \\(2^8-1=255\\). Thus, its range is \\(0\\) to \\(255\\) inclusive. The range \\(1\\) to \\(256\\) is incorrect because unsigned integers include \\(0\\) and cannot store \\(256\\) in \\(8\\) bits.",
+      "hint": "Count the distinct \\(8\\)-bit patterns, then decide which value the all-zeros pattern represents."
+    },
+    {
+      "id": "dynanca-87-q003",
+      "category": "Numeracy & Number Systems",
+      "concept": "Overflow in 8-Bit Unsigned Addition",
+      "learningObjective": "Determine whether an addition overflows an 8-bit unsigned integer.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In \\(8\\)-bit unsigned arithmetic, does the sum \\(200+100\\) cause overflow?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No"
+        },
+        {
+          "label": "B",
+          "text": "Yes"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The maximum value an \\(8\\)-bit unsigned integer can store is \\(255\\). The sum is \\(200+100=300\\), and \\(300>255\\). Therefore, the result cannot be represented in \\(8\\) bits, so overflow occurs.",
+      "hint": "Compare the arithmetic sum with the maximum storable value."
+    },
+    {
+      "id": "dynanca-87-q004",
+      "category": "Numeracy & Number Systems",
+      "concept": "Carry-Out Condition for Unsigned Overflow",
+      "learningObjective": "Identify the standard hardware condition that indicates overflow in unsigned addition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "When adding two unsigned binary integers of fixed width, which condition indicates overflow?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A carry out of the most significant bit"
+        },
+        {
+          "label": "B",
+          "text": "A carry into the most significant bit"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In fixed-width unsigned addition, overflow occurs when the sum exceeds the maximum representable value. This is detected by a carry out of the most significant bit. A carry into the most significant bit does not by itself indicate unsigned overflow.",
+      "hint": "Work through the addition bit by bit, then check whether the result fits in the available unsigned bit positions."
+    },
+    {
+      "id": "dynanca-87-q005",
+      "category": "Numeracy & Number Systems",
+      "concept": "Overflow Result in 4-Bit Unsigned Addition",
+      "learningObjective": "Calculate the stored result of an overflowing 4-bit unsigned addition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In \\(4\\)-bit unsigned arithmetic, what is the stored result of \\(9+8\\)? Any overflow bits are discarded, so only the stated number of low-order bits is stored.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(17\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A \\(4\\)-bit unsigned integer can store values from \\(0\\) to \\(2^4-1=15\\). The exact sum is \\(9+8=17\\), which exceeds \\(15\\), so overflow occurs. The stored value is \\(17\\bmod 16=1\\). The value \\(17\\) is the exact sum before the overflow bit is discarded, not the stored four-bit result.",
+      "hint": "First compare the exact sum with the representable range, then consider which bits remain after discarding overflow."
+    },
+    {
+      "id": "dynanca-87-q006",
+      "category": "Numeracy & Number Systems",
+      "concept": "Overflow Result in 8-Bit Unsigned Addition",
+      "learningObjective": "Calculate the stored result of an overflowing 8-bit unsigned addition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In \\(8\\)-bit unsigned arithmetic, what is the stored result of \\(250+10\\)? Any overflow bits are discarded, so only the stated number of low-order bits is stored.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The maximum value for an \\(8\\)-bit unsigned integer is \\(255\\). The sum is \\(250+10=260\\), which exceeds \\(255\\), so overflow occurs. The stored value is \\(260\\bmod 256=4\\). The alternative subtracts the maximum value \\(255\\), but discarding the carry reduces the sum modulo \\(256\\).",
+      "hint": "First compare the exact sum with the representable range, then consider which bits remain after discarding overflow."
+    },
+    {
+      "id": "dynanca-87-q007",
+      "category": "Numeracy & Number Systems",
+      "concept": "Detecting and Evaluating Overflow in 8-Bit Unsigned Addition",
+      "learningObjective": "Determine both the occurrence of overflow and the stored result for an 8-bit unsigned addition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In \\(8\\)-bit unsigned arithmetic, consider \\(128+128\\). Which statement is correct? Any overflow bits are discarded, so only the stated number of low-order bits is stored.",
+      "options": [
+        {
+          "label": "A",
+          "text": "No overflow occurs, and the stored result is \\(256\\)."
+        },
+        {
+          "label": "B",
+          "text": "Overflow occurs, and the stored result is \\(0\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The maximum value for an \\(8\\)-bit unsigned integer is \\(255\\). The exact sum is \\(128+128=256\\), which exceeds \\(255\\), so overflow occurs. Since \\(256\\bmod 256=0\\), the stored result is \\(0\\).",
+      "hint": "First compare the exact sum with the representable range, then consider which bits remain after discarding overflow."
+    },
+    {
+      "id": "dynanca-87-q008",
+      "category": "Numeracy & Number Systems",
+      "concept": "Recognizing Non-Overflowing Unsigned Sums",
+      "learningObjective": "Determine whether an unsigned addition fits within a fixed bit width.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In eight-bit unsigned arithmetic, which sum does not cause overflow?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(180+90\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(140+90\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The maximum representable value is \\(2^8-1=255\\). The sums are \\(140+90=230\\) and \\(180+90=270\\). The sum \\(140+90=230\\) fits within the range, whereas \\(180+90=270\\) causes overflow.",
+      "hint": "Compare each exact sum with the fixed-width maximum."
+    },
+    {
+      "id": "dynanca-87-q009",
+      "category": "Numeracy & Number Systems",
+      "concept": "Overflow Result in 12-Bit Unsigned Addition",
+      "learningObjective": "Calculate the stored result of an overflowing 12-bit unsigned addition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In \\(12\\)-bit unsigned arithmetic, what is the stored result of \\(4000+200\\)? Any overflow bits are discarded, so only the stated number of low-order bits is stored.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(104\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(105\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A \\(12\\)-bit unsigned integer has maximum value \\(2^{12}-1=4095\\). The exact sum is \\(4000+200=4200\\), which exceeds \\(4095\\), so overflow occurs. The stored value is \\(4200-4096=104\\), since \\(4200\\bmod 4096=104\\). The alternative subtracts the maximum value \\(4095\\) rather than the modulus \\(4096\\), producing an off-by-one error.",
+      "hint": "First compare the exact sum with the representable range, then consider which bits remain after discarding overflow."
+    },
+    {
+      "id": "dynanca-87-q010",
+      "category": "Numeracy & Number Systems",
+      "concept": "Overflow Result in 16-Bit Unsigned Addition",
+      "learningObjective": "Calculate the stored result of an overflowing 16-bit unsigned addition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In \\(16\\)-bit unsigned arithmetic, what is the stored result of \\(65000+1000\\)? Any overflow bits are discarded, so only the stated number of low-order bits is stored.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(464\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(465\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A \\(16\\)-bit unsigned integer has maximum value \\(2^{16}-1=65535\\). The exact sum is \\(65000+1000=66000\\), which exceeds \\(65535\\), so overflow occurs. The stored value is \\(66000-65536=464\\), since \\(66000\\bmod 65536=464\\). The alternative subtracts the maximum value \\(65535\\) instead of the modulus \\(65536\\).",
+      "hint": "First compare the exact sum with the representable range, then consider which bits remain after discarding overflow."
+    }
+  ]
+}

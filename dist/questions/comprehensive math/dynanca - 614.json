@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-614",
+  "category": "Comprehensive Mathematics",
+  "title": "614. Discrete Mathematics, Counting & Graph Theory: Asymptotic Complexity of Counting Procedures",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-614-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "All ordered pairs",
+      "learningObjective": "Count the steps of a procedure that examines all ordered pairs.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A procedure examines every ordered pair \\((i,j)\\) with \\(1\\le i\\le n\\) and \\(1\\le j\\le n\\) exactly once. How many pairs does it examine?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2n\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n^2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(n\\) choices for \\(i\\) and, independently, \\(n\\) choices for \\(j\\), so there are \\(n\\cdot n=n^2\\) pairs. The value \\(2n\\) adds the two ranges instead of multiplying them.",
+      "hint": "Use the multiplication rule for two independent choices."
+    },
+    {
+      "id": "dynanca-614-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "All subsets",
+      "learningObjective": "Count the steps of a procedure that lists all subsets.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A procedure lists every subset of a set with \\(n\\) elements exactly once. How many subsets does it list?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2^n\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n^2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each of the \\(n\\) elements is either in a subset or not, giving \\(2\\) independent choices per element and \\(2^n\\) subsets in total. This grows much faster than \\(n^2\\): for \\(n=10\\) there are \\(1024\\) subsets but only \\(100\\) ordered pairs.",
+      "hint": "Decide for each element separately whether it is included."
+    },
+    {
+      "id": "dynanca-614-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Unordered pairs",
+      "learningObjective": "Describe the growth of the number of unordered pairs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A procedure examines every pair \\(i<j\\) with \\(1\\le i<j\\le n\\) once, which takes \\(\\dfrac{n(n-1)}{2}\\) steps. How does the number of steps grow as \\(n\\) increases?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In proportion to \\(n\\)"
+        },
+        {
+          "label": "B",
+          "text": "In proportion to \\(n^2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Expanding, \\(\\dfrac{n(n-1)}{2}=\\dfrac{n^2}{2}-\\dfrac{n}{2}\\). For large \\(n\\) the term \\(\\dfrac{n^2}{2}\\) dominates, so the number of steps is proportional to \\(n^2\\), with the constant \\(\\dfrac{1}{2}\\). Halving the count of ordered pairs changes the constant but not the order of growth.",
+      "hint": "Expand the product and compare the two terms for large \\(n\\)."
+    },
+    {
+      "id": "dynanca-614-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Permutations against subsets",
+      "learningObjective": "Compare the growth of two counting functions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "One procedure lists all \\(n!\\) orderings of \\(n\\) objects; another lists all \\(2^n\\) subsets. Which list is longer for every \\(n\\ge 4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The list of orderings, since \\(n!>2^n\\) for \\(n\\ge 4\\)"
+        },
+        {
+          "label": "B",
+          "text": "The list of subsets, since \\(2^n>n!\\) for \\(n\\ge 4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(n=4\\): \\(4!=24\\) and \\(2^4=16\\). Each further step multiplies \\(n!\\) by \\(n+1\\ge 5\\) but \\(2^n\\) only by \\(2\\), so the factorial stays ahead and pulls away. For \\(n=10\\) the numbers are \\(3628800\\) and \\(1024\\).",
+      "hint": "Compare the factors by which the two numbers grow when \\(n\\) increases by one."
+    },
+    {
+      "id": "dynanca-614-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Doubling the input",
+      "learningObjective": "Predict the effect of doubling the input on a cubic count.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A procedure examines every triple \\(i<j<k\\) chosen from \\(1,\\dots,n\\), which takes \\(\\binom{n}{3}\\) steps. For large \\(n\\), by about what factor does the number of steps grow when \\(n\\) is doubled?",
+      "options": [
+        {
+          "label": "A",
+          "text": "About \\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "About \\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For large \\(n\\), \\(\\binom{n}{3}=\\dfrac{n(n-1)(n-2)}{6}\\) is close to \\(\\dfrac{n^3}{6}\\). Replacing \\(n\\) by \\(2n\\) multiplies \\(n^3\\) by \\(2^3=8\\). For example, \\(\\binom{100}{3}=161700\\) and \\(\\binom{200}{3}=1313400\\), a factor of about \\(8.1\\). A factor of \\(2\\) would be right for a count proportional to \\(n\\).",
+      "hint": "Find the highest power of \\(n\\) in the count."
+    },
+    {
+      "id": "dynanca-614-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Repeated halving",
+      "learningObjective": "Count how often a number can be halved.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A procedure starts with \\(n=1024\\) candidates and discards half of the remaining candidates in each step. After how many steps is exactly one candidate left?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(512\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each step divides the number of candidates by \\(2\\). Since \\(1024=2^{10}\\), ten halvings lead to \\(1\\). In general the number of steps is \\(\\log_2 n\\), which grows very slowly. The value \\(512\\) is the number of candidates left after the first step.",
+      "hint": "Write \\(1024\\) as a power of \\(2\\)."
+    },
+    {
+      "id": "dynanca-614-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The dominant term",
+      "learningObjective": "Identify the order of growth of a polynomial step count.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A counting procedure takes \\(3n^2+5n+20\\) steps on an input of size \\(n\\). Which function describes its order of growth?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For large \\(n\\), the term \\(3n^2\\) is far larger than \\(5n\\) and \\(20\\); the ratio of the step count to \\(n^2\\) approaches the constant \\(3\\). So the count grows in proportion to \\(n^2\\). Lower-order terms and constant factors do not affect the order of growth.",
+      "hint": "Compare the sizes of the three terms when \\(n\\) is large."
+    },
+    {
+      "id": "dynanca-614-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Testing every subset",
+      "learningObjective": "Find the step count of a brute-force subset procedure.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "To count the subsets of \\(n\\) given numbers whose sum equals a target, a procedure forms every subset and adds up its elements, using up to \\(n\\) additions per subset. Which expression bounds the total number of additions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n\\cdot 2^n\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(2^n\\) subsets, and each needs at most \\(n\\) additions, so the total is at most \\(n\\cdot 2^n\\). This grows exponentially: for \\(n=20\\) it is \\(20\\cdot 1048576=20971520\\), whereas \\(n^2\\) would be only \\(400\\).",
+      "hint": "Multiply the number of subsets by the work done for each subset."
+    },
+    {
+      "id": "dynanca-614-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Where exponential growth takes over",
+      "learningObjective": "Find the point from which an exponential exceeds a cubic.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "What is the smallest integer \\(N\\ge 2\\) such that \\(2^n>n^3\\) for every integer \\(n\\ge N\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(N=5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(N=10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(n=9\\): \\(2^9=512\\) and \\(9^3=729\\), so the inequality fails. For \\(n=10\\): \\(2^{10}=1024>1000=10^3\\). From then on each step doubles \\(2^n\\), while \\(n^3\\) grows by the smaller factor \\(\\left(\\dfrac{n+1}{n}\\right)^3\\), so the inequality persists. At \\(n=5\\) it is false: \\(32<125\\).",
+      "hint": "Compare the two values for \\(n=9\\) and \\(n=10\\)."
+    },
+    {
+      "id": "dynanca-614-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A triangular double loop",
+      "learningObjective": "Count the steps of a dependent double loop.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A procedure runs an outer loop for \\(i=1,2,\\dots,n\\) and, inside it, an inner loop for \\(j=1,2,\\dots,i\\); the innermost step is carried out once for each pair. How many times is the innermost step carried out for \\(n=100\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10000\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5050\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For each \\(i\\) the inner loop runs \\(i\\) times, so the total is \\(1+2+\\cdots+n=\\dfrac{n(n+1)}{2}\\). For \\(n=100\\) this is \\(\\dfrac{100\\cdot 101}{2}=5050\\). The value \\(10000=100^2\\) would be correct if the inner loop always ran \\(n\\) times.",
+      "hint": "Add up the lengths of the inner loop over all values of \\(i\\)."
+    }
+  ]
+}

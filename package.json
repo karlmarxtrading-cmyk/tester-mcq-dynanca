@@ -1,0 +1,43 @@
+{
+  "name": "dynanca-mcq",
+  "version": "1.2.0",
+  "private": true,
+  "description": "Dynanca MCQ static website, deterministic dist build, audited question data, and standalone Cloudflare Pages Direct Upload with official Wrangler.",
+  "scripts": {
+    "preview": "node tools/release/preview.js",
+    "build": "npm run build:index && npm run verify:protected && npm run verify:mathjax && npm run verify:csp && npm run validate && node tools/release/build.js",
+    "build:index": "node tools/bank-index/build-bank-index.js",
+    "verify:index": "node tools/bank-index/build-bank-index.js --check",
+    "verify:protected": "node tools/integrity/verify-protected.js",
+    "verify:mathjax": "node tools/mathjax-integrity/verify-mathjax.js",
+    "verify:csp": "node tools/csp/verify-csp-hashes.js",
+    "validate": "node tools/ecosystem-validator/validate-ecosystem.js",
+    "validate:shipped": "node tools/ecosystem-validator/validate-ecosystem.js --allow-pending",
+    "test": "node tools/tests/run-tests.js && node tools/tests/release-tests.js && npm run test:curriculum",
+    "test:browser": "playwright test --config=tests/browser/playwright.config.js",
+    "qa:evidence": "node tools/qa/capture-evidence.js",
+    "check": "npm run verify:protected && npm run verify:mathjax && npm run verify:csp && npm run verify:index && npm run validate && npm test",
+    "integrate": "npm run build:index && npm run verify:protected && npm run verify:mathjax && npm run verify:csp && npm run validate && npm test",
+    "preview:source": "node tools/dev-server/serve.js",
+    "preview:static": "node tools/dev-server/serve.js --root dist",
+    "preflight": "node tools/release/preflight.js",
+    "prepare:release": "node tools/release/prepare.js",
+    "predeploy": "npm run prepare:release",
+    "deploy:preview": "node tools/release/deploy.js preview",
+    "deploy:production": "node tools/release/deploy.js production",
+    "configure:deployment": "node tools/release/deploy.js configure",
+    "verify:deployment": "node tools/release/verify-public.js",
+    "wrangler": "node tools/release/run.js",
+    "curriculum:review": "node tools/integrity/curriculum-update.js review",
+    "curriculum:approve": "node tools/integrity/curriculum-update.js approve",
+    "test:curriculum": "node tools/tests/curriculum-tests.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.0",
+    "wrangler": "4.149.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "releaseTimestamp": "2026-10-10T14:00:00.000Z"
+}

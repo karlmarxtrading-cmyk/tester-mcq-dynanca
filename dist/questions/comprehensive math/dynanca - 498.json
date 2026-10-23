@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-498",
+  "category": "Comprehensive Mathematics",
+  "title": "498. Sets, Logic, Reasoning & Proof: Universal Quantifier",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-498-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Meaning of the universal quantifier",
+      "learningObjective": "State the meaning of a universally quantified statement.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What does the statement \\(\\forall x\\in D,\\ P(x)\\) assert?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P(x)\\) is true for at least one element \\(x\\) of \\(D\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(P(x)\\) is true for every element \\(x\\) of \\(D\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The symbol \\(\\forall\\) is read \"for all\" or \"for every\". The statement claims that the property \\(P\\) holds for each element of the domain \\(D\\) without exception. The claim that it holds for at least one element is expressed with the existential quantifier \\(\\exists\\).",
+      "hint": "The symbol \\(\\forall\\) abbreviates \"for all\"."
+    },
+    {
+      "id": "dynanca-498-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A universal statement on a small domain",
+      "learningObjective": "Evaluate a universal statement on a finite domain.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the truth value of \\(\\forall x\\in\\{1,2,3\\},\\ x<5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "True"
+        },
+        {
+          "label": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Check each element: \\(1<5\\), \\(2<5\\), and \\(3<5\\) are all true. Since the property holds for every element of the domain, the universal statement is true.",
+      "hint": "Test the property for each element of the domain."
+    },
+    {
+      "id": "dynanca-498-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A universal statement that fails",
+      "learningObjective": "Evaluate a universal statement that fails for one element.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the truth value of \\(\\forall x\\in\\{1,2,3,4\\},\\ x^2<10\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(x=1,2,3\\) the squares \\(1,4,9\\) are less than \\(10\\). But for \\(x=4\\), \\(x^2=16\\), which is not less than \\(10\\). One failing element makes the universal statement false.",
+      "hint": "Do not stop after the first few elements; check every one."
+    },
+    {
+      "id": "dynanca-498-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Disproving a universal statement",
+      "learningObjective": "State what is needed to disprove a universal statement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is enough to show that a statement of the form \\(\\forall x\\in D,\\ P(x)\\) is false?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One element of \\(D\\) for which \\(P(x)\\) is false"
+        },
+        {
+          "label": "B",
+          "text": "A proof that \\(P(x)\\) is false for every element of \\(D\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement claims that \\(P\\) holds for all elements. A single element for which \\(P\\) fails, called a counterexample, contradicts this claim. It is not necessary for \\(P\\) to fail everywhere.",
+      "hint": "Think about what the statement claims and what would contradict it."
+    },
+    {
+      "id": "dynanca-498-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A universal statement about squares",
+      "learningObjective": "Evaluate a universal statement over the real numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the truth value of \\(\\forall x\\in\\mathbb{R},\\ x^2\\ge 0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The square of a positive number is positive, the square of a negative number is positive, and \\(0^2=0\\). In every case \\(x^2\\ge 0\\), so the statement holds for all real numbers.",
+      "hint": "Consider positive numbers, negative numbers, and zero separately."
+    },
+    {
+      "id": "dynanca-498-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A universal statement over the integers",
+      "learningObjective": "Evaluate a universal statement whose truth depends on the domain being the integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "What is the truth value of \\(\\forall n\\in\\mathbb{Z},\\ n^2\\ge n\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "True"
+        },
+        {
+          "label": "B",
+          "text": "False, because \\(\\left(\\frac{1}{2}\\right)^2<\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(n\\le 0\\), \\(n^2\\ge 0\\ge n\\). For \\(n\\ge 1\\), multiplying \\(n\\ge 1\\) by the positive number \\(n\\) gives \\(n^2\\ge n\\). So the inequality holds for every integer. The number \\(\\frac{1}{2}\\) is not an integer, so it is not in the domain and cannot serve as a counterexample.",
+      "hint": "A counterexample must belong to the stated domain."
+    },
+    {
+      "id": "dynanca-498-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A strict inequality that fails at zero",
+      "learningObjective": "Find the truth value of a universal statement with a strict inequality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is the truth value of \\(\\forall x\\in\\mathbb{R},\\ x^2>0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False, because \\(x=0\\) gives \\(x^2=0\\)."
+        },
+        {
+          "label": "B",
+          "text": "True, because a square is never negative."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(x=0\\), \\(x^2=0\\), and \\(0>0\\) is false. This single counterexample makes the universal statement false. A square is indeed never negative, but that proves only \\(x^2\\ge 0\\), not the strict inequality.",
+      "hint": "Test the value that makes the square as small as possible."
+    },
+    {
+      "id": "dynanca-498-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Universal statement as a conjunction",
+      "learningObjective": "Rewrite a universal statement on a finite domain without a quantifier.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which proposition is equivalent to \\(\\forall x\\in\\{1,2,3\\},\\ P(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P(1)\\land P(2)\\land P(3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(P(1)\\lor P(2)\\lor P(3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\"For all \\(x\\) in \\(\\{1,2,3\\}\\)\" means that the property holds for \\(1\\), and for \\(2\\), and for \\(3\\). So the universal statement is the conjunction of the three instances. The disjunction says only that the property holds for at least one of them.",
+      "hint": "\"For all\" over a finite domain means every instance holds together."
+    },
+    {
+      "id": "dynanca-498-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Translating a restricted universal claim",
+      "learningObjective": "Translate a sentence of the form \"every A is B\" into symbols.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Over the positive integers, let \\(P(x)\\) mean \"\\(x\\) is prime\" and \\(O(x)\\) mean \"\\(x\\) is odd\". Which formula expresses \"Every prime greater than \\(2\\) is odd\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\forall x\\,\\left((P(x)\\land x>2)\\implies O(x)\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\forall x\\,\\left(P(x)\\land x>2\\land O(x)\\right)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sentence makes a claim only about those \\(x\\) that are primes greater than \\(2\\): if \\(x\\) is such a prime, then \\(x\\) is odd. This is a universally quantified conditional. The second formula claims that every positive integer is a prime greater than \\(2\\) and odd, which is false, for example, for \\(x=4\\).",
+      "hint": "A restricted \"every\" statement becomes a conditional inside the quantifier."
+    },
+    {
+      "id": "dynanca-498-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A pattern that eventually fails",
+      "learningObjective": "Recognise that many confirming cases do not establish a universal statement.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "What is the truth value of the statement \"for every positive integer \\(n\\), the number \\(n^2-n+41\\) is prime\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False; for \\(n=41\\) the value is \\(41^2\\), which is not prime."
+        },
+        {
+          "label": "B",
+          "text": "True; the values for \\(n=1,2,\\ldots,40\\) are all prime."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(n=41\\), \\(n^2-n+41=41^2-41+41=41^2=1681\\), which is divisible by \\(41\\) and so is not prime. This counterexample makes the universal statement false. The fact that the first \\(40\\) values are prime does not prove a statement about all positive integers.",
+      "hint": "Try a value of \\(n\\) that makes every term of the expression divisible by the same number."
+    }
+  ]
+}

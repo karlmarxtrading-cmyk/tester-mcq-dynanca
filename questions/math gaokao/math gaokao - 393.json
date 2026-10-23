@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-393",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 393",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-393-q001",
+      "category": "Number Theory",
+      "concept": "Modular Exponentiation",
+      "learningObjective": "Evaluate a power modulo a small positive integer by reducing the base.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the remainder when \\(5^{2024}\\) is divided by \\(6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(5\\equiv -1\\pmod{6}\\), we have \\(5^{2024}\\equiv (-1)^{2024}=1\\pmod{6}\\). Therefore the remainder is \\(1\\).",
+      "hint": "Reduce the base \\(5\\) modulo \\(6\\) before applying the exponent."
+    },
+    {
+      "id": "math-gaokao-393-q002",
+      "category": "Number Theory",
+      "concept": "Periodic Powers Modulo a Prime",
+      "learningObjective": "Use the repeating cycle of powers to compute a large exponent modulo \\(7\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the remainder when \\(3^{100}\\) is divided by \\(7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "We have \\(3^6\\equiv 1\\pmod{7}\\). Since \\(100=6\\cdot16+4\\), it follows that \\(3^{100}\\equiv 3^4=81\\equiv 4\\pmod{7}\\). Thus the remainder is \\(4\\).",
+      "hint": "Find the repeating period of powers of \\(3\\) modulo \\(7\\)."
+    },
+    {
+      "id": "math-gaokao-393-q003",
+      "category": "Number Theory",
+      "concept": "Linear Expressions in Modular Arithmetic",
+      "learningObjective": "Evaluate a linear expression modulo \\(9\\) using a given congruence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(x\\equiv 4\\pmod{9}\\), what is \\(3x-7\\pmod{9}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x\\equiv4\\pmod{9}\\):\n\\[\n3x-7\\equiv 3\\cdot4-7=12-7=5\\pmod{9}.\n\\]\nTherefore the residue is \\(5\\).",
+      "hint": "Substitute the given residue and reduce the result modulo \\(9\\)."
+    },
+    {
+      "id": "math-gaokao-393-q004",
+      "category": "Number Theory",
+      "concept": "Negative Residues",
+      "learningObjective": "Convert a negative integer to its standard residue modulo \\(5\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which residue is congruent to \\(-7\\pmod{5}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Add a multiple of \\(5\\) to \\(-7\\):\n\\[\n-7+2\\cdot5=3.\n\\]\nThus \\(-7\\equiv3\\pmod{5}\\).",
+      "hint": "Add a multiple of \\(5\\) to \\(-7\\) to obtain a residue from \\(0\\) to \\(4\\)."
+    },
+    {
+      "id": "math-gaokao-393-q005",
+      "category": "Number Theory",
+      "concept": "Modular Multiplicative Inverse",
+      "learningObjective": "Find the multiplicative inverse of an integer modulo \\(7\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the multiplicative inverse of \\(3\\) modulo \\(7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "We need \\(3x\\equiv1\\pmod{7}\\). Testing \\(x=5\\):\n\\[\n3\\cdot5=15\\equiv1\\pmod{7}.\n\\]\nTherefore the multiplicative inverse is \\(5\\).",
+      "hint": "Find an integer \\(x\\) such that \\(3x\\) leaves remainder \\(1\\) when divided by \\(7\\)."
+    },
+    {
+      "id": "math-gaokao-393-q006",
+      "category": "Number Theory",
+      "concept": "Linear Congruences",
+      "learningObjective": "Determine an integer solution of a linear congruence with non-coprime coefficient and modulus.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which integer \\(x\\) satisfies \\(4x\\equiv6\\pmod{10}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Check \\(x=4\\):\n\\[\n4\\cdot4=16\\equiv6\\pmod{10}.\n\\]\nFor \\(x=3\\), \\(4\\cdot3=12\\equiv2\\pmod{10}\\), so it does not work. Hence \\(x=4\\) is the required solution.",
+      "hint": "Divide the congruence by the greatest common divisor of \\(4\\) and \\(10\\) when possible."
+    },
+    {
+      "id": "math-gaokao-393-q007",
+      "category": "Number Theory",
+      "concept": "Units Digits and Modular Cycles",
+      "learningObjective": "Determine a units digit by working modulo \\(10\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the units digit of \\(7^{2023}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The units digit is \\(7^{2023}\\pmod{10}\\). Powers of \\(7\\) modulo \\(10\\) repeat as \\(7,9,3,1\\) with period \\(4\\). Since \\(2023=4\\cdot505+3\\),\n\\[\n7^{2023}\\equiv7^3=343\\equiv3\\pmod{10}.\n\\]\nThus the units digit is \\(3\\).",
+      "hint": "Examine the repeating cycle of units digits of powers of \\(7\\)."
+    },
+    {
+      "id": "math-gaokao-393-q008",
+      "category": "Number Theory",
+      "concept": "Systems of Congruences",
+      "learningObjective": "Solve a small system of congruences modulo \\(6\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Find the least nonnegative residue \\(x\\) modulo \\(6\\) satisfying both \\(x\\equiv2\\pmod3\\) and \\(x\\equiv1\\pmod2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The residues modulo \\(6\\) congruent to \\(2\\pmod3\\) are \\(2\\) and \\(5\\). Among these, \\(5\\equiv1\\pmod2\\), while \\(2\\equiv0\\pmod2\\). Therefore\n\\[\nx\\equiv5\\pmod6.\n\\]",
+      "hint": "List the residues \\(0,1,2,3,4,5\\) modulo \\(6\\) and test the two congruences."
+    },
+    {
+      "id": "math-gaokao-393-q009",
+      "category": "Number Theory",
+      "concept": "Modular Exponentiation via Fermat's Little Theorem",
+      "learningObjective": "Compute a large power modulo \\(13\\) by reducing the exponent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the remainder when \\(2^{2024}\\) is divided by \\(13\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By Fermat's little theorem, \\(2^{12}\\equiv1\\pmod{13}\\). Since \\(2024=12\\cdot168+8\\),\n\\[\n2^{2024}\\equiv2^8=256\\pmod{13}.\n\\]\nNow \\(256=13\\cdot19+9\\), so the remainder is \\(9\\).",
+      "hint": "Reduce the exponent modulo the period of powers of \\(2\\) modulo \\(13\\)."
+    },
+    {
+      "id": "math-gaokao-393-q010",
+      "category": "Number Theory",
+      "concept": "Quadratic Congruences and Counting Residues",
+      "learningObjective": "Solve \\(n^2\\equiv1\\pmod{24}\\) and count its solutions in a given interval.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How many integers \\(n\\) with \\(1\\le n\\le100\\) satisfy \\(n^2\\equiv1\\pmod{24}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(32\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(33\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Modulo \\(8\\), \\(n^2\\equiv1\\) exactly when \\(n\\) is odd. Modulo \\(3\\), \\(n^2\\equiv1\\) exactly when \\(n\\not\\equiv0\\pmod3\\). Combining these conditions modulo \\(24\\) gives the eight residues\n\\[\n1,5,7,11,13,17,19,23.\n\\]\nEach complete block of \\(24\\) consecutive integers contains \\(8\\) such numbers. Since \\(100=4\\cdot24+4\\), the first \\(96\\) integers contribute \\(4\\cdot8=32\\). Among \\(97,98,99,100\\), only \\(97\\equiv1\\pmod{24}\\) works. Hence the total is\n\\[\n32+1=33.\n\\]",
+      "hint": "First solve the congruence modulo \\(24\\), then count how many corresponding residues occur from \\(1\\) to \\(100\\)."
+    }
+  ]
+}

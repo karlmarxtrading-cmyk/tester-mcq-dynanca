@@ -1,0 +1,670 @@
+/* ==========================================================================
+   DYNANCA MATHEMATICS FOR COMPUTING — Practice System Styling
+   -------------------------------------------------------------------------
+   Warm Cream / Dark Ink / restrained Terracotta editorial identity, shared
+   with the rest of the Dynanca learning ecosystem. Class names and states
+   are the practice engine's contract — this file only changes appearance,
+   never markup or behavior.
+   ========================================================================== */
+
+.practice-question {
+  max-width: 680px;
+  margin: 0 auto 2.75rem;
+  padding: 1.75rem 1.75rem 1.5rem;
+  background: var(--dmc-surface);
+  border: 1px solid var(--dmc-border);
+  border-radius: 12px;
+  font-family: var(--dmc-font-sans);
+  color: var(--dmc-ink);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+
+  /* This is what actually fixes "content hidden behind the sticky header":
+     the header's real, measured height (published as --dmc-header-h by
+     shell.js) plus a little breathing room. scrollIntoView({block:"start"})
+     then always lands the question fully below the header, at any zoom
+     level or viewport size — no hardcoded pixel offset involved. */
+  scroll-margin-top: calc(var(--dmc-header-h, 64px) + 20px);
+}
+
+.practice-question:focus {
+  outline: none;
+}
+.practice-question:focus-visible {
+  outline: 2.5px solid var(--dmc-accent);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .practice-question {
+    animation: practice-question-in 0.2s ease-out;
+  }
+}
+@keyframes practice-question-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Question text — copyable */
+.practice-question-text {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  margin-bottom: 1.1rem;
+  font-weight: 500;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+/* Code block */
+.practice-code {
+  background: var(--dmc-code-bg);
+  color: var(--dmc-ink);
+  border-left: 3px solid var(--dmc-accent);
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: var(--dmc-font-mono);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  margin: 0 0 1.35rem;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+/* Inline code */
+.practice-question-text code.inline,
+.practice-option-text code.inline {
+  background: var(--dmc-code-bg);
+  color: var(--dmc-ink);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-family: var(--dmc-font-mono);
+  font-size: 0.9em;
+}
+
+/* Options list */
+.practice-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 0.25rem;
+}
+
+/* Option button — copyable, not a dead label */
+.practice-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 0.9rem 1.1rem;
+  border: 1.5px solid var(--dmc-border);
+  border-radius: 8px;
+  background: var(--dmc-bg);
+  cursor: pointer;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.55;
+  font-family: inherit;
+  color: inherit;
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.05s ease;
+  user-select: text;
+  -webkit-user-select: text;
+}
+.practice-option:hover {
+  border-color: var(--dmc-accent);
+  background: var(--dmc-surface);
+}
+.practice-option:active {
+  transform: translateY(1px);
+}
+.practice-option:focus-visible {
+  outline: 2.5px solid var(--dmc-accent);
+  outline-offset: 2px;
+}
+/* Once answered, every option is locked (see applyStateToDom). The
+   selected/correct/wrong state colors already communicate the outcome
+   clearly, so disabled here only removes the pointer cursor and hover
+   affordance — it must not fade the text or colors, which are still the
+   primary feedback the learner is meant to read. */
+.practice-option:disabled {
+  cursor: default;
+}
+.practice-option:disabled:hover {
+  border-color: var(--dmc-border);
+  background: var(--dmc-bg);
+}
+.practice-option.is-selected:disabled:hover,
+.practice-option.is-correct:disabled:hover {
+  border-color: var(--dmc-success);
+  background: var(--dmc-success-tint);
+}
+.practice-option.is-wrong:disabled:hover {
+  border-color: var(--dmc-danger);
+  background: var(--dmc-danger-tint);
+}
+
+/* A/B/C label — clear and consistent */
+.practice-option-label {
+  font-weight: 700;
+  color: var(--dmc-muted);
+  min-width: 1.5rem;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+  font-family: var(--dmc-font-mono);
+}
+.practice-option-text {
+  flex: 1;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+/* State: selected by learner */
+.practice-option.is-selected {
+  border-color: var(--dmc-accent);
+  background: var(--dmc-accent-tint);
+}
+.practice-option.is-selected .practice-option-label {
+  color: var(--dmc-accent);
+}
+
+/* State: CORRECT answer */
+.practice-option.is-correct {
+  border-color: var(--dmc-success);
+  background: var(--dmc-success-tint);
+}
+.practice-option.is-correct .practice-option-label {
+  color: var(--dmc-success);
+}
+.practice-option.is-correct::after {
+  content: "Correct";
+  margin-left: auto;
+  padding-left: 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dmc-success);
+  white-space: nowrap;
+  align-self: center;
+}
+
+/* State: learner's WRONG choice */
+.practice-option.is-wrong {
+  border-color: var(--dmc-danger);
+  background: var(--dmc-danger-tint);
+}
+.practice-option.is-wrong .practice-option-label {
+  color: var(--dmc-danger);
+}
+.practice-option.is-wrong::after {
+  content: "You picked this";
+  margin-left: auto;
+  padding-left: 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dmc-danger);
+  white-space: nowrap;
+  align-self: center;
+}
+
+/* Verdict */
+.practice-verdict {
+  margin-top: 1.35rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
+  font-family: var(--dmc-font-sans);
+}
+.practice-verdict[hidden] { display: none; }
+.practice-verdict.is-correct {
+  background: var(--dmc-success-tint);
+  color: var(--dmc-success);
+  border: 1px solid var(--dmc-success);
+}
+.practice-verdict.is-wrong {
+  background: var(--dmc-danger-tint);
+  color: var(--dmc-danger);
+  border: 1px solid var(--dmc-danger);
+}
+
+/* Fallback when a question is missing */
+.practice-missing {
+  padding: 1.5rem;
+  color: var(--dmc-muted);
+  font-style: italic;
+  text-align: center;
+}
+
+/* Deterministic end-of-stream / end-of-review state (see PracticeEngine's
+   enterCompleteState()). Shown instead of a question card once every
+   question (or every queued mistake) has been gone through, so "done" is
+   an explicit, readable screen rather than the Next button quietly
+   re-showing the last question forever. */
+.practice-complete {
+  max-width: 680px;
+  margin: 0 auto 2.75rem;
+  padding: 2.25rem 1.75rem;
+  background: var(--dmc-surface);
+  border: 1px solid var(--dmc-border);
+  border-radius: 12px;
+  text-align: center;
+}
+.practice-complete:focus {
+  outline: none;
+}
+.practice-complete:focus-visible {
+  outline: 2.5px solid var(--dmc-accent);
+  outline-offset: 4px;
+}
+.practice-complete-heading {
+  font-family: var(--dmc-font-serif);
+  font-size: 1.6rem;
+  margin: 0 0 0.6rem;
+  color: var(--dmc-ink);
+}
+.practice-complete-body {
+  margin: 0 0 0.5rem;
+  color: var(--dmc-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.practice-complete-summary {
+  margin: 0.75rem 0 0;
+  font-weight: 700;
+  color: var(--dmc-ink);
+}
+
+/* Fallback when the quiz itself fails to load (data-loader.js) */
+.practice-error {
+  padding: 1.5rem;
+  border: 1px solid var(--dmc-danger);
+  border-radius: 12px;
+  background: var(--dmc-danger-tint);
+  color: var(--dmc-danger);
+  text-align: center;
+}
+.practice-error strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+/* Previous — secondary, quiet, never competing with Next question */
+.practice-prev {
+  display: inline-block;
+  border: none;
+  background: none;
+  padding: 0 0 1rem;
+  margin: 0;
+  color: var(--dmc-muted);
+  font-family: var(--dmc-font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.practice-prev:hover {
+  color: var(--dmc-ink);
+}
+.practice-prev:focus-visible {
+  outline: 2.5px solid var(--dmc-accent);
+  outline-offset: 2px;
+}
+
+/* Next question — the primary action once feedback is showing */
+.practice-controls {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.practice-controls[hidden] { display: none; }
+
+.practice-next {
+  border: none;
+  background: var(--dmc-cta-bg);
+  color: #FFFFFF;
+  font-family: var(--dmc-font-sans);
+  font-size: 0.98rem;
+  font-weight: 700;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.05s ease;
+}
+.practice-next:hover {
+  background: var(--dmc-cta-bg-hover);
+}
+.practice-next:active {
+  transform: translateY(1px);
+}
+.practice-next:focus-visible {
+  outline: 2.5px solid var(--dmc-accent);
+  outline-offset: 3px;
+}
+
+/* Meta row: difficulty + concept tags */
+.practice-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+.practice-tag {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: var(--dmc-border);
+  color: var(--dmc-muted);
+}
+.practice-tag--beginner {
+  background: var(--dmc-success-tint);
+  color: var(--dmc-success);
+}
+.practice-tag--intermediate {
+  background: var(--dmc-accent-tint);
+  color: var(--dmc-accent);
+}
+.practice-tag--advanced {
+  background: var(--dmc-danger-tint);
+  color: var(--dmc-danger);
+}
+.practice-tag--concept {
+  background: var(--dmc-code-bg);
+  color: var(--dmc-ink);
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+.practice-tag--review {
+  background: var(--dmc-cta-bg);
+  color: #FFFFFF;
+}
+
+/* Hint */
+.practice-hint {
+  margin-top: 1rem;
+}
+.practice-hint-toggle {
+  min-height: 44px;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--dmc-accent);
+  font-family: var(--dmc-font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.practice-hint-toggle:hover { color: var(--dmc-accent-hover); }
+.practice-hint-toggle:focus-visible {
+  outline: 2.5px solid var(--dmc-accent);
+  outline-offset: 2px;
+}
+.practice-hint-text {
+  margin: 0.5rem 0 0;
+  padding: 0.7rem 0.95rem;
+  background: var(--dmc-code-bg);
+  border-left: 3px solid var(--dmc-accent);
+  border-radius: 6px;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--dmc-ink);
+}
+.practice-hint-text[hidden] { display: none; }
+
+/* Explanation — shown after answering */
+.practice-explanation {
+  margin-top: 1rem;
+  padding: 0.9rem 1.05rem;
+  background: var(--dmc-bg);
+  border: 1px solid var(--dmc-border);
+  border-radius: 8px;
+}
+.practice-explanation[hidden] { display: none; }
+.practice-explanation p,
+.practice-explanation-body {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--dmc-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .practice-option,
+  .practice-next {
+    transition: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .practice-question {
+    padding: 1.35rem 1.15rem 1.15rem;
+    border-radius: 10px;
+    margin: 0 auto 1.75rem;
+  }
+  .practice-option {
+    padding: 0.85rem 0.95rem;
+    flex-wrap: wrap;
+  }
+  .practice-option.is-correct::after,
+  .practice-option.is-wrong::after {
+    margin-left: 2.35rem;
+    padding-left: 0;
+    flex-basis: 100%;
+  }
+  .practice-controls {
+    justify-content: stretch;
+  }
+  .practice-next {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* ==========================================================================
+   Visual Venn diagrams
+   --------------------------------------------------------------------------
+   Kept dependency-free and scoped to the practice surface. SVG inherits the
+   existing editorial theme through currentColor/neutral variables where
+   possible, so the diagram remains coherent in both light and dark modes.
+   ========================================================================== */
+.venn-diagram {
+  margin: 1.5rem 0 1.75rem;
+  padding: 1rem;
+  border: 1px solid var(--dmc-border, rgba(0,0,0,.12));
+  border-radius: 1rem;
+  background: var(--dmc-surface, transparent);
+}
+.venn-diagram__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .75rem;
+  margin-bottom: .65rem;
+}
+.venn-diagram__eyebrow {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  opacity: .72;
+}
+.venn-diagram__legend {
+  font-size: .78rem;
+  line-height: 1.4;
+  opacity: .68;
+  text-align: right;
+}
+.venn-diagram__canvas {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+}
+.venn-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.venn-universe {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  opacity: .24;
+}
+.venn-set {
+  fill: currentColor;
+  fill-opacity: .035;
+  stroke: currentColor;
+  stroke-width: 2;
+  opacity: .9;
+}
+.venn-set--a { stroke-dasharray: none; }
+.venn-set--b { opacity: .78; }
+.venn-set--c { opacity: .68; }
+.venn-set-label {
+  font-size: 12px;
+  font-weight: 800;
+  fill: currentColor;
+  letter-spacing: .01em;
+}
+.venn-set-label--a,
+.venn-set-label--b,
+.venn-set-label--c {
+  paint-order: stroke;
+  stroke: var(--dmc-surface, transparent);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+.venn-set-label--a,
+.venn-set-label--b { font-size: clamp(9px, 1.8vw, 12px); }
+.venn-set-label--c { font-size: clamp(9px, 1.7vw, 11px); }
+.venn-region-label {
+  font-size: 9px;
+  font-weight: 650;
+  fill: currentColor;
+  opacity: .62;
+}
+.venn-region-value {
+  font-size: 15px;
+  font-weight: 800;
+  fill: currentColor;
+}
+.venn-region-fill {
+  pointer-events: none;
+  fill: var(--dmc-accent, currentColor);
+  fill-opacity: .22;
+  stroke: var(--dmc-accent, currentColor);
+  stroke-width: 1.25;
+  stroke-opacity: .55;
+}
+.venn-region.is-highlighted .venn-region-label,
+.venn-region.is-highlighted .venn-region-value {
+  opacity: 1;
+}
+.venn-diagram__caption {
+  margin: .7rem auto 0;
+  max-width: 620px;
+  font-size: .78rem;
+  line-height: 1.55;
+  opacity: .68;
+}
+.venn-diagram__key {
+  display: block;
+  margin-bottom: .2rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 640px) {
+  .venn-diagram { padding: .75rem; margin-top: 1rem; }
+  .venn-diagram__header { display: block; }
+  .venn-diagram__legend { display: block; margin-top: .25rem; text-align: left; }
+  .venn-diagram__caption { font-size: .74rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .venn-svg * { transition: none !important; }
+}
+
+/* --------------------------------------------------------------------------
+   Universal content media — used by the permissive practice engine.
+   These additions do not alter the existing question flow or navigation.
+   -------------------------------------------------------------------------- */
+.practice-media {
+  margin: 1.1rem 0 1.35rem;
+  text-align: center;
+}
+.practice-image {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 70vh;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.practice-media figcaption {
+  margin-top: .65rem;
+  color: var(--dmc-muted, #666);
+  font-size: .9rem;
+  line-height: 1.5;
+}
+.practice-graph svg {
+  display: block;
+  width: min(100%, 720px);
+  height: auto;
+  margin: 0 auto;
+  overflow: visible;
+}
+.practice-graph .graph-axis {
+  stroke: currentColor;
+  stroke-width: 1.2;
+  opacity: .55;
+}
+.practice-graph .graph-line {
+  stroke: var(--dmc-accent);
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.practice-graph .graph-point {
+  fill: currentColor;
+}
+.practice-question-code {
+  margin: 0 0 1.35rem;
+}
+.practice-revealed-answer {
+  margin: 1rem 0;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--dmc-border);
+  border-radius: 8px;
+  background: var(--dmc-code-bg);
+  line-height: 1.65;
+}
+.practice-revealed-answer strong {
+  display: block;
+  margin-bottom: .35rem;
+}
+.practice-code {
+  white-space: pre;
+  overflow-x: auto;
+}
+
+/* Local mathematics visual engine */
+.practice-math-visual { overflow: hidden; }
+.practice-math-visual svg { display:block; width:100%; height:auto; max-height:360px; }
+.practice-math-visual .math-grid { stroke: currentColor; opacity:.10; stroke-width:1; }
+.practice-math-visual .math-axis { stroke: currentColor; opacity:.72; stroke-width:1.5; }
+.practice-math-visual .math-line { stroke: currentColor; opacity:.85; stroke-width:2.4; }
+.practice-math-visual .math-point { fill: currentColor; opacity:.9; }
+.practice-math-visual .math-bar { fill: currentColor; opacity:.72; }
+.practice-math-visual .math-shape { fill: none; stroke: currentColor; opacity:.82; stroke-width:2; }
+.practice-math-visual .math-tick { font: 11px var(--dmc-font-sans, system-ui, sans-serif); fill: currentColor; opacity:.7; }
+.practice-math-visual .math-value { font: 12px var(--dmc-font-sans, system-ui, sans-serif); fill: currentColor; opacity:.9; }

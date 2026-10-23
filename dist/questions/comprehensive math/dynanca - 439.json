@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-439",
+  "category": "Comprehensive Mathematics",
+  "title": "439. Trigonometry & Periodic Models: Law of Cosines for Missing Angles",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-439-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Law of Cosines solved for an angle",
+      "learningObjective": "State the Law of Cosines rearranged to give the cosine of an angle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In triangle \\(ABC\\), side \\(c\\) is opposite angle \\(C\\). Which formula gives \\(\\cos C\\) from the three sides?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\cos C=\\frac{a^2+b^2-c^2}{2ab}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\cos C=\\frac{c^2-a^2-b^2}{2ab}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Starting from \\(c^2=a^2+b^2-2ab\\cos C\\), move the cosine term: \\(2ab\\cos C=a^2+b^2-c^2\\), so \\(\\cos C=\\frac{a^2+b^2-c^2}{2ab}\\). The other formula has the opposite sign; for an equilateral triangle it would give \\(-\\frac{1}{2}\\) instead of \\(\\frac{1}{2}\\).",
+      "hint": "Rearrange \\(c^2=a^2+b^2-2ab\\cos C\\) step by step, or test with an equilateral triangle."
+    },
+    {
+      "id": "dynanca-439-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Angle opposite the longest side of a three-four-five triangle",
+      "learningObjective": "Use the Law of Cosines to recognise a right angle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A triangle has sides \\(3\\), \\(4\\), and \\(5\\). What is the angle opposite the side of length \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(90^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60^\\circ\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the Law of Cosines, \\(\\cos C=\\frac{3^2+4^2-5^2}{2\\cdot 3\\cdot 4}=\\frac{9+16-25}{24}=0\\), so \\(C=90^\\circ\\). An angle of \\(60^\\circ\\) would need a cosine of \\(\\frac{1}{2}\\).",
+      "hint": "Compute \\(a^2+b^2-c^2\\) with \\(c\\) the side opposite the required angle."
+    },
+    {
+      "id": "dynanca-439-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Angle from three sides with a standard cosine",
+      "learningObjective": "Find an angle from three sides when the cosine is a standard value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A triangle has sides \\(a=5\\), \\(b=8\\), and \\(c=7\\). What is the angle \\(C\\) opposite side \\(c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60^\\circ\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the Law of Cosines, \\(\\cos C=\\frac{25+64-49}{2\\cdot 5\\cdot 8}=\\frac{40}{80}=\\frac{1}{2}\\), so \\(C=60^\\circ\\). The angle \\(120^\\circ\\) has cosine \\(-\\frac{1}{2}\\), which would arise from reversing the subtraction in the numerator.",
+      "hint": "Put the square of the side opposite the required angle last in the numerator, with a minus sign."
+    },
+    {
+      "id": "dynanca-439-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Obtuse angle from three sides",
+      "learningObjective": "Find an obtuse angle from three sides using the sign of the cosine.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A triangle has sides \\(a=3\\), \\(b=5\\), and \\(c=7\\). What is the angle \\(C\\) opposite side \\(c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(120^\\circ\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the Law of Cosines, \\(\\cos C=\\frac{9+25-49}{2\\cdot 3\\cdot 5}=\\frac{-15}{30}=-\\frac{1}{2}\\). A negative cosine means an obtuse angle, and \\(C=120^\\circ\\). The angle \\(60^\\circ\\) has cosine \\(+\\frac{1}{2}\\), which ignores the sign.",
+      "hint": "Keep the sign of the numerator; a negative cosine gives an angle greater than \\(90^\\circ\\)."
+    },
+    {
+      "id": "dynanca-439-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Angle in a triangle with radical sides",
+      "learningObjective": "Find an angle from three sides that include a radical.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A triangle has sides \\(1\\), \\(\\sqrt{3}\\), and \\(2\\). What is the angle opposite the side of length \\(\\sqrt{3}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60^\\circ\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the Law of Cosines, the cosine of the required angle is \\(\\frac{1^2+2^2-\\left(\\sqrt{3}\\right)^2}{2\\cdot 1\\cdot 2}=\\frac{1+4-3}{4}=\\frac{1}{2}\\), so the angle is \\(60^\\circ\\). The angle \\(30^\\circ\\) is opposite the shortest side, of length \\(1\\).",
+      "hint": "The side opposite the required angle is the one subtracted in the numerator."
+    },
+    {
+      "id": "dynanca-439-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Largest angle of a triangle",
+      "learningObjective": "Identify and compute the largest angle of a triangle to one decimal place.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A triangle has sides \\(4\\), \\(5\\), and \\(6\\). What is its largest angle, to one decimal place?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(82.8^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(97.2^\\circ\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The largest angle is opposite the longest side, \\(6\\): \\(\\cos C=\\frac{16+25-36}{2\\cdot 4\\cdot 5}=\\frac{5}{40}=\\frac{1}{8}\\), so \\(C=\\cos^{-1}(0.125)\\approx 82.8^\\circ\\). The value \\(97.2^\\circ\\) is \\(\\cos^{-1}(-0.125)\\), which has the wrong sign.",
+      "hint": "The largest angle is opposite the longest side; check the sign of the cosine."
+    },
+    {
+      "id": "dynanca-439-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Smallest angle of a triangle",
+      "learningObjective": "Identify and compute the smallest angle of a triangle to one decimal place.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A triangle has sides \\(4\\), \\(5\\), and \\(6\\). What is its smallest angle, to one decimal place?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(41.4^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(48.6^\\circ\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The smallest angle is opposite the shortest side, \\(4\\): \\(\\cos A=\\frac{5^2+6^2-4^2}{2\\cdot 5\\cdot 6}=\\frac{45}{60}=\\frac{3}{4}\\), so \\(A=\\cos^{-1}(0.75)\\approx 41.4^\\circ\\). The value \\(48.6^\\circ\\) is \\(\\sin^{-1}(0.75)\\), which uses the wrong inverse function.",
+      "hint": "The smallest angle is opposite the shortest side; apply the inverse cosine to the ratio."
+    },
+    {
+      "id": "dynanca-439-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Acute or obtuse from the sign of the cosine",
+      "learningObjective": "Classify an angle as acute or obtuse from the Law of Cosines without computing the angle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A triangle has sides \\(2\\), \\(3\\), and \\(4\\). Is the angle opposite the side of length \\(4\\) acute or obtuse?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acute, because \\(2+3>4\\)."
+        },
+        {
+          "label": "B",
+          "text": "Obtuse, because \\(2^2+3^2<4^2\\) makes its cosine negative."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The cosine of that angle is \\(\\frac{4+9-16}{2\\cdot 2\\cdot 3}=-\\frac{1}{4}\\). A negative cosine means the angle is obtuse. The inequality \\(2+3>4\\) only shows that the three lengths form a triangle; it says nothing about the type of angle.",
+      "hint": "Compare the sum of the squares of the two shorter sides with the square of the longest side."
+    },
+    {
+      "id": "dynanca-439-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Apex angle of an isosceles triangle",
+      "learningObjective": "Compute the apex angle of an isosceles triangle from its sides.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "An isosceles triangle has sides \\(5\\), \\(5\\), and \\(6\\). What is the angle between the two equal sides, to one decimal place?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(73.7^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(53.1^\\circ\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The angle between the equal sides is opposite the side of length \\(6\\): its cosine is \\(\\frac{25+25-36}{2\\cdot 5\\cdot 5}=\\frac{14}{50}=\\frac{7}{25}\\), giving about \\(73.7^\\circ\\). The value \\(53.1^\\circ\\) is one of the base angles, whose cosine is \\(\\frac{3}{5}\\).",
+      "hint": "Decide which side is opposite the required angle before substituting."
+    },
+    {
+      "id": "dynanca-439-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Largest angle in terms of a variable",
+      "learningObjective": "Find an angle of a family of similar triangles using the Law of Cosines.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For \\(x>0\\), a triangle has sides \\(x\\), \\(x\\), and \\(x\\sqrt{3}\\). What is its largest angle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(150^\\circ\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The largest angle is opposite the longest side \\(x\\sqrt{3}\\): its cosine is \\(\\frac{x^2+x^2-3x^2}{2\\cdot x\\cdot x}=\\frac{-x^2}{2x^2}=-\\frac{1}{2}\\), so the angle is \\(120^\\circ\\). The variable \\(x\\) cancels, as expected for similar triangles. An angle of \\(150^\\circ\\) would have cosine \\(-\\frac{\\sqrt{3}}{2}\\).",
+      "hint": "Substitute the three sides into the formula for the cosine and simplify; the variable should cancel."
+    }
+  ]
+}

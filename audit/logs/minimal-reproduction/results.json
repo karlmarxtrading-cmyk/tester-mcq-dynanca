@@ -1,0 +1,33 @@
+{
+  "scope": "Untouched original project copy plus only reviewed incoming manifest baseline, ML --add-new registration, and official index regeneration. No test expectations or bank content altered.",
+  "results": [
+    {
+      "command": "node tools/integrity/verify-protected.js --add-new",
+      "exitCode": 0,
+      "started": "2026-10-08T11:15:24.000125+00:00",
+      "finished": "2026-10-08T11:15:24.142024+00:00",
+      "log": "add-new.log"
+    },
+    {
+      "command": "npm run build:index",
+      "exitCode": 0,
+      "started": "2026-10-08T11:15:24.142039+00:00",
+      "finished": "2026-10-08T11:15:24.428036+00:00",
+      "log": "build-index.log"
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "started": "2026-10-08T11:15:24.428047+00:00",
+      "finished": "2026-10-08T11:15:30.282168+00:00",
+      "log": "test.log"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "started": "2026-10-08T11:15:30.282180+00:00",
+      "finished": "2026-10-08T11:15:31.923935+00:00",
+      "log": "build.log"
+    }
+  ]
+}

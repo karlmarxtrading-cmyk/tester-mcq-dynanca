@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-463",
+  "category": "Comprehensive Mathematics",
+  "title": "463. Sets, Logic, Reasoning & Proof: Finite Sets",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-463-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Recognising a finite set",
+      "learningObjective": "Distinguish a finite set from an infinite set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which of the following sets is finite?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The set of all natural numbers"
+        },
+        {
+          "label": "B",
+          "text": "The set of days of the week"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A set is finite when its elements can be counted and the counting ends. There are exactly \\(7\\) days of the week, so that set is finite. The natural numbers continue without end, so their set is infinite.",
+      "hint": "Ask whether the elements could be listed completely, with a last element reached."
+    },
+    {
+      "id": "dynanca-463-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting integers in a range",
+      "learningObjective": "Count the elements of a finite set of consecutive integers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many elements does the set \\(\\{x\\in\\mathbb{Z}\\mid -3\\le x\\le 3\\}\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The elements are \\(-3,-2,-1,0,1,2,3\\). There are three negative integers, three positive integers, and \\(0\\), giving \\(7\\) elements. Counting \\(3-(-3)=6\\) forgets that both endpoints are included.",
+      "hint": "List the integers from the smallest to the largest and do not forget \\(0\\)."
+    },
+    {
+      "id": "dynanca-463-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Even integers in an interval",
+      "learningObjective": "Count the elements of a finite set described by a property.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many elements does the set of even integers \\(n\\) with \\(1<n<21\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(11\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The even integers strictly between \\(1\\) and \\(21\\) are \\(2,4,6,\\ldots,20\\). These are \\(2\\cdot 1,2\\cdot 2,\\ldots,2\\cdot 10\\), so there are \\(10\\) of them. The value \\(11\\) would also count \\(0\\) or \\(22\\), which are outside the range.",
+      "hint": "Write each element as \\(2k\\) and find the smallest and largest value of \\(k\\)."
+    },
+    {
+      "id": "dynanca-463-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Finite set given by an inequality",
+      "learningObjective": "Decide which set-builder description gives a finite set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which of these sets, each described by a condition, is finite?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{x\\in\\mathbb{R}\\mid 0<x<1\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{x\\in\\mathbb{Z}\\mid x^2<20\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The integers with \\(x^2<20\\) are \\(-4,-3,\\ldots,3,4\\), which is \\(9\\) elements, so the first set is finite. The second set contains every real number between \\(0\\) and \\(1\\), for example \\(\\frac{1}{2},\\frac{1}{3},\\frac{1}{4},\\ldots\\), so it is infinite even though it is bounded.",
+      "hint": "A bounded set of real numbers can still be infinite; check which number system the elements come from."
+    },
+    {
+      "id": "dynanca-463-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Primes below twenty",
+      "learningObjective": "Count the elements of a finite set of prime numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many elements does the set of prime numbers less than \\(20\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The primes less than \\(20\\) are \\(2,3,5,7,11,13,17,19\\), which is \\(8\\) numbers. The number \\(1\\) is not prime, because a prime must have exactly two positive divisors; counting it gives the incorrect \\(9\\).",
+      "hint": "List the primes one by one and recall whether \\(1\\) is a prime number."
+    },
+    {
+      "id": "dynanca-463-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The empty set is finite",
+      "learningObjective": "Classify the empty set as finite.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Is the empty set a finite set?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; it has \\(0\\) elements, and \\(0\\) is a non-negative integer."
+        },
+        {
+          "label": "B",
+          "text": "No; a finite set must contain at least one element."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A set is finite when its number of elements is a non-negative integer. The empty set has exactly \\(0\\) elements, so it is finite. Nothing in the definition requires a finite set to be non-empty.",
+      "hint": "Recall the definition of a finite set in terms of the number of its elements."
+    },
+    {
+      "id": "dynanca-463-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Distinct letters of a word",
+      "learningObjective": "Count the elements of a set when the description contains repeated objects.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many elements does the set of letters used in the word MISSISSIPPI have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(11\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A set contains each element only once. The distinct letters are M, I, S, and P, so the set has \\(4\\) elements. The number \\(11\\) is the length of the word, which counts repeated letters several times.",
+      "hint": "In a set, a repeated object is counted only once."
+    },
+    {
+      "id": "dynanca-463-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Multiples in a range",
+      "learningObjective": "Count the multiples of a number in a closed range.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many elements does the set of multiples of \\(5\\) from \\(1\\) to \\(100\\) inclusive have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(19\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The multiples are \\(5\\cdot 1,5\\cdot 2,\\ldots,5\\cdot 20=100\\). Since \\(100\\) is included, there are \\(20\\) elements. The value \\(19\\) would exclude \\(100\\), but the range is inclusive.",
+      "hint": "Write each multiple as \\(5k\\) and find the largest \\(k\\) allowed."
+    },
+    {
+      "id": "dynanca-463-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Set of positive divisors",
+      "learningObjective": "Count the elements of the set of positive divisors of a number.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many elements does the set \\(\\{x\\in\\mathbb{Z}\\mid x>0\\text{ and }x\\text{ divides }36\\}\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The positive divisors of \\(36\\) are \\(1,2,3,4,6,9,12,18,36\\). They pair up as \\(1\\cdot 36\\), \\(2\\cdot 18\\), \\(3\\cdot 12\\), \\(4\\cdot 9\\), and \\(6\\cdot 6\\); the last pair gives only one divisor. So there are \\(9\\) elements, not \\(10\\).",
+      "hint": "Pair each divisor with its partner, and look carefully at the pair coming from the square root."
+    },
+    {
+      "id": "dynanca-463-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A bounded set of fractions",
+      "learningObjective": "Decide whether a set defined by a formula with a bounded index is finite.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(S=\\left\\{\\frac{1}{n}\\mid n\\in\\mathbb{Z},\\ 1\\le n\\le 50\\right\\}\\). Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(S\\) is infinite, because there are infinitely many fractions between \\(0\\) and \\(1\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(S\\) is finite and has \\(50\\) elements."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each integer \\(n\\) from \\(1\\) to \\(50\\) gives one element \\(\\frac{1}{n}\\), and different values of \\(n\\) give different fractions. So \\(S\\) has exactly \\(50\\) elements. It is true that infinitely many fractions lie between \\(0\\) and \\(1\\), but \\(S\\) contains only the \\(50\\) listed ones.",
+      "hint": "Count how many values the index \\(n\\) can take, and check whether different values give different elements."
+    }
+  ]
+}

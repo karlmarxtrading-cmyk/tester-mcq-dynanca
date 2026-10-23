@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-359",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 359",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-359-q001",
+      "category": "Combinatorics",
+      "concept": "Complementary Counting for Three-Digit Numbers",
+      "learningObjective": "Count three-digit numbers satisfying an at-least-one condition by subtracting the complement from all three-digit numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "How many three-digit numbers contain at least one digit \\(7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(252\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(648\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(900\\) three-digit numbers in total, from \\(100\\) to \\(999\\).\nWe subtract the three-digit numbers that contain no digit \\(7\\).\nFor such a number, the hundreds digit can be any of \\(1,2,3,4,5,6,8,9\\), giving \\(8\\) choices. The tens and units digits can each be any digit except \\(7\\), giving \\(9\\) choices each.\nThus the number with no digit \\(7\\) is\n\\[\n8 \\cdot 9 \\cdot 9 = 648.\n\\]\nTherefore, the number containing at least one digit \\(7\\) is\n\\[\n900 - 648 = 252.\n\\]",
+      "hint": "Count all three-digit numbers first, then subtract those with no digit \\(7\\)."
+    },
+    {
+      "id": "math-gaokao-359-q002",
+      "category": "Combinatorics",
+      "concept": "Complementary Counting for Strings",
+      "learningObjective": "Count strings with at least one specified letter by subtracting strings avoiding that letter.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many \\(4\\)-letter strings can be formed from the letters \\(\\{A,B,C,D,E\\}\\), allowing repetition, if the string must contain at least one \\(A\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(369\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(256\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total number of \\(4\\)-letter strings using \\(5\\) available letters is\n\\[\n5^4 = 625.\n\\]\nThe complement consists of strings that contain no \\(A\\). Such strings use only the \\(4\\) letters \\(\\{B,C,D,E\\}\\), so there are\n\\[\n4^4 = 256\n\\]\nof them.\nTherefore, the number of strings containing at least one \\(A\\) is\n\\[\n625 - 256 = 369.\n\\]",
+      "hint": "Count all \\(4\\)-letter strings, then subtract those that avoid the letter \\(A\\)."
+    },
+    {
+      "id": "math-gaokao-359-q003",
+      "category": "Combinatorics",
+      "concept": "Complementary Counting for Subsets",
+      "learningObjective": "Count subsets with at least one even element by subtracting subsets containing only odd elements.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many subsets of \\(\\{1,2,3,4,5,6,7,8,9,10\\}\\) contain at least one even number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(992\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(32\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A set with \\(10\\) elements has\n\\[\n2^{10} = 1024\n\\]\nsubsets in total.\nThe complement consists of subsets containing no even number, so they can only use the \\(5\\) odd numbers \\(\\{1,3,5,7,9\\}\\).\nThere are\n\\[\n2^5 = 32\n\\]\nsuch subsets.\nHence the number of subsets containing at least one even number is\n\\[\n1024 - 32 = 992.\n\\]",
+      "hint": "Use the total number of subsets and subtract those made only from odd numbers."
+    },
+    {
+      "id": "math-gaokao-359-q004",
+      "category": "Combinatorics",
+      "concept": "Complementary Counting for Permutations",
+      "learningObjective": "Count permutations not in increasing order by subtracting the increasing permutation from all permutations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many permutations of the digits \\(1,2,3,4,5\\) are not in increasing order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(119\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total number of permutations of \\(5\\) distinct digits is\n\\[\n5! = 120.\n\\]\nExactly one of these permutations is in increasing order, namely\n\\[\n12345.\n\\]\nTherefore, the number of permutations that are not in increasing order is\n\\[\n120 - 1 = 119.\n\\]",
+      "hint": "Compare all permutations with the unique arrangement in increasing order."
+    },
+    {
+      "id": "math-gaokao-359-q005",
+      "category": "Combinatorics",
+      "concept": "Complementary Counting in Committee Selection",
+      "learningObjective": "Count selections containing at least one specified person by subtracting selections containing neither.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A committee of \\(3\\) people is to be chosen from \\(8\\) people, including Alice and Bob. How many committees contain at least one of Alice or Bob?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(36\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total number of ways to choose \\(3\\) people from \\(8\\) is\n\\[\n\\binom{8}{3} = 56.\n\\]\nThe complement consists of committees containing neither Alice nor Bob. Then we choose all \\(3\\) people from the remaining \\(6\\) people:\n\\[\n\\binom{6}{3} = 20.\n\\]\nThus the number of committees containing at least one of Alice or Bob is\n\\[\n56 - 20 = 36.\n\\]",
+      "hint": "Subtract committees containing neither specified person from all possible committees."
+    },
+    {
+      "id": "math-gaokao-359-q006",
+      "category": "Combinatorics",
+      "concept": "Complementary Counting in Card Hands",
+      "learningObjective": "Count \\(5\\)-card hands containing at least one ace by subtracting hands with no ace.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many \\(5\\)-card hands from a standard \\(52\\)-card deck contain at least one ace?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1,712,304\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(886,656\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total number of \\(5\\)-card hands is\n\\[\n\\binom{52}{5} = 2,598,960.\n\\]\nA hand with no ace is chosen entirely from the \\(48\\) non-ace cards, giving\n\\[\n\\binom{48}{5} = 1,712,304.\n\\]\nTherefore, the number of hands containing at least one ace is\n\\[\n2,598,960 - 1,712,304 = 886,656.\n\\]",
+      "hint": "Subtract \\(5\\)-card hands with no ace from all possible \\(5\\)-card hands."
+    },
+    {
+      "id": "math-gaokao-359-q007",
+      "category": "Combinatorics",
+      "concept": "Complementary Counting with Divisibility",
+      "learningObjective": "Count integers avoiding divisibility by \\(3\\) or \\(5\\) using inclusion-exclusion and complementary counting.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many positive integers less than \\(1000\\) are divisible by neither \\(3\\) nor \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(533\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(466\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(999\\) positive integers less than \\(1000\\).\nThe number divisible by \\(3\\) is\n\\[\n\\left\\lfloor \\frac{999}{3} \\right\\rfloor = 333.\n\\]\nThe number divisible by \\(5\\) is\n\\[\n\\left\\lfloor \\frac{999}{5} \\right\\rfloor = 199.\n\\]\nThe number divisible by both \\(3\\) and \\(5\\), i.e. by \\(15\\), is\n\\[\n\\left\\lfloor \\frac{999}{15} \\right\\rfloor = 66.\n\\]\nBy inclusion-exclusion, the number divisible by \\(3\\) or \\(5\\) is\n\\[\n333 + 199 - 66 = 466.\n\\]\nTherefore, the number divisible by neither \\(3\\) nor \\(5\\) is\n\\[\n999 - 466 = 533.\n\\]",
+      "hint": "Use inclusion-exclusion to count integers divisible by \\(3\\) or \\(5\\), then subtract from \\(999\\)."
+    },
+    {
+      "id": "math-gaokao-359-q008",
+      "category": "Combinatorics",
+      "concept": "Complementary Counting for Five-Digit Numbers",
+      "learningObjective": "Count five-digit numbers containing at least one zero by subtracting numbers with no zero digit.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many five-digit numbers contain at least one digit \\(0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(59,049\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(30,951\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are\n\\[\n99999 - 10000 + 1 = 90000\n\\]\nfive-digit numbers in total.\nA five-digit number with no digit \\(0\\) has its first digit chosen from \\(1\\) through \\(9\\), giving \\(9\\) choices, and each of the remaining four digits also chosen from \\(1\\) through \\(9\\), giving \\(9\\) choices each.\nThus the number of five-digit numbers with no digit \\(0\\) is\n\\[\n9^5 = 59,049.\n\\]\nTherefore, the number containing at least one digit \\(0\\) is\n\\[\n90000 - 59049 = 30951.\n\\]",
+      "hint": "Count all five-digit numbers, then subtract those with no zero digit."
+    },
+    {
+      "id": "math-gaokao-359-q009",
+      "category": "Combinatorics",
+      "concept": "Complementary Counting with Repeated Letters",
+      "learningObjective": "Count distinct arrangements with adjacent identical letters by subtracting arrangements with no adjacency.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many distinct arrangements of the letters of the word \\(\\text{MISSISSIPPI}\\) have at least two \\(I\\)'s adjacent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(27,300\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7,350\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The word \\(\\text{MISSISSIPPI}\\) has \\(11\\) letters: \\(M\\) once, \\(I\\) four times, \\(S\\) four times, and \\(P\\) twice.\nThe total number of distinct arrangements is\n\\[\n\\frac{11!}{4!4!2!} = 34,650.\n\\]\nWe subtract arrangements in which no two \\(I\\)'s are adjacent.\nFirst arrange the \\(7\\) non-\\(I\\) letters \\(M,S,S,S,S,P,P\\). Their number of distinct arrangements is\n\\[\n\\frac{7!}{4!2!} = 105.\n\\]\nThese \\(7\\) letters create \\(8\\) gaps around and between them. To keep the four \\(I\\)'s separated, choose \\(4\\) of these \\(8\\) gaps:\n\\[\n\\binom{8}{4} = 70.\n\\]\nThus arrangements with no adjacent \\(I\\)'s number\n\\[\n105 \\cdot 70 = 7,350.\n\\]\nTherefore, arrangements with at least two \\(I\\)'s adjacent number\n\\[\n34,650 - 7,350 = 27,300.\n\\]",
+      "hint": "Count all distinct arrangements, then subtract arrangements in which no two \\(I\\)'s are adjacent."
+    },
+    {
+      "id": "math-gaokao-359-q010",
+      "category": "Combinatorics",
+      "concept": "Complementary Counting in Permutations with Positional Restrictions",
+      "learningObjective": "Count permutations with a positional parity condition by subtracting the complementary permutations.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "A six-digit number is formed by using each of the digits \\(1,2,3,4,5,6\\) exactly once. How many such numbers have at least one even digit in an even position, where positions are counted from left to right?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(684\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total number of permutations of the digits \\(1,2,3,4,5,6\\) is\n\\[\n6! = 720.\n\\]\nWe subtract the permutations that have no even digit in any even position.\nThe even positions are positions \\(2,4,6\\). If no even digit may appear there, then these three positions must be filled by the three odd digits \\(1,3,5\\), which can be arranged in\n\\[\n3! = 6\n\\]\nways.\nThe remaining three odd positions must then be filled by the three even digits \\(2,4,6\\), which can also be arranged in\n\\[\n3! = 6\n\\]\nways.\nSo the complement contains\n\\[\n6 \\cdot 6 = 36\n\\]\npermutations.\nTherefore, the number with at least one even digit in an even position is\n\\[\n720 - 36 = 684.\n\\]",
+      "hint": "Count all permutations of \\(1\\) through \\(6\\), then subtract permutations with no even digit in any even position."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> dynanca-mcq@1.1.0 test:browser
+> playwright test --config=tests/browser/playwright.config.js tests/browser/release-audit.spec.js --max-failures=4
+
+
+Running 10 tests using 1 worker
+
+(node:32) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:32) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 320px light: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.4s)
+  ✓   2 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 320px dark: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.3s)
+  ✓   3 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 390px light: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.4s)
+  ✓   4 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 390px dark: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.3s)
+  ✓   5 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 768px light: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.4s)
+  ✓   6 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 768px dark: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.3s)
+  ✓   7 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 1280px light: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.4s)
+  ✓   8 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 1280px dark: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.3s)
+  ✓   9 [chromium] › tests/browser/release-audit.spec.js:87:1 › all 100 ML questions complete once, persist and end without a navigation loop (7.6s)
+  ✓  10 [chromium] › tests/browser/release-audit.spec.js:109:1 › Venn names and rich text remain text under malicious HTML, with the real CSP intact (272ms)
+
+  10 passed (19.4s)

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-517",
+  "category": "Comprehensive Mathematics",
+  "title": "517. Sets, Logic, Reasoning & Proof: Induction for Divisibility",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-517-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Base case of a divisibility induction",
+      "learningObjective": "Verify the base case of an induction about divisibility by three.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The statement \"\\(3\\) divides \\(4^n-1\\) for every integer \\(n\\ge 1\\)\" is to be proved by induction. What is \\(4^n-1\\) in the base case \\(n=1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\), which is divisible by \\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\), which is not divisible by \\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(n=1\\), \\(4^1-1=3\\), and \\(3=3\\cdot 1\\) is divisible by \\(3\\). So the base case holds. The value \\(4\\) forgets to subtract \\(1\\).",
+      "hint": "Substitute \\(n=1\\) and carry out the subtraction."
+    },
+    {
+      "id": "dynanca-517-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Writing the hypothesis as an equation",
+      "learningObjective": "Express a divisibility hypothesis as an equation with an integer multiplier.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The inductive hypothesis \"\\(3\\) divides \\(4^k-1\\)\" is rewritten as an equation. Which equation is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4^k-1=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4^k-1=3m\\) for some integer \\(m\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the definition of divisibility, \"\\(3\\) divides \\(4^k-1\\)\" means that \\(4^k-1\\) is an integer multiple of \\(3\\): \\(4^k-1=3m\\) for some integer \\(m\\). The equation \\(4^k-1=3\\) holds only for \\(k=1\\) and does not express divisibility in general.",
+      "hint": "Divisibility by \\(3\\) means being equal to \\(3\\) times some integer."
+    },
+    {
+      "id": "dynanca-517-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Step for powers of six",
+      "learningObjective": "Rewrite the next case so that a divisibility hypothesis can be applied.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Assume that \\(5\\) divides \\(6^k-1\\). Which identity is used to show that \\(5\\) divides \\(6^{k+1}-1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6^{k+1}-1=6\\left(6^k-1\\right)+6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6^{k+1}-1=6\\left(6^k-1\\right)+5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Expanding: \\(6(6^k-1)+5=6^{k+1}-6+5=6^{k+1}-1\\). By the hypothesis, \\(5\\) divides \\(6^k-1\\) and hence the first term, and \\(5\\) divides \\(5\\), so \\(5\\) divides the sum. The second expression equals \\(6^{k+1}\\), not \\(6^{k+1}-1\\).",
+      "hint": "Expand each right side and compare it with \\(6^{k+1}-1\\)."
+    },
+    {
+      "id": "dynanca-517-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Step for a cubic expression",
+      "learningObjective": "Separate the hypothesis from a multiple of three in the next case.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Assume that \\(3\\) divides \\(k^3+2k\\). Which identity shows that \\(3\\) divides \\((k+1)^3+2(k+1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((k+1)^3+2(k+1)=\\left(k^3+2k\\right)+3\\left(k^2+k+1\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((k+1)^3+2(k+1)=\\left(k^3+2k\\right)+3k^2+1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Expanding, \\((k+1)^3+2(k+1)=k^3+3k^2+3k+1+2k+2=(k^3+2k)+3k^2+3k+3=(k^3+2k)+3(k^2+k+1)\\). The first bracket is divisible by \\(3\\) by hypothesis and the second term is a multiple of \\(3\\). The other identity is false: it omits the terms \\(3k\\) and \\(2\\).",
+      "hint": "Expand the cube completely, then group the terms of the hypothesis together."
+    },
+    {
+      "id": "dynanca-517-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Step for a quadratic expression",
+      "learningObjective": "Separate the hypothesis from an even number in the next case.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Assume that \\(2\\) divides \\(k^2+k\\). Which identity shows that \\(2\\) divides \\((k+1)^2+(k+1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((k+1)^2+(k+1)=\\left(k^2+k\\right)+2k+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((k+1)^2+(k+1)=\\left(k^2+k\\right)+2(k+1)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Expanding, \\((k+1)^2+(k+1)=k^2+2k+1+k+1=(k^2+k)+2k+2=(k^2+k)+2(k+1)\\). Both terms on the right are even, the first by hypothesis. The other identity omits one of the units; its right side would be odd whenever \\(k^2+k\\) is even.",
+      "hint": "Expand and collect the terms \\(k^2+k\\) of the hypothesis."
+    },
+    {
+      "id": "dynanca-517-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Substituting the hypothesis",
+      "learningObjective": "Use a divisibility hypothesis in equation form to factor the next case.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Assume \\(8^k-1=7m\\) for an integer \\(m\\), so \\(8^k=7m+1\\). What is \\(8^{k+1}-1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7(8m+1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7(8m)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute: \\(8^{k+1}-1=8\\cdot 8^k-1=8(7m+1)-1=56m+7=7(8m+1)\\). Since \\(8m+1\\) is an integer, \\(7\\) divides \\(8^{k+1}-1\\). The expression \\(7(8m)=56m\\) forgets the remaining \\(+7\\).",
+      "hint": "Replace \\(8^k\\) by \\(7m+1\\), multiply out, and then factor out \\(7\\)."
+    },
+    {
+      "id": "dynanca-517-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A divisibility claim that fails at once",
+      "learningObjective": "Recognise that a false divisibility claim fails at its base case.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Can induction prove the statement \"\\(4\\) divides \\(5^n+1\\) for every integer \\(n\\ge 1\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; the base case \\(n=1\\) gives \\(4\\), which is divisible by \\(4\\)."
+        },
+        {
+          "label": "B",
+          "text": "No; for \\(n=1\\) the value is \\(6\\), which is not divisible by \\(4\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(n=1\\), \\(5^1+1=6\\), and \\(6\\) is not a multiple of \\(4\\). The statement is false at its first value, so no proof can exist. The value \\(4\\) would be \\(5^1-1\\); the true statement is that \\(4\\) divides \\(5^n-1\\).",
+      "hint": "Compute \\(5^n+1\\) for \\(n=1\\) carefully."
+    },
+    {
+      "id": "dynanca-517-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Step for even powers of two",
+      "learningObjective": "Rewrite the next case for an expression with a doubled exponent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Assume that \\(3\\) divides \\(2^{2k}-1\\). Which identity shows that \\(3\\) divides \\(2^{2(k+1)}-1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2^{2(k+1)}-1=4\\left(2^{2k}-1\\right)+3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2^{2(k+1)}-1=2\\left(2^{2k}-1\\right)+1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(2^{2(k+1)}=2^{2k+2}=4\\cdot 2^{2k}\\), we get \\(2^{2(k+1)}-1=4\\cdot 2^{2k}-1=4(2^{2k}-1)+3\\). Both terms are divisible by \\(3\\). Increasing \\(k\\) by \\(1\\) raises the exponent by \\(2\\), so the power is multiplied by \\(4\\), not by \\(2\\).",
+      "hint": "Work out how the exponent \\(2k\\) changes when \\(k\\) increases by \\(1\\)."
+    },
+    {
+      "id": "dynanca-517-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Step for even powers of three",
+      "learningObjective": "Rewrite the next case for a divisibility statement about powers of nine.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Assume that \\(8\\) divides \\(3^{2k}-1\\). Which identity shows that \\(8\\) divides \\(3^{2k+2}-1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3^{2k+2}-1=9\\left(3^{2k}-1\\right)+8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3^{2k+2}-1=3\\left(3^{2k}-1\\right)+2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(3^{2k+2}=9\\cdot 3^{2k}\\), \\(3^{2k+2}-1=9\\cdot 3^{2k}-1=9(3^{2k}-1)+8\\). The first term is divisible by \\(8\\) by hypothesis, and \\(8\\) divides \\(8\\). The second identity is false: its right side equals \\(3^{2k+1}-1\\).",
+      "hint": "Raising the exponent by \\(2\\) multiplies the power of \\(3\\) by \\(9\\)."
+    },
+    {
+      "id": "dynanca-517-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An extra term that needs its own argument",
+      "learningObjective": "Justify the divisibility of the extra term in an inductive step.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "To prove that \\(6\\) divides \\(n^3+5n\\), the inductive step gives \\((k+1)^3+5(k+1)=\\left(k^3+5k\\right)+3k(k+1)+6\\). Why is the term \\(3k(k+1)\\) divisible by \\(6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The term contains the factor \\(3\\), and \\(3\\) is a divisor of \\(6\\)."
+        },
+        {
+          "label": "B",
+          "text": "The product \\(k(k+1)\\) of two consecutive integers is even, so \\(3k(k+1)\\) is a multiple of \\(6\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "One of the consecutive integers \\(k\\) and \\(k+1\\) is even, so \\(k(k+1)=2j\\) and \\(3k(k+1)=6j\\). Having a factor \\(3\\) alone is not enough for divisibility by \\(6\\): for example \\(3\\cdot 1=3\\) is not a multiple of \\(6\\). A factor \\(2\\) is needed as well, and the consecutive integers supply it.",
+      "hint": "Divisibility by \\(6\\) needs both a factor \\(3\\) and a factor \\(2\\); find where the factor \\(2\\) comes from."
+    }
+  ]
+}

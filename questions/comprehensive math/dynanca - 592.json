@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-592",
+  "category": "Comprehensive Mathematics",
+  "title": "592. Discrete Mathematics, Counting & Graph Theory: Depth-First Search Traces",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-592-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The strategy of the search",
+      "learningObjective": "Describe how depth-first search explores a graph.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does depth-first search explore a graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It visits all neighbours of the start vertex before it visits any other vertex."
+        },
+        {
+          "label": "B",
+          "text": "It follows one branch as far as possible and backtracks only when no unvisited neighbour remains."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Depth-first search always moves on from the vertex it has just reached to an unvisited neighbour, going deeper and deeper. Only when the current vertex has no unvisited neighbour does it step back to the previous vertex. Visiting all neighbours of the start first is the strategy of breadth-first search.",
+      "hint": "The name of the search describes its preference."
+    },
+    {
+      "id": "dynanca-592-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A first trace",
+      "learningObjective": "Trace depth-first search on a small graph.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(P,Q,R,S,T\\) and edges \\(PQ\\), \\(PR\\), \\(QS\\), and \\(QT\\). Depth-first search starts at \\(P\\) and considers neighbours in alphabetical order. In which order are the vertices first visited?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P,\\ Q,\\ S,\\ T,\\ R\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(P,\\ Q,\\ R,\\ S,\\ T\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(P\\) the search moves to \\(Q\\), then to \\(S\\). At \\(S\\) nothing new is available, so it backtracks to \\(Q\\) and visits \\(T\\). After backtracking to \\(P\\), it finally visits \\(R\\). The order \\(P,Q,R,S,T\\) visits both neighbours of \\(P\\) before going deeper, which is breadth-first search.",
+      "hint": "After reaching \\(Q\\), continue from \\(Q\\) before returning to the other neighbour of \\(P\\)."
+    },
+    {
+      "id": "dynanca-592-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Tracing a larger graph",
+      "learningObjective": "Trace depth-first search on a graph with six vertices.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D,E,F\\) and edges \\(AB\\), \\(AC\\), \\(BD\\), \\(BE\\), \\(CF\\), and \\(EF\\). Depth-first search starts at \\(A\\) and considers neighbours in alphabetical order. In which order are the vertices first visited?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A,\\ B,\\ C,\\ D,\\ E,\\ F\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A,\\ B,\\ D,\\ E,\\ F,\\ C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(A\\) go to \\(B\\), then to \\(D\\), which is a dead end. Back at \\(B\\), go to \\(E\\), then to \\(F\\), and from \\(F\\) to \\(C\\). All vertices are now visited. The alphabetical order \\(A,B,C,D,E,F\\) is the order of breadth-first search for this graph.",
+      "hint": "From each new vertex, move on at once to its first unvisited neighbour."
+    },
+    {
+      "id": "dynanca-592-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Backtracking",
+      "learningObjective": "Identify the vertex to which the search returns from a dead end.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A graph has vertices \\(A,B,C,D,E,F\\) and edges \\(AB\\), \\(AC\\), \\(BD\\), \\(BE\\), \\(CF\\), and \\(EF\\). Depth-first search starts at \\(A\\), considers neighbours in alphabetical order, and reaches \\(D\\) as its third vertex. To which vertex does it backtrack from \\(D\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(B\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The vertex \\(D\\) was reached from \\(B\\), and its only neighbour is \\(B\\), so there is nothing new to visit. The search steps back to the vertex from which \\(D\\) was reached, namely \\(B\\), and continues with the next unvisited neighbour of \\(B\\). It does not jump back to the start.",
+      "hint": "Backtracking returns one step, to the vertex from which the current vertex was first reached."
+    },
+    {
+      "id": "dynanca-592-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The last vertex discovered",
+      "learningObjective": "Find the last vertex that depth-first search discovers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D,E,F\\) and edges \\(AB\\), \\(AC\\), \\(BD\\), \\(BE\\), \\(CF\\), and \\(EF\\). Depth-first search starts at \\(A\\) and considers neighbours in alphabetical order. Which vertex is discovered last?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(F\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The search runs \\(A,B,D\\), backtracks to \\(B\\), and continues \\(E,F\\). From \\(F\\) it reaches \\(C\\), which is the last vertex to be discovered. Although \\(C\\) is a neighbour of the start, it is reached only at the end of the long branch through \\(B\\), \\(E\\), and \\(F\\).",
+      "hint": "Follow the branch through \\(B\\) to its end before considering the other neighbour of \\(A\\)."
+    },
+    {
+      "id": "dynanca-592-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Edges outside the search tree",
+      "learningObjective": "Identify the edge that is not used to discover a vertex.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A graph has vertices \\(A,B,C,D,E,F\\) and edges \\(AB\\), \\(AC\\), \\(BD\\), \\(BE\\), \\(CF\\), and \\(EF\\). Depth-first search from \\(A\\), with neighbours in alphabetical order, discovers each new vertex along one edge. Which edge is not used for a discovery?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(AC\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(EF\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The discoveries use \\(AB\\), \\(BD\\), \\(BE\\), \\(EF\\), and \\(FC\\): five edges for the five vertices other than the start. The remaining edge \\(AC\\) joins two vertices that have both been visited already when it is examined. Such an edge closes a cycle with edges of the search tree.",
+      "hint": "Six vertices need five discovery edges; find the edge that is left over."
+    },
+    {
+      "id": "dynanca-592-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Recursion and the stack",
+      "learningObjective": "Name the data structure that corresponds to the recursion of depth-first search.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Depth-first search is naturally written as a recursive procedure. To which data structure does the chain of unfinished recursive calls correspond?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A queue: the vertex reached earliest is continued first."
+        },
+        {
+          "label": "B",
+          "text": "A stack: the vertex reached most recently is continued first."
+        }
+      ],
+      "answer": "B",
+      "explanation": "When the search moves from a vertex to a new neighbour, the old vertex has to wait until everything below the neighbour is finished. The waiting vertices are resumed in the reverse order of their arrival, which is how a stack works. A queue would resume the earliest vertex first and produce breadth-first search.",
+      "hint": "Think about which waiting vertex is resumed first after a dead end."
+    },
+    {
+      "id": "dynanca-592-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Starting from another vertex",
+      "learningObjective": "Trace depth-first search from a different start vertex.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D,E,F\\) and edges \\(AB\\), \\(AC\\), \\(BD\\), \\(BE\\), \\(CF\\), and \\(EF\\). Depth-first search starts at \\(F\\) and considers neighbours in alphabetical order. In which order are the vertices first visited?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(F,\\ C,\\ A,\\ B,\\ D,\\ E\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(F,\\ C,\\ E,\\ A,\\ B,\\ D\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(F\\) go to \\(C\\), then to \\(A\\), then to \\(B\\), then to \\(D\\), a dead end. Back at \\(B\\), visit \\(E\\). The order is \\(F,C,A,B,D,E\\). The other order visits both neighbours \\(C\\) and \\(E\\) of the start before going deeper, as breadth-first search does.",
+      "hint": "After \\(C\\), continue from \\(C\\); do not return to the second neighbour of \\(F\\) yet."
+    },
+    {
+      "id": "dynanca-592-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Detecting a cycle",
+      "learningObjective": "Interpret the discovery of an already visited neighbour.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A graph has vertices \\(A,B,C,D,E,F\\) and edges \\(AB\\), \\(AC\\), \\(BD\\), \\(BE\\), \\(CF\\), and \\(EF\\). Depth-first search from \\(A\\) reaches \\(C\\) from \\(F\\) and then finds that the neighbour \\(A\\) of \\(C\\) has already been visited. What does this show?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The graph contains a cycle through \\(A\\) and \\(C\\)."
+        },
+        {
+          "label": "B",
+          "text": "The search has made an error and must be restarted."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The search reached \\(C\\) along the branch \\(A,B,E,F,C\\). The edge \\(CA\\) leads back to a visited vertex that is not the vertex from which \\(C\\) was reached, so it closes the cycle \\(A,B,E,F,C,A\\). In an undirected graph, finding such an edge is exactly how depth-first search detects a cycle.",
+      "hint": "Combine the branch from \\(A\\) to \\(C\\) with the edge \\(CA\\)."
+    },
+    {
+      "id": "dynanca-592-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Search in a directed graph",
+      "learningObjective": "Trace depth-first search along the arcs of a directed graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A directed graph has arcs \\(A\\to B\\), \\(A\\to C\\), \\(B\\to D\\), \\(C\\to D\\), and \\(D\\to E\\). Depth-first search starts at \\(A\\), follows arcs only in their direction, and considers targets in alphabetical order. In which order are the vertices first visited?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A,\\ B,\\ D,\\ E,\\ C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A,\\ B,\\ C,\\ D,\\ E\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(A\\) go to \\(B\\), then along \\(B\\to D\\) to \\(D\\), then along \\(D\\to E\\) to \\(E\\). No arc leaves \\(E\\), and nothing new is reachable from \\(D\\) or \\(B\\), so the search returns to \\(A\\) and visits \\(C\\). The arc \\(C\\to D\\) leads to a vertex already visited.",
+      "hint": "Follow the arcs out of \\(B\\) to the end before taking the second arc out of \\(A\\)."
+    }
+  ]
+}

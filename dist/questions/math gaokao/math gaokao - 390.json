@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-390",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 390",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-390-q001",
+      "category": "Number Theory",
+      "concept": "Greatest Common Divisor",
+      "learningObjective": "Compute the greatest common divisor of two integers using prime factorization.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\gcd(48,60)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor both numbers:\n\\[\n48=2^4\\cdot 3,\\qquad 60=2^2\\cdot 3\\cdot 5.\n\\]\nFor the greatest common divisor, take the smallest exponent of each common prime. Thus\n\\[\n\\gcd(48,60)=2^2\\cdot 3=12.\n\\]\nTherefore, the correct choice is B.",
+      "hint": "Write both numbers as products of prime powers, then multiply the common prime powers with the smaller exponents."
+    },
+    {
+      "id": "math-gaokao-390-q002",
+      "category": "Number Theory",
+      "concept": "Greatest Common Divisor",
+      "learningObjective": "Compute the greatest common divisor of two composite numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\gcd(84,126)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(21\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(42\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor both numbers:\n\\[\n84=2^2\\cdot 3\\cdot 7,\\qquad 126=2\\cdot 3^2\\cdot 7.\n\\]\nThe common prime powers with the smallest exponents are \\(2^1\\), \\(3^1\\), and \\(7^1\\). Hence\n\\[\n\\gcd(84,126)=2\\cdot 3\\cdot 7=42.\n\\]\nTherefore, the correct choice is B.",
+      "hint": "Compare the prime factorizations and take the smaller exponent of each common prime."
+    },
+    {
+      "id": "math-gaokao-390-q003",
+      "category": "Number Theory",
+      "concept": "Greatest Common Divisor",
+      "learningObjective": "Use prime factorization to find the greatest common divisor of larger integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\gcd(270,450)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(45\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(90\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor both numbers:\n\\[\n270=2\\cdot 3^3\\cdot 5,\\qquad 450=2\\cdot 3^2\\cdot 5^2.\n\\]\nTaking the smallest exponent of each common prime gives\n\\[\n\\gcd(270,450)=2^1\\cdot 3^2\\cdot 5^1=2\\cdot 9\\cdot 5=90.\n\\]\nTherefore, the correct choice is B.",
+      "hint": "Use the prime factorizations and multiply the common primes raised to their smaller exponents."
+    },
+    {
+      "id": "math-gaokao-390-q004",
+      "category": "Number Theory",
+      "concept": "Greatest Common Divisor by Euclidean Algorithm",
+      "learningObjective": "Apply the Euclidean algorithm to compute a greatest common divisor.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\gcd(1071,462)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(21\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(42\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the Euclidean algorithm:\n\\[\n\\begin{aligned}\n1071&=462\\cdot 2+147, \\\\\n462&=147\\cdot 3+21, \\\\\n147&=21\\cdot 7+0.\n\\end{aligned}\n\\]\nThe last nonzero remainder is \\(21\\), so\n\\[\n\\gcd(1071,462)=21.\n\\]\nTherefore, the correct choice is A.",
+      "hint": "Repeatedly replace the larger number by the remainder until the remainder is zero."
+    },
+    {
+      "id": "math-gaokao-390-q005",
+      "category": "Number Theory",
+      "concept": "Greatest Common Divisor in an Application",
+      "learningObjective": "Use the greatest common divisor to solve a tiling problem.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A rectangular floor measuring \\(96\\text{ cm}\\) by \\(144\\text{ cm}\\) is to be covered completely by identical square tiles arranged in rows parallel to its sides, without cutting tiles. What is the largest possible integer side length of each tile?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(48\\text{ cm}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\text{ cm}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The side length must divide both floor dimensions. Since\n\\[\n96=2^5\\cdot3,\\qquad144=2^4\\cdot3^2,\n\\]\nthe largest common divisor is\n\\[\n\\gcd(96,144)=2^4\\cdot3=48.\n\\]\nTiles of side \\(48\\text{ cm}\\) form a \\(2\\)-by-\\(3\\) array. Tiles of side \\(24\\text{ cm}\\) also fit, but are not the largest possible.",
+      "hint": "The side length of the largest square tile must divide both dimensions exactly."
+    },
+    {
+      "id": "math-gaokao-390-q006",
+      "category": "Number Theory",
+      "concept": "Greatest Common Divisor of Algebraic Expressions",
+      "learningObjective": "Determine the greatest common divisor of two monomial expressions in prime factors.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(p\\) and \\(q\\) be distinct prime numbers. What is \\(\\gcd(p^2q^3,\\;p^3q^2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p^2q^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p^3q^3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For each prime, take the smaller exponent in the two expressions. For \\(p\\), the exponents are \\(2\\) and \\(3\\), so the smaller is \\(2\\). For \\(q\\), the exponents are \\(3\\) and \\(2\\), so the smaller is \\(2\\). Hence\n\\[\n\\gcd(p^2q^3,p^3q^2)=p^2q^2.\n\\]\nTherefore, the correct choice is A.",
+      "hint": "Compare the exponents of each prime factor and take the smaller one."
+    },
+    {
+      "id": "math-gaokao-390-q007",
+      "category": "Number Theory",
+      "concept": "Relationship Between GCD and LCM",
+      "learningObjective": "Use the product relationship between the greatest common divisor and least common multiple.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(m\\) and \\(n\\) be positive integers. If \\(\\gcd(m,n)=6\\) and \\(\\operatorname{lcm}(m,n)=180\\), what is \\(mn\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(900\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1080\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For positive integers \\(m\\) and \\(n\\),\n\\[\n\\gcd(m,n)\\cdot \\operatorname{lcm}(m,n)=mn.\n\\]\nThus\n\\[\nmn=6\\cdot 180=1080.\n\\]\nTherefore, the correct choice is B.",
+      "hint": "Use the identity connecting the greatest common divisor and the least common multiple of two positive integers."
+    },
+    {
+      "id": "math-gaokao-390-q008",
+      "category": "Number Theory",
+      "concept": "Common Divisors",
+      "learningObjective": "Count the positive common divisors of two integers using their greatest common divisor.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many positive common divisors do \\(72\\) and \\(108\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The common divisors of two numbers are exactly the divisors of their greatest common divisor. Now\n\\[\n72=2^3\\cdot 3^2,\\qquad 108=2^2\\cdot 3^3,\n\\]\nso\n\\[\n\\gcd(72,108)=2^2\\cdot 3^2=36.\n\\]\nThe number of positive divisors of \\(36=2^2\\cdot 3^2\\) is\n\\[\n(2+1)(2+1)=3\\cdot 3=9.\n\\]\nTherefore, the correct choice is A.",
+      "hint": "First find the greatest common divisor, then count its positive divisors."
+    },
+    {
+      "id": "math-gaokao-390-q009",
+      "category": "Number Theory",
+      "concept": "Consecutive Integers and GCD",
+      "learningObjective": "Determine the greatest common divisor of two consecutive integers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For every positive integer \\(n\\), what is \\(\\gcd(n,n+1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Any common divisor of \\(n\\) and \\(n+1\\) must also divide their difference:\n\\[\n(n+1)-n=1.\n\\]\nThe only positive divisor of \\(1\\) is \\(1\\), so\n\\[\n\\gcd(n,n+1)=1.\n\\]\nTherefore, the correct choice is A.",
+      "hint": "If a number divides both integers, it must also divide their difference."
+    },
+    {
+      "id": "math-gaokao-390-q010",
+      "category": "Number Theory",
+      "concept": "GCD of Mersenne Numbers",
+      "learningObjective": "Use the gcd property of numbers of the form \\(2^k-1\\) to compute a greatest common divisor.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "What is \\(\\gcd(2^{10}-1,\\;2^{15}-1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(31\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(63\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For positive integers \\(a\\) and \\(b\\),\n\\[\n\\gcd(2^a-1,2^b-1)=2^{\\gcd(a,b)}-1.\n\\]\nHere \\(a=10\\) and \\(b=15\\), and\n\\[\n\\gcd(10,15)=5.\n\\]\nTherefore,\n\\[\n\\gcd(2^{10}-1,2^{15}-1)=2^5-1=32-1=31.\n\\]\nThus the correct choice is A.",
+      "hint": "Use the identity for the greatest common divisor of two numbers of the form \\(2^k-1\\)."
+    }
+  ]
+}

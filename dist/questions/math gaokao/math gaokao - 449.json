@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-449",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 449",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-449-q001",
+      "category": "Complex Numbers and Geometry",
+      "concept": "Modulus of a Complex Number",
+      "learningObjective": "Compute the modulus of a complex number and interpret it as distance from the origin.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the modulus of the complex number \\(z=5-12i\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(17\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(13\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The modulus is \\(|z|=\\sqrt{5^2+(-12)^2}=\\sqrt{169}=13\\). Adding the absolute component values gives \\(17\\), but that is not the Euclidean distance in the complex plane.",
+      "hint": "Use the formula \\(|a+bi|=\\sqrt{a^2+b^2}\\)."
+    },
+    {
+      "id": "math-gaokao-449-q002",
+      "category": "Complex Numbers and Geometry",
+      "concept": "Argument of a Complex Number",
+      "learningObjective": "Determine the argument of a complex number in a specified interval.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The complex number \\(z=-\\sqrt{3}-i\\) has argument \\(\\theta\\) with \\(0\\le\\theta<2\\pi\\). What is \\(\\theta\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{7\\pi}{6}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5\\pi}{6}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The real and imaginary parts are both negative, so the point lies in Quadrant III. Its reference angle is \\(\\pi/6\\), since \\(|\\operatorname{Im}z|/|\\operatorname{Re}z|=1/\\sqrt{3}\\). Hence \\(\\theta=\\pi+\\pi/6=7\\pi/6\\). The other angle lies in Quadrant II and has positive sine.",
+      "hint": "Locate the quadrant of the point in the complex plane and use the reference angle."
+    },
+    {
+      "id": "math-gaokao-449-q003",
+      "category": "Complex Numbers and Geometry",
+      "concept": "Locus of Points with Equal Distances",
+      "learningObjective": "Find the Cartesian equation of a locus defined by equal complex distances.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The locus of points \\(z=x+yi\\) with \\(x,y\\in\\mathbb{R}\\) satisfying \\(|z-1|=|z-i|\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x+y=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Write \\(z=x+yi\\). Then\n\\[\n|x+yi-1|^2=|x+yi-i|^2.\n\\]\nThis gives\n\\[\n(x-1)^2+y^2=x^2+(y-1)^2.\n\\]\nExpanding and simplifying:\n\\[\nx^2-2x+1+y^2=x^2+y^2-2y+1,\n\\]\nso \\(-2x=-2y\\), hence \\(x=y\\), or \\(y=x\\).",
+      "hint": "Interpret the equation as equality of distances to two fixed points in the complex plane."
+    },
+    {
+      "id": "math-gaokao-449-q004",
+      "category": "Complex Numbers and Geometry",
+      "concept": "Rotation by Multiplication by \\(i\\)",
+      "learningObjective": "Apply multiplication by \\(i\\) to rotate a complex number by \\(90^\\circ\\) counterclockwise.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(z=1+2i\\), what is \\(iz\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2-i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2+i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiply:\n\\[\n\\begin{aligned}\niz&=i(1+2i) \\\\\n&=i+2i^2 \\\\\n&=i-2 \\\\\n&=-2+i.\n\\end{aligned}\n\\]\nThus \\(iz=-2+i\\).",
+      "hint": "Use \\(i^2=-1\\) and distribute multiplication over addition."
+    },
+    {
+      "id": "math-gaokao-449-q005",
+      "category": "Complex Numbers and Geometry",
+      "concept": "Distance Between Complex Numbers",
+      "learningObjective": "Compute the distance between two points in the complex plane using the modulus of their difference.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Find \\(|(3+4i)-(-1+2i)|\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\sqrt{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{10}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Subtract the complex numbers:\n\\[\n(3+4i)-(-1+2i)=4+2i.\n\\]\nThen\n\\[\n\\begin{aligned}\n|4+2i|&=\\sqrt{4^2+2^2} \\\\\n&=\\sqrt{16+4} \\\\\n&=\\sqrt{20} \\\\\n&=2\\sqrt{5}.\n\\end{aligned}\n\\]",
+      "hint": "Subtract the complex numbers first, then apply the modulus formula."
+    },
+    {
+      "id": "math-gaokao-449-q006",
+      "category": "Complex Numbers and Geometry",
+      "concept": "Ellipse in the Complex Plane",
+      "learningObjective": "Interpret a complex modulus equation as an ellipse and compute its eccentricity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The equation \\(|z-3i|+|z+3i|=10\\) describes an ellipse in the complex plane. What is its eccentricity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{4}{5}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The foci are at \\(3i\\) and \\(-3i\\), so \\(c=3\\). The sum of distances to the foci is \\(10\\), so \\(2a=10\\) and \\(a=5\\). Therefore the eccentricity is\n\\[\ne=\\frac{c}{a}=\\frac{3}{5}.\n\\]",
+      "hint": "Identify the foci and use the relation between the major axis length and the focal distance."
+    },
+    {
+      "id": "math-gaokao-449-q007",
+      "category": "Complex Numbers and Geometry",
+      "concept": "Area of a Region Defined by Modulus and Imaginary Part",
+      "learningObjective": "Determine the area of the intersection of a disk and a half-plane in the complex plane.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The region in the complex plane defined by \\(|z-1|\\le 2\\) and \\(\\operatorname{Im}(z)\\ge 0\\) has area:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\pi\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\pi\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inequality \\(|z-1|\\le 2\\) describes a disk of radius \\(2\\) centered at \\(1\\). The condition \\(\\operatorname{Im}(z)\\ge 0\\) selects the upper half of this disk. The area of the full disk is\n\\[\n\\pi\\cdot 2^2=4\\pi,\n\\]\nso the upper half has area \\(2\\pi\\).",
+      "hint": "Recognize the disk and then take the portion lying above the real axis."
+    },
+    {
+      "id": "math-gaokao-449-q008",
+      "category": "Complex Numbers and Geometry",
+      "concept": "Geometry of Cube Roots of Unity",
+      "learningObjective": "Compute the area of the triangle formed by the cube roots of unity in the complex plane.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The three cube roots of unity form a triangle in the complex plane. What is the area of this triangle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3\\sqrt{3}}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The cube roots of unity are\n\\[\n1,\\quad e^{\\frac{2\\pi i}{3}},\\quad e^{\\frac{4\\pi i}{3}}.\n\\]\nThey lie on the unit circle and form an equilateral triangle. The side length is\n\\[\n|1-e^{\\frac{2\\pi i}{3}}|=\\sqrt{3}.\n\\]\nThus the area is\n\\[\n\\frac{\\sqrt{3}}{4}(\\sqrt{3})^2=\\frac{3\\sqrt{3}}{4}.\n\\]",
+      "hint": "Find the vertices on the unit circle and identify the side length of the equilateral triangle."
+    },
+    {
+      "id": "math-gaokao-449-q009",
+      "category": "Complex Numbers and Geometry",
+      "concept": "Area of a Triangle in the Complex Plane",
+      "learningObjective": "Compute the area of a triangle whose vertices are given by complex numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In the complex plane, the points \\(z_1=1+i\\), \\(z_2=3+2i\\), and \\(z_3=2+4i\\) are vertices of a triangle. What is its area?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{5}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Translate \\(z_1\\) to the origin. The two side vectors are\n\\[\nz_2-z_1=2+i,\\qquad z_3-z_1=1+3i.\n\\]\nThe area is\n\\[\n\\frac{1}{2}\\left|\\operatorname{Im}\\left((z_2-z_1)\\overline{(z_3-z_1)}\\right)\\right|.\n\\]\nCompute:\n\\[\n(2+i)(1-3i)=2-6i+i-3i^2=5-5i.\n\\]\nThe imaginary part is \\(-5\\), so the area is\n\\[\n\\frac{1}{2}\\cdot 5=\\frac{5}{2}.\n\\]",
+      "hint": "Use the determinant or imaginary-part formula for the area of a triangle determined by two complex vectors."
+    },
+    {
+      "id": "math-gaokao-449-q010",
+      "category": "Complex Numbers and Geometry",
+      "concept": "Locus under the Map \\(z+\\frac{1}{z}\\) on the Unit Circle",
+      "learningObjective": "Analyze the image of the unit circle under the transformation \\(w=z+\\frac{1}{z}\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(z\\) be a complex number with \\(|z|=1\\). Which statement is true about \\(w=z+\\frac{1}{z}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(w\\) lies on the unit circle."
+        },
+        {
+          "label": "B",
+          "text": "\\(w\\) is a real number in \\([-2,2]\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(|z|=1\\), write \\(z=e^{i\\theta}\\). Then\n\\[\n\\frac{1}{z}=e^{-i\\theta}.\n\\]\nTherefore\n\\[\n\\begin{aligned}\nw&=z+\\frac{1}{z} \\\\\n&=e^{i\\theta}+e^{-i\\theta} \\\\\n&=2\\cos\\theta.\n\\end{aligned}\n\\]\nThus \\(w\\) is real and satisfies \\(-2\\le w\\le 2\\). So \\(w\\) is a real number in \\([-2,2]\\).",
+      "hint": "Write \\(z\\) in polar form using \\(|z|=1\\)."
+    }
+  ]
+}

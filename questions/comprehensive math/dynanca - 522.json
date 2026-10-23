@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-522",
+  "category": "Comprehensive Mathematics",
+  "title": "522. Sets, Logic, Reasoning & Proof: Verifying Proof Steps",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-522-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Dividing both sides of an equation",
+      "learningObjective": "Check a step that divides both sides of an equation by a non-zero number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A proof contains the step \"from \\(2x=6\\) it follows that \\(x=3\\)\". Is the step valid, and why?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Valid; \\(2\\) is subtracted from both sides."
+        },
+        {
+          "label": "B",
+          "text": "Valid; both sides are divided by \\(2\\), which is not zero."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Dividing both sides of an equation by the same non-zero number gives an equivalent equation: \\(\\frac{2x}{2}=\\frac{6}{2}\\), so \\(x=3\\). Subtracting \\(2\\) from both sides would give \\(2x-2=4\\), which is not the step that was taken.",
+      "hint": "Identify the operation that turns \\(2x\\) into \\(x\\)."
+    },
+    {
+      "id": "dynanca-522-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Taking a square root",
+      "learningObjective": "Check a step that takes a square root of both sides of an equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "For a real number \\(x\\), a proof contains the step \"from \\(x^2=9\\) it follows that \\(x=3\\)\". Is the step valid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; taking the square root of both sides gives \\(x=3\\)."
+        },
+        {
+          "label": "B",
+          "text": "No; \\(x=-3\\) also satisfies \\(x^2=9\\), so only \"\\(x=3\\) or \\(x=-3\\)\" follows."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The equation \\(x^2=9\\) has two real solutions, \\(3\\) and \\(-3\\). Without additional information, such as \\(x>0\\), the conclusion \\(x=3\\) does not follow. The correct conclusion is \\(|x|=3\\).",
+      "hint": "Look for a second number whose square is \\(9\\)."
+    },
+    {
+      "id": "dynanca-522-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Multiplying an inequality by a negative number",
+      "learningObjective": "Check the direction of an inequality after multiplication by a negative number.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A proof starts from \\(a<b\\) and multiplies both sides by \\(-1\\). Which conclusion is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-a<-b\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-a>-b\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiplying an inequality by a negative number reverses its direction. From \\(a<b\\) one obtains \\(-a>-b\\). For example, \\(2<5\\) and \\(-2>-5\\).",
+      "hint": "Test the step with the numbers \\(2\\) and \\(5\\)."
+    },
+    {
+      "id": "dynanca-522-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Using a zero product",
+      "learningObjective": "Check the conclusion drawn from a product equal to zero.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For real numbers, a proof starts from \\(ab=0\\). Which conclusion is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a=0\\) and \\(b=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a=0\\) or \\(b=0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A product of real numbers is zero exactly when at least one factor is zero. So \\(ab=0\\) gives \"\\(a=0\\) or \\(b=0\\)\". Both factors need not be zero: \\(0\\cdot 5=0\\) although \\(5\\ne 0\\).",
+      "hint": "Consider the example \\(0\\cdot 5=0\\)."
+    },
+    {
+      "id": "dynanca-522-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Cancelling a common factor",
+      "learningObjective": "Check when a common factor may be cancelled from an equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A proof contains the step \"from \\(xy=xz\\) it follows that \\(y=z\\)\". When is this step valid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "For all real numbers \\(x\\), \\(y\\), and \\(z\\)"
+        },
+        {
+          "label": "B",
+          "text": "Only when \\(x\\ne 0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Cancelling \\(x\\) means dividing both sides by \\(x\\), which is allowed only for \\(x\\ne 0\\). If \\(x=0\\), the equation \\(xy=xz\\) reads \\(0=0\\) and holds for every \\(y\\) and \\(z\\), for example \\(y=1\\) and \\(z=2\\), so \\(y=z\\) does not follow.",
+      "hint": "Try \\(x=0\\) with two different values of \\(y\\) and \\(z\\)."
+    },
+    {
+      "id": "dynanca-522-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Combining two inequalities",
+      "learningObjective": "Check which combination of two inequalities is valid.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A proof has established \\(a<b\\) and \\(c<d\\) for real numbers. Which conclusion follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a-c<b-d\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a+c<b+d\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Inequalities in the same direction may be added: from \\(a<b\\) and \\(c<d\\), \\(a+c<b+c<b+d\\). They may not be subtracted: with \\(a=1\\), \\(b=2\\), \\(c=0\\), \\(d=5\\), we have \\(a-c=1\\) and \\(b-d=-3\\), so \\(a-c<b-d\\) is false.",
+      "hint": "Test the two candidates with \\(a=1\\), \\(b=2\\), \\(c=0\\), \\(d=5\\)."
+    },
+    {
+      "id": "dynanca-522-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Squaring an inequality",
+      "learningObjective": "Check whether squaring preserves an inequality between real numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A proof contains the step \"from \\(a<b\\) it follows that \\(a^2<b^2\\)\" for real numbers \\(a\\) and \\(b\\). Is the step valid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; squaring both sides preserves every inequality."
+        },
+        {
+          "label": "B",
+          "text": "Not in general; for \\(a=-3\\) and \\(b=2\\), \\(a<b\\) but \\(a^2=9>4=b^2\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Squaring preserves the direction of an inequality only when both numbers are non-negative. With negative numbers it can fail, as \\(-3<2\\) but \\(9>4\\) shows. The step is valid if it is known in addition that \\(0\\le a\\).",
+      "hint": "Try a negative value for \\(a\\)."
+    },
+    {
+      "id": "dynanca-522-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Taking reciprocals in an inequality",
+      "learningObjective": "Check the effect of taking reciprocals of positive numbers in an inequality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A proof contains the step \"from \\(x>2\\) it follows that \\(\\frac{1}{x}<\\frac{1}{2}\\)\". Is the step valid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; taking reciprocals never changes the direction of an inequality."
+        },
+        {
+          "label": "B",
+          "text": "Yes; for positive numbers, the larger number has the smaller reciprocal."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(x>2>0\\), both \\(x\\) and \\(2\\) are positive. Dividing the inequality \\(2<x\\) by the positive number \\(2x\\) gives \\(\\frac{1}{x}<\\frac{1}{2}\\). For positive numbers, taking reciprocals reverses the inequality, which is what the step does.",
+      "hint": "Divide both sides of \\(2<x\\) by the positive number \\(2x\\)."
+    },
+    {
+      "id": "dynanca-522-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Locating the invalid step in a false proof",
+      "learningObjective": "Find the step that invalidates a purported proof of a false equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A purported proof runs: \"Let \\(a=b\\). Then \\(a^2=ab\\), so \\(a^2-b^2=ab-b^2\\), so \\((a-b)(a+b)=b(a-b)\\), so \\(a+b=b\\).\" Which step is invalid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The last step, which divides both sides by \\(a-b\\), although \\(a-b=0\\)."
+        },
+        {
+          "label": "B",
+          "text": "The step that factors \\(a^2-b^2\\) as \\((a-b)(a+b)\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "All steps up to \\((a-b)(a+b)=b(a-b)\\) are correct; both sides equal \\(0\\) because \\(a=b\\). The final step cancels the factor \\(a-b\\), which is division by zero and is not allowed. The factorisation of \\(a^2-b^2\\) is a correct identity.",
+      "hint": "Compute the value of \\(a-b\\) under the assumption \\(a=b\\)."
+    },
+    {
+      "id": "dynanca-522-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Checking solutions after squaring",
+      "learningObjective": "Identify the verification needed after squaring both sides of an equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "To solve \\(\\sqrt{x+2}=x\\) for real \\(x\\), both sides are squared, giving \\(x+2=x^2\\) with solutions \\(x=2\\) and \\(x=-1\\). What must be done next?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Accept both values, because squaring both sides is a reversible step."
+        },
+        {
+          "label": "B",
+          "text": "Check both values in the original equation; only \\(x=2\\) satisfies it."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Squaring is not reversible: \\(u^2=v^2\\) does not imply \\(u=v\\). So the squared equation may have solutions that the original does not. For \\(x=2\\): \\(\\sqrt{4}=2\\), which holds. For \\(x=-1\\): \\(\\sqrt{1}=1\\ne -1\\), so \\(x=-1\\) is extraneous and must be rejected.",
+      "hint": "Substitute each value into the equation that contains the square root."
+    }
+  ]
+}

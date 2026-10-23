@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-270",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 270",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-270-q001",
+      "category": "Calculus",
+      "concept": "Standard Trigonometric Limit with Sine",
+      "learningObjective": "Evaluate a limit of the form \\(\\frac{\\sin(kx)}{x}\\) as \\(x\\to0\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to 0}\\frac{\\sin 5x}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use the standard limit \\(\\lim_{u\\to0}\\frac{\\sin u}{u}=1\\). Rewrite \\(\\frac{\\sin 5x}{x}=5\\cdot \\frac{\\sin 5x}{5x}\\). As \\(x\\to0\\), \\(5x\\to0\\), so the limit is \\(5\\cdot1=5\\).",
+      "hint": "Multiply numerator and denominator by \\(5\\) to use the standard sine limit."
+    },
+    {
+      "id": "math-gaokao-270-q002",
+      "category": "Calculus",
+      "concept": "Limit of \\(1-\\cos(kx)\\) over \\(x^2\\)",
+      "learningObjective": "Evaluate a trigonometric limit using the standard limit \\(\\frac{1-\\cos t}{t^2}\\to\\frac{1}{2}\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to0}\\frac{1-\\cos 4x}{x^2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(\\lim_{t\\to0}\\frac{1-\\cos t}{t^2}=\\frac{1}{2}\\). Let \\(t=4x\\). Then \\(\\frac{1-\\cos 4x}{x^2}=16\\cdot\\frac{1-\\cos 4x}{(4x)^2}\\). As \\(x\\to0\\), \\((4x)^2\\to0\\), so the limit is \\(16\\cdot\\frac{1}{2}=8\\).",
+      "hint": "Compare the expression with the standard limit \\(\\frac{1-\\cos t}{t^2}\\) by substituting \\(t=4x\\)."
+    },
+    {
+      "id": "math-gaokao-270-q003",
+      "category": "Calculus",
+      "concept": "Trigonometric Limit with Tangent and Sine",
+      "learningObjective": "Evaluate a limit involving \\(\\tan(ax)\\) and \\(\\sin(bx)\\) as \\(x\\to0\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to0}\\frac{\\tan 3x}{\\sin 2x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{2}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Write \\(\\tan 3x=\\frac{\\sin 3x}{\\cos 3x}\\). Then \\(\\frac{\\tan 3x}{\\sin 2x}=\\frac{\\sin 3x}{3x}\\cdot\\frac{2x}{\\sin 2x}\\cdot\\frac{3}{2}\\cdot\\frac{1}{\\cos 3x}\\). As \\(x\\to0\\), \\(\\frac{\\sin 3x}{3x}\\to1\\), \\(\\frac{2x}{\\sin 2x}\\to1\\), and \\(\\frac{1}{\\cos 3x}\\to1\\). Thus the limit is \\(\\frac{3}{2}\\).",
+      "hint": "Express \\(\\tan 3x\\) in terms of sine and cosine, then use standard sine limits."
+    },
+    {
+      "id": "math-gaokao-270-q004",
+      "category": "Calculus",
+      "concept": "Trigonometric Limit with \\(\\sin(x^2)\\)",
+      "learningObjective": "Evaluate a limit involving \\(\\sin(x^2)\\), \\(x\\), and \\(\\tan x\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Evaluate \\(\\lim_{x\\to0}\\frac{\\sin(x^2)}{x\\tan x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rewrite \\(\\frac{\\sin(x^2)}{x\\tan x}=\\frac{\\sin(x^2)}{x^2}\\cdot\\frac{x}{\\tan x}\\). As \\(x\\to0\\), \\(\\frac{\\sin(x^2)}{x^2}\\to1\\) because \\(x^2\\to0\\), and \\(\\frac{x}{\\tan x}\\to1\\). Therefore the limit is \\(1\\cdot1=1\\).",
+      "hint": "Separate the expression into \\(\\frac{\\sin(x^2)}{x^2}\\) and \\(\\frac{x}{\\tan x}\\)."
+    },
+    {
+      "id": "math-gaokao-270-q005",
+      "category": "Calculus",
+      "concept": "Limit Using Cosine Difference Identity",
+      "learningObjective": "Evaluate a trigonometric limit by applying the sum-to-product identity for \\(\\cos A-\\cos B\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Evaluate \\(\\lim_{x\\to0}\\frac{\\cos 3x-\\cos x}{x^2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(\\cos A-\\cos B=-2\\sin\\frac{A+B}{2}\\sin\\frac{A-B}{2}\\). Thus \\(\\cos 3x-\\cos x=-2\\sin 2x\\sin x\\). Then \\(\\frac{\\cos 3x-\\cos x}{x^2}=-2\\cdot\\frac{\\sin 2x}{x}\\cdot\\frac{\\sin x}{x}\\). As \\(x\\to0\\), \\(\\frac{\\sin 2x}{x}\\to2\\) and \\(\\frac{\\sin x}{x}\\to1\\). Hence the limit is \\(-2\\cdot2\\cdot1=-4\\).",
+      "hint": "Use the identity \\(\\cos A-\\cos B=-2\\sin\\frac{A+B}{2}\\sin\\frac{A-B}{2}\\)."
+    },
+    {
+      "id": "math-gaokao-270-q006",
+      "category": "Calculus",
+      "concept": "Trigonometric Limit with a Radical Denominator",
+      "learningObjective": "Evaluate a trigonometric limit by rationalizing a square-root denominator.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Evaluate \\(\\lim_{x\\to0}\\frac{\\sin 2x}{\\sqrt{x+1}-1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rationalize the denominator: \\(\\sqrt{x+1}-1=\\frac{x}{\\sqrt{x+1}+1}\\). Then \\(\\frac{\\sin 2x}{\\sqrt{x+1}-1}=\\frac{\\sin 2x}{x}(\\sqrt{x+1}+1)=2\\cdot\\frac{\\sin 2x}{2x}\\cdot(\\sqrt{x+1}+1)\\). As \\(x\\to0\\), \\(\\frac{\\sin 2x}{2x}\\to1\\) and \\(\\sqrt{x+1}+1\\to2\\). Therefore the limit is \\(2\\cdot1\\cdot2=4\\).",
+      "hint": "Rationalize the denominator or use \\(\\sqrt{x+1}-1\\sim \\frac{x}{2}\\) as \\(x\\to0\\)."
+    },
+    {
+      "id": "math-gaokao-270-q007",
+      "category": "Calculus",
+      "concept": "Parameter in a Trigonometric Limit",
+      "learningObjective": "Determine a positive parameter so that a given trigonometric limit equals a specified value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(a>0\\). If \\(\\lim_{x\\to0}\\frac{1-\\cos(ax)}{x^2}=2\\), find \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using \\(\\lim_{t\\to0}\\frac{1-\\cos t}{t^2}=\\frac{1}{2}\\), with \\(t=ax\\), we get \\(\\frac{1-\\cos(ax)}{x^2}=a^2\\cdot\\frac{1-\\cos(ax)}{(ax)^2}\\to \\frac{a^2}{2}\\). Setting \\(\\frac{a^2}{2}=2\\) gives \\(a^2=4\\). Since \\(a>0\\), \\(a=2\\).",
+      "hint": "Use the standard limit \\(\\frac{1-\\cos t}{t^2}\\to\\frac{1}{2}\\) with \\(t=ax\\)."
+    },
+    {
+      "id": "math-gaokao-270-q008",
+      "category": "Calculus",
+      "concept": "Limit of a Composite Sine Function",
+      "learningObjective": "Evaluate \\(\\lim_{x\\to0}\\frac{\\sin(\\sin x)}{x}\\) using the standard sine limit.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Evaluate \\(\\lim_{x\\to0}\\frac{\\sin(\\sin x)}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Write \\(\\frac{\\sin(\\sin x)}{x}=\\frac{\\sin(\\sin x)}{\\sin x}\\cdot\\frac{\\sin x}{x}\\). As \\(x\\to0\\), \\(\\sin x\\to0\\), so \\(\\frac{\\sin(\\sin x)}{\\sin x}\\to1\\). Also \\(\\frac{\\sin x}{x}\\to1\\). Therefore the limit is \\(1\\cdot1=1\\).",
+      "hint": "Insert \\(\\sin x\\) as an intermediate variable by writing the fraction as a product."
+    },
+    {
+      "id": "math-gaokao-270-q009",
+      "category": "Calculus",
+      "concept": "Higher-Order Trigonometric Limit",
+      "learningObjective": "Evaluate \\(\\lim_{x\\to0}\\frac{\\tan x-\\sin x}{x^3}\\) using trigonometric identities and standard limits.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Evaluate \\(\\lim_{x\\to0}\\frac{\\tan x-\\sin x}{x^3}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{6}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rewrite \\(\\tan x-\\sin x=\\frac{\\sin x}{\\cos x}-\\sin x=\\frac{\\sin x(1-\\cos x)}{\\cos x}\\). Thus \\(\\frac{\\tan x-\\sin x}{x^3}=\\frac{\\sin x}{x}\\cdot\\frac{1-\\cos x}{x^2}\\cdot\\frac{1}{\\cos x}\\). As \\(x\\to0\\), \\(\\frac{\\sin x}{x}\\to1\\), \\(\\frac{1-\\cos x}{x^2}\\to\\frac{1}{2}\\), and \\(\\frac{1}{\\cos x}\\to1\\). Therefore the limit is \\(1\\cdot\\frac{1}{2}\\cdot1=\\frac{1}{2}\\).",
+      "hint": "Factor out \\(\\sin x\\) and use the standard limit for \\(1-\\cos x\\)."
+    },
+    {
+      "id": "math-gaokao-270-q010",
+      "category": "Calculus",
+      "concept": "Trigonometric Limit via Taylor Expansion",
+      "learningObjective": "Evaluate a cubic-order trigonometric limit using Taylor expansions of \\(\\sin x\\) and \\(\\cos x\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Evaluate \\(\\lim_{x\\to0}\\frac{\\sin x-x\\cos x}{x^3}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use Taylor expansions: \\(\\sin x=x-\\frac{x^3}{6}+O(x^5)\\) and \\(\\cos x=1-\\frac{x^2}{2}+O(x^4)\\). Then \\(x\\cos x=x-\\frac{x^3}{2}+O(x^5)\\). Therefore \\(\\sin x-x\\cos x=\\left(x-\\frac{x^3}{6}\\right)-\\left(x-\\frac{x^3}{2}\\right)+O(x^5)=\\frac{x^3}{3}+O(x^5)\\). Dividing by \\(x^3\\) and taking the limit gives \\(\\frac{1}{3}\\).",
+      "hint": "Use Taylor expansions of \\(\\sin x\\) and \\(\\cos x\\) up to cubic terms."
+    }
+  ]
+}

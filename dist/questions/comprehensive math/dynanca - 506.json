@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-506",
+  "category": "Comprehensive Mathematics",
+  "title": "506. Sets, Logic, Reasoning & Proof: Identifying Invalid Denying-the-Antecedent Arguments",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-506-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Form of denying the antecedent",
+      "learningObjective": "Identify the argument form called denying the antecedent.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which argument form is called denying the antecedent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "From \\(p\\implies q\\) and \\(\\neg q\\), conclude \\(\\neg p\\)."
+        },
+        {
+          "label": "B",
+          "text": "From \\(p\\implies q\\) and \\(\\neg p\\), conclude \\(\\neg q\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The antecedent of \\(p\\implies q\\) is \\(p\\). Denying the antecedent takes \\(\\neg p\\) as a premise and infers \\(\\neg q\\). The second form denies the consequent and infers \\(\\neg p\\); that is modus tollens, which is valid.",
+      "hint": "The antecedent is the \"if\" part of the conditional."
+    },
+    {
+      "id": "dynanca-506-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Validity of denying the antecedent",
+      "learningObjective": "State whether denying the antecedent is a valid form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Is the argument form \"from \\(p\\implies q\\) and \\(\\neg p\\), conclude \\(\\neg q\\)\" valid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the premises can both be true while the conclusion is false."
+        },
+        {
+          "label": "B",
+          "text": "Yes; if the hypothesis fails, the conclusion must fail."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Take \\(p\\) false and \\(q\\) true. Then \\(p\\implies q\\) is true and \\(\\neg p\\) is true, but the conclusion \\(\\neg q\\) is false. A conditional says nothing about what happens when its hypothesis is false, so \\(q\\) may still be true.",
+      "hint": "A conditional makes no claim about the case in which its hypothesis is false."
+    },
+    {
+      "id": "dynanca-506-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The row that shows invalidity",
+      "learningObjective": "Find the truth assignment that refutes denying the antecedent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which assignment makes both premises of \"from \\(p\\implies q\\) and \\(\\neg p\\), conclude \\(\\neg q\\)\" true and its conclusion false?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\) false and \\(q\\) true"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\) false and \\(q\\) false"
+        }
+      ],
+      "answer": "A",
+      "explanation": "With \\(p\\) false and \\(q\\) true: \\(p\\implies q\\) is true, \\(\\neg p\\) is true, and \\(\\neg q\\) is false. With \\(p\\) false and \\(q\\) false, the premises are also true, but the conclusion \\(\\neg q\\) is true, so that row does not refute the form.",
+      "hint": "The conclusion \\(\\neg q\\) must be false in the row, so \\(q\\) must be true."
+    },
+    {
+      "id": "dynanca-506-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A numerical instance",
+      "learningObjective": "Evaluate a concrete argument that denies the antecedent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Consider the argument: \"If an integer is divisible by \\(9\\), then it is divisible by \\(3\\). \\(12\\) is not divisible by \\(9\\). Therefore \\(12\\) is not divisible by \\(3\\).\" Which evaluation is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The argument is invalid: both premises are true, but the conclusion is false."
+        },
+        {
+          "label": "B",
+          "text": "The argument is valid, because both premises are true."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The conditional is true and \\(12\\) is indeed not divisible by \\(9\\), yet \\(12\\) is divisible by \\(3\\). True premises with a false conclusion show that the reasoning is invalid. Failing the sufficient condition \"divisible by \\(9\\)\" does not prevent a number from being divisible by \\(3\\).",
+      "hint": "Check the truth of the premises and of the conclusion for the number \\(12\\)."
+    },
+    {
+      "id": "dynanca-506-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Spotting the fallacy",
+      "learningObjective": "Decide which of two arguments denies the antecedent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which argument commits the fallacy of denying the antecedent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"If it rains, then the ground is wet. The ground is not wet. Therefore it does not rain.\""
+        },
+        {
+          "label": "B",
+          "text": "\"If it rains, then the ground is wet. It does not rain. Therefore the ground is not wet.\""
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first argument denies the antecedent \"it rains\" and concludes the negation of the consequent; the ground could be wet for another reason, so the inference is invalid. The second argument denies the consequent and concludes the negation of the antecedent, which is valid modus tollens.",
+      "hint": "See whether the second premise negates the \"if\" part or the \"then\" part."
+    },
+    {
+      "id": "dynanca-506-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The underlying confusion",
+      "learningObjective": "Identify the statement that denying the antecedent wrongly treats as given.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The fallacy of denying the antecedent treats the premise \\(p\\implies q\\) as if it were which statement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Its inverse, \\(\\neg p\\implies\\neg q\\)"
+        },
+        {
+          "label": "B",
+          "text": "Its contrapositive, \\(\\neg q\\implies\\neg p\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Concluding \\(\\neg q\\) from \\(\\neg p\\) would be modus ponens on \\(\\neg p\\implies\\neg q\\), the inverse of the given conditional. The inverse is not equivalent to \\(p\\implies q\\), so the inference fails. The contrapositive is equivalent to the original and leads to the valid form modus tollens.",
+      "hint": "Ask which conditional would make the step from \\(\\neg p\\) to \\(\\neg q\\) a modus ponens."
+    },
+    {
+      "id": "dynanca-506-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "What the premises allow",
+      "learningObjective": "Determine what follows about the consequent from a conditional and the negation of its antecedent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Suppose \\(p\\implies q\\) is true and \\(p\\) is false. What can be concluded about \\(q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(q\\) must be false."
+        },
+        {
+          "label": "B",
+          "text": "Nothing; \\(q\\) may be true or false."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The rows with \\(p\\implies q\\) true and \\(p\\) false are \\((F,T)\\) and \\((F,F)\\). In one of them \\(q\\) is true and in the other \\(q\\) is false. So the premises leave the truth value of \\(q\\) undetermined.",
+      "hint": "List all rows in which both premises are true."
+    },
+    {
+      "id": "dynanca-506-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The fallacy with an inequality",
+      "learningObjective": "Detect denying the antecedent in reasoning about a real number.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Consider the argument: \"If \\(x>3\\), then \\(x^2>9\\). For \\(x=-5\\), it is not true that \\(x>3\\). Therefore \\((-5)^2\\) is not greater than \\(9\\).\" Which evaluation is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The argument is invalid; in fact \\((-5)^2=25>9\\)."
+        },
+        {
+          "label": "B",
+          "text": "The argument is valid; the hypothesis fails, so the conclusion fails."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The premises are true: the conditional holds, and \\(-5\\) is not greater than \\(3\\). But the conclusion is false, since \\((-5)^2=25>9\\). The argument denies the antecedent, and this example shows why the form is invalid.",
+      "hint": "Compute \\((-5)^2\\) and compare the result with the conclusion of the argument."
+    },
+    {
+      "id": "dynanca-506-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A true conclusion from an invalid form",
+      "learningObjective": "Recognise denying the antecedent even when the conclusion is true.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Consider the argument: \"If an integer is divisible by \\(4\\), then it is even. \\(7\\) is not divisible by \\(4\\). Therefore \\(7\\) is not even.\" Which evaluation is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The form is invalid, even though the conclusion happens to be true."
+        },
+        {
+          "label": "B",
+          "text": "The argument is valid, because its premises and conclusion are all true."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The argument denies the antecedent. The same reasoning with \\(6\\) in place of \\(7\\) leads from true premises to the false conclusion \"\\(6\\) is not even\", so the form is invalid. That the conclusion is true for \\(7\\) is a coincidence, not a consequence of the premises.",
+      "hint": "Replace \\(7\\) by another number not divisible by \\(4\\) and test the same reasoning."
+    },
+    {
+      "id": "dynanca-506-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Valid and invalid forms with a negated premise",
+      "learningObjective": "Decide which of two forms with a negated second premise is valid.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which of the following argument forms is valid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "From \\(p\\implies q\\) and \\(\\neg q\\), conclude \\(\\neg p\\)."
+        },
+        {
+          "label": "B",
+          "text": "From \\(p\\implies q\\) and \\(\\neg p\\), conclude \\(\\neg q\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first form is modus tollens: if \\(p\\) were true, then \\(q\\) would be true, contradicting \\(\\neg q\\); so \\(p\\) is false. The second form denies the antecedent; with \\(p\\) false and \\(q\\) true its premises are true and its conclusion is false.",
+      "hint": "For each form, look for a row with true premises and a false conclusion."
+    }
+  ]
+}

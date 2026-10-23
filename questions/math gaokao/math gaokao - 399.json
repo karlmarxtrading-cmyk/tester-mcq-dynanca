@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-399",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 399",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-399-q001",
+      "category": "Number Theory",
+      "concept": "Arithmetic Sequence nth Term",
+      "learningObjective": "Find a specified term of an arithmetic sequence using the first term and common difference.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In an arithmetic sequence, \\(a_1=3\\) and the common difference is \\(d=4\\). What is \\(a_{10}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(39\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use the formula for the nth term of an arithmetic sequence:\n\\[\na_n=a_1+(n-1)d\n\\]\nSubstitute \\(a_1=3\\), \\(d=4\\), and \\(n=10\\):\n\\[\n\\begin{aligned}\na_{10}&=3+(10-1)(4) \\\\\n&=3+36 \\\\\n&=39\n\\end{aligned}\n\\]\nSo the correct value is \\(39\\).",
+      "hint": "Use the formula \\(a_n=a_1+(n-1)d\\)."
+    },
+    {
+      "id": "math-gaokao-399-q002",
+      "category": "Number Theory",
+      "concept": "Arithmetic Sequence Terms",
+      "learningObjective": "Determine the first term of an arithmetic sequence from two given terms.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In an arithmetic sequence, \\(a_3=10\\) and \\(a_7=26\\). Find the first term \\(a_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The difference between the 7th and 3rd terms is\n\\[\na_7-a_3=(7-3)d=4d\n\\]\nSo\n\\[\n26-10=4d \\implies 16=4d \\implies d=4\n\\]\nThen\n\\[\n\\begin{aligned}\na_1&=a_3-2d \\\\\n&=10-2(4) \\\\\n&=2\n\\end{aligned}\n\\]\nThus the first term is \\(2\\).",
+      "hint": "The difference between two terms equals the difference of their indices times the common difference."
+    },
+    {
+      "id": "math-gaokao-399-q003",
+      "category": "Number Theory",
+      "concept": "Sum of an Arithmetic Sequence",
+      "learningObjective": "Compute the sum of the first \\(n\\) terms of an arithmetic sequence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum of the first \\(20\\) terms of the arithmetic sequence \\(5,9,13,\\ldots\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(840\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(860\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Here \\(a_1=5\\), \\(d=4\\), and \\(n=20\\). Use\n\\[\nS_n=\\frac{n}{2}\\left[2a_1+(n-1)d\\right]\n\\]\nThen\n\\[\n\\begin{aligned}\nS_{20}&=\\frac{20}{2}\\left[2(5)+19(4)\\right] \\\\\n&=10(10+76)=10(86)=860\n\\end{aligned}\n\\]\nSo the sum is \\(860\\).",
+      "hint": "Use the sum formula \\(S_n=\\frac{n}{2}[2a_1+(n-1)d]\\)."
+    },
+    {
+      "id": "math-gaokao-399-q004",
+      "category": "Number Theory",
+      "concept": "Number of Terms in an Arithmetic Sequence",
+      "learningObjective": "Determine how many terms belong to a finite arithmetic sequence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many terms are in the arithmetic sequence \\(7,11,15,\\ldots,99\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(23\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sequence has first term \\(a_1=7\\) and common difference \\(d=4\\). Its nth term is\n\\[\na_n=7+(n-1)(4)\n\\]\nSet this equal to the last term \\(99\\):\n\\[\n\\begin{aligned}\n7+4(n-1)&=99 \\\\\n4(n-1)&=92 \\\\\nn-1&=23 \\\\\nn&=24\n\\end{aligned}\n\\]\nTherefore the sequence contains \\(24\\) terms.",
+      "hint": "Set the general term equal to the last term and solve for \\(n\\)."
+    },
+    {
+      "id": "math-gaokao-399-q005",
+      "category": "Number Theory",
+      "concept": "Divisibility and Inclusion-Exclusion",
+      "learningObjective": "Count integers divisible by one of two numbers using inclusion-exclusion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many integers from \\(1\\) to \\(120\\), inclusive, are divisible by \\(3\\) or \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(56\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(64\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(120/3=40\\) multiples of \\(3\\) and \\(120/5=24\\) multiples of \\(5\\). Their overlap consists of \\(120/15=8\\) multiples of \\(15\\). Inclusion-exclusion therefore gives\n\\[\n40+24-8=56.\n\\]\nThe distractor \\(64\\) counts the overlap twice.",
+      "hint": "Count multiples of \\(3\\), multiples of \\(5\\), and subtract those counted twice."
+    },
+    {
+      "id": "math-gaokao-399-q006",
+      "category": "Number Theory",
+      "concept": "Divisibility in an Arithmetic Sequence",
+      "learningObjective": "Identify the first term of an arithmetic sequence that is divisible by a given integer.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For the arithmetic sequence \\(a_n=4n+3\\), which term is the first one divisible by \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The 2nd term"
+        },
+        {
+          "label": "B",
+          "text": "The 3rd term"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Check the first few terms:\n\\[\n\\begin{aligned}\na_1&=4(1)+3=7 \\\\\na_2&=4(2)+3=11 \\\\\na_3&=4(3)+3=15\n\\end{aligned}\n\\]\nSince \\(15\\) is divisible by \\(5\\), and \\(7\\) and \\(11\\) are not, the first such term is the 3rd term.",
+      "hint": "Check terms in order or solve \\(4n+3\\equiv 0\\pmod 5\\)."
+    },
+    {
+      "id": "math-gaokao-399-q007",
+      "category": "Number Theory",
+      "concept": "Arithmetic Sequence Inequality",
+      "learningObjective": "Find the smallest index for which an arithmetic sequence term exceeds a given value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In the arithmetic sequence \\(a_n=3n-1\\), find the smallest \\(n\\) for which \\(a_n>100\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(34\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(33\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "We need\n\\[\n3n-1>100\n\\]\n\\[\n3n>101\n\\]\n\\[\nn>\\frac{101}{3}\\approx 33.67\n\\]\nThe smallest integer \\(n\\) satisfying this is \\(34\\). Indeed,\n\\[\na_{34}=3(34)-1=101>100\n\\]\nwhile\n\\[\n\\begin{aligned}\na_{33}&=3(33)-1 \\\\\n&=98 \\\\\n&\\le 100\n\\end{aligned}\n\\]\nSo the answer is \\(34\\).",
+      "hint": "Solve the inequality and round up to the next integer."
+    },
+    {
+      "id": "math-gaokao-399-q008",
+      "category": "Number Theory",
+      "concept": "Counting Multiples in an Interval",
+      "learningObjective": "Count multiples of a given integer between two bounds using an arithmetic sequence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many multiples of \\(7\\) are between \\(100\\) and \\(500\\) inclusive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(56\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(57\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The smallest multiple of \\(7\\) that is at least \\(100\\) is\n\\[\n105=7\\cdot 15\n\\]\nThe largest multiple of \\(7\\) that is at most \\(500\\) is\n\\[\n497=7\\cdot 71\n\\]\nThe multiples are \\(7\\cdot 15, 7\\cdot 16,\\ldots,7\\cdot 71\\). The number of integers from \\(15\\) to \\(71\\) inclusive is\n\\[\n71-15+1=57\n\\]\nSo there are \\(57\\) multiples.",
+      "hint": "Write the multiples as \\(7k\\) and count the possible integer values of \\(k\\)."
+    },
+    {
+      "id": "math-gaokao-399-q009",
+      "category": "Number Theory",
+      "concept": "Term from Sum of an Arithmetic Sequence",
+      "learningObjective": "Find a term of an arithmetic sequence from a given sum formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The sum of the first \\(n\\) terms of an arithmetic sequence is \\(S_n=n^2+3n\\). Find the 10th term \\(a_{10}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(22\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(n\\ge 2\\), the nth term satisfies\n\\[\na_n=S_n-S_{n-1}\n\\]\nThus\n\\[\na_{10}=S_{10}-S_9\n\\]\nCompute:\n\\[\n\\begin{aligned}\nS_{10}&=10^2+3(10) \\\\\n&=100+30 \\\\\n&=130\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\nS_9&=9^2+3(9) \\\\\n&=81+27 \\\\\n&=108\n\\end{aligned}\n\\]\nTherefore\n\\[\na_{10}=130-108=22\n\\]\nSo the 10th term is \\(22\\).",
+      "hint": "Use the relationship \\(a_n=S_n-S_{n-1}\\) for \\(n\\ge 2\\)."
+    },
+    {
+      "id": "math-gaokao-399-q010",
+      "category": "Number Theory",
+      "concept": "Divisibility of Arithmetic Sequence Terms",
+      "learningObjective": "Count how many terms of an arithmetic sequence are divisible by a given integer.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In the arithmetic sequence \\(3,10,17,\\ldots\\), how many of the first \\(100\\) terms are divisible by \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(19\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first term is \\(3\\) and the common difference is \\(7\\), so the nth term is\n\\[\na_n=3+(n-1)(7)=7n-4\n\\]\nWe need \\(a_n\\) to be divisible by \\(5\\):\n\\[\n7n-4\\equiv 0\\pmod 5\n\\]\nSince \\(7\\equiv 2\\pmod 5\\),\n\\[\n2n-4\\equiv 0\\pmod 5\n\\]\n\\[\n2n\\equiv 4\\pmod 5\n\\]\nMultiplying by the inverse of \\(2\\) modulo \\(5\\), which is \\(3\\), gives\n\\[\nn\\equiv 12\\equiv 2\\pmod 5\n\\]\nSo \\(n=2,7,12,\\ldots,97\\) within the first \\(100\\) terms. The number of such values is\n\\[\n\\frac{97-2}{5}+1=19+1=20\n\\]\nTherefore, \\(20\\) of the first \\(100\\) terms are divisible by \\(5\\).",
+      "hint": "Find the general term of the sequence and solve the divisibility congruence modulo \\(5\\)."
+    }
+  ]
+}

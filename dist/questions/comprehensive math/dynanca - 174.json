@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-174",
+  "category": "Comprehensive Mathematics",
+  "title": "174. Algebra, Equations & Inequalities: Synthetic Division of Polynomials",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-174-q001",
+      "category": "Algebra",
+      "concept": "Synthetic Division Setup",
+      "learningObjective": "Identify the number to use in synthetic division for a divisor of the form \\(x-c\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In synthetic division, what number is used when dividing a polynomial by \\(x-3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For synthetic division, the divisor must be written in the form \\(x-c\\). Since\n\\[\nx-3=x-(3)\n\\]\nthe value used in synthetic division is \\(c=3\\). Therefore, the correct number is \\(3\\).",
+      "hint": "Write the divisor as \\(x-c\\) and use the value of \\(c\\)."
+    },
+    {
+      "id": "dynanca-174-q002",
+      "category": "Algebra",
+      "concept": "Synthetic Division with a Divisor \\(x+a\\)",
+      "learningObjective": "Determine the synthetic division value for a divisor of the form \\(x+a\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In synthetic division, what number is used when dividing a polynomial by \\(x+2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Write the divisor in the form \\(x-c\\):\n\\[\nx+2=x-(-2)\n\\]\nThus, the value used in synthetic division is \\(c=-2\\). Therefore, the correct number is \\(-2\\).",
+      "hint": "Write the divisor in the form \\(x-c\\) and identify \\(c\\); pay attention to its sign."
+    },
+    {
+      "id": "dynanca-174-q003",
+      "category": "Algebra",
+      "concept": "Synthetic Division of a Quadratic",
+      "learningObjective": "Divide a quadratic polynomial by \\(x-1\\) using synthetic division.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Use synthetic division to divide \\(x^2-3x+2\\) by \\(x-1\\). What is the quotient?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x+2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(c=1\\) and coefficients \\(1\\), \\(-3\\), \\(2\\).\n\\[\n\\begin{array}{r|rrr}\n1 & 1 & -3 & 2\\\\\n& & 1 & -2\\\\\n\\hline\n& 1 & -2 & 0\n\\end{array}\n\\]\nThe quotient is \\(x-2\\), and the remainder is \\(0\\). Therefore, the correct quotient is \\(x-2\\).",
+      "hint": "Bring down the leading coefficient, multiply by \\(1\\), and add."
+    },
+    {
+      "id": "dynanca-174-q004",
+      "category": "Algebra",
+      "concept": "Synthetic Division with a Nonzero Remainder",
+      "learningObjective": "Determine the quotient and remainder using synthetic division.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Divide \\(2x^2+3x-5\\) by \\(x+1\\) using synthetic division. What are the quotient and remainder?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Quotient \\(2x+1\\), remainder \\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "Quotient \\(2x+1\\), remainder \\(-6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(c=-1\\) and coefficients \\(2\\), \\(3\\), \\(-5\\).\n\\[\n\\begin{array}{r|rrr}\n-1 & 2 & 3 & -5\\\\\n& & -2 & -1\\\\\n\\hline\n& 2 & 1 & -6\n\\end{array}\n\\]\nThe quotient is \\(2x+1\\), and the remainder is \\(-6\\). Therefore, the correct choice is B.",
+      "hint": "Remember that dividing by \\(x+1\\) means using \\(-1\\) in synthetic division."
+    },
+    {
+      "id": "dynanca-174-q005",
+      "category": "Algebra",
+      "concept": "Synthetic Division of a Cubic Polynomial",
+      "learningObjective": "Divide a cubic polynomial by \\(x-1\\) using synthetic division.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Divide \\(x^3-2x^2-5x+6\\) by \\(x-1\\) using synthetic division. What is the quotient?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x^2+x-6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^2-x-6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(c=1\\) and coefficients \\(1\\), \\(-2\\), \\(-5\\), \\(6\\).\n\\[\n\\begin{array}{r|rrrr}\n1 & 1 & -2 & -5 & 6\\\\\n& & 1 & -1 & -6\\\\\n\\hline\n& 1 & -1 & -6 & 0\n\\end{array}\n\\]\nThe quotient is \\(x^2-x-6\\), and the remainder is \\(0\\). Therefore, the correct quotient is \\(x^2-x-6\\).",
+      "hint": "Include all powers of \\(x\\), and bring down the leading coefficient first."
+    },
+    {
+      "id": "dynanca-174-q006",
+      "category": "Algebra",
+      "concept": "Synthetic Division with Missing Terms",
+      "learningObjective": "Divide \\(x^3+1\\) by \\(x+1\\) using synthetic division with zero coefficients for missing terms.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Divide \\(x^3+1\\) by \\(x+1\\) using synthetic division. What is the quotient?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x^2-x+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^2+x+1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Write \\(x^3+1\\) as \\(x^3+0x^2+0x+1\\), and use \\(c=-1\\).\n\\[\n\\begin{array}{r|rrrr}\n-1 & 1 & 0 & 0 & 1\\\\\n& & -1 & 1 & -1\\\\\n\\hline\n& 1 & -1 & 1 & 0\n\\end{array}\n\\]\nThe quotient is \\(x^2-x+1\\). Therefore, the correct quotient is \\(x^2-x+1\\).",
+      "hint": "Insert \\(0x^2\\) and \\(0x\\) before performing synthetic division."
+    },
+    {
+      "id": "dynanca-174-q007",
+      "category": "Algebra",
+      "concept": "Remainder by Synthetic Division",
+      "learningObjective": "Use synthetic division to find the remainder when dividing by \\(x+1\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Use synthetic division to find the remainder when \\(x^4-3x^2+2\\) is divided by \\(x+1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Write the polynomial as \\(x^4+0x^3-3x^2+0x+2\\), and use \\(c=-1\\).\n\\[\n\\begin{array}{r|rrrrr}\n-1 & 1 & 0 & -3 & 0 & 2\\\\\n& & -1 & 1 & 2 & -2\\\\\n\\hline\n& 1 & -1 & -2 & 2 & 0\n\\end{array}\n\\]\nThe remainder is \\(0\\). Therefore, the correct remainder is \\(0\\).",
+      "hint": "The final entry in the synthetic division table is the remainder."
+    },
+    {
+      "id": "dynanca-174-q008",
+      "category": "Algebra",
+      "concept": "Remainder from Synthetic Division",
+      "learningObjective": "Determine the remainder when dividing a cubic polynomial by \\(x-2\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Divide \\(3x^3-5x^2+2x-7\\) by \\(x-2\\) using synthetic division. What is the remainder?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(c=2\\) and coefficients \\(3\\), \\(-5\\), \\(2\\), \\(-7\\).\n\\[\n\\begin{array}{r|rrrr}\n2 & 3 & -5 & 2 & -7\\\\\n& & 6 & 2 & 8\\\\\n\\hline\n& 3 & 1 & 4 & 1\n\\end{array}\n\\]\nThe remainder is \\(1\\). Therefore, the correct remainder is \\(1\\).",
+      "hint": "After multiplying and adding in each column, read the last number as the remainder."
+    },
+    {
+      "id": "dynanca-174-q009",
+      "category": "Algebra",
+      "concept": "Synthetic Division of a Quartic Difference",
+      "learningObjective": "Divide \\(x^4-16\\) by \\(x+2\\) using synthetic division.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Divide \\(x^4-16\\) by \\(x+2\\) using synthetic division. What is the quotient?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x^3-2x^2+4x-8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^3+2x^2+4x+8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Write \\(x^4-16\\) as \\(x^4+0x^3+0x^2+0x-16\\), and use \\(c=-2\\).\n\\[\n\\begin{array}{r|rrrrr}\n-2 & 1 & 0 & 0 & 0 & -16\\\\\n& & -2 & 4 & -8 & 16\\\\\n\\hline\n& 1 & -2 & 4 & -8 & 0\n\\end{array}\n\\]\nThe quotient is \\(x^3-2x^2+4x-8\\), and the remainder is \\(0\\). Therefore, the correct quotient is \\(x^3-2x^2+4x-8\\).",
+      "hint": "Insert zero coefficients for all missing powers of \\(x\\), and remember that dividing by \\(x+2\\) means using \\(-2\\)."
+    },
+    {
+      "id": "dynanca-174-q010",
+      "category": "Algebra",
+      "concept": "Factor Condition and Synthetic Division",
+      "learningObjective": "Determine an unknown coefficient using synthetic division and the factor condition.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For the polynomial \\(2x^3+kx^2-5x+6\\), \\(x-2\\) is a factor. What is the value of \\(k\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If \\(x-2\\) is a factor, then the remainder from synthetic division by \\(2\\) must be \\(0\\). Equivalently, let \\(P(x)=2x^3+kx^2-5x+6\\) and set \\(P(2)\\) equal to \\(0\\):\n\\[\n\\begin{aligned}\nP(2)=2(2)^3+k(2)^2-5(2)+6 &= 0\\\\\n16+4k-10+6=12+4k &= 0\\\\\n4k &= -12\\\\\nk &= -3\n\\end{aligned}\n\\]\nTherefore, the correct value is \\(-3\\).",
+      "hint": "Set the remainder equal to \\(0\\), then solve for \\(k\\)."
+    }
+  ]
+}

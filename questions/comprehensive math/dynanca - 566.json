@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-566",
+  "category": "Comprehensive Mathematics",
+  "title": "566. Discrete Mathematics, Counting & Graph Theory: Double Counting Arguments",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-566-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting memberships in two ways",
+      "learningObjective": "Find a number by counting pairs in two ways.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A school has \\(5\\) clubs with \\(6\\) members each, and every student who is in a club belongs to exactly \\(2\\) clubs. How many students are in clubs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Count the memberships, that is, the pairs (student, club). Counting by clubs gives \\(5\\cdot 6=30\\). Counting by students gives \\(2\\) for each student. So \\(2\\cdot(\\text{number of students})=30\\), and there are \\(15\\) students. The number \\(30\\) is the number of memberships, not of students.",
+      "hint": "Each student accounts for two memberships."
+    },
+    {
+      "id": "dynanca-566-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Handshakes from individual counts",
+      "learningObjective": "Count handshakes from the number each person makes.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "At a meeting, each of \\(8\\) people shakes hands with exactly \\(3\\) of the others. How many handshakes take place?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Adding the handshakes made by each person gives \\(8\\cdot 3=24\\), but every handshake involves two people and is counted twice in this sum. So the number of handshakes is \\(\\dfrac{24}{2}=12\\).",
+      "hint": "Each handshake is counted once for each of its two participants."
+    },
+    {
+      "id": "dynanca-566-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Edges of a cube",
+      "learningObjective": "Count edges from faces by double counting.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A cube has \\(6\\) square faces, and every edge of the cube lies on exactly \\(2\\) faces. How many edges does the cube have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Count the pairs (face, edge of that face). Counting by faces gives \\(6\\cdot 4=24\\). Counting by edges gives \\(2\\) for each edge. So the number of edges is \\(\\dfrac{24}{2}=12\\). The number \\(24\\) counts each edge twice.",
+      "hint": "Each edge is shared by two faces."
+    },
+    {
+      "id": "dynanca-566-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Edges of a ball made of polygons",
+      "learningObjective": "Count edges of a polyhedron with two kinds of faces.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The surface of a ball is made of \\(12\\) pentagons and \\(20\\) hexagons, and every edge is shared by exactly \\(2\\) faces. How many edges are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(180\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(90\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Adding the numbers of sides of all faces gives \\(12\\cdot 5+20\\cdot 6=60+120=180\\). Each edge is a side of two faces, so it is counted twice. The number of edges is \\(\\dfrac{180}{2}=90\\).",
+      "hint": "Add up the sides of all the faces, then correct for the sharing."
+    },
+    {
+      "id": "dynanca-566-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Games in a league",
+      "learningObjective": "Count games when every team plays every other team once.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In a league of \\(12\\) teams, every team plays each of the other teams exactly once. How many games are played?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(132\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(66\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each team plays \\(11\\) games, so adding over the teams gives \\(12\\cdot 11=132\\). Every game involves two teams and is counted twice in this sum, so the number of games is \\(\\dfrac{132}{2}=66\\).",
+      "hint": "A game between two teams appears in the list of both teams."
+    },
+    {
+      "id": "dynanca-566-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Rows and columns of a table",
+      "learningObjective": "Find the number of columns by counting the entries of a table in two ways.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A table of zeros and ones has \\(6\\) rows. Every row contains exactly \\(4\\) ones, and every column contains exactly \\(3\\) ones. How many columns does the table have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(18\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Count the ones. By rows there are \\(6\\cdot 4=24\\). By columns there are \\(3c\\), where \\(c\\) is the number of columns. So \\(3c=24\\) and \\(c=8\\). The number \\(18=6\\cdot 3\\) multiplies two quantities that do not belong together.",
+      "hint": "The total number of ones is the same whether it is counted by rows or by columns."
+    },
+    {
+      "id": "dynanca-566-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An impossible meeting",
+      "learningObjective": "Use parity in a double count to show that a configuration cannot exist.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Is it possible for each of \\(7\\) people to shake hands with exactly \\(3\\) of the others?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the handshakes counted person by person would total \\(21\\), which is not twice a whole number."
+        },
+        {
+          "label": "B",
+          "text": "Yes; for example the people can stand in a circle and shake hands suitably."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Adding the handshakes made by each person counts every handshake twice, so the total must be even. Here it would be \\(7\\cdot 3=21\\), which is odd. So no such arrangement exists, whatever the positions of the people.",
+      "hint": "Count the handshakes person by person and compare with twice the number of handshakes."
+    },
+    {
+      "id": "dynanca-566-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Diagonals from each vertex",
+      "learningObjective": "Count the diagonals of a polygon by counting at each vertex.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In a convex polygon with \\(10\\) vertices, each vertex is an endpoint of \\(7\\) diagonals. How many diagonals does the polygon have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(70\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(35\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Adding the diagonals at each vertex gives \\(10\\cdot 7=70\\). Every diagonal has two endpoints, so it is counted twice. The number of diagonals is \\(\\dfrac{70}{2}=35\\).",
+      "hint": "Each diagonal is counted at both of its endpoints."
+    },
+    {
+      "id": "dynanca-566-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Triangles through edges",
+      "learningObjective": "Count triangles by counting pairs of an edge and a triangle containing it.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "Six points are joined in pairs by \\(15\\) segments. Every segment is a side of exactly \\(4\\) triangles with vertices among the points, and every triangle has \\(3\\) sides. How many triangles are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Count the pairs (segment, triangle having that segment as a side). Counting by segments gives \\(15\\cdot 4=60\\). Counting by triangles gives \\(3\\) for each triangle. So the number of triangles is \\(\\dfrac{60}{3}=20\\), which agrees with \\(\\binom{6}{3}\\). The number \\(60\\) is the number of pairs, not of triangles.",
+      "hint": "Each triangle is counted once for each of its three sides."
+    },
+    {
+      "id": "dynanca-566-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Points and lines",
+      "learningObjective": "Find the number of lines by counting incidences in two ways.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A configuration has \\(9\\) points. Every point lies on exactly \\(4\\) lines of the configuration, and every line contains exactly \\(3\\) of the points. How many lines are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(108\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Count the pairs (point, line through it). Counting by points gives \\(9\\cdot 4=36\\). Counting by lines gives \\(3\\) for each line. So the number of lines is \\(\\dfrac{36}{3}=12\\). The number \\(108=9\\cdot 4\\cdot 3\\) multiplies where a division is needed.",
+      "hint": "Count the point-line pairs once by points and once by lines."
+    }
+  ]
+}

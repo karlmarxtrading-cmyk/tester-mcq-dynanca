@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-78",
+  "category": "Comprehensive Mathematics",
+  "title": "78. Numeracy & Number Systems: Binary Addition",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-78-q001",
+      "category": "Numeracy & Number Systems",
+      "concept": "Binary Addition with Carry",
+      "learningObjective": "Add \\(1_2 + 1_2\\) and express the result in binary.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(1_2 + 1_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10_2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(11_2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In binary, \\(1+1=2\\), which is written as \\(10_2\\) because \\(2=2^1\\). Therefore, \\(1_2+1_2=10_2\\). The alternative sets the units bit even though the exact sum is two.",
+      "hint": "Remember that in binary, \\(1+1\\) produces a carry."
+    },
+    {
+      "id": "dynanca-78-q002",
+      "category": "Numeracy & Number Systems",
+      "concept": "Binary Addition Without Carry",
+      "learningObjective": "Add two binary integers of different lengths when no carry is needed.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(101_2 + 10_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(111_2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1001_2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Align the numbers by place value: \\(101_2 + 010_2 = 111_2\\). In decimal form, \\(5+2=7\\), and \\(7=111_2\\). Therefore, \\(101_2+10_2=111_2\\). The alternative misaligns the shorter addend by aligning it on the left, which computes \\(101_2+100_2=1001_2\\).",
+      "hint": "Align the numbers by place value before adding."
+    },
+    {
+      "id": "dynanca-78-q003",
+      "category": "Numeracy & Number Systems",
+      "concept": "Binary Addition with Carries",
+      "learningObjective": "Add \\(110_2\\) and \\(11_2\\) and determine the correct binary sum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(110_2 + 11_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1000_2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1001_2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Align the numbers: \\(110_2 + 011_2\\). Adding from right to left: \\(0+1=1\\); \\(1+1=10_2\\), write \\(0\\) and carry \\(1\\); \\(1+0+1=10_2\\), write \\(0\\) and carry \\(1\\); the final carry gives \\(1\\). The result is \\(1001_2\\). In decimal form, \\(6+3=9\\), and \\(9=1001_2\\). The alternative loses the units contribution.",
+      "hint": "Work from right to left and carry whenever a column sum reaches \\(2\\)."
+    },
+    {
+      "id": "dynanca-78-q004",
+      "category": "Numeracy & Number Systems",
+      "concept": "Binary Addition with Multiple Carries",
+      "learningObjective": "Add \\(1011_2\\) and \\(110_2\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(1011_2 + 110_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10001_2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1001_2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Align the numbers: \\(1011_2 + 0110_2\\). Adding from right to left: \\(1+0=1\\); \\(1+1=10_2\\), write \\(0\\) and carry \\(1\\); \\(0+1+1=10_2\\), write \\(0\\) and carry \\(1\\); \\(1+0+1=10_2\\), write \\(0\\) and carry \\(1\\); the final carry gives \\(1\\). The result is \\(10001_2\\). In decimal form, \\(11+6=17\\), and \\(17=10001_2\\). The alternative loses a propagated carry.",
+      "hint": "Add column by column from right to left, including carries in the next column."
+    },
+    {
+      "id": "dynanca-78-q005",
+      "category": "Numeracy & Number Systems",
+      "concept": "Carry Propagation in Binary Addition",
+      "learningObjective": "Add \\(111_2\\) and \\(1_2\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(111_2 + 1_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1000_2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1111_2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Align the numbers: \\(111_2 + 001_2\\). Adding from right to left: \\(1+1=10_2\\), write \\(0\\) and carry \\(1\\); \\(1+0+1=10_2\\), write \\(0\\) and carry \\(1\\); \\(1+0+1=10_2\\), write \\(0\\) and carry \\(1\\); the final carry gives \\(1\\). The result is \\(1000_2\\). In decimal form, \\(7+1=8\\), and \\(8=1000_2\\). The alternative appends a bit instead of propagating the carry through the existing bits.",
+      "hint": "A carry can propagate through several consecutive \\(1\\)s."
+    },
+    {
+      "id": "dynanca-78-q006",
+      "category": "Numeracy & Number Systems",
+      "concept": "Adding Binary Numbers of Different Lengths",
+      "learningObjective": "Add two binary integers of different lengths by aligning their place values.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(1010_2 + 101_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1111_2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1101_2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Align the numbers: \\(1010_2 + 0101_2\\). Adding from right to left: \\(0+1=1\\); \\(1+0=1\\); \\(0+1=1\\); \\(1+0=1\\). The result is \\(1111_2\\). In decimal form, \\(10+5=15\\), and \\(15=1111_2\\). The alternative drops the \\(2^1\\) contribution of the longer addend \\(1010_2\\) and equals \\(13\\) instead of \\(15\\).",
+      "hint": "Write the shorter number with leading zeros so both numbers have the same length."
+    },
+    {
+      "id": "dynanca-78-q007",
+      "category": "Numeracy & Number Systems",
+      "concept": "Binary Addition with Carries",
+      "learningObjective": "Add two binary integers when carries occur in consecutive columns.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(1001_2 + 11_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1100_2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1011_2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Align the numbers: \\(1001_2 + 0011_2\\). Adding from right to left: \\(1+1=10_2\\), write \\(0\\) and carry \\(1\\); \\(0+1+1=10_2\\), write \\(0\\) and carry \\(1\\); \\(0+0+1=1\\); \\(1+0=1\\). The result is \\(1100_2\\). In decimal form, \\(9+3=12\\), and \\(12=1100_2\\). The alternative writes \\(1\\) for \\(1+1\\) in the units column instead of writing \\(0\\) and carrying \\(1\\).",
+      "hint": "Do not forget the carry from the previous column."
+    },
+    {
+      "id": "dynanca-78-q008",
+      "category": "Numeracy & Number Systems",
+      "concept": "Binary Addition with Multiple Carries",
+      "learningObjective": "Add \\(1101_2\\) and \\(1011_2\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(1101_2 + 1011_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10110_2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(11000_2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Align the numbers: \\(1101_2 + 1011_2\\). Adding from right to left: \\(1+1=10_2\\), write \\(0\\) and carry \\(1\\); \\(0+1+1=10_2\\), write \\(0\\) and carry \\(1\\); \\(1+0+1=10_2\\), write \\(0\\) and carry \\(1\\); \\(1+1+1=11_2\\), write \\(1\\) and carry \\(1\\); the final carry gives \\(1\\). The result is \\(11000_2\\). In decimal form, \\(13+11=24\\), and \\(24=11000_2\\). The alternative gives the wrong carry pattern.",
+      "hint": "When a column sum is \\(3\\), write \\(1\\) and carry \\(1\\)."
+    },
+    {
+      "id": "dynanca-78-q009",
+      "category": "Numeracy & Number Systems",
+      "concept": "Binary Addition Creating a New Place Value",
+      "learningObjective": "Add two binary integers when repeated carries create a new place value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(1111_2 + 1_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10000_2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1000_2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Align the numbers: \\(1111_2 + 0001_2\\). Adding from right to left: \\(1+1=10_2\\), write \\(0\\) and carry \\(1\\); \\(1+0+1=10_2\\), write \\(0\\) and carry \\(1\\); \\(1+0+1=10_2\\), write \\(0\\) and carry \\(1\\); \\(1+0+1=10_2\\), write \\(0\\) and carry \\(1\\); the final carry gives \\(1\\). The result is \\(10000_2\\). In decimal form, \\(15+1=16\\), and \\(16=10000_2\\). The alternative drops the carry into the \\(2^3\\) column, so the sum stops at four digits and equals \\(8\\) instead of \\(16\\).",
+      "hint": "Add from right to left and keep carrying for as long as a column sum reaches \\(2\\)."
+    },
+    {
+      "id": "dynanca-78-q010",
+      "category": "Numeracy & Number Systems",
+      "concept": "Binary Addition with Different Lengths and Carries",
+      "learningObjective": "Add \\(10101_2\\) and \\(1101_2\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(10101_2 + 1101_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(11110_2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(100010_2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Align the numbers: \\(10101_2 + 01101_2\\). Adding from right to left: \\(1+1=10_2\\), write \\(0\\) and carry \\(1\\); \\(0+0+1=1\\); \\(1+1=10_2\\), write \\(0\\) and carry \\(1\\); \\(0+1+1=10_2\\), write \\(0\\) and carry \\(1\\); \\(1+0+1=10_2\\), write \\(0\\) and carry \\(1\\); the final carry gives \\(1\\). The result is \\(100010_2\\). In decimal form, \\(21+13=34\\), and \\(34=100010_2\\). The alternative gives an incorrect carry pattern.",
+      "hint": "Align the binary numbers to the right and add column by column, including all carries."
+    }
+  ]
+}

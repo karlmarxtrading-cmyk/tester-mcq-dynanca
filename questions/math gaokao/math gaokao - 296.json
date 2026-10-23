@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-296",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 296",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-296-q001",
+      "category": "Calculus",
+      "concept": "Basic Power Rule for Antiderivatives",
+      "learningObjective": "Find the general antiderivative of a power function using the power rule.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\int x^3\\,dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3x^2+C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{x^4}{4}+C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the power rule for antiderivatives,\n\\[\n\\int x^n\\,dx=\\frac{x^{n+1}}{n+1}+C \\quad (n\\neq -1).\n\\]\nHere \\(n=3\\), so\n\\[\n\\int x^3\\,dx=\\frac{x^{4}}{4}+C.\n\\]",
+      "hint": "Use the antiderivative power rule with exponent increased by one."
+    },
+    {
+      "id": "math-gaokao-296-q002",
+      "category": "Calculus",
+      "concept": "Term-by-Term Antidifferentiation",
+      "learningObjective": "Find the indefinite integral of a linear expression by antidifferentiating each term.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\int (2x+1)\\,dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x^2+x+C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^2+1+C\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Antidifferentiate each term separately:\n\\[\n\\int (2x+1)\\,dx=\\int 2x\\,dx+\\int 1\\,dx.\n\\]\nSince \\(\\int 2x\\,dx=x^2\\) and \\(\\int 1\\,dx=x\\),\n\\[\n\\int (2x+1)\\,dx=x^2+x+C.\n\\]",
+      "hint": "Integrate each term of the polynomial separately."
+    },
+    {
+      "id": "math-gaokao-296-q003",
+      "category": "Calculus",
+      "concept": "Polynomial Antiderivatives",
+      "learningObjective": "Compute the indefinite integral of a polynomial using the power rule term by term.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\int (3x^2-2x)\\,dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x^3-2x^2+C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^3-x^2+C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Apply the power rule to each term:\n\\[\n\\int 3x^2\\,dx=x^3,\n\\]\n\\[\n\\int 2x\\,dx=x^2.\n\\]\nTherefore,\n\\[\n\\int (3x^2-2x)\\,dx=x^3-x^2+C.\n\\]",
+      "hint": "Increase each exponent by one and divide by the new exponent."
+    },
+    {
+      "id": "math-gaokao-296-q004",
+      "category": "Calculus",
+      "concept": "Antiderivative with Initial Condition",
+      "learningObjective": "Determine the specific antiderivative of a trigonometric function using an initial condition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(f'(x)=\\cos x\\) and \\(f(0)=1\\), find \\(f(x)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sin x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sin x+1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(\\frac{d}{dx}(\\sin x)=\\cos x\\), the general antiderivative is\n\\[\nf(x)=\\sin x+C.\n\\]\nUse \\(f(0)=1\\):\n\\[\n\\sin 0+C=1 \\implies C=1.\n\\]\nThus\n\\[\nf(x)=\\sin x+1.\n\\]",
+      "hint": "Find the general antiderivative first, then use the given value to determine the constant."
+    },
+    {
+      "id": "math-gaokao-296-q005",
+      "category": "Calculus",
+      "concept": "Antiderivative of the Exponential Function",
+      "learningObjective": "Recall and apply the antiderivative of \\(e^x\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Find \\(\\int e^x\\,dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(e^x+C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x e^x+C\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The exponential function \\(e^x\\) is its own derivative, so it is also its own antiderivative:\n\\[\n\\int e^x\\,dx=e^x+C.\n\\]\nThe expression \\(x e^x+C\\) has derivative \\(e^x+x e^x\\), which is not \\(e^x\\).",
+      "hint": "Recall which function equals its own derivative."
+    },
+    {
+      "id": "math-gaokao-296-q006",
+      "category": "Calculus",
+      "concept": "Antiderivative of the Reciprocal Function",
+      "learningObjective": "Find the indefinite integral of \\(\\frac{1}{x}\\) using the logarithmic antiderivative.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\int \\frac{1}{x}\\,dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{x^2}+C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\ln|x|+C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(x\\neq 0\\),\n\\[\n\\int \\frac{1}{x}\\,dx=\\ln|x|+C.\n\\]\nIndeed,\n\\[\n\\frac{d}{dx}\\ln|x|=\\frac{1}{x}.\n\\]\nThe expression \\(\\frac{1}{x^2}+C\\) has derivative \\(-\\frac{2}{x^3}\\), not \\(\\frac{1}{x}\\).",
+      "hint": "Use the fact that the derivative of \\(\\ln|x|\\) is \\(\\frac{1}{x}\\)."
+    },
+    {
+      "id": "math-gaokao-296-q007",
+      "category": "Calculus",
+      "concept": "Antiderivative and Initial Value",
+      "learningObjective": "Use an initial condition to determine a specific antiderivative and evaluate it at a point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(f'(x)=6x\\) and \\(f(1)=5\\), find \\(f(2)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(14\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The general antiderivative of \\(f'(x)=6x\\) is\n\\[\nf(x)=3x^2+C.\n\\]\nUse \\(f(1)=5\\):\n\\[\n3(1)^2+C=5 \\implies 3+C=5 \\implies C=2.\n\\]\nThus\n\\[\nf(x)=3x^2+2.\n\\]\nEvaluate at \\(x=2\\):\n\\[\nf(2)=3(2)^2+2=12+2=14.\n\\]",
+      "hint": "Find the general antiderivative, then determine \\(C\\) from the given value."
+    },
+    {
+      "id": "math-gaokao-296-q008",
+      "category": "Calculus",
+      "concept": "Antiderivative of a Sum",
+      "learningObjective": "Find the indefinite integral of a sum of powers by antidifferentiating each term.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\int (x^2+1)\\,dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{x^3}{3}+x+C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{x^3}{3}+C\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Antidifferentiate each term:\n\\[\n\\int x^2\\,dx=\\frac{x^3}{3},\n\\]\n\\[\n\\int 1\\,dx=x.\n\\]\nTherefore,\n\\[\n\\int (x^2+1)\\,dx=\\frac{x^3}{3}+x+C.\n\\]",
+      "hint": "Do not forget to antidifferentiate the constant term \\(1\\)."
+    },
+    {
+      "id": "math-gaokao-296-q009",
+      "category": "Calculus",
+      "concept": "Antiderivative of the Sine Function",
+      "learningObjective": "Find the indefinite integral of \\(\\sin x\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Find \\(\\int \\sin x\\,dx\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\cos x+C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\cos x+C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since\n\\[\n\\frac{d}{dx}(-\\cos x)=\\sin x,\n\\]\nthe antiderivative of \\(\\sin x\\) is\n\\[\n\\int \\sin x\\,dx=-\\cos x+C.\n\\]\nThe derivative of \\(\\cos x\\) is \\(-\\sin x\\), so \\(\\cos x+C\\) is not correct.",
+      "hint": "Recall which cosine expression has derivative equal to \\(\\sin x\\)."
+    },
+    {
+      "id": "math-gaokao-296-q010",
+      "category": "Calculus",
+      "concept": "Antiderivative with Initial Condition and Evaluation",
+      "learningObjective": "Determine a specific antiderivative from a linear derivative and evaluate it at a given point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(f'(x)=2x+3\\) and \\(f(0)=1\\), find \\(f(2)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(11\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The general antiderivative of \\(f'(x)=2x+3\\) is\n\\[\nf(x)=x^2+3x+C.\n\\]\nUse \\(f(0)=1\\):\n\\[\n0^2+3(0)+C=1 \\implies C=1.\n\\]\nThus\n\\[\nf(x)=x^2+3x+1.\n\\]\nEvaluate at \\(x=2\\):\n\\[\nf(2)=2^2+3(2)+1=4+6+1=11.\n\\]",
+      "hint": "Find the general antiderivative, determine the constant from the initial condition, then substitute \\(x=2\\)."
+    }
+  ]
+}

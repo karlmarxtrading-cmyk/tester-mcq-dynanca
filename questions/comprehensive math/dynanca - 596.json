@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-596",
+  "category": "Comprehensive Mathematics",
+  "title": "596. Discrete Mathematics, Counting & Graph Theory: Topological Sorting of Directed Acyclic Graphs",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-596-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Definition of a topological order",
+      "learningObjective": "State what a topological order of a directed graph is.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is a topological order of the vertices of a directed graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An ordering in which every arc goes from an earlier vertex to a later vertex"
+        },
+        {
+          "label": "B",
+          "text": "The ordering of the vertices by their names"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A topological order arranges the vertices in a row so that every arc points forward, from a vertex that comes earlier to one that comes later. The names of the vertices are irrelevant; only the arcs matter.",
+      "hint": "Every arc must point forward in the ordering."
+    },
+    {
+      "id": "dynanca-596-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Checking an ordering",
+      "learningObjective": "Decide which ordering is a topological order.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A directed graph has arcs \\(A\\to B\\), \\(A\\to C\\), \\(B\\to D\\), \\(C\\to D\\), and \\(D\\to E\\). Which ordering is a topological order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A,\\ C,\\ B,\\ D,\\ E\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A,\\ B,\\ D,\\ C,\\ E\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In \\(A,C,B,D,E\\) every arc points forward: \\(A\\) precedes \\(B\\) and \\(C\\), both of which precede \\(D\\), which precedes \\(E\\). In \\(A,B,D,C,E\\) the arc \\(C\\to D\\) points backward, because \\(D\\) is placed before \\(C\\).",
+      "hint": "For each arc, check that its starting vertex comes before its end vertex."
+    },
+    {
+      "id": "dynanca-596-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting topological orders",
+      "learningObjective": "Count the topological orders of a small directed graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A directed graph has arcs \\(A\\to B\\), \\(A\\to C\\), \\(B\\to D\\), \\(C\\to D\\), and \\(D\\to E\\). How many topological orders does it have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The vertex \\(A\\) must come first, \\(D\\) must come after both \\(B\\) and \\(C\\), and \\(E\\) must come last. Only the order of \\(B\\) and \\(C\\) is free, because no arc joins them. This gives the \\(2\\) orders \\(A,B,C,D,E\\) and \\(A,C,B,D,E\\).",
+      "hint": "Find the vertices whose relative order is not fixed by any arc."
+    },
+    {
+      "id": "dynanca-596-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "When no order exists",
+      "learningObjective": "Decide whether a directed graph with a directed cycle has a topological order.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A directed graph has arcs \\(A\\to B\\), \\(B\\to C\\), and \\(C\\to A\\). Does it have a topological order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the arcs form a directed cycle."
+        },
+        {
+          "label": "B",
+          "text": "Yes; \\(A,B,C\\) is a topological order."
+        }
+      ],
+      "answer": "A",
+      "explanation": "In a topological order, \\(A\\) would have to come before \\(B\\), \\(B\\) before \\(C\\), and \\(C\\) before \\(A\\), which is impossible. In the ordering \\(A,B,C\\) the arc \\(C\\to A\\) points backward. A directed graph has a topological order exactly when it has no directed cycle.",
+      "hint": "Try to place the three vertices so that all three arcs point forward."
+    },
+    {
+      "id": "dynanca-596-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Possible first vertices",
+      "learningObjective": "Find the vertices that can come first in a topological order.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A directed graph has arcs \\(P\\to R\\), \\(Q\\to R\\), \\(R\\to S\\), and \\(Q\\to T\\). Which vertices can be first in a topological order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P\\) only"
+        },
+        {
+          "label": "B",
+          "text": "\\(P\\) or \\(Q\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first vertex must have no incoming arc, because any vertex with an arc into it has to come later. The vertices without incoming arcs are \\(P\\) and \\(Q\\), and each of them does start some topological order, for example \\(P,Q,R,S,T\\) and \\(Q,P,R,S,T\\).",
+      "hint": "Look for the vertices with in-degree \\(0\\)."
+    },
+    {
+      "id": "dynanca-596-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Removing a source",
+      "learningObjective": "Find the vertices that become available after a source is removed.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A directed graph has arcs \\(A\\to B\\), \\(A\\to C\\), \\(B\\to D\\), \\(C\\to D\\), and \\(D\\to E\\). A topological order is built by repeatedly removing a vertex with no incoming arc. After \\(A\\) and its arcs are removed, which vertices have no incoming arc?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(D\\) only"
+        },
+        {
+          "label": "B",
+          "text": "\\(B\\) and \\(C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The only arcs into \\(B\\) and into \\(C\\) came from \\(A\\). Once \\(A\\) is removed, neither has an incoming arc, so either may be chosen next. The vertex \\(D\\) still has the incoming arcs \\(B\\to D\\) and \\(C\\to D\\).",
+      "hint": "Delete the arcs that start at \\(A\\) and recount the incoming arcs."
+    },
+    {
+      "id": "dynanca-596-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Scheduling tasks",
+      "learningObjective": "Order tasks so that all prerequisites are respected.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Four tasks have these requirements: \\(T_1\\) must be done before \\(T_2\\); \\(T_2\\) must be done before \\(T_4\\); and \\(T_3\\) must be done before \\(T_4\\). Which schedule respects all requirements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(T_1,\\ T_4,\\ T_2,\\ T_3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(T_3,\\ T_1,\\ T_2,\\ T_4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In \\(T_3,T_1,T_2,T_4\\) the task \\(T_1\\) precedes \\(T_2\\), and both \\(T_2\\) and \\(T_3\\) precede \\(T_4\\). In the other schedule \\(T_4\\) is done second, before \\(T_2\\) and before \\(T_3\\), which violates two requirements.",
+      "hint": "The task \\(T_4\\) needs two other tasks to be finished first."
+    },
+    {
+      "id": "dynanca-596-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Independent choices",
+      "learningObjective": "Count topological orders when two pairs of vertices are unordered.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A directed graph has arcs \\(A\\to C\\), \\(B\\to C\\), \\(C\\to D\\), and \\(C\\to E\\). How many topological orders does it have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The vertices \\(A\\) and \\(B\\) must both come before \\(C\\), in either order: \\(2\\) possibilities. The vertices \\(D\\) and \\(E\\) must both come after \\(C\\), in either order: \\(2\\) possibilities. The two choices are independent, so there are \\(2\\cdot 2=4\\) topological orders.",
+      "hint": "Count the free choices before \\(C\\) and after \\(C\\) separately, then multiply."
+    },
+    {
+      "id": "dynanca-596-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "No arcs at all",
+      "learningObjective": "Count the topological orders of a directed graph without arcs.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A directed graph has \\(4\\) vertices and no arcs. How many topological orders does it have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "With no arcs there is no condition to satisfy, so every ordering of the \\(4\\) vertices is a topological order. There are \\(4!=24\\) orderings. A unique topological order arises in the opposite situation, when the arcs fix the position of every vertex.",
+      "hint": "Ask which orderings violate a condition when there are no arcs."
+    },
+    {
+      "id": "dynanca-596-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A forced order",
+      "learningObjective": "Count the topological orders when the arcs fix every position.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A directed graph has arcs \\(A\\to B\\), \\(B\\to C\\), \\(C\\to D\\), \\(A\\to C\\), and \\(A\\to D\\). How many topological orders does it have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The arcs \\(A\\to B\\), \\(B\\to C\\), and \\(C\\to D\\) already force the order \\(A,B,C,D\\). The arcs \\(A\\to C\\) and \\(A\\to D\\) agree with this order and add no new freedom. So there is exactly \\(1\\) topological order. A topological order is unique exactly when consecutive vertices in it are always joined by an arc.",
+      "hint": "Three of the arcs form a directed path through all four vertices."
+    }
+  ]
+}

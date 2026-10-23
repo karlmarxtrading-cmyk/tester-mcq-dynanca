@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-313",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 313",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-313-q001",
+      "category": "Probability",
+      "concept": "Joint Probability from a Contingency Table",
+      "learningObjective": "Read a joint frequency from a contingency table and convert it to a probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A survey of 100 people records gender and smoking status. The table shows: 30 male smokers, 20 male non-smokers, 10 female smokers, and 40 female non-smokers. Find the probability that a randomly selected person is a male smoker.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.50\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The grand total is \\(100\\). The number of male smokers is \\(30\\). Therefore,\n\\[\nP(\\text{male smoker})=\\frac{30}{100}=0.30.\n\\]",
+      "hint": "Identify the cell for male and smoker, then divide by the grand total."
+    },
+    {
+      "id": "math-gaokao-313-q002",
+      "category": "Probability",
+      "concept": "Marginal Probability from a Contingency Table",
+      "learningObjective": "Compute a marginal probability by summing appropriate row or column entries.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In a group of 200 students, the table shows: 80 studied and passed, 20 studied and failed, 40 did not study and passed, and 60 did not study and failed. Find the probability that a randomly selected student passed.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.60\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.40\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total number of students who passed is\n\\[\n80+40=120.\n\\]\nThus,\n\\[\nP(\\text{passed})=\\frac{120}{200}=0.60.\n\\]",
+      "hint": "Add the two cells in the \"passed\" column, then divide by the total number of students."
+    },
+    {
+      "id": "math-gaokao-313-q003",
+      "category": "Probability",
+      "concept": "Conditional Probability from a Contingency Table",
+      "learningObjective": "Compute a conditional probability by restricting the sample space to a row or column.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A company has 150 employees. The table shows: 30 managers with a degree, 10 managers without a degree, 60 non-managers with a degree, and 50 non-managers without a degree. Given that an employee is a manager, find the probability that the employee has a degree.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.75\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.25\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total number of managers is\n\\[\n30+10=40.\n\\]\nAmong managers, \\(30\\) have a degree. Therefore,\n\\[\nP(\\text{degree}\\mid \\text{manager})=\\frac{30}{40}=0.75.\n\\]",
+      "hint": "Condition on manager means use the manager row as the denominator."
+    },
+    {
+      "id": "math-gaokao-313-q004",
+      "category": "Probability",
+      "concept": "Independence Test Using a Contingency Table",
+      "learningObjective": "Determine whether two events are independent by comparing a joint probability with the product of marginal probabilities.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A table of 100 people records whether event \\(A\\) occurs and whether event \\(C\\) occurs. The counts are: \\(A\\) and \\(C\\), 20; \\(A\\) and not \\(C\\), 30; not \\(A\\) and \\(C\\), 10; not \\(A\\) and not \\(C\\), 40. Are events \\(A\\) and \\(C\\) independent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because \\(P(A\\cap C)=P(A)P(C)\\)."
+        },
+        {
+          "label": "B",
+          "text": "No, because \\(P(A\\cap C)\\neq P(A)P(C)\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The marginal probabilities are\n\\[\nP(A)=\\frac{50}{100}=0.5,\\qquad P(C)=\\frac{30}{100}=0.3.\n\\]\nThus,\n\\[\nP(A)P(C)=0.5\\times0.3=0.15.\n\\]\nBut\n\\[\nP(A\\cap C)=\\frac{20}{100}=0.2.\n\\]\nSince \\(0.2\\neq0.15\\), the events are not independent.",
+      "hint": "Compare the joint probability with the product of the two marginal probabilities."
+    },
+    {
+      "id": "math-gaokao-313-q005",
+      "category": "Probability",
+      "concept": "Conditional Probability from a Contingency Table",
+      "learningObjective": "Compute \\(P(\\text{healthy}\\mid \\text{exercise})\\) from a contingency table.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In a group of 80 people, the table shows: 30 exercise and are healthy, 10 exercise and are not healthy, 20 do not exercise and are healthy, and 20 do not exercise and are not healthy. Find the probability that a person is healthy given that the person exercises.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.75\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.25\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total number of people who exercise is\n\\[\n30+10=40.\n\\]\nAmong those who exercise, \\(30\\) are healthy. Therefore,\n\\[\nP(\\text{healthy}\\mid \\text{exercise})=\\frac{30}{40}=0.75.\n\\]",
+      "hint": "Use the row or column for \"exercise\" as the restricted total."
+    },
+    {
+      "id": "math-gaokao-313-q006",
+      "category": "Probability",
+      "concept": "Complement Intersection from a Contingency Table",
+      "learningObjective": "Compute \\(P(A'\\cap B')\\) from a contingency table using the bottom-right cell.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A table of 120 people records events \\(A\\) and \\(B\\). The counts are: \\(A\\) and \\(B\\), 30; \\(A\\) and not \\(B\\), 20; not \\(A\\) and \\(B\\), 40; not \\(A\\) and not \\(B\\), 30. Find \\(P(A'\\cap B')\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.50\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.25\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The cell for not \\(A\\) and not \\(B\\) has count \\(30\\). Therefore,\n\\[\nP(A'\\cap B')=\\frac{30}{120}=0.25.\n\\]",
+      "hint": "Locate the cell where both events fail to occur."
+    },
+    {
+      "id": "math-gaokao-313-q007",
+      "category": "Probability",
+      "concept": "Conditional Probability from a Contingency Table",
+      "learningObjective": "Compute a conditional probability given a column total.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A table of 250 students records gender and exam result. There are 150 students who passed, and 60 of them are female. Find the probability that a student is female given that the student passed.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.60\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.40\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Given that the student passed, the total is \\(150\\). Among those who passed, \\(60\\) are female. Thus,\n\\[\nP(\\text{female}\\mid \\text{passed})=\\frac{60}{150}=0.40.\n\\]",
+      "hint": "The condition \"passed\" fixes the denominator as the total number of students who passed."
+    },
+    {
+      "id": "math-gaokao-313-q008",
+      "category": "Probability",
+      "concept": "Independence Check from a Contingency Table",
+      "learningObjective": "Verify independence by checking whether the joint probability equals the product of marginals.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A table of 100 observations gives: \\(A\\) and \\(B\\), 20; \\(A\\) and not \\(B\\), 20; not \\(A\\) and \\(B\\), 30; not \\(A\\) and not \\(B\\), 30. Are events \\(A\\) and \\(B\\) independent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because \\(P(A\\cap B)=P(A)P(B)\\)."
+        },
+        {
+          "label": "B",
+          "text": "No, because \\(P(A\\cap B)\\neq P(A)P(B)\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The marginal probabilities are\n\\[\nP(A)=\\frac{40}{100}=0.4,\\qquad P(B)=\\frac{50}{100}=0.5.\n\\]\nThus,\n\\[\nP(A)P(B)=0.4\\times0.5=0.2.\n\\]\nAlso,\n\\[\nP(A\\cap B)=\\frac{20}{100}=0.2.\n\\]\nSince \\(P(A\\cap B)=P(A)P(B)\\), the events are independent.",
+      "hint": "Compute the marginal probabilities and compare their product with the joint probability."
+    },
+    {
+      "id": "math-gaokao-313-q009",
+      "category": "Probability",
+      "concept": "Conditional Probability from a Contingency Table",
+      "learningObjective": "Compute \\(P(B\\mid A')\\) using the row or column for the complement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A table of 200 people records events \\(A\\) and \\(B\\). The counts are: \\(A\\) and \\(B\\), 50; \\(A\\) and not \\(B\\), 30; not \\(A\\) and \\(B\\), 70; not \\(A\\) and not \\(B\\), 50. Find \\(P(B\\mid A')\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{7}{12}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{12}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total for \\(A'\\) is\n\\[\n70+50=120.\n\\]\nAmong those in \\(A'\\), \\(70\\) are in \\(B\\). Therefore,\n\\[\nP(B\\mid A')=\\frac{70}{120}=\\frac{7}{12}.\n\\]",
+      "hint": "Condition on \\(A'\\) means use the total of the not-\\(A\\) row as the denominator."
+    },
+    {
+      "id": "math-gaokao-313-q010",
+      "category": "Probability",
+      "concept": "Conditional Probability from a Contingency Table",
+      "learningObjective": "Compute \\(P(A\\mid B)\\) from a contingency table with large totals.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A table of 500 people records events \\(A\\) and \\(B\\). The counts are: \\(A\\) and \\(B\\), 60; \\(A\\) and not \\(B\\), 140; not \\(A\\) and \\(B\\), 90; not \\(A\\) and not \\(B\\), 210. Find \\(P(A\\mid B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.60\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.40\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total for \\(B\\) is\n\\[\n60+90=150.\n\\]\nAmong those in \\(B\\), \\(60\\) are in \\(A\\). Therefore,\n\\[\nP(A\\mid B)=\\frac{60}{150}=0.40.\n\\]",
+      "hint": "Condition on \\(B\\) means divide the joint count by the total count for \\(B\\)."
+    }
+  ]
+}

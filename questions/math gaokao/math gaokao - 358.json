@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-358",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 358",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-358-q001",
+      "category": "Combinatorics",
+      "concept": "Two-Set Inclusion-Exclusion",
+      "learningObjective": "Use the inclusion-exclusion principle to count the union of two sets.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "In a class of \\(40\\) students, \\(25\\) like mathematics, \\(20\\) like physics, and \\(10\\) like both subjects. How many students like at least one of the two subjects?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(35\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(45\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By inclusion-exclusion, the number who like at least one subject is \\(25+20-10=35\\). The \\(10\\) students who like both were counted twice, so they must be subtracted once.",
+      "hint": "Count the sum of the two groups, then correct for those counted twice."
+    },
+    {
+      "id": "math-gaokao-358-q002",
+      "category": "Combinatorics",
+      "concept": "Inclusion-Exclusion with Divisibility",
+      "learningObjective": "Count integers divisible by at least one of two numbers using floor divisions and inclusion-exclusion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many integers from \\(1\\) to \\(100\\) are divisible by \\(3\\) or \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(47\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(53\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiples of \\(3\\): \\(\\left\\lfloor \\frac{100}{3} \\right\\rfloor=33\\). Multiples of \\(5\\): \\(\\left\\lfloor \\frac{100}{5} \\right\\rfloor=20\\). Multiples of both \\(3\\) and \\(5\\), i.e. multiples of \\(15\\): \\(\\left\\lfloor \\frac{100}{15} \\right\\rfloor=6\\). By inclusion-exclusion, the count is \\(33+20-6=47\\).",
+      "hint": "Count multiples of each number, then subtract multiples of their least common multiple."
+    },
+    {
+      "id": "math-gaokao-358-q003",
+      "category": "Combinatorics",
+      "concept": "Inclusion-Exclusion with a Complement Condition",
+      "learningObjective": "Count integers satisfying at least one of two divisibility conditions while excluding those satisfying the common intersection condition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many positive integers not exceeding \\(200\\) are divisible by \\(2\\) or \\(3\\) but not by \\(6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(133\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(100\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiples of \\(2\\): \\(\\left\\lfloor \\frac{200}{2} \\right\\rfloor=100\\). Multiples of \\(3\\): \\(\\left\\lfloor \\frac{200}{3} \\right\\rfloor=66\\). Multiples of both \\(2\\) and \\(3\\), i.e. multiples of \\(6\\): \\(\\left\\lfloor \\frac{200}{6} \\right\\rfloor=33\\). The number divisible by \\(2\\) or \\(3\\) is \\(100+66-33=133\\). Excluding those also divisible by \\(6\\) gives \\(133-33=100\\).",
+      "hint": "First count the union of the two divisibility sets, then remove the intersection."
+    },
+    {
+      "id": "math-gaokao-358-q004",
+      "category": "Combinatorics",
+      "concept": "Three-Set Inclusion-Exclusion",
+      "learningObjective": "Apply the three-set inclusion-exclusion formula to find the number of elements outside the union.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In a survey of \\(100\\) people, \\(60\\) read newspaper \\(A\\), \\(50\\) read newspaper \\(B\\), \\(40\\) read newspaper \\(C\\), \\(25\\) read both \\(A\\) and \\(B\\), \\(20\\) read both \\(B\\) and \\(C\\), \\(15\\) read both \\(A\\) and \\(C\\), and \\(10\\) read all three. How many read none of the three newspapers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The union is \\(60+50+40-(25+20+15)+10=150-60+10=100\\). Thus all \\(100\\) people read at least one newspaper, so the number who read none is \\(100-100=0\\).",
+      "hint": "Use the three-set inclusion-exclusion formula before subtracting from the total."
+    },
+    {
+      "id": "math-gaokao-358-q005",
+      "category": "Combinatorics",
+      "concept": "Inclusion-Exclusion in Permutations",
+      "learningObjective": "Count permutations avoiding two specified forbidden positions using inclusion-exclusion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many permutations of the digits \\(1,2,3,4,5\\) have neither \\(1\\) in the first position nor \\(2\\) in the second position?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(78\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(72\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(5!=120\\) total permutations. Let \\(E_1\\) be the event that \\(1\\) is first: \\(4!=24\\). Let \\(E_2\\) be the event that \\(2\\) is second: \\(4!=24\\). If both occur, \\(3!=6\\). By inclusion-exclusion, the number avoiding both is \\(120-24-24+6=78\\).",
+      "hint": "Subtract the cases where each forbidden condition occurs, then add back the overlap."
+    },
+    {
+      "id": "math-gaokao-358-q006",
+      "category": "Combinatorics",
+      "concept": "Three-Set Inclusion-Exclusion for Complements",
+      "learningObjective": "Count numbers avoiding divisibility by three given integers.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many integers from \\(1\\) to \\(1000\\) are not divisible by \\(2\\), \\(3\\), or \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(266\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(299\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(A,B,C\\) be the sets of multiples of \\(2,3,5\\). Then \\(|A|=500\\), \\(|B|=333\\), \\(|C|=200\\). Pairwise intersections are \\(|A\\cap B|=166\\), \\(|A\\cap C|=100\\), and \\(|B\\cap C|=66\\). The triple intersection is \\(|A\\cap B\\cap C|=33\\). The union is \\(500+333+200-(166+100+66)+33=734\\). Therefore the number not divisible by any of \\(2,3,5\\) is \\(1000-734=266\\).",
+      "hint": "Count the union of the three divisibility sets, then subtract from \\(1000\\)."
+    },
+    {
+      "id": "math-gaokao-358-q007",
+      "category": "Combinatorics",
+      "concept": "Inclusion-Exclusion for Onto Functions",
+      "learningObjective": "Count surjective functions between finite sets by excluding missing codomain elements.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How many onto functions are there from a set with \\(4\\) elements to a set with \\(3\\) elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(45\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(3^4=81\\) total functions. If one chosen codomain element is missing, the function maps into the remaining \\(2\\) elements: \\(2^4=16\\) functions for each of \\(3\\) choices. Subtract \\(3\\cdot16=48\\). If two chosen codomain elements are missing, the function maps into the remaining \\(1\\) element: \\(1^4=1\\) function for each of \\(\\binom{3}{2}=3\\) choices. Add back \\(3\\). Thus the number of onto functions is \\(81-48+3=36\\).",
+      "hint": "Start with all functions and exclude those whose image misses at least one element of the codomain."
+    },
+    {
+      "id": "math-gaokao-358-q008",
+      "category": "Combinatorics",
+      "concept": "Derangements via Inclusion-Exclusion",
+      "learningObjective": "Count permutations with no fixed points using inclusion-exclusion.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many permutations of the set \\(\\{1,2,3,4\\}\\) have no element in its original position?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(4!=24\\) total permutations. Let \\(E_i\\) be the event that \\(i\\) stays fixed. Single fixed points: \\(\\binom{4}{1}3!=24\\). Two fixed points: \\(\\binom{4}{2}2!=12\\). Three fixed points: \\(\\binom{4}{3}1!=4\\). All four fixed: \\(1\\). By inclusion-exclusion, the number with no fixed points is \\(24-24+12-4+1=9\\).",
+      "hint": "Use inclusion-exclusion on the events that a specified element remains fixed."
+    },
+    {
+      "id": "math-gaokao-358-q009",
+      "category": "Combinatorics",
+      "concept": "Counting Elements in Exactly Two Sets",
+      "learningObjective": "Use inclusion-exclusion to count numbers belonging to exactly two of three divisibility sets.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How many integers from \\(1\\) to \\(1000\\) are divisible by exactly two of \\(2\\), \\(3\\), and \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(299\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(233\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiples of both \\(2\\) and \\(3\\): \\(\\left\\lfloor \\frac{1000}{6} \\right\\rfloor=166\\). Multiples of both \\(2\\) and \\(5\\): \\(\\left\\lfloor \\frac{1000}{10} \\right\\rfloor=100\\). Multiples of both \\(3\\) and \\(5\\): \\(\\left\\lfloor \\frac{1000}{15} \\right\\rfloor=66\\). Multiples of all three: \\(\\left\\lfloor \\frac{1000}{30} \\right\\rfloor=33\\). The sum of pairwise intersections is \\(166+100+66=332\\). Each number divisible by all three is counted in all three pairwise intersections, so subtract \\(3\\cdot33=99\\). Thus the count is \\(332-99=233\\).",
+      "hint": "Add the three pairwise intersection counts, then remove the overcount from numbers lying in all three sets."
+    },
+    {
+      "id": "math-gaokao-358-q010",
+      "category": "Combinatorics",
+      "concept": "Inclusion-Exclusion with Multiple Forbidden Positions",
+      "learningObjective": "Count permutations avoiding three specified forbidden positions using inclusion-exclusion.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many permutations of the set \\(\\{1,2,3,4,5,6\\}\\) have \\(1\\) not in the first position, \\(2\\) not in the second position, and \\(3\\) not in the third position?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(432\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(426\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(6!=720\\) total permutations. Let \\(E_1,E_2,E_3\\) be the events that \\(1,2,3\\) are in the first, second, and third positions respectively. Each single event fixes one position: \\(5!=120\\), so the sum is \\(3\\cdot120=360\\). Each pair fixes two positions: \\(4!=24\\), and there are \\(\\binom{3}{2}=3\\) pairs, giving \\(72\\). All three occur in \\(3!=6\\) permutations. By inclusion-exclusion, the number avoiding all three is \\(720-360+72-6=426\\).",
+      "hint": "Use inclusion-exclusion on the three forbidden events, counting permutations that fix one, two, or three specified positions."
+    }
+  ]
+}

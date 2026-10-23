@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-392",
+  "category": "Comprehensive Mathematics",
+  "title": "392. Geometry, Spatial Thinking & Measurement: Visualizing Orthographic Projections",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-392-q001",
+      "category": "Geometry",
+      "concept": "Point projection onto the horizontal coordinate plane",
+      "learningObjective": "Remove the perpendicular coordinate in an orthographic projection.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the orthographic projection of \\((2,-3,5)\\) onto the \\(xy\\)-plane, written in three-dimensional coordinates?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,-3,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,0,5)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Projection onto the \\(xy\\)-plane keeps the first two coordinates and sets the third to zero, giving \\((2,-3,0)\\).",
+      "hint": "Identify the coordinate perpendicular to the target plane."
+    },
+    {
+      "id": "dynanca-392-q002",
+      "category": "Geometry",
+      "concept": "Point projection onto the vertical coordinate plane",
+      "learningObjective": "Preserve the two coordinates of the target plane.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the orthographic projection of \\((-4,6,2)\\) onto the \\(yz\\)-plane, written in three-dimensional coordinates?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0,6,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-4,6,0)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Projection onto the \\(yz\\)-plane sets the first coordinate to zero and keeps the others, giving \\((0,6,2)\\).",
+      "hint": "The target plane contains points with one coordinate fixed at zero."
+    },
+    {
+      "id": "dynanca-392-q003",
+      "category": "Geometry",
+      "concept": "Top view of a rectangular box",
+      "learningObjective": "Identify the dimensions retained in a top orthographic view.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A solid box occupies \\(0\\le x\\le4\\), \\(0\\le y\\le3\\), and \\(0\\le z\\le2\\). What is its filled orthographic projection onto the \\(xy\\)-plane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A rectangle \\(4\\) by \\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "A rectangle \\(4\\) by \\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Projection removes the height coordinate. The retained ranges are \\(0\\le x\\le4\\) and \\(0\\le y\\le3\\), giving a \\(4\\)-by-\\(3\\) rectangle.",
+      "hint": "Select the two directions lying in the viewing plane."
+    },
+    {
+      "id": "dynanca-392-q004",
+      "category": "Geometry",
+      "concept": "Front view of a rectangular box",
+      "learningObjective": "Determine an orthographic rectangle in a vertical coordinate plane.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A solid box occupies \\(0\\le x\\le5\\), \\(0\\le y\\le2\\), and \\(0\\le z\\le7\\). What is its filled orthographic projection onto the \\(xz\\)-plane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A rectangle \\(5\\) by \\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "A rectangle \\(2\\) by \\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The projection keeps the horizontal range \\(0\\) to \\(5\\) and vertical range \\(0\\) to \\(7\\), so it is a \\(5\\)-by-\\(7\\) rectangle.",
+      "hint": "Retain the first and third coordinate ranges."
+    },
+    {
+      "id": "dynanca-392-q005",
+      "category": "Geometry",
+      "concept": "Orthographic silhouette of a solid sphere",
+      "learningObjective": "Identify the projected disk and its radius.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A solid sphere is centered at the origin and has radius \\(3\\). What is its filled orthographic projection onto the \\(xy\\)-plane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A disk of radius \\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "A disk of radius \\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every projected point satisfies \\(x^2+y^2\\le9\\), and every such point occurs with \\(z=0\\). The projection is a disk of radius \\(3\\).",
+      "hint": "A perpendicular view preserves the sphere's maximum horizontal radius."
+    },
+    {
+      "id": "dynanca-392-q006",
+      "category": "Geometry",
+      "concept": "Axial view of a solid cylinder",
+      "learningObjective": "Distinguish a cylinder's axial projection from its side view.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "A solid right circular cylinder has axis along the \\(z\\)-axis, radius \\(2\\), and height \\(9\\). What is its filled orthographic projection onto the \\(xy\\)-plane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A disk of radius \\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "A rectangle \\(4\\) by \\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Projection along the axis removes the height and retains the circular base footprint. The image is a disk of radius \\(2\\).",
+      "hint": "Compare the viewing direction with the cylinder axis."
+    },
+    {
+      "id": "dynanca-392-q007",
+      "category": "Geometry",
+      "concept": "Side projection of a right cone",
+      "learningObjective": "Recover a cone silhouette from its base and apex coordinates.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A solid right circular cone has base disk \\(x^2+y^2\\le16\\) in \\(z=0\\) and apex \\((0,0,6)\\). What is its orthographic projection onto the \\(xz\\)-plane, using coordinate pairs \\((x,z)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The filled triangle with vertices \\((-4,0),(4,0),(0,6)\\)"
+        },
+        {
+          "label": "B",
+          "text": "The filled rectangle with vertices \\((-4,0),(4,0),(4,6),(-4,6)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "At height \\(z\\), the cone radius is \\(4\\left(1-\\frac{z}{6}\\right)\\). The projected horizontal interval shrinks linearly to the apex, producing the stated triangle.",
+      "hint": "Determine how the horizontal extent changes with height."
+    },
+    {
+      "id": "dynanca-392-q008",
+      "category": "Geometry",
+      "concept": "Projection of a viewing-direction segment",
+      "learningObjective": "Recognize when a spatial segment projects to a point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The segment from \\((1,2,0)\\) to \\((1,2,8)\\) is projected orthographically onto the \\(xy\\)-plane. What is its image?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The single point \\((1,2,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "A segment of length \\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every point on the segment has the same first two coordinates. Removing the third coordinate maps the whole segment to \\((1,2,0)\\).",
+      "hint": "Check whether the segment varies in any coordinate retained by the projection."
+    },
+    {
+      "id": "dynanca-392-q009",
+      "category": "Geometry",
+      "concept": "Top view of stacked cubes",
+      "learningObjective": "Count distinct projected footprints rather than stacked cubes.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A unit cube at \\((i,j,k)\\) occupies \\([i,i+1]\\times[j,j+1]\\times[k,k+1]\\). Four cubes are at \\((0,0,0),(0,0,1),(1,0,0),(1,1,0)\\). What is the area of their combined orthographic projection onto the \\(xy\\)-plane?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\) square units"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\) square units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first two cubes share the same projected unit square. The other two give distinct unit squares at \\((1,0)\\) and \\((1,1)\\). The union has area \\(3\\).",
+      "hint": "Count distinct horizontal footprints, allowing stacked cubes to overlap in projection."
+    },
+    {
+      "id": "dynanca-392-q010",
+      "category": "Geometry",
+      "concept": "Limits of orthographic extent data",
+      "learningObjective": "Recognize that view extents alone do not determine a solid's volume.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Only maximum extents are given: the \\(xz\\)-view has width \\(6\\) and height \\(4\\), the \\(yz\\)-view has depth \\(3\\) and height \\(4\\), and the \\(xy\\)-view has width \\(6\\) and depth \\(3\\). No outlines or interior structure are specified. Which conclusion follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The volume is not uniquely determined."
+        },
+        {
+          "label": "B",
+          "text": "The volume must be \\(72\\) cubic units."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A \\(6\\)-by-\\(3\\)-by-\\(4\\) box has volume \\(72\\). A pyramid with the same rectangular base and height has the same maximum extents but volume \\(24\\). Extents alone therefore do not fix volume.",
+      "hint": "Consider two different shapes with the same bounding dimensions."
+    }
+  ]
+}

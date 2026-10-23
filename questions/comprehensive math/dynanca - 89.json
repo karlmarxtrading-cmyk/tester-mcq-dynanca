@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-89",
+  "category": "Comprehensive Mathematics",
+  "title": "89. Numeracy & Number Systems: Floating-Point Representation of Simple Fractions",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-89-q001",
+      "category": "Numeracy & Number Systems",
+      "concept": "Finite Expansion and Floating-Point Precision",
+      "learningObjective": "Distinguish terminating binary expansions from sufficient floating-point precision.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A binary floating-point format has enough significand bits and exponent range for every finite expansion considered here. Which fraction can it represent exactly?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{7}{32}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2}{5}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The reduced denominator \\(32=2^5\\) gives a finite binary expansion, so the stated format can represent \\(\\frac{7}{32}\\) exactly. The reduced denominator \\(5\\) contains an odd prime factor, so \\(\\frac{2}{5}\\) repeats in binary and cannot be stored exactly with finitely many significand bits.",
+      "hint": "Reduce the fractions and inspect their denominators."
+    },
+    {
+      "id": "dynanca-89-q002",
+      "category": "Numeracy & Number Systems",
+      "concept": "Nonterminating Binary Expansions",
+      "learningObjective": "Identify a fraction that cannot be represented exactly by a finite binary significand.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A binary floating-point format has enough significand bits and exponent range for every finite expansion considered here. Which fraction cannot be represented exactly?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{2}{7}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{15}{32}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The denominator \\(7\\) of the reduced fraction \\(\\frac{2}{7}\\) is not a power of two, so its expansion repeats. The denominator \\(32\\) of \\(\\frac{15}{32}\\) is a power of two, so the stated format stores it exactly.",
+      "hint": "Check the reduced denominator for prime factors other than two."
+    },
+    {
+      "id": "dynanca-89-q003",
+      "category": "Numeracy & Number Systems",
+      "concept": "Normalized Binary Significand",
+      "learningObjective": "Normalize a finite binary fraction for floating-point representation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the normalized binary form of \\(\\frac{11}{16}\\), using a significand \\(s\\) with \\(1\\le s<2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1.011_2\\times 2^{-2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1.011_2\\times 2^{-1}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "We have \\(\\frac{11}{16}=0.1011_2\\). Moving the binary point one place right gives significand \\(1.011_2\\), so the compensating factor is \\(2^{-1}\\). The alternative shifts the value down by one additional power of two and represents \\(\\frac{11}{32}\\).",
+      "hint": "First write the binary fraction, then move the point so that one leading digit remains."
+    },
+    {
+      "id": "dynanca-89-q004",
+      "category": "Numeracy & Number Systems",
+      "concept": "Exact Decimal Values in Binary Floating Point",
+      "learningObjective": "Determine which decimal value is exactly representable in binary floating point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which value is represented exactly in a binary floating-point format with at least three significant binary digits and an exponent range containing \\(-2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.375\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The value \\(0.375=\\frac{3}{8}=0.011_2=1.1_2\\times 2^{-2}\\) fits within the stated precision and exponent range. The value \\(0.2=\\frac{1}{5}\\) has a repeating binary expansion, so it cannot be represented exactly.",
+      "hint": "Write each decimal as a reduced fraction, then inspect the binary expansion."
+    },
+    {
+      "id": "dynanca-89-q005",
+      "category": "Numeracy & Number Systems",
+      "concept": "IEEE 754 Single-Precision Fraction Bits",
+      "learningObjective": "Identify the number of stored fraction bits in IEEE 754 single-precision floating point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "In IEEE 754 single-precision floating point, how many bits are stored for the fractional part of the significand?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(23\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "IEEE 754 single precision uses \\(32\\) bits total: \\(1\\) sign bit, \\(8\\) exponent bits, and \\(23\\) fraction bits. The leading \\(1\\) of the significand is implicit for normal numbers, so \\(23\\) bits are stored for the fractional part. The alternative \\(24\\) counts the implicit leading bit as well; that bit is not stored in the fraction field of a normal number.",
+      "hint": "Recall the standard division of single-precision bits into sign, exponent, and fraction fields."
+    },
+    {
+      "id": "dynanca-89-q006",
+      "category": "Numeracy & Number Systems",
+      "concept": "Dyadic Fractions with Sufficient Precision",
+      "learningObjective": "Check exact storage using both a terminating expansion and adequate precision.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A binary floating-point format has at least five significant binary digits and enough exponent range for these fractions. Which value is stored exactly?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{12}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{21}{32}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expansion \\(\\frac{21}{32}=0.10101_2=1.0101_2\\times 2^{-1}\\) needs five significant bits and fits the stated format. The reduced denominator of \\(\\frac{1}{12}\\) contains \\(3\\), so that expansion does not terminate.",
+      "hint": "Inspect the reduced denominator and the number of significant binary digits."
+    },
+    {
+      "id": "dynanca-89-q007",
+      "category": "Numeracy & Number Systems",
+      "concept": "Reading a Normalized Floating-Point Value",
+      "learningObjective": "Evaluate a normalized binary significand and its exponent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What fraction is represented by \\(1.101_2\\times 2^{-2}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{13}{32}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{13}{16}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The significand is \\(1+\\frac{1}{2}+\\frac{1}{8}=\\frac{13}{8}\\). Multiplying by \\(2^{-2}=\\frac{1}{4}\\) gives \\(\\frac{13}{32}\\). The alternative applies \\(2^{-1}\\) instead of the displayed exponent.",
+      "hint": "Evaluate the significand before applying the power of two."
+    },
+    {
+      "id": "dynanca-89-q008",
+      "category": "Numeracy & Number Systems",
+      "concept": "Precision Needed for an Exact Binary Fraction",
+      "learningObjective": "Count significant binary digits in a normalized dyadic fraction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is the minimum number of significant binary digits, including the leading \\(1\\), needed to represent \\(\\frac{23}{32}\\) exactly when the exponent range is sufficient?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The fraction is \\(0.10111_2=1.0111_2\\times 2^{-1}\\). Counting the leading one and four following bits gives five significant digits. Four digits would omit the final nonzero bit and change the value.",
+      "hint": "Normalize the binary expansion and count through its last nonzero bit."
+    },
+    {
+      "id": "dynanca-89-q009",
+      "category": "Numeracy & Number Systems",
+      "concept": "Finite Expansion Beyond Available Precision",
+      "learningObjective": "Explain why termination alone does not guarantee exact storage.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A normalized binary floating-point format stores exactly four significant binary digits, including the leading \\(1\\), and has sufficient exponent range. Can it store \\(\\frac{19}{32}\\) exactly?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because its denominator is a power of two."
+        },
+        {
+          "label": "B",
+          "text": "No, because its normalized significand requires five significant bits."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The binary expansion is \\(0.10011_2=1.0011_2\\times 2^{-1}\\). Its final nonzero bit is the fifth significant bit, so a four-bit significand cannot retain the exact value. The alternative checks termination but overlooks available precision.",
+      "hint": "Compare the normalized expansion with the stated significand length."
+    },
+    {
+      "id": "dynanca-89-q010",
+      "category": "Numeracy & Number Systems",
+      "concept": "Fractions Exactly Representable at a Fixed Precision",
+      "learningObjective": "Apply both the dyadic-denominator and significand-precision conditions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A binary floating-point format stores four significant binary digits, including the leading \\(1\\), and has sufficient exponent range. Which list contains only exactly representable values?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{8}\\), \\(\\frac{7}{16}\\), \\(\\frac{17}{32}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{8}\\), \\(\\frac{7}{16}\\), \\(\\frac{15}{32}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The list \\(\\frac{3}{8}\\), \\(\\frac{7}{16}\\), \\(\\frac{15}{32}\\) normalizes to \\(1.1_2\\times 2^{-2}\\), \\(1.11_2\\times 2^{-2}\\), and \\(1.111_2\\times 2^{-2}\\), requiring two, three, and four bits. In the other list, \\(\\frac{17}{32}=1.0001_2\\times 2^{-1}\\) needs five bits, so not every value fits exactly.",
+      "hint": "Normalize each expansion and check its precision requirement."
+    }
+  ]
+}

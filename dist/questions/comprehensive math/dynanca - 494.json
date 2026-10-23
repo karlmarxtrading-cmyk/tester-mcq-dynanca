@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-494",
+  "category": "Comprehensive Mathematics",
+  "title": "494. Sets, Logic, Reasoning & Proof: Logical Equivalence by Truth Tables",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-494-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of logical equivalence",
+      "learningObjective": "State when two compound propositions are logically equivalent.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "When are two compound propositions logically equivalent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When they have the same truth value in every row of the truth table"
+        },
+        {
+          "label": "B",
+          "text": "When they have the same truth value in at least one row of the truth table"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Logical equivalence means that the two propositions agree for every assignment of truth values, so their truth table columns are identical. Agreeing in only some rows is not enough: \\(p\\land q\\) and \\(p\\lor q\\) agree in two rows but are not equivalent.",
+      "hint": "Compare the complete columns, not just a single row."
+    },
+    {
+      "id": "dynanca-494-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A proposition equivalent to a variable",
+      "learningObjective": "Use a truth table to identify a proposition equivalent to a single variable.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Which proposition is logically equivalent to \\(p\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\land p\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\land\\neg p\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "When \\(p\\) is true, \\(p\\land p\\) is true; when \\(p\\) is false, \\(p\\land p\\) is false. So \\(p\\land p\\) has the same truth value as \\(p\\) in both rows. The proposition \\(p\\land\\neg p\\) is false in both rows, so it differs from \\(p\\) when \\(p\\) is true.",
+      "hint": "Fill in the two rows for each candidate and compare with the column of \\(p\\)."
+    },
+    {
+      "id": "dynanca-494-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A conditional and its converse",
+      "learningObjective": "Use a truth table row to show that two propositions are not equivalent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Are \\(p\\implies q\\) and \\(q\\implies p\\) logically equivalent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; when \\(p\\) is true and \\(q\\) is false, the first is false and the second is true."
+        },
+        {
+          "label": "B",
+          "text": "Yes; both are false only when \\(p\\) and \\(q\\) have different truth values."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The column of \\(p\\implies q\\) is \\(T,F,T,T\\) and the column of \\(q\\implies p\\) is \\(T,T,F,T\\) for the rows \\((T,T)\\), \\((T,F)\\), \\((F,T)\\), \\((F,F)\\). They differ in the second and third rows, so the propositions are not equivalent. Each conditional is false in only one row, and the rows are different.",
+      "hint": "Evaluate both propositions in the row with \\(p\\) true and \\(q\\) false."
+    },
+    {
+      "id": "dynanca-494-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Distributive law",
+      "learningObjective": "Identify an equivalence obtained by distributing a conjunction over a disjunction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which proposition is logically equivalent to \\(p\\land(q\\lor r)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((p\\land q)\\lor(p\\land r)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((p\\land q)\\lor r\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both \\(p\\land(q\\lor r)\\) and \\((p\\land q)\\lor(p\\land r)\\) are true exactly when \\(p\\) is true and at least one of \\(q\\), \\(r\\) is true; their eight-row columns agree. The proposition \\((p\\land q)\\lor r\\) differs: for \\(p\\) false and \\(r\\) true it is true, while \\(p\\land(q\\lor r)\\) is false.",
+      "hint": "Test the row with \\(p\\) false, \\(q\\) false, and \\(r\\) true."
+    },
+    {
+      "id": "dynanca-494-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Absorption law",
+      "learningObjective": "Use a truth table to simplify a disjunction that absorbs a conjunction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which proposition is logically equivalent to \\(p\\lor(p\\land q)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\land q\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If \\(p\\) is true, the disjunction is true. If \\(p\\) is false, both \\(p\\) and \\(p\\land q\\) are false, so the disjunction is false. Hence the column is \\(T,T,F,F\\), the same as the column of \\(p\\). The column of \\(p\\land q\\) is \\(T,F,F,F\\), which differs in the second row.",
+      "hint": "Compare the columns in the row with \\(p\\) true and \\(q\\) false."
+    },
+    {
+      "id": "dynanca-494-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Number of rows to compare",
+      "learningObjective": "Determine how many rows must be checked to verify an equivalence in three variables.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Two compound propositions involve the variables \\(p\\), \\(q\\), and \\(r\\). How many rows of a truth table must be compared to verify that they are logically equivalent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Equivalence requires agreement for every assignment of truth values. With three variables there are \\(2^3=8\\) assignments, so all \\(8\\) rows must be compared. Checking one row per variable is not enough.",
+      "hint": "Count all possible assignments of truth values to three variables."
+    },
+    {
+      "id": "dynanca-494-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negating both sides of a biconditional",
+      "learningObjective": "Use truth tables to compare a biconditional with the biconditional of the negations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Are \\(p\\iff q\\) and \\(\\neg p\\iff\\neg q\\) logically equivalent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; both have the column \\(T,F,F,T\\) for the rows \\((T,T)\\), \\((T,F)\\), \\((F,T)\\), \\((F,F)\\)."
+        },
+        {
+          "label": "B",
+          "text": "No; negating both variables reverses every entry of the column."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A biconditional is true when its two sides have the same truth value. If \\(p\\) and \\(q\\) agree, then \\(\\neg p\\) and \\(\\neg q\\) agree, and if they differ, the negations differ. So the two biconditionals have identical columns, \\(T,F,F,T\\). Negating both variables does not reverse the column.",
+      "hint": "Compute the column of \\(\\neg p\\iff\\neg q\\) row by row."
+    },
+    {
+      "id": "dynanca-494-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "One differing row",
+      "learningObjective": "Recognise that a single differing row prevents logical equivalence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The truth table columns of two propositions agree in three of the four rows and differ in one row. Are the propositions logically equivalent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; a single row with different truth values is enough to show that they are not equivalent."
+        },
+        {
+          "label": "B",
+          "text": "Yes; agreeing in most rows is enough for logical equivalence."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Equivalence requires identical truth values in every row. One row in which the values differ gives an assignment for which one proposition is true and the other false, which proves non-equivalence. For example, \\(p\\implies q\\) and \\(q\\implies p\\) cannot be equivalent once the row \\((T,F)\\) is examined.",
+      "hint": "Recall that the definition of equivalence refers to all rows."
+    },
+    {
+      "id": "dynanca-494-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Nested conditionals",
+      "learningObjective": "Use a truth table to find an equivalent form of a nested conditional.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Which proposition is logically equivalent to \\(p\\implies(q\\implies r)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((p\\land q)\\implies r\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((p\\implies q)\\implies r\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The proposition \\(p\\implies(q\\implies r)\\) is false only when \\(p\\) is true and \\(q\\implies r\\) is false, that is, when \\(p\\) and \\(q\\) are true and \\(r\\) is false. The proposition \\((p\\land q)\\implies r\\) is false in exactly the same single row. The proposition \\((p\\implies q)\\implies r\\) is different: for \\(p\\), \\(q\\), \\(r\\) all false it is false, while the original is true.",
+      "hint": "Find the rows in which each proposition is false; test the row where all three variables are false."
+    },
+    {
+      "id": "dynanca-494-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Two conditionals with the same hypothesis",
+      "learningObjective": "Use a truth table to combine two conditionals with a common hypothesis.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Which proposition is logically equivalent to \\((p\\implies q)\\land(p\\implies r)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\implies(q\\land r)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\implies(q\\lor r)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If \\(p\\) is false, both sides are true. If \\(p\\) is true, \\((p\\implies q)\\land(p\\implies r)\\) requires \\(q\\) and \\(r\\) to be true, which is exactly what \\(p\\implies(q\\land r)\\) requires. So the columns agree in all eight rows. The proposition \\(p\\implies(q\\lor r)\\) is weaker: for \\(p\\) true, \\(q\\) true, \\(r\\) false it is true, while the original is false.",
+      "hint": "Split into the cases \\(p\\) false and \\(p\\) true."
+    }
+  ]
+}

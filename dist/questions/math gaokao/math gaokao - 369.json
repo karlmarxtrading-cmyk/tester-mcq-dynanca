@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-369",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 369",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-369-q001",
+      "category": "Combinatorics",
+      "concept": "Sum of Binomial Coefficients in a Row",
+      "learningObjective": "Apply the identity \\(\\sum_{k=0}^{n}\\binom{n}{k}=2^n\\) to evaluate a row sum.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Using the identity \\(\\sum_{k=0}^{n}\\binom{n}{k}=2^n\\), evaluate \\(\\sum_{k=0}^{3}\\binom{3}{k}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the identity, with \\(n=3\\),\n\\[\n\\sum_{k=0}^{3}\\binom{3}{k}=2^3=8.\n\\]\nThus the correct option is A.",
+      "hint": "Substitute \\(n=3\\) into the identity for the sum of a row of Pascal's triangle."
+    },
+    {
+      "id": "math-gaokao-369-q002",
+      "category": "Combinatorics",
+      "concept": "Pascal's Identity",
+      "learningObjective": "Evaluate a binomial coefficient using Pascal's identity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Using Pascal's identity \\(\\binom{n}{k}=\\binom{n-1}{k-1}+\\binom{n-1}{k}\\), evaluate \\(\\binom{10}{4}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(210\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Pascal's identity gives\n\\[\n\\binom{10}{4}=\\binom{9}{3}+\\binom{9}{4}=84+126=210.\n\\]\nThe distractor \\(120\\) is \\(\\binom{10}{3}\\), with the wrong lower index.",
+      "hint": "Use the two neighboring entries in the row immediately above the requested binomial coefficient."
+    },
+    {
+      "id": "math-gaokao-369-q003",
+      "category": "Combinatorics",
+      "concept": "Hockey-Stick Identity",
+      "learningObjective": "Apply the hockey-stick identity to evaluate a sum of binomial coefficients.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Using the hockey-stick identity \\(\\sum_{k=r}^{n}\\binom{k}{r}=\\binom{n+1}{r+1}\\), evaluate \\(\\sum_{k=2}^{5}\\binom{k}{2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "With \\(r=2\\) and \\(n=5\\),\n\\[\n\\sum_{k=2}^{5}\\binom{k}{2}=\\binom{6}{3}.\n\\]\nThen\n\\[\n\\binom{6}{3}=\\frac{6\\cdot 5\\cdot 4}{3\\cdot 2\\cdot 1}=20.\n\\]\nThus the correct option is B.",
+      "hint": "Use the hockey-stick identity with \\(r=2\\) and \\(n=5\\)."
+    },
+    {
+      "id": "math-gaokao-369-q004",
+      "category": "Combinatorics",
+      "concept": "Vandermonde's Identity",
+      "learningObjective": "Apply Vandermonde's identity to evaluate a convolution of binomial coefficients.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Using Vandermonde's identity \\(\\sum_{k=0}^{r}\\binom{m}{k}\\binom{n}{r-k}=\\binom{m+n}{r}\\), evaluate \\(\\sum_{k=0}^{3}\\binom{3}{k}\\binom{4}{3-k}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(35\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By Vandermonde's identity with \\(m=3\\), \\(n=4\\), and \\(r=3\\),\n\\[\n\\sum_{k=0}^{3}\\binom{3}{k}\\binom{4}{3-k}=\\binom{7}{3}.\n\\]\nThen\n\\[\n\\binom{7}{3}=\\frac{7\\cdot 6\\cdot 5}{3\\cdot 2\\cdot 1}=35.\n\\]\nThus the correct option is B.",
+      "hint": "Use Vandermonde's identity with \\(m=3\\), \\(n=4\\), and \\(r=3\\)."
+    },
+    {
+      "id": "math-gaokao-369-q005",
+      "category": "Combinatorics",
+      "concept": "Weighted Sum of Binomial Coefficients",
+      "learningObjective": "Apply the identity \\(\\sum_{k=0}^{n}k\\binom{n}{k}=n2^{n-1}\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Using the identity \\(\\sum_{k=0}^{n}k\\binom{n}{k}=n2^{n-1}\\), evaluate \\(\\sum_{k=1}^{8}k\\binom{8}{k}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1024\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2048\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The term with \\(k=0\\) contributes zero. With \\(n=8\\), the identity gives\n\\[\n\\sum_{k=1}^{8}k\\binom{8}{k}=8\\cdot2^7=1024.\n\\]\nThe distractor \\(2048\\) uses \\(2^8\\) instead of \\(2^7\\).",
+      "hint": "Match the upper summation limit to \\(n\\) in the supplied identity, and check the exponent carefully."
+    },
+    {
+      "id": "math-gaokao-369-q006",
+      "category": "Combinatorics",
+      "concept": "Sum of Squares of Binomial Coefficients",
+      "learningObjective": "Apply the identity \\(\\sum_{k=0}^{n}\\binom{n}{k}^2=\\binom{2n}{n}\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Using the identity \\(\\sum_{k=0}^{n}\\binom{n}{k}^2=\\binom{2n}{n}\\), evaluate \\(\\sum_{k=0}^{3}\\binom{3}{k}^2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(18\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the identity with \\(n=3\\),\n\\[\n\\sum_{k=0}^{3}\\binom{3}{k}^2=\\binom{6}{3}.\n\\]\nThen\n\\[\n\\binom{6}{3}=\\frac{6\\cdot 5\\cdot 4}{3\\cdot 2\\cdot 1}=20.\n\\]\nThus the correct option is B.",
+      "hint": "Use the identity for the sum of squares with \\(n=3\\)."
+    },
+    {
+      "id": "math-gaokao-369-q007",
+      "category": "Combinatorics",
+      "concept": "Alternating Sum of Binomial Coefficients",
+      "learningObjective": "Apply the identity \\(\\sum_{k=0}^{n}(-1)^k\\binom{n}{k}=0\\) for \\(n\\ge1\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Using the identity \\(\\sum_{k=0}^{n}(-1)^k\\binom{n}{k}=0\\) for \\(n\\ge1\\), evaluate \\(\\sum_{k=0}^{4}(-1)^k\\binom{4}{k}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the identity with \\(n=4\\),\n\\[\n\\sum_{k=0}^{4}(-1)^k\\binom{4}{k}=0.\n\\]\nThus the correct option is B.",
+      "hint": "Substitute \\(n=4\\) into the alternating-sum identity."
+    },
+    {
+      "id": "math-gaokao-369-q008",
+      "category": "Combinatorics",
+      "concept": "Binomial Theorem Evaluation",
+      "learningObjective": "Apply the binomial theorem \\(\\sum_{k=0}^{n}\\binom{n}{k}x^k=(1+x)^n\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Using the binomial theorem \\(\\sum_{k=0}^{n}\\binom{n}{k}x^k=(1+x)^n\\), evaluate \\(\\sum_{k=0}^{3}\\binom{3}{k}2^k\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(27\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(26\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the binomial theorem with \\(n=3\\) and \\(x=2\\),\n\\[\n\\begin{aligned}\n\\sum_{k=0}^{3}\\binom{3}{k}2^k&=(1+2)^3 \\\\\n&=3^3 \\\\\n&=27.\n\\end{aligned}\n\\]\nThus the correct option is A.",
+      "hint": "Substitute \\(n=3\\) and \\(x=2\\) into the binomial theorem."
+    },
+    {
+      "id": "math-gaokao-369-q009",
+      "category": "Combinatorics",
+      "concept": "Sum of Squares of Binomial Coefficients",
+      "learningObjective": "Apply the identity \\(\\sum_{k=0}^{n}\\binom{n}{k}^2=\\binom{2n}{n}\\) to a larger case.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Using the identity \\(\\sum_{k=0}^{n}\\binom{n}{k}^2=\\binom{2n}{n}\\), evaluate \\(\\sum_{k=0}^{5}\\binom{5}{k}^2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(252\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(210\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the identity with \\(n=5\\),\n\\[\n\\sum_{k=0}^{5}\\binom{5}{k}^2=\\binom{10}{5}.\n\\]\nThen\n\\[\n\\binom{10}{5}=\\frac{10\\cdot 9\\cdot 8\\cdot 7\\cdot 6}{5\\cdot 4\\cdot 3\\cdot 2\\cdot 1}=252.\n\\]\nThus the correct option is A.",
+      "hint": "Use the sum-of-squares identity with \\(n=5\\)."
+    },
+    {
+      "id": "math-gaokao-369-q010",
+      "category": "Combinatorics",
+      "concept": "Weighted Sum with Squares",
+      "learningObjective": "Apply the identity \\(\\sum_{k=0}^{n}k^2\\binom{n}{k}=n(n+1)2^{n-2}\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Using the identity \\(\\sum_{k=0}^{n}k^2\\binom{n}{k}=n(n+1)2^{n-2}\\), evaluate \\(\\sum_{k=0}^{4}k^2\\binom{4}{k}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(96\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(80\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the identity with \\(n=4\\),\n\\[\n\\begin{aligned}\n\\sum_{k=0}^{4}k^2\\binom{4}{k}&=4\\cdot 5\\cdot 2^{2} \\\\\n&=20\\cdot 4 \\\\\n&=80.\n\\end{aligned}\n\\]\nThus the correct option is B.",
+      "hint": "Substitute \\(n=4\\) into the identity for the weighted sum of squares."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-546",
+  "category": "Comprehensive Mathematics",
+  "title": "546. Discrete Mathematics, Counting & Graph Theory: Counting with Complementary Events",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-546-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting the complement",
+      "learningObjective": "Count the members of a group that have a property by subtracting those that do not.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a class of \\(40\\) students, \\(12\\) play no sport. How many students play at least one sport?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(28\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(52\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every student either plays at least one sport or plays none, and not both. So the number who play at least one sport is \\(40-12=28\\). Adding the two numbers has no meaning here, and \\(52\\) exceeds the size of the class.",
+      "hint": "The two groups together make up the whole class."
+    },
+    {
+      "id": "dynanca-546-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "At least one head",
+      "learningObjective": "Count outcomes with at least one success by subtracting the outcomes with none.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Three coins are tossed, giving \\(8\\) equally detailed outcomes such as HHT. In how many outcomes does at least one head appear?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The only outcome with no head is TTT. Subtracting it from the total gives \\(8-1=7\\). The number \\(6\\) would be obtained by also removing HHH, but that outcome does contain a head.",
+      "hint": "Count the outcomes with no head at all and subtract."
+    },
+    {
+      "id": "dynanca-546-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "At least one seven",
+      "learningObjective": "Count digit strings that contain a given digit at least once.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many of the \\(1000\\) strings \\(000,001,\\dots,999\\) contain the digit \\(7\\) at least once?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(271\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(300\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A string with no \\(7\\) has \\(9\\) choices in each position, so there are \\(9^3=729\\) of them. Therefore \\(1000-729=271\\) strings contain at least one \\(7\\). The number \\(300=3\\cdot 100\\) counts a string once for every position holding a \\(7\\), so strings with several sevens are counted more than once.",
+      "hint": "Count the strings that avoid the digit \\(7\\) completely."
+    },
+    {
+      "id": "dynanca-546-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "At least one six",
+      "learningObjective": "Count outcomes of two dice with at least one six.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Two dice, one red and one blue, are rolled. In how many of the \\(36\\) outcomes does at least one die show \\(6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(11\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Neither die shows \\(6\\) in \\(5\\cdot 5=25\\) outcomes, so at least one die shows \\(6\\) in \\(36-25=11\\) outcomes. Adding \\(6+6=12\\) counts the outcome \\((6,6)\\) twice.",
+      "hint": "Count the outcomes in which no die shows \\(6\\)."
+    },
+    {
+      "id": "dynanca-546-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Words containing a given letter",
+      "learningObjective": "Count words over a small alphabet that contain a given letter.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many four-letter strings over the alphabet \\(\\{A,B,C\\}\\) contain the letter \\(A\\) at least once?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(65\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(3^4=81\\) strings in all, and \\(2^4=16\\) of them use only \\(B\\) and \\(C\\). So \\(81-16=65\\) strings contain \\(A\\) at least once. The number \\(16\\) counts the complement, the strings without \\(A\\).",
+      "hint": "Subtract the strings that avoid \\(A\\) from all strings."
+    },
+    {
+      "id": "dynanca-546-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Numbers not divisible by seven",
+      "learningObjective": "Count the integers in a range that are not multiples of a given number.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many integers from \\(1\\) to \\(100\\) are not divisible by \\(7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(86\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(14\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The multiples of \\(7\\) up to \\(100\\) are \\(7,14,\\dots,98\\), which is \\(14\\) numbers. The others number \\(100-14=86\\). The value \\(14\\) answers the opposite question.",
+      "hint": "Count the multiples of \\(7\\) first."
+    },
+    {
+      "id": "dynanca-546-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A committee with at least one woman",
+      "learningObjective": "Count committees with at least one member of a given kind.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A committee of \\(3\\) is chosen from \\(5\\) men and \\(4\\) women. How many committees contain at least one woman?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(112\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(74\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(\\binom{9}{3}=84\\) committees in all, and \\(\\binom{5}{3}=10\\) of them consist of men only. So \\(84-10=74\\) contain at least one woman. The number \\(112=4\\cdot\\binom{8}{2}\\) comes from choosing one woman first and then two more people; it counts a committee with several women more than once.",
+      "hint": "Count the committees with no woman and subtract from all committees."
+    },
+    {
+      "id": "dynanca-546-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "At least one repeated letter",
+      "learningObjective": "Count strings with a repeated symbol by subtracting those with all symbols different.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many strings of \\(3\\) lowercase letters, chosen from \\(26\\) letters, contain at least one repeated letter?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1976\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15600\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(26^3=17576\\) strings in all. Those with three different letters number \\(26\\cdot 25\\cdot 24=15600\\). So \\(17576-15600=1976\\) strings have a repeated letter. The number \\(15600\\) counts the complement.",
+      "hint": "A string with no repeated letter has three different letters."
+    },
+    {
+      "id": "dynanca-546-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "At least two ones",
+      "learningObjective": "Count binary strings by subtracting two excluded cases.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many binary strings of length \\(6\\) contain at least two digits equal to \\(1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(57\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(58\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(2^6=64\\) strings. The strings to exclude are the one with no \\(1\\) and the \\(6\\) with exactly one \\(1\\). So the count is \\(64-1-6=57\\). The number \\(58\\) subtracts only the strings with exactly one \\(1\\) and forgets the all-zero string.",
+      "hint": "The complement of \"at least two\" is \"none or exactly one\"."
+    },
+    {
+      "id": "dynanca-546-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two people apart",
+      "learningObjective": "Count line arrangements in which two given people are not neighbours.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Six people, including Ana and Ben, stand in a row. In how many arrangements are Ana and Ben not next to each other?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(240\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(480\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(6!=720\\) arrangements in all. To count those with Ana and Ben together, treat them as one block: \\(5!\\) orders of the blocks times \\(2\\) orders inside the pair gives \\(240\\). So \\(720-240=480\\) arrangements keep them apart. The number \\(240\\) counts the arrangements in which they are neighbours.",
+      "hint": "Count the arrangements in which the two are neighbours by gluing them into one block."
+    }
+  ]
+}

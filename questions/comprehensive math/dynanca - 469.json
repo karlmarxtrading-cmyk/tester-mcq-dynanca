@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-469",
+  "category": "Comprehensive Mathematics",
+  "title": "469. Sets, Logic, Reasoning & Proof: Proper Subsets",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-469-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of a proper subset",
+      "learningObjective": "State the definition of a proper subset.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What does it mean for \\(A\\) to be a proper subset of \\(B\\), written \\(A\\subsetneq B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\subseteq B\\) and \\(A=B\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\subseteq B\\) and \\(A\\ne B\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A proper subset is a subset that is not the whole set: every element of \\(A\\) is in \\(B\\), and \\(B\\) has at least one element that is not in \\(A\\). If \\(A=B\\), then \\(A\\) is a subset of \\(B\\) but not a proper one.",
+      "hint": "The word \"proper\" excludes exactly one of the subsets of \\(B\\)."
+    },
+    {
+      "id": "dynanca-469-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Recognising a proper subset",
+      "learningObjective": "Decide which set is a proper subset of a given set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Which set is a proper subset of \\(\\{1,2,3\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1,3\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,2,3\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The set \\(\\{1,3\\}\\) is contained in \\(\\{1,2,3\\}\\) and is missing the element \\(2\\), so it is a proper subset. The set \\(\\{1,2,3\\}\\) is a subset of itself, but it is equal to the given set, so it is not a proper subset.",
+      "hint": "A proper subset must leave out at least one element of the larger set."
+    },
+    {
+      "id": "dynanca-469-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Number of proper subsets of a three-element set",
+      "learningObjective": "Count the proper subsets of a small set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many proper subsets does a set with \\(3\\) elements have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A set with \\(3\\) elements has \\(2^3=8\\) subsets in total. Exactly one of them, the set itself, is not proper. So there are \\(8-1=7\\) proper subsets. The empty set is counted among them.",
+      "hint": "Count all subsets, then remove the one that equals the whole set."
+    },
+    {
+      "id": "dynanca-469-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The empty set as a proper subset",
+      "learningObjective": "Decide whether the empty set is a proper subset of a non-empty set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Is \\(\\varnothing\\) a proper subset of \\(\\{1\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because \\(\\varnothing\\subseteq\\{1\\}\\) and \\(\\varnothing\\ne\\{1\\}\\)."
+        },
+        {
+          "label": "B",
+          "text": "No, because a proper subset must contain at least one element."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The empty set is a subset of every set, and it differs from \\(\\{1\\}\\), which has an element. Both conditions for a proper subset hold. The definition does not require a proper subset to be non-empty.",
+      "hint": "Check the two conditions in the definition of a proper subset."
+    },
+    {
+      "id": "dynanca-469-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Proper subsets of the empty set",
+      "learningObjective": "Decide whether the empty set has a proper subset.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "How many proper subsets does the empty set have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "None"
+        },
+        {
+          "label": "B",
+          "text": "One, namely \\(\\varnothing\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The only subset of \\(\\varnothing\\) is \\(\\varnothing\\) itself. A proper subset must be different from the set, so \\(\\varnothing\\) is not a proper subset of itself. Hence the empty set has no proper subsets.",
+      "hint": "List all subsets of \\(\\varnothing\\) and remove the set itself."
+    },
+    {
+      "id": "dynanca-469-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Number of proper subsets of a four-element set",
+      "learningObjective": "Apply the count of proper subsets to a larger set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many proper subsets does the set \\(\\{w,x,y,z\\}\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The set has \\(4\\) elements, so it has \\(2^4=16\\) subsets. Removing the set itself leaves \\(16-1=15\\) proper subsets.",
+      "hint": "Use \\(2^n-1\\) for a set with \\(n\\) elements."
+    },
+    {
+      "id": "dynanca-469-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Size of a proper subset",
+      "learningObjective": "Bound the cardinality of a proper subset of a finite set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The set \\(B\\) has \\(5\\) elements and \\(A\\subsetneq B\\). What is the largest possible number of elements of \\(A\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(A\\subseteq B\\) and \\(A\\ne B\\), at least one element of \\(B\\) is missing from \\(A\\). So \\(A\\) has at most \\(5-1=4\\) elements, and \\(4\\) is attained by removing exactly one element. A subset with all \\(5\\) elements would equal \\(B\\).",
+      "hint": "A proper subset of a finite set must omit at least one element."
+    },
+    {
+      "id": "dynanca-469-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Proper inclusion of number systems",
+      "learningObjective": "Decide which inclusion between number sets is proper.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which statement about proper subsets is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\mathbb{Z}\\subsetneq\\mathbb{Z}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\mathbb{Z}\\subsetneq\\mathbb{Q}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every integer is rational, and \\(\\frac{1}{2}\\) is rational but not an integer, so \\(\\mathbb{Z}\\) is a proper subset of \\(\\mathbb{Q}\\). No set is a proper subset of itself, because a proper subset must differ from the set.",
+      "hint": "For a proper inclusion, find an element of the larger set that is missing from the smaller one."
+    },
+    {
+      "id": "dynanca-469-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Non-empty proper subsets",
+      "learningObjective": "Count the subsets that are neither empty nor the whole set.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many non-empty proper subsets does a set with \\(4\\) elements have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(14\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(2^4=16\\) subsets. Two of them are excluded: the empty set, because the subsets must be non-empty, and the whole set, because they must be proper. That leaves \\(16-2=14\\).",
+      "hint": "Two particular subsets are excluded by the two conditions."
+    },
+    {
+      "id": "dynanca-469-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A chain of proper inclusions",
+      "learningObjective": "Reason about cardinalities along a chain of proper subsets.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Finite sets satisfy \\(A\\subsetneq B\\subsetneq C\\), and \\(A\\) has \\(2\\) elements. What is the smallest possible number of elements of \\(C\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each proper inclusion of finite sets adds at least one element. So \\(B\\) has at least \\(3\\) elements and \\(C\\) has at least \\(4\\). The value \\(4\\) is attained, for example with \\(A=\\{1,2\\}\\), \\(B=\\{1,2,3\\}\\), \\(C=\\{1,2,3,4\\}\\). With only \\(3\\) elements, \\(C\\) would have to equal \\(B\\).",
+      "hint": "Each strict inclusion requires at least one new element."
+    }
+  ]
+}

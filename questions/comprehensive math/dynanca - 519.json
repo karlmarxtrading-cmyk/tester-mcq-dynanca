@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-519",
+  "category": "Comprehensive Mathematics",
+  "title": "519. Sets, Logic, Reasoning & Proof: Minimal Counterexample Arguments",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-519-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The well-ordering principle",
+      "learningObjective": "State the principle on which minimal counterexample arguments rest.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which principle underlies arguments by minimal counterexample?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Every non-empty set of positive integers has a least element."
+        },
+        {
+          "label": "B",
+          "text": "Every non-empty set of positive integers has a greatest element."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The well-ordering principle guarantees that if a statement about positive integers has any counterexample, then it has a smallest one. A greatest element need not exist; the set of all positive integers has none.",
+      "hint": "Think about whether the set of all positive integers has a smallest element, and whether it has a largest."
+    },
+    {
+      "id": "dynanca-519-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Structure of the argument",
+      "learningObjective": "Describe the steps of an argument by minimal counterexample.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does an argument by minimal counterexample proceed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Suppose the statement fails for some positive integer, take the largest such integer, and derive a contradiction."
+        },
+        {
+          "label": "B",
+          "text": "Suppose the statement fails for some positive integer, take the smallest such integer, and derive a contradiction."
+        }
+      ],
+      "answer": "B",
+      "explanation": "If counterexamples exist, the well-ordering principle provides a smallest one. Its minimality is then used, typically to show that an even smaller counterexample would have to exist, which is a contradiction. A largest counterexample need not exist.",
+      "hint": "The argument relies on the element that the well-ordering principle guarantees."
+    },
+    {
+      "id": "dynanca-519-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Using minimality",
+      "learningObjective": "Explain how minimality is used in the proof that every integer at least two has a prime divisor.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(n\\) be the smallest integer \\(n\\ge 2\\) with no prime divisor. Then \\(n\\) is not prime, so \\(n=ab\\) with \\(1<a<n\\). Why does \\(a\\) have a prime divisor?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because \\(a\\) is a factor of \\(n\\), and factors are always prime."
+        },
+        {
+          "label": "B",
+          "text": "Because \\(2\\le a<n\\), and \\(n\\) is the smallest integer without a prime divisor."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(a\\) is smaller than the minimal counterexample \\(n\\) and at least \\(2\\), the statement holds for \\(a\\): it has a prime divisor \\(p\\). Then \\(p\\) divides \\(a\\) and \\(a\\) divides \\(n\\), so \\(p\\) divides \\(n\\), a contradiction. Factors need not be prime; for example \\(4\\) is a factor of \\(12\\).",
+      "hint": "Use the fact that every admissible number below the smallest counterexample satisfies the statement."
+    },
+    {
+      "id": "dynanca-519-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The number just below the smallest counterexample",
+      "learningObjective": "State what is known about the predecessor of a minimal counterexample.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A statement \\(P(n)\\) for integers \\(n\\ge 1\\) has been checked for \\(n=1\\). Suppose \\(m\\) is the smallest counterexample. What is known about \\(m-1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P(m-1)\\) is false."
+        },
+        {
+          "label": "B",
+          "text": "\\(m-1\\ge 1\\), and \\(P(m-1)\\) is true."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(P(1)\\) is true, \\(m\\ne 1\\), so \\(m\\ge 2\\) and \\(m-1\\ge 1\\). Because \\(m\\) is the smallest counterexample, the smaller number \\(m-1\\) is not a counterexample, so \\(P(m-1)\\) holds. This fact plays the role of the inductive hypothesis.",
+      "hint": "Every admissible number smaller than the least counterexample satisfies the statement."
+    },
+    {
+      "id": "dynanca-519-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A set without a least element",
+      "learningObjective": "Recognise a set of numbers to which the well-ordering principle does not apply.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which set has no least element?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The set of positive integers"
+        },
+        {
+          "label": "B",
+          "text": "The set of positive rational numbers"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For any positive rational number \\(q\\), the number \\(\\frac{q}{2}\\) is a smaller positive rational, so there is no least one. The positive integers have the least element \\(1\\). This is why minimal counterexample arguments work for integers but not directly for rational numbers.",
+      "hint": "For a proposed least element, try to find a smaller element of the same set."
+    },
+    {
+      "id": "dynanca-519-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Minimal counterexample for a sum formula",
+      "learningObjective": "Carry out the computation that contradicts minimality for a sum formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Suppose \\(m>1\\) is the smallest positive integer for which \\(1+2+\\cdots+m=\\frac{m(m+1)}{2}\\) fails. Then \\(1+2+\\cdots+(m-1)=\\frac{(m-1)m}{2}\\). What is \\(\\frac{(m-1)m}{2}+m\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{m(m+1)}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{m^2}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor out \\(m\\): \\(\\frac{(m-1)m}{2}+m=m\\left(\\frac{m-1}{2}+1\\right)=\\frac{m(m+1)}{2}\\). So the formula does hold for \\(m\\), contradicting the choice of \\(m\\). The expression \\(\\frac{m^2}{2}\\) drops a term: \\(\\frac{(m-1)m}{2}+m=\\frac{m^2+m}{2}\\).",
+      "hint": "Write \\(m\\) as \\(\\frac{2m}{2}\\) and combine the fractions."
+    },
+    {
+      "id": "dynanca-519-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A smaller denominator",
+      "learningObjective": "Identify the inequality that makes a new denominator smaller in a descent argument.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Suppose \\(\\sqrt{2}=\\frac{p}{q}\\) with positive integers \\(p\\) and \\(q\\), where \\(q\\) is as small as possible. One checks that \\(\\sqrt{2}=\\frac{2q-p}{p-q}\\) as well. Which inequality shows that the new denominator \\(p-q\\) is smaller than \\(q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p>2q\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p<2q\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inequality \\(p-q<q\\) is equivalent to \\(p<2q\\). It holds because \\(\\frac{p}{q}=\\sqrt{2}<2\\). Together with \\(p>q\\) (since \\(\\sqrt{2}>1\\)), the new denominator \\(p-q\\) is a positive integer smaller than \\(q\\), contradicting the minimality of \\(q\\).",
+      "hint": "Rewrite \\(p-q<q\\) by adding \\(q\\) to both sides."
+    },
+    {
+      "id": "dynanca-519-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Relation to induction",
+      "learningObjective": "State how minimal counterexample arguments relate to induction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "How is the method of minimal counterexample related to mathematical induction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The method of minimal counterexample works only for statements about finitely many integers."
+        },
+        {
+          "label": "B",
+          "text": "The two methods are logically equivalent ways of proving statements about all positive integers."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The well-ordering principle and the principle of induction can each be derived from the other. A proof by minimal counterexample is essentially an induction proof arranged as a proof by contradiction, and it applies to statements about all positive integers, not only finitely many.",
+      "hint": "Compare what each method assumes about the numbers smaller than the one under consideration."
+    },
+    {
+      "id": "dynanca-519-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "No integer between zero and one",
+      "learningObjective": "Justify the key inequality in a well-ordering proof.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Suppose some integer lies strictly between \\(0\\) and \\(1\\), and let \\(m\\) be the smallest such integer. Then \\(m^2\\) is an integer with \\(0<m^2<m\\). Why is \\(m^2<m\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Multiplying \\(m<1\\) by the positive number \\(m\\) gives \\(m^2<m\\)."
+        },
+        {
+          "label": "B",
+          "text": "Squaring a positive integer always makes it smaller."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(0<m<1\\) and \\(m>0\\), multiplying both sides of \\(m<1\\) by \\(m\\) keeps the direction of the inequality: \\(m^2<m\\). Also \\(m^2>0\\). So \\(m^2\\) is an integer between \\(0\\) and \\(1\\) that is smaller than \\(m\\), contradicting minimality. Squaring does not make every positive number smaller; \\(2^2>2\\).",
+      "hint": "Multiply the inequality \\(m<1\\) by a positive number."
+    },
+    {
+      "id": "dynanca-519-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Descent for an equation in integers",
+      "learningObjective": "Explain why a constructed solution contradicts minimality.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Suppose positive integers satisfy \\(x^2=2y^2\\), and choose such a solution with \\(x\\) as small as possible. Then \\(x\\) is even, say \\(x=2a\\), which gives \\(y^2=2a^2\\). Why does this contradict the choice of \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The pair \\((y,a)\\) is another solution of the same form whose first number \\(y\\) is smaller than \\(x\\)."
+        },
+        {
+          "label": "B",
+          "text": "The pair \\((y,a)\\) is another solution whose first number \\(y\\) is larger than \\(x\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation \\(y^2=2a^2\\) has the same form as \\(x^2=2y^2\\), with \\(y\\) in the role of \\(x\\). From \\(x^2=2y^2>y^2\\) we get \\(y<x\\). So a solution with a smaller first number exists, contradicting the minimality of \\(x\\). Hence no solution in positive integers exists.",
+      "hint": "Compare \\(y\\) with \\(x\\) using \\(x^2=2y^2\\)."
+    }
+  ]
+}

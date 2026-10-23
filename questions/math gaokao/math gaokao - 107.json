@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-107",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 107",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-107-q001",
+      "category": "Functions",
+      "concept": "Logarithmic Equations",
+      "learningObjective": "Solve a basic logarithmic equation by converting it to exponential form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the equation\n\\[\n\\log_2 x = 5.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(32\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(64\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Convert the logarithmic equation to exponential form:\n\\[\n\\log_2 x = 5 \\iff x = 2^5.\n\\]\nSince\n\\[\n2^5 = 32,\n\\]\nwe get\n\\[\nx = 32.\n\\]",
+      "hint": "Use the definition of a logarithm: \\(\\log_a b = c\\) means \\(a^c = b\\)."
+    },
+    {
+      "id": "math-gaokao-107-q002",
+      "category": "Functions",
+      "concept": "Logarithmic Equations",
+      "learningObjective": "Solve a logarithmic equation with a linear argument by converting it to exponential form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the equation\n\\[\n\\log_3(x-1) = 2.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Convert to exponential form:\n\\[\nx-1 = 3^2 = 9.\n\\]\nThus\n\\[\nx = 10.\n\\]\nCheck the domain: \\(x-1>0\\), so \\(x>1\\). Since \\(10>1\\), the solution is valid.",
+      "hint": "Rewrite \\(\\log_3(x-1)=2\\) as \\(x-1=3^2\\)."
+    },
+    {
+      "id": "math-gaokao-107-q003",
+      "category": "Functions",
+      "concept": "Logarithmic Equations",
+      "learningObjective": "Solve a logarithmic equation with a linear expression by converting it to exponential form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the equation\n\\[\n\\log_5(2x-1) = 2.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(13\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Convert to exponential form:\n\\[\n2x-1 = 5^2 = 25.\n\\]\nThen\n\\[\n2x = 26,\n\\]\nso\n\\[\nx = 13.\n\\]\nCheck the domain: \\(2x-1>0\\), which is true for \\(x=13\\).",
+      "hint": "Rewrite the equation as \\(2x-1=5^2\\)."
+    },
+    {
+      "id": "math-gaokao-107-q004",
+      "category": "Functions",
+      "concept": "Logarithmic Equations",
+      "learningObjective": "Solve a logarithmic equation using the product law and reject extraneous solutions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve the equation\n\\[\n\\log_2 x + \\log_2(x-2) = 3.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain requires\n\\[\nx>0 \\quad \\text{and} \\quad x-2>0,\n\\]\nso \\(x>2\\).\nUsing the product law,\n\\[\n\\log_2 x + \\log_2(x-2) = \\log_2\\bigl(x(x-2)\\bigr).\n\\]\nThus\n\\[\n\\log_2\\bigl(x(x-2)\\bigr) = 3.\n\\]\nConvert to exponential form:\n\\[\nx(x-2) = 2^3 = 8.\n\\]\nSo\n\\[\nx^2 - 2x - 8 = 0.\n\\]\nFactor:\n\\[\n(x-4)(x+2)=0.\n\\]\nThus\n\\[\nx=4 \\quad \\text{or} \\quad x=-2.\n\\]\nSince the domain requires \\(x>2\\), only \\(x=4\\) is valid.",
+      "hint": "Combine the logarithms using the product law, then check the domain."
+    },
+    {
+      "id": "math-gaokao-107-q005",
+      "category": "Functions",
+      "concept": "Logarithmic Equations",
+      "learningObjective": "Solve a logarithmic equation with equal logarithms of the same base.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve the equation\n\\[\n\\log_4(x+3) = \\log_4(2x-1).\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since the logarithms have the same base and are equal, their arguments must be equal:\n\\[\nx+3 = 2x-1.\n\\]\nThen\n\\[\n3+1 = 2x-x,\n\\]\nso\n\\[\nx=4.\n\\]\nCheck the domain:\n\\[\nx+3=7>0, \\qquad 2x-1=7>0.\n\\]\nThus \\(x=4\\) is valid.",
+      "hint": "When \\(\\log_a M = \\log_a N\\), set \\(M=N\\), then check the domain."
+    },
+    {
+      "id": "math-gaokao-107-q006",
+      "category": "Functions",
+      "concept": "Logarithmic Equations",
+      "learningObjective": "Solve a logarithmic equation whose argument is quadratic and find the sum of all real solutions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the sum of all real solutions of\n\\[\n\\log_2(x^2-3x)=2.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Convert to exponential form:\n\\[\nx^2-3x = 2^2 = 4.\n\\]\nRearrange:\n\\[\nx^2-3x-4=0.\n\\]\nFactor:\n\\[\n(x-4)(x+1)=0.\n\\]\nThus\n\\[\nx=4 \\quad \\text{or} \\quad x=-1.\n\\]\nCheck the domain \\(x^2-3x>0\\):\nFor \\(x=4\\), \\(16-12=4>0\\).\nFor \\(x=-1\\), \\(1+3=4>0\\).\nBoth are valid. Their sum is\n\\[\n4+(-1)=3.\n\\]",
+      "hint": "Rewrite the equation as \\(x^2-3x=4\\), solve the quadratic, and check the domain."
+    },
+    {
+      "id": "math-gaokao-107-q007",
+      "category": "Functions",
+      "concept": "Logarithmic Equations",
+      "learningObjective": "Solve a logarithmic equation using the quotient law and reject extraneous solutions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve the equation\n\\[\n\\log_3(x+2) - \\log_3(x-2) = 1.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain requires\n\\[\nx+2>0 \\quad \\text{and} \\quad x-2>0,\n\\]\nso \\(x>2\\).\nUsing the quotient law,\n\\[\n\\log_3(x+2) - \\log_3(x-2) = \\log_3\\left(\\frac{x+2}{x-2}\\right).\n\\]\nThus\n\\[\n\\log_3\\left(\\frac{x+2}{x-2}\\right)=1.\n\\]\nConvert to exponential form:\n\\[\n\\frac{x+2}{x-2}=3.\n\\]\nThen\n\\[\nx+2 = 3(x-2) = 3x-6.\n\\]\nSo\n\\[\n8 = 2x,\n\\]\nand therefore\n\\[\nx=4.\n\\]\nSince \\(4>2\\), the solution is valid.",
+      "hint": "Combine the logarithms using the quotient law, then check the domain."
+    },
+    {
+      "id": "math-gaokao-107-q008",
+      "category": "Functions",
+      "concept": "Logarithmic Equations",
+      "learningObjective": "Solve a logarithmic equation using the product law and reject extraneous solutions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve the equation\n\\[\n\\log_2(x+1) + \\log_2(x-1) = 3.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain requires\n\\[\nx+1>0 \\quad \\text{and} \\quad x-1>0,\n\\]\nso \\(x>1\\).\nUsing the product law,\n\\[\n\\log_2(x+1) + \\log_2(x-1) = \\log_2\\bigl((x+1)(x-1)\\bigr).\n\\]\nThus\n\\[\n\\log_2(x^2-1)=3.\n\\]\nConvert to exponential form:\n\\[\nx^2-1 = 2^3 = 8.\n\\]\nSo\n\\[\nx^2 = 9,\n\\]\nwhich gives\n\\[\nx=3 \\quad \\text{or} \\quad x=-3.\n\\]\nSince the domain requires \\(x>1\\), only \\(x=3\\) is valid.",
+      "hint": "Combine the logarithms using the product law, then check the domain."
+    },
+    {
+      "id": "math-gaokao-107-q009",
+      "category": "Functions",
+      "concept": "Logarithmic Equations",
+      "learningObjective": "Solve a logarithmic equation using the product law and reject extraneous solutions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve the equation\n\\[\n\\log_5 x + \\log_5(x-4) = 1.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain requires\n\\[\nx>0 \\quad \\text{and} \\quad x-4>0,\n\\]\nso \\(x>4\\).\nUsing the product law,\n\\[\n\\log_5 x + \\log_5(x-4) = \\log_5\\bigl(x(x-4)\\bigr).\n\\]\nThus\n\\[\n\\log_5\\bigl(x(x-4)\\bigr)=1.\n\\]\nConvert to exponential form:\n\\[\nx(x-4)=5^1=5.\n\\]\nSo\n\\[\nx^2-4x-5=0.\n\\]\nFactor:\n\\[\n(x-5)(x+1)=0.\n\\]\nThus\n\\[\nx=5 \\quad \\text{or} \\quad x=-1.\n\\]\nSince the domain requires \\(x>4\\), only \\(x=5\\) is valid.",
+      "hint": "Combine the logarithms using the product law, then check the domain."
+    },
+    {
+      "id": "math-gaokao-107-q010",
+      "category": "Functions",
+      "concept": "Logarithmic Equations with Different Bases",
+      "learningObjective": "Solve a logarithmic equation by converting logarithms to a common base.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve the equation\n\\[\n\\log_2 x + \\log_4 x = 3.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain requires \\(x>0\\). Convert \\(\\log_4 x\\) to base \\(2\\):\n\\[\n\\log_4 x = \\frac{\\log_2 x}{\\log_2 4} = \\frac{\\log_2 x}{2}.\n\\]\nLet\n\\[\nt=\\log_2 x.\n\\]\nThen the equation becomes\n\\[\nt+\\frac{t}{2}=3.\n\\]\nSo\n\\[\n\\frac{3t}{2}=3,\n\\]\nwhich gives\n\\[\nt=2.\n\\]\nSince \\(t=\\log_2 x\\), we have\n\\[\n\\log_2 x = 2,\n\\]\nso\n\\[\nx=2^2=4.\n\\]\nTherefore, the solution is \\(x=4\\).",
+      "hint": "Convert \\(\\log_4 x\\) to base \\(2\\), then let \\(t=\\log_2 x\\)."
+    }
+  ]
+}

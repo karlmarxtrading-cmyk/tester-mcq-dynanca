@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-420",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 420",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-420-q001",
+      "category": "Mathematical Reasoning",
+      "concept": "Proof by Contradiction of Parity Implication",
+      "learningObjective": "Identify the correct assumption when proving by contradiction that if \\(n^2\\) is even then \\(n\\) is even.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a proof by contradiction of the statement \"If \\(n^2\\) is even, then \\(n\\) is even\", which assumption should be made? Here \\(n\\) is an integer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assume \\(n^2\\) is even and \\(n\\) is even."
+        },
+        {
+          "label": "B",
+          "text": "Assume \\(n^2\\) is even and \\(n\\) is odd."
+        }
+      ],
+      "answer": "B",
+      "explanation": "To prove \\(P\\Rightarrow Q\\) by contradiction, assume \\(P\\) is true and \\(Q\\) is false. Here \\(P\\) is \"\\(n^2\\) is even\" and \\(Q\\) is \"\\(n\\) is even\". So we assume \\(n^2\\) is even and \\(n\\) is odd. This leads to a contradiction because an odd \\(n\\) has an odd square. Option A assumes the conclusion, so it is not the negation needed.",
+      "hint": "Keep the hypothesis true and temporarily assume the opposite of the conclusion."
+    },
+    {
+      "id": "math-gaokao-420-q002",
+      "category": "Mathematical Reasoning",
+      "concept": "Proof by Contradiction for Irrationality",
+      "learningObjective": "State the initial assumption in a proof by contradiction that \\(\\sqrt{2}\\) is irrational.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which is the correct initial assumption for a proof by contradiction that \\(\\sqrt{2}\\) is irrational?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Suppose \\(\\sqrt{2}=\\frac{a}{b}\\), where \\(a,b\\) are integers with \\(b\\ne 0\\) and \\(\\gcd(a,b)=1\\)."
+        },
+        {
+          "label": "B",
+          "text": "Suppose \\(\\sqrt{2}\\) cannot be written as a quotient of two integers."
+        }
+      ],
+      "answer": "A",
+      "explanation": "To prove \"\\(\\sqrt{2}\\) is irrational\" by contradiction, assume the negation: \\(\\sqrt{2}\\) is rational. Thus \\(\\sqrt{2}=\\frac{a}{b}\\) for some integers \\(a,b\\) with \\(b\\ne0\\), and we may take the fraction in lowest terms so \\(\\gcd(a,b)=1\\). Option B already assumes irrationality, which is the statement to be proved.",
+      "hint": "A contradiction proof begins by temporarily assuming the opposite of the claim to be established."
+    },
+    {
+      "id": "math-gaokao-420-q003",
+      "category": "Mathematical Reasoning",
+      "concept": "Proof by Contradiction in Irrationality Proof",
+      "learningObjective": "Identify the contradiction reached when proving \\(\\sqrt{2}\\) is irrational.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In the proof by contradiction that \\(\\sqrt{2}\\) is irrational, after writing \\(\\sqrt{2}=\\frac{a}{b}\\) in lowest terms, which contradiction is obtained?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both \\(a\\) and \\(b\\) are odd, contradicting \\(\\gcd(a,b)=1\\)."
+        },
+        {
+          "label": "B",
+          "text": "Both \\(a\\) and \\(b\\) are even, contradicting \\(\\gcd(a,b)=1\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(\\sqrt{2}=\\frac{a}{b}\\), we get \\(a^2=2b^2\\). Hence \\(a^2\\) is even, so \\(a\\) is even. Write \\(a=2k\\). Then \\(4k^2=2b^2\\), so \\(b^2=2k^2\\), which implies \\(b\\) is even. Thus both \\(a\\) and \\(b\\) are even, contradicting the assumption that \\(\\gcd(a,b)=1\\). Option A is not what the equations force.",
+      "hint": "Use the fact that if a square is even, then the integer itself is even."
+    },
+    {
+      "id": "math-gaokao-420-q004",
+      "category": "Mathematical Reasoning",
+      "concept": "Negating a Disjunction in Proof by Contradiction",
+      "learningObjective": "Determine the contradiction assumption for a statement with an \"or\" conclusion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "To prove by contradiction that if \\(a+b>0\\), then \\(a>0\\) or \\(b>0\\), what should be assumed? Assume \\(a,b\\in\\mathbb{R}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a+b>0\\), \\(a\\le0\\), and \\(b\\le0\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(a+b>0\\), \\(a>0\\), and \\(b>0\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The conclusion is \\(a>0\\) or \\(b>0\\). Its negation is \\(a\\le0\\) and \\(b\\le0\\). Therefore, a proof by contradiction assumes the hypothesis \\(a+b>0\\) together with \\(a\\le0\\) and \\(b\\le0\\). Then \\(a+b\\le0\\), contradicting \\(a+b>0\\). Option B assumes the conclusion, not its negation.",
+      "hint": "Negate an \"or\" statement by negating both parts and using \"and\"."
+    },
+    {
+      "id": "math-gaokao-420-q005",
+      "category": "Mathematical Reasoning",
+      "concept": "Proof by Contradiction for \\(\\sqrt{3}\\)",
+      "learningObjective": "Complete the contradiction step in the proof that \\(\\sqrt{3}\\) is irrational.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In a proof by contradiction that \\(\\sqrt{3}\\) is irrational, suppose \\(\\sqrt{3}=m/n\\), where \\(m,n\\) are integers, \\(n\\ne0\\), and \\(\\gcd(m,n)=1\\). Which statement correctly completes the contradiction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m\\) is divisible by \\(3\\), but \\(n\\) is not divisible by \\(3\\)."
+        },
+        {
+          "label": "B",
+          "text": "Both \\(m\\) and \\(n\\) are divisible by \\(3\\), contradicting \\(\\gcd(m,n)=1\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\(\\sqrt{3}=\\frac{m}{n}\\), we have \\(m^2=3n^2\\). Thus \\(3\\mid m^2\\), so \\(3\\mid m\\). Write \\(m=3k\\). Then \\(9k^2=3n^2\\), so \\(n^2=3k^2\\). Hence \\(3\\mid n\\). Therefore both \\(m\\) and \\(n\\) are divisible by \\(3\\), contradicting \\(\\gcd(m,n)=1\\). Option A does not use the second divisibility conclusion.",
+      "hint": "If a prime divides a square, then it divides the original integer."
+    },
+    {
+      "id": "math-gaokao-420-q006",
+      "category": "Mathematical Reasoning",
+      "concept": "Proof by Contradiction for Sum of Rational and Irrational",
+      "learningObjective": "Prove by contradiction that the sum of a rational number and an irrational number is irrational.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which is the correct proof by contradiction that if \\(x\\) is rational and \\(y\\) is irrational, then \\(x+y\\) is irrational?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assume \\(x+y\\) is irrational. Since \\(x\\) is rational, \\(y=(x+y)-x\\) is irrational, which is consistent with the hypothesis."
+        },
+        {
+          "label": "B",
+          "text": "Assume \\(x+y\\) is rational. Since \\(x\\) is rational, \\(y=(x+y)-x\\) is rational, contradicting that \\(y\\) is irrational."
+        }
+      ],
+      "answer": "B",
+      "explanation": "To prove the statement by contradiction, assume the conclusion is false: \\(x+y\\) is rational. Since \\(x\\) is rational, the difference of two rational numbers is rational, so\n\\[\ny=(x+y)-x\n\\]\nis rational. This contradicts the given condition that \\(y\\) is irrational. Option A does not produce a contradiction.",
+      "hint": "The difference of two rational numbers is rational."
+    },
+    {
+      "id": "math-gaokao-420-q007",
+      "category": "Mathematical Reasoning",
+      "concept": "Proof by Contradiction for No Smallest Positive Rational",
+      "learningObjective": "Prove by contradiction that there is no smallest positive rational number.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which is the correct proof by contradiction that there is no smallest positive rational number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assume there is a smallest positive rational number \\(r\\). Then \\(\\frac{r}{2}\\) is a positive rational number smaller than \\(r\\), contradicting the minimality of \\(r\\)."
+        },
+        {
+          "label": "B",
+          "text": "Assume there is no smallest positive rational number. Then for every positive rational \\(r\\), \\(\\frac{r}{2}\\) is smaller, which contradicts the assumption."
+        }
+      ],
+      "answer": "A",
+      "explanation": "To prove the statement by contradiction, assume the opposite: there is a smallest positive rational number \\(r\\). Since \\(r>0\\), the number \\(\\frac{r}{2}\\) is positive, rational, and\n\\[\n\\frac{r}{2}<r.\n\\]\nThis contradicts the claim that \\(r\\) is the smallest positive rational number. Option B assumes the statement itself, so it is not a proof by contradiction.",
+      "hint": "Ask whether a proposed positive minimum could be used to construct a smaller positive rational number."
+    },
+    {
+      "id": "math-gaokao-420-q008",
+      "category": "Mathematical Reasoning",
+      "concept": "Negating a Disjunction for Real Numbers",
+      "learningObjective": "Determine the contradiction assumption for a statement that at least one of two numbers is irrational.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(a,b\\) be real numbers. To prove by contradiction that if \\(a+b\\) is irrational, then at least one of \\(a,b\\) is irrational, what should be assumed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a+b\\) is irrational, and at least one of \\(a,b\\) is irrational."
+        },
+        {
+          "label": "B",
+          "text": "\\(a+b\\) is irrational, and both \\(a\\) and \\(b\\) are rational."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The conclusion is \"at least one of \\(a,b\\) is irrational\", whose negation is \"both \\(a\\) and \\(b\\) are rational\". Together with the hypothesis, the proof by contradiction assumes \\(a+b\\) is irrational and both \\(a\\) and \\(b\\) are rational. Then \\(a+b\\) is rational, a contradiction. Option A assumes the conclusion instead of its negation.",
+      "hint": "Negate the entire 'at least one' statement while retaining the hypothesis about the sum."
+    },
+    {
+      "id": "math-gaokao-420-q009",
+      "category": "Mathematical Reasoning",
+      "concept": "Proof by Contradiction for \\(\\sqrt{2}+\\sqrt{3}\\)",
+      "learningObjective": "Prove by contradiction that \\(\\sqrt{2}+\\sqrt{3}\\) is irrational.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In a proof by contradiction that \\(\\sqrt{2}+\\sqrt{3}\\) is irrational, suppose \\(r=\\sqrt{2}+\\sqrt{3}\\) is rational. Which step correctly produces a contradiction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Squaring gives \\(r^2=5+2\\sqrt{6}\\), so \\(\\sqrt{6}=\\frac{r^2-5}{2}\\) would be rational, contradicting the known irrationality of \\(\\sqrt{6}\\)."
+        },
+        {
+          "label": "B",
+          "text": "Squaring gives \\(r^2=2+3=5\\), so \\(r=\\sqrt{5}\\) would be irrational, contradicting the assumed rationality of \\(r\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Assume that \\(r=\\sqrt{2}+\\sqrt{3}\\) is rational. Correctly expanding the square gives\n\\[\nr^2=2+3+2\\sqrt{6}=5+2\\sqrt{6}.\n\\]\nThus\n\\[\n\\sqrt{6}=\\frac{r^2-5}{2}.\n\\]\nThe right-hand side is rational under the assumption, contradicting the known irrationality of \\(\\sqrt{6}\\). This is the valid contradiction in option A. Option B omits the cross term \\(2\\sqrt{6}\\) when squaring a sum, so its starting equality is false and its argument is invalid.",
+      "hint": "Square \\(r=\\sqrt{2}+\\sqrt{3}\\) and isolate the remaining square-root term."
+    },
+    {
+      "id": "math-gaokao-420-q010",
+      "category": "Mathematical Reasoning",
+      "concept": "Proof by Contradiction with Parity",
+      "learningObjective": "Prove by contradiction that \\(n^2+n+1\\) is odd for every integer \\(n\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which is the correct proof by contradiction that \\(n^2+n+1\\) is odd for every integer \\(n\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assume \\(n^2+n+1\\) is even. Since \\(n(n+1)\\) is always even, \\(n^2+n+1=n(n+1)+1\\) is odd, a contradiction."
+        },
+        {
+          "label": "B",
+          "text": "Assume \\(n^2+n+1\\) is odd. Since \\(n(n+1)\\) is always even, \\(n^2+n+1\\) is odd, so no contradiction occurs."
+        }
+      ],
+      "answer": "A",
+      "explanation": "To prove the statement by contradiction, assume there is an integer \\(n\\) such that \\(n^2+n+1\\) is even. But\n\\[\nn^2+n+1=n(n+1)+1.\n\\]\nThe product \\(n(n+1)\\) is the product of two consecutive integers, so it is always even. Therefore \\(n(n+1)+1\\) is odd, contradicting the assumption that \\(n^2+n+1\\) is even. Hence \\(n^2+n+1\\) is odd for every integer \\(n\\). Option B assumes the conclusion and does not produce a contradiction.",
+      "hint": "Use the fact that the product of two consecutive integers is even."
+    }
+  ]
+}

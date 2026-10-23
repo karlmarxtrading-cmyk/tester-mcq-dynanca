@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-437",
+  "category": "Comprehensive Mathematics",
+  "title": "437. Trigonometry & Periodic Models: Law of Sines Ambiguous Case",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-437-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Data that produce the ambiguous case",
+      "learningObjective": "Identify the configuration of given measurements that can lead to two triangles.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which set of given measurements can lead to two different triangles (the ambiguous case)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two angles and the side between them"
+        },
+        {
+          "label": "B",
+          "text": "Two sides and an angle opposite one of them"
+        }
+      ],
+      "answer": "B",
+      "explanation": "When two sides and a non-included angle are given, the equation for the sine of the second angle may have an acute and an obtuse solution, so two triangles can fit the data. Two angles and the included side determine exactly one triangle.",
+      "hint": "Think about which data lead to an equation of the form \\(\\sin B=k\\), which can have two solutions between \\(0^\\circ\\) and \\(180^\\circ\\)."
+    },
+    {
+      "id": "dynanca-437-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Side equal to the altitude",
+      "learningObjective": "Recognise the case in which the given data produce exactly one right triangle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In triangle \\(ABC\\), \\(A=30^\\circ\\), \\(b=10\\), and \\(a=5\\), where \\(a\\) is opposite \\(A\\). How many triangles satisfy these conditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Exactly one"
+        },
+        {
+          "label": "B",
+          "text": "Exactly two"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the Law of Sines, \\(\\sin B=\\frac{b\\sin A}{a}=\\frac{10\\cdot\\frac{1}{2}}{5}=1\\), so \\(B=90^\\circ\\) is the only possibility. Equivalently, \\(a\\) equals the altitude \\(b\\sin A=5\\), so side \\(a\\) just reaches the opposite ray. There is exactly one triangle, and it is a right triangle.",
+      "hint": "Compute \\(\\sin B\\) from the Law of Sines and count the angles between \\(0^\\circ\\) and \\(180^\\circ\\) with that sine."
+    },
+    {
+      "id": "dynanca-437-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Side shorter than the altitude",
+      "learningObjective": "Recognise the case in which no triangle exists.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In triangle \\(ABC\\), \\(A=30^\\circ\\), \\(b=10\\), and \\(a=4\\), where \\(a\\) is opposite \\(A\\). How many triangles satisfy these conditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "None"
+        },
+        {
+          "label": "B",
+          "text": "Exactly one"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the Law of Sines, \\(\\sin B=\\frac{b\\sin A}{a}=\\frac{10\\cdot\\frac{1}{2}}{4}=1.25\\). No angle has a sine greater than \\(1\\), so no triangle exists. Geometrically, \\(a=4\\) is shorter than the altitude \\(b\\sin A=5\\), so it cannot reach the opposite ray.",
+      "hint": "Compute \\(\\sin B\\) and compare it with the largest possible value of a sine."
+    },
+    {
+      "id": "dynanca-437-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Two triangles",
+      "learningObjective": "Recognise the case in which two triangles exist.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In triangle \\(ABC\\), \\(A=30^\\circ\\), \\(b=10\\), and \\(a=7\\), where \\(a\\) is opposite \\(A\\). How many triangles satisfy these conditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Exactly two"
+        },
+        {
+          "label": "B",
+          "text": "Exactly one"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The altitude is \\(b\\sin A=10\\cdot\\frac{1}{2}=5\\). Since \\(5<a<b\\), that is \\(5<7<10\\), side \\(a\\) can meet the opposite ray at two points. In terms of angles, \\(\\sin B=\\frac{5}{7}\\) gives \\(B\\approx 45.6^\\circ\\) or \\(B\\approx 134.4^\\circ\\), and both leave a positive third angle with \\(A=30^\\circ\\).",
+      "hint": "Compare \\(a\\) with the altitude \\(b\\sin A\\) and with \\(b\\)."
+    },
+    {
+      "id": "dynanca-437-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Opposite side longer than the other side",
+      "learningObjective": "Recognise the case in which the side opposite the given angle is the longer one.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In triangle \\(ABC\\), \\(A=30^\\circ\\), \\(b=10\\), and \\(a=12\\), where \\(a\\) is opposite \\(A\\). How many triangles satisfy these conditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Exactly one"
+        },
+        {
+          "label": "B",
+          "text": "Exactly two"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Here \\(\\sin B=\\frac{10\\cdot\\frac{1}{2}}{12}=\\frac{5}{12}\\), which gives \\(B\\approx 24.6^\\circ\\) or \\(B\\approx 155.4^\\circ\\). The obtuse candidate is impossible because \\(155.4^\\circ+30^\\circ>180^\\circ\\). In general, when \\(a\\ge b\\) the angle \\(B\\) cannot exceed \\(A\\), so only one triangle exists.",
+      "hint": "Find both candidates for \\(B\\), then check whether each leaves room for a third angle."
+    },
+    {
+      "id": "dynanca-437-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Listing the possible angles",
+      "learningObjective": "Find every possible value of an angle in the ambiguous case.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In triangle \\(ABC\\), \\(A=40^\\circ\\), \\(a=6\\), and \\(b=8\\), where \\(a\\) is opposite \\(A\\). Using \\(\\sin 40^\\circ\\approx 0.643\\), which values of \\(B\\), to one decimal place, are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(B\\approx 59.0^\\circ\\) only"
+        },
+        {
+          "label": "B",
+          "text": "\\(B\\approx 59.0^\\circ\\) or \\(B\\approx 121.0^\\circ\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the Law of Sines, \\(\\sin B=\\frac{8\\cdot 0.643}{6}\\approx 0.857\\). The acute solution is \\(B\\approx 59.0^\\circ\\) and the obtuse solution is \\(180^\\circ-59.0^\\circ=121.0^\\circ\\). Both are valid because \\(40^\\circ+121.0^\\circ=161.0^\\circ<180^\\circ\\), so the data produce two triangles.",
+      "hint": "A sine value between \\(0\\) and \\(1\\) belongs to an acute angle and to its supplement; test each against the angle sum."
+    },
+    {
+      "id": "dynanca-437-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Obtuse given angle",
+      "learningObjective": "Decide the number of triangles when the given angle is obtuse.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In triangle \\(ABC\\), \\(A=120^\\circ\\), \\(a=5\\), and \\(b=8\\), where \\(a\\) is opposite \\(A\\). How many triangles satisfy these conditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "None"
+        },
+        {
+          "label": "B",
+          "text": "Exactly one"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An obtuse angle must be the largest angle of the triangle, so its opposite side must be the longest side. Here \\(a=5<b=8\\), which is impossible. The Law of Sines confirms this: \\(\\sin B=\\frac{8\\sin 120^\\circ}{5}\\approx 1.39>1\\).",
+      "hint": "The largest angle of a triangle is opposite its longest side."
+    },
+    {
+      "id": "dynanca-437-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Rejecting the obtuse candidate",
+      "learningObjective": "Use the angle sum to reject an invalid second solution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "In triangle \\(ABC\\), \\(A=50^\\circ\\), \\(a=10\\), and \\(b=7\\), where \\(a\\) is opposite \\(A\\). The Law of Sines gives \\(\\sin B\\approx 0.536\\). How many triangles exist, and why?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One, because the obtuse candidate for \\(B\\) would make the angle sum exceed \\(180^\\circ\\)."
+        },
+        {
+          "label": "B",
+          "text": "Two, because every sine value between \\(0\\) and \\(1\\) gives two valid angles."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The candidates are \\(B\\approx 32.4^\\circ\\) and \\(B\\approx 180^\\circ-32.4^\\circ=147.6^\\circ\\). The second is impossible because \\(147.6^\\circ+50^\\circ=197.6^\\circ>180^\\circ\\). So only \\(B\\approx 32.4^\\circ\\) works and there is exactly one triangle. A second angle from the sine must always be tested against the angle sum.",
+      "hint": "Find both angles with the given sine, then add each to angle \\(A\\)."
+    },
+    {
+      "id": "dynanca-437-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Range of side lengths giving two triangles",
+      "learningObjective": "Determine the side lengths for which the ambiguous case produces two triangles.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "In triangle \\(ABC\\), \\(A=30^\\circ\\) and \\(b=12\\), where side \\(a\\) is opposite \\(A\\). For which values of \\(a\\) do exactly two triangles exist?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a>6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6<a<12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The altitude from \\(C\\) is \\(b\\sin A=12\\cdot\\frac{1}{2}=6\\). Two triangles exist when \\(a\\) is longer than this altitude but shorter than \\(b\\), that is, \\(6<a<12\\). If \\(a\\ge 12\\), the obtuse candidate for \\(B\\) no longer fits, and only one triangle remains.",
+      "hint": "Compare \\(a\\) with the altitude \\(b\\sin A\\) and also with \\(b\\) itself."
+    },
+    {
+      "id": "dynanca-437-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Third angle in both triangles",
+      "learningObjective": "Find the possible values of the third angle in an ambiguous case with exact values.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In triangle \\(ABC\\), \\(A=30^\\circ\\), \\(a=5\\sqrt{2}\\), and \\(b=10\\), where \\(a\\) is opposite \\(A\\). Which values of angle \\(C\\) are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(C=105^\\circ\\) or \\(C=15^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(C=105^\\circ\\) only"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the Law of Sines, \\(\\sin B=\\frac{10\\cdot\\frac{1}{2}}{5\\sqrt{2}}=\\frac{1}{\\sqrt{2}}\\), so \\(B=45^\\circ\\) or \\(B=135^\\circ\\). Both are valid, since \\(30^\\circ+135^\\circ<180^\\circ\\). The third angle is \\(C=180^\\circ-30^\\circ-45^\\circ=105^\\circ\\) or \\(C=180^\\circ-30^\\circ-135^\\circ=15^\\circ\\).",
+      "hint": "Find both possible values of \\(B\\) first, then use the angle sum for each."
+    }
+  ]
+}

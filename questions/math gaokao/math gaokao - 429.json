@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-429",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 429",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-429-q001",
+      "category": "Mathematical Reasoning",
+      "concept": "Graphical Reasoning with Piecewise Linear Functions",
+      "learningObjective": "Determine the number of solutions of an equation by counting intersections with a horizontal line on a given graph.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The graph of \\(y=f(x)\\) consists of the segment from \\((-2,0)\\) to \\((0,2)\\) and the segment from \\((0,2)\\) to \\((2,0)\\). How many solutions does \\(f(x)=1\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first segment has equation \\(y=x+2\\) for \\(-2\\le x\\le 0\\). Setting \\(x+2=1\\) gives \\(x=-1\\), which lies in the interval.\nThe second segment has equation \\(y=2-x\\) for \\(0\\le x\\le 2\\). Setting \\(2-x=1\\) gives \\(x=1\\), which also lies in the interval.\nTherefore, the horizontal line \\(y=1\\) intersects the graph twice, so \\(f(x)=1\\) has two solutions.",
+      "hint": "Draw the horizontal line \\(y=1\\) and count how many times it meets the given graph."
+    },
+    {
+      "id": "math-gaokao-429-q002",
+      "category": "Mathematical Reasoning",
+      "concept": "Graphical Transformations of Functions",
+      "learningObjective": "Determine a point on a transformed graph from a known point on the original graph.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The graph of \\(y=f(x)\\) passes through the point \\((3,5)\\). Which point must lie on the graph of \\(y=f(2x-1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,5)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,5)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\((3,5)\\) lies on \\(y=f(x)\\), we have \\(f(3)=5\\).\nFor the transformed graph \\(y=f(2x-1)\\), we need \\(2x-1=3\\). Solving gives \\(x=2\\).\nThen \\(y=f(3)=5\\), so the point \\((2,5)\\) lies on the transformed graph.\nThe point \\((1,5)\\) would require \\(2(1)-1=1\\), which gives \\(f(1)=5\\), not the given condition.",
+      "hint": "Set the input of the transformed function equal to the original \\(x\\)-coordinate of the known point."
+    },
+    {
+      "id": "math-gaokao-429-q003",
+      "category": "Mathematical Reasoning",
+      "concept": "Graphical Interpretation of Quadratic Inequalities",
+      "learningObjective": "Use the graph of a quadratic function to solve a quadratic inequality.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "The graph of \\(y=x^2-4x+3\\) cuts the \\(x\\)-axis at \\(x=1\\) and \\(x=3\\) and opens upward. For which \\(x\\) is the graph below the \\(x\\)-axis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-\\infty,1)\\cup(3,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The graph is below the \\(x\\)-axis exactly where \\(y<0\\).\nSince \\(x^2-4x+3=(x-1)(x-3)\\), the parabola opens upward and crosses the \\(x\\)-axis at \\(x=1\\) and \\(x=3\\).\nFor an upward-opening parabola, the graph lies below the \\(x\\)-axis between the two roots.\nTherefore, the solution is \\(1<x<3\\), or \\((1,3)\\).",
+      "hint": "Use the horizontal intercepts to divide the number line, then determine the sign of the function in each region."
+    },
+    {
+      "id": "math-gaokao-429-q004",
+      "category": "Mathematical Reasoning",
+      "concept": "Graphical Reasoning from the Sign of the Derivative",
+      "learningObjective": "Interpret the graph of \\(f'(x)\\) to identify the type of local extremum of \\(f(x)\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The graph of \\(f'(x)\\) lies above the \\(x\\)-axis for \\(x<1\\) and below the \\(x\\)-axis for \\(x>1\\). What type of point does the graph of \\(f(x)\\) have at \\(x=1\\)? Assume \\(f\\) is differentiable on \\(\\mathbb{R}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "Local minimum"
+        },
+        {
+          "label": "B",
+          "text": "Local maximum"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sign of \\(f'(x)\\) determines whether \\(f(x)\\) is increasing or decreasing.\nFor \\(x<1\\), \\(f'(x)>0\\), so \\(f(x)\\) is increasing as \\(x\\) approaches \\(1\\) from the left.\nFor \\(x>1\\), \\(f'(x)<0\\), so \\(f(x)\\) is decreasing as \\(x\\) moves to the right of \\(1\\).\nThus \\(f(x)\\) changes from increasing to decreasing at \\(x=1\\), giving a local maximum.",
+      "hint": "Use the sign of the derivative to determine how the function changes as you approach the specified point from the left and then move away to the right."
+    },
+    {
+      "id": "math-gaokao-429-q005",
+      "category": "Mathematical Reasoning",
+      "concept": "Graphical Interpretation of Asymptotes",
+      "learningObjective": "Identify vertical and horizontal asymptotes from a verbal description of a graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "The graph of \\(y=f(x)\\) approaches the horizontal line \\(y=-1\\) as \\(x\\to\\infty\\), and it has a vertical asymptote at \\(x=2\\). Which pair of asymptotes describes the graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Horizontal asymptote \\(y=2\\), vertical asymptote \\(x=-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "Horizontal asymptote \\(y=-1\\), vertical asymptote \\(x=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A horizontal asymptote describes the end behavior of the graph. Since the graph approaches \\(y=-1\\) as \\(x\\to\\infty\\), the horizontal asymptote is \\(y=-1\\).\nA vertical asymptote occurs at a value where the graph tends to infinity. Since the graph has a vertical asymptote at \\(x=2\\), that asymptote is \\(x=2\\).\nTherefore, the correct pair is \\(y=-1\\) and \\(x=2\\).",
+      "hint": "A horizontal asymptote gives the limiting \\(y\\)-value, while a vertical asymptote is a limiting \\(x\\)-value."
+    },
+    {
+      "id": "math-gaokao-429-q006",
+      "category": "Mathematical Reasoning",
+      "concept": "Graphical Reasoning for Intersections of Monotone Functions",
+      "learningObjective": "Determine the number of intersections of two graphs using monotonicity and continuity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "On the interval \\([1,3]\\), the graph of \\(y=f(x)\\) decreases continuously and strictly from \\(4\\) to \\(0\\), while the graph of \\(y=g(x)\\) increases continuously and strictly from \\(0\\) to \\(4\\). How many times do the two graphs intersect on \\([1,3]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Exactly one"
+        },
+        {
+          "label": "B",
+          "text": "Exactly two"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Define \\(h(x)=f(x)-g(x)\\). Since \\(f\\) and \\(g\\) are continuous, \\(h\\) is continuous.\nAt \\(x=1\\), \\[\n\\begin{aligned}\nh(1)&=f(1)-g(1) \\\\\n&=4-0 \\\\\n&=4>0\n\\end{aligned}\n\\].\nAt \\(x=3\\), \\[\n\\begin{aligned}\nh(3)&=f(3)-g(3) \\\\\n&=0-4 \\\\\n&=-4<0\n\\end{aligned}\n\\].\nBy the Intermediate Value Theorem, there is at least one intersection.\nBecause \\(f\\) is decreasing and \\(g\\) is increasing, \\(f-g\\) is strictly decreasing. A strictly decreasing continuous function can cross zero at most once.\nTherefore, there is exactly one intersection.",
+      "hint": "Consider \\(h=f-g\\) and use its sign at the endpoints together with monotonicity."
+    },
+    {
+      "id": "math-gaokao-429-q007",
+      "category": "Mathematical Reasoning",
+      "concept": "End Behavior of Cubic Graphs",
+      "learningObjective": "Determine the sign of the leading coefficient from the end behavior of a cubic graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The graph of \\(y=ax^3+bx^2+cx+d\\) satisfies \\(y\\to-\\infty\\) as \\(x\\to\\infty\\) and \\(y\\to\\infty\\) as \\(x\\to-\\infty\\). What is the sign of \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a<0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a>0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For large positive \\(x\\), the term \\(ax^3\\) dominates the cubic polynomial.\nSince \\(y\\to-\\infty\\) as \\(x\\to\\infty\\), we must have \\(ax^3\\to-\\infty\\).\nBecause \\(x^3>0\\) for large positive \\(x\\), this requires \\(a<0\\).\nThe behavior as \\(x\\to-\\infty\\) is consistent with \\(a<0\\), since then \\(ax^3\\to\\infty\\).",
+      "hint": "Look at the leading term \\(ax^3\\) for large positive \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-429-q008",
+      "category": "Mathematical Reasoning",
+      "concept": "Symmetry under Horizontal Translations",
+      "learningObjective": "Determine the axis of symmetry of a horizontally shifted even function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The graph of \\(y=f(x)\\) is symmetric about the \\(y\\)-axis. Which line is guaranteed to be an axis of symmetry of the graph of \\(y=f(x-2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The line \\(x=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "The line \\(x=-2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If the graph of \\(y=f(x)\\) is symmetric about the \\(y\\)-axis, then \\(x=0\\) is its axis of symmetry.\nReplacing \\(x\\) by \\(x-2\\) shifts the graph horizontally to the right by \\(2\\) units.\nTherefore, the axis of symmetry also shifts to the right by \\(2\\) units, becoming \\(x=2\\).",
+      "hint": "Relate the new input to the argument of the original function, then locate the original symmetry center in the new coordinates."
+    },
+    {
+      "id": "math-gaokao-429-q009",
+      "category": "Mathematical Reasoning",
+      "concept": "Counting Real Roots from a Graph with Extrema",
+      "learningObjective": "Use local extrema and end behavior to determine the number of real solutions of a continuous function equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A continuous function \\(f\\) has a local maximum at \\(x=-1\\) with value \\(2\\), and a local minimum at \\(x=3\\) with value \\(-1\\). Also, \\(f(x)\\to-\\infty\\) as \\(x\\to-\\infty\\) and \\(f(x)\\to\\infty\\) as \\(x\\to\\infty\\). How many real solutions does \\(f(x)=0\\) have? Assume also that \\(f\\) is strictly increasing on \\(( -\\infty,-1]\\), strictly decreasing on \\([-1,3]\\), and strictly increasing on \\([3,\\infty)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "One"
+        },
+        {
+          "label": "B",
+          "text": "Three"
+        }
+      ],
+      "answer": "B",
+      "explanation": "On the left branch, continuity and the limits \\(f(x)\\to-\\infty\\) as \\(x\\to-\\infty\\) and \\(f(-1)=2>0\\) guarantee a zero in \\(( -\\infty,-1)\\). Strict increase on that branch makes this zero unique.\nOn the middle branch, \\(f(-1)=2>0\\) and \\(f(3)=-1<0\\) guarantee a zero in \\((-1,3)\\). Strict decrease makes this zero unique.\nOn the right branch, \\(f(3)=-1<0\\) and \\(f(x)\\to\\infty\\) as \\(x\\to\\infty\\) guarantee a zero in \\((3,\\infty)\\). Strict increase makes this zero unique.\nThe endpoints \\(-1\\) and \\(3\\) are not zeros. Therefore there are exactly \\(3\\) real solutions, so B is correct.",
+      "hint": "Use continuity to find a zero on each branch, then use strict monotonicity to rule out additional zeros on that branch."
+    },
+    {
+      "id": "math-gaokao-429-q010",
+      "category": "Mathematical Reasoning",
+      "concept": "Increasing Intervals from the Graph of the Derivative",
+      "learningObjective": "Determine intervals of increase of a function from the graph of its derivative.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The graph of \\(f'(x)\\) is a parabola opening upward with \\(x\\)-intercepts at \\(-1\\) and \\(3\\). On which intervals is the graph of \\(f(x)\\) increasing?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-\\infty,-1)\\) and \\((3,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-1,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The derivative is positive where its graph lies above the \\(x\\)-axis. An upward-opening parabola with roots \\(-1\\) and \\(3\\) is positive when \\(x<-1\\) or \\(x>3\\), and negative between its roots. Therefore, \\(f\\) is strictly increasing on each of the intervals \\((-\\infty,-1)\\) and \\((3,\\infty)\\) separately, and decreasing on \\((-1,3)\\). This does not assert that \\(f\\) is increasing globally on the union of the two separated intervals.",
+      "hint": "First determine where the derivative's graph is above the horizontal axis. Then interpret its sign on each connected interval."
+    }
+  ]
+}

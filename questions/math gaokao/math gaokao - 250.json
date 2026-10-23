@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-250",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 250",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-250-q001",
+      "category": "Solid Geometry",
+      "concept": "Distance between two vertices of a cube",
+      "learningObjective": "Compute the distance between two opposite vertices of a unit cube.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), find the distance between points \\(A\\) and \\(C_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Place \\(A(0,0,0)\\) and \\(C_1(1,1,1)\\). Then\n\\[\nAC_1=\\sqrt{(1-0)^2+(1-0)^2+(1-0)^2}=\\sqrt{3}.\n\\]\nThus the distance is \\(\\sqrt{3}\\).",
+      "hint": "Use the space diagonal formula for a cube or the distance formula between two coordinate points."
+    },
+    {
+      "id": "math-gaokao-250-q002",
+      "category": "Solid Geometry",
+      "concept": "Distance from a point to a line in a cube",
+      "learningObjective": "Determine the distance from a vertex of a cube to an edge not containing it.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), find the distance from point \\(A\\) to line \\(CC_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The line \\(CC_1\\) passes through \\(C(1,1,0)\\) and is vertical. The closest point on \\(CC_1\\) to \\(A(0,0,0)\\) is \\(C\\). Thus\n\\[\nAC=\\sqrt{(1-0)^2+(1-0)^2+0^2}=\\sqrt{2}.\n\\]\nSo the distance is \\(\\sqrt{2}\\).",
+      "hint": "Find the perpendicular foot from \\(A\\) to the line, then compute the distance between the two points."
+    },
+    {
+      "id": "math-gaokao-250-q003",
+      "category": "Solid Geometry",
+      "concept": "Distance between parallel lines in a cube",
+      "learningObjective": "Compute the distance between two parallel edges of a cube.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), find the distance between the parallel lines \\(AB\\) and \\(D_1C_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Line \\(AB\\) lies in the plane \\(z=0\\) with \\(y=0\\), while line \\(D_1C_1\\) lies in the plane \\(z=1\\) with \\(y=1\\). The perpendicular distance between these parallel lines is the distance between \\(A(0,0,0)\\) and \\(D_1(0,1,1)\\), namely\n\\[\n\\sqrt{0^2+1^2+1^2}=\\sqrt{2}.\n\\]\nThus the distance is \\(\\sqrt{2}\\).",
+      "hint": "Since the lines are parallel, choose one point on each line and compute the perpendicular component of their difference."
+    },
+    {
+      "id": "math-gaokao-250-q004",
+      "category": "Solid Geometry",
+      "concept": "Distance from a point to a plane in a cube",
+      "learningObjective": "Determine the distance from a cube vertex to a plane determined by three other vertices.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), find the distance from point \\(A\\) to plane \\(BDC_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{\\sqrt{3}}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(B(1,0,0)\\), \\(D(0,1,0)\\), and \\(C_1(1,1,1)\\). The plane through these points has equation\n\\[\nx+y-z=1.\n\\]\nThe distance from \\(A(0,0,0)\\) to this plane is\n\\[\n\\frac{|0+0-0-1|}{\\sqrt{1^2+1^2+(-1)^2}}\n=\\frac{1}{\\sqrt{3}}\n=\\frac{\\sqrt{3}}{3}.\n\\]\nThus the distance is \\(\\frac{\\sqrt{3}}{3}\\).",
+      "hint": "Find the equation of the plane, then use the point-to-plane distance formula."
+    },
+    {
+      "id": "math-gaokao-250-q005",
+      "category": "Solid Geometry",
+      "concept": "Distance between skew lines in a cube",
+      "learningObjective": "Compute the distance between two skew edges of a cube.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), find the distance between the skew lines \\(AB\\) and \\(CC_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Parametrize \\(AB\\) as \\((t,0,0)\\) and \\(CC_1\\) as \\((1,1,s)\\). The squared distance between a point on \\(AB\\) and a point on \\(CC_1\\) is\n\\[\n(1-t)^2+1+s^2.\n\\]\nThis is minimized when \\(t=1\\) and \\(s=0\\), giving distance \\(1\\). Therefore the distance between the skew lines is \\(1\\).",
+      "hint": "Write parametric equations for both lines and minimize the distance between their general points."
+    },
+    {
+      "id": "math-gaokao-250-q006",
+      "category": "Solid Geometry",
+      "concept": "Distance between parallel planes in a cube",
+      "learningObjective": "Determine the distance between two parallel diagonal planes of a cube.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), find the distance between the parallel planes \\(A_1BD\\) and \\(B_1CD_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\sqrt{3}}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2\\sqrt{3}}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Plane \\(A_1BD\\) contains \\(A_1(0,0,1)\\), \\(B(1,0,0)\\), and \\(D(0,1,0)\\), so its equation is\n\\[\nx+y+z=1.\n\\]\nPlane \\(B_1CD_1\\) contains \\(B_1(1,0,1)\\), \\(C(1,1,0)\\), and \\(D_1(0,1,1)\\), so its equation is\n\\[\nx+y+z=2.\n\\]\nThe distance between these parallel planes is\n\\[\n\\frac{|2-1|}{\\sqrt{1^2+1^2+1^2}}\n=\\frac{1}{\\sqrt{3}}\n=\\frac{\\sqrt{3}}{3}.\n\\]\nThus the distance is \\(\\frac{\\sqrt{3}}{3}\\).",
+      "hint": "Find the equations of the two parallel planes, then use the distance formula between parallel planes."
+    },
+    {
+      "id": "math-gaokao-250-q007",
+      "category": "Solid Geometry",
+      "concept": "Distance from a point to a line in a cube",
+      "learningObjective": "Compute the distance from a cube vertex to a face diagonal not containing it.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), find the distance from point \\(A_1\\) to line \\(BC_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\sqrt{6}}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{\\sqrt{3}}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(A_1(0,0,1)\\), \\(B(1,0,0)\\), and \\(C_1(1,1,1)\\). The direction vector of \\(BC_1\\) is\n\\[\n\\overrightarrow{BC_1}=(0,1,1).\n\\]\nThe vector from \\(B\\) to \\(A_1\\) is\n\\[\n\\overrightarrow{BA_1}=(-1,0,1).\n\\]\nThen\n\\[\n\\overrightarrow{BA_1}\\times \\overrightarrow{BC_1}\n=(-1,0,1)\\times(0,1,1)\n=(-1,1,-1),\n\\]\nwhose magnitude is \\(\\sqrt{3}\\). Since \\(|\\overrightarrow{BC_1}|=\\sqrt{2}\\), the distance is\n\\[\n\\frac{\\sqrt{3}}{\\sqrt{2}}=\\frac{\\sqrt{6}}{2}.\n\\]\nThus the distance is \\(\\frac{\\sqrt{6}}{2}\\).",
+      "hint": "Use the formula for the distance from a point to a line in space with a cross product."
+    },
+    {
+      "id": "math-gaokao-250-q008",
+      "category": "Solid Geometry",
+      "concept": "Distance between skew lines in a cube",
+      "learningObjective": "Determine the distance between two skew diagonals of adjacent cube faces.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), find the distance between the skew lines \\(A_1B\\) and \\(B_1C\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\sqrt{3}}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{\\sqrt{3}}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(A_1(0,0,1)\\), \\(B(1,0,0)\\), \\(B_1(1,0,1)\\), and \\(C(1,1,0)\\). Direction vectors are\n\\[\n\\overrightarrow{A_1B}=(1,0,-1),\\qquad \\overrightarrow{B_1C}=(0,1,-1).\n\\]\nTheir cross product is\n\\[\n(1,0,-1)\\times(0,1,-1)=(1,1,1),\n\\]\nwhose magnitude is \\(\\sqrt{3}\\). The vector between the lines is\n\\[\n\\overrightarrow{A_1B_1}=(1,0,0).\n\\]\nThen\n\\[\n\\left|\\overrightarrow{A_1B_1}\\cdot(1,1,1)\\right|=1,\n\\]\nso the distance is\n\\[\n\\frac{1}{\\sqrt{3}}=\\frac{\\sqrt{3}}{3}.\n\\]\nThus the distance is \\(\\frac{\\sqrt{3}}{3}\\).",
+      "hint": "Use the skew-line distance formula with the cross product of the two direction vectors."
+    },
+    {
+      "id": "math-gaokao-250-q009",
+      "category": "Solid Geometry",
+      "concept": "Distance from a point to a plane in a rectangular box",
+      "learningObjective": "Compute the distance from a box vertex to a plane through three other vertices.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "In rectangular box \\(ABCD-A_1B_1C_1D_1\\), \\(AB=2\\), \\(AD=1\\), and \\(AA_1=2\\). Find the distance from point \\(C\\) to plane \\(A_1BD\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\sqrt{6}}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{\\sqrt{6}}{6}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Take \\(A(0,0,0)\\), \\(B(2,0,0)\\), \\(D(0,1,0)\\), and \\(A_1(0,0,2)\\). The plane \\(A_1BD\\) has equation\n\\[\nx+2y+z=2.\n\\]\nPoint \\(C\\) has coordinates \\((2,1,0)\\). Therefore the distance is\n\\[\n\\frac{|2+2(1)+0-2|}{\\sqrt{1^2+2^2+1^2}}\n=\\frac{2}{\\sqrt{6}}\n=\\frac{\\sqrt{6}}{3}.\n\\]\nThus the distance is \\(\\frac{\\sqrt{6}}{3}\\).",
+      "hint": "Find the equation of the plane through \\(A_1\\), \\(B\\), and \\(D\\), then use the point-to-plane distance formula."
+    },
+    {
+      "id": "math-gaokao-250-q010",
+      "category": "Solid Geometry",
+      "concept": "Distance between skew lines in a rectangular box",
+      "learningObjective": "Compute the distance between two skew lines in a rectangular box using direction vectors.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In rectangular box \\(ABCD-A_1B_1C_1D_1\\), \\(AB=3\\), \\(AD=1\\), and \\(AA_1=2\\). Find the distance between the skew lines \\(A_1B\\) and \\(B_1C\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{7}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{6}{7}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(A_1(0,0,2)\\), \\(B(3,0,0)\\), \\(B_1(3,0,2)\\), and \\(C(3,1,0)\\). Direction vectors are\n\\[\n\\overrightarrow{A_1B}=(3,0,-2),\\qquad \\overrightarrow{B_1C}=(0,1,-2).\n\\]\nTheir cross product is\n\\[\n(3,0,-2)\\times(0,1,-2)=(2,6,3),\n\\]\nwhose magnitude is\n\\[\n\\sqrt{2^2+6^2+3^2}=\\sqrt{49}=7.\n\\]\nThe vector between the lines is\n\\[\n\\overrightarrow{A_1B_1}=(3,0,0).\n\\]\nThen\n\\[\n\\left|\\overrightarrow{A_1B_1}\\cdot(2,6,3)\\right|=|3\\cdot2|=6.\n\\]\nHence the distance is\n\\[\n\\frac{6}{7}.\n\\]\nThus the distance is \\(\\frac{6}{7}\\).",
+      "hint": "Use the skew-line distance formula with the cross product of the two direction vectors."
+    }
+  ]
+}

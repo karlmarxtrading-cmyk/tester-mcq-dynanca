@@ -1,0 +1,70 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> dynanca-mcq@1.1.0 build
+> npm run build:index && npm run verify:protected && npm run verify:mathjax && npm run verify:csp && npm run validate:shipped
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> dynanca-mcq@1.1.0 build:index
+> node tools/bank-index/build-bank-index.js
+
+Manifest entries (listed banks):   2527
+Available in this build:           766
+Not available in this build:       1761
+Questions listed by the manifest:  38015 (all listed banks)
+Questions verified in bank files:  20405 (available banks only)
+  - Mathematics: 40 of 40 banks available, 8575 verified questions
+  - Quiz: 115 of 115 banks available, 4900 verified questions
+  - Math gaokao: 459 of 459 banks available, 4730 verified questions
+  - Comprehensive math: 150 of 1911 banks available, 1500 verified questions
+  - Computer science: 2 of 2 banks available, 700 verified questions
+Missing bank files: 1761 (first: dynanca-151, last: dynanca-1911)
+Wrote assets/data/bank-index.json (21005 bytes). No other file was written.
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> dynanca-mcq@1.1.0 verify:protected
+> node tools/integrity/verify-protected.js
+
+  1/1 identical  assets/js/manifest.js
+  1/1 identical  assets/js/reset-progress.js
+  106/106 identical  assets/vendor/mathjax/**
+  1/1 identical  master-manifest.csv
+  1/1 identical  master-manifest.json
+  1/1 identical  math-mcq-manifest.xlsx
+  1/1 identical  practice/math-visuals.js
+  1/1 identical  practice/practice-engine.js
+  1/1 identical  practice/practice-state.js
+  1/1 identical  practice/practices.css
+  1/1 identical  practice/venn-renderer.js
+  766/766 identical  questions/**
+  2/2 identical  schemas/**
+
+Protected content check PASS — 884 baseline file(s) byte-for-byte identical.
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> dynanca-mcq@1.1.0 verify:mathjax
+> node tools/mathjax-integrity/verify-mathjax.js
+
+MathJax integrity check PASS — 106 files, byte-for-byte unchanged.
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> dynanca-mcq@1.1.0 verify:csp
+> node tools/csp/verify-csp-hashes.js
+
+CSP hash check PASS — all 2 inline script hash(es) are present in _headers with no stale hash, and style-src correctly has no hash-source (0 inline style block(s) exist; runtime styles stay on 'unsafe-inline' for MathJax — see _headers).
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> dynanca-mcq@1.1.0 validate:shipped
+> node tools/ecosystem-validator/validate-ecosystem.js --allow-pending
+
+Source of truth: master-manifest.json (final contract; read-only, not compared with any CSV).
+Subjects: 5, topics/subtopics: 7, practice files listed: 2527, present: 766, pending: 1761.
+Questions in the bank files that are present: 20405.
+
+1 warning(s):
+  WARN: 29 question(s) have identical content (same question+options+answer) in a DIFFERENT bank than their first occurrence. Some overlap is expected from pooled/generated content; large clusters (see the duplicate-bank warning above, if any) usually indicate copy/paste.
+
+1761 listed bank file(s) are not present in this build (pending content):
+  PENDING: dynanca-151 … dynanca-1911 (1761)
+
+PASS WITH PENDING CONTENT — everything that is present is valid; 1761 listed bank file(s) are not in this build. Full content validation is NOT complete: run without --allow-pending after the files are added.

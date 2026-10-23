@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-576",
+  "category": "Comprehensive Mathematics",
+  "title": "576. Discrete Mathematics, Counting & Graph Theory: Directed Graph Representations",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-576-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Direction of an arc",
+      "learningObjective": "Distinguish an arc from its reverse in a directed graph.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a directed graph, how are the arcs \\((u,v)\\) and \\((v,u)\\) related when \\(u\\ne v\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They are different arcs: \\((u,v)\\) goes from \\(u\\) to \\(v\\), and \\((v,u)\\) goes from \\(v\\) to \\(u\\)."
+        },
+        {
+          "label": "B",
+          "text": "They are the same arc, because both join \\(u\\) and \\(v\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "An arc of a directed graph is an ordered pair: it has a tail, where it starts, and a head, where it ends. So \\((u,v)\\) and \\((v,u)\\) point in opposite directions and are different arcs. A graph may contain one of them, both, or neither.",
+      "hint": "An arc is an ordered pair, so the order of the two vertices matters."
+    },
+    {
+      "id": "dynanca-576-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Arcs leaving a vertex",
+      "learningObjective": "Count the arcs that leave a vertex of a small directed graph.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A directed graph has vertices \\(A,B,C\\) and arcs \\(A\\to B\\), \\(B\\to C\\), \\(C\\to A\\), and \\(A\\to C\\). How many arcs leave \\(A\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The arcs that start at \\(A\\) are \\(A\\to B\\) and \\(A\\to C\\), so two arcs leave \\(A\\). The arc \\(C\\to A\\) touches \\(A\\) as well, but it enters \\(A\\); counting it gives \\(3\\), the number of arcs that touch \\(A\\).",
+      "hint": "Count only the arcs whose arrow starts at \\(A\\)."
+    },
+    {
+      "id": "dynanca-576-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Adjacency matrix of a directed graph",
+      "learningObjective": "Write the adjacency matrix of a small directed graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A directed graph has vertices \\(1,2,3\\) and arcs \\(1\\to 2\\), \\(2\\to 3\\), \\(3\\to 1\\), and \\(1\\to 3\\). Its adjacency matrix has \\(1\\) in row \\(i\\), column \\(j\\) exactly when there is an arc \\(i\\to j\\). Which matrix is it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\begin{pmatrix}0&1&1\\\\0&0&1\\\\1&0&0\\end{pmatrix}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\begin{pmatrix}0&0&1\\\\1&0&0\\\\1&1&0\\end{pmatrix}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Row \\(1\\) records the arcs leaving vertex \\(1\\), which go to \\(2\\) and \\(3\\); row \\(2\\) records \\(2\\to 3\\); row \\(3\\) records \\(3\\to 1\\). The other matrix is the transpose: it records, in each row, the arcs that enter the vertex.",
+      "hint": "Each row lists where the arcs from that vertex go."
+    },
+    {
+      "id": "dynanca-576-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Reading arcs from a matrix",
+      "learningObjective": "Read an arc from the adjacency matrix of a directed graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A directed graph on the vertices \\(1,2,3\\) has the adjacency matrix \\(\\begin{pmatrix}0&1&0\\\\0&0&1\\\\1&1&0\\end{pmatrix}\\), where row \\(i\\), column \\(j\\) holds \\(1\\) exactly when there is an arc \\(i\\to j\\). Which arc belongs to the graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\to 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\to 1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The entry in row \\(3\\), column \\(2\\) is \\(1\\), so the arc \\(3\\to 2\\) is present. The entry in row \\(2\\), column \\(1\\) is \\(0\\), so there is no arc \\(2\\to 1\\); the graph has \\(1\\to 2\\) instead, which points the other way.",
+      "hint": "For an arc from one vertex to another, look in the row of the starting vertex."
+    },
+    {
+      "id": "dynanca-576-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A relation drawn as a directed graph",
+      "learningObjective": "Count the arcs of the directed graph of a relation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "On \\(\\{1,2,3,4\\}\\), draw an arc \\(a\\to b\\) whenever \\(a\\) divides \\(b\\) and \\(a\\ne b\\). How many arcs does this directed graph have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The arcs are \\(1\\to 2\\), \\(1\\to 3\\), \\(1\\to 4\\), and \\(2\\to 4\\), so there are \\(4\\). Each arc has one direction only, from the divisor to the multiple. The number \\(8\\) would count each of these pairs in both directions.",
+      "hint": "List the pairs in which the first number is a proper divisor of the second."
+    },
+    {
+      "id": "dynanca-576-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Loops in the adjacency matrix",
+      "learningObjective": "Locate the entries that record loops.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "In the adjacency matrix of a directed graph, where are the entries that record loops, that is, arcs from a vertex to itself?",
+      "options": [
+        {
+          "label": "A",
+          "text": "On the main diagonal"
+        },
+        {
+          "label": "B",
+          "text": "In the last column"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A loop at vertex \\(i\\) is the arc \\(i\\to i\\), which is recorded in row \\(i\\), column \\(i\\). These positions form the main diagonal. The last column records the arcs that enter the last vertex, from any vertex.",
+      "hint": "A loop starts and ends at the same vertex, so its row number equals its column number."
+    },
+    {
+      "id": "dynanca-576-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Symmetry of the adjacency matrix",
+      "learningObjective": "Decide whether the adjacency matrix of a directed graph must be symmetric.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Must the adjacency matrix of a directed graph be symmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; every adjacency matrix equals its transpose."
+        },
+        {
+          "label": "B",
+          "text": "No; an arc \\(u\\to v\\) may be present without the arc \\(v\\to u\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The matrix is symmetric only when every arc is accompanied by its reverse. For the directed graph with the single arc \\(1\\to 2\\), the matrix has \\(1\\) in row \\(1\\), column \\(2\\) and \\(0\\) in row \\(2\\), column \\(1\\), so it is not symmetric. Symmetry is guaranteed for undirected graphs, not for directed ones.",
+      "hint": "Consider a directed graph with a single arc."
+    },
+    {
+      "id": "dynanca-576-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Reading lists of out-neighbours",
+      "learningObjective": "Find a vertex with no incoming arc from lists of out-neighbours.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Procedural",
+      "question": "A directed graph is stored by listing, for each vertex, the vertices its arcs point to: \\(P\\) points to \\(Q\\) and \\(R\\); \\(Q\\) points to \\(R\\); \\(R\\) points to \\(P\\); \\(S\\) points to \\(R\\). Which vertex has no incoming arc?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(S\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(Q\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A vertex has an incoming arc when it appears in the list of some vertex. \\(Q\\) appears in the list of \\(P\\), \\(R\\) appears in three lists, and \\(P\\) appears in the list of \\(R\\). Only \\(S\\) appears in no list, so no arc enters \\(S\\).",
+      "hint": "Look for the vertex that is never named as a target."
+    },
+    {
+      "id": "dynanca-576-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Reversing all arcs",
+      "learningObjective": "Describe how the adjacency matrix changes when every arc is reversed.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Every arc of a directed graph is reversed. How does the adjacency matrix change?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is replaced by its transpose."
+        },
+        {
+          "label": "B",
+          "text": "Every \\(0\\) becomes \\(1\\) and every \\(1\\) becomes \\(0\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reversing the arc \\(i\\to j\\) gives \\(j\\to i\\), so the \\(1\\) in row \\(i\\), column \\(j\\) moves to row \\(j\\), column \\(i\\). Doing this for every arc exchanges rows and columns, which is transposition. Exchanging zeros and ones would instead give the graph that has exactly the missing arcs.",
+      "hint": "Follow a single entry \\(1\\) when its arc is reversed."
+    },
+    {
+      "id": "dynanca-576-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Largest number of arcs",
+      "learningObjective": "Find the largest number of arcs in a directed graph without loops or repeated arcs.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A directed graph has \\(4\\) vertices, no loops, and no repeated arcs. What is the largest possible number of arcs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each ordered pair of different vertices can carry one arc. There are \\(4\\) choices for the tail and \\(3\\) for the head, giving \\(4\\cdot 3=12\\) arcs. The number \\(6\\) counts unordered pairs, which is the largest number of edges of an undirected graph on \\(4\\) vertices.",
+      "hint": "Count ordered pairs of different vertices."
+    }
+  ]
+}

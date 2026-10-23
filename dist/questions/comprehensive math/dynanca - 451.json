@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-451",
+  "category": "Comprehensive Mathematics",
+  "title": "451. Trigonometry & Periodic Models: Modeling Tides and Periodic Measurements",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-451-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Amplitude and mean level of a tide",
+      "learningObjective": "Find amplitude and mean depth from high-tide and low-tide depths.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "At a harbour, the water depth is \\(5\\text{ m}\\) at high tide and \\(1\\text{ m}\\) at low tide. In a sinusoidal model, what are the amplitude and the mean depth?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amplitude \\(2\\text{ m}\\) and mean depth \\(3\\text{ m}\\)"
+        },
+        {
+          "label": "B",
+          "text": "Amplitude \\(4\\text{ m}\\) and mean depth \\(3\\text{ m}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The amplitude is half the difference between high and low tide: \\(\\frac{5-1}{2}=2\\text{ m}\\). The mean depth is the average: \\(\\frac{5+1}{2}=3\\text{ m}\\). The value \\(4\\text{ m}\\) is the full tidal range, which is twice the amplitude.",
+      "hint": "The amplitude is half the difference between the highest and lowest depths."
+    },
+    {
+      "id": "dynanca-451-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Time from high tide to low tide",
+      "learningObjective": "Relate the time between a high tide and the next low tide to the period.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Successive high tides at a harbour occur \\(12\\) hours apart. In a sinusoidal model, how long after a high tide does the next low tide occur?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\) hours"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\) hours"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The time between successive high tides is one period, \\(12\\) hours. A sinusoid reaches its minimum halfway between two consecutive maxima, so the next low tide occurs \\(\\frac{12}{2}=6\\) hours after a high tide.",
+      "hint": "A minimum of a sinusoid lies halfway between two neighbouring maxima."
+    },
+    {
+      "id": "dynanca-451-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Depth at the start of a tide model",
+      "learningObjective": "Evaluate a cosine tide model at time zero.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The depth of water, in metres, is modelled by \\(d(t)=3+2\\cos\\left(\\frac{\\pi t}{6}\\right)\\), where \\(t\\) is in hours. What is the depth at \\(t=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\text{ m}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\text{ m}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "At \\(t=0\\), \\(\\cos 0=1\\), so \\(d(0)=3+2\\cdot 1=5\\text{ m}\\). This is high tide. The value \\(3\\text{ m}\\) is the mean depth, which would be the starting value for a sine model, not for this cosine model.",
+      "hint": "Recall the value of the cosine at \\(0\\)."
+    },
+    {
+      "id": "dynanca-451-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Depth at a later time",
+      "learningObjective": "Evaluate a cosine tide model at a time giving a standard angle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For the model \\(d(t)=3+2\\cos\\left(\\frac{\\pi t}{6}\\right)\\), with depth in metres and \\(t\\) in hours, what is the depth at \\(t=4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\text{ m}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\text{ m}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "At \\(t=4\\) the argument is \\(\\frac{4\\pi}{6}=\\frac{2\\pi}{3}\\), and \\(\\cos\\frac{2\\pi}{3}=-\\frac{1}{2}\\). So \\(d(4)=3+2\\cdot\\left(-\\frac{1}{2}\\right)=2\\text{ m}\\). The value \\(4\\text{ m}\\) uses \\(+\\frac{1}{2}\\), ignoring that the angle is in Quadrant II.",
+      "hint": "Reduce the argument to a standard angle and take care with the sign of its cosine."
+    },
+    {
+      "id": "dynanca-451-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Coefficient for a tidal period",
+      "learningObjective": "Express the coefficient of time for a model with a period of 12.4 hours.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "A tide has period \\(12.4\\) hours and is modelled by \\(d(t)=A\\cos(Bt)+D\\) with \\(t\\) in hours and \\(B>0\\). Which expression gives \\(B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(B=\\frac{12.4}{2\\pi}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(B=\\frac{2\\pi}{12.4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The period of \\(\\cos(Bt)\\) is \\(\\frac{2\\pi}{B}\\). Setting \\(\\frac{2\\pi}{B}=12.4\\) gives \\(B=\\frac{2\\pi}{12.4}\\approx 0.507\\) radians per hour. The reciprocal expression \\(\\frac{12.4}{2\\pi}\\) would give a period of about \\(3.2\\) hours.",
+      "hint": "Solve \\(\\frac{2\\pi}{B}=12.4\\) for \\(B\\)."
+    },
+    {
+      "id": "dynanca-451-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Time of the first low tide",
+      "learningObjective": "Find the first time at which a cosine tide model reaches its minimum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For the model \\(d(t)=3+2\\cos\\left(\\frac{\\pi t}{6}\\right)\\) with \\(t\\ge 0\\) in hours, when does the first low tide occur?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(t=6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(t=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Low tide occurs when the cosine equals \\(-1\\), that is, when \\(\\frac{\\pi t}{6}=\\pi\\), so \\(t=6\\); the depth is then \\(3-2=1\\text{ m}\\). At \\(t=3\\) the argument is \\(\\frac{\\pi}{2}\\), where the cosine is \\(0\\) and the depth equals the mean depth \\(3\\text{ m}\\).",
+      "hint": "The cosine is smallest when its argument is \\(\\pi\\)."
+    },
+    {
+      "id": "dynanca-451-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "First time a given depth occurs",
+      "learningObjective": "Solve a cosine tide model for the first time a given depth is reached.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For the model \\(d(t)=3+2\\cos\\left(\\frac{\\pi t}{6}\\right)\\) with \\(t\\ge 0\\) in hours, when is the depth first equal to \\(4\\text{ m}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(t=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(t=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(3+2\\cos\\left(\\frac{\\pi t}{6}\\right)=4\\), so \\(\\cos\\left(\\frac{\\pi t}{6}\\right)=\\frac{1}{2}\\). The smallest positive argument is \\(\\frac{\\pi}{3}\\), so \\(t=\\frac{6}{\\pi}\\cdot\\frac{\\pi}{3}=2\\). At \\(t=4\\) the cosine is \\(-\\frac{1}{2}\\) and the depth is \\(2\\text{ m}\\).",
+      "hint": "Isolate the cosine, find the smallest positive angle with that cosine, and convert it to a time."
+    },
+    {
+      "id": "dynanca-451-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Time available for a ship",
+      "learningObjective": "Find the total time in one period during which the depth is at least a required value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A ship needs a depth of at least \\(4\\text{ m}\\). For the model \\(d(t)=3+2\\cos\\left(\\frac{\\pi t}{6}\\right)\\), for how many hours in total during \\(0\\le t\\le 12\\) is the depth at least \\(4\\text{ m}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\) hours"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\) hours"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The condition is \\(\\cos\\left(\\frac{\\pi t}{6}\\right)\\ge\\frac{1}{2}\\). Equality holds at \\(t=2\\) and \\(t=10\\). The cosine is at least \\(\\frac{1}{2}\\) for \\(0\\le t\\le 2\\) and for \\(10\\le t\\le 12\\), a total of \\(2+2=4\\) hours. Counting only the first interval gives \\(2\\) hours, which omits the time before the next high tide.",
+      "hint": "Find both times at which the depth equals \\(4\\text{ m}\\), then decide on which parts of the period the depth is greater."
+    },
+    {
+      "id": "dynanca-451-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Building a tide model from two observations",
+      "learningObjective": "Construct a cosine model from the times and depths of a high tide and the next low tide.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A high tide of \\(6.2\\text{ m}\\) occurs at \\(t=3\\) hours, and the next low tide of \\(1.8\\text{ m}\\) occurs at \\(t=9\\) hours. Which model, with depth in metres, fits these observations?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(d(t)=2.2\\cos\\left(\\frac{\\pi(t-3)}{6}\\right)+4.0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(d(t)=4.4\\cos\\left(\\frac{\\pi(t-3)}{6}\\right)+1.8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The amplitude is \\(\\frac{6.2-1.8}{2}=2.2\\) and the mean depth is \\(\\frac{6.2+1.8}{2}=4.0\\). Half a period is \\(9-3=6\\) hours, so the period is \\(12\\) and \\(B=\\frac{2\\pi}{12}=\\frac{\\pi}{6}\\). A cosine with its maximum at \\(t=3\\) gives the stated model; check: \\(d(9)=2.2\\cos\\pi+4.0=1.8\\). The other model gives \\(d(3)=6.2\\) but \\(d(9)=-2.6\\), which is impossible for a depth.",
+      "hint": "Compute the amplitude and mean from the two depths, and the period from the two times; then check both observations."
+    },
+    {
+      "id": "dynanca-451-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Cycles of a periodic measurement",
+      "learningObjective": "Count the complete cycles of a periodic measurement in a given time.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A sensor reading is modelled by \\(y=0.5\\sin\\left(\\frac{2\\pi t}{1.6}\\right)\\), where \\(t\\) is in seconds. How many complete cycles does the reading make in \\(8\\) seconds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12.8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The period is \\(\\frac{2\\pi}{2\\pi/1.6}=1.6\\) seconds. The number of complete cycles in \\(8\\) seconds is \\(\\frac{8}{1.6}=5\\). Multiplying \\(8\\) by \\(1.6\\) gives \\(12.8\\), which is not a number of cycles.",
+      "hint": "Identify the period from the rule, then divide the total time by the period."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-527",
+  "category": "Comprehensive Mathematics",
+  "title": "527. Sets, Logic, Reasoning & Proof: Antisymmetric Relations",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-527-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of an antisymmetric relation",
+      "learningObjective": "State the definition of an antisymmetric relation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "When is a relation \\(R\\) on a set \\(A\\) antisymmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When \\((a,b)\\in R\\) and \\((b,a)\\in R\\) together imply \\(a=b\\)"
+        },
+        {
+          "label": "B",
+          "text": "When \\((a,b)\\in R\\) implies \\((b,a)\\notin R\\) for all \\(a\\) and \\(b\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A relation is antisymmetric when two different elements are never related in both directions: if both \\((a,b)\\) and \\((b,a)\\) are present, then \\(a=b\\). The second condition is stronger; it also forbids pairs \\((a,a)\\), and it defines an asymmetric relation.",
+      "hint": "Antisymmetry allows pairs \\((a,a)\\); check which condition permits them."
+    },
+    {
+      "id": "dynanca-527-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Antisymmetry of the usual order",
+      "learningObjective": "Decide whether the relation less than or equal to is antisymmetric.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Is the relation \\(\\le\\) on the integers antisymmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; \\(1\\le 2\\) holds, but \\(2\\le 1\\) does not."
+        },
+        {
+          "label": "B",
+          "text": "Yes; if \\(a\\le b\\) and \\(b\\le a\\), then \\(a=b\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "If both \\(a\\le b\\) and \\(b\\le a\\) hold, the two numbers must be equal, which is exactly the antisymmetry condition. The fact that \\(1\\le 2\\) holds without \\(2\\le 1\\) shows that the relation is not symmetric; it does not contradict antisymmetry.",
+      "hint": "Assume both \\(a\\le b\\) and \\(b\\le a\\) and see what follows."
+    },
+    {
+      "id": "dynanca-527-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Recognising an antisymmetric relation",
+      "learningObjective": "Decide which relation on a small set is antisymmetric.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which relation on \\(\\{1,2,3\\}\\) is antisymmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{(1,1),(1,2),(2,3)\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{(1,2),(2,1)\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In the first relation, no two different elements are related in both directions, so it is antisymmetric; the pair \\((1,1)\\) is allowed. The second relation contains both \\((1,2)\\) and \\((2,1)\\) with \\(1\\ne 2\\), which violates antisymmetry.",
+      "hint": "Look for two different elements that are related in both directions."
+    },
+    {
+      "id": "dynanca-527-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Antisymmetry of divisibility on positive integers",
+      "learningObjective": "Decide whether divisibility on the positive integers is antisymmetric.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "On the positive integers, is the relation \"\\(a\\) divides \\(b\\)\" antisymmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; \\(2\\mid 4\\) but \\(4\\nmid 2\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; if \\(a\\mid b\\) and \\(b\\mid a\\), then \\(a=b\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "For positive integers, \\(a\\mid b\\) implies \\(a\\le b\\), and \\(b\\mid a\\) implies \\(b\\le a\\). Together these give \\(a=b\\), so the relation is antisymmetric. The example \\(2\\mid 4\\), \\(4\\nmid 2\\) shows only that the relation is not symmetric.",
+      "hint": "For positive integers, a divisor is never larger than the number it divides."
+    },
+    {
+      "id": "dynanca-527-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Divisibility on non-zero integers",
+      "learningObjective": "Decide whether divisibility remains antisymmetric when negative integers are allowed.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "On the non-zero integers, is the relation \"\\(a\\) divides \\(b\\)\" antisymmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; \\(2\\mid -2\\) and \\(-2\\mid 2\\), but \\(2\\ne -2\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; divisibility is antisymmetric on every set of integers."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(-2=2\\cdot(-1)\\) and \\(2=(-2)\\cdot(-1)\\), each of \\(2\\) and \\(-2\\) divides the other. They are different numbers, so antisymmetry fails. The property holds on the positive integers but is lost when negative integers are included.",
+      "hint": "Compare a positive integer with its negative."
+    },
+    {
+      "id": "dynanca-527-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Symmetric and antisymmetric at once",
+      "learningObjective": "Decide whether a relation can be both symmetric and antisymmetric.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Can a relation be both symmetric and antisymmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; for example \\(\\{(1,1),(2,2)\\}\\) on \\(\\{1,2\\}\\) is both."
+        },
+        {
+          "label": "B",
+          "text": "No; the two properties contradict each other."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The relation \\(\\{(1,1),(2,2)\\}\\) is symmetric, because each pair is its own reversal, and antisymmetric, because no two different elements are related in both directions. Symmetry and antisymmetry are not opposites; a relation has both exactly when all its pairs have the form \\((a,a)\\).",
+      "hint": "Consider a relation that contains only pairs with equal components."
+    },
+    {
+      "id": "dynanca-527-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Antisymmetry of set inclusion",
+      "learningObjective": "Decide whether inclusion of sets is antisymmetric.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "On the power set of a set \\(S\\), is the relation \\(\\subseteq\\) antisymmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; \\(A\\subseteq B\\) and \\(B\\subseteq A\\) together imply \\(A=B\\)."
+        },
+        {
+          "label": "B",
+          "text": "No; \\(A\\subseteq B\\) does not imply \\(B\\subseteq A\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Two sets that are subsets of each other have the same elements and are therefore equal; this is the antisymmetry condition. That \\(A\\subseteq B\\) does not imply \\(B\\subseteq A\\) means that the relation is not symmetric, which is a different matter.",
+      "hint": "Recall the criterion for equality of two sets."
+    },
+    {
+      "id": "dynanca-527-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Pairs with equal components",
+      "learningObjective": "Decide whether pairs of the form (a, a) violate antisymmetry.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Does a pair of the form \\((a,a)\\) in a relation violate antisymmetry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the condition requires \\(a=b\\) only when both \\((a,b)\\) and \\((b,a)\\) are present, and here \\(a=b\\) holds."
+        },
+        {
+          "label": "B",
+          "text": "Yes; an antisymmetric relation cannot contain a pair and its reversal."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For the pair \\((a,a)\\), the pair and its reversal coincide, and the conclusion \\(a=b\\) of the antisymmetry condition is true. So such pairs are allowed. Antisymmetry forbids only having both \\((a,b)\\) and \\((b,a)\\) for different elements \\(a\\) and \\(b\\).",
+      "hint": "Apply the definition with \\(b=a\\)."
+    },
+    {
+      "id": "dynanca-527-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Antisymmetry of the strict order",
+      "learningObjective": "Decide whether the relation less than is antisymmetric.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Is the relation \\(<\\) on the integers antisymmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the relation is not reflexive, so it cannot be antisymmetric."
+        },
+        {
+          "label": "B",
+          "text": "Yes; \\(a<b\\) and \\(b<a\\) never hold together, so the condition is satisfied vacuously."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Antisymmetry says: whenever \\(a<b\\) and \\(b<a\\) both hold, \\(a=b\\). The hypothesis is never satisfied, so the conditional is true for all \\(a\\) and \\(b\\), and the relation is antisymmetric. Antisymmetry does not require reflexivity.",
+      "hint": "Ask whether the hypothesis of the antisymmetry condition can ever be true for this relation."
+    },
+    {
+      "id": "dynanca-527-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A symmetric relation that is not antisymmetric",
+      "learningObjective": "Decide whether a relation defined by an even difference is antisymmetric.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "On the integers, let \\(a\\) be related to \\(b\\) when \\(a-b\\) is even. Is this relation antisymmetric?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; \\(1\\) is related to \\(3\\) and \\(3\\) is related to \\(1\\), but \\(1\\ne 3\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; \\(a-b\\) and \\(b-a\\) are both even only when \\(a=b\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(1-3=-2\\) and \\(3-1=2\\) are both even, the pairs \\((1,3)\\) and \\((3,1)\\) are in the relation although \\(1\\ne 3\\). So antisymmetry fails. In fact \\(b-a=-(a-b)\\) is even whenever \\(a-b\\) is, so the relation is symmetric.",
+      "hint": "Find two different integers with an even difference."
+    }
+  ]
+}

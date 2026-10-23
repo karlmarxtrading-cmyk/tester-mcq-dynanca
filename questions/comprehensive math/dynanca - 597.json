@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-597",
+  "category": "Comprehensive Mathematics",
+  "title": "597. Discrete Mathematics, Counting & Graph Theory: Minimum Spanning Trees by Kruskal Algorithm",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-597-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The rule of the algorithm",
+      "learningObjective": "State how the algorithm of Kruskal builds a spanning tree.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does the algorithm of Kruskal build a minimum spanning tree?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It examines the edges in order of increasing weight and accepts an edge unless it closes a cycle with the accepted edges."
+        },
+        {
+          "label": "B",
+          "text": "It starts from one vertex and repeatedly adds the cheapest edge that leaves the tree built so far."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The algorithm of Kruskal sorts all edges by weight and goes through them from lightest to heaviest, keeping every edge that joins two different components of what has been accepted. Growing a single tree from a start vertex is the method of Prim, which is a different algorithm.",
+      "hint": "This algorithm looks at the whole list of edges, not at one growing tree."
+    },
+    {
+      "id": "dynanca-597-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The first edge",
+      "learningObjective": "Identify the first edge accepted by the algorithm.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A weighted graph has the edges \\(AB:1\\), \\(BC:2\\), \\(AC:3\\), \\(CD:4\\), \\(BD:5\\), \\(DE:6\\), and \\(CE:7\\), where the number after each edge is its weight. Which edge does the algorithm of Kruskal accept first?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(CE\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(AB\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The algorithm starts with the lightest edge, which is \\(AB\\) with weight \\(1\\). A single edge cannot close a cycle, so it is accepted. The edge \\(CE\\) is the heaviest and is examined last, if at all.",
+      "hint": "Sort the edges by weight."
+    },
+    {
+      "id": "dynanca-597-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A rejected edge",
+      "learningObjective": "Decide whether an edge is accepted or rejected.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A weighted graph has the edges \\(AB:1\\), \\(BC:2\\), \\(AC:3\\), \\(CD:4\\), \\(BD:5\\), \\(DE:6\\), and \\(CE:7\\), where the number after each edge is its weight. The algorithm of Kruskal has accepted \\(AB\\) and \\(BC\\). What happens to the edge \\(AC\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is accepted, because it is the lightest remaining edge."
+        },
+        {
+          "label": "B",
+          "text": "It is rejected, because it would close the cycle \\(A,B,C,A\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The vertices \\(A\\) and \\(C\\) are already connected through \\(B\\) by the accepted edges. Adding \\(AC\\) would close the cycle \\(A,B,C,A\\), so the edge is rejected. Being the lightest remaining edge only means that it is examined next, not that it is accepted.",
+      "hint": "Check whether the two endpoints are already connected by accepted edges."
+    },
+    {
+      "id": "dynanca-597-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Weight of the tree",
+      "learningObjective": "Find the total weight of a minimum spanning tree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A weighted graph has the edges \\(AB:1\\), \\(BC:2\\), \\(AC:3\\), \\(CD:4\\), \\(BD:5\\), \\(DE:6\\), and \\(CE:7\\), where the number after each edge is its weight. What is the total weight of a minimum spanning tree?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(13\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The algorithm of Kruskal accepts \\(AB\\) and \\(BC\\), rejects \\(AC\\), accepts \\(CD\\), rejects \\(BD\\), and accepts \\(DE\\). The total weight is \\(1+2+4+6=13\\). The sum \\(1+2+3+4=10\\) of the four lightest edges is not attainable, because those edges contain a cycle and do not reach \\(E\\).",
+      "hint": "Add the weights of the accepted edges only."
+    },
+    {
+      "id": "dynanca-597-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The accepted edges",
+      "learningObjective": "List the edges accepted by the algorithm in order.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A weighted graph has the edges \\(AB:1\\), \\(BC:2\\), \\(AC:3\\), \\(CD:4\\), \\(BD:5\\), \\(DE:6\\), and \\(CE:7\\), where the number after each edge is its weight. Which edges does the algorithm of Kruskal accept, in order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(AB,\\ BC,\\ AC,\\ CD\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(AB,\\ BC,\\ CD,\\ DE\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(AB\\) and \\(BC\\) are accepted. \\(AC\\) is rejected because \\(A\\) and \\(C\\) are already connected. \\(CD\\) is accepted, bringing in \\(D\\). \\(BD\\) is rejected because \\(B\\) and \\(D\\) are already connected. \\(DE\\) is accepted, bringing in \\(E\\). The tree is then complete, with four edges on five vertices.",
+      "hint": "Before accepting an edge, check whether its endpoints are already connected."
+    },
+    {
+      "id": "dynanca-597-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Size of a spanning tree",
+      "learningObjective": "Find the number of edges of a spanning tree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A connected weighted graph has \\(9\\) vertices. How many edges does the algorithm of Kruskal accept in total?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The accepted edges form a spanning tree, and a tree on \\(9\\) vertices has \\(9-1=8\\) edges. The algorithm can stop as soon as \\(8\\) edges have been accepted; a ninth edge would necessarily close a cycle.",
+      "hint": "A tree has one edge fewer than vertices."
+    },
+    {
+      "id": "dynanca-597-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting rejections",
+      "learningObjective": "Count the edges rejected before the tree is complete.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A weighted graph has the edges \\(AB:1\\), \\(BC:2\\), \\(AC:3\\), \\(CD:4\\), \\(BD:5\\), \\(DE:6\\), and \\(CE:7\\), where the number after each edge is its weight. The algorithm of Kruskal stops as soon as the spanning tree is complete. How many edges has it rejected by then?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The edges are examined in the order \\(AB\\), \\(BC\\), \\(AC\\), \\(CD\\), \\(BD\\), \\(DE\\). Of these, \\(AC\\) and \\(BD\\) are rejected, and the other four are accepted, which completes the tree. The heaviest edge \\(CE\\) is never examined, so it is not counted among the rejected edges.",
+      "hint": "Stop counting when four edges have been accepted."
+    },
+    {
+      "id": "dynanca-597-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The heaviest edge of a cycle",
+      "learningObjective": "Identify an edge that is in no minimum spanning tree.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "In a weighted graph, the edges \\(AB\\) of weight \\(1\\), \\(BC\\) of weight \\(2\\), and \\(AC\\) of weight \\(3\\) form a cycle. Which of these edges cannot belong to a minimum spanning tree?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(AB\\), the lightest edge of the cycle"
+        },
+        {
+          "label": "B",
+          "text": "\\(AC\\), the heaviest edge of the cycle"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Suppose a spanning tree contains \\(AC\\). Removing \\(AC\\) splits the tree into two parts, and one of the edges \\(AB\\), \\(BC\\) joins these parts again. Both are lighter than \\(AC\\), so the exchange gives a lighter spanning tree. Hence the strictly heaviest edge of a cycle is never in a minimum spanning tree.",
+      "hint": "Ask whether a tree using the heaviest edge of the cycle could be improved by an exchange."
+    },
+    {
+      "id": "dynanca-597-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A square with diagonals",
+      "learningObjective": "Find the weight of a minimum spanning tree of a graph on four vertices.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A weighted graph has the edges \\(PQ:3\\), \\(QR:1\\), \\(RS:4\\), \\(SP:2\\), \\(PR:5\\), and \\(QS:6\\), where the number after each edge is its weight. What is the total weight of a minimum spanning tree?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The algorithm of Kruskal accepts \\(QR\\) with weight \\(1\\), then \\(SP\\) with weight \\(2\\), then \\(PQ\\) with weight \\(3\\), which joins the two pieces. The tree is complete with weight \\(1+2+3=6\\). Using \\(RS\\) with weight \\(4\\) in place of \\(PQ\\) gives \\(7\\), which is not minimal.",
+      "hint": "After the two lightest edges, look for the lightest edge that joins the two pieces."
+    },
+    {
+      "id": "dynanca-597-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Equal weights",
+      "learningObjective": "Count the minimum spanning trees of a triangle with equal weights.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A graph is a triangle whose three edges all have weight \\(2\\). How many different minimum spanning trees does it have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A spanning tree of a triangle consists of two of its three edges, so there are \\(3\\) spanning trees, one for each omitted edge. All of them have weight \\(2+2=4\\), so all \\(3\\) are minimum spanning trees. A minimum spanning tree is unique when all weights are different, but not in general.",
+      "hint": "Count the spanning trees and compare their weights."
+    }
+  ]
+}

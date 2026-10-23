@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-459",
+  "category": "Comprehensive Mathematics",
+  "title": "459. Trigonometry & Periodic Models: Interpreting Harmonics of a Periodic Signal",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-459-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Frequency of a harmonic",
+      "learningObjective": "Compute the frequency of a given harmonic from the fundamental frequency.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A periodic signal has fundamental frequency \\(100\\text{ Hz}\\). What is the frequency of its third harmonic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(300\\text{ Hz}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(33.3\\text{ Hz}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The \\(n\\)th harmonic has frequency \\(n\\) times the fundamental frequency. For \\(n=3\\): \\(3\\cdot 100=300\\text{ Hz}\\). Dividing by \\(3\\) gives about \\(33.3\\text{ Hz}\\), which is below the fundamental and is not a harmonic.",
+      "hint": "Harmonics are whole-number multiples of the fundamental frequency."
+    },
+    {
+      "id": "dynanca-459-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Identifying a harmonic number",
+      "learningObjective": "Identify which harmonic a component is from its frequency.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A signal is \\(\\sin(2\\pi\\cdot 50t)+0.5\\sin(2\\pi\\cdot 150t)\\), with \\(t\\) in seconds, and its fundamental frequency is \\(50\\text{ Hz}\\). Which harmonic is the component with frequency \\(150\\text{ Hz}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The third harmonic"
+        },
+        {
+          "label": "B",
+          "text": "The second harmonic"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The harmonic number is the ratio of the component frequency to the fundamental frequency: \\(\\frac{150}{50}=3\\). So the \\(150\\text{ Hz}\\) component is the third harmonic. The second harmonic would have frequency \\(100\\text{ Hz}\\), which is absent from this signal.",
+      "hint": "Divide the frequency of the component by the fundamental frequency."
+    },
+    {
+      "id": "dynanca-459-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Period of a harmonic",
+      "learningObjective": "Compute the period of a harmonic from the fundamental period.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A periodic signal has fundamental period \\(0.02\\text{ s}\\). What is the period of its fourth harmonic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.005\\text{ s}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.08\\text{ s}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The fourth harmonic has four times the fundamental frequency, so its period is one quarter of the fundamental period: \\(\\frac{0.02}{4}=0.005\\text{ s}\\). Multiplying by \\(4\\) gives \\(0.08\\text{ s}\\), which would be a lower frequency, not a harmonic.",
+      "hint": "A higher frequency means a shorter period; divide the fundamental period by the harmonic number."
+    },
+    {
+      "id": "dynanca-459-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Dominant harmonic",
+      "learningObjective": "Read the amplitudes of harmonics from a sum of sinusoids.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "A signal is \\(f(t)=2\\sin t+\\sin 3t+0.5\\sin 5t\\). Which component has the largest amplitude?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The fundamental, \\(2\\sin t\\)"
+        },
+        {
+          "label": "B",
+          "text": "The fifth harmonic, \\(0.5\\sin 5t\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The amplitude of each component is the coefficient of its sine: \\(2\\) for the fundamental, \\(1\\) for the third harmonic, and \\(0.5\\) for the fifth harmonic. The largest is \\(2\\), belonging to the fundamental. The fifth harmonic has the highest frequency but the smallest amplitude.",
+      "hint": "Amplitude is given by the coefficient, not by the number multiplying \\(t\\)."
+    },
+    {
+      "id": "dynanca-459-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Angular frequency of a harmonic",
+      "learningObjective": "Compute the angular frequency of a harmonic from the fundamental angular frequency.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A periodic signal has fundamental angular frequency \\(\\omega_0=4\\text{ rad/s}\\). What is the angular frequency of its fifth harmonic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\text{ rad/s}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\text{ rad/s}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The \\(n\\)th harmonic has angular frequency \\(n\\omega_0\\). For \\(n=5\\): \\(5\\cdot 4=20\\text{ rad/s}\\). Adding \\(5\\) and \\(4\\) gives \\(9\\), which is not a multiple of the fundamental and so is not a harmonic.",
+      "hint": "Multiply the fundamental angular frequency by the harmonic number."
+    },
+    {
+      "id": "dynanca-459-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Period of a signal with a third harmonic",
+      "learningObjective": "Determine the period of a signal made of a fundamental and its third harmonic.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is the period of the signal \\(f(t)=\\sin t+0.5\\sin 3t\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\pi\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2\\pi}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The fundamental \\(\\sin t\\) has period \\(2\\pi\\), and the third harmonic \\(\\sin 3t\\) has period \\(\\frac{2\\pi}{3}\\), so it also repeats every \\(2\\pi\\). Their sum therefore repeats every \\(2\\pi\\). It does not repeat every \\(\\frac{2\\pi}{3}\\): for example \\(f(0)=0\\), but \\(f\\left(\\frac{2\\pi}{3}\\right)=\\sin\\frac{2\\pi}{3}+0.5\\sin 2\\pi=\\frac{\\sqrt{3}}{2}\\).",
+      "hint": "Adding a harmonic does not shorten the period; test the candidate period on the fundamental term."
+    },
+    {
+      "id": "dynanca-459-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Frequencies of odd harmonics",
+      "learningObjective": "List the frequencies present in a signal containing only odd harmonics.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A signal with fundamental frequency \\(60\\text{ Hz}\\) contains only odd harmonics. What are its three lowest frequencies?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60\\text{ Hz}\\), \\(180\\text{ Hz}\\), and \\(300\\text{ Hz}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60\\text{ Hz}\\), \\(120\\text{ Hz}\\), and \\(180\\text{ Hz}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The odd harmonics have numbers \\(1\\), \\(3\\), \\(5\\), and so on. Their frequencies are \\(1\\cdot 60=60\\), \\(3\\cdot 60=180\\), and \\(5\\cdot 60=300\\text{ Hz}\\). The frequency \\(120\\text{ Hz}\\) is the second harmonic, which is even and therefore absent.",
+      "hint": "Multiply the fundamental frequency by the first three odd whole numbers."
+    },
+    {
+      "id": "dynanca-459-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Relative amplitude of harmonics",
+      "learningObjective": "Compare the amplitudes of two harmonics from a coefficient formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "In a certain periodic signal the \\(n\\)th harmonic, for odd \\(n\\), has amplitude \\(\\frac{4}{n\\pi}\\). What is the ratio of the amplitude of the third harmonic to that of the fundamental?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The fundamental (\\(n=1\\)) has amplitude \\(\\frac{4}{\\pi}\\) and the third harmonic has amplitude \\(\\frac{4}{3\\pi}\\). The ratio is \\(\\frac{4/(3\\pi)}{4/\\pi}=\\frac{1}{3}\\). The amplitudes decrease as the harmonic number increases, so the ratio must be less than \\(1\\).",
+      "hint": "Substitute \\(n=3\\) and \\(n=1\\) into the formula and divide."
+    },
+    {
+      "id": "dynanca-459-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Harmonics and overtones",
+      "learningObjective": "Determine the harmonic number of a component from its frequency.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "A musical tone has fundamental frequency \\(110\\text{ Hz}\\). One of its components has frequency \\(440\\text{ Hz}\\). Which harmonic is this component?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The third harmonic"
+        },
+        {
+          "label": "B",
+          "text": "The fourth harmonic"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The harmonic number is \\(\\frac{440}{110}=4\\), so the component is the fourth harmonic. The fundamental itself counts as the first harmonic. Counting only the components above the fundamental (the overtones) would make it the third overtone, but it is the fourth harmonic.",
+      "hint": "The fundamental is the first harmonic; divide the frequencies to obtain the harmonic number."
+    },
+    {
+      "id": "dynanca-459-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Harmonic number from angular frequencies",
+      "learningObjective": "Identify a harmonic when the fundamental angular frequency is not one.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A signal is \\(f(t)=3\\cos(2t)+\\cos(6t)\\), and its fundamental angular frequency is \\(2\\text{ rad/s}\\). Which harmonic is the term \\(\\cos(6t)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The third harmonic"
+        },
+        {
+          "label": "B",
+          "text": "The sixth harmonic"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The harmonic number is the ratio of angular frequencies: \\(\\frac{6}{2}=3\\). So \\(\\cos(6t)\\) is the third harmonic. The number \\(6\\) is its angular frequency; it would be the harmonic number only if the fundamental angular frequency were \\(1\\text{ rad/s}\\).",
+      "hint": "Compare the coefficient of \\(t\\) in the term with the fundamental angular frequency."
+    }
+  ]
+}

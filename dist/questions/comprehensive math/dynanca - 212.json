@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-212",
+  "category": "Comprehensive Mathematics",
+  "title": "212. Algebra, Equations & Inequalities: Using Polynomial Multiplicities in Sign Analysis",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-212-q001",
+      "category": "Algebra",
+      "concept": "Identifying the multiplicity of a root",
+      "learningObjective": "Determine the multiplicity of a root from a factored polynomial.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For the polynomial \\(f(x)=(x-2)^3(x+1)^2\\), what is the multiplicity of the root \\(x=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The factor corresponding to the root \\(x=2\\) is \\((x-2)^3\\). The exponent on this factor is \\(3\\), so the multiplicity of the root \\(x=2\\) is \\(3\\). The factor \\((x+1)^2\\) corresponds to the root \\(x=-1\\), not \\(x=2\\).",
+      "hint": "The multiplicity of a root is the exponent of its corresponding linear factor."
+    },
+    {
+      "id": "dynanca-212-q002",
+      "category": "Algebra",
+      "concept": "Even multiplicity and sign behavior at a root",
+      "learningObjective": "Determine whether a polynomial touches or crosses the \\(x\\)-axis at a root of even multiplicity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For \\(f(x)=(x+1)^4(x-3)\\), what happens to the graph of \\(f\\) at \\(x=-1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It crosses the x-axis and changes sign."
+        },
+        {
+          "label": "B",
+          "text": "It touches the x-axis and does not change sign."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The root \\(x=-1\\) comes from the factor \\((x+1)^4\\), which has even multiplicity \\(4\\). When a root has even multiplicity, the graph touches the x-axis at that root and the sign of the polynomial does not change. Therefore, at \\(x=-1\\), the graph touches the x-axis and does not change sign.",
+      "hint": "Find the multiplicity of the root \\(x=-1\\), then decide whether the factor \\((x+1)^4\\) can change sign as \\(x\\) passes \\(-1\\)."
+    },
+    {
+      "id": "dynanca-212-q003",
+      "category": "Algebra",
+      "concept": "Sign analysis with an even-multiplicity factor",
+      "learningObjective": "Solve a polynomial inequality involving a squared factor.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\((x-1)^2(x+2)>0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x>-2\\) and \\(x\\ne 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x<-2\\) or \\(x>1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The factor \\((x-1)^2\\) is always nonnegative and equals zero only at \\(x=1\\). The factor \\(x+2\\) is positive when \\(x>-2\\) and negative when \\(x<-2\\). Therefore, the product is positive exactly when \\(x>-2\\), except at \\(x=1\\) where the product is zero. Thus the solution is \\(x>-2\\) and \\(x\\ne 1\\).",
+      "hint": "A squared factor is never negative, so focus on the sign of the remaining factor and exclude any zero of the squared factor."
+    },
+    {
+      "id": "dynanca-212-q004",
+      "category": "Algebra",
+      "concept": "Sign analysis with odd multiplicity",
+      "learningObjective": "Solve a polynomial inequality where the sign changes at roots of odd multiplicity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\((x-2)^3(x+1)<0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x<-1\\) or \\(x>2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1<x<2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The critical values are \\(x=-1\\) and \\(x=2\\). Both factors have odd multiplicity, so the sign changes at each root. Testing intervals gives: for \\(x<-1\\), the product is positive; for \\(-1<x<2\\), the product is negative; for \\(x>2\\), the product is positive. Therefore, the solution of \\((x-2)^3(x+1)<0\\) is \\(-1<x<2\\).",
+      "hint": "Use the critical values to divide the number line, then test the sign of the product on each interval."
+    },
+    {
+      "id": "dynanca-212-q005",
+      "category": "Algebra",
+      "concept": "Comparing sign changes at roots of different multiplicities",
+      "learningObjective": "Identify which polynomial changes sign at a given root.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which function changes sign at \\(x=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(x)=x^3(x-1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f(x)=x^2(x-1)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(f(x)=x^3(x-1)\\), the root \\(x=0\\) has multiplicity \\(3\\), which is odd, so the sign changes at \\(x=0\\). For \\(f(x)=x^2(x-1)\\), the root \\(x=0\\) has multiplicity \\(2\\), which is even, so the sign does not change at \\(x=0\\). Therefore, \\(f(x)=x^3(x-1)\\) is the function that changes sign at \\(x=0\\).",
+      "hint": "A polynomial changes sign at a root exactly when that root has odd multiplicity."
+    },
+    {
+      "id": "dynanca-212-q006",
+      "category": "Algebra",
+      "concept": "Multiplicity and sign change",
+      "learningObjective": "Relate a sign change at a root to the parity of its multiplicity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(f(x)=(x-a)^m g(x)\\), where \\(g\\) is a polynomial with \\(g(a)\\ne 0\\), and \\(f\\) changes sign at \\(x=a\\), what must be true about \\(m\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m\\) is odd."
+        },
+        {
+          "label": "B",
+          "text": "\\(m\\) is even."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Because \\(g(a)\\ne 0\\), the root \\(x=a\\) has multiplicity exactly \\(m\\). A polynomial changes sign at a root exactly when the root has odd multiplicity. Since \\(f\\) changes sign at \\(x=a\\), the exponent \\(m\\) must be odd. If \\(m\\) were even, the sign would not change at \\(x=a\\).",
+      "hint": "Think about the sign of \\((x-a)^m\\) just to the left and just to the right of \\(x=a\\)."
+    },
+    {
+      "id": "dynanca-212-q007",
+      "category": "Algebra",
+      "concept": "Solving inequalities with mixed multiplicities",
+      "learningObjective": "Solve a polynomial inequality by analyzing even and odd multiplicities.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\((x+2)^2(x-1)^3\\ge 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-2\\) or \\(x\\ge 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\ge 1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The factor \\((x+2)^2\\) is nonnegative and equals zero at \\(x=-2\\). The factor \\((x-1)^3\\) is negative for \\(x<1\\), zero at \\(x=1\\), and positive for \\(x>1\\). Testing intervals gives a negative product for \\(x<-2\\) and for \\(-2<x<1\\), zero at \\(x=-2\\) and \\(x=1\\), and a positive product for \\(x>1\\). Therefore, the solution is \\(x=-2\\) or \\(x\\ge 1\\).",
+      "hint": "Include all roots where the product equals zero, and check the sign on each interval."
+    },
+    {
+      "id": "dynanca-212-q008",
+      "category": "Algebra",
+      "concept": "Sign analysis with an isolated zero from an even-multiplicity factor",
+      "learningObjective": "Solve a polynomial inequality and include an isolated zero correctly.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\((x+1)^3(x-2)^2\\le 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\le-1\\) or \\(x=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\le-1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The root \\(x=-1\\) has odd multiplicity \\(3\\), so the sign changes there. The root \\(x=2\\) has even multiplicity \\(2\\), so the sign does not change there, but the product equals zero at \\(x=2\\). Testing intervals shows the product is negative for \\(x<-1\\), positive for \\(-1<x<2\\), and positive for \\(x>2\\). Therefore, the inequality \\((x+1)^3(x-2)^2\\le 0\\) is satisfied by \\(x\\le-1\\) and also by the isolated value \\(x=2\\).",
+      "hint": "Remember that an even-multiplicity root still makes the polynomial equal to zero, even though the sign does not change."
+    },
+    {
+      "id": "dynanca-212-q009",
+      "category": "Algebra",
+      "concept": "Determining where a polynomial changes sign",
+      "learningObjective": "Identify all roots at which a polynomial changes sign by using multiplicities.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "For \\(f(x)=(x+3)^2(x-1)^5(x-4)^4\\), at which root does \\(f\\) change sign?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At \\(x=-3\\), \\(x=1\\), and \\(x=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "Only at \\(x=1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A polynomial changes sign only at roots of odd multiplicity. The root \\(x=-3\\) has multiplicity \\(2\\), which is even. The root \\(x=1\\) has multiplicity \\(5\\), which is odd. The root \\(x=4\\) has multiplicity \\(4\\), which is even. Therefore, \\(f\\) changes sign only at \\(x=1\\).",
+      "hint": "Check the exponent of each factor to determine whether the multiplicity is odd or even."
+    },
+    {
+      "id": "dynanca-212-q010",
+      "category": "Algebra",
+      "concept": "Parameter conditions for multiplicity and sign change",
+      "learningObjective": "Determine the parity conditions on multiplicities that produce a specified sign behavior.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The polynomial \\(f(x)=(x-2)^m(x+1)^n\\) changes sign at \\(x=2\\) but does not change sign at \\(x=-1\\). Which condition must hold?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m\\) is even and \\(n\\) is odd."
+        },
+        {
+          "label": "B",
+          "text": "\\(m\\) is odd and \\(n\\) is even."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A polynomial changes sign at a root when that root has odd multiplicity and does not change sign when the multiplicity is even. Since \\(f\\) changes sign at \\(x=2\\), the exponent \\(m\\) must be odd. Since \\(f\\) does not change sign at \\(x=-1\\), the exponent \\(n\\) must be even. Therefore, \\(m\\) is odd and \\(n\\) is even.",
+      "hint": "Match each required sign behavior with the correct parity of the corresponding multiplicity."
+    }
+  ]
+}

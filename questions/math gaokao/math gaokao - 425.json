@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-425",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 425",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-425-q001",
+      "category": "Mathematical Reasoning",
+      "concept": "Monotonicity and Order Preservation",
+      "learningObjective": "Use the definition of a strictly increasing function to compare function values.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(f\\) is a strictly increasing function on \\(\\mathbb{R}\\) and \\(f(1)=2\\), \\(f(4)=7\\), which statement must be true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(2)>f(3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f(2)<f(3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(f\\) is strictly increasing, \\(2<3\\) implies \\(f(2)<f(3)\\). The given values \\(f(1)=2\\) and \\(f(4)=7\\) are consistent with this order but are not needed for comparing \\(f(2)\\) and \\(f(3)\\).",
+      "hint": "Recall that a strictly increasing function preserves the order of inputs: if \\(a<b\\), then \\(f(a)<f(b)\\)."
+    },
+    {
+      "id": "math-gaokao-425-q002",
+      "category": "Mathematical Reasoning",
+      "concept": "Monotonicity and Reversal of Order",
+      "learningObjective": "Use the definition of a strictly decreasing function to compare function values.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(f\\) is a strictly decreasing function on \\(\\mathbb{R}\\) and \\(f(1)=10\\), \\(f(5)=2\\), which statement must be true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(3)>f(4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f(3)<f(4)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(f\\) is strictly decreasing, \\(3<4\\) implies \\(f(3)>f(4)\\). The values \\(f(1)=10\\) and \\(f(5)=2\\) illustrate the decreasing behavior but are not required for the comparison at \\(3\\) and \\(4\\).",
+      "hint": "For a strictly decreasing function, a smaller input gives a larger output."
+    },
+    {
+      "id": "math-gaokao-425-q003",
+      "category": "Mathematical Reasoning",
+      "concept": "Monotonicity of Quadratic Functions",
+      "learningObjective": "Determine the monotonicity of a quadratic function on a given interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The function \\(f(x)=x^2-4x+3\\) is considered on the interval \\([2,5]\\). Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f\\) is strictly decreasing on \\([2,5]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f\\) is strictly increasing on \\([2,5]\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate: \\(f'(x)=2x-4\\). For \\(x\\in[2,5]\\), we have \\(2x-4\\ge 0\\), with equality only at \\(x=2\\). Hence \\(f\\) is strictly increasing on \\([2,5]\\). Equivalently, \\(f(x)=(x-2)^2-1\\), whose vertex is at \\(x=2\\), so it increases for \\(x\\ge 2\\).",
+      "hint": "Find the vertex or use the sign of the derivative on the given interval."
+    },
+    {
+      "id": "math-gaokao-425-q004",
+      "category": "Mathematical Reasoning",
+      "concept": "Monotonicity of Exponential Functions",
+      "learningObjective": "Determine the monotonicity of an exponential function by examining its derivative.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The function \\(f(x)=e^{-x}\\) is defined on \\(\\mathbb{R}\\). Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f\\) is strictly increasing on \\(\\mathbb{R}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f\\) is strictly decreasing on \\(\\mathbb{R}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The derivative is \\(f'(x)=-e^{-x}\\). Since \\(e^{-x}>0\\) for all real \\(x\\), we have \\(f'(x)<0\\) for all \\(x\\in\\mathbb{R}\\). Therefore \\(f\\) is strictly decreasing on \\(\\mathbb{R}\\).",
+      "hint": "Differentiate the function and determine the sign of the derivative everywhere."
+    },
+    {
+      "id": "math-gaokao-425-q005",
+      "category": "Mathematical Reasoning",
+      "concept": "Monotonicity of Composite Functions",
+      "learningObjective": "Determine the monotonicity of a composition of increasing and decreasing functions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Suppose \\(f\\) is strictly increasing on \\(\\mathbb{R}\\) and \\(g\\) is strictly decreasing on \\(\\mathbb{R}\\). Define \\(h(x)=f(g(x))\\). Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(h\\) is strictly decreasing on \\(\\mathbb{R}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(h\\) is strictly increasing on \\(\\mathbb{R}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(x_1<x_2\\). Since \\(g\\) is strictly decreasing, \\(g(x_1)>g(x_2)\\). Since \\(f\\) is strictly increasing, applying \\(f\\) preserves this inequality: \\(f(g(x_1))>f(g(x_2))\\). Thus \\(h(x_1)>h(x_2)\\), so \\(h\\) is strictly decreasing on \\(\\mathbb{R}\\).",
+      "hint": "Track how the inequality direction changes through the inner and outer functions."
+    },
+    {
+      "id": "math-gaokao-425-q006",
+      "category": "Mathematical Reasoning",
+      "concept": "Derivative Sign and Monotonicity",
+      "learningObjective": "Relate the sign of the derivative on an interval to the monotonicity of the function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f\\) be differentiable on an interval \\(I\\). If \\(f'(x)>0\\) for every \\(x\\in I\\), which conclusion is valid? Assume that the interval contains at least two distinct real numbers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f\\) is strictly increasing on \\(I\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f\\) is strictly decreasing on \\(I\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A positive derivative on an interval means the function is strictly increasing there. Indeed, for any \\(x_1<x_2\\) in \\(I\\), the Mean Value Theorem gives \\(f(x_2)-f(x_1)=f'(c)(x_2-x_1)\\) for some \\(c\\in(x_1,x_2)\\). Since \\(f'(c)>0\\) and \\(x_2-x_1>0\\), we get \\(f(x_2)>f(x_1)\\).",
+      "hint": "Use the Mean Value Theorem or the standard derivative test for monotonicity."
+    },
+    {
+      "id": "math-gaokao-425-q007",
+      "category": "Mathematical Reasoning",
+      "concept": "Parameter Condition for Monotonicity",
+      "learningObjective": "Find the parameter condition that makes a cubic function strictly increasing on \\(\\mathbb{R}\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For the function \\(f(x)=x^3+ax\\), which condition on the real parameter \\(a\\) makes \\(f\\) strictly increasing on \\(\\mathbb{R}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a\\ge 0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a<0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Here \\(f'(x)=3x^2+a\\). If \\(a>0\\), the derivative is positive everywhere, so \\(f\\) is strictly increasing. If \\(a=0\\), then \\(f(x)=x^3\\), which is also strictly increasing. If \\(a<0\\), the derivative is negative on the nonempty interval \\((-\\sqrt{-a/3},\\sqrt{-a/3})\\), so \\(f\\) decreases there. Thus exactly \\(a\\ge0\\) works. In general, a nonnegative derivative alone guarantees nondecrease, not strict increase; the special form of this function resolves the boundary case.",
+      "hint": "Examine the minimum value of the derivative expression and consider the special case where the derivative can equal zero."
+    },
+    {
+      "id": "math-gaokao-425-q008",
+      "category": "Mathematical Reasoning",
+      "concept": "Monotonicity of a Reciprocal Function",
+      "learningObjective": "Determine the monotonicity of the reciprocal of a positive increasing function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(f\\) be strictly increasing on an interval \\(I\\) and \\(f(x)>0\\) for all \\(x\\in I\\). Define \\(g(x)=\\frac{1}{f(x)}\\). Which statement is correct? Assume that the interval contains at least two distinct real numbers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(g\\) is strictly increasing on \\(I\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(g\\) is strictly decreasing on \\(I\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(x_1<x_2\\) in \\(I\\). Since \\(f\\) is strictly increasing, \\(f(x_1)<f(x_2)\\). Because both values are positive, taking reciprocals reverses the inequality: \\(\\frac{1}{f(x_1)}>\\frac{1}{f(x_2)}\\). Hence \\(g(x_1)>g(x_2)\\), so \\(g\\) is strictly decreasing on \\(I\\).",
+      "hint": "Recall how taking reciprocals affects an inequality between two positive numbers."
+    },
+    {
+      "id": "math-gaokao-425-q009",
+      "category": "Mathematical Reasoning",
+      "concept": "Necessary Derivative Condition for Strict Monotonicity",
+      "learningObjective": "Analyze the relationship between strict increase of a differentiable function and the sign of its derivative.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(f\\) be differentiable and strictly increasing on \\(\\mathbb{R}\\). Which statement must be true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f'(x)\\ge 0\\) for all \\(x\\in\\mathbb{R}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f'(x)>0\\) for all \\(x\\in\\mathbb{R}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For an interior point \\(x\\), strict increase makes \\(\\frac{f(x+h)-f(x)}{h}>0\\) for every sufficiently small nonzero \\(h\\): numerator and denominator have the same sign. If the derivative exists, the limit of these positive quotients is nonnegative. Hence \\(f'(x)\\ge0\\), but it may equal zero. For example, \\(f(x)=x^3\\) is strictly increasing and has \\(f'(0)=0\\).",
+      "hint": "Consider whether a strictly increasing function can have a derivative equal to zero at some point."
+    },
+    {
+      "id": "math-gaokao-425-q010",
+      "category": "Mathematical Reasoning",
+      "concept": "Monotonicity of a Transformed Increasing Function",
+      "learningObjective": "Determine the monotonicity of a function formed by reflecting and subtracting an increasing function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(f\\) be strictly increasing on \\(\\mathbb{R}\\). Define \\(h(x)=f(-x)-f(x)\\). Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(h\\) is strictly increasing on \\(\\mathbb{R}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(h\\) is strictly decreasing on \\(\\mathbb{R}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(x_1<x_2\\). Then \\(-x_1>-x_2\\), and since \\(f\\) is strictly increasing, \\(f(-x_1)>f(-x_2)\\). Also \\(x_1<x_2\\) implies \\(f(x_1)<f(x_2)\\), so \\(-f(x_1)>-f(x_2)\\). Adding these inequalities gives \\(f(-x_1)-f(x_1)>f(-x_2)-f(x_2)\\), that is, \\(h(x_1)>h(x_2)\\). Hence \\(h\\) is strictly decreasing on \\(\\mathbb{R}\\).",
+      "hint": "Compare \\(h(x_1)\\) and \\(h(x_2)\\) for \\(x_1<x_2\\), and use the monotonicity of \\(f\\) on both \\(x\\) and \\(-x\\)."
+    }
+  ]
+}

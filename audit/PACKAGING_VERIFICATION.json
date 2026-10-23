@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-10-08T11:54:07.698185+00:00",
+  "scope": "Independent ZIP-content verification of tested bytes. Draft CRC verified before this proof is added; final CRC and SHA-256 independently verified after final packaging and recorded in the external checkpoint/SHA256SUMS.",
+  "draftVerification": {
+    "zipCrc": "PASS",
+    "zipPaths": "PASS",
+    "zipFiles": 1110,
+    "jsonFilesParsed": 837,
+    "sourceFilesRetained": 937,
+    "sourceFilesDeleted": 0,
+    "originalSourceHashesStillMatch": 937,
+    "sourceDirectoriesRetained": 61,
+    "sourceEmptyDirectoriesRetained": 3,
+    "protectedFilesChecked": 884,
+    "protectedMismatches": [],
+    "manifestListedBanks": 2527,
+    "manifestListedQuestions": 38015,
+    "shippedBankFiles": 766,
+    "shippedQuestions": 20405,
+    "questionIdOptionKeyCompatibilityChecks": 20405,
+    "pendingBanks": 1761,
+    "pendingRange": "dynanca-151 .. dynanca-1911",
+    "ml": {
+      "id": "ml",
+      "path": "questions/computer science/ml.json",
+      "title": "Machine Learning Fundamentals",
+      "questions": 100
+    },
+    "inventoryHashChecks": 1108,
+    "reportBytesMatchProject": true
+  },
+  "packagingExclusions": [
+    "__pycache__",
+    "node_modules",
+    "qa-evidence",
+    "test-results",
+    "*.pyc"
+  ],
+  "originalArchiveIncludedInsideFinalZip": false,
+  "fullValidationStatus": "EXPECTED_FAIL_PENDING_ONLY",
+  "note": "No self-referential final ZIP hash is embedded in the ZIP. Use delivered SHA256SUMS.txt for the final archive hash."
+}

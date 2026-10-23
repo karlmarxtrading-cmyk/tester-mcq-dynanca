@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-223",
+  "category": "Comprehensive Mathematics",
+  "title": "223. Algebra, Equations & Inequalities: Validating Extraneous Roots",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-223-q001",
+      "category": "Algebra",
+      "concept": "Validating extraneous roots in radical equations",
+      "learningObjective": "Solve a radical equation and reject an extraneous root.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\sqrt{x+2}=x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-1\\) or \\(x=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since the right side equals a square root, it must satisfy \\(x\\ge0\\). Squaring both sides gives \\(x+2=x^2\\), so \\(x^2-x-2=0\\). Factoring gives \\((x-2)(x+1)=0\\), so \\(x=2\\) or \\(x=-1\\). Check \\(x=-1\\): \\(\\sqrt{1}=1\\), but \\(-1\\) is not equal to \\(1\\), so it is extraneous. Check \\(x=2\\): \\(\\sqrt{4}=2\\), which is valid. Therefore the only solution is \\(x=2\\).",
+      "hint": "After squaring, substitute each candidate back into the original equation and check the domain."
+    },
+    {
+      "id": "dynanca-223-q002",
+      "category": "Algebra",
+      "concept": "Validating extraneous roots in rational equations",
+      "learningObjective": "Solve a rational equation and identify that the only algebraic solution is excluded from the domain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(\\frac{x}{x-3}=2+\\frac{3}{x-3}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "No solution"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain excludes \\(x=3\\). Multiply both sides by \\(x-3\\): \\(x=2(x-3)+3\\). Expanding gives \\(x=2x-6+3=2x-3\\). Solving gives \\(x=3\\). However, \\(x=3\\) is excluded from the original equation because it makes the denominator zero. Therefore the algebraic solution is extraneous, and the equation has no solution.",
+      "hint": "Check whether the value obtained after clearing the denominator is allowed in the original equation."
+    },
+    {
+      "id": "dynanca-223-q003",
+      "category": "Algebra",
+      "concept": "Validating extraneous roots in radical equations",
+      "learningObjective": "Solve a radical equation and reject a candidate that violates the required domain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\sqrt{x+5}=x-1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-1\\) or \\(x=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since the right side equals a square root, it must satisfy \\(x-1\\ge0\\), so \\(x\\ge1\\). Squaring gives \\(x+5=x^2-2x+1\\), so \\(x^2-3x-4=0\\). Factoring gives \\((x-4)(x+1)=0\\), so \\(x=4\\) or \\(x=-1\\). Check \\(x=-1\\): the right side is \\(-2\\), which cannot equal a square root, so it is extraneous. Check \\(x=4\\): \\(\\sqrt{9}=3\\) and \\(4-1=3\\), so it is valid. Therefore the only solution is \\(x=4\\).",
+      "hint": "Remember that the right side of the equation must be nonnegative before checking each candidate."
+    },
+    {
+      "id": "dynanca-223-q004",
+      "category": "Algebra",
+      "concept": "Validating extraneous roots in logarithmic equations",
+      "learningObjective": "Solve a logarithmic equation and reject a candidate that violates the domain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(\\log_2(x-3)+\\log_2(x+1)=5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-5\\) or \\(x=7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain requires \\(x-3>0\\) and \\(x+1>0\\), so \\(x>3\\). Combine the logarithms: \\(\\log_2[(x-3)(x+1)]=5\\). Then \\((x-3)(x+1)=2^5=32\\), so \\(x^2-2x-3=32\\), which gives \\(x^2-2x-35=0\\). Factoring gives \\((x-7)(x+5)=0\\), so \\(x=7\\) or \\(x=-5\\). Since the domain requires \\(x>3\\), \\(x=-5\\) is extraneous. The valid solution is \\(x=7\\).",
+      "hint": "Combine the logarithms, solve the resulting quadratic, and reject any candidate outside the domain."
+    },
+    {
+      "id": "dynanca-223-q005",
+      "category": "Algebra",
+      "concept": "Validating extraneous roots in radical equations",
+      "learningObjective": "Solve a radical equation and select the valid solution after checking both candidates.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(\\sqrt{2x+1}=x-1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=0\\) or \\(x=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since the right side equals a square root, it must satisfy \\(x-1\\ge0\\), so \\(x\\ge1\\). Squaring gives \\(2x+1=x^2-2x+1\\), so \\(x^2-4x=0\\). Factoring gives \\(x(x-4)=0\\), so \\(x=0\\) or \\(x=4\\). Check \\(x=0\\): the right side is \\(-1\\), which cannot equal a square root, so it is extraneous. Check \\(x=4\\): \\(\\sqrt{9}=3\\) and \\(4-1=3\\), so it is valid. Therefore the only solution is \\(x=4\\).",
+      "hint": "Use the condition \\(x-1\\ge0\\) before checking the candidates obtained by squaring."
+    },
+    {
+      "id": "dynanca-223-q006",
+      "category": "Algebra",
+      "concept": "Validating extraneous roots in logarithmic equations",
+      "learningObjective": "Solve a logarithmic equation and identify the valid solution from two algebraic candidates.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\log_2(x-1)+\\log_2(x+2)=3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=\\frac{-1+\\sqrt{41}}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=\\frac{-1\\pm\\sqrt{41}}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain requires \\(x-1>0\\) and \\(x+2>0\\), so \\(x>1\\). Combine the logarithms: \\(\\log_2[(x-1)(x+2)]=3\\). Then \\((x-1)(x+2)=2^3=8\\), so \\(x^2+x-2=8\\), which gives \\(x^2+x-10=0\\). By the quadratic formula,\n\\[\nx=\\frac{-1\\pm\\sqrt{41}}{2}\n\\]\nSince \\(\\frac{-1+\\sqrt{41}}{2}>1\\) and \\(\\frac{-1-\\sqrt{41}}{2}<1\\), only \\(x=\\frac{-1+\\sqrt{41}}{2}\\) satisfies the domain. Therefore the valid solution is \\(x=\\frac{-1+\\sqrt{41}}{2}\\).",
+      "hint": "Combine the logarithms, solve the quadratic, and check both roots against \\(x>1\\)."
+    },
+    {
+      "id": "dynanca-223-q007",
+      "category": "Algebra",
+      "concept": "Validating extraneous roots in radical equations",
+      "learningObjective": "Solve a radical equation and reject a candidate that makes the right side negative.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(\\sqrt{2x+7}=x+2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-3\\) or \\(x=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The right side must be nonnegative because it equals a square root, so \\(x+2\\ge0\\), or \\(x\\ge-2\\). Squaring gives \\(2x+7=x^2+4x+4\\), so \\(x^2+2x-3=0\\). Factoring gives \\((x+3)(x-1)=0\\), so \\(x=-3\\) or \\(x=1\\). Check \\(x=-3\\): the right side is \\(-1\\), which cannot equal a square root, so it is extraneous. Check \\(x=1\\): \\(\\sqrt{9}=3\\) and \\(1+2=3\\), so it is valid. Therefore the only solution is \\(x=1\\).",
+      "hint": "Require the right side to be nonnegative, then check each candidate in the original equation."
+    },
+    {
+      "id": "dynanca-223-q008",
+      "category": "Algebra",
+      "concept": "Validating extraneous roots in rational equations",
+      "learningObjective": "Solve a rational equation and identify that the algebraic solution is excluded from the domain.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\frac{2}{x-2}+\\frac{3}{x+2}=\\frac{4x}{x^2-4}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "No solution"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain excludes \\(x=2\\) and \\(x=-2\\). Since \\(x^2-4=(x-2)(x+2)\\), multiply both sides by \\((x-2)(x+2)\\):\n\\[\n2(x+2)+3(x-2)=4x\n\\]\nExpanding gives \\(2x+4+3x-6=4x\\), so \\(5x-2=4x\\). Solving gives \\(x=2\\). However, \\(x=2\\) is excluded from the domain because it makes the denominator zero. Therefore the algebraic solution is extraneous, and the equation has no solution.",
+      "hint": "After clearing denominators, check whether the result is allowed in the original equation."
+    },
+    {
+      "id": "dynanca-223-q009",
+      "category": "Algebra",
+      "concept": "Validating extraneous roots in radical equations",
+      "learningObjective": "Solve a radical equation and reject a negative candidate that violates the domain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\sqrt{x+6}=x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-2\\) or \\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since the right side equals a square root, it must satisfy \\(x\\ge0\\). Squaring both sides gives \\(x+6=x^2\\), so \\(x^2-x-6=0\\). Factoring gives \\((x-3)(x+2)=0\\), so \\(x=3\\) or \\(x=-2\\). Check \\(x=-2\\): \\(\\sqrt{4}=2\\), but \\(-2\\) is not equal to \\(2\\), so it is extraneous. Check \\(x=3\\): \\(\\sqrt{9}=3\\), which is valid. Therefore the only solution is \\(x=3\\).",
+      "hint": "After squaring, check each candidate against the domain and the original equation."
+    },
+    {
+      "id": "dynanca-223-q010",
+      "category": "Algebra",
+      "concept": "Validating extraneous roots in logarithmic equations",
+      "learningObjective": "Solve a logarithmic equation and reject a candidate outside the domain.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\log_3(x-2)+\\log_3(x+4)=3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-7\\) or \\(x=5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain requires \\(x-2>0\\) and \\(x+4>0\\), so \\(x>2\\). Combine the logarithms: \\(\\log_3[(x-2)(x+4)]=3\\). Then \\((x-2)(x+4)=3^3=27\\), so \\(x^2+2x-8=27\\), which gives \\(x^2+2x-35=0\\). Factoring gives \\((x+7)(x-5)=0\\), so \\(x=-7\\) or \\(x=5\\). Since the domain requires \\(x>2\\), \\(x=-7\\) is extraneous. The valid solution is \\(x=5\\).",
+      "hint": "Combine the logarithms, solve the quadratic, and reject any root that does not satisfy \\(x>2\\)."
+    }
+  ]
+}

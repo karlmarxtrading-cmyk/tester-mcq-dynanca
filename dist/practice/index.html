@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dynanca Practice</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/css/shell.css"><link rel="stylesheet" href="practices.css"><link rel="stylesheet" href="../assets/css/practice-status.css">
+<!-- Standalone theme module: applies the stored light/dark/system choice before
+     first paint and keeps working when a question bank fails to load. -->
+<script src="../assets/js/theme.js"></script>
+
+<!-- Local MathJax v3.2.1. Question content is injected dynamically, so the
+     practice engine explicitly calls MathJax.typesetPromise() after render. -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    displayMath: [['\\[', '\\]'], ['$$', '$$']]
+  },
+  options: {
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  startup: {
+    typeset: false,
+    pageReady: function () {
+      return MathJax.startup.defaultPageReady().then(function () {
+        var queued = window.__dynancaMathQueue || [];
+        window.__dynancaMathQueue = [];
+        return queued.reduce(function (promise, el) {
+          return promise.then(function () {
+            if (el && el.isConnected) return MathJax.typesetPromise([el]);
+          });
+        }, Promise.resolve());
+      });
+    }
+  }
+};
+</script>
+<script id="MathJax-script" async src="../assets/vendor/mathjax/tex-chtml-full.js"></script>
+</head><body>
+<header class="site-header"><div class="site-header__inner"><a class="brand" href="../"><span class="brand__logo-plate"><img class="brand__logo" src="../assets/img/logo-dynanca.png" alt="Dynanca" width="169" height="34"></span></a>
+<div class="theme-switch"><nav class="theme-switch__group" aria-label="Choose display theme"><button type="button" class="theme-switch__btn" data-theme-option="light" aria-pressed="false">Light</button><button type="button" class="theme-switch__btn" data-theme-option="dark" aria-pressed="false">Dark</button><button type="button" class="theme-switch__btn" data-theme-option="system" aria-pressed="true">System</button></nav><button type="button" class="dynanca-reset-progress">Reset progress</button></div></div></header>
+<main id="top"><section class="hero"><p class="hero__back"><a class="hero__back-link" id="backToCatalog" href="../#catalog">&larr; Practice catalog</a></p><p class="hero__eyebrow">DYNANCA</p><h1 class="hero__title">Practice</h1><p class="hero__lead">Loading…</p><p class="hero__progress" id="progressSummary" aria-live="polite"></p><p class="hero__review" id="reviewControl" aria-live="polite"></p></section>
+<section class="practice-session" aria-label="Practice session"><div id="practiceContainer"></div><noscript><div class="practice-error practice-status"><strong class="practice-status__title">JavaScript is turned off.</strong><p class="practice-status__text">This practice page needs JavaScript to load the questions and check your answers. Turn JavaScript on in your browser settings, then reload this page.</p><div class="practice-status__actions"><a class="practice-status__link" href="../">Back to the catalog</a></div></div></noscript></section></main>
+<footer class="site-footer"><p>Part of the Dynanca learning ecosystem.</p></footer>
+<script>
+(function(){var p=new URLSearchParams(location.search).get("quiz");window.DynancaPracticeId=p||"unknown";})();
+</script>
+<script src="practice-state.js"></script><script src="venn-renderer.js"></script><script src="math-visuals.js"></script><script src="practice-engine.js"></script><script src="../assets/js/manifest.js"></script><script src="data-loader.js"></script><script src="../assets/js/shell.js"></script><script src="../assets/js/reset-progress.js"></script>
+</body></html>

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-200",
+  "category": "Comprehensive Mathematics",
+  "title": "200. Algebra, Equations & Inequalities: Determining the Number of Real Quadratic Roots",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-200-q001",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Discriminant and Two Distinct Real Roots",
+      "learningObjective": "Determine whether a quadratic equation has two distinct real roots by evaluating its discriminant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many distinct real roots does \\(x^2-6x+5=0\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two distinct real roots"
+        },
+        {
+          "label": "B",
+          "text": "No real roots"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(ax^2+bx+c=0\\), the discriminant is \\(\\Delta=b^2-4ac\\). Here,\n\\[\n\\Delta=(-6)^2-4(1)(5)=36-20=16\n\\]\nSince \\(\\Delta>0\\), the equation has two distinct real roots.",
+      "hint": "Determine the sign of the discriminant."
+    },
+    {
+      "id": "dynanca-200-q002",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Discriminant and a Repeated Real Root",
+      "learningObjective": "Recognize when a quadratic equation has exactly one distinct real root.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many distinct real roots does \\(x^2+4x+4=0\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One distinct real root"
+        },
+        {
+          "label": "B",
+          "text": "Two distinct real roots"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The discriminant is\n\\[\n\\Delta=4^2-4(1)(4)=16-16=0\n\\]\nWhen \\(\\Delta=0\\), the two quadratic solutions coincide. Therefore, the equation has exactly one distinct real root.",
+      "hint": "Calculate \\(b^2-4ac\\) and compare it with zero."
+    },
+    {
+      "id": "dynanca-200-q003",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Negative Discriminant and Nonreal Roots",
+      "learningObjective": "Determine when a quadratic equation has no real roots by using the discriminant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many real roots does \\(2x^2+2x+5=0\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two real roots"
+        },
+        {
+          "label": "B",
+          "text": "No real roots"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The discriminant is\n\\[\n\\Delta=2^2-4(2)(5)=4-40=-36\n\\]\nSince \\(\\Delta<0\\), the quadratic equation has no real roots.",
+      "hint": "Compare the discriminant with zero."
+    },
+    {
+      "id": "dynanca-200-q004",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Detecting a Repeated Root in a Non-Monic Quadratic",
+      "learningObjective": "Determine the number of distinct real roots of a non-monic quadratic equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many distinct real roots does \\(3x^2-12x+12=0\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One distinct real root"
+        },
+        {
+          "label": "B",
+          "text": "Two distinct real roots"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For this equation, \\(a=3\\), \\(b=-12\\), and \\(c=12\\). Its discriminant is\n\\[\n\\Delta=(-12)^2-4(3)(12)=144-144=0\n\\]\nTherefore, the equation has one distinct real root of multiplicity two.",
+      "hint": "Use the coefficients of the quadratic to calculate \\(b^2-4ac\\)."
+    },
+    {
+      "id": "dynanca-200-q005",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Parameter Range for No Real Roots",
+      "learningObjective": "Determine the parameter range for which a quadratic equation has no real roots.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "For which values of \\(m\\) does \\(x^2-2x+m=0\\) have no real roots?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m>1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(m<1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The discriminant is\n\\[\n\\Delta=(-2)^2-4(1)(m)=4-4m\n\\]\nFor no real roots, \\(\\Delta<0\\). Thus,\n\\[\n\\begin{aligned}\n4-4m &< 0\\\\\nm &> 1\n\\end{aligned}\n\\]",
+      "hint": "Translate the condition of having no real roots into an inequality involving the discriminant."
+    },
+    {
+      "id": "dynanca-200-q006",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Parameter Value for a Repeated Real Root",
+      "learningObjective": "Determine the parameter value that produces exactly one distinct real root.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For what value of \\(m\\) does \\(x^2+(m+1)x+m=0\\) have exactly one distinct real root?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(m=-1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A repeated real root requires \\(\\Delta=0\\). Compute the discriminant, then simplify:\n\\[\n\\begin{aligned}\n\\Delta &= (m+1)^2-4m\\\\\n&= m^2-2m+1\\\\\n&= (m-1)^2\n\\end{aligned}\n\\]\nTherefore, \\((m-1)^2=0\\), so \\(m=1\\).",
+      "hint": "Set the discriminant equal to zero and simplify the resulting expression."
+    },
+    {
+      "id": "dynanca-200-q007",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Parameter Range for Two Distinct Real Roots",
+      "learningObjective": "Solve a parameter inequality that ensures a quadratic equation has two distinct real roots.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "For which values of \\(m\\) does \\(x^2-2mx+2m+3=0\\) have two distinct real roots?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1<m<3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(m<-1\\) or \\(m>3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Two distinct real roots require \\(\\Delta>0\\). Compute the discriminant, then factor:\n\\[\n\\begin{aligned}\n\\Delta &= (-2m)^2-4(1)(2m+3)\\\\\n&= 4m^2-8m-12\\\\\n&= 4(m^2-2m-3)\\\\\n&= 4(m-3)(m+1)\n\\end{aligned}\n\\]\nThus, \\((m-3)(m+1)>0\\). This inequality holds outside the two critical values, so \\(m<-1\\) or \\(m>3\\).",
+      "hint": "Factor or solve the quadratic inequality obtained from requiring the discriminant to be positive."
+    },
+    {
+      "id": "dynanca-200-q008",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Quadratic with an Always-Negative Discriminant",
+      "learningObjective": "Determine the number of real roots of a parameterized quadratic by simplifying its discriminant.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For real \\(m\\), how many real roots does \\(x^2+2mx+m^2+4=0\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two distinct real roots for every real \\(m\\)"
+        },
+        {
+          "label": "B",
+          "text": "No real roots for every real \\(m\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The discriminant is\n\\[\n\\begin{aligned}\n\\Delta &= (2m)^2-4(1)(m^2+4)\\\\\n&= 4m^2-4m^2-16\\\\\n&= -16\n\\end{aligned}\n\\]\nSince the discriminant is negative for every real \\(m\\), the equation has no real roots for any real value of \\(m\\).",
+      "hint": "Simplify the discriminant completely before considering particular values of the parameter."
+    },
+    {
+      "id": "dynanca-200-q009",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Classifying Root Counts Across Parameter Ranges",
+      "learningObjective": "Classify the number of distinct real roots of a quadratic across different parameter ranges.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Consider \\(x^2-2(m+1)x+m^2+1=0\\). Which statement correctly describes its distinct real roots?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It has two distinct real roots for \\(m<0\\), one distinct real root for \\(m=0\\), and no real roots for \\(m>0\\)."
+        },
+        {
+          "label": "B",
+          "text": "It has no real roots for \\(m<0\\), one distinct real root for \\(m=0\\), and two distinct real roots for \\(m>0\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute the discriminant, then simplify:\n\\[\n\\begin{aligned}\n\\Delta &= [-2(m+1)]^2-4(m^2+1)\\\\\n&= 4(m+1)^2-4(m^2+1)\\\\\n&= 8m\n\\end{aligned}\n\\]\nTherefore, if \\(m<0\\), then \\(\\Delta<0\\), so there are no real roots. If \\(m=0\\), then \\(\\Delta=0\\), so there is one distinct real root. If \\(m>0\\), then \\(\\Delta>0\\), so there are two distinct real roots.",
+      "hint": "Express the discriminant as a simple multiple of \\(m\\), then analyze its sign."
+    },
+    {
+      "id": "dynanca-200-q010",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Parameterized Leading Coefficient and Root Count",
+      "learningObjective": "Determine the number of real roots of a parameterized quadratic while accounting for the condition that it remains quadratic.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For real \\(m\\ne 1\\), consider\n\\[\n(m-1)x^2-2mx+(m+1)=0\n\\]\nHow many distinct real roots does this quadratic equation have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One distinct real root for every \\(m\\ne 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "Two distinct real roots for every \\(m\\ne 1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Because \\(m\\ne 1\\), the coefficient \\(m-1\\) is nonzero, so the equation remains quadratic. Compute its discriminant, using \\((m-1)(m+1)=m^2-1\\):\n\\[\n\\begin{aligned}\n\\Delta &= (-2m)^2-4(m-1)(m+1)\\\\\n&= 4m^2-4(m^2-1)\\\\\n&= 4\n\\end{aligned}\n\\]\nSince \\(4>0\\) for every permitted value of \\(m\\), the equation always has two distinct real roots.",
+      "hint": "First confirm that the leading coefficient is nonzero, then simplify the discriminant."
+    }
+  ]
+}

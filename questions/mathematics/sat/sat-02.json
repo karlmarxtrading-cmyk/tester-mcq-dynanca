@@ -1,0 +1,650 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "mathematics-sat-02",
+  "title": "SAT 02 · Multiplication and division",
+  "category": "SAT Mathematics",
+  "description": "A/B reasoning practice. Difficulty is editorial, not standardized SAT calibration.",
+  "questionCount": 18,
+  "questions": [
+    {
+      "id": "sat-q0019",
+      "title": "Books Distributed from Library Shelves",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "A school library places \\(15\\) new books on each of \\(8\\) shelves. It then sets aside \\(24\\) books for a reading display and distributes all the remaining books equally into \\(6\\) classroom boxes. How many books are placed in each box? Choose A or B and show the multiplication and division steps.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\) books"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\) books"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The shelves initially hold \\(8\\times15=120\\) books. Setting aside \\(24\\) leaves \\(120-24=96\\) books. Dividing equally into \\(6\\) boxes gives \\(96\\div6=16\\) books per box. Choice A divides the original \\(120\\) books by \\(6\\) without first removing the display books. Therefore, choice B is correct.",
+      "hint": "Find how many books are on all the shelves, take out the display books, and only then share the rest among the boxes."
+    },
+    {
+      "id": "sat-q0020",
+      "title": "Seedling Trays from Daily Deliveries",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "A gardening club receives boxes of seedlings during three days, as shown in the chart. Every box contains exactly \\(8\\) seedlings. The club transfers all the seedlings into planting trays that hold exactly \\(10\\) seedlings each. How many complete planting trays can the club fill? Choose A or B and explain your calculation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\) trays"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\) trays"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The club receives \\(4+6+5=15\\) boxes. Since each box contains \\(8\\) seedlings, the number of seedlings is \\(15\\times8=120\\). Repacking \\(120\\) seedlings into trays of \\(10\\) requires \\(120\\div10=12\\) trays, with none left over. Choice B incorrectly treats the \\(15\\) delivery boxes as the number of planting trays, despite their different capacities. Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0020-v1",
+          "type": "DATA_CHART",
+          "data": {
+            "kind": "bar",
+            "xLabel": "Day",
+            "yLabel": "Boxes delivered",
+            "bars": [
+              {
+                "label": "Monday",
+                "value": 4
+              },
+              {
+                "label": "Tuesday",
+                "value": 6
+              },
+              {
+                "label": "Wednesday",
+                "value": 5
+              }
+            ],
+            "chart": "bar",
+            "labels": [
+              "Monday",
+              "Tuesday",
+              "Wednesday"
+            ],
+            "values": [
+              4,
+              6,
+              5
+            ],
+            "axes": {
+              "xLabel": "Day",
+              "yLabel": "Boxes delivered"
+            }
+          },
+          "alt": "Bar chart showing 4 boxes of seedlings delivered on Monday, 6 on Tuesday, and 5 on Wednesday. Each box contains 8 seedlings."
+        }
+      ],
+      "hint": "Read the three bars to get the number of boxes, convert boxes to seedlings, then convert seedlings to trays of ten."
+    },
+    {
+      "id": "sat-q0021",
+      "title": "Practice Cards for Two Math Skills",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "In a class of \\(36\\) students, \\(22\\) have mastered multiplication facts, \\(18\\) have mastered division facts, and \\(8\\) have mastered both. The Venn diagram shows the corresponding groups. Every student who has mastered neither skill receives \\(6\\) practice cards. How many practice cards are needed for those students? Choose A or B and justify your counting and multiplication.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(48\\) cards"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\) cards"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Students who have mastered at least one skill number \\(22+18-8=32\\); the \\(8\\) students with both skills are subtracted once to avoid double-counting. Thus \\(36-32=4\\) students have mastered neither skill. Each needs \\(6\\) cards, so the teacher needs \\(4\\times6=24\\) cards. Choice A multiplies the \\(8\\) students in the intersection by \\(6\\), but those students have mastered both skills rather than neither. Therefore, choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0021-v1",
+          "type": "VENN",
+          "data": {
+            "universe": {
+              "label": "Students",
+              "total": 36
+            },
+            "sets": [
+              {
+                "id": "M",
+                "label": "Multiplication",
+                "elements": []
+              },
+              {
+                "id": "D",
+                "label": "Division",
+                "elements": []
+              }
+            ],
+            "regions": {
+              "M_only": 14,
+              "D_only": 10,
+              "intersection": 8,
+              "outside": 4
+            }
+          },
+          "alt": "Of 36 students, 14 have mastered multiplication only, 10 division only, 8 both multiplication and division, and 4 neither skill."
+        }
+      ],
+      "hint": "Count the students in at least one group without counting the overlap twice; only the students outside both circles receive cards."
+    },
+    {
+      "id": "sat-q0022",
+      "title": "Square Tiles Across a Courtyard",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "A rectangular courtyard measures \\(15\\) meters by \\(9\\) meters. Its entire floor will be covered without gaps or overlapping tiles using square tiles that each measure \\(3\\) meters by \\(3\\) meters. How many whole tiles are required? Choose A or B and explain how multiplication and division determine the rows and columns.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(45\\) tiles"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\) tiles"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Along the length, \\(15\\div3=5\\) tiles fit. Along the width, \\(9\\div3=3\\) tiles fit. Multiplying the number of columns by the number of rows gives \\(5\\times3=15\\) tiles. Equivalently, the courtyard area is \\(15\\times9=135\\) square meters and each tile covers \\(3\\times3=9\\) square meters, so \\(135\\div9=15\\). Choice A divides the courtyard area by only the tile's side length, \\(135\\div3=45\\), instead of its area. Therefore, choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0022-v1",
+          "type": "GEOMETRY_2D",
+          "data": {
+            "units": "m",
+            "points": [
+              {
+                "id": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "x": 15,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "x": 15,
+                "y": 9
+              },
+              {
+                "id": "D",
+                "x": 0,
+                "y": 9
+              }
+            ],
+            "segments": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "D"
+              ],
+              [
+                "D",
+                "A"
+              ]
+            ]
+          },
+          "alt": "Rectangle ABCD with vertices A(0,0), B(15,0), C(15,9), and D(0,9), representing a 15-meter by 9-meter courtyard. Square tiles of side length 3 meters are described in the question; individual tile boundaries are not drawn."
+        }
+      ],
+      "hint": "Work out how many tiles fit along each side of the courtyard, or compare the courtyard's area with the area of one tile."
+    },
+    {
+      "id": "sat-q0023",
+      "title": "Bolts Reserved Before Assembly",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "A workshop uses the same number of bolts to assemble each equipment kit. The mapping diagram shows the number of bolts needed for \\(2\\), \\(4\\), and \\(6\\) kits. The workshop receives \\(135\\) bolts and reserves enough bolts to build \\(3\\) kits for a demonstration. How many additional complete kits can be assembled from the remaining bolts? Choose A or B and derive the multiplicative rule.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\) additional kits"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\) additional kits"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The mapping shows a constant \\(18\\div2=36\\div4=54\\div6=9\\) bolts per kit. Reserving bolts for \\(3\\) kits uses \\(3\\times9=27\\) bolts. The remaining supply is \\(135-27=108\\) bolts, enough for \\(108\\div9=12\\) additional kits. Choice B calculates \\(135\\div9=15\\) kits from the entire supply and ignores the bolts reserved for the demonstration. Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0023-v1",
+          "type": "MAPPING",
+          "data": {
+            "left": {
+              "label": "Kits",
+              "elements": [
+                2,
+                4,
+                6
+              ]
+            },
+            "right": {
+              "label": "Bolts required",
+              "elements": [
+                18,
+                36,
+                54
+              ]
+            },
+            "arrows": [
+              [
+                2,
+                18
+              ],
+              [
+                4,
+                36
+              ],
+              [
+                6,
+                54
+              ]
+            ]
+          },
+          "alt": "Mapping diagram shows that 2 kits require 18 bolts, 4 kits require 36 bolts, and 6 kits require 54 bolts."
+        }
+      ],
+      "hint": "Use any pair in the mapping to find the bolts per kit, then remove the demonstration bolts before dividing."
+    },
+    {
+      "id": "sat-q0024",
+      "title": "Workers Completing an Unfinished Job",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "The table lists the time required to complete the same job using teams of equally productive workers. Assume work is perfectly divisible and every worker maintains a constant individual rate. Six workers begin the job and work for \\(4\\) days, after which they stop. A new team of \\(8\\) equally productive workers finishes the remaining work. How many additional days does the new team need? Choose A or B and justify the multiplication and division relationship.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\) days"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\) days"
+        }
+      ],
+      "answer": "B",
+      "explanation": "All rows show that the complete job requires \\(4\\times18=6\\times12=9\\times8=72\\) worker-days. The original six workers complete \\(6\\times4=24\\) worker-days before stopping. Thus \\(72-24=48\\) worker-days remain. With \\(8\\) workers, the remaining time is \\(48\\div8=6\\) days. Choice A divides the remaining \\(48\\) worker-days by the original \\(6\\) workers instead of the new team of \\(8\\). Therefore, choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0024-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Workers",
+              "Days for entire job"
+            ],
+            "rows": [
+              [
+                4,
+                18
+              ],
+              [
+                6,
+                12
+              ],
+              [
+                9,
+                8
+              ]
+            ],
+            "headers": [
+              "Workers",
+              "Days for entire job"
+            ]
+          },
+          "alt": "Table showing that 4 equally productive workers finish the entire job in 18 days, 6 workers in 12 days, or 9 workers in 8 days."
+        }
+      ],
+      "hint": "Use any row of the table to find the total amount of work in worker-days, then subtract what the first team finished."
+    },
+    {
+      "id": "sat-q0025",
+      "title": "Concentrate for a Festival Drink",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "A drink recipe requires fruit concentrate and water in the volume ratio \\(3:7\\). A festival stall needs exactly \\(80\\) liters of the mixture, and all the concentrate must come from sealed containers holding \\(4\\) liters each. Assuming volumes add exactly, how many full containers of concentrate must be used? Choose A or B and explain the ratio and division steps.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\) containers"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\) containers"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The recipe contains \\(3+7=10\\) equal volume parts. Each part represents \\(80\\div10=8\\) liters. The required concentrate is \\(3\\times8=24\\) liters. Because each container holds \\(4\\) liters, the number needed is \\(24\\div4=6\\) containers. Choice B counts the \\(8\\)-liter size of one ratio part as though it were the number of containers; it does not account for the \\(3\\) concentrate parts or the \\(4\\)-liter container capacity. Therefore, choice A is correct.",
+      "hint": "Find the volume of one ratio part from the total, decide how many parts are concentrate, then convert liters into 4-liter containers."
+    },
+    {
+      "id": "sat-q0026",
+      "title": "Two Printers Making Usable Packets",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "Printer A produces \\(120\\) pages in \\(8\\) minutes, while Printer B produces \\(100\\) pages in \\(10\\) minutes. Both operate simultaneously for \\(12\\) minutes at their constant individual rates. A quality check then rejects exactly \\(60\\) pages from their combined output. The remaining pages are divided equally into packets of \\(20\\) pages. How many complete packets are produced? Choose A or B and show all steps.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\) packets"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\) packets"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Printer A's rate is \\(120\\div8=15\\) pages per minute, and Printer B's rate is \\(100\\div10=10\\) pages per minute. Together they produce \\(15+10=25\\) pages per minute. Over \\(12\\) minutes, they print \\(25\\times12=300\\) pages. Removing the \\(60\\) rejected pages leaves \\(300-60=240\\) usable pages. These fill \\(240\\div20=12\\) packets. Choice B is \\(300\\div20=15\\), which ignores the rejected pages. Therefore, choice A is correct.",
+      "hint": "Turn each printer's data into pages per minute, combine the rates over 12 minutes, and remove the rejected pages before packing."
+    },
+    {
+      "id": "sat-q0027",
+      "title": "Minimum Analysts for a Fixed Workload",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "A laboratory has a test-processing workload requiring exactly \\(168\\) analyst-hours. Every analyst works at a constant rate, and the workload can be divided freely among analysts without coordination delays. For \\(x>0\\), the graph models the required time as \\(T(x)=168/x\\) hours. If the laboratory must finish in no more than \\(13\\) hours, what is the minimum whole number of analysts needed? Choose A or B and explain the inverse relationship and the integer constraint.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\) analysts"
+        },
+        {
+          "label": "B",
+          "text": "\\(13\\) analysts"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total workload is \\(168\\) analyst-hours, so with \\(x\\) analysts the completion time is \\(168\\div x\\) hours. The requirement \\(168/x\\le13\\), with \\(x>0\\), gives \\(168\\le13x\\), so \\(x\\ge168/13\\approx12.923\\). An analyst count must be an integer, so the minimum is \\(13\\). With \\(12\\) analysts, the job takes \\(168\\div12=14\\) hours, missing the deadline. With \\(13\\) analysts, it takes \\(168/13\\approx12.923\\) hours, meeting it. Choice A fails because it would require \\(14\\) hours. Therefore, choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0027-v1",
+          "type": "FUNCTION_GRAPH",
+          "data": {
+            "axes": {
+              "xMin": 1,
+              "xMax": 24,
+              "yMin": 0,
+              "yMax": 180
+            },
+            "curves": [
+              {
+                "expression": "168/x",
+                "label": "T(x)=168/x"
+              }
+            ],
+            "points": [
+              {
+                "x": 12,
+                "y": 14,
+                "label": "12 analysts: 14 h"
+              },
+              {
+                "x": 14,
+                "y": 12,
+                "label": "14 analysts: 12 h"
+              }
+            ]
+          },
+          "alt": "Decreasing inverse-variation curve T(x)=168/x for positive x, passing through (12,14) and (14,12). In the real scheduling situation, analyst counts are positive integers."
+        }
+      ],
+      "hint": "Set the time formula to be at most 13 hours, solve for the number of analysts, and then test the whole numbers next to your result."
+    },
+    {
+      "id": "sat-q0028",
+      "title": "Repeated Doubling and Sample Division",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "A laboratory starts with exactly \\(375\\) identical digital records. An automated system doubles the total number of records every \\(4\\) hours, with no deletions. After \\(12\\) hours, the system divides all records equally into data batches containing exactly \\(125\\) records each. How many complete batches are created? Choose A or B and explain the repeated multiplication and final division.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\) batches"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\) batches"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In \\(12\\) hours there are \\(12\\div4=3\\) doubling periods. Each doubling multiplies the count by \\(2\\), so the final count is \\(375\\times2^3=375\\times8=3000\\) records. Dividing into equal batches gives \\(3000\\div125=24\\) complete batches. Choice A would result from only two doublings: \\(375\\times2^2\\div125=12\\). It misses one of the three four-hour periods. Therefore, choice B is correct.",
+      "hint": "Count how many 4-hour doubling periods fit into 12 hours, apply that many doublings, then divide into batches."
+    },
+    {
+      "id": "sat-q0029",
+      "title": "Area Under a Multiplicative Scale Factor",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "A rectangular design has an area of \\(64\\) square centimeters. A copy is made by multiplying both its length and its width by \\(\\frac32\\). What is the area of the enlarged copy? Choose A or B and explain why the area does not use the same multiplier as a single side.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(144\\) square centimeters"
+        },
+        {
+          "label": "B",
+          "text": "\\(96\\) square centimeters"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Area is length multiplied by width. Because each dimension is multiplied by \\(\\frac32\\), the area is multiplied by \\(\\frac32\\times\\frac32=\\frac94\\). The enlarged area is therefore \\(64\\times\\frac94=16\\times9=144\\) square centimeters. Choice B multiplies the original area by only one linear scale factor, \\(64\\times\\frac32=96\\). That would account for scaling just one dimension, not both. Therefore, choice A is correct.",
+      "hint": "Think of the area as length times width and ask what happens to that product when each factor is multiplied by the same number."
+    },
+    {
+      "id": "sat-q0030",
+      "title": "Profits Weighted by Investment Time",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "Two partners agree to divide a \\(9000\\)-dollar profit in proportion to each partner's invested capital multiplied by the number of months that capital was invested. Partner A invested \\(6000\\) dollars for \\(8\\) months, while Partner B invested \\(4000\\) dollars for \\(15\\) months. How much of the profit should Partner B receive? Choose A or B and derive the proportional division.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3600\\) dollars"
+        },
+        {
+          "label": "B",
+          "text": "\\(5000\\) dollars"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Partner A's investment-time weight is \\(6000\\times8=48000\\) dollar-months. Partner B's weight is \\(4000\\times15=60000\\) dollar-months. Their ratio is \\(48000:60000=4:5\\), so Partner B receives \\(\\frac5{4+5}=\\frac59\\) of the profit. Thus Partner B receives \\(9000\\times\\frac59=5000\\) dollars. Choice A allocates profit based only on capital, \\(9000\\times\\frac{4000}{6000+4000}=3600\\) dollars, disregarding the different investment periods. Therefore, choice B is correct.",
+      "hint": "Multiply each partner's capital by the months it was invested, then share the profit in the ratio of those products."
+    },
+    {
+      "id": "sat-q0031",
+      "title": "Reconstructing Beads Before Necklace Making",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "A craft teacher starts with an unknown number of beads and divides them equally among \\(6\\) jars. She removes \\(5\\) beads from each jar for decoration. Every jar then contains just enough beads to make \\(3\\) necklaces using exactly \\(7\\) beads per necklace, with none left over. How many beads did the teacher have at the start? Choose A or B and work backward without advanced algebra.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(156\\) beads"
+        },
+        {
+          "label": "B",
+          "text": "\\(126\\) beads"
+        }
+      ],
+      "answer": "A",
+      "explanation": "After decoration, each jar has enough beads for \\(3\\times7=21\\) beads in necklaces. Before \\(5\\) beads were removed, each jar therefore held \\(21+5=26\\) beads. There were \\(6\\) equally filled jars, so the original number was \\(6\\times26=156\\) beads. Check: \\(156\\div6=26\\), \\(26-5=21\\), and \\(21\\div7=3\\) necklaces per jar. Choice B calculates \\(6\\times3\\times7=126\\), counting only the beads left for necklaces and forgetting the \\(5\\) beads removed from each of the \\(6\\) jars. Therefore, choice A is correct.",
+      "hint": "Work backward one jar at a time: first find how many beads a jar holds at the end, then undo the removal, then undo the equal sharing."
+    },
+    {
+      "id": "sat-q0032",
+      "title": "Sticker Boxes and a Remainder Clue",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "A teacher initially packs all her stickers into full boxes of exactly \\(8\\) stickers, with none left over. She gives away exactly \\(3\\) full boxes. When she repacks the remaining stickers into groups of \\(5\\), exactly \\(1\\) sticker is left over. Which of the two proposed original totals is possible? Choose A or B and verify both the original packing and the final remainder.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(72\\) stickers"
+        },
+        {
+          "label": "B",
+          "text": "\\(80\\) stickers"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Both proposed totals can first be packed into full boxes of \\(8\\). For \\(72\\) stickers, the teacher starts with \\(72\\div8=9\\) boxes. Giving away \\(3\\) boxes removes \\(3\\times8=24\\) stickers and leaves \\(72-24=48\\); division by \\(5\\) leaves a remainder of \\(3\\), not \\(1\\). For \\(80\\) stickers, there are \\(80\\div8=10\\) boxes initially. After giving away \\(24\\) stickers, \\(80-24=56\\) remain, and \\(56=5\\times11+1\\). Thus only choice B satisfies both the packing and remainder conditions.",
+      "hint": "For each proposed total, check it splits into full boxes of eight, remove three boxes, and find the remainder when the rest is grouped in fives."
+    },
+    {
+      "id": "sat-q0033",
+      "title": "Workdays After a Crew Reduction",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "Six equally productive workers complete exactly \\(\\frac35\\) of a construction project in \\(4\\) days. Immediately afterward, \\(2\\) workers leave, while the remaining \\(4\\) continue at the same individual rate, with no downtime. How many additional days do the remaining workers need to finish the entire project? Choose A or B and justify the proportional-work calculations.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\) days"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac83\\) days"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first stage uses \\(6\\times4=24\\) worker-days to complete \\(\\frac35\\) of the project. Therefore, the full project requires \\(24\\div\\frac35=24\\times\\frac53=40\\) worker-days. The remaining \\(\\frac25\\) represents \\(40-24=16\\) worker-days. With only \\(4\\) workers continuing, the remaining time is \\(16\\div4=4\\) days. Choice B divides the \\(16\\) worker-days by the original \\(6\\) workers, giving \\(\\frac83\\) days. But only \\(4\\) workers remain, so choice A is correct.",
+      "hint": "Find the worker-days used so far and scale up to the whole project, then share the remaining worker-days among the workers who stay."
+    },
+    {
+      "id": "sat-q0034",
+      "title": "Recovering the Size of Each Carton",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "A store receives \\(9\\) cartons containing equal whole numbers of notebooks. It donates exactly \\(\\frac14\\) of all the notebooks to a school. The remaining notebooks are repacked into exactly \\(15\\) equal bundles with \\(18\\) notebooks in each bundle, leaving none over. How many notebooks were originally in each carton? Choose A or B and explain the reverse multiplication and division steps.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(40\\) notebooks"
+        },
+        {
+          "label": "B",
+          "text": "\\(30\\) notebooks"
+        }
+      ],
+      "answer": "A",
+      "explanation": "After the donation, the store has \\(15\\times18=270\\) notebooks. Donating \\(\\frac14\\) means it retained \\(\\frac34\\) of the original total. Therefore, the original total was \\(270\\div\\frac34=270\\times\\frac43=360\\) notebooks. With \\(9\\) equally filled cartons, each contained \\(360\\div9=40\\) notebooks. Choice B divides the remaining \\(270\\) notebooks by \\(9\\), obtaining \\(30\\), but it ignores the donated quarter. Therefore, choice A is correct.",
+      "hint": "Find how many notebooks remained, decide what fraction of the original that is, and recover the original total before dividing among cartons."
+    },
+    {
+      "id": "sat-q0035",
+      "title": "Least-Cost Box Combination for an Exact Order",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "A distributor must ship exactly \\(200\\) markers without opening any boxes or sending extras. Supplier A sells boxes of \\(8\\) markers for \\(39\\) dollars per box, while Supplier B sells boxes of \\(12\\) markers for \\(54\\) dollars per box. The distributor must buy at least \\(4\\) whole boxes from each supplier. What is the minimum total purchase cost? Choose A or B and examine the feasible whole-number combinations.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(930\\) dollars"
+        },
+        {
+          "label": "B",
+          "text": "\\(912\\) dollars"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(a\\) and \\(b\\) be the numbers of boxes bought from Suppliers A and B. The exact marker requirement is \\(8a+12b=200\\), or \\(2a+3b=50\\), with \\(a\\ge4\\) and \\(b\\ge4\\) integers. Because \\(2a\\) and \\(50\\) are even, \\(3b\\) must be even, making \\(b\\) even. Also, \\(2(4)+3b\\le50\\) implies \\(b\\le14\\). The feasible values of \\(b\\) are therefore \\(4,6,8,10,12,14\\), with corresponding \\(a\\) values \\(19,16,13,10,7,4\\). Their costs \\(39a+54b\\) are, respectively, \\(957,948,939,930,921,912\\) dollars. The lowest cost is \\(912\\) dollars, achieved by \\(4\\) boxes from A and \\(14\\) from B, which supply \\(4(8)+14(12)=200\\) markers. Choice A is the cost of the valid but more expensive combination \\(a=10,b=10\\). Therefore, choice B is correct.",
+      "hint": "Write the marker total as an equation in the two box counts, list the whole-number solutions allowed by the minimum purchases, and compare their costs."
+    },
+    {
+      "id": "sat-q0036",
+      "title": "Two Pumps Operating Against a Leak",
+      "category": "MATH",
+      "concept": "Multiplication and division",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply multiplication and division and justify the selected answer.",
+      "question": "An empty tank can be filled by Pump A alone in \\(6\\) hours or by Pump B alone in \\(8\\) hours. A leak, if neither pump operates, can drain a full tank in \\(24\\) hours. Assume all three flow rates remain constant and add or subtract exactly. Both pumps operate while the leak is active for the first \\(2\\) hours. Pump B is then switched off, but Pump A and the leak continue operating until the tank is full. How many hours pass from the start until the tank is full? Choose A or B and analyze both stages.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\) hours"
+        },
+        {
+          "label": "B",
+          "text": "\\(4.5\\) hours"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Pump A fills \\(\\frac16\\) of the tank per hour, Pump B fills \\(\\frac18\\), and the leak drains \\(\\frac1{24}\\). During the first stage the net rate is \\(\\frac16+\\frac18-\\frac1{24}=\\frac4{24}+\\frac3{24}-\\frac1{24}=\\frac14\\) tank per hour. In \\(2\\) hours, the tank becomes \\(2\\times\\frac14=\\frac12\\) full. After Pump B stops, the net rate is \\(\\frac16-\\frac1{24}=\\frac3{24}=\\frac18\\) tank per hour. Filling the remaining \\(\\frac12\\) requires \\(\\frac12\\div\\frac18=4\\) additional hours. Total elapsed time is \\(2+4=6\\) hours. Choice B would result from ignoring the leak: both pumps would fill \\(\\frac7{12}\\) of the tank in \\(2\\) hours and Pump A alone would require another \\(\\frac5{12}\\div\\frac16=2.5\\) hours, totaling \\(4.5\\). Because the leak remains active, choice A is correct.",
+      "hint": "Express each pump and the leak as a fraction of the tank per hour, find the net rate in each stage, and track how full the tank is after stage one."
+    }
+  ]
+}

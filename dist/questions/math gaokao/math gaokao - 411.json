@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-411",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 411",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-411-q001",
+      "category": "Mathematical Modeling",
+      "concept": "Quadratic Optimization",
+      "learningObjective": "Maximize area under a linear fencing constraint by forming and optimizing a quadratic model.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A farmer has \\(48\\) meters of fencing to enclose a rectangular garden along a straight wall. The wall forms one side of the rectangle, so fencing is needed for the other three sides. What is the maximum possible area of the garden?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(288\\) square meters"
+        },
+        {
+          "label": "B",
+          "text": "\\(576\\) square meters"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(x\\) be the width perpendicular to the wall. The parallel length is \\(48-2x\\), where \\(0<x<24\\). The area is\n\\[\nA(x)=x(48-2x)=-2(x-12)^2+288.\n\\]\nIts maximum is \\(288\\) square meters, attained when the sides are \\(12\\) and \\(24\\) meters. The distractor \\(576\\) treats two fenced sides as if they used all the fencing and omits the third side.",
+      "hint": "Express the area in terms of one side length, then use the vertex of a quadratic function."
+    },
+    {
+      "id": "math-gaokao-411-q002",
+      "category": "Mathematical Modeling",
+      "concept": "Cost Minimization with a Fixed Area",
+      "learningObjective": "Minimize fencing cost by modeling the perimeter as a function of one side length under a fixed-area constraint.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A rectangular field is to be fenced along a river. The river side needs no fence. If the field must have area \\(1800\\) square meters and fencing costs \\(5\\text{ USD}\\) per meter, what is the minimum fencing cost?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(600\\text{ USD}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(720\\text{ USD}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(x\\) be the side perpendicular to the river and \\(y\\) the side parallel to the river. The area condition gives \\(xy=1800\\), so \\(y=\\frac{1800}{x}\\). The required fencing length is \\(L=2x+y=2x+\\frac{1800}{x}\\). Differentiate: \\(L'(x)=2-\\frac{1800}{x^2}\\). Setting \\(L'(x)=0\\) gives \\(x^2=900\\), so \\(x=30\\). Then \\(y=60\\), and \\(L=2(30)+60=120\\). The minimum cost is \\(5\\cdot 120=600\\text{ USD}\\). For \\(x>0\\), \\(L''(x)=3600/x^3>0\\), so the stationary point is the unique global minimum.",
+      "hint": "Write the fencing length as a function of one side, then minimize it using calculus or AM-GM."
+    },
+    {
+      "id": "math-gaokao-411-q003",
+      "category": "Mathematical Modeling",
+      "concept": "Linear Programming",
+      "learningObjective": "Determine the maximum value of a linear objective function over a feasible region defined by linear inequalities.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A linear programming problem asks to maximize \\(P=3x+2y\\) subject to \\(x+y\\le 4\\), \\(x\\le 2\\), \\(x\\ge 0\\), and \\(y\\ge 0\\). What is the maximum value of \\(P\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The feasible region has vertices \\((0,0)\\), \\((2,0)\\), \\((2,2)\\), and \\((0,4)\\). Evaluate \\(P=3x+2y\\) at each vertex: \\(P(0,0)=0\\), \\(P(2,0)=6\\), \\(P(2,2)=10\\), and \\(P(0,4)=8\\). The maximum value is \\(10\\).",
+      "hint": "Evaluate the objective function at the vertices of the feasible region."
+    },
+    {
+      "id": "math-gaokao-411-q004",
+      "category": "Mathematical Modeling",
+      "concept": "Optimization of a Rational Expression",
+      "learningObjective": "Find the minimum value of a function involving a quadratic term and a reciprocal term.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(x>0\\), find the minimum value of \\(f(x)=x^2+\\frac{4}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\sqrt[3]{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\sqrt[3]{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate \\(f(x)=x^2+4x^{-1}\\): \\(f'(x)=2x-\\frac{4}{x^2}\\). Setting \\(f'(x)=0\\) gives \\(2x^3=4\\), so \\(x^3=2\\) and \\(x=\\sqrt[3]{2}\\). Then\n\\[\n\\begin{aligned}\nf(\\sqrt[3]{2})&=(\\sqrt[3]{2})^2+\\frac{4}{\\sqrt[3]{2}} \\\\\n&=\\sqrt[3]{4}+2\\sqrt[3]{4} \\\\\n&=3\\sqrt[3]{4}.\n\\end{aligned}\n\\]\nThus the minimum value is \\(3\\sqrt[3]{4}\\). On \\(x>0\\), \\(f''(x)=2+8/x^3>0\\), so this stationary point is the unique global minimum.",
+      "hint": "Differentiate the function and solve for the critical point in the domain \\(x>0\\)."
+    },
+    {
+      "id": "math-gaokao-411-q005",
+      "category": "Mathematical Modeling",
+      "concept": "Profit Maximization",
+      "learningObjective": "Maximize profit by forming a quadratic profit function from cost and revenue models.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A company produces \\(x\\) units of a product. Its total cost is \\(C(x)=x^2+20x+100\\) and its total revenue is \\(R(x)=80x-x^2\\). What is the maximum profit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(300\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(350\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Profit is \\[\n\\begin{aligned}\nP(x)&=R(x)-C(x) \\\\\n&=(80x-x^2)-(x^2+20x+100) \\\\\n&=-2x^2+60x-100\n\\end{aligned}\n\\]. This quadratic is maximized at \\(x=-\\frac{60}{2(-2)}=15\\). Then\n\\[\n\\begin{aligned}\nP(15)&=-2(15)^2+60(15)-100 \\\\\n&=-450+900-100 \\\\\n&=350.\n\\end{aligned}\n\\]\nSo the maximum profit is \\(350\\).",
+      "hint": "Form the profit function as revenue minus cost, then find the vertex of the resulting quadratic."
+    },
+    {
+      "id": "math-gaokao-411-q006",
+      "category": "Mathematical Modeling",
+      "concept": "Linear Programming with Resource Constraints",
+      "learningObjective": "Maximize profit in a two-product production model with machine-hour and labor-hour constraints.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A factory makes two products, A and B. Each unit of A requires \\(2\\) machine-hours and \\(1\\) labor-hour; each unit of B requires \\(1\\) machine-hour and \\(2\\) labor-hours. The factory has \\(100\\) machine-hours and \\(80\\) labor-hours available. If product A gives a profit of \\(30\\text{ USD}\\) per unit and product B gives \\(20\\text{ USD}\\) per unit, what is the maximum profit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1600\\text{ USD}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1500\\text{ USD}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(x\\) be the number of units of A and \\(y\\) the number of units of B. The constraints are \\(2x+y\\le 100\\) and \\(x+2y\\le 80\\), with \\(x,y\\ge 0\\). The feasible region vertices are \\((0,0)\\), \\((50,0)\\), \\((0,40)\\), and the intersection of \\(2x+y=100\\) and \\(x+2y=80\\). Solving gives \\(x=40\\), \\(y=20\\). Profit is \\(P=30x+20y\\). At \\((40,20)\\), \\[\n\\begin{aligned}\nP&=30(40)+20(20) \\\\\n&=1200+400 \\\\\n&=1600\n\\end{aligned}\n\\]. At \\((50,0)\\), \\(P=1500\\). The maximum profit is \\(1600\\text{ USD}\\). The remaining vertex values are \\(P(0,0)=0\\) and \\(P(0,40)=800\\), both below \\(1600\\).",
+      "hint": "Set up the resource constraints, find the feasible region vertices, and evaluate the profit at each vertex."
+    },
+    {
+      "id": "math-gaokao-411-q007",
+      "category": "Mathematical Modeling",
+      "concept": "Perimeter Minimization",
+      "learningObjective": "Minimize the perimeter of a rectangle with a fixed area.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A rectangular garden must have an area of \\(64\\) square meters. What is the minimum possible perimeter?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(28\\) meters"
+        },
+        {
+          "label": "B",
+          "text": "\\(32\\) meters"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For a fixed area, the perimeter of a rectangle is minimized when the rectangle is a square. Since the area is \\(64\\), the square side length is \\(\\sqrt{64}=8\\). The perimeter is \\(4\\cdot 8=32\\) meters.",
+      "hint": "Use the fact that among rectangles with a fixed area, the square has the smallest perimeter."
+    },
+    {
+      "id": "math-gaokao-411-q008",
+      "category": "Mathematical Modeling",
+      "concept": "Constrained Quadratic Optimization",
+      "learningObjective": "Find the maximum value of a quadratic function on a closed interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the maximum value of \\(f(x)=-x^2+6x+1\\) on the interval \\([0,5]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The vertex of the parabola \\(f(x)=-x^2+6x+1\\) occurs at \\(x=-\\frac{6}{2(-1)}=3\\), which lies in \\([0,5]\\). Then\n\\[\n\\begin{aligned}\nf(3)&=-3^2+6(3)+1 \\\\\n&=-9+18+1 \\\\\n&=10.\n\\end{aligned}\n\\]\nCheck endpoints: \\(f(0)=1\\) and \\(f(5)=-25+30+1=6\\). The maximum value is \\(10\\).",
+      "hint": "Compare the value at the vertex with the values at the interval endpoints."
+    },
+    {
+      "id": "math-gaokao-411-q009",
+      "category": "Mathematical Modeling",
+      "concept": "Surface Area Minimization of a Cylinder",
+      "learningObjective": "Minimize the surface area of a closed cylinder under a fixed volume constraint.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A closed cylindrical can must have a volume of \\(16\\pi\\) cubic centimeters. What is the minimum possible surface area of the can?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\pi\\) square centimeters"
+        },
+        {
+          "label": "B",
+          "text": "\\(32\\pi\\) square centimeters"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let the radius be \\(r\\) and the height be \\(h\\). The volume condition is \\(\\pi r^2h=16\\pi\\), so \\(r^2h=16\\) and \\(h=\\frac{16}{r^2}\\). The surface area of a closed cylinder is\n\\[\n\\begin{aligned}\nS&=2\\pi r^2+2\\pi rh \\\\\n&=2\\pi r^2+2\\pi r\\left(\\frac{16}{r^2}\\right) \\\\\n&=2\\pi r^2+\\frac{32\\pi}{r}.\n\\end{aligned}\n\\]\nDifferentiate: \\(S'(r)=4\\pi r-\\frac{32\\pi}{r^2}\\). Setting \\(S'(r)=0\\) gives \\(4r^3=32\\), so \\(r^3=8\\) and \\(r=2\\). Then \\(h=4\\), and\n\\[\n\\begin{aligned}\nS&=2\\pi(2)^2+2\\pi(2)(4) \\\\\n&=8\\pi+16\\pi \\\\\n&=24\\pi.\n\\end{aligned}\n\\]\nSo the minimum surface area is \\(24\\pi\\) square centimeters. On \\(r>0\\), \\(S''(r)=4\\pi+64\\pi/r^3>0\\), so this stationary point is the unique global minimum.",
+      "hint": "Express the height in terms of the radius using the fixed volume, then minimize the surface-area function."
+    },
+    {
+      "id": "math-gaokao-411-q010",
+      "category": "Mathematical Modeling",
+      "concept": "Surface Area Minimization of an Open Box",
+      "learningObjective": "Minimize the surface area of an open-top box with a square base under a fixed volume constraint.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "An open-top rectangular box with a square base must have a volume of \\(108\\) cubic centimeters. What is the minimum possible surface area of the box?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(108\\) square centimeters"
+        },
+        {
+          "label": "B",
+          "text": "\\(144\\) square centimeters"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let the base side be \\(x>0\\) centimeters and the height be \\(h>0\\) centimeters. The volume constraint gives \\(h=108/x^2\\), so\n\\[\nS(x)=x^2+4xh=x^2+\\frac{432}{x}.\n\\]\nDifferentiating,\n\\[\nS'(x)=2x-\\frac{432}{x^2}=\\frac{2(x^3-216)}{x^2}.\n\\]\nThe derivative is negative for \\(0<x<6\\) and positive for \\(x>6\\), giving the global minimum at \\(x=6\\). Then \\(h=3\\) and\n\\[\nS_{\\min}=6^2+4\\cdot6\\cdot3=108.\n\\]\nThe distractor \\(144\\) also includes a lid of area \\(36\\) at these dimensions, although the box is open at the top.",
+      "hint": "Use the fixed volume to express the height in terms of the base side, then minimize the surface-area function."
+    }
+  ]
+}

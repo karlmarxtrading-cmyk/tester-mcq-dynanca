@@ -1,0 +1,326 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> dynanca-mcq@1.1.0 test:browser
+> playwright test --config=tests/browser/playwright.config.js tests/browser/release-audit.spec.js --max-failures=4
+
+
+Running 10 tests using 1 worker
+
+(node:41) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   1 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 320px light: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.1s)
+(node:118) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:118) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   2 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 320px dark: search, scoring, hint, math, reload, Previous, review, catalog, reset (1.0s)
+(node:196) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:196) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   3 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 390px light: search, scoring, hint, math, reload, Previous, review, catalog, reset (934ms)
+(node:278) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:278) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   4 [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 390px dark: search, scoring, hint, math, reload, Previous, review, catalog, reset (982ms)
+[31mTesting stopped early after 4 maximum allowed failures.[39m
+
+
+  1) [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 320px light: search, scoring, hint, math, reload, Previous, review, catalog, reset 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+    [32m- Expected  -  1[39m
+    [31m+ Received  + 52[39m
+
+    [32m- Array [][39m
+    [31m+ Array [[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#FAF9F6",[39m
+    [31m+     "el": "p.hero__eyebrow",[39m
+    [31m+     "fg": "#C85A3E",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4,[39m
+    [31m+     "sample": "Machine Learning",[39m
+    [31m+     "size": 12.5,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#FAF9F6",[39m
+    [31m+     "el": "button.review-toggle",[39m
+    [31m+     "fg": "#C85A3E",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4,[39m
+    [31m+     "sample": "Review 1 mistake",[39m
+    [31m+     "size": 13.6,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#ECF3EE",[39m
+    [31m+     "el": "span.practice-option-label",[39m
+    [31m+     "fg": "#4C7A5A",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4.39,[39m
+    [31m+     "sample": "B.",[39m
+    [31m+     "size": 16,[39m
+    [31m+     "weight": 700,[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#FFFFFF",[39m
+    [31m+     "el": "button.practice-hint-toggle",[39m
+    [31m+     "fg": "#C85A3E",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4.21,[39m
+    [31m+     "sample": "Hide hint",[39m
+    [31m+     "size": 14.4,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#ECF3EE",[39m
+    [31m+     "el": "div.practice-verdict",[39m
+    [31m+     "fg": "#4C7A5A",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4.39,[39m
+    [31m+     "sample": "Correct",[39m
+    [31m+     "size": 15.7,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+ ][39m
+
+      61 |       expect(geometry.body).toBeLessThanOrEqual(geometry.w + 1);
+      62 |       const contrast = await page.evaluate(S.contrastAudit);
+    > 63 |       expect(contrast.text.filter((x) => x.ratio < x.need)).toEqual([]);
+         |                                                             ^
+      64 |       const storageBefore = await page.evaluate(() => localStorage.getItem("dynanca-mcq-ml-v2"));
+      65 |       await page.getByRole("button", { name: /Review.*mistake/ }).click();
+      66 |       await expect(article(page)).toHaveAttribute("data-question-id", "ml-1");
+        at /workspace/scratch/051c254e42f3/work/REAL MCQ/tests/browser/release-audit.spec.js:63:61
+
+    Error Context: test-results/release-audit-ML-320px-lig-7c2d6-evious-review-catalog-reset-chromium/error-context.md
+
+  2) [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 320px dark: search, scoring, hint, math, reload, Previous, review, catalog, reset 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+    [32m- Expected  -  1[39m
+    [31m+ Received  + 52[39m
+
+    [32m- Array [][39m
+    [31m+ Array [[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#3A362F",[39m
+    [31m+     "el": "span.practice-tag",[39m
+    [31m+     "fg": "#A69C8E",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4.44,[39m
+    [31m+     "sample": "Data and Preprocessing",[39m
+    [31m+     "size": 11.5,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#3A362F",[39m
+    [31m+     "el": "span.practice-tag",[39m
+    [31m+     "fg": "#A69C8E",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4.44,[39m
+    [31m+     "sample": "Min-Max Normalization",[39m
+    [31m+     "size": 11.5,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#3A362F",[39m
+    [31m+     "el": "span.practice-tag",[39m
+    [31m+     "fg": "#A69C8E",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4.44,[39m
+    [31m+     "sample": "Easy",[39m
+    [31m+     "size": 11.5,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#3A362F",[39m
+    [31m+     "el": "span.practice-tag",[39m
+    [31m+     "fg": "#A69C8E",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4.44,[39m
+    [31m+     "sample": "Application",[39m
+    [31m+     "size": 11.5,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#3A362F",[39m
+    [31m+     "el": "span.practice-tag",[39m
+    [31m+     "fg": "#A69C8E",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4.44,[39m
+    [31m+     "sample": "Compute a min-max transformed va",[39m
+    [31m+     "size": 11.5,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+ ][39m
+
+      61 |       expect(geometry.body).toBeLessThanOrEqual(geometry.w + 1);
+      62 |       const contrast = await page.evaluate(S.contrastAudit);
+    > 63 |       expect(contrast.text.filter((x) => x.ratio < x.need)).toEqual([]);
+         |                                                             ^
+      64 |       const storageBefore = await page.evaluate(() => localStorage.getItem("dynanca-mcq-ml-v2"));
+      65 |       await page.getByRole("button", { name: /Review.*mistake/ }).click();
+      66 |       await expect(article(page)).toHaveAttribute("data-question-id", "ml-1");
+        at /workspace/scratch/051c254e42f3/work/REAL MCQ/tests/browser/release-audit.spec.js:63:61
+
+    Error Context: test-results/release-audit-ML-320px-dar-6e23b-evious-review-catalog-reset-chromium/error-context.md
+
+  3) [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 390px light: search, scoring, hint, math, reload, Previous, review, catalog, reset 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+    [32m- Expected  -  1[39m
+    [31m+ Received  + 52[39m
+
+    [32m- Array [][39m
+    [31m+ Array [[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#FAF9F6",[39m
+    [31m+     "el": "p.hero__eyebrow",[39m
+    [31m+     "fg": "#C85A3E",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4,[39m
+    [31m+     "sample": "Machine Learning",[39m
+    [31m+     "size": 12.5,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#FAF9F6",[39m
+    [31m+     "el": "button.review-toggle",[39m
+    [31m+     "fg": "#C85A3E",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4,[39m
+    [31m+     "sample": "Review 1 mistake",[39m
+    [31m+     "size": 13.6,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#ECF3EE",[39m
+    [31m+     "el": "span.practice-option-label",[39m
+    [31m+     "fg": "#4C7A5A",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4.39,[39m
+    [31m+     "sample": "B.",[39m
+    [31m+     "size": 16,[39m
+    [31m+     "weight": 700,[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#FFFFFF",[39m
+    [31m+     "el": "button.practice-hint-toggle",[39m
+    [31m+     "fg": "#C85A3E",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4.21,[39m
+    [31m+     "sample": "Hide hint",[39m
+    [31m+     "size": 14.4,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#ECF3EE",[39m
+    [31m+     "el": "div.practice-verdict",[39m
+    [31m+     "fg": "#4C7A5A",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4.39,[39m
+    [31m+     "sample": "Correct",[39m
+    [31m+     "size": 15.7,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+ ][39m
+
+      61 |       expect(geometry.body).toBeLessThanOrEqual(geometry.w + 1);
+      62 |       const contrast = await page.evaluate(S.contrastAudit);
+    > 63 |       expect(contrast.text.filter((x) => x.ratio < x.need)).toEqual([]);
+         |                                                             ^
+      64 |       const storageBefore = await page.evaluate(() => localStorage.getItem("dynanca-mcq-ml-v2"));
+      65 |       await page.getByRole("button", { name: /Review.*mistake/ }).click();
+      66 |       await expect(article(page)).toHaveAttribute("data-question-id", "ml-1");
+        at /workspace/scratch/051c254e42f3/work/REAL MCQ/tests/browser/release-audit.spec.js:63:61
+
+    Error Context: test-results/release-audit-ML-390px-lig-6d2a1-evious-review-catalog-reset-chromium/error-context.md
+
+  4) [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 390px dark: search, scoring, hint, math, reload, Previous, review, catalog, reset 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+    [32m- Expected  -  1[39m
+    [31m+ Received  + 52[39m
+
+    [32m- Array [][39m
+    [31m+ Array [[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#3A362F",[39m
+    [31m+     "el": "span.practice-tag",[39m
+    [31m+     "fg": "#A69C8E",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4.44,[39m
+    [31m+     "sample": "Data and Preprocessing",[39m
+    [31m+     "size": 11.5,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#3A362F",[39m
+    [31m+     "el": "span.practice-tag",[39m
+    [31m+     "fg": "#A69C8E",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4.44,[39m
+    [31m+     "sample": "Min-Max Normalization",[39m
+    [31m+     "size": 11.5,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#3A362F",[39m
+    [31m+     "el": "span.practice-tag",[39m
+    [31m+     "fg": "#A69C8E",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4.44,[39m
+    [31m+     "sample": "Easy",[39m
+    [31m+     "size": 11.5,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#3A362F",[39m
+    [31m+     "el": "span.practice-tag",[39m
+    [31m+     "fg": "#A69C8E",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4.44,[39m
+    [31m+     "sample": "Application",[39m
+    [31m+     "size": 11.5,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "bg": "#3A362F",[39m
+    [31m+     "el": "span.practice-tag",[39m
+    [31m+     "fg": "#A69C8E",[39m
+    [31m+     "need": 4.5,[39m
+    [31m+     "ratio": 4.44,[39m
+    [31m+     "sample": "Compute a min-max transformed va",[39m
+    [31m+     "size": 11.5,[39m
+    [31m+     "weight": 600,[39m
+    [31m+   },[39m
+    [31m+ ][39m
+
+      61 |       expect(geometry.body).toBeLessThanOrEqual(geometry.w + 1);
+      62 |       const contrast = await page.evaluate(S.contrastAudit);
+    > 63 |       expect(contrast.text.filter((x) => x.ratio < x.need)).toEqual([]);
+         |                                                             ^
+      64 |       const storageBefore = await page.evaluate(() => localStorage.getItem("dynanca-mcq-ml-v2"));
+      65 |       await page.getByRole("button", { name: /Review.*mistake/ }).click();
+      66 |       await expect(article(page)).toHaveAttribute("data-question-id", "ml-1");
+        at /workspace/scratch/051c254e42f3/work/REAL MCQ/tests/browser/release-audit.spec.js:63:61
+
+    Error Context: test-results/release-audit-ML-390px-dar-e008d-evious-review-catalog-reset-chromium/error-context.md
+
+  4 failed
+    [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 320px light: search, scoring, hint, math, reload, Previous, review, catalog, reset 
+    [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 320px dark: search, scoring, hint, math, reload, Previous, review, catalog, reset 
+    [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 390px light: search, scoring, hint, math, reload, Previous, review, catalog, reset 
+    [chromium] › tests/browser/release-audit.spec.js:22:5 › ML 390px dark: search, scoring, hint, math, reload, Previous, review, catalog, reset 
+  6 did not run
+  1 error was not a part of any test, see above for details

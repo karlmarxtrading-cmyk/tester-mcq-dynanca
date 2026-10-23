@@ -1,0 +1,653 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "mathematics-sat-20",
+  "title": "SAT 20 · Rational numbers",
+  "category": "SAT Mathematics",
+  "description": "A/B reasoning practice. Difficulty is editorial, not standardized SAT calibration.",
+  "questionCount": 18,
+  "questions": [
+    {
+      "id": "sat-q0343",
+      "title": "Comparing a Fraction and a Decimal",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "Which comparison is correct? Choose A or B and justify the comparison by expressing the numbers in a common form.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac34>0.72\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac34<0.72\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Convert \\(\\frac34\\) to a decimal: \\(\\frac34=0.75\\). Since \\(0.75>0.72\\), we have \\(\\frac34>0.72\\). Choice B reverses the correct comparison, so choice A is correct.",
+      "hint": "Write 3/4 as a decimal so both numbers are in the same form, then compare."
+    },
+    {
+      "id": "sat-q0344",
+      "title": "Total Juice Poured",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "The chart shows the amount of juice poured into a container during three steps. What is the total amount of juice poured? Choose A or B and show the addition.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1.8\\) liters"
+        },
+        {
+          "label": "B",
+          "text": "\\(1.9\\) liters"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Add the three amounts:\n\\[\n0.45+0.80+0.65=1.90.\n\\]\nThus the total is \\(1.9\\) liters. Choice A is \\(0.1\\) liter too small and does not equal the sum of the three values, so choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0344-v1",
+          "type": "DATA_CHART",
+          "data": {
+            "kind": "bar",
+            "xLabel": "Step",
+            "yLabel": "Juice (liters)",
+            "bars": [
+              {
+                "label": "Step 1",
+                "value": 0.45
+              },
+              {
+                "label": "Step 2",
+                "value": 0.8
+              },
+              {
+                "label": "Step 3",
+                "value": 0.65
+              }
+            ],
+            "chart": "bar",
+            "labels": [
+              "Step 1",
+              "Step 2",
+              "Step 3"
+            ],
+            "values": [
+              0.45,
+              0.8,
+              0.65
+            ],
+            "axes": {
+              "xLabel": "Step",
+              "yLabel": "Juice (liters)"
+            }
+          },
+          "alt": "Bar chart showing 0.45 liter in Step 1, 0.80 liter in Step 2, and 0.65 liter in Step 3."
+        }
+      ],
+      "hint": "Read the three values from the chart and add them with the decimal points aligned."
+    },
+    {
+      "id": "sat-q0345",
+      "title": "Fractions Between One Half and One",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "Ten cards show the numbers\n\\[\n-\\frac12,\\ 0,\\ \\frac14,\\ \\frac12,\\ \\frac34,\\ \\frac45,\\ 1,\\ \\frac54,\\ \\frac32,\\ 2.\n\\]\nSet \\(G\\) contains numbers greater than \\(\\frac12\\), and set \\(L\\) contains numbers less than \\(1\\). How many cards belong to both sets? Choose A or B and justify the comparison.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\) cards"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\) cards"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A number in both sets must satisfy\n\\[\n\\frac12<x<1.\n\\]\nFrom the list, the only such numbers are \\(\\frac34\\) and \\(\\frac45\\). Therefore exactly \\(2\\) cards belong to both sets. Choice A counts numbers that satisfy only one of the two conditions, so choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0345-v1",
+          "type": "VENN",
+          "data": {
+            "universe": {
+              "label": "Number cards",
+              "total": 10
+            },
+            "sets": [
+              {
+                "id": "G",
+                "label": "Greater than 1/2",
+                "elements": []
+              },
+              {
+                "id": "L",
+                "label": "Less than 1",
+                "elements": []
+              }
+            ],
+            "regions": {
+              "G_only": 4,
+              "L_only": 4,
+              "intersection": 2,
+              "outside": 0
+            }
+          },
+          "alt": "Venn diagram of ten number cards: four are only greater than one half, four are only less than one, two satisfy both conditions, and none lie outside both sets."
+        }
+      ],
+      "hint": "A card is in both sets only if it lies strictly between 1/2 and 1; check each card against both bounds."
+    },
+    {
+      "id": "sat-q0346",
+      "title": "Comparing Two Portions",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "One student drinks \\(\\frac58\\) of a bottle of water, while another drinks \\(0.60\\) of an identical bottle. Who drinks the larger portion? Choose A or B and show the numerical comparison.",
+      "options": [
+        {
+          "label": "A",
+          "text": "The student who drinks \\(\\frac58\\)"
+        },
+        {
+          "label": "B",
+          "text": "The student who drinks \\(0.60\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Convert the fraction to a decimal:\n\\[\n\\frac58=0.625.\n\\]\nSince \\(0.625>0.60\\), the student who drinks \\(\\frac58\\) drinks the larger portion. Choice B treats \\(0.60\\) as larger even though its value is smaller, so choice A is correct.",
+      "hint": "Convert 5/8 to a decimal and compare it with 0.60."
+    },
+    {
+      "id": "sat-q0347",
+      "title": "Greatest of Three Negative Numbers",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "Consider the three rational numbers\n\\[\n-\\frac23,\\quad -0.7,\\quad -\\frac58.\n\\]\nWhich of the following is the greatest number? Choose A or B and justify the ordering.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-0.7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\frac58\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Convert the fractions to decimals:\n\\[\n-\\frac23\\approx-0.667,\\qquad -\\frac58=-0.625.\n\\]\nThe three values are approximately \\(-0.667,-0.700,-0.625\\). Among negative numbers, the value closest to zero is greatest. Therefore \\(-0.625=-\\frac58\\) is greatest. Choice A is farther below zero, so choice B is correct.",
+      "hint": "Write all three numbers as decimals; for negative numbers, the one closest to zero is the greatest."
+    },
+    {
+      "id": "sat-q0348",
+      "title": "Comparing a Mapped Rational Value",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "The mapping diagram follows the rule\n\\[\nf(x)=\\frac{x}{2}-\\frac14.\n\\]\nWhich comparison is correct for \\(f(3)\\)? Choose A or B and derive the value.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(3)>1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f(3)<1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=3\\):\n\\[\nf(3)=\\frac32-\\frac14=\\frac64-\\frac14=\\frac54.\n\\]\nSince \\(\\frac54=1.25>1\\), choice A is correct. Choice B reverses the comparison.",
+      "visuals": [
+        {
+          "id": "sat-q0348-v1",
+          "type": "MAPPING",
+          "data": {
+            "left": {
+              "label": "x",
+              "elements": [
+                0,
+                1,
+                2
+              ]
+            },
+            "right": {
+              "label": "f(x)",
+              "elements": [
+                -0.25,
+                0.25,
+                0.75
+              ]
+            },
+            "arrows": [
+              [
+                0,
+                -0.25
+              ],
+              [
+                1,
+                0.25
+              ],
+              [
+                2,
+                0.75
+              ]
+            ]
+          },
+          "alt": "Mapping diagram for f of x equals x divided by 2 minus one fourth: 0 maps to negative 0.25, 1 maps to 0.25, and 2 maps to 0.75."
+        }
+      ],
+      "hint": "Substitute 3 for x and combine the fractions over a common denominator; check your method on a mapping pair."
+    },
+    {
+      "id": "sat-q0349",
+      "title": "Lower Cost per Gigabyte",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "The table gives the prices and data allowances of two plans. Which plan has the lower cost per gigabyte? Choose A or B and compare the unit rates.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Plan A"
+        },
+        {
+          "label": "B",
+          "text": "Plan B"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Plan A costs\n\\[\n\\frac{18}{12}=1.50\n\\]\ndollars per gigabyte. Plan B costs\n\\[\n\\frac{25}{20}=1.25\n\\]\ndollars per gigabyte. Since \\(1.25<1.50\\), Plan B has the lower unit cost. Therefore choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0349-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Plan",
+              "Price ($)",
+              "Data (GB)"
+            ],
+            "rows": [
+              [
+                "A",
+                18,
+                12
+              ],
+              [
+                "B",
+                25,
+                20
+              ]
+            ],
+            "headers": [
+              "Plan",
+              "Price ($)",
+              "Data (GB)"
+            ]
+          },
+          "alt": "Table showing Plan A costs 18 dollars for 12 gigabytes and Plan B costs 25 dollars for 20 gigabytes."
+        }
+      ],
+      "hint": "Divide each plan's price by its data allowance to get dollars per gigabyte, then compare."
+    },
+    {
+      "id": "sat-q0350",
+      "title": "Repeating Decimal and Fraction",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "Compare\n\\[\n0.\\overline{6}\n\\]\nand\n\\[\n\\frac23.\n\\]\nWhich statement is correct? Choose A or B and justify the relationship.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.\\overline{6}=\\frac23\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.\\overline{6}>\\frac23\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(x=0.\\overline{6}=0.666\\ldots\\). Then\n\\[\n10x=6.666\\ldots.\n\\]\nSubtracting \\(x\\) gives\n\\[\n9x=6,\n\\]\nso\n\\[\nx=\\frac69=\\frac23.\n\\]\nThus the two numbers are exactly equal, not merely close approximations. Choice A is correct.",
+      "hint": "Let x equal the repeating decimal, multiply by 10, and subtract to remove the repeating part."
+    },
+    {
+      "id": "sat-q0351",
+      "title": "Comparing Two Function Values",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "The graph represents\n\\[\nf(x)=\\frac{x+1}{x-2},\n\\]\nwith \\(x\\ne2\\). Which comparison is correct? Choose A or B and verify it algebraically.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(0)<f(4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f(0)>f(4)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Evaluate the two function values:\n\\[\nf(0)=\\frac{1}{-2}=-\\frac12\n\\]\nand\n\\[\nf(4)=\\frac{5}{2}.\n\\]\nSince \\(-\\frac12<\\frac52\\), we have \\(f(0)<f(4)\\). The plotted points agree with this comparison, so choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0351-v1",
+          "type": "FUNCTION_GRAPH",
+          "data": {
+            "axes": {
+              "xMin": -5,
+              "xMax": 6,
+              "yMin": -5,
+              "yMax": 5
+            },
+            "curves": [
+              {
+                "expression": "(x+1)/(x-2)",
+                "label": "f(x)=(x+1)/(x-2)"
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": -0.5,
+                "label": "f(0)"
+              },
+              {
+                "x": 4,
+                "y": 2.5,
+                "label": "f(4)"
+              }
+            ]
+          },
+          "alt": "Graph of f(x) equals (x+1)/(x-2), with the plotted points (0,-0.5) and (4,2.5); x equals 2 is excluded from the domain."
+        }
+      ],
+      "hint": "Substitute 0 and 4 into the function and compare the two values; the plotted points can confirm them."
+    },
+    {
+      "id": "sat-q0352",
+      "title": "A Fraction Below One",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "Let \\(x>0\\). Compare\n\\[\n\\frac{x}{x+1}\n\\]\nwith \\(1\\). Which statement is always true? Choose A or B and justify it without assuming a particular value of \\(x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{x}{x+1}>1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{x}{x+1}<1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(x>0\\), both \\(x\\) and \\(x+1\\) are positive, and the denominator is larger than the numerator:\n\\[\nx<x+1.\n\\]\nDividing two positive numbers with the smaller one in the numerator gives\n\\[\n\\frac{x}{x+1}<1.\n\\]\nChoice A would require the numerator to exceed the denominator, which is impossible here. Therefore choice B is correct.",
+      "hint": "For x > 0, compare the numerator and the denominator of x/(x+1)."
+    },
+    {
+      "id": "sat-q0353",
+      "title": "Adding One to Numerator and Denominator",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "Suppose \\(0<a<b\\). Compare\n\\[\n\\frac{a}{b}\n\\]\nand\n\\[\n\\frac{a+1}{b+1}.\n\\]\nWhich statement must be true? Choose A or B and prove the comparison.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{a+1}{b+1}>\\frac{a}{b}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{a+1}{b+1}<\\frac{a}{b}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Because \\(a,b>0\\), the denominators are positive, so cross multiplication preserves the inequality. Compare\n\\[\nb(a+1)\n\\]\nwith\n\\[\na(b+1).\n\\]\nTheir difference is\n\\[\nab+b-(ab+a)=b-a.\n\\]\nSince \\(b>a\\), this difference is positive. Therefore\n\\[\n\\frac{a+1}{b+1}>\\frac{a}{b}.\n\\]\nChoice B contradicts this result, so choice A is correct.",
+      "hint": "Cross-multiply (the denominators are positive) and simplify the difference of the two products."
+    },
+    {
+      "id": "sat-q0354",
+      "title": "Weighted Average Versus Midpoint",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "Let \\(a<b\\), and define\n\\[\nr=\\frac{2a+3b}{5}.\n\\]\nCompare \\(r\\) with the ordinary midpoint\n\\[\nm=\\frac{a+b}{2}.\n\\]\nWhich statement must be true? Choose A or B and justify the comparison algebraically.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(r<m\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(r>m\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute the difference:\n\\[\nr-m=\\frac{2a+3b}{5}-\\frac{a+b}{2}.\n\\]\nUsing denominator \\(10\\),\n\\[\nr-m=\\frac{4a+6b-5a-5b}{10}\n=\\frac{b-a}{10}.\n\\]\nSince \\(b>a\\), we have \\(b-a>0\\), so \\(r-m>0\\). Therefore \\(r>m\\). Choice A reverses the comparison, so choice B is correct.",
+      "hint": "Subtract m from r using a common denominator and look at the sign of the result."
+    },
+    {
+      "id": "sat-q0355",
+      "title": "Tank Level After Draining and Refilling",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "A tank is initially \\(\\frac34\\) full. Then \\(\\frac13\\) of the water currently in the tank is drained. After that, an amount equal to \\(\\frac18\\) of the tank's total capacity is added. How does the final water level compare with \\(\\frac23\\) of the tank's capacity? Choose A or B and show the steps.",
+      "options": [
+        {
+          "label": "A",
+          "text": "The final level is greater than \\(\\frac23\\)."
+        },
+        {
+          "label": "B",
+          "text": "The final level is less than \\(\\frac23\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Draining one third of the current water leaves two thirds of \\(\\frac34\\):\n\\[\n\\frac34\\cdot\\frac23=\\frac12.\n\\]\nAdding \\(\\frac18\\) of the tank's capacity gives\n\\[\n\\frac12+\\frac18=\\frac58.\n\\]\nCompare \\(\\frac58\\) and \\(\\frac23\\):\n\\[\n\\frac58=\\frac{15}{24},\\qquad \\frac23=\\frac{16}{24}.\n\\]\nThus \\(\\frac58<\\frac23\\). Therefore choice B is correct.",
+      "hint": "Find the fraction of the tank after draining, add 1/8, and compare with 2/3 using a common denominator."
+    },
+    {
+      "id": "sat-q0356",
+      "title": "Ribbon Remaining After Two Cuts",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "A ribbon is \\(6\\) meters long. One piece of length \\(1\\frac34\\) meters and another piece of length \\(2\\frac23\\) meters are cut off. Compare the remaining length with \\(1\\frac12\\) meters. Choose A or B and justify the comparison exactly.",
+      "options": [
+        {
+          "label": "A",
+          "text": "The remaining length is greater than \\(1\\frac12\\) meters."
+        },
+        {
+          "label": "B",
+          "text": "The remaining length is less than \\(1\\frac12\\) meters."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Convert all lengths to twelfths:\n\\[\n6=\\frac{72}{12},\\qquad\n1\\frac34=\\frac{21}{12},\\qquad\n2\\frac23=\\frac{32}{12}.\n\\]\nThe remaining length is\n\\[\n\\frac{72}{12}-\\frac{21}{12}-\\frac{32}{12}\n=\\frac{19}{12}.\n\\]\nAlso,\n\\[\n1\\frac12=\\frac{18}{12}.\n\\]\nSince \\(\\frac{19}{12}>\\frac{18}{12}\\), the remaining ribbon is greater than \\(1\\frac12\\) meters. Choice A is correct.",
+      "hint": "Convert every length to twelfths, subtract both pieces, and compare the result with 1 1/2."
+    },
+    {
+      "id": "sat-q0357",
+      "title": "Median Compared with Two Thirds",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "The chart shows five rational measurements. What is the median of the five values, and how does it compare with \\(\\frac23\\)? Choose A or B and justify the comparison exactly.",
+      "options": [
+        {
+          "label": "A",
+          "text": "The median is \\(0.675\\), and it is greater than \\(\\frac23\\)."
+        },
+        {
+          "label": "B",
+          "text": "The median is \\(0.625\\), and it is less than \\(\\frac23\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Order the measurements:\n\\[\n0.600,\\ 0.625,\\ 0.675,\\ 0.700,\\ 0.800.\n\\]\nThe middle value is therefore \\(0.675\\). Write it as a fraction:\n\\[\n0.675=\\frac{675}{1000}=\\frac{27}{40}.\n\\]\nCompare it with \\(\\frac23\\):\n\\[\n\\frac{27}{40}=\\frac{81}{120},\n\\qquad\n\\frac23=\\frac{80}{120}.\n\\]\nThus \\(0.675>\\frac23\\). Choice B selects the second value rather than the median, so choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0357-v1",
+          "type": "DATA_CHART",
+          "data": {
+            "kind": "bar",
+            "xLabel": "Measurement",
+            "yLabel": "Value",
+            "bars": [
+              {
+                "label": "P",
+                "value": 0.625
+              },
+              {
+                "label": "Q",
+                "value": 0.7
+              },
+              {
+                "label": "R",
+                "value": 0.6
+              },
+              {
+                "label": "S",
+                "value": 0.8
+              },
+              {
+                "label": "T",
+                "value": 0.675
+              }
+            ],
+            "chart": "bar",
+            "labels": [
+              "P",
+              "Q",
+              "R",
+              "S",
+              "T"
+            ],
+            "values": [
+              0.625,
+              0.7,
+              0.6,
+              0.8,
+              0.675
+            ],
+            "axes": {
+              "xLabel": "Measurement",
+              "yLabel": "Value"
+            }
+          },
+          "alt": "Bar chart with values P 0.625, Q 0.700, R 0.600, S 0.800, and T 0.675."
+        }
+      ],
+      "hint": "Order the five values from least to greatest to find the median, then compare it with 2/3 as fractions."
+    },
+    {
+      "id": "sat-q0358",
+      "title": "Converting a Repeating Decimal Exactly",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "Compare\n\\[\n0.2\\overline{7}=0.27777\\ldots\n\\]\nwith\n\\[\n\\frac5{18}.\n\\]\nWhich statement is correct? Choose A or B and derive the repeating decimal as a fraction.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.2\\overline{7}>\\frac5{18}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.2\\overline{7}=\\frac5{18}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let\n\\[\nx=0.27777\\ldots.\n\\]\nThen\n\\[\n10x=2.77777\\ldots.\n\\]\nSubtracting \\(x\\) gives\n\\[\n9x=2.5=\\frac52.\n\\]\nTherefore\n\\[\nx=\\frac{5/2}{9}=\\frac5{18}.\n\\]\nThus the repeating decimal and the fraction are exactly equal. Choice A incorrectly treats the decimal representation as slightly larger, so choice B is correct.",
+      "hint": "Let x be the repeating decimal, multiply by 10, and subtract to eliminate the repeating digit."
+    },
+    {
+      "id": "sat-q0359",
+      "title": "Solving a Rational Inequality by Sign",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "Solve the rational inequality\n\\[\n\\frac{x-1}{x+2}>\\frac12,\n\\]\nwhere \\(x\\ne-2\\). Which solution set is correct? Choose A or B and account for the sign of the denominator rather than cross-multiplying blindly.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x>4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x<-2\\) or \\(x>4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Move everything to one side:\n\\[\n\\frac{x-1}{x+2}-\\frac12>0.\n\\]\nCombine the fractions:\n\\[\n\\frac{2x-2-(x+2)}{2(x+2)}\n=\\frac{x-4}{2(x+2)}>0.\n\\]\nThe critical values are \\(x=-2\\), where the expression is undefined, and \\(x=4\\), where the numerator is zero. The fraction is positive when numerator and denominator have the same sign, which occurs for\n\\[\nx<-2\n\\]\nor\n\\[\nx>4.\n\\]\nChoice A misses the interval \\(x<-2\\), so choice B is correct.",
+      "hint": "Move everything to one side, combine into one fraction, and use a sign chart around the critical values."
+    },
+    {
+      "id": "sat-q0360",
+      "title": "Reciprocal Pair Greater Than Two",
+      "category": "MATH",
+      "concept": "Rational numbers",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply rational numbers and justify the selected answer.",
+      "question": "Let \\(p\\) and \\(q\\) be unequal positive rational numbers. Compare\n\\[\n\\frac{p}{q}+\\frac{q}{p}\n\\]\nwith \\(2\\). Which statement must be true? Choose A or B and prove it algebraically.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{p}{q}+\\frac{q}{p}>2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{p}{q}+\\frac{q}{p}<2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(p\\) and \\(q\\) are positive,\n\\[\n\\frac{p}{q}+\\frac{q}{p}-2\n=\n\\frac{p^2+q^2-2pq}{pq}\n=\n\\frac{(p-q)^2}{pq}.\n\\]\nBecause \\(p\\ne q\\), we have \\((p-q)^2>0\\), and because \\(pq>0\\), the quotient is positive. Therefore\n\\[\n\\frac{p}{q}+\\frac{q}{p}>2.\n\\]\nChoice B would require this positive quantity to be negative, so choice A is correct.",
+      "hint": "Subtract 2, combine over the common denominator pq, and recognize a perfect square in the numerator."
+    }
+  ]
+}

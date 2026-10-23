@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-483",
+  "category": "Comprehensive Mathematics",
+  "title": "483. Sets, Logic, Reasoning & Proof: Cardinality of a Three-Set Union",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-483-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Formula for the size of a three-set union",
+      "learningObjective": "State the sign of the last term in the inclusion-exclusion formula for three sets.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For finite sets \\(A\\), \\(B\\), and \\(C\\), \\(|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+t\\). What is the term \\(t\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(t=-|A\\cap B\\cap C|\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(t=+|A\\cap B\\cap C|\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An element in all three sets is counted \\(3\\) times in \\(|A|+|B|+|C|\\) and removed \\(3\\) times by the pairwise intersections, so at that stage it is not counted at all. It must be added back once, so the last term is \\(+|A\\cap B\\cap C|\\).",
+      "hint": "Follow one element that lies in all three sets through each part of the formula."
+    },
+    {
+      "id": "dynanca-483-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Direct use of the three-set formula",
+      "learningObjective": "Compute the size of a union of three sets from the given intersection sizes.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Sets \\(A\\), \\(B\\), and \\(C\\) each have \\(10\\) elements. Each pair of sets has \\(3\\) common elements, and exactly \\(1\\) element belongs to all three. What is \\(|A\\cup B\\cup C|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(22\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Apply the formula: \\(10+10+10-3-3-3+1=30-9+1=22\\). Subtracting the triple intersection instead of adding it gives \\(20\\), which is incorrect.",
+      "hint": "Add the three sizes, subtract the three pairwise intersections, and add the triple intersection."
+    },
+    {
+      "id": "dynanca-483-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Union of pairwise disjoint sets",
+      "learningObjective": "Compute the size of a union of three pairwise disjoint sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Sets \\(A\\), \\(B\\), and \\(C\\) are pairwise disjoint and have \\(4\\), \\(5\\), and \\(6\\) elements. What is \\(|A\\cup B\\cup C|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(120\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Pairwise disjoint sets have empty intersections, so every intersection term in the formula is \\(0\\). Hence \\(|A\\cup B\\cup C|=4+5+6=15\\). The product \\(4\\cdot 5\\cdot 6=120\\) is the size of the Cartesian product, not of the union.",
+      "hint": "When no element is shared, nothing is counted more than once."
+    },
+    {
+      "id": "dynanca-483-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Integers divisible by two, three, or five",
+      "learningObjective": "Apply three-set inclusion-exclusion to divisibility in a range.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many integers from \\(1\\) to \\(30\\) inclusive are divisible by \\(2\\), by \\(3\\), or by \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(21\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(22\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The counts are \\(15\\) multiples of \\(2\\), \\(10\\) of \\(3\\), and \\(6\\) of \\(5\\). The pairwise overlaps are the multiples of \\(6\\) (\\(5\\)), of \\(10\\) (\\(3\\)), and of \\(15\\) (\\(2\\)); the triple overlap is the multiples of \\(30\\) (\\(1\\)). So the count is \\(15+10+6-5-3-2+1=22\\). Forgetting to add back the multiple of \\(30\\) gives \\(21\\).",
+      "hint": "Compute the three single counts, the three pairwise counts, and the triple count, then combine them with alternating signs."
+    },
+    {
+      "id": "dynanca-483-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Finding the triple intersection",
+      "learningObjective": "Solve the three-set formula for the size of the triple intersection.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Finite sets satisfy \\(|A|=20\\), \\(|B|=15\\), \\(|C|=12\\), \\(|A\\cap B|=6\\), \\(|A\\cap C|=5\\), \\(|B\\cap C|=4\\), and \\(|A\\cup B\\cup C|=34\\). What is \\(|A\\cap B\\cap C|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(13\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute into the formula: \\(34=20+15+12-6-5-4+|A\\cap B\\cap C|=32+|A\\cap B\\cap C|\\). Hence \\(|A\\cap B\\cap C|=2\\). The value \\(13=47-34\\) ignores the pairwise intersections.",
+      "hint": "Compute everything in the formula except the unknown term, then solve."
+    },
+    {
+      "id": "dynanca-483-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Students taking none of three subjects",
+      "learningObjective": "Combine three-set inclusion-exclusion with a complement count.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In a group of \\(60\\) students, \\(30\\) study mathematics, \\(25\\) study physics, and \\(20\\) study chemistry. Also, \\(12\\) study mathematics and physics, \\(10\\) study mathematics and chemistry, \\(8\\) study physics and chemistry, and \\(5\\) study all three. How many study none of the three subjects?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number who study at least one subject is \\(30+25+20-12-10-8+5=50\\). So \\(60-50=10\\) study none. Omitting the final \\(+5\\) gives \\(45\\) and the incorrect answer \\(15\\).",
+      "hint": "Find the size of the union with the three-set formula, then subtract from the group size."
+    },
+    {
+      "id": "dynanca-483-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Elements in exactly one set",
+      "learningObjective": "Find the number of elements belonging to one set only from intersection data.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "In a group, \\(30\\) students study mathematics, \\(12\\) study mathematics and physics, \\(10\\) study mathematics and chemistry, and \\(5\\) study all three subjects. How many study mathematics only?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(13\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Students who study mathematics and at least one other subject number \\(12+10-5=17\\), because the \\(5\\) who study all three are included in both \\(12\\) and \\(10\\). So \\(30-17=13\\) study mathematics only. Computing \\(30-12-10=8\\) subtracts those \\(5\\) students twice.",
+      "hint": "The students who study all three subjects are counted in both of the pairwise numbers."
+    },
+    {
+      "id": "dynanca-483-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Why the triple intersection is added",
+      "learningObjective": "Track how often an element of all three sets is counted during the formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In the expression \\(|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|\\), how many times in total has an element that belongs to all three sets been counted?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\) times"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\) time"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Such an element is counted once in each of \\(|A|\\), \\(|B|\\), and \\(|C|\\), for \\(+3\\). It is also in each of the three pairwise intersections, for \\(-3\\). The net count is \\(3-3=0\\), which is why the term \\(+|A\\cap B\\cap C|\\) is needed to count it once.",
+      "hint": "Add the contributions of the three single terms and the three pairwise terms for one such element."
+    },
+    {
+      "id": "dynanca-483-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Divisibility by two, three, or seven",
+      "learningObjective": "Apply three-set inclusion-exclusion with floor counts.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many integers from \\(1\\) to \\(100\\) inclusive are divisible by \\(2\\), by \\(3\\), or by \\(7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(72\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(70\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The single counts are \\(50\\), \\(33\\), and \\(14\\). The pairwise counts are the multiples of \\(6\\) (\\(16\\)), of \\(14\\) (\\(7\\)), and of \\(21\\) (\\(4\\)). The triple count is the multiples of \\(42\\) (\\(2\\)). So the total is \\(50+33+14-16-7-4+2=72\\). Omitting the last term gives \\(70\\).",
+      "hint": "The number of multiples of \\(d\\) from \\(1\\) to \\(100\\) is the whole-number part of \\(\\frac{100}{d}\\)."
+    },
+    {
+      "id": "dynanca-483-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Integers divisible by none of three numbers",
+      "learningObjective": "Count the complement of a three-set union in a range of integers.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many integers from \\(1\\) to \\(60\\) inclusive are divisible by none of \\(2\\), \\(3\\), and \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(18\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number divisible by at least one of them is \\(30+20+12-10-6-4+2=44\\). So \\(60-44=16\\) integers are divisible by none. Omitting the term \\(+2\\) for the multiples of \\(30\\) gives \\(42\\) and the incorrect answer \\(18\\).",
+      "hint": "Count the integers divisible by at least one of the numbers, then subtract from \\(60\\)."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-199",
+  "category": "Comprehensive Mathematics",
+  "title": "199. Algebra, Equations & Inequalities: Quadratic Equations with a Parameter",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-199-q001",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Determining a Parameter from a Known Root",
+      "learningObjective": "Determine the value of a parameter when one root of a quadratic equation is given.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(2\\) is a root of \\(x^2+(m-5)x+2m-6=0\\), what is the value of \\(m\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(2\\) is a root, substitute \\(x=2\\) into the equation:\n\\[\n\\begin{aligned}\n2^2+(m-5)(2)+2m-6 &= 0\\\\\n4+2m-10+2m-6 &= 0\\\\\n4m-12 &= 0\n\\end{aligned}\n\\]\nTherefore, \\(m=3\\).",
+      "hint": "A known root must satisfy the quadratic equation when substituted for \\(x\\)."
+    },
+    {
+      "id": "dynanca-199-q002",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Parameter Condition for Equal Roots",
+      "learningObjective": "Determine a parameter value that makes a quadratic equation have a repeated real root.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For what value of \\(m\\) does \\(x^2-6x+m=0\\) have two equal real roots?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A quadratic equation has equal real roots when its discriminant is zero. Here,\n\\[\n\\Delta=(-6)^2-4(1)(m)=36-4m\n\\]\nSet \\(\\Delta=0\\):\n\\[\n\\begin{aligned}\n36-4m &= 0\\\\\nm &= 9\n\\end{aligned}\n\\]",
+      "hint": "Use the discriminant condition for a repeated root."
+    },
+    {
+      "id": "dynanca-199-q003",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Parameter Range for Two Distinct Real Roots",
+      "learningObjective": "Determine the range of a parameter for which a quadratic equation has two distinct real roots.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "For which values of \\(m\\) does \\(x^2+(m-1)x+1=0\\) have two distinct real roots?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m<-1\\) or \\(m>3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\le m\\le 3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Two distinct real roots require \\(\\Delta>0\\). For the equation, \\(\\Delta=(m-1)^2-4\\). Therefore,\n\\[\n\\begin{aligned}\n(m-1)^2 &> 4\\\\\n|m-1| &> 2\n\\end{aligned}\n\\]\nso \\(m-1>2\\) or \\(m-1<-2\\). Hence, \\(m>3\\) or \\(m<-1\\).",
+      "hint": "For two distinct real roots, the discriminant must be strictly positive."
+    },
+    {
+      "id": "dynanca-199-q004",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Parameter Range for No Real Roots",
+      "learningObjective": "Determine the parameter interval for which a quadratic equation has no real roots.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "For which values of \\(m\\) does \\(x^2-2mx+m+2=0\\) have no real roots?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m<-1\\) or \\(m>2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1<m<2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "No real roots require \\(\\Delta<0\\). Compute the discriminant, then factor:\n\\[\n\\begin{aligned}\n\\Delta &= (-2m)^2-4(1)(m+2)\\\\\n&= 4m^2-4m-8\\\\\n&= 4(m^2-m-2)\\\\\n&= 4(m-2)(m+1)\n\\end{aligned}\n\\]\nThus, \\((m-2)(m+1)<0\\). This inequality holds between the two critical values, so \\(-1<m<2\\).",
+      "hint": "Find the discriminant, factor it, and determine where it is negative."
+    },
+    {
+      "id": "dynanca-199-q005",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Parameter Determination from a Root Ratio",
+      "learningObjective": "Determine a parameter when the two roots satisfy a specified multiplicative relationship.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In the equation\n\\[\nx^2-(m+2)x+2m=0\n\\]\nthe parameter \\(m\\) satisfies \\(m>2\\). If one root is twice the other, what is \\(m\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The quadratic factors as\n\\[\nx^2-(m+2)x+2m=(x-m)(x-2)\n\\]\nTherefore, its roots are \\(m\\) and \\(2\\). Since \\(m>2\\), the larger root is \\(m\\). If one root is twice the other, then\n\\[\nm=2(2)=4\n\\]\nThus, \\(m=4\\).",
+      "hint": "Try factoring the quadratic so that the two roots can be expressed directly in terms of \\(m\\)."
+    },
+    {
+      "id": "dynanca-199-q006",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Parameter Values from the Difference Between Roots",
+      "learningObjective": "Determine parameter values when the difference between the two real roots is specified.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The two real roots of\n\\[\nx^2-mx+m-1=0\n\\]\ndiffer by \\(2\\). Which set contains all possible values of \\(m\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{0,4\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{2,4\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a monic quadratic, the absolute difference between the two real roots is \\(\\sqrt{\\Delta}\\). Here,\n\\[\n\\begin{aligned}\n\\Delta &= m^2-4(m-1)\\\\\n&= m^2-4m+4\\\\\n&= (m-2)^2\n\\end{aligned}\n\\]\nTherefore, the difference between the roots is \\(|m-2|\\). Since the roots differ by \\(2\\), \\(|m-2|=2\\). Thus, \\(m-2=2\\) or \\(m-2=-2\\), giving \\(m=4\\) or \\(m=0\\).",
+      "hint": "Relate the difference between the roots to the discriminant of a monic quadratic."
+    },
+    {
+      "id": "dynanca-199-q007",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Parameter Condition for Two Positive Roots",
+      "learningObjective": "Combine discriminant, root-sum, and root-product conditions to determine when both quadratic roots are positive.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For which values of \\(m\\) does\n\\[\nx^2-(m+1)x+m-2=0\n\\]\nhave two positive real roots?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m>-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(m>2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let the roots be \\(\\alpha\\) and \\(\\beta\\). By Vieta's relations, \\(\\alpha+\\beta=m+1\\) and \\(\\alpha\\beta=m-2\\). The discriminant is\n\\[\n\\begin{aligned}\n(m+1)^2-4(m-2) &= m^2-2m+9\\\\\n&= (m-1)^2+8\n\\end{aligned}\n\\]\nwhich is always positive, so the roots are always real and distinct.\nFor both roots to be positive, their sum and product must both be positive: \\(m+1>0\\) and \\(m-2>0\\). The stronger condition is \\(m>2\\).",
+      "hint": "For two real roots to both be positive, examine both their sum and their product."
+    },
+    {
+      "id": "dynanca-199-q008",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Parameter Condition for Roots of Opposite Signs",
+      "learningObjective": "Determine the parameter range that makes the two roots of a quadratic have opposite signs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For which values of \\(m\\) does\n\\[\n2x^2+(m-1)x+m+3=0\n\\]\nhave one positive root and one negative root?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m>-3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(m<-3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If two real roots have opposite signs, their product is negative. By Vieta's relation, \\(\\alpha\\beta=\\frac{m+3}{2}\\). Therefore, \\(\\frac{m+3}{2}<0\\). Since \\(2>0\\), this is equivalent to\n\\[\n\\begin{aligned}\nm+3 &< 0\\\\\nm &< -3\n\\end{aligned}\n\\]\nA negative root product also guarantees that the two roots are real and have opposite signs.",
+      "hint": "Use the sign of the product of the roots to identify when the roots have opposite signs."
+    },
+    {
+      "id": "dynanca-199-q009",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Parameter Determination from Reciprocal Positive Roots",
+      "learningObjective": "Determine a parameter when the two positive roots of a quadratic are reciprocals.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "The equation\n\\[\nx^2-(m+2)x+2m-1=0\n\\]\nhas two positive roots that are reciprocals of each other. What is \\(m\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If two roots are reciprocals, their product is \\(1\\). By Vieta's relation, \\(\\alpha\\beta=2m-1\\). Therefore,\n\\[\n\\begin{aligned}\n2m-1 &= 1\\\\\n2m &= 2\\\\\nm &= 1\n\\end{aligned}\n\\]\nWhen \\(m=1\\), the equation becomes\n\\[\nx^2-3x+1=0\n\\]\nIts discriminant is \\((-3)^2-4(1)(1)=5\\), which is positive, so the roots are real. Their sum is \\(3\\) and their product is \\(1\\), so both roots are positive and they are reciprocals of each other.",
+      "hint": "Reciprocal roots have a product equal to \\(1\\)."
+    },
+    {
+      "id": "dynanca-199-q010",
+      "category": "Algebra, Equations & Inequalities",
+      "concept": "Parameter Range for Roots Greater Than a Given Value",
+      "learningObjective": "Determine the parameter range for which both roots of a quadratic exceed a specified boundary.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For which values of \\(m\\) are both roots of\n\\[\nx^2-(m+4)x+3m+3=0\n\\]\nstrictly greater than \\(1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(m>0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(m\\ge 0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "To study whether both roots exceed \\(1\\), let \\(x=y+1\\). Substituting into the equation gives, after simplification,\n\\[\n\\begin{aligned}\n(y+1)^2-(m+4)(y+1)+3m+3 &= 0\\\\\ny^2-(m+2)y+2m &= 0\n\\end{aligned}\n\\]\nThe original roots are both greater than \\(1\\) exactly when both roots in \\(y\\) are positive.\nFor the transformed quadratic, the sum of the roots is \\(m+2\\), and their product is \\(2m\\). Its discriminant is\n\\[\n(m+2)^2-8m=(m-2)^2\\ge 0\n\\]\nso the roots are real for every \\(m\\).\nBoth transformed roots are positive when \\(m+2>0\\) and \\(2m>0\\). Together these give \\(m>0\\). At \\(m=0\\), one original root equals \\(1\\), so the requirement that both roots be strictly greater than \\(1\\) is not satisfied.",
+      "hint": "Shift the variable by writing \\(x=y+1\\), then determine when both transformed roots are positive."
+    }
+  ]
+}

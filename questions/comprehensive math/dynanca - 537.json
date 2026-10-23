@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-537",
+  "category": "Comprehensive Mathematics",
+  "title": "537. Sets, Logic, Reasoning & Proof: Cardinality Arguments with Bijections",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-537-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Same cardinality",
+      "learningObjective": "State what it means for two sets to have the same cardinality.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "By definition, when do two sets \\(A\\) and \\(B\\) have the same cardinality?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When there is a bijection from \\(A\\) to \\(B\\)"
+        },
+        {
+          "label": "B",
+          "text": "When one of the sets is a subset of the other"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Same cardinality means that the elements of the two sets can be paired off exactly, which is what a bijection does. Being a subset is neither necessary nor sufficient: \\(\\{1,2\\}\\) and \\(\\{3,4\\}\\) have the same cardinality although neither is a subset of the other, while \\(\\{1\\}\\) is a subset of \\(\\{1,2\\}\\) with a different cardinality.",
+      "hint": "Think of pairing the elements of the two sets with nothing left over on either side."
+    },
+    {
+      "id": "dynanca-537-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting bijections",
+      "learningObjective": "Count the bijections between two sets with three elements.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many bijections are there from \\(\\{1,2,3\\}\\) to \\(\\{a,b,c\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(27\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Choose the image of \\(1\\) in \\(3\\) ways, then the image of \\(2\\) in \\(2\\) ways, and the image of \\(3\\) is then forced. This gives \\(3\\cdot 2\\cdot 1=6\\) bijections. The number \\(27=3^3\\) counts all functions, most of which repeat a value.",
+      "hint": "A bijection must use each element of the second set exactly once."
+    },
+    {
+      "id": "dynanca-537-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Even numbers and positive integers",
+      "learningObjective": "Compare the cardinality of the even positive integers with that of the positive integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(E\\) be the set of even positive integers. How does the cardinality of \\(E\\) compare with that of \\(\\mathbb{Z}^{+}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They are equal, because \\(n\\mapsto 2n\\) is a bijection from \\(\\mathbb{Z}^{+}\\) to \\(E\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(E\\) has smaller cardinality, because \\(E\\) is a proper subset of \\(\\mathbb{Z}^{+}\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The function \\(n\\mapsto 2n\\) sends different positive integers to different even numbers, and every even positive integer \\(2k\\) is the image of \\(k\\). So it is a bijection, and the two sets have the same cardinality. For infinite sets, a proper subset can have the same cardinality as the whole set.",
+      "hint": "Look for a rule that pairs each positive integer with exactly one even positive integer."
+    },
+    {
+      "id": "dynanca-537-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A shift bijection",
+      "learningObjective": "Choose a bijection between two sets of integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which function is a bijection from \\(\\{0,1,2,\\dots\\}\\) to \\(\\{1,2,3,\\dots\\}\\), showing that these sets have the same cardinality?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(n)=2n\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f(n)=n+1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The function \\(f(n)=n+1\\) sends \\(0,1,2,\\dots\\) to \\(1,2,3,\\dots\\) in order; different inputs have different outputs, and each \\(m\\ge 1\\) is the image of \\(m-1\\). The function \\(f(n)=2n\\) is not a bijection between these sets: \\(f(0)=0\\) is not in the second set, and odd numbers are never reached.",
+      "hint": "Shift every element of the first set by the same amount."
+    },
+    {
+      "id": "dynanca-537-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Subsets and binary strings",
+      "learningObjective": "Use a bijection with binary strings to count subsets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Match each subset \\(S\\) of \\(\\{1,2,3,4,5\\}\\) with the string of five binary digits whose digit in position \\(k\\) is \\(1\\) exactly when \\(k\\in S\\). This matching is a bijection. What does it show about the number of subsets?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It equals \\(5^2=25\\)."
+        },
+        {
+          "label": "B",
+          "text": "It equals \\(2^5=32\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A bijection pairs the subsets exactly with the binary strings of length \\(5\\), so the two collections have the same number of members. Each of the \\(5\\) positions holds one of \\(2\\) digits, so there are \\(2^5=32\\) strings and therefore \\(32\\) subsets.",
+      "hint": "Count the binary strings of length \\(5\\) instead of counting subsets directly."
+    },
+    {
+      "id": "dynanca-537-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Integers and positive integers",
+      "learningObjective": "Compare the cardinality of the integers with that of the positive integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "How does the cardinality of \\(\\mathbb{Z}\\) compare with that of \\(\\mathbb{Z}^{+}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\mathbb{Z}\\) is larger; it contains the negative integers and \\(0\\) as well."
+        },
+        {
+          "label": "B",
+          "text": "They are equal; listing the integers as \\(0,1,-1,2,-2,\\dots\\) pairs them with \\(1,2,3,4,5,\\dots\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In the list \\(0,1,-1,2,-2,\\dots\\) every integer appears exactly once. Pairing the first entry with \\(1\\), the second with \\(2\\), and so on gives a bijection between \\(\\mathbb{Z}^{+}\\) and \\(\\mathbb{Z}\\). So the two sets have the same cardinality, although one is a proper subset of the other.",
+      "hint": "Try to write all the integers in one list that has a first entry, a second entry, and so on."
+    },
+    {
+      "id": "dynanca-537-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Intervals of different lengths",
+      "learningObjective": "Compare the cardinalities of two open intervals.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How does the cardinality of the interval \\((0,1)\\) compare with that of \\((0,2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They are equal, because \\(x\\mapsto 2x\\) is a bijection from \\((0,1)\\) to \\((0,2)\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\((0,2)\\) is larger, because it is twice as long."
+        }
+      ],
+      "answer": "A",
+      "explanation": "If \\(0<x<1\\), then \\(0<2x<2\\); different \\(x\\) give different \\(2x\\); and each \\(y\\) in \\((0,2)\\) is the image of \\(\\dfrac{y}{2}\\), which lies in \\((0,1)\\). So doubling is a bijection, and the intervals have the same cardinality. Length and cardinality are different notions.",
+      "hint": "Stretch one interval onto the other with a simple formula."
+    },
+    {
+      "id": "dynanca-537-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "One-to-one functions on finite sets",
+      "learningObjective": "Decide whether a one-to-one function between equal finite sets must be onto.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(A\\) and \\(B\\) be finite sets with the same number of elements, and let \\(f:A\\to B\\) be one-to-one. Must \\(f\\) be onto?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; a one-to-one function can still miss elements of \\(B\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; the outputs are as many as the elements of \\(B\\), so every element of \\(B\\) is an output."
+        }
+      ],
+      "answer": "B",
+      "explanation": "If \\(A\\) has \\(n\\) elements and \\(f\\) is one-to-one, then \\(f\\) has \\(n\\) different outputs. These lie in \\(B\\), which has exactly \\(n\\) elements, so the outputs are all of \\(B\\). The argument relies on the sets being finite.",
+      "hint": "Count the different outputs of \\(f\\)."
+    },
+    {
+      "id": "dynanca-537-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "One-to-one functions on an infinite set",
+      "learningObjective": "Show that a one-to-one function on an infinite set need not be onto.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Is every one-to-one function from \\(\\mathbb{Z}^{+}\\) to \\(\\mathbb{Z}^{+}\\) onto?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; \\(f(n)=n+1\\) is one-to-one, but \\(1\\) is not an output."
+        },
+        {
+          "label": "B",
+          "text": "Yes; a one-to-one function between sets of the same cardinality is always onto."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The function \\(f(n)=n+1\\) sends different inputs to different outputs, yet its outputs are \\(2,3,4,\\dots\\), so \\(1\\) is missed. The rule that one-to-one implies onto for sets of equal size holds for finite sets only.",
+      "hint": "Consider a function that shifts every positive integer upward."
+    },
+    {
+      "id": "dynanca-537-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting by complements",
+      "learningObjective": "Use the complement bijection to compare two families of subsets.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For subsets of a set \\(U\\) with \\(7\\) elements, the rule \\(S\\mapsto U\\setminus S\\) is a bijection from the family of \\(2\\)-element subsets onto another family. Which conclusion follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There are as many \\(3\\)-element subsets as \\(2\\)-element subsets, namely \\(35\\)."
+        },
+        {
+          "label": "B",
+          "text": "There are as many \\(5\\)-element subsets as \\(2\\)-element subsets, namely \\(21\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The complement of a \\(2\\)-element subset of \\(U\\) has \\(7-2=5\\) elements, and every \\(5\\)-element subset is the complement of exactly one \\(2\\)-element subset. So the two families have the same size, \\(\\dfrac{7\\cdot 6}{2}=21\\). The number of \\(3\\)-element subsets is \\(35\\), which is different.",
+      "hint": "Work out how many elements the complement of a \\(2\\)-element subset has."
+    }
+  ]
+}

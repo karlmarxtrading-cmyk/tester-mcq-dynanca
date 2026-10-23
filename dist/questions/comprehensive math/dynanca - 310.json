@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-310",
+  "category": "Comprehensive Mathematics",
+  "title": "310. Functions, Graphs & Transformations: Fitting an Exponential Model to Two Data Points",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-310-q001",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Fitting an Exponential Model Through Two Points",
+      "learningObjective": "Determine the exponential function that passes through two given points.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An exponential model has the form \\(y=a\\cdot b^x\\). Its graph passes through \\((0,3)\\) and \\((2,12)\\). Which function models the data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=3\\cdot 2^x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=2\\cdot 3^x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since the graph passes through \\((0,3)\\), substitute \\(x=0\\):\n\\[\n3=a\\cdot b^0=a.\n\\]\nSo \\(a=3\\). Using \\((2,12)\\):\n\\[\n12=3\\cdot b^2 \\Rightarrow b^2=4 \\Rightarrow b=2\n\\]\nbecause the base of an exponential model is positive. Therefore, the model is \\(y=3\\cdot 2^x\\).",
+      "hint": "Use the point where \\(x=0\\) to find \\(a\\), then use the other point to find \\(b\\)."
+    },
+    {
+      "id": "dynanca-310-q002",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Exponential Model from Initial Value and One Other Point",
+      "learningObjective": "Fit an exponential model when the initial value is given.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An exponential model \\(y=a\\cdot b^x\\) passes through \\((0,5)\\) and \\((1,15)\\). Which function models the data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=5\\cdot 3^x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=3\\cdot 5^x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\((0,5)\\):\n\\[\n5=a\\cdot b^0=a.\n\\]\nSo \\(a=5\\). Using \\((1,15)\\):\n\\[\n15=5\\cdot b^1 \\Rightarrow b=3.\n\\]\nThus the exponential model is \\(y=5\\cdot 3^x\\).",
+      "hint": "The value at \\(x=0\\) gives the initial factor \\(a\\), and the other point determines the base \\(b\\)."
+    },
+    {
+      "id": "dynanca-310-q003",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Exponential Model from Two Non-Intercept Points",
+      "learningObjective": "Determine the exponential function through two points that do not include the y-intercept.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "An exponential model \\(y=a\\cdot b^x\\) passes through \\((1,6)\\) and \\((2,18)\\). Which function models the data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=2\\cdot 3^x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=3\\cdot 2^x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the two points:\n\\[\n6=a\\cdot b \\quad \\text{and} \\quad 18=a\\cdot b^2.\n\\]\nDivide the second equation by the first:\n\\[\n\\frac{18}{6}=\\frac{a b^2}{a b} \\Rightarrow 3=b.\n\\]\nSubstitute \\(b=3\\) into \\(6=a\\cdot b\\):\n\\[\n6=a\\cdot 3 \\Rightarrow a=2.\n\\]\nTherefore, the model is \\(y=2\\cdot 3^x\\).",
+      "hint": "Form two equations and divide them to eliminate \\(a\\), then solve for \\(b\\)."
+    },
+    {
+      "id": "dynanca-310-q004",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Exponential Decay Model from Two Points",
+      "learningObjective": "Fit an exponential decay model to two given data points.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "An exponential decay model \\(y=a\\cdot b^x\\) passes through \\((0,8)\\) and \\((3,1)\\). Which function models the data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=8\\cdot 2^x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=8\\cdot \\left(\\frac{1}{2}\\right)^x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\((0,8)\\), we get \\(a=8\\). Using \\((3,1)\\):\n\\[\n1=8\\cdot b^3 \\Rightarrow b^3=\\frac{1}{8} \\Rightarrow b=\\frac{1}{2}.\n\\]\nThus the exponential decay model is \\(y=8\\cdot \\left(\\frac{1}{2}\\right)^x\\).",
+      "hint": "A base between \\(0\\) and \\(1\\) indicates exponential decay."
+    },
+    {
+      "id": "dynanca-310-q005",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Exponential Growth Model from Two Data Points",
+      "learningObjective": "Fit an exponential growth model from a table of two data points.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A population is modeled by \\(P(t)=a\\cdot b^t\\). The table shows \\(P(0)=200\\) and \\(P(3)=400\\). Which function models the data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P(t)=200\\cdot 2^{t/3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(P(t)=200\\cdot 3^{t/2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(P(0)=200\\), we have \\(a=200\\). Using \\(P(3)=400\\):\n\\[\n400=200\\cdot b^3 \\Rightarrow b^3=2 \\Rightarrow b=2^{1/3}.\n\\]\nTherefore,\n\\[\nP(t)=200\\cdot (2^{1/3})^t=200\\cdot 2^{t/3}.\n\\]",
+      "hint": "Write the base as a power so that \\(b^t\\) becomes an expression in \\(t/3\\)."
+    },
+    {
+      "id": "dynanca-310-q006",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Exponential Model from Two Points with Initial Value",
+      "learningObjective": "Determine the exponential function that fits two points including the initial value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An exponential model \\(y=a\\cdot b^x\\) passes through \\((0,10)\\) and \\((2,40)\\). Which function models the data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=10\\cdot 2^x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=2\\cdot 10^x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\((0,10)\\), \\(a=10\\). Using \\((2,40)\\):\n\\[\n40=10\\cdot b^2 \\Rightarrow b^2=4 \\Rightarrow b=2.\n\\]\nThus the model is \\(y=10\\cdot 2^x\\).",
+      "hint": "Use the point at \\(x=0\\) to identify \\(a\\), then use the other point to find \\(b\\)."
+    },
+    {
+      "id": "dynanca-310-q007",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Exponential Model from Two Points Not Including the Intercept",
+      "learningObjective": "Determine the exponential function through two points by solving a system.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "An exponential model \\(y=a\\cdot b^x\\) passes through \\((1,12)\\) and \\((3,48)\\). Which function models the data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=2\\cdot 6^x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=6\\cdot 2^x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the points:\n\\[\n12=a\\cdot b \\quad \\text{and} \\quad 48=a\\cdot b^3.\n\\]\nDivide:\n\\[\n\\frac{48}{12}=\\frac{a b^3}{a b} \\Rightarrow 4=b^2 \\Rightarrow b=2.\n\\]\nSubstitute into \\(12=a\\cdot b\\):\n\\[\n12=a\\cdot 2 \\Rightarrow a=6.\n\\]\nTherefore, the model is \\(y=6\\cdot 2^x\\).",
+      "hint": "Set up two equations and divide to eliminate \\(a\\), then solve for the positive base \\(b\\)."
+    },
+    {
+      "id": "dynanca-310-q008",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Exponential Decay Model from Two Points",
+      "learningObjective": "Fit an exponential decay model using an initial value and another point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "An exponential decay model \\(y=a\\cdot b^x\\) passes through \\((0,100)\\) and \\((2,25)\\). Which function models the data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=100\\cdot 2^x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=100\\cdot \\left(\\frac{1}{2}\\right)^x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\((0,100)\\), \\(a=100\\). Using \\((2,25)\\):\n\\[\n25=100\\cdot b^2 \\Rightarrow b^2=\\frac{1}{4} \\Rightarrow b=\\frac{1}{2}.\n\\]\nThus the model is \\(y=100\\cdot \\left(\\frac{1}{2}\\right)^x\\).",
+      "hint": "Since the values decrease, the base should be between \\(0\\) and \\(1\\)."
+    },
+    {
+      "id": "dynanca-310-q009",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Interpreting the Base of an Exponential Model",
+      "learningObjective": "Interpret the base of an exponential model fitted to two data points.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "An exponential model \\(y=a\\cdot b^x\\) is fitted to the data points \\((0,50)\\) and \\((1,60)\\). Which statement correctly interprets the base \\(b\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The base is \\(50\\), so the initial amount is \\(50\\)."
+        },
+        {
+          "label": "B",
+          "text": "The base is \\(1.2\\), so the quantity increases by \\(20\\%\\) per unit increase in \\(x\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\((0,50)\\), \\(a=50\\). Using \\((1,60)\\):\n\\[\n60=50\\cdot b^1 \\Rightarrow b=\\frac{60}{50}=1.2.\n\\]\nA base of \\(1.2\\) means the quantity is multiplied by \\(1.2\\) each time \\(x\\) increases by \\(1\\), which is a \\(20\\%\\) increase. Therefore, the correct interpretation is option B.",
+      "hint": "The base \\(b\\) is the multiplier for each unit increase in \\(x\\)."
+    },
+    {
+      "id": "dynanca-310-q010",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Exponential Decay Model from Two Points",
+      "learningObjective": "Determine an exponential decay model from two data points with a large initial value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "An exponential decay model \\(y=a\\cdot b^x\\) passes through \\((0,500)\\) and \\((3,62.5)\\). Which function models the data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=500\\cdot 2^x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=500\\cdot \\left(\\frac{1}{2}\\right)^x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From \\((0,500)\\), \\(a=500\\). Using \\((3,62.5)\\):\n\\[\n62.5=500\\cdot b^3 \\Rightarrow b^3=\\frac{62.5}{500}=0.125=\\frac{1}{8}.\n\\]\nThus \\(b=\\frac{1}{2}\\). Therefore, the model is\n\\[\ny=500\\cdot \\left(\\frac{1}{2}\\right)^x.\n\\]",
+      "hint": "Divide the second value by the initial value to find \\(b^3\\), then take the cube root."
+    }
+  ]
+}

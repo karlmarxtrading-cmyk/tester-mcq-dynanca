@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-482",
+  "category": "Comprehensive Mathematics",
+  "title": "482. Sets, Logic, Reasoning & Proof: Cardinality of a Two-Set Union",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-482-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Formula for the size of a union",
+      "learningObjective": "State the inclusion-exclusion formula for two finite sets.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For finite sets \\(A\\) and \\(B\\), which formula gives \\(|A\\cup B|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(|A|+|B|-|A\\cap B|\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(|A|+|B|+|A\\cap B|\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Adding \\(|A|\\) and \\(|B|\\) counts every element of \\(A\\cap B\\) twice, once in each set. Subtracting \\(|A\\cap B|\\) corrects this, so \\(|A\\cup B|=|A|+|B|-|A\\cap B|\\). Adding the intersection would count the common elements three times.",
+      "hint": "Think about how many times a common element is counted in \\(|A|+|B|\\)."
+    },
+    {
+      "id": "dynanca-482-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Direct use of the formula",
+      "learningObjective": "Compute the size of a union from the sizes of two sets and their intersection.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Finite sets satisfy \\(|A|=5\\), \\(|B|=7\\), and \\(|A\\cap B|=2\\). What is \\(|A\\cup B|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Apply the formula: \\(|A\\cup B|=5+7-2=10\\). The sum \\(5+7=12\\) counts the \\(2\\) common elements twice.",
+      "hint": "Add the two sizes, then subtract the number of common elements."
+    },
+    {
+      "id": "dynanca-482-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Union of disjoint sets",
+      "learningObjective": "Compute the size of a union of two disjoint finite sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Sets \\(A\\) and \\(B\\) are disjoint, with \\(|A|=4\\) and \\(|B|=6\\). What is \\(|A\\cup B|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Disjoint sets have \\(|A\\cap B|=0\\), so \\(|A\\cup B|=4+6-0=10\\). Multiplying the sizes gives \\(24\\), which is the size of the Cartesian product \\(A\\times B\\), not of the union.",
+      "hint": "For disjoint sets nothing is counted twice."
+    },
+    {
+      "id": "dynanca-482-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Finding the intersection",
+      "learningObjective": "Solve the inclusion-exclusion formula for the size of the intersection.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Finite sets satisfy \\(|A|=12\\), \\(|B|=9\\), and \\(|A\\cup B|=17\\). What is \\(|A\\cap B|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(|A\\cup B|=|A|+|B|-|A\\cap B|\\): \\(17=12+9-|A\\cap B|\\), so \\(|A\\cap B|=21-17=4\\). The value \\(3=12-9\\) is the difference of the two sizes, which is not what the formula asks for.",
+      "hint": "Substitute the known values into the formula and solve for the unknown."
+    },
+    {
+      "id": "dynanca-482-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Students playing two sports",
+      "learningObjective": "Apply inclusion-exclusion to a survey in which everyone is in at least one set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In a class of \\(30\\) students, every student plays football or basketball (or both). There are \\(18\\) who play football and \\(15\\) who play basketball. How many play both?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(33\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(F\\) and \\(B\\) be the two sets of players. Since every student is in \\(F\\cup B\\), \\(|F\\cup B|=30\\). Then \\(30=18+15-|F\\cap B|\\), so \\(|F\\cap B|=33-30=3\\). The number \\(33\\) is the sum of the two counts, in which the students who play both are counted twice.",
+      "hint": "The whole class is the union of the two groups; use the formula to find the overlap."
+    },
+    {
+      "id": "dynanca-482-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Integers divisible by two or five",
+      "learningObjective": "Count integers in a range that are divisible by at least one of two numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many integers from \\(1\\) to \\(100\\) inclusive are divisible by \\(2\\) or by \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(70\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(50\\) multiples of \\(2\\) and \\(20\\) multiples of \\(5\\). The numbers divisible by both are the multiples of \\(10\\), of which there are \\(10\\). So the count is \\(50+20-10=60\\). The sum \\(50+20=70\\) counts the multiples of \\(10\\) twice.",
+      "hint": "Numbers divisible by both \\(2\\) and \\(5\\) are counted in both groups."
+    },
+    {
+      "id": "dynanca-482-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Finding the size of one set",
+      "learningObjective": "Solve the inclusion-exclusion formula for the size of one of the sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Finite sets satisfy \\(|A|=10\\), \\(|A\\cap B|=4\\), and \\(|A\\cup B|=15\\). What is \\(|B|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(15=10+|B|-4\\), \\(|B|=15-10+4=9\\). The value \\(5=15-10\\) is the number of elements of \\(B\\) that are not in \\(A\\); the \\(4\\) common elements also belong to \\(B\\).",
+      "hint": "The elements of \\(B\\) are those outside \\(A\\) together with those shared with \\(A\\)."
+    },
+    {
+      "id": "dynanca-482-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Elements in neither set",
+      "learningObjective": "Combine inclusion-exclusion with a complement count.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In a group of \\(40\\) people, \\(25\\) drink tea, \\(20\\) drink coffee, and \\(10\\) drink both. How many drink neither?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number who drink at least one of the two is \\(25+20-10=35\\). The number who drink neither is \\(40-35=5\\). The value \\(15=40-25\\) counts everyone who does not drink tea, including people who drink coffee.",
+      "hint": "First count the people in the union, then subtract from the size of the whole group."
+    },
+    {
+      "id": "dynanca-482-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Smallest possible union",
+      "learningObjective": "Determine the smallest possible size of a union from the sizes of two sets.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Finite sets satisfy \\(|A|=8\\) and \\(|B|=5\\). What is the smallest possible value of \\(|A\\cup B|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The union always contains \\(A\\), so \\(|A\\cup B|\\ge 8\\). The value \\(8\\) is attained when \\(B\\subseteq A\\), because then \\(|A\\cap B|=5\\) and \\(|A\\cup B|=8+5-5=8\\). The union cannot have only \\(5\\) elements, since it contains all \\(8\\) elements of \\(A\\).",
+      "hint": "The union is smallest when the overlap is as large as possible."
+    },
+    {
+      "id": "dynanca-482-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Integers divisible by four or six",
+      "learningObjective": "Count integers divisible by at least one of two numbers that share a common factor.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many integers from \\(1\\) to \\(60\\) inclusive are divisible by \\(4\\) or by \\(6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(23\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(15\\) multiples of \\(4\\) and \\(10\\) multiples of \\(6\\). A number is divisible by both exactly when it is divisible by their least common multiple, \\(12\\); there are \\(5\\) such numbers. So the count is \\(15+10-5=20\\). Using the product \\(24\\) instead of \\(12\\) would subtract only \\(2\\) and give the incorrect \\(23\\).",
+      "hint": "The numbers divisible by both \\(4\\) and \\(6\\) are the multiples of their least common multiple."
+    }
+  ]
+}

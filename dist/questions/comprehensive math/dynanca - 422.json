@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-422",
+  "category": "Comprehensive Mathematics",
+  "title": "422. Trigonometry & Periodic Models: Product-to-Sum Formulas",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-422-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Product of sine and cosine as a sum",
+      "learningObjective": "State the product-to-sum formula for a sine times a cosine.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For all angles \\(A\\) and \\(B\\), \\(\\sin A\\cos B\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\left[\\sin(A+B)+\\sin(A-B)\\right]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\left[\\cos(A-B)-\\cos(A+B)\\right]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Adding \\(\\sin(A+B)=\\sin A\\cos B+\\cos A\\sin B\\) and \\(\\sin(A-B)=\\sin A\\cos B-\\cos A\\sin B\\) gives \\(2\\sin A\\cos B\\). Hence \\(\\sin A\\cos B=\\frac{1}{2}\\left[\\sin(A+B)+\\sin(A-B)\\right]\\). The other expression equals \\(\\sin A\\sin B\\).",
+      "hint": "Add the expansions of \\(\\sin(A+B)\\) and \\(\\sin(A-B)\\) and see which product survives."
+    },
+    {
+      "id": "dynanca-422-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Product of two cosines as a sum",
+      "learningObjective": "State the product-to-sum formula for a product of two cosines.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For all angles \\(A\\) and \\(B\\), \\(\\cos A\\cos B\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\left[\\cos(A-B)+\\cos(A+B)\\right]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\left[\\cos(A-B)-\\cos(A+B)\\right]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Adding \\(\\cos(A-B)=\\cos A\\cos B+\\sin A\\sin B\\) and \\(\\cos(A+B)=\\cos A\\cos B-\\sin A\\sin B\\) gives \\(2\\cos A\\cos B\\). Hence \\(\\cos A\\cos B=\\frac{1}{2}\\left[\\cos(A-B)+\\cos(A+B)\\right]\\). Subtracting instead isolates \\(\\sin A\\sin B\\).",
+      "hint": "Add the expansions of \\(\\cos(A-B)\\) and \\(\\cos(A+B)\\)."
+    },
+    {
+      "id": "dynanca-422-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Product of two sines as a difference",
+      "learningObjective": "State the product-to-sum formula for a product of two sines with the correct order.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "For all angles \\(A\\) and \\(B\\), \\(\\sin A\\sin B\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\left[\\cos(A-B)-\\cos(A+B)\\right]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\left[\\cos(A+B)-\\cos(A-B)\\right]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Subtracting \\(\\cos(A+B)=\\cos A\\cos B-\\sin A\\sin B\\) from \\(\\cos(A-B)=\\cos A\\cos B+\\sin A\\sin B\\) gives \\(2\\sin A\\sin B\\). Hence \\(\\sin A\\sin B=\\frac{1}{2}\\left[\\cos(A-B)-\\cos(A+B)\\right]\\). The reversed order gives the negative of the product. A check with \\(A=B\\): \\(\\sin^2 A=\\frac{1}{2}(1-\\cos 2A)\\ge 0\\).",
+      "hint": "Test with \\(A=B\\), where the product is a square and cannot be negative."
+    },
+    {
+      "id": "dynanca-422-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Rewriting a sine-cosine product",
+      "learningObjective": "Convert a product of a sine and a cosine with different arguments into a sum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For every real \\(x\\), \\(\\sin 3x\\cos x\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}(\\sin 4x-\\sin 2x)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}(\\sin 4x+\\sin 2x)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(\\sin A\\cos B=\\frac{1}{2}\\left[\\sin(A+B)+\\sin(A-B)\\right]\\) with \\(A=3x\\) and \\(B=x\\): the sum is \\(4x\\) and the difference is \\(2x\\). Hence \\(\\sin 3x\\cos x=\\frac{1}{2}(\\sin 4x+\\sin 2x)\\). The version with a minus sign equals \\(\\cos 3x\\sin x\\).",
+      "hint": "Identify \\(A\\) as the argument of the sine and \\(B\\) as the argument of the cosine, then form \\(A+B\\) and \\(A-B\\)."
+    },
+    {
+      "id": "dynanca-422-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Rewriting a product of cosines",
+      "learningObjective": "Convert a product of two cosines with different arguments into a sum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For every real \\(x\\), \\(\\cos 5x\\cos 2x\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}(\\cos 3x+\\cos 7x)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}(\\cos 3x-\\cos 7x)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(\\cos A\\cos B=\\frac{1}{2}\\left[\\cos(A-B)+\\cos(A+B)\\right]\\) with \\(A=5x\\) and \\(B=2x\\): the difference is \\(3x\\) and the sum is \\(7x\\). Hence \\(\\cos 5x\\cos 2x=\\frac{1}{2}(\\cos 3x+\\cos 7x)\\). The version with a minus sign equals \\(\\sin 5x\\sin 2x\\).",
+      "hint": "A product of two cosines becomes a sum of two cosines."
+    },
+    {
+      "id": "dynanca-422-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Rewriting a product of sines",
+      "learningObjective": "Convert a product of two sines with different arguments into a difference of cosines.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For every real \\(x\\), \\(\\sin 4x\\sin x\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}(\\cos 3x-\\cos 5x)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}(\\cos 5x-\\cos 3x)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(\\sin A\\sin B=\\frac{1}{2}\\left[\\cos(A-B)-\\cos(A+B)\\right]\\) with \\(A=4x\\) and \\(B=x\\): the difference is \\(3x\\) and the sum is \\(5x\\). Hence \\(\\sin 4x\\sin x=\\frac{1}{2}(\\cos 3x-\\cos 5x)\\). Reversing the order of subtraction changes the sign.",
+      "hint": "In the formula for a product of sines, the cosine of the difference comes first."
+    },
+    {
+      "id": "dynanca-422-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Evaluating a sine-cosine product exactly",
+      "learningObjective": "Evaluate a product of trigonometric values by converting it to a sum of standard values.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the exact value of \\(\\sin 75^\\circ\\cos 15^\\circ\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{2+\\sqrt{3}}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2-\\sqrt{3}}{4}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(\\sin A\\cos B=\\frac{1}{2}\\left[\\sin(A+B)+\\sin(A-B)\\right]\\): \\(\\sin 75^\\circ\\cos 15^\\circ=\\frac{1}{2}(\\sin 90^\\circ+\\sin 60^\\circ)=\\frac{1}{2}\\left(1+\\frac{\\sqrt{3}}{2}\\right)=\\frac{2+\\sqrt{3}}{4}\\approx 0.933\\). The value with a minus sign is \\(\\cos 75^\\circ\\sin 15^\\circ\\approx 0.067\\).",
+      "hint": "The sum and difference of the two angles are both standard angles."
+    },
+    {
+      "id": "dynanca-422-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Evaluating a product of cosines exactly",
+      "learningObjective": "Evaluate a product of two cosines by converting it to a sum of standard values.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the exact value of \\(\\cos 75^\\circ\\cos 15^\\circ\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\sqrt{3}}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(\\cos A\\cos B=\\frac{1}{2}\\left[\\cos(A-B)+\\cos(A+B)\\right]\\): \\(\\cos 75^\\circ\\cos 15^\\circ=\\frac{1}{2}(\\cos 60^\\circ+\\cos 90^\\circ)=\\frac{1}{2}\\left(\\frac{1}{2}+0\\right)=\\frac{1}{4}\\). Using sines of \\(60^\\circ\\) and \\(90^\\circ\\) in place of cosines would give a different, incorrect value.",
+      "hint": "Compute \\(A-B\\) and \\(A+B\\), then use the cosines of those two standard angles."
+    },
+    {
+      "id": "dynanca-422-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Evaluating a product of sines exactly",
+      "learningObjective": "Evaluate a product of two sines with careful attention to signs.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "What is the exact value of \\(\\sin 105^\\circ\\sin 15^\\circ\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\frac{1}{4}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(\\sin A\\sin B=\\frac{1}{2}\\left[\\cos(A-B)-\\cos(A+B)\\right]\\): \\(\\sin 105^\\circ\\sin 15^\\circ=\\frac{1}{2}(\\cos 90^\\circ-\\cos 120^\\circ)=\\frac{1}{2}\\left(0-\\left(-\\frac{1}{2}\\right)\\right)=\\frac{1}{4}\\). Both sines are positive, so the product must be positive.",
+      "hint": "Remember that \\(\\cos 120^\\circ\\) is negative, and that subtracting a negative number adds."
+    },
+    {
+      "id": "dynanca-422-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Order of factors in a sine-cosine product",
+      "learningObjective": "Apply the product-to-sum formula when the sine has the smaller argument.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "For every real \\(x\\), \\(\\sin x\\cos 3x\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}(\\sin 4x-\\sin 2x)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}(\\sin 4x+\\sin 2x)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(\\sin A\\cos B=\\frac{1}{2}\\left[\\sin(A+B)+\\sin(A-B)\\right]\\) with \\(A=x\\) and \\(B=3x\\): \\(\\sin(A-B)=\\sin(-2x)=-\\sin 2x\\). Hence \\(\\sin x\\cos 3x=\\frac{1}{2}(\\sin 4x-\\sin 2x)\\). The version with a plus sign equals \\(\\sin 3x\\cos x\\), where the sine has the larger argument.",
+      "hint": "Here \\(A-B\\) is negative; use the fact that sine is an odd function."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-481",
+  "category": "Comprehensive Mathematics",
+  "title": "481. Sets, Logic, Reasoning & Proof: Venn Diagrams for Three Sets",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-481-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Number of regions for three sets",
+      "learningObjective": "Count the regions of a three-circle Venn diagram.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A Venn diagram shows three mutually overlapping circles \\(A\\), \\(B\\), and \\(C\\) inside a rectangle \\(U\\). Into how many regions is the rectangle divided?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each element is either in or out of \\(A\\), in or out of \\(B\\), and in or out of \\(C\\). That gives \\(2\\cdot 2\\cdot 2=8\\) combinations, and a standard three-circle diagram has one region for each, including the region outside all three circles.",
+      "hint": "Count the combinations of in or out for each of the three sets."
+    },
+    {
+      "id": "dynanca-481-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The central region",
+      "learningObjective": "Identify the set represented by the region common to all three circles.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a three-circle Venn diagram for sets \\(A\\), \\(B\\), and \\(C\\), which set is represented by the region inside all three circles?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\cap B\\cap C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(A\\cup B\\cup C\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The region inside all three circles contains the elements that belong to \\(A\\), to \\(B\\), and to \\(C\\), which is the intersection \\(A\\cap B\\cap C\\). The union \\(A\\cup B\\cup C\\) is represented by everything inside at least one circle.",
+      "hint": "An element in the central region belongs to every one of the three sets."
+    },
+    {
+      "id": "dynanca-481-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Region in exactly two named sets",
+      "learningObjective": "Name the set represented by a region inside two circles and outside the third.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In a three-circle Venn diagram, which set is represented by the region inside \\(A\\) and \\(B\\) but outside \\(C\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\cap B\\cap C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((A\\cap B)\\setminus C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The region lies inside both \\(A\\) and \\(B\\), so its elements are in \\(A\\cap B\\); it lies outside \\(C\\), so the elements of \\(C\\) are removed. This is \\((A\\cap B)\\setminus C\\). The set \\(A\\cap B\\cap C\\) is the central region, which lies inside \\(C\\).",
+      "hint": "Translate \"inside\" as membership and \"outside\" as removal."
+    },
+    {
+      "id": "dynanca-481-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Elements of the central region",
+      "learningObjective": "Find the elements common to three listed sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A=\\{1,2,3,4,5\\}\\), \\(B=\\{4,5,6,7\\}\\), and \\(C=\\{5,7,8,9\\}\\). Which elements are written in the region inside all three circles?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\) and \\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "Only \\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The central region represents \\(A\\cap B\\cap C\\). The element \\(5\\) is in all three sets. The element \\(4\\) is in \\(A\\) and \\(B\\) but not in \\(C\\), so it is written in the region inside \\(A\\) and \\(B\\) but outside \\(C\\).",
+      "hint": "Check each candidate element against all three listings."
+    },
+    {
+      "id": "dynanca-481-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Elements in one set only",
+      "learningObjective": "Find the elements that belong to exactly one of three listed sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A=\\{1,2,3,4,5\\}\\), \\(B=\\{4,5,6,7\\}\\), and \\(C=\\{5,7,8,9\\}\\). Which elements are written in the region inside \\(A\\) only?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\), \\(2\\), and \\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\), \\(2\\), \\(3\\), and \\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The region inside \\(A\\) only represents \\(A\\setminus(B\\cup C)\\). Since \\(B\\cup C=\\{4,5,6,7,8,9\\}\\), removing these from \\(A\\) leaves \\(1\\), \\(2\\), and \\(3\\). The element \\(4\\) is also in \\(B\\), so it is not in the region for \\(A\\) only.",
+      "hint": "Remove from \\(A\\) every element that appears in \\(B\\) or in \\(C\\)."
+    },
+    {
+      "id": "dynanca-481-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Elements outside all three circles",
+      "learningObjective": "Find the elements of the universal set that belong to none of three listed sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(U=\\{1,2,\\ldots,10\\}\\), \\(A=\\{1,2,3,4,5\\}\\), \\(B=\\{4,5,6,7\\}\\), and \\(C=\\{5,7,8,9\\}\\). Which elements are written outside all three circles?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\), \\(9\\), and \\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "Only \\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The union is \\(A\\cup B\\cup C=\\{1,2,3,4,5,6,7,8,9\\}\\). The only element of \\(U\\) not in the union is \\(10\\). The elements \\(8\\) and \\(9\\) are in \\(C\\), so they are written inside circle \\(C\\).",
+      "hint": "Form the union of the three sets and compare it with the universal set."
+    },
+    {
+      "id": "dynanca-481-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Size of one set from region counts",
+      "learningObjective": "Add the four regions that make up one circle of a three-circle diagram.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A three-circle Venn diagram shows these numbers of elements: \\(4\\) in \\(A\\) only, \\(3\\) in \\(B\\) only, \\(5\\) in \\(C\\) only, \\(2\\) in \\(A\\) and \\(B\\) but not \\(C\\), \\(1\\) in \\(A\\) and \\(C\\) but not \\(B\\), \\(2\\) in \\(B\\) and \\(C\\) but not \\(A\\), and \\(1\\) in all three. How many elements does \\(A\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Circle \\(A\\) consists of four regions: \\(A\\) only (\\(4\\)), \\(A\\) and \\(B\\) but not \\(C\\) (\\(2\\)), \\(A\\) and \\(C\\) but not \\(B\\) (\\(1\\)), and all three (\\(1\\)). So \\(|A|=4+2+1+1=8\\). The number \\(4\\) counts only the elements that are in \\(A\\) and in no other set.",
+      "hint": "List every region that lies inside circle \\(A\\); there are four of them."
+    },
+    {
+      "id": "dynanca-481-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Elements in exactly two sets",
+      "learningObjective": "Count the elements that belong to exactly two of three sets from region counts.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A three-circle Venn diagram shows \\(6\\) elements in \\(A\\) only, \\(4\\) in \\(B\\) only, \\(7\\) in \\(C\\) only, \\(3\\) in \\(A\\) and \\(B\\) but not \\(C\\), \\(2\\) in \\(A\\) and \\(C\\) but not \\(B\\), \\(4\\) in \\(B\\) and \\(C\\) but not \\(A\\), and \\(5\\) in all three. How many elements belong to exactly two of the sets?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(14\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The elements in exactly two sets are in the three regions that lie inside two circles and outside the third: \\(3+2+4=9\\). The \\(5\\) elements in the central region belong to all three sets, not to exactly two, so adding them gives the incorrect \\(14\\).",
+      "hint": "\"Exactly two\" excludes the elements that are in all three sets."
+    },
+    {
+      "id": "dynanca-481-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Size of a three-set union from region counts",
+      "learningObjective": "Find the size of a union of three sets by adding disjoint regions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A three-circle Venn diagram shows \\(4\\) elements in \\(A\\) only, \\(3\\) in \\(B\\) only, \\(5\\) in \\(C\\) only, \\(2\\) in \\(A\\) and \\(B\\) but not \\(C\\), \\(1\\) in \\(A\\) and \\(C\\) but not \\(B\\), \\(2\\) in \\(B\\) and \\(C\\) but not \\(A\\), and \\(1\\) in all three. How many elements does \\(A\\cup B\\cup C\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(25\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(18\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The seven regions inside at least one circle are disjoint, so \\(|A\\cup B\\cup C|=4+3+5+2+1+2+1=18\\). The value \\(25\\) is \\(|A|+|B|+|C|=8+8+9\\), which counts every element in two sets twice and the element in all three sets three times.",
+      "hint": "Add each region exactly once; do not add the sizes of the three circles."
+    },
+    {
+      "id": "dynanca-481-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Filling a region from totals",
+      "learningObjective": "Work from the central region outward to find the number of elements in one set only.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For three sets it is known that \\(|A|=12\\), \\(|A\\cap B|=5\\), \\(|A\\cap C|=4\\), and \\(|A\\cap B\\cap C|=2\\). How many elements are in \\(A\\) only (in \\(A\\) but in neither \\(B\\) nor \\(C\\))?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Work outward from the centre. The region \\(A\\) and \\(B\\) but not \\(C\\) has \\(5-2=3\\) elements; the region \\(A\\) and \\(C\\) but not \\(B\\) has \\(4-2=2\\). Then \\(A\\) only has \\(12-3-2-2=5\\) elements. Computing \\(12-5-4=3\\) subtracts the \\(2\\) central elements twice.",
+      "hint": "The central region is part of both \\(A\\cap B\\) and \\(A\\cap C\\); subtract it only once."
+    }
+  ]
+}

@@ -1,0 +1,4411 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "quiz-109-2",
+  "category": "Quiz",
+  "title": "QUIZ - 109",
+  "description": "Test your knowledge, strengthen your reasoning, and learn something new with every question.",
+  "questionCount": 200,
+  "questions": [
+    {
+      "id": "quiz-109-2-q001",
+      "category": "Probability",
+      "concept": "Random Selection in Algorithms",
+      "learningObjective": "Determine the probability of a complementary outcome in a random binary choice.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A randomized algorithm selects one of two possible paths with equal probability. If the probability of selecting Path X is 0.5, what is the probability of selecting Path Y?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.5"
+        },
+        {
+          "label": "B",
+          "text": "0.25"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since the algorithm selects one of two paths with equal probability, the probabilities must sum to 1. Therefore, the probability of selecting Path Y is \\(1 - 0.5 = 0.5\\). Option A is correct.",
+      "hint": "Remember that the total probability of all possible outcomes must equal 1."
+    },
+    {
+      "id": "quiz-109-2-q002",
+      "category": "Probability",
+      "concept": "Uniform Random Selection",
+      "learningObjective": "Calculate the probability of selecting one item from equally likely options.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An algorithm randomly selects one of 4 equally likely options. What is the probability of selecting any specific option?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.25"
+        },
+        {
+          "label": "B",
+          "text": "0.5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "When there are 4 equally likely options, the probability of selecting any specific option is \\(\\frac{1}{4} = 0.25\\). Option A is correct.",
+      "hint": "Divide 1 by the total number of equally likely options."
+    },
+    {
+      "id": "quiz-109-2-q003",
+      "category": "Probability",
+      "concept": "Random Branching",
+      "learningObjective": "Find the probability of a complementary branch in a randomized algorithm.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A randomized algorithm chooses Branch A with probability 0.3. What is the probability that it chooses Branch B?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.3"
+        },
+        {
+          "label": "B",
+          "text": "0.7"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The two branches are complementary, so their probabilities sum to 1. Thus, \\(P(B) = 1 - 0.3 = 0.7\\). Option B is correct.",
+      "hint": "Subtract the given probability from 1 to find the complementary probability."
+    },
+    {
+      "id": "quiz-109-2-q004",
+      "category": "Probability",
+      "concept": "Random Number Generation",
+      "learningObjective": "Calculate the probability of a random integer satisfying a condition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A random number generator produces integers from 1 to 10 with equal probability. What is the probability of generating a number greater than 7?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.2"
+        },
+        {
+          "label": "B",
+          "text": "0.3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The numbers greater than 7 are 8, 9, and 10, which gives 3 favorable outcomes out of 10. The probability is \\(\\frac{3}{10} = 0.3\\). Option B is correct.",
+      "hint": "Count how many integers from 1 to 10 are greater than 7, then divide by 10."
+    },
+    {
+      "id": "quiz-109-2-q005",
+      "category": "Probability",
+      "concept": "Random Initialization",
+      "learningObjective": "Determine the probability of a randomly assigned binary value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A variable is randomly initialized to either 0 or 1 with equal probability. What is the probability that it is initialized to 1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.25"
+        },
+        {
+          "label": "B",
+          "text": "0.5"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are two equally likely outcomes: 0 and 1. The probability of initializing to 1 is \\(\\frac{1}{2} = 0.5\\). Option B is correct.",
+      "hint": "Consider the total number of equally likely outcomes and how many match the event."
+    },
+    {
+      "id": "quiz-109-2-q006",
+      "category": "Probability",
+      "concept": "Expected Frequency",
+      "learningObjective": "Calculate the expected number of occurrences in repeated random selections.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A randomized algorithm selects an item with probability 0.2 on each trial. If the algorithm runs 1000 times, how many times is the item expected to be selected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "100"
+        },
+        {
+          "label": "B",
+          "text": "200"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expected number of selections is the probability multiplied by the number of trials: \\(0.2 \\times 1000 = 200\\). Option B is correct.",
+      "hint": "Multiply the probability per trial by the total number of trials."
+    },
+    {
+      "id": "quiz-109-2-q007",
+      "category": "Probability",
+      "concept": "Comparing Random Choices",
+      "learningObjective": "Compare probabilities to identify which random event is more likely.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Algorithm A selects red with probability 0.4. Algorithm B selects red with probability 0.6. Which algorithm is more likely to select red?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Algorithm A"
+        },
+        {
+          "label": "B",
+          "text": "Algorithm B"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since 0.6 > 0.4, Algorithm B has a higher probability of selecting red. Option B is correct.",
+      "hint": "Compare the two probability values directly."
+    },
+    {
+      "id": "quiz-109-2-q008",
+      "category": "Probability",
+      "concept": "Uniform Random Selection",
+      "learningObjective": "Determine the probability of selecting a specific item from equally likely choices.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An algorithm randomly selects one of 5 equally likely items. What is the probability of selecting item 3?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.2"
+        },
+        {
+          "label": "B",
+          "text": "0.5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "With 5 equally likely items, the probability of selecting any one specific item is \\(\\frac{1}{5} = 0.2\\). Option A is correct.",
+      "hint": "Divide 1 by the number of equally likely items."
+    },
+    {
+      "id": "quiz-109-2-q009",
+      "category": "Probability",
+      "concept": "Random Branching",
+      "learningObjective": "Identify the probability of a branch given the complementary branch probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A randomized algorithm takes Branch A with probability 0.6 and Branch B otherwise. What is the probability of taking Branch B?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.6"
+        },
+        {
+          "label": "B",
+          "text": "0.4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probabilities of the two branches must sum to 1. Therefore, \\(P(B) = 1 - 0.6 = 0.4\\). Option B is correct.",
+      "hint": "Use the fact that the sum of all branch probabilities is 1."
+    },
+    {
+      "id": "quiz-109-2-q010",
+      "category": "Probability",
+      "concept": "Repeated Randomized Decisions",
+      "learningObjective": "Calculate the probability of two independent random events both occurring.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Each of two independent randomized decisions has probability 0.5 of success. What is the probability that both decisions succeed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.5"
+        },
+        {
+          "label": "B",
+          "text": "0.25"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For independent events, multiply the probabilities: \\(0.5 \\times 0.5 = 0.25\\). Option B is correct.",
+      "hint": "Multiply the probabilities of the independent events."
+    },
+    {
+      "id": "quiz-109-2-q011",
+      "category": "Probability",
+      "concept": "Random Selection from a Deck",
+      "learningObjective": "Calculate the probability of drawing a specific suit from a standard deck.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A card is drawn at random from a standard deck of 52 cards. What is the probability that it is a heart?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.25"
+        },
+        {
+          "label": "B",
+          "text": "0.5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are 13 hearts in a standard deck of 52 cards. The probability is \\(\\frac{13}{52} = 0.25\\). Option A is correct.",
+      "hint": "Count the number of hearts and divide by the total number of cards."
+    },
+    {
+      "id": "quiz-109-2-q012",
+      "category": "Probability",
+      "concept": "Random Number Generation",
+      "learningObjective": "Determine the probability of generating an even number from a uniform distribution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A random number generator produces integers from 1 to 6 with equal probability. What is the probability of generating an even number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/3"
+        },
+        {
+          "label": "B",
+          "text": "1/2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The even numbers from 1 to 6 are 2, 4, and 6, giving 3 favorable outcomes out of 6. The probability is \\(\\frac{3}{6} = \\frac{1}{2}\\). Option B is correct.",
+      "hint": "List the even numbers in the range and divide by the total count."
+    },
+    {
+      "id": "quiz-109-2-q013",
+      "category": "Probability",
+      "concept": "Random Initialization",
+      "learningObjective": "Calculate the probability of a randomly chosen value exceeding a threshold.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A weight is randomly initialized to one of the values \\(\\{1, 2, 3, 4\\}\\) with equal probability. What is the probability that the value is greater than 2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.25"
+        },
+        {
+          "label": "B",
+          "text": "0.5"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The values greater than 2 are 3 and 4, giving 2 favorable outcomes out of 4. The probability is \\(\\frac{2}{4} = 0.5\\). Option B is correct.",
+      "hint": "Count how many values in the set are greater than 2."
+    },
+    {
+      "id": "quiz-109-2-q014",
+      "category": "Probability",
+      "concept": "Expected Frequency",
+      "learningObjective": "Compute the expected count of an event over many independent trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A random process selects an item with probability 0.3 per trial. If there are 500 trials, what is the expected number of selections?",
+      "options": [
+        {
+          "label": "A",
+          "text": "100"
+        },
+        {
+          "label": "B",
+          "text": "150"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expected count is \\(0.3 \\times 500 = 150\\). Option B is correct.",
+      "hint": "Multiply the probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q015",
+      "category": "Probability",
+      "concept": "Uniform Random Branching",
+      "learningObjective": "Find the probability of one branch among equally likely branches.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A randomized algorithm chooses one of 3 paths with equal probability. What is the probability of choosing path 1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/3"
+        },
+        {
+          "label": "B",
+          "text": "1/2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "With 3 equally likely paths, the probability of choosing any specific path is \\(\\frac{1}{3}\\). Option A is correct.",
+      "hint": "Divide 1 by the number of equally likely paths."
+    },
+    {
+      "id": "quiz-109-2-q016",
+      "category": "Probability",
+      "concept": "Comparing Random Choices",
+      "learningObjective": "Determine which of two events is more likely based on given probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Event A has probability 0.6 and Event B has probability 0.4. Which event is more likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Event A"
+        },
+        {
+          "label": "B",
+          "text": "Event B"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.6 > 0.4, Event A is more likely. Option A is correct.",
+      "hint": "Compare the numerical probability values."
+    },
+    {
+      "id": "quiz-109-2-q017",
+      "category": "Probability",
+      "concept": "Uniform Random Selection",
+      "learningObjective": "Calculate the probability of selecting a specific item from a set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An algorithm randomly selects one of 8 equally likely items. What is the probability of selecting a particular item?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/4"
+        },
+        {
+          "label": "B",
+          "text": "1/8"
+        }
+      ],
+      "answer": "B",
+      "explanation": "With 8 equally likely items, the probability of selecting any one specific item is \\(\\frac{1}{8}\\). Option B is correct.",
+      "hint": "The probability is 1 divided by the total number of equally likely items."
+    },
+    {
+      "id": "quiz-109-2-q018",
+      "category": "Probability",
+      "concept": "Repeated Randomized Decisions",
+      "learningObjective": "Calculate the probability of three independent events all occurring.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Each of three independent randomized decisions has probability 0.5 of success. What is the probability that all three succeed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/4"
+        },
+        {
+          "label": "B",
+          "text": "1/8"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiply the probabilities: \\(0.5 \\times 0.5 \\times 0.5 = 0.125 = \\frac{1}{8}\\). Option B is correct.",
+      "hint": "Multiply the probability of success for each independent trial."
+    },
+    {
+      "id": "quiz-109-2-q019",
+      "category": "Probability",
+      "concept": "Random Number Generation",
+      "learningObjective": "Determine the probability of generating a multiple of a number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A random number generator produces integers from 1 to 20 with equal probability. What is the probability of generating a multiple of 5?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/5"
+        },
+        {
+          "label": "B",
+          "text": "1/4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The multiples of 5 from 1 to 20 are 5, 10, 15, and 20, giving 4 favorable outcomes out of 20. The probability is \\(\\frac{4}{20} = \\frac{1}{5}\\). Option A is correct.",
+      "hint": "List the multiples of 5 in the range and divide by the total number of outcomes."
+    },
+    {
+      "id": "quiz-109-2-q020",
+      "category": "Probability",
+      "concept": "Random Branching",
+      "learningObjective": "Find the probability of the complement of a given branch.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A randomized algorithm chooses Option X with probability 0.25 and Option Y otherwise. What is the probability of choosing Option Y?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.25"
+        },
+        {
+          "label": "B",
+          "text": "0.75"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probabilities must sum to 1, so \\(P(Y) = 1 - 0.25 = 0.75\\). Option B is correct.",
+      "hint": "Subtract the probability of Option X from 1."
+    },
+    {
+      "id": "quiz-109-2-q021",
+      "category": "Probability",
+      "concept": "Expected Frequency",
+      "learningObjective": "Calculate the expected number of selections over many trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A randomized algorithm selects an item with probability 0.15 per trial. If it runs 2000 times, what is the expected number of selections?",
+      "options": [
+        {
+          "label": "A",
+          "text": "200"
+        },
+        {
+          "label": "B",
+          "text": "300"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expected number is \\(0.15 \\times 2000 = 300\\). Option B is correct.",
+      "hint": "Multiply the probability per trial by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q022",
+      "category": "Probability",
+      "concept": "Random Selection from a Week",
+      "learningObjective": "Determine the probability of selecting a weekend day from a week.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A day is selected at random from a week. What is the probability that it is a weekend day (Saturday or Sunday)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/7"
+        },
+        {
+          "label": "B",
+          "text": "2/7"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are 2 weekend days out of 7 days in a week. The probability is \\(\\frac{2}{7}\\). Option B is correct.",
+      "hint": "Count the weekend days and divide by the total number of days in a week."
+    },
+    {
+      "id": "quiz-109-2-q023",
+      "category": "Probability",
+      "concept": "Random Initialization",
+      "learningObjective": "Calculate the probability of a random integer satisfying an inequality.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A parameter is randomly assigned an integer from 1 to 100 with equal probability. What is the probability that the value is at most 50?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.25"
+        },
+        {
+          "label": "B",
+          "text": "0.5"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The integers from 1 to 50 are 50 values out of 100 total. The probability is \\(\\frac{50}{100} = 0.5\\). Option B is correct.",
+      "hint": "Count how many integers from 1 to 100 are at most 50."
+    },
+    {
+      "id": "quiz-109-2-q024",
+      "category": "Probability",
+      "concept": "Comparing Random Choices",
+      "learningObjective": "Identify which of two events is more likely from their probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Event X has probability 0.35 and Event Y has probability 0.65. Which event is more likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Event X"
+        },
+        {
+          "label": "B",
+          "text": "Event Y"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since 0.65 > 0.35, Event Y is more likely. Option B is correct.",
+      "hint": "Compare the two probability values."
+    },
+    {
+      "id": "quiz-109-2-q025",
+      "category": "Probability",
+      "concept": "Random Branching",
+      "learningObjective": "Calculate the complement of a branch probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A randomized algorithm takes Branch A with probability 0.3. What is the probability that it does not take Branch A?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.3"
+        },
+        {
+          "label": "B",
+          "text": "0.7"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The complement of Branch A has probability \\(1 - 0.3 = 0.7\\). Option B is correct.",
+      "hint": "Subtract the given probability from 1."
+    },
+    {
+      "id": "quiz-109-2-q026",
+      "category": "Probability",
+      "concept": "Uniform Random Selection",
+      "learningObjective": "Determine the probability of not selecting a specific outcome.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An algorithm randomly selects one of 10 equally likely outcomes. What is the probability that it does not select outcome 1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.1"
+        },
+        {
+          "label": "B",
+          "text": "0.9"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of selecting outcome 1 is \\(\\frac{1}{10} = 0.1\\). The probability of not selecting it is \\(1 - 0.1 = 0.9\\). Option B is correct.",
+      "hint": "Find the probability of the complementary event."
+    },
+    {
+      "id": "quiz-109-2-q027",
+      "category": "Probability",
+      "concept": "Repeated Randomized Decisions",
+      "learningObjective": "Calculate the probability of at least one success in two independent trials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Each of two independent randomized decisions has probability 0.5 of success. What is the probability that at least one succeeds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.75"
+        },
+        {
+          "label": "B",
+          "text": "0.5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of at least one success is \\(1 - P(\\text{both fail}) = 1 - (0.5 \\times 0.5) = 1 - 0.25 = 0.75\\). Option A is correct.",
+      "hint": "Use the complement: find the probability that both fail, then subtract from 1."
+    },
+    {
+      "id": "quiz-109-2-q028",
+      "category": "Probability",
+      "concept": "Random Number Generation",
+      "learningObjective": "Calculate the probability of generating a specific integer.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A random number generator produces integers from 1 to 4 with equal probability. What is the probability of generating the number 3?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/2"
+        },
+        {
+          "label": "B",
+          "text": "1/4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "With 4 equally likely outcomes, the probability of generating 3 is \\(\\frac{1}{4}\\). Option B is correct.",
+      "hint": "Divide 1 by the total number of equally likely outcomes."
+    },
+    {
+      "id": "quiz-109-2-q029",
+      "category": "Probability",
+      "concept": "Random Initialization",
+      "learningObjective": "Determine the probability of a specific value from a small set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A variable is randomly assigned one of the values \\(\\{-1, 0, 1\\}\\) with equal probability. What is the probability that it is assigned 0?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/2"
+        },
+        {
+          "label": "B",
+          "text": "1/3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are 3 equally likely values, and only one of them is 0. The probability is \\(\\frac{1}{3}\\). Option B is correct.",
+      "hint": "Count how many values in the set equal 0, then divide by the total number of values."
+    },
+    {
+      "id": "quiz-109-2-q030",
+      "category": "Probability",
+      "concept": "Expected Frequency",
+      "learningObjective": "Calculate the expected number of occurrences given a probability and trial count.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A random process succeeds with probability 0.25 per trial. If there are 800 trials, what is the expected number of successes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "200"
+        },
+        {
+          "label": "B",
+          "text": "250"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expected number is \\(0.25 \\times 800 = 200\\). Option A is correct.",
+      "hint": "Multiply the probability by the total number of trials."
+    },
+    {
+      "id": "quiz-109-2-q031",
+      "category": "Probability",
+      "concept": "Uniform Random Selection",
+      "learningObjective": "Calculate the probability of selecting one of two specific items.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An algorithm randomly selects one of 6 equally likely items. What is the probability of selecting item 1 or item 2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/6"
+        },
+        {
+          "label": "B",
+          "text": "1/3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are 2 favorable outcomes (item 1 and item 2) out of 6 total. The probability is \\(\\frac{2}{6} = \\frac{1}{3}\\). Option B is correct.",
+      "hint": "Add the number of favorable outcomes and divide by the total."
+    },
+    {
+      "id": "quiz-109-2-q032",
+      "category": "Probability",
+      "concept": "Comparing Random Choices",
+      "learningObjective": "Identify the less likely event from given probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Event A has probability 0.8 and Event B has probability 0.2. Which event is less likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Event B"
+        },
+        {
+          "label": "B",
+          "text": "Event A"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.2 < 0.8, Event B is less likely. Option A is correct.",
+      "hint": "The less likely event has the smaller probability."
+    },
+    {
+      "id": "quiz-109-2-q033",
+      "category": "Probability",
+      "concept": "Random Selection from Letters",
+      "learningObjective": "Determine the probability of selecting a vowel from a word.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A letter is selected at random from the word \"ALGORITHM\". What is the probability that it is a vowel?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/9"
+        },
+        {
+          "label": "B",
+          "text": "1/3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The word \"ALGORITHM\" has 9 letters: A, L, G, O, R, I, T, H, M. The vowels are A, O, I, giving 3 favorable outcomes. The probability is \\(\\frac{3}{9} = \\frac{1}{3}\\). Option B is correct.",
+      "hint": "Count the vowels and divide by the total number of letters."
+    },
+    {
+      "id": "quiz-109-2-q034",
+      "category": "Probability",
+      "concept": "Repeated Randomized Decisions",
+      "learningObjective": "Calculate the probability of exactly one success in two independent trials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Each of two independent randomized decisions has probability 0.5 of success. What is the probability of exactly one success?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/4"
+        },
+        {
+          "label": "B",
+          "text": "1/2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The favorable outcomes are (success, fail) and (fail, success). Each has probability \\(0.5 \\times 0.5 = 0.25\\). The total is \\(0.25 + 0.25 = 0.5\\). Option B is correct.",
+      "hint": "Consider the two possible orders in which exactly one success can occur."
+    },
+    {
+      "id": "quiz-109-2-q035",
+      "category": "Probability",
+      "concept": "Random Number Generation",
+      "learningObjective": "Calculate the probability of generating a number divisible by 3.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A random number generator produces integers from 1 to 12 with equal probability. What is the probability of generating a number divisible by 3?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/6"
+        },
+        {
+          "label": "B",
+          "text": "1/3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The numbers divisible by 3 from 1 to 12 are 3, 6, 9, and 12, giving 4 favorable outcomes out of 12. The probability is \\(\\frac{4}{12} = \\frac{1}{3}\\). Option B is correct.",
+      "hint": "List the multiples of 3 in the range and divide by the total."
+    },
+    {
+      "id": "quiz-109-2-q036",
+      "category": "Probability",
+      "concept": "Random Initialization",
+      "learningObjective": "Determine the probability of a value meeting a threshold condition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A parameter is randomly chosen from \\(\\{2, 4, 6, 8\\}\\) with equal probability. What is the probability that the value is at least 6?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/4"
+        },
+        {
+          "label": "B",
+          "text": "1/2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The values at least 6 are 6 and 8, giving 2 favorable outcomes out of 4. The probability is \\(\\frac{2}{4} = \\frac{1}{2}\\). Option B is correct.",
+      "hint": "Count how many values are 6 or greater, then divide by the total."
+    },
+    {
+      "id": "quiz-109-2-q037",
+      "category": "Probability",
+      "concept": "Expected Frequency",
+      "learningObjective": "Compute the expected number of events over many trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A random process selects an item with probability 0.4 per trial. If there are 1500 trials, what is the expected number of selections?",
+      "options": [
+        {
+          "label": "A",
+          "text": "400"
+        },
+        {
+          "label": "B",
+          "text": "600"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expected number is \\(0.4 \\times 1500 = 600\\). Option B is correct.",
+      "hint": "Multiply the probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q038",
+      "category": "Probability",
+      "concept": "Random Selection from a Deck",
+      "learningObjective": "Calculate the probability of drawing an ace from a standard deck.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A card is drawn at random from a standard deck of 52 cards. What is the probability that it is an ace?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/52"
+        },
+        {
+          "label": "B",
+          "text": "1/13"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are 4 aces in a standard deck. The probability is \\(\\frac{4}{52} = \\frac{1}{13}\\). Option B is correct.",
+      "hint": "Count the number of aces and divide by the total number of cards."
+    },
+    {
+      "id": "quiz-109-2-q039",
+      "category": "Probability",
+      "concept": "Comparing Random Choices",
+      "learningObjective": "Identify the more likely event from given probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Event A has probability 0.55 and Event B has probability 0.45. Which event is more likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Event A"
+        },
+        {
+          "label": "B",
+          "text": "Event B"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.55 > 0.45, Event A is more likely. Option A is correct.",
+      "hint": "Compare the two probability values directly."
+    },
+    {
+      "id": "quiz-109-2-q040",
+      "category": "Probability",
+      "concept": "Uniform Random Selection",
+      "learningObjective": "Determine the probability of selecting a multiple of a number from a range.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An algorithm randomly selects an integer from 1 to 20 with equal probability. What is the probability of selecting a multiple of 4?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/4"
+        },
+        {
+          "label": "B",
+          "text": "1/5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The multiples of 4 from 1 to 20 are 4, 8, 12, 16, and 20, giving 5 favorable outcomes out of 20. The probability is \\(\\frac{5}{20} = \\frac{1}{4}\\). Option A is correct.",
+      "hint": "List the multiples of 4 in the range and divide by the total."
+    },
+    {
+      "id": "quiz-109-2-q041",
+      "category": "Probability",
+      "concept": "Experimental Probability in Simulation",
+      "learningObjective": "Calculate the experimental probability from simulation results.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A coin is simulated 100 times, and it lands on heads 60 times. What is the experimental probability of getting heads?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.5"
+        },
+        {
+          "label": "B",
+          "text": "0.6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The experimental probability is the number of favorable outcomes divided by the total number of trials: \\(\\frac{60}{100} = 0.6\\). Option B is correct.",
+      "hint": "Divide the number of heads by the total number of simulated flips."
+    },
+    {
+      "id": "quiz-109-2-q042",
+      "category": "Probability",
+      "concept": "Experimental Probability in Simulation",
+      "learningObjective": "Determine the experimental probability of an event from simulation data.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A die is simulated 60 times, and it lands on 6 ten times. What is the experimental probability of rolling a 6?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/6"
+        },
+        {
+          "label": "B",
+          "text": "1/3"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The experimental probability is \\(\\frac{10}{60} = \\frac{1}{6}\\). Option A is correct.",
+      "hint": "Divide the number of times 6 appeared by the total number of rolls."
+    },
+    {
+      "id": "quiz-109-2-q043",
+      "category": "Probability",
+      "concept": "Experimental Probability in Simulation",
+      "learningObjective": "Calculate the experimental probability from spinner simulation results.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A spinner with 4 equal sections is spun 40 times, and it lands on red 15 times. What is the experimental probability of landing on red?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/4"
+        },
+        {
+          "label": "B",
+          "text": "0.375"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The experimental probability is \\(\\frac{15}{40} = 0.375\\). Option B is correct.",
+      "hint": "Divide the number of red results by the total number of spins."
+    },
+    {
+      "id": "quiz-109-2-q044",
+      "category": "Probability",
+      "concept": "Experimental Probability in Simulation",
+      "learningObjective": "Determine the experimental probability from random number generation results.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A simulation generates 200 random numbers from 1 to 5, and 50 of them are 3s. What is the experimental probability of generating a 3?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/5"
+        },
+        {
+          "label": "B",
+          "text": "0.25"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The experimental probability is \\(\\frac{50}{200} = 0.25\\). Option B is correct.",
+      "hint": "Divide the count of 3s by the total number of generated numbers."
+    },
+    {
+      "id": "quiz-109-2-q045",
+      "category": "Probability",
+      "concept": "Expected Frequency in Simulation",
+      "learningObjective": "Calculate the expected number of heads in a simulation of coin flips.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The theoretical probability of getting heads is 0.5. If a coin is simulated 100 times, how many heads are expected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "50"
+        },
+        {
+          "label": "B",
+          "text": "100"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expected number of heads is \\(0.5 \\times 100 = 50\\). Option A is correct.",
+      "hint": "Multiply the theoretical probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q046",
+      "category": "Probability",
+      "concept": "Comparing Simulated and Theoretical Results",
+      "learningObjective": "Compare experimental and theoretical probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A simulation gives an experimental probability of 0.3 for an event, while the theoretical probability is 0.25. Which probability is larger?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Experimental probability"
+        },
+        {
+          "label": "B",
+          "text": "Theoretical probability"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.3 > 0.25, the experimental probability is larger. Option A is correct.",
+      "hint": "Compare the two given probability values."
+    },
+    {
+      "id": "quiz-109-2-q047",
+      "category": "Probability",
+      "concept": "Experimental Probability",
+      "learningObjective": "Calculate experimental probability from trial data.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An event occurs 40 times in 200 trials. What is the experimental probability of the event?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.2"
+        },
+        {
+          "label": "B",
+          "text": "0.4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The experimental probability is \\(\\frac{40}{200} = 0.2\\). Option A is correct.",
+      "hint": "Divide the number of occurrences by the total number of trials."
+    },
+    {
+      "id": "quiz-109-2-q048",
+      "category": "Probability",
+      "concept": "Experimental Probability",
+      "learningObjective": "Determine experimental probability from observed successes.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In 50 trials, an event occurs 20 times. What is the experimental probability of the event?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.4"
+        },
+        {
+          "label": "B",
+          "text": "0.2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The experimental probability is \\(\\frac{20}{50} = 0.4\\). Option A is correct.",
+      "hint": "Divide the number of successes by the total number of trials."
+    },
+    {
+      "id": "quiz-109-2-q049",
+      "category": "Probability",
+      "concept": "Theoretical Probability",
+      "learningObjective": "Determine the theoretical probability of rolling a specific number on a fair die.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A fair six-sided die is rolled. What is the theoretical probability of rolling a 3?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/6"
+        },
+        {
+          "label": "B",
+          "text": "1/3"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A fair die has 6 equally likely outcomes, and only one is a 3. The theoretical probability is \\(\\frac{1}{6}\\). Option A is correct.",
+      "hint": "Count the favorable outcomes and divide by the total number of equally likely outcomes."
+    },
+    {
+      "id": "quiz-109-2-q050",
+      "category": "Probability",
+      "concept": "Experimental Probability from Simulation Table",
+      "learningObjective": "Calculate the experimental probability of an event from a simulation table.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A simulation of 80 trials records Event A 20 times and Event B 60 times. What is the experimental probability of Event A?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.5"
+        },
+        {
+          "label": "B",
+          "text": "0.25"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The experimental probability of Event A is \\(\\frac{20}{80} = 0.25\\). Option B is correct.",
+      "hint": "Divide the number of times Event A occurred by the total number of trials."
+    },
+    {
+      "id": "quiz-109-2-q051",
+      "category": "Probability",
+      "concept": "Expected Frequency in Simulation",
+      "learningObjective": "Calculate the expected number of rainy days in a simulation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of rain on a given day is 0.3. If 10 days are simulated, how many rainy days are expected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expected number of rainy days is \\(0.3 \\times 10 = 3\\). Option A is correct.",
+      "hint": "Multiply the probability of rain by the number of days."
+    },
+    {
+      "id": "quiz-109-2-q052",
+      "category": "Probability",
+      "concept": "Expected Frequency in Simulation",
+      "learningObjective": "Determine the expected number of times a spinner lands on a section.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A spinner has 3 equal sections. If it is spun 90 times, how many times is it expected to land on section 1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "45"
+        },
+        {
+          "label": "B",
+          "text": "30"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of landing on section 1 is \\(\\frac{1}{3}\\). The expected count is \\(\\frac{1}{3} \\times 90 = 30\\). Option B is correct.",
+      "hint": "Multiply the probability of landing on section 1 by the total number of spins."
+    },
+    {
+      "id": "quiz-109-2-q053",
+      "category": "Probability",
+      "concept": "Experimental Probability",
+      "learningObjective": "Calculate experimental probability from coin toss results.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A coin is tossed 200 times and lands on heads 110 times. What is the experimental probability of heads?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.55"
+        },
+        {
+          "label": "B",
+          "text": "0.5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The experimental probability is \\(\\frac{110}{200} = 0.55\\). Option A is correct.",
+      "hint": "Divide the number of heads by the total number of tosses."
+    },
+    {
+      "id": "quiz-109-2-q054",
+      "category": "Probability",
+      "concept": "Experimental Probability in Simulation",
+      "learningObjective": "Calculate experimental probability from die roll simulation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A die is rolled 120 times, and it lands on 1 twenty times. What is the experimental probability of rolling a 1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/6"
+        },
+        {
+          "label": "B",
+          "text": "1/3"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The experimental probability is \\(\\frac{20}{120} = \\frac{1}{6}\\). Option A is correct.",
+      "hint": "Divide the number of times 1 appeared by the total number of rolls."
+    },
+    {
+      "id": "quiz-109-2-q055",
+      "category": "Probability",
+      "concept": "Theoretical Probability",
+      "learningObjective": "Determine the theoretical probability of two independent events both occurring.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Two fair coins are tossed. What is the theoretical probability that both land on heads?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/4"
+        },
+        {
+          "label": "B",
+          "text": "1/2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of heads on one coin is \\(\\frac{1}{2}\\). For both coins, multiply: \\(\\frac{1}{2} \\times \\frac{1}{2} = \\frac{1}{4}\\). Option A is correct.",
+      "hint": "Multiply the probabilities of the independent events."
+    },
+    {
+      "id": "quiz-109-2-q056",
+      "category": "Probability",
+      "concept": "Comparing Simulated and Theoretical Results",
+      "learningObjective": "Identify the experimental probability from a simulation result.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A simulation gives a result of 0.52 for an event whose theoretical probability is 0.50. What is the experimental probability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.52"
+        },
+        {
+          "label": "B",
+          "text": "0.50"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The experimental probability is the result obtained from the simulation, which is 0.52. Option A is correct.",
+      "hint": "The experimental probability is the value observed in the simulation."
+    },
+    {
+      "id": "quiz-109-2-q057",
+      "category": "Probability",
+      "concept": "Experimental Probability",
+      "learningObjective": "Calculate experimental probability from simulation frequencies.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In a simulation of 500 trials, an event occurs 125 times. What is the experimental probability of the event?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.25"
+        },
+        {
+          "label": "B",
+          "text": "0.5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The experimental probability is \\(\\frac{125}{500} = 0.25\\). Option A is correct.",
+      "hint": "Divide the number of occurrences by the total number of trials."
+    },
+    {
+      "id": "quiz-109-2-q058",
+      "category": "Probability",
+      "concept": "Expected Frequency",
+      "learningObjective": "Calculate the expected number of successes in repeated trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of success in a trial is 0.2. If there are 50 trials, what is the expected number of successes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expected number of successes is \\(0.2 \\times 50 = 10\\). Option B is correct.",
+      "hint": "Multiply the probability of success by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q059",
+      "category": "Probability",
+      "concept": "Expected Frequency in Simulation",
+      "learningObjective": "Determine the expected count of a specific outcome in a simulation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A simulation generates 300 random numbers from 1 to 6. How many 4s are expected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "100"
+        },
+        {
+          "label": "B",
+          "text": "50"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of generating a 4 is \\(\\frac{1}{6}\\). The expected count is \\(\\frac{1}{6} \\times 300 = 50\\). Option B is correct.",
+      "hint": "Multiply the probability of generating a 4 by the total number of generated numbers."
+    },
+    {
+      "id": "quiz-109-2-q060",
+      "category": "Probability",
+      "concept": "Experimental Probability",
+      "learningObjective": "Calculate experimental probability from observed data.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An event occurs 24 times in 80 trials. What is the experimental probability of the event?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.3"
+        },
+        {
+          "label": "B",
+          "text": "0.24"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The experimental probability is \\(\\frac{24}{80} = 0.3\\). Option A is correct.",
+      "hint": "Divide the number of occurrences by the total number of trials."
+    },
+    {
+      "id": "quiz-109-2-q061",
+      "category": "Probability",
+      "concept": "Experimental Probability from Simulation Table",
+      "learningObjective": "Calculate the experimental probability of an event from a table.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A simulation of 100 trials records Event A 30 times and Event B 70 times. What is the experimental probability of Event A?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.7"
+        },
+        {
+          "label": "B",
+          "text": "0.3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The experimental probability of Event A is \\(\\frac{30}{100} = 0.3\\). Option B is correct.",
+      "hint": "Divide the number of times Event A occurred by the total number of trials."
+    },
+    {
+      "id": "quiz-109-2-q062",
+      "category": "Probability",
+      "concept": "Theoretical Probability",
+      "learningObjective": "Determine the theoretical probability of rolling an odd number on a fair die.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A fair six-sided die is rolled. What is the theoretical probability of rolling an odd number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/3"
+        },
+        {
+          "label": "B",
+          "text": "1/2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The odd numbers on a die are 1, 3, and 5, giving 3 favorable outcomes out of 6. The probability is \\(\\frac{3}{6} = \\frac{1}{2}\\). Option B is correct.",
+      "hint": "Count the odd numbers on a die and divide by the total number of outcomes."
+    },
+    {
+      "id": "quiz-109-2-q063",
+      "category": "Probability",
+      "concept": "Comparing Simulated and Theoretical Results",
+      "learningObjective": "Calculate the difference between simulated and theoretical probabilities.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The theoretical probability of an event is 0.4, and a simulation over 1000 trials gives an experimental probability of 0.38. What is the difference between the theoretical and experimental probabilities?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.02"
+        },
+        {
+          "label": "B",
+          "text": "0.38"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The difference is \\(0.4 - 0.38 = 0.02\\). Option A is correct.",
+      "hint": "Subtract the smaller probability from the larger one."
+    },
+    {
+      "id": "quiz-109-2-q064",
+      "category": "Probability",
+      "concept": "Expected Frequency in Simulation",
+      "learningObjective": "Determine the expected number of times a spinner lands on a specific section.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A spinner has 5 equal sections. If it is spun 200 times, how many times is it expected to land on a specific section?",
+      "options": [
+        {
+          "label": "A",
+          "text": "100"
+        },
+        {
+          "label": "B",
+          "text": "40"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of landing on a specific section is \\(\\frac{1}{5}\\). The expected count is \\(\\frac{1}{5} \\times 200 = 40\\). Option B is correct.",
+      "hint": "Multiply the probability of landing on the section by the total number of spins."
+    },
+    {
+      "id": "quiz-109-2-q065",
+      "category": "Probability",
+      "concept": "Experimental Probability",
+      "learningObjective": "Calculate experimental probability from trial results.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In 60 trials, an event occurs 15 times. What is the experimental probability of the event?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.5"
+        },
+        {
+          "label": "B",
+          "text": "0.25"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The experimental probability is \\(\\frac{15}{60} = 0.25\\). Option B is correct.",
+      "hint": "Divide the number of occurrences by the total number of trials."
+    },
+    {
+      "id": "quiz-109-2-q066",
+      "category": "Probability",
+      "concept": "Expected Frequency",
+      "learningObjective": "Calculate the expected number of occurrences given a probability and number of trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is 0.15. If there are 200 trials, what is the expected number of occurrences?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "30"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expected number is \\(0.15 \\times 200 = 30\\). Option B is correct.",
+      "hint": "Multiply the probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q067",
+      "category": "Probability",
+      "concept": "Expected Frequency in Simulation",
+      "learningObjective": "Determine the expected count of a specific integer in a random number simulation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A simulation generates 400 random integers from 1 to 8. How many 3s are expected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "100"
+        },
+        {
+          "label": "B",
+          "text": "50"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of generating a 3 is \\(\\frac{1}{8}\\). The expected count is \\(\\frac{1}{8} \\times 400 = 50\\). Option B is correct.",
+      "hint": "Multiply the probability of generating a 3 by the total number of generated integers."
+    },
+    {
+      "id": "quiz-109-2-q068",
+      "category": "Probability",
+      "concept": "Experimental Probability",
+      "learningObjective": "Calculate experimental probability from simulation frequencies.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An event occurs 75 times in 250 trials. What is the experimental probability of the event?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.75"
+        },
+        {
+          "label": "B",
+          "text": "0.3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The experimental probability is \\(\\frac{75}{250} = 0.3\\). Option B is correct.",
+      "hint": "Divide the number of occurrences by the total number of trials."
+    },
+    {
+      "id": "quiz-109-2-q069",
+      "category": "Probability",
+      "concept": "Theoretical Probability",
+      "learningObjective": "Determine the theoretical probability of a specific sum when rolling two dice.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Two fair six-sided dice are rolled. What is the theoretical probability that the sum is 7?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/6"
+        },
+        {
+          "label": "B",
+          "text": "1/12"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are 36 equally likely outcomes when rolling two dice. The outcomes that sum to 7 are (1,6), (2,5), (3,4), (4,3), (5,2), and (6,1), giving 6 favorable outcomes. The probability is \\(\\frac{6}{36} = \\frac{1}{6}\\). Option A is correct.",
+      "hint": "Count the number of ordered pairs that sum to 7, then divide by 36."
+    },
+    {
+      "id": "quiz-109-2-q070",
+      "category": "Probability",
+      "concept": "Comparing Simulated and Theoretical Results",
+      "learningObjective": "Interpret the closeness of a simulation result to the theoretical probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A simulation yields an experimental probability of 0.49 for an event whose theoretical probability is 0.5. How would you describe the simulation result?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Close to the theoretical probability"
+        },
+        {
+          "label": "B",
+          "text": "Far from the theoretical probability"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The difference between 0.49 and 0.5 is only 0.01, which is very small. Therefore, the simulation result is close to the theoretical probability. Option A is correct.",
+      "hint": "Compare how small the difference is between the two probabilities."
+    },
+    {
+      "id": "quiz-109-2-q071",
+      "category": "Probability",
+      "concept": "Experimental Probability",
+      "learningObjective": "Calculate experimental probability from observed successes.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An event occurs 48 times in 120 trials. What is the experimental probability of the event?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.48"
+        },
+        {
+          "label": "B",
+          "text": "0.4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The experimental probability is \\(\\frac{48}{120} = 0.4\\). Option B is correct.",
+      "hint": "Divide the number of occurrences by the total number of trials."
+    },
+    {
+      "id": "quiz-109-2-q072",
+      "category": "Probability",
+      "concept": "Experimental Probability from Simulation Table",
+      "learningObjective": "Calculate the experimental probability of an event from a table of results.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A simulation of 50 trials records Event A 10 times and Event B 40 times. What is the experimental probability of Event B?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.8"
+        },
+        {
+          "label": "B",
+          "text": "0.2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The experimental probability of Event B is \\(\\frac{40}{50} = 0.8\\). Option A is correct.",
+      "hint": "Divide the number of times Event B occurred by the total number of trials."
+    },
+    {
+      "id": "quiz-109-2-q073",
+      "category": "Probability",
+      "concept": "Expected Frequency",
+      "learningObjective": "Calculate the expected number of occurrences in repeated trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is 0.6. If there are 20 trials, what is the expected number of occurrences?",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expected number is \\(0.6 \\times 20 = 12\\). Option A is correct.",
+      "hint": "Multiply the probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q074",
+      "category": "Probability",
+      "concept": "Expected Frequency in Simulation",
+      "learningObjective": "Determine the expected number of times a spinner lands on a specific section.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A spinner has 8 equal sections. If it is spun 160 times, how many times is it expected to land on section 5?",
+      "options": [
+        {
+          "label": "A",
+          "text": "40"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of landing on section 5 is \\(\\frac{1}{8}\\). The expected count is \\(\\frac{1}{8} \\times 160 = 20\\). Option B is correct.",
+      "hint": "Multiply the probability of landing on section 5 by the total number of spins."
+    },
+    {
+      "id": "quiz-109-2-q075",
+      "category": "Probability",
+      "concept": "Theoretical Probability",
+      "learningObjective": "Determine the theoretical probability of a coin landing on heads.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A fair coin is tossed. What is the theoretical probability of landing on heads?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/2"
+        },
+        {
+          "label": "B",
+          "text": "1/4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A fair coin has 2 equally likely outcomes: heads and tails. The probability of heads is \\(\\frac{1}{2}\\). Option A is correct.",
+      "hint": "Count the number of favorable outcomes and divide by the total number of equally likely outcomes."
+    },
+    {
+      "id": "quiz-109-2-q076",
+      "category": "Probability",
+      "concept": "Experimental Probability",
+      "learningObjective": "Calculate experimental probability from trial data.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An event occurs 35 times in 100 trials. What is the experimental probability of the event?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.35"
+        },
+        {
+          "label": "B",
+          "text": "0.65"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The experimental probability is \\(\\frac{35}{100} = 0.35\\). Option A is correct.",
+      "hint": "Divide the number of occurrences by the total number of trials."
+    },
+    {
+      "id": "quiz-109-2-q077",
+      "category": "Probability",
+      "concept": "Experimental Probability in Simulation",
+      "learningObjective": "Calculate experimental probability from die roll simulation results.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A die is simulated 300 times, and it lands on 6 fifty times. What is the experimental probability of rolling a 6?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/6"
+        },
+        {
+          "label": "B",
+          "text": "1/3"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The experimental probability is \\(\\frac{50}{300} = \\frac{1}{6}\\). Option A is correct.",
+      "hint": "Divide the number of times 6 appeared by the total number of rolls."
+    },
+    {
+      "id": "quiz-109-2-q078",
+      "category": "Probability",
+      "concept": "Comparing Simulated and Theoretical Results",
+      "learningObjective": "Calculate the difference between simulated and theoretical probabilities.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A simulation gives an experimental probability of 0.7, while the theoretical probability is 0.5. What is the difference between these probabilities?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.5"
+        },
+        {
+          "label": "B",
+          "text": "0.2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The difference is \\(0.7 - 0.5 = 0.2\\). Option B is correct.",
+      "hint": "Subtract the smaller probability from the larger one."
+    },
+    {
+      "id": "quiz-109-2-q079",
+      "category": "Probability",
+      "concept": "Experimental Probability",
+      "learningObjective": "Calculate experimental probability from simulation frequencies.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An event occurs 100 times in 400 trials. What is the experimental probability of the event?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.5"
+        },
+        {
+          "label": "B",
+          "text": "0.25"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The experimental probability is \\(\\frac{100}{400} = 0.25\\). Option B is correct.",
+      "hint": "Divide the number of occurrences by the total number of trials."
+    },
+    {
+      "id": "quiz-109-2-q080",
+      "category": "Probability",
+      "concept": "Expected Frequency",
+      "learningObjective": "Calculate the expected number of successes given a probability and number of trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of success is 0.35. If there are 40 trials, what is the expected number of successes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "35"
+        },
+        {
+          "label": "B",
+          "text": "14"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expected number of successes is \\(0.35 \\times 40 = 14\\). Option B is correct.",
+      "hint": "Multiply the probability of success by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q081",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the probability of the complement of an event.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If the probability of Event A is 0.3, what is the probability of not Event A?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.7"
+        },
+        {
+          "label": "B",
+          "text": "0.3"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of the complement is \\(1 - 0.3 = 0.7\\). Option A is correct.",
+      "hint": "Subtract the probability of the event from 1."
+    },
+    {
+      "id": "quiz-109-2-q082",
+      "category": "Probability",
+      "concept": "Event Probability",
+      "learningObjective": "Calculate the probability of drawing a specific color from a bag.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A bag contains 5 red marbles and 3 blue marbles. If one marble is drawn at random, what is the probability that it is red?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3/8"
+        },
+        {
+          "label": "B",
+          "text": "5/8"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are 8 marbles in total, and 5 are red. The probability is \\(\\frac{5}{8}\\). Option B is correct.",
+      "hint": "Divide the number of red marbles by the total number of marbles."
+    },
+    {
+      "id": "quiz-109-2-q083",
+      "category": "Probability",
+      "concept": "Probability as a Decimal",
+      "learningObjective": "Convert a fraction probability to a decimal.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is \\(\\frac{3}{4}\\). What is this probability as a decimal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.75"
+        },
+        {
+          "label": "B",
+          "text": "0.25"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(\\frac{3}{4} = 0.75\\). Option A is correct.",
+      "hint": "Divide the numerator by the denominator."
+    },
+    {
+      "id": "quiz-109-2-q084",
+      "category": "Probability",
+      "concept": "Probability as a Percentage",
+      "learningObjective": "Convert a decimal probability to a percentage.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is 0.6. What is this probability as a percentage?",
+      "options": [
+        {
+          "label": "A",
+          "text": "60%"
+        },
+        {
+          "label": "B",
+          "text": "6%"
+        }
+      ],
+      "answer": "A",
+      "explanation": "To convert a decimal to a percentage, multiply by 100: \\(0.6 = 60\\%\\). Option A is correct.",
+      "hint": "Multiply the decimal by 100 to get the percentage."
+    },
+    {
+      "id": "quiz-109-2-q085",
+      "category": "Probability",
+      "concept": "Expected Frequency",
+      "learningObjective": "Calculate the expected number of occurrences given a probability and trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is 0.25. If there are 400 trials, what is the expected number of occurrences?",
+      "options": [
+        {
+          "label": "A",
+          "text": "200"
+        },
+        {
+          "label": "B",
+          "text": "100"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expected number is \\(0.25 \\times 400 = 100\\). Option B is correct.",
+      "hint": "Multiply the probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q086",
+      "category": "Probability",
+      "concept": "Comparing Event Likelihoods",
+      "learningObjective": "Determine which event is more likely based on probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Event A has probability 0.7 and Event B has probability 0.3. Which event is more likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Event A"
+        },
+        {
+          "label": "B",
+          "text": "Event B"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.7 > 0.3, Event A is more likely. Option A is correct.",
+      "hint": "Compare the numerical probabilities."
+    },
+    {
+      "id": "quiz-109-2-q087",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a given probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of rain is 0.65. What is the probability that it does not rain?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.65"
+        },
+        {
+          "label": "B",
+          "text": "0.35"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of no rain is \\(1 - 0.65 = 0.35\\). Option B is correct.",
+      "hint": "Subtract the probability of rain from 1."
+    },
+    {
+      "id": "quiz-109-2-q088",
+      "category": "Probability",
+      "concept": "Valid Probability Values",
+      "learningObjective": "Identify which value can represent a probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which of the following is a valid probability value?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.5"
+        },
+        {
+          "label": "B",
+          "text": "1.5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A probability must be between 0 and 1 inclusive. Since 0.5 is within this range and 1.5 is not, 0.5 is valid. Option A is correct.",
+      "hint": "Recall that probabilities must be between 0 and 1."
+    },
+    {
+      "id": "quiz-109-2-q089",
+      "category": "Probability",
+      "concept": "Event Probability",
+      "learningObjective": "Calculate the probability of drawing a specific color from a set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A box contains 6 red balls and 4 green balls. If one ball is drawn at random, what is the probability that it is green?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.4"
+        },
+        {
+          "label": "B",
+          "text": "0.6"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are 10 balls in total, and 4 are green. The probability is \\(\\frac{4}{10} = 0.4\\). Option A is correct.",
+      "hint": "Divide the number of green balls by the total number of balls."
+    },
+    {
+      "id": "quiz-109-2-q090",
+      "category": "Probability",
+      "concept": "Probability as a Decimal",
+      "learningObjective": "Convert a fraction probability to a decimal.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is \\(\\frac{1}{5}\\). What is this probability as a decimal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.5"
+        },
+        {
+          "label": "B",
+          "text": "0.2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(\\frac{1}{5} = 0.2\\). Option B is correct.",
+      "hint": "Divide the numerator by the denominator."
+    },
+    {
+      "id": "quiz-109-2-q091",
+      "category": "Probability",
+      "concept": "Expected Frequency",
+      "learningObjective": "Calculate the expected number of occurrences given a probability and trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is 0.4. If there are 250 trials, what is the expected number of occurrences?",
+      "options": [
+        {
+          "label": "A",
+          "text": "40"
+        },
+        {
+          "label": "B",
+          "text": "100"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expected number is \\(0.4 \\times 250 = 100\\). Option B is correct.",
+      "hint": "Multiply the probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q092",
+      "category": "Probability",
+      "concept": "Relative Frequency",
+      "learningObjective": "Calculate the relative frequency of an event from trial data.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An event occurs 10 times in 40 trials. What is the relative frequency of the event?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.25"
+        },
+        {
+          "label": "B",
+          "text": "0.4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The relative frequency is \\(\\frac{10}{40} = 0.25\\). Option A is correct.",
+      "hint": "Divide the number of occurrences by the total number of trials."
+    },
+    {
+      "id": "quiz-109-2-q093",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a given probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If the probability of Event A is 0.15, what is the probability of not Event A?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.15"
+        },
+        {
+          "label": "B",
+          "text": "0.85"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of the complement is \\(1 - 0.15 = 0.85\\). Option B is correct.",
+      "hint": "Subtract the probability from 1."
+    },
+    {
+      "id": "quiz-109-2-q094",
+      "category": "Probability",
+      "concept": "Comparing Event Likelihoods",
+      "learningObjective": "Identify the less likely event from given probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Event X has probability 0.45 and Event Y has probability 0.55. Which event is less likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Event X"
+        },
+        {
+          "label": "B",
+          "text": "Event Y"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.45 < 0.55, Event X is less likely. Option A is correct.",
+      "hint": "The less likely event has the smaller probability."
+    },
+    {
+      "id": "quiz-109-2-q095",
+      "category": "Probability",
+      "concept": "Probability as a Percentage",
+      "learningObjective": "Convert a decimal probability to a percentage.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is 0.05. What is this probability as a percentage?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5%"
+        },
+        {
+          "label": "B",
+          "text": "0.5%"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(0.05 = 5\\%\\). Option A is correct.",
+      "hint": "Multiply the decimal by 100."
+    },
+    {
+      "id": "quiz-109-2-q096",
+      "category": "Probability",
+      "concept": "Expected Frequency",
+      "learningObjective": "Calculate the expected number of occurrences in repeated trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is 0.6. If there are 50 trials, what is the expected number of occurrences?",
+      "options": [
+        {
+          "label": "A",
+          "text": "30"
+        },
+        {
+          "label": "B",
+          "text": "60"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expected number is \\(0.6 \\times 50 = 30\\). Option A is correct.",
+      "hint": "Multiply the probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q097",
+      "category": "Probability",
+      "concept": "Event Probability",
+      "learningObjective": "Calculate the probability of drawing a specific color from a set of marbles.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A bag contains 3 red marbles and 5 blue marbles. If one marble is drawn at random, what is the probability that it is red?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5/8"
+        },
+        {
+          "label": "B",
+          "text": "3/8"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are 8 marbles in total, and 3 are red. The probability is \\(\\frac{3}{8}\\). Option B is correct.",
+      "hint": "Divide the number of red marbles by the total number of marbles."
+    },
+    {
+      "id": "quiz-109-2-q098",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a given probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If the probability of an event is 0.9, what is the probability that the event does not occur?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.1"
+        },
+        {
+          "label": "B",
+          "text": "0.9"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of the complement is \\(1 - 0.9 = 0.1\\). Option A is correct.",
+      "hint": "Subtract the probability from 1."
+    },
+    {
+      "id": "quiz-109-2-q099",
+      "category": "Probability",
+      "concept": "Valid Probability Values",
+      "learningObjective": "Identify which value cannot represent a probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which of the following cannot be a probability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.3"
+        },
+        {
+          "label": "B",
+          "text": "1.2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A probability must be between 0 and 1 inclusive. Since 1.2 is greater than 1, it cannot be a probability. Option B is correct.",
+      "hint": "Recall that probabilities cannot exceed 1."
+    },
+    {
+      "id": "quiz-109-2-q100",
+      "category": "Probability",
+      "concept": "Expected Frequency",
+      "learningObjective": "Calculate the expected number of occurrences given a probability and trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is 0.8. If there are 200 trials, what is the expected number of occurrences?",
+      "options": [
+        {
+          "label": "A",
+          "text": "80"
+        },
+        {
+          "label": "B",
+          "text": "160"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expected number is \\(0.8 \\times 200 = 160\\). Option B is correct.",
+      "hint": "Multiply the probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q101",
+      "category": "Probability",
+      "concept": "Event Probability",
+      "learningObjective": "Determine the probability of selecting an even number from a set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A card is selected at random from cards numbered 1 to 10. What is the probability that the number is even?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/2"
+        },
+        {
+          "label": "B",
+          "text": "1/5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The even numbers from 1 to 10 are 2, 4, 6, 8, and 10, giving 5 favorable outcomes out of 10. The probability is \\(\\frac{5}{10} = \\frac{1}{2}\\). Option A is correct.",
+      "hint": "Count the even numbers and divide by the total."
+    },
+    {
+      "id": "quiz-109-2-q102",
+      "category": "Probability",
+      "concept": "Probability as a Fraction",
+      "learningObjective": "Convert a decimal probability to a fraction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is 0.4. What is this probability as a fraction in simplest form?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4/5"
+        },
+        {
+          "label": "B",
+          "text": "2/5"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(0.4 = \\frac{4}{10} = \\frac{2}{5}\\). Option B is correct.",
+      "hint": "Write the decimal as a fraction with denominator 10, then simplify."
+    },
+    {
+      "id": "quiz-109-2-q103",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a given probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of winning a game is 0.35. What is the probability of losing?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.35"
+        },
+        {
+          "label": "B",
+          "text": "0.65"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of losing is \\(1 - 0.35 = 0.65\\). Option B is correct.",
+      "hint": "Subtract the probability of winning from 1."
+    },
+    {
+      "id": "quiz-109-2-q104",
+      "category": "Probability",
+      "concept": "Expected Frequency",
+      "learningObjective": "Calculate the expected number of occurrences given a probability and trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is 0.25. If there are 80 trials, what is the expected number of occurrences?",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "40"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expected number is \\(0.25 \\times 80 = 20\\). Option A is correct.",
+      "hint": "Multiply the probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q105",
+      "category": "Probability",
+      "concept": "Comparing Event Likelihoods",
+      "learningObjective": "Determine which event is more likely based on probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Event A has probability 0.2 and Event B has probability 0.8. Which event is more likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Event B"
+        },
+        {
+          "label": "B",
+          "text": "Event A"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.8 > 0.2, Event B is more likely. Option A is correct.",
+      "hint": "Compare the numerical probabilities."
+    },
+    {
+      "id": "quiz-109-2-q106",
+      "category": "Probability",
+      "concept": "Relative Frequency",
+      "learningObjective": "Calculate the relative frequency of an event from trial data.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An event occurs 15 times in 50 trials. What is the relative frequency of the event?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.15"
+        },
+        {
+          "label": "B",
+          "text": "0.3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The relative frequency is \\(\\frac{15}{50} = 0.3\\). Option B is correct.",
+      "hint": "Divide the number of occurrences by the total number of trials."
+    },
+    {
+      "id": "quiz-109-2-q107",
+      "category": "Probability",
+      "concept": "Event Probability",
+      "learningObjective": "Calculate the probability of selecting a boy from a class.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A class has 12 girls and 8 boys. If a student is selected at random, what is the probability that the student is a boy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.4"
+        },
+        {
+          "label": "B",
+          "text": "0.6"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are 20 students in total, and 8 are boys. The probability is \\(\\frac{8}{20} = 0.4\\). Option A is correct.",
+      "hint": "Divide the number of boys by the total number of students."
+    },
+    {
+      "id": "quiz-109-2-q108",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a given probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If the probability of Event A is 0.72, what is the probability of not Event A?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.28"
+        },
+        {
+          "label": "B",
+          "text": "0.72"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of the complement is \\(1 - 0.72 = 0.28\\). Option A is correct.",
+      "hint": "Subtract the probability from 1."
+    },
+    {
+      "id": "quiz-109-2-q109",
+      "category": "Probability",
+      "concept": "Expected Frequency",
+      "learningObjective": "Calculate the expected number of occurrences given a probability and trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is 0.45. If there are 20 trials, what is the expected number of occurrences?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "4.5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expected number is \\(0.45 \\times 20 = 9\\). Option A is correct.",
+      "hint": "Multiply the probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q110",
+      "category": "Probability",
+      "concept": "Probability as a Percentage",
+      "learningObjective": "Convert a decimal probability to a percentage.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is 0.08. What is this probability as a percentage?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8%"
+        },
+        {
+          "label": "B",
+          "text": "0.8%"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(0.08 = 8\\%\\). Option A is correct.",
+      "hint": "Multiply the decimal by 100."
+    },
+    {
+      "id": "quiz-109-2-q111",
+      "category": "Probability",
+      "concept": "Event Probability",
+      "learningObjective": "Calculate the probability of drawing a specific color from a set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A bag contains 5 green balls and 5 yellow balls. If one ball is drawn at random, what is the probability that it is green?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.5"
+        },
+        {
+          "label": "B",
+          "text": "0.25"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are 10 balls in total, and 5 are green. The probability is \\(\\frac{5}{10} = 0.5\\). Option A is correct.",
+      "hint": "Divide the number of green balls by the total number of balls."
+    },
+    {
+      "id": "quiz-109-2-q112",
+      "category": "Probability",
+      "concept": "Comparing Event Likelihoods",
+      "learningObjective": "Identify the less likely event from given probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Event A has probability 0.9 and Event B has probability 0.1. Which event is less likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Event B"
+        },
+        {
+          "label": "B",
+          "text": "Event A"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.1 < 0.9, Event B is less likely. Option A is correct.",
+      "hint": "The less likely event has the smaller probability."
+    },
+    {
+      "id": "quiz-109-2-q113",
+      "category": "Probability",
+      "concept": "Expected Frequency",
+      "learningObjective": "Calculate the expected number of occurrences given a probability and trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is 0.3. If there are 300 trials, what is the expected number of occurrences?",
+      "options": [
+        {
+          "label": "A",
+          "text": "90"
+        },
+        {
+          "label": "B",
+          "text": "30"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expected number is \\(0.3 \\times 300 = 90\\). Option A is correct.",
+      "hint": "Multiply the probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q114",
+      "category": "Probability",
+      "concept": "Probability as a Decimal",
+      "learningObjective": "Convert a fraction probability to a decimal.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is \\(\\frac{3}{8}\\). What is this probability as a decimal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.8"
+        },
+        {
+          "label": "B",
+          "text": "0.375"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(\\frac{3}{8} = 0.375\\). Option B is correct.",
+      "hint": "Divide the numerator by the denominator."
+    },
+    {
+      "id": "quiz-109-2-q115",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a given probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is 0.55. What is the probability that the event does not occur?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.55"
+        },
+        {
+          "label": "B",
+          "text": "0.45"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of the complement is \\(1 - 0.55 = 0.45\\). Option B is correct.",
+      "hint": "Subtract the probability from 1."
+    },
+    {
+      "id": "quiz-109-2-q116",
+      "category": "Probability",
+      "concept": "Event Probability",
+      "learningObjective": "Calculate the probability of drawing a specific color from a bag.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A bag contains 7 red marbles and 3 blue marbles. If one marble is drawn at random, what is the probability that it is blue?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.3"
+        },
+        {
+          "label": "B",
+          "text": "0.7"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are 10 marbles in total, and 3 are blue. The probability is \\(\\frac{3}{10} = 0.3\\). Option A is correct.",
+      "hint": "Divide the number of blue marbles by the total number of marbles."
+    },
+    {
+      "id": "quiz-109-2-q117",
+      "category": "Probability",
+      "concept": "Expected Frequency",
+      "learningObjective": "Calculate the expected number of occurrences given a probability and trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of an event is 0.05. If there are 600 trials, what is the expected number of occurrences?",
+      "options": [
+        {
+          "label": "A",
+          "text": "60"
+        },
+        {
+          "label": "B",
+          "text": "30"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expected number is \\(0.05 \\times 600 = 30\\). Option B is correct.",
+      "hint": "Multiply the probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q118",
+      "category": "Probability",
+      "concept": "Relative Frequency",
+      "learningObjective": "Calculate the relative frequency of an event from trial data.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An event occurs 20 times in 80 trials. What is the relative frequency of the event?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.5"
+        },
+        {
+          "label": "B",
+          "text": "0.25"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The relative frequency is \\(\\frac{20}{80} = 0.25\\). Option B is correct.",
+      "hint": "Divide the number of occurrences by the total number of trials."
+    },
+    {
+      "id": "quiz-109-2-q119",
+      "category": "Probability",
+      "concept": "Valid Probability Values",
+      "learningObjective": "Identify which value cannot represent a probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which of the following is impossible as a probability?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "-0.1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A probability must be between 0 and 1 inclusive. Since -0.1 is less than 0, it is impossible as a probability. Option B is correct.",
+      "hint": "Recall that probabilities cannot be negative."
+    },
+    {
+      "id": "quiz-109-2-q120",
+      "category": "Probability",
+      "concept": "Comparing Event Likelihoods",
+      "learningObjective": "Determine the most likely event among several based on probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The probabilities of three events are: P(red) = 0.25, P(blue) = 0.35, and P(green) = 0.4. Which event is most likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Green"
+        },
+        {
+          "label": "B",
+          "text": "Blue"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.4 > 0.35 > 0.25, the green event has the highest probability and is most likely. Option A is correct.",
+      "hint": "Compare all three probability values and identify the largest."
+    },
+    {
+      "id": "quiz-109-2-q121",
+      "category": "Probability",
+      "concept": "Probability of Classification",
+      "learningObjective": "Calculate the complementary probability of an AI classification.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An AI model predicts class A with probability 0.8. What is the probability that the prediction is not class A?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.2"
+        },
+        {
+          "label": "B",
+          "text": "0.8"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of not class A is the complement: \\(1 - 0.8 = 0.2\\). Option A is correct.",
+      "hint": "Subtract the probability of class A from 1."
+    },
+    {
+      "id": "quiz-109-2-q122",
+      "category": "Probability",
+      "concept": "Uncertainty in Predictions",
+      "learningObjective": "Calculate the complementary probability from a model output.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model gives the probability of a cat as 0.65. What is the probability that the image is not a cat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.65"
+        },
+        {
+          "label": "B",
+          "text": "0.35"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of not cat is \\(1 - 0.65 = 0.35\\). Option B is correct.",
+      "hint": "Subtract the given probability from 1."
+    },
+    {
+      "id": "quiz-109-2-q123",
+      "category": "Probability",
+      "concept": "Comparing Prediction Probabilities",
+      "learningObjective": "Compare two model probabilities to determine which is more confident.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Model 1 predicts an event with probability 0.7, and Model 2 predicts the same event with probability 0.5. Which model is more confident?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Model 1"
+        },
+        {
+          "label": "B",
+          "text": "Model 2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.7 > 0.5, Model 1 assigns a higher probability and is therefore more confident. Option A is correct.",
+      "hint": "The model with the higher probability is more confident."
+    },
+    {
+      "id": "quiz-109-2-q124",
+      "category": "Probability",
+      "concept": "Probability Thresholds",
+      "learningObjective": "Determine the classification based on a probability threshold.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model uses a threshold of 0.5. If the model outputs a probability of 0.6, how is the sample classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Positive class"
+        },
+        {
+          "label": "B",
+          "text": "Negative class"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.6 is greater than the threshold 0.5, the sample is classified as the positive class. Option A is correct.",
+      "hint": "Compare the output probability with the threshold value."
+    },
+    {
+      "id": "quiz-109-2-q125",
+      "category": "Probability",
+      "concept": "Uncertainty in Predictions",
+      "learningObjective": "Interpret the meaning of a probability of 0.5 in classification.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A model outputs a probability of 0.5 for a binary classification. What does this indicate about the model's uncertainty?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Certain prediction"
+        },
+        {
+          "label": "B",
+          "text": "Maximum uncertainty"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A probability of 0.5 means both classes are equally likely, which represents maximum uncertainty in a binary classification. Option B is correct.",
+      "hint": "Think about what it means when both outcomes have the same probability."
+    },
+    {
+      "id": "quiz-109-2-q126",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complementary probability of an AI prediction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An AI model gives the probability of spam as 0.9. What is the probability that the message is not spam?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.1"
+        },
+        {
+          "label": "B",
+          "text": "0.9"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of not spam is \\(1 - 0.9 = 0.1\\). Option A is correct.",
+      "hint": "Subtract the probability of spam from 1."
+    },
+    {
+      "id": "quiz-109-2-q127",
+      "category": "Probability",
+      "concept": "Uncertainty in Predictions",
+      "learningObjective": "Calculate the complement of a model's output probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model outputs a probability of 0.3 for class A. What is the probability of not class A?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.3"
+        },
+        {
+          "label": "B",
+          "text": "0.7"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of not class A is \\(1 - 0.3 = 0.7\\). Option B is correct.",
+      "hint": "Subtract the given probability from 1."
+    },
+    {
+      "id": "quiz-109-2-q128",
+      "category": "Probability",
+      "concept": "Comparing Prediction Probabilities",
+      "learningObjective": "Compare two model predictions for the same class.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Model A predicts a cat with probability 0.4, and Model B predicts a cat with probability 0.7. Which model assigns a higher probability to cat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Model B"
+        },
+        {
+          "label": "B",
+          "text": "Model A"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.7 > 0.4, Model B assigns a higher probability to cat. Option A is correct.",
+      "hint": "Compare the two probability values directly."
+    },
+    {
+      "id": "quiz-109-2-q129",
+      "category": "Probability",
+      "concept": "Probability Thresholds",
+      "learningObjective": "Determine the classification when the output is below the threshold.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model uses a threshold of 0.6. If the model outputs a probability of 0.55, how is the sample classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Positive class"
+        },
+        {
+          "label": "B",
+          "text": "Negative class"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since 0.55 is less than the threshold 0.6, the sample is classified as the negative class. Option B is correct.",
+      "hint": "Compare the output probability with the threshold value."
+    },
+    {
+      "id": "quiz-109-2-q130",
+      "category": "Probability",
+      "concept": "Comparing Prediction Probabilities",
+      "learningObjective": "Identify the more likely class from a model's probability outputs.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A model outputs P(A) = 0.75 and P(B) = 0.25. Which class is more likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Class A"
+        },
+        {
+          "label": "B",
+          "text": "Class B"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.75 > 0.25, Class A is more likely. Option A is correct.",
+      "hint": "Compare the two class probabilities."
+    },
+    {
+      "id": "quiz-109-2-q131",
+      "category": "Probability",
+      "concept": "Uncertainty in Predictions",
+      "learningObjective": "Interpret a model output of 0.5 for two classes.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A model outputs a probability of 0.5 for both classes in a binary classification. What does this indicate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Maximum uncertainty"
+        },
+        {
+          "label": "B",
+          "text": "Certain prediction"
+        }
+      ],
+      "answer": "A",
+      "explanation": "When both classes have probability 0.5, the model is equally uncertain about both, representing maximum uncertainty. Option A is correct.",
+      "hint": "Consider what equal probabilities mean for decision-making."
+    },
+    {
+      "id": "quiz-109-2-q132",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a model's positive prediction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An AI model gives the probability of a positive outcome as 0.85. What is the probability of a negative outcome?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.15"
+        },
+        {
+          "label": "B",
+          "text": "0.85"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of a negative outcome is \\(1 - 0.85 = 0.15\\). Option A is correct.",
+      "hint": "Subtract the positive probability from 1."
+    },
+    {
+      "id": "quiz-109-2-q133",
+      "category": "Probability",
+      "concept": "Interpreting Prediction Probabilities",
+      "learningObjective": "Interpret a high probability output from a model.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A model outputs a probability of 0.9 for class A. What does this suggest about class A?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Class A is very likely"
+        },
+        {
+          "label": "B",
+          "text": "Class A is impossible"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A probability of 0.9 indicates that class A is very likely according to the model. Option A is correct.",
+      "hint": "Consider what a probability close to 1 means."
+    },
+    {
+      "id": "quiz-109-2-q134",
+      "category": "Probability",
+      "concept": "Comparing Prediction Probabilities",
+      "learningObjective": "Compare model confidence based on output probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Model 1 outputs 0.95 and Model 2 outputs 0.55 for the same class. Which model is more confident?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Model 1"
+        },
+        {
+          "label": "B",
+          "text": "Model 2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.95 > 0.55, Model 1 is more confident. Option A is correct.",
+      "hint": "The higher probability indicates greater confidence."
+    },
+    {
+      "id": "quiz-109-2-q135",
+      "category": "Probability",
+      "concept": "Probability Thresholds",
+      "learningObjective": "Determine the classification when the output exceeds the threshold.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model uses a threshold of 0.7. If the model outputs a probability of 0.8, how is the sample classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Negative class"
+        },
+        {
+          "label": "B",
+          "text": "Positive class"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since 0.8 is greater than the threshold 0.7, the sample is classified as the positive class. Option B is correct.",
+      "hint": "Compare the output probability with the threshold."
+    },
+    {
+      "id": "quiz-109-2-q136",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a predicted probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model outputs P(A) = 0.6 and P(B) = 0.4. What is the probability of not A?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.4"
+        },
+        {
+          "label": "B",
+          "text": "0.6"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of not A is \\(1 - 0.6 = 0.4\\). Option A is correct.",
+      "hint": "Use the complement rule."
+    },
+    {
+      "id": "quiz-109-2-q137",
+      "category": "Probability",
+      "concept": "Uncertainty in Predictions",
+      "learningObjective": "Interpret a probability of 0.5 in terms of model uncertainty.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A model outputs a probability of 0.5 for a binary classification. What does this indicate about the model's confidence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "High uncertainty"
+        },
+        {
+          "label": "B",
+          "text": "High confidence"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A probability of 0.5 means the model sees both classes as equally likely, indicating high uncertainty. Option A is correct.",
+      "hint": "Think about what it means when the model cannot favor either class."
+    },
+    {
+      "id": "quiz-109-2-q138",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the probability of the other class from a model output.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model outputs P(cat) = 0.2. What is P(dog) if the classes are cat and dog?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.8"
+        },
+        {
+          "label": "B",
+          "text": "0.2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since the two classes are complementary, \\(P(\\text{dog}) = 1 - 0.2 = 0.8\\). Option A is correct.",
+      "hint": "The two class probabilities must sum to 1."
+    },
+    {
+      "id": "quiz-109-2-q139",
+      "category": "Probability",
+      "concept": "Probability Thresholds",
+      "learningObjective": "Determine the classification when the output equals the threshold.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model uses a threshold of 0.5 with the rule \"classify as positive if probability > 0.5.\" If the output is exactly 0.5, how is it classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Positive class"
+        },
+        {
+          "label": "B",
+          "text": "Negative class"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since the rule requires the probability to be strictly greater than 0.5, an output of exactly 0.5 is classified as the negative class. Option B is correct.",
+      "hint": "Check whether the rule uses strict inequality or not."
+    },
+    {
+      "id": "quiz-109-2-q140",
+      "category": "Probability",
+      "concept": "Comparing Prediction Probabilities",
+      "learningObjective": "Identify the less likely class from a model's outputs.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A model outputs P(A) = 0.3 and P(B) = 0.7. Which class is less likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Class B"
+        },
+        {
+          "label": "B",
+          "text": "Class A"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since 0.3 < 0.7, Class A is less likely. Option B is correct.",
+      "hint": "The less likely class has the smaller probability."
+    },
+    {
+      "id": "quiz-109-2-q141",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a very high model probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model outputs a probability of 0.99 for class A. What is the probability of not class A?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.99"
+        },
+        {
+          "label": "B",
+          "text": "0.01"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of not class A is \\(1 - 0.99 = 0.01\\). Option B is correct.",
+      "hint": "Subtract the given probability from 1."
+    },
+    {
+      "id": "quiz-109-2-q142",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the probability of the complement of a model's spam prediction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model outputs a probability of 0.4 for spam. What is the probability that the message is not spam?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.6"
+        },
+        {
+          "label": "B",
+          "text": "0.4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of not spam is \\(1 - 0.4 = 0.6\\). Option A is correct.",
+      "hint": "Subtract the spam probability from 1."
+    },
+    {
+      "id": "quiz-109-2-q143",
+      "category": "Probability",
+      "concept": "Probability Thresholds",
+      "learningObjective": "Determine the classification based on a threshold comparison.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model uses a threshold of 0.5. If the model outputs a probability of 0.9, how is the sample classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Positive class"
+        },
+        {
+          "label": "B",
+          "text": "Negative class"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.9 > 0.5, the sample is classified as the positive class. Option A is correct.",
+      "hint": "Compare the output with the threshold."
+    },
+    {
+      "id": "quiz-109-2-q144",
+      "category": "Probability",
+      "concept": "Uncertainty in Predictions",
+      "learningObjective": "Interpret a model that always outputs 0.5.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A model always outputs a probability of 0.5 for a binary classification. What does this indicate about the model?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Highly accurate"
+        },
+        {
+          "label": "B",
+          "text": "No useful information"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A constant output of 0.5 means the model does not distinguish between the two classes, providing no useful information. Option B is correct.",
+      "hint": "Think about whether the model's output changes for different inputs."
+    },
+    {
+      "id": "quiz-109-2-q145",
+      "category": "Probability",
+      "concept": "Comparing Prediction Probabilities",
+      "learningObjective": "Compare two models' confidence for the same class.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Model A outputs 0.6 and Model B outputs 0.4 for the same class. Which model is more confident?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Model A"
+        },
+        {
+          "label": "B",
+          "text": "Model B"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.6 > 0.4, Model A is more confident. Option A is correct.",
+      "hint": "The higher probability indicates more confidence."
+    },
+    {
+      "id": "quiz-109-2-q146",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a prediction accuracy probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability that a prediction is correct is 0.8. What is the probability that the prediction is incorrect?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.2"
+        },
+        {
+          "label": "B",
+          "text": "0.8"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of an incorrect prediction is \\(1 - 0.8 = 0.2\\). Option A is correct.",
+      "hint": "Subtract the probability of a correct prediction from 1."
+    },
+    {
+      "id": "quiz-109-2-q147",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a weather prediction probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An AI model predicts the probability of rain as 0.3. What is the probability of no rain?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.3"
+        },
+        {
+          "label": "B",
+          "text": "0.7"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of no rain is \\(1 - 0.3 = 0.7\\). Option B is correct.",
+      "hint": "Subtract the probability of rain from 1."
+    },
+    {
+      "id": "quiz-109-2-q148",
+      "category": "Probability",
+      "concept": "Probability Thresholds",
+      "learningObjective": "Determine the classification when the output is below the threshold.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model uses a threshold of 0.4. If the model outputs a probability of 0.35, how is the sample classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Positive class"
+        },
+        {
+          "label": "B",
+          "text": "Negative class"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since 0.35 is less than the threshold 0.4, the sample is classified as the negative class. Option B is correct.",
+      "hint": "Compare the output probability with the threshold."
+    },
+    {
+      "id": "quiz-109-2-q149",
+      "category": "Probability",
+      "concept": "Comparing Prediction Probabilities",
+      "learningObjective": "Identify the more likely class from two model outputs.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A model outputs P(A) = 0.55 and P(B) = 0.45. Which class is more likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Class A"
+        },
+        {
+          "label": "B",
+          "text": "Class B"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.55 > 0.45, Class A is more likely. Option A is correct.",
+      "hint": "Compare the two probabilities."
+    },
+    {
+      "id": "quiz-109-2-q150",
+      "category": "Probability",
+      "concept": "Uncertainty in Predictions",
+      "learningObjective": "Interpret the meaning of a probability of 0.5 in binary classification.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A probability of 0.5 in a binary classification indicates:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Maximum uncertainty"
+        },
+        {
+          "label": "B",
+          "text": "Maximum certainty"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A probability of 0.5 means both classes are equally likely, which represents maximum uncertainty. Option A is correct.",
+      "hint": "Think about what equal probabilities mean."
+    },
+    {
+      "id": "quiz-109-2-q151",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the probability of the complementary class from a model output.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model outputs P(cat) = 0.25. What is the probability that the image is not a cat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.25"
+        },
+        {
+          "label": "B",
+          "text": "0.75"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of not cat is \\(1 - 0.25 = 0.75\\). Option B is correct.",
+      "hint": "Subtract the cat probability from 1."
+    },
+    {
+      "id": "quiz-109-2-q152",
+      "category": "Probability",
+      "concept": "Comparing Prediction Probabilities",
+      "learningObjective": "Determine which model output represents more uncertainty.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Model 1 outputs a probability of 0.8, and Model 2 outputs a probability of 0.35. Which model is more uncertain?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Model 1"
+        },
+        {
+          "label": "B",
+          "text": "Model 2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A probability closer to 0.5 indicates more uncertainty. Since 0.35 is closer to 0.5 than 0.8 is, Model 2 is more uncertain. Option B is correct.",
+      "hint": "Uncertainty is highest when the probability is closest to 0.5."
+    },
+    {
+      "id": "quiz-109-2-q153",
+      "category": "Probability",
+      "concept": "Probability Thresholds",
+      "learningObjective": "Determine the classification when the output is below the threshold.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model uses a threshold of 0.6. If the model outputs a probability of 0.4, how is the sample classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Positive class"
+        },
+        {
+          "label": "B",
+          "text": "Negative class"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since 0.4 is less than the threshold 0.6, the sample is classified as the negative class. Option B is correct.",
+      "hint": "Compare the output probability with the threshold."
+    },
+    {
+      "id": "quiz-109-2-q154",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complementary class probability from a model output.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model outputs P(A) = 0.7. What is P(B) if the classes are A and B?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.7"
+        },
+        {
+          "label": "B",
+          "text": "0.3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since the two classes are complementary, \\(P(B) = 1 - 0.7 = 0.3\\). Option B is correct.",
+      "hint": "The two class probabilities must sum to 1."
+    },
+    {
+      "id": "quiz-109-2-q155",
+      "category": "Probability",
+      "concept": "Interpreting Prediction Probabilities",
+      "learningObjective": "Interpret whether a model's prediction is more likely than not.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A model outputs a probability of 0.45 for class A. Is class A more likely than not?",
+      "options": [
+        {
+          "label": "A",
+          "text": "More likely than not"
+        },
+        {
+          "label": "B",
+          "text": "Less likely than not"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since 0.45 is less than 0.5, class A is less likely than not. Option B is correct.",
+      "hint": "Compare the probability with 0.5."
+    },
+    {
+      "id": "quiz-109-2-q156",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a model's positive prediction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An AI model gives the probability of a positive outcome as 0.65. What is the probability of a negative outcome?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.65"
+        },
+        {
+          "label": "B",
+          "text": "0.35"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of a negative outcome is \\(1 - 0.65 = 0.35\\). Option B is correct.",
+      "hint": "Subtract the positive probability from 1."
+    },
+    {
+      "id": "quiz-109-2-q157",
+      "category": "Probability",
+      "concept": "Probability Thresholds",
+      "learningObjective": "Determine the classification based on a threshold comparison.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model uses a threshold of 0.5. If the model outputs a probability of 0.75, how is the sample classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Positive class"
+        },
+        {
+          "label": "B",
+          "text": "Negative class"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.75 > 0.5, the sample is classified as the positive class. Option A is correct.",
+      "hint": "Compare the output probability with the threshold."
+    },
+    {
+      "id": "quiz-109-2-q158",
+      "category": "Probability",
+      "concept": "Comparing Prediction Probabilities",
+      "learningObjective": "Compare two model outputs to determine which is more confident.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Model A outputs 0.9 and Model B outputs 0.6 for the same class. Which model is more confident?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Model A"
+        },
+        {
+          "label": "B",
+          "text": "Model B"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.9 > 0.6, Model A is more confident. Option A is correct.",
+      "hint": "The higher probability indicates greater confidence."
+    },
+    {
+      "id": "quiz-109-2-q159",
+      "category": "Probability",
+      "concept": "Uncertainty in Predictions",
+      "learningObjective": "Interpret the meaning of a probability of 0.5.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A model outputs a probability of 0.5 for an event. What does this mean?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equal chance"
+        },
+        {
+          "label": "B",
+          "text": "No chance"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A probability of 0.5 means the event has an equal chance of occurring or not occurring. Option A is correct.",
+      "hint": "Think about what 0.5 represents in terms of likelihood."
+    },
+    {
+      "id": "quiz-109-2-q160",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a spam prediction probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model outputs a probability of 0.8 for spam. What is the probability that the message is not spam?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.2"
+        },
+        {
+          "label": "B",
+          "text": "0.8"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of not spam is \\(1 - 0.8 = 0.2\\). Option A is correct.",
+      "hint": "Subtract the spam probability from 1."
+    },
+    {
+      "id": "quiz-109-2-q161",
+      "category": "Probability",
+      "concept": "Interpreting Probabilistic Predictions",
+      "learningObjective": "Interpret the meaning of a probability of 0.7.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A probability of 0.7 for an event means that the event is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Likely"
+        },
+        {
+          "label": "B",
+          "text": "Certain"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A probability of 0.7 indicates that the event is likely but not certain, since it is greater than 0.5 but less than 1. Option A is correct.",
+      "hint": "Consider whether a probability of 0.7 guarantees the event will happen."
+    },
+    {
+      "id": "quiz-109-2-q162",
+      "category": "Probability",
+      "concept": "Interpreting Probabilistic Predictions",
+      "learningObjective": "Convert a probability to a percentage.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model outputs a probability of 0.45. What is this probability as a percentage?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4.5%"
+        },
+        {
+          "label": "B",
+          "text": "45%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "To convert to a percentage, multiply by 100: \\(0.45 = 45\\%\\). Option B is correct.",
+      "hint": "Multiply the decimal by 100."
+    },
+    {
+      "id": "quiz-109-2-q163",
+      "category": "Probability",
+      "concept": "Comparing Probabilistic Predictions",
+      "learningObjective": "Determine which outcome is more likely from two probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A model predicts P(A) = 0.3 and P(B) = 0.7. Which outcome is more likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Outcome A"
+        },
+        {
+          "label": "B",
+          "text": "Outcome B"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since 0.7 > 0.3, Outcome B is more likely. Option B is correct.",
+      "hint": "Compare the two probability values."
+    },
+    {
+      "id": "quiz-109-2-q164",
+      "category": "Probability",
+      "concept": "Interpreting Probabilistic Predictions",
+      "learningObjective": "Interpret the meaning of a probability of 1.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A probability of 1 for an event means that the event is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlikely"
+        },
+        {
+          "label": "B",
+          "text": "Certain"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A probability of 1 means the event is certain to occur. Option B is correct.",
+      "hint": "Think about the maximum possible probability value."
+    },
+    {
+      "id": "quiz-109-2-q165",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a weather prediction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of rain is 0.35. What is the probability of no rain?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.35"
+        },
+        {
+          "label": "B",
+          "text": "0.65"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of no rain is \\(1 - 0.35 = 0.65\\). Option B is correct.",
+      "hint": "Subtract the probability of rain from 1."
+    },
+    {
+      "id": "quiz-109-2-q166",
+      "category": "Probability",
+      "concept": "Expected Count from Probabilistic Predictions",
+      "learningObjective": "Calculate the expected number of occurrences from a probability and number of trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An event has probability 0.2. In 50 trials, how many occurrences are expected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expected number of occurrences is \\(0.2 \\times 50 = 10\\). Option A is correct.",
+      "hint": "Multiply the probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q167",
+      "category": "Probability",
+      "concept": "Interpreting Probabilistic Predictions",
+      "learningObjective": "Interpret the meaning of a probability of 0.65.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A probability of 0.65 for an event means that the event is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Certain to happen"
+        },
+        {
+          "label": "B",
+          "text": "More likely than not"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since 0.65 is greater than 0.5 but less than 1, the event is more likely than not but not certain. Option B is correct.",
+      "hint": "Compare the probability with 0.5 and with 1."
+    },
+    {
+      "id": "quiz-109-2-q168",
+      "category": "Probability",
+      "concept": "Comparing Probabilistic Predictions",
+      "learningObjective": "Identify the less likely outcome from two probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A model predicts P(A) = 0.8 and P(B) = 0.2. Which outcome is less likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Outcome B"
+        },
+        {
+          "label": "B",
+          "text": "Outcome A"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.2 < 0.8, Outcome B is less likely. Option A is correct.",
+      "hint": "The less likely outcome has the smaller probability."
+    },
+    {
+      "id": "quiz-109-2-q169",
+      "category": "Probability",
+      "concept": "Interpreting Probabilistic Predictions",
+      "learningObjective": "Convert a percentage probability to a decimal.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model outputs a probability of 65%. What is this probability as a decimal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6.5"
+        },
+        {
+          "label": "B",
+          "text": "0.65"
+        }
+      ],
+      "answer": "B",
+      "explanation": "To convert a percentage to a decimal, divide by 100: \\(65\\% = 0.65\\). Option B is correct.",
+      "hint": "Divide the percentage by 100."
+    },
+    {
+      "id": "quiz-109-2-q170",
+      "category": "Probability",
+      "concept": "Expected Count from Probabilistic Predictions",
+      "learningObjective": "Calculate the expected number of positive predictions from a probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model predicts a positive outcome with probability 0.3. If there are 200 predictions, how many positive outcomes are expected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "60"
+        },
+        {
+          "label": "B",
+          "text": "30"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expected number of positive outcomes is \\(0.3 \\times 200 = 60\\). Option A is correct.",
+      "hint": "Multiply the probability by the number of predictions."
+    },
+    {
+      "id": "quiz-109-2-q171",
+      "category": "Probability",
+      "concept": "Interpreting Probabilistic Predictions",
+      "learningObjective": "Interpret the meaning of a probability of 0.99.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A probability of 0.99 for an event means that the event is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Certain"
+        },
+        {
+          "label": "B",
+          "text": "Very likely but not certain"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A probability of 0.99 indicates the event is very likely but not guaranteed, since it is less than 1. Option B is correct.",
+      "hint": "Consider whether a probability of 0.99 leaves any chance of the event not occurring."
+    },
+    {
+      "id": "quiz-109-2-q172",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a success probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of success is 0.9. What is the probability of failure?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.9"
+        },
+        {
+          "label": "B",
+          "text": "0.1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of failure is \\(1 - 0.9 = 0.1\\). Option B is correct.",
+      "hint": "Subtract the success probability from 1."
+    },
+    {
+      "id": "quiz-109-2-q173",
+      "category": "Probability",
+      "concept": "Comparing Probabilistic Predictions",
+      "learningObjective": "Determine which outcome is more likely from two model probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Model A predicts a probability of 0.6 and Model B predicts a probability of 0.4 for the same event. Which model predicts the event as more likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Model B"
+        },
+        {
+          "label": "B",
+          "text": "Model A"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since 0.6 > 0.4, Model A assigns a higher probability and predicts the event as more likely. Option B is correct.",
+      "hint": "Compare the two probability values."
+    },
+    {
+      "id": "quiz-109-2-q174",
+      "category": "Probability",
+      "concept": "Interpreting Probabilistic Predictions",
+      "learningObjective": "Interpret the meaning of a probability of 0.5.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A probability of 0.5 for an event means that the event is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Equally likely"
+        },
+        {
+          "label": "B",
+          "text": "Impossible"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A probability of 0.5 means the event is equally likely to occur or not occur. Option A is correct.",
+      "hint": "Think about what 0.5 represents in terms of chance."
+    },
+    {
+      "id": "quiz-109-2-q175",
+      "category": "Probability",
+      "concept": "Expected Count from Probabilistic Predictions",
+      "learningObjective": "Calculate the expected number of occurrences from a probability and trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An event has probability 0.25. In 80 trials, how many occurrences are expected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "25"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expected number of occurrences is \\(0.25 \\times 80 = 20\\). Option A is correct.",
+      "hint": "Multiply the probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q176",
+      "category": "Probability",
+      "concept": "Interpreting Probabilistic Predictions",
+      "learningObjective": "Convert a decimal probability to a percentage.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model outputs a probability of 0.05. What is this probability as a percentage?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.5%"
+        },
+        {
+          "label": "B",
+          "text": "5%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(0.05 = 5\\%\\). Option B is correct.",
+      "hint": "Multiply the decimal by 100."
+    },
+    {
+      "id": "quiz-109-2-q177",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a given probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If P(A) = 0.4, what is P(not A)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.6"
+        },
+        {
+          "label": "B",
+          "text": "0.4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(P(\\text{not A}) = 1 - 0.4 = 0.6\\). Option A is correct.",
+      "hint": "Subtract the probability of A from 1."
+    },
+    {
+      "id": "quiz-109-2-q178",
+      "category": "Probability",
+      "concept": "Comparing Probabilistic Predictions",
+      "learningObjective": "Determine the most likely outcome among several probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A model predicts P(A) = 0.2, P(B) = 0.3, and P(C) = 0.5. Which outcome is most likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Outcome C"
+        },
+        {
+          "label": "B",
+          "text": "Outcome B"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.5 > 0.3 > 0.2, Outcome C has the highest probability and is most likely. Option A is correct.",
+      "hint": "Compare all three probabilities and identify the largest."
+    },
+    {
+      "id": "quiz-109-2-q179",
+      "category": "Probability",
+      "concept": "Expected Count from Probabilistic Predictions",
+      "learningObjective": "Calculate the expected number of positive predictions from a probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model predicts a positive outcome with probability 0.4. If there are 100 predictions, how many positive outcomes are expected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "40"
+        },
+        {
+          "label": "B",
+          "text": "60"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expected number of positive outcomes is \\(0.4 \\times 100 = 40\\). Option A is correct.",
+      "hint": "Multiply the probability by the number of predictions."
+    },
+    {
+      "id": "quiz-109-2-q180",
+      "category": "Probability",
+      "concept": "Interpreting Probabilistic Predictions",
+      "learningObjective": "Interpret the meaning of a probability of 0.1.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A probability of 0.1 for an event means that the event is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Unlikely"
+        },
+        {
+          "label": "B",
+          "text": "Impossible"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A probability of 0.1 indicates the event is unlikely but not impossible, since it is greater than 0. Option A is correct.",
+      "hint": "Consider whether a probability of 0.1 rules out the event completely."
+    },
+    {
+      "id": "quiz-109-2-q181",
+      "category": "Probability",
+      "concept": "Probability Thresholds",
+      "learningObjective": "Determine the classification based on a threshold.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model uses a threshold of 0.5. If the model outputs a probability of 0.6, what is the predicted class?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Positive class"
+        },
+        {
+          "label": "B",
+          "text": "Negative class"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.6 > 0.5, the sample is classified as the positive class. Option A is correct.",
+      "hint": "Compare the output probability with the threshold."
+    },
+    {
+      "id": "quiz-109-2-q182",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a given probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If P(event) = 0.75, what is P(not event)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.75"
+        },
+        {
+          "label": "B",
+          "text": "0.25"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(P(\\text{not event}) = 1 - 0.75 = 0.25\\). Option B is correct.",
+      "hint": "Subtract the event probability from 1."
+    },
+    {
+      "id": "quiz-109-2-q183",
+      "category": "Probability",
+      "concept": "Comparing Probabilistic Predictions",
+      "learningObjective": "Determine which outcome is more likely from two probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "P(X) = 0.55 and P(Y) = 0.45. Which outcome is more likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Outcome X"
+        },
+        {
+          "label": "B",
+          "text": "Outcome Y"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.55 > 0.45, Outcome X is more likely. Option A is correct.",
+      "hint": "Compare the two probabilities."
+    },
+    {
+      "id": "quiz-109-2-q184",
+      "category": "Probability",
+      "concept": "Interpreting Probabilistic Predictions",
+      "learningObjective": "Convert a decimal probability to a percentage.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model outputs a probability of 0.8. What is this probability as a percentage?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.8%"
+        },
+        {
+          "label": "B",
+          "text": "80%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(0.8 = 80\\%\\). Option B is correct.",
+      "hint": "Multiply the decimal by 100."
+    },
+    {
+      "id": "quiz-109-2-q185",
+      "category": "Probability",
+      "concept": "Expected Count from Probabilistic Predictions",
+      "learningObjective": "Calculate the expected number of occurrences from a probability and trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An event has probability 0.15. In 200 trials, how many occurrences are expected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "30"
+        },
+        {
+          "label": "B",
+          "text": "15"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expected number of occurrences is \\(0.15 \\times 200 = 30\\). Option A is correct.",
+      "hint": "Multiply the probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q186",
+      "category": "Probability",
+      "concept": "Interpreting Probabilistic Predictions",
+      "learningObjective": "Interpret the meaning of a probability of 0.5 as a percentage.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A model outputs a probability of 0.5. What is this probability as a percentage?",
+      "options": [
+        {
+          "label": "A",
+          "text": "50%"
+        },
+        {
+          "label": "B",
+          "text": "5%"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(0.5 = 50\\%\\). Option A is correct.",
+      "hint": "Multiply the decimal by 100."
+    },
+    {
+      "id": "quiz-109-2-q187",
+      "category": "Probability",
+      "concept": "Interpreting Probabilistic Predictions",
+      "learningObjective": "Interpret the meaning of a probability of 0.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A probability of 0 for an event means that the event is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Impossible"
+        },
+        {
+          "label": "B",
+          "text": "Certain"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A probability of 0 means the event cannot occur, so it is impossible. Option A is correct.",
+      "hint": "Think about the minimum possible probability value."
+    },
+    {
+      "id": "quiz-109-2-q188",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a given probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If P(A) = 0.2, what is P(not A)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.8"
+        },
+        {
+          "label": "B",
+          "text": "0.2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(P(\\text{not A}) = 1 - 0.2 = 0.8\\). Option A is correct.",
+      "hint": "Subtract the probability of A from 1."
+    },
+    {
+      "id": "quiz-109-2-q189",
+      "category": "Probability",
+      "concept": "Comparing Probabilistic Predictions",
+      "learningObjective": "Determine which class is predicted based on model probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A model outputs probabilities of 0.3 and 0.7 for two classes. Which class is predicted?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The class with probability 0.3"
+        },
+        {
+          "label": "B",
+          "text": "The class with probability 0.7"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The class with the higher probability (0.7) is the predicted class. Option B is correct.",
+      "hint": "The predicted class is the one with the larger probability."
+    },
+    {
+      "id": "quiz-109-2-q190",
+      "category": "Probability",
+      "concept": "Interpreting Probabilistic Predictions",
+      "learningObjective": "Convert a decimal probability to a percentage.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model outputs a probability of 0.35. What is this probability as a percentage?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3.5%"
+        },
+        {
+          "label": "B",
+          "text": "35%"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(0.35 = 35\\%\\). Option B is correct.",
+      "hint": "Multiply the decimal by 100."
+    },
+    {
+      "id": "quiz-109-2-q191",
+      "category": "Probability",
+      "concept": "Expected Count from Probabilistic Predictions",
+      "learningObjective": "Calculate the expected number of positive predictions.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model predicts a positive outcome with probability 0.6. If there are 50 predictions, how many positive outcomes are expected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "60"
+        },
+        {
+          "label": "B",
+          "text": "30"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expected number of positive outcomes is \\(0.6 \\times 50 = 30\\). Option B is correct.",
+      "hint": "Multiply the probability by the number of predictions."
+    },
+    {
+      "id": "quiz-109-2-q192",
+      "category": "Probability",
+      "concept": "Interpreting Probabilistic Predictions",
+      "learningObjective": "Interpret the meaning of a probability of 0.95.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A probability of 0.95 for an event means that the event is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Very likely"
+        },
+        {
+          "label": "B",
+          "text": "Certain"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A probability of 0.95 indicates the event is very likely but not certain. Option A is correct.",
+      "hint": "Consider whether a probability of 0.95 guarantees the event."
+    },
+    {
+      "id": "quiz-109-2-q193",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a pass probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of passing a test is 0.85. What is the probability of failing?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.85"
+        },
+        {
+          "label": "B",
+          "text": "0.15"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The probability of failing is \\(1 - 0.85 = 0.15\\). Option B is correct.",
+      "hint": "Subtract the passing probability from 1."
+    },
+    {
+      "id": "quiz-109-2-q194",
+      "category": "Probability",
+      "concept": "Comparing Probabilistic Predictions",
+      "learningObjective": "Determine which outcome is more likely from two probabilities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "P(A) = 0.6 and P(B) = 0.4. Which outcome is more likely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Outcome A"
+        },
+        {
+          "label": "B",
+          "text": "Outcome B"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 0.6 > 0.4, Outcome A is more likely. Option A is correct.",
+      "hint": "Compare the two probabilities."
+    },
+    {
+      "id": "quiz-109-2-q195",
+      "category": "Probability",
+      "concept": "Expected Count from Probabilistic Predictions",
+      "learningObjective": "Calculate the expected number of occurrences from a probability and trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An event has probability 0.2. In 300 trials, how many occurrences are expected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "60"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expected number of occurrences is \\(0.2 \\times 300 = 60\\). Option B is correct.",
+      "hint": "Multiply the probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q196",
+      "category": "Probability",
+      "concept": "Interpreting Probabilistic Predictions",
+      "learningObjective": "Interpret whether an event is more likely than not.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A probability of 0.45 for an event means that the event is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "More likely than not"
+        },
+        {
+          "label": "B",
+          "text": "Less likely than not"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since 0.45 is less than 0.5, the event is less likely than not. Option B is correct.",
+      "hint": "Compare the probability with 0.5."
+    },
+    {
+      "id": "quiz-109-2-q197",
+      "category": "Probability",
+      "concept": "Complementary Probability",
+      "learningObjective": "Calculate the complement of a success probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The probability of success is 0.7. What is the probability of failure?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.3"
+        },
+        {
+          "label": "B",
+          "text": "0.7"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of failure is \\(1 - 0.7 = 0.3\\). Option A is correct.",
+      "hint": "Subtract the success probability from 1."
+    },
+    {
+      "id": "quiz-109-2-q198",
+      "category": "Probability",
+      "concept": "Interpreting Probabilistic Predictions",
+      "learningObjective": "Convert a decimal probability to a percentage.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A model outputs a probability of 0.9. What is this probability as a percentage?",
+      "options": [
+        {
+          "label": "A",
+          "text": "90%"
+        },
+        {
+          "label": "B",
+          "text": "9%"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(0.9 = 90\\%\\). Option A is correct.",
+      "hint": "Multiply the decimal by 100."
+    },
+    {
+      "id": "quiz-109-2-q199",
+      "category": "Probability",
+      "concept": "Expected Count from Probabilistic Predictions",
+      "learningObjective": "Calculate the expected number of occurrences from a probability and trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An event has probability 0.25. In 60 trials, how many occurrences are expected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "25"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expected number of occurrences is \\(0.25 \\times 60 = 15\\). Option A is correct.",
+      "hint": "Multiply the probability by the number of trials."
+    },
+    {
+      "id": "quiz-109-2-q200",
+      "category": "Probability",
+      "concept": "Interpreting Probabilistic Predictions",
+      "learningObjective": "Interpret the meaning of a probability of 0.5.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A probability of 0.5 for an event indicates:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Certainty"
+        },
+        {
+          "label": "B",
+          "text": "Equal likelihood"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A probability of 0.5 means the event is equally likely to occur or not occur. Option B is correct.",
+      "hint": "Think about what it means when two outcomes have the same probability."
+    }
+  ]
+}

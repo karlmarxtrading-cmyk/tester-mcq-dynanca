@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-570",
+  "category": "Comprehensive Mathematics",
+  "title": "570. Discrete Mathematics, Counting & Graph Theory: Recurrence Relations from Counting Problems",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-570-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Climbing stairs",
+      "learningObjective": "Set up a recurrence by considering the last step.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(a_n\\) be the number of ways to climb \\(n\\) stairs when each step covers \\(1\\) or \\(2\\) stairs. Which recurrence holds for \\(n\\ge 3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_n=2a_{n-1}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a_n=a_{n-1}+a_{n-2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The last step covers \\(1\\) stair or \\(2\\) stairs. In the first case the earlier steps climb \\(n-1\\) stairs, in \\(a_{n-1}\\) ways; in the second they climb \\(n-2\\) stairs, in \\(a_{n-2}\\) ways. So \\(a_n=a_{n-1}+a_{n-2}\\). The recurrence \\(a_n=2a_{n-1}\\) fails already at \\(n=3\\): \\(a_2=2\\) and \\(a_3=3\\).",
+      "hint": "Split the ways of climbing according to the size of the last step."
+    },
+    {
+      "id": "dynanca-570-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Appending a digit",
+      "learningObjective": "Set up a recurrence for strings by appending one symbol.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(a_n\\) be the number of binary strings of length \\(n\\). Every string of length \\(n\\) is obtained from a string of length \\(n-1\\) by appending \\(0\\) or \\(1\\). Which recurrence follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_n=a_{n-1}+2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a_n=2a_{n-1}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each string of length \\(n-1\\) can be extended in \\(2\\) ways, and different strings or different appended digits give different results. So \\(a_n=2a_{n-1}\\). The recurrence \\(a_n=a_{n-1}+2\\) would give \\(a_3=6\\), but there are \\(8\\) strings of length \\(3\\).",
+      "hint": "Each shorter string produces two longer strings."
+    },
+    {
+      "id": "dynanca-570-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "One more person",
+      "learningObjective": "Set up a recurrence for the number of handshakes.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(h_n\\) be the number of handshakes when each of \\(n\\) people shakes hands once with every other person. If one more person joins a group of \\(n-1\\) people, which recurrence follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(h_n=h_{n-1}+(n-1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(h_n=h_{n-1}+n\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The handshakes among the first \\(n-1\\) people number \\(h_{n-1}\\). The newcomer shakes hands with each of those \\(n-1\\) people, adding \\(n-1\\) handshakes. So \\(h_n=h_{n-1}+(n-1)\\). Adding \\(n\\) would include a handshake of the newcomer with himself or herself.",
+      "hint": "Count the people with whom the newcomer shakes hands."
+    },
+    {
+      "id": "dynanca-570-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Moving a tower of discs",
+      "learningObjective": "Set up the recurrence for the tower puzzle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In the tower puzzle, \\(n\\) discs of different sizes must be moved from one peg to another, one disc at a time, never placing a larger disc on a smaller one; a third peg is available. Let \\(T_n\\) be the smallest number of moves. Which recurrence holds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(T_n=2T_{n-1}+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(T_n=T_{n-1}+2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The largest disc can move only when the \\(n-1\\) smaller discs are all on the spare peg. So the smaller discs are moved away (\\(T_{n-1}\\) moves), the largest disc is moved (\\(1\\) move), and the smaller discs are moved onto it (\\(T_{n-1}\\) moves). Hence \\(T_n=2T_{n-1}+1\\). With \\(T_1=1\\) this gives \\(T_2=3\\), whereas \\(T_{n-1}+2\\) would give the same value by coincidence but then \\(T_3=5\\) instead of \\(7\\).",
+      "hint": "Think about what must happen before and after the largest disc moves."
+    },
+    {
+      "id": "dynanca-570-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Ternary strings without two zeros in a row",
+      "learningObjective": "Use a recurrence to count restricted strings.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(a_n\\) be the number of strings of length \\(n\\) over the digits \\(0,1,2\\) that do not contain two consecutive zeros. These numbers satisfy \\(a_n=2a_{n-1}+2a_{n-2}\\) with \\(a_1=3\\) and \\(a_2=8\\). What is \\(a_3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(22\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(a_3=2a_2+2a_1=2\\cdot 8+2\\cdot 3=22\\). The recurrence arises because a valid string ends in \\(1\\) or \\(2\\) (preceded by any valid string of length \\(n-1\\)), or in \\(10\\) or \\(20\\) (preceded by any valid string of length \\(n-2\\)). The number \\(24=3\\cdot 8\\) ignores the restriction at the last step.",
+      "hint": "Substitute the two given values into the recurrence."
+    },
+    {
+      "id": "dynanca-570-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Regions made by lines",
+      "learningObjective": "Use a recurrence to count the regions formed by lines.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Lines are drawn in a plane so that no two are parallel and no three pass through one point. The \\(n\\)th line is cut by the earlier lines into \\(n\\) pieces, and each piece splits a region in two, so the number of regions satisfies \\(L_n=L_{n-1}+n\\) with \\(L_0=1\\). What is \\(L_4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(11\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(L_1=1+1=2\\), \\(L_2=2+2=4\\), \\(L_3=4+3=7\\), and \\(L_4=7+4=11\\). The number \\(16=2^4\\) would follow from doubling at each step, which stops being correct at the third line.",
+      "hint": "Apply the recurrence four times, starting from \\(L_0=1\\)."
+    },
+    {
+      "id": "dynanca-570-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Subsets and a new element",
+      "learningObjective": "Explain a recurrence for the number of subsets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(s_n\\) be the number of subsets of \\(\\{1,2,\\dots,n\\}\\). Why is \\(s_n=2s_{n-1}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The set \\(\\{1,\\dots,n\\}\\) has twice as many elements as \\(\\{1,\\dots,n-1\\}\\)."
+        },
+        {
+          "label": "B",
+          "text": "Each subset of \\(\\{1,\\dots,n-1\\}\\) gives two subsets of \\(\\{1,\\dots,n\\}\\): itself, and itself with \\(n\\) added."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every subset of \\(\\{1,\\dots,n\\}\\) either does not contain \\(n\\), and is then a subset of \\(\\{1,\\dots,n-1\\}\\), or contains \\(n\\), and is then such a subset with \\(n\\) added. Each smaller subset therefore produces exactly two subsets, and all subsets arise once. The set itself gains only one element, not twice as many.",
+      "hint": "Ask whether a subset contains the new element \\(n\\)."
+    },
+    {
+      "id": "dynanca-570-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Tiling a strip with coloured squares",
+      "learningObjective": "Use a recurrence to count tilings with two kinds of tile.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A strip of \\(n\\) unit cells is tiled with red unit squares, blue unit squares, and dominoes that cover two cells. The number of tilings satisfies \\(a_n=2a_{n-1}+a_{n-2}\\) with \\(a_1=2\\) and \\(a_2=5\\). What is \\(a_3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(a_3=2a_2+a_1=2\\cdot 5+2=12\\). The recurrence holds because the last tile is a red square or a blue square (leaving \\(n-1\\) cells) or a domino (leaving \\(n-2\\) cells). The number \\(9\\) is not obtained from the recurrence.",
+      "hint": "The coefficient \\(2\\) comes from the two colours of square."
+    },
+    {
+      "id": "dynanca-570-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "No three zeros in a row",
+      "learningObjective": "Use a third-order recurrence to count restricted binary strings.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(a_n\\) be the number of binary strings of length \\(n\\) with no three consecutive zeros. These numbers satisfy \\(a_n=a_{n-1}+a_{n-2}+a_{n-3}\\) with \\(a_1=2\\), \\(a_2=4\\), \\(a_3=7\\). What is \\(a_5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(32\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(a_4=a_3+a_2+a_1=7+4+2=13\\) and \\(a_5=a_4+a_3+a_2=13+7+4=24\\). The recurrence comes from the ending of a valid string: \\(1\\), \\(10\\), or \\(100\\). The number \\(32=2^5\\) counts all binary strings of length \\(5\\).",
+      "hint": "Compute \\(a_4\\) first."
+    },
+    {
+      "id": "dynanca-570-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An even number of zeros",
+      "learningObjective": "Derive a recurrence by considering the last symbol.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(a_n\\) be the number of strings of length \\(n\\) over the digits \\(0,1,2\\) that contain an even number of zeros. Which recurrence holds for \\(n\\ge 2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_n=2a_{n-1}+3^{n-1}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a_n=a_{n-1}+3^{n-1}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A valid string of length \\(n\\) ends in \\(1\\) or \\(2\\) after a valid string of length \\(n-1\\), in \\(2a_{n-1}\\) ways, or ends in \\(0\\) after a string of length \\(n-1\\) with an odd number of zeros, in \\(3^{n-1}-a_{n-1}\\) ways. Adding gives \\(a_n=2a_{n-1}+3^{n-1}-a_{n-1}=a_{n-1}+3^{n-1}\\). A check: \\(a_1=2\\) and \\(a_2=5\\), and indeed \\(2+3=5\\), while \\(2\\cdot 2+3=7\\).",
+      "hint": "If the last digit is \\(0\\), the earlier part must contain an odd number of zeros."
+    }
+  ]
+}

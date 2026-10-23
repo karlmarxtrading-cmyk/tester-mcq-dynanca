@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-395",
+  "category": "Comprehensive Mathematics",
+  "title": "395. Geometry, Spatial Thinking & Measurement: Vector Equation of a Line",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-395-q001",
+      "category": "Geometry",
+      "concept": "Vector line equation from point and direction",
+      "learningObjective": "Form a vector equation using a base point and nonzero direction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which vector equation describes the line through \\((1,2)\\) with direction \\(\\langle3,-1\\rangle\\)? In both options, \\(t\\in\\mathbb{R}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\mathbf{r}=\\langle3,-1\\rangle+t\\langle1,2\\rangle\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\mathbf{r}=\\langle1,2\\rangle+t\\langle3,-1\\rangle\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A line equation is a position vector of a point plus a real multiple of its direction vector. Use \\(\\langle1,2\\rangle\\) as the fixed position vector and \\(\\langle3,-1\\rangle\\) as the direction vector.",
+      "hint": "Distinguish the fixed point vector from the direction vector."
+    },
+    {
+      "id": "dynanca-395-q002",
+      "category": "Geometry",
+      "concept": "Point at a specified line parameter",
+      "learningObjective": "Evaluate a vector line equation at a given parameter.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(\\mathbf{r}=\\langle2,-3\\rangle+t\\langle4,1\\rangle\\), where \\(t\\in\\mathbb{R}\\), what point corresponds to \\(t=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((6,-2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((10,-1)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitution gives \\(\\langle2,-3\\rangle+2\\langle4,1\\rangle=\\langle10,-1\\rangle\\).",
+      "hint": "Multiply every direction component by the specified parameter."
+    },
+    {
+      "id": "dynanca-395-q003",
+      "category": "Geometry",
+      "concept": "Vector line through two points",
+      "learningObjective": "Use the difference of two points as a direction vector.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Which vector equation describes the line through \\((-1,4)\\) and \\((3,2)\\)? In both options, \\(t\\in\\mathbb{R}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\mathbf{r}=\\langle-1,4\\rangle+t\\langle2,6\\rangle\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\mathbf{r}=\\langle-1,4\\rangle+t\\langle4,-2\\rangle\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtract the first point from the second to get direction \\(\\langle4,-2\\rangle\\). The other vector adds the points instead.",
+      "hint": "A direction joining two points comes from their coordinate differences."
+    },
+    {
+      "id": "dynanca-395-q004",
+      "category": "Geometry",
+      "concept": "Vertical vector line",
+      "learningObjective": "Recognize a constant horizontal coordinate in a parametric line.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For \\(\\mathbf{r}=\\langle5,1\\rangle+t\\langle0,3\\rangle\\), with \\(t\\in\\mathbb{R}\\), which Cartesian equation describes the same line?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The horizontal coordinate is always \\(5\\), while the vertical coordinate \\(1+3t\\) ranges over all real values. Thus the line is \\(x=5\\).",
+      "hint": "Determine which direction component is zero."
+    },
+    {
+      "id": "dynanca-395-q005",
+      "category": "Geometry",
+      "concept": "Horizontal vector line",
+      "learningObjective": "Recognize a constant vertical coordinate in a parametric line.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For \\(\\mathbf{r}=\\langle2,7\\rangle+t\\langle4,0\\rangle\\), with \\(t\\in\\mathbb{R}\\), which Cartesian equation describes the same line?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The vertical coordinate remains \\(7\\), while \\(2+4t\\) covers every horizontal coordinate. Thus the line is \\(y=7\\).",
+      "hint": "A zero direction component fixes its corresponding coordinate."
+    },
+    {
+      "id": "dynanca-395-q006",
+      "category": "Geometry",
+      "concept": "Point membership on a vector line",
+      "learningObjective": "Check that one parameter satisfies both coordinate equations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Does \\((7,5)\\) lie on \\(\\mathbf{r}=\\langle1,2\\rangle+t\\langle2,1\\rangle\\), where \\(t\\in\\mathbb{R}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, it does not."
+        },
+        {
+          "label": "B",
+          "text": "Yes, it does."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first coordinate gives \\(1+2t=7\\), so \\(t=3\\). The second coordinate then gives \\(2+3=5\\), confirming membership.",
+      "hint": "Both coordinates must use the same parameter value."
+    },
+    {
+      "id": "dynanca-395-q007",
+      "category": "Geometry",
+      "concept": "Equivalent vector line equations",
+      "learningObjective": "Check a parallel direction and a base point on the original line.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which equation gives the same line as \\(\\mathbf{r}=\\langle0,1\\rangle+t\\langle2,4\\rangle\\)? All parameters range over \\(\\mathbb{R}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\mathbf{r}=\\langle2,5\\rangle+s\\langle1,2\\rangle\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\mathbf{r}=\\langle2,4\\rangle+s\\langle1,2\\rangle\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The base point \\((2,5)\\) occurs at \\(t=1\\), and direction \\(\\langle1,2\\rangle\\) is half the original nonzero direction. The point \\((2,4)\\) does not satisfy the original line \\(y=2x+1\\).",
+      "hint": "Direction agreement alone is insufficient; also test the new base point."
+    },
+    {
+      "id": "dynanca-395-q008",
+      "category": "Geometry",
+      "concept": "Parameter from a target coordinate",
+      "learningObjective": "Recover one coordinate by first solving for the line parameter.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "On \\(\\mathbf{r}=\\langle3,-1\\rangle+t\\langle-2,5\\rangle\\), where \\(t\\in\\mathbb{R}\\), what is the vertical coordinate when the horizontal coordinate is \\(-1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-11\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Solving \\(3-2t=-1\\) gives \\(t=2\\). Then the vertical coordinate is \\(-1+5(2)=9\\).",
+      "hint": "Solve the horizontal component equation before evaluating the vertical one."
+    },
+    {
+      "id": "dynanca-395-q009",
+      "category": "Geometry",
+      "concept": "Perpendicular vector line through a point",
+      "learningObjective": "Construct a direction orthogonal to a supplied line direction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which line passes through \\((2,0)\\) and is perpendicular to a line with direction \\(\\langle3,4\\rangle\\)? In both options, \\(t\\in\\mathbb{R}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\mathbf{r}=\\langle2,0\\rangle+t\\langle4,3\\rangle\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\mathbf{r}=\\langle2,0\\rangle+t\\langle4,-3\\rangle\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The direction \\(\\langle4,-3\\rangle\\) has dot product \\(3(4)+4(-3)=0\\) with the supplied direction. The direction \\(\\langle4,3\\rangle\\) gives \\(24\\), so it is not perpendicular.",
+      "hint": "Test the candidate direction vectors with a dot product."
+    },
+    {
+      "id": "dynanca-395-q010",
+      "category": "Geometry",
+      "concept": "Intersection of two vector lines",
+      "learningObjective": "Solve simultaneous parameter equations for a shared point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The lines are \\(\\mathbf{r}=\\langle1,0\\rangle+t\\langle2,1\\rangle\\) and \\(\\mathbf{r}=\\langle0,3\\rangle+s\\langle1,-1\\rangle\\), with real parameters. What is their intersection?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left(\\frac{7}{3},\\frac{2}{3}\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\left(\\frac{2}{3},\\frac{7}{3}\\right)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Equating coordinates gives \\(1+2t=s\\) and \\(t=3-s\\). Thus \\(3t=2\\), so \\(t=\\frac{2}{3}\\), and the point is \\(\\left(\\frac{7}{3},\\frac{2}{3}\\right)\\).",
+      "hint": "Use different parameters for the two lines and equate both coordinates."
+    }
+  ]
+}

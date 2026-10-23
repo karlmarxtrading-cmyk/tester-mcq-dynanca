@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-474",
+  "category": "Comprehensive Mathematics",
+  "title": "474. Sets, Logic, Reasoning & Proof: Intersection of Two Sets",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-474-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of intersection",
+      "learningObjective": "State which elements belong to the intersection of two sets.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which elements belong to \\(A\\cap B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The elements that are in \\(A\\) or in \\(B\\)"
+        },
+        {
+          "label": "B",
+          "text": "The elements that are in both \\(A\\) and \\(B\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The intersection \\(A\\cap B\\) consists of the elements common to the two sets: an element must belong to \\(A\\) and also to \\(B\\). The elements that belong to at least one of the sets form the union \\(A\\cup B\\).",
+      "hint": "The intersection is the overlap of the two sets."
+    },
+    {
+      "id": "dynanca-474-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Intersection of two listed sets",
+      "learningObjective": "Compute the intersection of two finite sets.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\{1,2,3\\}\\cap\\{2,3,4\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{2,3\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,2,3,4\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The elements that appear in both listings are \\(2\\) and \\(3\\). The element \\(1\\) is only in the first set and \\(4\\) is only in the second, so they are not in the intersection. The set \\(\\{1,2,3,4\\}\\) is the union.",
+      "hint": "Keep only the elements that appear in both lists."
+    },
+    {
+      "id": "dynanca-474-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Intersection of disjoint sets",
+      "learningObjective": "Compute the intersection of two sets with no common element.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\{1,2\\}\\cap\\{3,4\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\varnothing\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{0\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "No element appears in both sets, so the intersection has no elements and equals \\(\\varnothing\\). The set \\(\\{0\\}\\) is not empty; it contains the number \\(0\\), which is in neither of the given sets.",
+      "hint": "When there is no common element, the intersection is the set with no elements."
+    },
+    {
+      "id": "dynanca-474-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Intersection of overlapping intervals",
+      "learningObjective": "Compute the intersection of two overlapping closed intervals.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\([0,3]\\cap[2,5]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([2,3]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([0,5]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A number is in the intersection when it satisfies both \\(0\\le x\\le 3\\) and \\(2\\le x\\le 5\\). Together these give \\(2\\le x\\le 3\\), so the intersection is \\([2,3]\\). The interval \\([0,5]\\) is the union.",
+      "hint": "Combine the two pairs of inequalities: take the larger lower bound and the smaller upper bound."
+    },
+    {
+      "id": "dynanca-474-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Intersection with a superset",
+      "learningObjective": "Simplify an intersection when one set is contained in the other.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Suppose \\(A\\subseteq B\\). What is \\(A\\cap B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(B\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every element of \\(A\\) is also in \\(B\\), so every element of \\(A\\) is common to both sets. No element outside \\(A\\) can be in the intersection. Hence \\(A\\cap B=A\\). For example, \\(\\{1\\}\\cap\\{1,2,3\\}=\\{1\\}\\).",
+      "hint": "The intersection can never be larger than the smaller of the two sets."
+    },
+    {
+      "id": "dynanca-474-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Common multiples",
+      "learningObjective": "Identify the intersection of two sets of multiples.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the intersection of the set of integer multiples of \\(2\\) and the set of integer multiples of \\(3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The set of integer multiples of \\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "The set of integers that are multiples of \\(2\\) or of \\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An integer is in the intersection when it is divisible by both \\(2\\) and \\(3\\). Since \\(2\\) and \\(3\\) have no common factor other than \\(1\\), this happens exactly when the integer is divisible by \\(6\\). The integers divisible by \\(2\\) or by \\(3\\) form the union, which contains numbers such as \\(4\\) and \\(9\\).",
+      "hint": "An element of the intersection must be divisible by both numbers."
+    },
+    {
+      "id": "dynanca-474-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Reasoning with membership in an intersection",
+      "learningObjective": "Deduce non-membership in an intersection from non-membership in one set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Suppose \\(x\\notin A\\). Can \\(x\\) be an element of \\(A\\cap B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, provided that \\(x\\in B\\)."
+        },
+        {
+          "label": "B",
+          "text": "No, because an element of \\(A\\cap B\\) must be in \\(A\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Membership in \\(A\\cap B\\) requires both \\(x\\in A\\) and \\(x\\in B\\). If \\(x\\notin A\\), the first requirement fails, so \\(x\\notin A\\cap B\\) whether or not \\(x\\in B\\).",
+      "hint": "Both conditions of an intersection must hold at the same time."
+    },
+    {
+      "id": "dynanca-474-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Intersection at a shared endpoint",
+      "learningObjective": "Take endpoint inclusion into account when intersecting intervals.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "What is \\((0,2)\\cap[2,4]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{2\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The open interval \\((0,2)\\) contains the numbers with \\(0<x<2\\), so it does not contain \\(2\\). The interval \\([2,4]\\) contains only numbers with \\(x\\ge 2\\). No number satisfies both \\(x<2\\) and \\(x\\ge 2\\), so the intersection is empty. The set \\(\\{2\\}\\) would be the intersection if the first interval were \\((0,2]\\).",
+      "hint": "Check whether the shared endpoint actually belongs to both intervals."
+    },
+    {
+      "id": "dynanca-474-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Intersection of three sets",
+      "learningObjective": "Compute the intersection of three finite sets.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\(\\{1,2,3,4\\}\\cap\\{2,3,4,5\\}\\cap\\{3,4,5,6\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{2,3,4,5\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{3,4\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An element of the intersection must belong to all three sets. The elements \\(3\\) and \\(4\\) appear in each set. The element \\(2\\) is missing from the third set and \\(5\\) is missing from the first, so they are excluded.",
+      "hint": "Check each candidate element against all three sets."
+    },
+    {
+      "id": "dynanca-474-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Intersection of two described sets",
+      "learningObjective": "Intersect two sets of integers given by conditions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "What is \\(\\{x\\in\\mathbb{Z}\\mid x^2<10\\}\\cap\\{x\\in\\mathbb{Z}\\mid x>1\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{2,3\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{2,3,4\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first set is \\(\\{-3,-2,-1,0,1,2,3\\}\\), since \\(3^2=9<10\\) and \\(4^2=16>10\\). The second set contains the integers greater than \\(1\\). The integers in both are \\(2\\) and \\(3\\). The number \\(4\\) is excluded because \\(4^2=16\\) is not less than \\(10\\).",
+      "hint": "List the first set completely, then keep the elements that satisfy the second condition."
+    }
+  ]
+}

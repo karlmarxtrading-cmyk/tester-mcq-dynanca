@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-398",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 398",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-398-q001",
+      "category": "Number Theory",
+      "concept": "Divisibility from a Power Expression",
+      "learningObjective": "Determine a guaranteed divisor of \\(3^{2n}-1\\) for every positive integer \\(n\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For every positive integer \\(n\\), the number \\(3^{2n}-1\\) is always divisible by which integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rewrite the expression as\n\\[\n3^{2n}-1=(3^2)^n-1=9^n-1.\n\\]\nSince\n\\[\n9^n-1=(9-1)(9^{n-1}+9^{n-2}+\\cdots+1)=8(9^{n-1}+9^{n-2}+\\cdots+1),\n\\]\nthe number \\(3^{2n}-1\\) is always divisible by \\(8\\). It is not always divisible by \\(6\\); for example, when \\(n=2\\), \\(3^4-1=80\\), and \\(80\\) is not divisible by \\(6\\).",
+      "hint": "Rewrite \\(3^{2n}\\) as \\(9^n\\), then use the difference-of-powers factorization."
+    },
+    {
+      "id": "math-gaokao-398-q002",
+      "category": "Number Theory",
+      "concept": "Inductive Step for Divisibility",
+      "learningObjective": "Identify the algebraic identity used in the induction step for \\(4^n-1\\) divisible by \\(3\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In an induction proof that \\(4^n-1\\) is divisible by \\(3\\) for all positive integers \\(n\\), suppose \\(4^k-1\\) is divisible by \\(3\\). Which identity is used to prove the \\((k+1)\\)-case?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4^{k+1}-1=4(4^k-1)-3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4^{k+1}-1=4(4^k-1)+3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Starting from the assumed case,\n\\[\n4^{k+1}-1=4\\cdot 4^k-1=4(4^k-1)+3.\n\\]\nSince \\(4^k-1\\) is divisible by \\(3\\), \\(4(4^k-1)\\) is divisible by \\(3\\), and adding \\(3\\) preserves divisibility by \\(3\\). Thus the correct identity is\n\\[\n4^{k+1}-1=4(4^k-1)+3.\n\\]",
+      "hint": "Write \\(4^{k+1}\\) as \\(4\\cdot 4^k\\), then adjust the expression to include \\(4^k-1\\)."
+    },
+    {
+      "id": "math-gaokao-398-q003",
+      "category": "Number Theory",
+      "concept": "Divisibility of a Cubic Expression",
+      "learningObjective": "Prove or recognize that \\(n^3+2n\\) is always divisible by \\(3\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "For every positive integer \\(n\\), \\(n^3+2n\\) is always divisible by which integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Modulo \\(3\\), we have \\(n^3\\equiv n\\pmod 3\\). Therefore,\n\\[\nn^3+2n\\equiv n+2n=3n\\equiv 0\\pmod 3.\n\\]\nSo \\(n^3+2n\\) is always divisible by \\(3\\). It is not always divisible by \\(5\\); for example, when \\(n=1\\), \\(1^3+2\\cdot1=3\\), which is not divisible by \\(5\\).",
+      "hint": "Inspect the residues of the expression modulo each candidate divisor, or use a factorization that makes divisibility easier to test."
+    },
+    {
+      "id": "math-gaokao-398-q004",
+      "category": "Number Theory",
+      "concept": "Inductive Proof of a Sum Formula",
+      "learningObjective": "Form the \\((k+1)\\)-term in the induction proof of the sum of the first \\(n\\) odd numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "To prove \\(1+3+5+\\cdots+(2n-1)=n^2\\) by induction, assume the sum of the first \\(k\\) odd numbers is \\(k^2\\). Which expression represents the sum of the first \\(k+1\\) odd numbers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k^2+2k+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k^2+2k-1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The next odd number after \\(2k-1\\) is \\(2k+1\\). Therefore the sum of the first \\(k+1\\) odd numbers is\n\\[\nk^2+(2k+1)=k^2+2k+1=(k+1)^2.\n\\]\nHence the correct expression is \\(k^2+2k+1\\).",
+      "hint": "Find the \\((k+1)\\)-th odd number and add it to the assumed sum \\(k^2\\)."
+    },
+    {
+      "id": "math-gaokao-398-q005",
+      "category": "Number Theory",
+      "concept": "Divisibility by Congruence",
+      "learningObjective": "Determine a guaranteed divisor of \\(7^{2n}-1\\) for every positive integer \\(n\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For every positive integer \\(n\\), \\(7^{2n}-1\\) is always divisible by which integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(48\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rewrite\n\\[\n7^{2n}-1=(7^2)^n-1=49^n-1.\n\\]\nSince \\(49\\equiv 1\\pmod{48}\\), we have\n\\[\n49^n-1\\equiv 1^n-1=0\\pmod{48}.\n\\]\nThus \\(7^{2n}-1\\) is always divisible by \\(48\\). For \\(n=1\\), \\(7^2-1=48\\), which is not divisible by \\(36\\), so option A is false.",
+      "hint": "Rewrite \\(7^{2n}\\) as \\((7^2)^n\\), then compare \\(7^2\\) with \\(1\\) modulo each candidate divisor."
+    },
+    {
+      "id": "math-gaokao-398-q006",
+      "category": "Number Theory",
+      "concept": "Inductive Step for Product of Consecutive Integers",
+      "learningObjective": "Choose the correct decomposition for the \\((k+1)\\)-case when proving \\(n(n+1)(n+2)\\) is divisible by \\(6\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In an induction proof that \\(n(n+1)(n+2)\\) is divisible by \\(6\\) for all positive integers \\(n\\), assume \\(k(k+1)(k+2)\\) is divisible by \\(6\\). Which decomposition is useful for the \\((k+1)\\)-case?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((k+1)(k+2)(k+3)=k(k+1)(k+2)+2(k+1)(k+2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((k+1)(k+2)(k+3)=k(k+1)(k+2)+3(k+1)(k+2)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtract the assumed product from the next product:\n\\[\n\\begin{aligned}\n(k+1)(k+2)(k+3)-k(k+1)(k+2)&=(k+1)(k+2)\\bigl((k+3)-k\\bigr) \\\\\n&=3(k+1)(k+2).\n\\end{aligned}\n\\]\nTherefore,\n\\[\n(k+1)(k+2)(k+3)=k(k+1)(k+2)+3(k+1)(k+2).\n\\]\nAlso, \\((k+1)(k+2)\\) is even, so \\(3(k+1)(k+2)\\) is divisible by \\(6\\). Thus the correct decomposition is option B.",
+      "hint": "Compare \\((k+1)(k+2)(k+3)\\) with \\(k(k+1)(k+2)\\) and factor out \\((k+1)(k+2)\\)."
+    },
+    {
+      "id": "math-gaokao-398-q007",
+      "category": "Number Theory",
+      "concept": "Inductive Step for an Exponential Divisibility Statement",
+      "learningObjective": "Rewrite the \\((k+1)\\)-term in the induction proof that \\(3^{2n+1}+2^{n+2}\\) is divisible by \\(7\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Consider the statement that \\(3^{2n+1}+2^{n+2}\\) is divisible by \\(7\\) for every nonnegative integer \\(n\\). In the induction step, which expression correctly rewrites \\(3^{2(k+1)+1}+2^{(k+1)+2}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\cdot3^{2k+1}+4\\cdot2^{k+2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\cdot3^{2k+1}+2\\cdot2^{k+2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For the \\((k+1)\\)-term,\n\\[\n3^{2(k+1)+1}=3^{2k+3}=3^2\\cdot3^{2k+1}=9\\cdot3^{2k+1},\n\\]\nand\n\\[\n\\begin{aligned}\n2^{(k+1)+2}&=2^{k+3} \\\\\n&=2^1\\cdot2^{k+2} \\\\\n&=2\\cdot2^{k+2}.\n\\end{aligned}\n\\]\nTherefore,\n\\[\n3^{2(k+1)+1}+2^{(k+1)+2}=9\\cdot3^{2k+1}+2\\cdot2^{k+2}.\n\\]\nSo option B is correct.",
+      "hint": "Split each exponent into the \\(k\\)-term plus one additional factor of the base."
+    },
+    {
+      "id": "math-gaokao-398-q008",
+      "category": "Number Theory",
+      "concept": "Divisibility of \\(n^5-n\\)",
+      "learningObjective": "Determine a guaranteed divisor of \\(n^5-n\\) for every positive integer \\(n\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For every positive integer \\(n\\), \\(n^5-n\\) is always divisible by which integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor:\n\\[\nn^5-n=n(n^4-1)=n(n-1)(n+1)(n^2+1).\n\\]\nAmong the three consecutive integers \\(n-1,n,n+1\\), one is divisible by \\(3\\) and at least one is even, so the product is divisible by \\(6\\). For divisibility by \\(5\\), if \\(n\\equiv0,\\pm1\\pmod5\\), then one of \\(n-1,n,n+1\\) is divisible by \\(5\\); if \\(n\\equiv\\pm2\\pmod5\\), then \\(n^2+1\\equiv4+1\\equiv0\\pmod5\\). Hence \\(n^5-n\\) is always divisible by \\(5\\). Since \\(\\gcd(6,5)=1\\), it is always divisible by \\(30\\). It need not be divisible by \\(60\\); for example, \\(n=2\\) gives \\(2^5-2=30\\).",
+      "hint": "Investigate the expression modulo small prime powers, and test whether each proposed divisor works for every positive integer."
+    },
+    {
+      "id": "math-gaokao-398-q009",
+      "category": "Number Theory",
+      "concept": "Remainder by Modular Exponentiation",
+      "learningObjective": "Find the remainder when \\(3^{2024}\\) is divided by \\(5\\) using modular cycles.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the remainder when \\(3^{2024}\\) is divided by \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since\n\\[\n3^4=81\\equiv1\\pmod5,\n\\]\nthe powers of \\(3\\) modulo \\(5\\) repeat every \\(4\\) exponents. Also,\n\\[\n2024=4\\cdot506.\n\\]\nTherefore,\n\\[\n3^{2024}=(3^4)^{506}\\equiv1^{506}=1\\pmod5.\n\\]\nSo the remainder is \\(1\\).",
+      "hint": "Find the cycle of powers of \\(3\\) modulo \\(5\\), then divide \\(2024\\) by the cycle length."
+    },
+    {
+      "id": "math-gaokao-398-q010",
+      "category": "Number Theory",
+      "concept": "Inductive Step for a Combined Exponential Divisibility Statement",
+      "learningObjective": "Rewrite the \\((k+1)\\)-term in the induction proof that \\(11^{n+1}+12^{2n-1}\\) is divisible by \\(133\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "In an induction proof that \\(11^{n+1}+12^{2n-1}\\) is divisible by \\(133\\) for all positive integers \\(n\\), which expression correctly rewrites the \\((k+1)\\)-term?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(11\\cdot 11^{k+1}+144\\cdot 12^{2k-1}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(11\\cdot 11^{k+1}+12\\cdot 12^{2k-1}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For the \\((k+1)\\)-term,\n\\[\n11^{(k+1)+1}=11^{k+2}=11\\cdot11^{k+1},\n\\]\nand\n\\[\n\\begin{aligned}\n12^{2(k+1)-1}&=12^{2k+1} \\\\\n&=12^2\\cdot12^{2k-1} \\\\\n&=144\\cdot12^{2k-1}.\n\\end{aligned}\n\\]\nThus\n\\[\n11^{(k+1)+1}+12^{2(k+1)-1}=11\\cdot11^{k+1}+144\\cdot12^{2k-1}.\n\\]\nSo option A is correct.",
+      "hint": "Compare each exponent in the next case with its exponent in the induction hypothesis."
+    }
+  ]
+}

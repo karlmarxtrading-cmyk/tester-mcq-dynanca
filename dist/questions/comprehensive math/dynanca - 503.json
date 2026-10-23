@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-503",
+  "category": "Comprehensive Mathematics",
+  "title": "503. Sets, Logic, Reasoning & Proof: Valid Inference by Modus Ponens",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-503-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Form of modus ponens",
+      "learningObjective": "Identify the argument form called modus ponens.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which argument form is modus ponens?",
+      "options": [
+        {
+          "label": "A",
+          "text": "From \\(p\\implies q\\) and \\(p\\), conclude \\(q\\)."
+        },
+        {
+          "label": "B",
+          "text": "From \\(p\\implies q\\) and \\(q\\), conclude \\(p\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Modus ponens affirms the hypothesis of a conditional and concludes its conclusion: given \"if \\(p\\), then \\(q\\)\" and \"\\(p\\)\", it follows that \"\\(q\\)\". The second form affirms the conclusion and infers the hypothesis; it is not valid.",
+      "hint": "In modus ponens the second premise is the \"if\" part of the conditional."
+    },
+    {
+      "id": "dynanca-503-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Applying modus ponens to divisibility",
+      "learningObjective": "Draw the conclusion of a modus ponens argument.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Premises: \"If an integer is divisible by \\(10\\), then it is divisible by \\(5\\)\" and \"\\(30\\) is divisible by \\(10\\)\". What follows by modus ponens?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\) is divisible by \\(5\\)."
+        },
+        {
+          "label": "B",
+          "text": "Every integer divisible by \\(5\\) is divisible by \\(10\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The second premise states that the hypothesis of the conditional holds for \\(30\\). Modus ponens then gives the conclusion of the conditional for \\(30\\): it is divisible by \\(5\\). The other sentence is the converse of the first premise; it does not follow, and it is false (consider \\(15\\)).",
+      "hint": "Apply the conditional to the specific number named in the second premise."
+    },
+    {
+      "id": "dynanca-503-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Recognising modus ponens",
+      "learningObjective": "Distinguish modus ponens from another valid argument form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which argument is an instance of modus ponens?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"If \\(n\\) is a multiple of \\(4\\), then \\(n\\) is even. \\(n\\) is a multiple of \\(4\\). Therefore \\(n\\) is even.\""
+        },
+        {
+          "label": "B",
+          "text": "\"If \\(n\\) is a multiple of \\(4\\), then \\(n\\) is even. \\(n\\) is not even. Therefore \\(n\\) is not a multiple of \\(4\\).\""
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first argument has the form \\(p\\implies q\\), \\(p\\), therefore \\(q\\), which is modus ponens. The second argument has the form \\(p\\implies q\\), \\(\\neg q\\), therefore \\(\\neg p\\); it is also valid, but it is called modus tollens.",
+      "hint": "Check whether the second premise affirms the hypothesis or denies the conclusion."
+    },
+    {
+      "id": "dynanca-503-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Why modus ponens is valid",
+      "learningObjective": "Explain the validity of modus ponens in terms of truth values.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Why is modus ponens a valid argument form?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In every row of the truth table where \\(p\\implies q\\) and \\(p\\) are both true, \\(q\\) is also true."
+        },
+        {
+          "label": "B",
+          "text": "The conclusion \\(q\\) is true in every row of the truth table."
+        }
+      ],
+      "answer": "A",
+      "explanation": "An argument form is valid when the conclusion is true whenever all premises are true. The premises \\(p\\implies q\\) and \\(p\\) are both true only in the row where \\(p\\) and \\(q\\) are true, and there \\(q\\) is true. Validity does not require \\(q\\) to be true in all rows; \\(q\\) is false in two of the four rows.",
+      "hint": "Look only at the rows in which every premise is true."
+    },
+    {
+      "id": "dynanca-503-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Modus ponens with an inequality",
+      "learningObjective": "Apply modus ponens after checking that the hypothesis holds.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Premises: \"If \\(x>3\\), then \\(x^2>9\\)\" and \"\\(x=4\\)\". What can be concluded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x^2>9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^2=9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(x=4\\), the hypothesis \\(x>3\\) is true. By modus ponens, the conclusion \\(x^2>9\\) follows; indeed \\(4^2=16>9\\). The statement \\(x^2=9\\) is not the conclusion of the conditional and is false for \\(x=4\\).",
+      "hint": "First verify that the given value satisfies the hypothesis."
+    },
+    {
+      "id": "dynanca-503-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Two applications of modus ponens",
+      "learningObjective": "Chain two conditionals using modus ponens twice.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Premises: \\(p\\implies q\\), \\(q\\implies r\\), and \\(p\\). What can be concluded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(r\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\neg r\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(p\\implies q\\) and \\(p\\), modus ponens gives \\(q\\). From \\(q\\implies r\\) and \\(q\\), modus ponens gives \\(r\\). So \\(r\\) follows from the three premises.",
+      "hint": "Apply modus ponens once to obtain an intermediate result, then apply it again."
+    },
+    {
+      "id": "dynanca-503-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "When modus ponens does not apply",
+      "learningObjective": "Recognise that modus ponens requires the hypothesis to be true.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Premises: \"If it rains, then the match is cancelled\" and \"It does not rain\". Does modus ponens allow the conclusion \"The match is not cancelled\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; since the hypothesis is false, the conclusion must be false as well."
+        },
+        {
+          "label": "B",
+          "text": "No; modus ponens needs the hypothesis \"it rains\" to be true, and here it is false."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Modus ponens applies only when the hypothesis of the conditional is given as true. Here the hypothesis is false, so the conditional says nothing about whether the match is cancelled; it might be cancelled for another reason. Concluding that it is not cancelled is an invalid inference.",
+      "hint": "Check which premise modus ponens requires in addition to the conditional."
+    },
+    {
+      "id": "dynanca-503-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Supplying the missing premise",
+      "learningObjective": "Identify the premise needed to complete a modus ponens argument.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The conclusion \"\\(17\\) is odd\" is to be obtained by modus ponens from the premise \"If an integer is not divisible by \\(2\\), then it is odd\". Which second premise is needed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"\\(17\\) is odd.\""
+        },
+        {
+          "label": "B",
+          "text": "\"\\(17\\) is not divisible by \\(2\\).\""
+        }
+      ],
+      "answer": "B",
+      "explanation": "Modus ponens needs the hypothesis of the conditional for the object in question: \"\\(17\\) is not divisible by \\(2\\)\". Together with the conditional this yields \"\\(17\\) is odd\". Using the conclusion itself as a premise would make the argument circular.",
+      "hint": "The second premise must match the \"if\" part of the conditional."
+    },
+    {
+      "id": "dynanca-503-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Modus ponens from a general statement",
+      "learningObjective": "Apply a general statement to a specific case and then use modus ponens.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "Premises: \"Every prime number greater than \\(2\\) is odd\" and \"\\(13\\) is a prime number greater than \\(2\\)\". What can be concluded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(13\\) is odd."
+        },
+        {
+          "label": "B",
+          "text": "Every odd number greater than \\(2\\) is prime."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first premise applies to every prime greater than \\(2\\), in particular to \\(13\\): \"if \\(13\\) is a prime greater than \\(2\\), then \\(13\\) is odd\". The second premise affirms the hypothesis, so modus ponens gives \"\\(13\\) is odd\". The other sentence is the converse of the first premise; it does not follow and is false (\\(9\\) is odd but not prime).",
+      "hint": "Specialise the general statement to the number \\(13\\), then apply modus ponens."
+    },
+    {
+      "id": "dynanca-503-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Validity versus truth of premises",
+      "learningObjective": "Distinguish the validity of an argument form from the truth of its premises.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Consider the argument: \"If \\(2\\) is odd, then \\(4\\) is odd. \\(2\\) is odd. Therefore \\(4\\) is odd.\" Which evaluation is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The argument is invalid, because its conclusion is false."
+        },
+        {
+          "label": "B",
+          "text": "The argument is valid in form, but the premise \"\\(2\\) is odd\" is false, so the conclusion is not established."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The argument has the form of modus ponens, which is valid: if both premises were true, the conclusion would have to be true. Here the second premise is false, so the argument, although valid, does not prove its conclusion. Validity concerns the form of the reasoning, not the truth of the statements involved.",
+      "hint": "Separate two questions: is the form valid, and are the premises true?"
+    }
+  ]
+}

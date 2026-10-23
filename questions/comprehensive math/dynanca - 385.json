@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-385",
+  "category": "Comprehensive Mathematics",
+  "title": "385. Geometry, Spatial Thinking & Measurement: Rotation of Coordinate Figures",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-385-q001",
+      "category": "Geometry",
+      "concept": "Quarter-turn counterclockwise rotation",
+      "learningObjective": "Apply an origin-centered counterclockwise quarter-turn.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Rotate \\((2,5)\\) by \\(90^\\circ\\) counterclockwise about the origin. What is its image?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((5,-2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-5,2)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The rule is \\((x,y)\\mapsto(-y,x)\\), giving \\((-5,2)\\).",
+      "hint": "Distinguish the clockwise and counterclockwise quarter-turn rules."
+    },
+    {
+      "id": "dynanca-385-q002",
+      "category": "Geometry",
+      "concept": "Quarter-turn clockwise rotation",
+      "learningObjective": "Apply an origin-centered clockwise quarter-turn.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Rotate \\((-3,4)\\) by \\(90^\\circ\\) clockwise about the origin. What is its image?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((4,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-4,-3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The clockwise rule is \\((x,y)\\mapsto(y,-x)\\), giving \\((4,3)\\).",
+      "hint": "Track the direction of the turn before changing coordinates."
+    },
+    {
+      "id": "dynanca-385-q003",
+      "category": "Geometry",
+      "concept": "Half-turn rotation",
+      "learningObjective": "Negate both coordinates in an origin-centered half-turn.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Rotate \\((6,-2)\\) by \\(180^\\circ\\) about the origin. What is its image?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-6,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,6)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A half-turn sends \\((x,y)\\) to \\((-x,-y)\\), so the image is \\((-6,2)\\).",
+      "hint": "A half-turn places the image opposite the original point through the center."
+    },
+    {
+      "id": "dynanca-385-q004",
+      "category": "Geometry",
+      "concept": "Quarter-turn about a shifted center",
+      "learningObjective": "Translate to the center, rotate, and translate back.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Rotate \\((4,2)\\) by \\(90^\\circ\\) counterclockwise about \\((1,1)\\). What is its image?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0,4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-1,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Relative to the center, the point is \\((3,1)\\). Rotating gives \\((-1,3)\\); adding the center back gives \\((0,4)\\).",
+      "hint": "Work with the displacement from the rotation center first."
+    },
+    {
+      "id": "dynanca-385-q005",
+      "category": "Geometry",
+      "concept": "Clockwise rotation about a shifted center",
+      "learningObjective": "Apply a clockwise quarter-turn around a non-origin center.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Rotate \\((1,7)\\) by \\(90^\\circ\\) clockwise about \\((-2,3)\\). What is its image?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,6)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The relative vector is \\((3,4)\\). A clockwise quarter-turn gives \\((4,-3)\\). Adding \\((-2,3)\\) produces \\((2,0)\\).",
+      "hint": "Remember to restore the center after rotating the relative vector."
+    },
+    {
+      "id": "dynanca-385-q006",
+      "category": "Geometry",
+      "concept": "Sixty-degree rotation",
+      "learningObjective": "Use exact trigonometric values for a non-quarter-turn rotation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Rotate \\((4,0)\\) by \\(60^\\circ\\) counterclockwise about the origin. What is its image?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2\\sqrt{3},2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,2\\sqrt{3})\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The image is \\((4\\cos60^\\circ,4\\sin60^\\circ)=(2,2\\sqrt{3})\\).",
+      "hint": "Resolve the rotated radius into horizontal and vertical components."
+    },
+    {
+      "id": "dynanca-385-q007",
+      "category": "Geometry",
+      "concept": "Inverse quarter-turn",
+      "learningObjective": "Recover a preimage by reversing a specified rotation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A \\(90^\\circ\\) counterclockwise rotation about the origin maps a point to \\((-7,2)\\). What was the original point?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,7)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-2,-7)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reverse the rotation with a clockwise quarter-turn: \\((-7,2)\\mapsto(2,7)\\).",
+      "hint": "Use the inverse rotation rather than repeating the given turn."
+    },
+    {
+      "id": "dynanca-385-q008",
+      "category": "Geometry",
+      "concept": "Equivalent rotation angles",
+      "learningObjective": "Reduce a clockwise angle to an equivalent counterclockwise turn.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Rotate \\((2,-5)\\) by \\(270^\\circ\\) clockwise about the origin. What is its image?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((5,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-5,-2)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A \\(270^\\circ\\) clockwise turn equals a \\(90^\\circ\\) counterclockwise turn. Thus \\((2,-5)\\mapsto(5,2)\\).",
+      "hint": "Reduce the directed angle modulo a full turn."
+    },
+    {
+      "id": "dynanca-385-q009",
+      "category": "Geometry",
+      "concept": "Half-turn about a non-origin center",
+      "learningObjective": "Recover an image using the rotation center as a midpoint.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Rotate \\((5,2)\\) by \\(180^\\circ\\) about \\((3,-1)\\). What is its image?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,-4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-5,-2)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The center is the midpoint of a point and its half-turn image. Hence the image is \\(2(3,-1)-(5,2)=(1,-4)\\).",
+      "hint": "Use the center as the midpoint of the original-image segment."
+    },
+    {
+      "id": "dynanca-385-q010",
+      "category": "Geometry",
+      "concept": "Rotation of a full line",
+      "learningObjective": "Determine an image line under an origin-centered quarter-turn.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The entire line \\(x=4\\) is rotated by \\(90^\\circ\\) counterclockwise about the origin. Which equation describes its image?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A point \\((4,t)\\) maps to \\((-t,4)\\). As \\(t\\) ranges over all real values, these points form \\(y=4\\).",
+      "hint": "Rotate a general point of the original line."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "lab": [
+    {
+      "profile": "Mobile lab: 390x844, 4x CPU slowdown, 1.6 Mbps down / 750 kbps up / 150 ms RTT",
+      "catalogReadyMs": 1454,
+      "searchKeystrokeToResultsMs": "167 (includes the 140 ms input debounce)",
+      "requests": 11,
+      "transferredBytes": 209811,
+      "lcpMs": 480,
+      "cls": 0.017,
+      "domNodes": 387,
+      "cards": 24,
+      "fcpMs": 480
+    },
+    {
+      "profile": "Desktop lab: 1280x800, no throttling",
+      "catalogReadyMs": 78,
+      "searchKeystrokeToResultsMs": "146 (includes the 140 ms input debounce)",
+      "requests": 11,
+      "transferredBytes": 209811,
+      "lcpMs": 44,
+      "cls": 0.003,
+      "domNodes": 387,
+      "cards": 24,
+      "fcpMs": 44
+    }
+  ],
+  "budget": {
+    "note": "Landing-page JS+CSS added by this work (gzip -9). Excludes the manifest, the availability index, the logo and the pre-existing assets/js/manifest.js.",
+    "files": [
+      {
+        "file": "assets/css/catalog.css",
+        "bytes": 30581,
+        "gzipBytes": 6457
+      },
+      {
+        "file": "assets/js/theme.js",
+        "bytes": 4261,
+        "gzipBytes": 1608
+      },
+      {
+        "file": "assets/js/catalog-model.js",
+        "bytes": 17364,
+        "gzipBytes": 5449
+      },
+      {
+        "file": "assets/js/catalog.js",
+        "bytes": 34247,
+        "gzipBytes": 9418
+      }
+    ],
+    "totalGzipBytes": 22932,
+    "budgetGzipBytes": 81920,
+    "data": [
+      {
+        "file": "index.html",
+        "bytes": 9590,
+        "gzipBytes": 2684
+      },
+      {
+        "file": "master-manifest.json",
+        "bytes": 726212,
+        "gzipBytes": 68800
+      },
+      {
+        "file": "assets/data/bank-index.json",
+        "bytes": 21005,
+        "gzipBytes": 2583
+      },
+      {
+        "file": "assets/js/manifest.js",
+        "bytes": 4153,
+        "gzipBytes": 1629
+      },
+      {
+        "file": "assets/img/logo-dynanca.png",
+        "bytes": 103058,
+        "gzipBytes": 102593
+      }
+    ]
+  }
+}

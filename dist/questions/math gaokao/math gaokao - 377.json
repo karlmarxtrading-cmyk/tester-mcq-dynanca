@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-377",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 377",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-377-q001",
+      "category": "Complex Numbers",
+      "concept": "Modulus of a Complex Number",
+      "learningObjective": "Compute the modulus of a complex number given in rectangular form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the modulus of \\(z=3-4i\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(z=a+bi\\), the modulus is \\(|z|=\\sqrt{a^2+b^2}\\). Here \\(a=3\\) and \\(b=-4\\), so\n\\[\n\\begin{aligned}\n|z|&=\\sqrt{3^2+(-4)^2} \\\\\n&=\\sqrt{9+16} \\\\\n&=\\sqrt{25} \\\\\n&=5.\n\\end{aligned}\n\\]\nTherefore the correct value is \\(5\\).",
+      "hint": "Recall the formula for the modulus in terms of the real and imaginary parts."
+    },
+    {
+      "id": "math-gaokao-377-q002",
+      "category": "Complex Numbers",
+      "concept": "Multiplicativity of the Modulus",
+      "learningObjective": "Use the multiplicative property of the modulus to compute the modulus of a product.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(|z|=3\\), find \\(|(1+i)z|\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\sqrt{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using \\(|uv|=|u||v|\\),\n\\[\n\\begin{aligned}\n|(1+i)z|&=|1+i||z| \\\\\n&=\\sqrt{1^2+1^2}\\cdot 3 \\\\\n&=\\sqrt{2}\\cdot 3 \\\\\n&=3\\sqrt{2}.\n\\end{aligned}\n\\]\nThus the correct value is \\(3\\sqrt{2}\\).",
+      "hint": "Use the fact that the modulus of a product equals the product of the moduli."
+    },
+    {
+      "id": "math-gaokao-377-q003",
+      "category": "Complex Numbers",
+      "concept": "Modulus and Real Part",
+      "learningObjective": "Determine the possible imaginary part of a complex number from its modulus and real part.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(z=x+yi\\) be a complex number such that \\(|z|=5\\) and \\(x=3\\). What is the possible value of \\(|y|\\)? Assume that \\(x,y\\in\\mathbb{R}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{34}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(|z|^2=x^2+y^2\\), we have\n\\[\nx^2+y^2=25.\n\\]\nSubstitute \\(x=3\\):\n\\[\n9+y^2=25 \\implies y^2=16 \\implies |y|=4.\n\\]\nTherefore the correct value is \\(4\\).",
+      "hint": "Use the identity \\(|x+yi|^2=x^2+y^2\\)."
+    },
+    {
+      "id": "math-gaokao-377-q004",
+      "category": "Complex Numbers",
+      "concept": "Modulus of a Quotient",
+      "learningObjective": "Compute the modulus of a quotient of complex numbers using modulus properties.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(z=\\frac{2+2i}{1-i}\\), find \\(|z|\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using \\(\\left|\\frac{u}{v}\\right|=\\frac{|u|}{|v|}\\),\n\\[\n\\begin{aligned}\n|z|&=\\frac{|2+2i|}{|1-i|} \\\\\n&=\\frac{\\sqrt{2^2+2^2}}{\\sqrt{1^2+(-1)^2}} \\\\\n&=\\frac{\\sqrt{8}}{\\sqrt{2}} \\\\\n&=\\sqrt{4}=2.\n\\end{aligned}\n\\]\nTherefore the correct value is \\(2\\).",
+      "hint": "Use the modulus property for quotients."
+    },
+    {
+      "id": "math-gaokao-377-q005",
+      "category": "Complex Numbers",
+      "concept": "Maximum Modulus on a Circle",
+      "learningObjective": "Find the maximum distance from the origin to points satisfying a circle equation in the complex plane.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The complex number \\(z\\) satisfies \\(|z-(1+2i)|=3\\). What is the maximum possible value of \\(|z|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3+\\sqrt{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3-\\sqrt{5}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The condition \\(|z-(1+2i)|=3\\) describes a circle with center \\(1+2i\\) and radius \\(3\\). The distance from the origin to the center is\n\\[\n|1+2i|=\\sqrt{1^2+2^2}=\\sqrt{5}.\n\\]\nThe maximum distance from the origin to a point on the circle is the distance to the center plus the radius:\n\\[\n\\sqrt{5}+3=3+\\sqrt{5}.\n\\]\nTherefore the correct value is \\(3+\\sqrt{5}\\).",
+      "hint": "Interpret \\(|z-z_0|=r\\) geometrically as a circle."
+    },
+    {
+      "id": "math-gaokao-377-q006",
+      "category": "Complex Numbers",
+      "concept": "Triangle Inequality for Modulus",
+      "learningObjective": "Apply the triangle inequality to find the maximum possible modulus of a sum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(|z|=3\\) and \\(|w|=4\\), what is the maximum possible value of \\(|z+w|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the triangle inequality,\n\\[\n\\begin{aligned}\n|z+w|&\\le |z|+|w| \\\\\n&=3+4 \\\\\n&=7.\n\\end{aligned}\n\\]\nEquality is possible when \\(z\\) and \\(w\\) have the same argument, so the maximum value is \\(7\\).",
+      "hint": "Use the triangle inequality for complex numbers."
+    },
+    {
+      "id": "math-gaokao-377-q007",
+      "category": "Complex Numbers",
+      "concept": "Reverse Triangle Inequality",
+      "learningObjective": "Apply the reverse triangle inequality to find the minimum possible modulus of a difference.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(|z|=2\\) and \\(|w|=3\\), what is the minimum possible value of \\(|z-w|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the reverse triangle inequality,\n\\[\n|z-w|\\ge \\bigl||z|-|w|\\bigr|.\n\\]\nThus\n\\[\n|z-w|\\ge |2-3|=1.\n\\]\nEquality is possible when \\(z\\) and \\(w\\) point in the same direction, so the minimum value is \\(1\\).",
+      "hint": "Use the reverse triangle inequality or compare the distances between two circles."
+    },
+    {
+      "id": "math-gaokao-377-q008",
+      "category": "Complex Numbers",
+      "concept": "Locus from Equal Moduli",
+      "learningObjective": "Determine the locus of complex numbers satisfying an equality of two moduli.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The locus of points \\(z=x+yi\\) satisfying \\(|z-2|=|z+2i|\\) is: Assume that \\(x,y\\in\\mathbb{R}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=-x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(z=x+yi\\). Then\n\\[\n|z-2|^2=(x-2)^2+y^2\n\\]\nand\n\\[\n|z+2i|^2=x^2+(y+2)^2.\n\\]\nSince the moduli are equal, their squares are equal:\n\\[\n(x-2)^2+y^2=x^2+(y+2)^2.\n\\]\nExpanding gives\n\\[\nx^2-4x+4+y^2=x^2+y^2+4y+4.\n\\]\nCanceling common terms yields\n\\[\n-4x=4y \\implies y=-x.\n\\]\nTherefore the locus is \\(y=-x\\).",
+      "hint": "Write \\(z=x+yi\\) and square both sides of the modulus equality."
+    },
+    {
+      "id": "math-gaokao-377-q009",
+      "category": "Complex Numbers",
+      "concept": "Maximum Distance from a Point to a Circle",
+      "learningObjective": "Find the maximum modulus of a complex number constrained to a circle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(|z-1|=1\\), what is the maximum possible value of \\(|z+1|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The condition \\(|z-1|=1\\) describes a circle centered at \\(1\\) with radius \\(1\\). The quantity \\(|z+1|\\) is the distance from \\(z\\) to \\(-1\\). The distance from the center \\(1\\) to the point \\(-1\\) is\n\\[\n|1-(-1)|=2.\n\\]\nTherefore the maximum distance from \\(-1\\) to a point on the circle is\n\\[\n2+1=3.\n\\]\nThus the maximum value is \\(3\\).",
+      "hint": "Interpret \\(|z+1|\\) as the distance between \\(z\\) and \\(-1\\)."
+    },
+    {
+      "id": "math-gaokao-377-q010",
+      "category": "Complex Numbers",
+      "concept": "Maximum Modulus of a Quadratic Expression",
+      "learningObjective": "Find the maximum value of \\(|z^2-1|\\) for complex numbers on the unit circle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(|z|=1\\), what is the maximum possible value of \\(|z^2-1|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(z=e^{i\\theta}\\), since \\(|z|=1\\). Then\n\\[\n|z^2-1|=|e^{2i\\theta}-1|.\n\\]\nUsing \\(|e^{i\\alpha}-1|=2|\\sin(\\frac{\\alpha}{2})|\\), with \\(\\alpha=2\\theta\\), we get\n\\[\n|e^{2i\\theta}-1|=2|\\sin\\theta|.\n\\]\nThe maximum value of \\(2|\\sin\\theta|\\) is \\(2\\), attained when \\(|\\sin\\theta|=1\\). Therefore the maximum value is \\(2\\).",
+      "hint": "Write \\(z\\) in polar form or use \\(|z^2-1|^2=(z^2-1)(\\overline{z^2}-1)\\)."
+    }
+  ]
+}

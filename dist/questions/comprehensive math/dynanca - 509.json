@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-509",
+  "category": "Comprehensive Mathematics",
+  "title": "509. Sets, Logic, Reasoning & Proof: Proof by Contradiction",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-509-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Structure of a proof by contradiction",
+      "learningObjective": "Describe how a proof by contradiction proceeds.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does a proof by contradiction of a statement \\(S\\) proceed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assume that \\(S\\) is false and derive a contradiction."
+        },
+        {
+          "label": "B",
+          "text": "Assume that \\(S\\) is true and derive a true statement."
+        }
+      ],
+      "answer": "A",
+      "explanation": "In a proof by contradiction one assumes the negation of \\(S\\) and reasons until an impossibility is reached, such as a statement and its negation both holding. Since a false assumption is the only way out, \\(S\\) must be true. Assuming \\(S\\) and deriving something true proves nothing, because true statements can follow from false ones.",
+      "hint": "The method starts from the opposite of what is to be proved."
+    },
+    {
+      "id": "dynanca-509-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Opening assumption for an irrationality proof",
+      "learningObjective": "Choose the opening assumption in a proof by contradiction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The statement \"\\(\\sqrt{2}\\) is irrational\" is to be proved by contradiction. What is assumed at the start?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{2}\\) is rational."
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{2}\\) is irrational."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A proof by contradiction assumes the negation of the statement. The negation of \"\\(\\sqrt{2}\\) is irrational\" is \"\\(\\sqrt{2}\\) is rational\", meaning \\(\\sqrt{2}=\\frac{p}{q}\\) for integers \\(p\\) and \\(q\\) with \\(q\\ne 0\\). Assuming the statement itself would be assuming what is to be proved.",
+      "hint": "Write down the negation of the statement to be proved."
+    },
+    {
+      "id": "dynanca-509-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The contradiction in the classical proof",
+      "learningObjective": "Identify the contradiction reached in the proof that the square root of two is irrational.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In the classical proof, one assumes \\(\\sqrt{2}=\\frac{p}{q}\\) with the fraction in lowest terms and derives \\(p^2=2q^2\\). Which contradiction is eventually reached?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both \\(p\\) and \\(q\\) are even, although the fraction was in lowest terms."
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\) is even and \\(q\\) is odd, although \\(p^2=2q^2\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(p^2=2q^2\\), \\(p^2\\) is even, so \\(p\\) is even: \\(p=2m\\). Then \\(4m^2=2q^2\\), so \\(q^2=2m^2\\) is even and \\(q\\) is even. Thus \\(2\\) divides both \\(p\\) and \\(q\\), contradicting the assumption that \\(\\frac{p}{q}\\) is in lowest terms.",
+      "hint": "Follow what the equation \\(p^2=2q^2\\) says first about \\(p\\) and then about \\(q\\)."
+    },
+    {
+      "id": "dynanca-509-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Assumptions for a conditional",
+      "learningObjective": "Choose the assumptions in a proof by contradiction of a conditional statement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "To prove \\(p\\implies q\\) by contradiction, what is assumed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\) is true and \\(q\\) is false."
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\) is false and \\(q\\) is true."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The negation of \\(p\\implies q\\) is \\(p\\land\\neg q\\). A proof by contradiction assumes this negation: the hypothesis holds but the conclusion fails. A contradiction then shows that this situation is impossible, which is exactly what \\(p\\implies q\\) asserts.",
+      "hint": "Recall the single case in which a conditional is false."
+    },
+    {
+      "id": "dynanca-509-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "No largest integer",
+      "learningObjective": "Identify the number that produces the contradiction in a proof that there is no largest integer.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "To prove by contradiction that there is no largest integer, suppose \\(N\\) is the largest integer. Which integer contradicts this assumption?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(N+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(N-1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number \\(N+1\\) is an integer and \\(N+1>N\\), which contradicts the assumption that \\(N\\) is the largest integer. The number \\(N-1\\) is smaller than \\(N\\) and causes no contradiction.",
+      "hint": "Look for an integer that is larger than \\(N\\)."
+    },
+    {
+      "id": "dynanca-509-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A parity contradiction",
+      "learningObjective": "Identify the contradiction in a proof that an equation has no integer solutions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "To prove by contradiction that no integers \\(x\\) and \\(y\\) satisfy \\(2x+4y=7\\), suppose such integers exist. Which contradiction arises?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The left side \\(2(x+2y)\\) is even, but \\(7\\) is odd."
+        },
+        {
+          "label": "B",
+          "text": "The left side is divisible by \\(4\\), but \\(7\\) is not."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The left side factors as \\(2(x+2y)\\), an even integer, while the right side \\(7\\) is odd. An even number cannot equal an odd number, so the assumption is false. The left side need not be divisible by \\(4\\) (for \\(x=1\\), \\(y=0\\) it equals \\(2\\)), so the second claim is incorrect.",
+      "hint": "Factor the left side and consider its parity."
+    },
+    {
+      "id": "dynanca-509-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The key number in Euclid's proof",
+      "learningObjective": "Describe the property of the number constructed in the proof that there are infinitely many primes.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "To prove by contradiction that there are infinitely many primes, suppose \\(p_1,p_2,\\ldots,p_k\\) are all the primes and let \\(N=p_1p_2\\cdots p_k+1\\). Which property of \\(N\\) leads to the contradiction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(N\\) is divisible by every \\(p_i\\), so \\(N\\) is not prime."
+        },
+        {
+          "label": "B",
+          "text": "\\(N\\) leaves remainder \\(1\\) on division by each \\(p_i\\), so no \\(p_i\\) divides \\(N\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(p_1p_2\\cdots p_k\\) is a multiple of each \\(p_i\\), dividing \\(N\\) by \\(p_i\\) leaves remainder \\(1\\). So none of the listed primes divides \\(N\\). But \\(N>1\\) must have some prime divisor, which is then missing from the list; this contradicts the assumption that the list was complete.",
+      "hint": "Consider the remainder when \\(N\\) is divided by one of the primes in the list."
+    },
+    {
+      "id": "dynanca-509-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "What a contradiction establishes",
+      "learningObjective": "Interpret the outcome of a proof by contradiction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a proof by contradiction, the assumption \"\\(S\\) is false\" leads to a contradiction. What does this establish?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The statement \\(S\\) is false."
+        },
+        {
+          "label": "B",
+          "text": "The assumption is impossible, so \\(S\\) is true."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A contradiction cannot follow from true assumptions by correct reasoning. So the assumption \"\\(S\\) is false\" must itself be false, which means that \\(S\\) is true. The contradiction refutes the assumption, not the statement to be proved.",
+      "hint": "Ask which statement was assumed in order to reach the contradiction."
+    },
+    {
+      "id": "dynanca-509-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Contradiction for a parity statement",
+      "learningObjective": "Choose the pair of assumptions that starts a proof by contradiction of a parity statement.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The statement \"if \\(n^2\\) is even, then \\(n\\) is even\" is to be proved by contradiction. Which assumptions start the proof?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n^2\\) is even and \\(n\\) is odd."
+        },
+        {
+          "label": "B",
+          "text": "\\(n^2\\) is odd and \\(n\\) is even."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The negation of the conditional keeps the hypothesis and negates the conclusion: \\(n^2\\) is even and \\(n\\) is not even, that is, odd. From \\(n=2k+1\\) one gets \\(n^2=2(2k^2+2k)+1\\), which is odd, contradicting the assumption that \\(n^2\\) is even.",
+      "hint": "Keep the hypothesis and negate the conclusion."
+    },
+    {
+      "id": "dynanca-509-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Rational plus irrational",
+      "learningObjective": "Justify the key step in a proof by contradiction about a sum.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "To prove that the sum of a rational number \\(r\\) and an irrational number \\(x\\) is irrational, suppose \\(r+x=s\\) is rational. Which step produces the contradiction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Then \\(r=s-x\\) is a difference of two irrational numbers, so \\(r\\) is irrational."
+        },
+        {
+          "label": "B",
+          "text": "Then \\(x=s-r\\) is a difference of two rational numbers, so \\(x\\) is rational."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Solving for \\(x\\) gives \\(x=s-r\\). The difference of two rational numbers is rational, so \\(x\\) would be rational, contradicting the fact that \\(x\\) is irrational. The second step is not justified: \\(s\\) is assumed rational, and a difference of irrational numbers need not be irrational anyway.",
+      "hint": "Solve the equation for the irrational number and consider what kind of number the other side is."
+    }
+  ]
+}

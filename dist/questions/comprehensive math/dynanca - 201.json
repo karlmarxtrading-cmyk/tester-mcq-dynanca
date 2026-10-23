@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-201",
+  "category": "Comprehensive Mathematics",
+  "title": "201. Algebra, Equations & Inequalities: Solving Rational Equations with Domain Restrictions",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-201-q001",
+      "category": "Algebra",
+      "concept": "Domain restrictions for rational equations",
+      "learningObjective": "Identify all excluded values for a rational equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For the equation \\(\\frac{3}{x-2}+\\frac{1}{x+5}=0\\), what are all restrictions on \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x \\ne 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x \\ne 2\\) and \\(x \\ne -5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A rational expression is undefined when a denominator equals zero. Set each denominator to zero: \\(x-2=0\\) gives \\(x=2\\), and \\(x+5=0\\) gives \\(x=-5\\). Therefore both values must be excluded, so \\(x \\ne 2\\) and \\(x \\ne -5\\).",
+      "hint": "Set each denominator equal to zero; any value that makes a denominator zero is not allowed."
+    },
+    {
+      "id": "dynanca-201-q002",
+      "category": "Algebra",
+      "concept": "Solving simple rational equations",
+      "learningObjective": "Solve a rational equation by cross multiplication and check the domain.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\frac{2}{x}=\\frac{3}{x+1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain excludes \\(x=0\\) and \\(x=-1\\). Cross multiply: \\(2(x+1)=3x\\). Then \\(2x+2=3x\\), so \\(x=2\\). Since \\(2\\) is not excluded, it is a valid solution.",
+      "hint": "Cross multiply first, then check whether the result makes any original denominator zero."
+    },
+    {
+      "id": "dynanca-201-q003",
+      "category": "Algebra",
+      "concept": "Extraneous solutions in rational equations",
+      "learningObjective": "Determine when a rational equation has no solution because of a domain restriction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Solve \\(\\frac{x}{x-3}=\\frac{3}{x-3}+2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "No solution"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain excludes \\(x=3\\). Multiply both sides by \\(x-3\\): \\(x=3+2(x-3)=3+2x-6=2x-3\\). Then \\(x=3\\). But \\(x=3\\) is excluded from the original equation, so it is extraneous. The equation has no solution.",
+      "hint": "Solve the cleared equation, then check whether the result is allowed by the original denominators."
+    },
+    {
+      "id": "dynanca-201-q004",
+      "category": "Algebra",
+      "concept": "Solving rational equations with two valid solutions",
+      "learningObjective": "Solve a rational equation by clearing denominators and verifying both solutions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\frac{1}{x-1}+\\frac{2}{x+1}=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=0\\) or \\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1\\) or \\(x=-1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain excludes \\(x=1\\) and \\(x=-1\\). Multiply by \\((x-1)(x+1)\\): \\((x+1)+2(x-1)=x^2-1\\). Then \\(x+1+2x-2=x^2-1\\), so \\(3x-1=x^2-1\\), which gives \\(x^2-3x=0\\). Thus \\(x(x-3)=0\\), so \\(x=0\\) or \\(x=3\\). Both values are allowed in the original equation.",
+      "hint": "Multiply by the product of the denominators, then factor the resulting quadratic."
+    },
+    {
+      "id": "dynanca-201-q005",
+      "category": "Algebra",
+      "concept": "Rational equations with a binomial denominator",
+      "learningObjective": "Solve a rational equation after clearing a common binomial denominator.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(\\frac{x}{x+4}+1=\\frac{4}{x+4}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain excludes \\(x=-4\\). Multiply both sides by \\(x+4\\): \\(x+(x+4)=4\\). Then \\(2x+4=4\\), so \\(2x=0\\), and \\(x=0\\). Since \\(0\\ne -4\\), it is a valid solution.",
+      "hint": "Clear the denominator \\(x+4\\), but remember that \\(x=-4\\) cannot be a solution."
+    },
+    {
+      "id": "dynanca-201-q006",
+      "category": "Algebra",
+      "concept": "Rational equations with factored denominators",
+      "learningObjective": "Solve a rational equation by multiplying by the least common denominator.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\frac{2}{x-3}-\\frac{1}{x}=\\frac{1}{x(x-3)}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain excludes \\(x=0\\) and \\(x=3\\). Multiply by \\(x(x-3)\\): \\(2x-(x-3)=1\\). Then \\(2x-x+3=1\\), so \\(x+3=1\\), and \\(x=-2\\). This value is not excluded, so it is valid.",
+      "hint": "Multiply every term by \\(x(x-3)\\), then check the result against the excluded values."
+    },
+    {
+      "id": "dynanca-201-q007",
+      "category": "Algebra",
+      "concept": "Identifying rational equations with no solution",
+      "learningObjective": "Distinguish an identity from an equation whose only candidate is excluded.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Which equation has no solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{x}{x-1}=1+\\frac{1}{x-1}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{x}{x-1}=2+\\frac{1}{x-1}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For both equations, the domain excludes \\(x=1\\). For A, multiplying by \\(x-1\\) gives \\(x=(x-1)+1=x\\), which is true for every allowed \\(x\\). Thus A has infinitely many solutions, not no solution. For B, multiplying gives \\(x=2(x-1)+1=2x-1\\), so \\(x=1\\). But \\(x=1\\) is excluded, so B has no solution.",
+      "hint": "Clear the denominator in each equation, then check whether the resulting candidate is allowed by the domain."
+    },
+    {
+      "id": "dynanca-201-q008",
+      "category": "Algebra",
+      "concept": "Rational inequalities with domain restrictions",
+      "learningObjective": "Solve a rational inequality by using critical values and sign analysis.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve the inequality \\(\\frac{x-1}{x+2}\\ge0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2<x\\le1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x<-2\\) or \\(x\\ge1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain excludes \\(x=-2\\). The critical values are \\(x=-2\\) and \\(x=1\\). On \\(x<-2\\), both numerator and denominator are negative, so the quotient is positive. On \\(-2<x<1\\), the numerator is negative and the denominator is positive, so the quotient is negative. On \\(x>1\\), both are positive, so the quotient is positive. At \\(x=1\\), the quotient is \\(0\\), which satisfies \\(\\frac{x-1}{x+2}\\ge 0\\); at \\(x=-2\\), it is undefined. Therefore the solution is \\(x<-2\\) or \\(x\\ge1\\).",
+      "hint": "Find the values that make the numerator or denominator zero, then test the sign on each interval."
+    },
+    {
+      "id": "dynanca-201-q009",
+      "category": "Algebra",
+      "concept": "Solving rational equations with a difference of squares denominator",
+      "learningObjective": "Solve a rational equation by combining fractions and checking the domain.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\frac{1}{x-1}+\\frac{1}{x+1}=\\frac{4}{x^2-1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain excludes \\(x=1\\) and \\(x=-1\\). Since \\(x^2-1=(x-1)(x+1)\\), combine the left side:\n\\[\n\\frac{1}{x-1}+\\frac{1}{x+1}=\\frac{(x+1)+(x-1)}{x^2-1}=\\frac{2x}{x^2-1}\n\\]\nThe equation becomes \\(\\frac{2x}{x^2-1}=\\frac{4}{x^2-1}\\). Thus \\(2x=4\\), so \\(x=2\\). This value is allowed.",
+      "hint": "Combine the two fractions on the left using the common denominator \\(x^2-1\\)."
+    },
+    {
+      "id": "dynanca-201-q010",
+      "category": "Algebra",
+      "concept": "Parameter conditions for rational equations with domain restrictions",
+      "learningObjective": "Determine a parameter value that makes a rational equation have no solution due to an excluded value.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For what value of \\(k\\) does the equation \\(\\frac{x}{x-4}=\\frac{k}{x-4}+2\\) have no solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=-4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain excludes \\(x=4\\). Multiply both sides by \\(x-4\\): \\(x=k+2(x-4)=k+2x-8\\). Rearranging gives \\(x=8-k\\). The equation has no solution exactly when this candidate is excluded, so require \\(8-k=4\\), which gives \\(k=4\\). When \\(k=4\\), the only candidate is \\(x=4\\), which is not allowed. Option B gives the candidate \\(x=12\\), which is a valid solution.",
+      "hint": "Solve for \\(x\\) in terms of \\(k\\), then force the candidate solution to equal the excluded value."
+    }
+  ]
+}

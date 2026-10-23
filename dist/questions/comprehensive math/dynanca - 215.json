@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-215",
+  "category": "Comprehensive Mathematics",
+  "title": "215. Algebra, Equations & Inequalities: Solving Logarithmic Equations with Domain Checks",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-215-q001",
+      "category": "Algebra",
+      "concept": "Solving a logarithmic equation with a single logarithm",
+      "learningObjective": "Solve a logarithmic equation and verify that the solution satisfies the domain restriction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\log_2(x-1)=3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain requires \\(x-1>0\\), so \\(x>1\\). Rewrite the equation in exponential form: \\(x-1=2^3=8\\). Thus \\(x=9\\). Since \\(9>1\\), the solution is valid. The value \\(x=7\\) gives \\(\\log_2 6\\), which is not \\(3\\).",
+      "hint": "Convert the logarithmic equation to exponential form, then check that the argument is positive."
+    },
+    {
+      "id": "dynanca-215-q002",
+      "category": "Algebra",
+      "concept": "Solving a logarithmic equation with a single logarithm",
+      "learningObjective": "Solve a logarithmic equation and reject values outside the domain.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\log_3(x+2)=2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=11\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain requires \\(x+2>0\\), so \\(x>-2\\). Rewrite in exponential form: \\(x+2=3^2=9\\). Thus \\(x=7\\). Since \\(7>-2\\), the solution is valid. The value \\(x=11\\) gives \\(\\log_3 13\\), which is not \\(2\\).",
+      "hint": "Use the definition of logarithm to rewrite the equation, then check the domain condition."
+    },
+    {
+      "id": "dynanca-215-q003",
+      "category": "Algebra",
+      "concept": "Solving logarithmic equations using logarithm laws and domain checks",
+      "learningObjective": "Solve a logarithmic equation by combining logarithms and checking the domain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(\\log(x-1)+\\log(x+2)=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-4\\) or \\(x=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain requires \\(x-1>0\\) and \\(x+2>0\\), so \\(x>1\\). Combine the logarithms: \\(\\log[(x-1)(x+2)]=1\\). Then \\((x-1)(x+2)=10\\), so \\(x^2+x-2=10\\), which gives \\(x^2+x-12=0\\). Factor: \\((x+4)(x-3)=0\\), so \\(x=-4\\) or \\(x=3\\). Since the domain requires \\(x>1\\), only \\(x=3\\) is valid. The value \\(x=-4\\) makes \\(x-1<0\\), so it is extraneous.",
+      "hint": "Combine the logarithms into one logarithm, solve the resulting equation, and then check each candidate in the domain."
+    },
+    {
+      "id": "dynanca-215-q004",
+      "category": "Algebra",
+      "concept": "Solving logarithmic equations with sum of logarithms",
+      "learningObjective": "Solve a logarithmic equation by using the product rule and domain restrictions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\log_2(x-1)+\\log_2(x+3)=5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-7\\) or \\(x=5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain requires \\(x-1>0\\) and \\(x+3>0\\), so \\(x>1\\). Combine the logarithms: \\(\\log_2[(x-1)(x+3)]=5\\). Then \\((x-1)(x+3)=2^5=32\\), so \\(x^2+2x-3=32\\), which gives \\(x^2+2x-35=0\\). Factor: \\((x+7)(x-5)=0\\), so \\(x=-7\\) or \\(x=5\\). Since the domain requires \\(x>1\\), only \\(x=5\\) is valid. The value \\(x=-7\\) makes \\(x-1<0\\), so it is extraneous.",
+      "hint": "Combine the logarithms, solve the quadratic, and reject any value that does not satisfy all domain conditions."
+    },
+    {
+      "id": "dynanca-215-q005",
+      "category": "Algebra",
+      "concept": "Solving logarithmic equations with equal logarithms",
+      "learningObjective": "Solve an equation of the form \\(\\log_a A=\\log_a B\\) and check the domain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\log_3(x+4)=\\log_3(2x-1)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain requires \\(x+4>0\\) and \\(2x-1>0\\), so \\(x>\\frac{1}{2}\\). Since the logarithms have the same base, equate the arguments: \\(x+4=2x-1\\). Then \\(5=x\\), so \\(x=5\\). Since \\(5>\\frac{1}{2}\\), the solution is valid. The value \\(x=-5\\) makes \\(x+4<0\\), so it is not in the domain.",
+      "hint": "Equate the arguments of the logarithms, then check that both arguments are positive."
+    },
+    {
+      "id": "dynanca-215-q006",
+      "category": "Algebra",
+      "concept": "Solving logarithmic equations with quadratic arguments",
+      "learningObjective": "Solve a logarithmic equation with a quadratic argument and apply domain checks.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(\\log_2(x^2-4)=\\log_2(3x)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-1\\) or \\(x=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain requires \\(x^2-4>0\\) and \\(3x>0\\), so \\(x>2\\). Equate the arguments: \\(x^2-4=3x\\). Then \\(x^2-3x-4=0\\), which factors as \\((x-4)(x+1)=0\\), so \\(x=4\\) or \\(x=-1\\). Since the domain requires \\(x>2\\), only \\(x=4\\) is valid. The value \\(x=-1\\) makes \\(x^2-4<0\\) and \\(3x<0\\), so it is extraneous.",
+      "hint": "Equate the arguments, solve the quadratic, and check both domain conditions."
+    },
+    {
+      "id": "dynanca-215-q007",
+      "category": "Algebra",
+      "concept": "Solving logarithmic equations with logarithms on both sides",
+      "learningObjective": "Solve a logarithmic equation by combining terms and rejecting extraneous solutions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\log(x+1)+\\log(x-2)=\\log(4x-6)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1\\) or \\(x=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain requires \\(x+1>0\\), \\(x-2>0\\), and \\(4x-6>0\\), so \\(x>2\\). Combine the left side: \\(\\log[(x+1)(x-2)]=\\log(4x-6)\\). Equate the arguments: \\((x+1)(x-2)=4x-6\\). Expanding gives \\(x^2-x-2=4x-6\\), so \\(x^2-5x+4=0\\). Factor: \\((x-1)(x-4)=0\\), so \\(x=1\\) or \\(x=4\\). Since the domain requires \\(x>2\\), only \\(x=4\\) is valid. The value \\(x=1\\) makes \\(x-2<0\\), so it is extraneous.",
+      "hint": "Combine the logarithms, equate the arguments, and check every candidate against all domain restrictions."
+    },
+    {
+      "id": "dynanca-215-q008",
+      "category": "Algebra",
+      "concept": "Solving logarithmic equations with sum of logarithms",
+      "learningObjective": "Solve a logarithmic equation by using the product rule and checking the domain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(\\log_2(x+5)+\\log_2(x-1)=4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-7\\) or \\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain requires \\(x+5>0\\) and \\(x-1>0\\), so \\(x>1\\). Combine the logarithms: \\(\\log_2[(x+5)(x-1)]=4\\). Then \\((x+5)(x-1)=2^4=16\\), so \\(x^2+4x-5=16\\), which gives \\(x^2+4x-21=0\\). Factor: \\((x+7)(x-3)=0\\), so \\(x=-7\\) or \\(x=3\\). Since the domain requires \\(x>1\\), only \\(x=3\\) is valid. The value \\(x=-7\\) makes \\(x+5<0\\), so it is extraneous.",
+      "hint": "Combine the logarithms, solve the quadratic, and discard any value that does not satisfy the domain."
+    },
+    {
+      "id": "dynanca-215-q009",
+      "category": "Algebra",
+      "concept": "Solving logarithmic equations with domain restrictions",
+      "learningObjective": "Solve a logarithmic equation and identify the valid solution after domain checking.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\log_3(x-2)+\\log_3(x+4)=3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain requires \\(x-2>0\\) and \\(x+4>0\\), so \\(x>2\\). Combine the logarithms: \\(\\log_3[(x-2)(x+4)]=3\\). Then \\((x-2)(x+4)=3^3=27\\), so \\(x^2+2x-8=27\\), which gives \\(x^2+2x-35=0\\). Factor: \\((x+7)(x-5)=0\\), so \\(x=-7\\) or \\(x=5\\). Since the domain requires \\(x>2\\), only \\(x=5\\) is valid. The value \\(x=-7\\) makes \\(x-2<0\\), so it is extraneous.",
+      "hint": "Combine the logarithms, solve the quadratic, and reject any candidate that violates the domain."
+    },
+    {
+      "id": "dynanca-215-q010",
+      "category": "Algebra",
+      "concept": "Solving logarithmic equations with domain restrictions",
+      "learningObjective": "Solve a logarithmic equation by combining logarithms and checking the domain.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Solve \\(\\log_2(x-3)+\\log_2(x+1)=5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain requires \\(x-3>0\\) and \\(x+1>0\\), so \\(x>3\\). Combine the logarithms: \\(\\log_2[(x-3)(x+1)]=5\\). Then \\((x-3)(x+1)=2^5=32\\), so \\(x^2-2x-3=32\\), which gives \\(x^2-2x-35=0\\). Factor: \\((x-7)(x+5)=0\\), so \\(x=7\\) or \\(x=-5\\). Since the domain requires \\(x>3\\), only \\(x=7\\) is valid. The value \\(x=-5\\) makes \\(x-3<0\\), so it is extraneous.",
+      "hint": "Combine the logarithms, solve the quadratic, and check that each candidate satisfies all domain conditions."
+    }
+  ]
+}

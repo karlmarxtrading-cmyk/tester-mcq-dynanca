@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-497",
+  "category": "Comprehensive Mathematics",
+  "title": "497. Sets, Logic, Reasoning & Proof: Necessary and Sufficient Conditions",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-497-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Meaning of a sufficient condition",
+      "learningObjective": "Translate a sufficiency statement into a conditional.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which conditional expresses \"\\(p\\) is a sufficient condition for \\(q\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(q\\implies p\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\implies q\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A sufficient condition guarantees the result: whenever \\(p\\) holds, \\(q\\) holds. That is the conditional \\(p\\implies q\\). The conditional \\(q\\implies p\\) says that \\(p\\) is necessary for \\(q\\).",
+      "hint": "\"Sufficient\" means \"enough to guarantee\"."
+    },
+    {
+      "id": "dynanca-497-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Meaning of a necessary condition",
+      "learningObjective": "Translate a necessity statement into a conditional.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which conditional expresses \"\\(p\\) is a necessary condition for \\(q\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\implies q\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(q\\implies p\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A necessary condition is one that must hold for the result to hold: \\(q\\) cannot be true without \\(p\\). So whenever \\(q\\) is true, \\(p\\) is true, which is \\(q\\implies p\\). The conditional \\(p\\implies q\\) expresses that \\(p\\) is sufficient for \\(q\\).",
+      "hint": "\"Necessary\" means that the result cannot happen without it."
+    },
+    {
+      "id": "dynanca-497-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A sufficient condition that is not necessary",
+      "learningObjective": "Classify a divisibility condition as sufficient but not necessary.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For an integer \\(n\\), how is the condition \"\\(n\\) is divisible by \\(4\\)\" related to \"\\(n\\) is even\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is necessary but not sufficient."
+        },
+        {
+          "label": "B",
+          "text": "It is sufficient but not necessary."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every multiple of \\(4\\) is even, so divisibility by \\(4\\) guarantees evenness: it is sufficient. It is not necessary, because \\(6\\) is even without being divisible by \\(4\\).",
+      "hint": "Ask two questions: does the condition guarantee the result, and can the result occur without it?"
+    },
+    {
+      "id": "dynanca-497-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A necessary condition that is not sufficient",
+      "learningObjective": "Classify a divisibility condition as necessary but not sufficient.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For an integer \\(n\\), how is the condition \"\\(n\\) is divisible by \\(5\\)\" related to \"\\(n\\) is divisible by \\(10\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is necessary but not sufficient."
+        },
+        {
+          "label": "B",
+          "text": "It is sufficient but not necessary."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A number divisible by \\(10\\) must be divisible by \\(5\\), so the condition is necessary. It is not sufficient, because \\(15\\) is divisible by \\(5\\) but not by \\(10\\).",
+      "hint": "Check whether the result forces the condition, and whether the condition forces the result."
+    },
+    {
+      "id": "dynanca-497-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A sufficient condition for an equation",
+      "learningObjective": "Classify an equation as a sufficient but not necessary condition for another.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "For a real number \\(x\\), how is the condition \\(x=3\\) related to \\(x^2=9\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is sufficient but not necessary."
+        },
+        {
+          "label": "B",
+          "text": "It is necessary and sufficient."
+        }
+      ],
+      "answer": "A",
+      "explanation": "If \\(x=3\\), then \\(x^2=9\\), so the condition is sufficient. It is not necessary, because \\(x=-3\\) also gives \\(x^2=9\\). A condition that is both necessary and sufficient would be \"\\(x=3\\) or \\(x=-3\\)\".",
+      "hint": "Look for another value of \\(x\\) with the same square."
+    },
+    {
+      "id": "dynanca-497-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A necessary condition in geometry",
+      "learningObjective": "Classify a geometric condition as necessary but not sufficient.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How is the condition \"the quadrilateral is a rectangle\" related to \"the quadrilateral is a square\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is necessary but not sufficient."
+        },
+        {
+          "label": "B",
+          "text": "It is sufficient but not necessary."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every square has four right angles, so every square is a rectangle; being a rectangle is necessary for being a square. It is not sufficient, because a rectangle with sides \\(2\\) and \\(3\\) is not a square.",
+      "hint": "Decide which of the two classes of figures contains the other."
+    },
+    {
+      "id": "dynanca-497-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A necessary and sufficient condition",
+      "learningObjective": "Recognise a condition that is both necessary and sufficient.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For an integer \\(n\\), how is the condition \"\\(n\\) is divisible by \\(2\\) and by \\(3\\)\" related to \"\\(n\\) is divisible by \\(6\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is necessary but not sufficient."
+        },
+        {
+          "label": "B",
+          "text": "It is necessary and sufficient."
+        }
+      ],
+      "answer": "B",
+      "explanation": "If \\(n\\) is divisible by \\(6\\), it is divisible by \\(2\\) and by \\(3\\), so the condition is necessary. Conversely, if \\(n\\) is divisible by both \\(2\\) and \\(3\\), which have no common factor other than \\(1\\), then \\(n\\) is divisible by \\(6\\), so the condition is sufficient. Both directions hold.",
+      "hint": "Check both directions of the implication."
+    },
+    {
+      "id": "dynanca-497-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A necessary condition in words",
+      "learningObjective": "Translate an everyday necessity statement into a conditional sentence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which sentence says that passing the final examination is necessary for graduating?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"If a student has passed the final examination, then the student graduates.\""
+        },
+        {
+          "label": "B",
+          "text": "\"If a student graduates, then the student has passed the final examination.\""
+        }
+      ],
+      "answer": "B",
+      "explanation": "\"Necessary for graduating\" means that graduating cannot happen without passing: every student who graduates has passed. The second sentence says that passing is enough to graduate, which makes it a sufficient condition; there may be other requirements.",
+      "hint": "A necessary condition appears as the conclusion of the conditional."
+    },
+    {
+      "id": "dynanca-497-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Comparing two inequalities",
+      "learningObjective": "Classify one inequality as a necessary condition for a stronger inequality.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For a real number \\(x\\), how is the condition \\(x>3\\) related to \\(x>5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is necessary but not sufficient."
+        },
+        {
+          "label": "B",
+          "text": "It is sufficient but not necessary."
+        }
+      ],
+      "answer": "A",
+      "explanation": "If \\(x>5\\), then certainly \\(x>3\\), so \\(x>3\\) is necessary for \\(x>5\\). It is not sufficient: \\(x=4\\) satisfies \\(x>3\\) but not \\(x>5\\). The stronger inequality \\(x>5\\) is the one that is sufficient for \\(x>3\\).",
+      "hint": "Decide which inequality implies the other, and test a number between \\(3\\) and \\(5\\)."
+    },
+    {
+      "id": "dynanca-497-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Chains of conditions",
+      "learningObjective": "Combine two sufficiency statements and restate the result as a necessity.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Suppose \\(p\\) is sufficient for \\(q\\), and \\(q\\) is sufficient for \\(r\\). How is \\(r\\) related to \\(p\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(r\\) is necessary for \\(p\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(r\\) is sufficient for \\(p\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The assumptions are \\(p\\implies q\\) and \\(q\\implies r\\), which together give \\(p\\implies r\\). So \\(p\\) is sufficient for \\(r\\), which is the same as saying that \\(r\\) is necessary for \\(p\\). Nothing guarantees \\(r\\implies p\\); for instance, with \\(p\\): \"divisible by \\(8\\)\", \\(q\\): \"divisible by \\(4\\)\", \\(r\\): \"even\", the number \\(2\\) satisfies \\(r\\) but not \\(p\\).",
+      "hint": "Chain the two conditionals, then recall that \\(p\\implies r\\) makes \\(r\\) a necessary condition for \\(p\\)."
+    }
+  ]
+}

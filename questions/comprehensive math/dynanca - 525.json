@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-525",
+  "category": "Comprehensive Mathematics",
+  "title": "525. Sets, Logic, Reasoning & Proof: Reflexive Relations",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-525-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of a reflexive relation",
+      "learningObjective": "State the definition of a reflexive relation on a set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "When is a relation \\(R\\) on a set \\(A\\) reflexive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When \\((a,a)\\in R\\) for every \\(a\\in A\\)"
+        },
+        {
+          "label": "B",
+          "text": "When \\((a,b)\\in R\\) implies \\((b,a)\\in R\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A relation is reflexive when every element is related to itself. The condition \"\\((a,b)\\in R\\) implies \\((b,a)\\in R\\)\" defines a symmetric relation, which is a different property.",
+      "hint": "Reflexivity concerns pairs whose two components are equal."
+    },
+    {
+      "id": "dynanca-525-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Recognising a reflexive relation",
+      "learningObjective": "Decide which relation on a small set is reflexive.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Which relation on \\(A=\\{1,2,3\\}\\) is reflexive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{(1,1),(2,2),(1,2)\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{(1,1),(2,2),(3,3),(1,2)\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A reflexive relation on \\(A\\) must contain \\((1,1)\\), \\((2,2)\\), and \\((3,3)\\). The first relation contains all three; the extra pair \\((1,2)\\) does no harm. The second relation lacks \\((3,3)\\), so it is not reflexive on \\(A\\).",
+      "hint": "Check that every element of \\(A\\) appears paired with itself."
+    },
+    {
+      "id": "dynanca-525-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Reflexivity of the strict order",
+      "learningObjective": "Decide whether the relation less than is reflexive.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Is the relation \\(<\\) on the integers reflexive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because \\(a<a\\) is false for every integer \\(a\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because every integer can be compared with every integer."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reflexivity would require \\(a<a\\) for every integer \\(a\\). But no integer is less than itself, so the relation is not reflexive. Whether elements can be compared has nothing to do with reflexivity.",
+      "hint": "Test the defining condition with a specific integer, such as \\(a=5\\)."
+    },
+    {
+      "id": "dynanca-525-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Reflexivity of the non-strict order",
+      "learningObjective": "Decide whether the relation less than or equal to is reflexive.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Is the relation \\(\\le\\) on the integers reflexive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because \\(a\\le a\\) would require \\(a<a\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because \\(a\\le a\\) holds for every integer \\(a\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The statement \\(a\\le a\\) means \"\\(a<a\\) or \\(a=a\\)\". Since \\(a=a\\) is true, \\(a\\le a\\) holds for every integer, and the relation is reflexive.",
+      "hint": "Recall that \\(\\le\\) allows equality."
+    },
+    {
+      "id": "dynanca-525-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Reflexivity of divisibility",
+      "learningObjective": "Decide whether divisibility on the positive integers is reflexive.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "On the positive integers, is the relation \"\\(a\\) divides \\(b\\)\" reflexive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because \\(a=a\\cdot 1\\) for every positive integer \\(a\\)."
+        },
+        {
+          "label": "B",
+          "text": "No, because a number cannot be a proper divisor of itself."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divisibility requires \\(b=ak\\) for some integer \\(k\\). With \\(b=a\\) and \\(k=1\\) this holds, so every positive integer divides itself and the relation is reflexive. The relation \"is a proper divisor of\" would not be reflexive, but that is a different relation.",
+      "hint": "Use the definition of divisibility with both numbers equal."
+    },
+    {
+      "id": "dynanca-525-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Fewest pairs in a reflexive relation",
+      "learningObjective": "Find the minimum number of pairs in a reflexive relation on a finite set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the smallest possible number of ordered pairs in a reflexive relation on a set with \\(4\\) elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A reflexive relation must contain the pair \\((a,a)\\) for each of the \\(4\\) elements, and it need not contain anything else. So the minimum is \\(4\\). The number \\(16\\) is the total number of ordered pairs available, which is the maximum.",
+      "hint": "List the pairs that reflexivity forces to be present."
+    },
+    {
+      "id": "dynanca-525-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A missing pair",
+      "learningObjective": "Decide whether a relation is reflexive on the stated set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(A=\\{1,2,3\\}\\) and \\(R=\\{(1,1),(2,2)\\}\\). Is \\(R\\) reflexive on \\(A\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because \\((3,3)\\notin R\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because every pair in \\(R\\) has equal components."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reflexivity on \\(A\\) requires the pair \\((a,a)\\) for every element of \\(A\\), including \\(3\\). Since \\((3,3)\\) is missing, \\(R\\) is not reflexive on \\(A\\). Having only pairs with equal components is not the requirement; all such pairs must be present.",
+      "hint": "Reflexivity depends on the set \\(A\\): check every element of \\(A\\)."
+    },
+    {
+      "id": "dynanca-525-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A geometric relation that is not reflexive",
+      "learningObjective": "Decide whether perpendicularity of lines is reflexive.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "On the set of all lines in a plane, is the relation \"is perpendicular to\" reflexive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because a line is not perpendicular to itself."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because every line has a perpendicular line."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reflexivity would require every line to be perpendicular to itself. A line makes an angle of \\(0^\\circ\\) with itself, not \\(90^\\circ\\), so the relation is not reflexive. The existence of some perpendicular line for each line is irrelevant.",
+      "hint": "Ask whether a line can be related to itself by this relation."
+    },
+    {
+      "id": "dynanca-525-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting reflexive relations",
+      "learningObjective": "Count the reflexive relations on a two-element set.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How many reflexive relations are there on the set \\(\\{1,2\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A reflexive relation must contain \\((1,1)\\) and \\((2,2)\\). The remaining pairs \\((1,2)\\) and \\((2,1)\\) may each be included or not, giving \\(2\\cdot 2=4\\) reflexive relations. The number \\(16=2^4\\) counts all relations on the set, reflexive or not.",
+      "hint": "Decide which pairs are forced and which are free."
+    },
+    {
+      "id": "dynanca-525-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Neither reflexive nor irreflexive",
+      "learningObjective": "Distinguish a relation that is not reflexive from an irreflexive relation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A relation on \\(A\\) is called irreflexive if \\((a,a)\\notin R\\) for every \\(a\\in A\\). Let \\(A=\\{1,2\\}\\) and \\(R=\\{(1,1),(1,2)\\}\\). Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(R\\) is neither reflexive nor irreflexive."
+        },
+        {
+          "label": "B",
+          "text": "\\(R\\) is irreflexive, because it is not reflexive."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The pair \\((2,2)\\) is missing, so \\(R\\) is not reflexive. The pair \\((1,1)\\) is present, so \\(R\\) is not irreflexive either. \"Not reflexive\" means that some element is not related to itself; \"irreflexive\" means that no element is related to itself, which is a stronger condition.",
+      "hint": "Check each definition separately: are all pairs \\((a,a)\\) present, and are all of them absent?"
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-458",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 458",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-458-q001",
+      "category": "Integrated Mathematics",
+      "concept": "Sequence and Summation",
+      "learningObjective": "Find the general term of a sequence and calculate the sum of its first n terms.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(a_1 = 1\\), and \\(a_{n+1} = a_n + 2^n\\) for \\(n \\ge 1\\). Let \\(S_n\\) be the sum of the first \\(n\\) terms of the sequence \\(\\{a_n\\}\\). Find \\(S_n\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2^{n+1} - n\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2^{n+1} - n - 2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From the recurrence relation, we have \\(a_n - a_{n-1} = 2^{n-1}\\) for \\(n \\ge 2\\).\nSumming these differences gives \\(a_n - a_1 = 2^1 + 2^2 + \\dots + 2^{n-1} = 2^n - 2\\).\nSince \\(a_1 = 1\\), we get \\(a_n = 2^n - 1\\).\nThe sum of the first \\(n\\) terms is \\[\n\\begin{aligned}\nS_n &= \\sum_{k=1}^n (2^k - 1) \\\\\n&= (2^1 + 2^2 + \\dots + 2^n) - n \\\\\n&= 2^{n+1} - 2 - n\n\\end{aligned}\n\\].",
+      "hint": "Use the method of differences to find the general term \\(a_n\\), then apply the geometric series sum formula."
+    },
+    {
+      "id": "math-gaokao-458-q002",
+      "category": "Integrated Mathematics",
+      "concept": "Derivatives and Extrema",
+      "learningObjective": "Determine the minimum value of a function using derivatives.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x) = e^x - x - 1\\). Find the minimum value of \\(f(x)\\) on \\(\\mathbb{R}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "To find the minimum value, we first compute the derivative: \\(f'(x) = e^x - 1\\).\nSetting \\(f'(x) = 0\\) gives \\(e^x = 1\\), which implies \\(x = 0\\).\nFor \\(x < 0\\), \\(f'(x) < 0\\), so \\(f(x)\\) is decreasing. For \\(x > 0\\), \\(f'(x) > 0\\), so \\(f(x)\\) is increasing.\nThus, \\(f(x)\\) attains its global minimum at \\(x = 0\\).\nThe minimum value is \\(f(0) = e^0 - 0 - 1 = 0\\).",
+      "hint": "Find the critical points by setting the first derivative to zero and use the first derivative test to confirm the minimum."
+    },
+    {
+      "id": "math-gaokao-458-q003",
+      "category": "Integrated Mathematics",
+      "concept": "Analytic Geometry and Vectors",
+      "learningObjective": "Solve a comprehensive problem involving a parabola, vector conditions, and chord length.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Given the parabola \\(C: y^2 = 4x\\) with focus \\(F\\). A line passing through \\(F\\) intersects \\(C\\) at points \\(A\\) and \\(B\\). If \\(\\vec{AF} = 2\\vec{FB}\\), find the length of the chord \\(AB\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{9}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The focus of \\(y^2 = 4x\\) is \\(F(1, 0)\\). Let \\(A = (x_1, y_1)\\) and \\(B = (x_2, y_2)\\).\nThe condition \\(\\vec{AF} = 2\\vec{FB}\\) implies \\(F\\) is between \\(A\\) and \\(B\\), and \\(|AF| = 2|FB|\\).\nThis gives \\(y_1 = -2y_2\\).\nFor a chord through the focus of this parabola, \\(y_1y_2=-4\\). This follows by writing the line as \\(x=1+ky\\) and applying the product-of-roots formula to \\(y^2-4ky-4=0\\).\nSubstituting \\(y_1 = -2y_2\\) gives \\(-2y_2^2 = -4\\), so \\(y_2^2 = 2\\).\nThen \\(x_2 = \\frac{y_2^2}{4} = \\frac{1}{2}\\) and \\[\n\\begin{aligned}\nx_1 &= \\frac{y_1^2}{4} \\\\\n&= \\frac{4y_2^2}{4} \\\\\n&= 2\n\\end{aligned}\n\\].\nThe length of the chord is \\[\n\\begin{aligned}\n|AB|&=|AF|+|FB| \\\\\n&=(x_1+1)+(x_2+1) \\\\\n&=2+\\frac{1}{2}+2 \\\\\n&=\\frac{9}{2}\n\\end{aligned}\n\\].",
+      "hint": "Use the vector condition to establish a relationship between the y-coordinates of A and B, and apply the property \\(y_1y_2=-4\\) for a chord passing through the focus."
+    },
+    {
+      "id": "math-gaokao-458-q004",
+      "category": "Integrated Mathematics",
+      "concept": "Piecewise Functions and Zeros",
+      "learningObjective": "Determine the number of solutions to a composite piecewise function equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\[\nf(x) = \\begin{cases} x^2 - 2, & x \\le 0 \\\\ 2 - x, & x > 0 \\end{cases}\n\\]. Find the number of real solutions to the equation \\(f(f(x)) = 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First, solve \\(f(t) = 0\\) to find the possible values of \\(f(x)\\).\nFor \\(t \\le 0\\), \\(t^2 - 2 = 0 \\implies t = -\\sqrt{2}\\) (since \\(t = \\sqrt{2}\\) is rejected).\nFor \\(t > 0\\), \\(2 - t = 0 \\implies t = 2\\).\nThus, \\(f(x) = -\\sqrt{2}\\) or \\(f(x) = 2\\).\nNext, solve \\(f(x) = -\\sqrt{2}\\):\nFor \\(x \\le 0\\), \\(x^2 - 2 = -\\sqrt{2} \\implies x = -\\sqrt{2 - \\sqrt{2}}\\) (\\(1\\) solution).\nFor \\(x > 0\\), \\(2 - x = -\\sqrt{2} \\implies x = 2 + \\sqrt{2}\\) (\\(1\\) solution).\nFinally, solve \\(f(x) = 2\\):\nFor \\(x \\le 0\\), \\(x^2 - 2 = 2 \\implies x = -2\\) (\\(1\\) solution).\nFor \\(x > 0\\), \\(2 - x = 2 \\implies x = 0\\) (rejected since \\(x > 0\\)).\nIn total, there are \\(3\\) real solutions.",
+      "hint": "First find all values of \\(t\\) such that \\(f(t) = 0\\), then solve \\(f(x) = t\\) for each valid \\(t\\) and count the total number of roots."
+    },
+    {
+      "id": "math-gaokao-458-q005",
+      "category": "Integrated Mathematics",
+      "concept": "Probability and Combinatorics",
+      "learningObjective": "Calculate the probability of complementary events in sampling without replacement.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A bag contains \\(3\\) red balls and \\(2\\) white balls. Two balls are drawn randomly without replacement. What is the probability that at least one of the drawn balls is white?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{10}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{7}{10}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total number of ways to draw \\(2\\) balls from \\(5\\) is \\(\\binom{5}{2} = 10\\).\nThe number of ways to draw \\(2\\) red balls (no white balls) is \\(\\binom{3}{2} = 3\\).\nThe probability of drawing no white balls is \\(\\frac{3}{10}\\).\nUsing the complementary probability, the probability of drawing at least one white ball is \\(1 - \\frac{3}{10} = \\frac{7}{10}\\).",
+      "hint": "Calculate the probability of the complementary event (drawing zero white balls) and subtract it from \\(1\\)."
+    },
+    {
+      "id": "math-gaokao-458-q006",
+      "category": "Integrated Mathematics",
+      "concept": "Solid Geometry",
+      "learningObjective": "Calculate the height of a regular tetrahedron using geometric properties.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In a regular tetrahedron where all edge lengths are equal to \\(2\\), find the distance from any vertex to its opposite face.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{6}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2\\sqrt{6}}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let the regular tetrahedron be \\(S-ABC\\) with edge length \\(2\\). The opposite face \\(ABC\\) is an equilateral triangle with side length \\(2\\).\nThe distance from the center of \\(\\triangle ABC\\) to any vertex of \\(\\triangle ABC\\) is \\(\\frac{2}{\\sqrt{3}} = \\frac{2\\sqrt{3}}{3}\\).\nLet \\(h\\) be the height of the tetrahedron (the distance from \\(S\\) to the plane \\(ABC\\)).\nBy the Pythagorean theorem in the right triangle formed by the height, the distance to the base vertex, and the edge:\n\\[\n\\begin{aligned}\nh^2 + \\left(\\frac{2\\sqrt{3}}{3}\\right)^2 &= 2^2 \\\\\nh^2 + \\frac{12}{9} &= 4 \\implies h^2 = 4 - \\frac{4}{3} = \\frac{8}{3}\n\\end{aligned}\n\\].\nThus, \\(h = \\sqrt{\\frac{8}{3}} = \\frac{2\\sqrt{6}}{3}\\).",
+      "hint": "Find the distance from the center of the equilateral base to one of its vertices, then use the Pythagorean theorem with the edge length."
+    },
+    {
+      "id": "math-gaokao-458-q007",
+      "category": "Integrated Mathematics",
+      "concept": "Trigonometric Functions",
+      "learningObjective": "Determine the interval of monotonic increase for a sinusoidal function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Given the function \\(f(x) = \\sin\\left(2x + \\frac{\\pi}{6}\\right)\\). Find the family of intervals of monotonic increase for \\(f(x)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left[-\\frac{\\pi}{6} + k\\pi, \\frac{\\pi}{3} + k\\pi\\right], k \\in \\mathbb{Z}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\left[-\\frac{\\pi}{3} + k\\pi, \\frac{\\pi}{6} + k\\pi\\right], k \\in \\mathbb{Z}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sine function \\(\\sin(u)\\) is monotonically increasing when \\(-\\frac{\\pi}{2} + 2k\\pi \\le u \\le \\frac{\\pi}{2} + 2k\\pi\\) for \\(k \\in \\mathbb{Z}\\).\nSubstituting \\(u = 2x + \\frac{\\pi}{6}\\), we get:\n\\[\n-\\frac{\\pi}{2} + 2k\\pi \\le 2x + \\frac{\\pi}{6} \\le \\frac{\\pi}{2} + 2k\\pi\n\\]\nSubtracting \\(\\frac{\\pi}{6}\\) from all parts:\n\\[\n-\\frac{2\\pi}{3} + 2k\\pi \\le 2x \\le \\frac{\\pi}{3} + 2k\\pi\n\\]\nDividing by \\(2\\):\n\\[\n-\\frac{\\pi}{3} + k\\pi \\le x \\le \\frac{\\pi}{6} + k\\pi\n\\]\nThus, the interval of monotonic increase is \\(\\left[-\\frac{\\pi}{3} + k\\pi, \\frac{\\pi}{6} + k\\pi\\right]\\).",
+      "hint": "Set the argument of the sine function within the standard increasing interval of the sine function and solve for x."
+    },
+    {
+      "id": "math-gaokao-458-q008",
+      "category": "Integrated Mathematics",
+      "concept": "Complex Numbers",
+      "learningObjective": "Simplify a complex fraction and find its modulus.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(z = \\frac{1+i}{1-i}\\). Find the modulus \\(|z|\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "To simplify \\(z\\), multiply the numerator and the denominator by the conjugate of the denominator:\n\\[\n\\begin{aligned}\nz &= \\frac{(1+i)(1+i)}{(1-i)(1+i)} \\\\\n&= \\frac{1 + 2i + i^2}{1^2 - i^2} \\\\\n&= \\frac{1 + 2i - 1}{1 - (-1)} \\\\\n&= \\frac{2i}{2} \\\\\n&= i\n\\end{aligned}\n\\].\nThe modulus of \\(z = i\\) is \\(|z| = \\sqrt{0^2 + 1^2} = 1\\).",
+      "hint": "Multiply the numerator and denominator by the complex conjugate of the denominator to simplify the fraction."
+    },
+    {
+      "id": "math-gaokao-458-q009",
+      "category": "Integrated Mathematics",
+      "concept": "Inequalities and Optimization",
+      "learningObjective": "Find the minimum value of an expression using the AM-GM inequality with a constraint.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Given \\(x, y > 0\\) and \\(x + 2y = 1\\). Find the minimum value of \\(\\frac{1}{x} + \\frac{1}{y}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3 + 2\\sqrt{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3 + \\sqrt{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(x + 2y = 1\\), we can multiply the expression by \\(1\\):\n\\[\n\\begin{aligned}\n\\frac{1}{x} + \\frac{1}{y} &= \\left(\\frac{1}{x} + \\frac{1}{y}\\right)(x + 2y) \\\\\n&= 1 + \\frac{2y}{x} + \\frac{x}{y} + 2 \\\\\n&= 3 + \\frac{2y}{x} + \\frac{x}{y}\n\\end{aligned}\n\\].\nBy the AM-GM inequality, \\(\\frac{2y}{x} + \\frac{x}{y} \\ge 2\\sqrt{\\frac{2y}{x} \\cdot \\frac{x}{y}} = 2\\sqrt{2}\\).\nTherefore, \\(\\frac{1}{x} + \\frac{1}{y} \\ge 3 + 2\\sqrt{2}\\).\nEquality holds when \\(\\frac{2y}{x} = \\frac{x}{y}\\), which gives \\(x = \\sqrt{2}y\\). Substituting into \\(x + 2y = 1\\) yields valid positive values for \\(x\\) and \\(y\\).\nThe minimum value is \\(3 + 2\\sqrt{2}\\).",
+      "hint": "Multiply the target expression by the constraint equation \\((x + 2y)\\) and apply the AM-GM inequality to the resulting terms."
+    },
+    {
+      "id": "math-gaokao-458-q010",
+      "category": "Integrated Mathematics",
+      "concept": "Vectors and Dot Product",
+      "learningObjective": "Determine an unknown coordinate using the orthogonality condition of vectors.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Given vectors \\(\\vec{a} = (1, 2)\\) and \\(\\vec{b} = (x, -1)\\). If \\(\\vec{a}\\) is perpendicular to \\(\\vec{b}\\), find the value of \\(x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Two vectors are perpendicular if and only if their dot product is zero.\nThe dot product of \\(\\vec{a}\\) and \\(\\vec{b}\\) is \\(\\vec{a} \\cdot \\vec{b} = (1)(x) + (2)(-1) = x - 2\\).\nSetting the dot product to zero gives \\(x - 2 = 0\\), which implies \\(x = 2\\).",
+      "hint": "Use the property that the dot product of two perpendicular vectors is equal to zero."
+    }
+  ]
+}

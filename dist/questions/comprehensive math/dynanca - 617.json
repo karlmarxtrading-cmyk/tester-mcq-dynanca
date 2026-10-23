@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-617",
+  "category": "Comprehensive Mathematics",
+  "title": "617. Discrete Mathematics, Counting & Graph Theory: Simple Dynamic Programming Counting Problems",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-617-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The idea of dynamic programming",
+      "learningObjective": "State the key idea of dynamic programming for counting.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the key idea of dynamic programming when it is used for a counting problem?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Generate every possibility separately and count the successful ones one by one."
+        },
+        {
+          "label": "B",
+          "text": "Compute the count for each smaller subproblem once, store it, and reuse it."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Dynamic programming breaks a problem into smaller subproblems whose answers are needed repeatedly. Each answer is computed once and stored in a table, so later steps simply look it up. Generating every possibility separately is brute-force enumeration, which usually takes far longer.",
+      "hint": "The method avoids solving the same subproblem twice."
+    },
+    {
+      "id": "dynanca-617-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Stairs with three step sizes",
+      "learningObjective": "Count the ways to climb stairs with a small table.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(w(n)\\) be the number of ways to climb \\(n\\) stairs when each step covers \\(1\\), \\(2\\), or \\(3\\) stairs, with \\(w(0)=1\\), \\(w(1)=1\\), and \\(w(2)=2\\). Since the last step covers \\(1\\), \\(2\\), or \\(3\\) stairs, \\(w(n)=w(n-1)+w(n-2)+w(n-3)\\). What is \\(w(4)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First \\(w(3)=w(2)+w(1)+w(0)=2+1+1=4\\). Then \\(w(4)=w(3)+w(2)+w(1)=4+2+1=7\\). The value \\(5\\) results from adding only the two previous entries, which is the rule for step sizes \\(1\\) and \\(2\\).",
+      "hint": "Fill in \\(w(3)\\) first; each new entry is the sum of the three entries before it."
+    },
+    {
+      "id": "dynanca-617-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Choosing the recurrence",
+      "learningObjective": "Identify the recurrence behind a table of counts.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(w(n)\\) be the number of ways to climb \\(n\\) stairs when each step covers \\(1\\), \\(2\\), or \\(3\\) stairs. Which recurrence is used to fill the table for \\(n\\ge 3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(w(n)=3\\,w(n-1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(w(n)=w(n-1)+w(n-2)+w(n-3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Sort the ways by their last step. If it covers \\(1\\) stair, the earlier steps climb \\(n-1\\) stairs; if \\(2\\), they climb \\(n-2\\); if \\(3\\), they climb \\(n-3\\). These cases do not overlap, so the counts are added. The rule \\(3\\,w(n-1)\\) would wrongly assume that every way of climbing \\(n-1\\) stairs can be extended in three ways to exactly \\(n\\) stairs.",
+      "hint": "Classify the ways by the size of the last step."
+    },
+    {
+      "id": "dynanca-617-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Paying with three coin values",
+      "learningObjective": "Count unordered ways of paying an amount.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In how many ways can the amount \\(10\\) be paid with coins of values \\(1\\), \\(2\\), and \\(5\\), if the order of the coins does not matter?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Sort by the number of coins of value \\(5\\). With none, the amount \\(10\\) is paid with values \\(1\\) and \\(2\\): \\(6\\) ways, using \\(0\\) to \\(5\\) coins of value \\(2\\). With one, the remaining \\(5\\) is paid in \\(3\\) ways. With two, there is \\(1\\) way. The total is \\(6+3+1=10\\). The value \\(6\\) counts only the payments without a coin of value \\(5\\).",
+      "hint": "Split the count according to how many coins of value \\(5\\) are used."
+    },
+    {
+      "id": "dynanca-617-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Paths in a directed acyclic graph",
+      "learningObjective": "Count paths by adding the counts of predecessors.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A directed graph has arcs \\(A\\to B\\), \\(A\\to C\\), \\(B\\to C\\), \\(B\\to D\\), and \\(C\\to D\\). The number of directed paths from \\(A\\) to a vertex is the sum of the numbers for the vertices with an arc into it. How many directed paths lead from \\(A\\) to \\(D\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There is \\(1\\) path to \\(A\\) itself and \\(1\\) path to \\(B\\). The vertex \\(C\\) is entered from \\(A\\) and from \\(B\\): \\(1+1=2\\) paths. The vertex \\(D\\) is entered from \\(B\\) and from \\(C\\): \\(1+2=3\\) paths. They are \\(A,B,D\\); \\(A,C,D\\); and \\(A,B,C,D\\). Counting only the paths with two arcs gives \\(2\\).",
+      "hint": "Work through the vertices in the order \\(A,B,C,D\\), adding the counts of the vertices that point to each one."
+    },
+    {
+      "id": "dynanca-617-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Subsets with a given sum",
+      "learningObjective": "Count the subsets of a small set with a prescribed sum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many subsets of \\(\\{1,2,3,4,5\\}\\) have the sum \\(6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The subsets are \\(\\{1,5\\}\\), \\(\\{2,4\\}\\), and \\(\\{1,2,3\\}\\). A table that records, for each target sum, the number of subsets using only the first few elements gives the same count, \\(3\\). Counting only the subsets with two elements gives \\(2\\).",
+      "hint": "Consider subsets with two elements and subsets with three elements."
+    },
+    {
+      "id": "dynanca-617-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Ordered against unordered",
+      "learningObjective": "Compare ordered and unordered counts for the same total.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "With parts equal to \\(1\\) or \\(2\\), the total \\(4\\) can be formed in \\(3\\) ways when the order of the parts is ignored. In how many ways can it be formed when the order of the parts counts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "With order, the sums are \\(1+1+1+1\\); \\(2+1+1\\), \\(1+2+1\\), \\(1+1+2\\); and \\(2+2\\): in total \\(5\\). A table for ordered sums uses \\(w(n)=w(n-1)+w(n-2)\\), giving \\(1,1,2,3,5\\) for \\(n=0,\\dots,4\\). Ignoring order merges the three arrangements of one \\(2\\) and two \\(1\\)s into a single way.",
+      "hint": "Count the different arrangements of each unordered sum."
+    },
+    {
+      "id": "dynanca-617-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Totals of three dice",
+      "learningObjective": "Count the ways of rolling a total with three dice.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "Three distinguishable dice are rolled. In how many of the \\(216\\) outcomes is the total equal to \\(10\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(27\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Build a table: the numbers of ways for two dice to show the totals \\(4,5,6,7,8,9\\) are \\(3,4,5,6,5,4\\). The third die shows \\(6,5,4,3,2,1\\) respectively, so the number of ways for the total \\(10\\) is \\(3+4+5+6+5+4=27\\). The value \\(36\\) would count all solutions of \\(a+b+c=10\\) in positive integers, including those with a part larger than \\(6\\).",
+      "hint": "Condition on the third die and use the counts for two dice."
+    },
+    {
+      "id": "dynanca-617-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Partitions of a set into two blocks",
+      "learningObjective": "Use a recurrence to count partitions of a set.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(S(n,k)\\) be the number of ways to split a set of \\(n\\) elements into \\(k\\) nonempty blocks. These numbers satisfy \\(S(n,k)=S(n-1,k-1)+k\\,S(n-1,k)\\). Given \\(S(3,1)=1\\) and \\(S(3,2)=3\\), what is \\(S(4,2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Apply the recurrence: \\(S(4,2)=S(3,1)+2\\,S(3,2)=1+2\\cdot 3=7\\). The term \\(S(3,1)\\) counts the splittings in which the new element forms a block alone, and \\(2\\,S(3,2)\\) those in which it joins one of the \\(2\\) existing blocks. Leaving out the factor \\(2\\) gives \\(1+3=4\\).",
+      "hint": "The new element either forms a block alone or joins one of the existing blocks."
+    },
+    {
+      "id": "dynanca-617-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Nested brackets",
+      "learningObjective": "Use a convolution recurrence to count nested bracket arrangements.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(c_n\\) be the number of correctly nested arrangements of \\(n\\) pairs of brackets. These numbers satisfy \\(c_{n+1}=c_0c_n+c_1c_{n-1}+\\cdots+c_nc_0\\), with \\(c_0=1\\). Given \\(c_1=1\\), \\(c_2=2\\), and \\(c_3=5\\), what is \\(c_4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(14\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Apply the recurrence with \\(n=3\\): \\(c_4=c_0c_3+c_1c_2+c_2c_1+c_3c_0=5+2+2+5=14\\). Each product counts the arrangements in which the first bracket is closed after a given number of pairs. The value \\(10\\) uses only the first and the last product.",
+      "hint": "Write out all four products in the sum."
+    }
+  ]
+}

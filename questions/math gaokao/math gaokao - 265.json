@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-265",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 265",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-265-q001",
+      "category": "Calculus",
+      "concept": "Limit Versus Function Value",
+      "learningObjective": "Distinguish the value of a function at a point from the limit as the point is approached.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(\\lim_{x\\to2} f(x)=5\\), which conclusion about \\(f(2)\\) is justified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(2)=5\\) must hold."
+        },
+        {
+          "label": "B",
+          "text": "Nothing definite about \\(f(2)\\) is forced by the limit alone."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The limit \\(\\lim_{x\\to2} f(x)=5\\) describes the behavior of \\(f(x)\\) for values of \\(x\\) close to \\(2\\), but not necessarily at \\(x=2\\). The function may be undefined at \\(2\\), or \\(f(2)\\) may be different from \\(5\\). For example, a function can satisfy \\(f(x)=5\\) for all \\(x\\neq2\\) while \\(f(2)=0\\). Therefore, the limit alone does not force \\(f(2)=5\\).",
+      "hint": "Recall that a limit depends on nearby values of the function, not necessarily on the function value at the point itself."
+    },
+    {
+      "id": "math-gaokao-265-q002",
+      "category": "Calculus",
+      "concept": "Limit of a Polynomial by Direct Substitution",
+      "learningObjective": "Evaluate the limit of a polynomial function by direct substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\lim_{x\\to3}(2x^2-x+1)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(14\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Polynomial functions are continuous everywhere, so the limit can be found by direct substitution:\n\\[\n\\lim_{x\\to3}(2x^2-x+1)=2(3)^2-3+1=18-3+1=16.\n\\]\nThus the limit is \\(16\\).",
+      "hint": "For a polynomial, substitute the approaching value of \\(x\\) directly."
+    },
+    {
+      "id": "math-gaokao-265-q003",
+      "category": "Calculus",
+      "concept": "Limit of a Rational Function with a Removable Factor",
+      "learningObjective": "Evaluate a limit where direct substitution gives \\(0/0\\) by factoring and simplifying.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\lim_{x\\to1}\\frac{x^2-1}{x-1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Direct substitution gives \\(0/0\\), so factor the numerator:\n\\[\n\\frac{x^2-1}{x-1}=\\frac{(x-1)(x+1)}{x-1}.\n\\]\nFor \\(x\\neq1\\), this simplifies to \\(x+1\\). Therefore,\n\\[\n\\lim_{x\\to1}\\frac{x^2-1}{x-1}=\\lim_{x\\to1}(x+1)=2.\n\\]\nThe limit is \\(2\\).",
+      "hint": "Factor the numerator and cancel the common factor before substituting."
+    },
+    {
+      "id": "math-gaokao-265-q004",
+      "category": "Calculus",
+      "concept": "One-Sided Limits and Nonexistence",
+      "learningObjective": "Determine whether a two-sided limit exists by comparing left-hand and right-hand limits.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx+1, & x<0,\\\\\n2x, & x\\ge0.\n\\end{cases}\n\\]\nFind \\(\\lim_{x\\to0} f(x)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "The limit does not exist."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute the one-sided limits.\nAs \\(x\\to0^-\\), we use \\(f(x)=x+1\\), so\n\\[\n\\lim_{x\\to0^-}f(x)=0+1=1.\n\\]\nAs \\(x\\to0^+\\), we use \\(f(x)=2x\\), so\n\\[\n\\lim_{x\\to0^+}f(x)=2(0)=0.\n\\]\nSince the left-hand limit and right-hand limit are different, the two-sided limit does not exist.",
+      "hint": "Compare the behavior of the function as \\(x\\) approaches \\(0\\) from the left and from the right."
+    },
+    {
+      "id": "math-gaokao-265-q005",
+      "category": "Calculus",
+      "concept": "Limit at Infinity of a Rational Function",
+      "learningObjective": "Evaluate a limit at infinity by comparing the leading terms of numerator and denominator.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\lim_{x\\to\\infty}\\frac{3x+2}{x-1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide numerator and denominator by \\(x\\):\n\\[\n\\frac{3x+2}{x-1}\n=\n\\frac{3+\\frac{2}{x}}{1-\\frac{1}{x}}.\n\\]\nAs \\(x\\to\\infty\\), both \\(\\frac{2}{x}\\) and \\(\\frac{1}{x}\\) tend to \\(0\\). Hence\n\\[\n\\lim_{x\\to\\infty}\\frac{3x+2}{x-1}\n=\n\\frac{3+0}{1-0}=3.\n\\]\nThe limit is \\(3\\).",
+      "hint": "Divide numerator and denominator by the highest power of \\(x\\) appearing in the denominator."
+    },
+    {
+      "id": "math-gaokao-265-q006",
+      "category": "Calculus",
+      "concept": "Infinite One-Sided Limit",
+      "learningObjective": "Determine the sign of an infinite one-sided limit from the sign of the denominator near the approach point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Find \\(\\lim_{x\\to2^+}\\frac{1}{x-2}\\) in the extended sense.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(+\\infty\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\infty\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "As \\(x\\to2^+\\), the values of \\(x\\) are greater than \\(2\\), so \\(x-2\\) is positive and tends to \\(0\\) through positive values. Therefore,\n\\[\n\\frac{1}{x-2}\n\\]\nbecomes arbitrarily large positive. Hence\n\\[\n\\lim_{x\\to2^+}\\frac{1}{x-2}=+\\infty.\n\\]",
+      "hint": "Determine whether \\(x-2\\) is positive or negative as \\(x\\) approaches \\(2\\) from the right."
+    },
+    {
+      "id": "math-gaokao-265-q007",
+      "category": "Calculus",
+      "concept": "Estimating a Limit from a Table",
+      "learningObjective": "Estimate a limit from numerical values of a function near the approach point.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "The table gives values of \\(f(x)\\) near \\(x=0\\):\n\\[\n\\begin{array}{c|cccc}\nx & -0.1 & -0.01 & 0.01 & 0.1\\\\\n\\hline\nf(x) & 0.998 & 0.999 & 1.001 & 1.002\n\\end{array}\n\\]\nWhat is the best estimate of \\(\\lim_{x\\to0}f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "As \\(x\\) approaches \\(0\\) from the left, the values \\(0.998\\) and \\(0.999\\) are getting closer to \\(1\\). As \\(x\\) approaches \\(0\\) from the right, the values \\(1.001\\) and \\(1.002\\) are also getting closer to \\(1\\). Therefore, the best estimate of the limit is \\(1\\).",
+      "hint": "Look at the trend of the function values as \\(x\\) gets closer to \\(0\\) from both sides."
+    },
+    {
+      "id": "math-gaokao-265-q008",
+      "category": "Calculus",
+      "concept": "Existence of a Two-Sided Limit from One-Sided Limits",
+      "learningObjective": "Infer the existence of a two-sided limit from equality of the left-hand and right-hand limits.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(\\lim_{x\\to a^-}f(x)=L\\) and \\(\\lim_{x\\to a^+}f(x)=L\\), which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\lim_{x\\to a}f(x)=L\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(\\lim_{x\\to a}f(x)=L\\) only if \\(f(a)=L\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A two-sided limit exists when both one-sided limits exist and are equal. If\n\\[\n\\lim_{x\\to a^-}f(x)=L\n\\quad\\text{and}\\quad\n\\lim_{x\\to a^+}f(x)=L,\n\\]\nthen the values of \\(f(x)\\) approach the same number \\(L\\) from both sides. Therefore,\n\\[\n\\lim_{x\\to a}f(x)=L.\n\\]\nThe value \\(f(a)\\), if it exists, does not affect whether this two-sided limit equals \\(L\\).",
+      "hint": "Recall the definition of a two-sided limit in terms of left-hand and right-hand limits."
+    },
+    {
+      "id": "math-gaokao-265-q009",
+      "category": "Calculus",
+      "concept": "Limit by Rationalization",
+      "learningObjective": "Evaluate a limit involving a square root by multiplying by the conjugate.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\lim_{x\\to0}\\frac{\\sqrt{x+4}-2}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiply numerator and denominator by the conjugate \\(\\sqrt{x+4}+2\\):\n\\[\n\\frac{\\sqrt{x+4}-2}{x}\n=\n\\frac{(\\sqrt{x+4}-2)(\\sqrt{x+4}+2)}\n{x(\\sqrt{x+4}+2)}\n=\n\\frac{x+4-4}{x(\\sqrt{x+4}+2)}.\n\\]\nThus\n\\[\n\\frac{\\sqrt{x+4}-2}{x}\n=\n\\frac{x}{x(\\sqrt{x+4}+2)}\n=\n\\frac{1}{\\sqrt{x+4}+2}\n\\]\nfor \\(x\\neq0\\). Therefore,\n\\[\n\\lim_{x\\to0}\\frac{\\sqrt{x+4}-2}{x}\n=\n\\frac{1}{\\sqrt{4}+2}\n=\n\\frac{1}{4}.\n\\]",
+      "hint": "Multiply numerator and denominator by the conjugate of the numerator."
+    },
+    {
+      "id": "math-gaokao-265-q010",
+      "category": "Calculus",
+      "concept": "Parameter Condition for Existence of a Limit",
+      "learningObjective": "Find a parameter value that makes the left-hand and right-hand limits of a piecewise function equal.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx^2+a, & x<1,\\\\\n2x-1, & x>1.\n\\end{cases}\n\\]\nIf \\(\\lim_{x\\to1}f(x)\\) exists, find \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute the one-sided limits as \\(x\\to1\\).\nFor \\(x<1\\), \\(f(x)=x^2+a\\), so\n\\[\n\\lim_{x\\to1^-}f(x)=1^2+a=1+a.\n\\]\nFor \\(x>1\\), \\(f(x)=2x-1\\), so\n\\[\n\\lim_{x\\to1^+}f(x)=2(1)-1=1.\n\\]\nFor the two-sided limit \\(\\lim_{x\\to1}f(x)\\) to exist, the one-sided limits must be equal:\n\\[\n1+a=1.\n\\]\nThus\n\\[\na=0.\n\\]",
+      "hint": "Set the left-hand limit equal to the right-hand limit and solve for the parameter."
+    }
+  ]
+}

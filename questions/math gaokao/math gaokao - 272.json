@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-272",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 272",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-272-q001",
+      "category": "Calculus",
+      "concept": "Limit of a Rational Function at Infinity",
+      "learningObjective": "Evaluate the limit at infinity of a rational function by comparing leading coefficients.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to\\infty}\\frac{3x^2-5x+2}{2x^2+x-7}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{2}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Divide the numerator and denominator by \\(x^2\\):\n\\[\n\\frac{3x^2-5x+2}{2x^2+x-7}\n=\n\\frac{3-\\frac{5}{x}+\\frac{2}{x^2}}{2+\\frac{1}{x}-\\frac{7}{x^2}}.\n\\]\nAs \\(x\\to\\infty\\), all terms with \\(1/x\\) or \\(1/x^2\\) tend to \\(0\\). Thus the limit is\n\\[\n\\frac{3}{2}.\n\\]",
+      "hint": "Compare the highest-degree terms in the numerator and denominator."
+    },
+    {
+      "id": "math-gaokao-272-q002",
+      "category": "Calculus",
+      "concept": "Limit at Infinity of a Radical Difference",
+      "learningObjective": "Evaluate a limit at infinity involving a square root by rationalizing the expression.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to\\infty}\\left(\\sqrt{x^2+3x}-x\\right)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rationalize the expression:\n\\[\n\\sqrt{x^2+3x}-x\n=\n\\frac{(\\sqrt{x^2+3x}-x)(\\sqrt{x^2+3x}+x)}{\\sqrt{x^2+3x}+x}\n=\n\\frac{3x}{\\sqrt{x^2+3x}+x}.\n\\]\nDivide numerator and denominator by \\(x\\):\n\\[\n\\frac{3}{\\sqrt{1+\\frac{3}{x}}+1}.\n\\]\nAs \\(x\\to\\infty\\), \\(\\frac{3}{x}\\to 0\\), so the limit is\n\\[\n\\frac{3}{1+1}=\\frac{3}{2}.\n\\]",
+      "hint": "Multiply by the conjugate \\(\\sqrt{x^2+3x}+x\\)."
+    },
+    {
+      "id": "math-gaokao-272-q003",
+      "category": "Calculus",
+      "concept": "One-Sided Infinite Limit of a Rational Function",
+      "learningObjective": "Determine the sign of an infinite one-sided limit as the denominator approaches zero.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Evaluate \\(\\lim_{x\\to 2^-}\\frac{1}{(x-2)^2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\infty\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(+\\infty\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "As \\(x\\to 2^-\\), the quantity \\(x-2\\) is negative but approaches \\(0\\), so \\((x-2)^2\\) is positive and approaches \\(0^+\\). Therefore\n\\[\n\\frac{1}{(x-2)^2}\\to +\\infty.\n\\]\nThe square in the denominator makes the denominator positive on both sides of \\(2\\).",
+      "hint": "Consider the sign of \\((x-2)^2\\) as \\(x\\) approaches \\(2\\) from the left."
+    },
+    {
+      "id": "math-gaokao-272-q004",
+      "category": "Calculus",
+      "concept": "Infinite Limit of the Natural Logarithm",
+      "learningObjective": "Evaluate the one-sided infinite limit of \\(\\ln x\\) as \\(x\\) approaches zero from the right.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Evaluate \\(\\lim_{x\\to 0^+}\\ln x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\infty\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(+\\infty\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The natural logarithm \\(\\ln x\\) is defined for \\(x>0\\). As \\(x\\) decreases toward \\(0\\) from the right, \\(\\ln x\\) decreases without bound. For example, \\(\\ln(10^{-n})=-n\\ln 10\\to -\\infty\\). Hence\n\\[\n\\lim_{x\\to 0^+}\\ln x=-\\infty.\n\\]",
+      "hint": "Recall the shape of the graph of \\(y=\\ln x\\) near \\(x=0\\)."
+    },
+    {
+      "id": "math-gaokao-272-q005",
+      "category": "Calculus",
+      "concept": "Exponential Dominance in a Limit at Infinity",
+      "learningObjective": "Evaluate the limit at infinity of a sum of exponentials raised to the power \\(1/x\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Evaluate \\(\\lim_{x\\to\\infty}\\left(2^x+3^x\\right)^{1/x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor out the dominant exponential term:\n\\[\n\\left(2^x+3^x\\right)^{1/x}\n=\n\\left(3^x\\left(1+\\left(\\frac{2}{3}\\right)^x\\right)\\right)^{1/x}\n=\n3\\left(1+\\left(\\frac{2}{3}\\right)^x\\right)^{1/x}.\n\\]\nAs \\(x\\to\\infty\\), \\(\\left(\\frac{2}{3}\\right)^x\\to 0\\). Thus the factor\n\\[\n\\left(1+\\left(\\frac{2}{3}\\right)^x\\right)^{1/x}\n\\]\ntends to \\(1\\). Therefore the limit is \\(3\\).",
+      "hint": "Factor out the largest exponential base, which is \\(3^x\\)."
+    },
+    {
+      "id": "math-gaokao-272-q006",
+      "category": "Calculus",
+      "concept": "Limit at Infinity of a Cubic Rational Function",
+      "learningObjective": "Evaluate the limit at infinity of a rational function with equal highest degrees.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to\\infty}\\frac{5x^3-2x+1}{2x^3+x^2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{2}{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The numerator and denominator both have degree \\(3\\). Divide numerator and denominator by \\(x^3\\):\n\\[\n\\frac{5x^3-2x+1}{2x^3+x^2}\n=\n\\frac{5-\\frac{2}{x^2}+\\frac{1}{x^3}}{2+\\frac{1}{x}}.\n\\]\nAs \\(x\\to\\infty\\), all terms involving \\(1/x\\) or \\(1/x^2\\) or \\(1/x^3\\) tend to \\(0\\). Therefore the limit is\n\\[\n\\frac{5}{2}.\n\\]",
+      "hint": "Compare the coefficients of the highest-degree terms."
+    },
+    {
+      "id": "math-gaokao-272-q007",
+      "category": "Calculus",
+      "concept": "Parameter Determination from a Limit at Infinity",
+      "learningObjective": "Find a parameter so that a radical expression has a prescribed finite limit at infinity.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(\\lim_{x\\to\\infty}\\left(\\sqrt{ax^2+3x+1}-2x\\right)=\\frac{3}{4}\\), find \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For the limit to be finite, the \\(x\\)-terms must cancel. Since the second term is \\(-2x\\), we need\n\\[\n\\sqrt{ax^2+3x+1}\\sim 2x.\n\\]\nThus \\(\\sqrt{a}=2\\), so \\(a=4\\). Checking \\(a=4\\):\n\\[\n\\sqrt{4x^2+3x+1}-2x\n=\n\\frac{3x+1}{\\sqrt{4x^2+3x+1}+2x}.\n\\]\nDividing numerator and denominator by \\(x\\), the limit is\n\\[\n\\frac{3}{2+2}=\\frac{3}{4}.\n\\]\nSo \\(a=4\\).",
+      "hint": "For a finite limit, the leading \\(x\\)-terms must cancel, so compare the coefficient of \\(x^2\\) under the square root with \\(2x\\)."
+    },
+    {
+      "id": "math-gaokao-272-q008",
+      "category": "Calculus",
+      "concept": "Limit at Infinity of a Difference of Square Roots",
+      "learningObjective": "Evaluate a limit at infinity involving two square-root expressions by rationalizing.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Evaluate \\(\\lim_{x\\to\\infty}\\left(\\sqrt{x^2+x+1}-\\sqrt{x^2-x+1}\\right)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rationalize the expression:\n\\[\n\\sqrt{x^2+x+1}-\\sqrt{x^2-x+1}\n=\n\\frac{(x^2+x+1)-(x^2-x+1)}{\\sqrt{x^2+x+1}+\\sqrt{x^2-x+1}}\n=\n\\frac{2x}{\\sqrt{x^2+x+1}+\\sqrt{x^2-x+1}}.\n\\]\nDivide numerator and denominator by \\(x\\):\n\\[\n\\frac{2}{\\sqrt{1+\\frac{1}{x}+\\frac{1}{x^2}}+\\sqrt{1-\\frac{1}{x}+\\frac{1}{x^2}}}.\n\\]\nAs \\(x\\to\\infty\\), the denominator tends to \\(1+1=2\\). Hence the limit is\n\\[\n\\frac{2}{2}=1.\n\\]",
+      "hint": "Multiply by the conjugate \\(\\sqrt{x^2+x+1}+\\sqrt{x^2-x+1}\\)."
+    },
+    {
+      "id": "math-gaokao-272-q009",
+      "category": "Calculus",
+      "concept": "Limit at Infinity with a Bounded Oscillating Term",
+      "learningObjective": "Evaluate a limit at infinity by applying the squeeze theorem to a bounded trigonometric term.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Evaluate \\(\\lim_{x\\to\\infty}\\frac{2x+\\sin x}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "The limit does not exist."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rewrite the expression:\n\\[\n\\frac{2x+\\sin x}{x}=2+\\frac{\\sin x}{x}.\n\\]\nSince \\(-1\\le \\sin x\\le 1\\), we have\n\\[\n-\\frac{1}{x}\\le \\frac{\\sin x}{x}\\le \\frac{1}{x}.\n\\]\nAs \\(x\\to\\infty\\), both \\(-\\frac{1}{x}\\) and \\(\\frac{1}{x}\\) tend to \\(0\\). By the squeeze theorem,\n\\[\n\\frac{\\sin x}{x}\\to 0.\n\\]\nTherefore\n\\[\n\\lim_{x\\to\\infty}\\frac{2x+\\sin x}{x}=2.\n\\]",
+      "hint": "Separate the fraction into a constant term plus a bounded term divided by \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-272-q010",
+      "category": "Calculus",
+      "concept": "Logarithmic Transformation of a Power Limit at Infinity",
+      "learningObjective": "Evaluate a limit at infinity of a polynomial base raised to the power \\(1/x\\) using logarithms.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Evaluate \\(\\lim_{x\\to\\infty}\\left(x^2+2x\\right)^{1/x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(e\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let\n\\[\nL=\\lim_{x\\to\\infty}\\left(x^2+2x\\right)^{1/x}.\n\\]\nTaking natural logarithms,\n\\[\n\\ln L=\\lim_{x\\to\\infty}\\frac{\\ln(x^2+2x)}{x}.\n\\]\nThe logarithmic function grows more slowly than any positive power of \\(x\\), so\n\\[\n\\frac{\\ln(x^2+2x)}{x}\\to 0.\n\\]\nTherefore\n\\[\n\\ln L=0,\n\\]\nwhich gives\n\\[\nL=e^0=1.\n\\]",
+      "hint": "Take the natural logarithm of the expression and compare the growth rates of \\(\\ln x\\) and \\(x\\)."
+    }
+  ]
+}

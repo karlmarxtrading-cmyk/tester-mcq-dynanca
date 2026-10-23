@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-314",
+  "category": "Comprehensive Mathematics",
+  "title": "314. Functions, Graphs & Transformations: Product and Quotient Functions and Their Domains",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-314-q001",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Domain of a Product of Functions",
+      "learningObjective": "Determine the domain of \\(f\\cdot g\\) from the domains of \\(f\\) and \\(g\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(f\\) have domain \\([1,5]\\) and \\(g\\) have domain \\([3,7]\\). What is the domain of \\(f\\cdot g\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([3,5]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([1,7]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain of \\(f\\cdot g\\) is the intersection of the domains of \\(f\\) and \\(g\\). Thus\n\\[\n[1,5]\\cap[3,7]=[3,5].\n\\]\nTherefore, the domain of \\(f\\cdot g\\) is \\([3,5]\\).",
+      "hint": "For a product of functions, keep only the inputs that belong to both domains."
+    },
+    {
+      "id": "dynanca-314-q002",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Domain of a Quotient of Functions",
+      "learningObjective": "Determine the domain of \\(f/g\\) by excluding zeros of \\(g\\) from the common domain.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f\\) have domain \\([-2,4]\\), and let \\(g\\) have domain \\([0,6]\\) with \\(x=3\\) as the only zero of \\(g\\) on its domain. What is the domain of \\(f/g\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([0,4]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([0,3)\\cup(3,4]\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The quotient \\(f/g\\) requires \\(x\\) to be in both domains and \\(g(x)\\ne 0\\). The intersection is\n\\[\n[-2,4]\\cap[0,6]=[0,4].\n\\]\nSince \\(g(3)=0\\), exclude \\(x=3\\). Therefore, the domain is\n\\[\n[0,3)\\cup(3,4].\n\\]",
+      "hint": "First find the common domain, then remove any point where the denominator equals zero."
+    },
+    {
+      "id": "dynanca-314-q003",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Domain of a Product Involving a Square Root and a Rational Function",
+      "learningObjective": "Determine the domain of \\(f\\cdot g\\) when one function is a square root and the other is rational.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=\\sqrt{x}\\) and \\(g(x)=\\frac{1}{x-1}\\). What is the domain of \\(f\\cdot g\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([0,1)\\cup(1,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([0,\\infty)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain of \\(f(x)=\\sqrt{x}\\) is \\([0,\\infty)\\). The domain of \\(g(x)=\\frac{1}{x-1}\\) is all real numbers except \\(x=1\\). Therefore, the product requires\n\\[\nx\\ge 0 \\quad \\text{and} \\quad x\\ne 1.\n\\]\nThus the domain is \\([0,1)\\cup(1,\\infty)\\).",
+      "hint": "Combine the restriction from the square root with the restriction from the denominator."
+    },
+    {
+      "id": "dynanca-314-q004",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Domain of a Quotient Involving a Square Root",
+      "learningObjective": "Determine the domain of \\(f/g\\) when \\(f\\) is a square root and \\(g\\) is linear.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=\\sqrt{x+2}\\) and \\(g(x)=x-1\\). What is the domain of \\(f/g\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([-2,1)\\cup(1,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([-2,\\infty)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(f(x)=\\sqrt{x+2}\\), we need \\(x+2\\ge 0\\), so \\(x\\ge -2\\). For the quotient, the denominator \\(g(x)=x-1\\) must not be zero, so \\(x\\ne 1\\). Therefore, the domain is\n\\[\n[-2,1)\\cup(1,\\infty).\n\\]",
+      "hint": "Apply both the square-root restriction and the nonzero denominator restriction."
+    },
+    {
+      "id": "dynanca-314-q005",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Domain of a Quotient with a Zero at an Endpoint",
+      "learningObjective": "Determine the domain of \\(f/g\\) when \\(g\\) has a zero at an endpoint of the common domain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f\\) have domain \\([-3,3]\\), and let \\(g\\) have domain \\([0,5]\\) with \\(x=0\\) as the only zero of \\(g\\) on its domain. What is the domain of \\(f/g\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0,3]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([0,3]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The common domain is\n\\[\n[-3,3]\\cap[0,5]=[0,3].\n\\]\nSince \\(g(0)=0\\), the point \\(x=0\\) must be excluded from the quotient. Therefore, the domain of \\(f/g\\) is \\((0,3]\\).",
+      "hint": "Check whether the zero of the denominator lies inside the common domain."
+    },
+    {
+      "id": "dynanca-314-q006",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Domain of a Product with a Square Root and a Reciprocal",
+      "learningObjective": "Determine the domain of \\(f\\cdot g\\) when \\(f\\) is a reciprocal and \\(g\\) contains a square root.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=\\frac{1}{x}\\) and \\(g(x)=\\sqrt{x-2}\\). What is the domain of \\(f\\cdot g\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([2,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,\\infty)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain of \\(f(x)=\\frac{1}{x}\\) excludes \\(x=0\\). The domain of \\(g(x)=\\sqrt{x-2}\\) requires \\(x-2\\ge 0\\), so \\(x\\ge 2\\). Since \\(x\\ge 2\\) already excludes \\(0\\), the product has domain\n\\[\n[2,\\infty).\n\\]",
+      "hint": "Intersect the two domains; one restriction may already imply the other."
+    },
+    {
+      "id": "dynanca-314-q007",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Domain of a Quotient with a Zero Inside the Common Domain",
+      "learningObjective": "Determine the domain of \\(g/f\\) by excluding a zero of \\(f\\) from the common domain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f\\) have domain \\([-2,4]\\), and let \\(g\\) have domain \\([0,5]\\) with \\(x=1\\) as the only zero of \\(f\\) on its domain. What is the domain of \\(g/f\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([0,4]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([0,1)\\cup(1,4]\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The common domain is\n\\[\n[-2,4]\\cap[0,5]=[0,4].\n\\]\nFor the quotient \\(g/f\\), we must exclude any point where \\(f(x)=0\\). Since \\(f(1)=0\\), remove \\(x=1\\). Thus the domain is\n\\[\n[0,1)\\cup(1,4].\n\\]",
+      "hint": "Find the common domain first, then remove the zero of the denominator."
+    },
+    {
+      "id": "dynanca-314-q008",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Domain of a Product of Two Square-Root Functions",
+      "learningObjective": "Determine the domain of \\(f\\cdot g\\) when both functions contain square roots.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=\\sqrt{x-1}\\) and \\(g(x)=\\sqrt{5-x}\\). What is the domain of \\(f\\cdot g\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([1,5]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([1,\\infty)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(f(x)=\\sqrt{x-1}\\), we need \\(x-1\\ge 0\\), so \\(x\\ge 1\\). For \\(g(x)=\\sqrt{5-x}\\), we need \\(5-x\\ge 0\\), so \\(x\\le 5\\). The product requires both conditions:\n\\[\n1\\le x\\le 5.\n\\]\nTherefore, the domain is \\([1,5]\\).",
+      "hint": "Combine the two square-root inequalities into one interval."
+    },
+    {
+      "id": "dynanca-314-q009",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Domain of a Quotient Involving a Square Root and a Quadratic Denominator",
+      "learningObjective": "Determine the domain of \\(f/g\\) when \\(f\\) contains a square root and \\(g\\) is quadratic.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(f(x)=\\sqrt{x+3}\\) and \\(g(x)=x^2-4\\). What is the domain of \\(f/g\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([-3,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([-3,-2)\\cup(-2,2)\\cup(2,\\infty)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(f(x)=\\sqrt{x+3}\\), we need \\(x+3\\ge 0\\), so \\(x\\ge -3\\). For the quotient, \\(g(x)=x^2-4\\) must not be zero, so\n\\[\nx^2-4\\ne 0 \\Rightarrow x\\ne 2,\\ -2.\n\\]\nThus the domain is\n\\[\n[-3,-2)\\cup(-2,2)\\cup(2,\\infty).\n\\]",
+      "hint": "Start with the square-root restriction, then exclude the zeros of the denominator."
+    },
+    {
+      "id": "dynanca-314-q010",
+      "category": "Functions, Graphs & Transformations",
+      "concept": "Domain of a Quotient with a Reciprocal Denominator",
+      "learningObjective": "Determine the domain of \\(g/f\\) when \\(f\\) is a reciprocal function and \\(g\\) contains a square root.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=\\frac{1}{x-2}\\) and \\(g(x)=\\sqrt{x}\\). What is the domain of \\(g/f\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([0,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([0,2)\\cup(2,\\infty)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain of \\(g(x)=\\sqrt{x}\\) requires \\(x\\ge 0\\). The domain of \\(f(x)=\\frac{1}{x-2}\\) excludes \\(x=2\\). For the quotient \\(g/f\\), we also need \\(f(x)\\ne 0\\), but \\(\\frac{1}{x-2}\\) is never zero. Therefore, the domain is\n\\[\n[0,2)\\cup(2,\\infty).\n\\]",
+      "hint": "Combine the square-root restriction with the restriction that the denominator function is undefined at \\(x=2\\)."
+    }
+  ]
+}

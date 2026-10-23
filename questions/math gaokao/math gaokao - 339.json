@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-339",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 339",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-339-q001",
+      "category": "Statistics",
+      "concept": "Standard Deviation of a Data Set",
+      "learningObjective": "Compute the standard deviation of a small data set from its mean and squared deviations.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the standard deviation of the data set \\(1,3,5,7,9\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\sqrt{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The mean is \\(\\bar{x}=\\frac{1+3+5+7+9}{5}=5\\). The squared deviations are \\((-4)^2,(-2)^2,0^2,2^2,4^2\\), whose sum is \\(16+4+0+4+16=40\\). Thus the variance is \\(\\frac{40}{5}=8\\), and the standard deviation is \\(\\sqrt{8}=2\\sqrt{2}\\).",
+      "hint": "Compute the mean first, then average the squared deviations from the mean, and finally take the square root."
+    },
+    {
+      "id": "math-gaokao-339-q002",
+      "category": "Statistics",
+      "concept": "Standard Deviation of a Data Set",
+      "learningObjective": "Calculate the standard deviation of a data set whose mean is an integer.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the standard deviation of the data set \\(2,4,6,8\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The mean is \\(\\bar{x}=\\frac{2+4+6+8}{4}=5\\). The squared deviations are \\((-3)^2,(-1)^2,1^2,3^2\\), whose sum is \\(9+1+1+9=20\\). Therefore the variance is \\(\\frac{20}{4}=5\\), and the standard deviation is \\(\\sqrt{5}\\).",
+      "hint": "Find the mean, compute each squared deviation, and then take the square root of their average."
+    },
+    {
+      "id": "math-gaokao-339-q003",
+      "category": "Statistics",
+      "concept": "Standard Deviation under Linear Transformation",
+      "learningObjective": "Apply the rule for standard deviation under a linear transformation of data.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A data set \\(x_1,x_2,\\dots,x_n\\) has standard deviation \\(3\\). What is the standard deviation of the data set \\(4x_1-2,4x_2-2,\\dots,4x_n-2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a linear transformation \\(y_i=ax_i+b\\), the standard deviation satisfies \\(s_y=|a|s_x\\). Here \\(a=4\\) and \\(b=-2\\), so the new standard deviation is \\(|4|\\cdot 3=12\\). Adding the constant \\(-2\\) does not change the spread.",
+      "hint": "Adding a constant shifts all values but does not change the standard deviation; multiplying by a constant scales the standard deviation by the absolute value of that constant."
+    },
+    {
+      "id": "math-gaokao-339-q004",
+      "category": "Statistics",
+      "concept": "Standard Deviation from a Frequency Distribution",
+      "learningObjective": "Compute standard deviation from a frequency table using weighted squared deviations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For the frequency distribution in which value \\(1\\) has frequency \\(1\\), value \\(2\\) has frequency \\(2\\), and value \\(3\\) has frequency \\(1\\), find the standard deviation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\sqrt{2}}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total frequency is \\(1+2+1=4\\). The mean is \\(\\bar{x}=\\frac{1\\cdot1+2\\cdot2+3\\cdot1}{4}=\\frac{1+4+3}{4}=2\\). The weighted squared deviations are \\(1(1-2)^2+2(2-2)^2+1(3-2)^2=1+0+1=2\\). Thus the variance is \\(\\frac{2}{4}=\\frac{1}{2}\\), and the standard deviation is \\(\\sqrt{\\frac{1}{2}}=\\frac{\\sqrt{2}}{2}\\).",
+      "hint": "Use frequencies as weights when computing the mean and the average squared deviation."
+    },
+    {
+      "id": "math-gaokao-339-q005",
+      "category": "Statistics",
+      "concept": "Comparing Standard Deviations of Data Sets",
+      "learningObjective": "Compare the variability of two data sets by computing their standard deviations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Consider two data sets: Set A is \\(1,2,3,4,5\\), and Set B is \\(2,4,6,8,10\\). Which set has the greater standard deviation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Set A"
+        },
+        {
+          "label": "B",
+          "text": "Set B"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For Set A, the mean is \\(3\\), and the variance is \\(\\frac{(-2)^2+(-1)^2+0^2+1^2+2^2}{5}=\\frac{4+1+0+1+4}{5}=2\\), so its standard deviation is \\(\\sqrt{2}\\). For Set B, the mean is \\(6\\), and the variance is \\(\\frac{(-4)^2+(-2)^2+0^2+2^2+4^2}{5}=\\frac{16+4+0+4+16}{5}=8\\), so its standard deviation is \\(2\\sqrt{2}\\). Since \\(2\\sqrt{2}>\\sqrt{2}\\), Set B has the greater standard deviation.",
+      "hint": "Compute the mean and standard deviation for each set, then compare the numerical results."
+    },
+    {
+      "id": "math-gaokao-339-q006",
+      "category": "Statistics",
+      "concept": "Meaning of Zero Standard Deviation",
+      "learningObjective": "Interpret the condition when a data set has standard deviation zero.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The standard deviation of a data set is \\(0\\). What must be true about the data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All observations are equal."
+        },
+        {
+          "label": "B",
+          "text": "All observations are zero."
+        }
+      ],
+      "answer": "A",
+      "explanation": "If the standard deviation is \\(0\\), then the variance is \\(0\\). Since variance is the average of the squared deviations from the mean, every squared deviation must be \\(0\\). Therefore each observation equals the mean, so all observations are equal. They need not all be zero; for example, the data set \\(5,5,5\\) has standard deviation \\(0\\).",
+      "hint": "Recall that standard deviation measures spread from the mean; what does zero spread imply about the observations?"
+    },
+    {
+      "id": "math-gaokao-339-q007",
+      "category": "Statistics",
+      "concept": "Standard Deviation from Sum of Squared Deviations",
+      "learningObjective": "Relate standard deviation to the sum of squared deviations from the mean.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A data set has \\(10\\) observations, and \\(\\sum_{i=1}^{10}(x_i-\\bar{x})^2=50\\). Find the population standard deviation \\(\\sigma\\), using divisor \\(n\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{5}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The population variance is\n\\[\n\\sigma^2=\\frac{1}{n}\\sum_{i=1}^{n}(x_i-\\bar{x})^2\n=\\frac{50}{10}\n=5.\n\\]\nTherefore, the population standard deviation is \\(\\sigma=\\sqrt{5}\\).",
+      "hint": "Use the population-variance formula with divisor \\(n\\), then take the square root."
+    },
+    {
+      "id": "math-gaokao-339-q008",
+      "category": "Statistics",
+      "concept": "Standard Deviation with an Unknown Data Value",
+      "learningObjective": "Determine an unknown data value from a given mean and then compute the standard deviation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The data set \\(1,x,5,9\\) has mean \\(6\\). Find its standard deviation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{11}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(11\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since the mean is \\(6\\), \\(\\frac{1+x+5+9}{4}=6\\), so \\(15+x=24\\), giving \\(x=9\\). The data set is \\(1,5,9,9\\), with mean \\(6\\). Its squared deviations are \\((-5)^2,(-1)^2,3^2,3^2\\), whose sum is \\(25+1+9+9=44\\). Thus the variance is \\(\\frac{44}{4}=11\\), and the standard deviation is \\(\\sqrt{11}\\).",
+      "hint": "Use the given mean to find the missing value first, then apply the standard deviation formula."
+    },
+    {
+      "id": "math-gaokao-339-q009",
+      "category": "Statistics",
+      "concept": "Standard Deviation of Combined Data Sets",
+      "learningObjective": "Compute the standard deviation of a combined data set formed from two smaller data sets.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The data sets \\(1,3,5\\) and \\(2,4,6\\) are combined into one data set of six numbers. Find the standard deviation of the combined data set.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{\\frac{8}{3}}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{\\frac{35}{12}}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The combined data set is \\(1,2,3,4,5,6\\). Its mean is \\(\\bar{x}=\\frac{1+2+3+4+5+6}{6}=\\frac{21}{6}=3.5\\). The squared deviations from \\(3.5\\) are \\((-2.5)^2,(-1.5)^2,(-0.5)^2,(0.5)^2,(1.5)^2,(2.5)^2\\). Their sum is \\(2(6.25+2.25+0.25)=2(8.75)=17.5=\\frac{35}{2}\\). Thus the variance is \\(\\frac{35/2}{6}=\\frac{35}{12}\\), and the standard deviation is \\(\\sqrt{\\frac{35}{12}}\\).",
+      "hint": "Combine all six values first, find the overall mean, and then average the squared deviations from that overall mean."
+    },
+    {
+      "id": "math-gaokao-339-q010",
+      "category": "Statistics",
+      "concept": "Standard Deviation from Sums of Data",
+      "learningObjective": "Compute standard deviation using the identity involving the sum of squares and the mean.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For a data set of \\(10\\) observations, \\(\\sum_{i=1}^{10}x_i=60\\) and \\(\\sum_{i=1}^{10}x_i^2=740\\). Find the population standard deviation \\(\\sigma\\), using divisor \\(n\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(38\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{38}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The mean is \\(\\bar{x}=\\frac{60}{10}=6\\). Using the population-variance identity,\n\\[\n\\sigma^2=\\frac{1}{n}\\sum_{i=1}^{n}x_i^2-\\bar{x}^2\n=\\frac{740}{10}-6^2\n=74-36\n=38.\n\\]\nTherefore, the population standard deviation is \\(\\sigma=\\sqrt{38}\\).",
+      "hint": "After finding the mean from the given sum, use \\(\\sigma^2=\\frac{1}{n}\\sum x_i^2-\\bar{x}^2\\) with divisor \\(n\\), then take the square root."
+    }
+  ]
+}

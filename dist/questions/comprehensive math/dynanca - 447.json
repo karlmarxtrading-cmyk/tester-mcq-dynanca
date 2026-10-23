@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-447",
+  "category": "Comprehensive Mathematics",
+  "title": "447. Trigonometry & Periodic Models: Tangent Graph Period and Asymptotes",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-447-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Period of the tangent function",
+      "learningObjective": "State the period of the basic tangent function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the period of \\(y=\\tan x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\pi\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\pi\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(\\tan(x+\\pi)=\\frac{\\sin(x+\\pi)}{\\cos(x+\\pi)}=\\frac{-\\sin x}{-\\cos x}=\\tan x\\), the tangent repeats every \\(\\pi\\), and no smaller positive number works. The value \\(2\\pi\\) is the period of sine and cosine.",
+      "hint": "Evaluate \\(\\tan(x+\\pi)\\) using the values of sine and cosine after a half turn."
+    },
+    {
+      "id": "dynanca-447-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Vertical asymptotes of tangent",
+      "learningObjective": "Locate the vertical asymptotes of the basic tangent graph.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Where are the vertical asymptotes of \\(y=\\tan x\\), with \\(k\\) any integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=\\frac{\\pi}{2}+k\\pi\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=k\\pi\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(\\tan x=\\frac{\\sin x}{\\cos x}\\), the tangent is undefined where \\(\\cos x=0\\), that is, at \\(x=\\frac{\\pi}{2}+k\\pi\\). The graph has vertical asymptotes there. At \\(x=k\\pi\\) the sine is \\(0\\), so those are the zeros of the tangent.",
+      "hint": "Find where the denominator \\(\\cos x\\) is zero."
+    },
+    {
+      "id": "dynanca-447-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Period of tangent with a doubled argument",
+      "learningObjective": "Find the period of a tangent function whose argument has a coefficient.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the period of \\(y=\\tan 2x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\pi}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\pi\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The period of \\(y=\\tan(Bx)\\) is \\(\\frac{\\pi}{|B|}\\). With \\(B=2\\), the period is \\(\\frac{\\pi}{2}\\). The value \\(\\pi\\) comes from using \\(\\frac{2\\pi}{B}\\), the formula for sine and cosine.",
+      "hint": "For tangent, divide \\(\\pi\\), not \\(2\\pi\\), by the coefficient of \\(x\\)."
+    },
+    {
+      "id": "dynanca-447-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Asymptotes of tangent with a doubled argument",
+      "learningObjective": "Locate the vertical asymptotes of a horizontally compressed tangent graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Where are the vertical asymptotes of \\(y=\\tan 2x\\), with \\(k\\) any integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=\\frac{\\pi}{2}+k\\pi\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=\\frac{\\pi}{4}+\\frac{k\\pi}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The asymptotes occur where the argument equals \\(\\frac{\\pi}{2}+k\\pi\\): \\(2x=\\frac{\\pi}{2}+k\\pi\\), so \\(x=\\frac{\\pi}{4}+\\frac{k\\pi}{2}\\). At \\(x=\\frac{\\pi}{2}\\) the function equals \\(\\tan\\pi=0\\), so \\(x=\\frac{\\pi}{2}\\) is a zero, not an asymptote.",
+      "hint": "Set the argument \\(2x\\) equal to the asymptote positions of \\(\\tan u\\) and solve for \\(x\\)."
+    },
+    {
+      "id": "dynanca-447-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Period of tangent with a divided argument",
+      "learningObjective": "Find the period of a horizontally stretched tangent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the period of \\(y=\\tan\\frac{x}{3}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\pi}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\pi\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Here \\(B=\\frac{1}{3}\\), so the period is \\(\\frac{\\pi}{1/3}=3\\pi\\). Dividing \\(x\\) by \\(3\\) stretches the graph horizontally by a factor of \\(3\\). The value \\(\\frac{\\pi}{3}\\) is the period of \\(y=\\tan 3x\\).",
+      "hint": "Write the argument as \\(Bx\\) and compute \\(\\frac{\\pi}{B}\\)."
+    },
+    {
+      "id": "dynanca-447-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Zeros of the tangent graph",
+      "learningObjective": "Locate the x-intercepts of the basic tangent graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Where does the graph of \\(y=\\tan x\\) cross the \\(x\\)-axis, with \\(k\\) any integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=\\frac{\\pi}{2}+k\\pi\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=k\\pi\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The tangent is zero when its numerator \\(\\sin x\\) is zero and \\(\\cos x\\ne 0\\), that is, at \\(x=k\\pi\\). At \\(x=\\frac{\\pi}{2}+k\\pi\\) the cosine is zero, so the tangent is undefined there and the graph has asymptotes.",
+      "hint": "A quotient is zero when its numerator is zero."
+    },
+    {
+      "id": "dynanca-447-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Asymptote of a shifted tangent",
+      "learningObjective": "Locate an asymptote of a horizontally shifted tangent graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the smallest positive value of \\(x\\) at which \\(y=\\tan\\left(x-\\frac{\\pi}{4}\\right)\\) has a vertical asymptote?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=\\frac{3\\pi}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=\\frac{\\pi}{4}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Asymptotes occur where the argument equals \\(\\frac{\\pi}{2}+k\\pi\\): \\(x-\\frac{\\pi}{4}=\\frac{\\pi}{2}+k\\pi\\), so \\(x=\\frac{3\\pi}{4}+k\\pi\\). The smallest positive value is \\(\\frac{3\\pi}{4}\\) (for \\(k=-1\\) the value is negative). At \\(x=\\frac{\\pi}{4}\\) the function equals \\(\\tan 0=0\\), a zero of the graph.",
+      "hint": "Shift each asymptote of \\(y=\\tan x\\) to the right by \\(\\frac{\\pi}{4}\\)."
+    },
+    {
+      "id": "dynanca-447-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Period of tangent with pi in the argument",
+      "learningObjective": "Find the period of a tangent when the coefficient of the variable is pi.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is the period of \\(y=3\\tan(\\pi x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For tangent the period is \\(\\frac{\\pi}{|B|}=\\frac{\\pi}{\\pi}=1\\). The factor \\(3\\) stretches the graph vertically and does not change the period. The value \\(2\\) comes from using \\(\\frac{2\\pi}{B}\\), which applies to sine and cosine only.",
+      "hint": "Use the tangent period formula; the vertical factor has no effect on the period."
+    },
+    {
+      "id": "dynanca-447-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Counting asymptotes in an interval",
+      "learningObjective": "Count the vertical asymptotes of a compressed tangent on a given interval.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many vertical asymptotes does \\(y=\\tan 2x\\) have for \\(0\\le x\\le 2\\pi\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The asymptotes are at \\(x=\\frac{\\pi}{4}+\\frac{k\\pi}{2}\\). In \\([0,2\\pi]\\) these are \\(\\frac{\\pi}{4}\\), \\(\\frac{3\\pi}{4}\\), \\(\\frac{5\\pi}{4}\\), and \\(\\frac{7\\pi}{4}\\), so there are \\(4\\). The uncompressed graph \\(y=\\tan x\\) has only \\(2\\) in this interval, at \\(\\frac{\\pi}{2}\\) and \\(\\frac{3\\pi}{2}\\).",
+      "hint": "List the solutions of \\(\\cos 2x=0\\) in the interval."
+    },
+    {
+      "id": "dynanca-447-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Amplitude and the tangent graph",
+      "learningObjective": "Explain why a tangent function has no amplitude.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which statement about \\(y=5\\tan x\\) is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It has no amplitude, because its range is all real numbers."
+        },
+        {
+          "label": "B",
+          "text": "Its amplitude is \\(5\\), because the coefficient of the tangent is \\(5\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Amplitude is half the distance between the maximum and minimum values of a bounded periodic function. The tangent has no maximum or minimum: near each asymptote its values grow without bound, so its range is all real numbers. The factor \\(5\\) stretches the graph vertically but does not create an amplitude.",
+      "hint": "Amplitude requires a largest and a smallest value; consider the behaviour near an asymptote."
+    }
+  ]
+}

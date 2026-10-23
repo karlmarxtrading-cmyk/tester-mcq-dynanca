@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-251",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 251",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-251-q001",
+      "category": "Solid Geometry",
+      "concept": "Orthogonal Projection onto a Coordinate Plane",
+      "learningObjective": "Find the orthogonal projection of a point onto a plane parallel to a coordinate plane.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Find the orthogonal projection of point \\(P(3,-2,4)\\) onto the plane \\(y=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,-2,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,1,4)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The plane \\(y=1\\) is parallel to the \\(xz\\)-plane. An orthogonal projection onto this plane changes only the \\(y\\)-coordinate to \\(1\\), while the \\(x\\)- and \\(z\\)-coordinates remain unchanged. Therefore, the projection of \\(P(3,-2,4)\\) is \\((3,1,4)\\).",
+      "hint": "For projection onto a plane parallel to a coordinate plane, change only the coordinate perpendicular to that plane."
+    },
+    {
+      "id": "math-gaokao-251-q002",
+      "category": "Solid Geometry",
+      "concept": "Vector Projection",
+      "learningObjective": "Find the vector projection of one vector onto another.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(\\vec{a}=(2,1,-1)\\) and \\(\\vec{b}=(1,0,1)\\). Find the vector projection of \\(\\vec{a}\\) onto \\(\\vec{b}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left(\\frac{1}{2},0,\\frac{1}{2}\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,0,1)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The vector projection of \\(\\vec{a}\\) onto \\(\\vec{b}\\) is\n\\[\n\\operatorname{proj}_{\\vec{b}}\\vec{a}=\\frac{\\vec{a}\\cdot\\vec{b}}{\\vec{b}\\cdot\\vec{b}}\\vec{b}.\n\\]\nCompute \\(\\vec{a}\\cdot\\vec{b}=2(1)+1(0)+(-1)(1)=1\\) and \\(\\vec{b}\\cdot\\vec{b}=1^2+0^2+1^2=2\\). Thus\n\\[\n\\operatorname{proj}_{\\vec{b}}\\vec{a}=\\frac{1}{2}(1,0,1)=\\left(\\frac{1}{2},0,\\frac{1}{2}\\right).\n\\]",
+      "hint": "Use the formula for the vector projection and first compute the dot products."
+    },
+    {
+      "id": "math-gaokao-251-q003",
+      "category": "Solid Geometry",
+      "concept": "Orthogonal Projection of a Point onto a Plane",
+      "learningObjective": "Determine the coordinates of the orthogonal projection of a point onto a plane given by a general equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the orthogonal projection of point \\(P(3,2,1)\\) onto the plane \\(x+2y+2z=6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left(\\frac{8}{3},\\frac{4}{3},\\frac{1}{3}\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\left(\\frac{10}{3},\\frac{8}{3},\\frac{5}{3}\\right)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A normal vector to the plane is \\(\\vec{n}=(1,2,2)\\). For point \\(P\\), the signed value of the plane expression is\n\\[\n1(3)+2(2)+2(1)-6=3+4+2-6=3.\n\\]\nThe projection formula gives\n\\[\nP'=P-\\frac{3}{|\\vec{n}|^2}\\vec{n}.\n\\]\nSince \\(|\\vec{n}|^2=1^2+2^2+2^2=9\\), we have\n\\[\nP'=(3,2,1)-\\frac{3}{9}(1,2,2)\n=(3,2,1)-\\left(\\frac{1}{3},\\frac{2}{3},\\frac{2}{3}\\right)\n=\\left(\\frac{8}{3},\\frac{4}{3},\\frac{1}{3}\\right).\n\\]",
+      "hint": "Use the projection formula involving the plane's normal vector and the signed plane expression."
+    },
+    {
+      "id": "math-gaokao-251-q004",
+      "category": "Solid Geometry",
+      "concept": "Angle Between a Line and a Plane",
+      "learningObjective": "Determine the angle between a line and a plane using the direction vector and normal vector.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the angle between the line \\(\\frac{x-1}{2}=\\frac{y+1}{-1}=\\frac{z}{2}\\) and the plane \\(x+y+z=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arcsin\\left(\\frac{1}{3}\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arcsin\\left(\\frac{1}{\\sqrt{3}}\\right)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The direction vector of the line is \\(\\vec{d}=(2,-1,2)\\), and a normal vector of the plane is \\(\\vec{n}=(1,1,1)\\). If \\(\\theta\\) is the angle between the line and the plane, then\n\\[\n\\sin\\theta=\\frac{|\\vec{d}\\cdot\\vec{n}|}{|\\vec{d}|\\,|\\vec{n}|}.\n\\]\nCompute\n\\[\n\\vec{d}\\cdot\\vec{n}=2(1)+(-1)(1)+2(1)=3,\n\\]\n\\[\n|\\vec{d}|=\\sqrt{2^2+(-1)^2+2^2}=3,\\qquad |\\vec{n}|=\\sqrt{1^2+1^2+1^2}=\\sqrt{3}.\n\\]\nThus\n\\[\n\\sin\\theta=\\frac{3}{3\\sqrt{3}}=\\frac{1}{\\sqrt{3}},\n\\]\nso \\(\\theta=\\arcsin\\left(\\frac{1}{\\sqrt{3}}\\right)\\).",
+      "hint": "The sine of the angle between a line and a plane equals \\(\\frac{|\\vec{d}\\cdot\\vec{n}|}{|\\vec{d}|\\,|\\vec{n}|}\\)."
+    },
+    {
+      "id": "math-gaokao-251-q005",
+      "category": "Solid Geometry",
+      "concept": "Orthogonal Projection of a Point onto a Line in Space",
+      "learningObjective": "Find the coordinates of the orthogonal projection of a point onto a line given by a point and direction vector.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the orthogonal projection of point \\(P(3,1,4)\\) onto the line through \\(A(1,0,2)\\) with direction vector \\(\\vec{v}=(1,1,1)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left(\\frac{8}{3},\\frac{5}{3},\\frac{11}{3}\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,1,2)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The projection of \\(P\\) onto the line through \\(A\\) with direction \\(\\vec{v}\\) is\n\\[\nA+\\frac{(P-A)\\cdot\\vec{v}}{\\vec{v}\\cdot\\vec{v}}\\vec{v}.\n\\]\nHere\n\\[\nP-A=(2,1,2),\n\\]\nso\n\\[\n(P-A)\\cdot\\vec{v}=2(1)+1(1)+2(1)=5,\n\\]\nand\n\\[\n\\vec{v}\\cdot\\vec{v}=1^2+1^2+1^2=3.\n\\]\nTherefore the projection is\n\\[\n(1,0,2)+\\frac{5}{3}(1,1,1)\n=\\left(1+\\frac{5}{3},\\frac{5}{3},2+\\frac{5}{3}\\right)\n=\\left(\\frac{8}{3},\\frac{5}{3},\\frac{11}{3}\\right).\n\\]",
+      "hint": "Use the projection formula for a point onto a line with known point and direction vector."
+    },
+    {
+      "id": "math-gaokao-251-q006",
+      "category": "Solid Geometry",
+      "concept": "Length of Orthogonal Projection of a Segment onto a Plane",
+      "learningObjective": "Calculate the length of the orthogonal projection of a segment onto a coordinate plane.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Segment \\(AB\\) has endpoints \\(A(1,2,3)\\) and \\(B(4,6,3)\\). Find the length of its orthogonal projection onto the plane \\(z=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The orthogonal projection onto the plane \\(z=0\\) sends each point \\((x,y,z)\\) to \\((x,y,0)\\). Thus\n\\[\nA'=(1,2,0),\\qquad B'=(4,6,0).\n\\]\nThe length of the projected segment is\n\\[\nA'B'=\\sqrt{(4-1)^2+(6-2)^2}=\\sqrt{3^2+4^2}=\\sqrt{25}=5.\n\\]",
+      "hint": "Project each endpoint onto the plane, then use the distance formula in that plane."
+    },
+    {
+      "id": "math-gaokao-251-q007",
+      "category": "Solid Geometry",
+      "concept": "Projection Parameter Determination",
+      "learningObjective": "Determine an unknown coordinate so that the orthogonal projection of a point onto a plane has given coordinates.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The orthogonal projection of point \\(P(1,2,k)\\) onto the plane \\(x+y+z=3\\) is \\((0,1,2)\\). Find \\(k\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A normal vector to the plane is \\(\\vec{n}=(1,1,1)\\). For \\(P(1,2,k)\\), the signed value of the plane expression is\n\\[\n1+2+k-3=k.\n\\]\nThe projection is\n\\[\nP-\\frac{k}{3}(1,1,1)\n=\\left(1-\\frac{k}{3},\\,2-\\frac{k}{3},\\,k-\\frac{k}{3}\\right)\n=\\left(1-\\frac{k}{3},\\,2-\\frac{k}{3},\\,\\frac{2k}{3}\\right).\n\\]\nSet this equal to \\((0,1,2)\\). From the first coordinate,\n\\[\n1-\\frac{k}{3}=0 \\implies k=3.\n\\]\nThis also gives the second coordinate \\(2-\\frac{3}{3}=1\\) and the third coordinate \\(\\frac{2\\cdot 3}{3}=2\\). Hence \\(k=3\\).",
+      "hint": "Use the orthogonal projection formula onto the plane and compare coordinates."
+    },
+    {
+      "id": "math-gaokao-251-q008",
+      "category": "Solid Geometry",
+      "concept": "Orthogonal Projection of a Vector onto a Plane",
+      "learningObjective": "Find the orthogonal projection of a vector onto a plane through the origin.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the orthogonal projection of vector \\(\\vec{v}=(2,3,4)\\) onto the plane \\(x+y+z=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,3,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-1,0,1)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A normal vector to the plane is \\(\\vec{n}=(1,1,1)\\). The projection of \\(\\vec{v}\\) onto the plane is\n\\[\n\\vec{v}-\\operatorname{proj}_{\\vec{n}}\\vec{v}.\n\\]\nCompute\n\\[\n\\vec{v}\\cdot\\vec{n}=2+3+4=9,\\qquad |\\vec{n}|^2=3.\n\\]\nThus\n\\[\n\\operatorname{proj}_{\\vec{n}}\\vec{v}=\\frac{9}{3}(1,1,1)=(3,3,3).\n\\]\nTherefore the projection onto the plane is\n\\[\n(2,3,4)-(3,3,3)=(-1,0,1).\n\\]",
+      "hint": "Subtract the projection onto the normal vector from the original vector."
+    },
+    {
+      "id": "math-gaokao-251-q009",
+      "category": "Solid Geometry",
+      "concept": "Distance from a Point to a Line via Projection",
+      "learningObjective": "Calculate the distance from a point to a line in space using vector projection and cross product.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the distance from point \\(P(2,1,3)\\) to the line \\(L:(x,y,z)=(1,0,1)+t(1,2,2)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\sqrt{5}}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{5}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(A=(1,0,1)\\) and \\(\\vec{v}=(1,2,2)\\). Then\n\\[\nP-A=(1,1,2).\n\\]\nThe distance from \\(P\\) to the line is\n\\[\n\\frac{|(P-A)\\times\\vec{v}|}{|\\vec{v}|}.\n\\]\nCompute the cross product:\n\\[\n(1,1,2)\\times(1,2,2)\n=(1\\cdot2-2\\cdot2,\\;2\\cdot1-1\\cdot2,\\;1\\cdot2-1\\cdot1)\n=(-2,0,1).\n\\]\nIts magnitude is\n\\[\n|(-2,0,1)|=\\sqrt{4+0+1}=\\sqrt{5}.\n\\]\nAlso,\n\\[\n|\\vec{v}|=\\sqrt{1^2+2^2+2^2}=3.\n\\]\nTherefore the distance is \\(\\frac{\\sqrt{5}}{3}\\).",
+      "hint": "Use the formula \\(d=\\frac{|(P-A)\\times\\vec{v}|}{|\\vec{v}|}\\) for the distance from a point to a line."
+    },
+    {
+      "id": "math-gaokao-251-q010",
+      "category": "Solid Geometry",
+      "concept": "Area of Orthogonal Projection of a Triangle",
+      "learningObjective": "Calculate the area of the orthogonal projection of a triangle onto a coordinate plane.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Triangle \\(ABC\\) has vertices \\(A(1,0,0)\\), \\(B(0,1,0)\\), and \\(C(0,0,1)\\). Find the area of its orthogonal projection onto the \\(xy\\)-plane.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{\\sqrt{3}}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The triangle lies in the plane \\(x+y+z=1\\), whose normal vector is \\(\\vec{n}=(1,1,1)\\). The \\(xy\\)-plane has normal vector \\(\\vec{k}=(0,0,1)\\). If \\(\\theta\\) is the angle between these planes, then\n\\[\n\\cos\\theta=\\frac{|\\vec{n}\\cdot\\vec{k}|}{|\\vec{n}|\\,|\\vec{k}|}\n=\\frac{1}{\\sqrt{3}}.\n\\]\nThe original area of triangle \\(ABC\\) is\n\\[\n\\frac{\\sqrt{3}}{2}\n\\]\nbecause its side vectors from \\(A\\) are \\((-1,1,0)\\) and \\((-1,0,1)\\), whose cross product has magnitude \\(\\sqrt{3}\\). The area of the orthogonal projection is\n\\[\n\\text{Area}_{\\text{proj}}=\\text{Area}_{\\text{original}}\\cdot|\\cos\\theta|\n=\\frac{\\sqrt{3}}{2}\\cdot\\frac{1}{\\sqrt{3}}\n=\\frac{1}{2}.\n\\]",
+      "hint": "The area of an orthogonal projection equals the original area multiplied by the absolute cosine of the angle between the plane of the figure and the projection plane."
+    }
+  ]
+}

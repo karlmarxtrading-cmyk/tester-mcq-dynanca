@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-459",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 459",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-459-q001",
+      "category": "Integrated Gaokao Mathematics",
+      "concept": "Synthesis of Functions and Inequalities",
+      "learningObjective": "Determine the range of a parameter for which an inequality holds true for all real numbers by analyzing function properties.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x) = x^2 - 2ax + a + 2\\). If \\(f(x) \\ge 0\\) for all \\(x \\in \\mathbb{R}\\), what is the range of values for the parameter \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([-1, 2]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\infty, -1] \\cup [2, \\infty)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Complete the square:\n\\[\nf(x)=(x-a)^2+a+2-a^2.\n\\]\nFor a fixed real parameter \\(a\\), the minimum over all real \\(x\\) occurs at \\(x=a\\). Therefore, the required condition is\n\\[\n\\begin{aligned}\na+2-a^2&\\ge0,\\\\\na^2-a-2&\\le0,\\\\\n(a-2)(a+1)&\\le0.\n\\end{aligned}\n\\]\nHence \\(-1\\le a\\le2\\). Both endpoints work: at \\(a=-1\\), the function is \\((x+1)^2\\), and at \\(a=2\\), it is \\((x-2)^2\\). When \\(a<-1\\) or \\(a>2\\), the minimum is negative. Option B is not the solution set: it contains these inadmissible outside values and omits admissible interior values. It is also not the exact complement of option A, because its endpoints overlap option A.",
+      "hint": "Recall that for a quadratic function with a positive leading coefficient to be always non-negative, its discriminant must be non-positive."
+    },
+    {
+      "id": "math-gaokao-459-q002",
+      "category": "Integrated Gaokao Mathematics",
+      "concept": "Synthesis of Sequences and Limits",
+      "learningObjective": "Calculate the limit of a scaled sequence term derived from a rational recurrence relation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Consider the sequence \\(\\{a_n\\}\\) defined by \\(a_1 = 1\\) and \\(a_{n+1} = \\frac{2a_n}{a_n + 2}\\). What is the value of \\(\\lim_{n \\to \\infty} \\frac{n}{4} a_n\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(a_1=1>0\\) and the recurrence maps positive terms to positive terms, every \\(a_n>0\\); the reciprocals below are therefore defined. First, find the general term \\(a_n\\). Given \\(a_{n+1} = \\frac{2a_n}{a_n + 2}\\), take the reciprocal:\n\\[\n\\frac{1}{a_{n+1}} = \\frac{a_n + 2}{2a_n} = \\frac{1}{2} + \\frac{1}{a_n}\n\\]\nLet \\(b_n = \\frac{1}{a_n}\\). Then \\(b_{n+1} - b_n = \\frac{1}{2}\\), so \\(\\{b_n\\}\\) is an arithmetic progression with first term \\(b_1 = 1\\) and common difference \\(d = \\frac{1}{2}\\).\n\\[\nb_n = 1 + (n-1)\\frac{1}{2} = \\frac{n+1}{2}\n\\]\nThus, \\(a_n = \\frac{1}{b_n} = \\frac{2}{n+1}\\).\nNow evaluate the limit:\n\\[\n\\begin{aligned}\n\\lim_{n \\to \\infty} \\frac{n}{4} a_n &= \\lim_{n \\to \\infty} \\frac{n}{4} \\cdot \\frac{2}{n+1} \\\\\n&= \\lim_{n \\to \\infty} \\frac{2n}{4(n+1)} \\\\\n&= \\lim_{n \\to \\infty} \\frac{n}{2n+2}\n\\end{aligned}\n\\]\nDividing numerator and denominator by \\(n\\):\n\\[\n\\lim_{n \\to \\infty} \\frac{1}{2 + \\frac{2}{n}} = \\frac{1}{2}\n\\]\nThe result is \\(\\frac{1}{2}\\), which corresponds to Option A. Option B (\\(2\\)) is the value of \\(\\lim_{n \\to \\infty} n a_n\\), a common error if the scaling factor \\(\\frac{1}{4}\\) is ignored.",
+      "hint": "Transform the recurrence relation by taking reciprocals to identify an arithmetic sequence, then substitute the general term into the limit expression."
+    },
+    {
+      "id": "math-gaokao-459-q003",
+      "category": "Integrated Gaokao Mathematics",
+      "concept": "Synthesis of Vectors and Geometry",
+      "learningObjective": "Determine the magnitude of a vector sum using geometric properties and dot products.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(\\vec{a}\\) and \\(\\vec{b}\\) be unit vectors such that the angle between them is \\(60^\\circ\\). If \\(\\vec{c} = \\vec{a} + 2\\vec{b}\\), what is the magnitude \\(|\\vec{c}|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{7}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The square of the magnitude of a vector \\(\\vec{c}\\) is given by the dot product \\(\\vec{c} \\cdot \\vec{c}\\).\n\\[\n|\\vec{c}|^2 = (\\vec{a} + 2\\vec{b}) \\cdot (\\vec{a} + 2\\vec{b})\n\\]\nExpanding this:\n\\[\n\\begin{aligned}\n|\\vec{c}|^2 &= \\vec{a} \\cdot \\vec{a} + 2(\\vec{a} \\cdot \\vec{b}) + 2(\\vec{b} \\cdot \\vec{a}) + 4(\\vec{b} \\cdot \\vec{b}) \\\\\n|\\vec{c}|^2 &= |\\vec{a}|^2 + 4(\\vec{a} \\cdot \\vec{b}) + 4|\\vec{b}|^2\n\\end{aligned}\n\\]\nGiven that \\(\\vec{a}\\) and \\(\\vec{b}\\) are unit vectors, \\(|\\vec{a}| = 1\\) and \\(|\\vec{b}| = 1\\).\nThe dot product \\[\n\\begin{aligned}\n\\vec{a} \\cdot \\vec{b} &= |\\vec{a}| |\\vec{b}| \\cos \\theta \\\\\n&= 1 \\cdot 1 \\cdot \\cos 60^\\circ \\\\\n&= \\frac{1}{2}\n\\end{aligned}\n\\].\nSubstitute these values:\n\\[\n\\begin{aligned}\n|\\vec{c}|^2 &= 1^2 + 4\\left(\\frac{1}{2}\\right) + 4(1^2) \\\\\n|\\vec{c}|^2 &= 1 + 2 + 4 = 7\n\\end{aligned}\n\\]\nTherefore, \\(|\\vec{c}| = \\sqrt{7}\\).\nThis matches option B. The distractor \\(\\sqrt{5}\\) results from omitting the entire cross term, leaving \\(|\\vec{a}|^2+4|\\vec{b}|^2=1+4=5\\).",
+      "hint": "Use the property \\(|\\vec{v}|^2 = \\vec{v} \\cdot \\vec{v}\\) and expand the dot product algebraically, remembering to include the cosine of the angle between the vectors."
+    },
+    {
+      "id": "math-gaokao-459-q004",
+      "category": "Integrated Gaokao Mathematics",
+      "concept": "Synthesis of Trigonometry and Algebra",
+      "learningObjective": "Solve a trigonometric equation within a specific interval by reducing it to a polynomial form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the number of solutions to the equation \\(2\\sin^2 x - \\sin x - 1 = 0\\) in the interval \\(x \\in [0, 2\\pi)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(u = \\sin x\\). The equation becomes a quadratic in \\(u\\):\n\\[\n2u^2 - u - 1 = 0\n\\]\nFactor the quadratic:\n\\[\n(2u + 1)(u - 1) = 0\n\\]\nThe solutions for \\(u\\) are:\n1. \\(u = 1 \\implies \\sin x = 1\\)\n2. \\(u = -\\frac{1}{2} \\implies \\sin x = -\\frac{1}{2}\\)\nNow, find \\(x\\) in the interval \\([0, 2\\pi)\\):\nCase \\(1\\): \\(\\sin x = 1\\).\nThere is only one solution in \\([0, 2\\pi)\\), which is \\(x = \\frac{\\pi}{2}\\).\nCase \\(2\\): \\(\\sin x = -\\frac{1}{2}\\).\nSine is negative in the third and fourth quadrants. The reference angle is \\(\\arcsin(\\frac{1}{2}) = \\frac{\\pi}{6}\\).\nThird quadrant solution: \\(x = \\pi + \\frac{\\pi}{6} = \\frac{7\\pi}{6}\\).\nFourth quadrant solution: \\(x = 2\\pi - \\frac{\\pi}{6} = \\frac{11\\pi}{6}\\).\nBoth \\(\\frac{7\\pi}{6}\\) and \\(\\frac{11\\pi}{6}\\) are within \\([0, 2\\pi)\\).\nTotal solutions: \\(1 + 2 = 3\\).\nThe solutions are \\(\\frac{\\pi}{2}, \\frac{7\\pi}{6}, \\frac{11\\pi}{6}\\).\nThus, there are \\(3\\) solutions. This corresponds to Option A. Option B (\\(4\\)) might arise if one mistakenly counts \\(\\sin x = 1\\) twice or includes endpoints incorrectly.",
+      "hint": "Treat the trigonometric equation as a quadratic in terms of \\(\\sin x\\), solve for \\(\\sin x\\), and then determine the corresponding angles in the given domain."
+    },
+    {
+      "id": "math-gaokao-459-q005",
+      "category": "Integrated Gaokao Mathematics",
+      "concept": "Synthesis of Calculus and Optimization",
+      "learningObjective": "Find the maximum value of a function on a closed interval using derivative analysis.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the maximum value of the function \\(f(x) = x^3 - 3x^2 + 4\\) on the interval \\([-1, 3]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "To find the absolute maximum on a closed interval, we evaluate the function at critical points inside the interval and at the endpoints.\nFirst, find the derivative:\n\\[\nf'(x) = 3x^2 - 6x\n\\]\nSet \\(f'(x) = 0\\) to find critical points:\n\\[\n3x(x - 2) = 0 \\implies x = 0, x = 2\n\\]\nBoth \\(x=0\\) and \\(x=2\\) are in the interval \\([-1, 3]\\).\nEvaluate \\(f(x)\\) at the critical points and endpoints:\n1. Endpoint \\(x = -1\\):\n\\[\n\\begin{aligned}\nf(-1) &= (-1)^3 - 3(-1)^2 + 4 \\\\\n&= -1 - 3 + 4 \\\\\n&= 0\n\\end{aligned}\n\\]\n2. Critical point \\(x = 0\\):\n\\[\nf(0) = 0^3 - 3(0)^2 + 4 = 4\n\\]\n3. Critical point \\(x = 2\\):\n\\[\n\\begin{aligned}\nf(2) &= 2^3 - 3(2)^2 + 4 \\\\\n&= 8 - 12 + 4 \\\\\n&= 0\n\\end{aligned}\n\\]\n4. Endpoint \\(x = 3\\):\n\\[\n\\begin{aligned}\nf(3) &= 3^3 - 3(3)^2 + 4 \\\\\n&= 27 - 27 + 4 \\\\\n&= 4\n\\end{aligned}\n\\]\nComparing the values \\(0,4,0,4\\), the maximum value is \\(4\\).\nThis corresponds to Option A. Option B (\\(0\\)) is the minimum value.",
+      "hint": "Identify critical points by setting the first derivative to zero, then compare the function values at these points and the interval endpoints."
+    },
+    {
+      "id": "math-gaokao-459-q006",
+      "category": "Integrated Gaokao Mathematics",
+      "concept": "Synthesis of Probability and Combinatorics",
+      "learningObjective": "Calculate the probability of a compound event involving selection without replacement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A bag contains \\(5\\) red balls and \\(7\\) blue balls. Two balls are drawn uniformly at random without replacement. What is the probability that both balls are red?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{25}{144}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{33}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(\\binom{12}{2}=66\\) equally likely unordered pairs, and \\(\\binom{5}{2}=10\\) are all red. Hence the probability is \\(10/66=5/33\\). Equivalently, \\(\\frac{5}{12}\\cdot\\frac{4}{11}=\\frac{5}{33}\\). The distractor \\((5/12)^2\\) wrongly assumes replacement.",
+      "hint": "Calculate the total combinations for drawing two balls and the specific combinations for drawing two red balls, or multiply the conditional probabilities of each draw."
+    },
+    {
+      "id": "math-gaokao-459-q007",
+      "category": "Integrated Gaokao Mathematics",
+      "concept": "Synthesis of Analytic Geometry and Algebra",
+      "learningObjective": "Determine the eccentricity of a hyperbola given its asymptotes.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The asymptotes of a hyperbola centered at the origin with foci on the x-axis are given by the lines \\(y = \\pm \\sqrt{3}x\\). What is the eccentricity of this hyperbola?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a hyperbola \\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\), the equations of the asymptotes are \\(y = \\pm \\frac{b}{a}x\\).\nGiven the asymptotes are \\(y = \\pm \\sqrt{3}x\\), we have:\n\\[\n\\frac{b}{a} = \\sqrt{3} \\implies b = a\\sqrt{3}\n\\]\nThe relationship between \\(a, b\\), and \\(c\\) (distance from center to focus) for a hyperbola is \\(c^2 = a^2 + b^2\\).\nSubstitute \\(b = a\\sqrt{3}\\):\n\\[\n\\begin{aligned}\nc^2 &= a^2 + (a\\sqrt{3})^2 \\\\\n&= a^2 + 3a^2 \\\\\n&= 4a^2\n\\end{aligned}\n\\]\n\\[\nc = \\sqrt{4a^2} = 2a\n\\]\nThe eccentricity \\(e\\) is defined as \\(e = \\frac{c}{a}\\).\n\\[\ne = \\frac{2a}{a} = 2\n\\]\nThis corresponds to Option A. Option B (\\(\\sqrt{3}\\)) is the slope of the asymptote, not the eccentricity.",
+      "hint": "Relate the slope of the asymptotes to the ratio \\(\\frac{b}{a}\\), then use the Pythagorean relationship \\(c^2 = a^2 + b^2\\) to find \\(c\\) in terms of \\(a\\)."
+    },
+    {
+      "id": "math-gaokao-459-q008",
+      "category": "Integrated Gaokao Mathematics",
+      "concept": "Synthesis of Solid Geometry and Volume",
+      "learningObjective": "Calculate the volume of a composite solid formed by removing a cone from a cylinder.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A right circular cylinder has radius \\(r=2\\) and height \\(h=6\\). A right circular cone with the same base radius and height is removed from the cylinder, sharing the same axis. What is the volume of the remaining solid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\pi\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\pi\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The volume of a cylinder is \\(V_{\\text{cyl}} = \\pi r^2 h\\).\nThe volume of a cone is \\(V_{\\text{cone}} = \\frac{1}{3} \\pi r^2 h\\).\nThe remaining volume is \\[\n\\begin{aligned}\nV_{\\text{rem}} &= V_{\\text{cyl}} - V_{\\text{cone}} \\\\\n&= \\pi r^2 h - \\frac{1}{3} \\pi r^2 h \\\\\n&= \\frac{2}{3} \\pi r^2 h\n\\end{aligned}\n\\].\nGiven \\(r=2\\) and \\(h=6\\):\n\\[\n\\begin{aligned}\nV_{\\text{rem}} &= \\frac{2}{3} \\pi (2)^2 (6) \\\\\nV_{\\text{rem}} &= \\frac{2}{3} \\pi (4) (6)\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\nV_{\\text{rem}} &= \\frac{2}{3} \\pi (24) \\\\\n&= 2 \\pi (8) \\\\\n&= 16\\pi\n\\end{aligned}\n\\]\nThis matches Option B. Option A (\\(8\\pi\\)) is the volume of the cone itself.",
+      "hint": "Calculate the volume of the cylinder and subtract the volume of the cone, noting that the cone's volume is one-third of the cylinder's volume when they share dimensions."
+    },
+    {
+      "id": "math-gaokao-459-q009",
+      "category": "Integrated Gaokao Mathematics",
+      "concept": "Synthesis of Logic and Sets",
+      "learningObjective": "Determine the truth value of a proposition involving set inclusion and logical quantifiers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(A = \\{x\\in\\mathbb{R} \\mid x^2 - 3x + 2 < 0\\}\\) and \\(B = \\{x\\in\\mathbb{R} \\mid x < m\\}\\). If \\(A \\subseteq B\\), what is the smallest integer value of \\(m\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factoring gives \\(x^2-3x+2=(x-1)(x-2)\\), so \\(A=(1,2)\\), while \\(B=(-\\infty,m)\\). If \\(m\\ge2\\), every element of \\(A\\) is less than \\(m\\), including when \\(m=2\\), so \\(A\\subseteq B\\). If \\(m<2\\), some number strictly between \\(\\max\\{1,m\\}\\) and \\(2\\) belongs to \\(A\\) but not to \\(B\\). Thus containment holds exactly when \\(m\\ge2\\), and the smallest integer is \\(2\\). The distractor \\(1\\) fails, for example, at \\(x=3/2\\).",
+      "hint": "Solve the quadratic inequality to find the interval for set A, then analyze the boundary condition required for A to be a subset of the half-line defined by B."
+    },
+    {
+      "id": "math-gaokao-459-q010",
+      "category": "Integrated Gaokao Mathematics",
+      "concept": "Synthesis of Functions and Derivatives",
+      "learningObjective": "Analyze the monotonicity of a function involving logarithms and parameters.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(f(x) = x \\ln x - ax\\). If \\(f(x)\\) is increasing on the interval \\([1, e]\\), what is the maximum value of the parameter \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{e}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Differentiating gives \\(f'(x)=\\ln x+1-a\\). On \\([1,e]\\), its minimum occurs at \\(x=1\\) and equals \\(1-a\\). If \\(a<1\\), the derivative is positive throughout. If \\(a=1\\), it is positive on \\((1,e]\\) and zero only at the left endpoint, so the function is still strictly increasing. If \\(a>1\\), it is negative immediately to the right of \\(1\\), which prevents increase on the whole interval. Thus the allowed parameters are exactly \\(a\\le1\\), and the largest is \\(1\\). The distractor \\(1/e\\) is allowed but is not the largest allowed value.",
+      "hint": "Find the derivative of the function and set up the inequality \\(f'(x) \\ge 0\\). Determine the minimum value of the expression involving \\(x\\) over the given interval to constrain the parameter \\(a\\)."
+    }
+  ]
+}

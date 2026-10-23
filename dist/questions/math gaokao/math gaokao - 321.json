@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-321",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 321",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-321-q001",
+      "category": "Probability",
+      "concept": "Standard normal distribution symmetry",
+      "learningObjective": "Identify basic probabilities for the standard normal variable at its mean.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(Z\\sim N(0,1)\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P(Z<0)=0.5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(P(Z<0)=0.8413\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The standard normal density is symmetric about \\(0\\), and the total area under the curve is \\(1\\). Therefore half of the probability lies below the mean \\(0\\), so \\(P(Z<0)=0.5\\). The value \\(0.8413\\) is \\(P(Z<1)\\), not \\(P(Z<0)\\).",
+      "hint": "Use the symmetry of the standard normal curve about its mean."
+    },
+    {
+      "id": "math-gaokao-321-q002",
+      "category": "Probability",
+      "concept": "Standard normal symmetry for negative arguments",
+      "learningObjective": "Use symmetry to compute an upper-tail probability for the standard normal distribution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(Z\\sim N(0,1)\\). Given \\(P(Z<1.96)=0.975\\), find \\(P(Z>-1.96)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.025\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.975\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By symmetry of the standard normal curve, \\(P(Z>-1.96)=P(Z<1.96)=0.975\\). Equivalently, \\(P(Z\\le -1.96)=0.025\\), so its complement is \\(0.975\\).",
+      "hint": "Reflect the event across \\(0\\); the standard normal curve is symmetric about its mean."
+    },
+    {
+      "id": "math-gaokao-321-q003",
+      "category": "Probability",
+      "concept": "Probability in a symmetric interval around the mean",
+      "learningObjective": "Compute a central probability using standard normal symmetry.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(Z\\sim N(0,1)\\). Using \\(P(Z<1)=0.8413\\), find \\(P(-1<Z<1)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.6826\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.3174\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By symmetry, \\(P(Z\\le -1)=1-P(Z<1)=1-0.8413=0.1587\\). Therefore\n\\[\nP(-1<Z<1)=P(Z<1)-P(Z\\le -1)=0.8413-0.1587=0.6826.\n\\]",
+      "hint": "Use symmetry to express the lower tail from the given cumulative probability."
+    },
+    {
+      "id": "math-gaokao-321-q004",
+      "category": "Probability",
+      "concept": "Probability of absolute value for the standard normal variable",
+      "learningObjective": "Compute a two-sided probability using symmetry and complement rules.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(Z\\sim N(0,1)\\). Given \\(P(Z<1.96)=0.975\\), find \\(P(|Z|<1.96)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.975\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.95\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The event \\(|Z|<1.96\\) is \\(-1.96<Z<1.96\\). By symmetry,\n\\[\nP(Z\\le -1.96)=1-P(Z<1.96)=1-0.975=0.025.\n\\]\nThus\n\\[\nP(|Z|<1.96)=P(Z<1.96)-P(Z\\le -1.96)=0.975-0.025=0.95.\n\\]",
+      "hint": "Convert \\(|Z|<1.96\\) into a symmetric interval and use the complement rule."
+    },
+    {
+      "id": "math-gaokao-321-q005",
+      "category": "Probability",
+      "concept": "Standardization of a normal variable",
+      "learningObjective": "Standardize a normal variable to use standard normal probabilities.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(X\\sim N(10,2^2)\\). Using \\(P(Z<1)=0.8413\\) for \\(Z\\sim N(0,1)\\), find \\(P(X<12)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.8413\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.9772\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Here the standard deviation is \\(2\\). Standardize:\n\\[\nP(X<12)=P\\left(\\frac{X-10}{2}<\\frac{12-10}{2}\\right)=P(Z<1)=0.8413.\n\\]\nThe value \\(0.9772\\) would correspond to \\(P(Z<2)\\).",
+      "hint": "Subtract the mean and divide by the standard deviation before using the standard normal table."
+    },
+    {
+      "id": "math-gaokao-321-q006",
+      "category": "Probability",
+      "concept": "Upper-tail probability after standardization",
+      "learningObjective": "Compute an upper-tail probability for a normal variable using its standardized value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(X\\sim N(50,5^2)\\). Using \\(P(Z<2)=0.9772\\) for \\(Z\\sim N(0,1)\\), find \\(P(X>60)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.9772\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.0228\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The standard deviation is \\(5\\). Standardize:\n\\[\nP(X>60)=P\\left(\\frac{X-50}{5}>\\frac{60-50}{5}\\right)=P(Z>2).\n\\]\nSince \\(P(Z<2)=0.9772\\),\n\\[\nP(Z>2)=1-0.9772=0.0228.\n\\]",
+      "hint": "Standardize the cutoff, then use the complement rule for the upper tail."
+    },
+    {
+      "id": "math-gaokao-321-q007",
+      "category": "Probability",
+      "concept": "Inverse standard normal percentile",
+      "learningObjective": "Find a standard normal cutoff from a lower-tail probability.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(Z\\sim N(0,1)\\). If \\(P(Z<a)=0.025\\), what is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1.96\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1.96\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A lower-tail probability of \\(0.025\\) is less than \\(0.5\\), so the cutoff \\(a\\) must lie to the left of the mean, meaning \\(a<0\\). Since\n\\[\nP(Z<-1.96)=0.025,\n\\]\nwe have \\(a=-1.96\\). The value \\(1.96\\) gives an upper-tail probability of \\(0.025\\), not a lower-tail probability.",
+      "hint": "Decide whether the cutoff lies left or right of \\(0\\) before choosing the signed value."
+    },
+    {
+      "id": "math-gaokao-321-q008",
+      "category": "Probability",
+      "concept": "Inverse standard normal upper-tail probability",
+      "learningObjective": "Determine a standard normal cutoff from an upper-tail probability.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(Z\\sim N(0,1)\\). If \\(P(Z>c)=0.95\\), what is \\(c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1.645\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1.645\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since the upper-tail probability \\(0.95\\) is greater than \\(0.5\\), the cutoff \\(c\\) must be to the left of the mean, so \\(c<0\\). The value \\(1.645\\) has upper-tail probability \\(0.05\\), so by symmetry\n\\[\nP(Z>-1.645)=0.95.\n\\]\nThus \\(c=-1.645\\).",
+      "hint": "Compare the given upper-tail probability with \\(0.5\\) to determine the sign of the cutoff."
+    },
+    {
+      "id": "math-gaokao-321-q009",
+      "category": "Probability",
+      "concept": "Central probability and standard normal quantile",
+      "learningObjective": "Find the symmetric cutoff that gives a specified central probability.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(Z\\sim N(0,1)\\). If \\(P(-a<Z<a)=0.90\\), what is \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1.28\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1.645\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The central probability is \\(0.90\\), so the total tail area is\n\\[\n1-0.90=0.10.\n\\]\nBy symmetry, each tail has area \\(0.05\\). Therefore \\(P(Z>a)=0.05\\), which gives\n\\[\na=1.645.\n\\]\nThe value \\(1.28\\) corresponds to a central probability of about \\(0.80\\), not \\(0.90\\).",
+      "hint": "Subtract the central probability from \\(1\\) and split the remaining tail area equally between the two tails."
+    },
+    {
+      "id": "math-gaokao-321-q010",
+      "category": "Probability",
+      "concept": "Combining standard normal quantiles by symmetry",
+      "learningObjective": "Use symmetry to relate two standard normal cutoffs and compute their sum.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(Z\\sim N(0,1)\\). Suppose \\(P(Z<k)=0.8413\\) and \\(P(Z<m)=0.1587\\). What is \\(m+k\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(0.8413=P(Z<1)\\), we have \\(k=1\\). Also,\n\\[\n0.1587=1-0.8413=P(Z<-1),\n\\]\nso by symmetry \\(m=-1\\). Therefore\n\\[\nm+k=-1+1=0.\n\\]\nThe value \\(2\\) would require both cutoffs to be positive, which contradicts \\(P(Z<m)=0.1587\\).",
+      "hint": "Use symmetry to identify the negative cutoff corresponding to the complement of the given cumulative probability."
+    }
+  ]
+}

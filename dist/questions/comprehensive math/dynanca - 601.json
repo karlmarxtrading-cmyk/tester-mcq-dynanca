@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-601",
+  "category": "Comprehensive Mathematics",
+  "title": "601. Discrete Mathematics, Counting & Graph Theory: Graph Coloring of Small Graphs",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-601-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Proper colouring",
+      "learningObjective": "State what a proper colouring of a graph is.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is a proper colouring of the vertices of a graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An assignment of colours in which all vertices receive different colours"
+        },
+        {
+          "label": "B",
+          "text": "An assignment of colours in which adjacent vertices always receive different colours"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A proper colouring only forbids equal colours at the two ends of an edge. Vertices that are not adjacent may share a colour, and using few colours depends on this. Giving every vertex its own colour is always proper but usually wasteful.",
+      "hint": "The restriction applies only to vertices that are joined by an edge."
+    },
+    {
+      "id": "dynanca-601-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Colouring a path",
+      "learningObjective": "Find the chromatic number of a path.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The chromatic number of a graph is the smallest number of colours in a proper colouring. What is the chromatic number of a path with \\(4\\) vertices?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Colour the vertices alternately with two colours along the path; adjacent vertices then differ. One colour is not enough, because the path has edges. So the chromatic number is \\(2\\). Using \\(4\\) colours is possible but not necessary.",
+      "hint": "Alternate two colours along the path."
+    },
+    {
+      "id": "dynanca-601-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Colouring a triangle",
+      "learningObjective": "Find the chromatic number of a triangle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the chromatic number of a triangle, the graph with vertices \\(A,B,C\\) and edges \\(AB\\), \\(BC\\), \\(CA\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The three vertices are pairwise adjacent, so no two of them may share a colour. Three colours are needed, and three suffice. With two colours, two of the three vertices would receive the same colour although they are adjacent.",
+      "hint": "Check which pairs of vertices are allowed to share a colour."
+    },
+    {
+      "id": "dynanca-601-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An odd cycle",
+      "learningObjective": "Find the chromatic number of a cycle of odd length.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the chromatic number of a cycle with \\(5\\) vertices?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Alternating two colours around the cycle fails when the cycle closes: the fifth vertex would need a colour different from both of its neighbours, which already carry the two colours. A third colour for that vertex completes a proper colouring. So the chromatic number is \\(3\\).",
+      "hint": "Try to alternate two colours all the way around."
+    },
+    {
+      "id": "dynanca-601-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An even cycle",
+      "learningObjective": "Find the chromatic number of a cycle of even length.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the chromatic number of a cycle with \\(6\\) vertices?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Going around the cycle, colour the vertices alternately with two colours. Because the number of vertices is even, the last vertex receives a colour different from that of the first, so the colouring is proper. Hence two colours suffice, and one colour is not enough.",
+      "hint": "Alternate two colours and check the closing edge."
+    },
+    {
+      "id": "dynanca-601-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A complete graph",
+      "learningObjective": "Find the chromatic number of a complete graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the chromatic number of the complete graph on \\(4\\) vertices?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In a complete graph every two vertices are adjacent, so all \\(4\\) vertices must receive different colours. Hence \\(4\\) colours are needed, and \\(4\\) obviously suffice.",
+      "hint": "Ask whether any two vertices may share a colour."
+    },
+    {
+      "id": "dynanca-601-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A complete bipartite graph",
+      "learningObjective": "Find the chromatic number of a complete bipartite graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "In a complete bipartite graph, each of \\(3\\) vertices on one side is adjacent to each of \\(3\\) vertices on the other side. What is its chromatic number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Give one colour to all vertices on the first side and a second colour to all vertices on the other side. Every edge joins the two sides, so its ends differ in colour. Two colours suffice, however many edges the graph has. A graph with at least one edge is bipartite exactly when its chromatic number is \\(2\\).",
+      "hint": "Vertices on the same side are never adjacent."
+    },
+    {
+      "id": "dynanca-601-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A wheel",
+      "learningObjective": "Find the chromatic number of a wheel with an odd rim.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A graph consists of a cycle with \\(5\\) vertices together with one further vertex, the hub, which is adjacent to all \\(5\\) vertices of the cycle. What is its chromatic number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The cycle with \\(5\\) vertices needs \\(3\\) colours. The hub is adjacent to every vertex of the cycle, so it cannot share any of these \\(3\\) colours and needs a fourth. Hence the chromatic number is \\(4\\).",
+      "hint": "First colour the rim, then ask which colours are left for the hub."
+    },
+    {
+      "id": "dynanca-601-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting colourings",
+      "learningObjective": "Count the proper colourings of a path with a fixed set of colours.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The vertices of the path \\(A,B,C\\), with edges \\(AB\\) and \\(BC\\), are coloured with colours chosen from red, green, and blue. How many proper colourings are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Choose the colour of \\(A\\) in \\(3\\) ways. Then \\(B\\) must differ from \\(A\\): \\(2\\) ways. Then \\(C\\) must differ from \\(B\\): \\(2\\) ways, and it may equal the colour of \\(A\\). This gives \\(3\\cdot 2\\cdot 2=12\\). The number \\(6\\) counts only the colourings in which all three vertices have different colours.",
+      "hint": "The two end vertices are not adjacent, so they may share a colour."
+    },
+    {
+      "id": "dynanca-601-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A timetable as a colouring",
+      "learningObjective": "Model a scheduling problem as a colouring problem.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Five examinations \\(A,B,C,D,E\\) are to be scheduled. Two examinations cannot be held in the same time slot if some student takes both; the conflicting pairs are \\(AB\\), \\(AC\\), \\(BC\\), \\(CD\\), and \\(DE\\). What is the smallest number of time slots?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Regard the examinations as vertices and the conflicts as edges; time slots are colours. The examinations \\(A\\), \\(B\\), \\(C\\) conflict pairwise, so they need \\(3\\) different slots. Three slots suffice: put \\(A\\) and \\(D\\) in the first, \\(B\\) and \\(E\\) in the second, and \\(C\\) in the third. Two slots are impossible because of the triangle \\(A,B,C\\).",
+      "hint": "Look for a set of examinations that conflict with one another pairwise."
+    }
+  ]
+}

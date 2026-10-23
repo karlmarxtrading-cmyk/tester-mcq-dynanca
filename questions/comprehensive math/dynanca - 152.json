@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-152",
+  "category": "Comprehensive Mathematics",
+  "title": "152. Quantitative Relationships & Measurement: Effective Annual Rate from Nominal Rate",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-152-q001",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Effective Annual Rate Formula",
+      "learningObjective": "Identify the formula for the effective annual rate from a nominal rate compounded multiple times per year.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which expression gives the effective annual rate when a nominal annual rate \\(r\\) is compounded \\(n\\) times per year?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left(1+\\frac{r}{n}\\right)^n-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1+\\frac{r}{n}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The effective annual rate accounts for compounding within the year. If the nominal annual rate is \\(r\\) and interest is compounded \\(n\\) times per year, the effective annual rate is\n\\[\n\\left(1+\\frac{r}{n}\\right)^n-1\n\\]\nOption B is only the growth factor for one compounding period, not the annual effective rate.",
+      "hint": "Start with the per-period rate \\(\\frac{r}{n}\\), then compound it \\(n\\) times and subtract \\(1\\)."
+    },
+    {
+      "id": "dynanca-152-q002",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Effective Annual Rate with Semiannual Compounding",
+      "learningObjective": "Calculate the effective annual rate for a nominal rate compounded semiannually.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A nominal annual rate of \\(10\\%\\) is compounded semiannually. What is the effective annual rate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10.00\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10.25\\%\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "With semiannual compounding, \\(n=2\\) and \\(\\frac{r}{n}=\\frac{0.10}{2}=0.05\\). The effective annual rate is\n\\[\n(1.05)^2-1=1.1025-1=0.1025=10.25\\%\n\\]\nTherefore, the effective annual rate is \\(10.25\\%\\). Option A ignores the effect of compounding.",
+      "hint": "Use \\(\\left(1+\\frac{r}{n}\\right)^n-1\\) with \\(n=2\\)."
+    },
+    {
+      "id": "dynanca-152-q003",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Effective Annual Rate with Quarterly Compounding",
+      "learningObjective": "Calculate the effective annual rate for a nominal rate compounded quarterly.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A nominal annual rate of \\(8\\%\\) is compounded quarterly. What is the effective annual rate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8.00\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8.24\\%\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "With quarterly compounding, \\(n=4\\) and \\(\\frac{r}{n}=\\frac{0.08}{4}=0.02\\). The effective annual rate is\n\\[\n(1.02)^4-1\\approx 1.082432-1=0.082432\\approx 8.24\\%\n\\]\nTherefore, the effective annual rate is approximately \\(8.24\\%\\). Option A is the nominal rate, not the effective rate.",
+      "hint": "Use \\(\\left(1+\\frac{r}{n}\\right)^n-1\\) with \\(n=4\\)."
+    },
+    {
+      "id": "dynanca-152-q004",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Effective Annual Rate with Monthly Compounding",
+      "learningObjective": "Calculate the effective annual rate for a nominal rate compounded monthly.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A nominal annual rate of \\(12\\%\\) is compounded monthly. What is the effective annual rate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12.68\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12.00\\%\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "With monthly compounding, \\(n=12\\) and \\(\\frac{r}{n}=\\frac{0.12}{12}=0.01\\). The effective annual rate is\n\\[\n(1.01)^{12}-1\\approx 1.126825-1=0.126825\\approx 12.68\\%\n\\]\nTherefore, the effective annual rate is approximately \\(12.68\\%\\). Option B is the nominal rate.",
+      "hint": "Use \\(n=12\\) and a monthly rate of \\(0.01\\)."
+    },
+    {
+      "id": "dynanca-152-q005",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Effective Annual Rate with Daily Compounding",
+      "learningObjective": "Calculate the effective annual rate for a nominal rate compounded daily.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A nominal annual rate of \\(6\\%\\) is compounded daily using \\(365\\) days per year. What is the effective annual rate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6.00\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6.18\\%\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "With daily compounding, \\(n=365\\) and \\(\\frac{r}{n}=\\frac{0.06}{365}\\). The effective annual rate is\n\\[\n\\left(1+\\frac{0.06}{365}\\right)^{365}-1\\approx 0.0618=6.18\\%\n\\]\nTherefore, the effective annual rate is approximately \\(6.18\\%\\). Option A is the nominal rate.",
+      "hint": "Use \\(n=365\\) in the effective annual rate formula."
+    },
+    {
+      "id": "dynanca-152-q006",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Comparing Effective Annual Rates",
+      "learningObjective": "Determine which compounding frequency gives the higher effective annual rate for the same nominal rate.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For a nominal annual rate of \\(10\\%\\), which compounding frequency gives the higher effective annual rate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Quarterly compounding"
+        },
+        {
+          "label": "B",
+          "text": "Semiannual compounding"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Semiannual compounding gives\n\\[\n(1.05)^2-1=10.25\\%\n\\]\nQuarterly compounding gives\n\\[\n(1.025)^4-1\\approx 10.38\\%\n\\]\nSince \\(10.38\\%>10.25\\%\\), quarterly compounding gives the higher effective annual rate. More frequent compounding increases the effective rate.",
+      "hint": "Compare the effective annual rates for \\(n=2\\) and \\(n=4\\)."
+    },
+    {
+      "id": "dynanca-152-q007",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Identifying Compounding Frequency from Effective Annual Rate",
+      "learningObjective": "Determine the compounding frequency that produces a given effective annual rate.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A nominal annual rate of \\(12\\%\\) produces an effective annual rate of \\(12.36\\%\\). What is the compounding frequency?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Semiannual compounding"
+        },
+        {
+          "label": "B",
+          "text": "Monthly compounding"
+        }
+      ],
+      "answer": "A",
+      "explanation": "With semiannual compounding, \\(n=2\\) and the rate per half-year is \\(0.06\\). The effective annual rate is\n\\[\n(1.06)^2-1=1.1236-1=0.1236=12.36\\%\n\\]\nMonthly compounding would give approximately \\(12.68\\%\\), not \\(12.36\\%\\). Therefore, the compounding frequency is semiannual.",
+      "hint": "Check the effective annual rate for \\(n=2\\) and \\(n=12\\)."
+    },
+    {
+      "id": "dynanca-152-q008",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Finding Nominal Rate from Effective Annual Rate",
+      "learningObjective": "Determine the nominal annual rate compounded monthly that gives a specified effective annual rate.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "What nominal annual rate compounded monthly gives an effective annual rate of \\(10\\%\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10.00\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9.57\\%\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let the nominal rate be \\(r\\). With monthly compounding,\n\\[\n\\begin{aligned}\n\\left(1+\\frac{r}{12}\\right)^{12} &= 1.10\\\\\n1+\\frac{r}{12} &= (1.10)^{\\frac{1}{12}}\\approx 1.007974\\\\\nr &= 12(1.007974-1)\\approx 0.09569\\approx 9.57\\%\n\\end{aligned}\n\\]\nTherefore, the nominal rate is approximately \\(9.57\\%\\). Option A incorrectly assumes the nominal and effective rates are equal.",
+      "hint": "Use \\(\\left(1+\\frac{r}{12}\\right)^{12}=1.10\\) and solve for \\(r\\)."
+    },
+    {
+      "id": "dynanca-152-q009",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Effective Annual Rate with Continuous Compounding",
+      "learningObjective": "Calculate the effective annual rate for a nominal rate compounded continuously.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A nominal annual rate of \\(5\\%\\) is compounded continuously. What is the effective annual rate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5.13\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5.00\\%\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For continuous compounding, the effective annual rate is\n\\[\ne^r-1\n\\]\nWith \\(r=0.05\\),\n\\[\ne^{0.05}-1\\approx 1.05127-1=0.05127\\approx 5.13\\%\n\\]\nTherefore, the effective annual rate is approximately \\(5.13\\%\\). Option B is the nominal rate.",
+      "hint": "Use \\(e^r-1\\) for continuous compounding."
+    },
+    {
+      "id": "dynanca-152-q010",
+      "category": "Quantitative Relationships & Measurement",
+      "concept": "Comparing Different Nominal Rates and Compounding Frequencies",
+      "learningObjective": "Determine which of two nominal rate arrangements gives the higher effective annual rate.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Which arrangement gives the higher effective annual rate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(11.5\\%\\) compounded monthly"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\%\\) compounded annually"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(11.5\\%\\) compounded monthly,\n\\[\n\\left(1+\\frac{0.115}{12}\\right)^{12}-1\\approx 12.13\\%\n\\]\nFor \\(12\\%\\) compounded annually,\n\\[\n(1.12)^1-1=12.00\\%\n\\]\nSince \\(12.13\\%>12.00\\%\\), the \\(11.5\\%\\) compounded monthly arrangement gives the higher effective annual rate. Option B has a higher nominal rate but only annual compounding.",
+      "hint": "Calculate the effective annual rate for each arrangement, then compare them."
+    }
+  ]
+}

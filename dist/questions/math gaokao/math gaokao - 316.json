@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-316",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 316",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-316-q001",
+      "category": "Probability",
+      "concept": "Binomial Probability for Exactly Two Successes",
+      "learningObjective": "Compute the probability of exactly two successes in independent Bernoulli trials using the binomial formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In 5 independent Bernoulli trials, the probability of success in each trial is \\(\\frac{1}{4}\\). Find the probability of exactly 2 successes.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{135}{512}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{45}{512}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the binomial probability formula with \\(n=5\\), \\(k=2\\), and \\(p=\\frac{1}{4}\\), we get \\(P(X=2)=\\binom{5}{2}\\left(\\frac{1}{4}\\right)^2\\left(\\frac{3}{4}\\right)^3\\). Since \\(\\binom{5}{2}=10\\), this equals \\(10\\cdot\\frac{1}{16}\\cdot\\frac{27}{64}=\\frac{270}{1024}=\\frac{135}{512}\\). Thus the correct probability is \\(\\frac{135}{512}\\).",
+      "hint": "Apply the binomial probability formula with \\(n=5\\), \\(k=2\\), and \\(p=\\frac{1}{4}\\)."
+    },
+    {
+      "id": "math-gaokao-316-q002",
+      "category": "Probability",
+      "concept": "Binomial Probability for Exactly One Success",
+      "learningObjective": "Calculate the probability of exactly one success in a fixed number of independent Bernoulli trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A Bernoulli experiment is repeated 4 times independently. The probability of success in each trial is \\(\\frac{1}{3}\\). Find the probability of exactly 1 success.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{32}{81}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{8}{81}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the binomial formula with \\(n=4\\), \\(k=1\\), and \\(p=\\frac{1}{3}\\), we have \\(P(X=1)=\\binom{4}{1}\\left(\\frac{1}{3}\\right)^1\\left(\\frac{2}{3}\\right)^3\\). Since \\(\\binom{4}{1}=4\\), this equals \\(4\\cdot\\frac{1}{3}\\cdot\\frac{8}{27}=\\frac{32}{81}\\). Therefore the probability is \\(\\frac{32}{81}\\).",
+      "hint": "Use the binomial probability formula and note that the failure probability is \\(\\frac{2}{3}\\)."
+    },
+    {
+      "id": "math-gaokao-316-q003",
+      "category": "Probability",
+      "concept": "Binomial Probability of Zero Successes",
+      "learningObjective": "Compute the probability of no successes in repeated independent Bernoulli trials.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In 5 independent Bernoulli trials, the probability of success in each trial is \\(0.2\\). Find the probability of exactly 0 successes.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1024}{3125}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{256}{3125}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of no successes is the probability that all 5 trials are failures. Since the failure probability is \\(1-0.2=0.8=\\frac{4}{5}\\), we get \\(\\left(\\frac{4}{5}\\right)^5=\\frac{1024}{3125}\\). Thus the required probability is \\(\\frac{1024}{3125}\\).",
+      "hint": "For zero successes, multiply the failure probability by itself for each trial."
+    },
+    {
+      "id": "math-gaokao-316-q004",
+      "category": "Probability",
+      "concept": "Probability of At Least One Success",
+      "learningObjective": "Use the complement rule to find the probability of at least one success in independent Bernoulli trials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In 4 independent Bernoulli trials, the probability of success in each trial is \\(0.1\\). Find the probability of at least one success.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{6561}{10000}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3439}{10000}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The complement of “at least one success” is “no successes.” The probability of no successes is \\((0.9)^4=0.6561=\\frac{6561}{10000}\\). Therefore, the probability of at least one success is \\(1-\\frac{6561}{10000}=\\frac{3439}{10000}\\). So the correct probability is \\(\\frac{3439}{10000}\\).",
+      "hint": "Use \\(P(\\text{at least one})=1-P(\\text{none})\\)."
+    },
+    {
+      "id": "math-gaokao-316-q005",
+      "category": "Probability",
+      "concept": "Mean of a Binomial Random Variable",
+      "learningObjective": "Determine the expected number of successes in a binomial experiment.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(X\\) be the number of successes in 20 independent Bernoulli trials with success probability \\(0.35\\). Find \\(E(X)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6.5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a binomial random variable with \\(n\\) trials and success probability \\(p\\), the mean is \\(E(X)=np\\). Here \\(n=20\\) and \\(p=0.35\\), so \\(E(X)=20\\cdot 0.35=7\\). Therefore the expected number of successes is \\(7\\).",
+      "hint": "Recall that the mean of a binomial random variable is \\(np\\)."
+    },
+    {
+      "id": "math-gaokao-316-q006",
+      "category": "Probability",
+      "concept": "Variance of a Binomial Random Variable",
+      "learningObjective": "Compute the variance of the number of successes in independent Bernoulli trials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(X\\) be the number of successes in 12 independent Bernoulli trials with success probability \\(\\frac{1}{3}\\). Find \\(\\operatorname{Var}(X)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{8}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For a binomial random variable, \\(\\operatorname{Var}(X)=np(1-p)\\). Here \\(n=12\\), \\(p=\\frac{1}{3}\\), and \\(1-p=\\frac{2}{3}\\). Thus \\(\\operatorname{Var}(X)=12\\cdot\\frac{1}{3}\\cdot\\frac{2}{3}=12\\cdot\\frac{2}{9}=\\frac{24}{9}=\\frac{8}{3}\\). Therefore the variance is \\(\\frac{8}{3}\\).",
+      "hint": "Use the formula \\(\\operatorname{Var}(X)=np(1-p)\\)."
+    },
+    {
+      "id": "math-gaokao-316-q007",
+      "category": "Probability",
+      "concept": "Symmetric Binomial Probability",
+      "learningObjective": "Compute a binomial probability for a fair Bernoulli trial repeated several times.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A fair coin is tossed 6 times. Let \\(X\\) be the number of heads. Find \\(P(X=2)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{15}{64}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{16}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since the coin is fair, \\(p=\\frac{1}{2}\\). Using the binomial formula with \\(n=6\\) and \\(k=2\\), \\(P(X=2)=\\binom{6}{2}\\left(\\frac{1}{2}\\right)^6\\). Since \\(\\binom{6}{2}=15\\) and \\(\\left(\\frac{1}{2}\\right)^6=\\frac{1}{64}\\), we get \\(P(X=2)=\\frac{15}{64}\\). Therefore the correct probability is \\(\\frac{15}{64}\\).",
+      "hint": "Use \\(\\binom{6}{2}\\) and remember that each sequence of 6 tosses has probability \\(\\left(\\frac{1}{2}\\right)^6\\)."
+    },
+    {
+      "id": "math-gaokao-316-q008",
+      "category": "Probability",
+      "concept": "Binomial Probability with Non-Symmetric Success Probability",
+      "learningObjective": "Calculate the probability of exactly one success when the success probability is not one half.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In 5 independent Bernoulli trials, the probability of success in each trial is \\(\\frac{1}{3}\\). Find the probability of exactly 1 success.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{40}{243}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{80}{243}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the binomial formula with \\(n=5\\), \\(k=1\\), and \\(p=\\frac{1}{3}\\), we have \\(P(X=1)=\\binom{5}{1}\\left(\\frac{1}{3}\\right)^1\\left(\\frac{2}{3}\\right)^4\\). Since \\(\\binom{5}{1}=5\\), this equals \\(5\\cdot\\frac{1}{3}\\cdot\\frac{16}{81}=\\frac{80}{243}\\). Thus the required probability is \\(\\frac{80}{243}\\).",
+      "hint": "Use the binomial probability formula with \\(n=5\\), \\(k=1\\), and \\(p=\\frac{1}{3}\\)."
+    },
+    {
+      "id": "math-gaokao-316-q009",
+      "category": "Probability",
+      "concept": "Binomial Probability for Exactly Three Successes",
+      "learningObjective": "Find the probability of exactly three successes in seven fair Bernoulli trials.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A fair coin is tossed 7 times. Let \\(X\\) be the number of heads. Find \\(P(X=3)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{21}{128}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{35}{128}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For 7 fair coin tosses, \\(p=\\frac{1}{2}\\). Using the binomial formula with \\(n=7\\) and \\(k=3\\), \\(P(X=3)=\\binom{7}{3}\\left(\\frac{1}{2}\\right)^7\\). Since \\(\\binom{7}{3}=35\\) and \\(\\left(\\frac{1}{2}\\right)^7=\\frac{1}{128}\\), we get \\(P(X=3)=\\frac{35}{128}\\). Therefore the correct probability is \\(\\frac{35}{128}\\).",
+      "hint": "Compute \\(\\binom{7}{3}\\), then divide by \\(2^7\\)."
+    },
+    {
+      "id": "math-gaokao-316-q010",
+      "category": "Probability",
+      "concept": "Number of Trials for a Given Binomial Probability",
+      "learningObjective": "Determine the smallest number of independent Bernoulli trials needed for the probability of at least one success to exceed a given value.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the smallest positive integer \\(n\\) such that the probability of at least one success in \\(n\\) independent Bernoulli trials with success probability \\(0.1\\) exceeds \\(0.99\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(44\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(43\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of at least one success is \\(1-(0.9)^n\\). We need \\(1-(0.9)^n>0.99\\), so \\((0.9)^n<0.01\\). Taking natural logarithms gives \\(n\\ln(0.9)<\\ln(0.01)\\). Since \\(\\ln(0.9)<0\\), dividing reverses the inequality, so \\(n>\\frac{\\ln(0.01)}{\\ln(0.9)}\\). Numerically, \\(\\frac{\\ln(0.01)}{\\ln(0.9)}\\approx 43.7\\). Therefore the smallest integer \\(n\\) is \\(44\\). Checking, \\((0.9)^{43}\\approx 0.0106>0.01\\), while \\((0.9)^{44}\\approx 0.0095<0.01\\).",
+      "hint": "Use the complement rule \\(P(\\text{at least one})=1-(1-p)^n\\), then solve the resulting inequality for \\(n\\)."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-76",
+  "category": "Comprehensive Mathematics",
+  "title": "76. Numeracy & Number Systems: Binary Place Value",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-76-q001",
+      "category": "Numeracy & Number Systems",
+      "concept": "Binary Place Value of a Digit Position",
+      "learningObjective": "Identify the place value of a digit in a given binary position.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In binary, what is the place value of the digit in the third position from the right?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In binary, place values are powers of \\(2\\), starting with \\(2^0=1\\) at the rightmost position. The first position from the right is \\(2^0=1\\), the second is \\(2^1=2\\), and the third is \\(2^2=4\\). Therefore, the place value of the third position from the right is \\(4\\). The alternative counts positions from one instead of counting exponents from zero.",
+      "hint": "Count positions from the right, starting with \\(2^0\\)."
+    },
+    {
+      "id": "dynanca-76-q002",
+      "category": "Numeracy & Number Systems",
+      "concept": "Converting Binary to Decimal",
+      "learningObjective": "Evaluate a binary numeral using the contributions of its digits at powers-of-two positions.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the decimal value of \\(1011_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(13\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(11\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use binary place values from left to right: \\(1\\times 2^3 + 0\\times 2^2 + 1\\times 2^1 + 1\\times 2^0\\). This equals \\(8+0+2+1=11\\). Therefore, \\(1011_2=11\\). The alternative assigns an incorrect contribution to at least one bit.",
+      "hint": "Multiply each binary digit by its place value and add the results."
+    },
+    {
+      "id": "dynanca-76-q003",
+      "category": "Numeracy & Number Systems",
+      "concept": "Contribution of a Set Bit",
+      "learningObjective": "Find the contribution of a digit at a specified binary position.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In \\(110_2\\), what value is contributed by the middle digit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The middle digit has one digit to its right, so its place value is \\(2^1=2\\). Its digit is \\(1\\), giving contribution \\(1\\times 2=2\\). The value \\(4\\) belongs to the leftmost position.",
+      "hint": "Determine the power of two for the specified position."
+    },
+    {
+      "id": "dynanca-76-q004",
+      "category": "Numeracy & Number Systems",
+      "concept": "Place Value of the Leading Bit",
+      "learningObjective": "Determine the place value represented by the leftmost 1 in \\(10000_2\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "In \\(10000_2\\), what place value does the leftmost \\(1\\) represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The binary number \\(10000_2\\) has five digits. From right to left, the place values are \\(2^0\\), \\(2^1\\), \\(2^2\\), \\(2^3\\), \\(2^4\\). The leftmost \\(1\\) is in the \\(2^4\\) position, and \\(2^4=16\\). Therefore, the leftmost \\(1\\) represents \\(16\\). The alternative stops one binary position too early.",
+      "hint": "Count the number of digits to the right of the leftmost \\(1\\) to determine its exponent."
+    },
+    {
+      "id": "dynanca-76-q005",
+      "category": "Numeracy & Number Systems",
+      "concept": "Converting Binary to Decimal",
+      "learningObjective": "Evaluate a binary numeral using the contributions of its digits at powers-of-two positions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the decimal value of \\(11001_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(27\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(25\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use binary place values: \\(1\\times 2^4 + 1\\times 2^3 + 0\\times 2^2 + 0\\times 2^1 + 1\\times 2^0\\). This equals \\(16+8+0+0+1=25\\). Therefore, \\(11001_2=25\\). The alternative changes a binary-place contribution.",
+      "hint": "Write the number in expanded form using powers of \\(2\\)."
+    },
+    {
+      "id": "dynanca-76-q006",
+      "category": "Numeracy & Number Systems",
+      "concept": "Effect of Setting a Binary Bit",
+      "learningObjective": "Determine how changing a binary digit changes the represented value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "In \\(10001_2\\), the digit in the \\(2^1\\) place changes from \\(0\\) to \\(1\\), and every other digit stays the same. By how much does the value increase?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Only the contribution from the \\(2^1\\) place changes, from zero to \\(2^1=2\\). The units place does not change, so an increase of \\(1\\) is incorrect.",
+      "hint": "Focus on the place value of the digit that changes."
+    },
+    {
+      "id": "dynanca-76-q007",
+      "category": "Numeracy & Number Systems",
+      "concept": "Contribution of a Zero Bit",
+      "learningObjective": "Distinguish a position value from the digit contribution at that position.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In \\(11001_2\\), the digit in the \\(2^2\\) place is \\(0\\). What does that digit contribute to the total value?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The position has place value \\(2^2=4\\), but its digit is \\(0\\). Its contribution is therefore \\(0\\times 4=0\\). The alternative confuses the position value with its contribution.",
+      "hint": "Multiply the digit by its place value."
+    },
+    {
+      "id": "dynanca-76-q008",
+      "category": "Numeracy & Number Systems",
+      "concept": "Expanded Form Using Binary Place Values",
+      "learningObjective": "Identify the correct expanded form of \\(1010_2\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which expression correctly shows the expanded form of \\(1010_2\\) using place values?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\times 2^4+0\\times 2^3+1\\times 2^2+0\\times 2^1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\times 2^3+0\\times 2^2+1\\times 2^1+0\\times 2^0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The binary number \\(1010_2\\) has four digits. From left to right, the place values are \\(2^3\\), \\(2^2\\), \\(2^1\\), \\(2^0\\). Therefore, the expanded form is \\(1\\times 2^3+0\\times 2^2+1\\times 2^1+0\\times 2^0\\), which equals \\(8+0+2+0=10\\). The choice \"\\(1\\times 2^4+0\\times 2^3+1\\times 2^2+0\\times 2^1\\)\" uses exponents that are shifted by one.",
+      "hint": "Match each digit to its power of \\(2\\), starting with \\(2^0\\) on the right."
+    },
+    {
+      "id": "dynanca-76-q009",
+      "category": "Numeracy & Number Systems",
+      "concept": "Converting a Six-Bit Binary Number to Decimal",
+      "learningObjective": "Evaluate a binary numeral using the contributions of its digits at powers-of-two positions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the decimal value of \\(111111_2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(63\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(64\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use binary place values: \\(111111_2 = 2^5+2^4+2^3+2^2+2^1+2^0\\). This equals \\(32+16+8+4+2+1=63\\). Therefore, \\(111111_2=63\\). The alternative counts one beyond the largest value of six all-one bits.",
+      "hint": "Add the powers of \\(2\\) represented by each \\(1\\) in the binary number."
+    },
+    {
+      "id": "dynanca-76-q010",
+      "category": "Numeracy & Number Systems",
+      "concept": "Interpreting Multiple Binary Place Values",
+      "learningObjective": "Determine the decimal value of a binary number with 1s in the \\(2^5\\), \\(2^3\\), and \\(2^0\\) places.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A binary number has \\(1\\)s in the \\(2^5\\), \\(2^3\\), and \\(2^0\\) places, and \\(0\\)s in all other places. What is its decimal value?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(41\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(43\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The indicated place values are \\(2^5=32\\), \\(2^3=8\\), and \\(2^0=1\\). Adding them gives \\(32+8+1=41\\). Therefore, the decimal value of the binary number is \\(41\\). The alternative adds a contribution from a position whose digit is zero.",
+      "hint": "Add the powers of \\(2\\) for each place where a \\(1\\) appears."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-560",
+  "category": "Comprehensive Mathematics",
+  "title": "560. Discrete Mathematics, Counting & Graph Theory: Inclusion-Exclusion for Two Sets",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-560-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The formula for a union",
+      "learningObjective": "Apply the inclusion-exclusion formula for two sets.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Sets \\(A\\) and \\(B\\) satisfy \\(|A|=12\\), \\(|B|=9\\), and \\(|A\\cap B|=4\\). What is \\(|A\\cup B|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(17\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(21\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(|A\\cup B|=|A|+|B|-|A\\cap B|=12+9-4=17\\). The sum \\(12+9=21\\) counts the \\(4\\) common elements twice.",
+      "hint": "Elements that belong to both sets must be counted only once."
+    },
+    {
+      "id": "dynanca-560-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two languages",
+      "learningObjective": "Count the members of a group that belong to at least one of two subgroups.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In a class, \\(18\\) students study French, \\(15\\) study Spanish, and \\(7\\) study both. How many students study at least one of the two languages?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(26\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(33\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By inclusion and exclusion, \\(18+15-7=26\\). The sum \\(18+15=33\\) counts the \\(7\\) students who study both languages twice.",
+      "hint": "Subtract the students who were counted in both groups."
+    },
+    {
+      "id": "dynanca-560-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Multiples of two or three",
+      "learningObjective": "Count integers divisible by at least one of two numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many integers from \\(1\\) to \\(100\\) are divisible by \\(2\\) or by \\(3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(83\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(67\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(50\\) multiples of \\(2\\), \\(33\\) multiples of \\(3\\), and \\(16\\) multiples of both (multiples of \\(6\\)). So the count is \\(50+33-16=67\\). The sum \\(50+33=83\\) counts the multiples of \\(6\\) twice.",
+      "hint": "Numbers divisible by both \\(2\\) and \\(3\\) are the multiples of \\(6\\)."
+    },
+    {
+      "id": "dynanca-560-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Finding the intersection",
+      "learningObjective": "Find the size of an intersection from the sizes of two sets and their union.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Sets \\(A\\) and \\(B\\) satisfy \\(|A|=20\\), \\(|B|=15\\), and \\(|A\\cup B|=28\\). What is \\(|A\\cap B|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(13\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rearranging the formula gives \\(|A\\cap B|=|A|+|B|-|A\\cup B|=20+15-28=7\\). The number \\(13=28-15\\) is the number of elements of \\(A\\) that are not in \\(B\\).",
+      "hint": "Solve \\(|A\\cup B|=|A|+|B|-|A\\cap B|\\) for the unknown term."
+    },
+    {
+      "id": "dynanca-560-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Neither drink",
+      "learningObjective": "Count the members of a group that belong to neither of two subgroups.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Of \\(60\\) people, \\(30\\) drink tea, \\(25\\) drink coffee, and \\(10\\) drink both. How many drink neither?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number who drink at least one is \\(30+25-10=45\\). So \\(60-45=15\\) drink neither. The number \\(5=60-55\\) forgets to add back the people counted twice.",
+      "hint": "First find how many drink at least one of the two, then subtract from the total."
+    },
+    {
+      "id": "dynanca-560-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Exactly one of two",
+      "learningObjective": "Count the elements that belong to exactly one of two sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Sets \\(A\\) and \\(B\\) satisfy \\(|A|=14\\), \\(|B|=11\\), and \\(|A\\cap B|=5\\). How many elements belong to exactly one of the two sets?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The elements only in \\(A\\) number \\(14-5=9\\), and those only in \\(B\\) number \\(11-5=6\\), so \\(9+6=15\\) belong to exactly one set. The number \\(20=14+11-5\\) is the size of the union, which also includes the \\(5\\) common elements.",
+      "hint": "Remove the common elements from each set before adding."
+    },
+    {
+      "id": "dynanca-560-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The correct common multiple",
+      "learningObjective": "Use the least common multiple when counting common multiples.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "How many integers from \\(1\\) to \\(150\\) are divisible by \\(6\\) or by \\(10\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(35\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(38\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(25\\) multiples of \\(6\\) and \\(15\\) multiples of \\(10\\). A number is divisible by both exactly when it is divisible by their least common multiple, \\(30\\); there are \\(5\\) such numbers. So the count is \\(25+15-5=35\\). Using the product \\(60\\) instead of \\(30\\) gives only \\(2\\) common multiples and the wrong total \\(38\\).",
+      "hint": "Numbers divisible by both \\(6\\) and \\(10\\) are the multiples of their least common multiple."
+    },
+    {
+      "id": "dynanca-560-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Why the intersection is subtracted",
+      "learningObjective": "Explain the subtraction in the inclusion-exclusion formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In the formula \\(|A\\cup B|=|A|+|B|-|A\\cap B|\\), why is \\(|A\\cap B|\\) subtracted?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Elements in neither set are counted once in \\(|A|+|B|\\)."
+        },
+        {
+          "label": "B",
+          "text": "Elements in both sets are counted twice in \\(|A|+|B|\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "An element of \\(A\\cap B\\) is counted once in \\(|A|\\) and once in \\(|B|\\), so the sum counts it twice. Subtracting \\(|A\\cap B|\\) removes the extra count. Elements in neither set are not counted at all.",
+      "hint": "Follow one element that belongs to both sets through the sum."
+    },
+    {
+      "id": "dynanca-560-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Strings with one of two patterns",
+      "learningObjective": "Count binary strings satisfying at least one of two conditions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many binary strings of length \\(6\\) start with \\(1\\) or end with \\(00\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(40\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(48\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Strings starting with \\(1\\): \\(2^5=32\\). Strings ending with \\(00\\): \\(2^4=16\\). Strings doing both: \\(2^3=8\\). By inclusion and exclusion the count is \\(32+16-8=40\\). The sum \\(32+16=48\\) counts the \\(8\\) strings with both properties twice.",
+      "hint": "Count the strings that satisfy both conditions and subtract them once."
+    },
+    {
+      "id": "dynanca-560-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Divisible by neither",
+      "learningObjective": "Count integers divisible by neither of two numbers.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many integers from \\(1\\) to \\(1000\\) are divisible by neither \\(5\\) nor \\(7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(686\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(658\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(200\\) multiples of \\(5\\), \\(142\\) multiples of \\(7\\), and \\(28\\) multiples of \\(35\\). So \\(200+142-28=314\\) integers are divisible by at least one of the two, and \\(1000-314=686\\) by neither. The number \\(658=1000-342\\) forgets to add back the multiples of \\(35\\).",
+      "hint": "Count the integers divisible by at least one of the two numbers, then take the complement."
+    }
+  ]
+}

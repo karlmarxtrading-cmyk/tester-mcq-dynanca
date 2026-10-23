@@ -1,0 +1,280 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> dynanca-mcq@1.1.0 test
+> node tools/tests/run-tests.js
+
+
+1. CSV parser edge cases
+  ok  - quoted field with embedded comma
+  ok  - escaped quote inside a quoted field
+  ok  - leading zeros are preserved as-is (never numeric-normalized)
+  ok  - internal spaces and hyphens survive untouched
+  ok  - CRLF line endings parse the same as LF
+  ok  - blank lines are skipped, not treated as rows
+  ok  - header names are trimmed
+
+2. Legacy CSV generator: determinism (fixtures only)
+  ok  - running generate() twice on identical input yields identical output
+  ok  - a shorter hierarchy (Case B: subject -> practice_files directly) survives conversion
+  ok  - a longer hierarchy (Case A: subject -> topic -> practice_files) still works alongside Case B
+
+3. Manifest contract (master-manifest.json is final and protected)
+  FAIL - master-manifest.json is byte-for-byte the protected baseline
+        Expected values to be strictly equal:
++ actual - expected
+
++ '0d709f51fcd5f7041ef25d4071cc496ceafa4b30d55997897fd4a953d56fdb49'
+- 'c288e1ba510c920c5bc3998e685732616edd24d637a5f511cee5b0292f141524'
+
+  ok  - master-manifest.json keeps its contract header (schemaVersion 1.0, dynanca-master, subjects[])
+  ok  - every manifest practice_files id is a unique, non-empty string and every path is safe
+  FAIL - the legacy generator CLI refuses to overwrite master-manifest.json (default args and explicit path)
+        manifest must be untouched
++ actual - expected
+
++ '0d709f51fcd5f7041ef25d4071cc496ceafa4b30d55997897fd4a953d56fdb49'
+- 'c288e1ba510c920c5bc3998e685732616edd24d637a5f511cee5b0292f141524'
+
+  ok  - modifying a fixture CSV row and regenerating changes the output (proves CSV really drives the JSON)
+
+4. Scalability fixture (100 quizzes + multi-subject, no hardcoded names)
+  ok  - generator produces a Quiz subject with 100 direct practice_files from 100 CSV rows
+  ok  - generator produces a 3-subject, multi-topic catalog with no code changes needed
+  ok  - shared frontend traversal (assets/js/manifest.js) discovers all 100+ entries via the same generic code path used for Quiz today
+  ok  - shared frontend lookup finds a deeply-nested entry and a direct subject-level entry with the same function
+  ok  - a brand-new subject (never seen by any frontend code) renders/looks-up correctly purely from manifest data
+
+5. Path safety
+  ok  - traversal path (../) is rejected
+  ok  - absolute path is rejected
+  ok  - protocol/URL path is rejected
+  ok  - path outside questions/ is rejected
+  ok  - a normal questions/-relative path is accepted
+  ok  - generator silently-but-visibly drops a row with an unsafe path (warns, does not crash, does not include it)
+
+6. Ecosystem validator against the real project (read-only)
+  ok  - validator --allow-pending: every shipped bank is valid (exit 0, zero errors)
+  ok  - validator (full scope): fails only because listed bank files are pending — or passes when none are
+  ok  - math-gaokao-71 is no longer a count mismatch (manifest 150 = bank 150), so it is neither ACCEPTED nor an error
+  FAIL - validator never writes: manifest and CSV hashes are unchanged after running it
+        master-manifest.json changed
++ actual - expected
+
++ '0d709f51fcd5f7041ef25d4071cc496ceafa4b30d55997897fd4a953d56fdb49'
+- 'c288e1ba510c920c5bc3998e685732616edd24d637a5f511cee5b0292f141524'
+
+
+7. node --check on every hand-written JS file
+  ok  - node --check assets/js/catalog-model.js
+  ok  - node --check assets/js/catalog.js
+  ok  - node --check assets/js/manifest.js
+  ok  - node --check assets/js/reset-progress.js
+  ok  - node --check assets/js/shell.js
+  ok  - node --check assets/js/theme.js
+  ok  - node --check practice/data-loader.js
+  ok  - node --check practice/math-visuals.js
+  ok  - node --check practice/practice-engine.js
+  ok  - node --check practice/practice-state.js
+  ok  - node --check practice/venn-renderer.js
+  ok  - node --check tests/browser/landing.spec.js
+  ok  - node --check tests/browser/layout-a11y.spec.js
+  ok  - node --check tests/browser/playwright.config.js
+  ok  - node --check tests/browser/practice.spec.js
+  ok  - node --check tests/browser/support.js
+  ok  - node --check tools/bank-index/build-bank-index.js
+  ok  - node --check tools/csp/compute-csp-hashes.js
+  ok  - node --check tools/csp/verify-csp-hashes.js
+  ok  - node --check tools/dev-server/serve.js
+  ok  - node --check tools/ecosystem-validator/validate-ecosystem.js
+  ok  - node --check tools/integrity/verify-protected.js
+  ok  - node --check tools/lib/csv-parse.js
+  ok  - node --check tools/lib/venn-validate.js
+  ok  - node --check tools/manifest-generator/generate-manifest.js
+  ok  - node --check tools/mathjax-integrity/verify-mathjax.js
+  ok  - node --check tools/practice-converter/convert-practices.js
+  ok  - node --check tools/qa/capture-evidence.js
+  ok  - node --check tools/tests/run-tests.js
+
+8. Renderer: bare-LaTeX auto-delimiting (practice/practice-engine.js)
+  ok  - wraps the exact bare-LaTeX pattern found in the audit (no delimiters at all)
+  ok  - leaves text with no backslash commands completely untouched
+  ok  - leaves already-delimited math untouched (no double-wrapping)
+  ok  - does not wrap a LaTeX-looking sequence inside an inline code span
+  ok  - does not wrap a LaTeX-looking sequence inside a fenced code block
+  ok  - wraps two independent bare expressions in the same string separately
+  ok  - every bare-LaTeX field across the real question banks is fully wrapped (zero remaining)
+  ok  - isSafeMediaUrl allows relative paths, http(s), protocol-relative, and data:image URIs
+  ok  - isSafeMediaUrl rejects javascript:, vbscript:, and other non-image URL schemes
+  ok  - no current question-bank image/visual src exercises the rejection path (confirmed-safe today)
+
+9. Data regression: no double-escaped \n/\t literal text in any question bank
+  ok  - no question-bank field contains a literal double-escaped \n or \t
+  ok  - the specific quiz - 75.json pseudocode now renders as real line breaks
+
+10. Ecosystem validator: schema + content-quality checks (Phase 3/10 hardening)
+  ok  - validator FAILS a question bank missing a required schema field (e.g. "category")
+  ok  - validator warns (but still PASSes) on an accidental full-bank content duplicate
+
+11. Manifest generator: slugification collision is surfaced as a warning
+  ok  - two different raw folder names that slugify to the same id produce a warning, not a silent merge
+
+12. Landing page security shape (index.html + catalog scripts)
+  ok  - catalog scripts never build markup from strings (no innerHTML / outerHTML / insertAdjacentHTML / document.write)
+  ok  - index.html and 404.html contain no inline <script> body, no inline <style>, and no style="" attribute
+  ok  - no eval / new Function anywhere in the landing scripts
+
+13. PracticeEngine/PracticeState flow: completion + review-mode termination
+  ok  - answering the last question ends in a deterministic complete state, not a Next-button loop back to the last question
+  ok  - a single-mistake review pass ends deterministically instead of re-showing the same question forever
+  ok  - a multi-mistake review pass visits each mistake exactly once, then ends (no ring-buffer cycling)
+
+14. PracticeState: stats and mistake list ignore stale/removed question ids
+  ok  - getStats() and getMistakeIds() only count ids that exist in the currently active bank
+  ok  - Venn renderer uses semantic setNames and falls back to A/B/C when names are absent
+  ok  - percentage notation remains ordinary text and is never rewritten by math cleanup
+
+15. Data regression: literal \% and \_ outside math delimiters (final-hardening audit)
+  ok  - no field in any question bank contains a literal \% outside a math delimiter
+  ok  - plain percentages (e.g. "14%") are still ordinary text (manifest id mathematics-algebra-learn-algebra-1, question …-q004)
+  ok  - math-mode percentages (e.g. "\(20\%\)") are still present inside math (manifest id mathematics-statistics-learn-statistics-1)
+  ok  - no field in any question bank contains a plain-text escaped-underscore placeholder (\_\_\_) outside a math delimiter
+  ok  - fill-in-the-blank placeholders that exist in the final banks are plain underscores, never escaped ones
+
+16. Content correctness regression: simplifying-radicals answer chain (manifest id mathematics-algebra-learn-algebra-1)
+  ok  - sqrt(36) (…-q080) simplifies to the fully-reduced integer 6, and is internally consistent
+  ok  - sqrt(72) (…-q232) simplifies to 6*sqrt(2), numerically equal to sqrt(72)
+  ok  - sqrt(32) (…-q371) offers the fully-simplified 4*sqrt(2) as the correct option
+  ok  - sqrt(100) (…-q469) simplifies to the fully-reduced integer 10
+
+17. Content correctness regression: no accidental multimodal "mode" data set has a single-answer key
+  ok  - every single-answer "mode" question's data set has a unique, unambiguous mode
+  ok  - the mode question …-q028 (manifest id mathematics-statistics-learn-statistics-1) has a single, unambiguous mode of 15
+
+18. Venn diagram data integrity (manifest id mathematics-discrete-mathematics-sets-1)
+  ok  - the set-theory bank is reachable through its manifest entry (path with a space and capitals)
+  ok  - generic Venn validator: every Venn question in the set-theory bank passes with zero problems
+  ok  - generic Venn validator flags the exact 'outside absorbed the total' bug pattern (negative control)
+  ok  - generic Venn validator flags corrupted setNames containing leaked question text (negative control)
+  ok  - every 'only A / only B / both / neither' survey question has regions and setNames derived from its own text
+  ok  - every three-set 'exactly two' question has AB/AC/BC/ABC regions and setNames derived from its own text
+  ok  - all 53 two-set Venn questions in the set-theory bank have exactly 2 setNames
+  ok  - the set-theory bank retains all 556 questions; every question on disk belongs to a catalogued bank
+
+19. Catalog view model (assets/js/catalog-model.js — the adapter the landing page uses)
+  ok  - adapter yields exactly the entries of DynancaManifest.eachPracticeFile, same ids, same order (fixture with direct, nested, mixed and new nodes)
+  ok  - adapter yields exactly the entries of the traversal for the REAL manifest (count, ids, order)
+  ok  - adapter is read-only: the manifest and index objects are not mutated
+  ok  - collections come from the manifest, in manifest order, including a brand-new and an empty one
+  ok  - nested topics/subtopics keep their ancestor trail and roll counts up to every ancestor
+  ok  - a mixed node (files AND topics) reports both its direct files and its topic files
+  ok  - availability and counts: verified count comes from the index, listed count from the manifest, and they are never mixed
+  ok  - search covers name, canonical id, collection and topic names; is case-insensitive, trimmed, accent-insensitive, AND-combined
+  ok  - filters combine: collection + topic (with descendants) + availability + query
+  ok  - an unknown collection/topic in the URL falls back to 'all' instead of an empty or broken view
+  ok  - URL state round-trips (encode -> parse -> normalize), including ids with spaces and symbols
+  ok  - pagination: 24 per page, clamps out-of-range pages, exact ranges
+  ok  - page window always contains first, last and current, with gaps only where pages are skipped
+  ok  - practice link is the canonical pattern with the exact manifest id (encodeURIComponent, never a slug)
+  ok  - a manifest entry whose id is repeated can only open its first occurrence, so only the first is offered as available
+  ok  - malformed inputs raise a typed error the UI can turn into a retryable state (never a crash on undefined)
+  ok  - an index that lists ids the manifest does not have is reported for maintainers, and those ids are ignored
+  ok  - saved progress is summarised from real attempt records without a single write, migration or removal
+  ok  - blocked or throwing storage yields 'no progress' instead of an exception
+
+20. Bank availability index (tools/bank-index/build-bank-index.js)
+  FAIL - the committed index is exactly what this snapshot of manifest + questions/ produces (--check)
+        Command failed: /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node /workspace/scratch/051c254e42f3/work/REAL MCQ/tools/bank-index/build-bank-index.js --check
+Bank index check FAILED — assets/data/bank-index.json is out of date for this snapshot of master-manifest.json + questions/. Run `npm run build:index`.
+
+  FAIL - building twice gives identical bytes (deterministic: manifest order, no timestamp)
+        Expected values to be strictly equal:
++ actual - expected
+... Skipped lines
+
+  '{\n' +
+    '  "schemaVersion": "1.0",\n' +
+    '  "indexType": "dynanca-bank-availability",\n' +
+    '  "generatedBy": "tools/bank-index/build-bank-index.js",\n' +
+    '  "note": "Derived, regenerable file. Do not edit by hand: run `npm run build:index`. \\"available\\" maps a canonical master-manifest practice_files id to the verified number of questions in that bank file. Listed banks that are absent here are not shipped in this build.",\n' +
++   '  "manifestSha256": "0d709f51fcd5f7041ef25d4071cc496ceafa4b30d55997897fd4a953d56fdb49",\n' +
+-   '  "manifestSha256": "c288e1ba510c920c5bc3998e685732616edd24d637a5f511cee5b0292f141524",\n' +
+    '  "summary": {\n' +
++   '    "listedBanks": 2527,\n' +
++   '    "availableBanks": 766,\n' +
+-   '    "listedBanks": 2526,\n' +
+-   '    "availableBanks": 765,\n' +
+    '    "unavailableBanks": 1761,\n' +
++   '    "listedQuestions": 38015,\n' +
++   '    "verifiedQuestions": 20405\n' +
+-   '    "listedQuestions": 37915,\n' +
+-   '    "verifiedQuestions": 20305\n' +
+    '  },\n' +
+    '  "available": {\n' +
+    '    "mathematics-algebra-first-math": 600,\n' +
+    '    "mathematics-algebra-algebra-01": 200,\n' +
+    '    "mathematics-algebra-algebra-02": 200,\n' +
+...
+    '    "math-gaokao-176": 10,\n' +
++   '    "math-gaokao-177"'... 11005 more characters
+-   '    "math-gaokao-177"'... 10990 more characters
+
+  FAIL - index keys are canonical manifest ids, in manifest order, and counts are the verified questions.length
+        Expected values to be strictly equal:
+
+2526 !== 2527
+
+  ok  - math-gaokao-71: index, manifest and catalog all agree on the verified 150
+  ok  - computer science / algorithms: listed in the manifest, present in the index, AVAILABLE in the catalog with its verified count
+  FAIL - the listed total and the available total are different numbers and are kept apart
+        Expected values to be strictly equal:
+
+2527 !== 2526
+
+  ok  - INTEGRATION REHEARSAL: adding a bank file at its canonical path + one rebuild makes it available — in a temporary copy, never in production questions/
+  ok  - a present-but-unusable bank file (invalid JSON / empty questions) is NOT offered as available
+  FAIL - the builder refuses to write over the manifest, CSV, XLSX, schemas, bank files or vendor code
+        Expected values to be strictly equal:
++ actual - expected
+
++ '0d709f51fcd5f7041ef25d4071cc496ceafa4b30d55997897fd4a953d56fdb49'
+- 'c288e1ba510c920c5bc3998e685732616edd24d637a5f511cee5b0292f141524'
+
+
+21. Standalone theme module (assets/js/theme.js)
+  ok  - theme runs with no PracticeEngine / PracticeState / MathJax present and defaults to the system setting
+  ok  - theme uses the existing key dynanca-mfc-theme-mode, so the choice carries between landing and practice
+  ok  - in system mode a live OS theme change is followed; an explicit choice is not overridden by it
+  ok  - storage that throws on access or on write never crashes the page; the click still applies for this page
+  ok  - a corrupt stored value and a browser without matchMedia both fall back safely
+
+22. Page wiring, link integrity and storage safety
+  ok  - every local file referenced by index.html, 404.html and practice/index.html exists (exact case and spaces)
+  ok  - the landing page uses the official logo image with intrinsic dimensions and no lazy-loading
+  ok  - the landing page loads the theme without loading the engine, state, question banks or MathJax
+  ok  - the landing page keeps one h1, a skip link, landmarks, labelled controls and a no-JavaScript notice
+  ok  - landing copy makes no claim the product cannot keep (no timer, price, sign-in, ratings, AI, streaks, sync promise)
+  ok  - practice page: theme module is loaded in <head> and shell boot no longer gates the theme on the engine
+  ok  - practice page: MathJax configuration and the bundled local script tag are untouched
+  ok  - practice loader still resolves the exact manifest id with the shared traversal and the safe-path rule
+  ok  - no hand-written script calls localStorage.clear(), and landing scripts never write practice storage
+  ok  - practice storage keys and reset semantics are exactly as before
+  ok  - CI and npm scripts contain no step that regenerates or rewrites the manifest
+
+23. Protected content is byte-identical to the owner's archive
+  FAIL - node tools/integrity/verify-protected.js passes (manifest, banks, schemas, traversal, engine, state, renderers, practices.css, MathJax)
+        Command failed: /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node /workspace/scratch/051c254e42f3/work/REAL MCQ/tools/integrity/verify-protected.js
+  CHANGED: master-manifest.json
+
+Protected content check FAILED — 1 changed, 0 missing (of 883 baseline files). Restore them from the owner's original archive.
+
+  FAIL - the baseline covers every protected class named in the contract
+        run `node tools/integrity/verify-protected.js --add-new` for new bank files
++ actual - expected
+
++ [
++   'questions/computer science/ml.json'
++ ]
+- []
+
+
+138 passed, 10 failed.

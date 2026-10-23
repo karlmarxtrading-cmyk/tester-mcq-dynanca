@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-530",
+  "category": "Comprehensive Mathematics",
+  "title": "530. Sets, Logic, Reasoning & Proof: Equivalence Classes",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-530-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of an equivalence class",
+      "learningObjective": "State what the equivalence class of an element is.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(\\sim\\) be an equivalence relation on a set \\(A\\). What is the equivalence class \\([a]\\) of an element \\(a\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The set of all elements of \\(A\\) that are related to \\(a\\)"
+        },
+        {
+          "label": "B",
+          "text": "The set of all elements of \\(A\\) that are not related to \\(a\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equivalence class of \\(a\\) collects everything equivalent to \\(a\\): \\([a]=\\{x\\in A\\mid x\\sim a\\}\\). Since \\(a\\sim a\\), the class always contains \\(a\\) itself.",
+      "hint": "A class gathers the elements that the relation treats as equivalent."
+    },
+    {
+      "id": "dynanca-530-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A class modulo three",
+      "learningObjective": "Describe an equivalence class of congruence modulo three.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "On the integers, let \\(a\\sim b\\) when \\(a-b\\) is divisible by \\(3\\). What is the equivalence class \\([0]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The set \\(\\{0\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "The set of all multiples of \\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An integer \\(x\\) is in \\([0]\\) when \\(x-0\\) is divisible by \\(3\\), that is, when \\(x\\) is a multiple of \\(3\\). So \\([0]=\\{\\ldots,-6,-3,0,3,6,\\ldots\\}\\). The class contains infinitely many integers, not only \\(0\\).",
+      "hint": "Find all integers \\(x\\) for which \\(x-0\\) is divisible by \\(3\\)."
+    },
+    {
+      "id": "dynanca-530-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Number of classes modulo four",
+      "learningObjective": "Count the equivalence classes of congruence modulo four.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "On the integers, let \\(a\\sim b\\) when \\(a-b\\) is divisible by \\(4\\). How many different equivalence classes are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Infinitely many"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Two integers are equivalent exactly when they leave the same remainder on division by \\(4\\). The possible remainders are \\(0\\), \\(1\\), \\(2\\), and \\(3\\), so there are \\(4\\) classes: \\([0]\\), \\([1]\\), \\([2]\\), \\([3]\\). Each class is infinite, but the number of classes is finite.",
+      "hint": "Classify the integers by their remainder on division by \\(4\\)."
+    },
+    {
+      "id": "dynanca-530-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Different names for one class",
+      "learningObjective": "Recognise that different representatives can name the same class.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For congruence modulo \\(5\\) on the integers, which class is equal to \\([7]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([5]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([2]\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(7-2=5\\) is divisible by \\(5\\), \\(7\\sim 2\\), and equivalent elements have the same class: \\([7]=[2]\\). The class \\([5]\\) equals \\([0]\\), because \\(5-0\\) is divisible by \\(5\\); it does not contain \\(7\\), since \\(7-5=2\\) is not divisible by \\(5\\).",
+      "hint": "Two classes are equal exactly when their representatives are equivalent."
+    },
+    {
+      "id": "dynanca-530-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Classes are equal or disjoint",
+      "learningObjective": "State how two equivalence classes can be related.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\([a]\\) and \\([b]\\) be equivalence classes of the same equivalence relation. Which statement is always true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Either \\([a]=[b]\\) or \\([a]\\cap[b]=\\varnothing\\)."
+        },
+        {
+          "label": "B",
+          "text": "The classes \\([a]\\) and \\([b]\\) may share some, but not all, of their elements."
+        }
+      ],
+      "answer": "A",
+      "explanation": "If the classes share an element \\(x\\), then \\(a\\sim x\\) and \\(x\\sim b\\), so \\(a\\sim b\\) by transitivity, and the classes coincide. Hence two classes are either identical or have nothing in common. This is why the classes form a partition of the set.",
+      "hint": "Suppose one element lies in both classes and use symmetry and transitivity."
+    },
+    {
+      "id": "dynanca-530-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Classes of a parity relation",
+      "learningObjective": "List the equivalence classes of a relation on a small set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "On \\(A=\\{1,2,3,4,5,6\\}\\), let \\(a\\sim b\\) when \\(a\\) and \\(b\\) have the same parity. What are the equivalence classes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1,2\\}\\), \\(\\{3,4\\}\\), and \\(\\{5,6\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,3,5\\}\\) and \\(\\{2,4,6\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Elements with the same parity are equivalent, so all odd elements form one class and all even elements form another: \\(\\{1,3,5\\}\\) and \\(\\{2,4,6\\}\\). The sets \\(\\{1,2\\}\\), \\(\\{3,4\\}\\), \\(\\{5,6\\}\\) each contain an odd and an even number, which are not equivalent.",
+      "hint": "Group together the elements that the relation treats as the same."
+    },
+    {
+      "id": "dynanca-530-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Classes of a listed relation",
+      "learningObjective": "Read the equivalence classes from a list of ordered pairs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The relation \\(R=\\{(1,1),(2,2),(3,3),(1,2),(2,1)\\}\\) is an equivalence relation on \\(\\{1,2,3\\}\\). What are its equivalence classes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1\\}\\), \\(\\{2\\}\\), and \\(\\{3\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,2\\}\\) and \\(\\{3\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The elements \\(1\\) and \\(2\\) are related to each other, so they lie in the same class \\(\\{1,2\\}\\). The element \\(3\\) is related only to itself, so its class is \\(\\{3\\}\\). Three singleton classes would correspond to the equality relation, which does not contain \\((1,2)\\).",
+      "hint": "For each element, collect all elements paired with it."
+    },
+    {
+      "id": "dynanca-530-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A class defined by equal squares",
+      "learningObjective": "Find an equivalence class for a relation defined by equal squares.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "On the integers, let \\(a\\sim b\\) when \\(a^2=b^2\\). What is the equivalence class \\([3]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{3\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{3,-3\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An integer \\(x\\) is in \\([3]\\) when \\(x^2=3^2=9\\), which holds for \\(x=3\\) and \\(x=-3\\). So \\([3]=\\{3,-3\\}\\). Every class of this relation has two elements, except \\([0]=\\{0\\}\\).",
+      "hint": "Solve \\(x^2=9\\) over the integers."
+    },
+    {
+      "id": "dynanca-530-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "From a partition to a relation",
+      "learningObjective": "Count the ordered pairs of the equivalence relation determined by a partition.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The partition \\(\\{\\{1,2,3\\},\\{4,5\\}\\}\\) of \\(\\{1,2,3,4,5\\}\\) determines an equivalence relation in which two elements are related exactly when they lie in the same block. How many ordered pairs does this relation contain?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(13\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Within the block \\(\\{1,2,3\\}\\) every element is related to every element, giving \\(3\\cdot 3=9\\) ordered pairs. Within \\(\\{4,5\\}\\) there are \\(2\\cdot 2=4\\). Elements of different blocks are not related, so the total is \\(9+4=13\\). The number \\(5\\) counts only the pairs \\((a,a)\\).",
+      "hint": "For a block with \\(k\\) elements, count all ordered pairs of its elements, including pairs \\((a,a)\\)."
+    },
+    {
+      "id": "dynanca-530-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A class of ordered pairs",
+      "learningObjective": "Find an equivalence class when the elements are ordered pairs.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "On the set \\(\\{1,2,3\\}\\times\\{1,2,3\\}\\), let \\((x,y)\\sim(u,v)\\) when \\(x-y=u-v\\). What is the equivalence class of \\((1,2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{(1,2),(2,1)\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{(1,2),(2,3)\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The class of \\((1,2)\\) consists of all pairs in the set whose first component minus second component equals \\(1-2=-1\\). These are \\((1,2)\\) and \\((2,3)\\). The pair \\((2,1)\\) has difference \\(2-1=1\\), so it lies in a different class.",
+      "hint": "List every pair of the set with the same difference as \\((1,2)\\), keeping the order of subtraction."
+    }
+  ]
+}

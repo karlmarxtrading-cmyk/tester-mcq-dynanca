@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-518",
+  "category": "Comprehensive Mathematics",
+  "title": "518. Sets, Logic, Reasoning & Proof: Strong Induction",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-518-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Hypothesis of strong induction",
+      "learningObjective": "State what is assumed in the inductive step of strong induction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In the inductive step of a proof by strong induction for \\(n\\ge 1\\), what is assumed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P(j)\\) is true for every integer \\(j\\) with \\(1\\le j\\le k\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(P(j)\\) is true for the single value \\(j=k\\) only."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Strong induction assumes the statement for all values from the base value up to \\(k\\) and uses any of them to prove \\(P(k+1)\\). Assuming only \\(P(k)\\) is the hypothesis of ordinary induction.",
+      "hint": "The word \"strong\" refers to having more earlier cases available."
+    },
+    {
+      "id": "dynanca-518-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Strong versus ordinary induction",
+      "learningObjective": "Distinguish strong induction from ordinary induction by what the step may use.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What may the inductive step use in strong induction that it may not use in ordinary induction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The case \\(P(k+1)\\) itself"
+        },
+        {
+          "label": "B",
+          "text": "Any of the earlier cases \\(P(1),P(2),\\ldots,P(k)\\), not just \\(P(k)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In ordinary induction the step proves \\(P(k+1)\\) from \\(P(k)\\) alone. In strong induction all earlier cases are available. Using \\(P(k+1)\\) itself would be circular in either method.",
+      "hint": "Compare how many previously proved cases each method allows."
+    },
+    {
+      "id": "dynanca-518-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Applying the hypothesis to factors",
+      "learningObjective": "Decide to which numbers the strong hypothesis is applied in a factorisation proof.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In the proof that every integer \\(n\\ge 2\\) is a product of primes, a composite number \\(n\\) is written as \\(n=ab\\) with \\(2\\le a<n\\) and \\(2\\le b<n\\). To which numbers is the strong induction hypothesis applied?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To \\(a\\) and to \\(b\\)"
+        },
+        {
+          "label": "B",
+          "text": "To \\(n-1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The factors \\(a\\) and \\(b\\) are smaller than \\(n\\) and at least \\(2\\), so by the strong hypothesis each is a product of primes. Multiplying these products gives \\(n\\) as a product of primes. The number \\(n-1\\) has no useful relation to the factorisation of \\(n\\).",
+      "hint": "The hypothesis is needed for the numbers that actually appear in the factorisation."
+    },
+    {
+      "id": "dynanca-518-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Reaching back several cases",
+      "learningObjective": "Identify the earlier case used in a strong induction about stamps.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "It is to be proved that every amount of \\(n\\ge 12\\) cents can be paid with \\(4\\)-cent and \\(5\\)-cent stamps. After base cases, the step treats an amount \\(n\\ge 16\\). Which earlier amount is used?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n-4\\), to which one \\(4\\)-cent stamp is added"
+        },
+        {
+          "label": "B",
+          "text": "\\(n-1\\), to which one \\(1\\)-cent stamp is added"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(n\\ge 16\\), the amount \\(n-4\\) is at least \\(12\\) and smaller than \\(n\\), so by the strong hypothesis it can be paid with the two kinds of stamps. Adding one \\(4\\)-cent stamp pays \\(n\\). There is no \\(1\\)-cent stamp, so the case \\(n-1\\) is of no direct use.",
+      "hint": "Choose an earlier amount that differs from \\(n\\) by the value of an available stamp."
+    },
+    {
+      "id": "dynanca-518-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting the base cases",
+      "learningObjective": "Determine how many base cases a strong induction with a step of four requires.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "In the stamp proof for amounts \\(n\\ge 12\\) with \\(4\\)-cent and \\(5\\)-cent stamps, the step uses the case \\(n-4\\) and applies for \\(n\\ge 16\\). How many base cases must be checked directly?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One: \\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "Four: \\(12\\), \\(13\\), \\(14\\), and \\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The step reaches back \\(4\\), so it can start only at \\(n=16\\), where \\(n-4=12\\). The amounts \\(12=4+4+4\\), \\(13=4+4+5\\), \\(14=4+5+5\\), and \\(15=5+5+5\\) must each be verified directly. With only \\(12\\) checked, the amounts \\(13\\), \\(14\\), \\(15\\) would never be reached, since \\(13-4=9\\) is below the starting value.",
+      "hint": "List the amounts for which \\(n-4\\) falls below \\(12\\)."
+    },
+    {
+      "id": "dynanca-518-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A bound for a two-term recurrence",
+      "learningObjective": "Complete the estimate in a strong induction about a recursively defined sequence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A sequence satisfies \\(a_{k+1}=a_k+a_{k-1}\\), and the strong hypothesis gives \\(a_k<2^k\\) and \\(a_{k-1}<2^{k-1}\\). Which estimate proves \\(a_{k+1}<2^{k+1}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_{k+1}<2^k+2^{k-1}=2^{2k-1}<2^{k+1}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a_{k+1}<2^k+2^{k-1}=3\\cdot 2^{k-1}<4\\cdot 2^{k-1}=2^{k+1}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Adding the two bounds gives \\(a_{k+1}<2^k+2^{k-1}\\). Since \\(2^k=2\\cdot 2^{k-1}\\), this sum is \\(3\\cdot 2^{k-1}\\), which is less than \\(4\\cdot 2^{k-1}=2^{k+1}\\). Powers are not added by adding exponents, so \\(2^k+2^{k-1}\\) is not \\(2^{2k-1}\\).",
+      "hint": "Write both powers as multiples of \\(2^{k-1}\\) before adding."
+    },
+    {
+      "id": "dynanca-518-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Why the strong hypothesis is convenient",
+      "learningObjective": "Explain why ordinary induction is awkward for a statement about divisors.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Why is strong induction the natural method for proving that every integer \\(n\\ge 2\\) has a prime divisor?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The statement \\(P(k)\\) is false for some values of \\(k\\), so it cannot be assumed."
+        },
+        {
+          "label": "B",
+          "text": "A proper divisor of \\(k+1\\) is usually not equal to \\(k\\), so knowing only \\(P(k)\\) says nothing about that divisor."
+        }
+      ],
+      "answer": "B",
+      "explanation": "If \\(k+1\\) is composite, it has a divisor \\(a\\) with \\(2\\le a\\le k\\), and the proof needs the statement for \\(a\\). In general \\(a\\ne k\\); for example the divisors of \\(15\\) are \\(3\\) and \\(5\\), not \\(14\\). Strong induction makes \\(P(a)\\) available. The statement itself is true for all \\(n\\ge 2\\).",
+      "hint": "Think about which earlier number the proof needs when \\(k+1\\) is composite."
+    },
+    {
+      "id": "dynanca-518-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The hypothesis in a concrete factorisation",
+      "learningObjective": "Apply the strong hypothesis in a concrete case of the factorisation proof.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In the proof that every integer \\(n\\ge 2\\) is a product of primes, consider \\(n=12=3\\cdot 4\\). To which numbers is the strong hypothesis applied?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To \\(3\\) and to \\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "To \\(11\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The hypothesis is applied to the factors \\(3\\) and \\(4\\), both of which lie between \\(2\\) and \\(11\\). It gives \\(3=3\\) and \\(4=2\\cdot 2\\) as products of primes, so \\(12=3\\cdot 2\\cdot 2\\). The number \\(11\\) is not a factor of \\(12\\) and plays no role.",
+      "hint": "Use the factors that appear in the factorisation \\(12=3\\cdot 4\\)."
+    },
+    {
+      "id": "dynanca-518-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A linear recurrence with two earlier terms",
+      "learningObjective": "Verify the inductive step for a closed formula of a recurrence.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A sequence is defined by \\(a_1=1\\), \\(a_2=2\\), and \\(a_{k+1}=2a_k-a_{k-1}\\) for \\(k\\ge 2\\). Assuming \\(a_k=k\\) and \\(a_{k-1}=k-1\\), what does the recurrence give for \\(a_{k+1}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2k-(k-1)=k+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2k-(k-1)=k-1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substituting the two assumed values gives \\(a_{k+1}=2k-(k-1)=2k-k+1=k+1\\), which is the formula \\(a_n=n\\) for \\(n=k+1\\). The sign error \\(2k-k-1=k-1\\) forgets that subtracting \\(-1\\) adds \\(1\\).",
+      "hint": "Remove the parentheses carefully: subtracting \\(k-1\\) means subtracting \\(k\\) and adding \\(1\\)."
+    },
+    {
+      "id": "dynanca-518-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Base cases for a step of three",
+      "learningObjective": "Determine the base cases of a strong induction whose step reaches back three.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "It is to be proved that every amount of \\(n\\ge 8\\) cents can be paid with \\(3\\)-cent and \\(5\\)-cent stamps, using a step that adds one \\(3\\)-cent stamp to a payment of \\(n-3\\) cents. Which base cases are needed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\), \\(9\\), and \\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\) only"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The step uses \\(n-3\\), so it applies only when \\(n-3\\ge 8\\), that is, for \\(n\\ge 11\\). The amounts \\(8=3+5\\), \\(9=3+3+3\\), and \\(10=5+5\\) must be verified directly. With only \\(8\\) checked, the amounts \\(9\\) and \\(10\\) would not be reached, because \\(9-3\\) and \\(10-3\\) are below \\(8\\).",
+      "hint": "Find all amounts \\(n\\ge 8\\) for which \\(n-3\\) is less than \\(8\\)."
+    }
+  ]
+}

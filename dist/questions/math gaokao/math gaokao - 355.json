@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-355",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 355",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-355-q001",
+      "category": "Combinatorics",
+      "concept": "Permutations of a multiset",
+      "learningObjective": "Count distinct arrangements of letters when some letters are repeated.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many distinct arrangements of all the letters in the word COMMITTEE are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(45360\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(90720\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "COMMITTEE has \\(9\\) letters. M, T, and E each appear twice; C, O, and I each appear once. Dividing by the factorial of each repeated-letter count gives\n\\[\n\\frac{9!}{2!2!2!}=\\frac{362880}{8}=45360.\n\\]\nThe distractor \\(90720\\) divides by only two of the three repeated-letter factorials.",
+      "hint": "Use the multinomial formula for arrangements with repeated letters."
+    },
+    {
+      "id": "math-gaokao-355-q002",
+      "category": "Combinatorics",
+      "concept": "Permutations of a multiset",
+      "learningObjective": "Count distinct arrangements of a word containing two pairs of repeated letters.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many distinct arrangements of the letters of the word LEVEL are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(120\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The word LEVEL has \\(5\\) letters: L appears \\(2\\) times, E appears \\(2\\) times, and V appears \\(1\\) time. The number of distinct arrangements is\n\\[\n\\frac{5!}{2!\\,2!\\,1!}=\\frac{120}{2\\cdot 2}=30.\n\\]",
+      "hint": "Divide the total permutations by the factorials of the frequencies of the repeated letters."
+    },
+    {
+      "id": "math-gaokao-355-q003",
+      "category": "Combinatorics",
+      "concept": "Arrangements with identical objects and a block restriction",
+      "learningObjective": "Count arrangements of identical objects when two specified identical objects must be adjacent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Six balls consist of \\(2\\) identical red balls, \\(3\\) identical blue balls, and \\(1\\) green ball. In how many distinct ways can they be arranged in a row if the two red balls must be adjacent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Treat the two red balls as one block. Then we arrange \\(5\\) objects: one red block, three identical blue balls, and one green ball. The number of distinct arrangements is\n\\[\n\\frac{5!}{3!}=20.\n\\]\nWithout the restriction, the total would be \\(\\frac{6!}{2!\\,3!}=60\\).",
+      "hint": "Combine the two red balls into a single object, then account for the identical blue balls."
+    },
+    {
+      "id": "math-gaokao-355-q004",
+      "category": "Combinatorics",
+      "concept": "Non-adjacency in arrangements with repeated letters",
+      "learningObjective": "Count arrangements of a word with repeated letters when a specified repeated letter cannot be adjacent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many distinct arrangements of all the letters of MISSISSIPPI have no two S's adjacent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(34650\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7350\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "MISSISSIPPI contains \\(4\\) S's, \\(4\\) I's, \\(2\\) P's, and \\(1\\) M. Arrange the seven non-S letters first:\n\\[\n\\frac{7!}{4!2!}=105.\n\\]\nThey create \\(8\\) gaps, including both ends. Choose \\(4\\) different gaps for the identical S's:\n\\[\n105\\binom{8}{4}=105\\cdot70=7350.\n\\]\nThe distractor \\(34650=11!/(4!4!2!)\\) counts all arrangements without the non-adjacency restriction.",
+      "hint": "Arrange the non-S letters first, then choose distinct gaps, including the gaps at both ends, for the S's."
+    },
+    {
+      "id": "math-gaokao-355-q005",
+      "category": "Combinatorics",
+      "concept": "Arrangements with repeated digits and an even-units restriction",
+      "learningObjective": "Count even numbers formed from a multiset of digits with repetitions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many \\(5\\)-digit even numbers can be formed using the digits \\(1,1,2,2,3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For the number to be even, the units digit must be \\(2\\). After fixing a \\(2\\) in the units position, the remaining digits are \\(1,1,2,3\\). Their distinct arrangements are\n\\[\n\\frac{4!}{2!}=12.\n\\]\nThe total number of \\(5\\)-digit numbers without the even restriction is \\(\\frac{5!}{2!\\,2!}=30\\).",
+      "hint": "Fix the units digit first because it controls whether the number is even."
+    },
+    {
+      "id": "math-gaokao-355-q006",
+      "category": "Combinatorics",
+      "concept": "Arrangements of identical objects with a fixed position",
+      "learningObjective": "Count arrangements of identical objects when one specified object is fixed in a given position.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Six balls consist of \\(3\\) identical red balls, \\(2\\) identical blue balls, and \\(1\\) green ball. In how many distinct ways can they be arranged in a row if the green ball is in the third position?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Fix the green ball in the third position. The remaining \\(5\\) positions must be filled by \\(3\\) identical red balls and \\(2\\) identical blue balls. The number of distinct arrangements is\n\\[\n\\frac{5!}{3!\\,2!}=10.\n\\]\nWithout fixing the green ball, the total would be \\(\\frac{6!}{3!\\,2!}=60\\).",
+      "hint": "Fix the green ball first, then arrange the remaining identical balls."
+    },
+    {
+      "id": "math-gaokao-355-q007",
+      "category": "Combinatorics",
+      "concept": "Non-adjacency in arrangements with repeated letters",
+      "learningObjective": "Count arrangements of a word with repeated letters when a specified repeated letter cannot be adjacent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many distinct arrangements of the letters of the word BALLOON have no two O's adjacent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1260\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(900\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The word BALLOON has \\(7\\) letters: B, A, L, L, O, O, N. First arrange the non-O letters B, A, L, L, N. Since L appears twice, this gives\n\\[\n\\frac{5!}{2!}=60\n\\]\narrangements. These \\(5\\) letters create \\(6\\) gaps. To keep the O's non-adjacent, choose \\(2\\) of these \\(6\\) gaps for the identical O's:\n\\[\n\\binom{6}{2}=15.\n\\]\nThus the total number of valid arrangements is \\(60\\cdot 15=900\\). Without the restriction, the total is \\(\\frac{7!}{2!\\,2!}=1260\\).",
+      "hint": "Arrange the non-O letters first, then choose distinct gaps, including both end gaps, for the O's."
+    },
+    {
+      "id": "math-gaokao-355-q008",
+      "category": "Combinatorics",
+      "concept": "Arrangements of identical objects with an endpoint restriction",
+      "learningObjective": "Count arrangements of identical objects when one specified object cannot occupy either end position.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Six balls consist of \\(3\\) identical red balls, \\(2\\) identical blue balls, and \\(1\\) green ball. In how many distinct ways can they be arranged in a row if the green ball is not at either end?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(40\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total number of arrangements is\n\\[\n\\frac{6!}{3!\\,2!}=60.\n\\]\nIf the green ball is at an end, fix it at one end and arrange the remaining \\(5\\) balls with \\(3\\) red and \\(2\\) blue:\n\\[\n\\frac{5!}{3!\\,2!}=10.\n\\]\nThere are \\(2\\) ends, so \\(2\\cdot 10=20\\) arrangements have the green ball at an end. Therefore, the number with the green ball not at either end is \\(60-20=40\\).",
+      "hint": "Count all arrangements and subtract those with the green ball at an end."
+    },
+    {
+      "id": "math-gaokao-355-q009",
+      "category": "Combinatorics",
+      "concept": "Arrangements with repeated letters and block restrictions",
+      "learningObjective": "Count arrangements of a word with repeated letters when two groups of identical letters must each remain together.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many distinct arrangements of the letters of the word STATISTICS are possible if all S's are together and all T's together?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(360\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(50400\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The word STATISTICS has \\(3\\) S's, \\(3\\) T's, \\(2\\) I's, \\(1\\) A, and \\(1\\) C. Treat the three S's as one block and the three T's as one block. Then arrange the two blocks together with I, I, A, and C. This gives \\(6\\) objects with two identical I's, so the number of arrangements is\n\\[\n\\frac{6!}{2!}=360.\n\\]\nWithout the restrictions, the total is \\(\\frac{10!}{3!\\,3!\\,2!}=50400\\).",
+      "hint": "Combine the identical S's into one block and the identical T's into another block."
+    },
+    {
+      "id": "math-gaokao-355-q010",
+      "category": "Combinatorics",
+      "concept": "Inclusion-exclusion for non-adjacent repeated objects",
+      "learningObjective": "Count arrangements of three pairs of identical objects when no two objects of the same color are adjacent.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many distinct arrangements are there of \\(2\\) identical red balls, \\(2\\) identical blue balls, and \\(2\\) identical green balls in a row such that no two balls of the same color are adjacent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(90\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(30\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total number of arrangements without restriction is\n\\[\n\\frac{6!}{2!\\,2!\\,2!}=90.\n\\]\nLet \\(A_R\\) be the event that the two red balls are adjacent, and define \\(A_B\\) and \\(A_G\\) similarly. By inclusion-exclusion, the number of arrangements with at least one adjacent same-color pair is\n\\[\n3\\cdot \\frac{5!}{2!\\,2!} - 3\\cdot \\frac{4!}{2!} + 3! = 3\\cdot 30 - 3\\cdot 12 + 6 = 90 - 36 + 6 = 60.\n\\]\nThus the number with no adjacent same-color pair is \\(90-60=30\\).",
+      "hint": "Use inclusion-exclusion on the events that a color's two balls are adjacent."
+    }
+  ]
+}

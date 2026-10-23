@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-248",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 248",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-248-q001",
+      "category": "Solid Geometry",
+      "concept": "Angle between a line and a plane in a cube",
+      "learningObjective": "Determine the angle between a face diagonal and the base plane of a cube.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), find the angle between line \\(AB_1\\) and the base plane \\(ABCD\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(45^\\circ\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Take \\(A(0,0,0)\\), \\(B(1,0,0)\\), and \\(B_1(1,0,1)\\). The direction vector of \\(AB_1\\) is \\((1,0,1)\\). The base plane \\(ABCD\\) has normal vector \\((0,0,1)\\). Thus\n\\[\n\\sin\\theta=\\frac{|(1,0,1)\\cdot(0,0,1)|}{\\sqrt{2}\\cdot 1}=\\frac{1}{\\sqrt{2}}.\n\\]\nHence \\(\\theta=45^\\circ\\).",
+      "hint": "Use coordinates or project the line onto the base plane, then compare the vertical component with the length of the line segment."
+    },
+    {
+      "id": "math-gaokao-248-q002",
+      "category": "Solid Geometry",
+      "concept": "Angle between a space diagonal and a base plane",
+      "learningObjective": "Compute the angle between a cube diagonal and the base plane using the sine formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), find the angle between line \\(AC_1\\) and the base plane \\(ABCD\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arcsin\\frac{\\sqrt{3}}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arccos\\frac{\\sqrt{3}}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(A(0,0,0)\\), \\(C_1(1,1,1)\\). The direction vector of \\(AC_1\\) is \\((1,1,1)\\), and the base plane has normal vector \\((0,0,1)\\). Therefore\n\\[\n\\sin\\theta=\\frac{|(1,1,1)\\cdot(0,0,1)|}{\\sqrt{3}\\cdot 1}=\\frac{1}{\\sqrt{3}}=\\frac{\\sqrt{3}}{3}.\n\\]\nSo \\(\\theta=\\arcsin\\frac{\\sqrt{3}}{3}\\).",
+      "hint": "The angle between a line and a plane can be found from the angle between the line and the plane’s normal vector."
+    },
+    {
+      "id": "math-gaokao-248-q003",
+      "category": "Solid Geometry",
+      "concept": "Angle between a rectangular box diagonal and its base plane",
+      "learningObjective": "Determine the angle between a space diagonal of a rectangular box and the base plane.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In rectangular box \\(ABCD-A_1B_1C_1D_1\\), \\(AB=2\\), \\(AD=1\\), and \\(AA_1=2\\). Find the angle between line \\(AC_1\\) and the base plane \\(ABCD\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arcsin\\frac{1}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arcsin\\frac{2}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Take \\(A(0,0,0)\\), \\(B(2,0,0)\\), \\(D(0,1,0)\\), and \\(C_1(2,1,2)\\). Then\n\\[\n\\overrightarrow{AC_1}=(2,1,2).\n\\]\nThe base plane has normal vector \\((0,0,1)\\), so\n\\[\n\\sin\\theta=\\frac{|(2,1,2)\\cdot(0,0,1)|}{\\sqrt{2^2+1^2+2^2}\\cdot 1}\n=\\frac{2}{\\sqrt{9}}=\\frac{2}{3}.\n\\]\nThus \\(\\theta=\\arcsin\\frac{2}{3}\\).",
+      "hint": "Use the box’s dimensions as the components of the space diagonal and compare its vertical component with its full length."
+    },
+    {
+      "id": "math-gaokao-248-q004",
+      "category": "Solid Geometry",
+      "concept": "Angle between an edge and a face in a regular tetrahedron",
+      "learningObjective": "Find the angle between an edge and the base plane of a regular tetrahedron.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In a regular tetrahedron \\(ABCD\\), find the angle between edge \\(AD\\) and the base plane \\(ABC\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arccos\\frac{1}{\\sqrt{3}}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(45^\\circ\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let the side length be \\(a\\). The projection of \\(D\\) onto the base plane \\(ABC\\) is the centroid \\(O\\) of triangle \\(ABC\\). Since \\(AO=\\frac{a}{\\sqrt{3}}\\) and \\(AD=a\\), the angle \\(\\theta\\) between \\(AD\\) and the base plane satisfies\n\\[\n\\cos\\theta=\\frac{AO}{AD}=\\frac{1}{\\sqrt{3}}.\n\\]\nTherefore \\(\\theta=\\arccos\\frac{1}{\\sqrt{3}}\\).",
+      "hint": "Project the vertex onto the base and form a right triangle using the centroid distance."
+    },
+    {
+      "id": "math-gaokao-248-q005",
+      "category": "Solid Geometry",
+      "concept": "Angle between a lateral edge and the base plane of a pyramid",
+      "learningObjective": "Compute the angle between a lateral edge and the base plane in a square pyramid.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In regular square pyramid \\(S-ABCD\\), the base \\(ABCD\\) is a square of side \\(2\\), and the height is \\(2\\). Find the angle between lateral edge \\(SA\\) and the base plane \\(ABCD\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arcsin\\frac{1}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arcsin\\frac{\\sqrt{6}}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Place the base square in the plane \\(z=0\\) with center at the origin:\n\\[\nA(-1,-1,0),\\quad S(0,0,2).\n\\]\nThen \\(\\overrightarrow{SA}=(-1,-1,-2)\\). The base plane has normal vector \\((0,0,1)\\). Hence\n\\[\n\\sin\\theta=\\frac{|(-1,-1,-2)\\cdot(0,0,1)|}{\\sqrt{1+1+4}\\cdot 1}\n=\\frac{2}{\\sqrt{6}}=\\frac{\\sqrt{6}}{3}.\n\\]\nSo \\(\\theta=\\arcsin\\frac{\\sqrt{6}}{3}\\).",
+      "hint": "Use coordinates for the pyramid and apply the line-plane angle formula with the base normal vector."
+    },
+    {
+      "id": "math-gaokao-248-q006",
+      "category": "Solid Geometry",
+      "concept": "Angle between a slant height and the base plane of a pyramid",
+      "learningObjective": "Determine the angle between a slant height and the base plane in a square pyramid.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In regular square pyramid \\(S-ABCD\\), the base \\(ABCD\\) is a square of side \\(2\\), and the height is \\(2\\). Let \\(M\\) be the midpoint of \\(AB\\). Find the angle between \\(SM\\) and the base plane \\(ABCD\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arcsin\\frac{2}{\\sqrt{5}}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arctan\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let the center of the square base be \\(O(0,0,0)\\). Choose coordinates \\(A(-1,-1,0)\\), \\(B(1,-1,0)\\), and \\(S(0,0,2)\\). Since \\(M\\) is the midpoint of \\(AB\\), we have \\(M(0,-1,0)\\). Therefore,\n\\[\n\\overrightarrow{SM}=(0,-1,-2).\n\\]\nThe base plane \\(ABCD\\) has normal vector \\(\\mathbf{n}=(0,0,1)\\). Let \\(\\theta\\) be the acute angle between \\(SM\\) and the base plane. Using the formula for the angle between a line and a plane,\n\\[\n\\begin{aligned}\n\\sin\\theta\n&=\\frac{|\\overrightarrow{SM}\\cdot\\mathbf{n}|}\n{|\\overrightarrow{SM}|\\,|\\mathbf{n}|}\\\\\n&=\\frac{|(0,-1,-2)\\cdot(0,0,1)|}\n{\\sqrt{5}\\cdot 1}\\\\\n&=\\frac{2}{\\sqrt{5}}.\n\\end{aligned}\n\\]\nHence, \\(\\theta=\\arcsin\\frac{2}{\\sqrt{5}}\\). Thus A is correct and B is false.",
+      "hint": "Find the coordinates of the midpoint \\(M\\) and the direction vector of \\(SM\\). Use the dot product with a normal vector to the base plane to determine the sine of the angle between the line and the plane."
+    },
+    {
+      "id": "math-gaokao-248-q007",
+      "category": "Solid Geometry",
+      "concept": "Angle between a cube diagonal and a side face",
+      "learningObjective": "Determine the angle between a diagonal of a cube and a side face.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), find the angle between line \\(A_1B\\) and the plane \\(BCC_1B_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(45^\\circ\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The plane \\(BCC_1B_1\\) is \\(x=1\\), so its normal vector is \\((1,0,0)\\). With \\(A_1(0,0,1)\\) and \\(B(1,0,0)\\), the direction vector is\n\\[\n\\overrightarrow{A_1B}=(1,0,-1).\n\\]\nThus\n\\[\n\\sin\\theta=\\frac{|(1,0,-1)\\cdot(1,0,0)|}{\\sqrt{2}\\cdot 1}\n=\\frac{1}{\\sqrt{2}}.\n\\]\nHence \\(\\theta=45^\\circ\\).",
+      "hint": "Identify the normal vector of the side face, then use the sine formula for the angle between a line and a plane."
+    },
+    {
+      "id": "math-gaokao-248-q008",
+      "category": "Solid Geometry",
+      "concept": "Angle between a box diagonal and its base plane",
+      "learningObjective": "Calculate the angle between a space diagonal and the base plane of a rectangular box.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In rectangular box \\(ABCD-A_1B_1C_1D_1\\), \\(AB=3\\), \\(AD=2\\), and \\(AA_1=1\\). Find the angle between line \\(AC_1\\) and the base plane \\(ABCD\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arcsin\\frac{1}{\\sqrt{15}}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arcsin\\frac{1}{\\sqrt{14}}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Take \\(A(0,0,0)\\), \\(B(3,0,0)\\), \\(D(0,2,0)\\), and \\(C_1(3,2,1)\\). Then\n\\[\n\\overrightarrow{AC_1}=(3,2,1).\n\\]\nThe base plane has normal vector \\((0,0,1)\\), so\n\\[\n\\sin\\theta=\\frac{|(3,2,1)\\cdot(0,0,1)|}{\\sqrt{3^2+2^2+1^2}\\cdot 1}\n=\\frac{1}{\\sqrt{14}}.\n\\]\nTherefore \\(\\theta=\\arcsin\\frac{1}{\\sqrt{14}}\\).",
+      "hint": "The height of the box gives the component perpendicular to the base, while the space diagonal length gives the denominator."
+    },
+    {
+      "id": "math-gaokao-248-q009",
+      "category": "Solid Geometry",
+      "concept": "Perpendicularity between a line and a plane in a cube",
+      "learningObjective": "Determine the angle between a cube diagonal and a plane formed by three cube vertices.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), find the angle between line \\(A_1C\\) and plane \\(BDC_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(90^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60^\\circ\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use coordinates \\(B(1,0,0)\\), \\(D(0,1,0)\\), and \\(C_1(1,1,1)\\). A normal vector to plane \\(BDC_1\\) is\n\\[\nn=(-1,-1,1).\n\\]\nAlso,\n\\[\n\\overrightarrow{A_1C}=(1,1,-1).\n\\]\nThen\n\\[\nn\\cdot \\overrightarrow{A_1C}=(-1)(1)+(-1)(1)+(1)(-1)=-3.\n\\]\nSince \\(|n|=\\sqrt{3}\\), \\(|\\overrightarrow{A_1C}|=\\sqrt{3}\\), we get\n\\[\n\\sin\\theta=\\frac{3}{\\sqrt{3}\\cdot\\sqrt{3}}=1.\n\\]\nThus \\(\\theta=90^\\circ\\).",
+      "hint": "Find a normal vector to the plane and compare it with the direction vector of the line."
+    },
+    {
+      "id": "math-gaokao-248-q010",
+      "category": "Solid Geometry",
+      "concept": "Angle between a line through a midpoint and a diagonal plane",
+      "learningObjective": "Compute the angle between a line in a cube and a plane through a diagonal of the cube.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), let \\(M\\) be the midpoint of \\(CC_1\\). Find the angle between line \\(AM\\) and plane \\(BDD_1B_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arcsin\\frac{2\\sqrt{2}}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arcsin\\frac{\\sqrt{2}}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Take \\(A(0,0,0)\\), \\(C(1,1,0)\\), and \\(C_1(1,1,1)\\), so\n\\[\nM\\left(1,1,\\frac{1}{2}\\right).\n\\]\nThus\n\\[\n\\overrightarrow{AM}=\\left(1,1,\\frac{1}{2}\\right).\n\\]\nThe plane \\(BDD_1B_1\\) has equation \\(x+y=1\\), so a normal vector is \\(n=(1,1,0)\\). Hence\n\\[\n\\sin\\theta=\\frac{\\left|\\left(1,1,\\frac{1}{2}\\right)\\cdot(1,1,0)\\right|}\n{\\sqrt{1+1+\\frac{1}{4}}\\cdot\\sqrt{2}}\n=\\frac{2}{\\frac{3}{2}\\sqrt{2}}\n=\\frac{2\\sqrt{2}}{3}.\n\\]\nTherefore \\(\\theta=\\arcsin\\frac{2\\sqrt{2}}{3}\\).",
+      "hint": "Find a normal vector to the diagonal plane and use the sine formula for the angle between a line and a plane."
+    }
+  ]
+}

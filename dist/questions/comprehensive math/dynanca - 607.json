@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-607",
+  "category": "Comprehensive Mathematics",
+  "title": "607. Discrete Mathematics, Counting & Graph Theory: Simplifying Boolean Expressions",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-607-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Combining two terms",
+      "learningObjective": "Simplify a sum of two products that differ in one variable.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What does the Boolean expression \\(x\\,\\overline{y}+\\overline{x}\\,\\overline{y}\\) simplify to?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\overline{y}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\overline{x}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor out \\(\\overline{y}\\): \\(x\\,\\overline{y}+\\overline{x}\\,\\overline{y}=(x+\\overline{x})\\,\\overline{y}=1\\cdot\\overline{y}=\\overline{y}\\). The variable that appears both plain and complemented, here \\(x\\), is the one that drops out.",
+      "hint": "Factor out the part that the two terms have in common."
+    },
+    {
+      "id": "dynanca-607-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Dropping a complement",
+      "learningObjective": "Simplify a sum in which a complemented variable is redundant.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What does the Boolean expression \\(x+\\overline{x}\\,y\\) simplify to?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x+y\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(xy\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the second distributive law, \\(x+\\overline{x}\\,y=(x+\\overline{x})(x+y)=1\\cdot(x+y)=x+y\\). Intuitively, the term \\(\\overline{x}\\,y\\) matters only when \\(x=0\\), and then it equals \\(y\\). The product \\(xy\\) is different: it is \\(0\\) for \\(x=1\\), \\(y=0\\), while the given expression is \\(1\\).",
+      "hint": "Use \\(x+yz=(x+y)(x+z)\\) with \\(\\overline{x}\\) in the role of the first factor."
+    },
+    {
+      "id": "dynanca-607-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A product of two sums",
+      "learningObjective": "Simplify a product of sums that differ in one variable.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What does the Boolean expression \\((x+y)(x+\\overline{y})\\) simplify to?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x+y\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the second distributive law, \\((x+y)(x+\\overline{y})=x+y\\,\\overline{y}=x+0=x\\). The value of \\(y\\) does not matter: when \\(x=0\\) one of the two factors is \\(0\\), and when \\(x=1\\) both factors are \\(1\\).",
+      "hint": "Read the expression as \\(x\\) plus a product of the remaining parts."
+    },
+    {
+      "id": "dynanca-607-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Complement of a sum",
+      "learningObjective": "Simplify the complement of a sum that contains a complemented variable.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What does the Boolean expression \\(\\overline{\\overline{x}+y}\\) simplify to?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\,\\overline{y}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\overline{x}\\,y\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the law of De Morgan, the complement of a sum is the product of the complements: \\(\\overline{\\overline{x}+y}=\\overline{\\overline{x}}\\cdot\\overline{y}=x\\,\\overline{y}\\). The double complement of \\(x\\) is \\(x\\). The expression \\(\\overline{x}\\,y\\) complements the wrong variable.",
+      "hint": "Complement each term of the sum and change the sum into a product."
+    },
+    {
+      "id": "dynanca-607-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Three terms",
+      "learningObjective": "Simplify a sum of three products step by step.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What does the Boolean expression \\(x y z+xy\\,\\overline{z}+x\\,\\overline{y}\\) simplify to?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(xy\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first two terms combine: \\(x y z+xy\\,\\overline{z}=xy(z+\\overline{z})=xy\\). Then \\(xy+x\\,\\overline{y}=x(y+\\overline{y})=x\\). Stopping after the first step gives \\(xy\\), which ignores the third term.",
+      "hint": "Combine the first two terms, then combine the result with the third."
+    },
+    {
+      "id": "dynanca-607-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A product that reduces to one variable",
+      "learningObjective": "Simplify a product of two sums that share a variable.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "What does the Boolean expression \\((x+y)(\\overline{x}+y)\\) simplify to?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the second distributive law, \\((x+y)(\\overline{x}+y)=y+x\\,\\overline{x}=y+0=y\\). When \\(y=1\\) both factors are \\(1\\); when \\(y=0\\) the factors are \\(x\\) and \\(\\overline{x}\\), whose product is \\(0\\).",
+      "hint": "The variable that appears in both factors without change is the one that survives."
+    },
+    {
+      "id": "dynanca-607-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A redundant term",
+      "learningObjective": "Identify the redundant term in a sum of three products.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In the Boolean expression \\(xy+\\overline{x}\\,z+yz\\), one term can be removed without changing the value. Which one?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(xy\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(yz\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Suppose \\(yz=1\\), so \\(y=1\\) and \\(z=1\\). If \\(x=1\\), then \\(xy=1\\); if \\(x=0\\), then \\(\\overline{x}\\,z=1\\). So whenever \\(yz\\) is \\(1\\), one of the other two terms is already \\(1\\), and \\(yz\\) is redundant. Removing \\(xy\\) instead changes the value: for \\(x=1\\), \\(y=1\\), \\(z=0\\) the expression would drop from \\(1\\) to \\(0\\).",
+      "hint": "Ask whether the other two terms already cover every case in which the term is \\(1\\)."
+    },
+    {
+      "id": "dynanca-607-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An expression that is always true",
+      "learningObjective": "Simplify an expression to a constant.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "What does the Boolean expression \\(\\overline{xy}+x\\) simplify to?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\overline{y}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the law of De Morgan, \\(\\overline{xy}=\\overline{x}+\\overline{y}\\). Then \\(\\overline{xy}+x=\\overline{x}+\\overline{y}+x=(x+\\overline{x})+\\overline{y}=1+\\overline{y}=1\\). The expression is \\(1\\) for all values. It is not \\(\\overline{y}\\): for \\(x=1\\), \\(y=1\\) it is \\(0+1=1\\), while \\(\\overline{y}=0\\).",
+      "hint": "Apply the law of De Morgan and look for a variable together with its complement."
+    },
+    {
+      "id": "dynanca-607-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An expression that is always false",
+      "learningObjective": "Simplify a product of two complemented sums.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "What does the Boolean expression \\(\\overline{(x+y)}\\cdot\\overline{(x+\\overline{y})}\\) simplify to?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\overline{x}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the law of De Morgan, \\(\\overline{x+y}=\\overline{x}\\,\\overline{y}\\) and \\(\\overline{x+\\overline{y}}=\\overline{x}\\,y\\). Their product is \\(\\overline{x}\\,\\overline{y}\\cdot\\overline{x}\\,y=\\overline{x}\\,(\\overline{y}\\,y)=\\overline{x}\\cdot 0=0\\). The two factors can never be \\(1\\) at the same time, because one requires \\(y=0\\) and the other \\(y=1\\).",
+      "hint": "Rewrite each complemented sum as a product, then look for a variable multiplied by its complement."
+    },
+    {
+      "id": "dynanca-607-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Factoring a common variable",
+      "learningObjective": "Simplify a sum of three products to a product of a variable and a sum.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "What does the Boolean expression \\(x\\,\\overline{y}\\,z+x y z+\\overline{x}\\,yz\\) simplify to?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(z\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(z(x+y)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Combine the first two terms: \\(x\\,\\overline{y}\\,z+x y z=xz(\\overline{y}+y)=xz\\). Then \\(xz+\\overline{x}\\,yz=z(x+\\overline{x}\\,y)=z(x+y)\\). The result is not \\(z\\) alone: for \\(x=0\\), \\(y=0\\), \\(z=1\\) every term of the original expression is \\(0\\).",
+      "hint": "Every term contains \\(z\\); factor it out and simplify what remains."
+    }
+  ]
+}

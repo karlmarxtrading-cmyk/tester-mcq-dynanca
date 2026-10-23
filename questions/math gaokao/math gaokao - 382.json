@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-382",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 382",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-382-q001",
+      "category": "Complex Numbers",
+      "concept": "Vieta’s formulas for a quadratic with complex roots",
+      "learningObjective": "Use the sum and product of the roots to determine the coefficients of a quadratic equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The roots of the equation \\(z^2+az+b=0\\) are \\(1+2i\\) and \\(1-2i\\). Find \\(a+b\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For the monic quadratic \\(z^2+az+b=0\\), the sum of the roots is \\(-a\\), and the product of the roots is \\(b\\).\nThe sum is\n\\[\n(1+2i)+(1-2i)=2,\n\\]\nso \\(-a=2\\), hence \\(a=-2\\).\nThe product is\n\\[\n(1+2i)(1-2i)=1^2-(2i)^2=1+4=5,\n\\]\nso \\(b=5\\).\nTherefore,\n\\[\na+b=-2+5=3.\n\\]",
+      "hint": "Use Vieta’s formulas: for a monic quadratic, the sum of the roots is the negative of the coefficient of \\(z\\), and the product is the constant term."
+    },
+    {
+      "id": "math-gaokao-382-q002",
+      "category": "Complex Numbers",
+      "concept": "Sum of squares of roots using Vieta’s formulas",
+      "learningObjective": "Compute a symmetric expression in the roots from the coefficients of a quadratic equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(\\alpha\\) and \\(\\beta\\) be the roots of \\(z^2-6z+13=0\\). Find \\(\\alpha^2+\\beta^2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By Vieta’s formulas,\n\\[\n\\alpha+\\beta=6,\\qquad \\alpha\\beta=13.\n\\]\nNow\n\\[\n\\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta.\n\\]\nSubstituting the values gives\n\\[\n\\begin{aligned}\n\\alpha^2+\\beta^2&=6^2-2\\cdot 13 \\\\\n&=36-26 \\\\\n&=10.\n\\end{aligned}\n\\]",
+      "hint": "Express \\(\\alpha^2+\\beta^2\\) in terms of \\(\\alpha+\\beta\\) and \\(\\alpha\\beta\\)."
+    },
+    {
+      "id": "math-gaokao-382-q003",
+      "category": "Complex Numbers",
+      "concept": "Vieta’s formulas for a cubic with complex roots",
+      "learningObjective": "Apply the relationships between roots and coefficients for a cubic equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The roots of \\(z^3+pz^2+qz+r=0\\) are \\(1,i,-i\\). Find \\(p+q+r\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For the monic cubic \\(z^3+pz^2+qz+r=0\\), Vieta’s formulas give\n\\[\np=-(\\text{sum of roots}),\\qquad q=\\text{sum of pairwise products},\\qquad r=-(\\text{product of roots}).\n\\]\nThe sum of the roots is\n\\[\n1+i+(-i)=1,\n\\]\nso \\(p=-1\\).\nThe sum of pairwise products is\n\\[\n1\\cdot i+1\\cdot(-i)+i\\cdot(-i)=i-i+1=1,\n\\]\nso \\(q=1\\).\nThe product of the roots is\n\\[\n1\\cdot i\\cdot(-i)=1,\n\\]\nso \\(-r=1\\), hence \\(r=-1\\).\nTherefore,\n\\[\np+q+r=-1+1-1=-1.\n\\]",
+      "hint": "Write down the three Vieta relations for a monic cubic: sum of roots, sum of pairwise products, and product of roots."
+    },
+    {
+      "id": "math-gaokao-382-q004",
+      "category": "Complex Numbers",
+      "concept": "Sum of cubes of roots from quadratic coefficients",
+      "learningObjective": "Use Vieta’s formulas and algebraic identities to evaluate a symmetric expression.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(\\alpha\\) and \\(\\beta\\) be the roots of \\(z^2-2z+4=0\\). Find \\(\\alpha^3+\\beta^3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By Vieta’s formulas,\n\\[\n\\alpha+\\beta=2,\\qquad \\alpha\\beta=4.\n\\]\nUsing the identity\n\\[\n\\alpha^3+\\beta^3=(\\alpha+\\beta)^3-3\\alpha\\beta(\\alpha+\\beta),\n\\]\nwe get\n\\[\n\\begin{aligned}\n\\alpha^3+\\beta^3&=2^3-3\\cdot 4\\cdot 2 \\\\\n&=8-24 \\\\\n&=-16.\n\\end{aligned}\n\\]",
+      "hint": "Use the identity \\(a^3+b^3=(a+b)^3-3ab(a+b)\\)."
+    },
+    {
+      "id": "math-gaokao-382-q005",
+      "category": "Complex Numbers",
+      "concept": "Reciprocal sum of roots",
+      "learningObjective": "Evaluate a rational symmetric expression of the roots using Vieta’s formulas.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(\\alpha\\) and \\(\\beta\\) be the roots of \\(z^2+3z+5=0\\). Find \\(\\frac{1}{\\alpha}+\\frac{1}{\\beta}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{3}{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{5}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By Vieta’s formulas,\n\\[\n\\alpha+\\beta=-3,\\qquad \\alpha\\beta=5.\n\\]\nThen\n\\[\n\\begin{aligned}\n\\frac{1}{\\alpha}+\\frac{1}{\\beta}&=\\frac{\\alpha+\\beta}{\\alpha\\beta} \\\\\n&=\\frac{-3}{5}=-\\frac{3}{5}.\n\\end{aligned}\n\\]",
+      "hint": "Combine the two reciprocals into a single fraction involving \\(\\alpha+\\beta\\) and \\(\\alpha\\beta\\)."
+    },
+    {
+      "id": "math-gaokao-382-q006",
+      "category": "Complex Numbers",
+      "concept": "Vieta’s formulas with complex coefficients",
+      "learningObjective": "Apply Vieta’s formulas when the coefficients of the quadratic are complex numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(\\alpha\\) and \\(\\beta\\) be the roots of \\(z^2-(2+i)z+(3-i)=0\\). Find \\(\\alpha^2+\\beta^2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3-6i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-3+6i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(z^2-(2+i)z+(3-i)=0\\), Vieta’s formulas give\n\\[\n\\alpha+\\beta=2+i,\\qquad \\alpha\\beta=3-i.\n\\]\nThen\n\\[\n\\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta.\n\\]\nCompute:\n\\[\n(2+i)^2=4+4i+i^2=3+4i,\n\\]\nand\n\\[\n2\\alpha\\beta=2(3-i)=6-2i.\n\\]\nThus\n\\[\n\\alpha^2+\\beta^2=(3+4i)-(6-2i)=-3+6i.\n\\]",
+      "hint": "Vieta’s formulas still hold when the coefficients are complex. Expand \\((\\alpha+\\beta)^2-2\\alpha\\beta\\)."
+    },
+    {
+      "id": "math-gaokao-382-q007",
+      "category": "Complex Numbers",
+      "concept": "Constructing a quadratic from its complex roots",
+      "learningObjective": "Determine the constant term of a monic quadratic from its complex roots.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A monic quadratic equation \\(z^2+bz+c=0\\) has roots \\(1+i\\) and \\(2-i\\). Find \\(c\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3-i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3+i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For the monic quadratic \\(z^2+bz+c=0\\), the constant term is the product of the roots:\n\\[\nc=(1+i)(2-i).\n\\]\nCompute:\n\\[\n\\begin{aligned}\n(1+i)(2-i)&=2-i+2i-i^2 \\\\\n&=2+i+1 \\\\\n&=3+i.\n\\end{aligned}\n\\]\nTherefore, \\(c=3+i\\).",
+      "hint": "In a monic quadratic, the constant term equals the product of the roots."
+    },
+    {
+      "id": "math-gaokao-382-q008",
+      "category": "Complex Numbers",
+      "concept": "Moduli of complex roots from a quadratic equation",
+      "learningObjective": "Find the sum of the moduli of the complex roots of a quadratic equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(\\alpha\\) and \\(\\beta\\) be the roots of \\(z^2-4z+5=0\\). Find \\(|\\alpha|+|\\beta|\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\sqrt{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{5}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Solve the quadratic:\n\\[\nz^2-4z+5=0\n\\]\nhas discriminant\n\\[\n(-4)^2-4\\cdot 1\\cdot 5=16-20=-4.\n\\]\nThus\n\\[\nz=\\frac{4\\pm 2i}{2}=2\\pm i.\n\\]\nSo the roots are \\(2+i\\) and \\(2-i\\). Their moduli are\n\\[\n|2+i|=\\sqrt{2^2+1^2}=\\sqrt{5},\\qquad |2-i|=\\sqrt{5}.\n\\]\nTherefore,\n\\[\n|\\alpha|+|\\beta|=2\\sqrt{5}.\n\\]",
+      "hint": "Find the roots first, or use the fact that for real coefficients the non-real roots occur in conjugate pairs."
+    },
+    {
+      "id": "math-gaokao-382-q009",
+      "category": "Complex Numbers",
+      "concept": "Powers of roots of unity from a quadratic",
+      "learningObjective": "Use Vieta’s formulas and root periodicity to evaluate a high power sum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(\\alpha\\) and \\(\\beta\\) be the roots of \\(z^2+z+1=0\\). Find \\(\\alpha^{2024}+\\beta^{2024}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By Vieta’s formulas,\n\\[\n\\alpha+\\beta=-1,\\qquad \\alpha\\beta=1.\n\\]\nThe roots satisfy \\(z^2+z+1=0\\), so each root is a primitive cube root of unity:\n\\[\n\\alpha^3=1,\\qquad \\beta^3=1.\n\\]\nSince\n\\[\n2024=3\\cdot 674+2,\n\\]\nwe have\n\\[\n\\alpha^{2024}=\\alpha^2,\\qquad \\beta^{2024}=\\beta^2.\n\\]\nThus\n\\[\n\\alpha^{2024}+\\beta^{2024}=\\alpha^2+\\beta^2.\n\\]\nNow\n\\[\n\\begin{aligned}\n\\alpha^2+\\beta^2&=(\\alpha+\\beta)^2-2\\alpha\\beta \\\\\n&=(-1)^2-2\\cdot 1 \\\\\n&=1-2 \\\\\n&=-1.\n\\end{aligned}\n\\]",
+      "hint": "Use \\(z^3=1\\) for roots of \\(z^2+z+1=0\\), then reduce the exponent modulo \\(3\\)."
+    },
+    {
+      "id": "math-gaokao-382-q010",
+      "category": "Complex Numbers",
+      "concept": "Symmetric power sums with complex coefficients",
+      "learningObjective": "Evaluate a cubic symmetric expression of roots using Vieta’s formulas and algebraic identities.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(\\alpha\\) and \\(\\beta\\) be the roots of \\(z^2-(1+i)z+(2-i)=0\\). Find \\(\\alpha^3+\\beta^3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-11+i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-11-i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By Vieta’s formulas,\n\\[\n\\alpha+\\beta=1+i,\\qquad \\alpha\\beta=2-i.\n\\]\nUsing the identity\n\\[\n\\alpha^3+\\beta^3=(\\alpha+\\beta)^3-3\\alpha\\beta(\\alpha+\\beta),\n\\]\ncompute step by step.\nFirst,\n\\[\n(1+i)^2=1+2i+i^2=2i,\n\\]\nso\n\\[\n\\begin{aligned}\n(1+i)^3&=(1+i)(2i) \\\\\n&=2i+2i^2 \\\\\n&=-2+2i.\n\\end{aligned}\n\\]\nAlso,\n\\[\n\\begin{aligned}\n\\alpha\\beta(\\alpha+\\beta)&=(2-i)(1+i) \\\\\n&=2+2i-i-i^2 \\\\\n&=3+i.\n\\end{aligned}\n\\]\nTherefore,\n\\[\n\\begin{aligned}\n\\alpha^3+\\beta^3&=(-2+2i)-3(3+i) \\\\\n&=(-2+2i)-(9+3i)=-11-i.\n\\end{aligned}\n\\]",
+      "hint": "Use \\(a^3+b^3=(a+b)^3-3ab(a+b)\\) and substitute the sum and product from Vieta’s formulas."
+    }
+  ]
+}

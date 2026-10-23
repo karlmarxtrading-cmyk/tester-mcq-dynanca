@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-124",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 124",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-124-q001",
+      "category": "Algebra",
+      "concept": "Monotonicity of Sequences",
+      "learningObjective": "Determine whether a linear sequence is increasing or decreasing.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Consider the sequence\n\\[\na_n=2n-1.\n\\]\nWhich statement describes its monotonicity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is decreasing."
+        },
+        {
+          "label": "B",
+          "text": "It is increasing."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compare consecutive terms:\n\\[\na_{n+1}-a_n=\\bigl(2(n+1)-1\\bigr)-(2n-1).\n\\]\nSimplify:\n\\[\na_{n+1}-a_n=(2n+1)-(2n-1)=2>0.\n\\]\nSince \\(a_{n+1}-a_n>0\\) for every \\(n\\), we have \\(a_{n+1}>a_n\\). Therefore, the sequence is increasing.",
+      "hint": "Compute \\(a_{n+1}-a_n\\) and check its sign."
+    },
+    {
+      "id": "math-gaokao-124-q002",
+      "category": "Algebra",
+      "concept": "Monotonicity of Sequences",
+      "learningObjective": "Determine whether a geometric sequence with common ratio greater than \\(1\\) is increasing.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Consider the sequence\n\\[\na_n=3^n.\n\\]\nWhich statement describes its monotonicity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is decreasing."
+        },
+        {
+          "label": "B",
+          "text": "It is increasing."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compare consecutive terms:\n\\[\na_{n+1}-a_n=3^{n+1}-3^n=3^n(3-1)=2\\cdot 3^n.\n\\]\nSince \\(3^n>0\\) for every positive integer \\(n\\), we get\n\\[\na_{n+1}-a_n>0.\n\\]\nThus \\(a_{n+1}>a_n\\), so the sequence is increasing.",
+      "hint": "Factor \\(3^{n+1}-3^n\\) and check whether the difference is positive."
+    },
+    {
+      "id": "math-gaokao-124-q003",
+      "category": "Algebra",
+      "concept": "Monotonicity of Sequences",
+      "learningObjective": "Determine whether a linear sequence with negative common difference is decreasing.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Consider the sequence\n\\[\na_n=10-3n.\n\\]\nWhich statement describes its monotonicity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is decreasing."
+        },
+        {
+          "label": "B",
+          "text": "It is increasing."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Compute the difference between consecutive terms:\n\\[\na_{n+1}-a_n=\\bigl(10-3(n+1)\\bigr)-(10-3n).\n\\]\nSimplify:\n\\[\na_{n+1}-a_n=(7-3n)-(10-3n)=-3<0.\n\\]\nSince \\(a_{n+1}-a_n<0\\) for every \\(n\\), we have \\(a_{n+1}<a_n\\). Therefore, the sequence is decreasing.",
+      "hint": "Compute \\(a_{n+1}-a_n\\) and determine its sign."
+    },
+    {
+      "id": "math-gaokao-124-q004",
+      "category": "Algebra",
+      "concept": "Monotonicity of Constant Sequences",
+      "learningObjective": "Determine the monotonicity properties of a constant sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Consider the sequence\n\\[\na_n=4.\n\\]\nWhich statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is both nondecreasing and nonincreasing."
+        },
+        {
+          "label": "B",
+          "text": "It is strictly increasing."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For every positive integer \\(n\\),\n\\[\na_{n+1}=4=a_n.\n\\]\nTherefore,\n\\[\na_{n+1}\\ge a_n \\quad \\text{and} \\quad a_{n+1}\\le a_n\n\\]\nfor every \\(n\\). Hence the sequence is both nondecreasing and nonincreasing. It is not strictly increasing because \\(a_{n+1}=a_n\\) rather than \\(a_{n+1}>a_n\\).",
+      "hint": "Check whether consecutive terms are equal, greater than, or less than each other."
+    },
+    {
+      "id": "math-gaokao-124-q005",
+      "category": "Algebra",
+      "concept": "Monotonicity of Sequences",
+      "learningObjective": "Determine whether the reciprocal sequence \\(1/n\\) is decreasing.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Consider the sequence\n\\[\na_n=\\frac{1}{n}.\n\\]\nWhich statement describes its monotonicity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is increasing."
+        },
+        {
+          "label": "B",
+          "text": "It is decreasing."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compare consecutive terms:\n\\[\na_{n+1}-a_n=\\frac{1}{n+1}-\\frac{1}{n}.\n\\]\nCombine the fractions:\n\\[\n\\frac{1}{n+1}-\\frac{1}{n}\n=\\frac{n-(n+1)}{n(n+1)}\n=\\frac{-1}{n(n+1)}.\n\\]\nSince \\(n(n+1)>0\\), we get\n\\[\na_{n+1}-a_n<0.\n\\]\nThus \\(a_{n+1}<a_n\\), so the sequence is decreasing.",
+      "hint": "Compute \\(a_{n+1}-a_n\\) and simplify."
+    },
+    {
+      "id": "math-gaokao-124-q006",
+      "category": "Algebra",
+      "concept": "Monotonicity of Alternating Sequences",
+      "learningObjective": "Determine that an alternating sequence is not monotonic.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Consider the sequence\n\\[\na_n=(-1)^n.\n\\]\nWhich statement describes its monotonicity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is not monotonic."
+        },
+        {
+          "label": "B",
+          "text": "It is increasing."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first few terms are\n\\[\na_1=-1,\\qquad a_2=1,\\qquad a_3=-1,\\qquad a_4=1.\n\\]\nWe have\n\\[\na_2>a_1,\n\\]\nbut\n\\[\na_3<a_2.\n\\]\nSo the sequence both increases and decreases at different steps. Therefore, it is not monotonic.",
+      "hint": "List the first few terms and see whether the sequence always increases or always decreases."
+    },
+    {
+      "id": "math-gaokao-124-q007",
+      "category": "Algebra",
+      "concept": "Monotonicity of Rational Sequences",
+      "learningObjective": "Determine whether the sequence \\(n/(n+1)\\) is increasing.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Consider the sequence\n\\[\na_n=\\frac{n}{n+1}.\n\\]\nWhich statement describes its monotonicity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is decreasing."
+        },
+        {
+          "label": "B",
+          "text": "It is increasing."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute the difference:\n\\[\na_{n+1}-a_n=\\frac{n+1}{n+2}-\\frac{n}{n+1}.\n\\]\nCombine the fractions:\n\\[\n\\frac{(n+1)^2-n(n+2)}{(n+2)(n+1)}.\n\\]\nExpand the numerator:\n\\[\n(n^2+2n+1)-(n^2+2n)=1.\n\\]\nThus\n\\[\na_{n+1}-a_n=\\frac{1}{(n+2)(n+1)}>0.\n\\]\nSince \\(a_{n+1}-a_n>0\\), we have \\(a_{n+1}>a_n\\). Therefore, the sequence is increasing.",
+      "hint": "Compute \\(a_{n+1}-a_n\\) and simplify the numerator."
+    },
+    {
+      "id": "math-gaokao-124-q008",
+      "category": "Algebra",
+      "concept": "Monotonicity of Geometric Sequences",
+      "learningObjective": "Determine whether a geometric sequence with common ratio between \\(0\\) and \\(1\\) is decreasing.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Consider the sequence\n\\[\na_n=\\left(\\frac{1}{2}\\right)^n.\n\\]\nWhich statement describes its monotonicity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is decreasing."
+        },
+        {
+          "label": "B",
+          "text": "It is increasing."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Compare consecutive terms:\n\\[\na_{n+1}-a_n=\\left(\\frac{1}{2}\\right)^{n+1}-\\left(\\frac{1}{2}\\right)^n.\n\\]\nFactor:\n\\[\n\\left(\\frac{1}{2}\\right)^n\\left(\\frac{1}{2}-1\\right)\n=\\left(\\frac{1}{2}\\right)^n\\left(-\\frac{1}{2}\\right).\n\\]\nSince \\(\\left(\\frac{1}{2}\\right)^n>0\\), we get\n\\[\na_{n+1}-a_n<0.\n\\]\nThus \\(a_{n+1}<a_n\\), so the sequence is decreasing.",
+      "hint": "Factor the difference and check its sign."
+    },
+    {
+      "id": "math-gaokao-124-q009",
+      "category": "Algebra",
+      "concept": "Monotonicity of Quadratic Sequences",
+      "learningObjective": "Determine the range of indices for which a quadratic sequence is increasing.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Consider the sequence\n\\[\na_n=n^2-4n.\n\\]\nWhich statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is increasing for all \\(n\\ge 1\\)."
+        },
+        {
+          "label": "B",
+          "text": "It is increasing for \\(n\\ge 2\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute the difference:\n\\[\na_{n+1}-a_n=\\bigl((n+1)^2-4(n+1)\\bigr)-(n^2-4n).\n\\]\nExpand and simplify:\n\\[\n(n^2+2n+1-4n-4)-(n^2-4n)=2n-3.\n\\]\nFor \\(n\\ge 2\\),\n\\[\n2n-3>0,\n\\]\nso \\(a_{n+1}>a_n\\). Thus the sequence is increasing for \\(n\\ge 2\\).\nHowever, for \\(n=1\\),\n\\[\na_2-a_1=2(1)-3=-1<0,\n\\]\nso it is not increasing for all \\(n\\ge 1\\). Therefore, the correct statement is that it is increasing for \\(n\\ge 2\\).",
+      "hint": "Compute \\(a_{n+1}-a_n\\) and determine when it is positive."
+    },
+    {
+      "id": "math-gaokao-124-q010",
+      "category": "Algebra",
+      "concept": "Monotonicity of Recursively Defined Sequences",
+      "learningObjective": "Determine whether a recursively defined sequence is decreasing.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "A sequence is defined by\n\\[\na_1=1,\\qquad a_{n+1}=\\frac{a_n}{a_n+1}.\n\\]\nWhich statement describes its monotonicity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is decreasing."
+        },
+        {
+          "label": "B",
+          "text": "It is increasing."
+        }
+      ],
+      "answer": "A",
+      "explanation": "All terms are positive. Compare \\(a_{n+1}\\) with \\(a_n\\):\n\\[\na_{n+1}=\\frac{a_n}{a_n+1}.\n\\]\nSince \\(a_n>0\\), we have \\(a_n+1>1\\), so\n\\[\n\\frac{a_n}{a_n+1}<a_n.\n\\]\nThus\n\\[\na_{n+1}<a_n\n\\]\nfor every \\(n\\). Therefore, the sequence is decreasing. For example,\n\\[\na_1=1,\\qquad a_2=\\frac{1}{2},\\qquad a_3=\\frac{1}{3},\n\\]\nwhich also confirms the decreasing pattern.",
+      "hint": "Compare \\(a_{n+1}\\) with \\(a_n\\) using the recurrence and the fact that all terms are positive."
+    }
+  ]
+}

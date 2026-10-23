@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-504",
+  "category": "Comprehensive Mathematics",
+  "title": "504. Sets, Logic, Reasoning & Proof: Valid Inference by Modus Tollens",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-504-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Form of modus tollens",
+      "learningObjective": "Identify the argument form called modus tollens.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which argument form is modus tollens?",
+      "options": [
+        {
+          "label": "A",
+          "text": "From \\(p\\implies q\\) and \\(\\neg p\\), conclude \\(\\neg q\\)."
+        },
+        {
+          "label": "B",
+          "text": "From \\(p\\implies q\\) and \\(\\neg q\\), conclude \\(\\neg p\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Modus tollens denies the conclusion of a conditional and infers that the hypothesis is false: given \"if \\(p\\), then \\(q\\)\" and \"not \\(q\\)\", it follows that \"not \\(p\\)\". The second form denies the hypothesis instead; it is not valid.",
+      "hint": "In modus tollens the second premise negates the \"then\" part."
+    },
+    {
+      "id": "dynanca-504-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Applying modus tollens to divisibility",
+      "learningObjective": "Draw the conclusion of a modus tollens argument.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Premises: \"If an integer is divisible by \\(6\\), then it is even\" and \"\\(15\\) is not even\". What follows by modus tollens?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\) is divisible by \\(6\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\) is not divisible by \\(6\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The second premise says that the conclusion of the conditional fails for \\(15\\). If \\(15\\) were divisible by \\(6\\), it would have to be even, which it is not. So \\(15\\) is not divisible by \\(6\\).",
+      "hint": "If the hypothesis held, the conclusion would hold too; compare this with the second premise."
+    },
+    {
+      "id": "dynanca-504-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Recognising modus tollens",
+      "learningObjective": "Distinguish modus tollens from an invalid look-alike.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which argument is an instance of modus tollens?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"If \\(n\\) is a multiple of \\(4\\), then \\(n\\) is even. \\(n\\) is not a multiple of \\(4\\). Therefore \\(n\\) is not even.\""
+        },
+        {
+          "label": "B",
+          "text": "\"If \\(n\\) is a multiple of \\(4\\), then \\(n\\) is even. \\(n\\) is not even. Therefore \\(n\\) is not a multiple of \\(4\\).\""
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first argument denies the conclusion \"\\(n\\) is even\" and infers the negation of the hypothesis; that is modus tollens. The second argument denies the hypothesis and infers the negation of the conclusion, which is an invalid form: \\(n=6\\) is not a multiple of \\(4\\), yet it is even.",
+      "hint": "Check which part of the conditional the second premise negates."
+    },
+    {
+      "id": "dynanca-504-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Modus tollens and the contrapositive",
+      "learningObjective": "Relate modus tollens to modus ponens through the contrapositive.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Modus tollens on \\(p\\implies q\\) can be justified as modus ponens applied to which statement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The converse \\(q\\implies p\\)"
+        },
+        {
+          "label": "B",
+          "text": "The contrapositive \\(\\neg q\\implies\\neg p\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The conditional \\(p\\implies q\\) is logically equivalent to its contrapositive \\(\\neg q\\implies\\neg p\\). With the premise \\(\\neg q\\), modus ponens on the contrapositive yields \\(\\neg p\\), which is exactly the conclusion of modus tollens. The converse is not equivalent to the original conditional.",
+      "hint": "Find the statement, equivalent to \\(p\\implies q\\), whose hypothesis is \\(\\neg q\\)."
+    },
+    {
+      "id": "dynanca-504-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Modus tollens with a triangle",
+      "learningObjective": "Apply modus tollens to a geometric conditional.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Premises: \"If a triangle is equilateral, then all its angles are equal\" and \"Triangle \\(T\\) has angles \\(50^\\circ\\), \\(60^\\circ\\), and \\(70^\\circ\\)\". What follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Triangle \\(T\\) is not equilateral."
+        },
+        {
+          "label": "B",
+          "text": "Triangle \\(T\\) is equilateral."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The angles of \\(T\\) are not all equal, so the conclusion of the conditional fails for \\(T\\). By modus tollens the hypothesis fails as well: \\(T\\) is not equilateral.",
+      "hint": "Decide whether the conclusion of the conditional holds for this triangle."
+    },
+    {
+      "id": "dynanca-504-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Modus tollens through a chain",
+      "learningObjective": "Apply modus tollens twice along a chain of conditionals.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Premises: \\(p\\implies q\\), \\(q\\implies r\\), and \\(\\neg r\\). What can be concluded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\neg p\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(q\\implies r\\) and \\(\\neg r\\), modus tollens gives \\(\\neg q\\). From \\(p\\implies q\\) and \\(\\neg q\\), modus tollens gives \\(\\neg p\\). So the premises force \\(p\\) to be false.",
+      "hint": "Work backwards along the chain, starting from the negated final statement."
+    },
+    {
+      "id": "dynanca-504-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Supplying the missing premise",
+      "learningObjective": "Identify the premise needed to complete a modus tollens argument.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The conclusion \"\\(n\\) is not a multiple of \\(4\\)\" is to be obtained by modus tollens from \"If \\(n\\) is a multiple of \\(4\\), then \\(n\\) is even\". Which second premise is needed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"\\(n\\) is not even.\""
+        },
+        {
+          "label": "B",
+          "text": "\"\\(n\\) is not a multiple of \\(4\\).\""
+        }
+      ],
+      "answer": "A",
+      "explanation": "Modus tollens needs the negation of the conclusion of the conditional: \"\\(n\\) is not even\". Together with the conditional this gives \"\\(n\\) is not a multiple of \\(4\\)\". Using the desired conclusion itself as a premise would make the argument circular.",
+      "hint": "The second premise must deny the \"then\" part of the conditional."
+    },
+    {
+      "id": "dynanca-504-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Why modus tollens is valid",
+      "learningObjective": "Explain the validity of modus tollens in terms of truth values.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Why is modus tollens a valid argument form?",
+      "options": [
+        {
+          "label": "A",
+          "text": "In every row of the truth table where \\(p\\implies q\\) is true and \\(q\\) is false, \\(p\\) is false."
+        },
+        {
+          "label": "B",
+          "text": "The proposition \\(p\\) is false in every row of the truth table."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Validity means that the conclusion is true whenever all premises are true. The premises \\(p\\implies q\\) and \\(\\neg q\\) are both true only in the row where \\(p\\) and \\(q\\) are both false, and there \\(\\neg p\\) is true. It is not required that \\(p\\) be false in all rows; \\(p\\) is true in two of the four rows.",
+      "hint": "Find the rows in which both premises are true and read off the value of \\(p\\)."
+    },
+    {
+      "id": "dynanca-504-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Modus tollens with an inequality",
+      "learningObjective": "Apply modus tollens to a conditional about real numbers and state the exact conclusion.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For a real number \\(x\\), premises: \"If \\(x>5\\), then \\(x^2>25\\)\" and \"\\(x^2=16\\)\". What follows by modus tollens?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\le 5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(x^2=16\\), the conclusion \\(x^2>25\\) is false. Modus tollens gives the negation of the hypothesis: it is not the case that \\(x>5\\), that is, \\(x\\le 5\\). The statement \\(x=4\\) does not follow from these premises, because \\(x=-4\\) also satisfies \\(x^2=16\\).",
+      "hint": "The conclusion of modus tollens is the negation of the hypothesis, nothing more."
+    },
+    {
+      "id": "dynanca-504-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Modus tollens from a general statement",
+      "learningObjective": "Apply a general divisibility rule to a specific number using modus tollens.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "Premises: \"If an integer is a multiple of \\(9\\), then the sum of its digits is a multiple of \\(9\\)\" and \"The sum of the digits of \\(1234\\) is \\(10\\)\". What follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nothing can be concluded about \\(1234\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(1234\\) is not a multiple of \\(9\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The digit sum \\(10\\) is not a multiple of \\(9\\), so the conclusion of the conditional fails for \\(1234\\). By modus tollens the hypothesis fails too: \\(1234\\) is not a multiple of \\(9\\). Indeed \\(1234=9\\cdot 137+1\\).",
+      "hint": "Check whether the conclusion of the rule holds for this number; if not, the hypothesis cannot hold."
+    }
+  ]
+}

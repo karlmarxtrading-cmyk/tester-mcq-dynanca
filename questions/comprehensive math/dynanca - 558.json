@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-558",
+  "category": "Comprehensive Mathematics",
+  "title": "558. Discrete Mathematics, Counting & Graph Theory: Binomial Expansion",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-558-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Expanding a cube",
+      "learningObjective": "Expand the cube of a binomial.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which polynomial is equal to \\((x+1)^3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x^3+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^3+3x^2+3x+1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the binomial theorem the coefficients are those of row \\(3\\) of Pascal's triangle: \\((x+1)^3=x^3+3x^2+3x+1\\). The expression \\(x^3+1\\) leaves out the middle terms; for \\(x=1\\) it gives \\(2\\), while \\((1+1)^3=8\\).",
+      "hint": "Test both candidates with \\(x=1\\)."
+    },
+    {
+      "id": "dynanca-558-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Number of terms",
+      "learningObjective": "Count the terms in a binomial expansion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "After like terms are collected, how many terms does the expansion of \\((a+b)^7\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The terms are \\(a^7,\\ a^6b,\\ a^5b^2,\\dots,\\ b^7\\), one for each exponent of \\(b\\) from \\(0\\) to \\(7\\). That is \\(8\\) terms. In general \\((a+b)^n\\) has \\(n+1\\) terms.",
+      "hint": "The exponent of \\(b\\) runs from \\(0\\) up to \\(7\\)."
+    },
+    {
+      "id": "dynanca-558-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A coefficient in a simple expansion",
+      "learningObjective": "Find a coefficient in the expansion of a power of one plus x.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the coefficient of \\(x^3\\) in the expansion of \\((1+x)^7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(21\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(35\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The coefficient of \\(x^k\\) in \\((1+x)^n\\) is \\(\\binom{n}{k}\\). Here it is \\(\\binom{7}{3}=\\dfrac{7\\cdot 6\\cdot 5}{6}=35\\). The number \\(21=\\binom{7}{2}\\) is the coefficient of \\(x^2\\).",
+      "hint": "The coefficient of \\(x^k\\) is the binomial coefficient with lower index \\(k\\)."
+    },
+    {
+      "id": "dynanca-558-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A constant other than one",
+      "learningObjective": "Find a coefficient when the constant term of the binomial is not one.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the coefficient of \\(x^3\\) in the expansion of \\((2+x)^5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(40\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The term containing \\(x^3\\) is \\(\\binom{5}{3}\\cdot 2^{2}\\cdot x^3=10\\cdot 4\\cdot x^3=40x^3\\). The number \\(10\\) is only the binomial coefficient; the factor \\(2^2\\) from the constant has been left out.",
+      "hint": "The general term is \\(\\binom{5}{k}\\,2^{5-k}x^k\\)."
+    },
+    {
+      "id": "dynanca-558-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A negative coefficient inside",
+      "learningObjective": "Find a coefficient when the variable has a negative coefficient.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the coefficient of \\(x^2\\) in the expansion of \\((1-3x)^4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(54\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-54\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The term containing \\(x^2\\) is \\(\\binom{4}{2}(-3x)^2=6\\cdot 9x^2=54x^2\\). The square of \\(-3\\) is positive, so the coefficient is \\(54\\), not \\(-54\\).",
+      "hint": "An even power of a negative number is positive."
+    },
+    {
+      "id": "dynanca-558-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The middle term",
+      "learningObjective": "Find the middle term of a binomial expansion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the middle term in the expansion of \\((x+y)^6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20x^3y^3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15x^3y^3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expansion has \\(7\\) terms, so the middle one is the fourth, with \\(k=3\\): \\(\\binom{6}{3}x^3y^3=20x^3y^3\\). The number \\(15=\\binom{6}{2}\\) is the coefficient of \\(x^4y^2\\).",
+      "hint": "The middle term has equal exponents on \\(x\\) and \\(y\\)."
+    },
+    {
+      "id": "dynanca-558-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A constant term",
+      "learningObjective": "Find the term without the variable in an expansion with a reciprocal.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "What is the constant term in the expansion of \\(\\left(x^2+\\dfrac{1}{x}\\right)^6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The general term is \\(\\binom{6}{k}(x^2)^{6-k}\\left(\\dfrac{1}{x}\\right)^{k}=\\binom{6}{k}x^{12-3k}\\). The exponent is \\(0\\) when \\(k=4\\), giving \\(\\binom{6}{4}=15\\). The number \\(20=\\binom{6}{3}\\) belongs to \\(k=3\\), where the exponent is \\(3\\), not \\(0\\).",
+      "hint": "Write the exponent of \\(x\\) in the general term and set it equal to \\(0\\)."
+    },
+    {
+      "id": "dynanca-558-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Sum of the coefficients",
+      "learningObjective": "Find the sum of the coefficients of an expansion by substitution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is the sum of all the coefficients in the expansion of \\((2x+1)^4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(81\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substituting \\(x=1\\) into a polynomial gives the sum of its coefficients. Here \\((2\\cdot 1+1)^4=3^4=81\\). The number \\(16=2^4\\) is only the coefficient of \\(x^4\\).",
+      "hint": "Choose a value of \\(x\\) that turns every power of \\(x\\) into \\(1\\)."
+    },
+    {
+      "id": "dynanca-558-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A product of two expansions",
+      "learningObjective": "Find a coefficient in a product by first simplifying the product.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "What is the coefficient of \\(x^4\\) in the expansion of \\((1+x)^5(1-x)^5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\((1+x)(1-x)=1-x^2\\), the product equals \\((1-x^2)^5\\). The term with \\(x^4\\) is \\(\\binom{5}{2}(-x^2)^2=10x^4\\), so the coefficient is \\(10\\). The sign is positive because \\(-x^2\\) is squared.",
+      "hint": "Combine the two factors into a single fifth power before expanding."
+    },
+    {
+      "id": "dynanca-558-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A coefficient in a sum of powers",
+      "learningObjective": "Find a coefficient in a sum of several binomial powers.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "What is the coefficient of \\(x^3\\) in the expansion of \\((1+x)^4+(1+x)^5+(1+x)^6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(34\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(35\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The coefficient of \\(x^3\\) is \\(\\binom{4}{3}+\\binom{5}{3}+\\binom{6}{3}=4+10+20=34\\). The number \\(35=\\binom{7}{4}\\) would be the result if the sum also contained \\((1+x)^3\\), whose coefficient of \\(x^3\\) is \\(1\\).",
+      "hint": "Find the coefficient of \\(x^3\\) in each power separately and add."
+    }
+  ]
+}

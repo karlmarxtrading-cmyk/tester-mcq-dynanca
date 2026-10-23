@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-263",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 263",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-263-q001",
+      "category": "Solid Geometry",
+      "concept": "Vector Equation of a Line in Space",
+      "learningObjective": "Write the vector equation of a line through a given point with a given direction vector.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Find the vector equation of the line through point \\((1,2,3)\\) with direction vector \\((2,-1,4)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\vec{r}=(1,2,3)+t(2,-1,4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\vec{r}=(2,-1,4)+t(1,2,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A line through point \\(P\\) with direction vector \\(\\vec{d}\\) has vector equation\n\\[\n\\vec{r}=P+t\\vec{d}.\n\\]\nHere \\(P=(1,2,3)\\) and \\(\\vec{d}=(2,-1,4)\\), so\n\\[\n\\vec{r}=(1,2,3)+t(2,-1,4).\n\\]",
+      "hint": "Use the standard vector equation \\(\\vec{r}=P+t\\vec{d}\\) for a line."
+    },
+    {
+      "id": "math-gaokao-263-q002",
+      "category": "Solid Geometry",
+      "concept": "Parametric Equations of a Line Through Two Points",
+      "learningObjective": "Determine the parametric equations of a line passing through two given points in space.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find parametric equations for the line through \\(A(1,0,2)\\) and \\(B(3,4,1)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1+2t,\\ y=4t,\\ z=2+t\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1+2t,\\ y=4t,\\ z=2-t\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The direction vector is\n\\[\n\\overrightarrow{AB}=B-A=(3-1,4-0,1-2)=(2,4,-1).\n\\]\nUsing point \\(A(1,0,2)\\), the parametric equations are\n\\[\nx=1+2t,\\quad y=0+4t=4t,\\quad z=2+(-1)t=2-t.\n\\]",
+      "hint": "First subtract coordinates to obtain the direction vector, then add it to one point."
+    },
+    {
+      "id": "math-gaokao-263-q003",
+      "category": "Solid Geometry",
+      "concept": "Vector Equation of a Plane",
+      "learningObjective": "Write the vector equation of a plane given a point and a normal vector.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Find the vector equation of the plane through point \\((1,-1,2)\\) with normal vector \\((3,2,-1)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,2,-1)\\cdot[(x,y,z)-(1,-1,2)]=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,-1,2)\\cdot[(x,y,z)-(3,2,-1)]=0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A plane with normal vector \\(\\vec{n}\\) through point \\(P\\) has vector equation\n\\[\n\\vec{n}\\cdot(\\vec{r}-P)=0.\n\\]\nHere \\(\\vec{n}=(3,2,-1)\\) and \\(P=(1,-1,2)\\), so\n\\[\n(3,2,-1)\\cdot[(x,y,z)-(1,-1,2)]=0.\n\\]",
+      "hint": "Use \\(\\vec{n}\\cdot(\\vec{r}-P)=0\\) for a plane with normal vector \\(\\vec{n}\\) through point \\(P\\)."
+    },
+    {
+      "id": "math-gaokao-263-q004",
+      "category": "Solid Geometry",
+      "concept": "Point on a Line in Space",
+      "learningObjective": "Determine whether a given point lies on a line defined by a vector equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Does the point \\((2,1,5)\\) lie on the line \\(\\vec{r}=(1,2,3)+t(1,-1,2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "A",
+      "explanation": "We need a value of \\(t\\) such that\n\\[\n(1,2,3)+t(1,-1,2)=(2,1,5).\n\\]\nFrom the \\(x\\)-coordinate:\n\\[\n1+t=2 \\implies t=1.\n\\]\nCheck the other coordinates with \\(t=1\\):\n\\[\ny=2-1=1,\\qquad z=3+2=5.\n\\]\nBoth match, so the point lies on the line.",
+      "hint": "Substitute the point into the vector equation and check whether the same parameter value works for all coordinates."
+    },
+    {
+      "id": "math-gaokao-263-q005",
+      "category": "Solid Geometry",
+      "concept": "Intersection of a Line and a Plane in Space",
+      "learningObjective": "Find the point of intersection of a line and a plane in three-dimensional space.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the intersection of the line \\(\\vec{r}=(1,0,1)+t(2,1,-1)\\) with the plane \\(x+y+z=4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,0,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,1,0)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute the parametric form of the line into the plane equation:\n\\[\nx=1+2t,\\quad y=t,\\quad z=1-t.\n\\]\nThen\n\\[\nx+y+z=(1+2t)+t+(1-t)=2+2t.\n\\]\nSet this equal to \\(4\\):\n\\[\n2+2t=4 \\implies 2t=2 \\implies t=1.\n\\]\nSubstitute \\(t=1\\):\n\\[\n(x,y,z)=(1+2,\\ 1,\\ 1-1)=(3,1,0).\n\\]",
+      "hint": "Replace \\(x\\), \\(y\\), and \\(z\\) in the plane equation by their parametric expressions from the line."
+    },
+    {
+      "id": "math-gaokao-263-q006",
+      "category": "Solid Geometry",
+      "concept": "Vector Equation of a Plane Through a Point and Parallel to Two Vectors",
+      "learningObjective": "Write the vector equation of a plane through a point and parallel to two given vectors.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the vector equation of the plane through point \\((2,0,1)\\) and parallel to vectors \\((1,1,0)\\) and \\((0,1,1)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,-1,1)\\cdot[(x-2),y,z-1]=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,1,0)\\cdot[(x-2),y,z-1]=0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A normal vector to the plane is the cross product of the two parallel vectors:\n\\[\n(1,1,0)\\times(0,1,1)=(1,-1,1).\n\\]\nUsing the point \\((2,0,1)\\), the plane equation is\n\\[\n(1,-1,1)\\cdot[(x-2),y,z-1]=0.\n\\]",
+      "hint": "Find a normal vector by taking the cross product of the two direction vectors."
+    },
+    {
+      "id": "math-gaokao-263-q007",
+      "category": "Solid Geometry",
+      "concept": "Direction Vector of the Intersection Line of Two Planes",
+      "learningObjective": "Determine a direction vector for the line of intersection of two planes.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Find a direction vector for the line of intersection of the planes \\(x+y+z=1\\) and \\(x-y+z=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,1,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,0,-1)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The normals to the planes are\n\\[\n\\vec{n}_1=(1,1,1),\\qquad \\vec{n}_2=(1,-1,1).\n\\]\nA direction vector of the intersection line is perpendicular to both normals, so it is\n\\[\n\\vec{n}_1\\times\\vec{n}_2=(2,0,-2).\n\\]\nThis is equivalent to \\((1,0,-1)\\).",
+      "hint": "The direction of the intersection line is given by the cross product of the two plane normals."
+    },
+    {
+      "id": "math-gaokao-263-q008",
+      "category": "Solid Geometry",
+      "concept": "Line Perpendicular to a Plane",
+      "learningObjective": "Find the vector equation of a line through a point and perpendicular to a given plane.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the vector equation of the line through \\((1,2,3)\\) perpendicular to the plane \\(2x-y+z=5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\vec{r}=(1,2,3)+t(2,-1,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\vec{r}=(1,2,3)+t(2,1,-1)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A normal vector to the plane \\(2x-y+z=5\\) is\n\\[\n\\vec{n}=(2,-1,1).\n\\]\nA line perpendicular to the plane has direction vector equal to this normal vector. Therefore the line is\n\\[\n\\vec{r}=(1,2,3)+t(2,-1,1).\n\\]",
+      "hint": "The direction vector of a line perpendicular to a plane is the plane's normal vector."
+    },
+    {
+      "id": "math-gaokao-263-q009",
+      "category": "Solid Geometry",
+      "concept": "Distance from a Point to a Plane",
+      "learningObjective": "Calculate the distance from a point to a plane in three-dimensional space.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the distance from point \\((1,2,3)\\) to the plane \\(2x-y+2z=4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The distance from point \\((x_0,y_0,z_0)\\) to the plane \\(Ax+By+Cz+D=0\\) is\n\\[\nd=\\frac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}.\n\\]\nRewrite the plane as \\(2x-y+2z-4=0\\). Then\n\\[\nd=\\frac{|2(1)-1(2)+2(3)-4|}{\\sqrt{2^2+(-1)^2+2^2}}\n=\\frac{|2-2+6-4|}{\\sqrt{4+1+4}}\n=\\frac{2}{3}.\n\\]",
+      "hint": "Use the point-to-plane distance formula with the coefficients of the plane equation."
+    },
+    {
+      "id": "math-gaokao-263-q010",
+      "category": "Solid Geometry",
+      "concept": "Parallelism Between a Line and a Plane",
+      "learningObjective": "Determine whether a line is parallel to a plane using the dot product of the direction vector and normal vector.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The line \\(\\vec{r}=(1,1,1)+t(1,2,1)\\) is parallel to the plane \\(x+y-3z=0\\). Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The line is perpendicular to the plane."
+        },
+        {
+          "label": "B",
+          "text": "The line is parallel to the plane."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The direction vector of the line is \\(\\vec{d}=(1,2,1)\\), and a normal vector of the plane is \\(\\vec{n}=(1,1,-3)\\). Compute\n\\[\n\\vec{d}\\cdot\\vec{n}=1(1)+2(1)+1(-3)=1+2-3=0.\n\\]\nSince the direction vector is perpendicular to the normal vector, the line is parallel to the plane. Also, the point \\((1,1,1)\\) does not satisfy \\(x+y-3z=0\\), so the line is not contained in the plane.",
+      "hint": "A line is parallel to a plane when its direction vector is perpendicular to the plane's normal vector."
+    }
+  ]
+}

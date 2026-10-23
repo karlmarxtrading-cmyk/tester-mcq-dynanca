@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-412",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 412",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-412-q001",
+      "category": "Mathematical Modeling",
+      "concept": "Average Rate of Change",
+      "learningObjective": "Compute the average rate of change of a polynomial function over a closed interval.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For the function \\(f(x)=x^2+2x\\), find its average rate of change on the interval \\([1,3]\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The average rate of change is \\(\\frac{f(3)-f(1)}{3-1}\\). Now \\(f(3)=9+6=15\\) and \\(f(1)=1+2=3\\), so the average rate of change is \\(\\frac{15-3}{2}=6\\).",
+      "hint": "Use the formula for average rate of change: \\(\\frac{f(b)-f(a)}{b-a}\\)."
+    },
+    {
+      "id": "math-gaokao-412-q002",
+      "category": "Mathematical Modeling",
+      "concept": "Instantaneous Rate of Change",
+      "learningObjective": "Determine the instantaneous rate of change of a quadratic function at a given point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=3x^2-4x+1\\), what is the instantaneous rate of change at \\(x=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The instantaneous rate of change is given by the derivative \\(f'(x)=6x-4\\). Substituting \\(x=2\\), we get \\(f'(2)=6(2)-4=8\\).",
+      "hint": "Differentiate the function first, then evaluate the derivative at the given value of \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-412-q003",
+      "category": "Mathematical Modeling",
+      "concept": "Velocity as a Rate of Change",
+      "learningObjective": "Find the velocity of an object at a given time from its position function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A car moves along a straight road so that its position measured from the starting point after \\(t\\) seconds is \\(s(t)=2t^3-9t^2+12t\\) meters. What is its velocity at \\(t=2\\) seconds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\text{ m}\\text{/s}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\text{ m}\\text{/s}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Velocity is the derivative of position: \\(s'(t)=6t^2-18t+12\\). At \\(t=2\\), \\[\n\\begin{aligned}\ns'(2)&=6(4)-18(2)+12 \\\\\n&=24-36+12 \\\\\n&=0\n\\end{aligned}\n\\]. Thus the velocity is \\(0\\text{ m}\\text{/s}\\).",
+      "hint": "Differentiate the position function with respect to time to obtain the velocity function."
+    },
+    {
+      "id": "math-gaokao-412-q004",
+      "category": "Mathematical Modeling",
+      "concept": "Related Rates for Surface Area",
+      "learningObjective": "Use related rates to find the rate of change of a sphere's surface area.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A spherical balloon is inflated so that its radius increases at \\(0.5\\text{ cm}\\text{/s}\\). At the instant the radius is \\(10\\text{ cm}\\), at what rate is its surface area increasing? Use \\(S=4\\pi r^2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(40\\pi\\text{ cm}^2\\text{/s}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\pi\\text{ cm}^2\\text{/s}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Differentiate \\(S=4\\pi r^2\\) with respect to time: \\(\\frac{dS}{dt}=8\\pi r\\frac{dr}{dt}\\). Substituting \\(r=10\\) and \\(\\frac{dr}{dt}=0.5\\), we get \\(\\frac{dS}{dt}=8\\pi(10)(0.5)=40\\pi\\text{ cm}^2\\text{/s}\\).",
+      "hint": "Differentiate the surface area formula with respect to time and use the given rate of change of the radius."
+    },
+    {
+      "id": "math-gaokao-412-q005",
+      "category": "Mathematical Modeling",
+      "concept": "Rate of Change of an Exponential Model",
+      "learningObjective": "Find the initial rate of change of an exponential population model.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A population is modeled by \\(P(t)=500e^{0.02t}\\), where \\(t\\) is measured in years. What is the rate of change of the population at \\(t=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate \\(P(t)=500e^{0.02t}\\): \\(P'(t)=500(0.02)e^{0.02t}=10e^{0.02t}\\). At \\(t=0\\), \\(P'(0)=10e^0=10\\).",
+      "hint": "Differentiate the exponential function using the chain rule, then evaluate at \\(t=0\\)."
+    },
+    {
+      "id": "math-gaokao-412-q006",
+      "category": "Mathematical Modeling",
+      "concept": "Marginal Cost as a Rate of Change",
+      "learningObjective": "Compute the marginal cost from a cubic cost function at a given production level.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The cost of producing \\(x\\) units of a product is \\(C(x)=0.01x^3-0.3x^2+5x+100\\text{ yuan}\\). What is the marginal cost when \\(x=20\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\text{ yuan}\\) per unit"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\text{ yuan}\\) per unit"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Marginal cost is \\(C'(x)\\). Differentiate: \\(C'(x)=0.03x^2-0.6x+5\\). At \\(x=20\\), \\[\n\\begin{aligned}\nC'(20)&=0.03(400)-0.6(20)+5 \\\\\n&=12-12+5 \\\\\n&=5\n\\end{aligned}\n\\]. Thus the marginal cost is \\(5\\text{ yuan}\\) per unit.",
+      "hint": "Find the derivative of the cost function and evaluate it at the given production level."
+    },
+    {
+      "id": "math-gaokao-412-q007",
+      "category": "Mathematical Modeling",
+      "concept": "Related Rates in a Ladder Problem",
+      "learningObjective": "Determine the speed of a sliding ladder using related rates.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "A \\(5\\text{ m}\\) ladder rests against a vertical wall. The bottom of the ladder is pulled away from the wall at \\(1\\text{ m}\\text{/s}\\). When the bottom is \\(3\\text{ m}\\) from the wall, how fast is the top of the ladder sliding down?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{4}{3}\\text{ m}\\text{/s}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{4}\\text{ m}\\text{/s}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(x\\) be the distance from the wall to the bottom of the ladder and \\(y\\) be the height of the top. Then \\(x^2+y^2=25\\). When \\(x=3\\), \\(y=4\\). Differentiating gives \\(2x\\frac{dx}{dt}+2y\\frac{dy}{dt}=0\\). Since \\(\\frac{dx}{dt}=1\\), we get \\(2(3)(1)+2(4)\\frac{dy}{dt}=0\\), so \\(\\frac{dy}{dt}=-\\frac{3}{4}\\). The top slides down at \\(\\frac{3}{4}\\text{ m}\\text{/s}\\).",
+      "hint": "Use the Pythagorean relation between the distances and differentiate both sides with respect to time."
+    },
+    {
+      "id": "math-gaokao-412-q008",
+      "category": "Mathematical Modeling",
+      "concept": "Average Speed Over Two Equal Distances",
+      "learningObjective": "Calculate average speed when different speeds are used over equal distances.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A cyclist covers the first half of the total distance of a trip at \\(30\\text{ km}\\text{/h}\\) and the second half at \\(60\\text{ km}\\text{/h}\\). What is the average speed for the entire trip?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(40\\text{ km}\\text{/h}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(45\\text{ km}\\text{/h}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let each half of the trip have distance \\(d\\). Total distance is \\(2d\\). Total time is \\[\n\\begin{aligned}\n\\frac{d}{30}+\\frac{d}{60}&=\\frac{2d}{60}+\\frac{d}{60} \\\\\n&=\\frac{3d}{60} \\\\\n&=\\frac{d}{20}\n\\end{aligned}\n\\]. Average speed is \\(\\frac{2d}{\\frac{d}{20}}=40\\text{ km}\\text{/h}\\).",
+      "hint": "Average speed is total distance divided by total time, not the arithmetic mean of the two speeds."
+    },
+    {
+      "id": "math-gaokao-412-q009",
+      "category": "Mathematical Modeling",
+      "concept": "Related Rates in a Conical Tank",
+      "learningObjective": "Find the rate of change of water volume in a draining conical tank.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Water drains from an inverted right circular conical tank, with its vertex at the bottom, whose top radius is \\(2\\text{ m}\\) and whose height is \\(4\\text{ m}\\). When the water depth is \\(4\\text{ m}\\), the water level is falling at \\(0.1\\text{ m}\\text{/min}\\). At what rate is the volume of water decreasing at that instant?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.4\\pi\\text{ m}^3\\text{/min}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.2\\pi\\text{ m}^3\\text{/min}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For the cone, similar triangles give \\(\\frac{r}{h}=\\frac{2}{4}=\\frac{1}{2}\\), so \\(r=\\frac{h}{2}\\). Thus \\[\n\\begin{aligned}\nV&=\\frac{1}{3}\\pi r^2h \\\\\n&=\\frac{1}{3}\\pi\\left(\\frac{h}{2}\\right)^2h \\\\\n&=\\frac{\\pi h^3}{12}\n\\end{aligned}\n\\]. Differentiating, \\(\\frac{dV}{dt}=\\frac{\\pi h^2}{4}\\frac{dh}{dt}\\). At \\(h=4\\) and \\(\\frac{dh}{dt}=-0.1\\), \\(\\frac{dV}{dt}=\\frac{\\pi(16)}{4}(-0.1)=-0.4\\pi\\). The volume decreases at \\(0.4\\pi\\text{ m}^3\\text{/min}\\).",
+      "hint": "Express the radius in terms of the water depth using similar triangles before differentiating the volume formula."
+    },
+    {
+      "id": "math-gaokao-412-q010",
+      "category": "Mathematical Modeling",
+      "concept": "Velocity and Acceleration as Rates of Change",
+      "learningObjective": "Find the velocity of a particle when its acceleration is zero.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A particle moves along a straight line so that its position at time \\(t\\) is \\(s(t)=t^3-6t^2+9t+1\\). Find the velocity of the particle when its acceleration is zero.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Velocity is \\(s'(t)=3t^2-12t+9\\), and acceleration is \\(s''(t)=6t-12\\). Setting acceleration equal to zero gives \\(6t-12=0\\), so \\(t=2\\). Then \\[\n\\begin{aligned}\ns'(2)&=3(4)-12(2)+9 \\\\\n&=12-24+9 \\\\\n&=-3\n\\end{aligned}\n\\]. Thus the velocity is \\(-3\\).",
+      "hint": "Differentiate the position function twice to obtain velocity and acceleration, then set acceleration equal to zero."
+    }
+  ]
+}

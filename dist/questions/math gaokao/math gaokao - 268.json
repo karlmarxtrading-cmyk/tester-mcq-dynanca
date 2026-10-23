@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-268",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 268",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-268-q001",
+      "category": "Calculus",
+      "concept": "Limit of a Rational Function with a Removable Factor",
+      "learningObjective": "Evaluate a rational limit that becomes \\(0/0\\) by factoring and canceling.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to2}\\frac{x^2-4}{x-2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Direct substitution gives \\(0/0\\). Factor the numerator:\n\\[\nx^2-4=(x-2)(x+2).\n\\]\nFor \\(x\\neq2\\),\n\\[\n\\frac{x^2-4}{x-2}\n=\n\\frac{(x-2)(x+2)}{x-2}\n=\nx+2.\n\\]\nTherefore,\n\\[\n\\lim_{x\\to2}\\frac{x^2-4}{x-2}\n=\n\\lim_{x\\to2}(x+2)\n=\n4.\n\\]",
+      "hint": "Factor the numerator and cancel the common factor before substituting."
+    },
+    {
+      "id": "math-gaokao-268-q002",
+      "category": "Calculus",
+      "concept": "Limit at Infinity of a Rational Function",
+      "learningObjective": "Evaluate a limit at infinity by comparing leading terms.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to\\infty}\\frac{3x^2+2}{x^2-1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide numerator and denominator by \\(x^2\\):\n\\[\n\\frac{3x^2+2}{x^2-1}\n=\n\\frac{3+\\frac{2}{x^2}}{1-\\frac{1}{x^2}}.\n\\]\nAs \\(x\\to\\infty\\), both \\(\\frac{2}{x^2}\\) and \\(\\frac{1}{x^2}\\) tend to \\(0\\). Hence\n\\[\n\\lim_{x\\to\\infty}\\frac{3x^2+2}{x^2-1}\n=\n\\frac{3+0}{1-0}\n=\n3.\n\\]",
+      "hint": "Divide numerator and denominator by the highest power of \\(x\\) in the denominator."
+    },
+    {
+      "id": "math-gaokao-268-q003",
+      "category": "Calculus",
+      "concept": "Limit of a Difference of Rational Expressions",
+      "learningObjective": "Evaluate a rational limit by combining fractions and simplifying.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to0}\\frac{\\frac{1}{x+1}-1}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Combine the terms in the numerator:\n\\[\n\\frac{1}{x+1}-1\n=\n\\frac{1-(x+1)}{x+1}\n=\n\\frac{-x}{x+1}.\n\\]\nThen\n\\[\n\\frac{\\frac{1}{x+1}-1}{x}\n=\n\\frac{-x}{x+1}\\cdot\\frac{1}{x}\n=\n-\\frac{1}{x+1}\n\\]\nfor \\(x\\neq0\\). Therefore,\n\\[\n\\lim_{x\\to0}\\frac{\\frac{1}{x+1}-1}{x}\n=\n-\\frac{1}{0+1}\n=\n-1.\n\\]",
+      "hint": "Combine the fractions in the numerator into a single fraction before dividing by \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-268-q004",
+      "category": "Calculus",
+      "concept": "Limit of a Rational Function by Factoring",
+      "learningObjective": "Evaluate a rational limit by factoring both numerator and denominator and canceling.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to3}\\frac{x^2-9}{x^2-2x-3}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{2}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor numerator and denominator:\n\\[\nx^2-9=(x-3)(x+3),\n\\]\nand\n\\[\nx^2-2x-3=(x-3)(x+1).\n\\]\nFor \\(x\\neq3\\),\n\\[\n\\frac{x^2-9}{x^2-2x-3}\n=\n\\frac{(x-3)(x+3)}{(x-3)(x+1)}\n=\n\\frac{x+3}{x+1}.\n\\]\nThus,\n\\[\n\\lim_{x\\to3}\\frac{x^2-9}{x^2-2x-3}\n=\n\\frac{3+3}{3+1}\n=\n\\frac{6}{4}\n=\n\\frac{3}{2}.\n\\]",
+      "hint": "Factor both the numerator and the denominator, then cancel the common factor."
+    },
+    {
+      "id": "math-gaokao-268-q005",
+      "category": "Calculus",
+      "concept": "Limit at Infinity of a Rational Function",
+      "learningObjective": "Evaluate a limit at infinity by dividing by the highest power of \\(x\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to\\infty}\\frac{2x^3-x+1}{5x^3+2x^2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2}{5}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Divide numerator and denominator by \\(x^3\\):\n\\[\n\\frac{2x^3-x+1}{5x^3+2x^2}\n=\n\\frac{2-\\frac{1}{x^2}+\\frac{1}{x^3}}{5+\\frac{2}{x}}.\n\\]\nAs \\(x\\to\\infty\\), the terms \\(\\frac{1}{x^2}\\), \\(\\frac{1}{x^3}\\), and \\(\\frac{2}{x}\\) tend to \\(0\\). Therefore,\n\\[\n\\lim_{x\\to\\infty}\\frac{2x^3-x+1}{5x^3+2x^2}\n=\n\\frac{2}{5}.\n\\]",
+      "hint": "Divide numerator and denominator by the highest power of \\(x\\) appearing in the expression."
+    },
+    {
+      "id": "math-gaokao-268-q006",
+      "category": "Calculus",
+      "concept": "Limit of a Rational Function with Cubic and Quadratic Terms",
+      "learningObjective": "Evaluate a rational limit by factoring a difference of cubes and a difference of squares.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to1}\\frac{x^3-1}{x^2-1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor numerator and denominator:\n\\[\nx^3-1=(x-1)(x^2+x+1),\n\\]\nand\n\\[\nx^2-1=(x-1)(x+1).\n\\]\nFor \\(x\\neq1\\),\n\\[\n\\frac{x^3-1}{x^2-1}\n=\n\\frac{(x-1)(x^2+x+1)}{(x-1)(x+1)}\n=\n\\frac{x^2+x+1}{x+1}.\n\\]\nThus,\n\\[\n\\lim_{x\\to1}\\frac{x^3-1}{x^2-1}\n=\n\\frac{1^2+1+1}{1+1}\n=\n\\frac{3}{2}.\n\\]",
+      "hint": "Factor the difference of cubes in the numerator and the difference of squares in the denominator."
+    },
+    {
+      "id": "math-gaokao-268-q007",
+      "category": "Calculus",
+      "concept": "Limit of a Rational Function with a Removable Discontinuity",
+      "learningObjective": "Evaluate a rational limit by factoring a difference of cubes and a difference of squares.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to2}\\frac{x^3-8}{x^2-4}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor numerator and denominator:\n\\[\nx^3-8=(x-2)(x^2+2x+4),\n\\]\nand\n\\[\nx^2-4=(x-2)(x+2).\n\\]\nFor \\(x\\neq2\\),\n\\[\n\\frac{x^3-8}{x^2-4}\n=\n\\frac{(x-2)(x^2+2x+4)}{(x-2)(x+2)}\n=\n\\frac{x^2+2x+4}{x+2}.\n\\]\nTherefore,\n\\[\n\\lim_{x\\to2}\\frac{x^3-8}{x^2-4}\n=\n\\frac{2^2+2(2)+4}{2+2}\n=\n\\frac{4+4+4}{4}\n=\n\\frac{12}{4}\n=\n3.\n\\]",
+      "hint": "Factor the numerator as a difference of cubes and the denominator as a difference of squares."
+    },
+    {
+      "id": "math-gaokao-268-q008",
+      "category": "Calculus",
+      "concept": "Limit at Infinity of a Rational Function",
+      "learningObjective": "Evaluate a limit at infinity by comparing the leading coefficients.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to\\infty}\\frac{x^2+3x-1}{2x^2-x+5}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide numerator and denominator by \\(x^2\\):\n\\[\n\\frac{x^2+3x-1}{2x^2-x+5}\n=\n\\frac{1+\\frac{3}{x}-\\frac{1}{x^2}}{2-\\frac{1}{x}+\\frac{5}{x^2}}.\n\\]\nAs \\(x\\to\\infty\\), all terms with \\(\\frac{1}{x}\\) or \\(\\frac{1}{x^2}\\) tend to \\(0\\). Hence\n\\[\n\\lim_{x\\to\\infty}\\frac{x^2+3x-1}{2x^2-x+5}\n=\n\\frac{1}{2}.\n\\]",
+      "hint": "Divide numerator and denominator by \\(x^2\\), the highest power in the denominator."
+    },
+    {
+      "id": "math-gaokao-268-q009",
+      "category": "Calculus",
+      "concept": "Limit of a Rational Function by Factoring",
+      "learningObjective": "Evaluate a rational limit by factoring both numerator and denominator and canceling.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to-1}\\frac{x^2-1}{x^2+3x+2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor numerator and denominator:\n\\[\nx^2-1=(x-1)(x+1),\n\\]\nand\n\\[\nx^2+3x+2=(x+1)(x+2).\n\\]\nFor \\(x\\neq-1\\),\n\\[\n\\frac{x^2-1}{x^2+3x+2}\n=\n\\frac{(x-1)(x+1)}{(x+1)(x+2)}\n=\n\\frac{x-1}{x+2}.\n\\]\nThus,\n\\[\n\\lim_{x\\to-1}\\frac{x^2-1}{x^2+3x+2}\n=\n\\frac{-1-1}{-1+2}\n=\n\\frac{-2}{1}\n=\n-2.\n\\]",
+      "hint": "Factor both the numerator and the denominator, then cancel the common factor."
+    },
+    {
+      "id": "math-gaokao-268-q010",
+      "category": "Calculus",
+      "concept": "Limit at Infinity of a Rational Function",
+      "learningObjective": "Evaluate a limit at infinity by dividing by the highest power of \\(x\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to\\infty}\\frac{4x^3+2x}{2x^3-x^2+1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide numerator and denominator by \\(x^3\\):\n\\[\n\\frac{4x^3+2x}{2x^3-x^2+1}\n=\n\\frac{4+\\frac{2}{x^2}}{2-\\frac{1}{x}+\\frac{1}{x^3}}.\n\\]\nAs \\(x\\to\\infty\\), the terms \\(\\frac{2}{x^2}\\), \\(\\frac{1}{x}\\), and \\(\\frac{1}{x^3}\\) tend to \\(0\\). Therefore,\n\\[\n\\lim_{x\\to\\infty}\\frac{4x^3+2x}{2x^3-x^2+1}\n=\n\\frac{4}{2}\n=\n2.\n\\]",
+      "hint": "Divide numerator and denominator by \\(x^3\\), the highest power in the denominator."
+    }
+  ]
+}

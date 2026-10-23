@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-536",
+  "category": "Comprehensive Mathematics",
+  "title": "536. Sets, Logic, Reasoning & Proof: One-to-One and Onto Mappings",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-536-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of one-to-one",
+      "learningObjective": "State the definition of a one-to-one function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "When is a function \\(f:A\\to B\\) one-to-one?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When \\(f(a)=f(b)\\) implies \\(a=b\\)"
+        },
+        {
+          "label": "B",
+          "text": "When every \\(y\\in B\\) equals \\(f(x)\\) for some \\(x\\in A\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A one-to-one function never sends two different inputs to the same output; equivalently, equal outputs force equal inputs. The other condition says that every element of \\(B\\) is reached, which is the definition of an onto function.",
+      "hint": "One-to-one is about different inputs having different outputs."
+    },
+    {
+      "id": "dynanca-536-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Classifying a small mapping",
+      "learningObjective": "Classify a function between small finite sets as one-to-one or onto.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(f:\\{1,2,3\\}\\to\\{4,5,6,7\\}\\) with \\(f(1)=4\\), \\(f(2)=5\\), and \\(f(3)=6\\). Which description is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Onto but not one-to-one"
+        },
+        {
+          "label": "B",
+          "text": "One-to-one but not onto"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The three inputs have three different outputs, so \\(f\\) is one-to-one. The element \\(7\\) of the codomain is not an output, so \\(f\\) is not onto.",
+      "hint": "Compare the list of outputs with the codomain."
+    },
+    {
+      "id": "dynanca-536-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Doubling on the integers",
+      "learningObjective": "Decide whether doubling is an onto function on the integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(f:\\mathbb{Z}\\to\\mathbb{Z}\\) be given by \\(f(n)=2n\\). Is \\(f\\) onto?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because every integer can be doubled."
+        },
+        {
+          "label": "B",
+          "text": "No, because no integer \\(n\\) satisfies \\(2n=1\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Onto means every integer in the codomain is an output. The outputs \\(2n\\) are exactly the even integers, so odd integers such as \\(1\\) are never reached. Being able to double every input shows only that \\(f\\) is defined everywhere.",
+      "hint": "Try to solve \\(f(n)=1\\) with an integer \\(n\\)."
+    },
+    {
+      "id": "dynanca-536-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Squaring on the real numbers",
+      "learningObjective": "Decide whether squaring is one-to-one on the real numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(f:\\mathbb{R}\\to\\mathbb{R}\\) be given by \\(f(x)=x^2\\). Is \\(f\\) one-to-one?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because every real number has exactly one square."
+        },
+        {
+          "label": "B",
+          "text": "No, because \\(f(-2)=f(2)\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inputs \\(-2\\) and \\(2\\) are different but both have output \\(4\\), so \\(f\\) is not one-to-one. Each number having exactly one square only says that \\(f\\) is a function.",
+      "hint": "Compare the outputs of a number and its opposite."
+    },
+    {
+      "id": "dynanca-536-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A linear bijection",
+      "learningObjective": "Show that a linear function on the real numbers is a bijection.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f:\\mathbb{R}\\to\\mathbb{R}\\) be given by \\(f(x)=3x-5\\). Which description is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both one-to-one and onto"
+        },
+        {
+          "label": "B",
+          "text": "One-to-one but not onto"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If \\(3a-5=3b-5\\), then \\(a=b\\), so \\(f\\) is one-to-one. For any real \\(y\\), the number \\(x=\\dfrac{y+5}{3}\\) satisfies \\(f(x)=y\\), so \\(f\\) is onto. Hence \\(f\\) is a bijection.",
+      "hint": "Solve \\(3x-5=y\\) for \\(x\\) and check that the solution is a real number for every real \\(y\\)."
+    },
+    {
+      "id": "dynanca-536-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Too many inputs",
+      "learningObjective": "Use counting to decide whether a function can be one-to-one.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Can a function from a set with \\(5\\) elements to a set with \\(4\\) elements be one-to-one?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; five inputs cannot all have different outputs when only four outputs are available."
+        },
+        {
+          "label": "B",
+          "text": "Yes; it is one-to-one when every one of the four outputs is used."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A one-to-one function needs as many different outputs as inputs. With \\(5\\) inputs and only \\(4\\) possible outputs, at least two inputs must share an output. This is the pigeonhole principle.",
+      "hint": "Compare the number of inputs with the number of available outputs."
+    },
+    {
+      "id": "dynanca-536-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Too few inputs",
+      "learningObjective": "Use counting to decide whether a function can be onto.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Can a function from a set with \\(3\\) elements to a set with \\(4\\) elements be onto?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; it is onto when the three inputs have different outputs."
+        },
+        {
+          "label": "B",
+          "text": "No; three inputs produce at most three different outputs."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each input has exactly one output, so a function on \\(3\\) inputs has at most \\(3\\) different outputs. The codomain has \\(4\\) elements, so at least one of them is never reached. Having different outputs makes the function one-to-one, not onto.",
+      "hint": "Count the largest possible number of different outputs."
+    },
+    {
+      "id": "dynanca-536-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The role of the codomain",
+      "learningObjective": "Decide whether a function is onto its stated codomain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(g:\\mathbb{R}\\to[0,\\infty)\\) be given by \\(g(x)=x^2\\). Is \\(g\\) onto?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because negative numbers are not squares of real numbers."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because every \\(y\\ge 0\\) equals \\(g(\\sqrt{y})\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Whether a function is onto depends on its codomain. Here the codomain is \\([0,\\infty)\\), and each \\(y\\ge 0\\) is the square of the real number \\(\\sqrt{y}\\), so \\(g\\) is onto. Negative numbers are not in the codomain, so they do not need to be reached.",
+      "hint": "Check only the numbers that belong to the stated codomain."
+    },
+    {
+      "id": "dynanca-536-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting one-to-one functions",
+      "learningObjective": "Count the one-to-one functions between two finite sets.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many one-to-one functions are there from a set with \\(3\\) elements to a set with \\(5\\) elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(125\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Choose the outputs one input at a time, never repeating an output: \\(5\\) choices for the first input, \\(4\\) for the second, and \\(3\\) for the third. This gives \\(5\\cdot 4\\cdot 3=60\\). The number \\(125=5^3\\) counts all functions, including those that repeat outputs.",
+      "hint": "After an output has been used, it is no longer available for the next input."
+    },
+    {
+      "id": "dynanca-536-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "One-to-one compositions",
+      "learningObjective": "Deduce a property of the inner function from a one-to-one composition.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(f:A\\to B\\) and \\(g:B\\to C\\), and suppose the composition \\(g\\circ f\\) is one-to-one. Which conclusion must hold?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(g\\) is one-to-one."
+        },
+        {
+          "label": "B",
+          "text": "\\(f\\) is one-to-one."
+        }
+      ],
+      "answer": "B",
+      "explanation": "If \\(f(a)=f(b)\\), then \\(g(f(a))=g(f(b))\\), and since \\(g\\circ f\\) is one-to-one, \\(a=b\\). So \\(f\\) is one-to-one. The function \\(g\\) need not be: it may give equal values to two elements of \\(B\\), as long as they are not both outputs of \\(f\\).",
+      "hint": "Start from \\(f(a)=f(b)\\) and apply \\(g\\) to both sides."
+    }
+  ]
+}

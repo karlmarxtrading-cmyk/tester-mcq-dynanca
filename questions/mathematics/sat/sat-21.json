@@ -1,0 +1,657 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "mathematics-sat-21",
+  "title": "SAT 21 · Squares and roots",
+  "category": "SAT Mathematics",
+  "description": "A/B reasoning practice. Difficulty is editorial, not standardized SAT calibration.",
+  "questionCount": 18,
+  "questions": [
+    {
+      "id": "sat-q0361",
+      "title": "Finding the Side of a Square Array",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "A square array contains \\(121\\) tiles, with the same number of tiles in each row and each column. How many tiles are in each row? Choose A or B and justify the square-root calculation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(11\\) tiles"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\) tiles"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If the side length is \\(s\\), then the square array contains \\(s^2\\) tiles. Since \\(11^2=121\\), we have \\(\\sqrt{121}=11\\). A side length of \\(12\\) would produce \\(12^2=144\\) tiles, not \\(121\\). Therefore, choice A is correct.",
+      "hint": "Find the number that, multiplied by itself, gives 121."
+    },
+    {
+      "id": "sat-q0362",
+      "title": "Extending a Square-Tile Pattern",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "The chart shows how many tiles are needed to make square arrays with several side lengths. If the same pattern continues, how many tiles are needed for a square with side length \\(5\\)? Choose A or B and explain the pattern.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\) tiles"
+        },
+        {
+          "label": "B",
+          "text": "\\(25\\) tiles"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number of tiles is the square of the side length: \\(2^2=4\\), \\(3^2=9\\), and \\(4^2=16\\). Therefore, a square with side length \\(5\\) needs \\(5^2=25\\) tiles. Choice A multiplies \\(5\\) by \\(4\\) instead of squaring \\(5\\), so choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0362-v1",
+          "type": "DATA_CHART",
+          "data": {
+            "kind": "bar",
+            "xLabel": "Side length",
+            "yLabel": "Number of tiles",
+            "bars": [
+              {
+                "label": "2",
+                "value": 4
+              },
+              {
+                "label": "3",
+                "value": 9
+              },
+              {
+                "label": "4",
+                "value": 16
+              }
+            ],
+            "chart": "bar",
+            "labels": [
+              "2",
+              "3",
+              "4"
+            ],
+            "values": [
+              4,
+              9,
+              16
+            ],
+            "axes": {
+              "xLabel": "Side length",
+              "yLabel": "Number of tiles"
+            }
+          },
+          "alt": "Bar chart showing that a square with side length 2 uses 4 tiles, side length 3 uses 9 tiles, and side length 4 uses 16 tiles."
+        }
+      ],
+      "hint": "Compare each side length in the chart with its number of tiles and look for the operation that turns one into the other."
+    },
+    {
+      "id": "sat-q0363",
+      "title": "Even Perfect Squares",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "The universe contains the whole numbers from \\(1\\) through \\(20\\). Set \\(P\\) contains the perfect squares, and set \\(E\\) contains the even numbers. How many numbers belong to both sets? Choose A or B and identify the numbers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\) numbers"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\) numbers"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The perfect squares from \\(1\\) through \\(20\\) are \\(1,4,9,16\\). Of these, \\(4\\) and \\(16\\) are even. Therefore, exactly \\(2\\) numbers belong to both sets. Choice A counts all four perfect squares instead of only the even perfect squares, so choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0363-v1",
+          "type": "VENN",
+          "data": {
+            "universe": {
+              "label": "Whole numbers 1 through 20",
+              "total": 20
+            },
+            "sets": [
+              {
+                "id": "P",
+                "label": "Perfect squares",
+                "elements": []
+              },
+              {
+                "id": "E",
+                "label": "Even numbers",
+                "elements": []
+              }
+            ],
+            "regions": {
+              "P_only": 2,
+              "E_only": 8,
+              "intersection": 2,
+              "outside": 8
+            }
+          },
+          "alt": "Venn diagram for the whole numbers 1 through 20: two are perfect squares only, eight are even only, two are both perfect squares and even, and eight are neither."
+        }
+      ],
+      "hint": "List the perfect squares from 1 to 20, then keep only the even ones."
+    },
+    {
+      "id": "sat-q0364",
+      "title": "Perimeter from a Square's Area",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "A square garden has area \\(144\\) square meters. What is its perimeter? Choose A or B and explain how the area determines the side length.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(48\\) meters"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\) meters"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If the side length is \\(s\\), then \\(s^2=144\\). Thus \\(s=\\sqrt{144}=12\\) meters. A square has four equal sides, so its perimeter is \\(4(12)=48\\) meters. Choice B uses only two side lengths, so choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0364-v1",
+          "type": "GEOMETRY_2D",
+          "data": {
+            "units": "m",
+            "points": [
+              {
+                "id": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "x": 12,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "x": 12,
+                "y": 12
+              },
+              {
+                "id": "D",
+                "x": 0,
+                "y": 12
+              }
+            ],
+            "segments": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "D"
+              ],
+              [
+                "D",
+                "A"
+              ]
+            ]
+          },
+          "alt": "Square ABCD with side length 12 meters and area 144 square meters."
+        }
+      ],
+      "hint": "Find the side length from the area first, then use all four sides for the perimeter."
+    },
+    {
+      "id": "sat-q0365",
+      "title": "Recovering a Number from Its Square Root",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "A positive integer \\(n\\) satisfies\n\\[\n\\sqrt{n}+3=15.\n\\]\nWhat is \\(n\\)? Choose A or B and show why the square must be taken after isolating the square root.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(81\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(144\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtract \\(3\\) from both sides:\n\\[\n\\sqrt{n}=12.\n\\]\nSquaring gives\n\\[\nn=12^2=144.\n\\]\nChoice A would give \\(\\sqrt{81}+3=9+3=12\\), not \\(15\\). Therefore, choice B is correct.",
+      "hint": "Isolate the square root first, then square both sides."
+    },
+    {
+      "id": "sat-q0366",
+      "title": "Two Inputs with the Same Square",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "The table shows several values of \\(x\\) and \\(x^2\\). Which values of \\(x\\) satisfy \\(x^2=16\\)? Choose A or B and use the table to justify both possibilities.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-4\\) or \\(x=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4\\) only"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both \\(4^2=16\\) and \\((-4)^2=16\\). Squaring removes the sign because multiplying two negative factors also gives a positive product. Choice B ignores the negative value whose square is also \\(16\\). Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0366-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "x",
+              "x^2"
+            ],
+            "rows": [
+              [
+                -4,
+                16
+              ],
+              [
+                -2,
+                4
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                4,
+                16
+              ]
+            ],
+            "headers": [
+              "x",
+              "x^2"
+            ]
+          },
+          "alt": "Table showing x and x squared: negative 4 maps to 16, negative 2 to 4, 0 to 0, 2 to 4, and 4 to 16."
+        }
+      ],
+      "hint": "Look in the table for every x whose square is 16, including negative values."
+    },
+    {
+      "id": "sat-q0367",
+      "title": "Simplifying a Square Root",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "Simplify\n\\[\n\\sqrt{72}.\n\\]\nWhich expression is equivalent to it? Choose A or B and show how a perfect-square factor is used.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\sqrt{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\sqrt{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor \\(72\\) as \\(36\\cdot2\\), where \\(36\\) is a perfect square:\n\\[\n\\sqrt{72}=\\sqrt{36\\cdot2}=\\sqrt{36}\\sqrt2=6\\sqrt2.\n\\]\nChoice B would square to \\(36\\cdot3=108\\), not \\(72\\). Therefore, choice A is correct.",
+      "hint": "Write 72 as a product with the largest possible perfect-square factor, then take its square root."
+    },
+    {
+      "id": "sat-q0368",
+      "title": "Locating a Square Root Between Integers",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "Without using a calculator, compare \\(\\sqrt{65}\\) with the consecutive integers \\(8\\) and \\(9\\). Which statement is correct? Choose A or B and justify it using nearby perfect squares.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{65}<8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8<\\sqrt{65}<9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The nearby perfect squares are\n\\[\n8^2=64\n\\]\nand\n\\[\n9^2=81.\n\\]\nSince \\(64<65<81\\), taking positive square roots gives\n\\[\n8<\\sqrt{65}<9.\n\\]\nChoice A would require \\(65<64\\), which is false. Therefore, choice B is correct.",
+      "hint": "Find the perfect squares just below and just above 65."
+    },
+    {
+      "id": "sat-q0369",
+      "title": "A Perfect-Square Quadratic Root",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "The graph represents\n\\[\nf(x)=x^2-6x+9=(x-3)^2.\n\\]\nHow many distinct real solutions does \\(f(x)=0\\) have? Choose A or B and explain why the graph and factorization agree.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Exactly one distinct real solution, \\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "Two distinct real solutions, \\(x=-3\\) and \\(x=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Because\n\\[\nf(x)=(x-3)^2,\n\\]\nthe equation \\(f(x)=0\\) becomes\n\\[\n(x-3)^2=0.\n\\]\nThus \\(x=3\\) is the only distinct real solution. The graph touches the x-axis at its vertex instead of crossing it twice. Choice B incorrectly treats solving \\((x-3)^2=0\\) as solving \\(x^2=9\\). Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0369-v1",
+          "type": "FUNCTION_GRAPH",
+          "data": {
+            "axes": {
+              "xMin": -1,
+              "xMax": 7,
+              "yMin": -2,
+              "yMax": 18
+            },
+            "curves": [
+              {
+                "expression": "(x-3)^2",
+                "label": "y=(x-3)^2"
+              }
+            ],
+            "points": [
+              {
+                "x": 3,
+                "y": 0,
+                "label": "Vertex and x-intercept"
+              }
+            ]
+          },
+          "alt": "Upward-opening parabola y equals (x minus 3) squared, touching the x-axis only at the point (3,0)."
+        }
+      ],
+      "hint": "Set (x-3)^2 = 0, think about how many numbers make a square equal zero, and compare with where the graph meets the x-axis."
+    },
+    {
+      "id": "sat-q0370",
+      "title": "Checking an Extraneous Radical Solution",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "Solve\n\\[\n\\sqrt{x+5}=x-1.\n\\]\nWhich set contains all real solutions? Choose A or B and check the domain after squaring.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-1\\) and \\(x=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4\\) only"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Because the left side is nonnegative, the right side must satisfy \\(x-1\\ge0\\), so \\(x\\ge1\\). Squaring gives\n\\[\nx+5=(x-1)^2=x^2-2x+1,\n\\]\nso\n\\[\nx^2-3x-4=0=(x-4)(x+1).\n\\]\nThe algebraic candidates are \\(x=4\\) and \\(x=-1\\), but \\(x=-1\\) violates \\(x\\ge1\\) and does not satisfy the original equation. Thus only \\(x=4\\) remains, so choice B is correct.",
+      "hint": "Note that the right side must be nonnegative, square both sides, solve, and check each candidate in the original equation."
+    },
+    {
+      "id": "sat-q0371",
+      "title": "Completing a Perfect-Square Trinomial",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "For what value of \\(k\\) is\n\\[\nx^2+10x+k\n\\]\na perfect square of a linear expression? Choose A or B and justify the required constant term.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=25\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A perfect-square trinomial has the form\n\\[\n(x+a)^2=x^2+2ax+a^2.\n\\]\nMatching \\(2a=10\\) gives \\(a=5\\), so the constant term must be\n\\[\na^2=25.\n\\]\nIndeed,\n\\[\nx^2+10x+25=(x+5)^2.\n\\]\nChoice A matches the middle coefficient rather than the required squared half-coefficient, so choice B is correct.",
+      "hint": "Compare x^2 + 10x + k with (x + a)^2 = x^2 + 2ax + a^2, matching the middle terms first."
+    },
+    {
+      "id": "sat-q0372",
+      "title": "Why Squaring Is Not One-to-One",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "The mapping diagram shows the function \\(g(x)=x^2\\) on four inputs. Which statement about the mapping is correct? Choose A or B and justify your conclusion from the paired values.",
+      "options": [
+        {
+          "label": "A",
+          "text": "The mapping is not one-to-one because different inputs can have the same square."
+        },
+        {
+          "label": "B",
+          "text": "The mapping is one-to-one because all four inputs are different."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A function is one-to-one only if different inputs always produce different outputs. Here,\n\\[\n(-3)^2=3^2=9\n\\]\nand\n\\[\n(-1)^2=1^2=1.\n\\]\nTherefore different inputs share outputs, so the mapping is not one-to-one. Choice B focuses only on the inputs being distinct and ignores the repeated outputs. Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0372-v1",
+          "type": "MAPPING",
+          "data": {
+            "left": {
+              "label": "x",
+              "elements": [
+                -3,
+                -1,
+                1,
+                3
+              ]
+            },
+            "right": {
+              "label": "g(x)",
+              "elements": [
+                9,
+                1
+              ]
+            },
+            "arrows": [
+              [
+                -3,
+                9
+              ],
+              [
+                -1,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                9
+              ]
+            ]
+          },
+          "alt": "Mapping diagram for g of x equals x squared: negative 3 and 3 both map to 9, while negative 1 and 1 both map to 1."
+        }
+      ],
+      "hint": "Check whether any two different inputs in the mapping are sent to the same output."
+    },
+    {
+      "id": "sat-q0373",
+      "title": "Counting the Border of a Square Tile Board",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "A square board is completely covered by \\(169\\) unit tiles. The border is one tile wide. How many tiles lie on the border? Choose A or B and explain how square roots help determine the board dimensions.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(44\\) border tiles"
+        },
+        {
+          "label": "B",
+          "text": "\\(48\\) border tiles"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since\n\\[\n169=13^2,\n\\]\nthe board is \\(13\\) tiles by \\(13\\) tiles. Removing a border one tile wide leaves an interior square of side\n\\[\n13-2=11,\n\\]\ncontaining\n\\[\n11^2=121\n\\]\ntiles. Therefore, the number of border tiles is\n\\[\n169-121=48.\n\\]\nChoice A, \\(44=4\\times11\\), counts 11 tiles on each side but leaves out the 4 corner tiles, so choice B is correct.",
+      "hint": "Find the side length from the total number of tiles, then subtract the interior square from the whole."
+    },
+    {
+      "id": "sat-q0374",
+      "title": "Perimeters of Two Square Mats",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "Two square mats have areas \\(64\\) square centimeters and \\(36\\) square centimeters. What is the sum of their perimeters? Choose A or B and show how each area gives a side length.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(56\\) centimeters"
+        },
+        {
+          "label": "B",
+          "text": "\\(40\\) centimeters"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first mat has side length\n\\[\n\\sqrt{64}=8\n\\]\ncentimeters, so its perimeter is \\(4(8)=32\\) centimeters. The second has side length\n\\[\n\\sqrt{36}=6\n\\]\ncentimeters, so its perimeter is \\(4(6)=24\\) centimeters. Their total perimeter is\n\\[\n32+24=56\n\\]\ncentimeters. Choice B, 40, comes from combining the areas first (\\(64+36=100\\), side \\(10\\), perimeter \\(40\\)), but the mats are two separate squares, so choice A is correct.",
+      "hint": "Find each mat's side length from its area separately, then find each perimeter."
+    },
+    {
+      "id": "sat-q0375",
+      "title": "A Difference of Two Square Roots",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "A nonnegative integer \\(n\\) satisfies\n\\[\n\\sqrt{n+9}-\\sqrt{n}=1.\n\\]\nWhat is \\(n\\)? Choose A or B and justify the value without losing the square-root restrictions.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(25\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rewrite the equation as\n\\[\n\\sqrt{n+9}=\\sqrt n+1.\n\\]\nSquaring gives\n\\[\nn+9=n+2\\sqrt n+1.\n\\]\nThus\n\\[\n8=2\\sqrt n,\n\\]\nso\n\\[\n\\sqrt n=4\n\\]\nand therefore\n\\[\nn=16.\n\\]\nChecking,\n\\[\n\\sqrt{25}-\\sqrt{16}=5-4=1.\n\\]\nFor \\(n=25\\), the difference is \\(\\sqrt{34}-5\\), not \\(1\\). Therefore, choice A is correct.",
+      "hint": "Move one square root to the other side, square, and solve for sqrt(n); then check the result."
+    },
+    {
+      "id": "sat-q0376",
+      "title": "Smallest Multiplier for a Perfect Square",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "What is the smallest positive integer \\(k\\) for which\n\\[\n180k\n\\]\nis a perfect square? Choose A or B and justify the missing prime factor.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Prime-factorize:\n\\[\n180=2^2\\cdot3^2\\cdot5.\n\\]\nA perfect square must have even exponents on every prime factor. The exponents of \\(2\\) and \\(3\\) are already even, but the exponent of \\(5\\) is \\(1\\). Multiplying by another \\(5\\) gives\n\\[\n180\\cdot5=2^2\\cdot3^2\\cdot5^2=30^2.\n\\]\nThus the smallest possible \\(k\\) is \\(5\\). Choice A does not work at all: \\(180\\cdot10=1800=2^3\\cdot3^2\\cdot5^2\\), and the odd exponent on \\(2\\) means \\(1800\\) is not a perfect square. Therefore, choice B is correct.",
+      "hint": "Prime-factorize 180 and find which prime has an odd exponent."
+    },
+    {
+      "id": "sat-q0377",
+      "title": "Parameter Values for One Real Root",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "For which real values of \\(k\\) does\n\\[\nx^2-(k+2)x+9=0\n\\]\nhave exactly one distinct real solution? Choose A or B and justify all parameter cases.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=4\\) or \\(k=-8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=4\\) only"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A quadratic has exactly one distinct real solution when its discriminant is zero:\n\\[\n(k+2)^2-4(1)(9)=0.\n\\]\nThus\n\\[\n(k+2)^2=36,\n\\]\nso\n\\[\nk+2=6\n\\]\nor\n\\[\nk+2=-6.\n\\]\nTherefore,\n\\[\nk=4\n\\]\nor\n\\[\nk=-8.\n\\]\nChoice B keeps only the positive square-root branch and misses the second valid parameter value. Therefore, choice A is correct.",
+      "hint": "Use the discriminant: set it equal to zero and solve for k, considering both square roots."
+    },
+    {
+      "id": "sat-q0378",
+      "title": "Reciprocal Square-Root Equation",
+      "category": "MATH",
+      "concept": "Squares and roots",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply squares and roots and justify the selected answer.",
+      "question": "Let \\(x>0\\). Solve\n\\[\n\\sqrt{x}+\\frac{1}{\\sqrt{x}}=\\frac52.\n\\]\nWhich set contains all real solutions? Choose A or B and justify both possibilities.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=4\\) only"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4\\) or \\(x=\\frac14\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let\n\\[\ny=\\sqrt{x},\n\\]\nso \\(y>0\\). Then\n\\[\ny+\\frac1y=\\frac52.\n\\]\nMultiplying by \\(2y\\) gives\n\\[\n2y^2-5y+2=0.\n\\]\nFactor:\n\\[\n(2y-1)(y-2)=0.\n\\]\nThus\n\\[\ny=\\frac12\n\\]\nor\n\\[\ny=2.\n\\]\nSince \\(x=y^2\\), the corresponding values are\n\\[\nx=\\frac14\n\\]\nand\n\\[\nx=4.\n\\]\nBoth satisfy the original equation. Choice A misses the solution arising from the positive value \\(y=\\frac12\\), so choice B is correct.",
+      "hint": "Substitute y = sqrt(x), clear the fraction, solve the quadratic in y, and convert back to x."
+    }
+  ]
+}

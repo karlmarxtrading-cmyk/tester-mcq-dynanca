@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-455",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 455",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-455-q001",
+      "category": "Integrated Mathematics",
+      "concept": "Quadratic Function Range on a Closed Interval",
+      "learningObjective": "Determine the range of a quadratic function on a restricted interval by completing the square and checking endpoints.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "For \\(f(x)=x^2-4x+3\\) on the interval \\(0\\le x\\le 4\\), what is the range of \\(f(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([-1,4]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([-1,3]\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Complete the square:\n\\[\nf(x)=x^2-4x+3=(x-2)^2-1.\n\\]\nThus the minimum value is \\(-1\\), occurring at \\(x=2\\), which lies in \\([0,4]\\). The endpoint values are\n\\[\nf(0)=3,\\qquad f(4)=16-16+3=3.\n\\]\nTherefore the maximum value on the interval is \\(3\\), and the range is \\([-1,3]\\).",
+      "hint": "Rewrite the quadratic in completed-square form and compare the vertex value with the endpoint values."
+    },
+    {
+      "id": "math-gaokao-455-q002",
+      "category": "Integrated Mathematics",
+      "concept": "Logarithmic Inequality and Integer Constraints",
+      "learningObjective": "Solve a logarithmic inequality and identify the smallest positive integer satisfying it.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(a_n=\\log_2(3n+1)\\). What is the smallest positive integer \\(n\\) such that \\(a_n>5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(11\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The condition \\(a_n>5\\) means\n\\[\n\\log_2(3n+1)>5.\n\\]\nSince the base \\(2\\) is greater than \\(1\\), this is equivalent to\n\\[\n3n+1>2^5=32.\n\\]\nThus \\(3n>31\\), so \\(n>\\frac{31}{3}\\approx 10.33\\). The smallest positive integer satisfying this is \\(n=11\\).",
+      "hint": "Convert the logarithmic inequality into an exponential inequality using the base \\(2\\)."
+    },
+    {
+      "id": "math-gaokao-455-q003",
+      "category": "Integrated Mathematics",
+      "concept": "Probability with Combinatorial Counting",
+      "learningObjective": "Calculate a probability by counting favorable pairs according to parity.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Two distinct numbers are chosen at random from \\(\\{1,2,3,4,5\\}\\). What is the probability that their sum is even?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{2}{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{5}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total number of ways to choose two distinct numbers is\n\\[\n\\binom{5}{2}=10.\n\\]\nThe sum is even exactly when the two numbers have the same parity. There are \\(3\\) odd numbers and \\(2\\) even numbers, so the favorable pairs are\n\\[\n\\binom{3}{2}+\\binom{2}{2}=3+1=4.\n\\]\nTherefore the probability is\n\\[\n\\frac{4}{10}=\\frac{2}{5}.\n\\]",
+      "hint": "An even sum occurs when both chosen numbers are odd or both are even."
+    },
+    {
+      "id": "math-gaokao-455-q004",
+      "category": "Integrated Mathematics",
+      "concept": "Vector Magnitude and Dot Product",
+      "learningObjective": "Compute the squared magnitude of a vector sum using the dot product formula.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(\\vec{a}\\) and \\(\\vec{b}\\) be vectors such that \\(|\\vec{a}|=2\\), \\(|\\vec{b}|=3\\), and the angle between them is \\(60^\\circ\\). What is \\(|\\vec{a}+\\vec{b}|^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(19\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(13\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the expansion\n\\[\n|\\vec{a}+\\vec{b}|^2=|\\vec{a}|^2+|\\vec{b}|^2+2\\vec{a}\\cdot\\vec{b},\n\\]\nand\n\\[\n\\vec{a}\\cdot\\vec{b}=|\\vec{a}||\\vec{b}|\\cos 60^\\circ=2\\cdot 3\\cdot \\frac{1}{2}=3,\n\\]\nwe get\n\\[\n|\\vec{a}+\\vec{b}|^2=4+9+2\\cdot 3=19.\n\\]",
+      "hint": "Expand the squared magnitude of the vector sum and use the dot product formula involving the angle."
+    },
+    {
+      "id": "math-gaokao-455-q005",
+      "category": "Integrated Mathematics",
+      "concept": "Tangent Line and Derivative",
+      "learningObjective": "Find the equation of the tangent line to a cubic function at a given point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(f(x)=x^3-3x\\), what is the equation of the tangent line at \\(x=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=9x-16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=9x-14\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First find the point of tangency:\n\\[\n\\begin{aligned}\nf(2)&=2^3-3\\cdot 2 \\\\\n&=8-6 \\\\\n&=2.\n\\end{aligned}\n\\]\nNext compute the derivative:\n\\[\nf'(x)=3x^2-3,\n\\]\nso\n\\[\nf'(2)=3\\cdot 4-3=9.\n\\]\nThe tangent line is\n\\[\ny-2=9(x-2),\n\\]\nwhich simplifies to\n\\[\ny=9x-16.\n\\]",
+      "hint": "Find both the function value and the derivative value at \\(x=2\\), then use the point-slope form."
+    },
+    {
+      "id": "math-gaokao-455-q006",
+      "category": "Integrated Mathematics",
+      "concept": "Trigonometric Equation with Quadratic Form",
+      "learningObjective": "Solve a trigonometric equation by converting it into a quadratic equation in cosine.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many solutions does \\(2\\sin^2 x-\\cos x-1=0\\) have on the interval \\(0\\le x<2\\pi\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(\\sin^2 x=1-\\cos^2 x\\). Then\n\\[\n2(1-\\cos^2 x)-\\cos x-1=0,\n\\]\nso\n\\[\n2-2\\cos^2 x-\\cos x-1=0.\n\\]\nThis simplifies to\n\\[\n2\\cos^2 x+\\cos x-1=0.\n\\]\nFactoring,\n\\[\n(2\\cos x-1)(\\cos x+1)=0.\n\\]\nThus\n\\[\n\\cos x=\\frac{1}{2} \\quad \\text{or} \\quad \\cos x=-1.\n\\]\nOn \\(0\\le x<2\\pi\\), \\(\\cos x=\\frac{1}{2}\\) gives \\(x=\\frac{\\pi}{3},\\frac{5\\pi}{3}\\), and \\(\\cos x=-1\\) gives \\(x=\\pi\\). Therefore there are \\(3\\) solutions.",
+      "hint": "Replace \\(\\sin^2 x\\) by \\(1-\\cos^2 x\\) and solve the resulting quadratic equation for \\(\\cos x\\)."
+    },
+    {
+      "id": "math-gaokao-455-q007",
+      "category": "Integrated Mathematics",
+      "concept": "Circle Equation and Distance from a Point",
+      "learningObjective": "Find the shortest distance from the origin to a circle by completing squares and using the distance formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The circle is given by \\(x^2+y^2-4x+6y-12=0\\). What is the shortest distance from the origin to the circle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5+\\sqrt{13}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5-\\sqrt{13}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Complete the square:\n\\[\nx^2-4x+y^2+6y=12\n\\]\nbecomes\n\\[\n(x-2)^2+(y+3)^2=25.\n\\]\nSo the circle has center \\(C=(2,-3)\\) and radius \\(r=5\\). The distance from the origin \\(O=(0,0)\\) to the center is\n\\[\nOC=\\sqrt{2^2+(-3)^2}=\\sqrt{13}.\n\\]\nSince \\(\\sqrt{13}<5\\), the origin lies inside the circle. Hence the shortest distance from the origin to the circle is\n\\[\nr-OC=5-\\sqrt{13}.\n\\]",
+      "hint": "Complete the square to identify the center and radius, then compare the distance from the origin to the center with the radius."
+    },
+    {
+      "id": "math-gaokao-455-q008",
+      "category": "Integrated Mathematics",
+      "concept": "Arithmetic Sequence and Quadratic Inequality",
+      "learningObjective": "Determine the smallest number of terms for an arithmetic series to exceed a given value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "An arithmetic sequence has first term \\(a_1=2\\) and common difference \\(d=3\\). What is the smallest positive integer \\(n\\) such that the sum \\(S_n\\) of the first \\(n\\) terms satisfies \\(S_n>100\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sum of the first \\(n\\) terms is\n\\[\n\\begin{aligned}\nS_n&=\\frac{n}{2}\\bigl(2a_1+(n-1)d\\bigr) \\\\\n&=\\frac{n}{2}\\bigl(4+3(n-1)\\bigr) \\\\\n&=\\frac{n(3n+1)}{2}.\n\\end{aligned}\n\\]\nWe need\n\\[\n\\frac{n(3n+1)}{2}>100,\n\\]\nor\n\\[\n3n^2+n>200.\n\\]\nCheck \\(n=8\\):\n\\[\nS_8=\\frac{8(25)}{2}=100,\n\\]\nwhich is not greater than \\(100\\). Check \\(n=9\\):\n\\[\nS_9=\\frac{9(28)}{2}=126>100.\n\\]\nTherefore the smallest such integer is \\(n=9\\).",
+      "hint": "Write the sum formula for an arithmetic sequence and test the boundary value near \\(S_n=100\\)."
+    },
+    {
+      "id": "math-gaokao-455-q009",
+      "category": "Integrated Mathematics",
+      "concept": "Optimization of Area with a Constraint",
+      "learningObjective": "Maximize the area of a rectangular pen against a wall using a fixed length of fencing.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A rectangular pen is built against a straight wall using \\(64\\) meters of fencing for the other three sides. What is the maximum possible area?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(256\\text{ m}^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(512\\text{ m}^2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let each perpendicular side be \\(x\\) meters. The parallel side is \\(64-2x\\), with \\(0<x<32\\). The area is \\(A(x)=x(64-2x)=512-2(x-16)^2\\), so its maximum is \\(512\\) square meters, attained with side lengths \\(16\\) and \\(32\\). The value \\(256\\) incorrectly treats the maximizing shape as a \\(16\\)-meter square.",
+      "hint": "Express the parallel side in terms of the perpendicular side, then maximize the resulting quadratic area function."
+    },
+    {
+      "id": "math-gaokao-455-q010",
+      "category": "Integrated Mathematics",
+      "concept": "Algebraic Inequality and Product Substitution",
+      "learningObjective": "Find the minimum value of a symmetric expression under a fixed sum constraint.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(x>0\\), \\(y>0\\), and \\(x+y=1\\). What is the minimum value of\n\\[\n\\left(x+\\frac{1}{x}\\right)\\left(y+\\frac{1}{y}\\right)?\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{17}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{25}{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(t=xy\\). Since \\(x+y=1\\) and \\(x,y>0\\), we have\n\\[\n0<t\\le \\frac{1}{4}\n\\]\nby the AM-GM inequality. Now\n\\[\n\\left(x+\\frac{1}{x}\\right)\\left(y+\\frac{1}{y}\\right)=xy+\\frac{x}{y}+\\frac{y}{x}+\\frac{1}{xy}.\n\\]\nAlso,\n\\[\n\\begin{aligned}\n\\frac{x}{y}+\\frac{y}{x}&=\\frac{x^2+y^2}{xy} \\\\\n&=\\frac{(x+y)^2-2xy}{xy} \\\\\n&=\\frac{1-2t}{t} \\\\\n&=\\frac{1}{t}-2.\n\\end{aligned}\n\\]\nThus the expression becomes\n\\[\nt+\\left(\\frac{1}{t}-2\\right)+\\frac{1}{t}=t+\\frac{2}{t}-2.\n\\]\nLet \\(g(t)=t+\\frac{2}{t}-2\\). For \\(0<t\\le \\frac{1}{4}\\),\n\\[\ng'(t)=1-\\frac{2}{t^2}<0,\n\\]\nso \\(g(t)\\) is decreasing on this interval. Therefore the minimum occurs at \\(t=\\frac{1}{4}\\):\n\\[\ng\\left(\\frac{1}{4}\\right)=\\frac{1}{4}+8-2=\\frac{25}{4}.\n\\]\nThis value is attained at \\(x=y=\\frac{1}{2}\\).",
+      "hint": "Use the substitution \\(t=xy\\), determine the possible range of \\(t\\), and then minimize the resulting function of \\(t\\)."
+    }
+  ]
+}

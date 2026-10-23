@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-287",
+  "category": "Comprehensive Mathematics",
+  "title": "287. Functions, Graphs & Transformations: Finding an Inverse from Ordered Pairs",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-287-q001",
+      "category": "Functions & Graphs",
+      "concept": "Inverse of a Relation Given as Ordered Pairs",
+      "learningObjective": "Identify the inverse of a finite function by swapping the coordinates of every ordered pair.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The function \\(f\\) is given by \\(f=\\{(1,4),(2,7),(3,9)\\}\\). Which set is \\(f^{-1}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{(4,1),(7,2),(9,3)\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{(4,1),(2,7),(9,3)\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The inverse of a relation is obtained by swapping the two coordinates of every ordered pair: \\((a,b)\\) becomes \\((b,a)\\). Swapping each pair of \\(f\\) gives \\((1,4)\\to(4,1)\\), \\((2,7)\\to(7,2)\\), and \\((3,9)\\to(9,3)\\). Therefore, \\(f^{-1}=\\{(4,1),(7,2),(9,3)\\}\\). Option B comes from swapping only some of the pairs: the pair \\((2,7)\\) was left unchanged, so B is not the inverse.",
+      "hint": "Every ordered pair of \\(f\\) must be changed in the same way to form \\(f^{-1}\\)."
+    },
+    {
+      "id": "dynanca-287-q002",
+      "category": "Functions & Graphs",
+      "concept": "Reading a Value of the Inverse Function from Ordered Pairs",
+      "learningObjective": "Determine \\(f^{-1}(a)\\) by finding the ordered pair of \\(f\\) whose second coordinate is \\(a\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The function \\(f\\) is given by \\(f=\\{(2,5),(4,8),(6,11)\\}\\). What is \\(f^{-1}(8)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{8}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By definition, \\(f^{-1}(8)\\) is the input of \\(f\\) whose output is \\(8\\). The pair \\((4,8)\\) shows \\(f(4)=8\\), so the inverse contains the pair \\((8,4)\\). Therefore, \\(f^{-1}(8)=4\\). Option A comes from confusing the inverse-function notation \\(f^{-1}(8)\\) with the reciprocal \\(8^{-1}=\\frac{1}{8}\\); the superscript \\(-1\\) on \\(f\\) does not mean a reciprocal.",
+      "hint": "Look for the pair of \\(f\\) in which \\(8\\) is the output, not the input."
+    },
+    {
+      "id": "dynanca-287-q003",
+      "category": "Functions & Graphs",
+      "concept": "Domain of an Inverse Function from Ordered Pairs",
+      "learningObjective": "Determine the domain of \\(f^{-1}\\) as the range of \\(f\\) for a function given as ordered pairs.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The function \\(f\\) is given by \\(f=\\{(-2,3),(0,1),(1,-4),(5,6)\\}\\). What is the domain of \\(f^{-1}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{-2,0,1,5\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{-4,1,3,6\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Swapping the coordinates gives \\(f^{-1}=\\{(3,-2),(1,0),(-4,1),(6,5)\\}\\). The domain of \\(f^{-1}\\) is the set of first coordinates of \\(f^{-1}\\), which are the second coordinates of \\(f\\): \\(3\\), \\(1\\), \\(-4\\), and \\(6\\). Therefore, the domain of \\(f^{-1}\\) is \\(\\{-4,1,3,6\\}\\), the range of \\(f\\). Option A is the domain of \\(f\\) itself; it comes from forgetting that forming the inverse swaps the domain and the range.",
+      "hint": "After the coordinates are swapped, which coordinates of \\(f\\) become the inputs of \\(f^{-1}\\)?"
+    },
+    {
+      "id": "dynanca-287-q004",
+      "category": "Functions & Graphs",
+      "concept": "Deciding Whether the Inverse of a Relation Is a Function",
+      "learningObjective": "Determine whether the inverse of a finite relation is a function by checking for repeated outputs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The relation \\(R\\) is given by \\(R=\\{(1,3),(2,5),(4,3),(6,7)\\}\\). Is the inverse relation \\(R^{-1}\\) a function?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because \\(R\\) is a function, so its inverse is also a function."
+        },
+        {
+          "label": "B",
+          "text": "No, because \\(R^{-1}\\) pairs the input \\(3\\) with both \\(1\\) and \\(4\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Swapping coordinates gives \\(R^{-1}=\\{(3,1),(5,2),(3,4),(7,6)\\}\\). In \\(R^{-1}\\), the input \\(3\\) appears in the two pairs \\((3,1)\\) and \\((3,4)\\), so \\(3\\) is paired with two different outputs. A function cannot assign two outputs to one input, so \\(R^{-1}\\) is not a function. This happens because \\(R\\) is not one-to-one: \\(R(1)=R(4)=3\\). Option A comes from assuming that the inverse of every function is a function; only a one-to-one function has an inverse that is a function.",
+      "hint": "Write \\(R^{-1}\\) and check whether any first coordinate appears more than once."
+    },
+    {
+      "id": "dynanca-287-q005",
+      "category": "Functions & Graphs",
+      "concept": "Reading Inverse Values from a Table of Values",
+      "learningObjective": "Calculate values of \\(f^{-1}\\) by reading a table of values of \\(f\\) in the reverse direction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The function \\(f\\) is given by the table:\n\\[\n\\begin{array}{c|c|c|c|c|c}\nx & 1 & 2 & 3 & 4 & 5\\\\\n\\hline\nf(x) & 4 & 3 & 5 & 1 & 2\n\\end{array}\n\\]\nWhat is \\(f^{-1}(1)+f^{-1}(5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "To find \\(f^{-1}(a)\\), locate \\(a\\) in the \\(f(x)\\) row and read the \\(x\\) value above it. The value \\(1\\) is below \\(x=4\\), so \\(f(4)=1\\) and \\(f^{-1}(1)=4\\). The value \\(5\\) is below \\(x=3\\), so \\(f(3)=5\\) and \\(f^{-1}(5)=3\\). Therefore, \\(f^{-1}(1)+f^{-1}(5)=4+3=7\\). Option A comes from reading the table in the wrong direction, that is, computing \\(f(1)+f(5)=4+2=6\\) instead of using the inverse.",
+      "hint": "For the inverse, start from the \\(f(x)\\) row and read upward to the \\(x\\) row."
+    },
+    {
+      "id": "dynanca-287-q006",
+      "category": "Functions & Graphs",
+      "concept": "Applying the Inverse Function Twice",
+      "learningObjective": "Calculate a nested inverse value \\(f^{-1}(f^{-1}(a))\\) from a function given as ordered pairs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The function \\(f\\) is given by \\(f=\\{(1,4),(2,5),(4,2),(5,7)\\}\\). What is \\(f^{-1}(f^{-1}(2))\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Work from the inside out. The pair \\((4,2)\\) shows \\(f(4)=2\\), so \\(f^{-1}(2)=4\\). Next, the pair \\((1,4)\\) shows \\(f(1)=4\\), so \\(f^{-1}(4)=1\\). Therefore,\n\\[\nf^{-1}(f^{-1}(2))=f^{-1}(4)=1\n\\]\nOption B comes from applying \\(f\\) instead of \\(f^{-1}\\) at both steps: \\(f(2)=5\\) and \\(f(5)=7\\), which gives \\(f(f(2))=7\\), not the required inverse value.",
+      "hint": "Evaluate the inner \\(f^{-1}(2)\\) first, and each time look for the pair whose second coordinate is the given number."
+    },
+    {
+      "id": "dynanca-287-q007",
+      "category": "Functions & Graphs",
+      "concept": "Recovering Function Values from the Inverse Given as Ordered Pairs",
+      "learningObjective": "Infer a value of \\(f\\) when only the ordered pairs of \\(f^{-1}\\) are given.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The inverse of a function \\(f\\) is given by \\(f^{-1}=\\{(2,6),(5,2),(8,4)\\}\\). What is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The function \\(f\\) is the inverse of \\(f^{-1}\\), so \\(f\\) is obtained by swapping the coordinates of every pair of \\(f^{-1}\\): \\(f=\\{(6,2),(2,5),(4,8)\\}\\). The pair \\((2,5)\\) shows that \\(f(2)=5\\). Equivalently, \\(f^{-1}(5)=2\\) means \\(f(2)=5\\). Option B comes from treating the given set as \\(f\\) itself and reading the pair \\((2,6)\\); that pair actually says \\(f^{-1}(2)=6\\), that is, \\(f(6)=2\\).",
+      "hint": "The given set describes \\(f^{-1}\\), so to find \\(f(2)\\) look for the pair of \\(f^{-1}\\) in which \\(2\\) is the output."
+    },
+    {
+      "id": "dynanca-287-q008",
+      "category": "Functions & Graphs",
+      "concept": "Composition of a Function with Its Inverse",
+      "learningObjective": "Apply \\(f^{-1}(f(a))=a\\) and \\(f(f^{-1}(b))=b\\) to evaluate compositions for a function given as ordered pairs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The one-to-one function \\(f\\) is given by \\(f=\\{(-3,2),(0,5),(4,-1),(6,0)\\}\\). What is \\(f^{-1}(f(0))+f(f^{-1}(-1))\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First term: \\(f(0)=5\\), and \\(f^{-1}(5)=0\\) because of the pair \\((0,5)\\), so \\(f^{-1}(f(0))=0\\). Second term: \\(f^{-1}(-1)=4\\) because of the pair \\((4,-1)\\), and \\(f(4)=-1\\), so \\(f(f^{-1}(-1))=-1\\). This agrees with the general facts \\(f^{-1}(f(a))=a\\) and \\(f(f^{-1}(b))=b\\): a function and its inverse undo each other. Therefore, the sum is \\(0+(-1)=-1\\). Option A comes from stopping after the inner step of each composition and adding \\(f(0)+f^{-1}(-1)=5+4=9\\).",
+      "hint": "Evaluate each composition from the inside out, and remember that \\(f\\) and \\(f^{-1}\\) undo each other."
+    },
+    {
+      "id": "dynanca-287-q009",
+      "category": "Functions & Graphs",
+      "concept": "Solving an Equation Involving a Repeated Inverse from a Table",
+      "learningObjective": "Solve \\(f^{-1}(f^{-1}(x))=a\\) by undoing the inverse twice using a table of values of \\(f\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The one-to-one function \\(f\\) is given by the table:\n\\[\n\\begin{array}{c|c|c|c|c|c}\nx & 1 & 2 & 3 & 4 & 5\\\\\n\\hline\nf(x) & 4 & 1 & 5 & 3 & 2\n\\end{array}\n\\]\nFor which value of \\(x\\) is \\(f^{-1}(f^{-1}(x))=1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(u=f^{-1}(x)\\). The equation \\(f^{-1}(u)=1\\) means \\(u=f(1)=4\\). Then \\(f^{-1}(x)=4\\) means \\(x=f(4)=3\\). So \\(x=f(f(1))=f(4)=3\\). Check: \\(f^{-1}(3)=4\\) because \\(f(4)=3\\), and \\(f^{-1}(4)=1\\) because \\(f(1)=4\\), so \\(f^{-1}(f^{-1}(3))=1\\). Option A comes from applying \\(f^{-1}\\) to \\(1\\) twice instead of undoing it: \\(f^{-1}(1)=2\\) and \\(f^{-1}(2)=5\\), but \\(f^{-1}(f^{-1}(5))=f^{-1}(3)=4\\), not \\(1\\).",
+      "hint": "To undo \\(f^{-1}\\), apply \\(f\\); start from the outer inverse and work inward."
+    },
+    {
+      "id": "dynanca-287-q010",
+      "category": "Functions & Graphs",
+      "concept": "Parameter Conditions for an Inverse Function of a Finite Function",
+      "learningObjective": "Analyze a parameter in a finite function so that its inverse is a function and satisfies a given value.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The function \\(f\\) is given by \\(f=\\{(1,5),(2,k^2),(3,9),(4,k+6)\\}\\), where \\(k\\) is a real number. The inverse \\(f^{-1}\\) is a function, and \\(f^{-1}(4)=2\\). What is the value of \\(k\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k=2\\) or \\(k=-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The condition \\(f^{-1}(4)=2\\) means \\(f(2)=4\\), so \\(k^2=4\\), which gives \\(k=2\\) or \\(k=-2\\). Each candidate must also make \\(f^{-1}\\) a function, so the outputs of \\(f\\) must all be different. If \\(k=2\\), the outputs are \\(5\\), \\(4\\), \\(9\\), and \\(8\\), which are all different, so \\(f^{-1}=\\{(5,1),(4,2),(9,3),(8,4)\\}\\) is a function with \\(f^{-1}(4)=2\\). If \\(k=-2\\), the outputs are \\(5\\), \\(4\\), \\(9\\), and \\(4\\): the output \\(4\\) appears twice, so \\(f^{-1}\\) would pair \\(4\\) with both \\(2\\) and \\(4\\) and would not be a function. Therefore, \\(k=2\\). Option A comes from solving \\(k^2=4\\) but overlooking the condition that \\(f\\) must be one-to-one.",
+      "hint": "Translate \\(f^{-1}(4)=2\\) into a statement about \\(f\\), then test every candidate value of \\(k\\) against the requirement that \\(f^{-1}\\) is a function."
+    }
+  ]
+}

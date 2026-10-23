@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-505",
+  "category": "Comprehensive Mathematics",
+  "title": "505. Sets, Logic, Reasoning & Proof: Identifying Invalid Affirming-the-Consequent Arguments",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-505-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Form of affirming the consequent",
+      "learningObjective": "Identify the argument form called affirming the consequent.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which argument form is called affirming the consequent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "From \\(p\\implies q\\) and \\(p\\), conclude \\(q\\)."
+        },
+        {
+          "label": "B",
+          "text": "From \\(p\\implies q\\) and \\(q\\), conclude \\(p\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The consequent of \\(p\\implies q\\) is \\(q\\). Affirming the consequent takes \\(q\\) as a premise and infers \\(p\\). The second form affirms the antecedent \\(p\\) and infers \\(q\\); that is modus ponens, which is valid.",
+      "hint": "The consequent is the \"then\" part of the conditional."
+    },
+    {
+      "id": "dynanca-505-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Validity of affirming the consequent",
+      "learningObjective": "State whether affirming the consequent is a valid form.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Is the argument form \"from \\(p\\implies q\\) and \\(q\\), conclude \\(p\\)\" valid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; the conclusion is true whenever both premises are true."
+        },
+        {
+          "label": "B",
+          "text": "No; the premises can both be true while the conclusion is false."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Take \\(p\\) false and \\(q\\) true. Then \\(p\\implies q\\) is true and \\(q\\) is true, but the conclusion \\(p\\) is false. A valid form never leads from true premises to a false conclusion, so this form is invalid.",
+      "hint": "Try the assignment with \\(p\\) false and \\(q\\) true."
+    },
+    {
+      "id": "dynanca-505-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The row that shows invalidity",
+      "learningObjective": "Find the truth assignment that refutes affirming the consequent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which assignment of truth values makes both premises of \"from \\(p\\implies q\\) and \\(q\\), conclude \\(p\\)\" true and its conclusion false?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\) false and \\(q\\) true"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\) true and \\(q\\) false"
+        }
+      ],
+      "answer": "A",
+      "explanation": "With \\(p\\) false and \\(q\\) true, the conditional \\(p\\implies q\\) is true (its hypothesis is false), the premise \\(q\\) is true, and the conclusion \\(p\\) is false. With \\(p\\) true and \\(q\\) false, the premise \\(q\\) is false, so that row does not have true premises.",
+      "hint": "Both premises must be true in the row, and the conclusion must be false."
+    },
+    {
+      "id": "dynanca-505-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A numerical instance",
+      "learningObjective": "Evaluate a concrete argument that affirms the consequent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Consider the argument: \"If an integer is divisible by \\(4\\), then it is even. \\(6\\) is even. Therefore \\(6\\) is divisible by \\(4\\).\" Which evaluation is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The argument is invalid: both premises are true, but the conclusion is false."
+        },
+        {
+          "label": "B",
+          "text": "The argument is valid, because both premises are true."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first premise is true and \\(6\\) is even, yet \\(6\\) is not divisible by \\(4\\). True premises with a false conclusion show that the form of reasoning is invalid. The argument affirms the consequent \"it is even\" and wrongly infers the antecedent.",
+      "hint": "Check the truth of each premise and of the conclusion separately."
+    },
+    {
+      "id": "dynanca-505-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Spotting the fallacy",
+      "learningObjective": "Decide which of two arguments affirms the consequent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which argument commits the fallacy of affirming the consequent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"If a figure is a square, then it has four sides. This figure has four sides. Therefore it is a square.\""
+        },
+        {
+          "label": "B",
+          "text": "\"If a figure is a square, then it has four sides. This figure is a square. Therefore it has four sides.\""
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first argument takes the consequent \"it has four sides\" as a premise and concludes the antecedent \"it is a square\"; a non-square rectangle shows that this can fail. The second argument affirms the antecedent and concludes the consequent, which is valid modus ponens.",
+      "hint": "See whether the second premise repeats the \"if\" part or the \"then\" part."
+    },
+    {
+      "id": "dynanca-505-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "What the premises allow",
+      "learningObjective": "Determine what follows about the antecedent from a conditional and its consequent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Suppose \\(p\\implies q\\) is true and \\(q\\) is true. What can be concluded about \\(p\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\) must be true."
+        },
+        {
+          "label": "B",
+          "text": "Nothing; \\(p\\) may be true or false."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The rows of the truth table with \\(p\\implies q\\) true and \\(q\\) true are \\((T,T)\\) and \\((F,T)\\). In one of them \\(p\\) is true and in the other \\(p\\) is false. So the premises do not determine the truth value of \\(p\\).",
+      "hint": "List all rows in which both premises are true."
+    },
+    {
+      "id": "dynanca-505-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The underlying confusion",
+      "learningObjective": "Identify the statement that affirming the consequent wrongly treats as given.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The fallacy of affirming the consequent treats the premise \\(p\\implies q\\) as if it were which statement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Its converse, \\(q\\implies p\\)"
+        },
+        {
+          "label": "B",
+          "text": "Its contrapositive, \\(\\neg q\\implies\\neg p\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Concluding \\(p\\) from \\(q\\) would be modus ponens on \\(q\\implies p\\), the converse of the given conditional. The converse is not equivalent to \\(p\\implies q\\), which is why the inference fails. The contrapositive is equivalent to the original, and using it gives the valid form modus tollens.",
+      "hint": "Ask which conditional would make the step from \\(q\\) to \\(p\\) a modus ponens."
+    },
+    {
+      "id": "dynanca-505-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A premise that would repair the argument",
+      "learningObjective": "Identify a first premise under which inferring the antecedent becomes valid.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "An argument has the second premise \\(q\\) and the conclusion \\(p\\). With which first premise is this argument valid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\iff q\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\lor q\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The biconditional \\(p\\iff q\\) includes \\(q\\implies p\\), so from it and \\(q\\) the conclusion \\(p\\) follows. From \\(p\\lor q\\) and \\(q\\), nothing follows about \\(p\\): with \\(p\\) false and \\(q\\) true both premises are true and \\(p\\) is false.",
+      "hint": "The premise must contain the direction from \\(q\\) to \\(p\\)."
+    },
+    {
+      "id": "dynanca-505-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A true conclusion from an invalid form",
+      "learningObjective": "Recognise that an argument can be invalid even when its conclusion is true.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Consider the argument: \"If an integer is divisible by \\(4\\), then it is even. \\(8\\) is even. Therefore \\(8\\) is divisible by \\(4\\).\" Which evaluation is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The form is invalid, even though the conclusion happens to be true."
+        },
+        {
+          "label": "B",
+          "text": "The argument is valid, because its conclusion is true."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The argument affirms the consequent, an invalid form: the same reasoning with \\(6\\) in place of \\(8\\) leads from true premises to a false conclusion. The conclusion \"\\(8\\) is divisible by \\(4\\)\" is true, but its truth is not established by this argument. Validity depends on the form, not on whether the conclusion is true.",
+      "hint": "Replace \\(8\\) by another even number and see whether the same reasoning still works."
+    },
+    {
+      "id": "dynanca-505-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "The fallacy in an algebraic argument",
+      "learningObjective": "Detect affirming the consequent in reasoning about an equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For a real number \\(x\\), consider the argument: \"If \\(x=2\\), then \\(x^2=4\\). It is known that \\(x^2=4\\). Therefore \\(x=2\\).\" Which evaluation is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The argument is valid; squaring and taking a square root are inverse operations."
+        },
+        {
+          "label": "B",
+          "text": "The argument is invalid; \\(x=-2\\) satisfies both premises but not the conclusion."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The argument affirms the consequent \\(x^2=4\\) and infers the antecedent \\(x=2\\). For \\(x=-2\\) the conditional is true (its hypothesis is false) and \\(x^2=4\\) holds, yet \\(x=2\\) is false. From \\(x^2=4\\) the correct conclusion is \\(x=2\\) or \\(x=-2\\).",
+      "hint": "Look for another value of \\(x\\) with the same square."
+    }
+  ]
+}

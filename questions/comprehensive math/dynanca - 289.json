@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-289",
+  "category": "Comprehensive Mathematics",
+  "title": "289. Functions, Graphs & Transformations: Restricting a Domain to Obtain an Inverse",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-289-q001",
+      "category": "Functions & Graphs",
+      "concept": "Inverse of a Quadratic Function Restricted to \\(x\\ge 0\\)",
+      "learningObjective": "Determine the inverse of \\(f(x)=x^2\\) on the restricted domain \\(x\\ge 0\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(f(x)=x^2\\) for \\(x\\ge 0\\). What is \\(f^{-1}(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\sqrt{x}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{x}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "On the restricted domain \\(x\\ge 0\\), the function \\(f(x)=x^2\\) is one-to-one. Let \\(y=x^2\\). Swap \\(x\\) and \\(y\\): \\(x=y^2\\). Since the original domain is \\(x\\ge 0\\), the inverse must give nonnegative values, so \\(y=\\sqrt{x}\\). Therefore, \\(f^{-1}(x)=\\sqrt{x}\\).",
+      "hint": "Use the restricted domain to decide whether the inverse uses the positive or negative square root."
+    },
+    {
+      "id": "dynanca-289-q002",
+      "category": "Functions & Graphs",
+      "concept": "Inverse of a Quadratic Function Restricted to \\(x\\le 0\\)",
+      "learningObjective": "Determine the inverse of \\(f(x)=x^2\\) on the restricted domain \\(x\\le 0\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(f(x)=x^2\\) for \\(x\\le 0\\). What is \\(f^{-1}(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{x}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\sqrt{x}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "On the restricted domain \\(x\\le 0\\), the function \\(f(x)=x^2\\) is one-to-one. Let \\(y=x^2\\). Swap \\(x\\) and \\(y\\): \\(x=y^2\\). Since the original domain is \\(x\\le 0\\), the inverse must give nonpositive values, so \\(y=-\\sqrt{x}\\). Therefore, \\(f^{-1}(x)=-\\sqrt{x}\\).",
+      "hint": "The sign of the inverse is determined by the sign of the restricted domain."
+    },
+    {
+      "id": "dynanca-289-q003",
+      "category": "Functions & Graphs",
+      "concept": "Inverse of a Shifted Quadratic Function Restricted to \\(x\\ge 2\\)",
+      "learningObjective": "Determine the inverse of \\(f(x)=(x-2)^2\\) on the restricted domain \\(x\\ge 2\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=(x-2)^2\\) for \\(x\\ge 2\\). What is \\(f^{-1}(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2+\\sqrt{x}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2-\\sqrt{x}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(y=(x-2)^2\\). Swap \\(x\\) and \\(y\\): \\(x=(y-2)^2\\). Since the original domain is \\(x\\ge 2\\), the inverse must satisfy \\(y\\ge 2\\), so \\(y-2=\\sqrt{x}\\). Thus \\(y=2+\\sqrt{x}\\). Therefore, \\(f^{-1}(x)=2+\\sqrt{x}\\).",
+      "hint": "After swapping, use the restricted domain to choose the correct sign before solving for \\(y\\)."
+    },
+    {
+      "id": "dynanca-289-q004",
+      "category": "Functions & Graphs",
+      "concept": "Choosing a Domain Restriction from the Inverse Branch",
+      "learningObjective": "Identify the domain restriction that produces a given inverse branch.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The function \\(f(x)=x^2+1\\) has inverse \\(f^{-1}(x)=\\sqrt{x-1}\\) after restricting its domain. Which domain restriction should be used?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\le 0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\ge 0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(f(x)=x^2+1\\), the inverse \\(f^{-1}(x)=\\sqrt{x-1}\\) gives nonnegative outputs because \\(\\sqrt{x-1}\\ge 0\\). Therefore, the original function must have been restricted to nonnegative inputs, that is, \\(x\\ge 0\\). Restricting to \\(x\\le 0\\) would produce the inverse \\(-\\sqrt{x-1}\\).",
+      "hint": "The range of the inverse branch tells you the restricted domain of the original function."
+    },
+    {
+      "id": "dynanca-289-q005",
+      "category": "Functions & Graphs",
+      "concept": "Inverse of the Absolute Value Function Restricted to \\(x\\ge 0\\)",
+      "learningObjective": "Determine the inverse of \\(f(x)=|x|\\) on the restricted domain \\(x\\ge 0\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(f(x)=|x|\\) for \\(x\\ge 0\\). What is \\(f^{-1}(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "On the restricted domain \\(x\\ge 0\\), we have \\(f(x)=|x|=x\\). This is the identity function, so its inverse is also the identity function: \\(f^{-1}(x)=x\\) for \\(x\\ge 0\\). The option \\(-x\\) would correspond to the restriction \\(x\\le 0\\).",
+      "hint": "On \\(x\\ge 0\\), the absolute value function simplifies to a basic linear function."
+    },
+    {
+      "id": "dynanca-289-q006",
+      "category": "Functions & Graphs",
+      "concept": "Inverse of a Quadratic Function in Completed-Square Form",
+      "learningObjective": "Determine the inverse of \\(f(x)=x^2-4x+3\\) on the restricted domain \\(x\\ge 2\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=x^2-4x+3\\) for \\(x\\ge 2\\). What is \\(f^{-1}(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2-\\sqrt{x+1}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2+\\sqrt{x+1}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Complete the square: \\(f(x)=(x-2)^2-1\\). Let \\(y=(x-2)^2-1\\). Swap \\(x\\) and \\(y\\): \\(x=(y-2)^2-1\\). Then \\((y-2)^2=x+1\\). Since the original domain is \\(x\\ge 2\\), the inverse must satisfy \\(y\\ge 2\\), so \\(y-2=\\sqrt{x+1}\\). Thus \\(y=2+\\sqrt{x+1}\\). Therefore, \\(f^{-1}(x)=2+\\sqrt{x+1}\\).",
+      "hint": "Complete the square first, then use the restriction \\(x\\ge 2\\) to decide which sign of the square root is correct."
+    },
+    {
+      "id": "dynanca-289-q007",
+      "category": "Functions & Graphs",
+      "concept": "Inverse of a Quadratic Function with Linear Term",
+      "learningObjective": "Determine the inverse of \\(f(x)=x^2+2x\\) on the restricted domain \\(x\\ge -1\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=x^2+2x\\) for \\(x\\ge -1\\). What is \\(f^{-1}(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{x+1}-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\sqrt{x+1}-1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Complete the square: \\(f(x)=(x+1)^2-1\\). Let \\(y=(x+1)^2-1\\). Swap \\(x\\) and \\(y\\): \\(x=(y+1)^2-1\\). Then \\((y+1)^2=x+1\\). Since the original domain is \\(x\\ge -1\\), the inverse must satisfy \\(y\\ge -1\\), so \\(y+1=\\sqrt{x+1}\\). Thus \\(y=\\sqrt{x+1}-1\\). Therefore, \\(f^{-1}(x)=\\sqrt{x+1}-1\\).",
+      "hint": "After completing the square and swapping, use the restricted domain to select the sign of the square root."
+    },
+    {
+      "id": "dynanca-289-q008",
+      "category": "Functions & Graphs",
+      "concept": "Inverse of a Shifted Quadratic Function Restricted to \\(x\\le -3\\)",
+      "learningObjective": "Determine the inverse of \\(f(x)=(x+3)^2\\) on the restricted domain \\(x\\le -3\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(f(x)=(x+3)^2\\) for \\(x\\le -3\\). What is \\(f^{-1}(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\sqrt{x}-3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{x}-3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(y=(x+3)^2\\). Swap \\(x\\) and \\(y\\): \\(x=(y+3)^2\\). Since the original domain is \\(x\\le -3\\), the inverse must satisfy \\(y\\le -3\\), so \\(y+3\\le 0\\). Therefore, \\(y+3=-\\sqrt{x}\\), which gives \\(y=-\\sqrt{x}-3\\). Thus \\(f^{-1}(x)=-\\sqrt{x}-3\\).",
+      "hint": "The restricted domain determines whether \\(y+3\\) is nonpositive or nonnegative."
+    },
+    {
+      "id": "dynanca-289-q009",
+      "category": "Functions & Graphs",
+      "concept": "Inverse of a Quadratic Function Restricted to \\(x\\le 3\\)",
+      "learningObjective": "Determine the inverse of \\(f(x)=x^2-6x+5\\) on the restricted domain \\(x\\le 3\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(f(x)=x^2-6x+5\\) for \\(x\\le 3\\). What is \\(f^{-1}(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3-\\sqrt{x+4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3+\\sqrt{x+4}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Complete the square: \\(f(x)=(x-3)^2-4\\). Let \\(y=(x-3)^2-4\\). Swap \\(x\\) and \\(y\\): \\(x=(y-3)^2-4\\). Then \\((y-3)^2=x+4\\). Since the original domain is \\(x\\le 3\\), the inverse must satisfy \\(y\\le 3\\), so \\(y-3=-\\sqrt{x+4}\\). Thus \\(y=3-\\sqrt{x+4}\\). Therefore, \\(f^{-1}(x)=3-\\sqrt{x+4}\\).",
+      "hint": "Complete the square, then use the restriction \\(x\\le 3\\) to decide which sign of the square root keeps the inverse's outputs in the original domain."
+    },
+    {
+      "id": "dynanca-289-q010",
+      "category": "Functions & Graphs",
+      "concept": "Inverse of a Quadratic Function Restricted to \\(x\\le -2\\)",
+      "learningObjective": "Determine the inverse of \\(f(x)=x^2+4x+1\\) on the restricted domain \\(x\\le -2\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(f(x)=x^2+4x+1\\) for \\(x\\le -2\\). What is \\(f^{-1}(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\sqrt{x+3}-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{x+3}-2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Complete the square: \\(f(x)=(x+2)^2-3\\). Let \\(y=(x+2)^2-3\\). Swap \\(x\\) and \\(y\\): \\(x=(y+2)^2-3\\). Then \\((y+2)^2=x+3\\). Since the original domain is \\(x\\le -2\\), the inverse must satisfy \\(y\\le -2\\), so \\(y+2=-\\sqrt{x+3}\\). Thus \\(y=-\\sqrt{x+3}-2\\). Therefore, \\(f^{-1}(x)=-\\sqrt{x+3}-2\\).",
+      "hint": "Complete the square, then use the restriction \\(x\\le -2\\) to choose the correct sign of the square root."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-394",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 394",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-394-q001",
+      "category": "Number Theory",
+      "concept": "Remainder of a Power Modulo a Prime",
+      "learningObjective": "Compute the remainder of a power by reducing the exponent modulo the cycle length.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the remainder when \\(2^{10}\\) is divided by \\(7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(2^3=8\\equiv1\\pmod{7}\\), powers of \\(2\\) modulo \\(7\\) have period \\(3\\). Because \\(10=3\\cdot3+1\\),\n\\(2^{10}\\equiv2^1=2\\pmod{7}\\).\nTherefore the remainder is \\(2\\).",
+      "hint": "Find the repeating cycle of powers of \\(2\\) modulo \\(7\\)."
+    },
+    {
+      "id": "math-gaokao-394-q002",
+      "category": "Number Theory",
+      "concept": "Remainder by Alternating Sum Modulo \\(11\\)",
+      "learningObjective": "Determine a remainder modulo \\(11\\) using the alternating-sum rule.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the remainder when \\(9876\\) is divided by \\(11\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For modulo \\(11\\), use the alternating sum of digits:\n\\((6+8)-(7+9)=14-16=-2\\).\nSince \\(-2\\equiv9\\pmod{11}\\), the remainder is \\(9\\). Equivalently, \\(9876=11\\cdot897+9\\).",
+      "hint": "Use the alternating-sum test for remainders modulo \\(11\\)."
+    },
+    {
+      "id": "math-gaokao-394-q003",
+      "category": "Number Theory",
+      "concept": "Linear Expression Modulo \\(8\\)",
+      "learningObjective": "Evaluate a linear expression modulo \\(8\\) using a given residue.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(x\\equiv5\\pmod{8}\\), what is the remainder when \\(3x+2\\) is divided by \\(8\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x\\equiv5\\pmod{8}\\):\n\\(3x+2\\equiv3\\cdot5+2=15+2=17\\equiv1\\pmod{8}\\).\nThus the remainder is \\(1\\).",
+      "hint": "Replace \\(x\\) by its residue modulo \\(8\\), then simplify."
+    },
+    {
+      "id": "math-gaokao-394-q004",
+      "category": "Number Theory",
+      "concept": "Product of Residues Modulo \\(7\\)",
+      "learningObjective": "Compute a product remainder by reducing each factor modulo \\(7\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the remainder when \\(47\\cdot38\\) is divided by \\(7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Reduce each factor modulo \\(7\\): \\(47\\equiv5\\pmod{7}\\) and \\(38\\equiv3\\pmod{7}\\). Then\n\\(47\\cdot38\\equiv5\\cdot3=15\\equiv1\\pmod{7}\\).\nTherefore the remainder is \\(1\\).",
+      "hint": "Reduce each factor modulo \\(7\\) before multiplying."
+    },
+    {
+      "id": "math-gaokao-394-q005",
+      "category": "Number Theory",
+      "concept": "Units Digit as Remainder Modulo \\(10\\)",
+      "learningObjective": "Find the units digit of a large power using a period modulo \\(10\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the units digit of \\(3^{2024}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The units digit is \\(3^{2024}\\pmod{10}\\). Powers of \\(3\\) modulo \\(10\\) repeat as \\(3,9,7,1\\) with period \\(4\\). Since \\(2024=4\\cdot506\\),\n\\(3^{2024}\\equiv3^4\\equiv1\\pmod{10}\\).\nThus the units digit is \\(1\\).",
+      "hint": "List the repeating pattern of units digits of powers of \\(3\\)."
+    },
+    {
+      "id": "math-gaokao-394-q006",
+      "category": "Number Theory",
+      "concept": "Linear Congruence Modulo \\(7\\)",
+      "learningObjective": "Solve a linear congruence by multiplying by a modular inverse.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which of the following integers \\(x\\) satisfies \\(5x\\equiv3\\pmod{7}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The inverse of \\(5\\) modulo \\(7\\) is \\(3\\), because \\(5\\cdot3=15\\equiv1\\pmod{7}\\). Multiplying both sides by \\(3\\) gives\n\\(x\\equiv3\\cdot3=9\\equiv2\\pmod{7}\\).\nChecking \\(x=2\\): \\(5\\cdot2=10\\equiv3\\pmod{7}\\). Thus \\(x=2\\).",
+      "hint": "Find a number that multiplies \\(5\\) to give remainder \\(1\\) modulo \\(7\\)."
+    },
+    {
+      "id": "math-gaokao-394-q007",
+      "category": "Number Theory",
+      "concept": "Remainder Under a Linear Transformation",
+      "learningObjective": "Determine the remainder of a linear expression from the remainder of the variable.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If an integer \\(n\\) leaves remainder \\(3\\) when divided by \\(5\\), what is the remainder when \\(2n+1\\) is divided by \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(n\\equiv3\\pmod{5}\\),\n\\(2n+1\\equiv2\\cdot3+1=6+1=7\\equiv2\\pmod{5}\\).\nTherefore the remainder is \\(2\\).",
+      "hint": "Write the condition as \\(n\\equiv3\\pmod{5}\\), then substitute into the expression."
+    },
+    {
+      "id": "math-gaokao-394-q008",
+      "category": "Number Theory",
+      "concept": "System of Two Congruences",
+      "learningObjective": "Solve a small system of remainders modulo \\(3\\) and \\(5\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Find the least nonnegative integer \\(x\\) satisfying both \\(x\\equiv1\\pmod{3}\\) and \\(x\\equiv2\\pmod{5}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The integers modulo \\(15\\) that are \\(2\\pmod{5}\\) are \\(2,7,12\\). Among these, \\(7\\equiv1\\pmod{3}\\), while \\(2\\equiv2\\pmod{3}\\) and \\(12\\equiv0\\pmod{3}\\). Hence \\(x=7\\).",
+      "hint": "List the numbers congruent to \\(2\\) modulo \\(5\\), then test the other congruence."
+    },
+    {
+      "id": "math-gaokao-394-q009",
+      "category": "Number Theory",
+      "concept": "Remainder of a Large Power Modulo \\(5\\)",
+      "learningObjective": "Compute a large power modulo \\(5\\) by reducing the base and using a period.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the remainder when \\(7^{2024}\\) is divided by \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reduce the base: \\(7\\equiv2\\pmod{5}\\). Powers of \\(2\\) modulo \\(5\\) repeat as \\(2,4,3,1\\) with period \\(4\\). Since \\(2024=4\\cdot506\\),\n\\(7^{2024}\\equiv2^{2024}\\equiv2^4\\equiv1\\pmod{5}\\).\nThus the remainder is \\(1\\).",
+      "hint": "Reduce \\(7\\) modulo \\(5\\) first, then examine the repeating powers."
+    },
+    {
+      "id": "math-gaokao-394-q010",
+      "category": "Number Theory",
+      "concept": "Counting Solutions of a Quadratic Congruence",
+      "learningObjective": "Count integers in an interval satisfying a quadratic congruence modulo \\(8\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many integers \\(n\\) with \\(1\\le n\\le100\\) satisfy \\(n^2\\equiv1\\pmod{8}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(50\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(25\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For an integer \\(n\\), if \\(n\\) is odd, then \\(n^2\\equiv1\\pmod{8}\\); if \\(n\\) is even, then \\(n^2\\equiv0\\) or \\(4\\pmod{8}\\). Thus the condition holds exactly for odd \\(n\\). From \\(1\\) to \\(100\\), there are \\(50\\) odd integers. Therefore the number of solutions is \\(50\\).",
+      "hint": "Test the possible remainders of \\(n\\) modulo \\(8\\), especially odd versus even."
+    }
+  ]
+}

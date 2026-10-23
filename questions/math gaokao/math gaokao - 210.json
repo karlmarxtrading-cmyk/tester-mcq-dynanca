@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-210",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 210",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-210-q001",
+      "category": "Geometry",
+      "concept": "Locus Equidistant from Two Points",
+      "learningObjective": "Determine the equation of the perpendicular bisector of a segment as a locus.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "The locus of points \\(P(x,y)\\) equidistant from \\(A(-2,1)\\) and \\(B(4,3)\\) is a line. What is its equation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3x+y-5=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x-3y+7=0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(PA=PB\\), the point \\(P\\) lies on the perpendicular bisector of segment \\(AB\\). The midpoint of \\(AB\\) is\n\\[\nM\\left(\\frac{-2+4}{2},\\frac{1+3}{2}\\right)=(1,2).\n\\]\nThe slope of \\(AB\\) is\n\\[\n\\frac{3-1}{4-(-2)}=\\frac{2}{6}=\\frac{1}{3}.\n\\]\nThus the perpendicular bisector has slope \\(-3\\). Its equation is\n\\[\ny-2=-3(x-1),\n\\]\nwhich simplifies to\n\\[\ny-2=-3x+3,\n\\]\nso\n\\[\n3x+y-5=0.\n\\]",
+      "hint": "Use the midpoint of \\(AB\\) and the fact that the perpendicular bisector has slope equal to the negative reciprocal of the slope of \\(AB\\)."
+    },
+    {
+      "id": "math-gaokao-210-q002",
+      "category": "Geometry",
+      "concept": "Locus of Points at a Fixed Distance from a Point",
+      "learningObjective": "Identify the equation of a circle as a locus of points at a given distance from the origin.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In the coordinate plane, what is the equation of the locus of points whose distance from the origin is \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x^2+y^2=5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^2+y^2=25\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A point \\(P(x,y)\\) has distance \\(5\\) from the origin \\((0,0)\\) exactly when\n\\[\n\\sqrt{x^2+y^2}=5.\n\\]\nSquaring both sides gives\n\\[\nx^2+y^2=25.\n\\]\nTherefore, the locus is the circle centered at the origin with radius \\(5\\).",
+      "hint": "Recall that the distance from \\((x,y)\\) to the origin is \\(\\sqrt{x^2+y^2}\\)."
+    },
+    {
+      "id": "math-gaokao-210-q003",
+      "category": "Geometry",
+      "concept": "Locus from a Difference of Squared Distances",
+      "learningObjective": "Find the locus of a point satisfying a condition involving squared distances to two fixed points.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A(1,0)\\) and \\(B(-1,0)\\). A point \\(P(x,y)\\) satisfies\n\\[\nPA^2-PB^2=12.\n\\]\nWhat is the locus of \\(P\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "We compute:\n\\[\nPA^2=(x-1)^2+y^2,\n\\]\nand\n\\[\nPB^2=(x+1)^2+y^2.\n\\]\nThus\n\\[\nPA^2-PB^2=(x-1)^2-(x+1)^2.\n\\]\nExpanding,\n\\[\n(x^2-2x+1)-(x^2+2x+1)=-4x.\n\\]\nSo\n\\[\n-4x=12,\n\\]\nwhich gives\n\\[\nx=-3.\n\\]\nTherefore, the locus is the vertical line \\(x=-3\\).",
+      "hint": "Write \\(PA^2\\) and \\(PB^2\\) using coordinates, then subtract and simplify."
+    },
+    {
+      "id": "math-gaokao-210-q004",
+      "category": "Geometry",
+      "concept": "Apollonius Circle",
+      "learningObjective": "Determine the equation of the locus of points whose distances to two fixed points have a constant ratio.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(A(0,0)\\) and \\(B(3,0)\\). A point \\(P(x,y)\\) satisfies\n\\[\nPA=2PB.\n\\]\nWhat is the equation of the locus of \\(P\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((x-4)^2+y^2=16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((x-4)^2+y^2=4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The condition \\(PA=2PB\\) means\n\\[\nPA^2=4PB^2.\n\\]\nNow\n\\[\nPA^2=x^2+y^2,\n\\]\nand\n\\[\nPB^2=(x-3)^2+y^2.\n\\]\nSo\n\\[\nx^2+y^2=4\\left((x-3)^2+y^2\\right).\n\\]\nExpanding the right side,\n\\[\nx^2+y^2=4(x^2-6x+9+y^2).\n\\]\nThus\n\\[\nx^2+y^2=4x^2-24x+36+4y^2.\n\\]\nRearranging,\n\\[\n0=3x^2-24x+36+3y^2.\n\\]\nDivide by \\(3\\):\n\\[\nx^2-8x+12+y^2=0.\n\\]\nComplete the square:\n\\[\n(x-4)^2+y^2=4.\n\\]\nSo the locus is a circle with center \\((4,0)\\) and radius \\(2\\).",
+      "hint": "Square the distance condition and substitute \\(PA^2=x^2+y^2\\), \\(PB^2=(x-3)^2+y^2\\)."
+    },
+    {
+      "id": "math-gaokao-210-q005",
+      "category": "Geometry",
+      "concept": "Locus Equidistant from Two Coordinate Axes",
+      "learningObjective": "Determine the locus of points equidistant from the \\(x\\)-axis and the \\(y\\)-axis.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the locus of points in the coordinate plane that are equidistant from the \\(x\\)-axis and the \\(y\\)-axis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=x\\) or \\(y=-x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=0\\) or \\(y=0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The distance from \\(P(x,y)\\) to the \\(x\\)-axis is \\(|y|\\). The distance from \\(P(x,y)\\) to the \\(y\\)-axis is \\(|x|\\). Equidistance means\n\\[\n|y|=|x|.\n\\]\nThis is equivalent to\n\\[\ny=x \\quad \\text{or} \\quad y=-x.\n\\]\nSo the locus consists of the two angle bisectors of the coordinate axes.",
+      "hint": "Express the distances to the \\(x\\)-axis and \\(y\\)-axis using absolute values."
+    },
+    {
+      "id": "math-gaokao-210-q006",
+      "category": "Geometry",
+      "concept": "Parabola as a Locus",
+      "learningObjective": "Find the equation of the locus of points equidistant from a fixed point and a fixed line.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the equation of the locus of points \\(P(x,y)\\) equidistant from the point \\(F(2,0)\\) and the line \\(x=-2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y^2=8x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y^2=4x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The distance from \\(P(x,y)\\) to \\(F(2,0)\\) is\n\\[\n\\sqrt{(x-2)^2+y^2}.\n\\]\nThe distance from \\(P(x,y)\\) to the line \\(x=-2\\) is\n\\[\n|x+2|.\n\\]\nEquating the distances and squaring gives\n\\[\n(x-2)^2+y^2=(x+2)^2.\n\\]\nExpanding,\n\\[\nx^2-4x+4+y^2=x^2+4x+4.\n\\]\nCanceling \\(x^2\\) and \\(4\\) gives\n\\[\n-4x+y^2=4x,\n\\]\nso\n\\[\ny^2=8x.\n\\]",
+      "hint": "Use the distance-to-a-point formula and the distance-to-a-vertical-line formula, then square both sides."
+    },
+    {
+      "id": "math-gaokao-210-q007",
+      "category": "Geometry",
+      "concept": "Ellipse as a Locus",
+      "learningObjective": "Determine the standard equation of an ellipse from its focus-distance sum definition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The locus of points \\(P(x,y)\\) such that the sum of the distances from \\(P\\) to \\((-3,0)\\) and \\((3,0)\\) is \\(10\\) is an ellipse. What is its equation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{x^2}{25}+\\frac{y^2}{16}=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{x^2}{16}+\\frac{y^2}{25}=1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For an ellipse defined by the sum of distances to two foci, we have\n\\[\n2a=10,\n\\]\nso\n\\[\na=5.\n\\]\nThe foci are \\((-3,0)\\) and \\((3,0)\\), so \\(c=3\\). Then\n\\[\nb^2=a^2-c^2=25-9=16.\n\\]\nSince the foci lie on the \\(x\\)-axis, the major axis is horizontal. Therefore, the equation is\n\\[\n\\frac{x^2}{25}+\\frac{y^2}{16}=1.\n\\]",
+      "hint": "Use \\(2a=\\) the constant sum of distances, \\(c=\\) distance from center to a focus, and \\(b^2=a^2-c^2\\)."
+    },
+    {
+      "id": "math-gaokao-210-q008",
+      "category": "Geometry",
+      "concept": "Hyperbola as a Locus",
+      "learningObjective": "Determine the standard equation of a hyperbola from its focus-distance difference definition.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The locus of points \\(P(x,y)\\) such that the absolute difference of the distances from \\(P\\) to \\((-5,0)\\) and \\((5,0)\\) is \\(8\\) is a hyperbola. What is its equation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{x^2}{16}-\\frac{y^2}{9}=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{x^2}{9}-\\frac{y^2}{16}=1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a hyperbola defined by the absolute difference of distances to two foci, we have\n\\[\n2a=8,\n\\]\nso\n\\[\na=4.\n\\]\nThe foci are \\((-5,0)\\) and \\((5,0)\\), so \\(c=5\\). Then\n\\[\nb^2=c^2-a^2=25-16=9.\n\\]\nSince the foci lie on the \\(x\\)-axis, the transverse axis is horizontal. Therefore, the equation is\n\\[\n\\frac{x^2}{16}-\\frac{y^2}{9}=1.\n\\]",
+      "hint": "Use \\(2a=\\) the constant absolute difference, \\(c=\\) distance from center to a focus, and \\(b^2=c^2-a^2\\)."
+    },
+    {
+      "id": "math-gaokao-210-q009",
+      "category": "Geometry",
+      "concept": "Circle from a General Equation",
+      "learningObjective": "Identify the radius of a circular locus given by a general quadratic equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The locus of points \\((x,y)\\) satisfying\n\\[\nx^2+y^2-4x+2y+1=0\n\\]\nis a circle. What is its radius?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Complete the square for \\(x\\) and \\(y\\):\n\\[\nx^2-4x+y^2+2y+1=0.\n\\]\nWe have\n\\[\nx^2-4x=(x-2)^2-4,\n\\]\nand\n\\[\ny^2+2y=(y+1)^2-1.\n\\]\nSubstituting,\n\\[\n(x-2)^2-4+(y+1)^2-1+1=0.\n\\]\nThus\n\\[\n(x-2)^2+(y+1)^2=4.\n\\]\nThis is a circle with center \\((2,-1)\\) and radius\n\\[\nr=\\sqrt{4}=2.\n\\]",
+      "hint": "Complete the square in \\(x\\) and \\(y\\) to rewrite the equation in center-radius form."
+    },
+    {
+      "id": "math-gaokao-210-q010",
+      "category": "Geometry",
+      "concept": "Locus of Points with Constant Triangle Area",
+      "learningObjective": "Determine the locus of points that form a triangle of fixed area with a given base.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(A(0,0)\\) and \\(B(4,0)\\). What is the locus of points \\(P(x,y)\\) such that the area of triangle \\(PAB\\) is \\(6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3\\) or \\(x=-3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=3\\) or \\(y=-3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The base \\(AB\\) has length \\(4\\). The height from \\(P(x,y)\\) to the line \\(AB\\), which is the \\(x\\)-axis, is \\(|y|\\). The area of triangle \\(PAB\\) is\n\\[\n\\frac{1}{2}\\cdot 4\\cdot |y|=2|y|.\n\\]\nSetting this equal to \\(6\\),\n\\[\n2|y|=6,\n\\]\nso\n\\[\n|y|=3.\n\\]\nTherefore,\n\\[\ny=3 \\quad \\text{or} \\quad y=-3.\n\\]\nThe locus consists of two horizontal lines.",
+      "hint": "Use the formula for the area of a triangle with base \\(AB\\) and height equal to the perpendicular distance from \\(P\\) to the \\(x\\)-axis."
+    }
+  ]
+}

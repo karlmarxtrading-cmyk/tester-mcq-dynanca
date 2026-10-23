@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-461",
+  "category": "Comprehensive Mathematics",
+  "title": "461. Trigonometry & Periodic Models: Even and Odd Symmetry of Fourier Coefficients",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-461-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Coefficients of an even function",
+      "learningObjective": "State which Fourier coefficients vanish for an even function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A function \\(f\\) of period \\(2\\pi\\) is even and has Fourier series \\(\\frac{a_0}{2}+\\sum_{n\\ge 1}\\left(a_n\\cos nx+b_n\\sin nx\\right)\\). Which coefficients must be zero?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All \\(b_n\\)"
+        },
+        {
+          "label": "B",
+          "text": "All \\(a_n\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For an even function, each product \\(f(x)\\sin nx\\) is odd, so its integral over \\((-\\pi,\\pi)\\) is zero and every \\(b_n=0\\). The series of an even function contains only the constant and cosine terms. For example, \\(f(x)=\\cos x\\) is even and has \\(a_1=1\\), so the \\(a_n\\) need not vanish.",
+      "hint": "Consider the parity of the product \\(f(x)\\sin nx\\)."
+    },
+    {
+      "id": "dynanca-461-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Coefficients of an odd function",
+      "learningObjective": "State which Fourier coefficients vanish for an odd function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A function \\(f\\) of period \\(2\\pi\\) is odd and has Fourier series \\(\\frac{a_0}{2}+\\sum_{n\\ge 1}\\left(a_n\\cos nx+b_n\\sin nx\\right)\\). Which coefficients must be zero?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All \\(a_n\\), including \\(a_0\\)"
+        },
+        {
+          "label": "B",
+          "text": "All \\(b_n\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For an odd function, each product \\(f(x)\\cos nx\\) is odd, so its integral over \\((-\\pi,\\pi)\\) is zero and every \\(a_n=0\\), including \\(a_0\\). The series of an odd function contains only sine terms. For example, \\(f(x)=\\sin x\\) is odd and has \\(b_1=1\\), so the \\(b_n\\) need not vanish.",
+      "hint": "Consider the parity of the product \\(f(x)\\cos nx\\)."
+    },
+    {
+      "id": "dynanca-461-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Series type for a squared variable",
+      "learningObjective": "Decide which kinds of terms appear in the Fourier series of an even polynomial function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A function of period \\(2\\pi\\) equals \\(x^2\\) for \\(-\\pi<x<\\pi\\). Which terms can appear in its Fourier series?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only sine terms"
+        },
+        {
+          "label": "B",
+          "text": "Only a constant term and cosine terms"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\((-x)^2=x^2\\), the function is even. For an even function every \\(b_n\\) is zero, so the series has no sine terms. The constant term and the cosine terms remain; for instance, the mean value \\(\\frac{\\pi^2}{3}\\) is not zero.",
+      "hint": "Test whether \\(f(-x)=f(x)\\) or \\(f(-x)=-f(x)\\)."
+    },
+    {
+      "id": "dynanca-461-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Series type for a cubed variable",
+      "learningObjective": "Decide which kinds of terms appear in the Fourier series of an odd polynomial function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A function of period \\(2\\pi\\) equals \\(x^3\\) for \\(-\\pi<x<\\pi\\). Which terms can appear in its Fourier series?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only sine terms"
+        },
+        {
+          "label": "B",
+          "text": "Only a constant term and cosine terms"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\((-x)^3=-x^3\\), the function is odd. For an odd function every \\(a_n\\) is zero, including \\(a_0\\), so the series has no constant and no cosine terms. Only the sine terms remain.",
+      "hint": "Test whether \\(f(-x)=f(x)\\) or \\(f(-x)=-f(x)\\)."
+    },
+    {
+      "id": "dynanca-461-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "A function that is neither even nor odd",
+      "learningObjective": "Split a function into even and odd parts to see which coefficients vanish.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A function of period \\(2\\pi\\) equals \\(x+1\\) for \\(-\\pi<x<\\pi\\). Which Fourier coefficients are zero?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_n\\) for every \\(n\\ge 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(b_n\\) for every \\(n\\ge 1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Write \\(x+1\\) as the sum of the odd part \\(x\\) and the even part \\(1\\). The constant \\(1\\) contributes only to \\(a_0\\) (here \\(a_0=2\\)), because \\(\\int_{-\\pi}^{\\pi}\\cos nx\\,dx=0\\) for \\(n\\ge 1\\). The odd part \\(x\\) contributes only sine terms. Hence \\(a_n=0\\) for \\(n\\ge 1\\), while the \\(b_n\\) are not zero; for example \\(b_1=2\\).",
+      "hint": "Treat the two terms separately: one is an even function and the other is an odd function."
+    },
+    {
+      "id": "dynanca-461-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Half-range formula for an even function",
+      "learningObjective": "Use symmetry to rewrite a cosine coefficient as an integral over half the period.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For an even function \\(f\\) of period \\(2\\pi\\), the coefficient \\(a_n=\\frac{1}{\\pi}\\int_{-\\pi}^{\\pi}f(x)\\cos nx\\,dx\\) can be written as an integral over \\((0,\\pi)\\). Which formula is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_n=\\frac{1}{\\pi}\\int_{0}^{\\pi}f(x)\\cos nx\\,dx\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a_n=\\frac{2}{\\pi}\\int_{0}^{\\pi}f(x)\\cos nx\\,dx\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "When \\(f\\) is even, the product \\(f(x)\\cos nx\\) is even, and the integral of an even function over \\((-\\pi,\\pi)\\) is twice its integral over \\((0,\\pi)\\). So \\(a_n=\\frac{2}{\\pi}\\int_0^{\\pi}f(x)\\cos nx\\,dx\\). Keeping the factor \\(\\frac{1}{\\pi}\\) would give only half of the coefficient.",
+      "hint": "The integral of an even function over a symmetric interval is twice the integral over the right half."
+    },
+    {
+      "id": "dynanca-461-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Sine coefficient of a rectified sine",
+      "learningObjective": "Use symmetry to find a sine coefficient of the absolute value of a sine.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=\\left|\\sin x\\right|\\), with \\(b_n=\\frac{1}{\\pi}\\int_{-\\pi}^{\\pi}f(x)\\sin nx\\,dx\\). What is \\(b_1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(b_1=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(b_1=1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(\\left|\\sin(-x)\\right|=\\left|\\sin x\\right|\\), the function is even, so every \\(b_n\\) is zero; in particular \\(b_1=0\\). Although the function is built from \\(\\sin x\\), taking the absolute value destroys the odd symmetry, and the series contains only a constant and cosine terms.",
+      "hint": "Decide whether \\(\\left|\\sin x\\right|\\) is even or odd before computing anything."
+    },
+    {
+      "id": "dynanca-461-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Reason the sine coefficients vanish",
+      "learningObjective": "Explain through the parity of the integrand why an even function has no sine terms.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Why is \\(b_n=\\frac{1}{\\pi}\\int_{-\\pi}^{\\pi}f(x)\\sin nx\\,dx\\) equal to zero when \\(f\\) is even?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The integrand \\(f(x)\\sin nx\\) is odd, and an odd function integrates to zero over \\((-\\pi,\\pi)\\)."
+        },
+        {
+          "label": "B",
+          "text": "The integrand \\(f(x)\\sin nx\\) is even, and an even function integrates to zero over \\((-\\pi,\\pi)\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The product of an even function and the odd function \\(\\sin nx\\) is odd. The integral of an odd function over an interval symmetric about \\(0\\) is zero, because the contributions from \\(x\\) and \\(-x\\) cancel. An even integrand does not integrate to zero in general; for example \\(\\int_{-\\pi}^{\\pi}x^2\\,dx\\ne 0\\).",
+      "hint": "Determine the parity of a product of an even function and an odd function."
+    },
+    {
+      "id": "dynanca-461-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Parity of a product with cosine",
+      "learningObjective": "Determine the vanishing coefficients for a product of the variable and a cosine.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A function of period \\(2\\pi\\) equals \\(x\\cos x\\) for \\(-\\pi<x<\\pi\\). Which Fourier coefficients must be zero?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All \\(a_n\\), including \\(a_0\\)"
+        },
+        {
+          "label": "B",
+          "text": "All \\(b_n\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The factor \\(x\\) is odd and \\(\\cos x\\) is even, so the product \\(x\\cos x\\) is odd: \\((-x)\\cos(-x)=-x\\cos x\\). For an odd function all \\(a_n\\) vanish, including \\(a_0\\), and the series contains only sine terms. The \\(b_n\\) do not all vanish; for example \\(b_1=-\\frac{1}{2}\\).",
+      "hint": "The product of an odd function and an even function is odd."
+    },
+    {
+      "id": "dynanca-461-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Parity of a product with sine",
+      "learningObjective": "Determine the vanishing coefficients and a nonzero coefficient for a product of the variable and a sine.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A function of period \\(2\\pi\\) equals \\(x\\sin x\\) for \\(-\\pi<x<\\pi\\), with \\(a_0=\\frac{1}{\\pi}\\int_{-\\pi}^{\\pi}f(x)\\,dx\\). Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All \\(a_n\\) are zero, and \\(b_1=2\\)."
+        },
+        {
+          "label": "B",
+          "text": "All \\(b_n\\) are zero, and \\(a_0=2\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Both \\(x\\) and \\(\\sin x\\) are odd, so their product is even: \\((-x)\\sin(-x)=x\\sin x\\). Hence all \\(b_n=0\\). Moreover \\(a_0=\\frac{2}{\\pi}\\int_0^{\\pi}x\\sin x\\,dx=\\frac{2}{\\pi}\\left[-x\\cos x+\\sin x\\right]_0^{\\pi}=\\frac{2}{\\pi}\\cdot\\pi=2\\). The second statement treats the function as odd, which it is not.",
+      "hint": "The product of two odd functions is even; then integrate by parts for \\(a_0\\)."
+    }
+  ]
+}

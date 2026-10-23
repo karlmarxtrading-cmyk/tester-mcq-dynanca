@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-553",
+  "category": "Comprehensive Mathematics",
+  "title": "553. Discrete Mathematics, Counting & Graph Theory: Counting Passwords with Constraints",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-553-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Codes with repetition allowed",
+      "learningObjective": "Count digit codes when digits may repeat.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A lock opens with a code of \\(5\\) digits, each from \\(0\\) to \\(9\\), and digits may repeat. How many codes are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30240\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(100000\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each of the \\(5\\) positions can hold any of \\(10\\) digits, so there are \\(10^5=100000\\) codes. The number \\(30240=10\\cdot 9\\cdot 8\\cdot 7\\cdot 6\\) would be correct if no digit could repeat.",
+      "hint": "Since repetition is allowed, every position has the same number of choices."
+    },
+    {
+      "id": "dynanca-553-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A code that cannot start with zero",
+      "learningObjective": "Count digit codes with a restriction on the first digit.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A code has \\(3\\) digits; the first digit cannot be \\(0\\), and digits may repeat. How many codes are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(900\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1000\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first position has \\(9\\) choices and each of the other two has \\(10\\), so there are \\(9\\cdot 10\\cdot 10=900\\) codes. The number \\(1000=10^3\\) ignores the restriction on the first digit.",
+      "hint": "Count the choices for each position separately; one position has fewer choices."
+    },
+    {
+      "id": "dynanca-553-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Letters then digits",
+      "learningObjective": "Count passwords with a prescribed pattern of character types.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A password consists of \\(2\\) uppercase letters followed by \\(2\\) digits, and characters may repeat. How many passwords are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(65000\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(67600\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(26\\) choices for each letter and \\(10\\) for each digit: \\(26\\cdot 26\\cdot 10\\cdot 10=67600\\). The number \\(65000=26\\cdot 25\\cdot 10\\cdot 10\\) would be correct if the two letters had to be different.",
+      "hint": "Multiply the numbers of choices for the four positions."
+    },
+    {
+      "id": "dynanca-553-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "All digits different",
+      "learningObjective": "Count digit codes in which no digit repeats.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many codes of \\(4\\) digits, each from \\(0\\) to \\(9\\), have four different digits?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5040\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6561\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first digit can be chosen in \\(10\\) ways, the second in \\(9\\), the third in \\(8\\), and the fourth in \\(7\\): \\(10\\cdot 9\\cdot 8\\cdot 7=5040\\). The number \\(6561=9^4\\) is not the right count; it would be the number of codes that avoid one particular digit.",
+      "hint": "Each digit used removes one choice for the following positions."
+    },
+    {
+      "id": "dynanca-553-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "At least one given letter",
+      "learningObjective": "Count passwords that contain a given letter at least once.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many strings of \\(4\\) lowercase letters, from an alphabet of \\(26\\) letters, contain the letter z at least once?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(62500\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(66351\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(26^4=456976\\) strings, and \\(25^4=390625\\) of them avoid z. So \\(456976-390625=66351\\) contain z at least once. The number \\(62500=4\\cdot 25^3\\) counts only the strings with exactly one z.",
+      "hint": "Subtract the strings that avoid the letter from all strings."
+    },
+    {
+      "id": "dynanca-553-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "At least one letter and one digit",
+      "learningObjective": "Count passwords that contain both kinds of character.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A password has \\(3\\) characters, each one of the letters A, B, C or one of the digits \\(0\\), \\(1\\); characters may repeat. How many passwords contain at least one letter and at least one digit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(98\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(90\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(5^3=125\\) passwords in all. Those with letters only number \\(3^3=27\\), and those with digits only number \\(2^3=8\\). Removing both kinds leaves \\(125-27-8=90\\). The number \\(98\\) removes only the all-letter passwords.",
+      "hint": "Remove the passwords that use only letters and those that use only digits."
+    },
+    {
+      "id": "dynanca-553-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Restricted first and last digits",
+      "learningObjective": "Count codes with independent restrictions on two positions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A code has \\(4\\) digits. The first digit is not \\(0\\), the last digit is even, and digits may repeat. How many codes are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5000\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4500\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first position has \\(9\\) choices, the two middle positions \\(10\\) each, and the last position \\(5\\) choices (\\(0,2,4,6,8\\)): \\(9\\cdot 10\\cdot 10\\cdot 5=4500\\). The number \\(5000\\) forgets the restriction on the first digit.",
+      "hint": "Write down the number of choices for each of the four positions."
+    },
+    {
+      "id": "dynanca-553-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Palindromic codes",
+      "learningObjective": "Count codes that read the same in both directions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A code of \\(5\\) digits is called a palindrome if it reads the same forwards and backwards, such as \\(40304\\). How many codes of \\(5\\) digits, each from \\(0\\) to \\(9\\), are palindromes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(100\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1000\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A palindrome of length \\(5\\) is determined by its first three digits; the fourth must equal the second and the fifth must equal the first. So there are \\(10^3=1000\\) palindromes. The number \\(100\\) forgets that the middle digit can be chosen freely.",
+      "hint": "Decide which positions can be chosen freely and which are then forced."
+    },
+    {
+      "id": "dynanca-553-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Increasing digits",
+      "learningObjective": "Count codes whose digits increase from left to right.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many codes of \\(3\\) digits, each from \\(0\\) to \\(9\\), have digits that strictly increase from left to right, such as \\(259\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(720\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(120\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Choosing any \\(3\\) different digits determines exactly one increasing code, because the digits must then be written in increasing order. So the count is \\(\\binom{10}{3}=120\\). The number \\(720=10\\cdot 9\\cdot 8\\) counts all codes with three different digits, in every order.",
+      "hint": "Once the three digits are chosen, ask in how many orders they may be written."
+    },
+    {
+      "id": "dynanca-553-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Exactly one digit",
+      "learningObjective": "Count passwords with exactly one character of a given kind.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A password has \\(4\\) characters, each one of the letters A, B, C or one of the digits \\(0\\), \\(1\\); characters may repeat. How many passwords contain exactly one digit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(216\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(54\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Choose the position of the digit in \\(4\\) ways and the digit itself in \\(2\\) ways. The other three positions hold letters, in \\(3^3=27\\) ways. The total is \\(4\\cdot 2\\cdot 27=216\\). The number \\(54=2\\cdot 27\\) fixes the position of the digit instead of letting it be any of the four positions.",
+      "hint": "Choose where the digit goes, which digit it is, and then fill the remaining positions with letters."
+    }
+  ]
+}

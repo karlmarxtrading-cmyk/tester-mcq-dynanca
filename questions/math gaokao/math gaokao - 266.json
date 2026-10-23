@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-266",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 266",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-266-q001",
+      "category": "Calculus",
+      "concept": "Left-Hand Limit of a Piecewise Function",
+      "learningObjective": "Evaluate a left-hand limit by selecting the appropriate piece of a piecewise function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(f(x)=\\begin{cases}x^2+1,&x<2,\\\\3x-4,&x\\ge2.\\end{cases}\\) Find \\(\\lim_{x\\to2^-} f(x)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(x\\to2^-\\), we have \\(x<2\\), so use \\(f(x)=x^2+1\\). Substituting \\(x=2\\) gives \\(2^2+1=5\\). Therefore, \\(\\lim_{x\\to2^-} f(x)=5\\).",
+      "hint": "Since \\(x\\) approaches \\(2\\) from the left, use the formula for \\(x<2\\)."
+    },
+    {
+      "id": "math-gaokao-266-q002",
+      "category": "Calculus",
+      "concept": "Right-Hand Limit of a Piecewise Function",
+      "learningObjective": "Evaluate a right-hand limit by selecting the appropriate piece of a piecewise function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(f(x)=\\begin{cases}2x+1,&x<1,\\\\x^2+3,&x\\ge1.\\end{cases}\\) Find \\(\\lim_{x\\to1^+} f(x)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(x\\to1^+\\), we have \\(x>1\\), so use \\(f(x)=x^2+3\\). Substituting \\(x=1\\) gives \\(1^2+3=4\\). Thus \\(\\lim_{x\\to1^+} f(x)=4\\).",
+      "hint": "Since \\(x\\) approaches \\(1\\) from the right, use the formula for \\(x\\ge1\\)."
+    },
+    {
+      "id": "math-gaokao-266-q003",
+      "category": "Calculus",
+      "concept": "One-Sided Limit of an Absolute Value Quotient",
+      "learningObjective": "Evaluate a left-hand limit involving absolute value by simplifying according to the sign of \\(x\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\lim_{x\\to0^-}\\frac{|x|}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(x<0\\), \\(|x|=-x\\), so \\(\\frac{|x|}{x}=\\frac{-x}{x}=-1\\) for \\(x\\neq0\\). Therefore, as \\(x\\to0^-\\), the quotient is constantly \\(-1\\), so the limit is \\(-1\\).",
+      "hint": "Determine the expression for \\(|x|\\) when \\(x\\) is negative."
+    },
+    {
+      "id": "math-gaokao-266-q004",
+      "category": "Calculus",
+      "concept": "One-Sided Limit of a Rational Function with a Removable Discontinuity",
+      "learningObjective": "Evaluate a right-hand limit by factoring and simplifying a rational expression.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\lim_{x\\to2^+}\\frac{x^2-4}{x-2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor the numerator: \\(x^2-4=(x-2)(x+2)\\). For \\(x\\neq2\\), \\(\\frac{x^2-4}{x-2}=x+2\\). As \\(x\\to2^+\\), \\(x+2\\to4\\). Hence the limit is \\(4\\).",
+      "hint": "Factor the numerator before substituting."
+    },
+    {
+      "id": "math-gaokao-266-q005",
+      "category": "Calculus",
+      "concept": "Infinite Left-Hand Limit",
+      "learningObjective": "Determine the sign of an infinite one-sided limit from the denominator.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Find \\(\\lim_{x\\to1^-}\\frac{1}{x-1}\\) in the extended sense.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\infty\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(+\\infty\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "As \\(x\\to1^-\\), we have \\(x<1\\), so \\(x-1\\) is negative and tends to \\(0\\). Therefore \\(\\frac{1}{x-1}\\) decreases without bound, so \\(\\lim_{x\\to1^-}\\frac{1}{x-1}=-\\infty\\).",
+      "hint": "Check whether \\(x-1\\) is positive or negative when \\(x\\) is slightly less than \\(1\\)."
+    },
+    {
+      "id": "math-gaokao-266-q006",
+      "category": "Calculus",
+      "concept": "Right-Hand Limit at a Domain Endpoint",
+      "learningObjective": "Evaluate a right-hand limit of a square-root function at its domain endpoint.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Find \\(\\lim_{x\\to0^+}\\sqrt{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "The limit does not exist."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(x>0\\), \\(\\sqrt{x}\\) is defined. As \\(x\\to0^+\\) through positive values, \\(\\sqrt{x}\\to0\\). Thus the right-hand limit is \\(0\\).",
+      "hint": "Consider the values of \\(\\sqrt{x}\\) for small positive \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-266-q007",
+      "category": "Calculus",
+      "concept": "Existence of a Two-Sided Limit from One-Sided Limits",
+      "learningObjective": "Determine a two-sided limit by comparing left-hand and right-hand limits.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(f(x)=\\begin{cases}x+1,&x<2,\\\\2x-1,&x\\ge2.\\end{cases}\\) Find \\(\\lim_{x\\to2} f(x)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "The limit does not exist."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(x\\to2^-\\), use \\(x+1\\), so the left-hand limit is \\(2+1=3\\). For \\(x\\to2^+\\), use \\(2x-1\\), so the right-hand limit is \\(2(2)-1=3\\). Since both one-sided limits equal \\(3\\), the two-sided limit is \\(3\\).",
+      "hint": "Compute the left-hand and right-hand limits separately and compare them."
+    },
+    {
+      "id": "math-gaokao-266-q008",
+      "category": "Calculus",
+      "concept": "Parameter Condition for Equal One-Sided Limits",
+      "learningObjective": "Find a parameter value that makes the left-hand and right-hand limits equal.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(f(x)=\\begin{cases}x^2+a,&x<1,\\\\2x+1,&x>1.\\end{cases}\\) If \\(\\lim_{x\\to1^-} f(x)=\\lim_{x\\to1^+} f(x)\\), find \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "As \\(x\\to1^-\\), \\(f(x)=x^2+a\\), so the left-hand limit is \\(1^2+a=1+a\\). As \\(x\\to1^+\\), \\(f(x)=2x+1\\), so the right-hand limit is \\(2(1)+1=3\\). Equating gives \\(1+a=3\\), hence \\(a=2\\).",
+      "hint": "Evaluate each one-sided limit in terms of \\(a\\) and set them equal."
+    },
+    {
+      "id": "math-gaokao-266-q009",
+      "category": "Calculus",
+      "concept": "One-Sided Limit by Rationalization",
+      "learningObjective": "Evaluate a right-hand limit involving a square root by multiplying by the conjugate.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\lim_{x\\to0^+}\\frac{\\sqrt{x+1}-1}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiply numerator and denominator by the conjugate \\(\\sqrt{x+1}+1\\):\n\\[\n\\frac{\\sqrt{x+1}-1}{x}\n=\n\\frac{(\\sqrt{x+1}-1)(\\sqrt{x+1}+1)}\n{x(\\sqrt{x+1}+1)}\n=\n\\frac{x+1-1}{x(\\sqrt{x+1}+1)}\n=\n\\frac{1}{\\sqrt{x+1}+1}.\n\\]\nAs \\(x\\to0^+\\), \\(\\sqrt{x+1}\\to1\\), so the expression tends to \\(\\frac{1}{1+1}=\\frac{1}{2}\\).",
+      "hint": "Multiply numerator and denominator by the conjugate of the numerator."
+    },
+    {
+      "id": "math-gaokao-266-q010",
+      "category": "Calculus",
+      "concept": "Determining Parameters from One-Sided Limits",
+      "learningObjective": "Use given one-sided limits of a piecewise function to solve for two parameters and compute their sum.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(f(x)=\\begin{cases}x^2+a,&x<2,\\\\bx+1,&x>2.\\end{cases}\\) If \\(\\lim_{x\\to2^-} f(x)=5\\) and \\(\\lim_{x\\to2^+} f(x)=7\\), find \\(a+b\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "As \\(x\\to2^-\\), \\(f(x)=x^2+a\\), so \\(4+a=5\\), giving \\(a=1\\). As \\(x\\to2^+\\), \\(f(x)=bx+1\\), so \\(2b+1=7\\), giving \\(2b=6\\), hence \\(b=3\\). Therefore, \\(a+b=1+3=4\\).",
+      "hint": "Substitute the limiting value of \\(x\\) into each piece and set equal to the given one-sided limits."
+    }
+  ]
+}

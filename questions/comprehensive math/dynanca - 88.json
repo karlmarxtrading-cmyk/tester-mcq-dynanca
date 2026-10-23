@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-88",
+  "category": "Comprehensive Mathematics",
+  "title": "88. Numeracy & Number Systems: Signed Integer Range in Two's Complement",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-88-q001",
+      "category": "Numeracy & Number Systems",
+      "concept": "Range of 8-Bit Two's Complement Integers",
+      "learningObjective": "Identify the range of values representable in 8-bit two's complement.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which range describes all integers that can be represented in \\(8\\)-bit two's complement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-128\\) to \\(127\\), inclusive"
+        },
+        {
+          "label": "B",
+          "text": "\\(-127\\) to \\(128\\), inclusive"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For an \\(n\\)-bit two's complement integer, the range is \\(-2^{n-1}\\) to \\(2^{n-1}-1\\). For \\(n=8\\), the minimum is \\(-2^7=-128\\) and the maximum is \\(2^7-1=127\\). Therefore, the range is \\(-128\\) to \\(127\\).",
+      "hint": "Consider the negative weight of the sign bit and the positive weights of the remaining bits."
+    },
+    {
+      "id": "dynanca-88-q002",
+      "category": "Numeracy & Number Systems",
+      "concept": "Maximum Value in 5-Bit Two's Complement",
+      "learningObjective": "Determine the maximum value representable in 5-bit two's complement.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the maximum value that can be represented in \\(5\\)-bit two's complement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(n\\)-bit two's complement, the maximum value is \\(2^{n-1}-1\\). With \\(n=5\\), this gives \\(2^4-1=16-1=15\\). The value \\(16\\) is not representable because it exceeds the maximum.",
+      "hint": "Consider the negative weight of the sign bit and the positive weights of the remaining bits."
+    },
+    {
+      "id": "dynanca-88-q003",
+      "category": "Numeracy & Number Systems",
+      "concept": "Minimum Value in 6-Bit Two's Complement",
+      "learningObjective": "Determine the minimum value representable in 6-bit two's complement.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the minimum value that can be represented in \\(6\\)-bit two's complement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-32\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-31\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(n\\)-bit two's complement, the minimum value is \\(-2^{n-1}\\). With \\(n=6\\), this gives \\(-2^5=-32\\). Therefore, the minimum value is \\(-32\\). The alternative incorrectly makes the negative endpoint symmetric with the positive maximum.",
+      "hint": "Consider the negative weight of the sign bit and the positive weights of the remaining bits."
+    },
+    {
+      "id": "dynanca-88-q004",
+      "category": "Numeracy & Number Systems",
+      "concept": "Number of Representable Values in 4-Bit Two's Complement",
+      "learningObjective": "Determine how many distinct integers are representable in 4-bit two's complement.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many distinct integers can be represented in \\(4\\)-bit two's complement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A \\(4\\)-bit representation has \\(2^4=16\\) distinct bit patterns. In two's complement, each pattern represents exactly one integer, so \\(16\\) distinct integers are representable. These range from \\(-8\\) to \\(7\\). The alternative forgets that zero is one of the representable integers.",
+      "hint": "Count the available bit patterns and distinguish the negative and nonnegative cases."
+    },
+    {
+      "id": "dynanca-88-q005",
+      "category": "Numeracy & Number Systems",
+      "concept": "Checking Representability in 8-Bit Two's Complement",
+      "learningObjective": "Determine whether a given positive value is representable in 8-bit two's complement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Can \\(130\\) be represented as an \\(8\\)-bit two's complement signed integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The range of \\(8\\)-bit two's complement is \\(-128\\) to \\(127\\). The value \\(130\\) is greater than the maximum value \\(127\\), so it cannot be represented in \\(8\\) bits.",
+      "hint": "Derive the range for the specified bit width and check the given value against its endpoints."
+    },
+    {
+      "id": "dynanca-88-q006",
+      "category": "Numeracy & Number Systems",
+      "concept": "Representability of Negative Values in 8-Bit Two's Complement",
+      "learningObjective": "Determine which negative value is representable in 8-bit two's complement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which value can be represented in \\(8\\)-bit two's complement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-128\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-129\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The range of \\(8\\)-bit two's complement is \\(-128\\) to \\(127\\). The value \\(-128\\) is the minimum representable value, so it is allowed. The value \\(-129\\) is less than \\(-128\\), so it is outside the range and cannot be represented.",
+      "hint": "Derive the range for the specified bit width and check the given value against its endpoints."
+    },
+    {
+      "id": "dynanca-88-q007",
+      "category": "Numeracy & Number Systems",
+      "concept": "Minimum Value in 12-Bit Two's Complement",
+      "learningObjective": "Determine the minimum value representable in 12-bit two's complement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the minimum value that can be represented in \\(12\\)-bit two's complement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2048\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2047\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(n\\)-bit two's complement, the minimum value is \\(-2^{n-1}\\). With \\(n=12\\), this gives \\(-2^{11}=-2048\\). The alternative has the magnitude of the positive maximum rather than the negative minimum.",
+      "hint": "Consider the negative weight of the sign bit and the positive weights of the remaining bits."
+    },
+    {
+      "id": "dynanca-88-q008",
+      "category": "Numeracy & Number Systems",
+      "concept": "Maximum Value in 12-Bit Two's Complement",
+      "learningObjective": "Determine the maximum value representable in 12-bit two's complement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the maximum value that can be represented in \\(12\\)-bit two's complement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2048\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2047\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(n\\)-bit two's complement, the maximum value is \\(2^{n-1}-1\\). With \\(n=12\\), this gives \\(2^{11}-1=2048-1=2047\\). The value \\(2048\\) is one greater than the maximum and is not representable.",
+      "hint": "Consider the negative weight of the sign bit and the positive weights of the remaining bits."
+    },
+    {
+      "id": "dynanca-88-q009",
+      "category": "Numeracy & Number Systems",
+      "concept": "Range of 16-Bit Two's Complement Integers",
+      "learningObjective": "Identify the range of values representable in 16-bit two's complement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which range describes all integers that can be represented in \\(16\\)-bit two's complement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-32768\\) to \\(32767\\), inclusive"
+        },
+        {
+          "label": "B",
+          "text": "\\(-32767\\) to \\(32768\\), inclusive"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(n\\)-bit two's complement, the range is \\(-2^{n-1}\\) to \\(2^{n-1}-1\\). With \\(n=16\\), the minimum is \\(-2^{15}=-32768\\) and the maximum is \\(2^{15}-1=32767\\). The alternative shifts both endpoints up by one.",
+      "hint": "Consider the negative weight of the sign bit and the positive weights of the remaining bits."
+    },
+    {
+      "id": "dynanca-88-q010",
+      "category": "Numeracy & Number Systems",
+      "concept": "Count of Negative Values in 10-Bit Two's Complement",
+      "learningObjective": "Determine how many distinct negative integers are representable in 10-bit two's complement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In \\(10\\)-bit two's complement, how many distinct negative integers can be represented?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(511\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(512\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The range of \\(10\\)-bit two's complement is \\(-2^9\\) to \\(2^9-1\\), which is \\(-512\\) to \\(511\\). The negative integers in this range are \\(-512,-511,\\ldots,-1\\). The number of these values is \\(512\\). The alternative excludes the most negative representable integer.",
+      "hint": "Count the available bit patterns and distinguish the negative and nonnegative cases."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-448",
+  "category": "Comprehensive Mathematics",
+  "title": "448. Trigonometry & Periodic Models: Comparing Sine and Cosine Phase",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-448-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Sine as a shifted cosine",
+      "learningObjective": "Express the sine function as a horizontal shift of the cosine function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which identity expresses the sine as a shifted cosine for every real \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sin x=\\cos\\left(x-\\frac{\\pi}{2}\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sin x=\\cos\\left(x+\\frac{\\pi}{2}\\right)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the difference formula, \\(\\cos\\left(x-\\frac{\\pi}{2}\\right)=\\cos x\\cos\\frac{\\pi}{2}+\\sin x\\sin\\frac{\\pi}{2}=\\sin x\\). So the sine graph is the cosine graph shifted \\(\\frac{\\pi}{2}\\) to the right. The other expression equals \\(-\\sin x\\).",
+      "hint": "Test both candidates at \\(x=\\frac{\\pi}{2}\\), where \\(\\sin x=1\\)."
+    },
+    {
+      "id": "dynanca-448-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Cosine as a shifted sine",
+      "learningObjective": "Express the cosine function as a horizontal shift of the sine function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which identity expresses the cosine as a shifted sine for every real \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\cos x=\\sin\\left(x-\\frac{\\pi}{2}\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\cos x=\\sin\\left(x+\\frac{\\pi}{2}\\right)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the sum formula, \\(\\sin\\left(x+\\frac{\\pi}{2}\\right)=\\sin x\\cos\\frac{\\pi}{2}+\\cos x\\sin\\frac{\\pi}{2}=\\cos x\\). So the cosine graph is the sine graph shifted \\(\\frac{\\pi}{2}\\) to the left. The other expression equals \\(-\\cos x\\).",
+      "hint": "Test both candidates at \\(x=0\\), where \\(\\cos x=1\\)."
+    },
+    {
+      "id": "dynanca-448-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Direction of the shift from sine to cosine",
+      "learningObjective": "Describe the shift that maps the sine graph onto the cosine graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which horizontal shift maps the graph of \\(y=\\sin x\\) onto the graph of \\(y=\\cos x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A shift of \\(\\frac{\\pi}{2}\\) units to the left"
+        },
+        {
+          "label": "B",
+          "text": "A shift of \\(\\frac{\\pi}{2}\\) units to the right"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Shifting \\(y=\\sin x\\) left by \\(\\frac{\\pi}{2}\\) gives \\(y=\\sin\\left(x+\\frac{\\pi}{2}\\right)=\\cos x\\). The maximum of the sine at \\(x=\\frac{\\pi}{2}\\) moves to \\(x=0\\), where the cosine has its maximum. A shift to the right gives \\(y=\\sin\\left(x-\\frac{\\pi}{2}\\right)=-\\cos x\\).",
+      "hint": "Compare where the two graphs reach their first maximum."
+    },
+    {
+      "id": "dynanca-448-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Fraction of a period between cosine and sine",
+      "learningObjective": "Express the phase difference between cosine and sine as a fraction of a period.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "The graphs of \\(y=\\cos x\\) and \\(y=\\sin x\\) have the same shape. By what fraction of a period does the cosine reach its maximum before the sine does?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One half of a period"
+        },
+        {
+          "label": "B",
+          "text": "One quarter of a period"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The cosine has a maximum at \\(x=0\\), and the sine has its next maximum at \\(x=\\frac{\\pi}{2}\\). The difference \\(\\frac{\\pi}{2}\\) is one quarter of the period \\(2\\pi\\). A difference of half a period, \\(\\pi\\), would turn a maximum into a minimum.",
+      "hint": "Find the first maximum of each function for \\(x\\ge 0\\) and divide the difference by the period."
+    },
+    {
+      "id": "dynanca-448-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Shift by half a period",
+      "learningObjective": "Identify the effect of a half-period shift on the sine function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which function is equal to \\(y=\\sin(x+\\pi)\\) for every real \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=\\cos x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=-\\sin x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the sum formula, \\(\\sin(x+\\pi)=\\sin x\\cos\\pi+\\cos x\\sin\\pi=-\\sin x\\). A shift by half a period puts the graph exactly out of phase with the original, so every value changes sign. A shift by a quarter period, not a half period, turns the sine into the cosine.",
+      "hint": "Expand with the sine sum formula using \\(\\cos\\pi=-1\\) and \\(\\sin\\pi=0\\)."
+    },
+    {
+      "id": "dynanca-448-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Identifying a shifted cosine",
+      "learningObjective": "Recognise a shifted cosine as a familiar function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which function is equal to \\(y=\\cos\\left(x-\\frac{\\pi}{2}\\right)\\) for every real \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=\\sin x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=-\\sin x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the difference formula, \\(\\cos\\left(x-\\frac{\\pi}{2}\\right)=\\cos x\\cdot 0+\\sin x\\cdot 1=\\sin x\\). Check at \\(x=\\frac{\\pi}{2}\\): \\(\\cos 0=1=\\sin\\frac{\\pi}{2}\\). The function \\(-\\sin x\\) equals \\(\\cos\\left(x+\\frac{\\pi}{2}\\right)\\).",
+      "hint": "Check the value at \\(x=\\frac{\\pi}{2}\\)."
+    },
+    {
+      "id": "dynanca-448-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Phase relation with a doubled argument",
+      "learningObjective": "Find the horizontal shift relating a sine and a cosine with the same coefficient of the variable.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "By how much must the graph of \\(y=\\sin 2x\\) be shifted to the left to obtain the graph of \\(y=\\cos 2x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\pi}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{\\pi}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(\\cos 2x=\\sin\\left(2x+\\frac{\\pi}{2}\\right)=\\sin\\left(2\\left(x+\\frac{\\pi}{4}\\right)\\right)\\), the required shift is \\(\\frac{\\pi}{4}\\) to the left. This is a quarter of the period \\(\\pi\\). Using \\(\\frac{\\pi}{2}\\) forgets to divide the phase by the coefficient \\(2\\).",
+      "hint": "Write \\(\\cos 2x\\) as a sine and factor the coefficient of \\(x\\) out of the argument."
+    },
+    {
+      "id": "dynanca-448-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Intersections of sine and cosine",
+      "learningObjective": "Find where the sine and cosine graphs meet on one period.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(0\\le x<2\\pi\\), at which values of \\(x\\) do the graphs of \\(y=\\sin x\\) and \\(y=\\cos x\\) intersect?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=\\frac{\\pi}{4}\\) and \\(x=\\frac{3\\pi}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=\\frac{\\pi}{4}\\) and \\(x=\\frac{5\\pi}{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The graphs meet when \\(\\sin x=\\cos x\\), that is, \\(\\tan x=1\\), which gives \\(x=\\frac{\\pi}{4}\\) and \\(x=\\frac{5\\pi}{4}\\). At \\(x=\\frac{3\\pi}{4}\\) the sine is \\(\\frac{\\sqrt{2}}{2}\\) but the cosine is \\(-\\frac{\\sqrt{2}}{2}\\), so the graphs do not meet there.",
+      "hint": "Divide \\(\\sin x=\\cos x\\) by \\(\\cos x\\) to obtain an equation in \\(\\tan x\\)."
+    },
+    {
+      "id": "dynanca-448-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "A reflected cosine as a shifted sine",
+      "learningObjective": "Express a reflected cosine as a horizontal shift of the sine.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Which function is equal to \\(y=-\\cos x\\) for every real \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=\\sin\\left(x-\\frac{\\pi}{2}\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=\\sin\\left(x+\\frac{\\pi}{2}\\right)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By the difference formula, \\(\\sin\\left(x-\\frac{\\pi}{2}\\right)=\\sin x\\cos\\frac{\\pi}{2}-\\cos x\\sin\\frac{\\pi}{2}=-\\cos x\\). So \\(-\\cos x\\) is the sine shifted \\(\\frac{\\pi}{2}\\) to the right. The expression \\(\\sin\\left(x+\\frac{\\pi}{2}\\right)\\) equals \\(+\\cos x\\).",
+      "hint": "Expand both candidates with the sine sum and difference formulas, or test \\(x=0\\)."
+    },
+    {
+      "id": "dynanca-448-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Rewriting a shifted sine as a cosine",
+      "learningObjective": "Convert a shifted sine into an equivalent shifted cosine.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Which function is equal to \\(y=\\sin\\left(x-\\frac{\\pi}{6}\\right)\\) for every real \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=\\cos\\left(x+\\frac{\\pi}{3}\\right)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=\\cos\\left(x-\\frac{2\\pi}{3}\\right)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(\\sin u=\\cos\\left(u-\\frac{\\pi}{2}\\right)\\) with \\(u=x-\\frac{\\pi}{6}\\): \\(\\sin\\left(x-\\frac{\\pi}{6}\\right)=\\cos\\left(x-\\frac{\\pi}{6}-\\frac{\\pi}{2}\\right)=\\cos\\left(x-\\frac{2\\pi}{3}\\right)\\). The expression \\(\\cos\\left(x+\\frac{\\pi}{3}\\right)\\) is \\(\\cos\\left(u+\\frac{\\pi}{2}\\right)=-\\sin u\\), which has the opposite sign.",
+      "hint": "Replace the sine by a cosine whose argument is smaller by \\(\\frac{\\pi}{2}\\), then combine the constants."
+    }
+  ]
+}

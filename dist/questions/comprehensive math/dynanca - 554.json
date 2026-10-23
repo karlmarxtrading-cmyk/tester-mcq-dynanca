@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-554",
+  "category": "Comprehensive Mathematics",
+  "title": "554. Discrete Mathematics, Counting & Graph Theory: Counting Functions Between Finite Sets",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-554-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Functions from a small set",
+      "learningObjective": "Count the functions between two small finite sets.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(A\\) have \\(3\\) elements and \\(B\\) have \\(2\\) elements. How many functions from \\(A\\) to \\(B\\) are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each of the \\(3\\) elements of \\(A\\) is assigned one of the \\(2\\) elements of \\(B\\), independently, so there are \\(2\\cdot 2\\cdot 2=2^3=8\\) functions. The number \\(9=3^2\\) is the number of functions in the opposite direction, from \\(B\\) to \\(A\\).",
+      "hint": "Count the choices of image for each element of the domain and multiply."
+    },
+    {
+      "id": "dynanca-554-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Functions into a two-element set",
+      "learningObjective": "Count the functions from a four-element set into a two-element set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many functions are there from \\(\\{1,2,3,4\\}\\) to \\(\\{0,1\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each of the \\(4\\) inputs has \\(2\\) possible values, so there are \\(2^4=16\\) functions. The product \\(4\\cdot 2=8\\) counts the individual input-output pairs that could occur, not the functions.",
+      "hint": "A function is specified by choosing a value for every input."
+    },
+    {
+      "id": "dynanca-554-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Functions into a larger set",
+      "learningObjective": "Count the functions from a two-element set into a six-element set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A\\) have \\(2\\) elements and \\(B\\) have \\(6\\) elements. How many functions from \\(A\\) to \\(B\\) are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(64\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number of functions is \\(|B|^{|A|}=6^2=36\\): each of the \\(2\\) elements of \\(A\\) has \\(6\\) possible images. The number \\(64=2^6\\) counts the functions from \\(B\\) to \\(A\\).",
+      "hint": "The size of the codomain is the base, and the size of the domain is the exponent."
+    },
+    {
+      "id": "dynanca-554-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Constant functions",
+      "learningObjective": "Count the constant functions between two finite sets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A\\) have \\(5\\) elements and \\(B\\) have \\(3\\) elements. How many functions from \\(A\\) to \\(B\\) are constant?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A constant function sends every element of \\(A\\) to the same element of \\(B\\). It is determined by that single value, which can be chosen in \\(3\\) ways. The size of \\(A\\) plays no role, so \\(5\\) is not the answer.",
+      "hint": "A constant function is decided by one choice."
+    },
+    {
+      "id": "dynanca-554-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "One prescribed value",
+      "learningObjective": "Count functions when the image of one element is fixed.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many functions \\(f:\\{1,2,3\\}\\to\\{1,2,3,4\\}\\) satisfy \\(f(1)=4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(64\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The value \\(f(1)\\) is fixed. The values \\(f(2)\\) and \\(f(3)\\) can each be any of \\(4\\) elements, so there are \\(4\\cdot 4=16\\) such functions. The number \\(64=4^3\\) counts all functions, with no condition on \\(f(1)\\).",
+      "hint": "Only two of the three inputs still have a free choice of image."
+    },
+    {
+      "id": "dynanca-554-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Finding the size of the domain",
+      "learningObjective": "Find the size of the domain from the number of functions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "There are exactly \\(81\\) functions from a set \\(A\\) to a set \\(B\\) with \\(3\\) elements. How many elements does \\(A\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(27\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number of functions is \\(3^{|A|}\\). Since \\(3^4=81\\), the set \\(A\\) has \\(4\\) elements. Dividing \\(81\\) by \\(3\\) gives \\(27\\), which is not how the count depends on \\(|A|\\).",
+      "hint": "Write \\(81\\) as a power of \\(3\\)."
+    },
+    {
+      "id": "dynanca-554-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Functions onto a two-element set",
+      "learningObjective": "Count the onto functions from a three-element set to a two-element set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "How many functions from a set with \\(3\\) elements onto a set with \\(2\\) elements are there, that is, functions in which both elements of the codomain are used?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(2^3=8\\) functions in all. Exactly \\(2\\) of them are not onto: the two constant functions, each of which uses only one element of the codomain. So \\(8-2=6\\) functions are onto.",
+      "hint": "Remove the functions that use only one of the two possible values."
+    },
+    {
+      "id": "dynanca-554-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Functions that are not bijections",
+      "learningObjective": "Count functions on a set that fail to be bijections.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "How many functions from \\(\\{1,2,3\\}\\) to itself are not bijections?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(21\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(3^3=27\\) functions from the set to itself, and \\(3!=6\\) of them are bijections. So \\(27-6=21\\) are not bijections. The number \\(6\\) counts the bijections themselves.",
+      "hint": "Subtract the number of bijections from the number of all functions."
+    },
+    {
+      "id": "dynanca-554-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Functions onto a three-element set",
+      "learningObjective": "Count onto functions with inclusion and exclusion.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many functions from a set with \\(4\\) elements onto a set with \\(3\\) elements are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(81\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(36\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(3^4=81\\) functions in all. Those that miss a given element of the codomain number \\(2^4=16\\), and those that miss two given elements number \\(1\\). By inclusion and exclusion, the number that miss at least one element is \\(3\\cdot 16-3\\cdot 1=45\\), so \\(81-45=36\\) functions are onto. The number \\(81\\) counts all functions.",
+      "hint": "Count the functions that miss at least one element of the codomain and subtract."
+    },
+    {
+      "id": "dynanca-554-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Functions bounded below by the identity",
+      "learningObjective": "Count functions satisfying an inequality at every input.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many functions \\(f:\\{1,2,3,4\\}\\to\\{1,2,3,4\\}\\) satisfy \\(f(x)\\ge x\\) for every \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(256\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The value \\(f(1)\\) can be any of \\(1,2,3,4\\), which is \\(4\\) choices; \\(f(2)\\) can be \\(2,3,4\\), which is \\(3\\) choices; \\(f(3)\\) has \\(2\\) choices; and \\(f(4)\\) must be \\(4\\). The choices are independent, so there are \\(4\\cdot 3\\cdot 2\\cdot 1=24\\) such functions. The number \\(256=4^4\\) counts all functions.",
+      "hint": "Count the allowed values of \\(f(x)\\) separately for each \\(x\\)."
+    }
+  ]
+}

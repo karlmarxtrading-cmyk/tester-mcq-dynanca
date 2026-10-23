@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-343",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 343",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-343-q001",
+      "category": "Statistics",
+      "concept": "Effect of Outliers on Measures of Center",
+      "learningObjective": "Determine which measure of central tendency is most affected by an extreme value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A data set has one extremely large value added to an otherwise symmetric cluster of values. Which measure of center is usually most affected by this outlier?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The mean"
+        },
+        {
+          "label": "B",
+          "text": "The median"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The mean uses every observation in its calculation, so an extremely large value strongly pulls the mean upward. The median depends mainly on the middle position of the ordered data and is resistant to extreme values. Therefore, the mean is usually most affected by an outlier.",
+      "hint": "Consider whether the measure uses the numerical size of every observation or mainly its position in the ordered data."
+    },
+    {
+      "id": "math-gaokao-343-q002",
+      "category": "Statistics",
+      "concept": "Upper Fence Using the \\(1.5\\times\\mathrm{IQR}\\) Rule",
+      "learningObjective": "Compute the upper fence \\(Q_3+1.5\\times\\mathrm{IQR}\\) and identify an outlier.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For a data set, \\(Q_1=20\\) and \\(Q_3=40\\). Using the \\(1.5\\times\\mathrm{IQR}\\) rule, which value is an outlier?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(75\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(65\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First compute the interquartile range:\n\\[\n\\mathrm{IQR}=Q_3-Q_1=40-20=20.\n\\]\nThe upper fence is\n\\[\nQ_3+1.5\\times\\mathrm{IQR}=40+1.5(20)=70.\n\\]\nSince \\(75>70\\), the value \\(75\\) is an outlier. The value \\(65\\) is less than \\(70\\), so it is not an outlier.",
+      "hint": "Compute the interquartile range first, then add \\(1.5\\times\\mathrm{IQR}\\) to \\(Q_3\\)."
+    },
+    {
+      "id": "math-gaokao-343-q003",
+      "category": "Statistics",
+      "concept": "Identifying Outliers Using Quartiles",
+      "learningObjective": "Determine whether a value is an outlier in a small data set using quartiles and fences.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Consider the data set \\(12,15,16,18,19,20,22,50\\). Using the \\(1.5\\times\\mathrm{IQR}\\) rule, which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There are no outliers."
+        },
+        {
+          "label": "B",
+          "text": "\\(50\\) is an outlier."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Order the data and split them into two halves. The lower half is \\(12,15,16,18\\), so\n\\[\nQ_1=\\frac{15+16}{2}=15.5.\n\\]\nThe upper half is \\(19,20,22,50\\), so\n\\[\nQ_3=\\frac{20+22}{2}=21.\n\\]\nThus\n\\[\n\\mathrm{IQR}=21-15.5=5.5.\n\\]\nThe upper fence is\n\\[\nQ_3+1.5\\times\\mathrm{IQR}=21+1.5(5.5)=21+8.25=29.25.\n\\]\nSince \\(50>29.25\\), the value \\(50\\) is an outlier.",
+      "hint": "Split the ordered data into lower and upper halves to find \\(Q_1\\) and \\(Q_3\\), then compute the fences."
+    },
+    {
+      "id": "math-gaokao-343-q004",
+      "category": "Statistics",
+      "concept": "Outlier Detection with the \\(1.5\\times\\mathrm{IQR}\\) Rule",
+      "learningObjective": "Apply the \\(1.5\\times\\mathrm{IQR}\\) rule to decide whether a given value is an outlier.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For a data set, \\(Q_1=7.5\\) and \\(Q_3=13\\). Using the \\(1.5\\times\\mathrm{IQR}\\) rule, which value is an outlier?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(30\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The interquartile range is\n\\[\n\\mathrm{IQR}=13-7.5=5.5.\n\\]\nThe upper fence is\n\\[\nQ_3+1.5\\times\\mathrm{IQR}=13+1.5(5.5)=13+8.25=21.25.\n\\]\nSince \\(30>21.25\\), the value \\(30\\) is an outlier. Since \\(20<21.25\\), the value \\(20\\) is not an outlier.",
+      "hint": "Compute the upper fence and compare each candidate value with it."
+    },
+    {
+      "id": "math-gaokao-343-q005",
+      "category": "Statistics",
+      "concept": "Effect of Removing an Outlier on Mean and Median",
+      "learningObjective": "Compare changes in the mean and median after removing an extreme value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The data set \\(4,5,6,7,20\\) contains an extreme value \\(20\\). If \\(20\\) is removed, how do the mean and median change?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The mean stays the same, while the median decreases."
+        },
+        {
+          "label": "B",
+          "text": "The mean decreases, and the median decreases."
+        }
+      ],
+      "answer": "B",
+      "explanation": "For the original data set,\n\\[\n\\text{mean}=\\frac{4+5+6+7+20}{5}=\\frac{42}{5}=8.4,\n\\]\nand the median is \\(6\\).\nAfter removing \\(20\\), the new data set is \\(4,5,6,7\\).\n\\[\n\\text{new mean}=\\frac{4+5+6+7}{4}=\\frac{22}{4}=5.5,\n\\]\nand the new median is\n\\[\n\\frac{5+6}{2}=5.5.\n\\]\nBoth the mean and the median decrease.",
+      "hint": "Calculate the mean and median before removal, then calculate them again after removing \\(20\\)."
+    },
+    {
+      "id": "math-gaokao-343-q006",
+      "category": "Statistics",
+      "concept": "Resistant Statistics",
+      "learningObjective": "Identify which statistic is resistant to the influence of outliers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which statistic is most resistant to the influence of outliers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Median"
+        },
+        {
+          "label": "B",
+          "text": "Range"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The median is based on the middle position of ordered data and is not strongly affected by extreme values. The range is defined as the maximum minus the minimum, so it is very sensitive to outliers. Therefore, the median is more resistant to outliers.",
+      "hint": "Compare whether the statistic depends directly on extreme maximum or minimum values."
+    },
+    {
+      "id": "math-gaokao-343-q007",
+      "category": "Statistics",
+      "concept": "Z-Score Outlier Threshold",
+      "learningObjective": "Recognize a common standardized-score criterion for potential outliers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "In many outlier-detection guidelines based on standardized scores, a data value is often considered a potential outlier when its z-score satisfies which condition?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(|z|>3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(|z|>1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A common guideline is that a value with \\(|z|>3\\) is unusually far from the mean and may be considered a potential outlier. The condition \\(|z|>1\\) is much weaker and would label many ordinary values as unusual, so it is not the standard three-sigma outlier threshold.",
+      "hint": "Recall the common three-sigma rule for standardized values."
+    },
+    {
+      "id": "math-gaokao-343-q008",
+      "category": "Statistics",
+      "concept": "Applying the \\(1.5\\times\\mathrm{IQR}\\) Rule",
+      "learningObjective": "Use \\(Q_1\\) and \\(Q_3\\) to determine which value is an outlier.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For a data set, \\(Q_1=10\\) and \\(Q_3=20\\). Using the \\(1.5\\times\\mathrm{IQR}\\) rule, which value would be flagged as an outlier?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(34\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The interquartile range is\n\\[\n\\mathrm{IQR}=20-10=10.\n\\]\nThe upper fence is\n\\[\nQ_3+1.5\\times\\mathrm{IQR}=20+1.5(10)=20+15=35.\n\\]\nSince \\(36>35\\), the value \\(36\\) is an outlier. Since \\(34<35\\), the value \\(34\\) is not an outlier.",
+      "hint": "Find the upper fence using \\(Q_3\\) and the interquartile range."
+    },
+    {
+      "id": "math-gaokao-343-q009",
+      "category": "Statistics",
+      "concept": "Choosing a Representative Measure of Center",
+      "learningObjective": "Decide whether the mean or median better represents a data set containing an extreme value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The data set \\(2,3,3,4,38\\) contains an extreme value. Which statement best describes which measure of center better represents the typical value?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The mean is more representative because it uses every observation."
+        },
+        {
+          "label": "B",
+          "text": "The median is more representative because it is not strongly pulled by the extreme value."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The mean is\n\\[\n\\frac{2+3+3+4+38}{5}=\\frac{50}{5}=10,\n\\]\nwhile the median is \\(3\\). The value \\(38\\) pulls the mean far away from the main cluster. The median remains close to the typical values \\(2,3,3,4\\), so it better represents the typical value.",
+      "hint": "Compare the mean and median with the main cluster of data values."
+    },
+    {
+      "id": "math-gaokao-343-q010",
+      "category": "Statistics",
+      "concept": "Outlier Detection in a Larger Data Set",
+      "learningObjective": "Determine an outlier using quartiles and fences in a ten-value data set.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Consider the data set \\(5,6,6,7,7,7,8,8,9,40\\). Using the \\(1.5\\times\\mathrm{IQR}\\) rule, which value is an outlier?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(40\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(10\\) values. The lower half is \\(5,6,6,7,7\\), so\n\\[\nQ_1=6.\n\\]\nThe upper half is \\(7,8,8,9,40\\), so\n\\[\nQ_3=8.\n\\]\nThus\n\\[\n\\mathrm{IQR}=8-6=2.\n\\]\nThe fences are\n\\[\nQ_1-1.5\\times\\mathrm{IQR}=6-3=3\n\\]\nand\n\\[\nQ_3+1.5\\times\\mathrm{IQR}=8+3=11.\n\\]\nThe value \\(40\\) is greater than \\(11\\), so it is an outlier. The value \\(5\\) lies between \\(3\\) and \\(11\\), so it is not an outlier.",
+      "hint": "Find \\(Q_1\\) and \\(Q_3\\) as the medians of the lower and upper halves, then compute the lower and upper fences."
+    }
+  ]
+}

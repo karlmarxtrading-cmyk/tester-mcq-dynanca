@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-392",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 392",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-392-q001",
+      "category": "Number Theory",
+      "concept": "Euclidean Algorithm for Greatest Common Divisor",
+      "learningObjective": "Compute the greatest common divisor of two integers using the Euclidean algorithm.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Use the Euclidean algorithm to find \\(\\gcd(252,105)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(21\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(42\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Apply the Euclidean algorithm:\n\\[\n\\begin{aligned}\n252&=2\\cdot 105+42 \\\\\n105&=2\\cdot 42+21 \\\\\n42&=2\\cdot 21+0\n\\end{aligned}\n\\]\nThe last nonzero remainder is \\(21\\). Therefore, \\(\\gcd(252,105)=21\\).",
+      "hint": "Repeatedly replace the larger number by the remainder obtained when it is divided by the smaller number."
+    },
+    {
+      "id": "math-gaokao-392-q002",
+      "category": "Number Theory",
+      "concept": "Euclidean Algorithm for Greatest Common Divisor",
+      "learningObjective": "Determine the greatest common divisor of two larger integers by repeated division with remainder.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Use the Euclidean algorithm to compute \\(\\gcd(1287,594)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(99\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(33\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Euclidean algorithm gives\n\\[\n1287=2\\cdot594+99,\\qquad594=6\\cdot99+0.\n\\]\nThe last nonzero remainder is \\(99\\), so the greatest common divisor is \\(99\\). The distractor \\(33\\) is a common divisor but not the greatest one.",
+      "hint": "Perform division with remainder until the remainder becomes \\(0\\), then take the last nonzero remainder."
+    },
+    {
+      "id": "math-gaokao-392-q003",
+      "category": "Number Theory",
+      "concept": "Euclidean Algorithm for Greatest Common Divisor",
+      "learningObjective": "Apply the Euclidean algorithm to find the greatest common divisor of two four-digit numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\gcd(12378,3054)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Apply the Euclidean algorithm:\n\\[\n\\begin{aligned}\n12378&=4\\cdot 3054+162 \\\\\n3054&=18\\cdot 162+138 \\\\\n162&=1\\cdot 138+24 \\\\\n138&=5\\cdot 24+18 \\\\\n24&=1\\cdot 18+6 \\\\\n18&=3\\cdot 6+0\n\\end{aligned}\n\\]\nThe last nonzero remainder is \\(6\\). Therefore, \\(\\gcd(12378,3054)=6\\).",
+      "hint": "Keep dividing the previous divisor by the previous remainder, and record each remainder carefully."
+    },
+    {
+      "id": "math-gaokao-392-q004",
+      "category": "Number Theory",
+      "concept": "Least Common Multiple via Greatest Common Divisor",
+      "learningObjective": "Use the Euclidean algorithm to find a greatest common divisor and then compute a least common multiple.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Use the Euclidean algorithm to find \\(\\operatorname{lcm}(84,126)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(252\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(504\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First compute \\(\\gcd(126,84)\\) by the Euclidean algorithm:\n\\[\n\\begin{aligned}\n126&=1\\cdot 84+42 \\\\\n84&=2\\cdot 42+0\n\\end{aligned}\n\\]\nThus \\(\\gcd(84,126)=42\\). Since\n\\[\n\\gcd(a,b)\\operatorname{lcm}(a,b)=ab,\n\\]\nwe get\n\\[\n\\operatorname{lcm}(84,126)=\\frac{84\\cdot 126}{42}=252.\n\\]",
+      "hint": "First find the greatest common divisor, then use the relationship between the product, the greatest common divisor, and the least common multiple."
+    },
+    {
+      "id": "math-gaokao-392-q005",
+      "category": "Number Theory",
+      "concept": "Bezout Identity from the Euclidean Algorithm",
+      "learningObjective": "Find an integer linear combination of two numbers that equals their greatest common divisor.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Given \\(\\gcd(252,105)=21\\), which pair \\((x,y)\\) satisfies\n\\[\n252x+105y=21?\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,-7)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-3,7)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide the equation by \\(21\\):\n\\[\n12x+5y=1.\n\\]\nFor \\((x,y)=(3,-7)\\),\n\\[\n12(3)+5(-7)=36-35=1.\n\\]\nMultiplying by \\(21\\) gives\n\\[\n252(3)+105(-7)=21.\n\\]\nFor \\((-3,7)\\), the left side equals \\(-21\\), so it is not a solution.",
+      "hint": "Divide the whole equation by the greatest common divisor, then test the given pairs in the simpler equation."
+    },
+    {
+      "id": "math-gaokao-392-q006",
+      "category": "Number Theory",
+      "concept": "Number of Steps in the Euclidean Algorithm",
+      "learningObjective": "Count the division steps required by the Euclidean algorithm for a given pair of integers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many division steps does the Euclidean algorithm use to compute \\(\\gcd(48,18)\\), if every equation \\(a=bq+r\\) is counted until and including the equation with remainder \\(0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The Euclidean algorithm gives:\n\\[\n\\begin{aligned}\n48&=2\\cdot 18+12 \\\\\n18&=1\\cdot 12+6 \\\\\n12&=2\\cdot 6+0\n\\end{aligned}\n\\]\nThere are three division equations in total. Therefore, the algorithm uses \\(3\\) steps.",
+      "hint": "Count every division equation from the first division until the first zero remainder appears."
+    },
+    {
+      "id": "math-gaokao-392-q007",
+      "category": "Number Theory",
+      "concept": "Coprimality after Removing the Greatest Common Divisor",
+      "learningObjective": "Reason about the quotient integers obtained after dividing by the greatest common divisor.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(d=\\gcd(a,b)\\) for positive integers \\(a,b\\), and write\n\\[\na=dp,\\qquad b=dq.\n\\]\nWhat is \\(\\gcd(p,q)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(d\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(d\\) is the greatest common divisor of \\(a\\) and \\(b\\), all common prime factors of \\(a\\) and \\(b\\) have been removed in the quotients \\(p\\) and \\(q\\). If \\(\\gcd(p,q)=g>1\\), then \\(dg\\) would divide both \\(a=dp\\) and \\(b=dq\\), contradicting the maximality of \\(d\\). Hence,\n\\[\n\\gcd(p,q)=1.\n\\]",
+      "hint": "Ask what would happen if the two quotients still shared a common factor greater than \\(1\\)."
+    },
+    {
+      "id": "math-gaokao-392-q008",
+      "category": "Number Theory",
+      "concept": "Greatest Common Divisor Condition",
+      "learningObjective": "Identify an integer whose greatest common divisor with \\(12\\) equals \\(3\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which positive integer \\(k\\) satisfies\n\\[\n\\gcd(k,12)=3?\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(18\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(k=18\\),\n\\[\n\\gcd(18,12)=6,\n\\]\nso \\(18\\) does not satisfy the condition.\nFor \\(k=15\\),\n\\[\n\\gcd(15,12)=3.\n\\]\nTherefore, \\(k=15\\) is the required value.",
+      "hint": "Compute the greatest common divisor of each candidate with the given fixed integer."
+    },
+    {
+      "id": "math-gaokao-392-q009",
+      "category": "Number Theory",
+      "concept": "Modular Inverse via the Euclidean Algorithm",
+      "learningObjective": "Use the Euclidean algorithm and back-substitution to find a modular inverse.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Using the Euclidean algorithm, find the least positive integer \\(x\\) such that\n\\[\n5x\\equiv 1 \\pmod{17}.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Apply the Euclidean algorithm to \\(17\\) and \\(5\\):\n\\[\n\\begin{aligned}\n17&=3\\cdot 5+2 \\\\\n5&=2\\cdot 2+1.\n\\end{aligned}\n\\]\nBack-substitute:\n\\[\n\\begin{aligned}\n1&=5-2\\cdot 2 \\\\\n1&=5-2(17-3\\cdot 5)=7\\cdot 5-2\\cdot 17.\n\\end{aligned}\n\\]\nThus\n\\[\n7\\cdot 5\\equiv 1 \\pmod{17}.\n\\]\nThe least positive inverse is \\(x=7\\). Checking \\(x=12\\),\n\\[\n5\\cdot 12=60\\equiv 9 \\pmod{17},\n\\]\nso \\(12\\) is not correct.",
+      "hint": "Run the Euclidean algorithm on \\(17\\) and \\(5\\), then express \\(1\\) as a combination of \\(17\\) and \\(5\\)."
+    },
+    {
+      "id": "math-gaokao-392-q010",
+      "category": "Number Theory",
+      "concept": "Euclidean Algorithm and Fibonacci-Type Worst Case",
+      "learningObjective": "Count the Euclidean algorithm steps for a consecutive Fibonacci pair.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The Euclidean algorithm is applied to \\(55\\) and \\(34\\). How many division steps are performed up to and including the first equation with zero remainder, counting every equation \\(a=bq+r\\) with \\(r\\ge 0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Perform the Euclidean algorithm:\n\\[\n\\begin{aligned}\n55&=1\\cdot 34+21 \\\\\n34&=1\\cdot 21+13 \\\\\n21&=1\\cdot 13+8 \\\\\n13&=1\\cdot 8+5 \\\\\n8&=1\\cdot 5+3 \\\\\n5&=1\\cdot 3+2 \\\\\n3&=1\\cdot 2+1 \\\\\n2&=2\\cdot 1+0.\n\\end{aligned}\n\\]\nThere are \\(8\\) division equations in total before and including the first zero remainder. Therefore, the required number of steps is \\(8\\).",
+      "hint": "Continue the division process until a remainder \\(0\\) appears, and count every division equation performed."
+    }
+  ]
+}

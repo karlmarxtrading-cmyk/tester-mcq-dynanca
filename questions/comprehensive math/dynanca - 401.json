@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-401",
+  "category": "Comprehensive Mathematics",
+  "title": "401. Geometry, Spatial Thinking & Measurement: Segment Intersection by Coordinates",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-401-q001",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Intersection point of two crossing segments",
+      "learningObjective": "Find the coordinates where two given segments cross by solving their line equations.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Segment \\(PQ\\) joins \\(P(0,0)\\) to \\(Q(4,4)\\), and segment \\(RS\\) joins \\(R(0,4)\\) to \\(S(4,0)\\). At which point do the two segments intersect?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,2)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Segment \\(PQ\\) lies on \\(y=x\\) and segment \\(RS\\) lies on \\(y=4-x\\). Setting \\(x=4-x\\) gives \\(x=2\\), so \\(y=2\\). The point \\((2,2)\\) has \\(0\\le x\\le 4\\) on both segments, so it lies on both of them.",
+      "hint": "Write the equation of the line through each pair of endpoints, then solve the two equations together."
+    },
+    {
+      "id": "dynanca-401-q002",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Collinear segments that do not meet",
+      "learningObjective": "Decide whether two collinear segments share a point by comparing their coordinate ranges.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Segment \\(AB\\) joins \\(A(0,0)\\) to \\(B(2,2)\\), and segment \\(CD\\) joins \\(C(3,3)\\) to \\(D(5,5)\\). Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The segments lie on the same line, so they must share a point."
+        },
+        {
+          "label": "B",
+          "text": "The segments lie on the same line but have no common point."
+        }
+      ],
+      "answer": "B",
+      "explanation": "All four points satisfy \\(y=x\\), so the segments are collinear. On \\(AB\\) the \\(x\\)-coordinates satisfy \\(0\\le x\\le 2\\), while on \\(CD\\) they satisfy \\(3\\le x\\le 5\\). These ranges do not overlap, so no point belongs to both segments.",
+      "hint": "Lying on one line is not enough; compare the range of \\(x\\)-values covered by each segment."
+    },
+    {
+      "id": "dynanca-401-q003",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Intersection with a vertical segment",
+      "learningObjective": "Find the intersection of a slanted segment and a vertical segment using a parameter.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Segment \\(AB\\) joins \\(A(1,1)\\) to \\(B(5,3)\\). Segment \\(CD\\) joins \\(C(3,0)\\) to \\(D(3,5)\\). At which point do the segments intersect?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((3,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Write \\(AB\\) as \\((x,y)=(1+4t,\\,1+2t)\\) with \\(0\\le t\\le 1\\). Every point of \\(CD\\) has \\(x=3\\), so \\(1+4t=3\\) and \\(t=\\frac{1}{2}\\). Then \\(y=1+2\\cdot\\frac{1}{2}=2\\). Since \\(0\\le 2\\le 5\\), the point \\((3,2)\\) is also on \\(CD\\).",
+      "hint": "Every point of the vertical segment has the same \\(x\\)-coordinate; find where \\(AB\\) reaches that value."
+    },
+    {
+      "id": "dynanca-401-q004",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Orientation of three points by a cross product",
+      "learningObjective": "Compute the two-dimensional cross product of two edge vectors and interpret its sign as a turning direction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For \\(A(0,0)\\), \\(B(4,0)\\), and \\(C(2,3)\\), define \\(d=(x_B-x_A)(y_C-y_A)-(y_B-y_A)(x_C-x_A)\\). What is \\(d\\), and what does it say about the turn from \\(A\\) to \\(B\\) to \\(C\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(d=12\\), so the turn is counterclockwise."
+        },
+        {
+          "label": "B",
+          "text": "\\(d=-12\\), so the turn is clockwise."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substituting the coordinates gives \\(d=(4)(3)-(0)(2)=12\\). A positive value means that \\(C\\) lies to the left of the directed line from \\(A\\) to \\(B\\), which is a counterclockwise turn.",
+      "hint": "Substitute the coordinates carefully; a positive result means a left (counterclockwise) turn."
+    },
+    {
+      "id": "dynanca-401-q005",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Lines that cross outside a segment",
+      "learningObjective": "Distinguish the intersection of two lines from the intersection of two segments.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Segment \\(AB\\) joins \\(A(0,0)\\) to \\(B(4,0)\\). Segment \\(CD\\) joins \\(C(2,-1)\\) to \\(D(2,-3)\\). Do the two segments intersect?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes. The lines meet at \\((2,0)\\), so the segments meet there."
+        },
+        {
+          "label": "B",
+          "text": "No. The lines meet at \\((2,0)\\), but that point is not on \\(CD\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The line through \\(A\\) and \\(B\\) is \\(y=0\\), and the line through \\(C\\) and \\(D\\) is \\(x=2\\); they meet at \\((2,0)\\). Points of \\(CD\\) satisfy \\(-3\\le y\\le -1\\), and \\(0\\) is outside this range. Hence \\((2,0)\\) is not on \\(CD\\), and the segments do not intersect.",
+      "hint": "After finding where the two lines meet, test whether that point lies within both segments."
+    },
+    {
+      "id": "dynanca-401-q006",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Segments meeting at a shared endpoint",
+      "learningObjective": "Recognise that closed segments intersect when they share an endpoint.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Closed segments include their endpoints. Segment \\(AB\\) joins \\(A(0,0)\\) to \\(B(4,4)\\), and segment \\(CD\\) joins \\(C(4,4)\\) to \\(D(6,0)\\). What is the intersection of the two closed segments?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No point at all."
+        },
+        {
+          "label": "B",
+          "text": "Exactly one point, \\((4,4)\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The point \\((4,4)\\) is the endpoint \\(B\\) of the first segment and the endpoint \\(C\\) of the second, so it belongs to both closed segments. The segments lie on the different lines \\(y=x\\) and \\(y=-2x+12\\), which meet only once, so there is no other common point.",
+      "hint": "Check whether any endpoint of one segment also belongs to the other segment."
+    },
+    {
+      "id": "dynanca-401-q007",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Parameter value at an intersection",
+      "learningObjective": "Solve a pair of parametric equations to find the parameter at which two segments meet.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Segment one is \\(P(t)=(1+4t,\\,2+2t)\\) for \\(0\\le t\\le 1\\). Segment two is \\(Q(s)=(5-2s,\\,1+4s)\\) for \\(0\\le s\\le 1\\). At which value of \\(t\\) do the segments meet?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(t=\\frac{7}{10}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(t=\\frac{3}{5}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Equate coordinates: \\(1+4t=5-2s\\) and \\(2+2t=1+4s\\). The first gives \\(2t+s=2\\) and the second gives \\(2t-4s=-1\\). Subtracting, \\(5s=3\\), so \\(s=\\frac{3}{5}\\) and \\(t=\\frac{1}{2}\\left(2-\\frac{3}{5}\\right)=\\frac{7}{10}\\). Both parameters lie in \\([0,1]\\), so the segments meet when \\(t=\\frac{7}{10}\\).",
+      "hint": "Set the \\(x\\)-coordinates equal and the \\(y\\)-coordinates equal, then solve the two equations for \\(s\\) and \\(t\\); be careful which parameter is requested."
+    },
+    {
+      "id": "dynanca-401-q008",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Overlap of collinear segments",
+      "learningObjective": "Describe the intersection of two overlapping collinear segments as a segment.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Segment \\(AB\\) joins \\(A(0,0)\\) to \\(B(6,0)\\), and segment \\(CD\\) joins \\(C(4,0)\\) to \\(D(9,0)\\). What is the intersection of the two closed segments?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The segment from \\((4,0)\\) to \\((6,0)\\)."
+        },
+        {
+          "label": "B",
+          "text": "The single point \\((4,0)\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both segments lie on the \\(x\\)-axis. Segment \\(AB\\) covers \\(0\\le x\\le 6\\) and segment \\(CD\\) covers \\(4\\le x\\le 9\\). The common values are \\(4\\le x\\le 6\\), so the intersection is the whole segment from \\((4,0)\\) to \\((6,0)\\), which contains infinitely many points.",
+      "hint": "For collinear segments on a horizontal line, intersect the two ranges of \\(x\\)-values."
+    },
+    {
+      "id": "dynanca-401-q009",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Finding an endpoint from a known intersection",
+      "learningObjective": "Use a known intersection point to determine an unknown endpoint coordinate.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Segment \\(AB\\) joins \\(A(0,0)\\) to \\(B(4,4)\\). Segment \\(CD\\) joins \\(C(0,6)\\) to \\(D(c,0)\\) and crosses \\(AB\\) at \\((2,2)\\). What is the value of \\(c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(c=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(c=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The line \\(CD\\) passes through \\((0,6)\\) and \\((2,2)\\), so its slope is \\(\\frac{2-6}{2-0}=-2\\) and its equation is \\(y=6-2x\\). It reaches \\(y=0\\) when \\(x=3\\). Therefore \\(D=(3,0)\\) and \\(c=3\\).",
+      "hint": "Two known points on segment \\(CD\\) determine its line; find where that line reaches \\(y=0\\)."
+    },
+    {
+      "id": "dynanca-401-q010",
+      "category": "Geometry, Spatial Thinking & Measurement",
+      "concept": "Straddle test for two segments",
+      "learningObjective": "Apply orientation signs for both segments to decide whether two segments cross.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(A(1,1)\\), \\(B(7,4)\\), \\(C(3,5)\\), and \\(D(6,1)\\). Using orientation (cross-product) signs, which conclusion about segments \\(AB\\) and \\(CD\\) is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(C\\) and \\(D\\) are on opposite sides of line \\(AB\\), and \\(A\\) and \\(B\\) are on opposite sides of line \\(CD\\), so the segments cross."
+        },
+        {
+          "label": "B",
+          "text": "\\(C\\) and \\(D\\) are on opposite sides of line \\(AB\\), but \\(A\\) and \\(B\\) are on the same side of line \\(CD\\), so the segments do not cross."
+        }
+      ],
+      "answer": "A",
+      "explanation": "With \\(\\overrightarrow{AB}=(6,3)\\): for \\(C\\), \\((6)(4)-(3)(2)=18\\); for \\(D\\), \\((6)(0)-(3)(5)=-15\\). The signs differ. With \\(\\overrightarrow{CD}=(3,-4)\\): for \\(A\\), \\((3)(-4)-(-4)(-2)=-20\\); for \\(B\\), \\((3)(-1)-(-4)(4)=13\\). The signs differ again. Each segment straddles the line of the other, so the segments cross.",
+      "hint": "Compute the orientation of each endpoint of one segment relative to the other segment, in both directions, and compare signs."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-267",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 267",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-267-q001",
+      "category": "Calculus",
+      "concept": "Direct Substitution for a Polynomial Limit",
+      "learningObjective": "Evaluate the limit of a polynomial function by direct substitution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to2}(x^3-3x+4)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since a polynomial is continuous everywhere, substitute \\(x=2\\) directly:\n\\[\n2^3-3(2)+4=8-6+4=6.\n\\]\nTherefore, \\(\\lim_{x\\to2}(x^3-3x+4)=6\\).",
+      "hint": "Use direct substitution for a polynomial limit."
+    },
+    {
+      "id": "math-gaokao-267-q002",
+      "category": "Calculus",
+      "concept": "Factoring to Remove a Removable Discontinuity",
+      "learningObjective": "Evaluate a rational limit that becomes \\(0/0\\) by factoring and canceling.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to3}\\frac{x^2-9}{x-3}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Direct substitution gives \\(0/0\\). Factor the numerator:\n\\[\nx^2-9=(x-3)(x+3).\n\\]\nFor \\(x\\neq3\\),\n\\[\n\\frac{x^2-9}{x-3}=\\frac{(x-3)(x+3)}{x-3}=x+3.\n\\]\nThus,\n\\[\n\\lim_{x\\to3}\\frac{x^2-9}{x-3}=\\lim_{x\\to3}(x+3)=6.\n\\]",
+      "hint": "Factor the numerator and cancel the common factor before substituting."
+    },
+    {
+      "id": "math-gaokao-267-q003",
+      "category": "Calculus",
+      "concept": "Rationalizing a Square-Root Limit",
+      "learningObjective": "Evaluate a limit involving a square root by multiplying by the conjugate.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to0}\\frac{\\sqrt{1+x}-1}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiply numerator and denominator by the conjugate \\(\\sqrt{1+x}+1\\):\n\\[\n\\frac{\\sqrt{1+x}-1}{x}\n=\n\\frac{(\\sqrt{1+x}-1)(\\sqrt{1+x}+1)}\n{x(\\sqrt{1+x}+1)}.\n\\]\nThe numerator becomes\n\\[\n(1+x)-1=x.\n\\]\nSo for \\(x\\neq0\\),\n\\[\n\\frac{\\sqrt{1+x}-1}{x}\n=\n\\frac{1}{\\sqrt{1+x}+1}.\n\\]\nAs \\(x\\to0\\), \\(\\sqrt{1+x}\\to1\\), hence\n\\[\n\\lim_{x\\to0}\\frac{\\sqrt{1+x}-1}{x}\n=\n\\frac{1}{1+1}\n=\n\\frac{1}{2}.\n\\]",
+      "hint": "Multiply numerator and denominator by the conjugate of the numerator."
+    },
+    {
+      "id": "math-gaokao-267-q004",
+      "category": "Calculus",
+      "concept": "Simplifying a Complex Fraction Limit",
+      "learningObjective": "Evaluate a limit of a complex fraction by combining fractions and simplifying.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to0}\\frac{\\frac{1}{x+2}-\\frac{1}{2}}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{1}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{4}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Combine the fractions in the numerator:\n\\[\n\\frac{1}{x+2}-\\frac{1}{2}\n=\n\\frac{2-(x+2)}{2(x+2)}\n=\n\\frac{-x}{2(x+2)}.\n\\]\nThen\n\\[\n\\frac{\\frac{1}{x+2}-\\frac{1}{2}}{x}\n=\n\\frac{-x}{2(x+2)}\\cdot\\frac{1}{x}\n=\n-\\frac{1}{2(x+2)}\n\\]\nfor \\(x\\neq0\\). Therefore,\n\\[\n\\lim_{x\\to0}\\frac{\\frac{1}{x+2}-\\frac{1}{2}}{x}\n=\n-\\frac{1}{2(0+2)}\n=\n-\\frac{1}{4}.\n\\]",
+      "hint": "Combine the fractions in the numerator into a single fraction before dividing by \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-267-q005",
+      "category": "Calculus",
+      "concept": "Factoring a Difference of Cubes",
+      "learningObjective": "Evaluate a limit by factoring a difference of cubes and canceling.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to1}\\frac{x^3-1}{x-1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the difference of cubes:\n\\[\nx^3-1=(x-1)(x^2+x+1).\n\\]\nFor \\(x\\neq1\\),\n\\[\n\\frac{x^3-1}{x-1}\n=\n\\frac{(x-1)(x^2+x+1)}{x-1}\n=\nx^2+x+1.\n\\]\nThus,\n\\[\n\\lim_{x\\to1}\\frac{x^3-1}{x-1}\n=\n1^2+1+1\n=\n3.\n\\]",
+      "hint": "Factor \\(x^3-1\\) as a difference of cubes."
+    },
+    {
+      "id": "math-gaokao-267-q006",
+      "category": "Calculus",
+      "concept": "Limit at Infinity of a Rational Function",
+      "learningObjective": "Evaluate a limit at infinity by comparing leading terms.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to\\infty}\\frac{2x^2+3x}{x^2-4}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide numerator and denominator by \\(x^2\\):\n\\[\n\\frac{2x^2+3x}{x^2-4}\n=\n\\frac{2+\\frac{3}{x}}{1-\\frac{4}{x^2}}.\n\\]\nAs \\(x\\to\\infty\\), both \\(\\frac{3}{x}\\) and \\(\\frac{4}{x^2}\\) tend to \\(0\\). Hence\n\\[\n\\lim_{x\\to\\infty}\\frac{2x^2+3x}{x^2-4}\n=\n\\frac{2+0}{1-0}\n=\n2.\n\\]",
+      "hint": "Divide numerator and denominator by the highest power of \\(x\\) in the denominator."
+    },
+    {
+      "id": "math-gaokao-267-q007",
+      "category": "Calculus",
+      "concept": "Parameter Condition for Existence of a Limit",
+      "learningObjective": "Determine a parameter value that makes an algebraic limit exist.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(\\lim_{x\\to2}\\frac{x^2-a}{x-2}\\) exists, find \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For the limit to exist, the numerator must also tend to \\(0\\) as \\(x\\to2\\), so that the \\(0/0\\) form can be simplified. Thus\n\\[\n2^2-a=0,\n\\]\nso\n\\[\n4-a=0,\n\\]\nwhich gives\n\\[\na=4.\n\\]\nIndeed, then\n\\[\n\\frac{x^2-4}{x-2}\n=\n\\frac{(x-2)(x+2)}{x-2}\n=\nx+2\n\\]\nfor \\(x\\neq2\\), and the limit as \\(x\\to2\\) is \\(4\\).",
+      "hint": "For a rational limit with denominator tending to \\(0\\), the numerator must also tend to \\(0\\) if the limit is to exist."
+    },
+    {
+      "id": "math-gaokao-267-q008",
+      "category": "Calculus",
+      "concept": "Rationalizing a Denominator with a Square Root",
+      "learningObjective": "Evaluate a limit by multiplying by the conjugate of a square-root denominator.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to4}\\frac{x-4}{\\sqrt{x}-2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiply numerator and denominator by the conjugate \\(\\sqrt{x}+2\\):\n\\[\n\\frac{x-4}{\\sqrt{x}-2}\n=\n\\frac{(x-4)(\\sqrt{x}+2)}{(\\sqrt{x}-2)(\\sqrt{x}+2)}.\n\\]\nThe denominator becomes\n\\[\n(\\sqrt{x}-2)(\\sqrt{x}+2)=x-4.\n\\]\nSo for \\(x\\neq4\\),\n\\[\n\\frac{x-4}{\\sqrt{x}-2}\n=\n\\sqrt{x}+2.\n\\]\nTherefore,\n\\[\n\\lim_{x\\to4}\\frac{x-4}{\\sqrt{x}-2}\n=\n\\sqrt{4}+2\n=\n2+2\n=\n4.\n\\]",
+      "hint": "Multiply numerator and denominator by the conjugate of the denominator."
+    },
+    {
+      "id": "math-gaokao-267-q009",
+      "category": "Calculus",
+      "concept": "Factoring Both Numerator and Denominator",
+      "learningObjective": "Evaluate a rational limit by factoring both numerator and denominator and canceling.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\lim_{x\\to2}\\frac{x^3-8}{x^2-4}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor numerator and denominator:\n\\[\nx^3-8=(x-2)(x^2+2x+4),\n\\]\nand\n\\[\nx^2-4=(x-2)(x+2).\n\\]\nFor \\(x\\neq2\\),\n\\[\n\\frac{x^3-8}{x^2-4}\n=\n\\frac{(x-2)(x^2+2x+4)}{(x-2)(x+2)}\n=\n\\frac{x^2+2x+4}{x+2}.\n\\]\nThus,\n\\[\n\\lim_{x\\to2}\\frac{x^3-8}{x^2-4}\n=\n\\frac{2^2+2(2)+4}{2+2}\n=\n\\frac{4+4+4}{4}\n=\n\\frac{12}{4}\n=\n3.\n\\]",
+      "hint": "Factor the difference of cubes in the numerator and the difference of squares in the denominator."
+    },
+    {
+      "id": "math-gaokao-267-q010",
+      "category": "Calculus",
+      "concept": "Rationalizing a Difference of Square Roots",
+      "learningObjective": "Evaluate a limit involving a difference of square roots by using the conjugate.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Evaluate \\(\\lim_{x\\to0}\\frac{\\sqrt{1+x}-\\sqrt{1-x}}{x}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiply numerator and denominator by the conjugate \\(\\sqrt{1+x}+\\sqrt{1-x}\\):\n\\[\n\\frac{\\sqrt{1+x}-\\sqrt{1-x}}{x}\n=\n\\frac{(\\sqrt{1+x}-\\sqrt{1-x})(\\sqrt{1+x}+\\sqrt{1-x})}\n{x(\\sqrt{1+x}+\\sqrt{1-x})}.\n\\]\nThe numerator becomes\n\\[\n(1+x)-(1-x)=2x.\n\\]\nSo for \\(x\\neq0\\),\n\\[\n\\frac{\\sqrt{1+x}-\\sqrt{1-x}}{x}\n=\n\\frac{2x}{x(\\sqrt{1+x}+\\sqrt{1-x})}\n=\n\\frac{2}{\\sqrt{1+x}+\\sqrt{1-x}}.\n\\]\nAs \\(x\\to0\\), the denominator tends to\n\\[\n\\sqrt{1}+\\sqrt{1}=2.\n\\]\nTherefore,\n\\[\n\\lim_{x\\to0}\\frac{\\sqrt{1+x}-\\sqrt{1-x}}{x}\n=\n\\frac{2}{2}\n=\n1.\n\\]",
+      "hint": "Multiply numerator and denominator by the conjugate of the difference of square roots."
+    }
+  ]
+}

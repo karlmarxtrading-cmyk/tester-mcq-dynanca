@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-312",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 312",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-312-q001",
+      "category": "Probability",
+      "concept": "Multiplication Along a Tree Diagram",
+      "learningObjective": "Use a tree diagram to find the probability that two independent events both occur.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Events \\(A\\) and \\(B\\) are independent with \\(P(A)=0.6\\) and \\(P(B)=0.4\\). Find the probability that both \\(A\\) and \\(B\\) occur.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.20\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.24\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "On a tree diagram, the branch for \\(A\\) has probability \\(0.6\\), and the branch for \\(B\\) following it has probability \\(0.4\\). Multiply along the branch:\n\\[\nP(A\\cap B)=P(A)P(B)=0.6\\times0.4=0.24.\n\\]",
+      "hint": "Multiply the probabilities along the branch representing both events."
+    },
+    {
+      "id": "math-gaokao-312-q002",
+      "category": "Probability",
+      "concept": "Tree Diagram Without Replacement",
+      "learningObjective": "Use a tree diagram to compute a sequential probability without replacement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A bag contains \\(4\\) red balls and \\(3\\) blue balls. Two balls are drawn without replacement. Find the probability that the first ball is red and the second ball is blue.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{2}{7}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{7}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first branch has probability \\(\\frac{4}{7}\\) for red. After a red ball is removed, \\(3\\) blue balls remain among \\(6\\) balls, so the second branch has probability \\(\\frac{3}{6}\\). Thus,\n\\[\nP(\\text{red then blue})=\\frac{4}{7}\\times\\frac{3}{6}=\\frac{12}{42}=\\frac{2}{7}.\n\\]",
+      "hint": "After the first draw, update the numbers of balls remaining before finding the second probability."
+    },
+    {
+      "id": "math-gaokao-312-q003",
+      "category": "Probability",
+      "concept": "Conditional Branch Multiplication",
+      "learningObjective": "Compute an intersection probability from a tree diagram with a conditional probability.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(C\\) and \\(D\\) be events with \\(P(C)=\\frac13\\) and \\(P(D\\mid C)=\\frac14\\). Find \\(P(C\\cap D)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac13\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{12}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The tree diagram has a first branch \\(C\\) with probability \\(\\frac13\\), followed by a branch \\(D\\) with conditional probability \\(\\frac14\\). Multiply along the branch:\n\\[\nP(C\\cap D)=P(C)P(D\\mid C)=\\frac13\\times\\frac14=\\frac{1}{12}.\n\\]",
+      "hint": "Multiply the first branch probability by the conditional probability on the second branch."
+    },
+    {
+      "id": "math-gaokao-312-q004",
+      "category": "Probability",
+      "concept": "Total Probability from a Tree Diagram",
+      "learningObjective": "Use a two-stage tree diagram to compute an overall probability by adding branch products.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A box is chosen at random: Box \\(A\\) is chosen with probability \\(0.5\\), and Box \\(B\\) is chosen with probability \\(0.5\\). Box \\(A\\) contains \\(6\\) red and \\(4\\) blue balls. Box \\(B\\) contains \\(2\\) red and \\(8\\) blue balls. One ball is drawn from the chosen box. Find the probability that the ball is red.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.40\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.50\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probability of red from Box \\(A\\) is \\(\\frac{6}{10}=0.6\\), and from Box \\(B\\) is \\(\\frac{2}{10}=0.2\\). Using the tree diagram,\n\\[\nP(\\text{red})=0.5\\times0.6+0.5\\times0.2=0.30+0.10=0.40.\n\\]",
+      "hint": "Find the red probability on each box branch, then add the two branch products."
+    },
+    {
+      "id": "math-gaokao-312-q005",
+      "category": "Probability",
+      "concept": "Exactly One Event from a Tree Diagram",
+      "learningObjective": "Use a tree diagram to compute the probability that exactly one of two independent events occurs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Events \\(A\\) and \\(B\\) are independent with \\(P(A)=\\frac12\\) and \\(P(B)=\\frac13\\). Find the probability that exactly one of \\(A\\) and \\(B\\) occurs.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac13\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Exactly one occurs along two branches: \\(A\\) and not \\(B\\), or not \\(A\\) and \\(B\\). Thus,\n\\[\nP=\\frac12\\times\\frac23+\\frac12\\times\\frac13\n=\\frac13+\\frac16=\\frac12.\n\\]",
+      "hint": "List the two branches in the tree diagram that correspond to exactly one event occurring."
+    },
+    {
+      "id": "math-gaokao-312-q006",
+      "category": "Probability",
+      "concept": "Second-Draw Probability via a Tree Diagram",
+      "learningObjective": "Use a tree diagram to find the probability that the second draw is red without replacement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "An urn contains \\(2\\) red balls and \\(3\\) blue balls. Two balls are drawn without replacement. Find the probability that the second ball is red.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac25\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The second ball is red in two cases: first red then red, or first blue then red.\n\\[\nP(RR)=\\frac25\\times\\frac14=\\frac{2}{20},\n\\]\nand\n\\[\nP(BR)=\\frac35\\times\\frac24=\\frac{6}{20}.\n\\]\nTherefore,\n\\[\nP(\\text{second red})=\\frac{2}{20}+\\frac{6}{20}=\\frac{8}{20}=\\frac25.\n\\]",
+      "hint": "Add the probabilities of the two tree branches that end with a red second ball."
+    },
+    {
+      "id": "math-gaokao-312-q007",
+      "category": "Probability",
+      "concept": "Reverse Conditional Probability from a Tree Diagram",
+      "learningObjective": "Use a tree diagram to compute a reverse conditional probability in a quality-control setting.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A factory has two machines. Machine \\(A\\) produces \\(60\\%\\) of the bolts and has a defect rate of \\(2\\%\\). Machine \\(B\\) produces \\(40\\%\\) of the bolts and has a defect rate of \\(5\\%\\). A randomly selected bolt is found to be defective. Find the probability that it was produced by Machine \\(B\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac38\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac58\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The overall defect probability is\n\\[\nP(D)=0.60\\times0.02+0.40\\times0.05=0.012+0.020=0.032.\n\\]\nThe defective bolt from Machine \\(B\\) has branch probability\n\\[\nP(B\\cap D)=0.40\\times0.05=0.020.\n\\]\nThus,\n\\[\nP(B\\mid D)=\\frac{0.020}{0.032}=\\frac{20}{32}=\\frac58.\n\\]",
+      "hint": "First find the total probability of a defective bolt, then focus on the branch through Machine \\(B\\)."
+    },
+    {
+      "id": "math-gaokao-312-q008",
+      "category": "Probability",
+      "concept": "At Least One Event from a Tree Diagram",
+      "learningObjective": "Use complements and a tree diagram to find the probability that at least one of two independent events occurs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Events \\(A\\) and \\(B\\) are independent with \\(P(A)=0.7\\) and \\(P(B)=0.6\\). Find the probability that at least one of \\(A\\) and \\(B\\) occurs.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.88\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.82\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The complement of “at least one occurs” is “neither occurs.” Since \\(A\\) and \\(B\\) are independent,\n\\[\nP(A'\\cap B')=P(A')P(B')=0.3\\times0.4=0.12.\n\\]\nTherefore,\n\\[\nP(A\\cup B)=1-0.12=0.88.\n\\]",
+      "hint": "It is easier to use the complement branch where neither event occurs."
+    },
+    {
+      "id": "math-gaokao-312-q009",
+      "category": "Probability",
+      "concept": "Three-Stage Tree Diagram Without Replacement",
+      "learningObjective": "Compute a specific three-draw probability using a tree diagram without replacement.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A bag contains \\(5\\) red balls and \\(3\\) blue balls. Three balls are drawn without replacement. Find the probability that the first ball is red, the second ball is blue, and the third ball is red.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{5}{56}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{28}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiply along the branch red-blue-red:\n\\[\nP(RBR)=\\frac{5}{8}\\times\\frac{3}{7}\\times\\frac{4}{6}\n=\\frac{60}{336}=\\frac{5}{28}.\n\\]",
+      "hint": "Update the remaining numbers after each draw, then multiply along the red-blue-red branch."
+    },
+    {
+      "id": "math-gaokao-312-q010",
+      "category": "Probability",
+      "concept": "Tree Diagram for Bayes-Type Reasoning",
+      "learningObjective": "Use a tree diagram to compute the probability of having a disease given a positive test result.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A disease affects \\(2\\%\\) of a population. A test has sensitivity \\(90\\%\\), meaning it is positive for \\(90\\%\\) of people with the disease, and specificity \\(80\\%\\), meaning it is negative for \\(80\\%\\) of people without the disease. A person tests positive. Find the probability that the person has the disease.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{9}{107}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{18}{107}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(D\\) be the event of having the disease. Then\n\\[\nP(D)=0.02,\\qquad P(D')=0.98.\n\\]\nThe positive-test probabilities are\n\\[\nP(+ \\mid D)=0.90,\\qquad P(+ \\mid D')=0.20.\n\\]\nThus,\n\\[\nP(+)=0.02\\times0.90+0.98\\times0.20=0.018+0.196=0.214.\n\\]\nAlso,\n\\[\nP(D\\cap +)=0.02\\times0.90=0.018.\n\\]\nTherefore,\n\\[\nP(D\\mid +)=\\frac{0.018}{0.214}=\\frac{18}{214}=\\frac{9}{107}.\n\\]",
+      "hint": "Find the probability of a positive test along both disease and no-disease branches, then use the positive branch from the disease."
+    }
+  ]
+}

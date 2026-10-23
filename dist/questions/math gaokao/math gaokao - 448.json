@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-448",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 448",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-448-q001",
+      "category": "Sequences and Combinatorics",
+      "concept": "Arithmetic Sequence nth Term",
+      "learningObjective": "Find a specified term of an arithmetic sequence from its first term and common difference.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In an arithmetic sequence, the first term is \\(4\\) and the common difference is \\(5\\). What is the 10th term?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(49\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(54\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(a_n=a_1+(n-1)d\\). Then \\(a_{10}=4+9\\cdot5=49\\). The distractor adds ten common differences instead of nine.",
+      "hint": "Use the arithmetic sequence formula involving the first term and common difference."
+    },
+    {
+      "id": "math-gaokao-448-q002",
+      "category": "Sequences and Combinatorics",
+      "concept": "Combinations",
+      "learningObjective": "Count the number of \\(2\\)-element subsets of a \\(6\\)-element set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many ways are there to choose \\(2\\) students from \\(6\\) students if order does not matter?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(30\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number of ways is \\(\\binom{6}{2}=\\frac{6\\cdot5}{2\\cdot1}=15\\). If order mattered, the count would be \\(30\\), but choosing a group does not distinguish order.",
+      "hint": "Use combinations because the order of the chosen students does not matter."
+    },
+    {
+      "id": "math-gaokao-448-q003",
+      "category": "Sequences and Combinatorics",
+      "concept": "Sum of a Finite Geometric Sequence",
+      "learningObjective": "Compute the sum of the first several terms of a geometric sequence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The first term of a geometric sequence is \\(2\\) and the common ratio is \\(3\\). What is the sum of the first \\(4\\) terms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(80\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(162\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sum of the first \\(n\\) terms of a geometric sequence is \\(S_n=\\frac{a_1(r^n-1)}{r-1}\\). Here \\(a_1=2\\), \\(r=3\\), and \\(n=4\\), so \\[\n\\begin{aligned}\nS_4&=\\frac{2(3^4-1)}{3-1} \\\\\n&=\\frac{2(81-1)}{2} \\\\\n&=80\n\\end{aligned}\n\\].",
+      "hint": "Use the finite geometric series sum formula with the given first term and common ratio."
+    },
+    {
+      "id": "math-gaokao-448-q004",
+      "category": "Sequences and Combinatorics",
+      "concept": "Permutations",
+      "learningObjective": "Count ordered selections of distinct people for distinct positions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many ways can a president, vice president, and treasurer be chosen from \\(9\\) candidates, where each person holds at most one office?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(84\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(504\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The offices are distinct. There are \\(9\\) choices for president, \\(8\\) for vice president, and \\(7\\) for treasurer, so the total is \\(9\\cdot8\\cdot7=504\\). The distractor \\(\\binom{9}{3}=84\\) chooses a group without assigning the offices.",
+      "hint": "Since the positions are different, count ordered selections rather than combinations."
+    },
+    {
+      "id": "math-gaokao-448-q005",
+      "category": "Sequences and Combinatorics",
+      "concept": "Sum of an Arithmetic Sequence",
+      "learningObjective": "Compute the sum of the first \\(n\\) terms of an arithmetic sequence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In an arithmetic sequence, the first term is \\(5\\) and the common difference is \\(3\\). What is the sum of the first \\(20\\) terms?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(640\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(670\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sum of the first \\(n\\) terms of an arithmetic sequence is \\(S_n=\\frac{n}{2}[2a_1+(n-1)d]\\). Thus \\[\n\\begin{aligned}\nS_{20}&=\\frac{20}{2}[2\\cdot5+19\\cdot3] \\\\\n&=10[10+57] \\\\\n&=670\n\\end{aligned}\n\\].",
+      "hint": "Use the arithmetic sum formula with \\(n=20\\), first term \\(5\\), and common difference \\(3\\)."
+    },
+    {
+      "id": "math-gaokao-448-q006",
+      "category": "Sequences and Combinatorics",
+      "concept": "Recurrence Relations",
+      "learningObjective": "Generate terms of a sequence defined by a recurrence relation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A sequence satisfies \\(a_1=2\\), \\(a_2=4\\), and \\(a_{n+2}=a_{n+1}+a_n\\) for \\(n\\ge1\\). What is \\(a_6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(26\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The recurrence gives \\(a_3=4+2=6\\), \\(a_4=6+4=10\\), \\(a_5=10+6=16\\), and \\(a_6=16+10=26\\). The distractor stops one term too early.",
+      "hint": "Generate each new term by adding the two previous terms."
+    },
+    {
+      "id": "math-gaokao-448-q007",
+      "category": "Sequences and Combinatorics",
+      "concept": "Counting with Restrictions",
+      "learningObjective": "Count three-digit numbers formed from given digits under parity and no-repetition restrictions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many even \\(3\\)-digit numbers can be formed using the digits \\(1,2,3,4\\) without repetition?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(18\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An even number must end in \\(2\\) or \\(4\\). If the units digit is \\(2\\), the hundreds and tens digits can be chosen from \\(\\{1,3,4\\}\\) in \\(3\\cdot2=6\\) ways. If the units digit is \\(4\\), the hundreds and tens digits can be chosen from \\(\\{1,2,3\\}\\) in \\(3\\cdot2=6\\) ways. The total is \\(6+6=12\\).",
+      "hint": "Fix the units digit first because the number must be even, then count arrangements of the remaining digits."
+    },
+    {
+      "id": "math-gaokao-448-q008",
+      "category": "Sequences and Combinatorics",
+      "concept": "Infinite Geometric Series",
+      "learningObjective": "Find the sum to infinity of a convergent geometric series.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the sum to infinity of the geometric series \\(8+4+2+1+\\cdots\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first term is \\(a_1=8\\) and the common ratio is \\(r=\\frac{4}{8}=\\frac{1}{2}\\). Since \\(|r|<1\\), the infinite sum is \\[\n\\begin{aligned}\nS_\\infty&=\\frac{a_1}{1-r} \\\\\n&=\\frac{8}{1-\\frac{1}{2}} \\\\\n&=16\n\\end{aligned}\n\\].",
+      "hint": "Use the infinite geometric series formula when the common ratio has absolute value less than \\(1\\)."
+    },
+    {
+      "id": "math-gaokao-448-q009",
+      "category": "Sequences and Combinatorics",
+      "concept": "Binomial Theorem",
+      "learningObjective": "Find a specified coefficient in a binomial expansion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "What is the coefficient of \\(x^3\\) in the expansion of \\((2x+3)^5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(90\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(720\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "To obtain \\(x^3\\), select \\(2x\\) from three factors and \\(3\\) from the other two. The coefficient is \\(\\binom{5}{3} 2^3 3^2=10\\cdot8\\cdot9=720\\). The distractor omits the factor \\(2^3\\).",
+      "hint": "Use the binomial theorem and identify the term in which the power of \\(x\\) is \\(3\\)."
+    },
+    {
+      "id": "math-gaokao-448-q010",
+      "category": "Sequences and Combinatorics",
+      "concept": "Counting Sequences with Adjacent Restrictions",
+      "learningObjective": "Count strings of a given length over a small alphabet with no equal consecutive letters.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many length-\\(5\\) sequences can be formed using the letters \\(A,B,C\\) such that no two consecutive letters are the same?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(96\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(48\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first letter can be chosen in \\(3\\) ways. After that, each of the next \\(4\\) positions must differ from the immediately preceding letter, so each has \\(2\\) choices. Therefore the number of sequences is \\(3\\cdot2^4=3\\cdot16=48\\).",
+      "hint": "Choose the first letter, then count the choices for each later position while avoiding repetition with the previous letter."
+    }
+  ]
+}

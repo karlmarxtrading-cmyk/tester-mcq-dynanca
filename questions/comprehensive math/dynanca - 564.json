@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-564",
+  "category": "Comprehensive Mathematics",
+  "title": "564. Discrete Mathematics, Counting & Graph Theory: Generalized Pigeonhole Principle",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-564-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "At least how many in one box",
+      "learningObjective": "Apply the generalised pigeonhole principle to objects in boxes.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Twenty-five objects are placed into \\(6\\) boxes. What is the largest number \\(m\\) such that some box is certain to contain at least \\(m\\) objects?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If every box held at most \\(4\\) objects, there would be at most \\(6\\cdot 4=24\\) objects, fewer than \\(25\\). So some box holds at least \\(5\\). It is possible that no box holds \\(6\\), for example with contents \\(5,4,4,4,4,4\\). In general some box holds at least \\(\\left\\lceil\\dfrac{N}{k}\\right\\rceil\\) objects.",
+      "hint": "Ask how many objects fit if no box is allowed more than \\(4\\)."
+    },
+    {
+      "id": "dynanca-564-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Shared birth months",
+      "learningObjective": "Apply the generalised pigeonhole principle with months as boxes.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Among \\(100\\) people, what is the largest number \\(m\\) such that at least \\(m\\) of them are certain to have been born in the same month?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If each month had at most \\(8\\) of the people, there would be at most \\(12\\cdot 8=96\\) people, fewer than \\(100\\). So some month has at least \\(9\\). This is \\(\\left\\lceil\\dfrac{100}{12}\\right\\rceil=9\\). The number \\(8\\) is the quotient rounded down, which is not enough.",
+      "hint": "Divide the number of people by the number of months and round up."
+    },
+    {
+      "id": "dynanca-564-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Forcing three in one box",
+      "learningObjective": "Find the number of objects that forces a box to contain three.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Objects are placed into \\(4\\) boxes. What is the smallest number of objects that guarantees that some box contains at least \\(3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "With \\(8\\) objects each box can hold exactly \\(2\\), so \\(8\\) is not enough. A ninth object must go into a box that already holds \\(2\\). So the smallest number is \\(4\\cdot 2+1=9\\). The number \\(12=4\\cdot 3\\) would fill every box with \\(3\\), which is far more than needed.",
+      "hint": "Fill every box to one below the target, then add one more object."
+    },
+    {
+      "id": "dynanca-564-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Three balls of one colour",
+      "learningObjective": "Find the number of draws that guarantees three objects of the same kind.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A bag contains many red, blue, and green balls. What is the smallest number of balls that must be drawn to be sure of having \\(3\\) balls of the same colour?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Six balls might be \\(2\\) of each colour, so \\(6\\) is not enough. A seventh ball must give a third ball of some colour. So the smallest number is \\(3\\cdot 2+1=7\\). The number \\(9=3\\cdot 3\\) is not needed.",
+      "hint": "In the worst case every colour appears twice before a third ball of any colour is drawn."
+    },
+    {
+      "id": "dynanca-564-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Four cards of one suit",
+      "learningObjective": "Find the number of cards that guarantees four of the same suit.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Cards are drawn from a standard deck with \\(4\\) suits of \\(13\\) cards each. What is the smallest number of cards that guarantees \\(4\\) cards of the same suit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(13\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Twelve cards might be \\(3\\) of each suit, so \\(12\\) is not enough. The thirteenth card gives a fourth card of some suit. So the smallest number is \\(4\\cdot 3+1=13\\). The number \\(16=4\\cdot 4\\) is not needed.",
+      "hint": "In the worst case each suit appears three times first."
+    },
+    {
+      "id": "dynanca-564-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Six equal grades",
+      "learningObjective": "Find the class size that guarantees six equal grades.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Each student in a class receives one of the grades A, B, C, D, F. What is the smallest class size that guarantees that at least \\(6\\) students receive the same grade?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(26\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "With \\(25\\) students each grade could be given exactly \\(5\\) times, so \\(25\\) is not enough. With \\(26\\) students some grade must be given at least \\(6\\) times. So the smallest size is \\(5\\cdot 5+1=26\\). The number \\(30=5\\cdot 6\\) is larger than necessary.",
+      "hint": "Give each grade one fewer than the target number, then add one student."
+    },
+    {
+      "id": "dynanca-564-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A number at least the average",
+      "learningObjective": "Use the averaging form of the principle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Seven positive integers have sum \\(50\\). What is the largest number \\(m\\) such that at least one of them is certain to be at least \\(m\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If all seven integers were at most \\(7\\), their sum would be at most \\(49\\), less than \\(50\\). So at least one integer is \\(8\\) or more. It is possible that none is \\(9\\) or more, for example \\(8,7,7,7,7,7,7\\). The number \\(7\\) is the average rounded down, which can be exceeded by necessity.",
+      "hint": "Ask how large the sum can be if every integer is at most \\(7\\)."
+    },
+    {
+      "id": "dynanca-564-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A colour in short supply",
+      "learningObjective": "Adjust the worst case when one kind cannot reach the target.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A drawer holds \\(3\\) red socks, \\(10\\) blue socks, and \\(10\\) black socks. What is the smallest number of socks that must be taken, without looking, to be sure of having \\(5\\) socks of the same colour?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(13\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In the worst case all \\(3\\) red socks are taken, together with \\(4\\) blue and \\(4\\) black: \\(11\\) socks with no colour appearing \\(5\\) times. The next sock must be blue or black and gives \\(5\\) of that colour. So \\(12\\) socks suffice. The number \\(13=3\\cdot 4+1\\) assumes that \\(4\\) red socks could be taken, but only \\(3\\) exist.",
+      "hint": "Work out the largest collection in which no colour appears \\(5\\) times, remembering how many socks of each colour exist."
+    },
+    {
+      "id": "dynanca-564-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Equal remainders in a larger set",
+      "learningObjective": "Apply the generalised principle with remainders as boxes.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "Among any \\(30\\) integers, what is the largest number \\(m\\) such that at least \\(m\\) of them are certain to leave the same remainder on division by \\(7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(7\\) possible remainders. If each occurred at most \\(4\\) times there would be at most \\(28\\) integers, fewer than \\(30\\). So some remainder occurs at least \\(5\\) times: \\(\\left\\lceil\\dfrac{30}{7}\\right\\rceil=5\\). The integers \\(1,2,\\dots,30\\) show that \\(6\\) is not forced.",
+      "hint": "Divide \\(30\\) by the number of possible remainders and round up."
+    },
+    {
+      "id": "dynanca-564-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A particular colour",
+      "learningObjective": "Distinguish a guarantee for one given kind from a guarantee for some kind.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A box contains \\(10\\) red, \\(8\\) blue, and \\(6\\) green balls. What is the smallest number of balls that must be drawn to be sure of having at least \\(3\\) red balls?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(17\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The worst case is to draw every ball that is not red first: \\(8+6=14\\) balls, and then \\(2\\) red balls. That is \\(16\\) balls with fewer than \\(3\\) red ones. The next ball must be red, so \\(17\\) are needed. The number \\(7\\) guarantees \\(3\\) balls of some colour, but not of the particular colour red.",
+      "hint": "In the worst case all the balls of the other colours are drawn before the red ones."
+    }
+  ]
+}

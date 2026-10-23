@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-329",
+  "category": "Comprehensive Mathematics",
+  "title": "329. Geometry, Spatial Thinking & Measurement: Triangle Inequality",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-329-q001",
+      "category": "Geometry",
+      "concept": "Triangle Inequality Statement",
+      "learningObjective": "Identify the triangle inequality condition for three side lengths.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which statement correctly describes the triangle inequality for a triangle with side lengths \\(a\\), \\(b\\), and \\(c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The sum of any two side lengths is greater than the third side length."
+        },
+        {
+          "label": "B",
+          "text": "The sum of any two side lengths is equal to the third side length."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The triangle inequality states that in any triangle, the sum of the lengths of any two sides must be greater than the length of the remaining side. This means \\(a+b>c\\), \\(a+c>b\\), and \\(b+c>a\\). Equality would give a degenerate figure, not a triangle.",
+      "hint": "Recall the condition that three segments must satisfy before they can form a triangle."
+    },
+    {
+      "id": "dynanca-329-q002",
+      "category": "Geometry",
+      "concept": "Testing Three Segment Lengths",
+      "learningObjective": "Determine whether three given segment lengths can form a triangle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Which set of three segment lengths can form a triangle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2,\\ 3,\\ 5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4,\\ 5,\\ 6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(2,3,5\\), the two shorter sides sum to \\(2+3=5\\), which equals the longest side, so they cannot form a triangle. For \\(4,5,6\\), check the largest side: \\(4+5=9>6\\). The other inequalities also hold, so \\(4,5,6\\) can form a triangle.",
+      "hint": "Compare the longest segment length with the sum of the other two lengths."
+    },
+    {
+      "id": "dynanca-329-q003",
+      "category": "Geometry",
+      "concept": "Possible Third Side Length",
+      "learningObjective": "Apply the triangle inequality to find a possible third side length.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Two sides of a triangle are \\(8\\text{ cm}\\) and \\(5\\text{ cm}\\). Which length can be the third side?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\text{ cm}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(13\\text{ cm}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let the third side be \\(x\\). The triangle inequality gives \\(|8-5|<x<8+5\\), so \\(3<x<13\\). The value \\(12\\) satisfies \\(3<12<13\\), but \\(13\\) does not because the inequality is strict.",
+      "hint": "Use the rule that the third side must be greater than the difference of the two known sides and less than their sum."
+    },
+    {
+      "id": "dynanca-329-q004",
+      "category": "Geometry",
+      "concept": "Possible Third Side Length",
+      "learningObjective": "Determine which given length can complete a triangle with two known sides.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Two sides of a triangle are \\(3\\text{ m}\\) and \\(9\\text{ m}\\). Which length can be the third side?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\text{ m}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\text{ m}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For a triangle with sides \\(3\\) and \\(9\\), the third side \\(x\\) must satisfy \\(|9-3|<x<9+3\\), so \\(6<x<12\\). The value \\(6\\) is not allowed because \\(6\\) is not greater than \\(6\\), while \\(10\\) is allowed.",
+      "hint": "The third side must be strictly between the difference and the sum of the two known sides."
+    },
+    {
+      "id": "dynanca-329-q005",
+      "category": "Geometry",
+      "concept": "Range of a Side in a Triangle",
+      "learningObjective": "Express the possible range of a side using the triangle inequality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In triangle \\(ABC\\), \\(AB=6\\) and \\(BC=10\\). Which inequality describes all possible lengths of \\(AC\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4 < AC < 16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6 < AC < 10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(AC=x\\). By the triangle inequality, \\(x\\) must be greater than the difference of the other two sides and less than their sum. Thus \\(|10-6|<x<10+6\\), which gives \\(4<x<16\\). Therefore, \\(4<AC<16\\).",
+      "hint": "Apply the triangle inequality to the two known sides to bound the unknown side."
+    },
+    {
+      "id": "dynanca-329-q006",
+      "category": "Geometry",
+      "concept": "Smallest Integer Side Length",
+      "learningObjective": "Find the smallest integer third side satisfying the triangle inequality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A triangle has side lengths \\(7\\), \\(10\\), and \\(x\\), where \\(x\\) is an integer. What is the smallest possible value of \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The third side \\(x\\) must satisfy \\(|10-7|<x<10+7\\), so \\(3<x<17\\). Since \\(x\\) is an integer and must be strictly greater than \\(3\\), the smallest possible value is \\(4\\).",
+      "hint": "Find the allowed interval for \\(x\\), then choose the smallest integer strictly inside that interval."
+    },
+    {
+      "id": "dynanca-329-q007",
+      "category": "Geometry",
+      "concept": "Degenerate Triangle Case",
+      "learningObjective": "Analyze whether three lengths form a triangle when one sum equals the third side.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Three segments have lengths \\(5\\text{ cm}\\), \\(8\\text{ cm}\\), and \\(13\\text{ cm}\\). Which conclusion is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They can form a triangle."
+        },
+        {
+          "label": "B",
+          "text": "They cannot form a triangle because \\(5+8=13\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "For three lengths to form a triangle, the sum of any two lengths must be strictly greater than the third length. Here \\(5+8=13\\), which is equal to the longest side, not greater. Therefore, the three segments form a degenerate figure, not a triangle.",
+      "hint": "Check whether the sum of the two shorter lengths is strictly greater than the longest length."
+    },
+    {
+      "id": "dynanca-329-q008",
+      "category": "Geometry",
+      "concept": "Range of the Third Side",
+      "learningObjective": "Interpret the triangle inequality to describe the possible third side.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In a triangle, two sides have lengths \\(12\\text{ cm}\\) and \\(5\\text{ cm}\\). Which statement is true about the third side?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It must be greater than \\(7\\text{ cm}\\) and less than \\(17\\text{ cm}\\)."
+        },
+        {
+          "label": "B",
+          "text": "It must be greater than \\(5\\text{ cm}\\) and less than \\(12\\text{ cm}\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let the third side be \\(x\\). The triangle inequality gives \\(|12-5|<x<12+5\\), so \\(7<x<17\\). Therefore, the third side must be greater than \\(7\\text{ cm}\\) and less than \\(17\\text{ cm}\\).",
+      "hint": "Use the difference and sum of the two given side lengths to bound the third side."
+    },
+    {
+      "id": "dynanca-329-q009",
+      "category": "Geometry",
+      "concept": "Counting Integer Side Lengths",
+      "learningObjective": "Count all possible integer third side lengths using the triangle inequality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A triangle has integer side lengths. Two sides are \\(9\\) and \\(15\\). How many possible integer values can the third side have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(17\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let the third side be \\(x\\). The triangle inequality gives \\(|15-9|<x<15+9\\), so \\(6<x<24\\). Since \\(x\\) is an integer, \\(x\\) can be \\(7,8,9,\\ldots,23\\). The number of integers from \\(7\\) to \\(23\\) inclusive is \\(23-7+1=17\\).",
+      "hint": "Find the strict interval for the third side, then count the integers inside it."
+    },
+    {
+      "id": "dynanca-329-q010",
+      "category": "Geometry",
+      "concept": "Triangle Inequality with Variable Sides",
+      "learningObjective": "Determine the parameter range for which three expressions form a triangle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A triangle has side lengths \\(2x\\), \\(x+3\\), and \\(10\\), where \\(x>0\\). Which inequality must \\(x\\) satisfy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0 < x < 13\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{7}{3} < x < 13\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Apply the triangle inequality to all three pairs of sides. First, \\(2x+(x+3)>10\\), so \\(3x+3>10\\), giving \\(x>\\frac{7}{3}\\). Next, \\((x+3)+10>2x\\), so \\(13>x\\), giving \\(x<13\\). The remaining inequality \\(2x+10>x+3\\) gives \\(x>-7\\), which is automatically true for \\(x>0\\). Therefore, \\(\\frac{7}{3}<x<13\\).",
+      "hint": "Write and simplify the three triangle inequalities, then keep the strongest restrictions on \\(x\\)."
+    }
+  ]
+}

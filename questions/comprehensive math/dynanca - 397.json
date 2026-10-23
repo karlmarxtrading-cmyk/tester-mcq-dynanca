@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-397",
+  "category": "Comprehensive Mathematics",
+  "title": "397. Geometry, Spatial Thinking & Measurement: Proof Using Triangle Congruence",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-397-q001",
+      "category": "Geometry",
+      "concept": "Side-side-side congruence",
+      "learningObjective": "Identify the congruence criterion from three corresponding side equalities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "Nondegenerate triangles \\(ABC\\) and \\(DEF\\) satisfy \\(AB=DE\\), \\(BC=EF\\), and \\(AC=DF\\). Which criterion directly proves congruence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "AAA"
+        },
+        {
+          "label": "B",
+          "text": "SSS"
+        }
+      ],
+      "answer": "B",
+      "explanation": "All three pairs of corresponding sides are equal, which is the SSS congruence criterion. Equal angles alone would only establish similarity.",
+      "hint": "Count the corresponding side equalities provided."
+    },
+    {
+      "id": "dynanca-397-q002",
+      "category": "Geometry",
+      "concept": "Side-angle-side congruence",
+      "learningObjective": "Identify an included-angle congruence condition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "Nondegenerate triangles \\(ABC\\) and \\(DEF\\) satisfy \\(AB=DE\\), \\(AC=DF\\), and \\(\\angle BAC=\\angle EDF\\). Which criterion directly proves congruence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "SSA"
+        },
+        {
+          "label": "B",
+          "text": "SAS"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The equal angles lie between the two given equal-side pairs. This is precisely SAS, rather than a non-included-angle condition.",
+      "hint": "Locate the given angle relative to the two given sides."
+    },
+    {
+      "id": "dynanca-397-q003",
+      "category": "Geometry",
+      "concept": "Angle-side-angle congruence",
+      "learningObjective": "Recognize the side included between two given angles.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "Nondegenerate triangles \\(ABC\\) and \\(DEF\\) satisfy \\(\\angle ABC=\\angle DEF\\), \\(\\angle ACB=\\angle DFE\\), and \\(BC=EF\\). Which criterion directly uses these two given angles and their included side?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ASA"
+        },
+        {
+          "label": "B",
+          "text": "AAS"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The side \\(BC\\) joins the vertices of the two given angles, as does \\(EF\\). These supplied data directly form ASA.",
+      "hint": "Determine whether the supplied side connects the two supplied angle vertices."
+    },
+    {
+      "id": "dynanca-397-q004",
+      "category": "Geometry",
+      "concept": "Angle-angle-side congruence",
+      "learningObjective": "Identify a given non-included side in a two-angle congruence proof.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "Nondegenerate triangles \\(ABC\\) and \\(DEF\\) satisfy \\(\\angle BAC=\\angle EDF\\), \\(\\angle ABC=\\angle DEF\\), and \\(BC=EF\\). Which criterion directly uses these given data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "AAS"
+        },
+        {
+          "label": "B",
+          "text": "SAS"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The two given angle pairs are at \\(A,B\\) and \\(D,E\\). The supplied equal sides \\(BC,EF\\) are not the included sides \\(AB,DE\\), so these data form AAS.",
+      "hint": "Compare the supplied side with the side between the two given angles."
+    },
+    {
+      "id": "dynanca-397-q005",
+      "category": "Geometry",
+      "concept": "Hypotenuse-leg congruence",
+      "learningObjective": "Use a hypotenuse and one leg in right triangles.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "Triangles \\(ABC\\) and \\(DEF\\) are right at \\(C\\) and \\(F\\). They satisfy \\(AB=DE\\) and \\(AC=DF\\). Which criterion directly proves congruence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hypotenuse-leg"
+        },
+        {
+          "label": "B",
+          "text": "AAA"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sides \\(AB,DE\\) are the hypotenuses, while \\(AC,DF\\) are corresponding legs. Equal hypotenuse and leg in right triangles imply congruence.",
+      "hint": "Identify which supplied side lies opposite each right angle."
+    },
+    {
+      "id": "dynanca-397-q006",
+      "category": "Geometry",
+      "concept": "Ambiguous side-side-angle data",
+      "learningObjective": "Recognize that a non-included angle may not determine a unique triangle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Two triangles each have side lengths \\(5\\) and \\(7\\), with a \\(30^\\circ\\) angle opposite the side of length \\(5\\). Must they be congruent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Congruence is not guaranteed."
+        },
+        {
+          "label": "B",
+          "text": "Congruence is guaranteed."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sine rule gives sine of the angle opposite side \\(7\\) as \\(\\frac{7\\sin30^\\circ}{5}=\\frac{7}{10}\\). Both an acute angle and its obtuse supplement produce valid triangles here, so two noncongruent shapes are possible.",
+      "hint": "Check whether the non-included-angle data allow two triangle configurations."
+    },
+    {
+      "id": "dynanca-397-q007",
+      "category": "Geometry",
+      "concept": "Equal angles without equal size",
+      "learningObjective": "Distinguish similarity from congruence under angle-only data.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Two nondegenerate triangles have all three corresponding angles equal, but no side lengths are specified. Must they be congruent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Congruence is guaranteed."
+        },
+        {
+          "label": "B",
+          "text": "Congruence is not guaranteed."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Equal corresponding angles allow a non-unit scale factor. For example, side triples \\((3,4,5)\\) and \\((6,8,10)\\) give equal angles but unequal sizes.",
+      "hint": "Ask whether the given data fix the triangles' scale."
+    },
+    {
+      "id": "dynanca-397-q008",
+      "category": "Geometry",
+      "concept": "Correspondence in an ordered congruence statement",
+      "learningObjective": "Match corresponding sides from the stated vertex order.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Given \\(\\triangle ABC\\cong\\triangle DEF\\), with \\(AB=8\\), \\(BC=6\\), and \\(AC=5\\), what is \\(EF\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The ordered statement matches \\(A\\) to \\(D\\), \\(B\\) to \\(E\\), and \\(C\\) to \\(F\\). Hence \\(EF\\) corresponds to \\(BC\\), whose length is \\(6\\).",
+      "hint": "Read the vertex correspondence in the stated order."
+    },
+    {
+      "id": "dynanca-397-q009",
+      "category": "Geometry",
+      "concept": "Angle equality from a shared-side proof",
+      "learningObjective": "Deduce a guaranteed corresponding-angle equality after SSS congruence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Two nondegenerate triangles \\(ABC\\) and \\(ADC\\) share \\(AC\\), with \\(AB=AD\\) and \\(BC=DC\\). Which angle equality must follow?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\angle ABC=\\angle CAD\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\angle BAC=\\angle CAD\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The triangles are congruent by SSS with correspondence \\(A\\leftrightarrow A\\), \\(B\\leftrightarrow D\\), \\(C\\leftrightarrow C\\). Thus the angles at \\(A\\) are equal. The other equality is not guaranteed by this correspondence.",
+      "hint": "Establish vertex correspondence before matching the angles."
+    },
+    {
+      "id": "dynanca-397-q010",
+      "category": "Geometry",
+      "concept": "Perpendicular median in an isosceles triangle",
+      "learningObjective": "Combine SSS congruence with a linear angle pair.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In nondegenerate triangle \\(ABC\\), \\(AB=AC\\), and \\(D\\) is the midpoint of \\(BC\\). Which relationship follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(AD\\parallel BC\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(AD\\perp BC\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Triangles \\(ABD\\) and \\(ACD\\) are congruent by SSS: \\(AB=AC\\), \\(BD=DC\\), and \\(AD\\) is shared. Their equal angles at \\(D\\) form a straight angle, so each is \\(90^\\circ\\), proving perpendicularity.",
+      "hint": "Compare the two triangles on either side of the median."
+    }
+  ]
+}

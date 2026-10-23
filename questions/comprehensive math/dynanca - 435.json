@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-435",
+  "category": "Comprehensive Mathematics",
+  "title": "435. Trigonometry & Periodic Models: Domain and Range of Inverse Trigonometric Functions",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-435-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Domain of inverse sine",
+      "learningObjective": "State the domain of the inverse sine function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the domain of \\(f(x)=\\sin^{-1}x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All real numbers"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\le x\\le 1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inverse sine accepts exactly the numbers that are values of the sine. Since \\(-1\\le\\sin\\theta\\le 1\\) for every angle, the domain is \\(-1\\le x\\le 1\\). A number such as \\(2\\) is not the sine of any real angle, so \\(\\sin^{-1}2\\) is not a real number.",
+      "hint": "The domain of an inverse function is the range of the original function."
+    },
+    {
+      "id": "dynanca-435-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Domain of inverse tangent",
+      "learningObjective": "State the domain of the inverse tangent function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the domain of \\(f(x)=\\tan^{-1}x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All real numbers"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\le x\\le 1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The tangent takes every real value, so the inverse tangent accepts every real number as input. The restriction \\(-1\\le x\\le 1\\) belongs to the inverse sine and inverse cosine, because the sine and cosine are bounded.",
+      "hint": "Ask which values the tangent function can produce."
+    },
+    {
+      "id": "dynanca-435-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Domain with a scaled argument",
+      "learningObjective": "Find the domain of an inverse cosine whose argument is multiplied by a constant.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the domain of \\(f(x)=\\cos^{-1}(2x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{1}{2}\\le x\\le\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2\\le x\\le 2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The argument of the inverse cosine must satisfy \\(-1\\le 2x\\le 1\\). Dividing by \\(2\\) gives \\(-\\frac{1}{2}\\le x\\le\\frac{1}{2}\\). Multiplying the bounds by \\(2\\) instead of dividing gives the incorrect interval \\([-2,2]\\).",
+      "hint": "Write the condition on the whole argument, then solve the inequality for \\(x\\)."
+    },
+    {
+      "id": "dynanca-435-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Domain with a shifted argument",
+      "learningObjective": "Find the domain of an inverse sine whose argument is shifted.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the domain of \\(f(x)=\\sin^{-1}(x-3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-4\\le x\\le -2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\le x\\le 4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The argument must satisfy \\(-1\\le x-3\\le 1\\). Adding \\(3\\) to each part gives \\(2\\le x\\le 4\\). Subtracting \\(3\\) instead of adding gives the incorrect interval \\([-4,-2]\\).",
+      "hint": "Solve \\(-1\\le x-3\\le 1\\) by adding the same number to all three parts."
+    },
+    {
+      "id": "dynanca-435-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Range with a vertical stretch",
+      "learningObjective": "Find the range of a constant multiple of an inverse sine.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the range of \\(f(x)=2\\sin^{-1}x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\pi\\le y\\le\\pi\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-\\frac{\\pi}{2}\\le y\\le\\frac{\\pi}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The inverse sine takes every value in \\(\\left[-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right]\\). Multiplying each output by \\(2\\) gives every value in \\([-\\pi,\\pi]\\). The factor \\(2\\) changes the range but not the domain.",
+      "hint": "Multiply the endpoints of the range of the inverse sine by \\(2\\)."
+    },
+    {
+      "id": "dynanca-435-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Range with a vertical shift",
+      "learningObjective": "Find the range of an inverse cosine with a constant added.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the range of \\(f(x)=\\cos^{-1}x+\\frac{\\pi}{2}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\pi}{2}\\le y\\le\\frac{3\\pi}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\le y\\le\\pi\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The inverse cosine takes every value in \\([0,\\pi]\\). Adding \\(\\frac{\\pi}{2}\\) to each output shifts the range to \\(\\left[\\frac{\\pi}{2},\\frac{3\\pi}{2}\\right]\\). The interval \\([0,\\pi]\\) ignores the added constant.",
+      "hint": "Add the constant to both endpoints of the range of the inverse cosine."
+    },
+    {
+      "id": "dynanca-435-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Input outside the domain",
+      "learningObjective": "Decide whether an inverse sine is defined at a given number.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Is \\(\\sin^{-1}(1.5)\\) a real number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because the sine is defined for every real number."
+        },
+        {
+          "label": "B",
+          "text": "No, because \\(1.5\\) is outside the interval \\([-1,1]\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inverse sine is defined only for inputs in \\([-1,1]\\), since these are the only values the sine can take. No real angle has sine \\(1.5\\). The fact that \\(\\sin x\\) is defined for every real \\(x\\) concerns the domain of the sine, not of its inverse.",
+      "hint": "Distinguish the domain of the sine from the domain of the inverse sine."
+    },
+    {
+      "id": "dynanca-435-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Domain with a divided argument",
+      "learningObjective": "Find the domain of an inverse cosine whose argument is divided by a constant.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the domain of \\(f(x)=\\cos^{-1}\\left(\\frac{x}{3}\\right)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{1}{3}\\le x\\le\\frac{1}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-3\\le x\\le 3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The argument must satisfy \\(-1\\le\\frac{x}{3}\\le 1\\). Multiplying by \\(3\\) gives \\(-3\\le x\\le 3\\). Dividing the bounds by \\(3\\) instead gives the incorrect interval \\(\\left[-\\frac{1}{3},\\frac{1}{3}\\right]\\).",
+      "hint": "Solve \\(-1\\le\\frac{x}{3}\\le 1\\) by multiplying all three parts by \\(3\\)."
+    },
+    {
+      "id": "dynanca-435-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Domain with a quadratic argument",
+      "learningObjective": "Find the domain of an inverse sine whose argument is a quadratic expression.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "What is the domain of \\(f(x)=\\sin^{-1}\\left(x^2-1\\right)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\sqrt{2}\\le x\\le\\sqrt{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\le x\\le\\sqrt{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The argument must satisfy \\(-1\\le x^2-1\\le 1\\), that is, \\(0\\le x^2\\le 2\\). The left inequality holds for every real \\(x\\), and \\(x^2\\le 2\\) gives \\(-\\sqrt{2}\\le x\\le\\sqrt{2}\\). Negative values of \\(x\\) are allowed because they have the same squares as positive values.",
+      "hint": "Solve the double inequality for \\(x^2\\) first, and remember that \\(x\\) may be negative."
+    },
+    {
+      "id": "dynanca-435-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Range after a reflection and shift",
+      "learningObjective": "Find the range of a transformed inverse cosine with a negative coefficient.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "What is the range of \\(f(x)=\\pi-2\\cos^{-1}x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\pi\\le y\\le\\pi\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\pi\\le y\\le 3\\pi\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(0\\le\\cos^{-1}x\\le\\pi\\), multiplying by \\(2\\) gives \\(0\\le 2\\cos^{-1}x\\le 2\\pi\\). Subtracting from \\(\\pi\\) reverses the order: \\(\\pi-2\\pi\\le y\\le\\pi-0\\), so \\(-\\pi\\le y\\le\\pi\\). Adding instead of subtracting gives the incorrect interval \\([\\pi,3\\pi]\\).",
+      "hint": "Track the endpoints of the range through each operation; subtracting reverses the order of the bounds."
+    }
+  ]
+}

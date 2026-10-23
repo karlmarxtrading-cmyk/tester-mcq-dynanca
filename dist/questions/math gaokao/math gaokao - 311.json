@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-311",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 311",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-311-q001",
+      "category": "Probability",
+      "concept": "Union of Two Events",
+      "learningObjective": "Use the addition rule to calculate \\(P(A\\cup B)\\) from \\(P(A)\\), \\(P(B)\\), and \\(P(A\\cap B)\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A\\) and \\(B\\) be events with \\(P(A)=0.5\\), \\(P(B)=0.4\\), and \\(P(A\\cap B)=0.2\\). Find \\(P(A\\cup B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the addition rule for two events:\n\\[\nP(A\\cup B)=P(A)+P(B)-P(A\\cap B).\n\\]\nSubstitute the given values:\n\\[\nP(A\\cup B)=0.5+0.4-0.2=0.7.\n\\]",
+      "hint": "Use the formula \\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B)\\)."
+    },
+    {
+      "id": "math-gaokao-311-q002",
+      "category": "Probability",
+      "concept": "Union of Mutually Exclusive Events",
+      "learningObjective": "Calculate the probability of the union of two mutually exclusive events.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "If \\(A\\) and \\(B\\) are mutually exclusive with \\(P(A)=\\frac13\\) and \\(P(B)=\\frac14\\), find \\(P(A\\cup B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{7}{12}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{12}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(A\\) and \\(B\\) are mutually exclusive, \\(P(A\\cap B)=0\\). Therefore,\n\\[\nP(A\\cup B)=P(A)+P(B)=\\frac13+\\frac14=\\frac{4}{12}+\\frac{3}{12}=\\frac{7}{12}.\n\\]",
+      "hint": "For mutually exclusive events, the intersection probability is zero."
+    },
+    {
+      "id": "math-gaokao-311-q003",
+      "category": "Probability",
+      "concept": "Intersection from Union Probability",
+      "learningObjective": "Use the addition rule to determine \\(P(A\\cap B)\\) when \\(P(A)\\), \\(P(B)\\), and \\(P(A\\cup B)\\) are known.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Events \\(A\\) and \\(B\\) satisfy \\(P(A)=0.6\\), \\(P(B)=0.5\\), and \\(P(A\\cup B)=0.9\\). Find \\(P(A\\cap B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the addition rule,\n\\[\nP(A\\cup B)=P(A)+P(B)-P(A\\cap B).\n\\]\nSubstitute the known values:\n\\[\n0.9=0.6+0.5-P(A\\cap B).\n\\]\nThus,\n\\[\nP(A\\cap B)=1.1-0.9=0.2.\n\\]",
+      "hint": "Rearrange the addition rule to solve for \\(P(A\\cap B)\\)."
+    },
+    {
+      "id": "math-gaokao-311-q004",
+      "category": "Probability",
+      "concept": "Union of Independent Events",
+      "learningObjective": "Use independence to find the intersection and then the union of two events.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "\\(A\\) and \\(B\\) are independent events with \\(P(A)=0.4\\) and \\(P(B)=0.5\\). Find \\(P(A\\cup B)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Because \\(A\\) and \\(B\\) are independent,\n\\[\nP(A\\cap B)=P(A)P(B)=0.4\\times 0.5=0.2.\n\\]\nThen, by the addition rule,\n\\[\nP(A\\cup B)=0.4+0.5-0.2=0.7.\n\\]",
+      "hint": "For independent events, multiply probabilities to find the intersection."
+    },
+    {
+      "id": "math-gaokao-311-q005",
+      "category": "Probability",
+      "concept": "Complement of a Union",
+      "learningObjective": "Use De Morgan's law and the complement rule to find the probability that neither of two events occurs.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(P(A)=0.7\\), \\(P(B)=0.4\\), and \\(P(A\\cap B)=0.3\\). Find \\(P(A'\\cap B')\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By De Morgan's law,\n\\[\nA'\\cap B'=(A\\cup B)'.\n\\]\nFirst find \\(P(A\\cup B)\\):\n\\[\nP(A\\cup B)=0.7+0.4-0.3=0.8.\n\\]\nTherefore,\n\\[\nP(A'\\cap B')=1-P(A\\cup B)=1-0.8=0.2.\n\\]",
+      "hint": "Use De Morgan's law and the complement rule."
+    },
+    {
+      "id": "math-gaokao-311-q006",
+      "category": "Probability",
+      "concept": "Event Difference Using Intersection",
+      "learningObjective": "Compute the probability that \\(A\\) occurs but \\(B\\) does not, using \\(P(A)\\) and \\(P(A\\cap B)\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Given \\(P(A)=0.5\\), \\(P(B)=0.6\\), and \\(P(A\\cup B)=0.8\\), find \\(P(A\\cap B')\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First find \\(P(A\\cap B)\\):\n\\[\n0.8=0.5+0.6-P(A\\cap B),\n\\]\nso\n\\[\nP(A\\cap B)=0.3.\n\\]\nThen\n\\[\nP(A\\cap B')=P(A)-P(A\\cap B)=0.5-0.3=0.2.\n\\]",
+      "hint": "First find \\(P(A\\cap B)\\), then subtract it from \\(P(A)\\)."
+    },
+    {
+      "id": "math-gaokao-311-q007",
+      "category": "Probability",
+      "concept": "Union of Three Events",
+      "learningObjective": "Apply the inclusion-exclusion principle to find the probability of the union of three events.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For events \\(A\\), \\(B\\), and \\(C\\):\n\\[\nP(A)=0.5,\\quad P(B)=0.4,\\quad P(C)=0.3,\n\\]\n\\[\nP(A\\cap B)=0.2,\\quad P(A\\cap C)=0.1,\\quad P(B\\cap C)=0.1,\n\\]\nand\n\\[\nP(A\\cap B\\cap C)=0.05.\n\\]\nFind \\(P(A\\cup B\\cup C)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.75\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.85\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By inclusion-exclusion for three events,\n\\[\nP(A\\cup B\\cup C)=P(A)+P(B)+P(C)\n-P(A\\cap B)-P(A\\cap C)-P(B\\cap C)\n+P(A\\cap B\\cap C).\n\\]\nSubstitute:\n\\[\n0.5+0.4+0.3-0.2-0.1-0.1+0.05=0.85.\n\\]",
+      "hint": "Use inclusion-exclusion for three events: add single probabilities, subtract pairwise intersections, and add back the triple intersection."
+    },
+    {
+      "id": "math-gaokao-311-q008",
+      "category": "Probability",
+      "concept": "Inclusion-Exclusion for Three Events",
+      "learningObjective": "Compute the union of three events using given pairwise and triple intersections.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let\n\\[\nP(A)=0.6,\\quad P(B)=0.5,\\quad P(C)=0.4,\n\\]\n\\[\nP(A\\cap B)=0.3,\\quad P(A\\cap C)=0.25,\\quad P(B\\cap C)=0.2,\n\\]\nand\n\\[\nP(A\\cap B\\cap C)=0.05.\n\\]\nFind \\(P(A\\cup B\\cup C)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using inclusion-exclusion,\n\\[\nP(A\\cup B\\cup C)=P(A)+P(B)+P(C)\n-P(A\\cap B)-P(A\\cap C)-P(B\\cap C)\n+P(A\\cap B\\cap C).\n\\]\nThus,\n\\[\n0.6+0.5+0.4-0.3-0.25-0.2+0.05=0.8.\n\\]",
+      "hint": "Apply the three-event inclusion-exclusion formula carefully with the given intersections."
+    },
+    {
+      "id": "math-gaokao-311-q009",
+      "category": "Probability",
+      "concept": "Union of Complements",
+      "learningObjective": "Use De Morgan's law and the addition rule to compute \\(P(A'\\cup B')\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Given \\(P(A)=0.6\\), \\(P(B)=0.5\\), and \\(P(A\\cap B)=0.2\\), find \\(P(A'\\cup B')\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By De Morgan's law,\n\\[\nA'\\cup B'=(A\\cap B)'.\n\\]\nTherefore,\n\\[\nP(A'\\cup B')=1-P(A\\cap B)=1-0.2=0.8.\n\\]\nEquivalently, using the addition rule directly gives the same result.",
+      "hint": "Recognize that \\(A'\\cup B'\\) is the complement of \\(A\\cap B\\)."
+    },
+    {
+      "id": "math-gaokao-311-q010",
+      "category": "Probability",
+      "concept": "Union of Three Events with Given Intersections",
+      "learningObjective": "Apply inclusion-exclusion to a three-event union with different numerical data.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For events \\(A\\), \\(B\\), and \\(C\\):\n\\[\nP(A)=0.5,\\quad P(B)=0.4,\\quad P(C)=0.3,\n\\]\n\\[\nP(A\\cap B)=0.2,\\quad P(A\\cap C)=0.15,\\quad P(B\\cap C)=0.15,\n\\]\nand\n\\[\nP(A\\cap B\\cap C)=0.05.\n\\]\nFind \\(P(A\\cup B\\cup C)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.75\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.85\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By inclusion-exclusion,\n\\[\nP(A\\cup B\\cup C)=P(A)+P(B)+P(C)\n-P(A\\cap B)-P(A\\cap C)-P(B\\cap C)\n+P(A\\cap B\\cap C).\n\\]\nSubstitute the values:\n\\[\n0.5+0.4+0.3-0.2-0.15-0.15+0.05=0.75.\n\\]",
+      "hint": "Use the three-event inclusion-exclusion formula and substitute each probability carefully."
+    }
+  ]
+}

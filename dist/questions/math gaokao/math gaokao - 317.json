@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-317",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 317",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-317-q001",
+      "category": "Probability",
+      "concept": "Expected Value of a Discrete Random Variable",
+      "learningObjective": "Compute the expected value of a discrete random variable from its probability distribution.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A discrete random variable \\(X\\) has the following probability distribution:\n\\(P(X=0)=0.2\\), \\(P(X=1)=0.5\\), \\(P(X=2)=0.3\\).\nFind \\(E(X)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1.1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1.2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expected value is\n\\[\nE(X)=\\sum xP(X=x).\n\\]\nThus\n\\[\nE(X)=0(0.2)+1(0.5)+2(0.3)=0+0.5+0.6=1.1.\n\\]\nTherefore \\(E(X)=1.1\\).",
+      "hint": "Use the formula \\(E(X)=\\sum xP(X=x)\\) and multiply each value by its probability."
+    },
+    {
+      "id": "math-gaokao-317-q002",
+      "category": "Probability",
+      "concept": "Expected Value with Negative Outcomes",
+      "learningObjective": "Calculate the expected value of a discrete random variable that takes negative, zero, and positive values.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A discrete random variable \\(X\\) has the distribution\n\\(P(X=-1)=0.3\\), \\(P(X=0)=0.4\\), \\(P(X=1)=0.3\\).\nFind \\(E(X)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the expected value formula,\n\\[\nE(X)=(-1)(0.3)+0(0.4)+1(0.3).\n\\]\nCompute:\n\\[\nE(X)=-0.3+0+0.3=0.\n\\]\nSo the expected value is \\(0\\).",
+      "hint": "Include the negative sign when multiplying the value \\(-1\\) by its probability."
+    },
+    {
+      "id": "math-gaokao-317-q003",
+      "category": "Probability",
+      "concept": "Expected Value from Fractional Probabilities",
+      "learningObjective": "Compute the expected value of a discrete random variable whose probabilities are fractions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A discrete random variable \\(X\\) has probabilities\n\\(P(X=1)=\\frac{1}{2}\\), \\(P(X=2)=\\frac{1}{3}\\), and \\(P(X=3)=\\frac{1}{6}\\).\nFind \\(E(X)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expected value is\n\\[\nE(X)=1\\cdot\\frac{1}{2}+2\\cdot\\frac{1}{3}+3\\cdot\\frac{1}{6}.\n\\]\nCompute each term:\n\\[\nE(X)=\\frac{1}{2}+\\frac{2}{3}+\\frac{1}{2}=1+\\frac{2}{3}=\\frac{5}{3}.\n\\]\nTherefore \\(E(X)=\\frac{5}{3}\\).",
+      "hint": "Multiply each value by its probability, then add the resulting fractions."
+    },
+    {
+      "id": "math-gaokao-317-q004",
+      "category": "Probability",
+      "concept": "Expected Value of a Linear Function",
+      "learningObjective": "Use the expected value of \\(X\\) to find \\(E(2X+1)\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A discrete random variable \\(X\\) has distribution\n\\(P(X=0)=0.1\\), \\(P(X=1)=0.6\\), \\(P(X=2)=0.3\\).\nFind \\(E(2X+1)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3.4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2.4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First compute \\(E(X)\\):\n\\[\nE(X)=0(0.1)+1(0.6)+2(0.3)=0+0.6+0.6=1.2.\n\\]\nUsing linearity of expectation,\n\\[\nE(2X+1)=2E(X)+1=2(1.2)+1=3.4.\n\\]\nThus \\(E(2X+1)=3.4\\).",
+      "hint": "Use \\(E(aX+b)=aE(X)+b\\) after finding \\(E(X)\\)."
+    },
+    {
+      "id": "math-gaokao-317-q005",
+      "category": "Probability",
+      "concept": "Expected Value of a Uniform Discrete Distribution",
+      "learningObjective": "Determine the expected value of a discrete uniform random variable.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A discrete random variable \\(X\\) takes the values \\(2,4,6,8\\), each with probability \\(\\frac{1}{4}\\).\nFind \\(E(X)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4.5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since each value has probability \\(\\frac{1}{4}\\),\n\\[\nE(X)=\\frac{1}{4}(2+4+6+8).\n\\]\nThe sum is \\(20\\), so\n\\[\nE(X)=\\frac{20}{4}=5.\n\\]\nTherefore \\(E(X)=5\\).",
+      "hint": "For equally likely values, the expected value is the arithmetic mean of the values."
+    },
+    {
+      "id": "math-gaokao-317-q006",
+      "category": "Probability",
+      "concept": "Expected Value from a Formula-Based Distribution",
+      "learningObjective": "Compute the expected value when probabilities are given by a formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A discrete random variable \\(X\\) has probabilities\n\\[\nP(X=k)=\\frac{k}{10}\\quad\\text{for }k=1,2,3,4.\n\\]\nFind \\(E(X)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2.5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the definition of expected value,\n\\[\nE(X)=\\sum_{k=1}^{4} k\\cdot\\frac{k}{10}\n=\\frac{1^2+2^2+3^2+4^2}{10}.\n\\]\nCompute:\n\\[\n1^2+2^2+3^2+4^2=1+4+9+16=30.\n\\]\nThus\n\\[\nE(X)=\\frac{30}{10}=3.\n\\]\nSo \\(E(X)=3\\).",
+      "hint": "Substitute each value \\(k\\) into \\(P(X=k)=\\frac{k}{10}\\), then multiply by \\(k\\) and sum."
+    },
+    {
+      "id": "math-gaokao-317-q007",
+      "category": "Probability",
+      "concept": "Finding a Parameter from an Expected Value",
+      "learningObjective": "Determine an unknown parameter in a probability distribution using a given expected value.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "A discrete random variable \\(X\\) has distribution\n\\(P(X=1)=a\\), \\(P(X=2)=2a\\), and \\(P(X=3)=1-3a\\).\nGiven that \\(E(X)=2\\), find \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First check that the probabilities sum to \\(1\\):\n\\[\na+2a+(1-3a)=1.\n\\]\nThe expected value is\n\\[\nE(X)=1(a)+2(2a)+3(1-3a)\n=a+4a+3-9a=3-4a.\n\\]\nGiven \\(E(X)=2\\),\n\\[\n3-4a=2.\n\\]\nThus\n\\[\n4a=1,\\qquad a=\\frac{1}{4}.\n\\]\nTherefore \\(a=\\frac{1}{4}\\).",
+      "hint": "Write \\(E(X)\\) in terms of \\(a\\), set it equal to the given expected value, and solve."
+    },
+    {
+      "id": "math-gaokao-317-q008",
+      "category": "Probability",
+      "concept": "Expected Value in an Application",
+      "learningObjective": "Interpret and compute the expected net gain in a simple game.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In a game, a player wins \\(10\\) points with probability \\(0.2\\), wins \\(5\\) points with probability \\(0.3\\), and loses \\(4\\) points with probability \\(0.5\\).\nFind the expected net gain.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1.2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1.5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expected net gain is\n\\[\nE=10(0.2)+5(0.3)+(-4)(0.5).\n\\]\nCompute:\n\\[\nE=2+1.5-2=1.5.\n\\]\nTherefore the expected net gain is \\(1.5\\) points.",
+      "hint": "Treat a loss as a negative gain and multiply each outcome by its probability."
+    },
+    {
+      "id": "math-gaokao-317-q009",
+      "category": "Probability",
+      "concept": "Finding an Unknown Value from Expected Value",
+      "learningObjective": "Determine an unknown value of a discrete random variable using its expected value.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A discrete random variable \\(X\\) has distribution\n\\(P(X=0)=0.1\\), \\(P(X=1)=0.3\\), \\(P(X=2)=0.4\\), and \\(P(X=m)=0.2\\).\nGiven that \\(E(X)=2.1\\), find \\(m\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The probabilities already sum to\n\\[\n0.1+0.3+0.4+0.2=1.\n\\]\nThe expected value is\n\\[\nE(X)=0(0.1)+1(0.3)+2(0.4)+m(0.2).\n\\]\nSo\n\\[\nE(X)=0.3+0.8+0.2m=1.1+0.2m.\n\\]\nGiven \\(E(X)=2.1\\),\n\\[\n1.1+0.2m=2.1.\n\\]\nThus\n\\[\n0.2m=1,\\qquad m=5.\n\\]\nTherefore \\(m=5\\).",
+      "hint": "Form the expected value expression including the unknown value \\(m\\), then solve the equation."
+    },
+    {
+      "id": "math-gaokao-317-q010",
+      "category": "Probability",
+      "concept": "Expected Value without Replacement",
+      "learningObjective": "Compute the expected number of successes in a simple sampling problem without replacement.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A box contains \\(3\\) red balls and \\(2\\) blue balls. Two balls are drawn at random without replacement. Let \\(X\\) be the number of red balls drawn. Find \\(E(X)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1.5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1.2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For sampling without replacement, the expected number of red balls is\n\\[\nE(X)=(\\text{number of draws})\\cdot\\frac{\\text{number of red balls}}{\\text{total number of balls}}.\n\\]\nThus\n\\[\nE(X)=2\\cdot\\frac{3}{5}=\\frac{6}{5}=1.2.\n\\]\nTherefore \\(E(X)=1.2\\).",
+      "hint": "Use the mean of a hypergeometric-type count: number of draws times the proportion of red balls in the box."
+    }
+  ]
+}

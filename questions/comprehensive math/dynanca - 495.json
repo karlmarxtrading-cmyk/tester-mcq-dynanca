@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-495",
+  "category": "Comprehensive Mathematics",
+  "title": "495. Sets, Logic, Reasoning & Proof: De Morgan Laws for Propositions",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-495-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negation of a conjunction",
+      "learningObjective": "State De Morgan's law for the negation of a conjunction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which proposition is logically equivalent to \\(\\neg(p\\land q)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\neg p\\lor\\neg q\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\neg p\\land\\neg q\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\"Not both \\(p\\) and \\(q\\)\" means that at least one of them fails: \\(\\neg p\\lor\\neg q\\). The proposition \\(\\neg p\\land\\neg q\\) says that both fail, which is stronger; it is false, for example, when \\(p\\) is true and \\(q\\) is false, although \\(\\neg(p\\land q)\\) is true there.",
+      "hint": "Test the row in which \\(p\\) is true and \\(q\\) is false."
+    },
+    {
+      "id": "dynanca-495-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negation of a disjunction",
+      "learningObjective": "State De Morgan's law for the negation of a disjunction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which proposition is logically equivalent to \\(\\neg(p\\lor q)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\neg p\\lor\\neg q\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\neg p\\land\\neg q\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\"Neither \\(p\\) nor \\(q\\)\" means that both fail: \\(\\neg p\\land\\neg q\\). The proposition \\(\\neg p\\lor\\neg q\\) only says that at least one fails; it is true when \\(p\\) is true and \\(q\\) is false, although \\(\\neg(p\\lor q)\\) is false there.",
+      "hint": "The negation of \"at least one holds\" is \"none holds\"."
+    },
+    {
+      "id": "dynanca-495-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negating a double inequality written with and",
+      "learningObjective": "Apply De Morgan's law to a conjunction of two inequalities.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For a real number \\(x\\), what is the negation of \"\\(x>2\\) and \\(x<5\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"\\(x\\le 2\\) or \\(x\\ge 5\\)\""
+        },
+        {
+          "label": "B",
+          "text": "\"\\(x\\le 2\\) and \\(x\\ge 5\\)\""
+        }
+      ],
+      "answer": "A",
+      "explanation": "By De Morgan's law, the negation of a conjunction is the disjunction of the negations: \"not \\(x>2\\)\" is \\(x\\le 2\\), and \"not \\(x<5\\)\" is \\(x\\ge 5\\), joined by \"or\". The version with \"and\" can never be true, since no number is at most \\(2\\) and at least \\(5\\).",
+      "hint": "Negate each inequality and change \"and\" to \"or\"."
+    },
+    {
+      "id": "dynanca-495-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negating a disjunction about an integer",
+      "learningObjective": "Apply De Morgan's law to a disjunction of two properties.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For an integer \\(n\\), what is the negation of \"\\(n\\) is even or \\(n\\) is prime\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"\\(n\\) is odd or \\(n\\) is not prime\""
+        },
+        {
+          "label": "B",
+          "text": "\"\\(n\\) is odd and \\(n\\) is not prime\""
+        }
+      ],
+      "answer": "B",
+      "explanation": "By De Morgan's law, the negation of a disjunction is the conjunction of the negations. The negation of \"\\(n\\) is even\" is \"\\(n\\) is odd\", and the two negations are joined by \"and\". The version with \"or\" is true for \\(n=3\\) (odd), although the original statement is also true for \\(n=3\\) (prime), so it cannot be the negation.",
+      "hint": "Negate each part and change \"or\" to \"and\"; test with \\(n=3\\)."
+    },
+    {
+      "id": "dynanca-495-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negating an everyday conjunction",
+      "learningObjective": "Apply De Morgan's law to a sentence in ordinary language.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "What is the negation of \"It is cold and it is raining\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"It is not cold or it is not raining.\""
+        },
+        {
+          "label": "B",
+          "text": "\"It is not cold and it is not raining.\""
+        }
+      ],
+      "answer": "A",
+      "explanation": "The original sentence is false as soon as one of its two parts fails. So its negation says that at least one part fails: it is not cold, or it is not raining. The sentence with \"and\" describes only one of the ways the original can be false.",
+      "hint": "List the situations in which the original sentence is false."
+    },
+    {
+      "id": "dynanca-495-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "De Morgan's law with a negated variable inside",
+      "learningObjective": "Simplify the negation of a disjunction that contains a negated variable.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Which proposition is logically equivalent to \\(\\neg(\\neg p\\lor q)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\land\\neg q\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\lor\\neg q\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By De Morgan's law, \\(\\neg(\\neg p\\lor q)\\) is \\(\\neg(\\neg p)\\land\\neg q\\), and the double negation gives \\(p\\land\\neg q\\). The disjunction becomes a conjunction; keeping the \"or\" gives \\(p\\lor\\neg q\\), which is incorrect.",
+      "hint": "Negate each part, change the connective, and simplify the double negation."
+    },
+    {
+      "id": "dynanca-495-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "De Morgan's law with a negated variable in a conjunction",
+      "learningObjective": "Simplify the negation of a conjunction that contains a negated variable.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Which proposition is logically equivalent to \\(\\neg(p\\land\\neg q)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\neg p\\land q\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\neg p\\lor q\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By De Morgan's law, \\(\\neg(p\\land\\neg q)\\) is \\(\\neg p\\lor\\neg(\\neg q)\\), which simplifies to \\(\\neg p\\lor q\\). The conjunction becomes a disjunction. The result is the familiar form of the conditional \\(p\\implies q\\).",
+      "hint": "Negate both parts and change \"and\" to \"or\"."
+    },
+    {
+      "id": "dynanca-495-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negating a statement about a product being zero",
+      "learningObjective": "Apply De Morgan's law to a disjunction of equations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For real numbers \\(x\\) and \\(y\\), what is the negation of \"\\(x=0\\) or \\(y=0\\)\"?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"\\(x\\ne 0\\) and \\(y\\ne 0\\)\""
+        },
+        {
+          "label": "B",
+          "text": "\"\\(x\\ne 0\\) or \\(y\\ne 0\\)\""
+        }
+      ],
+      "answer": "A",
+      "explanation": "The negation of a disjunction is the conjunction of the negations: neither number is zero. The version with \"or\" is true for \\(x=0\\), \\(y=1\\), although the original statement is also true there, so it is not the negation.",
+      "hint": "The statement is false only when neither equation holds."
+    },
+    {
+      "id": "dynanca-495-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Negating a closed interval condition",
+      "learningObjective": "Apply De Morgan's law to a double inequality.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For a real number \\(x\\), what is the negation of the statement \\(1\\le x\\le 3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\"\\(x<1\\) or \\(x>3\\)\""
+        },
+        {
+          "label": "B",
+          "text": "\"\\(x<1\\) and \\(x>3\\)\""
+        }
+      ],
+      "answer": "A",
+      "explanation": "The statement \\(1\\le x\\le 3\\) is the conjunction \"\\(x\\ge 1\\) and \\(x\\le 3\\)\". Its negation is \"\\(x<1\\) or \\(x>3\\)\": the number lies outside the interval on one side or the other. No number satisfies \"\\(x<1\\) and \\(x>3\\)\", so that cannot be the negation of a statement that is sometimes false.",
+      "hint": "Rewrite the double inequality as two inequalities joined by \"and\", then apply De Morgan's law."
+    },
+    {
+      "id": "dynanca-495-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "De Morgan's law for three propositions",
+      "learningObjective": "Extend De Morgan's law to a conjunction of three propositions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which proposition is logically equivalent to \\(\\neg(p\\land q\\land r)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\neg p\\land\\neg q\\land\\neg r\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\neg p\\lor\\neg q\\lor\\neg r\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The conjunction \\(p\\land q\\land r\\) is true only when all three are true. Its negation is true when at least one of them is false: \\(\\neg p\\lor\\neg q\\lor\\neg r\\). The proposition \\(\\neg p\\land\\neg q\\land\\neg r\\) requires all three to be false, which is true in only one of the eight rows.",
+      "hint": "\"Not all of them\" means \"at least one of them is not\"."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-357",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 357",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-357-q001",
+      "category": "Combinatorics",
+      "concept": "Selection with gender restriction",
+      "learningObjective": "Count committees with an exact number of women using combinations.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "From \\(5\\) men and \\(4\\) women, how many committees of \\(3\\) people can be formed if the committee must contain exactly \\(1\\) woman?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(40\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Choose \\(1\\) woman from \\(4\\) women: \\(\\binom{4}{1}=4\\). Choose the remaining \\(2\\) members from the \\(5\\) men: \\(\\binom{5}{2}=10\\). By the multiplication principle, the number of committees is \\(4 \\times 10=40\\).",
+      "hint": "Separate the selection into choosing the required woman and then choosing the remaining members from the men."
+    },
+    {
+      "id": "math-gaokao-357-q002",
+      "category": "Combinatorics",
+      "concept": "Selection with a required item",
+      "learningObjective": "Count selections in which a specified object must be included.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "From \\(7\\) distinct books, how many ways are there to choose \\(4\\) books if one particular book must be included?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since the particular book must be included, it is fixed. Then we need to choose the remaining \\(4-1=3\\) books from the other \\(7-1=6\\) books. This gives \\(\\binom{6}{3}=20\\) ways.",
+      "hint": "Fix the required book first, then choose the remaining books from the rest."
+    },
+    {
+      "id": "math-gaokao-357-q003",
+      "category": "Combinatorics",
+      "concept": "Selection with at least one from a group",
+      "learningObjective": "Use complementary counting to select a committee with at least one girl.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "From \\(6\\) boys and \\(5\\) girls, how many committees of \\(4\\) students can be formed if the committee must contain at least one girl?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(315\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(330\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total number of committees of \\(4\\) students from \\(11\\) students is \\(\\binom{11}{4}=330\\). The number of committees with no girls is the number of committees chosen entirely from the \\(6\\) boys, which is \\(\\binom{6}{4}=15\\). Therefore, the number with at least one girl is \\(330-15=315\\).",
+      "hint": "Subtract the committees with no girls from all possible committees."
+    },
+    {
+      "id": "math-gaokao-357-q004",
+      "category": "Combinatorics",
+      "concept": "Selection with an exclusion restriction",
+      "learningObjective": "Count committees in which two specified people cannot both be chosen.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A committee of \\(5\\) people is chosen from \\(9\\) people. If two particular people cannot both be on the committee, how many committees are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(91\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(126\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total number of committees of \\(5\\) from \\(9\\) people is \\(\\binom{9}{5}=126\\). If both particular people are included, then we must choose the remaining \\(5-2=3\\) members from the other \\(9-2=7\\) people, giving \\(\\binom{7}{3}=35\\). Therefore, the number of valid committees is \\(126-35=91\\).",
+      "hint": "Count all committees first, then subtract the committees that contain both particular people."
+    },
+    {
+      "id": "math-gaokao-357-q005",
+      "category": "Combinatorics",
+      "concept": "Selection with an upper bound on special items",
+      "learningObjective": "Count selections containing at most one of two special objects.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "From \\(8\\) distinct chocolates, how many ways are there to choose \\(3\\) chocolates if at most one of two special chocolates may be chosen?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(50\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(56\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total number of ways to choose \\(3\\) chocolates from \\(8\\) is \\(\\binom{8}{3}=56\\). The only forbidden case is choosing both special chocolates. If both special chocolates are chosen, we need \\(1\\) more chocolate from the remaining \\(6\\), giving \\(\\binom{6}{1}=6\\) ways. Thus the number of valid selections is \\(56-6=50\\).",
+      "hint": "Subtract the selections that contain both special chocolates from all possible selections."
+    },
+    {
+      "id": "math-gaokao-357-q006",
+      "category": "Combinatorics",
+      "concept": "Selection with an either-both-or-neither condition",
+      "learningObjective": "Count selections where two specified people are either both included or both excluded.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "From \\(10\\) students, how many ways are there to select \\(4\\) students if two particular students must either both be selected or both not be selected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(84\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(98\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Case \\(1\\): both particular students are selected. Then we choose the remaining \\(4-2=2\\) students from the other \\(8\\) students: \\(\\binom{8}{2}=28\\). Case \\(2\\): neither particular student is selected. Then we choose all \\(4\\) students from the other \\(8\\) students: \\(\\binom{8}{4}=70\\). The total number of selections is \\(28+70=98\\).",
+      "hint": "Split the problem into the case where both are selected and the case where neither is selected."
+    },
+    {
+      "id": "math-gaokao-357-q007",
+      "category": "Combinatorics",
+      "concept": "Selection from a multiset with identical letters",
+      "learningObjective": "Count distinct selections of a fixed size from a word containing repeated letters.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many distinct selections of \\(4\\) letters can be made from the letters of BANANA? The available letters are A, A, A, B, N, N, and order does not matter.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Split the selections according to whether B is included. Without B, the four selected letters must be AAAN or AANN, giving \\(2\\) choices. With B, the other three letters can be AAA, AAN, or ANN, giving AAAB, AABN, and ABNN. Thus there are\n\\[\n2+3=5\n\\]\ndistinct selections. The distractor \\(2\\) counts only the case without B.",
+      "hint": "Separate the selections into those containing B and those not containing B, and respect the available multiplicity of each letter."
+    },
+    {
+      "id": "math-gaokao-357-q008",
+      "category": "Combinatorics",
+      "concept": "Selection with a minimum from a subgroup",
+      "learningObjective": "Count selections with at least two members from a specified subgroup.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "From \\(12\\) people, including \\(4\\) engineers, how many committees of \\(5\\) people can be formed if the committee must contain at least \\(2\\) engineers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(456\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(336\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total number of committees of \\(5\\) from \\(12\\) people is \\(\\binom{12}{5}=792\\). The invalid committees contain fewer than \\(2\\) engineers, that is, \\(0\\) or \\(1\\) engineer. With \\(0\\) engineers, choose all \\(5\\) from the \\(8\\) non-engineers: \\(\\binom{8}{5}=56\\). With \\(1\\) engineer, choose \\(1\\) engineer from \\(4\\) and \\(4\\) non-engineers from \\(8\\): \\(\\binom{4}{1}\\binom{8}{4}=4 \\times 70=280\\). Thus invalid committees total \\(56+280=336\\). The number of valid committees is \\(792-336=456\\).",
+      "hint": "Subtract the cases with \\(0\\) engineers and \\(1\\) engineer from all possible committees."
+    },
+    {
+      "id": "math-gaokao-357-q009",
+      "category": "Combinatorics",
+      "concept": "Selection with lower bounds on two groups",
+      "learningObjective": "Count selections satisfying minimum requirements for vowels and consonants.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "From \\(7\\) distinct consonants and \\(5\\) distinct vowels, how many ways are there to choose \\(4\\) letters if the selection must contain at least \\(2\\) vowels and at least \\(1\\) consonant?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(280\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(210\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The possible compositions satisfying the conditions are \\(2\\) vowels and \\(2\\) consonants, or \\(3\\) vowels and \\(1\\) consonant. For \\(2\\) vowels and \\(2\\) consonants: \\(\\binom{5}{2}\\binom{7}{2}=10 \\times 21=210\\). For \\(3\\) vowels and \\(1\\) consonant: \\(\\binom{5}{3}\\binom{7}{1}=10 \\times 7=70\\). The total is \\(210+70=280\\).",
+      "hint": "Consider the possible numbers of vowels and consonants that satisfy both requirements."
+    },
+    {
+      "id": "math-gaokao-357-q010",
+      "category": "Combinatorics",
+      "concept": "Selection with multiple restrictions and inclusion-exclusion",
+      "learningObjective": "Count committees satisfying gender requirements and an incompatibility condition.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "From \\(8\\) men and \\(6\\) women, how many committees of \\(5\\) people can be formed if the committee must contain at least \\(2\\) men and at least \\(2\\) women, and a particular man and a particular woman cannot serve together?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1400\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1225\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First ignore the incompatibility. The allowed gender compositions are \\(2\\) men and \\(3\\) women, or \\(3\\) men and \\(2\\) women. For \\(2\\) men and \\(3\\) women: \\(\\binom{8}{2}\\binom{6}{3}=28 \\times 20=560\\). For \\(3\\) men and \\(2\\) women: \\(\\binom{8}{3}\\binom{6}{2}=56 \\times 15=840\\). The total is \\(560+840=1400\\). Now subtract committees containing both the particular man and the particular woman. If the composition is \\(2\\) men and \\(3\\) women, after including them we need \\(1\\) more man from the remaining \\(7\\) men and \\(2\\) more women from the remaining \\(5\\) women: \\(\\binom{7}{1}\\binom{5}{2}=7 \\times 10=70\\). If the composition is \\(3\\) men and \\(2\\) women, after including them we need \\(2\\) more men from the remaining \\(7\\) men and \\(1\\) more woman from the remaining \\(5\\) women: \\(\\binom{7}{2}\\binom{5}{1}=21 \\times 5=105\\). So the forbidden committees total \\(70+105=175\\). Therefore the valid number is \\(1400-175=1225\\).",
+      "hint": "Count all committees satisfying the gender requirements first, then subtract those containing both particular people."
+    }
+  ]
+}

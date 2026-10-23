@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-551",
+  "category": "Comprehensive Mathematics",
+  "title": "551. Discrete Mathematics, Counting & Graph Theory: Combinations with Repetition",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-551-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Selections with repetition allowed",
+      "learningObjective": "Count small selections in which an item may be chosen more than once.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "An ice-cream stand has \\(3\\) flavours. A customer orders \\(2\\) scoops; the two scoops may have the same flavour, and their order does not matter. How many different orders are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(3\\) orders with two different flavours and \\(3\\) orders with the same flavour twice, so \\(6\\) in all. The formula for selections with repetition gives \\(\\binom{3+2-1}{2}=\\binom{4}{2}=6\\). The number \\(3=\\binom{3}{2}\\) leaves out the orders with a repeated flavour.",
+      "hint": "Count the orders with two different flavours and those with a repeated flavour separately."
+    },
+    {
+      "id": "dynanca-551-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Three items of two types",
+      "learningObjective": "List the selections of three items from two types with repetition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Three coins are taken from a box that contains many gold coins and many silver coins. Coins of the same metal are identical, and the order of taking does not matter. How many different selections are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A selection is determined by the number of gold coins, which can be \\(0\\), \\(1\\), \\(2\\), or \\(3\\). So there are \\(4\\) selections, in agreement with \\(\\binom{2+3-1}{3}=\\binom{4}{3}=4\\). The number \\(8=2^3\\) counts ordered sequences such as gold, silver, gold.",
+      "hint": "Only the number of gold coins matters."
+    },
+    {
+      "id": "dynanca-551-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Pastries from five kinds",
+      "learningObjective": "Apply the formula for selections with repetition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A bakery sells \\(5\\) kinds of pastry, with plenty of each kind. In how many ways can a customer choose \\(4\\) pastries, if only the number of each kind matters?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(625\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(70\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "This is a selection of \\(4\\) items from \\(5\\) types with repetition allowed: \\(\\binom{5+4-1}{4}=\\binom{8}{4}=70\\). The number \\(625=5^4\\) counts ordered sequences of four pastries.",
+      "hint": "Use \\(\\binom{n+r-1}{r}\\) with \\(n\\) types and \\(r\\) items."
+    },
+    {
+      "id": "dynanca-551-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The formula",
+      "learningObjective": "State the formula for the number of selections with repetition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many selections of \\(r\\) items can be made from \\(n\\) types of item, if repetition is allowed and order does not matter?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\binom{n}{r}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\binom{n+r-1}{r}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The count is \\(\\binom{n+r-1}{r}\\). For example, with \\(n=3\\) types and \\(r=2\\) items it gives \\(\\binom{4}{2}=6\\). The coefficient \\(\\binom{n}{r}\\) counts selections in which no type may be used twice; for \\(n=3\\), \\(r=2\\) that is only \\(3\\).",
+      "hint": "Test each formula with \\(n=3\\) and \\(r=2\\) by listing the selections."
+    },
+    {
+      "id": "dynanca-551-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Bouquets",
+      "learningObjective": "Count selections of several items from three types.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A florist has plenty of roses, tulips, and lilies. How many different bouquets of \\(5\\) flowers can be made, if a bouquet is described only by the number of flowers of each kind?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(243\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(21\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "This is a selection of \\(5\\) items from \\(3\\) types with repetition: \\(\\binom{3+5-1}{5}=\\binom{7}{5}=21\\). The number \\(243=3^5\\) would count arrangements of the flowers in a row.",
+      "hint": "Only the three numbers of flowers matter, not any order."
+    },
+    {
+      "id": "dynanca-551-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Domino tiles",
+      "learningObjective": "Count unordered pairs with repetition allowed.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A domino tile shows two numbers from \\(0\\) to \\(6\\); the two numbers may be equal, and a tile is the same when turned around. How many different tiles are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(28\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(21\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A tile is an unordered pair of numbers from \\(7\\) values, with repetition allowed: \\(\\binom{7+2-1}{2}=\\binom{8}{2}=28\\). The number \\(21=\\binom{7}{2}\\) counts only the tiles with two different numbers and omits the \\(7\\) doubles.",
+      "hint": "Count the tiles with two different numbers, then add the doubles."
+    },
+    {
+      "id": "dynanca-551-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Rolling identical dice",
+      "learningObjective": "Count the outcomes of several identical dice.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Three identical dice are rolled, and only the numbers shown are recorded, not which die shows which number. How many different results are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(56\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(216\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A result is a selection of \\(3\\) numbers from \\(6\\) values with repetition allowed and without order: \\(\\binom{6+3-1}{3}=\\binom{8}{3}=56\\). The number \\(216=6^3\\) counts the outcomes when the dice can be told apart.",
+      "hint": "Because the dice are identical, the results \\(1,1,2\\) and \\(1,2,1\\) are the same."
+    },
+    {
+      "id": "dynanca-551-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Finding the number of types",
+      "learningObjective": "Find the number of types from a given number of selections.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "From \\(n\\) types of item, exactly \\(10\\) different selections of \\(2\\) items can be made, with repetition allowed and order ignored. What is \\(n\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n=5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number of selections is \\(\\binom{n+1}{2}=\\dfrac{(n+1)n}{2}\\). Setting this equal to \\(10\\) gives \\(n(n+1)=20\\), so \\(n=4\\). The value \\(n=5\\) solves \\(\\binom{n}{2}=10\\), which is the count when repetition is not allowed.",
+      "hint": "Use the formula with \\(r=2\\) and solve for \\(n\\)."
+    },
+    {
+      "id": "dynanca-551-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "At least one of each kind",
+      "learningObjective": "Count selections with repetition under a minimum requirement.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A shop sells \\(3\\) kinds of pastry, with plenty of each. In how many ways can \\(6\\) pastries be chosen so that every kind is chosen at least once, if only the number of each kind matters?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(28\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First take one pastry of each kind. The remaining \\(3\\) pastries are chosen freely from \\(3\\) kinds: \\(\\binom{3+3-1}{3}=\\binom{5}{3}=10\\). The number \\(28=\\binom{8}{6}\\) counts all selections of \\(6\\) pastries, including those that miss a kind.",
+      "hint": "Set aside one pastry of each kind, then choose the rest without restriction."
+    },
+    {
+      "id": "dynanca-551-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Non-decreasing sequences",
+      "learningObjective": "Count non-decreasing sequences as selections with repetition.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many triples \\((a,b,c)\\) of integers satisfy \\(1\\le a\\le b\\le c\\le 5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(35\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each such triple is obtained by choosing \\(3\\) numbers from \\(1,\\dots,5\\) with repetition allowed and writing them in non-decreasing order. So the count is \\(\\binom{5+3-1}{3}=\\binom{7}{3}=35\\). The number \\(10=\\binom{5}{3}\\) counts only the triples with \\(a<b<c\\).",
+      "hint": "A non-decreasing triple is determined by which numbers it contains and how often."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-535",
+  "category": "Comprehensive Mathematics",
+  "title": "535. Sets, Logic, Reasoning & Proof: Functions as Special Relations",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-535-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Functions as sets of pairs",
+      "learningObjective": "State the condition under which a relation is a function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A relation \\(f\\subseteq A\\times B\\) is a function from \\(A\\) to \\(B\\) under which condition?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Each element of \\(A\\) is the first component of exactly one pair of \\(f\\)."
+        },
+        {
+          "label": "B",
+          "text": "Each element of \\(B\\) is the second component of exactly one pair of \\(f\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A function assigns to every element of \\(A\\) exactly one element of \\(B\\). In terms of pairs, each \\(a\\in A\\) appears as a first component exactly once. Nothing is required of the elements of \\(B\\): some may be used several times and some not at all.",
+      "hint": "The requirement concerns the inputs, not the outputs."
+    },
+    {
+      "id": "dynanca-535-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Recognising a function",
+      "learningObjective": "Decide which relation between two small sets is a function.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(A=\\{1,2,3\\}\\) and \\(B=\\{4,5\\}\\). Which relation is a function from \\(A\\) to \\(B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{(1,4),(1,5),(2,4),(3,5)\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{(1,4),(2,4),(3,5)\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In the first relation each of \\(1\\), \\(2\\), \\(3\\) appears as a first component exactly once, so it is a function; two inputs sharing the output \\(4\\) is allowed. In the second relation the input \\(1\\) is paired with both \\(4\\) and \\(5\\), which a function does not allow.",
+      "hint": "Look for an element of \\(A\\) that appears as a first component more than once."
+    },
+    {
+      "id": "dynanca-535-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An input without a value",
+      "learningObjective": "Decide whether a relation that omits an input is a function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Is \\(R=\\{(1,5),(2,5)\\}\\) a function from \\(\\{1,2,3\\}\\) to \\(\\{5,6\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because no element is paired with two different values."
+        },
+        {
+          "label": "B",
+          "text": "No, because \\(3\\) is not the first component of any pair."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A function from \\(\\{1,2,3\\}\\) must assign a value to every element of that set. The element \\(3\\) is paired with nothing, so \\(R\\) is not a function from \\(\\{1,2,3\\}\\). It is true that no input has two values, but that is only half of the requirement.",
+      "hint": "Check that every element of the domain receives a value."
+    },
+    {
+      "id": "dynanca-535-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A constant function",
+      "learningObjective": "Decide whether a relation with a repeated output is a function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Is \\(R=\\{(1,7),(2,7),(3,7)\\}\\) a function from \\(\\{1,2,3\\}\\) to \\(\\{7,8\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the value \\(7\\) is used three times, and \\(8\\) is never used."
+        },
+        {
+          "label": "B",
+          "text": "Yes; each of \\(1\\), \\(2\\), \\(3\\) is paired with exactly one value."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each input appears as a first component exactly once, so \\(R\\) is a function; it is the constant function with value \\(7\\). A function may repeat a value, and it need not use every element of the codomain.",
+      "hint": "Count how many pairs begin with each element of \\(\\{1,2,3\\}\\)."
+    },
+    {
+      "id": "dynanca-535-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Number of pairs in a function",
+      "learningObjective": "Count the ordered pairs that make up a function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(A\\) have \\(4\\) elements and \\(B\\) have \\(3\\) elements, and let \\(f\\subseteq A\\times B\\) be a function from \\(A\\) to \\(B\\). How many ordered pairs does \\(f\\) contain?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A function contains exactly one pair for each element of its domain. Since \\(A\\) has \\(4\\) elements, \\(f\\) contains exactly \\(4\\) pairs, whatever the size of \\(B\\). The number \\(12\\) is the size of the whole product \\(A\\times B\\).",
+      "hint": "Count one pair for each input."
+    },
+    {
+      "id": "dynanca-535-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting functions",
+      "learningObjective": "Count the functions from one finite set to another.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(A\\) have \\(2\\) elements and \\(B\\) have \\(5\\) elements. How many relations \\(f\\subseteq A\\times B\\) are functions from \\(A\\) to \\(B\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(32\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(25\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A function is determined by choosing one of the \\(5\\) elements of \\(B\\) for each of the \\(2\\) elements of \\(A\\). The choices are independent, so there are \\(5\\cdot 5=25\\) functions. The number \\(32=2^5\\) would count the functions from \\(B\\) to \\(A\\).",
+      "hint": "Choose an image for each element of \\(A\\) and multiply the numbers of choices."
+    },
+    {
+      "id": "dynanca-535-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A relation that is not a function",
+      "learningObjective": "Decide whether a relation defined by an equation is a function of its first component.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(S=\\{(x,y) : x=y^2\\}\\), where \\(x\\ge 0\\) and \\(y\\) is a real number. Is \\(S\\) a function that assigns to each \\(x\\ge 0\\) a value \\(y\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because \\(x=4\\) is paired with both \\(y=2\\) and \\(y=-2\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because each \\(y\\) gives exactly one value of \\(x\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(S\\) to be a function of \\(x\\), each \\(x\\) must be paired with exactly one \\(y\\). But \\((4,2)\\) and \\((4,-2)\\) both belong to \\(S\\). The statement that each \\(y\\) gives one \\(x\\) shows only that \\(x\\) is a function of \\(y\\), which is a different question.",
+      "hint": "Test a positive value of \\(x\\) and solve for \\(y\\)."
+    },
+    {
+      "id": "dynanca-535-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Shared outputs are allowed",
+      "learningObjective": "Decide whether the squaring relation on the integers is a function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Is \\(G=\\{(n,n^2) : n\\in\\mathbb{Z}\\}\\) a function from \\(\\mathbb{Z}\\) to \\(\\mathbb{Z}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because \\((2,4)\\) and \\((-2,4)\\) have the same second component."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because each integer \\(n\\) is paired with exactly one integer, \\(n^2\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each integer \\(n\\) is the first component of exactly one pair, \\((n,n^2)\\), so \\(G\\) is a function. Two different inputs sharing an output does not violate the definition; it only shows that the function is not one-to-one.",
+      "hint": "The definition restricts how often each first component appears."
+    },
+    {
+      "id": "dynanca-535-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Inverse relation of a function",
+      "learningObjective": "Decide whether the inverse relation of a function is again a function.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(f=\\{(1,4),(2,4),(3,5)\\}\\), a function from \\(\\{1,2,3\\}\\) to \\(\\{4,5\\}\\). Is the inverse relation \\(f^{-1}\\) a function from \\(\\{4,5\\}\\) to \\(\\{1,2,3\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because \\(4\\) is paired with both \\(1\\) and \\(2\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because reversing the pairs of a function always gives a function."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reversing the pairs gives \\(f^{-1}=\\{(4,1),(4,2),(5,3)\\}\\). The element \\(4\\) appears as a first component twice, so \\(f^{-1}\\) is not a function. The inverse relation of a function is a function only when the original function is a bijection.",
+      "hint": "Write out the reversed pairs and inspect their first components."
+    },
+    {
+      "id": "dynanca-535-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Functions among all relations",
+      "learningObjective": "Count how many relations between two small sets are functions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "There are \\(16\\) relations from \\(\\{1,2\\}\\) to \\(\\{3,4\\}\\). How many of them are functions from \\(\\{1,2\\}\\) to \\(\\{3,4\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A function must contain exactly one pair beginning with \\(1\\) and exactly one pair beginning with \\(2\\). There are \\(2\\) choices for each, so there are \\(2\\cdot 2=4\\) functions. The other \\(12\\) relations either leave an input without a value or give an input two values.",
+      "hint": "Decide separately which value is assigned to \\(1\\) and which to \\(2\\)."
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en" class="catalog-page">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dynanca — Mathematics MCQ Practice</title>
+<meta name="description" content="Dynanca MCQ practice: choose a mathematics question bank, answer multiple-choice questions at your own pace, and read the explanation after every answer.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#F4F6F9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1217" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="assets/css/catalog.css">
+<script src="assets/js/theme.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-head" id="siteHead">
+  <div class="site-head__inner u-container">
+    <a class="brand" href="./">
+      <span class="brand__plate"><img class="brand__logo" src="assets/img/logo-dynanca.png" alt="Dynanca — Learn, Build, Achieve: home" width="846" height="168"></span>
+    </a>
+    <div class="site-head__tools">
+      <nav class="site-nav" aria-label="Main">
+        <a class="js-only" href="#catalog">Catalog</a>
+        <a href="#how-it-works">How it works</a>
+      </nav>
+      <div class="theme-switch js-only" role="group" aria-label="Color theme">
+        <button type="button" class="theme-switch__btn" data-theme-option="light" aria-pressed="false">
+          <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="3.6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10 1.8v2.4M10 15.8v2.4M1.8 10h2.4M15.8 10h2.4M4.2 4.2l1.7 1.7M14.1 14.1l1.7 1.7M4.2 15.8l1.7-1.7M14.1 5.9l1.7-1.7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <span class="theme-switch__label">Light</span>
+        </button>
+        <button type="button" class="theme-switch__btn" data-theme-option="dark" aria-pressed="false">
+          <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M16.5 12.3A7 7 0 0 1 7.7 3.5a7 7 0 1 0 8.8 8.8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          <span class="theme-switch__label">Dark</span>
+        </button>
+        <button type="button" class="theme-switch__btn" data-theme-option="system" aria-pressed="true">
+          <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect x="2.5" y="3.5" width="15" height="10" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7 17h6M10 13.5V17" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <span class="theme-switch__label">System</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero__grid u-container">
+      <div class="hero__copy">
+        <p class="eyebrow">Mathematics MCQ practice</p>
+        <h1 class="hero__title" id="heroTitle">Build understanding, one question at a time.</h1>
+        <p class="hero__lead">Choose a question bank, answer at your own pace, and read the explanation after every answer. A hint is there when you want one. No sign-up: your progress is kept in this browser.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary js-only" href="#catalog">Browse practice</a>
+          <a class="btn btn--ghost" href="#how-it-works">How it works</a>
+        </div>
+        <dl class="facts js-only" id="facts" aria-label="Catalog at a glance"></dl>
+      </div>
+      <div class="how" id="how-it-works" tabindex="-1" aria-labelledby="howTitle">
+        <h2 class="how__title" id="howTitle">How it works</h2>
+        <ol class="steps">
+          <li><strong>Pick a collection or topic.</strong> Use the collections, the search box or the filters.</li>
+          <li><strong>Open a question bank.</strong> Each bank opens on its own practice page.</li>
+          <li><strong>Answer each question.</strong> Show the hint first if you are stuck.</li>
+          <li><strong>Read the explanation.</strong> Then review the questions you missed.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <noscript>
+    <div class="u-container">
+      <p class="noscript"><strong>JavaScript is turned off.</strong> The practice catalog and the question banks on this site need JavaScript to load and to check your answers. Turn JavaScript on in your browser settings, then reload this page.</p>
+    </div>
+  </noscript>
+
+  <section class="section continue js-only" id="continue" aria-labelledby="continueTitle" hidden>
+    <div class="u-container">
+      <div class="section__head">
+        <h2 class="section__title" id="continueTitle">Continue practice</h2>
+        <p class="section__note">From answers saved in this browser on this device.</p>
+      </div>
+      <ul class="continue__list" id="continueList"></ul>
+    </div>
+  </section>
+
+  <section class="section collections js-only" aria-labelledby="collectionsTitle">
+    <div class="u-container">
+      <div class="section__head">
+        <h2 class="section__title" id="collectionsTitle">Start with a collection</h2>
+      </div>
+      <ul class="collection-grid" id="collectionGrid">
+        <li class="skeleton skeleton--collection" aria-hidden="true"></li>
+        <li class="skeleton skeleton--collection" aria-hidden="true"></li>
+        <li class="skeleton skeleton--collection" aria-hidden="true"></li>
+        <li class="skeleton skeleton--collection" aria-hidden="true"></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section catalog js-only" id="catalog" tabindex="-1" aria-labelledby="catalogTitle">
+    <div class="u-container">
+      <div class="section__head">
+        <h2 class="section__title" id="catalogTitle">Practice catalog</h2>
+        <p class="section__note" id="catalogScope"></p>
+      </div>
+
+      <form class="filters" id="filters" role="search" aria-label="Find a practice bank" action="./" method="get">
+        <div class="field field--search">
+          <label class="field__label" for="q">Search banks</label>
+          <div class="search">
+            <input class="control" id="q" name="q" type="search" inputmode="search" enterkeyhint="search" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="200" placeholder="Bank name, topic or ID" disabled>
+            <button class="search__clear" id="qClear" type="button" hidden>
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <span class="u-visually-hidden">Clear search</span>
+            </button>
+          </div>
+        </div>
+        <div class="field">
+          <label class="field__label" for="collection">Collection</label>
+          <select class="control" id="collection" name="collection" disabled>
+            <option value="">All collections</option>
+          </select>
+        </div>
+        <div class="field" id="topicField" hidden>
+          <label class="field__label" for="topic">Topic</label>
+          <select class="control" id="topic" name="topic"></select>
+        </div>
+        <div class="field field--show" role="radiogroup" aria-labelledby="showLabel">
+          <span class="field__label" id="showLabel">Show</span>
+          <div class="segmented">
+            <input class="segmented__input" type="radio" name="show" id="showAvailable" value="available" checked disabled>
+            <label class="segmented__option" for="showAvailable">Available <span class="segmented__count" id="countAvailable"></span></label>
+            <input class="segmented__input" type="radio" name="show" id="showAll" value="all" disabled>
+            <label class="segmented__option" for="showAll">All banks <span class="segmented__count" id="countAll"></span></label>
+          </div>
+        </div>
+      </form>
+
+      <div class="results-bar">
+        <p class="results-bar__summary" id="resultSummary" role="status" aria-live="polite" aria-atomic="true" tabindex="-1">Loading the practice catalog…</p>
+        <button class="btn btn--text" id="resetFilters" type="button" hidden>Reset filters</button>
+      </div>
+      <p class="results-note" id="resultsNote" hidden></p>
+
+      <div id="catalogPanel"></div>
+      <ul class="bank-grid" id="bankGrid" aria-label="Practice banks">
+        <li class="skeleton skeleton--bank" aria-hidden="true"></li>
+        <li class="skeleton skeleton--bank" aria-hidden="true"></li>
+        <li class="skeleton skeleton--bank" aria-hidden="true"></li>
+        <li class="skeleton skeleton--bank" aria-hidden="true"></li>
+        <li class="skeleton skeleton--bank" aria-hidden="true"></li>
+        <li class="skeleton skeleton--bank" aria-hidden="true"></li>
+      </ul>
+      <nav class="pager" id="pager" aria-label="Catalog pages" hidden></nav>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="site-foot__inner u-container">
+    <p>Dynanca MCQ practice. Your answers are saved in this browser on this device when browser storage is available. There is no account and nothing is synced to other devices.</p>
+    <p><a href="#main">Back to top</a></p>
+  </div>
+</footer>
+
+<script defer src="assets/js/manifest.js"></script>
+<script defer src="assets/js/catalog-model.js"></script>
+<script defer src="assets/js/catalog.js"></script>
+</body>
+</html>

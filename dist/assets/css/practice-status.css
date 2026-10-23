@@ -1,0 +1,114 @@
+/* ==========================================================================
+   DYNANCA — practice page: status layer only
+   -------------------------------------------------------------------------
+   Styles for the two shell additions around the practice engine:
+     - the "back to the catalog" link above the bank title;
+     - the load-failure / unavailable / no-JavaScript state.
+
+   It only READS the existing --dmc-* tokens (assets/css/shell.css); it
+   defines no token and touches no engine class, so question cards,
+   equations and diagrams render exactly as before.
+   ========================================================================== */
+
+.hero__back {
+  margin: 0 0 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.hero__back-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 0.35rem;
+  color: var(--dmc-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--dmc-accent);
+  text-underline-offset: 3px;
+  border-radius: 6px;
+}
+
+.hero__back-link:hover {
+  color: var(--dmc-accent-hover);
+}
+
+/* Failure state. `.practice-error` (practices.css) sets accent-on-tint
+   text; body copy here is switched to the ink colour for contrast. */
+.practice-error.practice-status {
+  text-align: left;
+  color: var(--dmc-ink);
+  background: var(--dmc-surface);
+  border-left-width: 4px;
+}
+
+.practice-status__title {
+  font-size: 1.05rem;
+  color: var(--dmc-ink);
+}
+
+.practice-status__text {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--dmc-ink);
+}
+
+.practice-status__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-top: 1.1rem;
+}
+
+.practice-status__retry {
+  min-height: 44px;
+  padding: 0.6rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--dmc-cta-bg);
+  color: #FFFFFF;
+  font-family: var(--dmc-font-sans);
+  font-size: 0.98rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.practice-status__retry:hover:not(:disabled) {
+  background: var(--dmc-cta-bg-hover);
+}
+
+.practice-status__retry:disabled {
+  opacity: 0.7;
+  cursor: progress;
+}
+
+.practice-status__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 0.35rem;
+  color: var(--dmc-ink);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--dmc-accent);
+  text-underline-offset: 3px;
+  border-radius: 6px;
+}
+
+.practice-status__link:hover {
+  color: var(--dmc-accent-hover);
+}
+
+.practice-status__retry:focus-visible,
+.practice-status__link:focus-visible,
+.hero__back-link:focus-visible {
+  outline: 2.5px solid var(--dmc-accent);
+  outline-offset: 3px;
+}
+
+/* Without JavaScript nothing will ever replace the hero's "Loading…":
+   hide it (theme.js adds `js` to <html> as soon as scripts run) and let
+   the <noscript> notice explain. */
+html:not(.js) .hero__lead {
+  display: none;
+}

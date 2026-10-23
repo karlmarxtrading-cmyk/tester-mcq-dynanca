@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-563",
+  "category": "Comprehensive Mathematics",
+  "title": "563. Discrete Mathematics, Counting & Graph Theory: Pigeonhole Principle",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-563-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "More people than months",
+      "learningObjective": "Apply the pigeonhole principle to birth months.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Thirteen people are in a room. Must two of them have been born in the same month?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; it is likely, but it is not certain."
+        },
+        {
+          "label": "B",
+          "text": "Yes; there are \\(13\\) people and only \\(12\\) months."
+        }
+      ],
+      "answer": "B",
+      "explanation": "If no two people shared a birth month, the \\(13\\) people would need \\(13\\) different months, but there are only \\(12\\). So at least two people share a month. This is the pigeonhole principle: more objects than boxes forces a box with at least two objects.",
+      "hint": "Try to give every person a different month."
+    },
+    {
+      "id": "dynanca-563-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A matching pair of socks",
+      "learningObjective": "Find the number of draws that guarantees two objects of the same kind.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A drawer contains many red, blue, and green socks. What is the smallest number of socks that must be taken, without looking, to be sure of having two of the same colour?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Three socks might all have different colours, so \\(3\\) is not enough. With \\(4\\) socks and only \\(3\\) colours, two socks must share a colour. So the smallest number is \\(4\\).",
+      "hint": "Consider the worst case, in which every sock taken so far has a different colour."
+    },
+    {
+      "id": "dynanca-563-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Equal remainders",
+      "learningObjective": "Find how many integers guarantee two with the same remainder.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the smallest number of integers that guarantees that two of them leave the same remainder on division by \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(5\\) possible remainders: \\(0,1,2,3,4\\). Five integers could have five different remainders, for example \\(0,1,2,3,4\\). Among \\(6\\) integers, two must share a remainder. So the smallest number is \\(6\\).",
+      "hint": "The possible remainders are the boxes."
+    },
+    {
+      "id": "dynanca-563-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A shared birthday",
+      "learningObjective": "Find the group size that guarantees a shared birthday.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Counting \\(29\\) February, there are \\(366\\) possible birthdays. What is the smallest number of people that guarantees that two of them share a birthday?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(366\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(367\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "With \\(366\\) people it is still possible that all birthdays are different. With \\(367\\) people and only \\(366\\) possible birthdays, two people must share one. So the smallest number is \\(367\\).",
+      "hint": "The guarantee needs one more person than there are possible birthdays."
+    },
+    {
+      "id": "dynanca-563-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two numbers with a given sum",
+      "learningObjective": "Use pairs as boxes in a pigeonhole argument.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Numbers are chosen from \\(\\{1,2,\\dots,10\\}\\). What is the smallest number of chosen numbers that guarantees that two of them add up to \\(11\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Group the numbers into the pairs \\(\\{1,10\\},\\{2,9\\},\\{3,8\\},\\{4,7\\},\\{5,6\\}\\), each with sum \\(11\\). Choosing \\(5\\) numbers, one from each pair, such as \\(1,2,3,4,5\\), avoids a sum of \\(11\\). With \\(6\\) numbers and only \\(5\\) pairs, two chosen numbers lie in the same pair. So the smallest number is \\(6\\).",
+      "hint": "Group the ten numbers into pairs that add up to \\(11\\)."
+    },
+    {
+      "id": "dynanca-563-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "When the principle gives no guarantee",
+      "learningObjective": "Recognise a situation in which the pigeonhole principle does not force a repetition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Twelve people are in a room. Does the pigeonhole principle guarantee that two of them were born in the same month?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the twelve people could have been born in twelve different months."
+        },
+        {
+          "label": "B",
+          "text": "Yes; with twelve people a shared month is unavoidable."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The principle needs more objects than boxes. With \\(12\\) people and \\(12\\) months, it is possible that each month is used exactly once, so no repetition is forced. A thirteenth person would make a shared month unavoidable.",
+      "hint": "Check whether the number of people exceeds the number of months."
+    },
+    {
+      "id": "dynanca-563-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A difference divisible by four",
+      "learningObjective": "Prove a divisibility statement with remainders as boxes.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Five integers are given. Must two of them have a difference divisible by \\(4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; two of the five have the same remainder on division by \\(4\\), and their difference is divisible by \\(4\\)."
+        },
+        {
+          "label": "B",
+          "text": "No; the integers \\(1,2,3,4,5\\) are a counterexample."
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are only \\(4\\) possible remainders on division by \\(4\\), so two of the five integers share a remainder, and then their difference is a multiple of \\(4\\). The proposed counterexample fails: \\(5-1=4\\).",
+      "hint": "Two integers with the same remainder on division by \\(4\\) differ by a multiple of \\(4\\)."
+    },
+    {
+      "id": "dynanca-563-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two consecutive numbers",
+      "learningObjective": "Use blocks of consecutive integers as boxes.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Eleven different integers are chosen from \\(1\\) to \\(20\\). Must two of them be consecutive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes; the pairs \\(\\{1,2\\},\\{3,4\\},\\dots,\\{19,20\\}\\) are \\(10\\) boxes for \\(11\\) numbers."
+        },
+        {
+          "label": "B",
+          "text": "No; the eleven numbers can all be odd."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Split \\(1,\\dots,20\\) into the \\(10\\) pairs \\(\\{1,2\\},\\{3,4\\},\\dots,\\{19,20\\}\\). Eleven chosen numbers cannot all lie in different pairs, so two lie in the same pair and are consecutive. There are only \\(10\\) odd numbers from \\(1\\) to \\(20\\), so eleven numbers cannot all be odd.",
+      "hint": "Count the odd numbers from \\(1\\) to \\(20\\), and think of pairing each odd number with its successor."
+    },
+    {
+      "id": "dynanca-563-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "One number dividing another",
+      "learningObjective": "Use the largest odd divisor to define the boxes.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Five different integers are chosen from \\(1\\) to \\(8\\). Must one of them divide another?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the integers \\(4,5,6,7,8\\) are a counterexample."
+        },
+        {
+          "label": "B",
+          "text": "Yes; grouped by largest odd divisor, the numbers form only \\(4\\) groups, and within a group the smaller number divides the larger."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Group the numbers by their largest odd divisor: \\(\\{1,2,4,8\\}\\), \\(\\{3,6\\}\\), \\(\\{5\\}\\), \\(\\{7\\}\\). Within a group, any two numbers differ by a factor that is a power of \\(2\\), so the smaller divides the larger. Five numbers in \\(4\\) groups put two in one group. The proposed counterexample fails, because \\(4\\) divides \\(8\\).",
+      "hint": "Write each number as a power of \\(2\\) times an odd number, and group the numbers by that odd number."
+    },
+    {
+      "id": "dynanca-563-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Midpoints with integer coordinates",
+      "learningObjective": "Use parity classes of lattice points as boxes.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Points with integer coordinates are chosen in the plane. What is the smallest number of points that guarantees that the midpoint of some two of them also has integer coordinates?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The midpoint of two points has integer coordinates exactly when their \\(x\\)-coordinates have the same parity and their \\(y\\)-coordinates have the same parity. There are \\(4\\) parity classes (even or odd in each coordinate). Four points, one in each class, such as \\((0,0),(0,1),(1,0),(1,1)\\), have no such midpoint. Among \\(5\\) points, two share a class. So the smallest number is \\(5\\).",
+      "hint": "Classify each point by the parities of its two coordinates."
+    }
+  ]
+}

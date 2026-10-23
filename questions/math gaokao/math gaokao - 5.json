@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-5",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 5",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-5-q001",
+      "category": "Sets",
+      "concept": "Empty Set Notation",
+      "learningObjective": "Identify the standard symbol for the empty set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which of the following is the empty set?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{0\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The empty set is the set with no elements, denoted by \\(\\varnothing\\). The set \\(\\{0\\}\\) contains the single element \\(0\\), so it is not empty.",
+      "hint": "Recall the notation for a set that contains no elements."
+    },
+    {
+      "id": "math-gaokao-5-q002",
+      "category": "Sets",
+      "concept": "Empty Set from a Quadratic Equation",
+      "learningObjective": "Determine that the solution set of \\(x^2+1=0\\) over the real numbers is empty.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The set \\(\\{x\\in\\mathbb R\\mid x^2+1=0\\}\\) is equal to:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\varnothing\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{0\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For every real number \\(x\\), we have \\(x^2\\ge 0\\), so \\(x^2+1\\ge 1>0\\). Hence the equation \\(x^2+1=0\\) has no real solution. Therefore the set is empty, i.e. \\(\\varnothing\\).",
+      "hint": "Consider whether \\(x^2+1\\) can ever equal \\(0\\) for a real number \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-5-q003",
+      "category": "Sets",
+      "concept": "Empty Set as a Subset",
+      "learningObjective": "Determine whether the empty set is a subset of a given set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\varnothing\\nsubseteq\\{1,2\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\subseteq\\{1,2\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The empty set is a subset of every set. Therefore \\(\\varnothing\\subseteq\\{1,2\\}\\). The statement \\(\\varnothing\\nsubseteq\\{1,2\\}\\) is false.",
+      "hint": "Recall the universal property of the empty set as a subset."
+    },
+    {
+      "id": "math-gaokao-5-q004",
+      "category": "Sets",
+      "concept": "Universal Set in a Given Context",
+      "learningObjective": "Identify a suitable universal set for solving an equation over the real numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "When solving \\(x^2=4\\) over the real numbers, which set is a suitable universal set?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{-2,2\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\mathbb R\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A universal set should contain all elements under consideration in the given context. Since the equation is being solved over the real numbers, the universal set is \\(\\mathbb R\\). The set \\(\\{-2,2\\}\\) is only the solution set, not the universal set.",
+      "hint": "Distinguish between the entire context set and the set of solutions."
+    },
+    {
+      "id": "math-gaokao-5-q005",
+      "category": "Sets",
+      "concept": "Complement Relative to a Universal Set",
+      "learningObjective": "Find the complement of a finite set relative to a given universal set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(U=\\{1,2,3,4,5,6\\}\\) and \\(A=\\{2,4,6\\}\\). What is \\(A^c\\), the complement of \\(A\\) in \\(U\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{1,3,5\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{1,3,5,6\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The complement \\(A^c\\) consists of all elements of \\(U\\) that are not in \\(A\\). Removing \\(2,4,6\\) from \\(U=\\{1,2,3,4,5,6\\}\\) leaves \\(\\{1,3,5\\}\\). The element \\(6\\) is in \\(A\\), so it cannot be in \\(A^c\\).",
+      "hint": "Start with the universal set and remove every element that belongs to \\(A\\)."
+    },
+    {
+      "id": "math-gaokao-5-q006",
+      "category": "Sets",
+      "concept": "Union with a Complement",
+      "learningObjective": "Use the universal set to simplify the union of a set and its complement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(U\\) is the universal set and \\(A\\subseteq U\\), what is \\(A\\cup A^c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(U\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every element of \\(U\\) is either in \\(A\\) or not in \\(A\\). Therefore the union of \\(A\\) and its complement \\(A^c\\) contains every element of \\(U\\), so \\(A\\cup A^c=U\\).",
+      "hint": "Consider where each element of the universal set can belong."
+    },
+    {
+      "id": "math-gaokao-5-q007",
+      "category": "Sets",
+      "concept": "Intersection with a Complement",
+      "learningObjective": "Use the universal set to simplify the intersection of a set and its complement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(U\\) is the universal set and \\(A\\subseteq U\\), what is \\(A\\cap A^c\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\varnothing\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(U\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "No element can be both in \\(A\\) and not in \\(A\\). Therefore there are no common elements between \\(A\\) and \\(A^c\\), so \\(A\\cap A^c=\\varnothing\\).",
+      "hint": "Ask whether any element can satisfy both membership conditions at the same time."
+    },
+    {
+      "id": "math-gaokao-5-q008",
+      "category": "Sets",
+      "concept": "Complement of the Universal Set",
+      "learningObjective": "Determine the complement of the universal set relative to itself.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(U=\\{1,2,3\\}\\) be the universal set. What is \\(U^c\\), the complement of \\(U\\) in \\(U\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(U\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\varnothing\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The complement of \\(U\\) in \\(U\\) consists of all elements of \\(U\\) that are not in \\(U\\). There are no such elements. Therefore \\(U^c=\\varnothing\\).",
+      "hint": "List the elements of \\(U\\) that do not belong to \\(U\\)."
+    },
+    {
+      "id": "math-gaokao-5-q009",
+      "category": "Sets",
+      "concept": "Subsets of the Empty Set",
+      "learningObjective": "Determine the number of subsets of the empty set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many subsets does the empty set \\(\\varnothing\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The empty set has exactly one subset, namely itself. Equivalently, a set with \\(n\\) elements has \\(2^n\\) subsets; since \\(\\varnothing\\) has \\(0\\) elements, it has \\(2^0=1\\) subset.",
+      "hint": "Use the subset-counting formula with \\(n=0\\)."
+    },
+    {
+      "id": "math-gaokao-5-q010",
+      "category": "Sets",
+      "concept": "Universal Set Containment",
+      "learningObjective": "Identify a statement that is always true for a set and its universal set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(U\\) be the universal set and \\(A\\) be any subset of \\(U\\). Which statement is always true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(A\\subseteq U\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(U\\subseteq A\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By definition of a universal set, every set under consideration in the given context is a subset of \\(U\\). Hence \\(A\\subseteq U\\) is always true. The statement \\(U\\subseteq A\\) would require \\(A=U\\), so it is not always true.",
+      "hint": "Recall the defining relationship between a universal set and its subsets."
+    }
+  ]
+}

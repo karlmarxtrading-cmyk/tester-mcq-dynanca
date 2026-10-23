@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-338",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 338",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-338-q001",
+      "category": "Statistics",
+      "concept": "Variance of a Data Set",
+      "learningObjective": "Compute the variance of a small data set from its mean and squared deviations.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the variance of the data set \\(2,4,6,8,10\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The mean is \\(\\bar{x}=\\frac{2+4+6+8+10}{5}=6\\). The squared deviations from the mean are \\((-4)^2,(-2)^2,0^2,2^2,4^2\\), whose sum is \\(16+4+0+4+16=40\\). Therefore, the variance is \\(\\frac{40}{5}=8\\).",
+      "hint": "First compute the arithmetic mean, then average the squared deviations from that mean."
+    },
+    {
+      "id": "math-gaokao-338-q002",
+      "category": "Statistics",
+      "concept": "Variance with an Unknown Data Value",
+      "learningObjective": "Determine an unknown data value from a given mean and then compute the variance.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The data set \\(1,3,5,x\\) has mean \\(4\\). Find its variance.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{20}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since the mean is \\(4\\), \\(\\frac{1+3+5+x}{4}=4\\), so \\(9+x=16\\), giving \\(x=7\\). The data set is \\(1,3,5,7\\), with mean \\(4\\). Its squared deviations are \\((-3)^2,(-1)^2,1^2,3^2\\), whose sum is \\(9+1+1+9=20\\). Hence the variance is \\(\\frac{20}{4}=5\\).",
+      "hint": "Use the given mean to find the missing value first, then apply the variance formula."
+    },
+    {
+      "id": "math-gaokao-338-q003",
+      "category": "Statistics",
+      "concept": "Variance under Linear Transformation",
+      "learningObjective": "Apply the rule for variance under a linear transformation of data.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A data set \\(x_1,x_2,\\dots,x_n\\) has variance \\(4\\). What is the variance of the data set \\(2x_1+3,2x_2+3,\\dots,2x_n+3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(19\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a linear transformation \\(y_i=ax_i+b\\), the variance satisfies \\(\\operatorname{Var}(y)=a^2\\operatorname{Var}(x)\\). Here \\(a=2\\) and \\(b=3\\), so the new variance is \\(2^2\\cdot 4=4\\cdot 4=16\\). Adding the constant \\(3\\) does not change the variance.",
+      "hint": "Adding a constant shifts all data values but does not change the spread; multiplying by a constant scales the variance by the square of that constant."
+    },
+    {
+      "id": "math-gaokao-338-q004",
+      "category": "Statistics",
+      "concept": "Variance of a Small Data Set",
+      "learningObjective": "Calculate variance when the mean is not an integer.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the variance of the data set \\(-1,0,1,2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The mean is \\(\\bar{x}=\\frac{-1+0+1+2}{4}=\\frac{2}{4}=\\frac{1}{2}\\). The squared deviations are \\(\\left(-\\frac{3}{2}\\right)^2,\\left(-\\frac{1}{2}\\right)^2,\\left(\\frac{1}{2}\\right)^2,\\left(\\frac{3}{2}\\right)^2\\), whose sum is \\(\\frac{9}{4}+\\frac{1}{4}+\\frac{1}{4}+\\frac{9}{4}=5\\). Therefore, the variance is \\(\\frac{5}{4}\\).",
+      "hint": "Compute the mean carefully as a fraction, then average the squared deviations from that mean."
+    },
+    {
+      "id": "math-gaokao-338-q005",
+      "category": "Statistics",
+      "concept": "Comparing Variances of Data Sets",
+      "learningObjective": "Compare the variability of two data sets by computing their variances.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Consider two data sets: Set A is \\(1,2,3,4,5\\), and Set B is \\(2,4,6,8,10\\). Which set has the greater variance?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Set A"
+        },
+        {
+          "label": "B",
+          "text": "Set B"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For Set A, the mean is \\(3\\), and the variance is \\(\\frac{(-2)^2+(-1)^2+0^2+1^2+2^2}{5}=\\frac{4+1+0+1+4}{5}=2\\). For Set B, the mean is \\(6\\), and the variance is \\(\\frac{(-4)^2+(-2)^2+0^2+2^2+4^2}{5}=\\frac{16+4+0+4+16}{5}=8\\). Since \\(8>2\\), Set B has the greater variance.",
+      "hint": "Compute the mean and average squared deviation for each set, then compare the two numerical variances."
+    },
+    {
+      "id": "math-gaokao-338-q006",
+      "category": "Statistics",
+      "concept": "Variance from a Frequency Distribution",
+      "learningObjective": "Compute variance from a frequency table using weighted squared deviations.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For the frequency distribution in which value \\(1\\) has frequency \\(1\\), value \\(2\\) has frequency \\(2\\), and value \\(3\\) has frequency \\(1\\), find the variance.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total frequency is \\(1+2+1=4\\). The mean is \\(\\bar{x}=\\frac{1\\cdot1+2\\cdot2+3\\cdot1}{4}=\\frac{1+4+3}{4}=2\\). The weighted squared deviations are \\(1(1-2)^2+2(2-2)^2+1(3-2)^2=1+0+1=2\\). Thus the variance is \\(\\frac{2}{4}=0.5\\).",
+      "hint": "Use frequencies as weights when computing the mean and the average squared deviation."
+    },
+    {
+      "id": "math-gaokao-338-q007",
+      "category": "Statistics",
+      "concept": "Sum of Squared Deviations",
+      "learningObjective": "Relate variance to the sum of squared deviations from the mean.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A data set has \\(10\\) observations and population variance \\(\\sigma^2=5\\), calculated with divisor \\(n\\). What is \\(\\sum_{i=1}^{10}(x_i-\\bar{x})^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(50\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(45\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For the population variance of the listed data,\n\\[\n\\sigma^2=\\frac{1}{n}\\sum_{i=1}^{n}(x_i-\\bar{x})^2.\n\\]\nHere \\(n=10\\) and \\(\\sigma^2=5\\), so\n\\[\n\\sum_{i=1}^{10}(x_i-\\bar{x})^2=n\\sigma^2=10\\cdot5=50.\n\\]",
+      "hint": "Use the population-variance formula with divisor \\(n\\), then solve for the sum of squared deviations."
+    },
+    {
+      "id": "math-gaokao-338-q008",
+      "category": "Statistics",
+      "concept": "Variance with an Unknown Data Value",
+      "learningObjective": "Use a given mean to find an unknown data value and then compute variance.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The data set \\(2,x,6,8\\) has mean \\(5\\). Find its variance.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The mean condition gives \\(\\frac{2+x+6+8}{4}=5\\), so \\(16+x=20\\), hence \\(x=4\\). The data set is \\(2,4,6,8\\), whose mean is \\(5\\). Its squared deviations are \\((-3)^2,(-1)^2,1^2,3^2\\), with sum \\(9+1+1+9=20\\). Therefore, the variance is \\(\\frac{20}{4}=5\\).",
+      "hint": "Find the missing value from the mean condition, then compute the average squared deviation."
+    },
+    {
+      "id": "math-gaokao-338-q009",
+      "category": "Statistics",
+      "concept": "Variance of Combined Data Sets",
+      "learningObjective": "Compute the variance of a combined data set formed from two smaller data sets.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The data sets \\(1,3,5\\) and \\(2,4,6\\) are combined into one data set of six numbers. Find the variance of the combined data set.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{8}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{35}{12}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The combined data set is \\(1,2,3,4,5,6\\). Its mean is \\(\\bar{x}=\\frac{1+2+3+4+5+6}{6}=\\frac{21}{6}=3.5\\). The squared deviations from \\(3.5\\) are \\((-2.5)^2,(-1.5)^2,(-0.5)^2,(0.5)^2,(1.5)^2,(2.5)^2\\). Their sum is \\(2(6.25+2.25+0.25)=2(8.75)=17.5=\\frac{35}{2}\\). Thus the variance is \\(\\frac{35/2}{6}=\\frac{35}{12}\\).",
+      "hint": "Combine all six values first, find the overall mean, and then average the squared deviations from that overall mean."
+    },
+    {
+      "id": "math-gaokao-338-q010",
+      "category": "Statistics",
+      "concept": "Variance from Sums of Data",
+      "learningObjective": "Compute variance using the identity involving the sum of squares and the mean.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "For a data set of \\(10\\) observations, \\(\\sum_{i=1}^{10}x_i=60\\) and \\(\\sum_{i=1}^{10}x_i^2=740\\). Find the population variance \\(\\sigma^2\\), using divisor \\(n\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(38\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The mean is \\(\\bar{x}=\\frac{60}{10}=6\\). Using the population-variance identity,\n\\[\n\\sigma^2=\\frac{1}{n}\\sum_{i=1}^{n}x_i^2-\\bar{x}^2\n=\\frac{740}{10}-6^2\n=74-36\n=38.\n\\]",
+      "hint": "After finding the mean from the given sum, use \\(\\sigma^2=\\frac{1}{n}\\sum x_i^2-\\bar{x}^2\\) with divisor \\(n\\)."
+    }
+  ]
+}

@@ -1,0 +1,1311 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "questions-mathematics-algebra-advanced-algebra-01",
+  "category": "Mathematics for Computing",
+  "title": "Advanced Algebra: Equations, Inequalities & Functions",
+  "description": "Explore essential mathematical concepts through carefully crafted questions. Strengthen your understanding, practice your reasoning, and learn at your own pace.",
+  "questionCount": 50,
+  "questions": [
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q001",
+      "category": "Advanced Algebra",
+      "concept": "Polynomial Identities",
+      "learningObjective": "Apply polynomial identities to simplify complex expressions.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "reasoning",
+      "question": "Simplify the expression \\((x^2 - 2x + 2)(x^2 + 2x + 2)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x^4 + 4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^4 + 4x^2 + 4\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(x^4 - 4x^2 + 4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Recognize this as a difference of squares pattern by grouping: \\(((x^2 + 2) - 2x)((x^2 + 2) + 2x) = (x^2 + 2)^2 - (2x)^2 = x^4 + 4x^2 + 4 - 4x^2 = x^4 + 4\\). The correct answer is A.",
+      "hint": "Group terms to form a difference of squares: \\(((x^2 + 2) - 2x)((x^2 + 2) + 2x)\\)."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q002",
+      "category": "Advanced Algebra",
+      "concept": "Vieta's Formulas",
+      "learningObjective": "Use Vieta's formulas to find relationships between roots and coefficients.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "question": "If \\(r\\) and \\(s\\) are the roots of \\(x^2 - 5x + 6 = 0\\), what is the value of \\(r^2 + s^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "25"
+        },
+        {
+          "label": "B",
+          "text": "13"
+        },
+        {
+          "label": "C",
+          "text": "36"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By Vieta's formulas, \\(r + s = 5\\) and \\(rs = 6\\). Then \\(r^2 + s^2 = (r + s)^2 - 2rs = 25 - 12 = 13\\). The correct answer is B.",
+      "hint": "Express \\(r^2 + s^2\\) in terms of \\((r + s)^2\\) and \\(rs\\)."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q003",
+      "category": "Advanced Algebra",
+      "concept": "Rational Equations",
+      "learningObjective": "Solve rational equations while respecting domain restrictions.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "problem-solving",
+      "question": "Solve the equation \\[\\frac{x+1}{x-2} + \\frac{x-2}{x+1} = \\frac{13}{6}.\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x = 4\\) or \\(x = -\\frac{1}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x = 3\\) or \\(x = -\\frac{1}{4}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(x = 8\\) or \\(x = -7\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Let \\(y = \\frac{x+1}{x-2}\\). The equation becomes \\(y + \\frac{1}{y} = \\frac{13}{6}\\). Multiplying by \\(6y\\) gives \\(6y^2 - 13y + 6 = 0\\), which factors as \\((2y - 3)(3y - 2) = 0\\). Thus \\(y = \\frac{3}{2}\\) or \\(y = \\frac{2}{3}\\). Solving \\(\\frac{x+1}{x-2} = \\frac{3}{2}\\) gives \\(2x + 2 = 3x - 6 \\implies x = 8\\). Solving \\(\\frac{x+1}{x-2} = \\frac{2}{3}\\) gives \\(3x + 3 = 2x - 4 \\implies x = -7\\). Both satisfy the domain restrictions \\(x \\neq 2, -1\\). The correct answer is C.",
+      "hint": "Use substitution \\(y = \\frac{x+1}{x-2}\\) to transform the equation into a quadratic."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q004",
+      "category": "Advanced Algebra",
+      "concept": "Radical Equations",
+      "learningObjective": "Solve radical equations and identify extraneous solutions.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "reasoning",
+      "question": "Solve \\(\\sqrt{x + 3} + \\sqrt{x - 2} = 5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x = 6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x = 3\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(x = 1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Isolate one radical: \\(\\sqrt{x + 3} = 5 - \\sqrt{x - 2}\\). Square both sides: \\(x + 3 = 25 - 10\\sqrt{x - 2} + x - 2\\). Simplify: \\(10\\sqrt{x - 2} = 20\\), so \\(\\sqrt{x - 2} = 2\\). Square again: \\(x - 2 = 4\\), so \\(x = 6\\). Check: \\(\\sqrt{9} + \\sqrt{4} = 3 + 2 = 5\\), which works. Domain requires \\(x \\geq 2\\). The correct answer is A.",
+      "hint": "Isolate one radical term before squaring, and remember to check your solution."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q005",
+      "category": "Advanced Algebra",
+      "concept": "Exponential Equations",
+      "learningObjective": "Solve exponential equations using substitution and properties of exponents.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "question": "Solve \\(4^x - 2^{x+1} = 8\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x = 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x = 2\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(x = \\log_2 3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rewrite as \\((2^x)^2 - 2 \\cdot 2^x - 8 = 0\\). Let \\(y = 2^x\\), so \\(y^2 - 2y - 8 = 0\\). Factoring: \\((y - 4)(y + 2) = 0\\), so \\(y = 4\\) (since \\(y > 0\\)). Thus \\(2^x = 4 = 2^2\\), so \\(x = 2\\). The correct answer is B.",
+      "hint": "Express everything in terms of \\(2^x\\) and use substitution."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q006",
+      "category": "Advanced Algebra",
+      "concept": "Logarithmic Equations",
+      "learningObjective": "Solve logarithmic equations using properties of logarithms.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "problem-solving",
+      "question": "Solve \\(\\log_2(x) + \\log_2(x - 2) = 3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x = -2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x = 2\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(x = 4\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Combine logs: \\(\\log_2(x(x - 2)) = 3\\), so \\(x(x - 2) = 2^3 = 8\\). This gives \\(x^2 - 2x - 8 = 0\\), which factors as \\((x - 4)(x + 2) = 0\\). So \\(x = 4\\) or \\(x = -2\\). But domain requires \\(x > 0\\) and \\(x - 2 > 0\\), so \\(x > 2\\). Only \\(x = 4\\) satisfies this. The correct answer is C.",
+      "hint": "Combine the logarithms first, then convert to exponential form, and check domain restrictions."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q007",
+      "category": "Advanced Algebra",
+      "concept": "Algebraic Inequalities",
+      "learningObjective": "Solve polynomial inequalities using sign analysis.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "reasoning",
+      "question": "Solve the inequality \\(x^3 - 4x^2 + x + 6 > 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-1, 2) \\cup (3, \\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\infty, -1) \\cup (2, 3)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\((-\\infty, -1) \\cup (3, \\infty)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor the polynomial: \\(x^3 - 4x^2 + x + 6 = (x + 1)(x - 2)(x - 3)\\). The critical points are \\(x = -1, 2, 3\\). Testing intervals: for \\(x < -1\\), product is negative; for \\(-1 < x < 2\\), product is positive; for \\(2 < x < 3\\), product is negative; for \\(x > 3\\), product is positive. So the solution is \\((-1, 2) \\cup (3, \\infty)\\). The correct answer is A.",
+      "hint": "Factor the cubic polynomial completely, then analyze the sign in each interval determined by the roots."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q008",
+      "category": "Advanced Algebra",
+      "concept": "Absolute Value Equations",
+      "learningObjective": "Solve absolute value equations with multiple cases.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "question": "Solve \\(\\lvert x - 3 \\rvert + \\lvert x + 2 \\rvert = 7\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x = -2\\) or \\(x = 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x = -3\\) or \\(x = 4\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(x = -1\\) or \\(x = 5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Consider three cases based on the critical points \\(x = -2\\) and \\(x = 3\\). Case 1: \\(x < -2\\), then \\(-(x - 3) - (x + 2) = 7 \\implies -2x + 1 = 7 \\implies x = -3\\). Case 2: \\(-2 \\leq x < 3\\), then \\(-(x - 3) + (x + 2) = 7 \\implies 5 = 7\\), no solution. Case 3: \\(x \\geq 3\\), then \\((x - 3) + (x + 2) = 7 \\implies 2x - 1 = 7 \\implies x = 4\\). The solutions are \\(x = -3\\) and \\(x = 4\\). The correct answer is B.",
+      "hint": "Break into cases based on where each absolute value expression changes sign."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q009",
+      "category": "Advanced Algebra",
+      "concept": "Nonlinear Systems",
+      "learningObjective": "Solve nonlinear systems of equations using substitution.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "problem-solving",
+      "question": "Solve the system: \\[\\begin{cases} x^2 + y^2 = 25 \\\\ x - y = 1 \\end{cases}\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((5, 0)\\) and \\((0, -5)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3, 4)\\) and \\((-4, -3)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\((4, 3)\\) and \\((-3, -4)\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "From the second equation, \\(x = y + 1\\). Substitute into the first: \\((y + 1)^2 + y^2 = 25 \\implies 2y^2 + 2y - 24 = 0 \\implies y^2 + y - 12 = 0\\). Factoring gives \\((y + 4)(y - 3) = 0\\), so \\(y = -4\\) or \\(y = 3\\). Then \\(x = -3\\) or \\(x = 4\\). The solutions are \\((4, 3)\\) and \\((-3, -4)\\). The correct answer is C.",
+      "hint": "Solve the linear equation for one variable and substitute into the quadratic equation."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q010",
+      "category": "Advanced Algebra",
+      "concept": "Algebraic Sequences",
+      "learningObjective": "Find terms in recursively defined sequences.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "reasoning",
+      "question": "A sequence is defined by \\(a_1 = 2\\), \\(a_2 = 3\\), and \\(a_n = a_{n-1} + a_{n-2}\\) for \\(n \\geq 3\\). What is \\(a_6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "18"
+        },
+        {
+          "label": "B",
+          "text": "13"
+        },
+        {
+          "label": "C",
+          "text": "21"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Compute terms sequentially: \\(a_3 = a_2 + a_1 = 3 + 2 = 5\\), \\(a_4 = a_3 + a_2 = 5 + 3 = 8\\), \\(a_5 = a_4 + a_3 = 8 + 5 = 13\\), \\(a_6 = a_5 + a_4 = 13 + 8 = 21\\). The correct answer is C.",
+      "hint": "Compute each term step by step using the recursive formula."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q011",
+      "category": "Advanced Algebra",
+      "concept": "Functional Equations",
+      "learningObjective": "Determine functions satisfying given functional equations.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "problem-solving",
+      "question": "If \\(f(x + y) = f(x)f(y)\\) for all real \\(x, y\\), \\(f(x) > 0\\) for all real \\(x\\), and \\(f(2) = 9\\), what is \\(f(5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "243"
+        },
+        {
+          "label": "B",
+          "text": "81"
+        },
+        {
+          "label": "C",
+          "text": "729"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(f(x) > 0\\) for all real \\(x\\), we have \\(f(2) = f(1 + 1) = f(1)^2 = 9\\), so \\(f(1) = 3\\) (the positive root). Then \\(f(3) = f(2 + 1) = f(2)f(1) = 9 \\cdot 3 = 27\\), and \\(f(5) = f(2 + 3) = f(2)f(3) = 9 \\cdot 27 = 243\\). The correct answer is A.",
+      "hint": "Find \\(f(1)\\) first, then build up to \\(f(5)\\) using the functional equation."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q012",
+      "category": "Advanced Algebra",
+      "concept": "Inverse Functions",
+      "learningObjective": "Find inverse functions and evaluate compositions.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "question": "If \\(f(x) = \\frac{2x + 1}{x - 3}\\), what is \\(f^{-1}(5)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{14}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{16}{3}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\frac{17}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "To find \\(f^{-1}(5)\\), solve \\(f(x) = 5\\): \\(\\frac{2x + 1}{x - 3} = 5\\). Multiply both sides by \\(x - 3\\): \\(2x + 1 = 5x - 15\\), so \\(3x = 16\\), giving \\(x = \\frac{16}{3}\\). Thus \\(f^{-1}(5) = \\frac{16}{3}\\). The correct answer is B.",
+      "hint": "Set \\(f(x) = 5\\) and solve for \\(x\\); this gives \\(f^{-1}(5)\\)."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q013",
+      "category": "Advanced Algebra",
+      "concept": "Parameter Analysis",
+      "learningObjective": "Analyze parameter values that determine the number of real solutions.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "reasoning",
+      "question": "For what values of \\(k\\) does the equation \\(x^2 + kx + 4 = 0\\) have exactly one real solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k = 0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k = \\pm 2\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(k = \\pm 4\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A quadratic has exactly one real solution when its discriminant is zero. The discriminant is \\(k^2 - 4(1)(4) = k^2 - 16\\). Set equal to zero: \\(k^2 - 16 = 0\\), so \\(k^2 = 16\\), giving \\(k = \\pm 4\\). The correct answer is C.",
+      "hint": "Use the discriminant condition for a quadratic equation to have exactly one real root."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q014",
+      "category": "Advanced Algebra",
+      "concept": "Algebraic Substitution",
+      "learningObjective": "Apply algebraic identities to transform symmetric expressions.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "problem-solving",
+      "question": "If \\(x + \\frac{1}{x} = 3\\), what is \\(x^3 + \\frac{1}{x^3}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "18"
+        },
+        {
+          "label": "B",
+          "text": "27"
+        },
+        {
+          "label": "C",
+          "text": "24"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First, \\(\\left(x + \\frac{1}{x}\\right)^2 = x^2 + 2 + \\frac{1}{x^2} = 9\\), so \\(x^2 + \\frac{1}{x^2} = 7\\). Then \\(x^3 + \\frac{1}{x^3} = \\left(x + \\frac{1}{x}\\right)\\left(x^2 - 1 + \\frac{1}{x^2}\\right) = 3(7 - 1) = 18\\). The correct answer is A.",
+      "hint": "Square the given equation to find \\(x^2 + \\frac{1}{x^2}\\), then use the identity for \\(x^3 + \\frac{1}{x^3}\\)."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q015",
+      "category": "Advanced Algebra",
+      "concept": "Polynomial Division",
+      "learningObjective": "Apply polynomial division and the Remainder Theorem.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "question": "When \\(x^4 - 3x^3 + 2x^2 - x + 9\\) is divided by \\(x - 2\\), what is the remainder?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By the Remainder Theorem, the remainder is \\(f(2)\\) where \\(f(x) = x^4 - 3x^3 + 2x^2 - x + 9\\). Compute \\(f(2) = 2^4 - 3(2^3) + 2(2^2) - 2 + 9 = 16 - 24 + 8 - 2 + 9 = 7\\). The correct answer is B.",
+      "hint": "Use the Remainder Theorem: evaluate the polynomial at \\(x = 2\\)."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q016",
+      "category": "Advanced Algebra",
+      "concept": "Rational Expressions",
+      "learningObjective": "Simplify complex rational expressions.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "reasoning",
+      "question": "Simplify \\(\\frac{\\frac{1}{x} - \\frac{1}{y}}{\\frac{1}{x^2} - \\frac{1}{y^2}}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{x + y}{xy}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{x - y}{xy}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\frac{xy}{x + y}\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The denominator is a difference of squares: \\(\\frac{1}{x^2} - \\frac{1}{y^2} = \\left(\\frac{1}{x} - \\frac{1}{y}\\right)\\left(\\frac{1}{x} + \\frac{1}{y}\\right)\\). So the expression becomes \\(\\frac{\\frac{1}{x} - \\frac{1}{y}}{\\left(\\frac{1}{x} - \\frac{1}{y}\\right)\\left(\\frac{1}{x} + \\frac{1}{y}\\right)} = \\frac{1}{\\frac{1}{x} + \\frac{1}{y}} = \\frac{1}{\\frac{x + y}{xy}} = \\frac{xy}{x + y}\\). The original expression requires \\(x \\neq 0\\), \\(y \\neq 0\\), and \\(x^2 \\neq y^2\\), which means \\(x \\neq y\\) and \\(x \\neq -y\\). All of these restrictions must be preserved even after simplification. The correct answer is C.",
+      "hint": "Factor the denominator as a difference of squares, then cancel common factors."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q017",
+      "category": "Advanced Algebra",
+      "concept": "Nested Radicals",
+      "learningObjective": "Simplify nested radical expressions.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "problem-solving",
+      "question": "Simplify \\(\\sqrt{7 + 4\\sqrt{3}}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2 + \\sqrt{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1 + 2\\sqrt{3}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\sqrt{6} + \\sqrt{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Assume \\(\\sqrt{7 + 4\\sqrt{3}} = \\sqrt{a} + \\sqrt{b}\\). Squaring both sides: \\(7 + 4\\sqrt{3} = a + b + 2\\sqrt{ab}\\). Equate rational and irrational parts: \\(a + b = 7\\) and \\(2\\sqrt{ab} = 4\\sqrt{3}\\), so \\(\\sqrt{ab} = 2\\sqrt{3}\\), giving \\(ab = 12\\). Solve \\(a + b = 7\\), \\(ab = 12\\): the quadratic \\(t^2 - 7t + 12 = 0\\) has roots \\(t = 3, 4\\). So \\(\\sqrt{7 + 4\\sqrt{3}} = \\sqrt{4} + \\sqrt{3} = 2 + \\sqrt{3}\\). The correct answer is A.",
+      "hint": "Assume the expression equals \\(\\sqrt{a} + \\sqrt{b}\\), square both sides, and solve for \\(a\\) and \\(b\\)."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q018",
+      "category": "Advanced Algebra",
+      "concept": "Exponential Growth",
+      "learningObjective": "Solve problems involving exponential growth models.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "question": "A population grows according to \\(P(t) = P_0 e^{kt}\\). If the population doubles in 5 years, how long does it take to triple?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3\\ln 5}{\\ln 2}\\) years"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5\\ln 3}{\\ln 2}\\) years"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\frac{5\\ln 2}{\\ln 3}\\) years"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From doubling: \\(2P_0 = P_0 e^{5k}\\), so \\(e^{5k} = 2\\), giving \\(5k = \\ln 2\\), so \\(k = \\frac{\\ln 2}{5}\\). For tripling: \\(3P_0 = P_0 e^{kt}\\), so \\(e^{kt} = 3\\), giving \\(kt = \\ln 3\\). Thus \\(t = \\frac{\\ln 3}{k} = \\frac{\\ln 3}{\\ln 2 / 5} = \\frac{5\\ln 3}{\\ln 2}\\). The correct answer is B.",
+      "hint": "First find the growth rate \\(k\\) from the doubling time, then use it to find the tripling time."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q019",
+      "category": "Advanced Algebra",
+      "concept": "Logarithmic Identities",
+      "learningObjective": "Apply logarithmic identities to simplify expressions.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "reasoning",
+      "question": "Simplify \\(\\log_5 125 + \\log_{25} 625\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Evaluate each logarithm separately. \\(\\log_5 125 = 3\\) because \\(5^3 = 125\\). \\(\\log_{25} 625 = 2\\) because \\(25^2 = 625\\). Adding them together gives \\(3 + 2 = 5\\). The correct answer is C.",
+      "hint": "Evaluate each logarithm by determining the power to which the base must be raised to obtain the argument."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q020",
+      "category": "Advanced Algebra",
+      "concept": "Absolute Value Inequalities",
+      "learningObjective": "Solve absolute value inequalities with multiple terms.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "problem-solving",
+      "question": "Solve \\(\\lvert 2x - 1 \\rvert < \\lvert x + 3 \\rvert\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-\\frac{2}{3}, 4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-3, \\frac{1}{2})\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\((-\\infty, -\\frac{2}{3}) \\cup (4, \\infty)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Square both sides (valid since both sides non-negative): \\((2x - 1)^2 < (x + 3)^2\\). Expand: \\(4x^2 - 4x + 1 < x^2 + 6x + 9\\). Simplify: \\(3x^2 - 10x - 8 < 0\\). Factor: \\((3x + 2)(x - 4) < 0\\). The critical points are \\(x = -\\frac{2}{3}\\) and \\(x = 4\\). The inequality holds between the roots, so \\((-\\frac{2}{3}, 4)\\). The correct answer is A.",
+      "hint": "Square both sides to eliminate absolute values, then solve the resulting quadratic inequality."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q021",
+      "category": "Advanced Algebra",
+      "concept": "Systems of Inequalities",
+      "learningObjective": "Solve systems of nonlinear inequalities.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "reasoning",
+      "question": "Find the solution set for: \\[\\begin{cases} x^2 + y^2 \\leq 9 \\\\ y \\geq x^2 - 1 \\end{cases}\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "The region outside the circle \\(x^2 + y^2 = 9\\) and below the parabola \\(y = x^2 - 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "The region inside the circle \\(x^2 + y^2 = 9\\) and above the parabola \\(y = x^2 - 1\\)"
+        },
+        {
+          "label": "C",
+          "text": "The region inside the circle \\(x^2 + y^2 = 9\\) and below the parabola \\(y = x^2 - 1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first inequality \\(x^2 + y^2 \\leq 9\\) represents the disk (interior and boundary) of the circle with radius 3 centered at the origin. The second inequality \\(y \\geq x^2 - 1\\) represents the region on or above the parabola \\(y = x^2 - 1\\). The solution set is the intersection of these two regions. The correct answer is B.",
+      "hint": "Graph each inequality separately, then find their intersection."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q022",
+      "category": "Advanced Algebra",
+      "concept": "Geometric Sequences",
+      "learningObjective": "Find sums of geometric sequences with parameters.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "question": "The sum of the first \\(n\\) terms of a geometric sequence is \\(S_n = 3^n - 1\\). What is the common ratio?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{3}\\)"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The \\(n\\)th term is \\(a_n = S_n - S_{n-1} = (3^n - 1) - (3^{n-1} - 1) = 3^n - 3^{n-1} = 3^{n-1}(3 - 1) = 2 \\cdot 3^{n-1}\\). So the first term is \\(a_1 = 2 \\cdot 3^0 = 2\\), and the second term is \\(a_2 = 2 \\cdot 3^1 = 6\\). The common ratio is \\(r = \\frac{a_2}{a_1} = \\frac{6}{2} = 3\\). The correct answer is C.",
+      "hint": "Find the first two terms using \\(a_n = S_n - S_{n-1}\\), then compute the ratio."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q023",
+      "category": "Advanced Algebra",
+      "concept": "Function Composition",
+      "learningObjective": "Evaluate compositions of functions with rational expressions.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "problem-solving",
+      "question": "If \\(f(x) = \\frac{1}{x}\\) and \\(g(x) = x^2 + 1\\), what is \\(f(g(f(2)))\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{4}{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{5}{4}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\frac{1}{5}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Work from the inside out: \\(f(2) = \\frac{1}{2}\\), then \\(g(f(2)) = g\\left(\\frac{1}{2}\\right) = \\left(\\frac{1}{2}\\right)^2 + 1 = \\frac{1}{4} + 1 = \\frac{5}{4}\\), then \\(f(g(f(2))) = f\\left(\\frac{5}{4}\\right) = \\frac{1}{\\frac{5}{4}} = \\frac{4}{5}\\). The correct answer is A.",
+      "hint": "Evaluate the composition step by step from the innermost function outward."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q024",
+      "category": "Advanced Algebra",
+      "concept": "Polynomial Roots",
+      "learningObjective": "Determine polynomial coefficients using root information.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "reasoning",
+      "question": "A cubic polynomial \\(p(x)\\) has roots \\(1\\), \\(2\\), and \\(3\\), and \\(p(0) = -6\\). What is the coefficient of \\(x^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "-6"
+        },
+        {
+          "label": "C",
+          "text": "-11"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since the roots are \\(1, 2, 3\\), we can write \\(p(x) = a(x - 1)(x - 2)(x - 3)\\). Given \\(p(0) = -6\\), substitute: \\(p(0) = a(-1)(-2)(-3) = -6a = -6\\), so \\(a = 1\\). Thus \\(p(x) = (x - 1)(x - 2)(x - 3) = x^3 - 6x^2 + 11x - 6\\). The coefficient of \\(x^2\\) is \\(-6\\). The correct answer is B.",
+      "hint": "Write the polynomial in factored form with a leading coefficient, use the given point to find the coefficient, then expand."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q025",
+      "category": "Advanced Algebra",
+      "concept": "Rational Inequalities",
+      "learningObjective": "Solve rational inequalities using sign charts.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "question": "Solve \\(\\frac{x^2 - 4}{x - 1} \\geq 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-\\infty, -2] \\cup (1, 2]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\infty, -2] \\cup [2, \\infty)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\([-2, 1) \\cup [2, \\infty)\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Factor numerator: \\(\\frac{(x - 2)(x + 2)}{x - 1} \\geq 0\\). Critical points: \\(x = -2, 1, 2\\). Sign chart: for \\(x < -2\\), product is negative; for \\(-2 < x < 1\\), product is positive; for \\(1 < x < 2\\), product is negative; for \\(x > 2\\), product is positive. Include where numerator is zero (\\(x = \\pm 2\\)), exclude where denominator is zero (\\(x = 1\\)). So solution is \\([-2, 1) \\cup [2, \\infty)\\). The correct answer is C.",
+      "hint": "Factor the numerator, identify critical points, and analyze the sign in each interval, remembering to exclude where the denominator is zero."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q026",
+      "category": "Advanced Algebra",
+      "concept": "Exponential Equations",
+      "learningObjective": "Solve exponential equations with different bases.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "problem-solving",
+      "question": "Solve \\(2^{x+1} = 3^{x-1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x = \\frac{\\ln 6}{\\ln \\frac{3}{2}}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x = \\frac{\\ln 2}{\\ln 3}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(x = \\frac{\\ln 3}{\\ln 2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Take natural log of both sides: \\(\\ln(2^{x+1}) = \\ln(3^{x-1})\\), so \\((x + 1)\\ln 2 = (x - 1)\\ln 3\\). Expand: \\(x\\ln 2 + \\ln 2 = x\\ln 3 - \\ln 3\\). Rearrange: \\(x(\\ln 3 - \\ln 2) = \\ln 3 + \\ln 2 = \\ln 6\\), giving \\(x = \\frac{\\ln 6}{\\ln 3 - \\ln 2} = \\frac{\\ln 6}{\\ln \\frac{3}{2}}\\). The correct answer is A.",
+      "hint": "Take logarithms of both sides, then solve the resulting linear equation for \\(x\\)."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q027",
+      "category": "Advanced Algebra",
+      "concept": "Logarithmic Equations",
+      "learningObjective": "Solve logarithmic equations with multiple logs.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "reasoning",
+      "question": "Solve \\(\\log(x) + \\log(x - 3) = 1\\), where log is base 10.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x = -2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x = 5\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(x = 3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Combine logs: \\(\\log(x(x - 3)) = 1\\), so \\(x(x - 3) = 10^1 = 10\\). This gives \\(x^2 - 3x - 10 = 0\\), which factors as \\((x - 5)(x + 2) = 0\\). So \\(x = 5\\) or \\(x = -2\\). Domain requires \\(x > 0\\) and \\(x - 3 > 0\\), so \\(x > 3\\). Only \\(x = 5\\) satisfies this. The correct answer is B.",
+      "hint": "Combine the logarithms, convert to exponential form, solve the quadratic, and check domain restrictions."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q028",
+      "category": "Advanced Algebra",
+      "concept": "Algebraic Identities",
+      "learningObjective": "Apply algebraic identities to evaluate expressions.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "question": "If \\(a + b = 5\\) and \\(ab = 6\\), what is \\(a^3 + b^3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "125"
+        },
+        {
+          "label": "B",
+          "text": "91"
+        },
+        {
+          "label": "C",
+          "text": "35"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Use the identity \\(a^3 + b^3 = (a + b)^3 - 3ab(a + b)\\). Substitute: \\(5^3 - 3 \\cdot 6 \\cdot 5 = 125 - 90 = 35\\). The correct answer is C.",
+      "hint": "Use the identity for the sum of cubes in terms of sum and product."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q029",
+      "category": "Advanced Algebra",
+      "concept": "Parameter-Dependent Equations",
+      "learningObjective": "Analyze equations with parameters for solution existence.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "problem-solving",
+      "question": "For what value of \\(k\\) does the system \\[\\begin{cases} 2x + ky = 4 \\\\ 4x + 6y = 8 \\end{cases}\\] have infinitely many solutions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(k = 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(k = 2\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(k = 4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For infinitely many solutions, the equations must be dependent (one is a multiple of the other). The second equation is \\(2 \\times\\) the first if \\(4 = 2 \\cdot 2\\), \\(6 = 2 \\cdot k\\), and \\(8 = 2 \\cdot 4\\). From \\(6 = 2k\\), we get \\(k = 3\\). The correct answer is A.",
+      "hint": "For infinitely many solutions, the two equations must represent the same line, so their coefficients must be proportional."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q030",
+      "category": "Advanced Algebra",
+      "concept": "Symmetric Expressions",
+      "learningObjective": "Evaluate symmetric expressions using given conditions.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "reasoning",
+      "question": "If \\(x + y = 1\\) and \\(x^2 + y^2 = 3\\), what is \\(x^4 + y^4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First, \\((x + y)^2 = x^2 + 2xy + y^2 = 1\\), so \\(3 + 2xy = 1\\), giving \\(xy = -1\\). Then \\(x^4 + y^4 = (x^2 + y^2)^2 - 2x^2y^2 = 3^2 - 2(-1)^2 = 9 - 2 = 7\\). The correct answer is B.",
+      "hint": "Find \\(xy\\) first using the square of the sum, then use it to find the sum of fourth powers."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q031",
+      "category": "Advanced Algebra",
+      "concept": "Polynomial Factorization",
+      "learningObjective": "Factor polynomials using advanced techniques.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "question": "Factor \\(x^4 + 4\\) completely over the reals.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((x^2 + 2)^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((x^2 + 2x + 2)^2\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\((x^2 + 2x + 2)(x^2 - 2x + 2)\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "This is a Sophie Germain identity: \\(x^4 + 4 = x^4 + 4x^2 + 4 - 4x^2 = (x^2 + 2)^2 - (2x)^2 = (x^2 + 2x + 2)(x^2 - 2x + 2)\\). The correct answer is C.",
+      "hint": "Add and subtract \\(4x^2\\) to complete the square, then use difference of squares."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q032",
+      "category": "Advanced Algebra",
+      "concept": "Rational Function Graphs",
+      "learningObjective": "Identify asymptotes of rational functions.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "problem-solving",
+      "question": "What are the vertical and horizontal asymptotes of \\(f(x) = \\frac{2x^2 + 3x + 1}{x^2 - 4}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Vertical: \\(x = \\pm 2\\), Horizontal: \\(y = 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "Vertical: \\(x = \\pm 2\\), Horizontal: \\(y = 0\\)"
+        },
+        {
+          "label": "C",
+          "text": "Vertical: \\(x = 2\\), Horizontal: \\(y = 2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Vertical asymptotes occur where the denominator is zero and the numerator is not. \\(x^2 - 4 = 0\\) gives \\(x = \\pm 2\\). The numerator \\(2x^2 + 3x + 1 = (2x + 1)(x + 1)\\) is non-zero at \\(x = \\pm 2\\), so there are vertical asymptotes at \\(x = 2\\) and \\(x = -2\\). For the horizontal asymptote, the degrees of the numerator and denominator are equal, so the horizontal asymptote is the ratio of the leading coefficients: \\(y = \\frac{2}{1} = 2\\). The correct answer is A.",
+      "hint": "Find where the denominator is zero (and numerator is not) for vertical asymptotes; compare degrees for horizontal asymptotes."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q033",
+      "category": "Advanced Algebra",
+      "concept": "Extraneous Solutions",
+      "learningObjective": "Identify extraneous solutions in radical equations.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "reasoning",
+      "question": "When solving \\(\\sqrt{x + 5} = x - 1\\), which solution is extraneous?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x = 4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x = -1\\)"
+        },
+        {
+          "label": "C",
+          "text": "Both are valid"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Square both sides: \\(x + 5 = (x - 1)^2 = x^2 - 2x + 1\\), so \\(x^2 - 3x - 4 = 0\\), which factors as \\((x - 4)(x + 1) = 0\\). So \\(x = 4\\) or \\(x = -1\\). Check: for \\(x = 4\\), \\(\\sqrt{9} = 3 = 4 - 1\\), valid. For \\(x = -1\\), \\(\\sqrt{4} = 2 \\neq -1 - 1 = -2\\), invalid (extraneous). Also, domain requires \\(x - 1 \\geq 0\\), so \\(x \\geq 1\\), which excludes \\(x = -1\\). The correct answer is B.",
+      "hint": "After squaring, always check solutions in the original equation, and consider domain restrictions."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q034",
+      "category": "Advanced Algebra",
+      "concept": "Logarithmic Properties",
+      "learningObjective": "Apply change of base formula in complex expressions.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "question": "If \\(\\log_2 3 = a\\) and \\(\\log_2 5 = b\\), express \\(\\log_{15} 8\\) in terms of \\(a\\) and \\(b\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{a + b}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3(a + b)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\frac{3}{a + b}\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "First, \\(\\log_{15} 8 = \\frac{\\log_2 8}{\\log_2 15} = \\frac{3}{\\log_2 (3 \\cdot 5)} = \\frac{3}{\\log_2 3 + \\log_2 5} = \\frac{3}{a + b}\\). The correct answer is C.",
+      "hint": "Use the change of base formula to convert to base 2, then apply logarithmic properties."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q035",
+      "category": "Advanced Algebra",
+      "concept": "Inequality Systems",
+      "learningObjective": "Solve systems of linear and quadratic inequalities.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "problem-solving",
+      "question": "Solve the system: \\[\\begin{cases} y \\leq -x^2 + 4 \\\\ y \\geq x - 2 \\end{cases}\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "The region below the parabola \\(y = -x^2 + 4\\) and above the line \\(y = x - 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "The region above the parabola \\(y = -x^2 + 4\\) and below the line \\(y = x - 2\\)"
+        },
+        {
+          "label": "C",
+          "text": "The region below both the parabola and the line"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first inequality \\(y \\leq -x^2 + 4\\) represents the region on or below the downward-opening parabola with vertex at \\((0, 4)\\). The second inequality \\(y \\geq x - 2\\) represents the region on or above the line with slope 1 and y-intercept -2. The solution set is the intersection of these two regions. The correct answer is A.",
+      "hint": "Graph each inequality, then find the overlapping region."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q036",
+      "category": "Advanced Algebra",
+      "concept": "Functional Equations",
+      "learningObjective": "Solve functional equations with specific forms.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "reasoning",
+      "question": "If \\(f(x) + 2f\\left(\\frac{1}{x}\\right) = 3x\\) for \\(x \\neq 0\\), what is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "-1"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x = 2\\): \\(f(2) + 2f\\left(\\frac{1}{2}\\right) = 6\\). Substitute \\(x = \\frac{1}{2}\\): \\(f\\left(\\frac{1}{2}\\right) + 2f(2) = \\frac{3}{2}\\). Let \\(u = f(2)\\), \\(v = f\\left(\\frac{1}{2}\\right)\\). Then: \\(u + 2v = 6\\) and \\(2u + v = \\frac{3}{2}\\). Multiply the second equation by 2: \\(4u + 2v = 3\\). Subtract the first equation: \\(3u = -3\\), giving \\(u = -1\\). Thus \\(f(2) = -1\\). The correct answer is B.",
+      "hint": "Create a system of equations by substituting \\(x\\) and \\(\\frac{1}{x}\\), then solve for \\(f(x)\\)."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q037",
+      "category": "Advanced Algebra",
+      "concept": "Polynomial Remainder",
+      "learningObjective": "Apply the Remainder Theorem to higher-degree polynomials.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "question": "When \\(x^{100} + 1\\) is divided by \\(x^2 - 1\\), what is the remainder?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Since the divisor is quadratic, the remainder is linear: \\(r(x) = ax + b\\). By the Remainder Theorem for higher degrees, \\(x^{100} + 1 = (x^2 - 1)q(x) + ax + b\\). Substitute \\(x = 1\\): \\(1 + 1 = 0 + a + b\\), so \\(a + b = 2\\). Substitute \\(x = -1\\): \\(1 + 1 = 0 - a + b\\), so \\(-a + b = 2\\). Adding: \\(2b = 4\\), so \\(b = 2\\), then \\(a = 0\\). Thus remainder is \\(2\\). The correct answer is C.",
+      "hint": "Since the divisor is degree 2, the remainder is degree < 2, so \\(ax + b\\). Use roots of the divisor to set up equations."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q038",
+      "category": "Advanced Algebra",
+      "concept": "Exponential Inequalities",
+      "learningObjective": "Solve exponential inequalities with base considerations.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "problem-solving",
+      "question": "Solve \\(\\left(\\frac{1}{2}\\right)^{x^2 - 3x} > 1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0, 3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\infty, 0) \\cup (3, \\infty)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\((1, 2)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rewrite \\(1\\) as \\(\\left(\\frac{1}{2}\\right)^0\\). Since the base \\(\\frac{1}{2} < 1\\), the inequality direction reverses when comparing exponents: \\(x^2 - 3x < 0\\). Factoring gives \\(x(x - 3) < 0\\), which holds for \\(0 < x < 3\\). The solution is \\((0, 3)\\). The correct answer is A.",
+      "hint": "Rewrite the right side as a power of \\(\\frac{1}{2}\\), then use the fact that for a base less than 1, the inequality direction reverses when comparing exponents."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q039",
+      "category": "Advanced Algebra",
+      "concept": "Logarithmic Inequalities",
+      "learningObjective": "Solve logarithmic inequalities with domain considerations.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "reasoning",
+      "question": "Solve \\(\\log_2(x^2 - 3x + 2) < 1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1, 2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0, 1) \\cup (2, 3)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\((-\\infty, 0) \\cup (3, \\infty)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First, domain: \\(x^2 - 3x + 2 > 0\\), so \\((x - 1)(x - 2) > 0\\), which gives \\(x < 1\\) or \\(x > 2\\). Now, \\(\\log_2(x^2 - 3x + 2) < 1 = \\log_2 2\\). Since log base 2 is increasing, \\(x^2 - 3x + 2 < 2\\), so \\(x^2 - 3x < 0\\), so \\(x(x - 3) < 0\\), which gives \\(0 < x < 3\\). Intersect with domain: \\((0, 1) \\cup (2, 3)\\). The correct answer is B.",
+      "hint": "First find the domain where the argument is positive, then solve the inequality, and intersect the results."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q040",
+      "category": "Advanced Algebra",
+      "concept": "Arithmetic Sequences",
+      "learningObjective": "Find terms in arithmetic sequences with given conditions.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "question": "The sum of the first 10 terms of an arithmetic sequence is 100, and the sum of the next 10 terms is 300. What is the common difference?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Let first term be \\(a\\), common difference \\(d\\). Sum of first 10: \\(S_{10} = \\frac{10}{2}[2a + 9d] = 5(2a + 9d) = 100\\), so \\(2a + 9d = 20\\). Sum of first 20: \\(S_{20} = \\frac{20}{2}[2a + 19d] = 10(2a + 19d) = 100 + 300 = 400\\), so \\(2a + 19d = 40\\). Subtract first equation: \\(10d = 20\\), so \\(d = 2\\). The correct answer is C.",
+      "hint": "Use the sum formula for arithmetic sequences to set up equations for the first 10 and first 20 terms."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q041",
+      "category": "Advanced Algebra",
+      "concept": "Inverse Functions",
+      "learningObjective": "Find inverse functions of rational functions.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "problem-solving",
+      "question": "If \\(f(x) = \\frac{3x - 1}{x + 2}\\), what is \\(f^{-1}(x)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{2x + 1}{3 - x}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{x + 1}{3 - 2x}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\frac{3x + 1}{x - 2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(y = \\frac{3x - 1}{x + 2}\\), solve for \\(x\\): \\(y(x + 2) = 3x - 1\\), so \\(yx + 2y = 3x - 1\\), then \\(yx - 3x = -1 - 2y\\), so \\(x(y - 3) = -1 - 2y\\), giving \\(x = \\frac{-1 - 2y}{y - 3} = \\frac{2y + 1}{3 - y}\\). Thus \\(f^{-1}(x) = \\frac{2x + 1}{3 - x}\\). The correct answer is A.",
+      "hint": "Set \\(y = f(x)\\), solve for \\(x\\) in terms of \\(y\\), then swap variables."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q042",
+      "category": "Advanced Algebra",
+      "concept": "Polynomial Equations",
+      "learningObjective": "Solve polynomial equations using substitution.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "reasoning",
+      "question": "Solve \\(x^4 - 5x^2 + 4 = 0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x = \\pm 2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x = \\pm 1, \\pm 2\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(x = \\pm 1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(y = x^2\\), then \\(y^2 - 5y + 4 = 0\\), which factors as \\((y - 1)(y - 4) = 0\\). So \\(y = 1\\) or \\(y = 4\\). Thus \\(x^2 = 1\\) gives \\(x = \\pm 1\\), and \\(x^2 = 4\\) gives \\(x = \\pm 2\\). The correct answer is B.",
+      "hint": "Use substitution \\(y = x^2\\) to reduce to a quadratic equation."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q043",
+      "category": "Advanced Algebra",
+      "concept": "Rational Expressions",
+      "learningObjective": "Simplify complex rational expressions with multiple terms.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "question": "Simplify \\(\\frac{\\frac{1}{x+1} - \\frac{1}{x-1}}{\\frac{1}{x^2-1}}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2}{x^2-1}\\)"
+        },
+        {
+          "label": "C",
+          "text": "-2"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Numerator: \\(\\frac{1}{x+1} - \\frac{1}{x-1} = \\frac{(x-1) - (x+1)}{(x+1)(x-1)} = \\frac{-2}{x^2 - 1}\\). Denominator: \\(\\frac{1}{x^2 - 1}\\). So the expression is \\(\\frac{-2/(x^2 - 1)}{1/(x^2 - 1)} = -2\\). The correct answer is C.",
+      "hint": "Simplify the numerator first by finding a common denominator, then divide by the denominator."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q044",
+      "category": "Advanced Algebra",
+      "concept": "Exponential Functions",
+      "learningObjective": "Analyze exponential functions for specific properties.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "problem-solving",
+      "question": "For what value of \\(a\\) does the function \\(f(x) = a^x\\) pass through the point \\(\\left(2, \\frac{1}{9}\\right)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\frac{1}{9}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute the point: \\(f(2) = a^2 = \\frac{1}{9}\\), so \\(a = \\pm \\frac{1}{3}\\). By definition, a real exponential function \\(f(x) = a^x\\) requires the base to satisfy \\(a > 0\\) and \\(a \\neq 1\\). Therefore, \\(a = \\frac{1}{3}\\). The correct answer is A.",
+      "hint": "Substitute the given point into the function and solve for the base \\(a\\)."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q045",
+      "category": "Advanced Algebra",
+      "concept": "Logarithmic Functions",
+      "learningObjective": "Determine domains of logarithmic functions.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "reasoning",
+      "question": "What is the domain of \\(f(x) = \\log_3(x^2 - 4x + 3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1, 3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\infty, 1) \\cup (3, \\infty)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\mathbb{R}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The argument of the logarithm must be positive: \\(x^2 - 4x + 3 > 0\\). Factor: \\((x - 1)(x - 3) > 0\\). This inequality holds when \\(x < 1\\) or \\(x > 3\\). The correct answer is B.",
+      "hint": "Set the argument of the logarithm greater than zero and solve the quadratic inequality."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q046",
+      "category": "Advanced Algebra",
+      "concept": "Absolute Value Equations",
+      "learningObjective": "Solve absolute value equations with parameters.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "question": "What is the minimum value of \\(k\\) for which the equation \\(\\lvert x - 2 \\rvert + \\lvert x + 3 \\rvert = k\\) has solutions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The expression \\(\\lvert x - 2 \\rvert + \\lvert x + 3 \\rvert\\) represents the sum of the distances from \\(x\\) to \\(2\\) and to \\(-3\\) on the number line. By the triangle inequality, this sum is minimized when \\(x\\) is between \\(-3\\) and \\(2\\), and the minimum value is the distance between the two points, which is \\(\\lvert 2 - (-3) \\rvert = 5\\). Thus, the equation has solutions if and only if \\(k \\geq 5\\), making the minimum value \\(5\\). The correct answer is C.",
+      "hint": "The sum of distances from \\(x\\) to two fixed points is minimized when \\(x\\) is between them, and the minimum is the distance between the points."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q047",
+      "category": "Advanced Algebra",
+      "concept": "Systems of Equations",
+      "learningObjective": "Solve symmetric systems of equations.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "problem-solving",
+      "question": "Solve the system: \\[\\begin{cases} x + y = 5 \\\\ xy = 6 \\end{cases}\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2, 3)\\) and \\((3, 2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1, 4)\\) and \\((4, 1)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\((0, 5)\\) and \\((5, 0)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The solutions are the roots of the quadratic \\(t^2 - 5t + 6 = 0\\), which factors as \\((t - 2)(t - 3) = 0\\). So \\(t = 2\\) or \\(t = 3\\), giving the pairs \\((2, 3)\\) and \\((3, 2)\\). The correct answer is A.",
+      "hint": "Recognize that \\(x\\) and \\(y\\) are roots of a quadratic equation with sum 5 and product 6."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q048",
+      "category": "Advanced Algebra",
+      "concept": "Polynomial Identities",
+      "learningObjective": "Verify polynomial identities using expansion.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "reasoning",
+      "question": "Which of the following is an identity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((x + y)^3 = x^3 + y^3 + 3xy\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((x + y)^3 = x^3 + y^3 + 3xy(x + y)\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\((x + y)^3 = x^3 + y^3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Expand \\((x + y)^3 = (x + y)(x + y)^2 = (x + y)(x^2 + 2xy + y^2) = x^3 + 2x^2y + xy^2 + x^2y + 2xy^2 + y^3 = x^3 + y^3 + 3x^2y + 3xy^2 = x^3 + y^3 + 3xy(x + y)\\). The correct answer is B.",
+      "hint": "Expand the left side completely and compare with the right side."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q049",
+      "category": "Advanced Algebra",
+      "concept": "Exponential and Logarithmic Equations",
+      "learningObjective": "Solve equations combining exponentials and logarithms.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "question": "Solve \\(e^{\\ln x} + \\ln(e^x) = 4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x = 4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x = e\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(x = 2\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Simplify using inverse properties: \\(e^{\\ln x} = x\\) (for \\(x > 0\\)) and \\(\\ln(e^x) = x\\). So the equation becomes \\(x + x = 4\\), so \\(2x = 4\\), giving \\(x = 2\\). The correct answer is C.",
+      "hint": "Use the inverse relationship between exponentials and logarithms to simplify each term."
+    },
+    {
+      "id": "questions-mathematics-algebra-advanced-algebra-01-q050",
+      "category": "Advanced Algebra",
+      "concept": "Algebraic Manipulation",
+      "learningObjective": "Simplify complex algebraic expressions using multiple techniques.",
+      "difficulty": "advanced",
+      "cognitiveLevel": "problem-solving",
+      "question": "Simplify \\(\\sqrt{4 + 2\\sqrt{3}} - \\sqrt{4 - 2\\sqrt{3}}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\sqrt{2}\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(\\sqrt{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Notice that \\(4 + 2\\sqrt{3} = 3 + 2\\sqrt{3} + 1 = (\\sqrt{3} + 1)^2\\) and \\(4 - 2\\sqrt{3} = 3 - 2\\sqrt{3} + 1 = (\\sqrt{3} - 1)^2\\). Therefore, \\(\\sqrt{4 + 2\\sqrt{3}} = \\sqrt{3} + 1\\) and \\(\\sqrt{4 - 2\\sqrt{3}} = \\sqrt{3} - 1\\). Subtracting the two expressions gives \\((\\sqrt{3} + 1) - (\\sqrt{3} - 1) = 2\\). The correct answer is A.",
+      "hint": "Express the expressions under the square roots as perfect squares of the form \\((\\sqrt{a} \\pm \\sqrt{b})^2\\)."
+    }
+  ]
+}

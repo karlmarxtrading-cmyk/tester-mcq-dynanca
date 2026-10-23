@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-15",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 15",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-15-q001",
+      "category": "Logic",
+      "concept": "Truth Values of Conjunction and Disjunction",
+      "learningObjective": "Determine which compound statement is true for given truth values of its components.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Suppose \\(p\\) is false and \\(q\\) is true. Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\land q\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\lor q\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(p\\) is false and \\(q\\) is true, the conjunction \\(p\\land q\\) is false because a conjunction requires both parts to be true. The disjunction \\(p\\lor q\\) is true because a disjunction requires at least one part to be true, and \\(q\\) is true. Therefore, \\(p\\lor q\\) is true.",
+      "hint": "Recall that a conjunction is true only when both components are true, while a disjunction is true when at least one component is true."
+    },
+    {
+      "id": "math-gaokao-15-q002",
+      "category": "Logic",
+      "concept": "Evaluating Compound Statements",
+      "learningObjective": "Evaluate a compound statement involving conjunction and disjunction from given truth values.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(p\\) be true, \\(q\\) be false, and \\(r\\) be true. What is the truth value of \\((p\\land q)\\lor r\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(q\\) is false, the conjunction \\(p\\land q\\) is false even though \\(p\\) is true. Now evaluate the disjunction:\n\\[\n(p\\land q)\\lor r = \\text{false}\\lor \\text{true}.\n\\]\nA disjunction is true when at least one component is true. Since \\(r\\) is true, the whole statement is true.",
+      "hint": "First evaluate the part inside the parentheses, then combine it with \\(r\\)."
+    },
+    {
+      "id": "math-gaokao-15-q003",
+      "category": "Logic",
+      "concept": "De Morgan's Law for Disjunction",
+      "learningObjective": "Negate a disjunction using De Morgan's law.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the negation of \\(p\\lor q\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\neg p\\land \\neg q\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\neg p\\lor \\neg q\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "By De Morgan's law, the negation of a disjunction is the conjunction of the negations:\n\\[\n\\neg(p\\lor q)\\equiv \\neg p\\land \\neg q.\n\\]\nTherefore, the negation of \\(p\\lor q\\) is \\(\\neg p\\land \\neg q\\). Option B incorrectly keeps the disjunction.",
+      "hint": "Negate each component and change “or” to “and.”"
+    },
+    {
+      "id": "math-gaokao-15-q004",
+      "category": "Logic",
+      "concept": "Evaluating Compound Statements",
+      "learningObjective": "Evaluate a compound statement involving two disjunctions joined by a conjunction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(p\\) be false, \\(q\\) be true, and \\(r\\) be false. What is the truth value of \\((p\\lor q)\\land(q\\lor r)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First evaluate each disjunction. Since \\(q\\) is true,\n\\[\np\\lor q = \\text{false}\\lor \\text{true} = \\text{true}.\n\\]\nAlso, since \\(q\\) is true,\n\\[\nq\\lor r = \\text{true}\\lor \\text{false} = \\text{true}.\n\\]\nNow the whole statement is\n\\[\n\\text{true}\\land \\text{true},\n\\]\nwhich is true. Therefore, the truth value is true.",
+      "hint": "Evaluate the two disjunctions separately, then combine their truth values with conjunction."
+    },
+    {
+      "id": "math-gaokao-15-q005",
+      "category": "Logic",
+      "concept": "Tautology and Contradiction",
+      "learningObjective": "Identify a tautology involving a statement and its negation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which statement is a tautology?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(p\\lor \\neg p\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(p\\land \\neg p\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A tautology is a statement that is always true. If \\(p\\) is true, then \\(p\\lor \\neg p\\) is true because \\(p\\) is true. If \\(p\\) is false, then \\(\\neg p\\) is true, so \\(p\\lor \\neg p\\) is still true. Therefore,\n\\[\np\\lor \\neg p\n\\]\nis always true. The statement \\(p\\land \\neg p\\) is always false because \\(p\\) and \\(\\neg p\\) cannot both be true.",
+      "hint": "A statement and its negation cannot both be true, but at least one of them must be true."
+    },
+    {
+      "id": "math-gaokao-15-q006",
+      "category": "Logic",
+      "concept": "De Morgan's Law for Conjunction",
+      "learningObjective": "Identify a statement logically equivalent to the negation of a conjunction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which statement is logically equivalent to \\(\\neg(p\\land q)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\neg p\\land \\neg q\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\neg p\\lor \\neg q\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By De Morgan's law,\n\\[\n\\neg(p\\land q)\\equiv \\neg p\\lor \\neg q.\n\\]\nThe negation of a conjunction becomes the disjunction of the negations. Option A is not equivalent; it is the negation of \\(p\\lor q\\), not of \\(p\\land q\\).",
+      "hint": "Negate each component and change “and” to “or.”"
+    },
+    {
+      "id": "math-gaokao-15-q007",
+      "category": "Logic",
+      "concept": "Evaluating Compound Statements",
+      "learningObjective": "Evaluate a compound statement involving two disjunctions joined by a conjunction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(p\\) be false, \\(q\\) be false, and \\(r\\) be true. What is the truth value of \\((p\\lor r)\\land(q\\lor r)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "True"
+        },
+        {
+          "label": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(r\\) is true, both disjunctions are true:\n\\[\np\\lor r = \\text{false}\\lor \\text{true} = \\text{true},\n\\]\nand\n\\[\nq\\lor r = \\text{false}\\lor \\text{true} = \\text{true}.\n\\]\nTherefore,\n\\[\n(p\\lor r)\\land(q\\lor r)=\\text{true}\\land \\text{true}=\\text{true}.\n\\]\nSo the statement is true.",
+      "hint": "Use the fact that a disjunction is true whenever at least one component is true."
+    },
+    {
+      "id": "math-gaokao-15-q008",
+      "category": "Logic",
+      "concept": "Evaluating Compound Statements",
+      "learningObjective": "Evaluate a compound statement involving two conjunctions joined by a disjunction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(p\\) be true, \\(q\\) be false, and \\(r\\) be false. What is the truth value of \\((p\\land q)\\lor(p\\land r)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Evaluate each conjunction separately. Since \\(q\\) is false,\n\\[\np\\land q=\\text{true}\\land \\text{false}=\\text{false}.\n\\]\nSince \\(r\\) is false,\n\\[\np\\land r=\\text{true}\\land \\text{false}=\\text{false}.\n\\]\nNow the whole statement is\n\\[\n\\text{false}\\lor \\text{false}=\\text{false}.\n\\]\nTherefore, the truth value is false.",
+      "hint": "Evaluate both conjunctions first, then combine their truth values with disjunction."
+    },
+    {
+      "id": "math-gaokao-15-q009",
+      "category": "Logic",
+      "concept": "Quantified Statements with Conjunction",
+      "learningObjective": "Determine the truth value of an existential statement involving a conjunction over a finite domain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(D=\\{1,2,3,4\\}\\). What is the truth value of\n\\[\n\\exists x\\in D,\\ (x\\text{ is even}\\land x>2)?\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "False"
+        },
+        {
+          "label": "B",
+          "text": "True"
+        }
+      ],
+      "answer": "B",
+      "explanation": "We need to find at least one element of \\(D\\) that is even and greater than \\(2\\). Checking the elements:\n- \\(1\\) is not even.\n- \\(2\\) is even but not greater than \\(2\\).\n- \\(3\\) is not even.\n- \\(4\\) is even and \\(4>2\\).\nSince \\(x=4\\) satisfies both conditions, the existential statement is true.",
+      "hint": "Test each element of \\(D\\) and look for one that makes both parts of the conjunction true."
+    },
+    {
+      "id": "math-gaokao-15-q010",
+      "category": "Logic",
+      "concept": "Distributive Law for Conjunction and Disjunction",
+      "learningObjective": "Identify a statement equivalent to a conjunction of a disjunction using the distributive law.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Which statement is logically equivalent to \\((p\\lor q)\\land r\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((p\\land r)\\lor(q\\land r)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((p\\lor r)\\land(q\\lor r)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the distributive law of conjunction over disjunction:\n\\[\n(p\\lor q)\\land r \\equiv (p\\land r)\\lor(q\\land r).\n\\]\nThis is because \\(r\\) is distributed to both \\(p\\) and \\(q\\), and the main operation remains a disjunction. Option B is a different expression and is not equivalent in general.",
+      "hint": "Apply the distributive law by distributing \\(r\\) to both \\(p\\) and \\(q\\)."
+    }
+  ]
+}

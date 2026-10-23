@@ -1,0 +1,690 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "mathematics-sat-22",
+  "title": "SAT 22 · Exponents",
+  "category": "SAT Mathematics",
+  "description": "A/B reasoning practice. Difficulty is editorial, not standardized SAT calibration.",
+  "questionCount": 18,
+  "questions": [
+    {
+      "id": "sat-q0379",
+      "title": "Boxes in Repeated Tripling",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "A display begins with \\(2\\) boxes. At each of the next \\(3\\) stages, the number of boxes is multiplied by \\(3\\). How many boxes are there after the third multiplication? Choose A or B and justify the repeated multiplication.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(54\\) boxes"
+        },
+        {
+          "label": "B",
+          "text": "\\(18\\) boxes"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiplying by \\(3\\) three times gives\n\\[\n2\\times3\\times3\\times3=2\\times3^3=2\\times27=54.\n\\]\nChoice B represents only \\(2\\times3^2=18\\), so it stops one multiplication too early. Therefore, choice A is correct.",
+      "hint": "Write the starting amount, then multiply by 3 once for each of the three stages."
+    },
+    {
+      "id": "sat-q0380",
+      "title": "Doubling Through Five Stages",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "The chart shows a pattern in which the number of counters doubles from one stage to the next. If the pattern continues, how many counters are in Stage 5? Choose A or B and explain the repeated multiplication.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\) counters"
+        },
+        {
+          "label": "B",
+          "text": "\\(32\\) counters"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Continuing the doubling pattern gives Stage 4 as \\(8\\times2=16\\) and Stage 5 as \\(16\\times2=32\\). Equivalently, Stage 5 contains \\(2^5=32\\) counters. Choice A is the Stage 4 value, so choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0380-v1",
+          "type": "DATA_CHART",
+          "data": {
+            "kind": "bar",
+            "xLabel": "Stage",
+            "yLabel": "Counters",
+            "bars": [
+              {
+                "label": "Stage 1",
+                "value": 2
+              },
+              {
+                "label": "Stage 2",
+                "value": 4
+              },
+              {
+                "label": "Stage 3",
+                "value": 8
+              }
+            ],
+            "chart": "bar",
+            "labels": [
+              "Stage 1",
+              "Stage 2",
+              "Stage 3"
+            ],
+            "values": [
+              2,
+              4,
+              8
+            ],
+            "axes": {
+              "xLabel": "Stage",
+              "yLabel": "Counters"
+            }
+          },
+          "alt": "Bar chart showing 2 counters at Stage 1, 4 counters at Stage 2, and 8 counters at Stage 3, with the amount doubling each stage."
+        }
+      ],
+      "hint": "Read the last stage shown in the chart and keep doubling until you reach Stage 5."
+    },
+    {
+      "id": "sat-q0381",
+      "title": "Even Powers of Two That Are Squares",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "The universe contains the whole numbers from \\(1\\) through \\(20\\). Set \\(P\\) contains numbers of the form \\(2^n\\), where \\(n\\) is a positive integer, and Set \\(S\\) contains perfect squares. How many numbers belong to both sets? Choose A or B and identify them.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\) numbers"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\) numbers"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The powers of \\(2\\) in the universe are \\(2,4,8,16\\). The perfect squares are \\(1,4,9,16\\). The numbers in both sets are \\(4\\) and \\(16\\), so there are \\(2\\) such numbers. Choice A counts all four powers of \\(2\\), including \\(2\\) and \\(8\\), which are not perfect squares. Therefore, choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0381-v1",
+          "type": "VENN",
+          "data": {
+            "universe": {
+              "label": "Whole numbers 1 through 20",
+              "total": 20
+            },
+            "sets": [
+              {
+                "id": "P",
+                "label": "Positive-integer powers of 2",
+                "elements": []
+              },
+              {
+                "id": "S",
+                "label": "Perfect squares",
+                "elements": []
+              }
+            ],
+            "regions": {
+              "P_only": 2,
+              "S_only": 2,
+              "intersection": 2,
+              "outside": 14
+            }
+          },
+          "alt": "Among the whole numbers 1 through 20, powers of 2 with positive exponents are 2, 4, 8, and 16; perfect squares are 1, 4, 9, and 16; the intersection contains 4 and 16."
+        }
+      ],
+      "hint": "List the powers of 2 up to 20 and the perfect squares up to 20, then look for numbers on both lists."
+    },
+    {
+      "id": "sat-q0382",
+      "title": "Cube Count from Repeated Multiplication",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "A large cube is built from unit cubes and has \\(4\\) unit cubes along each edge. How many unit cubes are needed altogether? Choose A or B and explain why three equal factors are multiplied.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(64\\) unit cubes"
+        },
+        {
+          "label": "B",
+          "text": "\\(16\\) unit cubes"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A cube has three dimensions, so the number of unit cubes is\n\\[\n4\\times4\\times4=4^3=64.\n\\]\nChoice B uses only \\(4\\times4=16\\), which counts one square layer rather than all \\(4\\) layers. Therefore, choice A is correct.",
+      "hint": "Count the cubes in one square layer, then think about how many layers the cube has."
+    },
+    {
+      "id": "sat-q0383",
+      "title": "Combining Powers with the Same Base",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "Evaluate\n\\[\n(-2)^4(-2)^2.\n\\]\nChoose A or B and justify the exponent rule as well as the sign.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-64\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(64\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The bases are the same, so the exponents add:\n\\[\n(-2)^4(-2)^2=(-2)^{4+2}=(-2)^6.\n\\]\nAn even number of negative factors gives a positive result, and\n\\[\n2^6=64.\n\\]\nTherefore the value is \\(64\\). Choice A incorrectly keeps the result negative despite the even exponent, so choice B is correct.",
+      "hint": "Combine the exponents for the same base, then decide the sign from whether the total exponent is even or odd."
+    },
+    {
+      "id": "sat-q0384",
+      "title": "Extending an Exponential Mapping",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "The mapping diagram follows the rule \\(f(x)=3^x\\). What is \\(f(4)\\)? Choose A or B and explain how the pattern extends.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(81\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(27\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The rule gives\n\\[\nf(4)=3^4=3\\times3\\times3\\times3=81.\n\\]\nThe mapping also shows that each increase of \\(1\\) in the input multiplies the output by \\(3\\): \\(9\\) becomes \\(27\\), then \\(81\\). Choice B is \\(3^3\\), so it corresponds to \\(f(3)\\), not \\(f(4)\\). Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0384-v1",
+          "type": "MAPPING",
+          "data": {
+            "left": {
+              "label": "x",
+              "elements": [
+                0,
+                1,
+                2
+              ]
+            },
+            "right": {
+              "label": "f(x)",
+              "elements": [
+                1,
+                3,
+                9
+              ]
+            },
+            "arrows": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                9
+              ]
+            ]
+          },
+          "alt": "Mapping diagram for f of x equals 3 to the power x: 0 maps to 1, 1 maps to 3, and 2 maps to 9."
+        }
+      ],
+      "hint": "Notice what each step of 1 in x does to the output, then continue the pattern up to x = 4."
+    },
+    {
+      "id": "sat-q0385",
+      "title": "Solving an Exponential Equation",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "Solve\n\\[\n2^{x+1}=32.\n\\]\nWhich value of \\(x\\) satisfies the equation? Choose A or B and express both sides using the same base.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=5\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since\n\\[\n32=2^5,\n\\]\nthe equation becomes\n\\[\n2^{x+1}=2^5.\n\\]\nEqual positive bases imply equal exponents, so\n\\[\nx+1=5\n\\]\nand\n\\[\nx=4.\n\\]\nChoice B would give \\(2^{6}=64\\), not \\(32\\). Therefore, choice A is correct.",
+      "hint": "Write 32 as a power of 2, then compare exponents."
+    },
+    {
+      "id": "sat-q0386",
+      "title": "Finding a Missing Power in a Table",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "The table follows the rule \\(y=5^n\\). What value belongs in the row where \\(n=4\\)? Choose A or B and justify the repeated multiplication.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(500\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(625\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each new power multiplies the previous result by \\(5\\):\n\\[\n5^4=5\\times5\\times5\\times5=625.\n\\]\nEquivalently, \\(125\\times5=625\\). Choice A comes from multiplying \\(125\\) by \\(4\\) instead of multiplying by another factor of \\(5\\). Therefore, choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0386-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "n",
+              "5^n"
+            ],
+            "rows": [
+              [
+                1,
+                5
+              ],
+              [
+                2,
+                25
+              ],
+              [
+                3,
+                125
+              ],
+              [
+                4,
+                "?"
+              ]
+            ],
+            "headers": [
+              "n",
+              "5^n"
+            ]
+          },
+          "alt": "Table for powers of 5: 5 to the first power is 5, 5 squared is 25, 5 cubed is 125, and the value of 5 to the fourth power is missing."
+        }
+      ],
+      "hint": "Use the table's last known value and apply one more factor of the base."
+    },
+    {
+      "id": "sat-q0387",
+      "title": "Comparing Values on an Exponential Graph",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "The graph represents \\(f(x)=2^x\\). Compare \\(f(3)\\) with \\(f(-1)\\). Which statement is correct? Choose A or B and verify the values algebraically.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(3)>f(-1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f(3)<f(-1)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Evaluate the two values:\n\\[\nf(3)=2^3=8\n\\]\nand\n\\[\nf(-1)=2^{-1}=\\frac12.\n\\]\nSince \\(8>\\frac12\\), we have \\(f(3)>f(-1)\\). Choice B reverses the comparison and contradicts both the algebra and the graph. Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0387-v1",
+          "type": "FUNCTION_GRAPH",
+          "data": {
+            "axes": {
+              "xMin": -3,
+              "xMax": 4,
+              "yMin": 0,
+              "yMax": 18
+            },
+            "curves": [
+              {
+                "expression": "2^x",
+                "label": "y=2^x"
+              }
+            ],
+            "points": [
+              {
+                "x": -1,
+                "y": 0.5,
+                "label": "f(-1)"
+              },
+              {
+                "x": 3,
+                "y": 8,
+                "label": "f(3)"
+              }
+            ]
+          },
+          "alt": "Increasing exponential graph y equals 2 to the power x, with the points negative 1 comma one half and 3 comma 8 marked."
+        }
+      ],
+      "hint": "Compute each value separately, remembering what a negative exponent means."
+    },
+    {
+      "id": "sat-q0388",
+      "title": "Simplifying Positive and Negative Exponents",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "For \\(a\\ne0\\), simplify\n\\[\n\\frac{a^7a^{-3}}{a^2}.\n\\]\nWhich expression is equivalent to it? Choose A or B and justify each exponent operation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a^8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a^2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First combine the powers in the numerator:\n\\[\na^7a^{-3}=a^{7+(-3)}=a^4.\n\\]\nThen divide powers with the same nonzero base:\n\\[\n\\frac{a^4}{a^2}=a^{4-2}=a^2.\n\\]\nChoice A comes from \\(7+3-2=8\\), which treats \\(a^{-3}\\) as if it were \\(a^{3}\\). Therefore, choice B is correct.",
+      "hint": "Combine the numerator first, paying attention to the negative exponent, then apply the division rule."
+    },
+    {
+      "id": "sat-q0389",
+      "title": "Repeated Percentage Growth",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "An investment of \\(\\$800\\) grows by \\(10\\%\\) at the end of each year, with each year's growth based on the new balance. Which expression gives the balance after \\(3\\) years? Choose A or B and explain the repeated multiplication.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(800(1.10)^3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(800(1+0.30)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A \\(10\\%\\) increase multiplies the current balance by \\(1.10\\). Because this happens three times to the successively updated balances, the result is\n\\[\n800(1.10)(1.10)(1.10)=800(1.10)^3.\n\\]\nChoice B adds \\(30\\%\\) of the original balance only once and therefore represents simple growth rather than repeated percentage multiplication. Therefore, choice A is correct.",
+      "hint": "Write the balance after one year as a product, then repeat that step for the next two years."
+    },
+    {
+      "id": "sat-q0390",
+      "title": "Solving with Different Exponential Bases",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "Solve\n\\[\n9^{x-1}=27.\n\\]\nChoose A or B and rewrite both sides as powers of \\(3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=\\frac52\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(9=3^2\\) and \\(27=3^3\\),\n\\[\n9^{x-1}=(3^2)^{x-1}=3^{2x-2}.\n\\]\nThus\n\\[\n3^{2x-2}=3^3,\n\\]\nso\n\\[\n2x-2=3.\n\\]\nTherefore,\n\\[\n2x=5,\\qquad x=\\frac52.\n\\]\nChoice A would give \\(9^2=81\\), not \\(27\\), so choice B is correct.",
+      "hint": "Rewrite 9 and 27 as powers of 3, then set the exponents equal."
+    },
+    {
+      "id": "sat-q0391",
+      "title": "Border Tiles of an Exponential Square",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "A square floor has side length \\(2^3=8\\) tiles. The border is exactly one tile wide. How many tiles lie on the border? Choose A or B and explain using the full square and the inner square.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\) border tiles"
+        },
+        {
+          "label": "B",
+          "text": "\\(28\\) border tiles"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The full floor has\n\\[\n8^2=64\n\\]\ntiles. Removing a border one tile wide leaves an inner square with side\n\\[\n8-2=6,\n\\]\nso the interior contains\n\\[\n6^2=36\n\\]\ntiles. Therefore the border contains\n\\[\n64-36=28\n\\]\ntiles. Choice A counts only \\(4(8-2)=24\\), which misses the four corner tiles. Therefore, choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0391-v1",
+          "type": "GEOMETRY_2D",
+          "data": {
+            "units": "tiles",
+            "points": [
+              {
+                "id": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "x": 8,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "x": 8,
+                "y": 8
+              },
+              {
+                "id": "D",
+                "x": 0,
+                "y": 8
+              },
+              {
+                "id": "E",
+                "x": 1,
+                "y": 1
+              },
+              {
+                "id": "F",
+                "x": 7,
+                "y": 1
+              },
+              {
+                "id": "G",
+                "x": 7,
+                "y": 7
+              },
+              {
+                "id": "H",
+                "x": 1,
+                "y": 7
+              }
+            ],
+            "segments": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "D"
+              ],
+              [
+                "D",
+                "A"
+              ],
+              [
+                "E",
+                "F"
+              ],
+              [
+                "F",
+                "G"
+              ],
+              [
+                "G",
+                "H"
+              ],
+              [
+                "H",
+                "E"
+              ]
+            ]
+          },
+          "alt": "An 8 by 8 square tile floor with a one-tile-wide border surrounding an inner 6 by 6 square."
+        }
+      ],
+      "hint": "Count all tiles in the floor, then subtract the tiles of the inner square left after removing the border."
+    },
+    {
+      "id": "sat-q0392",
+      "title": "Reversing Four Doublings",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "A collection is multiplied by \\(2\\) four times and ends with \\(240\\) objects. How many objects were in the collection before the repeated multiplication began? Choose A or B and reason backward using a power of \\(2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\) objects"
+        },
+        {
+          "label": "B",
+          "text": "\\(30\\) objects"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiplying by \\(2\\) four times multiplies the starting amount by\n\\[\n2^4=16.\n\\]\nIf the starting amount is \\(s\\), then\n\\[\n16s=240.\n\\]\nThus\n\\[\ns=240\\div16=15.\n\\]\nChoice B would become \\(30\\times16=480\\), not \\(240\\). Therefore, choice A is correct.",
+      "hint": "Find the total factor produced by four doublings, then undo it."
+    },
+    {
+      "id": "sat-q0393",
+      "title": "Matching Exponents in a Product",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "Find the integer \\(n\\) satisfying\n\\[\n4^n\\cdot2^{n+1}=128.\n\\]\nChoose A or B and rewrite every factor with base \\(2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(4^n=(2^2)^n=2^{2n}\\),\n\\[\n4^n\\cdot2^{n+1}\n=\n2^{2n}2^{n+1}\n=\n2^{3n+1}.\n\\]\nAlso,\n\\[\n128=2^7.\n\\]\nTherefore,\n\\[\n3n+1=7,\n\\]\nso\n\\[\n3n=6,\\qquad n=2.\n\\]\nChoice B would produce exponent \\(3(3)+1=10\\), giving \\(2^{10}\\), not \\(128\\). Therefore, choice A is correct.",
+      "hint": "Write 4 as a power of 2, combine the exponents on the left, and write 128 as a power of 2."
+    },
+    {
+      "id": "sat-q0394",
+      "title": "Factoring an Exponential Equation",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "Solve\n\\[\n2^{x+1}+2^x=48.\n\\]\nWhich value of \\(x\\) satisfies the equation? Choose A or B and factor out the common exponential term.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since\n\\[\n2^{x+1}=2\\cdot2^x,\n\\]\nthe equation becomes\n\\[\n2\\cdot2^x+2^x=48.\n\\]\nFactor:\n\\[\n3\\cdot2^x=48.\n\\]\nThus\n\\[\n2^x=16=2^4,\n\\]\nso\n\\[\nx=4.\n\\]\nChoice A gives \\(2^{4}+2^3=16+8=24\\), not \\(48\\). Therefore, choice B is correct.",
+      "hint": "Rewrite 2^(x+1) using 2^x, then factor 2^x out of the left side."
+    },
+    {
+      "id": "sat-q0395",
+      "title": "Two Solutions from a Power Substitution",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "Solve\n\\[\n2^{2x}-5\\cdot2^x+4=0.\n\\]\nWhich set contains all real solutions? Choose A or B and use a substitution based on \\(2^x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2\\) only"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=0\\) or \\(x=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let\n\\[\ny=2^x.\n\\]\nBecause \\(2^x>0\\), we have \\(y>0\\), and\n\\[\n2^{2x}=(2^x)^2=y^2.\n\\]\nThe equation becomes\n\\[\ny^2-5y+4=0,\n\\]\nwhich factors as\n\\[\n(y-1)(y-4)=0.\n\\]\nThus \\(y=1\\) or \\(y=4\\). Therefore,\n\\[\n2^x=1\\Rightarrow x=0\n\\]\nand\n\\[\n2^x=4\\Rightarrow x=2.\n\\]\nChoice A misses the valid solution \\(x=0\\), so choice B is correct.",
+      "hint": "Let y = 2^x so that 2^(2x) becomes y^2, then solve the quadratic in y."
+    },
+    {
+      "id": "sat-q0396",
+      "title": "Symmetric Positive and Negative Exponents",
+      "category": "MATH",
+      "concept": "Exponents",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply exponents and justify the selected answer.",
+      "question": "Solve\n\\[\n3^x+3^{-x}=\\frac{10}{3}.\n\\]\nWhich set contains all real solutions? Choose A or B and justify the substitution carefully.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-1\\) or \\(x=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1\\) only"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let\n\\[\ny=3^x,\n\\]\nso \\(y>0\\) and \\(3^{-x}=1/y\\). Then\n\\[\ny+\\frac1y=\\frac{10}{3}.\n\\]\nMultiplying by \\(3y\\) gives\n\\[\n3y^2-10y+3=0.\n\\]\nFactor:\n\\[\n(3y-1)(y-3)=0.\n\\]\nThus\n\\[\ny=\\frac13\n\\]\nor\n\\[\ny=3.\n\\]\nTherefore,\n\\[\n3^x=\\frac13=3^{-1}\\Rightarrow x=-1,\n\\]\nor\n\\[\n3^x=3\\Rightarrow x=1.\n\\]\nBoth values satisfy the original equation. Choice B misses the solution produced by the negative exponent, so choice A is correct.",
+      "hint": "Let y = 3^x, write 3^(-x) in terms of y, and clear the fraction."
+    }
+  ]
+}

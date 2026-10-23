@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-567",
+  "category": "Comprehensive Mathematics",
+  "title": "567. Discrete Mathematics, Counting & Graph Theory: Counting Grid Paths",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-567-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Paths in a small grid",
+      "learningObjective": "Count shortest grid paths by listing step sequences.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A path goes from \\((0,0)\\) to \\((2,2)\\) using only unit steps to the right and unit steps upward. How many such paths are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every path consists of \\(2\\) steps right and \\(2\\) steps up in some order. The number of orders is \\(\\binom{4}{2}=6\\): RRUU, RURU, RUUR, URRU, URUR, UURR. The number \\(4\\) is only the number of steps in each path.",
+      "hint": "A path is an arrangement of two letters R and two letters U."
+    },
+    {
+      "id": "dynanca-567-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Length of a path",
+      "learningObjective": "Find the number of steps in a shortest grid path.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A path goes from \\((0,0)\\) to \\((4,3)\\) using only unit steps to the right and unit steps upward. How many steps does every such path have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The \\(x\\)-coordinate must increase by \\(4\\) and the \\(y\\)-coordinate by \\(3\\), and each step increases one coordinate by \\(1\\). So every path has \\(4+3=7\\) steps. The product \\(4\\cdot 3=12\\) is the number of unit squares in the rectangle.",
+      "hint": "Count how many times each coordinate has to increase by \\(1\\)."
+    },
+    {
+      "id": "dynanca-567-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Paths to a nearby point",
+      "learningObjective": "Count shortest grid paths with a binomial coefficient.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many paths lead from \\((0,0)\\) to \\((3,2)\\) using only unit steps to the right and unit steps upward?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each path has \\(5\\) steps, of which \\(3\\) go right. Choosing the positions of the right steps gives \\(\\binom{5}{3}=10\\) paths. The product \\(3\\cdot 2=6\\) is the area of the rectangle, not the number of paths.",
+      "hint": "Choose which of the five steps go to the right."
+    },
+    {
+      "id": "dynanca-567-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Paths to a farther point",
+      "learningObjective": "Count shortest grid paths in a larger rectangle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many paths lead from \\((0,0)\\) to \\((4,3)\\) using only unit steps to the right and unit steps upward?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(35\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(210\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each path has \\(7\\) steps, of which \\(4\\) go right, so the count is \\(\\binom{7}{4}=35\\). The number \\(210=7\\cdot 6\\cdot 5\\) counts ordered choices of three positions for the upward steps; the upward steps are identical, so the order of choosing does not matter.",
+      "hint": "Choose the positions of the upward steps among the seven steps."
+    },
+    {
+      "id": "dynanca-567-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Paths through a given point",
+      "learningObjective": "Count grid paths that pass through an intermediate point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many paths from \\((0,0)\\) to \\((4,3)\\), using only unit steps to the right and unit steps upward, pass through the point \\((2,1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(18\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\((0,0)\\) to \\((2,1)\\) there are \\(\\binom{3}{1}=3\\) paths. From \\((2,1)\\) to \\((4,3)\\) the path needs \\(2\\) steps right and \\(2\\) up, giving \\(\\binom{4}{2}=6\\) paths. Each first part can be followed by each second part, so there are \\(3\\cdot 6=18\\) paths. Adding, \\(3+6=9\\), is not correct, because both parts are travelled.",
+      "hint": "Count the paths to the point and the paths from the point, then combine them."
+    },
+    {
+      "id": "dynanca-567-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Paths avoiding a point",
+      "learningObjective": "Count grid paths that avoid a forbidden point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many paths from \\((0,0)\\) to \\((3,3)\\), using only unit steps to the right and unit steps upward, do not pass through \\((1,1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(\\binom{6}{3}=20\\) paths in all. Those through \\((1,1)\\) number \\(\\binom{2}{1}\\cdot\\binom{4}{2}=2\\cdot 6=12\\). So \\(20-12=8\\) paths avoid \\((1,1)\\). The number \\(12\\) counts the paths that pass through the point.",
+      "hint": "Count the paths through the forbidden point and subtract them from all paths."
+    },
+    {
+      "id": "dynanca-567-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A prescribed first step",
+      "learningObjective": "Count grid paths with a prescribed first step.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "How many paths from \\((0,0)\\) to \\((5,2)\\), using only unit steps to the right and unit steps upward, begin with a step to the right?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(21\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "After the first step the path is at \\((1,0)\\) and still needs \\(4\\) steps right and \\(2\\) up, which can be ordered in \\(\\binom{6}{2}=15\\) ways. The number \\(21=\\binom{7}{2}\\) counts all paths, including those that begin with an upward step.",
+      "hint": "After the first step, count the paths from the new starting point."
+    },
+    {
+      "id": "dynanca-567-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Why a binomial coefficient appears",
+      "learningObjective": "Explain the formula for the number of shortest grid paths.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Why is the number of paths from \\((0,0)\\) to \\((m,n)\\), using only unit steps to the right and unit steps upward, equal to \\(\\binom{m+n}{m}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A path is a sequence of \\(m+n\\) steps, and it is determined by choosing which \\(m\\) of them go to the right."
+        },
+        {
+          "label": "B",
+          "text": "A path passes through \\(m+n\\) points, and each of them can be chosen in \\(m\\) ways."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every path makes exactly \\(m\\) steps right and \\(n\\) steps up, in some order. Once the positions of the \\(m\\) right steps among the \\(m+n\\) steps are chosen, the path is fixed. The number of such choices is \\(\\binom{m+n}{m}\\).",
+      "hint": "Describe a path by a string of letters R and U."
+    },
+    {
+      "id": "dynanca-567-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Staying below the diagonal",
+      "learningObjective": "Count grid paths that never rise above the diagonal.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many paths from \\((0,0)\\) to \\((3,3)\\), using only unit steps to the right and unit steps upward, never go above the line \\(y=x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Such a path must never have made more upward steps than rightward steps. Listing them as strings: RRRUUU, RRURUU, RRUURU, RURRUU, RURURU. There are \\(5\\). The number \\(10\\) is half of all \\(20\\) paths, but the restricted paths are not simply half of the total.",
+      "hint": "At every moment the number of upward steps taken may not exceed the number of rightward steps taken."
+    },
+    {
+      "id": "dynanca-567-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Avoiding two points",
+      "learningObjective": "Count grid paths that avoid two forbidden points.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many paths from \\((0,0)\\) to \\((4,2)\\), using only unit steps to the right and unit steps upward, avoid both \\((1,1)\\) and \\((3,1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(\\binom{6}{2}=15\\) paths in all. Through \\((1,1)\\): \\(2\\cdot 4=8\\). Through \\((3,1)\\): \\(4\\cdot 2=8\\). Through both: \\(2\\cdot 1\\cdot 2=4\\). By inclusion and exclusion, \\(8+8-4=12\\) paths pass through at least one of the points, so \\(15-12=3\\) avoid both. The number \\(7=15-8\\) removes only the paths through one of the points.",
+      "hint": "Count the paths through at least one forbidden point with inclusion and exclusion."
+    }
+  ]
+}

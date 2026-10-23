@@ -1,0 +1,27 @@
+const path = require('path');
+const fs = require('fs');
+const root = path.resolve('..','..','project','REAL MCQ');
+const {chromium} = require(path.join(root,'node_modules/@playwright/test'));
+const {createServer} = require(path.join(root,'tools/dev-server/serve.js'));
+(async()=>{
+const server=createServer({root}); await new Promise(r=>server.listen(0,'127.0.0.1',r));
+const browser=await chromium.launch(); const page=await browser.newPage();
+const base='http://127.0.0.1:'+server.address().port;
+const bank={id:'ml',title:'probe',questions:[{id:'probe-q1',question:'Compute \\(1+1\\).', options:[{label:'A',text:'2'},{label:'B',text:'A'}],answer:'A'}]};
+await page.route('**/questions/computer%20science/ml.json',r=>r.fulfill({json:bank}));
+await page.goto(base+'/practice/?quiz=ml'); await page.waitForSelector('.practice-question');
+await page.locator('[data-label="B"]').click();
+const wrongScoring=await page.locator('.practice-verdict').innerText();
+await page.evaluate(async()=>{await MathJax.startup.promise; for(let i=0;i<30;i++){PracticeEngine.render('probe-q1'); await MathJax.typesetPromise([document.querySelector('#practiceContainer')]);}});
+const memory=await page.evaluate(()=>({mathItems:Array.from(MathJax.startup.document.math).length,activeMath:document.querySelectorAll('mjx-container').length}));
+await page.evaluate(()=>{localStorage.setItem('dynanca-mcq-ml-v2',JSON.stringify({'probe-q1':{status:'answered_correct',selectedLabel:{bad:'object'}}}));});
+await page.reload(); await page.waitForSelector('#practiceContainer .practice-complete, #practiceContainer .practice-question');
+const storage=await page.evaluate(()=>({stats:PracticeState.getStats(),screen:document.querySelector('#practiceContainer').innerText}));
+const safePath=require(path.join(root,'assets/js/manifest.js')).isSafeRelativePath('questions/%2e%2e/master-manifest.json');
+await page.route('**/questions/computer%20science/ml.json',r=>r.fulfill({json:{questions:[null]}}));
+await page.reload(); await page.waitForFunction(()=>document.querySelector('#practiceContainer').innerText.length>0);
+const malformed=await page.locator('#practiceContainer').innerText();
+const result={wrongOptionVerdict:wrongScoring,mathRegistry:memory,corruptStorage:storage,encodedTraversalAccepted:safePath,malformedBankScreen:malformed};
+fs.writeFileSync(path.resolve('..','..','evidence','runtime-baseline.json'),JSON.stringify(result,null,2)); console.log(JSON.stringify(result,null,2));
+await browser.close(); await new Promise(r=>server.close(r));
+})().catch(e=>{console.error(e);process.exit(1)});

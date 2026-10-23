@@ -1,0 +1,16 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> dynanca-mcq@1.1.0 validate:shipped
+> node tools/ecosystem-validator/validate-ecosystem.js --allow-pending
+
+Source of truth: master-manifest.json (final contract; read-only, not compared with any CSV).
+Subjects: 5, topics/subtopics: 7, practice files listed: 2527, present: 766, pending: 1761.
+Questions in the bank files that are present: 20405.
+
+1 warning(s):
+  WARN: 29 question(s) have identical content (same question+options+answer) in a DIFFERENT bank than their first occurrence. Some overlap is expected from pooled/generated content; large clusters (see the duplicate-bank warning above, if any) usually indicate copy/paste.
+
+1761 listed bank file(s) are not present in this build (pending content):
+  PENDING: dynanca-151 … dynanca-1911 (1761)
+
+PASS WITH PENDING CONTENT — everything that is present is valid; 1761 listed bank file(s) are not in this build. Full content validation is NOT complete: run without --allow-pending after the files are added.

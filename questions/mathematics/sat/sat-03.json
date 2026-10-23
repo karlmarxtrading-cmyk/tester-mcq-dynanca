@@ -1,0 +1,673 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "mathematics-sat-03",
+  "title": "SAT 03 · Order of operations",
+  "category": "SAT Mathematics",
+  "description": "A/B reasoning practice. Difficulty is editorial, not standardized SAT calibration.",
+  "questionCount": 18,
+  "questions": [
+    {
+      "id": "sat-q0037",
+      "title": "Cookies Packed After a Classroom Gift",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "A bakery makes \\(5\\) trays of cookies, with \\(12\\) cookies on each tray. It gives \\(18\\) cookies to teachers and packs all remaining cookies equally into \\(6\\) boxes. How many cookies go into each box? Choose A or B and explain the order in which the operations must be performed.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(45\\) cookies per box"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\) cookies per box"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The bakery first makes \\(5\\times12=60\\) cookies. After the gift, \\(60-18=42\\) cookies remain. Packing them equally gives \\((5\\times12-18)\\div6=42\\div6=7\\) cookies per box. Choice A can arise from incorrectly grouping the calculation as \\(5(12-18\\div6)=5(12-3)=45\\). This divides the gift by the number of boxes before removing it from the total production. Therefore, choice B is correct.",
+      "hint": "Write one expression that follows the events in order: cookies made, minus the gift, then shared among the boxes; decide where parentheses are needed."
+    },
+    {
+      "id": "sat-q0038",
+      "title": "Crane-Making Team Points",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "Three craft teams make the numbers of paper cranes shown in the chart. The club earns \\(3\\) points for every crane made, then loses \\(12\\) points for using extra materials. How many points does the club have at the end? Choose A or B and show why the multiplication must apply to every team's cranes.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(78\\) points"
+        },
+        {
+          "label": "B",
+          "text": "\\(46\\) points"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The teams make \\(14+9+7=30\\) cranes altogether. The club earns \\(3(14+9+7)=3\\times30=90\\) points before its penalty, so the final score is \\(90-12=78\\). Choice B results from evaluating \\(3\\times14+9+7-12=46\\), multiplying only the Red team's cranes by \\(3\\) while forgetting that the other teams' cranes also earn \\(3\\) points each. Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0038-v1",
+          "type": "DATA_CHART",
+          "data": {
+            "kind": "bar",
+            "xLabel": "Team",
+            "yLabel": "Paper cranes made",
+            "bars": [
+              {
+                "label": "Red",
+                "value": 14
+              },
+              {
+                "label": "Blue",
+                "value": 9
+              },
+              {
+                "label": "Green",
+                "value": 7
+              }
+            ],
+            "chart": "bar",
+            "labels": [
+              "Red",
+              "Blue",
+              "Green"
+            ],
+            "values": [
+              14,
+              9,
+              7
+            ],
+            "axes": {
+              "xLabel": "Team",
+              "yLabel": "Paper cranes made"
+            }
+          },
+          "alt": "Bar chart showing 14 paper cranes made by the Red team, 9 by the Blue team, and 7 by the Green team."
+        }
+      ],
+      "hint": "Since every crane earns points, add the cranes from all three bars before multiplying, then apply the one-time penalty."
+    },
+    {
+      "id": "sat-q0039",
+      "title": "Points for Two Calculation Challenges",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "A teacher gives a class two calculation challenges: \\(6+4\\times3\\) and \\((6+4)\\times3\\). Students earn \\(2\\) points for solving the first challenge correctly and \\(3\\) points for solving the second correctly. The Venn diagram shows how many students answered each challenge correctly. How many points does the teacher award in total? Choose A or B and justify your calculation, including the correct values of both expressions.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(39\\) points"
+        },
+        {
+          "label": "B",
+          "text": "\\(69\\) points"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In the first expression, multiplication comes before addition, giving \\(6+4\\times3=6+12=18\\). In the second expression, parentheses come first, giving \\((6+4)\\times3=10\\times3=30\\). The first challenge has \\(9+6=15\\) correct responses, worth \\(15\\times2=30\\) points. The second has \\(7+6=13\\) correct responses, worth \\(13\\times3=39\\) points. Thus the teacher awards \\(30+39=69\\) points. Choice A counts only the students who solved exactly one challenge: \\(9\\times2+7\\times3=39\\). It incorrectly omits the points earned by the \\(6\\) students who solved both. Therefore, choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0039-v1",
+          "type": "VENN",
+          "data": {
+            "universe": {
+              "label": "Students",
+              "total": 26
+            },
+            "sets": [
+              {
+                "id": "F",
+                "label": "First correct",
+                "elements": []
+              },
+              {
+                "id": "S",
+                "label": "Second correct",
+                "elements": []
+              }
+            ],
+            "regions": {
+              "F_only": 9,
+              "S_only": 7,
+              "intersection": 6,
+              "outside": 4
+            }
+          },
+          "alt": "Among 26 students, 9 solved only the first challenge correctly, 7 solved only the second correctly, 6 solved both correctly, and 4 solved neither correctly."
+        }
+      ],
+      "hint": "From the Venn diagram, count everyone who solved each challenge; students in the overlap solved both and earn points for both."
+    },
+    {
+      "id": "sat-q0040",
+      "title": "Garden Fence and a Short Divider",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "A rectangular garden is \\(14\\) meters long and \\(9\\) meters wide. It needs a fence around its outside boundary, except for one \\(2\\)-meter gate opening. The gardener also adds a separate straight interior divider that is exactly \\(5\\) meters long. How many meters of fencing are required altogether? Choose A or B and show how parentheses control the perimeter calculation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(49\\) meters"
+        },
+        {
+          "label": "B",
+          "text": "\\(52\\) meters"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The entire outer perimeter would be \\(2(14+9)=2\\times23=46\\) meters. Subtract the \\(2\\)-meter gate opening to obtain \\(46-2=44\\) meters of outer fencing. Add the \\(5\\)-meter interior divider to get \\(2(14+9)-2+5=49\\) meters. Choice B results from moving the subtraction and addition inside the perimeter parentheses, incorrectly computing \\(2(14+9-2+5)=52\\). The gate and divider are separate lengths, not changes to both dimensions of the rectangle. Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0040-v1",
+          "type": "GEOMETRY_2D",
+          "data": {
+            "units": "m",
+            "points": [
+              {
+                "id": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "x": 14,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "x": 14,
+                "y": 9
+              },
+              {
+                "id": "D",
+                "x": 0,
+                "y": 9
+              },
+              {
+                "id": "P",
+                "x": 4,
+                "y": 0
+              },
+              {
+                "id": "Q",
+                "x": 6,
+                "y": 0
+              },
+              {
+                "id": "R",
+                "x": 9,
+                "y": 0
+              },
+              {
+                "id": "S",
+                "x": 9,
+                "y": 5
+              }
+            ],
+            "segments": [
+              [
+                "A",
+                "P"
+              ],
+              [
+                "Q",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "D"
+              ],
+              [
+                "D",
+                "A"
+              ],
+              [
+                "R",
+                "S"
+              ]
+            ]
+          },
+          "alt": "Rectangle ABCD has horizontal sides 14 meters and vertical sides 9 meters. A two-meter gate opening along the bottom boundary runs from P(4,0) to Q(6,0), where there is no fence. A five-meter interior divider runs from R(9,0) to S(9,5)."
+        }
+      ],
+      "hint": "Find the full perimeter first, then adjust it separately for the gate and for the divider; neither changes the rectangle's length or width."
+    },
+    {
+      "id": "sat-q0041",
+      "title": "A Negative Square and a Positive Product",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "Evaluate \\(-4^2+3(7-5)^2\\) using conventional order of operations. The minus sign in \\(-4^2\\) is not enclosed in parentheses. Choose A or B and explain the difference between \\(-4^2\\) and \\((-4)^2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(28\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First evaluate the parentheses: \\(7-5=2\\). Then calculate the powers: \\(4^2=16\\) and \\(2^2=4\\). Because the first minus sign is outside the power, \\(-4^2=-(4^2)=-16\\), not \\(16\\). The expression is therefore \\(-16+3\\times4=-16+12=-4\\). Choice B results from incorrectly reading \\(-4^2\\) as \\((-4)^2\\), giving \\(16+12=28\\). Therefore, choice A is correct.",
+      "hint": "Decide what the exponent in -4^2 applies to, the 4 alone or -4; evaluate parentheses and powers before multiplying and adding."
+    },
+    {
+      "id": "sat-q0042",
+      "title": "Mapping Outputs from Nested Operations",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "A numerical rule is given by \\(f(x)=2(x+3)^2-5\\). The mapping diagram shows its results for three inputs. What is \\(f(3)\\)? Choose A or B and demonstrate the correct sequence of adding, squaring, multiplying, and subtracting.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(139\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(67\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(x=3\\) into the rule: \\(f(3)=2(3+3)^2-5\\). Parentheses give \\(3+3=6\\), so the power is \\(6^2=36\\). Multiplying and subtracting then give \\(2\\times36-5=72-5=67\\). The mapping values follow the same sequence. Choice A incorrectly squares the entire product \\(2(3+3)\\), obtaining \\([2(6)]^2-5=144-5=139\\). The written rule squares only \\(x+3\\), not the coefficient \\(2\\). Therefore, choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0042-v1",
+          "type": "MAPPING",
+          "data": {
+            "left": {
+              "label": "x",
+              "elements": [
+                0,
+                1,
+                2
+              ]
+            },
+            "right": {
+              "label": "f(x)",
+              "elements": [
+                13,
+                27,
+                45
+              ]
+            },
+            "arrows": [
+              [
+                0,
+                13
+              ],
+              [
+                1,
+                27
+              ],
+              [
+                2,
+                45
+              ]
+            ]
+          },
+          "alt": "Mapping diagram for f(x)=2(x+3)^2-5 with arrows 0 to 13, 1 to 27, and 2 to 45."
+        }
+      ],
+      "hint": "Substitute 3 and work from the inside out: parentheses, then the square, then the multiplication by 2, then the subtraction. Test your method on one mapping pair first."
+    },
+    {
+      "id": "sat-q0043",
+      "title": "Shopping Cart with a Single Coupon",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "A shopper buys the products and quantities shown in the table. A coupon subtracts \\(6\\) dollars from the total purchase, not from the price of each individual item. What is the final cost before tax? Choose A or B and write one numerical expression that respects the multiplication and addition rules.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60\\) dollars"
+        },
+        {
+          "label": "B",
+          "text": "\\(32\\) dollars"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each product's subtotal must be calculated before addition: the notebooks cost \\(4\\times7=28\\) dollars and the pens cost \\(5\\times2=10\\) dollars. The total before the coupon is \\(28+10=38\\) dollars. Subtract the single \\(6\\)-dollar coupon: \\(4\\times7+5\\times2-6=32\\) dollars. Choice A comes from incorrectly grouping the arithmetic as \\((4\\times7+5)\\times2-6=(28+5)\\times2-6=60\\). That grouping applies the pen price to the notebook subtotal as well. Therefore, choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0043-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Product",
+              "Unit price (USD)",
+              "Quantity"
+            ],
+            "rows": [
+              [
+                "Notebook",
+                7,
+                4
+              ],
+              [
+                "Pen",
+                2,
+                5
+              ]
+            ],
+            "headers": [
+              "Product",
+              "Unit price (USD)",
+              "Quantity"
+            ]
+          },
+          "alt": "Shopping table: notebooks cost 7 dollars each and the customer buys 4; pens cost 2 dollars each and the customer buys 5."
+        }
+      ],
+      "hint": "Find each product's subtotal from the table before adding, and apply the coupon once to the total."
+    },
+    {
+      "id": "sat-q0044",
+      "title": "Division Before Fraction Subtraction",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "Evaluate the numerical expression \\(\\frac34-\\frac12\\div4\\). The fraction \\(\\frac12\\) is divided by \\(4\\) before being subtracted from \\(\\frac34\\). Choose A or B and justify the result using equivalent fractions.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac58\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac1{16}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Division is performed before subtraction. Thus \\(\\frac12\\div4=\\frac12\\times\\frac14=\\frac18\\). Rewrite \\(\\frac34\\) as \\(\\frac68\\), then subtract: \\(\\frac68-\\frac18=\\frac58\\). Choice B instead adds parentheses that do not exist, evaluating \\((\\frac34-\\frac12)\\div4=\\frac14\\div4=\\frac1{16}\\). The original expression does not group the subtraction first. Therefore, choice A is correct.",
+      "hint": "Carry out the division before the subtraction, then rewrite both fractions over a common denominator."
+    },
+    {
+      "id": "sat-q0045",
+      "title": "Locating a Value on a Quadratic Graph",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "The function graphed below is defined by \\(f(x)=2(x-1)^2-3x\\). Which proposed value of \\(f(3)\\) agrees with both the graph and conventional order of operations? Choose A or B and derive the value by substitution.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(x=3\\): \\(f(3)=2(3-1)^2-3(3)\\). Evaluate the inner parentheses first, giving \\(2^2=4\\). Then multiply: \\(2\\times4-9=8-9=-1\\). The curve is also below the horizontal axis at \\(x=3\\), consistent with a negative output. Choice B comes from mistakenly squaring the product \\(2(3-1)\\), giving \\([2(2)]^2-9=16-9=7\\). The coefficient \\(2\\) is outside the exponent in the given formula. Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0045-v1",
+          "type": "FUNCTION_GRAPH",
+          "data": {
+            "axes": {
+              "xMin": -2,
+              "xMax": 5,
+              "yMin": -6,
+              "yMax": 25
+            },
+            "curves": [
+              {
+                "expression": "2*(x-1)^2-3*x",
+                "label": "f(x)=2(x-1)^2-3x"
+              }
+            ],
+            "points": [
+              {
+                "x": -1,
+                "y": 11,
+                "label": "Reference point"
+              }
+            ]
+          },
+          "alt": "Graph of the upward-opening parabola f(x)=2(x-1)^2-3x. It passes through (-1,11), has its lowest point near (1.75,-4.125), and at x=3 has a y-value of -1."
+        }
+      ],
+      "hint": "Substitute 3, evaluate the parentheses and the square before multiplying by 2, and compare the sign of your result with the graph at x=3."
+    },
+    {
+      "id": "sat-q0046",
+      "title": "A Square with a Negative Fractional Factor",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "Evaluate \\((3^2-5)^2-2^3\\left(1-\\frac32\\right)\\). Choose A or B and explain how both the parentheses and the negative value of the second factor affect the final subtraction.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Inside the first parentheses, \\(3^2-5=9-5=4\\), so \\((3^2-5)^2=4^2=16\\). Inside the second parentheses, \\(1-\\frac32=-\\frac12\\). Since \\(2^3=8\\), the product is \\(8\\left(-\\frac12\\right)=-4\\). The complete expression is \\(16-(-4)=20\\). Choice A results from treating \\(1-\\frac32\\) as a positive \\(\\frac12\\), which would incorrectly give \\(16-4=12\\). Therefore, choice B is correct.",
+      "hint": "Evaluate each bracket separately, noting the sign of the second one, then decide what subtracting that product does."
+    },
+    {
+      "id": "sat-q0047",
+      "title": "Absolute Value After a Negative Power Sign",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "Calculate \\(\\left|-3^2+5\\right|\\div\\left(\\frac12\\right)^{-1}+(-2)^4\\). In the term \\(-3^2\\), the minus sign is outside the square. Choose A or B and show the sequence of powers, absolute value, division, and addition.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(18\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(23\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Exponentiation gives \\(-3^2=-(3^2)=-9\\), so \\(\\left|-3^2+5\\right|=|-9+5|=|-4|=4\\). The negative exponent gives \\(\\left(\\frac12\\right)^{-1}=2\\), and the parenthesized negative base gives \\((-2)^4=16\\). Perform division before addition: \\(4\\div2+16=2+16=18\\). Choice B follows from incorrectly treating \\(-3^2\\) as \\((-3)^2=9\\). That mistake gives \\(|9+5|\\div2+16=14\\div2+16=23\\). Therefore, choice A is correct.",
+      "hint": "Evaluate powers first, deciding whether the minus sign in -3^2 belongs to the base; then the absolute value; then division before addition."
+    },
+    {
+      "id": "sat-q0048",
+      "title": "Dividing a Sum of Negative Powers",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "Find the exact value of \\(\\frac{2^{-3}+3^{-2}}{\\left(\\frac12\\right)^2}\\). Choose A or B and explain why dividing by the denominator is not the same as multiplying by it.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{17}{288}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{17}{18}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use the negative-exponent rule: \\(2^{-3}=\\frac18\\) and \\(3^{-2}=\\frac19\\). Their sum is \\(\\frac18+\\frac19=\\frac{9+8}{72}=\\frac{17}{72}\\). The denominator is \\(\\left(\\frac12\\right)^2=\\frac14\\). Dividing by \\(\\frac14\\) requires multiplication by its reciprocal, \\(4\\). Thus \\(\\frac{17}{72}\\div\\frac14=\\frac{17}{72}\\times4=\\frac{17}{18}\\). Choice A incorrectly multiplies by \\(\\frac14\\) and obtains \\(\\frac{17}{288}\\). Therefore, choice B is correct.",
+      "hint": "Rewrite each negative power as a fraction and add them; then remember that dividing by a fraction means multiplying by its reciprocal."
+    },
+    {
+      "id": "sat-q0049",
+      "title": "Reversing a Sequence of Score Changes",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "A game player starts with an unknown whole-number score. The game first triples the score, then subtracts \\(12\\), divides the result by \\(4\\), and finally adds \\(7\\). The final score is \\(22\\). What was the starting score? Choose A or B and work backward through the operations without using advanced algebra.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20\\) points"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\) points"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Start at the final score of \\(22\\) and undo each operation in reverse order. Undo adding \\(7\\): \\(22-7=15\\). Undo dividing by \\(4\\): \\(15\\times4=60\\). Undo subtracting \\(12\\): \\(60+12=72\\). Undo tripling: \\(72\\div3=24\\). Check forward: \\(((24\\times3-12)\\div4)+7=(72-12)\\div4+7=60\\div4+7=22\\). Choice A is incorrect because it would produce \\(((20\\times3-12)\\div4)+7=48\\div4+7=19\\), not \\(22\\). Therefore, choice B is correct.",
+      "hint": "Undo the operations in reverse order, using the inverse of each one, starting from the final score."
+    },
+    {
+      "id": "sat-q0050",
+      "title": "One Pair of Parentheses Makes Zero",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "Start with the operations and numbers in \\(36\\div3+3\\times2-4\\), keeping them in exactly that order. Two students insert one pair of parentheses in different places. Which student's resulting equation is true under the standard order of operations? Choose A or B and evaluate both parenthesized expressions.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\div(3+3\\times2)-4=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((36\\div3+3)\\times2-4=0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For choice A, multiplication occurs first inside the parentheses: \\(3+3\\times2=3+6=9\\). Thus \\(36\\div9-4=4-4=0\\), making the equation true. For choice B, the parentheses instead give \\(36\\div3+3=12+3=15\\). The entire expression then becomes \\(15\\times2-4=30-4=26\\), not \\(0\\). Both choices use the same numbers and operation symbols in the original order, but only the placement in choice A produces a true equation. Therefore, choice A is correct.",
+      "hint": "Evaluate each student's expression separately; inside the parentheses, multiplication still comes before addition."
+    },
+    {
+      "id": "sat-q0051",
+      "title": "Nested Brackets with Two Negative Signs",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "A student must evaluate \\(-2^4+3\\left[5-(6-2)^2\\right]+|-9|\\). Which result is correct? Choose A or B and carefully explain the role of brackets, the even power, and the minus sign outside \\(2^4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-40\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First evaluate the inner parentheses: \\(6-2=4\\), so \\((6-2)^2=16\\). The square-bracket value is \\(5-16=-11\\), and multiplying by \\(3\\) gives \\(-33\\). Separately, \\(-2^4=-(2^4)=-16\\), while \\(|-9|=9\\). The result is \\(-16-33+9=-40\\). Choice A comes from incorrectly replacing \\(-2^4\\) with \\((-2)^4=16\\), which would yield \\(16-33+9=-8\\). Because there are no parentheses around the base \\(-2\\) in the question, choice B is correct.",
+      "hint": "Work from the innermost parentheses outward, and decide whether the minus sign in -2^4 is part of the base."
+    },
+    {
+      "id": "sat-q0052",
+      "title": "Nested Fraction Bars as Grouping Symbols",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "Evaluate \\(\\frac{3}{2-\\frac{8}{2^3}}+\\frac{4^2}{2(3+1)}\\). The horizontal fraction bars group their complete numerators and denominators. Choose A or B and explain why subtracting \\(\\frac{8}{2^3}\\) must happen inside the first denominator before dividing \\(3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac52\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First evaluate powers: \\(2^3=8\\) and \\(4^2=16\\). The denominator of the first large fraction is \\(2-\\frac88=2-1=1\\), so that fraction equals \\(\\frac31=3\\). The denominator of the second large fraction is \\(2(3+1)=2\\times4=8\\), so the second fraction is \\(\\frac{16}{8}=2\\). The sum is \\(3+2=5\\). Choice B follows from ignoring the first fraction bar's grouping and incorrectly evaluating \\(3\\div2-\\frac88+2=\\frac32-1+2=\\frac52\\). The subtraction belongs entirely in the denominator, so choice A is correct.",
+      "hint": "Treat each fraction bar as grouping its whole numerator and whole denominator; simplify each denominator completely before dividing."
+    },
+    {
+      "id": "sat-q0053",
+      "title": "Counting Even Outputs with a Forbidden Input",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "For an integer \\(x\\) satisfying \\(-3\\le x\\le7\\), consider \\(H(x)=\\frac{(x-1)^2-4^2}{x-5}+2^3\\). The expression is defined only when its denominator is nonzero. How many allowed integer inputs make \\(H(x)\\) an even integer? Choose A or B and analyze both the grouping in the numerator and the excluded input.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\) integers"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\) integers"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The numerator is a difference of squares: \\((x-1)^2-4^2=((x-1)-4)((x-1)+4)=(x-5)(x+3)\\). For \\(x\\ne5\\), the fraction simplifies to \\(x+3\\). Because \\(2^3=8\\), the expression becomes \\(H(x)=x+11\\), but this simplified formula retains the original restriction \\(x\\ne5\\). Since \\(11\\) is odd, \\(x+11\\) is even exactly when \\(x\\) is odd. The odd integers in the interval are \\(-3,-1,1,3,5,7\\): six candidates. However, \\(x=5\\) makes the original denominator zero and cannot be included, leaving \\(-3,-1,1,3,7\\), or \\(5\\) valid inputs. Choice B counts the forbidden input \\(x=5\\) after cancellation. Therefore, choice A is correct.",
+      "hint": "Factor the numerator as a difference of squares and simplify, while keeping track of which input makes the original denominator zero."
+    },
+    {
+      "id": "sat-q0054",
+      "title": "Absolute-Value Equation with an Excluded Solution",
+      "category": "MATH",
+      "concept": "Order of operations",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply order of operations and justify the selected answer.",
+      "question": "For real \\(x\\ne3\\), define \\(F(x)=\\left|\\frac{x^2-9}{x-3}-2^2\\right|+\\frac{1}{2^{-1}}\\). Which statement gives all real solutions of \\(F(x)=4\\)? Choose A or B and explain how simplifying the fractions and respecting the original domain determine the solution set.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=-1\\) or \\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-1\\) only"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor the numerator: \\(x^2-9=(x-3)(x+3)\\). For \\(x\\ne3\\), the fraction simplifies to \\(x+3\\). The power \\(2^2=4\\), while \\(2^{-1}=\\frac12\\), so \\(\\frac{1}{2^{-1}}=2\\). Therefore, on the allowed domain, \\(F(x)=|x+3-4|+2=|x-1|+2\\). Setting this equal to \\(4\\) gives \\(|x-1|=2\\), so \\(x-1=2\\) or \\(x-1=-2\\), producing \\(x=3\\) or \\(x=-1\\). But \\(x=3\\) makes the denominator \\(x-3\\) in the original expression zero; hence that candidate is invalid. Substitution of \\(x=-1\\) is permitted and gives \\(F(-1)=4\\). Choice A incorrectly retains the excluded root \\(x=3\\). Therefore, choice B is correct.",
+      "hint": "Simplify the fraction and the powers first, but remember which value of x the original expression excludes; then solve the absolute-value equation."
+    }
+  ]
+}

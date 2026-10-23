@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-95",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 95",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-95-q001",
+      "category": "Functions",
+      "concept": "Maximum Value of a Quadratic Polynomial",
+      "learningObjective": "Find the maximum value of a quadratic polynomial by completing the square.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the maximum value of \\(f(x)=-x^2+4x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Complete the square:\n\\[\nf(x)=-x^2+4x=-(x^2-4x)=-\\bigl((x-2)^2-4\\bigr)=-(x-2)^2+4.\n\\]\nSince \\(-(x-2)^2\\le 0\\) for all real \\(x\\), the largest value occurs when \\((x-2)^2=0\\), giving\n\\[\nf_{\\max}=4.\n\\]\nTherefore, the maximum value is \\(4\\).",
+      "hint": "Rewrite the quadratic in completed-square form to identify its largest possible value."
+    },
+    {
+      "id": "math-gaokao-95-q002",
+      "category": "Functions",
+      "concept": "Local Maximum of a Cubic Polynomial",
+      "learningObjective": "Find the local maximum value of a cubic polynomial using derivatives.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For \\(f(x)=x^3-3x\\), what is the local maximum value?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2-3=3(x-1)(x+1).\n\\]\nSet \\(f'(x)=0\\):\n\\[\nx=-1 \\quad \\text{or} \\quad x=1.\n\\]\nUse the second derivative:\n\\[\nf''(x)=6x.\n\\]\nAt \\(x=-1\\),\n\\[\nf''(-1)=-6<0,\n\\]\nso \\(x=-1\\) gives a local maximum. Its value is\n\\[\nf(-1)=(-1)^3-3(-1)=-1+3=2.\n\\]\nTherefore, the local maximum value is \\(2\\).",
+      "hint": "Find the critical points and use the second derivative to identify the local maximum."
+    },
+    {
+      "id": "math-gaokao-95-q003",
+      "category": "Functions",
+      "concept": "Minimum Value of a Quartic Polynomial",
+      "learningObjective": "Find the minimum value of a quartic polynomial by substitution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the minimum value of \\(f(x)=x^4-2x^2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(y=x^2\\). Since \\(x^2\\ge 0\\), we have \\(y\\ge 0\\), and\n\\[\nf(x)=x^4-2x^2=y^2-2y=(y-1)^2-1.\n\\]\nThe smallest value occurs when \\((y-1)^2=0\\), that is, \\(y=1\\). Therefore,\n\\[\nf_{\\min}=-1.\n\\]\nSo the minimum value is \\(-1\\).",
+      "hint": "Substitute \\(y=x^2\\) and complete the square in \\(y\\)."
+    },
+    {
+      "id": "math-gaokao-95-q004",
+      "category": "Functions",
+      "concept": "Local Minimum of a Cubic Polynomial",
+      "learningObjective": "Find the local minimum value of a cubic polynomial using derivatives.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For \\(f(x)=x^3-6x^2+9x+1\\), what is the local minimum value?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2-12x+9=3(x-1)(x-3).\n\\]\nSet \\(f'(x)=0\\):\n\\[\nx=1 \\quad \\text{or} \\quad x=3.\n\\]\nUse the second derivative:\n\\[\nf''(x)=6x-12.\n\\]\nAt \\(x=3\\),\n\\[\nf''(3)=6(3)-12=6>0,\n\\]\nso \\(x=3\\) gives a local minimum. Its value is\n\\[\nf(3)=3^3-6(3)^2+9(3)+1=27-54+27+1=1.\n\\]\nTherefore, the local minimum value is \\(1\\).",
+      "hint": "Find the critical points and use the second derivative to identify the local minimum."
+    },
+    {
+      "id": "math-gaokao-95-q005",
+      "category": "Functions",
+      "concept": "Maximum Value on a Closed Interval",
+      "learningObjective": "Determine the maximum value of a cubic polynomial on a closed interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the maximum value of \\(f(x)=x^3-6x^2+9x\\) on the interval \\([0,4]\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2-12x+9=3(x-1)(x-3).\n\\]\nThe critical points in \\([0,4]\\) are \\(x=1\\) and \\(x=3\\). Evaluate \\(f\\) at the critical points and endpoints:\n\\[\nf(0)=0,\n\\]\n\\[\nf(1)=1-6+9=4,\n\\]\n\\[\nf(3)=27-54+27=0,\n\\]\n\\[\nf(4)=64-96+36=4.\n\\]\nThus the maximum value is \\(4\\).",
+      "hint": "Compare the values of the function at critical points and endpoints."
+    },
+    {
+      "id": "math-gaokao-95-q006",
+      "category": "Functions",
+      "concept": "Local Minimum of a Quartic Polynomial",
+      "learningObjective": "Find the local minimum value of a quartic polynomial using derivatives.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For \\(f(x)=x^4-4x^2\\), what is the local minimum value?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate:\n\\[\nf'(x)=4x^3-8x=4x(x^2-2).\n\\]\nSet \\(f'(x)=0\\):\n\\[\nx=0 \\quad \\text{or} \\quad x=\\pm\\sqrt{2}.\n\\]\nUse the second derivative:\n\\[\nf''(x)=12x^2-8.\n\\]\nAt \\(x=\\sqrt{2}\\),\n\\[\nf''(\\sqrt{2})=12(2)-8=16>0,\n\\]\nso \\(x=\\sqrt{2}\\) gives a local minimum. Its value is\n\\[\nf(\\sqrt{2})=(\\sqrt{2})^4-4(\\sqrt{2})^2=4-8=-4.\n\\]\nTherefore, the local minimum value is \\(-4\\).",
+      "hint": "Find the critical points and use the second derivative to identify the local minimum."
+    },
+    {
+      "id": "math-gaokao-95-q007",
+      "category": "Functions",
+      "concept": "Parameter Condition for Local Extrema",
+      "learningObjective": "Determine the condition on a parameter for a cubic polynomial to have two distinct local extrema.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let \\(f(x)=x^3+ax^2+3x\\). For \\(f\\) to have two distinct local extrema, what condition must \\(a\\) satisfy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(|a|>3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(|a|<3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The local extrema occur at critical points of \\(f\\). Differentiate:\n\\[\nf'(x)=3x^2+2ax+3.\n\\]\nFor \\(f\\) to have two distinct local extrema, \\(f'(x)=0\\) must have two distinct real roots. Thus the discriminant must be positive:\n\\[\n\\Delta=(2a)^2-4(3)(3)=4a^2-36>0.\n\\]\nSo\n\\[\na^2>9,\n\\]\nwhich gives\n\\[\n|a|>3.\n\\]\nTherefore, the correct condition is \\(|a|>3\\).",
+      "hint": "Require the derivative to have two distinct real roots and use its discriminant."
+    },
+    {
+      "id": "math-gaokao-95-q008",
+      "category": "Functions",
+      "concept": "Parameter from a Local Maximum",
+      "learningObjective": "Determine a parameter so that a cubic polynomial has a specified local maximum value.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The function \\(f(x)=x^3-3x^2+a\\) has local maximum value \\(5\\). Find \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2-6x=3x(x-2).\n\\]\nThe critical points are \\(x=0\\) and \\(x=2\\). Use the second derivative:\n\\[\nf''(x)=6x-6.\n\\]\nAt \\(x=0\\),\n\\[\nf''(0)=-6<0,\n\\]\nso \\(x=0\\) gives a local maximum. Its value is\n\\[\nf(0)=0^3-3(0)^2+a=a.\n\\]\nGiven that this local maximum value is \\(5\\), we get\n\\[\na=5.\n\\]\nTherefore, \\(a=5\\).",
+      "hint": "Find the critical point that gives the local maximum and set its value equal to \\(5\\)."
+    },
+    {
+      "id": "math-gaokao-95-q009",
+      "category": "Functions",
+      "concept": "Parameters from Given Extrema Points",
+      "learningObjective": "Determine coefficients of a cubic polynomial from the locations of its local extrema.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The function \\(f(x)=x^3+ax^2+bx+c\\) has local extrema at \\(x=1\\) and \\(x=3\\). Find \\(a+b\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The local extrema occur where \\(f'(x)=0\\). Differentiate:\n\\[\nf'(x)=3x^2+2ax+b.\n\\]\nSince the extrema are at \\(x=1\\) and \\(x=3\\), these are the roots of \\(f'(x)=0\\). Therefore,\n\\[\n1+3=-\\frac{2a}{3}\n\\]\nand\n\\[\n1\\cdot 3=\\frac{b}{3}.\n\\]\nFrom the sum,\n\\[\n4=-\\frac{2a}{3} \\Rightarrow 2a=-12 \\Rightarrow a=-6.\n\\]\nFrom the product,\n\\[\n3=\\frac{b}{3} \\Rightarrow b=9.\n\\]\nThus\n\\[\na+b=-6+9=3.\n\\]\nTherefore, \\(a+b=3\\).",
+      "hint": "Use Vieta's formulas on the derivative \\(f'(x)=3x^2+2ax+b\\)."
+    },
+    {
+      "id": "math-gaokao-95-q010",
+      "category": "Functions",
+      "concept": "Minimum Value on a Closed Interval",
+      "learningObjective": "Determine the minimum value of a cubic polynomial on a closed interval.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the minimum value of \\(f(x)=x^3-3x^2+2\\) on the interval \\([0,3]\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2-6x=3x(x-2).\n\\]\nThe critical points in \\([0,3]\\) are \\(x=0\\) and \\(x=2\\). Evaluate \\(f\\) at the critical points and endpoints:\n\\[\nf(0)=2,\n\\]\n\\[\nf(2)=2^3-3(2)^2+2=8-12+2=-2,\n\\]\n\\[\nf(3)=3^3-3(3)^2+2=27-27+2=2.\n\\]\nThus the minimum value is \\(-2\\).",
+      "hint": "Compare the values of the function at critical points and endpoints."
+    }
+  ]
+}

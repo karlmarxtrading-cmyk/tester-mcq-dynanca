@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-562",
+  "category": "Comprehensive Mathematics",
+  "title": "562. Discrete Mathematics, Counting & Graph Theory: Derangements of Small Sets",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-562-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Recognising a derangement",
+      "learningObjective": "Decide which arrangement leaves no object in its own position.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A derangement of \\(1,2,3\\) is an arrangement in which no number stands in its own position (so \\(1\\) is not first, \\(2\\) is not second, and \\(3\\) is not third). Which arrangement is a derangement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1,3,2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2,3,1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In \\(2,3,1\\) the first position holds \\(2\\), the second holds \\(3\\), and the third holds \\(1\\); no number is in its own position. In \\(1,3,2\\) the number \\(1\\) is in the first position, so it is not a derangement.",
+      "hint": "Compare each entry with the number of its position."
+    },
+    {
+      "id": "dynanca-562-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Derangements of three objects",
+      "learningObjective": "Count the derangements of three objects by listing.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many arrangements of \\(1,2,3\\) leave no number in its own position?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Of the \\(6\\) arrangements, only \\(2,3,1\\) and \\(3,1,2\\) have no number in its own position. Each of the other four keeps at least one number fixed. So there are \\(2\\) derangements.",
+      "hint": "List all six arrangements and cross out those with a number in its own position."
+    },
+    {
+      "id": "dynanca-562-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Derangements of four objects",
+      "learningObjective": "Count the derangements of four objects.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many arrangements of \\(1,2,3,4\\) leave no number in its own position?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By inclusion and exclusion, the number is \\(4!-\\binom{4}{1}3!+\\binom{4}{2}2!-\\binom{4}{3}1!+\\binom{4}{4}0!=24-24+12-4+1=9\\). The number \\(12\\) is half of \\(24\\) and does not arise from any correct count.",
+      "hint": "Subtract the arrangements with at least one number fixed, using inclusion and exclusion."
+    },
+    {
+      "id": "dynanca-562-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Derangements of five objects",
+      "learningObjective": "Use the recurrence to count the derangements of five objects.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The numbers \\(D_n\\) of derangements satisfy \\(D_n=(n-1)\\left(D_{n-1}+D_{n-2}\\right)\\), with \\(D_3=2\\) and \\(D_4=9\\). What is \\(D_5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(44\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(45\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(D_5=4\\,(D_4+D_3)=4\\,(9+2)=44\\). The number \\(45=5\\cdot 9\\) uses a different rule, multiplying \\(D_4\\) by \\(5\\) without the correction.",
+      "hint": "Substitute \\(n=5\\) into the recurrence."
+    },
+    {
+      "id": "dynanca-562-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "One more step of the recurrence",
+      "learningObjective": "Use the recurrence to count the derangements of six objects.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The numbers \\(D_n\\) of derangements satisfy \\(D_n=(n-1)\\left(D_{n-1}+D_{n-2}\\right)\\), with \\(D_4=9\\) and \\(D_5=44\\). What is \\(D_6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(318\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(265\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(D_6=5\\,(D_5+D_4)=5\\,(44+9)=5\\cdot 53=265\\). The number \\(318=6\\cdot 53\\) uses the factor \\(n\\) instead of \\(n-1\\).",
+      "hint": "The factor in front is \\(n-1\\), not \\(n\\)."
+    },
+    {
+      "id": "dynanca-562-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Exactly one hat returned correctly",
+      "learningObjective": "Count permutations of four objects with exactly one fixed point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Four guests leave their hats at a party, and the hats are handed back at random, one to each guest. In how many of the \\(24\\) possible ways does exactly one guest receive their own hat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Choose the guest who receives the right hat in \\(4\\) ways. The other three guests must all receive wrong hats, which is a derangement of \\(3\\) objects: \\(2\\) ways. So the count is \\(4\\cdot 2=8\\). The number \\(9\\) counts the ways in which nobody receives the right hat.",
+      "hint": "Choose the lucky guest, then count the ways in which all the others go wrong."
+    },
+    {
+      "id": "dynanca-562-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Exactly two fixed points",
+      "learningObjective": "Count permutations of five objects with exactly two fixed points.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "In how many arrangements of \\(1,2,3,4,5\\) do exactly two numbers stand in their own positions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Choose the two numbers that stay fixed in \\(\\binom{5}{2}=10\\) ways. The remaining three numbers must all move, which is a derangement of \\(3\\) objects: \\(2\\) ways. The count is \\(10\\cdot 2=20\\). The number \\(10\\) forgets the two ways of arranging the other three numbers.",
+      "hint": "After choosing the fixed numbers, the others must form a derangement."
+    },
+    {
+      "id": "dynanca-562-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "At least one fixed point",
+      "learningObjective": "Count permutations with at least one fixed point by complement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In how many arrangements of \\(1,2,3,4\\) does at least one number stand in its own position?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(15\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(4!=24\\) arrangements, and \\(9\\) of them are derangements. The others have at least one number in its own position: \\(24-9=15\\). The number \\(9\\) counts the derangements, the complement.",
+      "hint": "Subtract the derangements from all arrangements."
+    },
+    {
+      "id": "dynanca-562-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The inclusion-exclusion expression",
+      "learningObjective": "Choose the inclusion-exclusion expression for the number of derangements.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "Which expression gives the number of derangements of \\(4\\) objects?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4!-\\binom{4}{1}3!-\\binom{4}{2}2!-\\binom{4}{3}1!-\\binom{4}{4}0!\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4!-\\binom{4}{1}3!+\\binom{4}{2}2!-\\binom{4}{3}1!+\\binom{4}{4}0!\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Inclusion and exclusion alternates signs: subtract the arrangements fixing one chosen object, add back those fixing two chosen objects, and so on. The first expression equals \\(24-24+12-4+1=9\\). The second, with all minus signs, equals \\(24-24-12-4-1=-17\\), which cannot be a count.",
+      "hint": "Evaluate both expressions; a count cannot be negative."
+    },
+    {
+      "id": "dynanca-562-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Exactly one letter in the right envelope",
+      "learningObjective": "Count permutations of five objects with exactly one fixed point.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Five letters are placed at random into five addressed envelopes, one letter in each. In how many ways is exactly one letter in its correct envelope?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(44\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(45\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Choose the correctly placed letter in \\(5\\) ways. The other four letters must all be misplaced, a derangement of \\(4\\) objects: \\(9\\) ways. So the count is \\(5\\cdot 9=45\\). The number \\(44\\) is the number of ways in which no letter is in its correct envelope.",
+      "hint": "Choose the letter that is placed correctly, then derange the remaining four."
+    }
+  ]
+}

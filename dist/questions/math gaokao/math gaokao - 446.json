@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-446",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 446",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-446-q001",
+      "category": "Probability and Statistics",
+      "concept": "Classical Probability",
+      "learningObjective": "Compute the probability of an event in a single fair die roll by counting favorable outcomes.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A fair six-sided die is rolled once. What is the probability that the result is a prime number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The prime outcomes on a fair six-sided die are \\(2,3,5\\), so there are \\(3\\) favorable outcomes out of \\(6\\) equally likely outcomes. Thus \\(P=\\frac{3}{6}=\\frac{1}{2}\\).",
+      "hint": "List the outcomes that are prime numbers and compare them with all possible outcomes."
+    },
+    {
+      "id": "math-gaokao-446-q002",
+      "category": "Probability and Statistics",
+      "concept": "Arithmetic Mean",
+      "learningObjective": "Calculate the mean of a small data set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The data set is \\(2,4,4,6,9\\). What is its arithmetic mean?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sum is \\(2+4+4+6+9=25\\). There are \\(5\\) data points, so the mean is \\(\\frac{25}{5}=5\\).",
+      "hint": "Add all data values and divide by the number of values."
+    },
+    {
+      "id": "math-gaokao-446-q003",
+      "category": "Probability and Statistics",
+      "concept": "Conditional Probability",
+      "learningObjective": "Compute a conditional probability from given joint and marginal probabilities.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In a class, \\(60\\%\\) of students passed mathematics, \\(50\\%\\) passed physics, and \\(30\\%\\) passed both. Given that a student passed mathematics, what is the probability that the student also passed physics?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{5}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(M\\) be passing mathematics and \\(P\\) be passing physics. We have \\(P(M)=0.60\\) and \\(P(M\\cap P)=0.30\\). Thus \\[\n\\begin{aligned}\nP(P\\mid M)&=\\frac{P(M\\cap P)}{P(M)} \\\\\n&=\\frac{0.30}{0.60} \\\\\n&=\\frac{1}{2}\n\\end{aligned}\n\\].",
+      "hint": "Use the definition of conditional probability \\(P(P\\mid M)=\\frac{P(M\\cap P)}{P(M)}\\)."
+    },
+    {
+      "id": "math-gaokao-446-q004",
+      "category": "Probability and Statistics",
+      "concept": "Variance of a Binomial Distribution",
+      "learningObjective": "Determine the variance of a binomially distributed random variable.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(X\\sim B(20,0.3)\\), what is \\(\\operatorname{Var}(X)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4.2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a binomial distribution \\(X\\sim B(n,p)\\), \\(\\operatorname{Var}(X)=np(1-p)\\). Here \\(n=20\\) and \\(p=0.3\\), so \\(\\operatorname{Var}(X)=20\\cdot0.3\\cdot0.7=4.2\\).",
+      "hint": "Recall the variance formula for a binomial random variable."
+    },
+    {
+      "id": "math-gaokao-446-q005",
+      "category": "Probability and Statistics",
+      "concept": "Normal Distribution and the Empirical Rule",
+      "learningObjective": "Use the empirical rule to find a probability for a normal distribution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Suppose \\(X\\sim N(0,1)\\). Using the empirical rule, what is the approximate value of \\(P(-1<X<1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.3413\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.68\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The empirical rule states that about \\(68\\%\\) of a normal distribution lies within one standard deviation of its mean. For \\(X\\sim N(0,1)\\), the interval \\((-1,1)\\) is exactly that range, so\n\\[\nP(-1<X<1)\\approx0.68.\n\\]\nThus B is correct. The value near \\(0.34\\) in A accounts for only one half of this symmetric central interval.",
+      "hint": "The empirical rule describes the percentage of data within one, two, and three standard deviations of the mean."
+    },
+    {
+      "id": "math-gaokao-446-q006",
+      "category": "Probability and Statistics",
+      "concept": "Median of a Data Set",
+      "learningObjective": "Find the median of an ordered data set with an even number of observations.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For the data set \\(1,3,5,7,9,11,13,15,17,19\\), what is the median?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(10\\) ordered data values. The median is the average of the 5th and 6th values: \\(9\\) and \\(11\\). Thus the median is \\(\\frac{9+11}{2}=10\\).",
+      "hint": "For an even number of ordered data points, average the two middle values."
+    },
+    {
+      "id": "math-gaokao-446-q007",
+      "category": "Probability and Statistics",
+      "concept": "Probability of a Union of Independent Events",
+      "learningObjective": "Compute the probability of the union of two independent events.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Events \\(A\\) and \\(B\\) are independent with \\(P(A)=0.5\\) and \\(P(B)=0.4\\). What is \\(P(A\\cup B)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(A\\) and \\(B\\) are independent, \\[\n\\begin{aligned}\nP(A\\cap B)&=P(A)P(B) \\\\\n&=0.5\\cdot0.4 \\\\\n&=0.2\n\\end{aligned}\n\\]. Then \\[\n\\begin{aligned}\nP(A\\cup B)&=P(A)+P(B)-P(A\\cap B) \\\\\n&=0.5+0.4-0.2 \\\\\n&=0.7\n\\end{aligned}\n\\].",
+      "hint": "Use the addition rule and independence to find \\(P(A\\cap B)\\)."
+    },
+    {
+      "id": "math-gaokao-446-q008",
+      "category": "Probability and Statistics",
+      "concept": "Standard Deviation",
+      "learningObjective": "Calculate the standard deviation of a small data set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For the data set \\(2,4,6,8,10\\), what is the population standard deviation (using the number of observations as the divisor)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\sqrt{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The mean is \\(\\frac{2+4+6+8+10}{5}=6\\). The variance is \\(\\frac{(2-6)^2+(4-6)^2+(6-6)^2+(8-6)^2+(10-6)^2}{5}=\\frac{16+4+0+4+16}{5}=8\\). Therefore the standard deviation is \\(\\sqrt{8}=2\\sqrt{2}\\).",
+      "hint": "First compute the mean and the variance, then take the square root."
+    },
+    {
+      "id": "math-gaokao-446-q009",
+      "category": "Probability and Statistics",
+      "concept": "Bayes' Theorem and Conditional Probability",
+      "learningObjective": "Compute the posterior probability of a disease given a positive test result.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A disease affects \\(1\\%\\) of a population. A test has sensitivity \\(99\\%\\) and specificity \\(95\\%\\). If a randomly selected person tests positive, what is the probability that the person actually has the disease?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.99\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{6}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(D\\) be having the disease and \\(+\\) be a positive test. Then \\(P(D)=0.01\\), \\(P(+\\mid D)=0.99\\), and \\(P(+\\mid D^c)=1-0.95=0.05\\). Thus \\[\n\\begin{aligned}\nP(+)&=0.99\\cdot0.01+0.05\\cdot0.99 \\\\\n&=0.0099+0.0495 \\\\\n&=0.0594\n\\end{aligned}\n\\]. Therefore \\(P(D\\mid +)=\\frac{0.0099}{0.0594}=\\frac{1}{6}\\).",
+      "hint": "Use Bayes' theorem and include both true positives and false positives in the denominator."
+    },
+    {
+      "id": "math-gaokao-446-q010",
+      "category": "Probability and Statistics",
+      "concept": "Expected Value of a Hypergeometric Random Variable",
+      "learningObjective": "Find the expected number of successes when sampling without replacement.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A bag contains \\(3\\) red balls and \\(2\\) blue balls. Two balls are drawn without replacement. Let \\(X\\) be the number of red balls drawn. What is \\(E(X)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{6}{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a hypergeometric random variable, the expected number of red balls is \\(E(X)=n\\cdot\\frac{K}{N}\\), where \\(n=2\\) draws, \\(K=3\\) red balls, and \\(N=5\\) total balls. Thus \\(E(X)=2\\cdot\\frac{3}{5}=\\frac{6}{5}\\).",
+      "hint": "Use linearity of expectation or the expected-value formula for sampling without replacement."
+    }
+  ]
+}

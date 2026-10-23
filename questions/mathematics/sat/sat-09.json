@@ -1,0 +1,672 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "mathematics-sat-09",
+  "title": "SAT 09 · Prime factorization",
+  "category": "SAT Mathematics",
+  "description": "A/B reasoning practice. Difficulty is editorial, not standardized SAT calibration.",
+  "questionCount": 18,
+  "questions": [
+    {
+      "id": "sat-q0145",
+      "title": "Testing a Number for Primality",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "Is \\(37\\) a prime number or a composite number? Choose A or B and explain how checking possible prime divisors supports your conclusion.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(37\\) is prime."
+        },
+        {
+          "label": "B",
+          "text": "\\(37\\) is composite because it is odd."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A prime number has exactly two positive divisors: \\(1\\) and itself. The number \\(37\\) is not even, its digit sum is \\(3+7=10\\) so it is not divisible by \\(3\\), and it does not end in \\(0\\) or \\(5\\). Since \\(7\\times7=49>37\\), any smaller prime divisor would have to be \\(2\\), \\(3\\), or \\(5\\). None divides \\(37\\), so \\(37\\) is prime. Choice B is wrong because being odd does not make a number composite.",
+      "hint": "Only primes up to the square root of 37 need to be tested as divisors; check each of them."
+    },
+    {
+      "id": "sat-q0146",
+      "title": "Breaking Forty-Two into Prime Factors",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "The table shows repeated division of \\(42\\) by prime numbers. Which expression gives the complete prime factorization of \\(42\\)? Choose A or B and explain why every factor in the final expression must be prime.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(42=2\\times21\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(42=2\\times3\\times7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The table shows that \\(42=2\\times21\\), then \\(21=3\\times7\\). Combining these equalities gives \\(42=2\\times3\\times7\\). Each factor, \\(2\\), \\(3\\), and \\(7\\), is prime, so this is the complete prime factorization. Choice A is equal to \\(42\\), but it is not a complete prime factorization because \\(21\\) is composite and can be split into \\(3\\times7\\).",
+      "visuals": [
+        {
+          "id": "sat-q0146-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Current number",
+              "Prime divisor",
+              "Quotient"
+            ],
+            "rows": [
+              [
+                42,
+                2,
+                21
+              ],
+              [
+                21,
+                3,
+                7
+              ],
+              [
+                7,
+                7,
+                1
+              ]
+            ],
+            "headers": [
+              "Current number",
+              "Prime divisor",
+              "Quotient"
+            ]
+          },
+          "alt": "Repeated division of 42: divide by 2 to get 21, divide 21 by 3 to get 7, and divide 7 by 7 to get 1."
+        }
+      ],
+      "hint": "A prime factorization keeps splitting until every factor is prime; check whether each factor in the table's chain is prime."
+    },
+    {
+      "id": "sat-q0147",
+      "title": "Finding the Smallest Prime Factor",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "The rule in the mapping diagram sends each composite integer to its smallest prime factor. What output should be paired with \\(85\\)? Choose A or B and justify your factorization.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(17\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The rule asks for the smallest prime factor, not the largest. Since \\(85=5\\times17\\) and both \\(5\\) and \\(17\\) are prime, its smallest prime factor is \\(5\\). Choice A gives the larger prime factor \\(17\\), so it does not follow the stated rule.",
+      "visuals": [
+        {
+          "id": "sat-q0147-v1",
+          "type": "MAPPING",
+          "data": {
+            "left": {
+              "label": "Composite integer",
+              "elements": [
+                51,
+                77,
+                91
+              ]
+            },
+            "right": {
+              "label": "Smallest prime factor",
+              "elements": [
+                3,
+                7
+              ]
+            },
+            "arrows": [
+              [
+                51,
+                3
+              ],
+              [
+                77,
+                7
+              ],
+              [
+                91,
+                7
+              ]
+            ]
+          },
+          "alt": "A mapping from each composite integer to its smallest prime factor: 51 maps to 3, 77 maps to 7, and 91 maps to 7."
+        }
+      ],
+      "hint": "Write 85 as a product of two primes, then decide which one the rule asks for, using the mapping examples as a guide."
+    },
+    {
+      "id": "sat-q0148",
+      "title": "Prime Numbers That Are Also Odd",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "The Venn diagram classifies the integers from \\(2\\) through \\(20\\) by whether they are prime and whether they are odd. How many integers are both prime and odd? Choose A or B and explain why the number \\(2\\) is treated separately.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\) integers"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\) integers"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The primes from \\(2\\) through \\(20\\) are \\(2,3,5,7,11,13,17,19\\), for a total of \\(8\\). The number \\(2\\) is the only even prime, so the other \\(7\\) primes are odd. Therefore, \\(7\\) integers are both prime and odd. Choice B incorrectly counts \\(2\\) as odd.",
+      "visuals": [
+        {
+          "id": "sat-q0148-v1",
+          "type": "VENN",
+          "data": {
+            "universe": {
+              "label": "Integers from 2 through 20",
+              "total": 19
+            },
+            "sets": [
+              {
+                "id": "P",
+                "label": "Prime numbers",
+                "elements": []
+              },
+              {
+                "id": "O",
+                "label": "Odd numbers",
+                "elements": []
+              }
+            ],
+            "regions": {
+              "P_only": 1,
+              "O_only": 2,
+              "intersection": 7,
+              "outside": 9
+            }
+          },
+          "alt": "Among the 19 integers from 2 through 20, there is 1 prime that is not odd, 2 odd nonprimes, 7 numbers that are both prime and odd, and 9 numbers that are neither prime nor odd."
+        }
+      ],
+      "hint": "List the primes from 2 to 20, then remove any prime that is even."
+    },
+    {
+      "id": "sat-q0149",
+      "title": "Prime Powers in the Factorization of Three Hundred Sixty",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "The table records repeated division of \\(360\\) by prime numbers. Which expression is the prime factorization of \\(360\\) written using powers? Choose A or B and justify the exponents by counting how often each prime divisor appears.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(360=2^3\\times3^2\\times5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(360=2^3\\times3\\times5^2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The table divides by \\(2\\) three times, by \\(3\\) twice, and by \\(5\\) once. Therefore, \\(360=2\\times2\\times2\\times3\\times3\\times5=2^3\\times3^2\\times5\\). Its value is \\(8\\times9\\times5=360\\). Choice B gives \\(8\\times3\\times25=600\\), because it assigns two factors of \\(5\\) and only one factor of \\(3\\), contrary to the table.",
+      "visuals": [
+        {
+          "id": "sat-q0149-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Division",
+              "Quotient"
+            ],
+            "rows": [
+              [
+                "360 ÷ 2",
+                180
+              ],
+              [
+                "180 ÷ 2",
+                90
+              ],
+              [
+                "90 ÷ 2",
+                45
+              ],
+              [
+                "45 ÷ 3",
+                15
+              ],
+              [
+                "15 ÷ 3",
+                5
+              ],
+              [
+                "5 ÷ 5",
+                1
+              ]
+            ],
+            "headers": [
+              "Division",
+              "Quotient"
+            ]
+          },
+          "alt": "Repeated division of 360 uses the prime divisors 2, 2, 2, 3, 3, and 5, leaving quotient 1."
+        }
+      ],
+      "hint": "Count how many times each prime divisor appears in the table's division steps; that count is its exponent."
+    },
+    {
+      "id": "sat-q0150",
+      "title": "The Greatest Common Factor of Eighty-Four and One Hundred Twenty-Six",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "The table gives the prime factorizations of \\(84\\) and \\(126\\). What is their greatest common factor (GCF)? Choose A or B and explain how the shared prime factors determine the result.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(21\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(42\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The GCF uses each prime factor shared by both numbers, taking the smaller exponent. Both numbers contain one factor of \\(2\\), one factor of \\(3\\), and one factor of \\(7\\). Thus the GCF is \\(2\\times3\\times7=42\\). Choice A is only \\(3\\times7=21\\) and omits the shared factor \\(2\\).",
+      "visuals": [
+        {
+          "id": "sat-q0150-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Integer",
+              "Prime factorization"
+            ],
+            "rows": [
+              [
+                "84",
+                "2^2 × 3 × 7"
+              ],
+              [
+                "126",
+                "2 × 3^2 × 7"
+              ]
+            ],
+            "headers": [
+              "Integer",
+              "Prime factorization"
+            ]
+          },
+          "alt": "Prime factorizations: 84 equals 2 squared times 3 times 7; 126 equals 2 times 3 squared times 7."
+        }
+      ],
+      "hint": "Take each prime that appears in both factorizations, with the smaller exponent each time, and multiply them."
+    },
+    {
+      "id": "sat-q0151",
+      "title": "The Least Common Multiple of Eighteen and Twenty-Four",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "Use prime factorization to find the least common multiple (LCM) of \\(18\\) and \\(24\\). Choose A or B and explain why the LCM uses the greatest exponent of each prime that appears.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(72\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(144\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The prime factorizations are \\(18=2\\times3^2\\) and \\(24=2^3\\times3\\). A common multiple must have at least three factors of \\(2\\) and two factors of \\(3\\), so the least one is \\(2^3\\times3^2=8\\times9=72\\). Choice B, \\(144\\), is a common multiple but is not the least common multiple because \\(72\\) is already divisible by both \\(18\\) and \\(24\\).",
+      "hint": "Factor both numbers into primes and, for each prime, use the larger exponent that appears."
+    },
+    {
+      "id": "sat-q0152",
+      "title": "Which Number Is Prime?",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "Exactly one of the two integers \\(91\\) and \\(97\\) is prime. Choose the prime number and justify your decision by checking possible prime divisors.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(91\\) is prime."
+        },
+        {
+          "label": "B",
+          "text": "\\(97\\) is prime."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number \\(91=7\\times13\\), so it is composite and choice A is false. For \\(97\\), it is enough to check prime divisors no larger than \\(\\sqrt{97}\\), which is less than \\(10\\): \\(2\\), \\(3\\), \\(5\\), and \\(7\\). The number \\(97\\) is not divisible by any of them, so \\(97\\) is prime. Choice B is correct.",
+      "hint": "Try dividing each number by the primes up to 10; one divisor is enough to show a number is composite."
+    },
+    {
+      "id": "sat-q0153",
+      "title": "Counting the Positive Divisors of a Number",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "A positive integer has prime factorization \\(N=2^3\\times3^2\\times5\\), as summarized in the table. How many positive divisors does \\(N\\) have? Choose A or B and show how the exponents determine the count.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\) positive divisors"
+        },
+        {
+          "label": "B",
+          "text": "\\(36\\) positive divisors"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a divisor of \\(N=2^3\\times3^2\\times5^1\\), the exponent of \\(2\\) can be \\(0,1,2,\\) or \\(3\\), giving \\(4\\) choices. The exponent of \\(3\\) has \\(3\\) choices, and the exponent of \\(5\\) has \\(2\\) choices. By multiplying the independent choices, the number of positive divisors is \\((3+1)(2+1)(1+1)=4\\times3\\times2=24\\). Choice B does not follow the exponent-counting rule.",
+      "visuals": [
+        {
+          "id": "sat-q0153-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Prime",
+              "Exponent"
+            ],
+            "rows": [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                5,
+                1
+              ]
+            ],
+            "headers": [
+              "Prime",
+              "Exponent"
+            ]
+          },
+          "alt": "The prime factorization of N has exponent 3 for prime 2, exponent 2 for prime 3, and exponent 1 for prime 5."
+        }
+      ],
+      "hint": "A divisor can use each prime with any exponent from 0 up to its exponent in N; count the choices for each prime and multiply."
+    },
+    {
+      "id": "sat-q0154",
+      "title": "An Exponent That Produces Forty-Eight Divisors",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "Let \\(N=2^3\\times3^n\\), where \\(n\\) is a nonnegative integer. If \\(N\\) has exactly \\(48\\) positive divisors, what is \\(n\\)? Choose A or B and show the equation you use.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(n=10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(n=11\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(N=2^3\\times3^n\\), the number of positive divisors is \\((3+1)(n+1)\\). Setting this equal to \\(48\\) gives \\(4(n+1)=48\\), so \\(n+1=12\\) and \\(n=11\\). Choice A is one less than the required exponent; it would give \\(4(10+1)=44\\) divisors, not \\(48\\).",
+      "hint": "Write the divisor count of 2^3 x 3^n as a product of (exponent + 1) factors and set it equal to 48."
+    },
+    {
+      "id": "sat-q0155",
+      "title": "A Greatest Common Factor from Shared Prime Powers",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "The table lists the exponents in the prime factorizations of \\(540\\) and \\(756\\). What is the greatest common factor of the two integers? Choose A or B and justify your use of the smaller exponent for each shared prime.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(54\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(108\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The prime factorizations are \\(540=2^2\\times3^3\\times5\\) and \\(756=2^2\\times3^3\\times7\\). The shared prime powers are \\(2^2\\) and \\(3^3\\), using the smaller exponent for each prime. Their product is \\(2^2\\times3^3=4\\times27=108\\). Although 54 divides both numbers (\\(540/54=10\\), \\(756/54=14\\)), it is not greatest: \\(540/108=5\\) and \\(756/108=7\\). Choice A omits one shared factor of 2. Thus B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0155-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Prime",
+              "Exponent in 540",
+              "Exponent in 756"
+            ],
+            "rows": [
+              [
+                2,
+                2,
+                2
+              ],
+              [
+                3,
+                3,
+                3
+              ],
+              [
+                5,
+                1,
+                0
+              ],
+              [
+                7,
+                0,
+                1
+              ]
+            ],
+            "headers": [
+              "Prime",
+              "Exponent in 540",
+              "Exponent in 756"
+            ]
+          },
+          "alt": "Prime exponents for 540 and 756: prime 2 has exponents 2 and 2, prime 3 has 3 and 3, prime 5 has 1 and 0, and prime 7 has 0 and 1."
+        }
+      ],
+      "hint": "For each shared prime, choose the smaller exponent; a common factor need not be the greatest common factor."
+    },
+    {
+      "id": "sat-q0156",
+      "title": "Divisor Count from Two Prime Exponents",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "Let \\(N=p^2q^3\\), where \\(p\\) and \\(q\\) are distinct prime numbers. How many positive divisors does \\(N\\) have? Choose A or B and explain why the identities of \\(p\\) and \\(q\\) do not change the count.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\) positive divisors"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\) positive divisors"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each positive divisor has the form \\(p^i q^j\\), where \\(i\\) can be \\(0,1,\\) or \\(2\\), and \\(j\\) can be \\(0,1,2,\\) or \\(3\\). There are \\(3\\) choices for \\(i\\) and \\(4\\) choices for \\(j\\), so there are \\(3\\times4=12\\) positive divisors. Equivalently, the divisor-count formula gives \\((2+1)(3+1)=12\\). Choice B undercounts the possible exponent combinations.",
+      "hint": "Every divisor has the form p^i q^j; count how many values i and j can each take."
+    },
+    {
+      "id": "sat-q0157",
+      "title": "The Smallest Composite Number with Two Prime Factors",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "Find the smallest integer greater than \\(20\\) that is divisible by \\(3\\) and has exactly two distinct prime factors, one of which is \\(3\\). Choose A or B and justify why no smaller integer can meet all the conditions.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(21\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(27\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The smallest integer greater than \\(20\\) that is divisible by \\(3\\) is \\(21\\). Its prime factorization is \\(21=3\\times7\\), so it has exactly two distinct prime factors, \\(3\\) and \\(7\\). Choice B, \\(27=3^3\\), has only one distinct prime factor, namely \\(3\\), so it does not meet the condition.",
+      "hint": "List the multiples of 3 just above 20 in order and factor each until one has exactly two different primes."
+    },
+    {
+      "id": "sat-q0158",
+      "title": "A Number with Prime Factors Two and Three",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "A whole number strictly between \\(30\\) and \\(50\\) has both \\(2\\) and \\(3\\) as prime factors and is divisible by \\(8\\). What is the number? Choose A or B and explain how the divisibility condition eliminates the other option.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(48\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The prime factorization of \\(48\\) is \\(2^4\\times3\\), so it has both \\(2\\) and \\(3\\) as prime factors and is divisible by \\(8=2^3\\). The prime factorization of \\(36\\) is \\(2^2\\times3^2\\), which contains only two factors of \\(2\\), so \\(36\\) is not divisible by \\(8\\). Thus choice B is correct.",
+      "hint": "Check each option's prime factorization: it needs both 2 and 3 and at least three factors of 2."
+    },
+    {
+      "id": "sat-q0159",
+      "title": "Making Ninety a Perfect Square",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "What is the smallest positive integer by which \\(90\\) must be multiplied to produce a perfect square? Choose A or B and justify your choice using prime exponents.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The prime factorization of \\(90\\) is \\(90=2\\times3^2\\times5\\). In a perfect square, every prime has an even exponent. The exponent of \\(3\\) is already even, but the exponents of \\(2\\) and \\(5\\) are odd. Multiplying by \\(2\\times5=10\\) makes both of those exponents even: \\(90\\times10=2^2\\times3^2\\times5^2=900=30^2\\). Choice A leaves the exponent of \\(2\\) odd, since \\(90\\times5=2\\times3^2\\times5^2\\), so it is not a perfect square.",
+      "hint": "Factor 90 into primes and find which primes have an odd exponent; multiply by just enough to make every exponent even."
+    },
+    {
+      "id": "sat-q0160",
+      "title": "Finding an Exponent from the Number of Divisors",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "Let \\(N=2^a\\times3^2\\), where \\(a\\) is a nonnegative integer. If \\(N\\) has exactly \\(12\\) positive divisors, what is \\(a\\)? Choose A or B and use the divisor-count formula.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number of positive divisors is \\((a+1)(2+1)=3(a+1)\\). Setting \\(3(a+1)=12\\) gives \\(a+1=4\\), so \\(a=3\\). Choice B would give \\((4+1)\\times3=15\\) positive divisors, not \\(12\\).",
+      "hint": "Use the divisor-count formula (a+1)(2+1) and set it equal to 12."
+    },
+    {
+      "id": "sat-q0161",
+      "title": "A Number Determined by Divisibility and Divisor Count",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "A positive integer has the form \\(N=2^a\\times3^b\\), where \\(a\\) and \\(b\\) are positive integers. It is divisible by \\(72\\) and has exactly \\(12\\) positive divisors. What is \\(N\\)? Choose A or B and analyze the exponent restrictions.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(72\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(144\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(72=2^3\\times3^2\\) divides \\(N\\), the exponents must satisfy \\(a\\ge3\\) and \\(b\\ge2\\). The number of positive divisors is \\((a+1)(b+1)=12\\). Because \\(a+1\\ge4\\) and \\(b+1\\ge3\\), the only factor pair of \\(12\\) meeting both bounds is \\(4\\times3\\). Hence \\(a=3\\) and \\(b=2\\), so \\(N=2^3\\times3^2=72\\). Choice B is \\(2^4\\times3^2\\), which has \\((4+1)(2+1)=15\\) positive divisors, not \\(12\\).",
+      "hint": "Divisibility by 72 gives lower bounds on a and b; combine them with (a+1)(b+1)=12 and check which factor pairs are allowed."
+    },
+    {
+      "id": "sat-q0162",
+      "title": "The Smallest Number with Twenty-Four Divisors",
+      "category": "MATH",
+      "concept": "Prime factorization",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply prime factorization and justify the selected answer.",
+      "question": "A positive integer has the form \\(N=2^a\\times3^b\\), where \\(a\\) and \\(b\\) are positive integers. It is divisible by \\(108\\) and has exactly \\(24\\) positive divisors. What is the smallest possible value of \\(N\\)? Choose A or B and justify your answer by checking the possible exponent pairs.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1944\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(864\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(108=2^2\\times3^3\\) divides \\(N\\), we need \\(a\\ge2\\) and \\(b\\ge3\\). The divisor-count condition gives \\((a+1)(b+1)=24\\). With \\(a+1\\ge3\\) and \\(b+1\\ge4\\), the possible factor pairs are \\((3,8)\\), \\((4,6)\\), and \\((6,4)\\), giving \\((a,b)=(2,7),(3,5),(5,3)\\). These produce \\(N=2^2\\times3^7=8748\\), \\(N=2^3\\times3^5=1944\\), and \\(N=2^5\\times3^3=864\\). The smallest is \\(864\\). Choice A is also a qualifying number, but it is larger than \\(864\\), so it is not the smallest possible value.",
+      "hint": "Divisibility by 108 gives minimum exponents; list the factor pairs of 24 for (a+1)(b+1) that respect them and compare the resulting values of N."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-291",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 291",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-291-q001",
+      "category": "Calculus",
+      "concept": "Monotonicity of a quadratic function",
+      "learningObjective": "Determine the interval on which a quadratic function is decreasing.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the interval on which \\(f(x)=x^2-4x+3\\) is decreasing.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-\\infty,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,\\infty)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Differentiate:\n\\[\nf'(x)=2x-4.\n\\]\nThe function is decreasing where \\(f'(x)<0\\), so\n\\[\n2x-4<0 \\implies x<2.\n\\]\nThus the decreasing interval is \\((-\\infty,2)\\). Therefore, option A is correct.",
+      "hint": "Differentiate the function and determine where the derivative is negative."
+    },
+    {
+      "id": "math-gaokao-291-q002",
+      "category": "Calculus",
+      "concept": "Intervals of increase for a cubic function",
+      "learningObjective": "Determine intervals on which a cubic polynomial is increasing.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the intervals on which \\(f(x)=x^3-3x\\) is increasing.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-\\infty,-1)\\cup(1,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-1,1)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2-3=3(x-1)(x+1).\n\\]\nThe function is increasing where \\(f'(x)>0\\), which occurs for\n\\[\nx<-1 \\quad \\text{or} \\quad x>1.\n\\]\nThus the intervals are \\((-\\infty,-1)\\cup(1,\\infty)\\). Therefore, option A is correct.",
+      "hint": "Factor the derivative and test the sign on each interval determined by the critical points."
+    },
+    {
+      "id": "math-gaokao-291-q003",
+      "category": "Calculus",
+      "concept": "Monotonicity of a logarithmic function",
+      "learningObjective": "Determine the interval on which a logarithmic function is increasing.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The function \\(f(x)=\\ln x-x\\) is increasing on which interval?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,\\infty)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The domain is \\(x>0\\). Differentiate:\n\\[\nf'(x)=\\frac{1}{x}-1=\\frac{1-x}{x}.\n\\]\nSince \\(x>0\\), the sign of \\(f'(x)\\) is the sign of \\(1-x\\). Thus \\(f'(x)>0\\) when\n\\[\n1-x>0 \\implies 0<x<1.\n\\]\nTherefore, \\(f\\) is increasing on \\((0,1)\\), so option A is correct.",
+      "hint": "Find the derivative and analyze its sign on the domain \\(x>0\\)."
+    },
+    {
+      "id": "math-gaokao-291-q004",
+      "category": "Calculus",
+      "concept": "Monotonicity of a rational function",
+      "learningObjective": "Determine the interval on which a rational function is decreasing for \\(x>0\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For \\(x>0\\), the function \\(f(x)=x+\\frac{1}{x}\\) is decreasing on which interval?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,1)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate:\n\\[\nf'(x)=1-\\frac{1}{x^2}=\\frac{x^2-1}{x^2}.\n\\]\nFor \\(x>0\\), the denominator is positive, so the sign of \\(f'(x)\\) is the sign of \\(x^2-1\\). Thus \\(f'(x)<0\\) when\n\\[\nx^2-1<0 \\implies 0<x<1.\n\\]\nTherefore, \\(f\\) is decreasing on \\((0,1)\\), so option B is correct.",
+      "hint": "Compute the derivative and determine where it is negative for \\(x>0\\)."
+    },
+    {
+      "id": "math-gaokao-291-q005",
+      "category": "Calculus",
+      "concept": "Sign analysis of derivative",
+      "learningObjective": "Determine intervals of increase from a factored derivative.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(f'(x)=x(x-1)(x+2)\\), on which intervals is \\(f\\) increasing?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-2,0)\\cup(1,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\infty,-2)\\cup(0,1)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The critical points are \\(x=-2\\), \\(x=0\\), and \\(x=1\\). Test the sign of \\(f'(x)\\) on each interval:\n\\[\n(-\\infty,-2): f'<0,\n\\]\n\\[\n(-2,0): f'>0,\n\\]\n\\[\n(0,1): f'<0,\n\\]\n\\[\n(1,\\infty): f'>0.\n\\]\nThus \\(f\\) is increasing on \\((-2,0)\\cup(1,\\infty)\\). Therefore, option A is correct.",
+      "hint": "Use a sign chart with the critical points from the factored derivative."
+    },
+    {
+      "id": "math-gaokao-291-q006",
+      "category": "Calculus",
+      "concept": "Parameter condition for monotonicity",
+      "learningObjective": "Find parameter values for which a cubic function is increasing on \\(\\mathbb{R}\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "For which values of \\(a\\) is \\(f(x)=x^3+ax^2+3x+1\\) increasing on \\(\\mathbb{R}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([-3,3]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\infty,-3]\\cup[3,\\infty)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2+2ax+3.\n\\]\nFor \\(f\\) to be increasing on \\(\\mathbb{R}\\), we need \\(f'(x)\\ge 0\\) for all real \\(x\\). Since the leading coefficient is positive, this requires the discriminant to be nonpositive:\n\\[\n(2a)^2-4(3)(3)\\le 0.\n\\]\nSo\n\\[\n4a^2-36\\le 0 \\implies a^2\\le 9 \\implies -3\\le a\\le 3.\n\\]\nTherefore, option A is correct.",
+      "hint": "Require the quadratic derivative to be nonnegative for all real \\(x\\)."
+    },
+    {
+      "id": "math-gaokao-291-q007",
+      "category": "Calculus",
+      "concept": "Monotonicity condition with parameter",
+      "learningObjective": "Determine the parameter range for a cubic function to be increasing on \\(\\mathbb{R}\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "For which values of \\(a\\) is \\(f(x)=x^3-3ax^2+3x+1\\) increasing on \\(\\mathbb{R}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a\\le -1\\) or \\(a\\ge 1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-1\\le a\\le 1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2-6ax+3=3(x^2-2ax+1).\n\\]\nWe need \\(x^2-2ax+1\\ge 0\\) for all real \\(x\\). This requires the discriminant to be nonpositive:\n\\[\n(-2a)^2-4(1)(1)\\le 0.\n\\]\nSo\n\\[\n4a^2-4\\le 0 \\implies a^2\\le 1 \\implies -1\\le a\\le 1.\n\\]\nTherefore, option B is correct.",
+      "hint": "Set the discriminant of the quadratic factor to be nonpositive."
+    },
+    {
+      "id": "math-gaokao-291-q008",
+      "category": "Calculus",
+      "concept": "Parameter range for monotonic cubic",
+      "learningObjective": "Find values of a parameter making a cubic polynomial increasing on \\(\\mathbb{R}\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For which values of \\(a\\) is \\(f(x)=x^3+ax^2+(a+6)x+1\\) increasing on \\(\\mathbb{R}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a\\le -3\\) or \\(a\\ge 6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-3\\le a\\le 6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2+2ax+(a+6).\n\\]\nFor \\(f\\) to be increasing on \\(\\mathbb{R}\\), we need \\(f'(x)\\ge 0\\) for all real \\(x\\). Thus the discriminant must satisfy\n\\[\n(2a)^2-4(3)(a+6)\\le 0.\n\\]\nSo\n\\[\n4a^2-12a-72\\le 0\n\\]\n\\[\na^2-3a-18\\le 0\n\\]\n\\[\n(a-6)(a+3)\\le 0.\n\\]\nThis gives\n\\[\n-3\\le a\\le 6.\n\\]\nTherefore, option B is correct.",
+      "hint": "Apply the nonnegative quadratic condition to the derivative."
+    },
+    {
+      "id": "math-gaokao-291-q009",
+      "category": "Calculus",
+      "concept": "Monotonicity without critical points",
+      "learningObjective": "Find parameter values for which a cubic function is increasing on \\(\\mathbb{R}\\).",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The function \\(f(x)=x^3-3x^2+ax-1\\) is increasing on \\(\\mathbb{R}\\). Find the range of \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a\\le 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a\\ge 3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2-6x+a.\n\\]\nFor \\(f\\) to be increasing on \\(\\mathbb{R}\\), we need \\(f'(x)\\ge 0\\) for all real \\(x\\). Since the leading coefficient is positive, the discriminant must be nonpositive:\n\\[\n(-6)^2-4(3)(a)\\le 0.\n\\]\nSo\n\\[\n36-12a\\le 0 \\implies a\\ge 3.\n\\]\nTherefore, option B is correct.",
+      "hint": "Require the derivative quadratic to be nonnegative everywhere."
+    },
+    {
+      "id": "math-gaokao-291-q010",
+      "category": "Calculus",
+      "concept": "Monotonicity and derivative condition",
+      "learningObjective": "Determine a parameter from monotonicity and a derivative condition.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "If \\(f(x)=x^3+ax^2+bx+c\\) is strictly increasing on \\(\\mathbb{R}\\) and \\(f'(1)=0\\), find \\(a\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Differentiate:\n\\[\nf'(x)=3x^2+2ax+b.\n\\]\nSince \\(f'(1)=0\\),\n\\[\n3+2a+b=0 \\implies b=-3-2a.\n\\]\nFor \\(f\\) to be increasing on \\(\\mathbb{R}\\), we need \\(f'(x)\\ge 0\\) for all real \\(x\\). Thus the discriminant of \\(f'(x)\\) must be nonpositive:\n\\[\n(2a)^2-4(3)(b)\\le 0.\n\\]\nSubstitute \\(b=-3-2a\\):\n\\[\n4a^2-12(-3-2a)\\le 0\n\\]\n\\[\n4a^2+36+24a\\le 0\n\\]\n\\[\n4(a^2+6a+9)\\le 0\n\\]\n\\[\n4(a+3)^2\\le 0.\n\\]\nHence \\(a=-3\\). Therefore, option A is correct.",
+      "hint": "Use both the derivative condition at \\(x=1\\) and the nonnegative discriminant condition."
+    }
+  ]
+}

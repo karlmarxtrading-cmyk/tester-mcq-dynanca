@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-282",
+  "category": "Comprehensive Mathematics",
+  "title": "282. Functions, Graphs & Transformations: Graphing Piecewise Functions",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-282-q001",
+      "category": "Functions & Graphs",
+      "concept": "Evaluating a Piecewise Function at a Boundary Point",
+      "learningObjective": "Evaluate a piecewise function at a point where the domain condition changes.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx+1, & x<2\\\\\n2x, & x\\ge 2\n\\end{cases}\n\\]\nWhat is \\(f(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "At \\(x=2\\), the condition \\(x\\ge 2\\) applies, so use the second piece: \\(f(2)=2(2)=4\\). The value \\(3\\) would come from incorrectly using \\(x+1\\), which is valid only for \\(x<2\\).",
+      "hint": "Check which inequality is satisfied by the input value before substituting."
+    },
+    {
+      "id": "dynanca-282-q002",
+      "category": "Functions & Graphs",
+      "concept": "Evaluating a Piecewise Function on a Negative Interval",
+      "learningObjective": "Evaluate a piecewise function at a point in a specified interval.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx^2+1, & x<0\\\\\n2x, & x\\ge 0\n\\end{cases}\n\\]\nWhat is \\(f(-1)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(-1<0\\), use the first piece: \\(f(-1)=(-1)^2+1=1+1=2\\). The value \\(-2\\) would come from incorrectly using the second piece: \\(2(-1)=-2\\).",
+      "hint": "Compare the input with the boundary value \\(0\\) to choose the correct formula."
+    },
+    {
+      "id": "dynanca-282-q003",
+      "category": "Functions & Graphs",
+      "concept": "Domain of a Piecewise Function",
+      "learningObjective": "Determine the domain of a piecewise function from its definition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx+1, & x<0\\\\\nx^2, & x\\ge 0\n\\end{cases}\n\\]\nWhat is the domain of \\(f\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x<0\\)"
+        },
+        {
+          "label": "B",
+          "text": "All real numbers"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first piece is defined for \\(x<0\\), and the second piece is defined for \\(x\\ge 0\\). Together these intervals cover every real number. Therefore, the domain is all real numbers.",
+      "hint": "Combine the intervals given in the conditions of the two pieces."
+    },
+    {
+      "id": "dynanca-282-q004",
+      "category": "Functions & Graphs",
+      "concept": "Range of a Piecewise Function",
+      "learningObjective": "Determine the range of a piecewise function by analyzing each piece.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx+1, & x<0\\\\\nx^2, & x\\ge 0\n\\end{cases}\n\\]\nWhat is the range of \\(f\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y\\ge 0\\)"
+        },
+        {
+          "label": "B",
+          "text": "All real numbers"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(x<0\\), \\(x+1<1\\), so this piece produces all values less than \\(1\\), including negative values and values approaching \\(1\\) from below. For \\(x\\ge 0\\), \\(x^2\\ge 0\\), so this piece produces all values greater than or equal to \\(0\\). The union of \\((-\\infty,1)\\) and \\([0,\\infty)\\) is all real numbers. Therefore, the range is all real numbers.",
+      "hint": "Find the set of output values produced by each piece, then take their union."
+    },
+    {
+      "id": "dynanca-282-q005",
+      "category": "Functions & Graphs",
+      "concept": "Intercepts of a Piecewise Function",
+      "learningObjective": "Determine the \\(y\\)-intercept of a piecewise function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx+2, & x<0\\\\\n3x-1, & x\\ge 0\n\\end{cases}\n\\]\nWhat is the y-intercept of the graph of \\(f\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The y-intercept occurs at \\(x=0\\). Since \\(0\\ge 0\\), use the second piece: \\(f(0)=3(0)-1=-1\\). Therefore, the y-intercept is \\((0,-1)\\), so the y-coordinate is \\(-1\\). The value \\(2\\) comes from incorrectly using the first piece.",
+      "hint": "The \\(y\\)-intercept is the value of \\(f\\) at \\(x=0\\); decide which piece's condition includes that input."
+    },
+    {
+      "id": "dynanca-282-q006",
+      "category": "Functions & Graphs",
+      "concept": "Number of \\(x\\)-Intercepts of a Piecewise Function",
+      "learningObjective": "Determine how many \\(x\\)-intercepts a piecewise function has.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx+2, & x<0\\\\\n2x-4, & x\\ge 0\n\\end{cases}\n\\]\nHow many x-intercepts does the graph of \\(f\\) have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set each piece equal to zero and check the interval. For \\(x<0\\), solve \\(x+2=0\\), giving \\(x=-2\\), which satisfies \\(x<0\\). For \\(x\\ge 0\\), solve \\(2x-4=0\\), giving \\(x=2\\), which satisfies \\(x\\ge 0\\). Thus there are two x-intercepts: \\((-2,0)\\) and \\((2,0)\\).",
+      "hint": "Solve \\(f(x)=0\\) separately on each interval and keep only solutions that satisfy the interval condition."
+    },
+    {
+      "id": "dynanca-282-q007",
+      "category": "Functions & Graphs",
+      "concept": "Continuity at a Boundary Point of a Piecewise Function",
+      "learningObjective": "Determine whether a piecewise function is continuous at a given boundary point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx+1, & x<2\\\\\n2x, & x\\ge 2\n\\end{cases}\n\\]\nIs \\(f\\) continuous at \\(x=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Check the left-hand limit and the function value at \\(x=2\\). As \\(x\\to 2^{-}\\), \\(f(x)\\to 2+1=3\\). At \\(x=2\\), the second piece gives \\(f(2)=2(2)=4\\). Since the left-hand limit \\(3\\) is not equal to \\(f(2)=4\\), the function is not continuous at \\(x=2\\).",
+      "hint": "Compare the value approached from the left with the actual value at the boundary point."
+    },
+    {
+      "id": "dynanca-282-q008",
+      "category": "Functions & Graphs",
+      "concept": "Making a Piecewise Function Continuous",
+      "learningObjective": "Determine a parameter that makes a piecewise function continuous at a boundary point.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\n2x+a, & x<1\\\\\n3x, & x\\ge 1\n\\end{cases}\n\\]\nWhat value of \\(a\\) makes \\(f\\) continuous at \\(x=1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For continuity at \\(x=1\\), the left-hand limit must equal the value at \\(x=1\\). The left-hand limit is \\(2(1)+a=2+a\\). The value at \\(x=1\\) is \\(3(1)=3\\). Set \\(2+a=3\\), so \\(a=1\\).",
+      "hint": "Set the expression from the left piece at \\(x=1\\) equal to the expression from the right piece at \\(x=1\\)."
+    },
+    {
+      "id": "dynanca-282-q009",
+      "category": "Functions & Graphs",
+      "concept": "Writing a Piecewise Function from a Graph Description",
+      "learningObjective": "Determine the piecewise equation that matches a described graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A graph consists of two rays. For \\(x<0\\), the ray is the line through \\((-1,2)\\) and \\((0,1)\\). For \\(x\\ge 0\\), the ray is the line through \\((0,-1)\\) and \\((1,1)\\). Which piecewise function describes this graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f(x)=\\begin{cases} -x-1, & x<0\\\\ 2x+1, & x\\ge 0 \\end{cases}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(f(x)=\\begin{cases} -x+1, & x<0\\\\ 2x-1, & x\\ge 0 \\end{cases}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(x<0\\), the slope through \\((-1,2)\\) and \\((0,1)\\) is \\(\\frac{1-2}{0-(-1)}=-1\\), and the y-intercept is \\(1\\), so the rule is \\(y=-x+1\\). For \\(x\\ge 0\\), the slope through \\((0,-1)\\) and \\((1,1)\\) is \\(\\frac{1-(-1)}{1-0}=2\\), and the y-intercept is \\(-1\\), so the rule is \\(y=2x-1\\). Therefore, the correct piecewise function is option B.",
+      "hint": "Find the slope and y-intercept of each ray separately, then match them to the correct interval."
+    },
+    {
+      "id": "dynanca-282-q010",
+      "category": "Functions & Graphs",
+      "concept": "Solving an Equation Involving a Piecewise Function",
+      "learningObjective": "Solve \\(f(x)=c\\) for a piecewise function and identify valid solutions.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx+3, & x<0\\\\\nx^2, & x\\ge 0\n\\end{cases}\n\\]\nFind all \\(x\\) such that \\(f(x)=4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1\\) and \\(x=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Solve on each interval. For \\(x<0\\), \\(x+3=4\\) gives \\(x=1\\), but \\(1<0\\) is false, so reject it. For \\(x\\ge 0\\), \\(x^2=4\\) gives \\(x=2\\) or \\(x=-2\\). Since only \\(x\\ge 0\\) is allowed, keep \\(x=2\\). Therefore, the only solution is \\(x=2\\).",
+      "hint": "Solve \\(f(x)=4\\) separately on each interval and discard any solution that does not satisfy its interval condition."
+    }
+  ]
+}

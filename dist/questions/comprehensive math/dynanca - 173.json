@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-173",
+  "category": "Comprehensive Mathematics",
+  "title": "173. Algebra, Equations & Inequalities: Long Division of Polynomials",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-173-q001",
+      "category": "Algebra",
+      "concept": "Division Algorithm for Polynomials",
+      "learningObjective": "Identify the degree condition for the remainder in polynomial long division.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In polynomial long division, after writing\n\\[\n\\text{dividend}=\\text{divisor}\\times\\text{quotient}+\\text{remainder}\n\\]\nwhich condition must the remainder satisfy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The degree of the remainder is greater than the degree of the divisor."
+        },
+        {
+          "label": "B",
+          "text": "The degree of the remainder is less than the degree of the divisor."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Polynomial long division stops when the remaining polynomial can no longer be divided by the divisor. This happens exactly when the degree of the remainder is less than the degree of the divisor. Therefore, the correct condition is B.",
+      "hint": "Recall when the long-division process must stop."
+    },
+    {
+      "id": "dynanca-173-q002",
+      "category": "Algebra",
+      "concept": "Dividing a Polynomial by a Monomial",
+      "learningObjective": "Divide a binomial by a monomial term by term.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Divide \\(6x^3+9x^2\\) by \\(3x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2x^2+3x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2x^2+3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide each term by \\(3x\\):\n\\[\n\\begin{aligned}\n\\frac{6x^3}{3x} &= 2x^2\\\\\n\\frac{9x^2}{3x} &= 3x\\\\\n(6x^3+9x^2)\\div(3x) &= 2x^2+3x\n\\end{aligned}\n\\]",
+      "hint": "Divide the coefficients and subtract the exponents of like variable factors."
+    },
+    {
+      "id": "dynanca-173-q003",
+      "category": "Algebra",
+      "concept": "Dividing a Quadratic by a Linear Binomial",
+      "learningObjective": "Perform polynomial long division when the divisor is \\(x+a\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Divide \\(x^2+5x+6\\) by \\(x+2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x+3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x+4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since\n\\[\n(x+2)(x+3)=x^2+5x+6\n\\]\nthe quotient is \\(x+3\\). Long division gives the same result:\n\\[\n(x^2+5x+6)\\div(x+2)=x+3\n\\]",
+      "hint": "Look for a binomial whose product with \\(x+2\\) gives the dividend."
+    },
+    {
+      "id": "dynanca-173-q004",
+      "category": "Algebra",
+      "concept": "Long Division with a Nonzero Remainder",
+      "learningObjective": "Determine the quotient and remainder when a polynomial is not exactly divisible.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Divide \\(x^2+3x+5\\) by \\(x+1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "Quotient \\(x+3\\), remainder \\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "Quotient \\(x+2\\), remainder \\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Long division gives:\n\\[\nx^2+3x+5=(x+1)(x+2)+3\n\\]\nCheck:\n\\[\n(x+1)(x+2)+3=x^2+3x+2+3=x^2+3x+5\n\\]\nTherefore, the quotient is \\(x+2\\) and the remainder is \\(3\\).",
+      "hint": "Subtract after each multiplication, and stop when the remainder has lower degree than \\(x+1\\)."
+    },
+    {
+      "id": "dynanca-173-q005",
+      "category": "Algebra",
+      "concept": "Dividing a Quadratic with a Leading Coefficient",
+      "learningObjective": "Divide a quadratic polynomial by a linear binomial.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Divide \\(2x^2-7x+3\\) by \\(x-3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2x-1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2x+1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Check the product:\n\\[\n\\begin{aligned}\n(x-3)(2x-1) &= 2x^2-x-6x+3\\\\\n&= 2x^2-7x+3\\\\\n(2x^2-7x+3)\\div(x-3) &= 2x-1\n\\end{aligned}\n\\]",
+      "hint": "Find the quotient by matching the leading term first."
+    },
+    {
+      "id": "dynanca-173-q006",
+      "category": "Algebra",
+      "concept": "Long Division with a Missing Term",
+      "learningObjective": "Divide a cubic binomial by a linear binomial by inserting missing terms.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Divide \\(x^3-8\\) by \\(x-2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x^2+2x+4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^2-2x+4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Insert the missing terms: \\(x^3-8=x^3+0x^2+0x-8\\). Divide \\(x^3\\) by \\(x\\) to get \\(x^2\\); subtract \\(x^2(x-2)=x^3-2x^2\\) to leave \\(2x^2+0x\\). Divide \\(2x^2\\) by \\(x\\) to get \\(2x\\); subtract \\(2x(x-2)=2x^2-4x\\) to leave \\(4x-8\\). Divide \\(4x\\) by \\(x\\) to get \\(4\\); subtract \\(4(x-2)=4x-8\\) to leave \\(0\\). Therefore,\n\\[\n(x^3-8)\\div(x-2)=x^2+2x+4\n\\]\nwhich agrees with the difference of cubes identity \\(x^3-2^3=(x-2)(x^2+2x+4)\\).",
+      "hint": "Recognize \\(x^3-8\\) as a difference of cubes, or insert \\(0x^2+0x\\) and use long division."
+    },
+    {
+      "id": "dynanca-173-q007",
+      "category": "Algebra",
+      "concept": "Long Division of a Cubic Polynomial",
+      "learningObjective": "Divide a cubic polynomial by a linear binomial with zero remainder.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Divide \\(x^3+2x^2-5x-6\\) by \\(x+1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x^2+3x-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^2+x-6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using long division or synthetic division with \\(-1\\), the coefficients \\(1\\), \\(2\\), \\(-5\\), \\(-6\\) give quotient coefficients \\(1\\), \\(1\\), \\(-6\\):\n\\[\nx^3+2x^2-5x-6=(x+1)(x^2+x-6)\n\\]\nTherefore, the quotient is \\(x^2+x-6\\).",
+      "hint": "Divide the leading terms first (\\(x^3\\div x\\)), multiply the divisor by that term, subtract, and repeat; you can check your quotient by multiplying it by \\(x+1\\)."
+    },
+    {
+      "id": "dynanca-173-q008",
+      "category": "Algebra",
+      "concept": "Long Division with a Remainder",
+      "learningObjective": "Determine the quotient and remainder when dividing a cubic by a linear binomial.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Divide \\(2x^3-3x^2+4x-5\\) by \\(x-2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "Quotient \\(2x^2-x+6\\), remainder \\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "Quotient \\(2x^2+x+6\\), remainder \\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Divide \\(2x^3\\) by \\(x\\) to get \\(2x^2\\); subtract \\(2x^2(x-2)=2x^3-4x^2\\) to leave \\(x^2+4x\\). Divide \\(x^2\\) by \\(x\\) to get \\(x\\); subtract \\(x(x-2)=x^2-2x\\) to leave \\(6x-5\\). Divide \\(6x\\) by \\(x\\) to get \\(6\\); subtract \\(6(x-2)=6x-12\\) to leave \\(7\\). Check:\n\\[\n\\begin{aligned}\n(x-2)(2x^2+x+6)+7 &= 2x^3+x^2+6x-4x^2-2x-12+7\\\\\n&= 2x^3-3x^2+4x-5\n\\end{aligned}\n\\]\nTherefore, the quotient is \\(2x^2+x+6\\) and the remainder is \\(7\\).",
+      "hint": "Track the signs carefully when subtracting each product."
+    },
+    {
+      "id": "dynanca-173-q009",
+      "category": "Algebra",
+      "concept": "Long Division of a Quartic by a Linear Binomial",
+      "learningObjective": "Divide a quartic polynomial by \\(x-1\\) using long division.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Divide \\(x^4-1\\) by \\(x-1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x^3+x^2+x+1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^3-x^2+x-1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiply to verify:\n\\[\n\\begin{aligned}\n(x-1)(x^3+x^2+x+1) &= x^4+x^3+x^2+x-x^3-x^2-x-1\\\\\n&= x^4-1\\\\\n(x^4-1)\\div(x-1) &= x^3+x^2+x+1\n\\end{aligned}\n\\]",
+      "hint": "Insert missing terms \\(0x^3+0x^2+0x\\) if using long division directly."
+    },
+    {
+      "id": "dynanca-173-q010",
+      "category": "Algebra",
+      "concept": "Using Polynomial Division in a Geometry Context",
+      "learningObjective": "Find the missing dimension of a rectangle by dividing polynomials.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A rectangle has area \\(x^3-4x^2+x+6\\) and length \\(x-3\\). What is its width?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x^2-x-2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^2+x+2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The width is the area divided by the length:\n\\[\n\\frac{x^3-4x^2+x+6}{x-3}\n\\]\nDivide \\(x^3\\) by \\(x\\) to get \\(x^2\\); subtract \\(x^2(x-3)=x^3-3x^2\\) to leave \\(-x^2+x\\). Divide \\(-x^2\\) by \\(x\\) to get \\(-x\\); subtract \\(-x(x-3)=-x^2+3x\\) to leave \\(-2x+6\\). Divide \\(-2x\\) by \\(x\\) to get \\(-2\\); subtract \\(-2(x-3)=-2x+6\\) to leave \\(0\\). Hence\n\\[\nx^3-4x^2+x+6=(x-3)(x^2-x-2)\n\\]\nTherefore, the width is \\(x^2-x-2\\).",
+      "hint": "Divide the area polynomial by the length polynomial, then check by multiplying."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-485",
+  "category": "Comprehensive Mathematics",
+  "title": "485. Sets, Logic, Reasoning & Proof: Intervals as Sets of Real Numbers",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-485-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Closed interval as a set",
+      "learningObjective": "Write a closed interval in set-builder notation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which set equals the interval \\([2,5]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{x\\in\\mathbb{R}\\mid 2<x<5\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{x\\in\\mathbb{R}\\mid 2\\le x\\le 5\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Square brackets mean that the endpoints are included, so \\([2,5]\\) contains every real number from \\(2\\) to \\(5\\), including \\(2\\) and \\(5\\). The set with strict inequalities is the open interval \\((2,5)\\), which excludes both endpoints.",
+      "hint": "A square bracket corresponds to an inequality that allows equality."
+    },
+    {
+      "id": "dynanca-485-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Membership at an open endpoint",
+      "learningObjective": "Decide whether an endpoint belongs to a half-open interval.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Is \\(3\\) an element of the interval \\((3,7]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because the round bracket excludes \\(3\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes, because \\(3\\) is written as an endpoint of the interval."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The interval \\((3,7]\\) is the set of real numbers with \\(3<x\\le 7\\). The number \\(3\\) does not satisfy \\(3<3\\), so it is not in the interval. The other endpoint, \\(7\\), is included because of the square bracket.",
+      "hint": "Translate the brackets into inequalities and test the number."
+    },
+    {
+      "id": "dynanca-485-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Unbounded interval",
+      "learningObjective": "Write an unbounded interval in set-builder notation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which set equals the interval \\((-\\infty,4)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{x\\in\\mathbb{R}\\mid x\\le 4\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{x\\in\\mathbb{R}\\mid x<4\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The round bracket at \\(4\\) excludes that endpoint, so the interval contains exactly the real numbers less than \\(4\\). The symbol \\(-\\infty\\) is not a number; it only indicates that there is no lower bound. The set with \\(x\\le 4\\) is \\((-\\infty,4]\\).",
+      "hint": "Check whether the number \\(4\\) itself belongs to the interval."
+    },
+    {
+      "id": "dynanca-485-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Intersection of half-open intervals",
+      "learningObjective": "Intersect two half-open intervals with correct endpoints.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\([1,4)\\cap(2,6]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([2,4]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A number in the intersection satisfies \\(1\\le x<4\\) and \\(2<x\\le 6\\). Combining, \\(2<x<4\\), which is the open interval \\((2,4)\\). The number \\(2\\) is excluded by the second interval and \\(4\\) is excluded by the first, so neither endpoint belongs to the intersection.",
+      "hint": "For each endpoint of the result, check whether it lies in both intervals."
+    },
+    {
+      "id": "dynanca-485-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Union of adjacent intervals",
+      "learningObjective": "Form the union of two intervals that share an endpoint.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is \\((0,3)\\cup[3,5]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0,5]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,3)\\cup(3,5]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first interval contains the numbers with \\(0<x<3\\), and the second those with \\(3\\le x\\le 5\\). Together they contain every number with \\(0<x\\le 5\\), including \\(3\\), which belongs to the second interval. So the union is the single interval \\((0,5]\\); the other set leaves out \\(3\\).",
+      "hint": "Check whether the common endpoint \\(3\\) belongs to at least one of the two intervals."
+    },
+    {
+      "id": "dynanca-485-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Integers in a half-open interval",
+      "learningObjective": "Count the integers that belong to a half-open interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many integers belong to the interval \\([-2,3)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The interval contains the real numbers with \\(-2\\le x<3\\). The integers among them are \\(-2,-1,0,1,2\\), which is \\(5\\) integers. The number \\(3\\) is excluded by the round bracket, so counting it gives the incorrect \\(6\\).",
+      "hint": "List the integers and check both endpoints against the brackets."
+    },
+    {
+      "id": "dynanca-485-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Interval for a non-strict lower bound",
+      "learningObjective": "Write a set given by a non-strict inequality as an interval.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Which interval equals \\(\\{x\\in\\mathbb{R}\\mid x\\ge -1\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-1,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([-1,\\infty)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inequality \\(x\\ge -1\\) includes the number \\(-1\\), which is shown by a square bracket. There is no upper bound, shown by \\(\\infty\\) with a round bracket. The interval \\((-1,\\infty)\\) would exclude \\(-1\\).",
+      "hint": "Decide whether \\(-1\\) itself satisfies the inequality."
+    },
+    {
+      "id": "dynanca-485-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Degenerate intervals",
+      "learningObjective": "Identify the sets described by intervals with equal endpoints.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "What is the interval \\([2,2]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The empty set"
+        },
+        {
+          "label": "B",
+          "text": "The one-element set \\(\\{2\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The interval \\([2,2]\\) is \\(\\{x\\in\\mathbb{R}\\mid 2\\le x\\le 2\\}\\), and the only real number satisfying this is \\(2\\). So \\([2,2]=\\{2\\}\\). The open interval \\((2,2)\\) is empty, because no number satisfies \\(2<x<2\\).",
+      "hint": "Write the interval as a set with two inequalities and look for solutions."
+    },
+    {
+      "id": "dynanca-485-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Complement of a half-open interval",
+      "learningObjective": "Find the complement in the real numbers of a bounded half-open interval.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "What is \\(\\mathbb{R}\\setminus(1,3]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-\\infty,1)\\cup[3,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\infty,1]\\cup(3,\\infty)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The interval \\((1,3]\\) excludes \\(1\\) and includes \\(3\\). Removing it from \\(\\mathbb{R}\\) keeps \\(1\\) and removes \\(3\\). So the complement is \\((-\\infty,1]\\cup(3,\\infty)\\). In the other set the brackets at \\(1\\) and \\(3\\) are the wrong way round.",
+      "hint": "An endpoint that is excluded from the interval is included in the complement, and vice versa."
+    },
+    {
+      "id": "dynanca-485-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Interval from an absolute value inequality",
+      "learningObjective": "Write the solution set of an absolute value inequality as an interval.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "Which interval equals \\(\\{x\\in\\mathbb{R}\\mid |x-2|<3\\}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([-1,5]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-1,5)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inequality \\(|x-2|<3\\) means that the distance from \\(x\\) to \\(2\\) is less than \\(3\\), that is, \\(-3<x-2<3\\), or \\(-1<x<5\\). The strict inequality excludes both endpoints, so the set is the open interval \\((-1,5)\\). At \\(x=5\\), \\(|5-2|=3\\), which is not less than \\(3\\).",
+      "hint": "Rewrite the inequality as a pair of strict inequalities and test an endpoint."
+    }
+  ]
+}

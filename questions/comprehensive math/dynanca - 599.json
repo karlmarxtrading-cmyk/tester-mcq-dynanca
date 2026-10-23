@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-599",
+  "category": "Comprehensive Mathematics",
+  "title": "599. Discrete Mathematics, Counting & Graph Theory: Eulerian Paths and Circuits",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-599-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Definition of an Euler circuit",
+      "learningObjective": "State what an Euler circuit is.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is an Euler circuit of a graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A closed trail that uses every edge exactly once"
+        },
+        {
+          "label": "B",
+          "text": "A closed walk that visits every vertex exactly once"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An Euler circuit starts and ends at the same vertex and traverses each edge of the graph exactly once; vertices may be visited several times. A closed walk that visits every vertex exactly once is a Hamiltonian cycle, which is a different notion.",
+      "hint": "The definition is about edges, not about vertices."
+    },
+    {
+      "id": "dynanca-599-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The degree criterion",
+      "learningObjective": "State the condition for a connected graph to have an Euler circuit.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which connected graphs have an Euler circuit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Exactly those in which every vertex has even degree"
+        },
+        {
+          "label": "B",
+          "text": "Exactly those with an even number of edges"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each time a closed trail passes through a vertex it uses two edges there, one to enter and one to leave, so every degree must be even. Conversely, a connected graph with all degrees even has an Euler circuit. An even number of edges is not enough: a path with two edges has no Euler circuit.",
+      "hint": "Think about entering and leaving a vertex along different edges."
+    },
+    {
+      "id": "dynanca-599-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A square with one diagonal",
+      "learningObjective": "Classify a small graph by its Euler path or circuit.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D\\) and edges \\(AB\\), \\(BC\\), \\(CD\\), \\(DA\\), and \\(AC\\). Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It has an Euler circuit."
+        },
+        {
+          "label": "B",
+          "text": "It has an Euler path but no Euler circuit."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The degrees are \\(3\\) for \\(A\\), \\(2\\) for \\(B\\), \\(3\\) for \\(C\\), and \\(2\\) for \\(D\\). Exactly two vertices have odd degree, so there is an Euler path, for example \\(A,B,C,D,A,C\\), but no Euler circuit, which would require all degrees to be even.",
+      "hint": "Count the vertices of odd degree."
+    },
+    {
+      "id": "dynanca-599-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Where an Euler path starts",
+      "learningObjective": "Identify the possible starting vertices of an Euler path.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A graph has vertices \\(A,B,C,D\\) and edges \\(AB\\), \\(BC\\), \\(CD\\), \\(DA\\), and \\(AC\\). At which vertices can an Euler path start?",
+      "options": [
+        {
+          "label": "A",
+          "text": "At any of the four vertices"
+        },
+        {
+          "label": "B",
+          "text": "At \\(A\\) or at \\(C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "At every vertex other than the two ends of the trail, each arrival is followed by a departure, so the degree there is even. The vertices of odd degree, here \\(A\\) and \\(C\\) with degree \\(3\\), must therefore be the two ends. An Euler path cannot start at \\(B\\) or \\(D\\).",
+      "hint": "The ends of an Euler path are the vertices of odd degree."
+    },
+    {
+      "id": "dynanca-599-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A complete graph with five vertices",
+      "learningObjective": "Decide whether a complete graph has an Euler circuit.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Does the complete graph on \\(5\\) vertices have an Euler circuit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; it has \\(10\\) edges, and that is too many for a single circuit."
+        },
+        {
+          "label": "B",
+          "text": "Yes; it is connected and every vertex has degree \\(4\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "In the complete graph on \\(5\\) vertices each vertex is adjacent to the other \\(4\\), so all degrees are even, and the graph is connected. Hence an Euler circuit exists; it has length \\(10\\). The number of edges puts no limit on an Euler circuit.",
+      "hint": "Find the degree of each vertex."
+    },
+    {
+      "id": "dynanca-599-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A complete graph with four vertices",
+      "learningObjective": "Decide whether a complete graph has an Euler path or circuit.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Which statement about the complete graph on \\(4\\) vertices is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It has an Euler path but no Euler circuit."
+        },
+        {
+          "label": "B",
+          "text": "It has neither an Euler circuit nor an Euler path."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every vertex has degree \\(3\\), so all four vertices have odd degree. An Euler circuit needs no vertex of odd degree, and an Euler path needs exactly two. With four vertices of odd degree, neither exists.",
+      "hint": "Count how many vertices have odd degree."
+    },
+    {
+      "id": "dynanca-599-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Four odd vertices",
+      "learningObjective": "Use the degrees to rule out an Euler path.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A connected graph, in which several edges may join the same two vertices, has four vertices with degrees \\(5,3,3,3\\). Does it have an Euler path?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; it has four vertices of odd degree, and an Euler path allows at most two."
+        },
+        {
+          "label": "B",
+          "text": "Yes; the degrees add up to an even number."
+        }
+      ],
+      "answer": "A",
+      "explanation": "An Euler path exists in a connected graph exactly when the number of vertices of odd degree is \\(0\\) or \\(2\\). Here all four degrees are odd. The degree sum \\(14\\) is even for every graph, so it gives no information.",
+      "hint": "Count the odd degrees."
+    },
+    {
+      "id": "dynanca-599-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Repairing the degrees",
+      "learningObjective": "Find the fewest edges to add so that an Euler circuit exists.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A connected graph has exactly \\(6\\) vertices of odd degree. What is the smallest number of edges that must be added, with repeated edges allowed, so that the graph has an Euler circuit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each added edge changes the parity of the degrees of its two endpoints. Pairing up the \\(6\\) odd vertices and adding one edge for each pair makes all degrees even with \\(3\\) edges. Fewer edges cannot suffice, because each edge repairs at most two odd vertices.",
+      "hint": "One new edge can fix the parity of two vertices at once."
+    },
+    {
+      "id": "dynanca-599-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Length of an Euler circuit",
+      "learningObjective": "Find the number of edges of an Euler circuit from the degrees.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A connected graph has six vertices with degrees \\(4,4,2,2,2,2\\). How many edges does an Euler circuit of this graph traverse?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "All degrees are even and the graph is connected, so an Euler circuit exists, and it traverses every edge exactly once. The degree sum is \\(16\\), so the graph has \\(\\dfrac{16}{2}=8\\) edges, and the circuit has length \\(8\\). The number \\(16\\) is the degree sum, which counts each edge twice.",
+      "hint": "Find the number of edges from the degree sum."
+    },
+    {
+      "id": "dynanca-599-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Complete bipartite graphs",
+      "learningObjective": "Decide which complete bipartite graph has an Euler circuit.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(K_{m,n}\\) denote the complete bipartite graph in which each of \\(m\\) vertices on one side is adjacent to each of \\(n\\) vertices on the other side. Which of these graphs has an Euler circuit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(K_{3,3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(K_{2,4}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In \\(K_{m,n}\\) the vertices on the first side have degree \\(n\\) and those on the second side have degree \\(m\\). An Euler circuit requires all degrees to be even, so both \\(m\\) and \\(n\\) must be even. This holds for \\(K_{2,4}\\), with degrees \\(4\\) and \\(2\\), but not for \\(K_{3,3}\\), where every degree is \\(3\\).",
+      "hint": "Work out the degree of a vertex on each side."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-606",
+  "category": "Comprehensive Mathematics",
+  "title": "606. Discrete Mathematics, Counting & Graph Theory: Boolean Algebra Laws",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-606-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Identity for addition",
+      "learningObjective": "Apply the identity law for the Boolean sum.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In Boolean algebra, where \\(+\\) denotes OR and the values are \\(0\\) and \\(1\\), what is \\(x+0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sum \\(x+0\\) is \\(1\\) exactly when \\(x\\) is \\(1\\), so it always equals \\(x\\). This is the identity law for OR. The result \\(0\\) would be correct for the product \\(x\\cdot 0\\), not for the sum.",
+      "hint": "Try both values of \\(x\\)."
+    },
+    {
+      "id": "dynanca-606-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Multiplying by zero",
+      "learningObjective": "Apply the domination law for the Boolean product.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In Boolean algebra, where the product denotes AND, what is \\(x\\cdot 0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A product is \\(1\\) only when both factors are \\(1\\). Since one factor is \\(0\\), the product is \\(0\\) whatever the value of \\(x\\). The result \\(x\\) would be correct for \\(x\\cdot 1\\).",
+      "hint": "An AND with a false input can never be true."
+    },
+    {
+      "id": "dynanca-606-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Adding a variable to itself",
+      "learningObjective": "Apply the idempotent law.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In Boolean algebra, what is \\(x+x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If \\(x=0\\), then \\(x+x=0\\); if \\(x=1\\), then \\(x+x=1\\), because \\(1\\) OR \\(1\\) is \\(1\\). So \\(x+x=x\\). This is the idempotent law. The expression \\(2x\\) belongs to ordinary arithmetic; Boolean algebra has no value \\(2\\).",
+      "hint": "Evaluate the sum for each of the two Boolean values."
+    },
+    {
+      "id": "dynanca-606-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A variable and its complement",
+      "learningObjective": "Apply the complement law for the Boolean sum.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In Boolean algebra, where \\(\\overline{x}\\) denotes the complement of \\(x\\), what is \\(x+\\overline{x}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Exactly one of \\(x\\) and \\(\\overline{x}\\) is \\(1\\), so their sum, an OR, is always \\(1\\). The value \\(0\\) is the result of the product \\(x\\,\\overline{x}\\), since the two are never both \\(1\\).",
+      "hint": "One of the two terms is always true."
+    },
+    {
+      "id": "dynanca-606-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Complement of a product",
+      "learningObjective": "Apply the law of De Morgan to a product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In Boolean algebra, which expression equals \\(\\overline{xy}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\overline{x}+\\overline{y}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\overline{x}\\,\\overline{y}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The product \\(xy\\) is \\(0\\) as soon as at least one factor is \\(0\\), so its complement is \\(1\\) exactly when \\(x=0\\) or \\(y=0\\), which is \\(\\overline{x}+\\overline{y}\\). The product \\(\\overline{x}\\,\\overline{y}\\) is \\(1\\) only when both variables are \\(0\\); it equals \\(\\overline{x+y}\\) instead.",
+      "hint": "Ask when the product \\(xy\\) fails to be \\(1\\)."
+    },
+    {
+      "id": "dynanca-606-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "The second distributive law",
+      "learningObjective": "Apply the distributive law of the sum over the product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "In Boolean algebra, which expression equals \\(x+yz\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(xy+xz\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((x+y)(x+z)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Expanding gives \\((x+y)(x+z)=xx+xz+yx+yz=x+xz+xy+yz=x+yz\\), using \\(xx=x\\) and absorption. So the sum distributes over the product, a law that has no counterpart in ordinary algebra. The expression \\(xy+xz\\) equals \\(x(y+z)\\), which is \\(0\\) whenever \\(x=0\\), even if \\(y=z=1\\).",
+      "hint": "Test the candidates with \\(x=0\\), \\(y=1\\), \\(z=1\\)."
+    },
+    {
+      "id": "dynanca-606-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Absorption",
+      "learningObjective": "Apply the absorption law.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In Boolean algebra, what does \\(x+xy\\) simplify to?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(xy\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Factor: \\(x+xy=x(1+y)=x\\cdot 1=x\\), since \\(1+y=1\\). The term \\(xy\\) can be \\(1\\) only when \\(x\\) is already \\(1\\), so it adds nothing. The expression \\(xy\\) is different: for \\(x=1\\), \\(y=0\\) it is \\(0\\), while \\(x+xy\\) is \\(1\\).",
+      "hint": "Factor out \\(x\\) and use \\(1+y=1\\)."
+    },
+    {
+      "id": "dynanca-606-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A law that fails for numbers",
+      "learningObjective": "Identify a Boolean law that does not hold in ordinary arithmetic.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which equation holds for all Boolean values but fails for some real numbers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x+x=x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x+y=y+x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For Boolean values, \\(x+x=x\\) by the idempotent law. For real numbers, \\(x+x=2x\\), which equals \\(x\\) only when \\(x=0\\); for example \\(1+1=2\\). The commutative law \\(x+y=y+x\\) holds in both systems.",
+      "hint": "Substitute the real number \\(1\\) into each equation."
+    },
+    {
+      "id": "dynanca-606-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Duality",
+      "learningObjective": "Form the dual of a Boolean identity.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The dual of a Boolean identity is obtained by exchanging \\(+\\) with \\(\\cdot\\) and \\(0\\) with \\(1\\). What is the dual of \\(x(y+z)=xy+xz\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x+yz=(x+y)(x+z)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x+yz=xy+xz\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Exchange the operations throughout. On the left, the product of \\(x\\) with the sum \\(y+z\\) becomes the sum of \\(x\\) with the product \\(yz\\). On the right, the sum of the products \\(xy\\) and \\(xz\\) becomes the product of the sums \\(x+y\\) and \\(x+z\\). The result, \\(x+yz=(x+y)(x+z)\\), is again a valid identity. Changing only one side does not give the dual and gives a false equation.",
+      "hint": "Exchange the two operations on both sides of the equation."
+    },
+    {
+      "id": "dynanca-606-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Removing a complement",
+      "learningObjective": "Simplify a product that contains a complemented variable inside a sum.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In Boolean algebra, what does \\(x(\\overline{x}+y)\\) simplify to?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x+y\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(xy\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Distribute: \\(x(\\overline{x}+y)=x\\,\\overline{x}+xy\\). Since \\(x\\,\\overline{x}=0\\), this is \\(0+xy=xy\\). The expression \\(x+y\\) is not equal to it: for \\(x=1\\), \\(y=0\\) the given expression is \\(1\\cdot(0+0)=0\\), while \\(x+y=1\\).",
+      "hint": "Distribute first, then use the fact that a variable times its complement is \\(0\\)."
+    }
+  ]
+}

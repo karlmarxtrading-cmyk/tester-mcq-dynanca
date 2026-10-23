@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-589",
+  "category": "Comprehensive Mathematics",
+  "title": "589. Discrete Mathematics, Counting & Graph Theory: Rooted Trees and Parent-Child Relations",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-589-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Parent of a vertex",
+      "learningObjective": "State how the parent of a vertex in a rooted tree is determined.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a rooted tree, which vertex is the parent of a vertex \\(v\\) other than the root?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Any neighbour of \\(v\\) that is farther from the root than \\(v\\)"
+        },
+        {
+          "label": "B",
+          "text": "The neighbour of \\(v\\) that lies on the path from \\(v\\) to the root"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Exactly one neighbour of \\(v\\) lies on the unique path from \\(v\\) to the root; it is one step closer to the root and is called the parent of \\(v\\). The neighbours that are farther from the root are the children of \\(v\\).",
+      "hint": "The parent is one step closer to the root."
+    },
+    {
+      "id": "dynanca-589-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Reading a parent",
+      "learningObjective": "Find the parent of a vertex in a described rooted tree.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A rooted tree has root \\(A\\). The children of \\(A\\) are \\(B\\) and \\(C\\); the children of \\(B\\) are \\(D\\) and \\(E\\); the only child of \\(C\\) is \\(F\\); the children of \\(F\\) are \\(G\\) and \\(H\\). Which vertex is the parent of \\(F\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(G\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(C\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The description says that \\(F\\) is the only child of \\(C\\), so \\(C\\) is the parent of \\(F\\). The vertex \\(G\\) is a child of \\(F\\), which is the opposite relationship.",
+      "hint": "Find the vertex whose list of children contains \\(F\\)."
+    },
+    {
+      "id": "dynanca-589-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Counting leaves",
+      "learningObjective": "Count the leaves of a described rooted tree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A rooted tree has root \\(A\\). The children of \\(A\\) are \\(B\\) and \\(C\\); the children of \\(B\\) are \\(D\\) and \\(E\\); the only child of \\(C\\) is \\(F\\); the children of \\(F\\) are \\(G\\) and \\(H\\). How many leaves, that is, vertices without children, does the tree have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The vertices with children are \\(A\\), \\(B\\), \\(C\\), and \\(F\\). The remaining vertices \\(D\\), \\(E\\), \\(G\\), and \\(H\\) have no children, so there are \\(4\\) leaves.",
+      "hint": "List the vertices that are never said to have children."
+    },
+    {
+      "id": "dynanca-589-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Depth of a vertex",
+      "learningObjective": "Find the depth of a vertex in a described rooted tree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A rooted tree has root \\(A\\). The children of \\(A\\) are \\(B\\) and \\(C\\); the children of \\(B\\) are \\(D\\) and \\(E\\); the only child of \\(C\\) is \\(F\\); the children of \\(F\\) are \\(G\\) and \\(H\\). The depth of a vertex is the number of edges on the path from the root to it. What is the depth of \\(G\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The path from the root to \\(G\\) is \\(A,C,F,G\\), which has \\(3\\) edges. So the depth of \\(G\\) is \\(3\\). The number \\(4\\) counts the vertices on this path instead of the edges.",
+      "hint": "Count the edges on the path from the root, not the vertices."
+    },
+    {
+      "id": "dynanca-589-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Height of a rooted tree",
+      "learningObjective": "Find the height of a described rooted tree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A rooted tree has root \\(A\\). The children of \\(A\\) are \\(B\\) and \\(C\\); the children of \\(B\\) are \\(D\\) and \\(E\\); the only child of \\(C\\) is \\(F\\); the children of \\(F\\) are \\(G\\) and \\(H\\). The height of the tree is the largest depth of any vertex, where the root has depth \\(0\\). What is the height?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The depths are \\(1\\) for \\(B\\) and \\(C\\); \\(2\\) for \\(D\\), \\(E\\), and \\(F\\); and \\(3\\) for \\(G\\) and \\(H\\). The largest depth is \\(3\\), so the height is \\(3\\). The branch through \\(B\\) ends at depth \\(2\\), but the branch through \\(C\\) and \\(F\\) is longer.",
+      "hint": "Find the vertex that is farthest from the root."
+    },
+    {
+      "id": "dynanca-589-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Ancestors",
+      "learningObjective": "List the ancestors of a vertex in a described rooted tree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "A rooted tree has root \\(A\\). The children of \\(A\\) are \\(B\\) and \\(C\\); the children of \\(B\\) are \\(D\\) and \\(E\\); the only child of \\(C\\) is \\(F\\); the children of \\(F\\) are \\(G\\) and \\(H\\). Which vertices are the ancestors of \\(G\\), not counting \\(G\\) itself?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(F\\), \\(C\\), and \\(A\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(F\\) only"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The ancestors of a vertex are the vertices on the path from it to the root, other than the vertex itself. For \\(G\\) this path is \\(G,F,C,A\\), so the ancestors are \\(F\\), \\(C\\), and \\(A\\). The vertex \\(F\\) alone is the parent, which is only the nearest ancestor.",
+      "hint": "Follow the parents upward until the root is reached."
+    },
+    {
+      "id": "dynanca-589-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Siblings",
+      "learningObjective": "Find a sibling of a vertex in a described rooted tree.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A rooted tree has root \\(A\\). The children of \\(A\\) are \\(B\\) and \\(C\\); the children of \\(B\\) are \\(D\\) and \\(E\\); the only child of \\(C\\) is \\(F\\); the children of \\(F\\) are \\(G\\) and \\(H\\). Siblings are different vertices with the same parent. Which vertex is a sibling of \\(D\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(F\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(E\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The parent of \\(D\\) is \\(B\\), and the other child of \\(B\\) is \\(E\\), so \\(E\\) is the sibling of \\(D\\). The vertex \\(F\\) has the same depth as \\(D\\), but its parent is \\(C\\), so it is not a sibling of \\(D\\).",
+      "hint": "Siblings share a parent; having the same depth is not enough."
+    },
+    {
+      "id": "dynanca-589-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Size of a subtree",
+      "learningObjective": "Count the vertices of the subtree rooted at a given vertex.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A rooted tree has root \\(A\\). The children of \\(A\\) are \\(B\\) and \\(C\\); the children of \\(B\\) are \\(D\\) and \\(E\\); the only child of \\(C\\) is \\(F\\); the children of \\(F\\) are \\(G\\) and \\(H\\). How many vertices does the subtree rooted at \\(C\\) contain, including \\(C\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The subtree rooted at \\(C\\) consists of \\(C\\) and all its descendants: its child \\(F\\), and the children \\(G\\) and \\(H\\) of \\(F\\). That is \\(4\\) vertices. The number \\(3\\) counts the descendants only and leaves out \\(C\\) itself.",
+      "hint": "Include the vertex itself together with everything below it."
+    },
+    {
+      "id": "dynanca-589-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Choosing a different root",
+      "learningObjective": "Find a parent after the root of a tree is changed.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A tree has edges \\(AB\\), \\(AC\\), \\(BD\\), \\(BE\\), \\(CF\\), \\(FG\\), and \\(FH\\). When it is rooted at \\(C\\) instead of at \\(A\\), which vertex is the parent of \\(A\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(C\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(B\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "With root \\(C\\), the parent of a vertex is its neighbour on the path towards \\(C\\). The vertex \\(A\\) is adjacent to \\(C\\), so its parent is \\(C\\). The vertex \\(B\\) is now a child of \\(A\\), because \\(A\\) lies on the path from \\(B\\) to the new root.",
+      "hint": "The parent of a vertex is its neighbour in the direction of the root."
+    },
+    {
+      "id": "dynanca-589-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Leaves of a regular rooted tree",
+      "learningObjective": "Count the leaves of a rooted tree in which every internal vertex has three children.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In a rooted tree, every vertex that has children has exactly \\(3\\) children, and there are \\(4\\) such vertices. How many leaves does the tree have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every vertex except the root is the child of exactly one vertex. The \\(4\\) vertices with children have \\(4\\cdot 3=12\\) children in total, so the tree has \\(12+1=13\\) vertices. Removing the \\(4\\) vertices that have children leaves \\(13-4=9\\) leaves. The number \\(12\\) counts all vertices other than the root, some of which have children themselves.",
+      "hint": "Count all the children first; every vertex except the root is a child."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-71",
+  "category": "Comprehensive Mathematics",
+  "title": "71. Numeracy & Number Systems: Euclidean Algorithm for GCD",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-71-q001",
+      "category": "Numeracy & Number Systems",
+      "concept": "First Step of the Euclidean Algorithm",
+      "learningObjective": "Identify the first division step of the Euclidean algorithm and the remainder it produces.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "When using the Euclidean algorithm to find the greatest common divisor of \\(48\\) and \\(18\\), what is the first step?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Divide \\(48\\) by \\(18\\) and use the quotient \\(2\\) as the next divisor."
+        },
+        {
+          "label": "B",
+          "text": "Divide \\(48\\) by \\(18\\) and find the remainder \\(12\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The Euclidean algorithm begins by dividing the larger number by the smaller number and finding the remainder. Since \\(48>18\\), divide \\(48\\) by \\(18\\):\n\\[\n48=2\\times 18+12\n\\]\nThe remainder is \\(12\\). Therefore, the first step is to divide \\(48\\) by \\(18\\) and obtain remainder \\(12\\). The quotient records how many times the divisor fits; the next pair is the old divisor and the remainder, not the quotient.",
+      "hint": "After dividing the larger number by the smaller one, ask which result of that division is carried into the next step of the algorithm."
+    },
+    {
+      "id": "dynanca-71-q002",
+      "category": "Numeracy & Number Systems",
+      "concept": "Euclidean Algorithm with Two Divisions",
+      "learningObjective": "Apply the Euclidean algorithm and identify the final nonzero remainder.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Use the Euclidean algorithm to find the greatest common divisor of \\(84\\) and \\(36\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Apply the Euclidean algorithm:\n\\[\n\\begin{aligned}\n84 &= 2\\times 36+12\\\\\n36 &= 3\\times 12+0\n\\end{aligned}\n\\]\nThe last nonzero remainder is \\(12\\). Therefore, the greatest common divisor of \\(84\\) and \\(36\\) is \\(12\\). The alternative is not the last nonzero remainder and therefore is not the greatest common divisor.",
+      "hint": "At each step, continue with the previous divisor and the new remainder until the remainder is zero."
+    },
+    {
+      "id": "dynanca-71-q003",
+      "category": "Numeracy & Number Systems",
+      "concept": "Euclidean Algorithm with Three Divisions",
+      "learningObjective": "Apply the Euclidean algorithm and identify the final nonzero remainder.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Use the Euclidean algorithm to find the greatest common divisor of \\(252\\) and \\(105\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(21\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Apply the Euclidean algorithm:\n\\[\n\\begin{aligned}\n252 &= 2\\times 105+42\\\\\n105 &= 2\\times 42+21\\\\\n42 &= 2\\times 21+0\n\\end{aligned}\n\\]\nThe last nonzero remainder is \\(21\\). Therefore, the greatest common divisor of \\(252\\) and \\(105\\) is \\(21\\). The alternative is not the last nonzero remainder and therefore is not the greatest common divisor.",
+      "hint": "Continue replacing the divisor by the remainder until the remainder becomes zero."
+    },
+    {
+      "id": "dynanca-71-q004",
+      "category": "Numeracy & Number Systems",
+      "concept": "Euclidean Algorithm with a Large First Dividend",
+      "learningObjective": "Apply the Euclidean algorithm and identify the final nonzero remainder.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Use the Euclidean algorithm to find the greatest common divisor of \\(1071\\) and \\(462\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(21\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Apply the Euclidean algorithm:\n\\[\n\\begin{aligned}\n1071 &= 2\\times 462+147\\\\\n462 &= 3\\times 147+21\\\\\n147 &= 7\\times 21+0\n\\end{aligned}\n\\]\nThe last nonzero remainder is \\(21\\). Therefore, the greatest common divisor of \\(1071\\) and \\(462\\) is \\(21\\). The alternative is not the last nonzero remainder and therefore is not the greatest common divisor.",
+      "hint": "Divide the larger number by the smaller number, then continue with the divisor and remainder."
+    },
+    {
+      "id": "dynanca-71-q005",
+      "category": "Numeracy & Number Systems",
+      "concept": "Euclidean Algorithm with Four Divisions",
+      "learningObjective": "Apply the Euclidean algorithm and identify the final nonzero remainder.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Use the Euclidean algorithm to find the greatest common divisor of \\(595\\) and \\(408\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(17\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(34\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Apply the Euclidean algorithm:\n\\[\n\\begin{aligned}\n595 &= 1\\times 408+187\\\\\n408 &= 2\\times 187+34\\\\\n187 &= 5\\times 34+17\\\\\n34 &= 2\\times 17+0\n\\end{aligned}\n\\]\nThe last nonzero remainder is \\(17\\). Therefore, the greatest common divisor of \\(595\\) and \\(408\\) is \\(17\\). The alternative is not the last nonzero remainder and therefore is not the greatest common divisor.",
+      "hint": "At each step, divide the previous divisor by the previous remainder."
+    },
+    {
+      "id": "dynanca-71-q006",
+      "category": "Numeracy & Number Systems",
+      "concept": "Euclidean Algorithm for Coprime Inputs",
+      "learningObjective": "Apply the Euclidean algorithm and identify the final nonzero remainder.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Use the Euclidean algorithm to find the greatest common divisor of \\(1234\\) and \\(567\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(7\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Apply the Euclidean algorithm:\n\\[\n\\begin{aligned}\n1234 &= 2\\times 567+100\\\\\n567 &= 5\\times 100+67\\\\\n100 &= 1\\times 67+33\\\\\n67 &= 2\\times 33+1\\\\\n33 &= 33\\times 1+0\n\\end{aligned}\n\\]\nThe last nonzero remainder is \\(1\\). Therefore, the greatest common divisor of \\(1234\\) and \\(567\\) is \\(1\\). The alternative is not the last nonzero remainder and therefore is not the greatest common divisor.",
+      "hint": "Continue until the remainder becomes zero; the last nonzero remainder is the answer."
+    },
+    {
+      "id": "dynanca-71-q007",
+      "category": "Numeracy & Number Systems",
+      "concept": "Euclidean Algorithm with a Short Remainder Chain",
+      "learningObjective": "Apply the Euclidean algorithm and identify the final nonzero remainder.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Use the Euclidean algorithm to find the greatest common divisor of \\(1189\\) and \\(1073\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(29\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Apply the Euclidean algorithm:\n\\[\n\\begin{aligned}\n1189 &= 1\\times 1073+116\\\\\n1073 &= 9\\times 116+29\\\\\n116 &= 4\\times 29+0\n\\end{aligned}\n\\]\nThe last nonzero remainder is \\(29\\). Therefore, the greatest common divisor of \\(1189\\) and \\(1073\\) is \\(29\\). The alternative is not the last nonzero remainder and therefore is not the greatest common divisor.",
+      "hint": "Divide the larger number by the smaller number and continue with the remainder."
+    },
+    {
+      "id": "dynanca-71-q008",
+      "category": "Numeracy & Number Systems",
+      "concept": "Euclidean Algorithm for Even Inputs",
+      "learningObjective": "Apply the Euclidean algorithm and identify the final nonzero remainder.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Use the Euclidean algorithm to find the greatest common divisor of \\(270\\) and \\(192\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Apply the Euclidean algorithm:\n\\[\n\\begin{aligned}\n270 &= 1\\times 192+78\\\\\n192 &= 2\\times 78+36\\\\\n78 &= 2\\times 36+6\\\\\n36 &= 6\\times 6+0\n\\end{aligned}\n\\]\nThe last nonzero remainder is \\(6\\). Therefore, the greatest common divisor of \\(270\\) and \\(192\\) is \\(6\\). The alternative is not the last nonzero remainder and therefore is not the greatest common divisor.",
+      "hint": "At each step, continue with the previous divisor and the new remainder until the remainder is zero."
+    },
+    {
+      "id": "dynanca-71-q009",
+      "category": "Numeracy & Number Systems",
+      "concept": "Euclidean Algorithm with Five Divisions",
+      "learningObjective": "Apply the Euclidean algorithm and identify the final nonzero remainder.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Use the Euclidean algorithm to find the greatest common divisor of \\(2024\\) and \\(748\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(44\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(22\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Apply the Euclidean algorithm:\n\\[\n\\begin{aligned}\n2024 &= 2\\times 748+528\\\\\n748 &= 1\\times 528+220\\\\\n528 &= 2\\times 220+88\\\\\n220 &= 2\\times 88+44\\\\\n88 &= 2\\times 44+0\n\\end{aligned}\n\\]\nThe last nonzero remainder is \\(44\\). Therefore, the greatest common divisor of \\(2024\\) and \\(748\\) is \\(44\\). The alternative is not the last nonzero remainder and therefore is not the greatest common divisor.",
+      "hint": "Continue the division process carefully; the final nonzero remainder is the greatest common divisor."
+    },
+    {
+      "id": "dynanca-71-q010",
+      "category": "Numeracy & Number Systems",
+      "concept": "Applying the Euclidean Algorithm in a Real-World Context",
+      "learningObjective": "Use the Euclidean algorithm to find the largest square tile size for a rectangular floor.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A rectangular floor measures \\(150\\text{ cm}\\) by \\(210\\text{ cm}\\). It is to be tiled with identical square tiles of the largest possible side length, with no gaps or overlaps. What is the side length of each square tile?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60\\text{ cm}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(30\\text{ cm}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The largest possible square tile side length is the greatest common divisor of \\(150\\) and \\(210\\). Apply the Euclidean algorithm:\n\\[\n\\begin{aligned}\n210 &= 1\\times 150+60\\\\\n150 &= 2\\times 60+30\\\\\n60 &= 2\\times 30+0\n\\end{aligned}\n\\]\nThe last nonzero remainder is \\(30\\). Therefore, the greatest common divisor is \\(30\\), so each square tile should have side length \\(30\\text{ cm}\\). The alternative is not the last nonzero remainder and therefore is not the greatest common divisor.",
+      "hint": "Find the greatest common divisor of the two side lengths."
+    }
+  ]
+}

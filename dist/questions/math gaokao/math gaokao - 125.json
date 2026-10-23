@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-125",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 125",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-125-q001",
+      "category": "Algebra",
+      "concept": "Bounded Sequences",
+      "learningObjective": "Identify whether a simple sequence is bounded.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which of the following sequences is bounded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_n=n\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a_n=\\frac{1}{n}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(a_n=n\\), the terms are\n\\[\n1,\\ 2,\\ 3,\\ 4,\\ \\ldots\n\\]\nwhich increase without bound, so this sequence is not bounded.\nFor \\(a_n=\\frac{1}{n}\\), the terms are\n\\[\n1,\\ \\frac{1}{2},\\ \\frac{1}{3},\\ \\frac{1}{4},\\ \\ldots\n\\]\nAll terms satisfy\n\\[\n0<a_n\\le 1.\n\\]\nTherefore, \\(a_n=\\frac{1}{n}\\) is bounded.",
+      "hint": "Check whether the terms can be kept between two fixed real numbers."
+    },
+    {
+      "id": "math-gaokao-125-q002",
+      "category": "Algebra",
+      "concept": "Bounded Sequences",
+      "learningObjective": "Determine whether an alternating sequence is bounded.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The sequence\n\\[\na_n=(-1)^n\n\\]\nis:",
+      "options": [
+        {
+          "label": "A",
+          "text": "unbounded"
+        },
+        {
+          "label": "B",
+          "text": "bounded"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The terms of the sequence are\n\\[\n-1,\\ 1,\\ -1,\\ 1,\\ \\ldots\n\\]\nEvery term satisfies\n\\[\n-1\\le a_n\\le 1.\n\\]\nTherefore, the sequence is bounded.",
+      "hint": "List the first few terms and see whether they stay within a fixed interval."
+    },
+    {
+      "id": "math-gaokao-125-q003",
+      "category": "Algebra",
+      "concept": "Bounded Sequences",
+      "learningObjective": "Identify a sequence that is bounded below but not bounded above.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which sequence is bounded below but not bounded above?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_n=n\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a_n=-n\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(a_n=n\\), the terms are\n\\[\n1,\\ 2,\\ 3,\\ 4,\\ \\ldots\n\\]\nThey satisfy\n\\[\na_n\\ge 1,\n\\]\nso the sequence is bounded below. However, the terms increase without bound, so it is not bounded above.\nFor \\(a_n=-n\\), the terms decrease without bound, so it is bounded above but not bounded below.\nTherefore, the correct choice is \\(a_n=n\\).",
+      "hint": "Compare whether the terms eventually become arbitrarily large or arbitrarily small."
+    },
+    {
+      "id": "math-gaokao-125-q004",
+      "category": "Algebra",
+      "concept": "Bounded Sequences",
+      "learningObjective": "Find the least upper bound of a sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the least upper bound of the sequence\n\\[\na_n=3-\\frac{1}{n}.\n\\]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For every positive integer \\(n\\),\n\\[\n\\frac{1}{n}>0,\n\\]\nso\n\\[\na_n=3-\\frac{1}{n}<3.\n\\]\nThus \\(3\\) is an upper bound.\nAs \\(n\\) becomes very large, \\(\\frac{1}{n}\\) approaches \\(0\\), so \\(a_n\\) approaches \\(3\\). Hence no number smaller than \\(3\\) can be an upper bound. Therefore, the least upper bound is\n\\[\n3.\n\\]",
+      "hint": "Check whether the terms can get arbitrarily close to the proposed upper bound."
+    },
+    {
+      "id": "math-gaokao-125-q005",
+      "category": "Algebra",
+      "concept": "Bounded Sequences",
+      "learningObjective": "Determine which of two sequences is bounded.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which of the following sequences is bounded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_n=2^n\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a_n=\\frac{(-1)^n}{n}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(a_n=2^n\\), the terms are\n\\[\n2,\\ 4,\\ 8,\\ 16,\\ \\ldots\n\\]\nwhich grow without bound, so this sequence is not bounded.\nFor \\(a_n=\\frac{(-1)^n}{n}\\), the terms satisfy\n\\[\n-\\frac{1}{n}\\le a_n\\le \\frac{1}{n}.\n\\]\nIn particular,\n\\[\n-1\\le a_n\\le 1\n\\]\nfor every positive integer \\(n\\). Therefore, this sequence is bounded.",
+      "hint": "Check whether the absolute values of the terms are controlled by a fixed number."
+    },
+    {
+      "id": "math-gaokao-125-q006",
+      "category": "Algebra",
+      "concept": "Bounded Sequences",
+      "learningObjective": "Identify a sequence that is bounded above but not bounded below.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which sequence is bounded above but not bounded below?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_n=n\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a_n=-n\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(a_n=-n\\), the terms are\n\\[\n-1,\\ -2,\\ -3,\\ -4,\\ \\ldots\n\\]\nThey satisfy\n\\[\na_n\\le -1,\n\\]\nso the sequence is bounded above. However, the terms decrease without bound, so it is not bounded below.\nFor \\(a_n=n\\), the sequence is bounded below but not bounded above.\nTherefore, the correct choice is \\(a_n=-n\\).",
+      "hint": "Determine whether the terms become arbitrarily negative or arbitrarily positive."
+    },
+    {
+      "id": "math-gaokao-125-q007",
+      "category": "Algebra",
+      "concept": "Bounded Sequences",
+      "learningObjective": "Determine whether a rational sequence is bounded.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Which sequence is bounded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_n=\\frac{n}{n+1}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a_n=n+1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(a_n=\\frac{n}{n+1}\\), every term satisfies\n\\[\n0<a_n<1.\n\\]\nIndeed,\n\\[\n\\frac{n}{n+1}<1\n\\]\nfor every positive integer \\(n\\). Therefore, this sequence is bounded.\nFor \\(a_n=n+1\\), the terms grow without bound, so it is not bounded.",
+      "hint": "Compare the numerator and denominator for the rational sequence."
+    },
+    {
+      "id": "math-gaokao-125-q008",
+      "category": "Algebra",
+      "concept": "Bounded Sequences",
+      "learningObjective": "Determine whether an oscillating sequence is bounded.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "The sequence\n\\[\na_n=2+(-1)^n\n\\]\nis:",
+      "options": [
+        {
+          "label": "A",
+          "text": "unbounded"
+        },
+        {
+          "label": "B",
+          "text": "bounded"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The terms are\n\\[\na_1=1,\\qquad a_2=3,\\qquad a_3=1,\\qquad a_4=3,\\ \\ldots\n\\]\nEvery term satisfies\n\\[\n1\\le a_n\\le 3.\n\\]\nTherefore, the sequence is bounded.",
+      "hint": "List the first few terms and observe the range of values."
+    },
+    {
+      "id": "math-gaokao-125-q009",
+      "category": "Algebra",
+      "concept": "Bounded Sequences",
+      "learningObjective": "Determine an interval containing all terms of a bounded sequence.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "All terms of the sequence\n\\[\na_n=\\frac{(-1)^n}{n}\n\\]\nlie in which interval?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([-1,1]\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\([0,1]\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For every positive integer \\(n\\),\n\\[\n\\left|\\frac{(-1)^n}{n}\\right|=\\frac{1}{n}\\le 1.\n\\]\nTherefore,\n\\[\n-1\\le a_n\\le 1.\n\\]\nSo all terms lie in the interval\n\\[\n[-1,1].\n\\]\nThe interval \\([0,1]\\) is not correct because the first term is \\(-1\\).",
+      "hint": "Use absolute value to bound the terms."
+    },
+    {
+      "id": "math-gaokao-125-q010",
+      "category": "Algebra",
+      "concept": "Bounded and Monotonic Sequences",
+      "learningObjective": "Identify a sequence that is both bounded and monotonic.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which sequence is both bounded and monotonic?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a_n=1-\\frac{1}{n}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a_n=(-1)^n\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(a_n=1-\\frac{1}{n}\\), the terms are\n\\[\n0,\\ \\frac{1}{2},\\ \\frac{2}{3},\\ \\frac{3}{4},\\ \\ldots\n\\]\nThis sequence is increasing and satisfies\n\\[\n0\\le a_n<1.\n\\]\nThus it is bounded and monotonic.\nFor \\(a_n=(-1)^n\\), the terms alternate between \\(-1\\) and \\(1\\), so the sequence is bounded but not monotonic.",
+      "hint": "Check whether the sequence always moves in one direction and stays within a fixed interval."
+    }
+  ]
+}

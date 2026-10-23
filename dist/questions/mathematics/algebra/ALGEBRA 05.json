@@ -1,0 +1,4411 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "algebra-05",
+  "category": "Mathematics for Computing",
+  "title": "Sequences, Complex Numbers, Binomials & Conics",
+  "description": "Explore essential mathematical concepts through carefully crafted questions. Strengthen your understanding, practice your reasoning, and learn at your own pace.",
+  "questionCount": 200,
+  "questions": [
+    {
+      "id": "algebra-05-q001",
+      "category": "Algebra",
+      "concept": "Arithmetic Sequence",
+      "learningObjective": "Find the nth term of an arithmetic sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The first term of an arithmetic sequence is 5 and the common difference is 3. Find the 8th term.",
+      "options": [
+        {
+          "label": "A",
+          "text": "23"
+        },
+        {
+          "label": "B",
+          "text": "26"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use the formula \\(a_n=a_1+(n-1)d\\). Substituting \\(a_1=5\\), \\(d=3\\), and \\(n=8\\) gives \\(a_8=5+7(3)=26\\). Therefore, the correct answer is 26, which is option B.",
+      "hint": "Recall the formula for the nth term of an arithmetic sequence."
+    },
+    {
+      "id": "algebra-05-q002",
+      "category": "Algebra",
+      "concept": "Sum of an Arithmetic Series",
+      "learningObjective": "Calculate the sum of a finite arithmetic series.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum of the first 10 terms of an arithmetic series with first term 2 and common difference 4.",
+      "options": [
+        {
+          "label": "A",
+          "text": "190"
+        },
+        {
+          "label": "B",
+          "text": "200"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(S_n=\\frac{n}{2}(2a_1+(n-1)d)\\). Substituting gives \\(S_{10}=\\frac{10}{2}(2(2)+9(4))=5(4+36)=200\\). Therefore, the correct answer is 200, which is option B.",
+      "hint": "Recall the formula for the sum of a finite arithmetic series."
+    },
+    {
+      "id": "algebra-05-q003",
+      "category": "Algebra",
+      "concept": "Geometric Sequence",
+      "learningObjective": "Find the nth term of a geometric sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The first term of a geometric sequence is 3 and the common ratio is 2. Find the 6th term.",
+      "options": [
+        {
+          "label": "A",
+          "text": "96"
+        },
+        {
+          "label": "B",
+          "text": "48"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(a_n=a_1 r^{n-1}\\). Substituting \\(a_1=3\\), \\(r=2\\), and \\(n=6\\) gives \\(a_6=3\\cdot 2^5=3\\cdot 32=96\\). Therefore, the correct answer is 96, which is option A.",
+      "hint": "Recall the formula for the nth term of a geometric sequence."
+    },
+    {
+      "id": "algebra-05-q004",
+      "category": "Algebra",
+      "concept": "Infinite Geometric Series",
+      "learningObjective": "Find the sum of an infinite geometric series.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum of the infinite geometric series with first term 8 and common ratio \\(\\frac{1}{2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(S_\\infty=\\frac{a_1}{1-r}\\). Substituting gives \\(S_\\infty=\\frac{8}{1-\\frac{1}{2}}=\\frac{8}{\\frac{1}{2}}=16\\). Therefore, the correct answer is 16, which is option A.",
+      "hint": "Recall the formula for the sum of an infinite geometric series."
+    },
+    {
+      "id": "algebra-05-q005",
+      "category": "Algebra",
+      "concept": "Common Difference",
+      "learningObjective": "Determine the common difference of an arithmetic sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the common difference of the arithmetic sequence 7, 11, 15, 19?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The common difference is found by subtracting any term from the next term: \\(11-7=4\\). Therefore, the correct answer is 4, which is option B.",
+      "hint": "Subtract a term from the term that follows it."
+    },
+    {
+      "id": "algebra-05-q006",
+      "category": "Algebra",
+      "concept": "Sum of an Arithmetic Series",
+      "learningObjective": "Calculate the sum of an arithmetic series given the first and last terms.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An arithmetic series has first term 10, last term 50, and 11 terms. Find its sum.",
+      "options": [
+        {
+          "label": "A",
+          "text": "300"
+        },
+        {
+          "label": "B",
+          "text": "330"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(S_n=\\frac{n}{2}(a_1+a_n)\\). Substituting gives \\(S_{11}=\\frac{11}{2}(10+50)=\\frac{11}{2}(60)=330\\). Therefore, the correct answer is 330, which is option B.",
+      "hint": "Use the sum formula involving the first and last terms."
+    },
+    {
+      "id": "algebra-05-q007",
+      "category": "Algebra",
+      "concept": "Sum of a Finite Geometric Series",
+      "learningObjective": "Calculate the sum of a finite geometric series.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum of the first 4 terms of a geometric series with first term 2 and common ratio 3.",
+      "options": [
+        {
+          "label": "A",
+          "text": "60"
+        },
+        {
+          "label": "B",
+          "text": "80"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(S_n=\\frac{a_1(r^n-1)}{r-1}\\). Substituting gives \\(S_4=\\frac{2(3^4-1)}{3-1}=\\frac{2(80)}{2}=80\\). Therefore, the correct answer is 80, which is option B.",
+      "hint": "Recall the formula for the sum of a finite geometric series."
+    },
+    {
+      "id": "algebra-05-q008",
+      "category": "Algebra",
+      "concept": "Sequence versus Series",
+      "learningObjective": "Distinguish between a sequence and a series.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The sum of the terms of a sequence is called a:",
+      "options": [
+        {
+          "label": "A",
+          "text": "sequence"
+        },
+        {
+          "label": "B",
+          "text": "series"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A sequence is an ordered list of terms, while a series is the sum of the terms of a sequence. Therefore, the correct answer is series, which is option B.",
+      "hint": "Think about the difference between listing terms and adding them."
+    },
+    {
+      "id": "algebra-05-q009",
+      "category": "Algebra",
+      "concept": "Convergence of a Geometric Series",
+      "learningObjective": "State the condition for convergence of an infinite geometric series.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "An infinite geometric series converges if the common ratio \\(r\\) satisfies:",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(|r|>1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(|r|<1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An infinite geometric series converges when the absolute value of the common ratio is less than 1, that is, \\(|r|<1\\). Therefore, the correct answer is \\(|r|<1\\), which is option B.",
+      "hint": "Consider what happens to \\(r^n\\) as \\(n\\) becomes very large."
+    },
+    {
+      "id": "algebra-05-q010",
+      "category": "Algebra",
+      "concept": "Missing Term in an Arithmetic Sequence",
+      "learningObjective": "Find a missing term in an arithmetic sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In the arithmetic sequence 4, __, 16, what is the missing term?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In an arithmetic sequence, the middle term is the average of the terms around it: \\(\\frac{4+16}{2}=10\\). Therefore, the correct answer is 10, which is option A.",
+      "hint": "The middle term is the arithmetic mean of the two outer terms."
+    },
+    {
+      "id": "algebra-05-q011",
+      "category": "Algebra",
+      "concept": "nth Term of an Arithmetic Sequence",
+      "learningObjective": "Evaluate a term of an arithmetic sequence given its formula.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(a_n=3n+2\\), find \\(a_{10}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "32"
+        },
+        {
+          "label": "B",
+          "text": "35"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(n=10\\) into \\(a_n=3n+2\\): \\(a_{10}=3(10)+2=32\\). Therefore, the correct answer is 32, which is option A.",
+      "hint": "Substitute the value of \\(n\\) into the given formula."
+    },
+    {
+      "id": "algebra-05-q012",
+      "category": "Algebra",
+      "concept": "Common Ratio",
+      "learningObjective": "Determine the common ratio of a geometric sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the common ratio of the geometric sequence 2, 6, 18, 54?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The common ratio is found by dividing any term by the previous term: \\(\\frac{6}{2}=3\\). Therefore, the correct answer is 3, which is option B.",
+      "hint": "Divide a term by the term that precedes it."
+    },
+    {
+      "id": "algebra-05-q013",
+      "category": "Algebra",
+      "concept": "Sum of the First n Natural Numbers",
+      "learningObjective": "Calculate the sum of the first n natural numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum \\(1+2+3+\\cdots+20\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "210"
+        },
+        {
+          "label": "B",
+          "text": "220"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(S_n=\\frac{n(n+1)}{2}\\). Substituting \\(n=20\\) gives \\(S_{20}=\\frac{20(21)}{2}=210\\). Therefore, the correct answer is 210, which is option A.",
+      "hint": "Use the formula for the sum of the first \\(n\\) natural numbers."
+    },
+    {
+      "id": "algebra-05-q014",
+      "category": "Algebra",
+      "concept": "Sigma Notation",
+      "learningObjective": "Evaluate a series written in sigma notation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\sum_{k=1}^{4}(2k+1)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "24"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Expand the sum: \\((2(1)+1)+(2(2)+1)+(2(3)+1)+(2(4)+1)=3+5+7+9=24\\). Therefore, the correct answer is 24, which is option A.",
+      "hint": "Substitute each integer value of \\(k\\) and add the results."
+    },
+    {
+      "id": "algebra-05-q015",
+      "category": "Algebra",
+      "concept": "Application of Arithmetic Sequences",
+      "learningObjective": "Apply arithmetic sequences to a real-world situation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A theater has 20 seats in the first row, 22 seats in the second row, and so on. How many seats are in the 10th row?",
+      "options": [
+        {
+          "label": "A",
+          "text": "36"
+        },
+        {
+          "label": "B",
+          "text": "38"
+        }
+      ],
+      "answer": "B",
+      "explanation": "This is an arithmetic sequence with \\(a_1=20\\) and \\(d=2\\). Using \\(a_n=a_1+(n-1)d\\), we get \\(a_{10}=20+9(2)=38\\). Therefore, the correct answer is 38, which is option B.",
+      "hint": "Identify the first term and common difference, then use the nth-term formula."
+    },
+    {
+      "id": "algebra-05-q016",
+      "category": "Algebra",
+      "concept": "Application of Geometric Sequences",
+      "learningObjective": "Apply geometric sequences to a growth situation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A bacteria culture starts with 100 bacteria and doubles every hour. How many bacteria are there after 5 hours?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1600"
+        },
+        {
+          "label": "B",
+          "text": "3200"
+        }
+      ],
+      "answer": "B",
+      "explanation": "This is a geometric sequence with \\(a_1=100\\) and \\(r=2\\). After 5 hours, the count is \\(100\\cdot 2^5=100\\cdot 32=3200\\). Therefore, the correct answer is 3200, which is option B.",
+      "hint": "Use the geometric sequence formula with a common ratio of 2."
+    },
+    {
+      "id": "algebra-05-q017",
+      "category": "Algebra",
+      "concept": "Recursive Sequence",
+      "learningObjective": "Generate terms of a recursively defined sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A sequence is defined by \\(a_1=2\\) and \\(a_{n+1}=a_n+5\\). Find \\(a_4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "17"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Compute the terms: \\(a_1=2\\), \\(a_2=2+5=7\\), \\(a_3=7+5=12\\), \\(a_4=12+5=17\\). Therefore, the correct answer is 17, which is option B.",
+      "hint": "Use each term to find the next term by adding 5."
+    },
+    {
+      "id": "algebra-05-q018",
+      "category": "Algebra",
+      "concept": "Infinite Geometric Series",
+      "learningObjective": "Find the sum of a convergent infinite geometric series.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum of the infinite geometric series with first term 6 and common ratio \\(\\frac{1}{3}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(S_\\infty=\\frac{a_1}{1-r}\\). Substituting gives \\(S_\\infty=\\frac{6}{1-\\frac{1}{3}}=\\frac{6}{\\frac{2}{3}}=9\\). Therefore, the correct answer is 9, which is option B.",
+      "hint": "Check that \\(|r|<1\\), then use the infinite sum formula."
+    },
+    {
+      "id": "algebra-05-q019",
+      "category": "Algebra",
+      "concept": "Finding the Number of Terms",
+      "learningObjective": "Determine which term of an arithmetic sequence equals a given value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An arithmetic sequence has first term 3 and common difference 4. Which term equals 43?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "11"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set \\(a_n=43\\): \\(3+(n-1)4=43\\). Then \\((n-1)4=40\\), so \\(n-1=10\\), and \\(n=11\\). Therefore, the correct answer is 11, which is option B.",
+      "hint": "Set the nth-term formula equal to 43 and solve for \\(n\\)."
+    },
+    {
+      "id": "algebra-05-q020",
+      "category": "Algebra",
+      "concept": "Sigma Notation",
+      "learningObjective": "Evaluate a sum involving squares in sigma notation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\sum_{k=1}^{3} k^2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "14"
+        },
+        {
+          "label": "B",
+          "text": "15"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Expand the sum: \\(1^2+2^2+3^2=1+4+9=14\\). Therefore, the correct answer is 14, which is option A.",
+      "hint": "Square each value of \\(k\\) and add the results."
+    },
+    {
+      "id": "algebra-05-q021",
+      "category": "Algebra",
+      "concept": "Arithmetic Mean",
+      "learningObjective": "Find the arithmetic mean of two numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the arithmetic mean of 7 and 15.",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "11"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The arithmetic mean is \\(\\frac{7+15}{2}=\\frac{22}{2}=11\\). Therefore, the correct answer is 11, which is option B.",
+      "hint": "Add the two numbers and divide by 2."
+    },
+    {
+      "id": "algebra-05-q022",
+      "category": "Algebra",
+      "concept": "Geometric Mean",
+      "learningObjective": "Find the geometric mean of two positive numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the geometric mean of 4 and 16.",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The geometric mean is \\(\\sqrt{4\\cdot 16}=\\sqrt{64}=8\\). Therefore, the correct answer is 8, which is option B.",
+      "hint": "Multiply the two numbers and take the square root."
+    },
+    {
+      "id": "algebra-05-q023",
+      "category": "Algebra",
+      "concept": "Sum of an Arithmetic Series",
+      "learningObjective": "Calculate the sum of an arithmetic series using first and last terms.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum of the first 15 terms of an arithmetic series with first term 4 and 15th term 46.",
+      "options": [
+        {
+          "label": "A",
+          "text": "375"
+        },
+        {
+          "label": "B",
+          "text": "350"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(S_n=\\frac{n}{2}(a_1+a_n)\\). Substituting gives \\(S_{15}=\\frac{15}{2}(4+46)=\\frac{15}{2}(50)=375\\). Therefore, the correct answer is 375, which is option A.",
+      "hint": "Use the sum formula with the first and last terms."
+    },
+    {
+      "id": "algebra-05-q024",
+      "category": "Algebra",
+      "concept": "Geometric Sequence",
+      "learningObjective": "Determine which term of a geometric sequence equals a given value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A geometric sequence has first term 5 and common ratio 2. Which term equals 80?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Set \\(a_n=80\\): \\(5\\cdot 2^{n-1}=80\\). Then \\(2^{n-1}=16=2^4\\), so \\(n-1=4\\) and \\(n=5\\). Therefore, the correct answer is 5, which is option A.",
+      "hint": "Set the nth-term formula equal to 80 and solve for \\(n\\)."
+    },
+    {
+      "id": "algebra-05-q025",
+      "category": "Algebra",
+      "concept": "Application of Arithmetic Sequences",
+      "learningObjective": "Apply arithmetic sequences to a salary progression.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A salary starts at $3000 and increases by $200 each year. What is the salary after 8 years?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$4400"
+        },
+        {
+          "label": "B",
+          "text": "$4600"
+        }
+      ],
+      "answer": "A",
+      "explanation": "This is an arithmetic sequence with \\(a_1=3000\\) and \\(d=200\\). After 8 years, the salary is \\(a_8=3000+7(200)=4400\\). Therefore, the correct answer is $4400, which is option A.",
+      "hint": "Identify the first term and common difference, then find the 8th term."
+    },
+    {
+      "id": "algebra-05-q026",
+      "category": "Algebra",
+      "concept": "Telescoping Series",
+      "learningObjective": "Evaluate a telescoping series.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Evaluate \\(\\frac{1}{1\\cdot 2}+\\frac{1}{2\\cdot 3}+\\cdots+\\frac{1}{9\\cdot 10}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{9}{10}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each term can be written as \\(\\frac{1}{k}-\\frac{1}{k+1}\\). The sum telescopes: \\(\\left(1-\\frac{1}{2}\\right)+\\left(\\frac{1}{2}-\\frac{1}{3}\\right)+\\cdots+\\left(\\frac{1}{9}-\\frac{1}{10}\\right)=1-\\frac{1}{10}=\\frac{9}{10}\\). Therefore, the correct answer is \\(\\frac{9}{10}\\), which is option B.",
+      "hint": "Write each term as a difference of two fractions."
+    },
+    {
+      "id": "algebra-05-q027",
+      "category": "Algebra",
+      "concept": "Sum of a Finite Geometric Series",
+      "learningObjective": "Calculate the sum of a finite geometric series.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum of the first 5 terms of the geometric series with first term 1 and common ratio 2.",
+      "options": [
+        {
+          "label": "A",
+          "text": "31"
+        },
+        {
+          "label": "B",
+          "text": "32"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(S_n=\\frac{a_1(r^n-1)}{r-1}\\). Substituting gives \\(S_5=\\frac{1(2^5-1)}{2-1}=31\\). Therefore, the correct answer is 31, which is option A.",
+      "hint": "Use the finite geometric sum formula with \\(n=5\\)."
+    },
+    {
+      "id": "algebra-05-q028",
+      "category": "Algebra",
+      "concept": "Infinite Geometric Series",
+      "learningObjective": "Determine the common ratio given the sum of an infinite geometric series.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Find \\(r\\) such that \\(4+4r+4r^2+\\cdots=8\\), where \\(|r|<1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(S_\\infty=\\frac{a_1}{1-r}\\). Substituting gives \\(\\frac{4}{1-r}=8\\). Then \\(1-r=\\frac{1}{2}\\), so \\(r=\\frac{1}{2}\\). Therefore, the correct answer is \\(\\frac{1}{2}\\), which is option B.",
+      "hint": "Set the infinite sum formula equal to 8 and solve for \\(r\\)."
+    },
+    {
+      "id": "algebra-05-q029",
+      "category": "Algebra",
+      "concept": "Arithmetic Means",
+      "learningObjective": "Insert arithmetic means between two numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Insert 3 arithmetic means between 2 and 18. What is the first of these means?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        }
+      ],
+      "answer": "A",
+      "explanation": "With 3 means, there are 4 intervals, so \\(d=\\frac{18-2}{4}=4\\). The sequence is 2, 6, 10, 14, 18. The first mean is 6. Therefore, the correct answer is 6, which is option A.",
+      "hint": "Find the common difference by dividing the total gap by the number of intervals."
+    },
+    {
+      "id": "algebra-05-q030",
+      "category": "Algebra",
+      "concept": "Sum of Odd Numbers",
+      "learningObjective": "Find the sum of the first n odd numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Find the sum of the first 10 odd numbers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "100"
+        },
+        {
+          "label": "B",
+          "text": "110"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sum of the first \\(n\\) odd numbers is \\(n^2\\). For \\(n=10\\), the sum is \\(10^2=100\\). Therefore, the correct answer is 100, which is option A.",
+      "hint": "Recall the special formula for the sum of the first \\(n\\) odd numbers."
+    },
+    {
+      "id": "algebra-05-q031",
+      "category": "Algebra",
+      "concept": "Sum of Even Numbers",
+      "learningObjective": "Calculate the sum of consecutive even numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum \\(2+4+6+\\cdots+20\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "110"
+        },
+        {
+          "label": "B",
+          "text": "120"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor out 2: \\(2(1+2+\\cdots+10)=2\\cdot\\frac{10(11)}{2}=110\\). Therefore, the correct answer is 110, which is option A.",
+      "hint": "Factor out 2 and use the sum of the first 10 natural numbers."
+    },
+    {
+      "id": "algebra-05-q032",
+      "category": "Algebra",
+      "concept": "Sum of a Finite Geometric Series",
+      "learningObjective": "Calculate the sum of a geometric series with a given number of terms.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum \\(3+6+12+\\cdots+48\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "93"
+        },
+        {
+          "label": "B",
+          "text": "96"
+        }
+      ],
+      "answer": "A",
+      "explanation": "This is geometric with \\(a_1=3\\), \\(r=2\\), and \\(n=5\\) (since \\(3\\cdot 2^4=48\\)). Then \\(S_5=\\frac{3(2^5-1)}{2-1}=3(31)=93\\). Therefore, the correct answer is 93, which is option A.",
+      "hint": "Determine the number of terms first, then use the finite geometric sum formula."
+    },
+    {
+      "id": "algebra-05-q033",
+      "category": "Algebra",
+      "concept": "nth Term of a Geometric Sequence",
+      "learningObjective": "Evaluate a term of a geometric sequence given its formula.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(a_n=2^n\\), find \\(a_5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "32"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Substitute \\(n=5\\): \\(a_5=2^5=32\\). Therefore, the correct answer is 32, which is option B.",
+      "hint": "Substitute \\(n=5\\) into the formula."
+    },
+    {
+      "id": "algebra-05-q034",
+      "category": "Algebra",
+      "concept": "Identifying Sequence Type",
+      "learningObjective": "Identify whether a sequence is arithmetic or geometric.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The sequence 2, 4, 8, 16 is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "arithmetic"
+        },
+        {
+          "label": "B",
+          "text": "geometric"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each term is obtained by multiplying the previous term by 2, so the sequence is geometric with common ratio 2. Therefore, the correct answer is geometric, which is option B.",
+      "hint": "Check whether consecutive terms differ by a constant or have a constant ratio."
+    },
+    {
+      "id": "algebra-05-q035",
+      "category": "Algebra",
+      "concept": "Sum of an Arithmetic Series",
+      "learningObjective": "Calculate the sum of the first n natural numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum of the first 20 terms of the series \\(1+2+3+\\cdots\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "200"
+        },
+        {
+          "label": "B",
+          "text": "210"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(S_n=\\frac{n(n+1)}{2}\\). Substituting \\(n=20\\) gives \\(S_{20}=\\frac{20(21)}{2}=210\\). Therefore, the correct answer is 210, which is option B.",
+      "hint": "Use the formula for the sum of the first \\(n\\) natural numbers."
+    },
+    {
+      "id": "algebra-05-q036",
+      "category": "Algebra",
+      "concept": "Common Difference",
+      "learningObjective": "Determine the common difference from two terms of an arithmetic sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "An arithmetic sequence has first term 2 and fifth term 14. Find the common difference.",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(a_5=a_1+4d\\). Substituting gives \\(14=2+4d\\), so \\(4d=12\\) and \\(d=3\\). Therefore, the correct answer is 3, which is option A.",
+      "hint": "Use the nth-term formula with \\(n=5\\)."
+    },
+    {
+      "id": "algebra-05-q037",
+      "category": "Algebra",
+      "concept": "Infinite Geometric Series",
+      "learningObjective": "Find the sum of an infinite geometric series.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum \\(1+\\frac{1}{3}+\\frac{1}{9}+\\cdots\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "This is geometric with \\(a_1=1\\) and \\(r=\\frac{1}{3}\\). Then \\(S_\\infty=\\frac{1}{1-\\frac{1}{3}}=\\frac{3}{2}\\). Therefore, the correct answer is \\(\\frac{3}{2}\\), which is option B.",
+      "hint": "Check that \\(|r|<1\\) and use the infinite sum formula."
+    },
+    {
+      "id": "algebra-05-q038",
+      "category": "Algebra",
+      "concept": "Recursive Sequence",
+      "learningObjective": "Generate terms of a recursively defined sequence.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A sequence is defined by \\(a_1=1\\) and \\(a_n=2a_{n-1}\\). Find \\(a_5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "32"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Compute the terms: \\(a_1=1\\), \\(a_2=2\\), \\(a_3=4\\), \\(a_4=8\\), \\(a_5=16\\). Therefore, the correct answer is 16, which is option A.",
+      "hint": "Double each term to find the next term."
+    },
+    {
+      "id": "algebra-05-q039",
+      "category": "Algebra",
+      "concept": "Sigma Notation",
+      "learningObjective": "Evaluate a sum involving products in sigma notation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Evaluate \\(\\sum_{i=1}^{5} i(i+1)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "60"
+        },
+        {
+          "label": "B",
+          "text": "70"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Expand the sum: \\(1\\cdot 2+2\\cdot 3+3\\cdot 4+4\\cdot 5+5\\cdot 6=2+6+12+20+30=70\\). Therefore, the correct answer is 70, which is option B.",
+      "hint": "Substitute each value of \\(i\\) and add the results."
+    },
+    {
+      "id": "algebra-05-q040",
+      "category": "Algebra",
+      "concept": "Infinite Geometric Series",
+      "learningObjective": "Find the sum of a convergent infinite geometric series.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the sum of the infinite geometric series with first term 10 and common ratio 0.5.",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "15"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(S_\\infty=\\frac{a_1}{1-r}\\). Substituting gives \\(S_\\infty=\\frac{10}{1-0.5}=\\frac{10}{0.5}=20\\). Therefore, the correct answer is 20, which is option A.",
+      "hint": "Use the infinite geometric sum formula with \\(r=0.5\\)."
+    },
+    {
+      "id": "algebra-05-q041",
+      "category": "Algebra",
+      "concept": "Real Part of a Complex Number",
+      "learningObjective": "Identify the real part of a complex number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the real part of \\(z=3+4i\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A complex number \\(a+bi\\) has real part \\(a\\). For \\(z=3+4i\\), the real part is 3. Therefore, the correct answer is 3, which is option B.",
+      "hint": "The real part is the term without the imaginary unit \\(i\\)."
+    },
+    {
+      "id": "algebra-05-q042",
+      "category": "Algebra",
+      "concept": "Imaginary Part of a Complex Number",
+      "learningObjective": "Identify the imaginary part of a complex number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the imaginary part of \\(z=5-7i\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "-7"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A complex number \\(a+bi\\) has imaginary part \\(b\\). For \\(z=5-7i\\), the imaginary part is \\(-7\\). Therefore, the correct answer is \\(-7\\), which is option B.",
+      "hint": "The imaginary part includes the sign in front of the \\(i\\) term."
+    },
+    {
+      "id": "algebra-05-q043",
+      "category": "Algebra",
+      "concept": "Powers of i",
+      "learningObjective": "Evaluate \\(i^2\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the value of \\(i^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "-1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By definition, \\(i^2=-1\\). Therefore, the correct answer is \\(-1\\), which is option B.",
+      "hint": "Recall the fundamental definition of the imaginary unit."
+    },
+    {
+      "id": "algebra-05-q044",
+      "category": "Algebra",
+      "concept": "Addition of Complex Numbers",
+      "learningObjective": "Add two complex numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\((2+3i)+(4-5i)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6+8i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6-2i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Add real parts and imaginary parts separately: \\((2+4)+(3-5)i=6-2i\\). Therefore, the correct answer is \\(6-2i\\), which is option B.",
+      "hint": "Combine the real parts and the imaginary parts separately."
+    },
+    {
+      "id": "algebra-05-q045",
+      "category": "Algebra",
+      "concept": "Subtraction of Complex Numbers",
+      "learningObjective": "Subtract two complex numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\((7+2i)-(3-4i)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4+6i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4-2i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Subtract real parts and imaginary parts: \\((7-3)+(2-(-4))i=4+6i\\). Therefore, the correct answer is \\(4+6i\\), which is option A.",
+      "hint": "Distribute the subtraction to both the real and imaginary parts."
+    },
+    {
+      "id": "algebra-05-q046",
+      "category": "Algebra",
+      "concept": "Multiplication of Complex Numbers",
+      "learningObjective": "Multiply two complex numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\((2+i)(3+2i)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4+7i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6+7i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Expand: \\((2+i)(3+2i)=6+4i+3i+2i^2=6+7i-2=4+7i\\). Therefore, the correct answer is \\(4+7i\\), which is option A.",
+      "hint": "Use the distributive property and replace \\(i^2\\) with \\(-1\\)."
+    },
+    {
+      "id": "algebra-05-q047",
+      "category": "Algebra",
+      "concept": "Powers of i",
+      "learningObjective": "Evaluate a power of the imaginary unit.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the value of \\(i^4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "-1"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since \\(i^2=-1\\), we have \\(i^4=(i^2)^2=(-1)^2=1\\). Therefore, the correct answer is 1, which is option B.",
+      "hint": "Use \\(i^2=-1\\) and square it."
+    },
+    {
+      "id": "algebra-05-q048",
+      "category": "Algebra",
+      "concept": "Complex Conjugates",
+      "learningObjective": "Find the conjugate of a complex number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the conjugate of \\(3-5i\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3+5i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-3-5i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The conjugate of \\(a+bi\\) is \\(a-bi\\). For \\(3-5i\\), the conjugate is \\(3+5i\\). Therefore, the correct answer is \\(3+5i\\), which is option A.",
+      "hint": "Change the sign of the imaginary part."
+    },
+    {
+      "id": "algebra-05-q049",
+      "category": "Algebra",
+      "concept": "Modulus of a Complex Number",
+      "learningObjective": "Calculate the modulus of a complex number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(|3+4i|\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(|a+bi|=\\sqrt{a^2+b^2}\\). Substituting gives \\(\\sqrt{3^2+4^2}=\\sqrt{9+16}=\\sqrt{25}=5\\). Therefore, the correct answer is 5, which is option B.",
+      "hint": "Use the Pythagorean formula for the modulus."
+    },
+    {
+      "id": "algebra-05-q050",
+      "category": "Algebra",
+      "concept": "Modulus of a Complex Number",
+      "learningObjective": "Calculate the modulus of a complex number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(|5-12i|\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "13"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(|a+bi|=\\sqrt{a^2+b^2}\\). Substituting gives \\(\\sqrt{5^2+(-12)^2}=\\sqrt{25+144}=\\sqrt{169}=13\\). Therefore, the correct answer is 13, which is option B.",
+      "hint": "Square both components, add, and take the square root."
+    },
+    {
+      "id": "algebra-05-q051",
+      "category": "Algebra",
+      "concept": "Powers of i",
+      "learningObjective": "Evaluate \\(i^3\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the value of \\(i^3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(i^3=i^2\\cdot i=(-1)\\cdot i=-i\\). Therefore, the correct answer is \\(-i\\), which is option A.",
+      "hint": "Write \\(i^3\\) as \\(i^2\\cdot i\\)."
+    },
+    {
+      "id": "algebra-05-q052",
+      "category": "Algebra",
+      "concept": "Powers of i",
+      "learningObjective": "Simplify a high power of the imaginary unit.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Simplify \\(i^{10}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "-1"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since powers of \\(i\\) cycle every 4, write \\(10=4(2)+2\\), so \\(i^{10}=i^2=-1\\). Therefore, the correct answer is \\(-1\\), which is option A.",
+      "hint": "Reduce the exponent modulo 4."
+    },
+    {
+      "id": "algebra-05-q053",
+      "category": "Algebra",
+      "concept": "Division of Complex Numbers",
+      "learningObjective": "Divide two complex numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\frac{4+2i}{1-i}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2+3i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1+3i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiply numerator and denominator by the conjugate \\(1+i\\): \\(\\frac{(4+2i)(1+i)}{(1-i)(1+i)}=\\frac{4+4i+2i+2i^2}{2}=\\frac{2+6i}{2}=1+3i\\). Therefore, the correct answer is \\(1+3i\\), which is option B.",
+      "hint": "Multiply by the conjugate of the denominator."
+    },
+    {
+      "id": "algebra-05-q054",
+      "category": "Algebra",
+      "concept": "Solving Equations with Complex Numbers",
+      "learningObjective": "Solve a linear equation involving complex numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve for \\(z\\): \\(z+3i=5-2i\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5-5i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5+5i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Subtract \\(3i\\) from both sides: \\(z=5-2i-3i=5-5i\\). Therefore, the correct answer is \\(5-5i\\), which is option A.",
+      "hint": "Isolate \\(z\\) by subtracting \\(3i\\) from both sides."
+    },
+    {
+      "id": "algebra-05-q055",
+      "category": "Algebra",
+      "concept": "Quadratic Equations with Complex Roots",
+      "learningObjective": "Solve a quadratic equation with complex roots.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x^2+4=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=\\pm 2i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=\\pm 4i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rearrange: \\(x^2=-4\\), so \\(x=\\pm\\sqrt{-4}=\\pm 2i\\). Therefore, the correct answer is \\(\\pm 2i\\), which is option A.",
+      "hint": "Take the square root of both sides and use \\(i^2=-1\\)."
+    },
+    {
+      "id": "algebra-05-q056",
+      "category": "Algebra",
+      "concept": "Product with Conjugate",
+      "learningObjective": "Multiply a complex number by its conjugate.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\((3+4i)(3-4i)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "25"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\((a+bi)(a-bi)=a^2+b^2\\). Substituting gives \\(3^2+4^2=9+16=25\\). Therefore, the correct answer is 25, which is option B.",
+      "hint": "Use the difference of squares pattern with \\(i^2=-1\\)."
+    },
+    {
+      "id": "algebra-05-q057",
+      "category": "Algebra",
+      "concept": "Equality of Complex Numbers",
+      "learningObjective": "Find unknowns by equating real and imaginary parts.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(a+bi=4-3i\\), find \\(a+b\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Equating real and imaginary parts gives \\(a=4\\) and \\(b=-3\\). Then \\(a+b=4+(-3)=1\\). Therefore, the correct answer is 1, which is option A.",
+      "hint": "Equate the real parts and the imaginary parts separately."
+    },
+    {
+      "id": "algebra-05-q058",
+      "category": "Algebra",
+      "concept": "Argand Plane",
+      "learningObjective": "Interpret a point on the Argand plane as a complex number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The point \\((3,-2)\\) on the Argand plane represents which complex number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3-2i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-3+2i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "On the Argand plane, the horizontal coordinate is the real part and the vertical coordinate is the imaginary part. Thus \\((3,-2)\\) represents \\(3-2i\\). Therefore, the correct answer is \\(3-2i\\), which is option A.",
+      "hint": "The \\(x\\)-coordinate is the real part and the \\(y\\)-coordinate is the imaginary part."
+    },
+    {
+      "id": "algebra-05-q059",
+      "category": "Algebra",
+      "concept": "Types of Complex Numbers",
+      "learningObjective": "Classify a complex number as purely imaginary or purely real.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The complex number \\(0+5i\\) is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "purely imaginary"
+        },
+        {
+          "label": "B",
+          "text": "purely real"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A complex number with zero real part and nonzero imaginary part is purely imaginary. Since \\(0+5i\\) has real part 0, it is purely imaginary. Therefore, the correct answer is purely imaginary, which is option A.",
+      "hint": "Check whether the real part is zero."
+    },
+    {
+      "id": "algebra-05-q060",
+      "category": "Algebra",
+      "concept": "Modulus Squared",
+      "learningObjective": "Calculate the square of the modulus of a complex number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(|3+4i|^2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "25"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(|3+4i|^2=3^2+4^2=9+16=25\\). Therefore, the correct answer is 25, which is option B.",
+      "hint": "Use \\(|a+bi|^2=a^2+b^2\\)."
+    },
+    {
+      "id": "algebra-05-q061",
+      "category": "Algebra",
+      "concept": "Addition of Complex Numbers",
+      "learningObjective": "Add two complex numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\((1+i)+(2+2i)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3+2i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3+3i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Add real parts and imaginary parts: \\((1+2)+(1+2)i=3+3i\\). Therefore, the correct answer is \\(3+3i\\), which is option B.",
+      "hint": "Combine like terms."
+    },
+    {
+      "id": "algebra-05-q062",
+      "category": "Algebra",
+      "concept": "Powers of i",
+      "learningObjective": "Evaluate \\(i^0\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the value of \\(i^0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Any nonzero number raised to the power 0 equals 1, so \\(i^0=1\\). Therefore, the correct answer is 1, which is option A.",
+      "hint": "Recall the zero-exponent rule."
+    },
+    {
+      "id": "algebra-05-q063",
+      "category": "Algebra",
+      "concept": "Solving Equations with Complex Numbers",
+      "learningObjective": "Solve a linear equation involving complex numbers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve for \\(z\\): \\(2z=6+8i\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3+4i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6+8i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide both sides by 2: \\(z=\\frac{6+8i}{2}=3+4i\\). Therefore, the correct answer is \\(3+4i\\), which is option A.",
+      "hint": "Divide both the real and imaginary parts by 2."
+    },
+    {
+      "id": "algebra-05-q064",
+      "category": "Algebra",
+      "concept": "Conjugate Sum",
+      "learningObjective": "Relate the sum of a complex number and its conjugate to its real part.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(z=2+3i\\), find \\(z+\\bar{z}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The conjugate is \\(\\bar{z}=2-3i\\). Then \\(z+\\bar{z}=(2+3i)+(2-3i)=4\\). Therefore, the correct answer is 4, which is option A.",
+      "hint": "Add the complex number and its conjugate."
+    },
+    {
+      "id": "algebra-05-q065",
+      "category": "Algebra",
+      "concept": "Powers of i",
+      "learningObjective": "Evaluate a product involving \\(i\\).",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(i\\cdot i\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "-1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(i\\cdot i=i^2=-1\\). Therefore, the correct answer is \\(-1\\), which is option B.",
+      "hint": "Use the definition \\(i^2=-1\\)."
+    },
+    {
+      "id": "algebra-05-q066",
+      "category": "Algebra",
+      "concept": "Multiplication of Complex Numbers",
+      "learningObjective": "Expand a complex number squared.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\((1+i)^2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1+i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Expand: \\((1+i)^2=1+2i+i^2=1+2i-1=2i\\). Therefore, the correct answer is \\(2i\\), which is option B.",
+      "hint": "Use the binomial expansion and substitute \\(i^2=-1\\)."
+    },
+    {
+      "id": "algebra-05-q067",
+      "category": "Algebra",
+      "concept": "Division by i",
+      "learningObjective": "Simplify the reciprocal of \\(i\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\frac{1}{i}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiply numerator and denominator by \\(i\\): \\(\\frac{1}{i}\\cdot\\frac{i}{i}=\\frac{i}{i^2}=\\frac{i}{-1}=-i\\). Therefore, the correct answer is \\(-i\\), which is option A.",
+      "hint": "Multiply by \\(\\frac{i}{i}\\) to simplify."
+    },
+    {
+      "id": "algebra-05-q068",
+      "category": "Algebra",
+      "concept": "Modulus of a Real Number",
+      "learningObjective": "Calculate the modulus of a negative real number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Find \\(|-7|\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "-7"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The modulus of a real number is its distance from zero, so \\(|-7|=7\\). Therefore, the correct answer is 7, which is option B.",
+      "hint": "The modulus is always nonnegative."
+    },
+    {
+      "id": "algebra-05-q069",
+      "category": "Algebra",
+      "concept": "Quadratic Equations with Complex Roots",
+      "learningObjective": "Solve a quadratic equation with complex roots.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(x^2-2x+5=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1\\pm i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=1\\pm 2i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use the quadratic formula: \\(x=\\frac{2\\pm\\sqrt{4-20}}{2}=\\frac{2\\pm\\sqrt{-16}}{2}=\\frac{2\\pm 4i}{2}=1\\pm 2i\\). Therefore, the correct answer is \\(1\\pm 2i\\), which is option B.",
+      "hint": "Use the quadratic formula and simplify the negative discriminant."
+    },
+    {
+      "id": "algebra-05-q070",
+      "category": "Algebra",
+      "concept": "Sum of Roots of a Quadratic",
+      "learningObjective": "Find the sum of the roots of a quadratic equation with complex roots.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For the equation \\(x^2+4x+13=0\\), find the sum of its roots.",
+      "options": [
+        {
+          "label": "A",
+          "text": "-4"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(ax^2+bx+c=0\\), the sum of roots is \\(-\\frac{b}{a}\\). Here \\(-\\frac{4}{1}=-4\\). Therefore, the correct answer is \\(-4\\), which is option A.",
+      "hint": "Use the relationship between coefficients and sum of roots."
+    },
+    {
+      "id": "algebra-05-q071",
+      "category": "Algebra",
+      "concept": "Product of Roots of a Quadratic",
+      "learningObjective": "Find the product of the roots of a quadratic equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For the equation \\(x^2-6x+25=0\\), find the product of its roots.",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "25"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(ax^2+bx+c=0\\), the product of roots is \\(\\frac{c}{a}\\). Here \\(\\frac{25}{1}=25\\). Therefore, the correct answer is 25, which is option B.",
+      "hint": "Use the relationship between coefficients and product of roots."
+    },
+    {
+      "id": "algebra-05-q072",
+      "category": "Algebra",
+      "concept": "Argument of a Complex Number",
+      "learningObjective": "Determine the argument of a complex number.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the argument of \\(z=i\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\pi}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The complex number \\(i=0+1i\\) lies on the positive imaginary axis, so its argument is \\(\\frac{\\pi}{2}\\). Therefore, the correct answer is \\(\\frac{\\pi}{2}\\), which is option A.",
+      "hint": "Locate the number on the Argand plane."
+    },
+    {
+      "id": "algebra-05-q073",
+      "category": "Algebra",
+      "concept": "Argument of a Complex Number",
+      "learningObjective": "Determine the argument of a negative real number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the argument of \\(-1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\pi\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number \\(-1\\) lies on the negative real axis, so its argument is \\(\\pi\\). Therefore, the correct answer is \\(\\pi\\), which is option B.",
+      "hint": "Locate \\(-1\\) on the Argand plane."
+    },
+    {
+      "id": "algebra-05-q074",
+      "category": "Algebra",
+      "concept": "Polar Form of a Complex Number",
+      "learningObjective": "Write a complex number in polar form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Express \\(z=1+i\\) in polar form.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\sqrt{2}\\,\\text{cis}\\,\\frac{\\pi}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\,\\text{cis}\\,\\frac{\\pi}{4}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The modulus is \\(|1+i|=\\sqrt{2}\\) and the argument is \\(\\frac{\\pi}{4}\\). Thus \\(z=\\sqrt{2}\\,\\text{cis}\\,\\frac{\\pi}{4}\\). Therefore, the correct answer is \\(\\sqrt{2}\\,\\text{cis}\\,\\frac{\\pi}{4}\\), which is option A.",
+      "hint": "Find the modulus and argument first."
+    },
+    {
+      "id": "algebra-05-q075",
+      "category": "Algebra",
+      "concept": "Multiplication in Polar Form",
+      "learningObjective": "Multiply complex numbers in polar form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(z_1=2\\,\\text{cis}\\,30^\\circ\\) and \\(z_2=3\\,\\text{cis}\\,60^\\circ\\), find \\(z_1 z_2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\,\\text{cis}\\,30^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\,\\text{cis}\\,90^\\circ\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In polar form, multiply moduli and add arguments: \\(z_1 z_2=6\\,\\text{cis}\\,(30^\\circ+60^\\circ)=6\\,\\text{cis}\\,90^\\circ\\). Therefore, the correct answer is \\(6\\,\\text{cis}\\,90^\\circ\\), which is option B.",
+      "hint": "Multiply the moduli and add the arguments."
+    },
+    {
+      "id": "algebra-05-q076",
+      "category": "Algebra",
+      "concept": "De Moivre's Theorem",
+      "learningObjective": "Apply De Moivre's theorem for a square power.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is \\((\\cos\\theta+i\\sin\\theta)^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\cos\\theta^2+i\\sin\\theta^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\cos 2\\theta+i\\sin 2\\theta\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "By De Moivre's theorem, \\((\\cos\\theta+i\\sin\\theta)^n=\\cos n\\theta+i\\sin n\\theta\\). For \\(n=2\\), this is \\(\\cos 2\\theta+i\\sin 2\\theta\\). Therefore, the correct answer is \\(\\cos 2\\theta+i\\sin 2\\theta\\), which is option B.",
+      "hint": "Recall De Moivre's theorem."
+    },
+    {
+      "id": "algebra-05-q077",
+      "category": "Algebra",
+      "concept": "Equality of Complex Numbers",
+      "learningObjective": "Find unknowns by equating real and imaginary parts.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(2x+3yi=8+9i\\), find \\(x+y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Equate real parts: \\(2x=8\\), so \\(x=4\\). Equate imaginary parts: \\(3y=9\\), so \\(y=3\\). Then \\(x+y=7\\). Therefore, the correct answer is 7, which is option A.",
+      "hint": "Equate the real and imaginary parts separately."
+    },
+    {
+      "id": "algebra-05-q078",
+      "category": "Algebra",
+      "concept": "Simplifying Complex Fractions",
+      "learningObjective": "Simplify a quotient of complex numbers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Simplify \\(\\frac{1+i}{1-i}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-i\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiply numerator and denominator by \\(1+i\\): \\(\\frac{(1+i)^2}{(1-i)(1+i)}=\\frac{2i}{2}=i\\). Therefore, the correct answer is \\(i\\), which is option A.",
+      "hint": "Multiply by the conjugate of the denominator."
+    },
+    {
+      "id": "algebra-05-q079",
+      "category": "Algebra",
+      "concept": "Modulus Property",
+      "learningObjective": "Apply the multiplicative property of the modulus.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(|z_1|=2\\) and \\(|z_2|=3\\), find \\(|z_1 z_2|\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The modulus is multiplicative: \\(|z_1 z_2|=|z_1||z_2|=2\\cdot 3=6\\). Therefore, the correct answer is 6, which is option A.",
+      "hint": "Use the property \\(|z_1 z_2|=|z_1||z_2|\\)."
+    },
+    {
+      "id": "algebra-05-q080",
+      "category": "Algebra",
+      "concept": "Conjugate of a Square",
+      "learningObjective": "Find the conjugate of a squared complex number.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "If \\(z=2+3i\\), find the conjugate of \\(z^2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5-12i\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-5-12i\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First compute \\(z^2=(2+3i)^2=4+12i+9i^2=4+12i-9=-5+12i\\). The conjugate is \\(-5-12i\\). Therefore, the correct answer is \\(-5-12i\\), which is option B.",
+      "hint": "Square the complex number first, then change the sign of the imaginary part."
+    },
+    {
+      "id": "algebra-05-q081",
+      "category": "Algebra",
+      "concept": "Binomial Coefficients",
+      "learningObjective": "Evaluate a binomial coefficient.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\binom{5}{2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(\\binom{5}{2}=\\frac{5!}{2!3!}=\\frac{5\\cdot 4}{2}=10\\). Therefore, the correct answer is 10, which is option B.",
+      "hint": "Use the formula for combinations."
+    },
+    {
+      "id": "algebra-05-q082",
+      "category": "Algebra",
+      "concept": "Binomial Expansion",
+      "learningObjective": "Find a coefficient in a binomial expansion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In the expansion of \\((x+2)^2\\), what is the coefficient of \\(x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Expand: \\((x+2)^2=x^2+4x+4\\). The coefficient of \\(x\\) is 4. Therefore, the correct answer is 4, which is option A.",
+      "hint": "Expand the binomial and identify the term containing \\(x\\)."
+    },
+    {
+      "id": "algebra-05-q083",
+      "category": "Algebra",
+      "concept": "Pascal's Triangle",
+      "learningObjective": "Find the sum of entries in a row of Pascal's triangle.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the sum of the entries in the row of Pascal's triangle for \\(n=3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The row for \\(n=3\\) is 1, 3, 3, 1, and its sum is \\(1+3+3+1=8=2^3\\). Therefore, the correct answer is 8, which is option B.",
+      "hint": "The sum of the entries in row \\(n\\) is \\(2^n\\)."
+    },
+    {
+      "id": "algebra-05-q084",
+      "category": "Algebra",
+      "concept": "General Term of a Binomial Expansion",
+      "learningObjective": "Identify the general term of a binomial expansion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the general term \\(T_{k+1}\\) in the expansion of \\((a+b)^n\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\binom{n}{k}a^{n-k}b^k\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\binom{n}{k}a^k b^{n-k}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The general term in the expansion of \\((a+b)^n\\) is \\(T_{k+1}=\\binom{n}{k}a^{n-k}b^k\\). Therefore, the correct answer is \\(\\binom{n}{k}a^{n-k}b^k\\), which is option A.",
+      "hint": "Recall the binomial theorem formula."
+    },
+    {
+      "id": "algebra-05-q085",
+      "category": "Algebra",
+      "concept": "Coefficient of a Specific Term",
+      "learningObjective": "Find the coefficient of a specified power in a binomial expansion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the coefficient of \\(x^3\\) in the expansion of \\((x+1)^5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The coefficient of \\(x^3\\) is \\(\\binom{5}{3}=10\\). Therefore, the correct answer is 10, which is option B.",
+      "hint": "Use the binomial coefficient corresponding to the power of \\(x\\)."
+    },
+    {
+      "id": "algebra-05-q086",
+      "category": "Algebra",
+      "concept": "Constant Term",
+      "learningObjective": "Find the constant term in a binomial expansion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the constant term in the expansion of \\(\\left(x+\\frac{1}{x}\\right)^4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The general term is \\(\\binom{4}{k}x^{4-k}x^{-k}=\\binom{4}{k}x^{4-2k}\\). For a constant term, \\(4-2k=0\\), so \\(k=2\\). Then \\(\\binom{4}{2}=6\\). Therefore, the correct answer is 6, which is option A.",
+      "hint": "Set the exponent of \\(x\\) equal to zero."
+    },
+    {
+      "id": "algebra-05-q087",
+      "category": "Algebra",
+      "concept": "Binomial Coefficients",
+      "learningObjective": "Evaluate a binomial coefficient.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\binom{6}{3}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "15"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\\(\\binom{6}{3}=\\frac{6!}{3!3!}=\\frac{6\\cdot 5\\cdot 4}{3\\cdot 2\\cdot 1}=20\\). Therefore, the correct answer is 20, which is option A.",
+      "hint": "Use the combinations formula."
+    },
+    {
+      "id": "algebra-05-q088",
+      "category": "Algebra",
+      "concept": "Expansion with Negative Terms",
+      "learningObjective": "Find a coefficient in an expansion involving subtraction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In the expansion of \\((x-1)^3\\), what is the coefficient of \\(x^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "-3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Expand: \\((x-1)^3=x^3-3x^2+3x-1\\). The coefficient of \\(x^2\\) is \\(-3\\). Therefore, the correct answer is \\(-3\\), which is option B.",
+      "hint": "Use the binomial expansion with alternating signs."
+    },
+    {
+      "id": "algebra-05-q089",
+      "category": "Algebra",
+      "concept": "Sum of Binomial Coefficients",
+      "learningObjective": "Find the sum of all coefficients in a binomial expansion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the sum of all coefficients in the expansion of \\((1+x)^5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "32"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sum of all coefficients is obtained by setting \\(x=1\\), giving \\((1+1)^5=2^5=32\\). Therefore, the correct answer is 32, which is option B.",
+      "hint": "Substitute \\(x=1\\) into the expression."
+    },
+    {
+      "id": "algebra-05-q090",
+      "category": "Algebra",
+      "concept": "Middle Term",
+      "learningObjective": "Find the middle term coefficient in a binomial expansion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In the expansion of \\((x+y)^4\\), what is the coefficient of the middle term?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(n=4\\), there are 5 terms, and the middle term is the 3rd term. Its coefficient is \\(\\binom{4}{2}=6\\). Therefore, the correct answer is 6, which is option A.",
+      "hint": "Identify the position of the middle term when \\(n\\) is even."
+    },
+    {
+      "id": "algebra-05-q091",
+      "category": "Algebra",
+      "concept": "Binomial Coefficients",
+      "learningObjective": "Evaluate a binomial coefficient.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\binom{7}{2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "14"
+        },
+        {
+          "label": "B",
+          "text": "21"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(\\binom{7}{2}=\\frac{7!}{2!5!}=\\frac{7\\cdot 6}{2}=21\\). Therefore, the correct answer is 21, which is option B.",
+      "hint": "Use the combinations formula."
+    },
+    {
+      "id": "algebra-05-q092",
+      "category": "Algebra",
+      "concept": "Coefficient of a Specific Term",
+      "learningObjective": "Find a coefficient in a binomial expansion with a coefficient.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In the expansion of \\((2+x)^4\\), what is the coefficient of \\(x^2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "24"
+        },
+        {
+          "label": "B",
+          "text": "32"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The term containing \\(x^2\\) is \\(\\binom{4}{2}2^2x^2=6\\cdot 4x^2=24x^2\\). Therefore, the correct answer is 24, which is option A.",
+      "hint": "Use the general term and identify the correct binomial coefficient."
+    },
+    {
+      "id": "algebra-05-q093",
+      "category": "Algebra",
+      "concept": "Number of Terms in an Expansion",
+      "learningObjective": "Determine the number of terms in a binomial expansion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many terms are in the expansion of \\((a+b)^3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expansion of \\((a+b)^n\\) has \\(n+1\\) terms. For \\(n=3\\), there are 4 terms. Therefore, the correct answer is 4, which is option B.",
+      "hint": "Use the rule that the number of terms is \\(n+1\\)."
+    },
+    {
+      "id": "algebra-05-q094",
+      "category": "Algebra",
+      "concept": "Coefficient of a Specific Term",
+      "learningObjective": "Find a coefficient in a binomial expansion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the coefficient of \\(x^4\\) in the expansion of \\((1+x)^6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The coefficient of \\(x^4\\) is \\(\\binom{6}{4}=15\\). Therefore, the correct answer is 15, which is option A.",
+      "hint": "Use the binomial coefficient corresponding to the power of \\(x\\)."
+    },
+    {
+      "id": "algebra-05-q095",
+      "category": "Algebra",
+      "concept": "Number of Terms in an Expansion",
+      "learningObjective": "Determine the number of terms in a binomial expansion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many terms are in the expansion of \\((a+b)^{10}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expansion of \\((a+b)^n\\) has \\(n+1\\) terms. For \\(n=10\\), there are 11 terms. Therefore, the correct answer is 11, which is option A.",
+      "hint": "Add 1 to the exponent."
+    },
+    {
+      "id": "algebra-05-q096",
+      "category": "Algebra",
+      "concept": "Coefficient of a Specific Term",
+      "learningObjective": "Find a coefficient in a binomial expansion with a constant term.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the coefficient of \\(x^2\\) in the expansion of \\((3+x)^5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "270"
+        },
+        {
+          "label": "B",
+          "text": "810"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The term containing \\(x^2\\) is \\(\\binom{5}{2}3^3x^2=10\\cdot 27x^2=270x^2\\). Therefore, the correct answer is 270, which is option A.",
+      "hint": "Use the general term with \\(a=3\\) and \\(b=x\\)."
+    },
+    {
+      "id": "algebra-05-q097",
+      "category": "Algebra",
+      "concept": "Constant Term",
+      "learningObjective": "Find the constant term in a binomial expansion.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the constant term in the expansion of \\(\\left(x^2+\\frac{1}{x}\\right)^6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The general term is \\(\\binom{6}{k}x^{2(6-k)}x^{-k}=\\binom{6}{k}x^{12-3k}\\). For a constant term, \\(12-3k=0\\), so \\(k=4\\). Then \\(\\binom{6}{4}=15\\). Therefore, the correct answer is 15, which is option A.",
+      "hint": "Set the exponent of \\(x\\) equal to zero and solve for \\(k\\)."
+    },
+    {
+      "id": "algebra-05-q098",
+      "category": "Algebra",
+      "concept": "Middle Term",
+      "learningObjective": "Find the middle term coefficient in a binomial expansion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In the expansion of \\((x+y)^6\\), what is the coefficient of the middle term?",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "15"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(n=6\\), there are 7 terms, and the middle term is the 4th term. Its coefficient is \\(\\binom{6}{3}=20\\). Therefore, the correct answer is 20, which is option A.",
+      "hint": "Identify the position of the middle term when \\(n\\) is even."
+    },
+    {
+      "id": "algebra-05-q099",
+      "category": "Algebra",
+      "concept": "Expansion with Negative Terms",
+      "learningObjective": "Find a coefficient in an expansion involving subtraction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In the expansion of \\((1-x)^4\\), what is the coefficient of \\(x^3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "-4"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Expand: \\((1-x)^4=1-4x+6x^2-4x^3+x^4\\). The coefficient of \\(x^3\\) is \\(-4\\). Therefore, the correct answer is \\(-4\\), which is option A.",
+      "hint": "Use the binomial expansion with alternating signs."
+    },
+    {
+      "id": "algebra-05-q100",
+      "category": "Algebra",
+      "concept": "Coefficient of a Specific Term",
+      "learningObjective": "Find a coefficient in a binomial expansion with a coefficient.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the coefficient of \\(x\\) in the expansion of \\((2x+3)^4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "108"
+        },
+        {
+          "label": "B",
+          "text": "216"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The term containing \\(x\\) is \\(\\binom{4}{3}(2x)^1 3^3=4\\cdot 2x\\cdot 27=216x\\). Therefore, the correct answer is 216, which is option B.",
+      "hint": "Use the general term and identify the term with \\(x^1\\)."
+    },
+    {
+      "id": "algebra-05-q101",
+      "category": "Algebra",
+      "concept": "Number of Terms in an Expansion",
+      "learningObjective": "Determine the number of terms in a binomial expansion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many terms are in the expansion of \\((a+b)^8\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expansion of \\((a+b)^n\\) has \\(n+1\\) terms. For \\(n=8\\), there are 9 terms. Therefore, the correct answer is 9, which is option A.",
+      "hint": "Add 1 to the exponent."
+    },
+    {
+      "id": "algebra-05-q102",
+      "category": "Algebra",
+      "concept": "Coefficient of a Specific Term",
+      "learningObjective": "Find a coefficient in an expansion with subtraction.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the coefficient of \\(x^3\\) in the expansion of \\((2-x)^5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "-40"
+        },
+        {
+          "label": "B",
+          "text": "40"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The term containing \\(x^3\\) is \\(\\binom{5}{3}2^2(-x)^3=10\\cdot 4\\cdot(-1)x^3=-40x^3\\). Therefore, the correct answer is \\(-40\\), which is option A.",
+      "hint": "Pay attention to the negative sign in the binomial."
+    },
+    {
+      "id": "algebra-05-q103",
+      "category": "Algebra",
+      "concept": "Binomial Coefficients",
+      "learningObjective": "Evaluate a binomial coefficient.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\binom{8}{8}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(\\binom{8}{8}=\\frac{8!}{8!0!}=1\\). Therefore, the correct answer is 1, which is option B.",
+      "hint": "Recall that \\(\\binom{n}{n}=1\\)."
+    },
+    {
+      "id": "algebra-05-q104",
+      "category": "Algebra",
+      "concept": "Expansion with Negative Terms",
+      "learningObjective": "Find a coefficient in a binomial expansion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In the expansion of \\((a-b)^2\\), what is the coefficient of \\(ab\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "-2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Expand: \\((a-b)^2=a^2-2ab+b^2\\). The coefficient of \\(ab\\) is \\(-2\\). Therefore, the correct answer is \\(-2\\), which is option B.",
+      "hint": "Use the binomial expansion with a negative second term."
+    },
+    {
+      "id": "algebra-05-q105",
+      "category": "Algebra",
+      "concept": "Binomial Coefficients",
+      "learningObjective": "Evaluate a binomial coefficient.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\binom{10}{1}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(\\binom{10}{1}=10\\). Therefore, the correct answer is 10, which is option B.",
+      "hint": "Recall that \\(\\binom{n}{1}=n\\)."
+    },
+    {
+      "id": "algebra-05-q106",
+      "category": "Algebra",
+      "concept": "Coefficient of a Specific Term",
+      "learningObjective": "Find a coefficient in a binomial expansion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the coefficient of \\(x^5\\) in the expansion of \\((1+x)^7\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "35"
+        },
+        {
+          "label": "B",
+          "text": "21"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The coefficient of \\(x^5\\) is \\(\\binom{7}{5}=\\binom{7}{2}=21\\). Therefore, the correct answer is 21, which is option B.",
+      "hint": "Use the symmetry property of binomial coefficients."
+    },
+    {
+      "id": "algebra-05-q107",
+      "category": "Algebra",
+      "concept": "Sum of Binomial Coefficients",
+      "learningObjective": "Find the sum of all coefficients in a binomial expansion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the sum of all coefficients in the expansion of \\((1+x)^7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "128"
+        },
+        {
+          "label": "B",
+          "text": "64"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sum of all coefficients is obtained by setting \\(x=1\\), giving \\((1+1)^7=2^7=128\\). Therefore, the correct answer is 128, which is option A.",
+      "hint": "Substitute \\(x=1\\) into the expression."
+    },
+    {
+      "id": "algebra-05-q108",
+      "category": "Algebra",
+      "concept": "Specific Term in an Expansion",
+      "learningObjective": "Identify a specific term in a binomial expansion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the 4th term in the expansion of \\((a+b)^5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5a^2b^3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10a^2b^3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The 4th term is \\(T_4=\\binom{5}{3}a^{5-3}b^3=10a^2b^3\\). Therefore, the correct answer is \\(10a^2b^3\\), which is option B.",
+      "hint": "Use \\(T_{k+1}=\\binom{n}{k}a^{n-k}b^k\\) with \\(k=3\\)."
+    },
+    {
+      "id": "algebra-05-q109",
+      "category": "Algebra",
+      "concept": "Middle Term",
+      "learningObjective": "Find the middle term in a binomial expansion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the middle term in the expansion of \\((x+2)^4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12x^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24x^2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(n=4\\), the middle term is the 3rd term: \\(T_3=\\binom{4}{2}x^2 2^2=6\\cdot 4x^2=24x^2\\). Therefore, the correct answer is \\(24x^2\\), which is option B.",
+      "hint": "Identify the middle term position and use the general term formula."
+    },
+    {
+      "id": "algebra-05-q110",
+      "category": "Algebra",
+      "concept": "Coefficient of a Specific Term",
+      "learningObjective": "Find a coefficient in a binomial expansion with a coefficient.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the coefficient of \\(x^2\\) in the expansion of \\((1+2x)^5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "40"
+        },
+        {
+          "label": "B",
+          "text": "80"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The term containing \\(x^2\\) is \\(\\binom{5}{2}(2x)^2=10\\cdot 4x^2=40x^2\\). Therefore, the correct answer is 40, which is option A.",
+      "hint": "Use the general term with \\(a=1\\) and \\(b=2x\\)."
+    },
+    {
+      "id": "algebra-05-q111",
+      "category": "Algebra",
+      "concept": "Constant Term",
+      "learningObjective": "Find the constant term in a binomial expansion.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the constant term in the expansion of \\(\\left(x-\\frac{1}{x}\\right)^6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "-20"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The general term is \\(\\binom{6}{k}x^{6-k}(-1)^k x^{-k}=\\binom{6}{k}(-1)^k x^{6-2k}\\). For a constant term, \\(6-2k=0\\), so \\(k=3\\). Then \\(\\binom{6}{3}(-1)^3=20(-1)=-20\\). Therefore, the correct answer is \\(-20\\), which is option A.",
+      "hint": "Set the exponent of \\(x\\) equal to zero and track the sign."
+    },
+    {
+      "id": "algebra-05-q112",
+      "category": "Algebra",
+      "concept": "Binomial Coefficients",
+      "learningObjective": "Evaluate a binomial coefficient.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find \\(\\binom{9}{2}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "18"
+        },
+        {
+          "label": "B",
+          "text": "36"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\\(\\binom{9}{2}=\\frac{9!}{2!7!}=\\frac{9\\cdot 8}{2}=36\\). Therefore, the correct answer is 36, which is option B.",
+      "hint": "Use the combinations formula."
+    },
+    {
+      "id": "algebra-05-q113",
+      "category": "Algebra",
+      "concept": "Number of Terms in an Expansion",
+      "learningObjective": "Determine the number of terms in a binomial expansion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many terms are in the expansion of \\((x+y)^4\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expansion of \\((x+y)^n\\) has \\(n+1\\) terms. For \\(n=4\\), there are 5 terms. Therefore, the correct answer is 5, which is option B.",
+      "hint": "Add 1 to the exponent."
+    },
+    {
+      "id": "algebra-05-q114",
+      "category": "Algebra",
+      "concept": "Coefficient of a Specific Term",
+      "learningObjective": "Find a coefficient in a binomial expansion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the coefficient of \\(x^3\\) in the expansion of \\((2x+1)^4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "32"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The term containing \\(x^3\\) is \\(\\binom{4}{3}(2x)^3 1^1=4\\cdot 8x^3=32x^3\\). Therefore, the correct answer is 32, which is option B.",
+      "hint": "Use the general term with \\(a=2x\\) and \\(b=1\\)."
+    },
+    {
+      "id": "algebra-05-q115",
+      "category": "Algebra",
+      "concept": "Coefficient of a Specific Term",
+      "learningObjective": "Find a coefficient in a binomial expansion with a coefficient.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the coefficient of \\(x^2\\) in the expansion of \\((3x-2)^4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "108"
+        },
+        {
+          "label": "B",
+          "text": "216"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The term containing \\(x^2\\) is \\(\\binom{4}{2}(3x)^2(-2)^2=6\\cdot 9x^2\\cdot 4=216x^2\\). Therefore, the correct answer is 216, which is option B.",
+      "hint": "Use the general term with \\(a=3x\\) and \\(b=-2\\)."
+    },
+    {
+      "id": "algebra-05-q116",
+      "category": "Algebra",
+      "concept": "Specific Term in an Expansion",
+      "learningObjective": "Find a specific term in a binomial expansion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the term containing \\(x^3\\) in the expansion of \\((x+2)^5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(20x^3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(40x^3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The term containing \\(x^3\\) is \\(\\binom{5}{2}x^3 2^2=10\\cdot 4x^3=40x^3\\). Therefore, the correct answer is \\(40x^3\\), which is option B.",
+      "hint": "Use the general term and identify the term with \\(x^3\\)."
+    },
+    {
+      "id": "algebra-05-q117",
+      "category": "Algebra",
+      "concept": "Middle Term",
+      "learningObjective": "Find the middle term coefficient in a binomial expansion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "In the expansion of \\((x+y)^8\\), what is the coefficient of the middle term?",
+      "options": [
+        {
+          "label": "A",
+          "text": "70"
+        },
+        {
+          "label": "B",
+          "text": "56"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(n=8\\), there are 9 terms, and the middle term is the 5th term. Its coefficient is \\(\\binom{8}{4}=70\\). Therefore, the correct answer is 70, which is option A.",
+      "hint": "Identify the middle term position when \\(n\\) is even."
+    },
+    {
+      "id": "algebra-05-q118",
+      "category": "Algebra",
+      "concept": "Coefficient of a Specific Term",
+      "learningObjective": "Find a coefficient in an expansion with subtraction.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the coefficient of \\(x^4\\) in the expansion of \\((1-x)^6\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "-15"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The term containing \\(x^4\\) is \\(\\binom{6}{4}(-x)^4=15x^4\\). Since \\((-1)^4=1\\), the coefficient is 15. Therefore, the correct answer is 15, which is option A.",
+      "hint": "Pay attention to the power of the negative sign."
+    },
+    {
+      "id": "algebra-05-q119",
+      "category": "Algebra",
+      "concept": "Binomial Expansion",
+      "learningObjective": "Find a coefficient in a binomial expansion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In the expansion of \\((2x+3y)^2\\), what is the coefficient of \\(xy\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Expand: \\((2x+3y)^2=4x^2+12xy+9y^2\\). The coefficient of \\(xy\\) is 12. Therefore, the correct answer is 12, which is option A.",
+      "hint": "Use the binomial expansion formula."
+    },
+    {
+      "id": "algebra-05-q120",
+      "category": "Algebra",
+      "concept": "Number of Terms in an Expansion",
+      "learningObjective": "Determine the number of terms in a binomial expansion.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many terms are in the expansion of \\((1+x)^{100}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "100"
+        },
+        {
+          "label": "B",
+          "text": "101"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expansion of \\((1+x)^n\\) has \\(n+1\\) terms. For \\(n=100\\), there are 101 terms. Therefore, the correct answer is 101, which is option B.",
+      "hint": "Add 1 to the exponent."
+    },
+    {
+      "id": "algebra-05-q121",
+      "category": "Algebra",
+      "concept": "Direct Variation",
+      "learningObjective": "Find the constant of variation in a direct variation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(y\\) varies directly as \\(x\\) and \\(y=10\\) when \\(x=2\\), find the constant of variation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For direct variation, \\(y=kx\\). Substituting gives \\(10=k(2)\\), so \\(k=5\\). Therefore, the correct answer is 5, which is option B.",
+      "hint": "Substitute the given values into \\(y=kx\\)."
+    },
+    {
+      "id": "algebra-05-q122",
+      "category": "Algebra",
+      "concept": "Direct Variation",
+      "learningObjective": "Solve a direct variation problem.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "If \\(y\\) varies directly as \\(x\\) and \\(y=15\\) when \\(x=3\\), find \\(y\\) when \\(x=5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "25"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First find \\(k\\): \\(15=k(3)\\), so \\(k=5\\). Then \\(y=5(5)=25\\). Therefore, the correct answer is 25, which is option B.",
+      "hint": "Find the constant of variation first."
+    },
+    {
+      "id": "algebra-05-q123",
+      "category": "Algebra",
+      "concept": "Inverse Variation",
+      "learningObjective": "Find the constant of variation in an inverse variation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(y\\) varies inversely as \\(x\\) and \\(y=4\\) when \\(x=3\\), find the constant of variation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For inverse variation, \\(y=\\frac{k}{x}\\), so \\(k=xy\\). Substituting gives \\(k=4\\cdot 3=12\\). Therefore, the correct answer is 12, which is option A.",
+      "hint": "Use \\(k=xy\\) for inverse variation."
+    },
+    {
+      "id": "algebra-05-q124",
+      "category": "Algebra",
+      "concept": "Inverse Variation",
+      "learningObjective": "Solve an inverse variation problem.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "If \\(y\\) varies inversely as \\(x\\) and \\(y=6\\) when \\(x=2\\), find \\(y\\) when \\(x=4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First find \\(k\\): \\(k=6\\cdot 2=12\\). Then \\(y=\\frac{12}{4}=3\\). Therefore, the correct answer is 3, which is option A.",
+      "hint": "Find the constant of variation first."
+    },
+    {
+      "id": "algebra-05-q125",
+      "category": "Algebra",
+      "concept": "Joint Variation",
+      "learningObjective": "Find the constant of variation in a joint variation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(z\\) varies jointly as \\(x\\) and \\(y\\) and \\(z=24\\) when \\(x=2\\) and \\(y=3\\), find the constant of variation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For joint variation, \\(z=kxy\\). Substituting gives \\(24=k(2)(3)=6k\\), so \\(k=4\\). Therefore, the correct answer is 4, which is option A.",
+      "hint": "Substitute the given values into \\(z=kxy\\)."
+    },
+    {
+      "id": "algebra-05-q126",
+      "category": "Algebra",
+      "concept": "Joint Variation",
+      "learningObjective": "Solve a joint variation problem.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(z\\) varies jointly as \\(x\\) and \\(y\\) and \\(z=36\\) when \\(x=3\\) and \\(y=4\\), find \\(z\\) when \\(x=2\\) and \\(y=5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "24"
+        },
+        {
+          "label": "B",
+          "text": "30"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First find \\(k\\): \\(36=k(3)(4)=12k\\), so \\(k=3\\). Then \\(z=3(2)(5)=30\\). Therefore, the correct answer is 30, which is option B.",
+      "hint": "Find the constant of variation first."
+    },
+    {
+      "id": "algebra-05-q127",
+      "category": "Algebra",
+      "concept": "Combined Variation",
+      "learningObjective": "Solve a combined variation problem.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(y\\) varies directly as \\(x\\) and inversely as \\(z\\), and \\(y=6\\) when \\(x=4\\) and \\(z=2\\), find \\(y\\) when \\(x=6\\) and \\(z=3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The equation is \\(y=\\frac{kx}{z}\\). Substituting gives \\(6=\\frac{k(4)}{2}=2k\\), so \\(k=3\\). Then \\(y=\\frac{3(6)}{3}=6\\). Therefore, the correct answer is 6, which is option B.",
+      "hint": "Write the combined variation equation and find \\(k\\)."
+    },
+    {
+      "id": "algebra-05-q128",
+      "category": "Algebra",
+      "concept": "Constant of Variation",
+      "learningObjective": "Determine the constant of variation from given values.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(y=kx\\) and \\(y=20\\) when \\(x=5\\), find \\(k\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute: \\(20=k(5)\\), so \\(k=4\\). Therefore, the correct answer is 4, which is option A.",
+      "hint": "Divide both sides by 5."
+    },
+    {
+      "id": "algebra-05-q129",
+      "category": "Algebra",
+      "concept": "Direct Variation Application",
+      "learningObjective": "Apply direct variation to a cost problem.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "The cost of items varies directly with the number of items. If 5 items cost $20, how much do 8 items cost?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$32"
+        },
+        {
+          "label": "B",
+          "text": "$36"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The cost per item is \\(k=\\frac{20}{5}=4\\). For 8 items, the cost is \\(4(8)=32\\). Therefore, the correct answer is $32, which is option A.",
+      "hint": "Find the cost per item first."
+    },
+    {
+      "id": "algebra-05-q130",
+      "category": "Algebra",
+      "concept": "Inverse Variation Application",
+      "learningObjective": "Apply inverse variation to a travel problem.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "The time for a trip varies inversely as the speed. If a trip takes 4 hours at 60 km/h, how long does it take at 80 km/h?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3 hours"
+        },
+        {
+          "label": "B",
+          "text": "4 hours"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The distance is \\(k=60\\cdot 4=240\\) km. At 80 km/h, the time is \\(\\frac{240}{80}=3\\) hours. Therefore, the correct answer is 3 hours, which is option A.",
+      "hint": "Find the constant using distance = speed × time."
+    },
+    {
+      "id": "algebra-05-q131",
+      "category": "Algebra",
+      "concept": "Joint Variation Application",
+      "learningObjective": "Apply joint variation to a volume problem.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The volume of a rectangular prism varies jointly as its length and width. If \\(V=24\\) when \\(l=4\\) and \\(w=3\\), find \\(V\\) when \\(l=6\\) and \\(w=2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "24"
+        },
+        {
+          "label": "B",
+          "text": "36"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation is \\(V=klw\\). Substituting gives \\(24=k(4)(3)=12k\\), so \\(k=2\\). Then \\(V=2(6)(2)=24\\). Therefore, the correct answer is 24, which is option A.",
+      "hint": "Find the constant of variation first."
+    },
+    {
+      "id": "algebra-05-q132",
+      "category": "Algebra",
+      "concept": "Identifying Direct Variation",
+      "learningObjective": "Identify an equation representing direct variation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which equation represents direct variation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=5x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=\\frac{5}{x}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Direct variation has the form \\(y=kx\\). The equation \\(y=5x\\) fits this form, while \\(y=\\frac{5}{x}\\) represents inverse variation. Therefore, the correct answer is \\(y=5x\\), which is option A.",
+      "hint": "Recall the form of a direct variation equation."
+    },
+    {
+      "id": "algebra-05-q133",
+      "category": "Algebra",
+      "concept": "Identifying Inverse Variation",
+      "learningObjective": "Identify an equation representing inverse variation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which equation represents inverse variation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=\\frac{10}{x}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=10x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Inverse variation has the form \\(y=\\frac{k}{x}\\). The equation \\(y=\\frac{10}{x}\\) fits this form. Therefore, the correct answer is \\(y=\\frac{10}{x}\\), which is option A.",
+      "hint": "Recall the form of an inverse variation equation."
+    },
+    {
+      "id": "algebra-05-q134",
+      "category": "Algebra",
+      "concept": "Inverse Variation",
+      "learningObjective": "Find the constant of variation in an inverse variation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(p\\) varies inversely as \\(q\\) and \\(p=8\\) when \\(q=2\\), find the constant of variation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "16"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For inverse variation, \\(k=pq=8\\cdot 2=16\\). Therefore, the correct answer is 16, which is option B.",
+      "hint": "Multiply the two variables to find \\(k\\)."
+    },
+    {
+      "id": "algebra-05-q135",
+      "category": "Algebra",
+      "concept": "Direct Variation",
+      "learningObjective": "Solve a direct variation problem for an unknown variable.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "If \\(y\\) varies directly as \\(x\\) and \\(y=12\\) when \\(x=4\\), find \\(x\\) when \\(y=21\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First find \\(k\\): \\(12=k(4)\\), so \\(k=3\\). Then \\(21=3x\\), so \\(x=7\\). Therefore, the correct answer is 7, which is option A.",
+      "hint": "Find the constant of variation, then solve for \\(x\\)."
+    },
+    {
+      "id": "algebra-05-q136",
+      "category": "Algebra",
+      "concept": "Inverse Variation with a Square",
+      "learningObjective": "Solve an inverse variation problem involving a square.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "If \\(y\\) varies inversely as \\(x^2\\) and \\(y=3\\) when \\(x=2\\), find \\(y\\) when \\(x=3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{3}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{4}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The equation is \\(y=\\frac{k}{x^2}\\). Substituting gives \\(3=\\frac{k}{4}\\), so \\(k=12\\). Then \\(y=\\frac{12}{9}=\\frac{4}{3}\\). Therefore, the correct answer is \\(\\frac{4}{3}\\), which is option B.",
+      "hint": "Use \\(k=yx^2\\) to find the constant first."
+    },
+    {
+      "id": "algebra-05-q137",
+      "category": "Algebra",
+      "concept": "Direct Variation",
+      "learningObjective": "Solve a direct variation problem.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "If \\(d\\) varies directly as \\(t\\) and \\(d=100\\) when \\(t=2\\), find \\(d\\) when \\(t=5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "250"
+        },
+        {
+          "label": "B",
+          "text": "200"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First find \\(k\\): \\(100=k(2)\\), so \\(k=50\\). Then \\(d=50(5)=250\\). Therefore, the correct answer is 250, which is option A.",
+      "hint": "Find the constant of variation first."
+    },
+    {
+      "id": "algebra-05-q138",
+      "category": "Algebra",
+      "concept": "Combined Variation",
+      "learningObjective": "Solve a combined variation problem.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "If \\(w\\) varies jointly as \\(x\\) and \\(y\\) and inversely as \\(z\\), and \\(w=8\\) when \\(x=2\\), \\(y=4\\), and \\(z=2\\), find \\(w\\) when \\(x=3\\), \\(y=2\\), and \\(z=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The equation is \\(w=\\frac{kxy}{z}\\). Substituting gives \\(8=\\frac{k(2)(4)}{2}=4k\\), so \\(k=2\\). Then \\(w=\\frac{2(3)(2)}{1}=12\\). Therefore, the correct answer is 12, which is option B.",
+      "hint": "Write the combined variation equation and find \\(k\\)."
+    },
+    {
+      "id": "algebra-05-q139",
+      "category": "Algebra",
+      "concept": "Direct Variation Application",
+      "learningObjective": "Apply direct variation to the area of a circle.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The area of a circle varies directly as the square of its radius. If the area is \\(12.56\\text{ cm}^2\\) when the radius is \\(2\\text{ cm}\\), find the area when the radius is \\(3\\text{ cm}\\) (use \\(\\pi\\approx 3.14\\)).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(25.12\\text{ cm}^2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(28.26\\text{ cm}^2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The equation is \\(A=kr^2\\). Substituting gives \\(12.56=k(4)\\), so \\(k=3.14\\). Then \\(A=3.14(9)=28.26\\text{ cm}^2\\). Therefore, the correct answer is \\(28.26\\text{ cm}^2\\), which is option B.",
+      "hint": "Find the constant of variation first."
+    },
+    {
+      "id": "algebra-05-q140",
+      "category": "Algebra",
+      "concept": "Direct Variation Application",
+      "learningObjective": "Apply direct variation to the volume of a cube.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The volume of a cube varies directly as the cube of its side length. If \\(V=8\\text{ cm}^3\\) when \\(s=2\\text{ cm}\\), find \\(V\\) when \\(s=3\\text{ cm}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\text{ cm}^3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(27\\text{ cm}^3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The equation is \\(V=ks^3\\). Substituting gives \\(8=k(8)\\), so \\(k=1\\). Then \\(V=1(27)=27\\text{ cm}^3\\). Therefore, the correct answer is \\(27\\text{ cm}^3\\), which is option B.",
+      "hint": "Find the constant of variation first."
+    },
+    {
+      "id": "algebra-05-q141",
+      "category": "Algebra",
+      "concept": "Inverse Square Variation",
+      "learningObjective": "Solve an inverse square variation problem.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The force between two objects varies inversely as the square of the distance between them. If \\(F=100\\) when \\(d=1\\), find \\(F\\) when \\(d=5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation is \\(F=\\frac{k}{d^2}\\). Substituting gives \\(100=\\frac{k}{1}\\), so \\(k=100\\). Then \\(F=\\frac{100}{25}=4\\). Therefore, the correct answer is 4, which is option A.",
+      "hint": "Use \\(k=Fd^2\\) to find the constant first."
+    },
+    {
+      "id": "algebra-05-q142",
+      "category": "Algebra",
+      "concept": "Direct Variation Equation",
+      "learningObjective": "Write the equation of a direct variation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(y=8\\) when \\(x=2\\) and \\(y\\) varies directly as \\(x\\), write the equation relating \\(y\\) and \\(x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=4x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=2x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Find \\(k\\): \\(8=k(2)\\), so \\(k=4\\). The equation is \\(y=4x\\). Therefore, the correct answer is \\(y=4x\\), which is option A.",
+      "hint": "Find the constant of variation and write the equation."
+    },
+    {
+      "id": "algebra-05-q143",
+      "category": "Algebra",
+      "concept": "Inverse Variation Equation",
+      "learningObjective": "Write the equation of an inverse variation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(y=5\\) when \\(x=4\\) and \\(y\\) varies inversely as \\(x\\), write the equation relating \\(y\\) and \\(x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=4x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=\\frac{20}{x}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Find \\(k\\): \\(k=5\\cdot 4=20\\). The equation is \\(y=\\frac{20}{x}\\). Therefore, the correct answer is \\(y=\\frac{20}{x}\\), which is option B.",
+      "hint": "Use \\(k=xy\\) to find the constant."
+    },
+    {
+      "id": "algebra-05-q144",
+      "category": "Algebra",
+      "concept": "Joint Variation Equation",
+      "learningObjective": "Write the equation of a joint variation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(z\\) varies jointly as \\(x\\) and \\(y\\) and \\(z=18\\) when \\(x=3\\) and \\(y=2\\), write the equation relating \\(z\\), \\(x\\), and \\(y\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(z=3xy\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(z=6xy\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Find \\(k\\): \\(18=k(3)(2)=6k\\), so \\(k=3\\). The equation is \\(z=3xy\\). Therefore, the correct answer is \\(z=3xy\\), which is option A.",
+      "hint": "Substitute the given values into \\(z=kxy\\)."
+    },
+    {
+      "id": "algebra-05-q145",
+      "category": "Algebra",
+      "concept": "Direct Variation with a Square",
+      "learningObjective": "Solve a direct variation problem involving a square.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(y\\) varies directly as \\(x^2\\) and \\(y=8\\) when \\(x=2\\), find \\(y\\) when \\(x=3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "18"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation is \\(y=kx^2\\). Substituting gives \\(8=k(4)\\), so \\(k=2\\). Then \\(y=2(9)=18\\). Therefore, the correct answer is 18, which is option A.",
+      "hint": "Find the constant of variation first."
+    },
+    {
+      "id": "algebra-05-q146",
+      "category": "Algebra",
+      "concept": "Inverse Variation with a Cube",
+      "learningObjective": "Solve an inverse variation problem involving a cube.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "If \\(y\\) varies inversely as \\(x^3\\) and \\(y=1\\) when \\(x=2\\), find \\(y\\) when \\(x=4\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{8}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{4}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation is \\(y=\\frac{k}{x^3}\\). Substituting gives \\(1=\\frac{k}{8}\\), so \\(k=8\\). Then \\(y=\\frac{8}{64}=\\frac{1}{8}\\). Therefore, the correct answer is \\(\\frac{1}{8}\\), which is option A.",
+      "hint": "Use \\(k=yx^3\\) to find the constant first."
+    },
+    {
+      "id": "algebra-05-q147",
+      "category": "Algebra",
+      "concept": "Inverse Variation Application",
+      "learningObjective": "Apply inverse variation to a work problem.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The number of workers needed varies inversely as the time to complete a job. If 6 workers take 10 days, how many workers are needed to finish in 5 days?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total work is \\(k=6\\cdot 10=60\\) worker-days. For 5 days, the number of workers is \\(\\frac{60}{5}=12\\). Therefore, the correct answer is 12, which is option B.",
+      "hint": "Find the constant using workers × days."
+    },
+    {
+      "id": "algebra-05-q148",
+      "category": "Algebra",
+      "concept": "Direct Variation with a Square",
+      "learningObjective": "Solve a direct variation problem involving a square.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "If \\(y\\) varies directly as \\(x^2\\) and \\(y=27\\) when \\(x=3\\), find \\(y\\) when \\(x=5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "75"
+        },
+        {
+          "label": "B",
+          "text": "45"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation is \\(y=kx^2\\). Substituting gives \\(27=k(9)\\), so \\(k=3\\). Then \\(y=3(25)=75\\). Therefore, the correct answer is 75, which is option A.",
+      "hint": "Find the constant of variation first."
+    },
+    {
+      "id": "algebra-05-q149",
+      "category": "Algebra",
+      "concept": "Joint Variation",
+      "learningObjective": "Solve a joint variation problem involving three variables.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "If \\(V\\) varies jointly as \\(l\\), \\(w\\), and \\(h\\), and \\(V=60\\) when \\(l=5\\), \\(w=4\\), and \\(h=3\\), find \\(V\\) when \\(l=2\\), \\(w=3\\), and \\(h=5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "30"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The equation is \\(V=klwh\\). Substituting gives \\(60=k(5)(4)(3)=60k\\), so \\(k=1\\). Then \\(V=1(2)(3)(5)=30\\). Therefore, the correct answer is 30, which is option B.",
+      "hint": "Find the constant of variation first."
+    },
+    {
+      "id": "algebra-05-q150",
+      "category": "Algebra",
+      "concept": "Combined Variation",
+      "learningObjective": "Solve a combined variation problem involving a square root.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "If \\(y\\) varies directly as \\(x\\) and inversely as \\(\\sqrt{z}\\), and \\(y=6\\) when \\(x=3\\) and \\(z=4\\), find \\(y\\) when \\(x=4\\) and \\(z=9\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{16}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The equation is \\(y=\\frac{kx}{\\sqrt{z}}\\). Substituting gives \\(6=\\frac{k(3)}{2}\\), so \\(k=4\\). Then \\(y=\\frac{4(4)}{3}=\\frac{16}{3}\\). Therefore, the correct answer is \\(\\frac{16}{3}\\), which is option B.",
+      "hint": "Find the constant of variation first."
+    },
+    {
+      "id": "algebra-05-q151",
+      "category": "Algebra",
+      "concept": "Identifying Variation from a Table",
+      "learningObjective": "Determine the type of variation from a table of values.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Analysis",
+      "question": "The table shows \\(x\\): 1, 2, 3, 4 and \\(y\\): 3, 6, 9, 12. What type of variation is this?",
+      "options": [
+        {
+          "label": "A",
+          "text": "direct"
+        },
+        {
+          "label": "B",
+          "text": "inverse"
+        }
+      ],
+      "answer": "A",
+      "explanation": "As \\(x\\) increases, \\(y\\) increases proportionally, and \\(\\frac{y}{x}=3\\) is constant. This is direct variation. Therefore, the correct answer is direct, which is option A.",
+      "hint": "Check whether the ratio \\(\\frac{y}{x}\\) is constant."
+    },
+    {
+      "id": "algebra-05-q152",
+      "category": "Algebra",
+      "concept": "Identifying Variation from a Table",
+      "learningObjective": "Determine the type of variation from a table of values.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Analysis",
+      "question": "The table shows \\(x\\): 1, 2, 4, 8 and \\(y\\): 8, 4, 2, 1. What type of variation is this?",
+      "options": [
+        {
+          "label": "A",
+          "text": "direct"
+        },
+        {
+          "label": "B",
+          "text": "inverse"
+        }
+      ],
+      "answer": "B",
+      "explanation": "As \\(x\\) increases, \\(y\\) decreases, and \\(xy=8\\) is constant. This is inverse variation. Therefore, the correct answer is inverse, which is option B.",
+      "hint": "Check whether the product \\(xy\\) is constant."
+    },
+    {
+      "id": "algebra-05-q153",
+      "category": "Algebra",
+      "concept": "Direct Variation with a Cube",
+      "learningObjective": "Find the constant of variation in a direct variation involving a cube.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "If \\(y\\) varies directly as \\(x^3\\) and \\(y=24\\) when \\(x=2\\), find the constant of variation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The equation is \\(y=kx^3\\). Substituting gives \\(24=k(8)\\), so \\(k=3\\). Therefore, the correct answer is 3, which is option B.",
+      "hint": "Substitute the values into \\(y=kx^3\\)."
+    },
+    {
+      "id": "algebra-05-q154",
+      "category": "Algebra",
+      "concept": "Direct Variation Application",
+      "learningObjective": "Apply direct variation to a distance problem.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Distance varies directly as time. If a car travels 150 km in 3 hours, how far does it travel in 5 hours?",
+      "options": [
+        {
+          "label": "A",
+          "text": "200 km"
+        },
+        {
+          "label": "B",
+          "text": "250 km"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The speed is \\(k=\\frac{150}{3}=50\\) km/h. In 5 hours, the distance is \\(50(5)=250\\) km. Therefore, the correct answer is 250 km, which is option B.",
+      "hint": "Find the constant speed first."
+    },
+    {
+      "id": "algebra-05-q155",
+      "category": "Algebra",
+      "concept": "Inverse Variation Application",
+      "learningObjective": "Apply inverse variation to a pressure problem.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Pressure varies inversely as volume. If \\(P=4\\) when \\(V=6\\), find \\(P\\) when \\(V=8\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The equation is \\(P=\\frac{k}{V}\\). Substituting gives \\(4=\\frac{k}{6}\\), so \\(k=24\\). Then \\(P=\\frac{24}{8}=3\\). Therefore, the correct answer is 3, which is option B.",
+      "hint": "Find the constant using \\(k=PV\\)."
+    },
+    {
+      "id": "algebra-05-q156",
+      "category": "Algebra",
+      "concept": "Direct Variation",
+      "learningObjective": "Solve a direct variation problem.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "If \\(y\\) varies directly as \\(x\\) and \\(y=14\\) when \\(x=7\\), find \\(y\\) when \\(x=11\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "22"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First find \\(k\\): \\(14=k(7)\\), so \\(k=2\\). Then \\(y=2(11)=22\\). Therefore, the correct answer is 22, which is option A.",
+      "hint": "Find the constant of variation first."
+    },
+    {
+      "id": "algebra-05-q157",
+      "category": "Algebra",
+      "concept": "Joint Variation with a Square",
+      "learningObjective": "Solve a joint variation problem involving a square.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "If \\(z\\) varies jointly as \\(x\\) and \\(y^2\\), and \\(z=36\\) when \\(x=2\\) and \\(y=3\\), find \\(z\\) when \\(x=1\\) and \\(y=2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation is \\(z=kxy^2\\). Substituting gives \\(36=k(2)(9)=18k\\), so \\(k=2\\). Then \\(z=2(1)(4)=8\\). Therefore, the correct answer is 8, which is option A.",
+      "hint": "Find the constant of variation first."
+    },
+    {
+      "id": "algebra-05-q158",
+      "category": "Algebra",
+      "concept": "Inverse Variation",
+      "learningObjective": "Solve an inverse variation problem.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "If \\(y\\) varies inversely as \\(x\\) and \\(y=12\\) when \\(x=5\\), find \\(y\\) when \\(x=10\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First find \\(k\\): \\(k=12\\cdot 5=60\\). Then \\(y=\\frac{60}{10}=6\\). Therefore, the correct answer is 6, which is option B.",
+      "hint": "Find the constant using \\(k=xy\\)."
+    },
+    {
+      "id": "algebra-05-q159",
+      "category": "Algebra",
+      "concept": "Direct Variation Application",
+      "learningObjective": "Apply direct variation to a cost problem.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "The cost varies directly with the number of items. If 4 items cost $10, how much do 10 items cost?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$25"
+        },
+        {
+          "label": "B",
+          "text": "$30"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The cost per item is \\(k=\\frac{10}{4}=2.5\\). For 10 items, the cost is \\(2.5(10)=25\\). Therefore, the correct answer is $25, which is option A.",
+      "hint": "Find the cost per item first."
+    },
+    {
+      "id": "algebra-05-q160",
+      "category": "Algebra",
+      "concept": "Combined Variation",
+      "learningObjective": "Solve a combined variation problem involving an inverse square.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "If \\(A\\) varies directly as \\(b\\) and inversely as \\(c^2\\), and \\(A=2\\) when \\(b=8\\) and \\(c=2\\), find \\(A\\) when \\(b=27\\) and \\(c=3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation is \\(A=\\frac{kb}{c^2}\\). Substituting gives \\(2=\\frac{k(8)}{4}=2k\\), so \\(k=1\\). Then \\(A=\\frac{27}{9}=3\\). Therefore, the correct answer is 3, which is option A.",
+      "hint": "Find the constant of variation first."
+    },
+    {
+      "id": "algebra-05-q161",
+      "category": "Algebra",
+      "concept": "Center of a Circle",
+      "learningObjective": "Identify the center of a circle from its equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the center of the circle \\((x-2)^2+(y+3)^2=25\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-2,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,-3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The standard form is \\((x-h)^2+(y-k)^2=r^2\\) with center \\((h,k)\\). Here \\(h=2\\) and \\(k=-3\\), so the center is \\((2,-3)\\). Therefore, the correct answer is \\((2,-3)\\), which is option B.",
+      "hint": "Compare with the standard form of a circle."
+    },
+    {
+      "id": "algebra-05-q162",
+      "category": "Algebra",
+      "concept": "Radius of a Circle",
+      "learningObjective": "Identify the radius of a circle from its equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the radius of the circle \\((x-2)^2+(y+3)^2=25\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "25"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In the standard form \\((x-h)^2+(y-k)^2=r^2\\), the radius is \\(r\\). Here \\(r^2=25\\), so \\(r=5\\). Therefore, the correct answer is 5, which is option B.",
+      "hint": "Take the square root of the constant term."
+    },
+    {
+      "id": "algebra-05-q163",
+      "category": "Algebra",
+      "concept": "Equation of a Circle",
+      "learningObjective": "Write the equation of a circle given its center and radius.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Write the equation of the circle with center \\((0,0)\\) and radius 4.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x^2+y^2=16\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^2+y^2=8\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation is \\((x-0)^2+(y-0)^2=4^2\\), which simplifies to \\(x^2+y^2=16\\). Therefore, the correct answer is \\(x^2+y^2=16\\), which is option A.",
+      "hint": "Use the standard form with \\(h=0\\) and \\(k=0\\)."
+    },
+    {
+      "id": "algebra-05-q164",
+      "category": "Algebra",
+      "concept": "Center of a Circle from General Form",
+      "learningObjective": "Find the center of a circle by completing the square.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the center of the circle \\(x^2+y^2-6x+4y-3=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-3,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((3,-2)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Complete the square: \\((x^2-6x+9)+(y^2+4y+4)=3+9+4\\), which gives \\((x-3)^2+(y+2)^2=16\\). The center is \\((3,-2)\\). Therefore, the correct answer is \\((3,-2)\\), which is option B.",
+      "hint": "Group \\(x\\) terms and \\(y\\) terms, then complete the square."
+    },
+    {
+      "id": "algebra-05-q165",
+      "category": "Algebra",
+      "concept": "Radius of a Circle from General Form",
+      "learningObjective": "Find the radius of a circle by completing the square.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the radius of the circle \\(x^2+y^2-6x+4y-3=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Completing the square gives \\((x-3)^2+(y+2)^2=16\\). Thus the radius is \\(r=4\\). Therefore, the correct answer is 4, which is option A.",
+      "hint": "Complete the square and take the square root of the right side."
+    },
+    {
+      "id": "algebra-05-q166",
+      "category": "Algebra",
+      "concept": "Vertex of a Parabola",
+      "learningObjective": "Identify the vertex of a parabola from its equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the vertex of the parabola \\(y=(x-1)^2+3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-1,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The vertex form \\(y=a(x-h)^2+k\\) has vertex \\((h,k)\\). Here \\(h=1\\) and \\(k=3\\), so the vertex is \\((1,3)\\). Therefore, the correct answer is \\((1,3)\\), which is option A.",
+      "hint": "Compare with the vertex form of a parabola."
+    },
+    {
+      "id": "algebra-05-q167",
+      "category": "Algebra",
+      "concept": "Focus of a Parabola",
+      "learningObjective": "Find the focus of a parabola.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the focus of the parabola \\(y^2=4x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,1)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(y^2=4px\\), the focus is \\((p,0)\\). Here \\(4p=4\\), so \\(p=1\\), and the focus is \\((1,0)\\). Therefore, the correct answer is \\((1,0)\\), which is option A.",
+      "hint": "Compare with the standard form \\(y^2=4px\\)."
+    },
+    {
+      "id": "algebra-05-q168",
+      "category": "Algebra",
+      "concept": "Directrix of a Parabola",
+      "learningObjective": "Find the directrix of a parabola.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the directrix of the parabola \\(y^2=8x\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=-2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(y^2=4px\\), the directrix is \\(x=-p\\). Here \\(4p=8\\), so \\(p=2\\), and the directrix is \\(x=-2\\). Therefore, the correct answer is \\(x=-2\\), which is option B.",
+      "hint": "Identify \\(p\\) from the standard form."
+    },
+    {
+      "id": "algebra-05-q169",
+      "category": "Algebra",
+      "concept": "Axis of Symmetry of a Parabola",
+      "learningObjective": "Identify the axis of symmetry of a parabola.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the axis of symmetry of the parabola \\(x^2=12y\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The parabola \\(x^2=4py\\) opens upward and is symmetric about the \\(y\\)-axis, which is the line \\(x=0\\). Therefore, the correct answer is \\(x=0\\), which is option B.",
+      "hint": "Consider the orientation of the parabola."
+    },
+    {
+      "id": "algebra-05-q170",
+      "category": "Algebra",
+      "concept": "Direction of Opening of a Parabola",
+      "learningObjective": "Determine the direction in which a parabola opens.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In which direction does the parabola \\(y^2=-4x\\) open?",
+      "options": [
+        {
+          "label": "A",
+          "text": "right"
+        },
+        {
+          "label": "B",
+          "text": "left"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(y^2=4px\\), if \\(p<0\\), the parabola opens to the left. Here \\(4p=-4\\), so \\(p=-1<0\\), and the parabola opens to the left. Therefore, the correct answer is left, which is option B.",
+      "hint": "Check the sign of the coefficient."
+    },
+    {
+      "id": "algebra-05-q171",
+      "category": "Algebra",
+      "concept": "Focus of a Parabola",
+      "learningObjective": "Find the focus of a parabola.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "What is the focus of the parabola \\(x^2=16y\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0,4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,2)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(x^2=4py\\), the focus is \\((0,p)\\). Here \\(4p=16\\), so \\(p=4\\), and the focus is \\((0,4)\\). Therefore, the correct answer is \\((0,4)\\), which is option A.",
+      "hint": "Compare with the standard form \\(x^2=4py\\)."
+    },
+    {
+      "id": "algebra-05-q172",
+      "category": "Algebra",
+      "concept": "Equation of a Parabola",
+      "learningObjective": "Write the equation of a parabola given its focus and vertex.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A parabola has vertex at the origin and focus at \\((0,2)\\). Find its equation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x^2=4y\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x^2=8y\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since the focus is \\((0,2)\\), the parabola opens upward with \\(p=2\\). The equation is \\(x^2=4py=8y\\). Therefore, the correct answer is \\(x^2=8y\\), which is option B.",
+      "hint": "Use \\(x^2=4py\\) with the given value of \\(p\\)."
+    },
+    {
+      "id": "algebra-05-q173",
+      "category": "Algebra",
+      "concept": "Center of an Ellipse",
+      "learningObjective": "Identify the center of an ellipse.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the center of the ellipse \\(\\frac{x^2}{25}+\\frac{y^2}{9}=1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((5,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The standard form \\(\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\) has center \\((0,0)\\). Therefore, the correct answer is \\((0,0)\\), which is option A.",
+      "hint": "Compare with the standard form of an ellipse."
+    },
+    {
+      "id": "algebra-05-q174",
+      "category": "Algebra",
+      "concept": "Major Axis of an Ellipse",
+      "learningObjective": "Find the length of the major axis of an ellipse.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the length of the major axis of \\(\\frac{x^2}{25}+\\frac{y^2}{9}=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Here \\(a^2=25\\), so \\(a=5\\). The major axis length is \\(2a=10\\). Therefore, the correct answer is 10, which is option A.",
+      "hint": "The major axis length is \\(2a\\)."
+    },
+    {
+      "id": "algebra-05-q175",
+      "category": "Algebra",
+      "concept": "Minor Axis of an Ellipse",
+      "learningObjective": "Find the length of the minor axis of an ellipse.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the length of the minor axis of \\(\\frac{x^2}{25}+\\frac{y^2}{9}=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Here \\(b^2=9\\), so \\(b=3\\). The minor axis length is \\(2b=6\\). Therefore, the correct answer is 6, which is option B.",
+      "hint": "The minor axis length is \\(2b\\)."
+    },
+    {
+      "id": "algebra-05-q176",
+      "category": "Algebra",
+      "concept": "Foci of an Ellipse",
+      "learningObjective": "Find the foci of an ellipse.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the foci of the ellipse \\(\\frac{x^2}{25}+\\frac{y^2}{9}=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((\\pm 4,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,\\pm 4)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Here \\(a^2=25\\) and \\(b^2=9\\), so \\(c^2=a^2-b^2=16\\) and \\(c=4\\). Since the major axis is horizontal, the foci are \\((\\pm 4,0)\\). Therefore, the correct answer is \\((\\pm 4,0)\\), which is option A.",
+      "hint": "Use \\(c^2=a^2-b^2\\) and note the orientation."
+    },
+    {
+      "id": "algebra-05-q177",
+      "category": "Algebra",
+      "concept": "Eccentricity of an Ellipse",
+      "learningObjective": "Calculate the eccentricity of an ellipse.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the eccentricity of the ellipse \\(\\frac{x^2}{25}+\\frac{y^2}{9}=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{4}{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{3}{5}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Here \\(a=5\\), \\(b=3\\), and \\(c=\\sqrt{25-9}=4\\). The eccentricity is \\(e=\\frac{c}{a}=\\frac{4}{5}\\). Therefore, the correct answer is \\(\\frac{4}{5}\\), which is option A.",
+      "hint": "Use \\(e=\\frac{c}{a}\\) with \\(c^2=a^2-b^2\\)."
+    },
+    {
+      "id": "algebra-05-q178",
+      "category": "Algebra",
+      "concept": "Vertices of an Ellipse",
+      "learningObjective": "Find the vertices of an ellipse.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the vertices of the ellipse \\(\\frac{x^2}{16}+\\frac{y^2}{4}=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0,\\pm 4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((\\pm 4,0)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Here \\(a^2=16\\), so \\(a=4\\), and the major axis is horizontal. The vertices are \\((\\pm 4,0)\\). Therefore, the correct answer is \\((\\pm 4,0)\\), which is option B.",
+      "hint": "The vertices lie on the major axis."
+    },
+    {
+      "id": "algebra-05-q179",
+      "category": "Algebra",
+      "concept": "Foci of an Ellipse",
+      "learningObjective": "Find the foci of an ellipse with a vertical major axis.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the foci of the ellipse \\(\\frac{x^2}{9}+\\frac{y^2}{16}=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((\\pm\\sqrt{7},0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,\\pm\\sqrt{7})\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Here \\(a^2=16\\) and \\(b^2=9\\), so \\(c^2=16-9=7\\) and \\(c=\\sqrt{7}\\). Since the major axis is vertical, the foci are \\((0,\\pm\\sqrt{7})\\). Therefore, the correct answer is \\((0,\\pm\\sqrt{7})\\), which is option B.",
+      "hint": "Identify the orientation of the major axis first."
+    },
+    {
+      "id": "algebra-05-q180",
+      "category": "Algebra",
+      "concept": "Equation of an Ellipse",
+      "learningObjective": "Write the equation of an ellipse given its parameters.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Write the equation of the ellipse with center at the origin, major axis on the \\(x\\)-axis, \\(a=5\\), and \\(b=3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{x^2}{25}+\\frac{y^2}{9}=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{x^2}{9}+\\frac{y^2}{25}=1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since the major axis is on the \\(x\\)-axis, \\(a^2=25\\) goes under \\(x^2\\) and \\(b^2=9\\) goes under \\(y^2\\). The equation is \\(\\frac{x^2}{25}+\\frac{y^2}{9}=1\\). Therefore, the correct answer is \\(\\frac{x^2}{25}+\\frac{y^2}{9}=1\\), which is option A.",
+      "hint": "Place \\(a^2\\) under the variable of the major axis."
+    },
+    {
+      "id": "algebra-05-q181",
+      "category": "Algebra",
+      "concept": "Center of a Hyperbola",
+      "learningObjective": "Identify the center of a hyperbola.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the center of the hyperbola \\(\\frac{x^2}{16}-\\frac{y^2}{9}=1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((0,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((4,3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The standard form of a hyperbola centered at the origin is \\(\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\). Therefore, the center is \\((0,0)\\), which is option A.",
+      "hint": "Compare with the standard form of a hyperbola."
+    },
+    {
+      "id": "algebra-05-q182",
+      "category": "Algebra",
+      "concept": "Vertices of a Hyperbola",
+      "learningObjective": "Find the vertices of a hyperbola.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the vertices of the hyperbola \\(\\frac{x^2}{16}-\\frac{y^2}{9}=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((\\pm 4,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,\\pm 3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Here \\(a^2=16\\), so \\(a=4\\). Since the transverse axis is horizontal, the vertices are \\((\\pm 4,0)\\). Therefore, the correct answer is \\((\\pm 4,0)\\), which is option A.",
+      "hint": "The vertices lie on the transverse axis."
+    },
+    {
+      "id": "algebra-05-q183",
+      "category": "Algebra",
+      "concept": "Foci of a Hyperbola",
+      "learningObjective": "Find the foci of a hyperbola.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the foci of the hyperbola \\(\\frac{x^2}{16}-\\frac{y^2}{9}=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((\\pm 5,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((\\pm 4,0)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Here \\(a^2=16\\) and \\(b^2=9\\), so \\(c^2=a^2+b^2=25\\) and \\(c=5\\). The foci are \\((\\pm 5,0)\\). Therefore, the correct answer is \\((\\pm 5,0)\\), which is option A.",
+      "hint": "Use \\(c^2=a^2+b^2\\) for a hyperbola."
+    },
+    {
+      "id": "algebra-05-q184",
+      "category": "Algebra",
+      "concept": "Asymptotes of a Hyperbola",
+      "learningObjective": "Find the asymptotes of a hyperbola.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the asymptotes of the hyperbola \\(\\frac{x^2}{16}-\\frac{y^2}{9}=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=\\pm\\frac{4}{3}x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=\\pm\\frac{3}{4}x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\), the asymptotes are \\(y=\\pm\\frac{b}{a}x\\). Here \\(a=4\\) and \\(b=3\\), so the asymptotes are \\(y=\\pm\\frac{3}{4}x\\). Therefore, the correct answer is \\(y=\\pm\\frac{3}{4}x\\), which is option B.",
+      "hint": "Use the formula \\(y=\\pm\\frac{b}{a}x\\)."
+    },
+    {
+      "id": "algebra-05-q185",
+      "category": "Algebra",
+      "concept": "Eccentricity of a Hyperbola",
+      "learningObjective": "Calculate the eccentricity of a hyperbola.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the eccentricity of the hyperbola \\(\\frac{x^2}{16}-\\frac{y^2}{9}=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{5}{4}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{4}{5}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Here \\(a=4\\), \\(b=3\\), and \\(c=\\sqrt{16+9}=5\\). The eccentricity is \\(e=\\frac{c}{a}=\\frac{5}{4}\\). Therefore, the correct answer is \\(\\frac{5}{4}\\), which is option A.",
+      "hint": "Use \\(e=\\frac{c}{a}\\) with \\(c^2=a^2+b^2\\)."
+    },
+    {
+      "id": "algebra-05-q186",
+      "category": "Algebra",
+      "concept": "Vertices of a Hyperbola",
+      "learningObjective": "Find the vertices of a hyperbola with a vertical transverse axis.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the vertices of the hyperbola \\(\\frac{y^2}{9}-\\frac{x^2}{16}=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((\\pm 4,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,\\pm 3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Here \\(a^2=9\\), so \\(a=3\\), and the transverse axis is vertical. The vertices are \\((0,\\pm 3)\\). Therefore, the correct answer is \\((0,\\pm 3)\\), which is option B.",
+      "hint": "Identify the orientation of the transverse axis first."
+    },
+    {
+      "id": "algebra-05-q187",
+      "category": "Algebra",
+      "concept": "Asymptotes of a Hyperbola",
+      "learningObjective": "Find the asymptotes of a hyperbola with a vertical transverse axis.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the asymptotes of the hyperbola \\(\\frac{y^2}{9}-\\frac{x^2}{16}=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=\\pm\\frac{4}{3}x\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=\\pm\\frac{3}{4}x\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(\\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1\\), the asymptotes are \\(y=\\pm\\frac{a}{b}x\\). Here \\(a=3\\) and \\(b=4\\), so the asymptotes are \\(y=\\pm\\frac{3}{4}x\\). Therefore, the correct answer is \\(y=\\pm\\frac{3}{4}x\\), which is option B.",
+      "hint": "Use the formula \\(y=\\pm\\frac{a}{b}x\\) for a vertical transverse axis."
+    },
+    {
+      "id": "algebra-05-q188",
+      "category": "Algebra",
+      "concept": "Identifying Conic Sections",
+      "learningObjective": "Identify a circle from its equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The equation \\(x^2+y^2=25\\) represents which conic section?",
+      "options": [
+        {
+          "label": "A",
+          "text": "circle"
+        },
+        {
+          "label": "B",
+          "text": "parabola"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An equation of the form \\(x^2+y^2=r^2\\) represents a circle. Therefore, the correct answer is circle, which is option A.",
+      "hint": "Both \\(x^2\\) and \\(y^2\\) have equal coefficients."
+    },
+    {
+      "id": "algebra-05-q189",
+      "category": "Algebra",
+      "concept": "Identifying Conic Sections",
+      "learningObjective": "Identify an ellipse from its equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The equation \\(\\frac{x^2}{9}+\\frac{y^2}{4}=1\\) represents which conic section?",
+      "options": [
+        {
+          "label": "A",
+          "text": "circle"
+        },
+        {
+          "label": "B",
+          "text": "ellipse"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An equation of the form \\(\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\) with \\(a\\neq b\\) represents an ellipse. Therefore, the correct answer is ellipse, which is option B.",
+      "hint": "Compare the signs and denominators of the squared terms with the standard conic equations."
+    },
+    {
+      "id": "algebra-05-q190",
+      "category": "Algebra",
+      "concept": "Identifying Conic Sections",
+      "learningObjective": "Identify a hyperbola from its equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The equation \\(\\frac{x^2}{9}-\\frac{y^2}{4}=1\\) represents which conic section?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ellipse"
+        },
+        {
+          "label": "B",
+          "text": "hyperbola"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An equation of the form \\(\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\) represents a hyperbola. Therefore, the correct answer is hyperbola, which is option B.",
+      "hint": "Compare the signs and denominators of the squared terms with the standard conic equations."
+    },
+    {
+      "id": "algebra-05-q191",
+      "category": "Algebra",
+      "concept": "Identifying Conic Sections",
+      "learningObjective": "Identify a parabola from its equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The equation \\(y=x^2+2x+1\\) represents which conic section?",
+      "options": [
+        {
+          "label": "A",
+          "text": "parabola"
+        },
+        {
+          "label": "B",
+          "text": "circle"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An equation where one variable is squared and the other is not is a parabola. Therefore, the correct answer is parabola, which is option A.",
+      "hint": "Check whether only one variable is squared."
+    },
+    {
+      "id": "algebra-05-q192",
+      "category": "Algebra",
+      "concept": "Completing the Square for a Circle",
+      "learningObjective": "Find the center of a circle by completing the square.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the center of the circle \\(x^2+y^2+4x-6y+9=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((2,-3)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-2,3)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Complete the square: \\((x^2+4x+4)+(y^2-6y+9)=4\\), which gives \\((x+2)^2+(y-3)^2=4\\). The center is \\((-2,3)\\). Therefore, the correct answer is \\((-2,3)\\), which is option B.",
+      "hint": "Group and complete the square for both variables."
+    },
+    {
+      "id": "algebra-05-q193",
+      "category": "Algebra",
+      "concept": "Radius of a Circle from General Form",
+      "learningObjective": "Find the radius of a circle by completing the square.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the radius of the circle \\(x^2+y^2+4x-6y+9=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Completing the square gives \\((x+2)^2+(y-3)^2=4\\). Thus the radius is \\(r=2\\). Therefore, the correct answer is 2, which is option B.",
+      "hint": "Complete the square and take the square root of the right side."
+    },
+    {
+      "id": "algebra-05-q194",
+      "category": "Algebra",
+      "concept": "Vertex of a Parabola",
+      "learningObjective": "Find the vertex of a parabola by completing the square.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the vertex of the parabola \\(y=x^2-4x+5\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((-2,1)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((2,1)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Complete the square: \\(y=(x^2-4x+4)+1=(x-2)^2+1\\). The vertex is \\((2,1)\\). Therefore, the correct answer is \\((2,1)\\), which is option B.",
+      "hint": "Write the equation in vertex form."
+    },
+    {
+      "id": "algebra-05-q195",
+      "category": "Algebra",
+      "concept": "Focus of a Parabola",
+      "learningObjective": "Find the focus of a parabola given in vertex form.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the focus of the parabola \\((x-1)^2=8(y-2)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1,4)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((1,0)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equation is in the form \\((x-h)^2=4p(y-k)\\) with vertex \\((1,2)\\). Here \\(4p=8\\), so \\(p=2\\). The focus is \\((h,k+p)=(1,2+2)=(1,4)\\). Therefore, the correct answer is \\((1,4)\\), which is option A.",
+      "hint": "Identify the vertex and the value of \\(p\\)."
+    },
+    {
+      "id": "algebra-05-q196",
+      "category": "Algebra",
+      "concept": "Directrix of a Parabola",
+      "learningObjective": "Find the directrix of a parabola given in vertex form.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the directrix of the parabola \\((x-1)^2=8(y-2)\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=4\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The vertex is \\((1,2)\\) and \\(p=2\\). Since the parabola opens upward, the directrix is \\(y=k-p=2-2=0\\). Therefore, the correct answer is \\(y=0\\), which is option A.",
+      "hint": "Use \\(y=k-p\\) for an upward-opening parabola."
+    },
+    {
+      "id": "algebra-05-q197",
+      "category": "Algebra",
+      "concept": "Foci of an Ellipse",
+      "learningObjective": "Find the foci of an ellipse given in general form.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the foci of the ellipse \\(4x^2+9y^2=36\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((\\pm\\sqrt{13},0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((\\pm\\sqrt{5},0)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Divide by 36: \\(\\frac{x^2}{9}+\\frac{y^2}{4}=1\\). Here \\(a^2=9\\), \\(b^2=4\\), so \\(c^2=9-4=5\\) and \\(c=\\sqrt{5}\\). The foci are \\((\\pm\\sqrt{5},0)\\). Therefore, the correct answer is \\((\\pm\\sqrt{5},0)\\), which is option B.",
+      "hint": "Convert to standard form first."
+    },
+    {
+      "id": "algebra-05-q198",
+      "category": "Algebra",
+      "concept": "Eccentricity of an Ellipse",
+      "learningObjective": "Calculate the eccentricity of an ellipse given in general form.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the eccentricity of the ellipse \\(4x^2+9y^2=36\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\sqrt{5}}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{2}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In standard form \\(\\frac{x^2}{9}+\\frac{y^2}{4}=1\\), we have \\(a=3\\), \\(b=2\\), and \\(c=\\sqrt{9-4}=\\sqrt{5}\\). The eccentricity is \\(e=\\frac{c}{a}=\\frac{\\sqrt{5}}{3}\\). Therefore, the correct answer is \\(\\frac{\\sqrt{5}}{3}\\), which is option A.",
+      "hint": "Convert to standard form and use \\(e=\\frac{c}{a}\\)."
+    },
+    {
+      "id": "algebra-05-q199",
+      "category": "Algebra",
+      "concept": "Vertices of a Hyperbola",
+      "learningObjective": "Find the vertices of a hyperbola given in general form.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Find the vertices of the hyperbola \\(9x^2-16y^2=144\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((\\pm 4,0)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((0,\\pm 3)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide by 144: \\(\\frac{x^2}{16}-\\frac{y^2}{9}=1\\). Here \\(a^2=16\\), so \\(a=4\\), and the transverse axis is horizontal. The vertices are \\((\\pm 4,0)\\). Therefore, the correct answer is \\((\\pm 4,0)\\), which is option A.",
+      "hint": "Convert to standard form first."
+    },
+    {
+      "id": "algebra-05-q200",
+      "category": "Algebra",
+      "concept": "Identifying Conic Sections",
+      "learningObjective": "Identify a conic section from its general equation.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "The equation \\(x^2+4y^2+2x-8y+1=0\\) represents which conic section?",
+      "options": [
+        {
+          "label": "A",
+          "text": "circle"
+        },
+        {
+          "label": "B",
+          "text": "ellipse"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Complete the square: \\((x+1)^2+4(y-1)^2=4\\), which simplifies to \\(\\frac{(x+1)^2}{4}+(y-1)^2=1\\). This is the equation of an ellipse. Therefore, the correct answer is ellipse, which is option B.",
+      "hint": "Complete the square and compare with standard forms."
+    }
+  ]
+}

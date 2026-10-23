@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-239",
+  "category": "Comprehensive Mathematics",
+  "title": "239. Algebra, Equations & Inequalities: Interpreting CAS Solutions with Domain Restrictions",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-239-q001",
+      "category": "Algebra",
+      "concept": "Interpreting CAS Solutions for Rational Equations",
+      "learningObjective": "Identify a CAS-reported solution that must be excluded because it makes a denominator zero.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A CAS solves \\(\\frac{x^2-4}{x-2}=0\\) and reports the candidate solutions \\(x=-2\\) and \\(x=2\\). Which interpretation is correct under the domain restriction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only \\(x=-2\\) is valid, because \\(x=2\\) makes the denominator zero."
+        },
+        {
+          "label": "B",
+          "text": "Both \\(x=-2\\) and \\(x=2\\) are valid solutions."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expression is defined only when \\(x-2\\ne0\\), so \\(x\\ne2\\). Substituting \\(x=-2\\) gives \\(\\frac{4-4}{-2-2}=0\\), so it is valid. Substituting \\(x=2\\) makes the denominator zero, so it is not in the domain. Therefore only \\(x=-2\\) is valid.",
+      "hint": "Check every CAS-reported value against the denominator restriction before accepting it."
+    },
+    {
+      "id": "dynanca-239-q002",
+      "category": "Algebra",
+      "concept": "Interpreting CAS Solutions for Logarithmic Equations",
+      "learningObjective": "Select the valid solution of a logarithmic equation after applying domain restrictions.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A CAS solves \\(\\log_2(x-1)+\\log_2(x-2)=1\\) and reports the candidate solutions \\(x=0\\) and \\(x=3\\). Which solution is valid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only \\(x=3\\) is valid, because the logarithms require \\(x>2\\)."
+        },
+        {
+          "label": "B",
+          "text": "Both \\(x=0\\) and \\(x=3\\) are valid."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(\\log_2(x-1)\\) and \\(\\log_2(x-2)\\) to be defined, we need \\(x-1>0\\) and \\(x-2>0\\), so \\(x>2\\). Combining the logarithms gives \\(\\log_2((x-1)(x-2))=1\\), so \\((x-1)(x-2)=2\\). Then \\(x^2-3x+2=2\\), so \\(x^2-3x=0\\), giving \\(x=0\\) or \\(x=3\\). Only \\(x=3\\) satisfies \\(x>2\\); \\(x=0\\) is excluded by the domain.",
+      "hint": "Determine the domain of each logarithm before checking the CAS candidates."
+    },
+    {
+      "id": "dynanca-239-q003",
+      "category": "Algebra",
+      "concept": "Interpreting CAS Solutions for Rational Inequalities",
+      "learningObjective": "Adjust a CAS-reported interval solution by excluding a value that makes a denominator zero.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A CAS solves \\(\\frac{x-1}{x+2}\\ge0\\) and reports the candidate solution \\(x\\le -2\\) or \\(x\\ge1\\). Which solution is correct after applying the domain restriction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x\\le -2\\) or \\(x\\ge1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x<-2\\) or \\(x\\ge1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expression is undefined at \\(x=-2\\), so \\(x=-2\\) must be excluded from any interval. A sign analysis shows that the inequality is nonnegative for \\(x<-2\\) or \\(x\\ge1\\). Since \\(x=-2\\) makes the denominator zero, the correct solution is \\(x<-2\\) or \\(x\\ge1\\).",
+      "hint": "The denominator cannot be zero; replace any closed endpoint at the excluded value with an open endpoint."
+    },
+    {
+      "id": "dynanca-239-q004",
+      "category": "Algebra",
+      "concept": "Interpreting CAS Solutions for Logarithmic Equations",
+      "learningObjective": "Exclude an extraneous CAS solution by using the domain of a logarithmic equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A CAS solves \\(\\ln(x+1)+\\ln(x-1)=\\ln3\\) and reports the candidate solutions \\(x=-2\\) and \\(x=2\\). Which solution is valid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both \\(x=-2\\) and \\(x=2\\) are valid."
+        },
+        {
+          "label": "B",
+          "text": "Only \\(x=2\\) is valid, because the logarithms require \\(x>1\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The domain requires \\(x+1>0\\) and \\(x-1>0\\), so \\(x>1\\). Combining the logarithms gives \\(\\ln((x+1)(x-1))=\\ln3\\), so \\((x+1)(x-1)=3\\). Then \\(x^2-1=3\\), so \\(x^2=4\\), giving \\(x=-2\\) or \\(x=2\\). Only \\(x=2\\) satisfies \\(x>1\\); \\(x=-2\\) is excluded by the domain.",
+      "hint": "Find the intersection of the domains of both logarithms before accepting the CAS candidates."
+    },
+    {
+      "id": "dynanca-239-q005",
+      "category": "Algebra",
+      "concept": "Interpreting CAS Solutions for Radical Equations",
+      "learningObjective": "Determine which CAS-reported solution satisfies both the radical domain and the original equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A CAS solves \\(\\sqrt{x+5}=x-1\\) and reports the candidate solutions \\(x=-1\\) and \\(x=4\\). Which solution is valid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both \\(x=-1\\) and \\(x=4\\) are valid."
+        },
+        {
+          "label": "B",
+          "text": "Only \\(x=4\\) is valid, because \\(x=-1\\) does not satisfy the original equation."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Squaring gives \\(x+5=(x-1)^2\\), so \\(x+5=x^2-2x+1\\). Then \\(x^2-3x-4=0\\), so \\((x-4)(x+1)=0\\), giving \\(x=4\\) or \\(x=-1\\). Checking the original equation: \\(x=4\\) gives \\(\\sqrt{9}=3\\) and the right-hand side is \\(3\\), so it is valid. \\(x=-1\\) gives \\(\\sqrt{4}=2\\), but the right-hand side is \\(-2\\), so it is not valid. Therefore only \\(x=4\\) is valid.",
+      "hint": "After squaring, substitute each CAS candidate into the original equation to remove extraneous solutions."
+    },
+    {
+      "id": "dynanca-239-q006",
+      "category": "Algebra",
+      "concept": "Interpreting CAS Solutions for Rational Equations",
+      "learningObjective": "Recognize when a CAS solution must be rejected because it is not in the domain, leading to no solution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A CAS solves \\(\\frac{2x}{x-4}=1+\\frac{8}{x-4}\\) and reports the candidate solution \\(x=4\\). What is the correct interpretation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=4\\) is a valid solution."
+        },
+        {
+          "label": "B",
+          "text": "There is no solution, because \\(x=4\\) makes the denominator zero."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expression is undefined at \\(x=4\\). Multiplying both sides by \\(x-4\\) gives \\(2x=(x-4)+8\\), so \\(2x=x+4\\), and therefore \\(x=4\\). However, \\(x=4\\) is excluded by the original domain. Thus the equation has no solution.",
+      "hint": "Solve the simplified equation, then check whether the CAS result is allowed by the original denominator."
+    },
+    {
+      "id": "dynanca-239-q007",
+      "category": "Algebra",
+      "concept": "Interpreting CAS Solutions for Rational Inequalities",
+      "learningObjective": "Interpret a strict rational inequality by excluding a zero of the numerator from the solution set.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A CAS solves \\(\\frac{x+3}{x-1}<0\\) and reports the candidate solution \\(-3\\le x<1\\). Which solution is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-3\\le x<1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-3<x<1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The inequality is strict, so \\(x=-3\\), which makes the numerator zero, gives the value \\(0\\) and is not allowed. Also \\(x=1\\) is excluded by the denominator. A sign analysis gives the solution \\(-3<x<1\\). Therefore the correct interval is \\(-3<x<1\\).",
+      "hint": "For a strict inequality, endpoints where the numerator is zero are not included; endpoints where the denominator is zero are also excluded."
+    },
+    {
+      "id": "dynanca-239-q008",
+      "category": "Algebra",
+      "concept": "Interpreting CAS Solutions for Radical Equations",
+      "learningObjective": "Apply domain and sign conditions to select the valid CAS-reported solution of a radical equation.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A CAS solves \\(\\sqrt{x+4}=x-2\\) and reports the candidate solutions \\(x=0\\) and \\(x=5\\). Which solution is valid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only \\(x=5\\) is valid, because \\(x=0\\) gives a negative right-hand side."
+        },
+        {
+          "label": "B",
+          "text": "Both \\(x=0\\) and \\(x=5\\) are valid."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Squaring gives \\(x+4=(x-2)^2\\), so \\(x+4=x^2-4x+4\\). Then \\(x^2-5x=0\\), giving \\(x=0\\) or \\(x=5\\). Checking the original equation: \\(x=5\\) gives \\(\\sqrt{9}=3\\) and the right-hand side is \\(3\\), so it is valid. \\(x=0\\) gives \\(\\sqrt{4}=2\\), but the right-hand side is \\(-2\\), so it is not valid. Therefore only \\(x=5\\) is valid.",
+      "hint": "A square root is nonnegative, so the other side must also be nonnegative before a CAS solution can be accepted."
+    },
+    {
+      "id": "dynanca-239-q009",
+      "category": "Algebra",
+      "concept": "Interpreting CAS Solutions for Logarithmic Inequalities",
+      "learningObjective": "Intersect a CAS-reported inequality solution with the domain of a logarithm.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A CAS solves \\(\\log_2(x-3)<1\\) and reports the candidate solution \\(x<5\\). Which solution is correct after applying the domain restriction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x<5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3<x<5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The logarithm requires \\(x-3>0\\), so \\(x>3\\). Since \\(\\log_2\\) is increasing, \\(\\log_2(x-3)<1\\) means \\(x-3<2\\), so \\(x<5\\). Intersecting \\(x>3\\) with \\(x<5\\) gives \\(3<x<5\\). The CAS report \\(x<5\\) omits the domain restriction.",
+      "hint": "Solve the logarithmic inequality, then intersect the result with the logarithm's domain."
+    },
+    {
+      "id": "dynanca-239-q010",
+      "category": "Algebra",
+      "concept": "Interpreting CAS Solutions for Radical Inequalities",
+      "learningObjective": "Use domain and sign conditions to correct a CAS-reported solution of a radical inequality.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A CAS solves \\(\\sqrt{x-1}<x-3\\) and reports the candidate solution \\(x<2\\) or \\(x>5\\). Which solution is correct after applying domain and sign restrictions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x<2\\) or \\(x>5\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x>5\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The radical requires \\(x-1\\ge0\\), so \\(x\\ge1\\). Also \\(\\sqrt{x-1}\\ge0\\), so the inequality requires \\(x-3>0\\), that is, \\(x>3\\). Squaring gives \\(x-1<(x-3)^2\\), so \\(x-1<x^2-6x+9\\). Then \\(0<x^2-7x+10\\), so \\((x-5)(x-2)>0\\). This holds for \\(x<2\\) or \\(x>5\\), but with the restriction \\(x>3\\), only \\(x>5\\) remains. The CAS report includes \\(x<2\\), which violates \\(x>3\\). Therefore the correct solution is \\(x>5\\).",
+      "hint": "Combine the radical domain, the sign requirement of the right-hand side, and the squared inequality before accepting the CAS intervals."
+    }
+  ]
+}

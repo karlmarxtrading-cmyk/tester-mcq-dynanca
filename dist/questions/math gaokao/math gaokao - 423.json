@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-423",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 423",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-423-q001",
+      "category": "Mathematical Reasoning",
+      "concept": "Equivalence-Preserving Operations on Equations",
+      "learningObjective": "Identify transformations that preserve the solution set of an equation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which of the following operations on the equation \\(2x-3=5\\) is an equivalence transformation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Add \\(3\\) to both sides."
+        },
+        {
+          "label": "B",
+          "text": "Square both sides."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Adding \\(3\\) to both sides gives \\(2x=8\\), which has the same solution set as \\(2x-3=5\\). This operation is reversible by subtracting \\(3\\), so it is an equivalence transformation. Squaring both sides is not generally an equivalence transformation because it can introduce extraneous solutions. Here, squaring would give \\((2x-3)^2=25\\), leading to \\(x=4\\) or \\(x=-1\\), while the original equation has only \\(x=4\\).",
+      "hint": "Recall which operations can be reversed without changing the solution set."
+    },
+    {
+      "id": "math-gaokao-423-q002",
+      "category": "Mathematical Reasoning",
+      "concept": "Reversing Inequality Sign in Equivalence Transformations",
+      "learningObjective": "Apply the correct equivalence transformation when dividing an inequality by a negative number.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Which inequality is equivalent to \\(-2x<6\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x>-3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x<-3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide both sides of \\(-2x<6\\) by \\(-2\\). Since \\(-2\\) is negative, the direction of the inequality must be reversed:\n\\[\n-2x<6 \\quad\\Longrightarrow\\quad x>-3.\n\\]\nThus \\(x>-3\\) is equivalent to the original inequality. The choice \\(x<-3\\) comes from forgetting to reverse the inequality sign.",
+      "hint": "Pay attention to the sign of the number by which you divide both sides."
+    },
+    {
+      "id": "math-gaokao-423-q003",
+      "category": "Mathematical Reasoning",
+      "concept": "Extraneous Solutions from Squaring Radical Equations",
+      "learningObjective": "Solve a radical equation and exclude extraneous roots introduced by squaring.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\sqrt{x+4}=x-2\\). Which set gives all real solutions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{5\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{0,5\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The right-hand side must be nonnegative, so \\(x-2\\ge 0\\), hence \\(x\\ge 2\\). Squaring both sides gives\n\\[\nx+4=(x-2)^2=x^2-4x+4.\n\\]\nThus\n\\[\nx^2-5x=0 \\quad\\Longrightarrow\\quad x(x-5)=0,\n\\]\nso \\(x=0\\) or \\(x=5\\). Check in the original equation: \\(x=0\\) gives \\(\\sqrt{4}=2\\) on the left and \\(-2\\) on the right, so it is extraneous. \\(x=5\\) gives \\(\\sqrt{9}=3\\) and \\(5-2=3\\), so it is valid. Therefore the solution set is \\(\\{5\\}\\).",
+      "hint": "After squaring, test every candidate in the original equation."
+    },
+    {
+      "id": "math-gaokao-423-q004",
+      "category": "Mathematical Reasoning",
+      "concept": "Equivalence in Rational Equations",
+      "learningObjective": "Solve a rational equation by clearing denominators while excluding values that make the denominator zero.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\frac{x-1}{x-3}=2\\). Which set gives all real solutions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{3,5\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{5\\}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The denominator cannot be zero, so \\(x\\ne 3\\). Multiply both sides by \\(x-3\\):\n\\[\nx-1=2(x-3).\n\\]\nThen\n\\[\nx-1=2x-6 \\quad\\Longrightarrow\\quad x=5.\n\\]\nSince \\(5\\ne 3\\), it is valid. The value \\(3\\) is excluded from the domain and is not a solution. Hence the solution set is \\(\\{5\\}\\).",
+      "hint": "State the denominator restriction before clearing the fraction."
+    },
+    {
+      "id": "math-gaokao-423-q005",
+      "category": "Mathematical Reasoning",
+      "concept": "Equivalent Transformations for Inequalities with Square Roots",
+      "learningObjective": "Solve a square-root inequality by considering the domain and cases.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Find the solution set of \\(\\sqrt{x+2}>x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([-2,2)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-1,2)\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The square root requires \\(x+2\\ge 0\\), so \\(x\\ge -2\\). If \\(-2\\le x<0\\), then the right-hand side \\(x\\) is negative while \\(\\sqrt{x+2}\\ge 0\\), so the inequality holds. If \\(x\\ge 0\\), both sides are nonnegative, so squaring preserves the inequality:\n\\[\nx+2>x^2.\n\\]\nThus\n\\[\nx^2-x-2<0 \\quad\\Longrightarrow\\quad (x-2)(x+1)<0,\n\\]\nso \\(-1<x<2\\). Intersecting with \\(x\\ge 0\\) gives \\(0\\le x<2\\). Combining the two cases gives\n\\[\n[-2,0)\\cup[0,2)=[-2,2).\n\\]\nAt \\(x=2\\), \\(\\sqrt{4}=2\\), not greater than \\(2\\), so \\(2\\) is excluded.",
+      "hint": "Split into cases according to the sign of the right-hand side before squaring."
+    },
+    {
+      "id": "math-gaokao-423-q006",
+      "category": "Mathematical Reasoning",
+      "concept": "Equivalent Quadratic Inequalities",
+      "learningObjective": "Transform a quadratic inequality into an interval condition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The inequality \\(x^2<4\\) is equivalent to which of the following?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x<2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-2<x<2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rewrite \\(x^2<4\\) as\n\\[\nx^2-4<0 \\quad\\Longrightarrow\\quad (x-2)(x+2)<0.\n\\]\nThe product of two factors is negative exactly when the factors have opposite signs, which gives\n\\[\n-2<x<2.\n\\]\nThe choice \\(x<2\\) is incomplete; for example, \\(x=-3\\) satisfies \\(x<2\\) but does not satisfy \\(x^2<4\\).",
+      "hint": "Rewrite the inequality as a product of two linear factors and use sign analysis."
+    },
+    {
+      "id": "math-gaokao-423-q007",
+      "category": "Mathematical Reasoning",
+      "concept": "Equivalence Transformations with Absolute Values",
+      "learningObjective": "Solve an absolute-value equation by splitting into cases and checking the domain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(|2x-1|=x+3\\). Which set gives all real solutions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left\\{-\\frac{2}{3},4\\right\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{4\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The right-hand side must be nonnegative, so \\(x+3\\ge 0\\). Consider the two cases for the absolute value.\nCase \\(1\\): \\(2x-1\\ge 0\\). Then\n\\[\n2x-1=x+3 \\quad\\Longrightarrow\\quad x=4.\n\\]\nCheck: \\(x+3=7>0\\), and \\(|2(4)-1|=7\\), so \\(x=4\\) is valid.\nCase \\(2\\): \\(2x-1<0\\). Then\n\\[\n-(2x-1)=x+3 \\quad\\Longrightarrow\\quad -2x+1=x+3 \\quad\\Longrightarrow\\quad x=-\\frac{2}{3}.\n\\]\nCheck: \\(x+3=\\frac{7}{3}>0\\), and \\(\\left|2\\left(-\\frac{2}{3}\\right)-1\\right|=\\left|-\\frac{7}{3}\\right|=\\frac{7}{3}\\), so \\(x=-\\frac{2}{3}\\) is valid.\nThus the solution set is \\(\\left\\{-\\frac{2}{3},4\\right\\}\\).",
+      "hint": "Consider both signs of the expression inside the absolute value."
+    },
+    {
+      "id": "math-gaokao-423-q008",
+      "category": "Mathematical Reasoning",
+      "concept": "Logarithmic Equation Equivalence and Domain Restrictions",
+      "learningObjective": "Combine logarithms and exclude candidates outside the domain.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Solve \\(\\log_2(x-1)+\\log_2(x-3)=3\\). Which set gives all real solutions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{5\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{-1,5\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The logarithms require \\(x-1>0\\) and \\(x-3>0\\), so the domain is \\(x>3\\). Using the product rule for logarithms,\n\\[\n\\log_2((x-1)(x-3))=3.\n\\]\nThus\n\\[\n(x-1)(x-3)=2^3=8.\n\\]\nExpanding gives\n\\[\nx^2-4x+3=8 \\quad\\Longrightarrow\\quad x^2-4x-5=0 \\quad\\Longrightarrow\\quad (x-5)(x+1)=0.\n\\]\nSo \\(x=5\\) or \\(x=-1\\). The domain \\(x>3\\) excludes \\(x=-1\\), leaving only \\(x=5\\). Therefore the solution set is \\(\\{5\\}\\).",
+      "hint": "State the domain restrictions before combining logarithms."
+    },
+    {
+      "id": "math-gaokao-423-q009",
+      "category": "Mathematical Reasoning",
+      "concept": "Rational Inequality and Sign-Preserving Transformations",
+      "learningObjective": "Solve a rational inequality by moving all terms to one side instead of multiplying by an expression of unknown sign.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Find the solution set of \\(\\frac{x-2}{x+1}\\ge 1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\([-1,\\infty)\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\((-\\infty,-1)\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtract \\(1\\) from both sides so that one side becomes zero:\n\\[\n\\frac{x-2}{x+1}-1\\ge 0.\n\\]\nThen\n\\[\n\\frac{x-2-(x+1)}{x+1}\\ge 0 \\quad\\Longrightarrow\\quad \\frac{-3}{x+1}\\ge 0.\n\\]\nSince \\(-3<0\\), the fraction is nonnegative exactly when the denominator is negative:\n\\[\nx+1<0 \\quad\\Longrightarrow\\quad x<-1.\n\\]\nThe denominator cannot be zero, so \\(x=-1\\) is excluded. Hence the solution set is \\((-\\infty,-1)\\).",
+      "hint": "Move all terms to one side and analyze the sign of the resulting single fraction."
+    },
+    {
+      "id": "math-gaokao-423-q010",
+      "category": "Mathematical Reasoning",
+      "concept": "Parameter Conditions for Equivalent Radical Equations",
+      "learningObjective": "Determine for which parameter value squaring a radical equation introduces an extraneous solution.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "For the equation \\(\\sqrt{2x+1}=x+a\\), squaring both sides gives \\(2x+1=(x+a)^2\\). For which value of \\(a\\) does this squaring introduce an extraneous solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(a=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(a=0\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Check each value.\nIf \\(a=0\\), the original equation is \\(\\sqrt{2x+1}=x\\). Squaring gives\n\\[\n2x+1=x^2 \\quad\\Longrightarrow\\quad x^2-2x-1=0,\n\\]\nso\n\\[\nx=1\\pm\\sqrt{2}.\n\\]\nThe candidate \\(x=1-\\sqrt{2}\\) is negative, but the left-hand side \\(\\sqrt{2x+1}\\) is nonnegative, so it cannot equal a negative right-hand side. Thus \\(x=1-\\sqrt{2}\\) is extraneous, while \\(x=1+\\sqrt{2}\\) is valid. Therefore \\(a=0\\) introduces an extraneous solution.\nIf \\(a=1\\), the original equation is \\(\\sqrt{2x+1}=x+1\\). Squaring gives\n\\[\n2x+1=(x+1)^2=x^2+2x+1,\n\\]\nso \\(x^2=0\\), hence \\(x=0\\). This value satisfies \\(\\sqrt{1}=1\\), so no extraneous solution is introduced.\nThus the required value is \\(a=0\\).",
+      "hint": "Compare each candidate from the squared equation with the sign condition in the original equation."
+    }
+  ]
+}

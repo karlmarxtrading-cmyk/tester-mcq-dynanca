@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-235",
+  "category": "Comprehensive Mathematics",
+  "title": "235. Algebra, Equations & Inequalities: Compound Growth Problems with Exponential Equations",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-235-q001",
+      "category": "Algebra",
+      "concept": "Modeling exponential growth with a constant percent rate",
+      "learningObjective": "Identify the exponential equation that models population growth at a given annual rate.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A town has an initial population of \\(5{,}000\\) and grows at a rate of \\(4\\%\\) per year. Which equation models the population \\(P\\) after \\(t\\) years?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(P=5000(1.04)^t\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(P=5000(1.4)^t\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For exponential growth at a constant annual rate \\(r\\), the model is \\(P=P_0(1+r)^t\\). Here \\(P_0=5000\\) and \\(r=0.04\\), so the equation is \\(P=5000(1.04)^t\\). The expression \\(5000(1.4)^t\\) would correspond to a \\(40\\%\\) annual growth rate, not \\(4\\%\\).",
+      "hint": "Use the exponential growth model \\(P=P_0(1+r)^t\\), where \\(r\\) is the decimal form of the growth rate."
+    },
+    {
+      "id": "dynanca-235-q002",
+      "category": "Algebra",
+      "concept": "Modeling exponential growth with a doubling time",
+      "learningObjective": "Write an exponential equation for a quantity that doubles every hour.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A bacteria culture starts with \\(200\\) cells and doubles every hour. Which equation gives the number \\(N\\) of cells after \\(t\\) hours?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(N=200\\cdot 2^t\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(N=200\\cdot t^2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Doubling every hour means the growth factor is \\(2\\) per hour. Starting with \\(200\\) cells, the number after \\(t\\) hours is \\(N=200\\cdot 2^t\\). The expression \\(200t^2\\) represents quadratic growth, not exponential doubling.",
+      "hint": "When a quantity doubles in each time period, use a base of \\(2\\) with the number of periods as the exponent."
+    },
+    {
+      "id": "dynanca-235-q003",
+      "category": "Algebra",
+      "concept": "Solving an exponential equation using logarithms",
+      "learningObjective": "Solve \\(2(1.05)^x=5\\) by isolating the exponential and applying logarithms.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(2(1.05)^x=5\\) for \\(x\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=\\frac{\\ln 1.05}{\\ln 2.5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=\\frac{\\ln 2.5}{\\ln 1.05}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Divide both sides by \\(2\\) to isolate the exponential: \\((1.05)^x=2.5\\). Take the natural logarithm of both sides: \\(x\\ln 1.05=\\ln 2.5\\). Therefore \\(x=\\frac{\\ln 2.5}{\\ln 1.05}\\). The expression \\(\\frac{\\ln 1.05}{\\ln 2.5}\\) is its reciprocal and is not correct.",
+      "hint": "After isolating the exponential, use \\(\\ln(a^b)=b\\ln a\\) to solve for \\(x\\)."
+    },
+    {
+      "id": "dynanca-235-q004",
+      "category": "Algebra",
+      "concept": "Modeling exponential decay with a half-life",
+      "learningObjective": "Write an exponential expression for the fraction remaining after a given number of half-lives.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A radioactive substance has a half-life of \\(10\\) years. Which expression gives the fraction remaining after \\(t\\) years?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\left(\\frac{1}{2}\\right)^{10t}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\left(\\frac{1}{2}\\right)^{\\frac{t}{10}}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In \\(t\\) years, the number of half-life periods is \\(\\frac{t}{10}\\). Each half-life multiplies the remaining amount by \\(\\frac{1}{2}\\). Therefore the remaining fraction is \\(\\left(\\frac{1}{2}\\right)^{\\frac{t}{10}}\\). The expression \\(\\left(\\frac{1}{2}\\right)^{10t}\\) would correspond to a half-life of \\(\\frac{1}{10}\\) year.",
+      "hint": "The exponent should be the number of half-life periods that have elapsed."
+    },
+    {
+      "id": "dynanca-235-q005",
+      "category": "Algebra",
+      "concept": "Evaluating compound interest",
+      "learningObjective": "Determine the correct expression for the amount after \\(3\\) years of annual compound interest.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Find the amount after \\(3\\) years if \\(1{,}000\\text{ USD}\\) is invested at \\(5\\%\\) compounded annually.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1000(1.05)^3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1000(1.5)^3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For annual compound interest, the amount is \\(A=P(1+r)^t\\). Here \\(P=1000\\), \\(r=0.05\\), and \\(t=3\\), so \\(A=1000(1.05)^3\\). The expression \\(1000(1.5)^3\\) incorrectly uses a \\(50\\%\\) rate.",
+      "hint": "Substitute the principal, annual rate as a decimal, and number of years into \\(A=P(1+r)^t\\)."
+    },
+    {
+      "id": "dynanca-235-q006",
+      "category": "Algebra",
+      "concept": "Solving an exponential equation with equal bases",
+      "learningObjective": "Solve \\(3^{2x-1}=27\\) by expressing both sides with base \\(3\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(3^{2x-1}=27\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Write \\(27\\) as a power of \\(3\\): \\(27=3^3\\). The equation becomes \\(3^{2x-1}=3^3\\). Since the bases are equal, \\(2x-1=3\\). Solving gives \\(2x=4\\), so \\(x=2\\).",
+      "hint": "Rewrite \\(27\\) as \\(3^3\\), then equate the exponents."
+    },
+    {
+      "id": "dynanca-235-q007",
+      "category": "Algebra",
+      "concept": "Solving an exponential equation with equal bases",
+      "learningObjective": "Solve \\(5^{x+1}=125\\) by converting to base \\(5\\).",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(5^{x+1}=125\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Write \\(125\\) as a power of \\(5\\): \\(125=5^3\\). The equation becomes \\(5^{x+1}=5^3\\). Equating exponents gives \\(x+1=3\\), so \\(x=2\\).",
+      "hint": "Express \\(125\\) as \\(5^3\\), then set the exponents equal."
+    },
+    {
+      "id": "dynanca-235-q008",
+      "category": "Algebra",
+      "concept": "Solving continuous compound growth for time",
+      "learningObjective": "Determine the time required for an investment to double under continuous compounding.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "An investment grows continuously at \\(8\\%\\) per year. How long does it take to double?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(t=\\frac{\\ln 2}{0.08}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(t=\\frac{\\ln 0.08}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Continuous growth is modeled by \\(A=Pe^{rt}\\). Doubling means \\(A=2P\\), so \\(2P=Pe^{0.08t}\\). Dividing by \\(P\\) gives \\(2=e^{0.08t}\\). Taking natural logarithms gives \\(\\ln 2=0.08t\\), so \\(t=\\frac{\\ln 2}{0.08}\\). The expression \\(\\frac{\\ln 0.08}{2}\\) is not correct.",
+      "hint": "Set \\(A=2P\\) in the continuous growth formula and solve for \\(t\\) using natural logarithms."
+    },
+    {
+      "id": "dynanca-235-q009",
+      "category": "Algebra",
+      "concept": "Solving an exponential equation with a fractional base",
+      "learningObjective": "Solve \\(\\left(\\frac{1}{2}\\right)^x=\\frac{1}{8}\\) by expressing both sides with the same base.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Solve \\(\\left(\\frac{1}{2}\\right)^x=\\frac{1}{8}\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(x=3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(x=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Write \\(\\frac{1}{8}\\) as a power of \\(\\frac{1}{2}\\): \\(\\frac{1}{8}=\\left(\\frac{1}{2}\\right)^3\\). The equation becomes \\(\\left(\\frac{1}{2}\\right)^x=\\left(\\frac{1}{2}\\right)^3\\). Since the bases are equal, \\(x=3\\).",
+      "hint": "Write \\(\\frac{1}{8}\\) as a power of \\(\\frac{1}{2}\\), then compare the exponents."
+    },
+    {
+      "id": "dynanca-235-q010",
+      "category": "Algebra",
+      "concept": "Modeling compound interest to find an unknown rate",
+      "learningObjective": "Form an exponential equation for the annual compound rate when a sum doubles in \\(12\\) years.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A sum of money doubles in \\(12\\) years under annual compound interest at rate \\(r\\). Which equation determines \\(r\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\((1+r)^{12}=2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12(1+r)=2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For annual compound interest, the amount after \\(t\\) years is \\(A=P(1+r)^t\\). Doubling means \\(A=2P\\), so \\(2P=P(1+r)^{12}\\). Dividing by \\(P\\) gives \\((1+r)^{12}=2\\). The equation \\(12(1+r)=2\\) incorrectly treats the growth as linear.",
+      "hint": "Use the compound interest formula and set the final amount equal to twice the principal."
+    }
+  ]
+}

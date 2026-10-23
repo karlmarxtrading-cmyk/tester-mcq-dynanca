@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-533",
+  "category": "Comprehensive Mathematics",
+  "title": "533. Sets, Logic, Reasoning & Proof: Minimal and Maximal Elements",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-533-q001",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Definition of a maximal element",
+      "learningObjective": "State the definition of a maximal element of a partially ordered set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a partially ordered set, what is a maximal element?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An element \\(m\\) such that no other element \\(x\\) satisfies \\(m\\preceq x\\)"
+        },
+        {
+          "label": "B",
+          "text": "An element \\(m\\) such that \\(x\\preceq m\\) for every element \\(x\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An element is maximal when nothing lies strictly above it. The condition \"\\(x\\preceq m\\) for every \\(x\\)\" is stronger: it describes a greatest element, which must be comparable with everything. In \\(\\{2,3,4\\}\\) ordered by divisibility, \\(3\\) and \\(4\\) are both maximal, but there is no greatest element.",
+      "hint": "A maximal element only needs to have nothing above it; it need not be above everything."
+    },
+    {
+      "id": "dynanca-533-q002",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Minimal elements under divisibility",
+      "learningObjective": "Find the minimal elements of a finite set ordered by divisibility.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "The set \\(\\{2,3,6,9,18\\}\\) is ordered by divisibility. What are its minimal elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\) and \\(3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\) only"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An element is minimal when no other element of the set divides it. No other element divides \\(2\\), and none divides \\(3\\). Each of \\(6\\), \\(9\\), and \\(18\\) is divisible by \\(3\\), so none of them is minimal. The smallest number is not the only minimal element, because \\(2\\) does not divide \\(3\\).",
+      "hint": "For each element, ask whether some other element of the set divides it."
+    },
+    {
+      "id": "dynanca-533-q003",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Maximal elements under divisibility",
+      "learningObjective": "Find the maximal elements of a finite set ordered by divisibility.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "The set \\(\\{2,4,5,10,12,20,25\\}\\) is ordered by divisibility. What are its maximal elements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(25\\) only"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\), \\(20\\), and \\(25\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An element is maximal when it divides no other element of the set. None of \\(12\\), \\(20\\), \\(25\\) divides another element. Each remaining element divides something else: \\(2\\mid 4\\), \\(4\\mid 12\\), \\(5\\mid 10\\), and \\(10\\mid 20\\). Being the largest number does not make \\(25\\) the only maximal element.",
+      "hint": "For each element, look for a different element of the set that is a multiple of it."
+    },
+    {
+      "id": "dynanca-533-q004",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Maximal elements among proper subsets",
+      "learningObjective": "Find the maximal elements of a collection of subsets ordered by inclusion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The nonempty proper subsets of \\(\\{1,2,3\\}\\) are ordered by \\(\\subseteq\\). Which of these subsets are maximal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The three subsets with one element"
+        },
+        {
+          "label": "B",
+          "text": "The three subsets with two elements"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The collection consists of three one-element subsets and three two-element subsets; the full set \\(\\{1,2,3\\}\\) is excluded. A two-element subset is contained in no other member of the collection, so it is maximal. Each one-element subset is contained in a two-element subset, so it is not maximal; the one-element subsets are the minimal elements.",
+      "hint": "Remember that \\(\\{1,2,3\\}\\) itself is not in the collection."
+    },
+    {
+      "id": "dynanca-533-q005",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Maximal elements of an antichain",
+      "learningObjective": "Find the maximal elements when no two elements are comparable.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "The set \\(\\{2,3,5,7\\}\\) is ordered by divisibility. Which elements are maximal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "None of the elements"
+        },
+        {
+          "label": "B",
+          "text": "All four elements"
+        }
+      ],
+      "answer": "B",
+      "explanation": "No element of the set divides another, so nothing lies strictly above any element. Therefore every element is maximal, and for the same reason every element is also minimal. A set in which no two different elements are comparable is called an antichain.",
+      "hint": "Check whether any element of the set divides a different element."
+    },
+    {
+      "id": "dynanca-533-q006",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "An element that is both minimal and maximal",
+      "learningObjective": "Decide whether one element can be minimal and maximal at once.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Can an element of a partially ordered set be both minimal and maximal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; a minimal element lies at the bottom and a maximal element lies at the top."
+        },
+        {
+          "label": "B",
+          "text": "Yes; for example, an element that is comparable with no other element."
+        }
+      ],
+      "answer": "B",
+      "explanation": "In \\(\\{2,4,5\\}\\) ordered by divisibility, the element \\(5\\) neither divides nor is divided by another element. Nothing lies strictly below it and nothing lies strictly above it, so it is both minimal and maximal.",
+      "hint": "Consider an element that stands alone in the Hasse diagram, with no edges."
+    },
+    {
+      "id": "dynanca-533-q007",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "A set without maximal elements",
+      "learningObjective": "Decide whether the integers have maximal elements in the usual order.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Which elements of the integers, with the usual order \\(\\le\\), are maximal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "None, because \\(n<n+1\\) for every integer \\(n\\)."
+        },
+        {
+          "label": "B",
+          "text": "Every integer, because \\(n\\le n\\) for every integer \\(n\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "An integer \\(n\\) would be maximal only if no integer were strictly greater than it. But \\(n+1\\) is always strictly greater, so no integer is maximal. The fact \\(n\\le n\\) is reflexivity and has nothing to do with being maximal.",
+      "hint": "Ask whether some integer lies strictly above a given integer \\(n\\)."
+    },
+    {
+      "id": "dynanca-533-q008",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Maximal elements from a diagram",
+      "learningObjective": "Read the maximal elements from a described Hasse diagram.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A Hasse diagram has elements \\(a,b,c,d,e\\) and exactly four edges, drawn upward from \\(a\\) to \\(c\\), from \\(b\\) to \\(c\\), from \\(b\\) to \\(d\\), and from \\(c\\) to \\(e\\). Which elements are maximal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(e\\) only"
+        },
+        {
+          "label": "B",
+          "text": "\\(d\\) and \\(e\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An element is maximal when no edge leaves it upward. Edges go upward from \\(a\\), \\(b\\), and \\(c\\), but none goes upward from \\(d\\) or from \\(e\\). So \\(d\\) and \\(e\\) are both maximal, even though \\(e\\) is drawn higher in the diagram.",
+      "hint": "Find every element from which no edge goes upward."
+    },
+    {
+      "id": "dynanca-533-q009",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Existence of maximal elements",
+      "learningObjective": "Explain why a finite nonempty partially ordered set has a maximal element.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Reasoning",
+      "question": "Must every finite nonempty partially ordered set have a maximal element?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; if some elements are incomparable, none of them can be maximal."
+        },
+        {
+          "label": "B",
+          "text": "Yes; moving repeatedly to a strictly larger element must stop, because the set is finite."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Start at any element. If it is not maximal, move to an element strictly above it, and repeat. The elements visited are all different, because the order is transitive and antisymmetric, so in a finite set the process stops, and it can stop only at a maximal element. Incomparable elements cause no difficulty; they may simply give several maximal elements.",
+      "hint": "Imagine climbing upward in the Hasse diagram of a finite set."
+    },
+    {
+      "id": "dynanca-533-q010",
+      "category": "Sets, Logic, Reasoning & Proof",
+      "concept": "Counting maximal elements",
+      "learningObjective": "Count the maximal elements of a range of integers ordered by divisibility.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The integers from \\(2\\) to \\(20\\) are ordered by divisibility. How many maximal elements are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An element \\(n\\) is maximal when no other number in the set is a multiple of \\(n\\), that is, when \\(2n>20\\). This holds for \\(n=11,12,\\dots,20\\), which gives \\(10\\) maximal elements. The number \\(8\\) counts the minimal elements, which are the primes \\(2,3,5,7,11,13,17,19\\).",
+      "hint": "A number fails to be maximal exactly when its double is still in the set."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-249",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 249",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-249-q001",
+      "category": "Solid Geometry",
+      "concept": "Angle between a base plane and a plane through an edge and a space diagonal in a cube",
+      "learningObjective": "Determine the angle between two planes in a cube using normal vectors.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), find the angle between plane \\(ABCD\\) and plane \\(ABC_1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(30^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(45^\\circ\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Place \\(A(0,0,0)\\), \\(B(1,0,0)\\), and \\(C_1(1,1,1)\\). The base plane \\(ABCD\\) has normal vector \\((0,0,1)\\). For plane \\(ABC_1\\), use\n\\[\n\\overrightarrow{AB}=(1,0,0),\\qquad \\overrightarrow{AC_1}=(1,1,1).\n\\]\nA normal vector is\n\\[\n\\overrightarrow{AB}\\times \\overrightarrow{AC_1}=(0,-1,1).\n\\]\nThus\n\\[\n\\cos\\theta=\\frac{|(0,0,1)\\cdot(0,-1,1)|}{1\\cdot\\sqrt{2}}=\\frac{1}{\\sqrt{2}},\n\\]\nso \\(\\theta=45^\\circ\\).",
+      "hint": "Find a normal vector to each plane, then use the absolute dot product formula for the angle between planes."
+    },
+    {
+      "id": "math-gaokao-249-q002",
+      "category": "Solid Geometry",
+      "concept": "Angle between a base plane and a diagonal plane in a cube",
+      "learningObjective": "Compute the angle between the base plane and a plane through three cube vertices.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), find the angle between plane \\(ABCD\\) and plane \\(A_1BD\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arccos\\frac{\\sqrt{6}}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arccos\\frac{\\sqrt{3}}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(A_1(0,0,1)\\), \\(B(1,0,0)\\), and \\(D(0,1,0)\\). The base plane has normal vector \\((0,0,1)\\). For plane \\(A_1BD\\),\n\\[\n\\overrightarrow{A_1B}=(1,0,-1),\\qquad \\overrightarrow{A_1D}=(0,1,-1).\n\\]\nA normal vector is\n\\[\n\\overrightarrow{A_1B}\\times \\overrightarrow{A_1D}=(1,1,1).\n\\]\nHence\n\\[\n\\cos\\theta=\\frac{|(0,0,1)\\cdot(1,1,1)|}{1\\cdot\\sqrt{3}}=\\frac{1}{\\sqrt{3}}=\\frac{\\sqrt{3}}{3}.\n\\]\nTherefore \\(\\theta=\\arccos\\frac{\\sqrt{3}}{3}\\).",
+      "hint": "Use the normal vector of the base plane and the cross product of two direction vectors in the other plane."
+    },
+    {
+      "id": "math-gaokao-249-q003",
+      "category": "Solid Geometry",
+      "concept": "Angle between two faces of a regular tetrahedron",
+      "learningObjective": "Determine the dihedral angle between two faces of a regular tetrahedron.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In a regular tetrahedron \\(ABCD\\), find the angle between planes \\(ABC\\) and \\(ABD\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arccos\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arccos\\frac{1}{3}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let the side length be \\(1\\). Take\n\\[\nA(0,0,0),\\quad B(1,0,0),\\quad C\\left(\\frac{1}{2},\\frac{\\sqrt{3}}{2},0\\right),\\quad D\\left(\\frac{1}{2},\\frac{\\sqrt{3}}{6},\\sqrt{\\frac{2}{3}}\\right).\n\\]\nA normal vector to plane \\(ABC\\) is \\(n_1=(0,0,1)\\). For plane \\(ABD\\),\n\\[\n\\overrightarrow{AB}=(1,0,0),\\qquad \\overrightarrow{AD}=\\left(\\frac{1}{2},\\frac{\\sqrt{3}}{6},\\sqrt{\\frac{2}{3}}\\right).\n\\]\nThus\n\\[\nn_2=\\overrightarrow{AB}\\times \\overrightarrow{AD}\n=\\left(0,-\\sqrt{\\frac{2}{3}},\\frac{\\sqrt{3}}{6}\\right).\n\\]\nThen\n\\[\n\\cos\\theta=\\frac{|n_1\\cdot n_2|}{|n_1||n_2|}\n=\\frac{\\frac{\\sqrt{3}}{6}}{\\frac{\\sqrt{3}}{2}}\n=\\frac{1}{3}.\n\\]\nSo \\(\\theta=\\arccos\\frac{1}{3}\\).",
+      "hint": "Use coordinates for the regular tetrahedron, or recall the standard dihedral angle between two faces."
+    },
+    {
+      "id": "math-gaokao-249-q004",
+      "category": "Solid Geometry",
+      "concept": "Angle between the base plane and a side face of a square pyramid",
+      "learningObjective": "Compute the angle between the base plane and a lateral face of a square pyramid.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In regular square pyramid \\(S-ABCD\\), the base \\(ABCD\\) is a square of side \\(2\\), and the height is \\(2\\). Find the angle between the base plane \\(ABCD\\) and the side face \\(SAB\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arccos\\frac{2}{\\sqrt{5}}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arccos\\frac{1}{\\sqrt{5}}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Place the base square in the plane \\(z=0\\) with center at the origin:\n\\[\nA(-1,-1,0),\\quad B(1,-1,0),\\quad S(0,0,2).\n\\]\nThe base plane has normal vector \\((0,0,1)\\). For plane \\(SAB\\),\n\\[\n\\overrightarrow{SA}=(-1,-1,-2),\\qquad \\overrightarrow{SB}=(1,-1,-2).\n\\]\nA normal vector is\n\\[\n\\overrightarrow{SA}\\times \\overrightarrow{SB}=(0,-4,2)\\sim(0,-2,1).\n\\]\nThus\n\\[\n\\cos\\theta=\\frac{|(0,0,1)\\cdot(0,-2,1)|}{1\\cdot\\sqrt{5}}=\\frac{1}{\\sqrt{5}}.\n\\]\nHence \\(\\theta=\\arccos\\frac{1}{\\sqrt{5}}\\).",
+      "hint": "Use coordinates for the pyramid, find a normal vector to the side face, and compare it with the base normal."
+    },
+    {
+      "id": "math-gaokao-249-q005",
+      "category": "Solid Geometry",
+      "concept": "Angle between two adjacent lateral faces of a square pyramid",
+      "learningObjective": "Determine the angle between two adjacent side faces of a square pyramid.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "In regular square pyramid \\(S-ABCD\\), the base \\(ABCD\\) is a square of side \\(2\\), and the height is \\(2\\). Find the angle between the side faces \\(SAB\\) and \\(SBC\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arccos\\frac{1}{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arccos\\frac{2}{5}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the coordinates\n\\[\nA(-1,-1,0),\\quad B(1,-1,0),\\quad C(1,1,0),\\quad S(0,0,2).\n\\]\nA normal vector to plane \\(SAB\\) is\n\\[\nn_1=(0,-2,1).\n\\]\nFor plane \\(SBC\\),\n\\[\n\\overrightarrow{SB}=(1,-1,-2),\\qquad \\overrightarrow{SC}=(1,1,-2),\n\\]\nso a normal vector is\n\\[\nn_2=(2,0,1).\n\\]\nTherefore\n\\[\n\\cos\\theta=\\frac{|n_1\\cdot n_2|}{|n_1||n_2|}\n=\\frac{|0\\cdot2+(-2)\\cdot0+1\\cdot1|}{\\sqrt{5}\\cdot\\sqrt{5}}\n=\\frac{1}{5}.\n\\]\nThus \\(\\theta=\\arccos\\frac{1}{5}\\).",
+      "hint": "Find normal vectors to the two side faces and use the absolute dot product formula."
+    },
+    {
+      "id": "math-gaokao-249-q006",
+      "category": "Solid Geometry",
+      "concept": "Angle between two diagonal planes sharing a diagonal of a cube",
+      "learningObjective": "Compute the angle between two diagonal planes in a cube that share a base diagonal.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), find the angle between planes \\(A_1BD\\) and \\(C_1BD\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arccos\\frac{1}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arccos\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(A_1(0,0,1)\\), \\(B(1,0,0)\\), \\(D(0,1,0)\\), and \\(C_1(1,1,1)\\). A normal vector to plane \\(A_1BD\\) is\n\\[\nn_1=(1,1,1).\n\\]\nFor plane \\(C_1BD\\),\n\\[\n\\overrightarrow{BC_1}=(0,1,1),\\qquad \\overrightarrow{BD}=(-1,1,0),\n\\]\nso a normal vector is\n\\[\nn_2=(-1,-1,1).\n\\]\nThen\n\\[\n\\cos\\theta=\\frac{|n_1\\cdot n_2|}{|n_1||n_2|}\n=\\frac{|1(-1)+1(-1)+1(1)|}{\\sqrt{3}\\cdot\\sqrt{3}}\n=\\frac{1}{3}.\n\\]\nHence \\(\\theta=\\arccos\\frac{1}{3}\\).",
+      "hint": "Find a normal vector to each diagonal plane and compute the absolute dot product."
+    },
+    {
+      "id": "math-gaokao-249-q007",
+      "category": "Solid Geometry",
+      "concept": "Angle between a base plane and a diagonal plane in a rectangular box",
+      "learningObjective": "Determine the angle between the base plane and a plane through three vertices of a rectangular box.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In rectangular box \\(ABCD-A_1B_1C_1D_1\\), \\(AB=3\\), \\(AD=2\\), and \\(AA_1=1\\). Find the angle between plane \\(ABCD\\) and plane \\(A_1BD\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arccos\\frac{6}{7}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arccos\\frac{3}{7}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Take \\(A(0,0,0)\\), \\(B(3,0,0)\\), \\(D(0,2,0)\\), and \\(A_1(0,0,1)\\). The base plane has normal vector \\((0,0,1)\\). For plane \\(A_1BD\\),\n\\[\n\\overrightarrow{A_1B}=(3,0,-1),\\qquad \\overrightarrow{A_1D}=(0,2,-1).\n\\]\nA normal vector is\n\\[\n\\overrightarrow{A_1B}\\times \\overrightarrow{A_1D}=(2,3,6).\n\\]\nThus\n\\[\n\\cos\\theta=\\frac{|(0,0,1)\\cdot(2,3,6)|}{1\\cdot\\sqrt{2^2+3^2+6^2}}\n=\\frac{6}{7}.\n\\]\nTherefore \\(\\theta=\\arccos\\frac{6}{7}\\).",
+      "hint": "Use the box dimensions as coordinates, then find a normal vector to the plane through \\(A_1\\), \\(B\\), and \\(D\\)."
+    },
+    {
+      "id": "math-gaokao-249-q008",
+      "category": "Solid Geometry",
+      "concept": "Angle between two diagonal planes sharing a diagonal in a rectangular box",
+      "learningObjective": "Compute the angle between two diagonal planes of a rectangular box.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "In rectangular box \\(ABCD-A_1B_1C_1D_1\\), \\(AB=2\\), \\(AD=1\\), and \\(AA_1=1\\). Find the angle between planes \\(A_1BD\\) and \\(C_1BD\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arccos\\frac{1}{9}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arccos\\frac{1}{3}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(A_1(0,0,1)\\), \\(B(2,0,0)\\), \\(D(0,1,0)\\), and \\(C_1(2,1,1)\\). For plane \\(A_1BD\\),\n\\[\n\\overrightarrow{A_1B}=(2,0,-1),\\qquad \\overrightarrow{A_1D}=(0,1,-1),\n\\]\nso a normal vector is\n\\[\nn_1=(1,2,2).\n\\]\nFor plane \\(C_1BD\\),\n\\[\n\\overrightarrow{BC_1}=(0,1,1),\\qquad \\overrightarrow{BD}=(-2,1,0),\n\\]\nso a normal vector is\n\\[\nn_2=(-1,-2,2).\n\\]\nThen\n\\[\n\\cos\\theta=\\frac{|n_1\\cdot n_2|}{|n_1||n_2|}\n=\\frac{|1(-1)+2(-2)+2(2)|}{3\\cdot3}\n=\\frac{1}{9}.\n\\]\nThus \\(\\theta=\\arccos\\frac{1}{9}\\).",
+      "hint": "Find normal vectors to both diagonal planes and use the absolute dot product formula."
+    },
+    {
+      "id": "math-gaokao-249-q009",
+      "category": "Solid Geometry",
+      "concept": "Angle between a plane through a cube edge and a midpoint and a diagonal plane",
+      "learningObjective": "Determine the angle between a plane through a cube edge and a midpoint and a diagonal plane.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In cube \\(ABCD-A_1B_1C_1D_1\\) of side length \\(1\\), let \\(M\\) be the midpoint of \\(CC_1\\). Find the angle between planes \\(ABM\\) and \\(A_1BD\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arccos\\frac{1}{\\sqrt{15}}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arccos\\frac{2}{\\sqrt{15}}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(A(0,0,0)\\), \\(B(1,0,0)\\), \\(M(1,1,\\frac{1}{2})\\), and the plane \\(A_1BD\\) with normal vector\n\\[\nn_1=(1,1,1).\n\\]\nFor plane \\(ABM\\),\n\\[\n\\overrightarrow{AB}=(1,0,0),\\qquad \\overrightarrow{AM}=\\left(1,1,\\frac{1}{2}\\right).\n\\]\nA normal vector is\n\\[\nn_2=(0,-1,2).\n\\]\nHence\n\\[\n\\cos\\theta=\\frac{|n_1\\cdot n_2|}{|n_1||n_2|}\n=\\frac{|1\\cdot0+1(-1)+1\\cdot2|}{\\sqrt{3}\\cdot\\sqrt{5}}\n=\\frac{1}{\\sqrt{15}}.\n\\]\nTherefore \\(\\theta=\\arccos\\frac{1}{\\sqrt{15}}\\).",
+      "hint": "Find normal vectors to both planes and use the absolute dot product formula."
+    },
+    {
+      "id": "math-gaokao-249-q010",
+      "category": "Solid Geometry",
+      "concept": "Angle between a plane through a box edge and a midpoint and a diagonal plane",
+      "learningObjective": "Compute the angle between a plane through an edge and a midpoint of a rectangular box and a diagonal plane.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In rectangular box \\(ABCD-A_1B_1C_1D_1\\), \\(AB=2\\), \\(AD=1\\), and \\(AA_1=2\\). Let \\(M\\) be the midpoint of \\(CC_1\\). Find the angle between planes \\(ABM\\) and \\(A_1BD\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\arccos\\frac{\\sqrt{3}}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\arccos\\frac{\\sqrt{3}}{6}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Take \\(A(0,0,0)\\), \\(B(2,0,0)\\), \\(M(2,1,1)\\), \\(A_1(0,0,2)\\), and \\(D(0,1,0)\\). For plane \\(ABM\\),\n\\[\n\\overrightarrow{AB}=(2,0,0),\\qquad \\overrightarrow{AM}=(2,1,1),\n\\]\nso a normal vector is\n\\[\nn_1=(0,-1,1).\n\\]\nFor plane \\(A_1BD\\),\n\\[\n\\overrightarrow{A_1B}=(2,0,-2),\\qquad \\overrightarrow{A_1D}=(0,1,-2),\n\\]\nso a normal vector is\n\\[\nn_2=(1,2,1).\n\\]\nThen\n\\[\n\\cos\\theta=\\frac{|n_1\\cdot n_2|}{|n_1||n_2|}\n=\\frac{|0\\cdot1+(-1)\\cdot2+1\\cdot1|}{\\sqrt{2}\\cdot\\sqrt{6}}\n=\\frac{1}{\\sqrt{12}}=\\frac{\\sqrt{3}}{6}.\n\\]\nThus \\(\\theta=\\arccos\\frac{\\sqrt{3}}{6}\\).",
+      "hint": "Use coordinates for the box, find normal vectors to both planes, and apply the absolute dot product formula."
+    }
+  ]
+}

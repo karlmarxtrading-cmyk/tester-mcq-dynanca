@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-275",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 275",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-275-q001",
+      "category": "Calculus",
+      "concept": "Continuity at a Point with a Removable Discontinuity",
+      "learningObjective": "Determine the value of a function at a point that makes the function continuous there.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(f(x)=\\frac{x^2-1}{x-1}\\) for \\(x\\neq 1\\), and let \\(f(1)=k\\). Find the value of \\(k\\) for which \\(f\\) is continuous at \\(x=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(x\\neq 1\\),\n\\[\n\\frac{x^2-1}{x-1}=\\frac{(x-1)(x+1)}{x-1}=x+1.\n\\]\nTherefore,\n\\[\n\\lim_{x\\to 1}\\frac{x^2-1}{x-1}=\\lim_{x\\to 1}(x+1)=2.\n\\]\nFor \\(f\\) to be continuous at \\(x=1\\), we need \\(f(1)=\\lim_{x\\to 1}f(x)\\). Hence \\(k=2\\).",
+      "hint": "Simplify the quotient for \\(x\\neq 1\\), then evaluate the limit at \\(x=1\\)."
+    },
+    {
+      "id": "math-gaokao-275-q002",
+      "category": "Calculus",
+      "concept": "Continuity of a Trigonometric Function at a Point",
+      "learningObjective": "Decide whether a piecewise-defined trigonometric function is continuous at a point by comparing its limit and function value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(f(x)=\\frac{\\sin x}{x}\\) for \\(x\\neq 0\\), and let \\(f(0)=1\\). Which statement is true at \\(x=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f\\) is continuous at \\(x=0\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(f\\) is not continuous at \\(x=0\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The standard trigonometric limit gives\n\\[\n\\lim_{x\\to 0}\\frac{\\sin x}{x}=1.\n\\]\nSince the function is defined by \\(f(0)=1\\), we have\n\\[\n\\lim_{x\\to 0}f(x)=1=f(0).\n\\]\nTherefore, \\(f\\) is continuous at \\(x=0\\).",
+      "hint": "Compare the limit \\(\\lim_{x\\to 0}\\frac{\\sin x}{x}\\) with the assigned value \\(f(0)\\)."
+    },
+    {
+      "id": "math-gaokao-275-q003",
+      "category": "Calculus",
+      "concept": "Continuity at a Point Defined by a Rational Expression",
+      "learningObjective": "Find the value of a parameter that removes a discontinuity in a rational piecewise function.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(f(x)=\\frac{x^2-4}{x-2}\\) for \\(x\\neq 2\\), and let \\(f(2)=a\\). Find \\(a\\) so that \\(f\\) is continuous at \\(x=2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(x\\neq 2\\),\n\\[\n\\frac{x^2-4}{x-2}=\\frac{(x-2)(x+2)}{x-2}=x+2.\n\\]\nThus,\n\\[\n\\lim_{x\\to 2}\\frac{x^2-4}{x-2}=\\lim_{x\\to 2}(x+2)=4.\n\\]\nContinuity at \\(x=2\\) requires \\(f(2)=\\lim_{x\\to 2}f(x)\\), so \\(a=4\\).",
+      "hint": "Factor the numerator and simplify before taking the limit at \\(x=2\\)."
+    },
+    {
+      "id": "math-gaokao-275-q004",
+      "category": "Calculus",
+      "concept": "Continuity of a Piecewise Linear Function at a Point",
+      "learningObjective": "Check continuity of a piecewise linear function at the joining point by comparing one-sided limits and the function value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx+1, & x<1,\\\\\n3x-1, & x\\geq 1.\n\\end{cases}\n\\]\nIs \\(f\\) continuous at \\(x=1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, \\(f\\) is continuous at \\(x=1\\)."
+        },
+        {
+          "label": "B",
+          "text": "No, \\(f\\) is not continuous at \\(x=1\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Compute the left-hand limit:\n\\[\n\\lim_{x\\to 1^-}f(x)=\\lim_{x\\to 1^-}(x+1)=2.\n\\]\nCompute the right-hand limit and function value:\n\\[\n\\lim_{x\\to 1^+}f(x)=\\lim_{x\\to 1^+}(3x-1)=2,\n\\qquad\nf(1)=3(1)-1=2.\n\\]\nSince the left limit, right limit, and function value all equal \\(2\\), the function is continuous at \\(x=1\\).",
+      "hint": "Evaluate the left-hand limit and the right-hand limit separately, then compare them with \\(f(1)\\)."
+    },
+    {
+      "id": "math-gaokao-275-q005",
+      "category": "Calculus",
+      "concept": "Continuity at a Point Involving a Trigonometric Limit",
+      "learningObjective": "Determine the value at the origin that makes a trigonometric piecewise function continuous.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Let \\(f(x)=\\frac{1-\\cos x}{x^2}\\) for \\(x\\neq 0\\), and let \\(f(0)=k\\). Find \\(k\\) so that \\(f\\) is continuous at \\(x=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{1}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Using the standard limit \\(\\lim_{x\\to 0}\\frac{1-\\cos x}{x^2}=\\frac{1}{2}\\), we have\n\\[\n\\lim_{x\\to 0}\\frac{1-\\cos x}{x^2}=\\frac{1}{2}.\n\\]\nFor continuity at \\(x=0\\), we need \\(f(0)=\\lim_{x\\to 0}f(x)\\). Therefore,\n\\[\nk=\\frac{1}{2}.\n\\]",
+      "hint": "Recall the standard limit involving \\(1-\\cos x\\) and \\(x^2\\) as \\(x\\to 0\\)."
+    },
+    {
+      "id": "math-gaokao-275-q006",
+      "category": "Calculus",
+      "concept": "Continuity of a Piecewise Quadratic-Linear Function at a Point",
+      "learningObjective": "Determine a parameter so that a piecewise function is continuous at its joining point.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let\n\\[\nf(x)=\n\\begin{cases}\nx^2+a, & x<2,\\\\\n3x-1, & x\\geq 2.\n\\end{cases}\n\\]\nFind the value of \\(a\\) for which \\(f\\) is continuous at \\(x=2\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The left-hand limit at \\(x=2\\) is\n\\[\n\\lim_{x\\to 2^-}f(x)=\\lim_{x\\to 2^-}(x^2+a)=4+a.\n\\]\nThe right-hand limit and function value are\n\\[\n\\lim_{x\\to 2^+}f(x)=\\lim_{x\\to 2^+}(3x-1)=5,\n\\qquad\nf(2)=5.\n\\]\nFor continuity, the left-hand limit must equal \\(5\\):\n\\[\n4+a=5.\n\\]\nHence,\n\\[\na=1.\n\\]",
+      "hint": "Set the left-hand limit equal to the right-hand limit at \\(x=2\\), then solve for \\(a\\)."
+    },
+    {
+      "id": "math-gaokao-275-q007",
+      "category": "Calculus",
+      "concept": "Continuity at a Point for a Function Involving Absolute Value",
+      "learningObjective": "Determine whether a function involving \\(|x|/x\\) is continuous at the origin by examining one-sided limits.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "Let \\(f(x)=\\frac{|x|}{x}\\) for \\(x\\neq 0\\), and let \\(f(0)=0\\). Which statement is true at \\(x=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(f\\) is not continuous at \\(x=0\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(f\\) is continuous at \\(x=0\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(x<0\\), we have \\(|x|=-x\\), so\n\\[\n\\lim_{x\\to 0^-}\\frac{|x|}{x}=\\lim_{x\\to 0^-}\\frac{-x}{x}=-1.\n\\]\nFor \\(x>0\\), we have \\(|x|=x\\), so\n\\[\n\\lim_{x\\to 0^+}\\frac{|x|}{x}=\\lim_{x\\to 0^+}\\frac{x}{x}=1.\n\\]\nThe left-hand and right-hand limits are different, so \\(\\lim_{x\\to 0}f(x)\\) does not exist. Therefore, \\(f\\) is not continuous at \\(x=0\\).",
+      "hint": "Compute the one-sided limits of \\(\\frac{|x|}{x}\\) as \\(x\\to 0^-\\) and \\(x\\to 0^+\\)."
+    },
+    {
+      "id": "math-gaokao-275-q008",
+      "category": "Calculus",
+      "concept": "Continuity at a Point Defined by a Rational Expression with a Removable Discontinuity",
+      "learningObjective": "Find the value of a function at a point that makes a rational piecewise function continuous.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Let \\(f(x)=\\frac{x^2-9}{x-3}\\) for \\(x\\neq 3\\), and let \\(f(3)=c\\). Find \\(c\\) so that \\(f\\) is continuous at \\(x=3\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For \\(x\\neq 3\\),\n\\[\n\\frac{x^2-9}{x-3}=\\frac{(x-3)(x+3)}{x-3}=x+3.\n\\]\nTherefore,\n\\[\n\\lim_{x\\to 3}\\frac{x^2-9}{x-3}=\\lim_{x\\to 3}(x+3)=6.\n\\]\nFor continuity at \\(x=3\\), we need \\(f(3)=\\lim_{x\\to 3}f(x)\\). Thus,\n\\[\nc=6.\n\\]",
+      "hint": "Factor the numerator and simplify the quotient before evaluating the limit at \\(x=3\\)."
+    },
+    {
+      "id": "math-gaokao-275-q009",
+      "category": "Calculus",
+      "concept": "Continuity at a Point Involving a Square-Root Limit",
+      "learningObjective": "Determine the value at a point that makes a square-root piecewise function continuous.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(f(x)=\\frac{\\sqrt{x}-1}{x-1}\\) for \\(x\\neq 1\\), and let \\(f(1)=k\\). Find \\(k\\) so that \\(f\\) is continuous at \\(x=1\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(x\\neq 1\\), rationalize the numerator:\n\\[\n\\frac{\\sqrt{x}-1}{x-1}\n=\n\\frac{(\\sqrt{x}-1)(\\sqrt{x}+1)}{(x-1)(\\sqrt{x}+1)}\n=\n\\frac{x-1}{(x-1)(\\sqrt{x}+1)}\n=\n\\frac{1}{\\sqrt{x}+1}.\n\\]\nTherefore,\n\\[\n\\lim_{x\\to 1}\\frac{\\sqrt{x}-1}{x-1}\n=\n\\lim_{x\\to 1}\\frac{1}{\\sqrt{x}+1}\n=\n\\frac{1}{1+1}\n=\n\\frac{1}{2}.\n\\]\nContinuity at \\(x=1\\) requires \\(k=\\frac{1}{2}\\).",
+      "hint": "Multiply numerator and denominator by the conjugate \\(\\sqrt{x}+1\\), then simplify."
+    },
+    {
+      "id": "math-gaokao-275-q010",
+      "category": "Calculus",
+      "concept": "Continuity at a Point Involving an Exponential Limit",
+      "learningObjective": "Find a parameter in an exponential expression so that a piecewise function is continuous at the origin.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Let \\(f(x)=\\frac{e^{ax}-1}{x}\\) for \\(x\\neq 0\\), and let \\(f(0)=3\\). Find the value of \\(a\\) for which \\(f\\) is continuous at \\(x=0\\).",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using the standard limit \\(\\lim_{t\\to 0}\\frac{e^t-1}{t}=1\\), with \\(t=ax\\), we obtain\n\\[\n\\lim_{x\\to 0}\\frac{e^{ax}-1}{x}\n=\na\\lim_{x\\to 0}\\frac{e^{ax}-1}{ax}\n=\na\\cdot 1\n=\na.\n\\]\nFor continuity at \\(x=0\\), we need\n\\[\n\\lim_{x\\to 0}f(x)=f(0)=3.\n\\]\nTherefore,\n\\[\na=3.\n\\]",
+      "hint": "Use the standard limit \\(\\lim_{t\\to 0}\\frac{e^t-1}{t}=1\\) and compare the limit with \\(f(0)\\)."
+    }
+  ]
+}

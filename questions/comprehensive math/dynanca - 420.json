@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-420",
+  "category": "Comprehensive Mathematics",
+  "title": "420. Trigonometry & Periodic Models: Double-Angle Formulas",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-420-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Double-angle formula for sine",
+      "learningObjective": "State the double-angle formula for sine.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For every angle \\(\\theta\\), \\(\\sin 2\\theta\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\sin\\theta\\cos\\theta\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2\\sin\\theta\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Setting \\(A=B=\\theta\\) in \\(\\sin(A+B)=\\sin A\\cos B+\\cos A\\sin B\\) gives \\(\\sin 2\\theta=2\\sin\\theta\\cos\\theta\\). The expression \\(2\\sin\\theta\\) is not equal to it; for \\(\\theta=90^\\circ\\), \\(\\sin 180^\\circ=0\\) but \\(2\\sin 90^\\circ=2\\).",
+      "hint": "Apply the sine sum formula with both angles equal to \\(\\theta\\)."
+    },
+    {
+      "id": "dynanca-420-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Double-angle formula for cosine",
+      "learningObjective": "State a correct form of the double-angle formula for cosine.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For every angle \\(\\theta\\), \\(\\cos 2\\theta\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\cos^2\\theta-\\sin^2\\theta\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1-2\\cos^2\\theta\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Setting \\(A=B=\\theta\\) in \\(\\cos(A+B)=\\cos A\\cos B-\\sin A\\sin B\\) gives \\(\\cos 2\\theta=\\cos^2\\theta-\\sin^2\\theta\\). Equivalent forms are \\(2\\cos^2\\theta-1\\) and \\(1-2\\sin^2\\theta\\). The expression \\(1-2\\cos^2\\theta\\) has the wrong sign; it equals \\(-\\cos 2\\theta\\).",
+      "hint": "Apply the cosine sum formula with both angles equal, and test \\(\\theta=0\\) on each candidate."
+    },
+    {
+      "id": "dynanca-420-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Sine of a double angle from sine and cosine",
+      "learningObjective": "Compute the sine of a double angle from given values.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "An angle \\(\\theta\\) has \\(\\sin\\theta=\\frac{3}{5}\\) and \\(\\cos\\theta=\\frac{4}{5}\\). What is \\(\\sin 2\\theta\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{6}{5}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{24}{25}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use \\(\\sin 2\\theta=2\\sin\\theta\\cos\\theta=2\\cdot\\frac{3}{5}\\cdot\\frac{4}{5}=\\frac{24}{25}\\). Doubling the sine gives \\(\\frac{6}{5}\\), which is greater than \\(1\\) and therefore cannot be a sine value.",
+      "hint": "Use the product form \\(2\\sin\\theta\\cos\\theta\\); a sine value can never exceed \\(1\\)."
+    },
+    {
+      "id": "dynanca-420-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Cosine of a double angle from cosine",
+      "learningObjective": "Compute the cosine of a double angle from a given cosine.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "An angle \\(\\theta\\) has \\(\\cos\\theta=\\frac{1}{3}\\). What is \\(\\cos 2\\theta\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{7}{9}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{7}{9}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(\\cos 2\\theta=2\\cos^2\\theta-1=2\\cdot\\frac{1}{9}-1=\\frac{2}{9}-\\frac{9}{9}=-\\frac{7}{9}\\). The subtraction order matters: \\(1-2\\cos^2\\theta=\\frac{7}{9}\\) has the wrong sign.",
+      "hint": "Choose the form of the cosine double-angle formula that uses only cosine."
+    },
+    {
+      "id": "dynanca-420-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Cosine of a double angle from sine",
+      "learningObjective": "Compute the cosine of a double angle from a given sine.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "An angle \\(\\theta\\) has \\(\\sin\\theta=\\frac{1}{4}\\). What is \\(\\cos 2\\theta\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{7}{8}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{15}{16}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(\\cos 2\\theta=1-2\\sin^2\\theta=1-2\\cdot\\frac{1}{16}=1-\\frac{1}{8}=\\frac{7}{8}\\). The value \\(\\frac{15}{16}=1-\\sin^2\\theta\\) is \\(\\cos^2\\theta\\), which omits the factor \\(2\\).",
+      "hint": "Choose the form of the cosine double-angle formula that uses only sine."
+    },
+    {
+      "id": "dynanca-420-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Tangent of a double angle",
+      "learningObjective": "Apply the double-angle formula for tangent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "An angle \\(\\theta\\) has \\(\\tan\\theta=\\frac{1}{2}\\). What is \\(\\tan 2\\theta\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{4}{3}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use \\(\\tan 2\\theta=\\frac{2\\tan\\theta}{1-\\tan^2\\theta}=\\frac{2\\cdot\\frac{1}{2}}{1-\\frac{1}{4}}=\\frac{1}{3/4}=\\frac{4}{3}\\). Simply doubling the tangent gives \\(1\\), which ignores the denominator of the formula.",
+      "hint": "The tangent double-angle formula has denominator \\(1-\\tan^2\\theta\\)."
+    },
+    {
+      "id": "dynanca-420-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Recognising a sine double angle",
+      "learningObjective": "Condense a product into a single sine using the double-angle formula.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is the exact value of \\(2\\sin 15^\\circ\\cos 15^\\circ\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\sqrt{3}}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The expression has the form \\(2\\sin\\theta\\cos\\theta\\) with \\(\\theta=15^\\circ\\), so it equals \\(\\sin 30^\\circ=\\frac{1}{2}\\). The value \\(\\frac{\\sqrt{3}}{2}\\) is \\(\\cos 30^\\circ\\), which belongs to the pattern \\(\\cos^2\\theta-\\sin^2\\theta\\).",
+      "hint": "Compare the expression with the double-angle formula for sine."
+    },
+    {
+      "id": "dynanca-420-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Recognising a cosine double angle",
+      "learningObjective": "Condense a difference of squares into a single cosine.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "What is the exact value of \\(\\cos^2 22.5^\\circ-\\sin^2 22.5^\\circ\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\sqrt{2}}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{1}{2}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The expression has the form \\(\\cos^2\\theta-\\sin^2\\theta\\) with \\(\\theta=22.5^\\circ\\), so it equals \\(\\cos 45^\\circ=\\frac{\\sqrt{2}}{2}\\).",
+      "hint": "Compare the expression with a form of the double-angle formula for cosine."
+    },
+    {
+      "id": "dynanca-420-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Double angle with a quadrant condition",
+      "learningObjective": "Combine a quadrant condition with the sine double-angle formula.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "An angle \\(\\theta\\) in Quadrant II has \\(\\sin\\theta=\\frac{5}{13}\\). What is \\(\\sin 2\\theta\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(-\\frac{120}{169}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{120}{169}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In Quadrant II the cosine is negative: \\(\\cos\\theta=-\\sqrt{1-\\frac{25}{169}}=-\\frac{12}{13}\\). Then \\(\\sin 2\\theta=2\\sin\\theta\\cos\\theta=2\\cdot\\frac{5}{13}\\cdot\\left(-\\frac{12}{13}\\right)=-\\frac{120}{169}\\).",
+      "hint": "Find \\(\\cos\\theta\\) with the correct sign for the quadrant before using the formula."
+    },
+    {
+      "id": "dynanca-420-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Square of a sum of sine and cosine",
+      "learningObjective": "Expand a squared sum and identify a double-angle expression.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For every angle \\(\\theta\\), \\((\\sin\\theta+\\cos\\theta)^2\\) equals which expression?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1+\\sin 2\\theta\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1+\\cos 2\\theta\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Expand: \\((\\sin\\theta+\\cos\\theta)^2=\\sin^2\\theta+2\\sin\\theta\\cos\\theta+\\cos^2\\theta\\). Using \\(\\sin^2\\theta+\\cos^2\\theta=1\\) and \\(2\\sin\\theta\\cos\\theta=\\sin 2\\theta\\), the result is \\(1+\\sin 2\\theta\\). The expression \\(1+\\cos 2\\theta\\) equals \\(2\\cos^2\\theta\\) instead.",
+      "hint": "Expand the square, then look for the Pythagorean identity and a double-angle product."
+    }
+  ]
+}

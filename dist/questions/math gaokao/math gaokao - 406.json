@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-406",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 406",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-406-q001",
+      "category": "Mathematical Modeling",
+      "concept": "Exponential Growth with Doubling Time",
+      "learningObjective": "Use a doubling-time model to predict a future population.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A population of \\(200\\) bacteria doubles every \\(5\\) hours. If the population follows exponential growth, what is the population after \\(15\\) hours?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1600\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(800\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number of doubling periods in \\(15\\) hours is \\(15 \\div 5 = 3\\). Thus the population is \\(200 \\cdot 2^3 = 200 \\cdot 8 = 1600\\).",
+      "hint": "First determine how many doubling periods occur in \\(15\\) hours."
+    },
+    {
+      "id": "math-gaokao-406-q002",
+      "category": "Mathematical Modeling",
+      "concept": "Exponential Decay with Half-Life",
+      "learningObjective": "Apply a half-life model to find the remaining amount after several half-lives.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A radioactive substance has a half-life of \\(12\\) years. If the initial mass is \\(80\\) grams, what mass remains after \\(36\\) years?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\) grams"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\) grams"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number of half-lives is \\(36 \\div 12 = 3\\). The remaining mass is \\(80 \\cdot \\left(\\frac{1}{2}\\right)^3 = 80 \\cdot \\frac{1}{8} = 10\\) grams.",
+      "hint": "Find the number of half-lives, then multiply the initial amount by \\(\\left(\\frac{1}{2}\\right)^n\\)."
+    },
+    {
+      "id": "math-gaokao-406-q003",
+      "category": "Mathematical Modeling",
+      "concept": "Exponential Growth Model Evaluation",
+      "learningObjective": "Evaluate an exponential growth model at a given time.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A city's population is modeled by \\(P(t)=500(1.08)^t\\), where \\(t\\) is the number of years after the start. What is \\(P(2)\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(583.2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(580.0\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute \\(t=2\\): \\[\n\\begin{aligned}\nP(2)&=500(1.08)^2 \\\\\n&=500(1.1664) \\\\\n&=583.2\n\\end{aligned}\n\\].",
+      "hint": "Substitute \\(t=2\\) and evaluate the power before multiplying by \\(500\\)."
+    },
+    {
+      "id": "math-gaokao-406-q004",
+      "category": "Mathematical Modeling",
+      "concept": "Continuous Exponential Growth",
+      "learningObjective": "Solve for time in a continuous exponential growth model when a percentage increase is given.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A culture grows according to \\(P(t)=P_0 e^{0.05t}\\). With \\(t\\) measured in years, approximately how many years are needed for the population to increase by \\(20\\%\\)? Round to the nearest hundredth of a year.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2.19\\) years"
+        },
+        {
+          "label": "B",
+          "text": "\\(3.65\\) years"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Increasing by \\(20\\%\\) means \\(P(t)=1.2P_0\\). Thus \\(P_0 e^{0.05t}=1.2P_0\\), so \\(e^{0.05t}=1.2\\). Taking natural logarithms gives \\(0.05t=\\ln 1.2\\), hence \\(t=\\frac{\\ln 1.2}{0.05}\\approx 3.65\\) years.",
+      "hint": "Set \\(e^{0.05t}=1.20\\) and take natural logarithms."
+    },
+    {
+      "id": "math-gaokao-406-q005",
+      "category": "Mathematical Modeling",
+      "concept": "Exponential Decay Model Recognition",
+      "learningObjective": "Identify the correct exponential decay equation from a given annual percentage decrease.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A quantity decreases by \\(15\\%\\) each year. If its initial amount is \\(a\\), which equation models the amount \\(y\\) after \\(t\\) years?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y=a(0.85)^t\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(y=a(0.15)^t\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A \\(15\\%\\) decrease means \\(85\\%\\) remains after each year. Therefore the yearly multiplier is \\(0.85\\), so the model is \\(y=a(0.85)^t\\).",
+      "hint": "When a quantity decreases by \\(p\\%\\), the yearly multiplier is \\(1-\\frac{p}{100}\\)."
+    },
+    {
+      "id": "math-gaokao-406-q006",
+      "category": "Mathematical Modeling",
+      "concept": "Solving an Exponential Growth Equation",
+      "learningObjective": "Solve for time in an exponential growth model by converting to logarithmic form.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A population model is \\(N(t)=50(1.2)^t\\). For what value of \\(t\\) does \\(N(t)=150\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\log_{3}1.2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\log_{1.2}3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set \\(50(1.2)^t=150\\). Dividing by \\(50\\) gives \\((1.2)^t=3\\). Converting to logarithmic form gives \\(t=\\log_{1.2}3\\).",
+      "hint": "Divide by the initial value, then rewrite the exponential equation in logarithmic form."
+    },
+    {
+      "id": "math-gaokao-406-q007",
+      "category": "Mathematical Modeling",
+      "concept": "Exponential Growth with a Fractional Exponent",
+      "learningObjective": "Determine the time required for an exponential model to reach a given multiple.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The number of bacteria is modeled by \\(N(t)=N_0 2^{\\frac{t}{4}}\\), where \\(t\\) is in hours. How long does it take for the population to multiply by \\(8\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\) hours"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\) hours"
+        }
+      ],
+      "answer": "B",
+      "explanation": "We need \\(2^{\\frac{t}{4}}=8\\). Since \\(8=2^3\\), we have \\(2^{\\frac{t}{4}}=2^3\\), so \\(\\frac{t}{4}=3\\). Thus \\(t=12\\) hours.",
+      "hint": "Express \\(8\\) as a power of \\(2\\), then equate the exponents."
+    },
+    {
+      "id": "math-gaokao-406-q008",
+      "category": "Mathematical Modeling",
+      "concept": "Annual Decay Rate from Remaining Percentage",
+      "learningObjective": "Determine the annual decay rate from the fraction remaining after several years.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A radioactive substance decays so that \\(60\\%\\) of its original mass remains after \\(30\\) years. If the annual retention factor is \\(r\\), which expression gives the annual decay rate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1-0.6^{30}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1-0.6^{\\frac{1}{30}}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "After \\(30\\) years, \\(0.6=r^{30}\\), so the annual retention factor is \\(r=0.6^{\\frac{1}{30}}\\). The annual decay rate is \\(1-r=1-0.6^{\\frac{1}{30}}\\).",
+      "hint": "Let \\(r\\) be the yearly retention factor and use \\(r^{30}=0.60\\)."
+    },
+    {
+      "id": "math-gaokao-406-q009",
+      "category": "Mathematical Modeling",
+      "concept": "Half-Life Decay to a Given Remaining Percentage",
+      "learningObjective": "Use a half-life model and logarithms to find the time when a given percentage remains.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A sample has a half-life of \\(8\\) days. How long does it take until \\(10\\%\\) of the original sample remains? Round to the nearest tenth of a day.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(26.6\\) days"
+        },
+        {
+          "label": "B",
+          "text": "\\(24.0\\) days"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The decay model is \\(N(t)=N_0\\left(\\frac{1}{2}\\right)^{\\frac{t}{8}}\\). Setting \\(N(t)=0.10N_0\\) gives \\(\\left(\\frac{1}{2}\\right)^{\\frac{t}{8}}=0.10\\). Thus \\(\\frac{t}{8}=\\log_{\\frac{1}{2}}0.10\\), so \\(t=8\\log_{\\frac{1}{2}}0.10\\). Since \\(\\log_{\\frac{1}{2}}0.10=\\frac{\\ln 0.10}{\\ln 0.50}\\approx 3.3219\\), we get \\(t\\approx 8(3.3219)=26.5752\\), or about \\(26.6\\) days.",
+      "hint": "Set the remaining fraction equal to \\(0.10\\) and use logarithms with base \\(\\frac{1}{2}\\)."
+    },
+    {
+      "id": "math-gaokao-406-q010",
+      "category": "Mathematical Modeling",
+      "concept": "Exponential Growth from Two Data Points",
+      "learningObjective": "Use two population values to predict a future value under exponential growth.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A population grows exponentially. In \\(2000\\) the population was \\(1000\\), and in \\(2010\\) it was \\(1500\\). What is the predicted population in \\(2030\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3375\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3000\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From \\(2000\\) to \\(2010\\) is \\(10\\) years, and the population multiplies by \\(\\frac{1500}{1000}=1.5\\). Thus every \\(10\\) years the population is multiplied by \\(1.5\\). From \\(2000\\) to \\(2030\\) is \\(30\\) years, which is \\(3\\) ten-year periods. Therefore the predicted population is \\(1000(1.5)^3=1000(3.375)=3375\\).",
+      "hint": "Find the \\(10\\)-year growth factor from the two given data points, then apply it for the number of \\(10\\)-year intervals from \\(2000\\) to \\(2030\\)."
+    }
+  ]
+}

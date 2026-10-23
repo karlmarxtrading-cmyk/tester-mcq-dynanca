@@ -1,0 +1,2611 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "ml",
+  "category": "Machine Learning",
+  "title": "Machine Learning Fundamentals",
+  "description": "A 100-question multiple-choice bank covering Machine Learning fundamentals, data preprocessing, supervised and unsupervised learning, model evaluation and quality, feature engineering, model training, and neural-network fundamentals, with leakage-safe workflows and worked quantitative examples.",
+  "questionCount": 100,
+  "questions": [
+    {
+      "id": "ml-1",
+      "category": "Machine Learning Fundamentals",
+      "concept": "Definition of Machine Learning",
+      "learningObjective": "Distinguish learning from data from fixed-rule programming and evaluation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the primary definition of Machine Learning?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Developing models that learn patterns from data or experience to perform a task."
+        },
+        {
+          "label": "B",
+          "text": "Specifying each decision rule manually instead of fitting it from examples."
+        },
+        {
+          "label": "C",
+          "text": "Measuring a fixed model on held-out examples without fitting or updating it."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Machine Learning develops models from data or experience. Programmers still design the system, but do not need to write every learned decision rule. Evaluating a fixed model measures performance; it is not itself the learning step.",
+      "hint": "Consider how the system obtains its decision rules."
+    },
+    {
+      "id": "ml-2",
+      "category": "Machine Learning Fundamentals",
+      "concept": "AI vs ML vs Deep Learning",
+      "learningObjective": "Identify the conventional relationship among AI, Machine Learning, and Deep Learning.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which statement best describes the relationship between Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning (DL)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Deep Learning is a subset of Machine Learning, and Machine Learning is a subset of AI."
+        },
+        {
+          "label": "B",
+          "text": "Machine Learning is a subset of Deep Learning, and Deep Learning is a subset of AI."
+        },
+        {
+          "label": "C",
+          "text": "Machine Learning and Deep Learning are separate subsets of AI with no overlap."
+        }
+      ],
+      "answer": "A",
+      "explanation": "In the conventional taxonomy, AI is the broad field, Machine Learning studies learning from data or experience, and Deep Learning is an ML approach using deep neural networks. Some AI methods use explicitly written rules rather than learning.",
+      "hint": "Compare a broad research field with more specific approaches within it."
+    },
+    {
+      "id": "ml-3",
+      "category": "Machine Learning Fundamentals",
+      "concept": "Supervised Learning",
+      "learningObjective": "Identify input-target pairs as the defining training information in supervised learning.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "What is the defining characteristic of supervised learning?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The model learns to make decisions by interacting with an environment and receiving rewards or penalties."
+        },
+        {
+          "label": "B",
+          "text": "The model learns to find hidden patterns or groupings without any predefined labels."
+        },
+        {
+          "label": "C",
+          "text": "The model is trained using a dataset where each input example is paired with a known output label."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Supervised learning fits a mapping from inputs to supplied targets, which can be categorical labels or numerical values. Reward-based interaction describes reinforcement learning, while discovering structure without target labels describes unsupervised learning.",
+      "hint": "Compare the kind of feedback available in each learning setup."
+    },
+    {
+      "id": "ml-4",
+      "category": "Machine Learning Fundamentals",
+      "concept": "Unsupervised Learning",
+      "learningObjective": "Select an unsupervised approach for grouping customers without predefined labels.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "When is unsupervised learning most appropriately used?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When we want to predict house prices based on square footage and location."
+        },
+        {
+          "label": "B",
+          "text": "When we want to train an agent to play chess against an opponent by maximizing rewards."
+        },
+        {
+          "label": "C",
+          "text": "When we want to group customers by shopping behavior without predefined categories."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Grouping customers by similarity without predefined target categories is a clustering task, a common form of unsupervised learning. Predicting known house-price targets is supervised regression; learning a chess policy from rewards is reinforcement learning.",
+      "hint": "Identify the desired output and the training information available in each scenario."
+    },
+    {
+      "id": "ml-5",
+      "category": "Machine Learning Fundamentals",
+      "concept": "Reinforcement Learning",
+      "learningObjective": "Identify reward-based learning of an action policy in reinforcement learning.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a standard online reinforcement-learning setup, how does an agent learn to make decisions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "By interacting with an environment and maximizing cumulative rewards through trial and error."
+        },
+        {
+          "label": "B",
+          "text": "By minimizing the difference between predictions and given labels."
+        },
+        {
+          "label": "C",
+          "text": "By grouping data points based on feature similarity without any feedback."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A reinforcement-learning agent learns a policy for choosing actions to maximize expected cumulative reward. Rewards may be delayed, so the best immediate action need not produce the best long-term return. This differs from fitting supplied targets or clustering examples.",
+      "hint": "Consider whether an action can influence later observations and outcomes."
+    },
+    {
+      "id": "ml-6",
+      "category": "Machine Learning Fundamentals",
+      "concept": "Features and Labels",
+      "learningObjective": "Distinguish input features from the prediction target in a house-price dataset.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "In a dataset used to predict house prices, what role do 'lot size' and 'number of bedrooms' play?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Settings such as the learning rate or tree-depth limit."
+        },
+        {
+          "label": "B",
+          "text": "The output price values the model is trained to predict."
+        },
+        {
+          "label": "C",
+          "text": "Input features supplied to help predict the house price."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Lot size and number of bedrooms are features: input measurements supplied to the model. House price is the target in this task. Training settings, such as a learning rate, are hyperparameters rather than measurements of a house.",
+      "hint": "Separate what is available as input from what the model is asked to predict."
+    },
+    {
+      "id": "ml-7",
+      "category": "Machine Learning Fundamentals",
+      "concept": "Training vs Inference",
+      "learningObjective": "Distinguish ordinary inference from parameter updates during training.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "During ordinary inference with a fixed, already trained model, what happens?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The already trained model is used to make predictions on new, unseen data."
+        },
+        {
+          "label": "B",
+          "text": "The model adjusts its weights based on new data to improve accuracy."
+        },
+        {
+          "label": "C",
+          "text": "The dataset is split into training and testing sets to evaluate performance."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Ordinary inference applies the fitted model to input data to produce predictions without updating its learned parameters. Training performs parameter fitting. Some systems support separate online-learning steps, but those updates are outside the fixed-model inference described here.",
+      "hint": "Ask whether producing the requested prediction requires changing the fitted parameters."
+    },
+    {
+      "id": "ml-8",
+      "category": "Data and Preprocessing",
+      "concept": "Train, Validation, and Test Sets",
+      "learningObjective": "State the purpose of an untouched final test set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "What is the primary function of a test set?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fit the final model parameters using these examples and their target labels."
+        },
+        {
+          "label": "B",
+          "text": "Select hyperparameter settings by comparing candidate scores on these examples."
+        },
+        {
+          "label": "C",
+          "text": "Assess the selected model on examples excluded from its training and tuning."
+        }
+      ],
+      "answer": "C",
+      "explanation": "An untouched test set assesses the final model after training and selection. Hyperparameter choices belong to validation data or cross-validation within the development data. The test estimate is useful when the set is representative; isolation alone does not guarantee deployment performance.",
+      "hint": "Think about how to assess a final decision after all development choices are complete."
+    },
+    {
+      "id": "ml-9",
+      "category": "Data and Preprocessing",
+      "concept": "Handling Missing Values",
+      "learningObjective": "Choose a leakage-safe mean-imputation baseline under stated missingness assumptions.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A numerical training feature is approximately symmetric, has no extreme outliers, and has \\(5\\%\\) values missing completely at random. Which is a reasonable simple imputation baseline that preserves all rows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Replace missing values with the observed training-feature mean and reuse that fitted value on validation/test data."
+        },
+        {
+          "label": "B",
+          "text": "Replace missing values with the mean computed from the combined training, validation, and test feature."
+        },
+        {
+          "label": "C",
+          "text": "Replace missing values with zero even though zero has no meaningful interpretation for this feature."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Mean imputation is a simple baseline under these stated assumptions, not a universally best method. Estimate the mean from observed training values only and apply that value to held-out data. Mean imputation reduces variability and can distort relationships, so its effect should be evaluated.",
+      "hint": "Separate selecting a replacement rule from deciding which observations may estimate it."
+    },
+    {
+      "id": "ml-10",
+      "category": "Data and Preprocessing",
+      "concept": "Categorical vs Numerical Data",
+      "learningObjective": "Recognize nominal categorical data among measured quantities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "Which of the following is an example of categorical data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Temperature in degrees Celsius."
+        },
+        {
+          "label": "B",
+          "text": "Weight in kilograms."
+        },
+        {
+          "label": "C",
+          "text": "Car color (Red, Blue, Black)."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Car color is a nominal category. Differences or averages of color names have no direct numerical meaning, whereas temperature and weight are measured numerical quantities. A numerical code assigned to a category does not by itself make that category a measurement.",
+      "hint": "Consider which operations would be meaningful on the recorded values."
+    },
+    {
+      "id": "ml-11",
+      "category": "Data and Preprocessing",
+      "concept": "One-Hot Encoding",
+      "learningObjective": "Choose an encoding that avoids imposing an arbitrary order on nominal cities.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A nominal City feature contains New York, London, and Tokyo. For an ordinary linear model, which representation avoids imposing an arbitrary numerical order on these cities?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assign one numerical column with codes one, two, and three for the cities."
+        },
+        {
+          "label": "B",
+          "text": "Use separate indicator columns for the cities, dropping a reference category if needed."
+        },
+        {
+          "label": "C",
+          "text": "Standardize one numerical column containing codes one, two, and three for the cities."
+        }
+      ],
+      "answer": "B",
+      "explanation": "One-hot indicator columns encode category membership without treating city codes as ordered measurements. An intercept-based unregularized linear model may drop one indicator to avoid redundant columns. Standardizing arbitrary ordinal codes does not remove the artificial order.",
+      "hint": "Ask what relationship a linear model would infer from numerical codes."
+    },
+    {
+      "id": "ml-12",
+      "category": "Data and Preprocessing",
+      "concept": "Feature Scaling",
+      "learningObjective": "Explain why numerical feature scales affect Euclidean KNN distances.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Why is feature scaling often important for KNN that uses ordinary Euclidean distance?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A feature with much larger numerical differences can outweigh other features in the distance calculation."
+        },
+        {
+          "label": "B",
+          "text": "Scaling converts Euclidean distance into a distance measure based on target labels."
+        },
+        {
+          "label": "C",
+          "text": "Scaling guarantees that each feature has equal predictive relevance to the target."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Euclidean distance combines numerical coordinate differences. A large-scale feature can contribute disproportionately even when its units are arbitrary. Fit the scaling transformation on training data only; comparable scales do not guarantee equal relevance or better performance for every dataset.",
+      "hint": "Consider whether changing only a measurement unit should change which examples count as neighbors."
+    },
+    {
+      "id": "ml-13",
+      "category": "Data and Preprocessing",
+      "concept": "Min-Max Normalization",
+      "learningObjective": "Compute a min-max transformed value using fitted training extrema.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A min-max scaler fitted on the training data has minimum \\(10\\) and maximum \\(60\\). What value does it assign to \\(35\\) when mapping that training range to \\([0,1]\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.25\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.50\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(0.75\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The fitted transformation is \\(z=\\frac{x-x_{\\min}}{x_{\\max}-x_{\\min}}\\). Substituting the values gives \\[\\begin{aligned}z&=\\frac{35-10}{60-10}\\\\&=\\frac{25}{50}=0.50\\end{aligned}\\] Reuse the training extrema for held-out data; values outside that range can map outside \\([0,1]\\).",
+      "hint": "Locate the value relative to the fitted feature range before calculating its scaled position."
+    },
+    {
+      "id": "ml-14",
+      "category": "Data and Preprocessing",
+      "concept": "Standardization (Z-score)",
+      "learningObjective": "Distinguish training-set standardization from Gaussianization and held-out refitting.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "A nonconstant numerical feature is standardized using its training-set mean and population standard deviation. The same transformation is applied to validation and test data. Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Every transformed split is guaranteed to have zero mean and unit standard deviation."
+        },
+        {
+          "label": "B",
+          "text": "The transformation makes every feature Gaussian, regardless of its original shape."
+        },
+        {
+          "label": "C",
+          "text": "The transformed training feature has zero mean and unit standard deviation; other splits need not."
+        }
+      ],
+      "answer": "C",
+      "explanation": "For the training feature, \\(z=\\frac{x-\\mu_{\\mathrm{train}}}{\\sigma_{\\mathrm{train}}}\\) gives mean \\(0\\) and population standard deviation \\(1\\), up to numerical precision. Held-out statistics may differ because the training transformation is reused without refitting. This affine transformation does not turn an arbitrary distribution into a Gaussian.",
+      "hint": "Separate the fitted reference statistics from the shape of the distribution being transformed."
+    },
+    {
+      "id": "ml-15",
+      "category": "Data and Preprocessing",
+      "concept": "Data Leakage",
+      "learningObjective": "Identify leakage as using information unavailable for a valid training or prediction setup.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "What is meant by 'data leakage' in the context of Machine Learning?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Using evaluation data or future-only information to influence model development or its inputs."
+        },
+        {
+          "label": "B",
+          "text": "Using a smaller training sample than would ideally be available for model development."
+        },
+        {
+          "label": "C",
+          "text": "Observing a lower score on validation data than on the model-fitting data."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Leakage gives model development or prediction access to information that should be unavailable in the intended evaluation or deployment setting. Examples include selecting features using test labels and using a future outcome as an input. A small dataset or a train-validation gap is not itself leakage.",
+      "hint": "Ask which information would actually be available when a future prediction is made."
+    },
+    {
+      "id": "ml-16",
+      "category": "Supervised Learning",
+      "concept": "Regression vs Classification",
+      "learningObjective": "Identify classification from a categorical prediction target.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Which of the following is an example of a classification problem?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Predicting whether an email is 'Spam' or 'Not Spam'."
+        },
+        {
+          "label": "B",
+          "text": "Predicting tomorrow's stock price in USD."
+        },
+        {
+          "label": "C",
+          "text": "Predicting the room temperature for the next \\(24\\) hours."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Spam versus Not Spam is a categorical target, so the task is classification. Predicting a numerical price or temperature is regression. Numerical features can be used for either task; the requested target determines this distinction.",
+      "hint": "Inspect the kind of output required in each task."
+    },
+    {
+      "id": "ml-17",
+      "category": "Supervised Learning",
+      "concept": "Binary vs Multiclass Classification",
+      "learningObjective": "Distinguish binary and multiclass single-label classification by the number of classes.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "What is the difference between binary classification and multiclass classification?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Binary classification requires numerical inputs; multiclass classification requires text inputs."
+        },
+        {
+          "label": "B",
+          "text": "Binary classification uses one target per example; multiclass classification requires several simultaneous targets."
+        },
+        {
+          "label": "C",
+          "text": "Binary classification has two possible classes; multiclass single-label classification has more than two."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Binary classification has two possible target classes. In multiclass single-label classification, each example receives one class from more than two possibilities. This differs from multilabel classification, where several labels may apply to one example.",
+      "hint": "Focus on the set of possible target outcomes rather than the input-data type."
+    },
+    {
+      "id": "ml-18",
+      "category": "Supervised Learning",
+      "concept": "Linear Regression",
+      "learningObjective": "State the fitting objective of ordinary least-squares linear regression.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What does ordinary least-squares linear regression fit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A linear prediction rule whose coefficients minimize the training sum of squared residuals."
+        },
+        {
+          "label": "B",
+          "text": "A grouping rule whose centroids minimize distances between unlabeled examples and clusters."
+        },
+        {
+          "label": "C",
+          "text": "A classification rule whose threshold maximizes the number of positive predictions."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Ordinary least squares chooses coefficients to minimize \\(\\sum_{i=1}^{n}(y_i-\\hat{y}_i)^2\\), where \\(\\hat{y}_i\\) is linear in the fitted features. Its prediction target is numerical. It does not inherently group observations into clusters or guarantee a good fit to nonlinear structure.",
+      "hint": "Distinguish predicting a measured target from discovering groups of examples."
+    },
+    {
+      "id": "ml-19",
+      "category": "Supervised Learning",
+      "concept": "Logistic Regression",
+      "learningObjective": "Distinguish a binary logistic-regression probability estimate from a thresholded class label.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For binary logistic regression, what does the sigmoid output represent before a decision threshold is applied?",
+      "options": [
+        {
+          "label": "A",
+          "text": "An estimated probability of the designated positive class."
+        },
+        {
+          "label": "B",
+          "text": "An unrestricted real-valued estimate of a continuous target."
+        },
+        {
+          "label": "C",
+          "text": "A positive or negative class label already determined by a threshold."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sigmoid \\(\\sigma(z)=\\frac{1}{1+e^{-z}}\\) transforms a linear score into a probability estimate in \\((0,1)\\) for finite \\(z\\). A threshold is then used to choose a class label. The estimate need not be perfectly calibrated merely because it lies in this interval.",
+      "hint": "Consider what is available before a decision threshold is applied."
+    },
+    {
+      "id": "ml-20",
+      "category": "Supervised Learning",
+      "concept": "Decision Trees",
+      "learningObjective": "Describe prediction as following feature-based branches to a decision-tree leaf.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How does a Decision Tree algorithm make predictions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It averages the labels of the closest stored examples in feature space."
+        },
+        {
+          "label": "B",
+          "text": "It combines every feature into one fitted linear score for the example."
+        },
+        {
+          "label": "C",
+          "text": "It follows feature-based branches until reaching a leaf with a prediction."
+        }
+      ],
+      "answer": "C",
+      "explanation": "A decision tree routes an input through learned splits to a leaf. In a classification tree, the leaf provides a class prediction or class probabilities; in a regression tree, it provides a numerical prediction. Nearest-neighbor voting and a single linear score use different mechanisms.",
+      "hint": "Think about how a fitted rule routes one example to a final result."
+    },
+    {
+      "id": "ml-21",
+      "category": "Supervised Learning",
+      "concept": "K-Nearest Neighbors (KNN)",
+      "learningObjective": "Describe unweighted KNN classification when the neighbor vote has a unique winner.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In unweighted KNN classification, suppose the \\(K\\) nearest training examples have a unique most frequent class. How is the new example classified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Choose the most frequent class among those nearest training examples."
+        },
+        {
+          "label": "B",
+          "text": "Average the numerical codes of those classes and use the rounded result."
+        },
+        {
+          "label": "C",
+          "text": "Choose the most frequent class in the entire training dataset."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Unweighted KNN assigns the class with the highest vote count among the \\(K\\) nearest training examples. It does not average arbitrary class codes or ignore the neighborhood in favor of a global class frequency. Distance-weighted KNN uses a different voting rule.",
+      "hint": "Separate selecting nearby examples from using their target information."
+    },
+    {
+      "id": "ml-22",
+      "category": "Supervised Learning",
+      "concept": "Impact of K in KNN",
+      "learningObjective": "Explain why one-neighbor classification is sensitive to noisy training labels.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Compared with a moderate larger \\(K\\) on a dataset containing label noise, why can KNN with \\(K=1\\) have higher variance?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Its decision boundary is less affected by any individual training example."
+        },
+        {
+          "label": "B",
+          "text": "It assigns every query the majority class of the entire training dataset."
+        },
+        {
+          "label": "C",
+          "text": "Its prediction depends on one nearby label, so a local mislabeled example can change the result."
+        }
+      ],
+      "answer": "C",
+      "explanation": "With \\(K=1\\), a query inherits its nearest training label. Local noise can therefore cause large changes in predictions when the training sample changes. Larger neighborhoods can smooth such fluctuations, though an excessively large \\(K\\) can lose useful local structure.",
+      "hint": "Consider how many observations can counteract one mislabeled nearby example."
+    },
+    {
+      "id": "ml-23",
+      "category": "Supervised Learning",
+      "concept": "Naive Bayes",
+      "learningObjective": "Identify conditional feature independence as the Naive Bayes modeling assumption.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "What is the 'naive' assumption made by the Naive Bayes algorithm?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Features are independent in the full dataset without conditioning on the class."
+        },
+        {
+          "label": "B",
+          "text": "Features are conditionally independent given the target class."
+        },
+        {
+          "label": "C",
+          "text": "All features follow a Gaussian distribution under every Naive Bayes variant."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Naive Bayes assumes the class-conditional factorization \\[P(x_1,\\ldots,x_d\\mid y)=\\prod_{j=1}^{d}P(x_j\\mid y)\\] Conditioning on the class is essential. Gaussian feature distributions are used by Gaussian Naive Bayes, not by every variant, and useful predictions are possible even when the independence assumption is imperfect.",
+      "hint": "Distinguish an assumption made within each class from one made across the whole dataset."
+    },
+    {
+      "id": "ml-24",
+      "category": "Supervised Learning",
+      "concept": "Support Vector Machine (SVM)",
+      "learningObjective": "Choose a nonlinear kernel as a candidate when a linear SVM cannot represent a curved boundary.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A linear SVM underfits two classes arranged as concentric rings. The features are scaled using training statistics. Which model change is a reasonable candidate to test using validation data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Keep the linear kernel and only increase its misclassification-penalty parameter."
+        },
+        {
+          "label": "B",
+          "text": "Try an RBF-kernel SVM and tune its kernel and penalty settings within the training data."
+        },
+        {
+          "label": "C",
+          "text": "Keep the linear kernel and repeatedly optimize the same objective after convergence."
+        }
+      ],
+      "answer": "B",
+      "explanation": "An RBF kernel allows nonlinear decision boundaries in the original input space, unlike a linear kernel. Adjusting a linear SVM penalty cannot give it a circular boundary on the unchanged features. An RBF model still requires tuning and validation; success is not guaranteed.",
+      "hint": "Ask whether the available decision-boundary shape can represent the observed pattern."
+    },
+    {
+      "id": "ml-25",
+      "category": "Supervised Learning",
+      "concept": "Kernel Trick in SVM",
+      "learningObjective": "Explain the computational role of a kernel as an implicit feature-space inner product.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the computational role of the kernel trick in a kernel SVM?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It removes training examples until the original inputs become linearly separable."
+        },
+        {
+          "label": "B",
+          "text": "It replaces all input coordinates with cluster identifiers before fitting."
+        },
+        {
+          "label": "C",
+          "text": "It computes feature-space inner products without explicitly constructing the feature-map coordinates."
+        }
+      ],
+      "answer": "C",
+      "explanation": "A kernel evaluates \\(k(x,z)=\\langle\\phi(x),\\phi(z)\\rangle\\) through the original inputs. This lets a suitable SVM work with an implicit feature representation and can produce nonlinear input-space boundaries. It neither guarantees class separability nor requires an explicit finite-dimensional projection.",
+      "hint": "Distinguish evaluating a relation between two examples from explicitly constructing new coordinates."
+    },
+    {
+      "id": "ml-26",
+      "category": "Unsupervised Learning",
+      "concept": "Clustering",
+      "learningObjective": "State the objective of similarity-based clustering without target labels.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "What is the main objective of clustering techniques in Machine Learning?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Fit a mapping from examples to supplied numerical targets."
+        },
+        {
+          "label": "B",
+          "text": "Group examples by a chosen similarity criterion without requiring target-class labels."
+        },
+        {
+          "label": "C",
+          "text": "Fit a mapping from examples to supplied categorical targets."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Clustering discovers groups using an algorithm-dependent notion of similarity. It does not require target-class labels as a classification or regression model does. The resulting groups are not guaranteed to correspond to meaningful real-world classes.",
+      "hint": "Consider what defines a useful group when no reference class labels are supplied."
+    },
+    {
+      "id": "ml-27",
+      "category": "Unsupervised Learning",
+      "concept": "K-Means Clustering",
+      "learningObjective": "Define the centroid update for a nonempty cluster in standard Euclidean K-means.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "In the centroid-update step of standard Euclidean K-means, what is the centroid of a nonempty cluster?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The coordinate-wise arithmetic mean of its assigned examples."
+        },
+        {
+          "label": "B",
+          "text": "The coordinate-wise median of its assigned examples."
+        },
+        {
+          "label": "C",
+          "text": "The assigned example nearest to all other assigned examples."
+        }
+      ],
+      "answer": "A",
+      "explanation": "For fixed assignments, the arithmetic mean minimizes the sum of squared Euclidean distances within a cluster. The centroid need not be an actual observed example. A median or representative data point corresponds to other clustering objectives, not this standard K-means update.",
+      "hint": "Think about which location minimizes squared distances to the currently assigned examples."
+    },
+    {
+      "id": "ml-28",
+      "category": "Unsupervised Learning",
+      "concept": "Determining K in K-Means",
+      "learningObjective": "Identify the Elbow Method as a heuristic for choosing a candidate cluster count.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which approach is a common heuristic for choosing a candidate \\(K\\) in K-means, rather than a guarantee of a uniquely optimal cluster count?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Choose the largest tested cluster count solely because its training inertia is smallest."
+        },
+        {
+          "label": "B",
+          "text": "Measure classification accuracy against arbitrary cluster IDs without reference labels."
+        },
+        {
+          "label": "C",
+          "text": "Look for diminishing returns in the inertia-versus-cluster-count curve (the Elbow Method)."
+        }
+      ],
+      "answer": "C",
+      "explanation": "The Elbow Method looks for a bend where increasing \\(K\\) gives smaller additional reductions in within-cluster squared distances. Such a bend may be unclear or absent. It suggests candidates to assess with other criteria and domain context, rather than establishing a universal optimum.",
+      "hint": "Consider whether improving a training objective by adding clusters always gives a more useful grouping."
+    },
+    {
+      "id": "ml-29",
+      "category": "Unsupervised Learning",
+      "concept": "Principal Component Analysis (PCA)",
+      "learningObjective": "Select PCA for an orthogonal linear projection that maximizes retained training variance.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "You have \\(500\\) centered, correlated sensor features on comparable scales. You want \\(20\\) orthogonal linear projection directions that retain as much training-data variance as possible. Which approach matches this criterion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Project onto the leading twenty principal components using PCA."
+        },
+        {
+          "label": "B",
+          "text": "Keep the twenty original columns with the largest individual variances."
+        },
+        {
+          "label": "C",
+          "text": "Use twenty K-means cluster identifiers as replacement input values."
+        }
+      ],
+      "answer": "A",
+      "explanation": "PCA selects orthogonal directions ordered by projected variance, so its leading components satisfy the stated linear variance-retention criterion. Selecting raw columns is a different constraint; clustering does not optimize this projection criterion. Fit PCA on the training data and reuse that transform on held-out examples.",
+      "hint": "Focus on the stated projection criterion rather than on general claims about preserving information."
+    },
+    {
+      "id": "ml-30",
+      "category": "Unsupervised Learning",
+      "concept": "Anomaly Detection",
+      "learningObjective": "Distinguish anomaly detection from clustering and supervised target prediction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "What is anomaly detection?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Identifying observations that deviate substantially from a learned or specified reference behavior."
+        },
+        {
+          "label": "B",
+          "text": "Assigning all observations to groups so that similar examples share a group."
+        },
+        {
+          "label": "C",
+          "text": "Predicting a supplied numerical target value from each observation."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Anomaly detection identifies departures from reference behavior, such as an unusually large transaction relative to a user history. Clustering organizes observations into groups, and regression predicts numerical targets. An anomaly flag is a reason to investigate, not proof that an event is harmful.",
+      "hint": "Consider what the method compares an observation against."
+    },
+    {
+      "id": "ml-31",
+      "category": "Model Evaluation",
+      "concept": "Confusion Matrix",
+      "learningObjective": "Identify a true positive from the predicted and actual binary labels.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "In a binary classification confusion matrix, what does True Positive (TP) mean?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The model predicted negative, and the actual label was negative."
+        },
+        {
+          "label": "B",
+          "text": "The model predicted positive, and the actual label was positive."
+        },
+        {
+          "label": "C",
+          "text": "The model predicted positive, but the actual label was negative."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A true positive is an example whose predicted class and actual class are both positive. Predicted positive with actual negative is a false positive; both negative is a true negative. The designated positive class must be defined by the task.",
+      "hint": "Track the prediction and reference label separately before naming the outcome."
+    },
+    {
+      "id": "ml-32",
+      "category": "Model Evaluation",
+      "concept": "False Positive vs False Negative",
+      "learningObjective": "Identify the costlier binary-classification error under explicit screening costs.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "In a hypothetical screening study, disease present is the positive class. Each missed disease case has assigned cost \\(100\\), while each unnecessary follow-up has assigned cost \\(1\\). Which error has the higher assigned cost per occurrence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A false positive: disease is absent but the prediction is positive."
+        },
+        {
+          "label": "B",
+          "text": "Both error types have equal assigned cost because both are classification mistakes."
+        },
+        {
+          "label": "C",
+          "text": "A false negative: disease is present but the prediction is negative."
+        }
+      ],
+      "answer": "C",
+      "explanation": "A false negative misses an actual disease case and has the stated cost \\(100\\), exceeding the false-positive cost \\(1\\). Their costs are not equal merely because both are errors. This conclusion follows from the hypothetical cost assumptions, not from a universal ranking of medical harms.",
+      "hint": "Evaluate the two mistaken prediction types using the costs stated in the question."
+    },
+    {
+      "id": "ml-33",
+      "category": "Model Evaluation",
+      "concept": "Accuracy",
+      "learningObjective": "Calculate classification accuracy from correct and total predictions.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A model correctly classifies \\(90\\) of \\(100\\) examples. What is its accuracy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(90\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\%\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(50\\%\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Accuracy divides the number of correct predictions by the total number of predictions. Here, \\[\\begin{aligned}\\mathrm{Accuracy}&=\\frac{90}{100}\\\\&=0.90=90\\%\\end{aligned}\\] This counts correct predictions across all classes; it does not separately describe how well the positive class is detected.",
+      "hint": "Identify the population being counted before forming a proportion."
+    },
+    {
+      "id": "ml-34",
+      "category": "Model Evaluation",
+      "concept": "Precision",
+      "learningObjective": "Calculate precision using the set of predicted-positive emails.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A spam filter flags \\(100\\) emails as spam. Among those flagged emails, \\(80\\) are spam and \\(20\\) are legitimate. Treat spam as positive. What is its precision?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(80\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\%\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(50\\%\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Precision measures the share of predicted positives that are truly positive: \\[\\begin{aligned}\\mathrm{Precision}&=\\frac{\\mathrm{TP}}{\\mathrm{TP}+\\mathrm{FP}}\\\\&=\\frac{80}{80+20}=0.80=80\\%\\end{aligned}\\] Recall would instead use all actual spam emails, which are not counted here.",
+      "hint": "Choose the relevant reference group before forming the fraction."
+    },
+    {
+      "id": "ml-35",
+      "category": "Model Evaluation",
+      "concept": "Recall",
+      "learningObjective": "Calculate recall using the set of actual fraudulent transactions.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A dataset contains \\(100\\) actual fraudulent transactions. A model flags \\(85\\) of them and misses \\(15\\). Treat fraud as positive. What is its recall?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\%\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(50\\%\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(85\\%\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Recall uses all actual positive cases as the denominator: \\[\\begin{aligned}\\mathrm{Recall}&=\\frac{\\mathrm{TP}}{\\mathrm{TP}+\\mathrm{FN}}\\\\&=\\frac{85}{85+15}=0.85=85\\%\\end{aligned}\\] The missed-case fraction is \\(15\\%\\), not the recall.",
+      "hint": "Decide which group defines the opportunity to detect the positive class."
+    },
+    {
+      "id": "ml-36",
+      "category": "Model Evaluation",
+      "concept": "F1-Score",
+      "learningObjective": "Explain the scope and limitation of positive-class F1 on imbalanced data.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "For an imbalanced binary task, the positive class is important and both precision and recall matter. Why can positive-class F1 be more informative than accuracy alone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It incorporates true negatives and guarantees a score that is independent of class prevalence."
+        },
+        {
+          "label": "B",
+          "text": "It combines positive-class precision and recall, so a low value of either limits the score."
+        },
+        {
+          "label": "C",
+          "text": "It estimates probability calibration directly, without requiring class predictions."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Writing precision as \\(P\\) and recall as \\(R\\), their harmonic mean for positive values is \\(F_1=\\frac{2PR}{P+R}\\). Unlike accuracy, it does not gain directly from many true negatives. It also ignores true negatives, depends on the task and threshold, and is not universally the best metric for every imbalanced problem.",
+      "hint": "Ask which mistakes a single score summarizes and which outcomes it omits."
+    },
+    {
+      "id": "ml-37",
+      "category": "Model Evaluation",
+      "concept": "Mean Absolute Error (MAE)",
+      "learningObjective": "Define MAE as the arithmetic mean of absolute prediction errors.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "What does Mean Absolute Error (MAE) calculate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The average of squared differences between predictions and actual values."
+        },
+        {
+          "label": "B",
+          "text": "The signed average difference between predictions and actual values."
+        },
+        {
+          "label": "C",
+          "text": "The average of absolute differences between predictions and actual values."
+        }
+      ],
+      "answer": "C",
+      "explanation": "MAE is \\(\\frac{1}{n}\\sum_{i=1}^{n}|y_i-\\hat{y}_i|\\). Taking absolute values prevents positive and negative errors from cancelling. Squaring errors gives MSE instead; the signed mean error measures directional bias and can be small despite large individual errors.",
+      "hint": "Compare how the candidate metrics treat the sign and size of a residual."
+    },
+    {
+      "id": "ml-38",
+      "category": "Model Evaluation",
+      "concept": "MSE vs RMSE",
+      "learningObjective": "Distinguish RMSE and MSE by their units and treatment of large residuals.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the main advantage of using Root Mean Squared Error (RMSE) over Mean Squared Error (MSE)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "RMSE is in the original target units, while MSE is in squared target units."
+        },
+        {
+          "label": "B",
+          "text": "RMSE weights large residuals linearly, while MSE weights them quadratically."
+        },
+        {
+          "label": "C",
+          "text": "RMSE is independent of the residual magnitudes, while MSE depends on them."
+        }
+      ],
+      "answer": "A",
+      "explanation": "RMSE is \\(\\sqrt{\\frac{1}{n}\\sum_{i=1}^{n}(y_i-\\hat{y}_i)^2}\\). The square root restores the original target units. RMSE still comes from squared residuals and remains sensitive to large errors; taking the root does not make it MAE.",
+      "hint": "Use dimensional analysis on the operations applied to a residual."
+    },
+    {
+      "id": "ml-39",
+      "category": "Model Evaluation",
+      "concept": "R-squared Interpretation",
+      "learningObjective": "Interpret standard R-squared relative to the evaluated-set mean baseline without inferring a cause.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "On a test set with a nonconstant numerical target, a regression model has standard \\(R^2=0.15\\), defined using the mean target of that test set as the constant baseline. Which conclusion follows from this score alone?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Exactly fifteen percent of the individual predictions match their target values."
+        },
+        {
+          "label": "B",
+          "text": "The score proves that model underfitting, rather than noise, caused the errors."
+        },
+        {
+          "label": "C",
+          "text": "Its squared-error sum is fifteen percent lower than that constant-mean baseline on this set."
+        }
+      ],
+      "answer": "C",
+      "explanation": "The standard definition is \\[R^2=1-\\frac{\\sum_i(y_i-\\hat{y}_i)^2}{\\sum_i(y_i-\\bar{y})^2}\\] Thus \\(R^2=0.15\\) means the model error sum is \\(0.85\\) times the baseline error sum. The score is not an accuracy percentage and does not diagnose underfitting: noise, weak predictors, misspecification, outliers, or other factors may contribute. A model worse than this baseline has negative \\(R^2\\).",
+      "hint": "Separate the quantity measured by a score from a diagnosis of why that score occurred."
+    },
+    {
+      "id": "ml-40",
+      "category": "Model Evaluation",
+      "concept": "Choosing the Right Metric",
+      "learningObjective": "Choose recall to measure coverage of actual fraud cases under a stated operational constraint.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Fraud occurs in \\(0.1\\%\\) of transactions. Subject to an acceptable false-alarm limit, the main evaluation priority is the fraction of all actual fraud cases flagged. Which metric directly measures that fraction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Precision"
+        },
+        {
+          "label": "B",
+          "text": "Recall"
+        },
+        {
+          "label": "C",
+          "text": "Specificity"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Recall divides detected fraud cases by all actual fraud cases. Precision measures how many flagged transactions are truly fraudulent, and specificity measures the fraction of actual negatives correctly rejected. Operational false-alarm constraints still matter; maximizing recall without them can favor flagging everything.",
+      "hint": "Identify the group whose detection rate is the stated priority."
+    },
+    {
+      "id": "ml-41",
+      "category": "Model Quality",
+      "concept": "Definition of Overfitting",
+      "learningObjective": "Define overfitting as learning sample-specific patterns that do not generalize well.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "What is overfitting?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The model cannot represent important relationships even in its training data."
+        },
+        {
+          "label": "B",
+          "text": "The model has been evaluated on a dataset different from the deployment population."
+        },
+        {
+          "label": "C",
+          "text": "The model fits training-specific details, including noise, that do not generalize well."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Overfitting occurs when a model fits sample-specific variation that is not reliable on fresh examples from the same target population. High training performance with poorer validation performance can be a symptom. Underfitting concerns missed learnable structure; distribution shift is a separate reason performance can deteriorate.",
+      "hint": "Distinguish repeatable signal from accidental details of one training sample."
+    },
+    {
+      "id": "ml-42",
+      "category": "Model Quality",
+      "concept": "Definition of Underfitting",
+      "learningObjective": "Define underfitting as failing to capture learnable task structure.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "Which description best captures underfitting?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The fitted model fails to capture important learnable relationships, even in its training data."
+        },
+        {
+          "label": "B",
+          "text": "The fitted model captures training-specific noise and transfers poorly to fresh examples."
+        },
+        {
+          "label": "C",
+          "text": "The fitted model faces a new population whose input-target relationship has changed."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Underfitting means that useful structure is not captured by the fitted model, for example because its capacity is too limited or its regularization is too strong. Low scores alone do not prove this: weak input signal, irreducible noise, or optimization problems must also be considered.",
+      "hint": "Compare failure to learn a pattern with learning details that fail to transfer."
+    },
+    {
+      "id": "ml-43",
+      "category": "Model Quality",
+      "concept": "Diagnosing Overfitting",
+      "learningObjective": "Diagnose a train-validation generalization gap after excluding specified alternatives.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A high-capacity classifier scores \\(99\\%\\) on training data but \\(60\\%\\) on a large independent validation set from the same population. Leakage, train/validation pipeline differences, and distribution shift have been ruled out. Which diagnosis is most consistent with this gap?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Underfitting caused by inadequate ability to fit the training examples."
+        },
+        {
+          "label": "B",
+          "text": "Overfitting to sample-specific details that fail to transfer to new examples."
+        },
+        {
+          "label": "C",
+          "text": "A uniform prediction offset that affects training and validation equally."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The model fits its training sample very well but transfers much less well to independent examples. Under the stated exclusions, this is most consistent with overfitting. In an uncontrolled setting, a gap alone would also require investigation of distribution differences, leakage, and preprocessing errors.",
+      "hint": "Compare fit on seen data with performance on independent examples, then use the stated exclusions."
+    },
+    {
+      "id": "ml-44",
+      "category": "Model Quality",
+      "concept": "Diagnosing Underfitting",
+      "learningObjective": "Choose a justified capacity experiment from controlled evidence of underfitting.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "On a balanced task with reliable labels, a converged decision stump scores \\(65\\%\\) on training and \\(64\\%\\) on validation. With the same features and preprocessing, a modestly deeper tree repeatedly exceeds \\(90\\%\\) on both during training-only cross-validation. What experiment is justified?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Restrict the stump further so it cannot split on any input feature."
+        },
+        {
+          "label": "B",
+          "text": "Keep its capacity unchanged and evaluate it repeatedly on the final test set."
+        },
+        {
+          "label": "C",
+          "text": "Allow additional tree depth and select the depth using training-only cross-validation."
+        }
+      ],
+      "answer": "C",
+      "explanation": "The stronger model on the same features provides evidence of learnable structure that the stump cannot represent. Testing modestly greater capacity with cross-validation is justified. The two low accuracy values alone would not establish underfitting or rule out noisy labels, weak features, or task difficulty.",
+      "hint": "Use the controlled comparison to identify which constraint is preventing a better fit."
+    },
+    {
+      "id": "ml-45",
+      "category": "Model Quality",
+      "concept": "Bias-Variance Tradeoff",
+      "learningObjective": "Describe the usual bias-variance direction when increasing unregularized model flexibility.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "In the usual bias-variance picture, increasing unregularized model flexibility on a fixed dataset tends to produce which trade-off?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Lower approximation bias but greater sensitivity to the sampled training data."
+        },
+        {
+          "label": "B",
+          "text": "Higher approximation bias but less sensitivity to the sampled training data."
+        },
+        {
+          "label": "C",
+          "text": "Lower approximation bias with a guarantee of unchanged sampling sensitivity."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A more flexible model can represent more relationships, often reducing approximation bias. It can also react more strongly to sample-specific fluctuations, increasing variance. These are common tendencies, not universal laws for all algorithms, regularization settings, and dataset sizes.",
+      "hint": "Think separately about systematic approximation error and sensitivity to the training sample."
+    },
+    {
+      "id": "ml-46",
+      "category": "Model Quality",
+      "concept": "Regularization",
+      "learningObjective": "Explain coefficient regularization as a constraint that can reduce overfitting risk.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the primary purpose of regularization techniques (like L1/Lasso or L2/Ridge) in Machine Learning?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To tune the number of validation examples used to compare candidate models."
+        },
+        {
+          "label": "B",
+          "text": "To discourage large fitted coefficients and potentially reduce overfitting risk."
+        },
+        {
+          "label": "C",
+          "text": "To remove the need for held-out evaluation after fitting the model."
+        }
+      ],
+      "answer": "B",
+      "explanation": "L1 and L2 coefficient penalties trade off data fit against coefficient size. A suitable penalty can reduce sensitivity to training noise and improve generalization. Excessive regularization can underfit, so the penalty strength should be selected with validation data rather than assumed to improve performance.",
+      "hint": "Consider the trade-off between fitting observed residuals and restricting the fitted coefficients."
+    },
+    {
+      "id": "ml-47",
+      "category": "Model Quality",
+      "concept": "Cross-Validation",
+      "learningObjective": "Select leakage-safe stratified cross-validation for independent labeled examples.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "You have \\(500\\) independent labeled examples, enough from each class for five folds, with no repeated subjects or time ordering. Which approach evaluates candidates across multiple held-out subsets while using most development examples for each fit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Use five-fold stratified cross-validation and refit preprocessing inside each training fold."
+        },
+        {
+          "label": "B",
+          "text": "Fit preprocessing once on all examples, then cross-validate only the classifier."
+        },
+        {
+          "label": "C",
+          "text": "Fit the whole pipeline on all examples and report its training score."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each fold is held out while the pipeline is fitted on the other folds; stratification approximately preserves class proportions. Learned preprocessing must also be fitted only within the training fold. Grouped or temporal data would need an appropriate splitting strategy, and final test data stays outside model selection.",
+      "hint": "Consider whether both the model and any fitted preprocessing are assessed on genuinely held-out examples."
+    },
+    {
+      "id": "ml-48",
+      "category": "Model Quality",
+      "concept": "Strategies to Fix Overfitting",
+      "learningObjective": "Identify which tree-capacity change does not act as an additional restriction against overfitting.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "For a decision tree already overfitting its training sample, which change expands its permitted capacity instead of restricting it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Raise the minimum number of examples required in each leaf."
+        },
+        {
+          "label": "B",
+          "text": "Lower the maximum permitted depth of the tree."
+        },
+        {
+          "label": "C",
+          "text": "Raise the maximum permitted depth of the tree."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Increasing maximum depth permits more detailed splits and therefore does not impose an additional restriction against overfitting. Larger minimum leaf sizes and lower depth limits restrict capacity. Whether a particular change improves validation performance must still be checked.",
+      "hint": "Check whether each change restricts or expands the set of allowable fitted trees."
+    },
+    {
+      "id": "ml-49",
+      "category": "Feature Engineering",
+      "concept": "Feature Selection",
+      "learningObjective": "Distinguish selection of original feature columns from extraction and scaling.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "What does the feature selection process do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Construct new features by combining or transforming existing feature columns."
+        },
+        {
+          "label": "B",
+          "text": "Choose a subset of existing feature columns without replacing them with new coordinates."
+        },
+        {
+          "label": "C",
+          "text": "Rescale the numerical values of every original feature column."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Feature selection retains a subset of existing input columns. Feature extraction, such as PCA, creates new coordinates from the original features; scaling changes their numerical representation. A selection method need not find the globally best subset, and supervised selection must not use held-out labels.",
+      "hint": "Ask whether the resulting columns are retained inputs or newly constructed coordinates."
+    },
+    {
+      "id": "ml-50",
+      "category": "Feature Engineering",
+      "concept": "Feature Extraction",
+      "learningObjective": "Recognize PCA components as extracted coordinates rather than selected raw features.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "PCA replaces \\(100\\) centered pixel features with \\(10\\) principal-component coordinates. Why is this feature extraction rather than feature selection?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It keeps ten original pixel columns unchanged and discards the remaining columns."
+        },
+        {
+          "label": "B",
+          "text": "It creates ten coordinates that are linear combinations of the original pixel features."
+        },
+        {
+          "label": "C",
+          "text": "It only rescales all original pixel columns while keeping the same dimensionality."
+        }
+      ],
+      "answer": "B",
+      "explanation": "PCA component coordinates are projections onto learned directions, so they generally combine many original pixels. Feature selection would retain original columns instead. PCA orders components by training variance, not by a guarantee of retaining the most task-relevant information.",
+      "hint": "Ask whether a retained coordinate corresponds to an unchanged original column."
+    },
+    {
+      "id": "ml-51",
+      "category": "Feature Engineering",
+      "concept": "Impact of Irrelevant Features",
+      "learningObjective": "Describe possible computational and statistical costs of irrelevant input features.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What can happen when many irrelevant features are added, especially with limited training data?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Training can become more expensive and overfitting risk can increase without adding useful signal."
+        },
+        {
+          "label": "B",
+          "text": "The added dimensions necessarily reduce overfitting risk because they contain more numerical values."
+        },
+        {
+          "label": "C",
+          "text": "The added features become useful predictors simply because the model receives them together."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Irrelevant features can increase computation and create more opportunities to fit random sample patterns. This is a risk, not an inevitable outcome: regularization or robust feature-selection methods can sometimes suppress their influence. More columns do not necessarily mean more predictive information.",
+      "hint": "Separate adding predictive signal from merely increasing the input dimension."
+    },
+    {
+      "id": "ml-52",
+      "category": "Feature Engineering",
+      "concept": "Feature Correlation",
+      "learningObjective": "Distinguish coefficient instability from predictive quality under multicollinearity in OLS.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Why can strongly correlated input features make ordinary least-squares regression coefficients difficult to interpret?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They force the fitted model to ignore every correlated input feature."
+        },
+        {
+          "label": "B",
+          "text": "They guarantee that the model predictions are inaccurate on every held-out example."
+        },
+        {
+          "label": "C",
+          "text": "Individual coefficient estimates can be unstable even when their combined predictions remain useful."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Near-linear dependence among input columns makes it hard to separate their contributions within the fitted equation; small data changes can greatly alter individual coefficients. Predictions may remain comparatively stable. Exact linear dependence can make coefficients nonunique, and predictive coefficients do not establish causal effects.",
+      "hint": "Distinguish interpreting an individual fitted coefficient from evaluating the combined prediction."
+    },
+    {
+      "id": "ml-53",
+      "category": "Feature Engineering",
+      "concept": "Feature Engineering Example",
+      "learningObjective": "Recognize construction of a calendar-derived feature as feature engineering.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Which of the following is an example of feature engineering?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Splitting the dataset into \\(80\\%\\) training and \\(20\\%\\) testing."
+        },
+        {
+          "label": "B",
+          "text": "Extracting 'day of the week' from the available date input."
+        },
+        {
+          "label": "C",
+          "text": "Increasing the number of training epochs while leaving the inputs unchanged."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Extracting day of the week from a date creates an input representation that may capture weekly traffic patterns. A train-test split changes evaluation allocation, while changing the number of epochs changes training. The date used must be information available at prediction time.",
+      "hint": "Ask which operation changes the representation of the inputs rather than the training procedure."
+    },
+    {
+      "id": "ml-54",
+      "category": "Feature Engineering",
+      "concept": "Curse of Dimensionality",
+      "learningObjective": "Explain sparse neighborhoods and reduced distance contrast as possible high-dimensional KNN challenges.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "With a fixed sample size, why can Euclidean KNN become less reliable as feature dimensionality grows, even after scaling?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The same observations necessarily form more densely sampled local neighborhoods."
+        },
+        {
+          "label": "B",
+          "text": "Neighborhoods can become sparse and distance contrast can deteriorate."
+        },
+        {
+          "label": "C",
+          "text": "Feature scaling guarantees that relative distance contrast is unchanged as dimensions grow."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Higher-dimensional representations can require many more observations to support informative local neighborhoods. Under some distributions, nearest and farther distances also become less distinct. This curse-of-dimensionality concern depends on the data structure, representation, metric, and sample size; distances do not universally become meaningless or equal.",
+      "hint": "Consider how much of a larger feature space is covered by the same finite sample."
+    },
+    {
+      "id": "ml-55",
+      "category": "Model Training",
+      "concept": "Loss Function",
+      "learningObjective": "State the role of a supervised prediction loss in model fitting.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "What role does a prediction-loss function play during supervised model training?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It directly specifies how many hidden layers the model must have."
+        },
+        {
+          "label": "B",
+          "text": "It allocates examples between the training and validation sets."
+        },
+        {
+          "label": "C",
+          "text": "It assigns a numerical penalty to prediction errors for the fitting objective."
+        }
+      ],
+      "answer": "C",
+      "explanation": "A supervised prediction loss quantifies how costly a prediction is relative to its target. The training objective commonly aggregates those losses and may add regularization. The loss and a reported evaluation metric need not be the same quantity, and a lower training loss alone does not prove better generalization.",
+      "hint": "Separate the objective being optimized from choices about architecture or data allocation."
+    },
+    {
+      "id": "ml-56",
+      "category": "Model Training",
+      "concept": "Gradient Descent",
+      "learningObjective": "Identify the negative-gradient direction in a basic gradient-descent update.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For a differentiable objective, how does basic gradient descent choose its parameter-update direction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It moves along the positive gradient of the current objective."
+        },
+        {
+          "label": "B",
+          "text": "It replaces all parameters with the exact global minimizer in one step."
+        },
+        {
+          "label": "C",
+          "text": "It moves along the negative gradient, multiplied by a learning rate."
+        }
+      ],
+      "answer": "C",
+      "explanation": "The update is \\(\\theta_{t+1}=\\theta_t-\\eta\\nabla L(\\theta_t)\\), with learning rate \\(\\eta>0\\). A sufficiently small step can reduce a smooth objective locally. Gradient descent does not in general guarantee reaching a global minimum, and an unsuitable step size can increase the objective.",
+      "hint": "Recall that a gradient describes the local direction of fastest increase."
+    },
+    {
+      "id": "ml-57",
+      "category": "Model Training",
+      "concept": "Learning Rate",
+      "learningObjective": "Relate an excessive gradient-descent learning rate to unstable optimization.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "With the same model and data, an overly large fixed learning rate causes the training loss to oscillate and then grow. Which explanation is most consistent with this behavior?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Updates can overshoot useful low-loss regions and make optimization unstable."
+        },
+        {
+          "label": "B",
+          "text": "Updates are too small to produce any appreciable parameter movement."
+        },
+        {
+          "label": "C",
+          "text": "The model has reached a stable minimum because any growing loss signals convergence."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A large learning rate can move parameters too far for the local gradient approximation to guide stable improvement, producing oscillation or divergence. Tiny updates would instead suggest slow progress. Loss growth alone is not proof of convergence, and the usable rate depends on the objective and optimizer.",
+      "hint": "Compare what happens when a parameter step crosses the low-loss region repeatedly."
+    },
+    {
+      "id": "ml-58",
+      "category": "Model Training",
+      "concept": "Learning Rate Too Small",
+      "learningObjective": "Identify slow finite-budget progress as a primary consequence of a very small learning rate.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "For otherwise stable gradient descent, what is a primary drawback of an unnecessarily small positive learning rate under a fixed training budget?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It necessarily causes larger jumps across the minimum on each update."
+        },
+        {
+          "label": "B",
+          "text": "It guarantees convergence to the best global minimum within fewer updates."
+        },
+        {
+          "label": "C",
+          "text": "It can produce very slow progress and leave optimization incomplete within the budget."
+        }
+      ],
+      "answer": "C",
+      "explanation": "The learning rate scales each gradient-based update. If it is unnecessarily small, useful parameter changes may require many more iterations. This does not imply a general rule that a smaller rate causes local-minimum trapping, nor does it guarantee superior generalization.",
+      "hint": "Consider the number of updates needed when each parameter change is very small."
+    },
+    {
+      "id": "ml-59",
+      "category": "Model Training",
+      "concept": "Epochs and Batches",
+      "learningObjective": "Define an epoch in a conventional training loop that traverses the dataset once per pass.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "In a conventional training loop that traverses every training example once per pass, what is one epoch?",
+      "options": [
+        {
+          "label": "A",
+          "text": "One complete pass through the training dataset."
+        },
+        {
+          "label": "B",
+          "text": "One parameter update from a single mini-batch."
+        },
+        {
+          "label": "C",
+          "text": "One sequence of all training passes before fitting ends."
+        }
+      ],
+      "answer": "A",
+      "explanation": "An epoch is one pass over the training dataset in this conventional setup. That pass can contain many mini-batches and parameter updates. Sampling with replacement or streaming setups need their own explicit epoch convention, so the stated traversal assumption matters.",
+      "hint": "Distinguish a unit of dataset coverage from a unit of parameter updating."
+    },
+    {
+      "id": "ml-60",
+      "category": "Neural Network Fundamentals",
+      "concept": "Neural Network Structure",
+      "learningObjective": "Identify the layer order in a simple feed-forward network with hidden layers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "What is the layer order for prediction in a simple feed-forward neural network that includes hidden layers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Output layer, then hidden layers, then input layer."
+        },
+        {
+          "label": "B",
+          "text": "Input layer, then hidden layers, then output layer."
+        },
+        {
+          "label": "C",
+          "text": "Hidden layers, then input layer, then output layer."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A feed-forward prediction starts from input values, processes them through hidden transformations, and produces outputs. Backpropagation follows dependencies in the reverse direction to compute gradients; it is a different computation. This question describes a simple feed-forward architecture.",
+      "hint": "Think about the direction of prediction computation rather than gradient computation."
+    },
+    {
+      "id": "ml-61",
+      "category": "Neural Network Fundamentals",
+      "concept": "Neurons and Weights",
+      "learningObjective": "Describe a dense-neuron weight as a multiplier in its pre-activation weighted sum.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a dense neuron, what role does a weight attached to an input play?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It sets an input-independent intercept for the whole neuron."
+        },
+        {
+          "label": "B",
+          "text": "It multiplies that input before its contribution enters the weighted sum."
+        },
+        {
+          "label": "C",
+          "text": "It selects the optimization learning rate for every neuron."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A typical dense neuron computes \\(z=\\sum_j w_jx_j+b\\), then applies an activation. Each \\(w_j\\) controls the signed contribution of its input to \\(z\\). Weight magnitude alone is not a reliable global feature-importance measure because scales, other weights, and nonlinearities also matter.",
+      "hint": "Examine the term linking one input coordinate to the pre-activation value."
+    },
+    {
+      "id": "ml-62",
+      "category": "Neural Network Fundamentals",
+      "concept": "Activation Functions",
+      "learningObjective": "Explain why composing affine layers without nonlinearities remains affine.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A dense feed-forward network uses only affine transformations and identity activations in every layer, including the output. Why can adding more such layers fail to provide nonlinear modeling capacity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The composition remains a single affine transformation of the input."
+        },
+        {
+          "label": "B",
+          "text": "Any composition of affine transformations becomes a nonlinear function."
+        },
+        {
+          "label": "C",
+          "text": "Extra layers change the input labels before the network is fitted."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substituting the first layer into the second gives \\[\\begin{aligned}h&=W_1x+b_1\\\\y&=W_2h+b_2\\\\&=(W_2W_1)x+(W_2b_1+b_2)\\end{aligned}\\] The result is still affine. Adding further affine layers has the same property. Nonlinear hidden activations can expand representational capacity, although they do not by themselves guarantee successful training.",
+      "hint": "Think about composing two linear-plus-intercept transformations."
+    },
+    {
+      "id": "ml-63",
+      "category": "Neural Network Fundamentals",
+      "concept": "ReLU Activation Function",
+      "learningObjective": "Evaluate the ReLU activation at a negative input.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "What is the output of ReLU when its input is \\(-5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(-5\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ReLU is \\(f(x)=\\max\\{0,x\\}\\), so \\(f(-5)=\\max\\{0,-5\\}=0\\). It preserves positive inputs and returns zero for negative inputs; it does not convert the input to a probability.",
+      "hint": "Apply the activation rule to the sign of the input without using a probability interpretation."
+    },
+    {
+      "id": "ml-64",
+      "category": "Neural Network Fundamentals",
+      "concept": "Sigmoid Activation Function",
+      "learningObjective": "Choose a sigmoid for a single-logit binary-classification probability estimate.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A binary neural classifier has one real-valued output logit and should transform it into an estimated positive-class probability. Which output activation fits this setup?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ReLU"
+        },
+        {
+          "label": "B",
+          "text": "Sigmoid"
+        },
+        {
+          "label": "C",
+          "text": "Linear"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A sigmoid maps a scalar logit \\(z\\) to \\(\\frac{1}{1+e^{-z}}\\), which is in \\((0,1)\\) for finite \\(z\\). ReLU is unbounded above, and a linear activation is unrestricted. A bounded output alone does not guarantee that the estimated probabilities are calibrated.",
+      "hint": "Check the mathematical range required of the transformed scalar output."
+    },
+    {
+      "id": "ml-65",
+      "category": "Neural Network Fundamentals",
+      "concept": "Softmax Activation Function",
+      "learningObjective": "Choose softmax for one probability distribution over mutually exclusive classes.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A neural classifier predicts exactly one of several mutually exclusive classes. It has one output logit per class and needs a probability distribution across those classes. Which output activation is appropriate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ReLU"
+        },
+        {
+          "label": "B",
+          "text": "Softmax"
+        },
+        {
+          "label": "C",
+          "text": "Linear"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Softmax gives \\(p_i=\\frac{e^{z_i}}{\\sum_j e^{z_j}}\\), so the class probabilities sum to \\(1\\). Independent sigmoid outputs are typically used for multilabel tasks instead. Softmax matches this mutually exclusive single-label setup; it does not ensure calibrated predictions.",
+      "hint": "Check whether the classes can occur together or must be alternatives."
+    },
+    {
+      "id": "ml-66",
+      "category": "Neural Network Fundamentals",
+      "concept": "Forward Propagation",
+      "learningObjective": "Describe a dense-network forward pass separately from gradient computation and optimizer updates.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What happens during the prediction computation of a dense feed-forward network?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Loss gradients are propagated backward through the layers to determine parameter derivatives."
+        },
+        {
+          "label": "B",
+          "text": "Inputs are transformed through the fitted layers to produce the current output prediction."
+        },
+        {
+          "label": "C",
+          "text": "The optimizer applies parameter updates using gradients computed for the current loss."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A forward pass evaluates the current network from inputs to outputs using its layer operations. During training, the prediction can then be compared with targets to form a loss. Backpropagation computes gradients, and the optimizer applies updates; neither is the forward prediction computation itself.",
+      "hint": "Distinguish evaluating the current fitted function from changing its parameters."
+    },
+    {
+      "id": "ml-67",
+      "category": "Neural Network Fundamentals",
+      "concept": "Backpropagation",
+      "learningObjective": "Identify backpropagation as gradient computation rather than the optimizer update.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is the primary purpose of the backpropagation algorithm?",
+      "options": [
+        {
+          "label": "A",
+          "text": "To choose the architecture with the best validation score automatically."
+        },
+        {
+          "label": "B",
+          "text": "To update every weight directly without computing any derivative."
+        },
+        {
+          "label": "C",
+          "text": "To compute loss gradients with respect to the network parameters for an optimizer to use."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Backpropagation efficiently computes parameter gradients through the chain rule. An optimizer such as gradient descent then uses those gradients to update parameters. Gradient computation and parameter updating are distinct steps, and neither automatically chooses the architecture.",
+      "hint": "Separate information required for an update from the update operation itself."
+    },
+    {
+      "id": "ml-68",
+      "category": "Machine Learning Fundamentals",
+      "concept": "Parameters vs Hyperparameters",
+      "learningObjective": "Identify training configuration settings as hyperparameters rather than fitted coefficients.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "In ordinary model fitting, which choice contains hyperparameters rather than learned model coefficients?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The weights and bias values fitted in a neural-network layer."
+        },
+        {
+          "label": "B",
+          "text": "The learning rate and maximum permitted depth of a decision tree."
+        },
+        {
+          "label": "C",
+          "text": "The slope coefficients and intercept fitted in ordinary linear regression."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A learning rate and a tree-depth limit configure fitting or model capacity; neural-network weights and linear-regression coefficients are fitted parameters. Hyperparameters can be chosen through automated validation searches, so they need not be manually selected or completely independent of data.",
+      "hint": "Ask which values belong to the fitted model and which control the fitting procedure."
+    },
+    {
+      "id": "ml-69",
+      "category": "Data and Preprocessing",
+      "concept": "Train-Test Split",
+      "learningObjective": "Compute a concrete train-test allocation without treating the chosen fraction as a universal rule.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "You have \\(1{,}000\\) independent examples. You decide to reserve \\(200\\) for a final test set and use the remaining examples for development, including internal validation. What is the development/test split?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(50\\%\\) development and \\(50\\%\\) test."
+        },
+        {
+          "label": "B",
+          "text": "\\(80\\%\\) development and \\(20\\%\\) test."
+        },
+        {
+          "label": "C",
+          "text": "\\(10\\%\\) development and \\(90\\%\\) test."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The test fraction is \\(\\frac{200}{1{,}000}=20\\%\\), leaving \\(800\\) examples, or \\(80\\%\\), for development. This follows from the chosen allocation, not a universal rule. Suitable splits depend on sample size, class counts, grouping, time order, and evaluation goals.",
+      "hint": "Relate the requested held-out count to the total number of examples."
+    },
+    {
+      "id": "ml-70",
+      "category": "Data and Preprocessing",
+      "concept": "Dangers of Training on the Test Set",
+      "learningObjective": "Explain why test-guided tuning invalidates the role of a final untouched evaluation set.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Why should a dataset reserved for final test evaluation be excluded from model fitting and hyperparameter selection?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Because a test dataset is required to contain no target labels at all."
+        },
+        {
+          "label": "B",
+          "text": "Because using it to guide development can bias its score as an estimate of fresh-data performance."
+        },
+        {
+          "label": "C",
+          "text": "Because a test dataset cannot use the same input-feature representation as the training data."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using test outcomes to fit or select a model makes the final choice depend on those outcomes, which can make its reported score optimistic. Keep this evaluation role untouched during development. If that data is later repurposed for fitting, a new independent final assessment is needed.",
+      "hint": "Ask whether the evaluation examples have influenced which model was finally selected."
+    },
+    {
+      "id": "ml-71",
+      "category": "Supervised Learning",
+      "concept": "Regression Algorithm Examples",
+      "learningObjective": "Recognize standard algorithm formulations for numerical regression.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "Which of the following is an algorithm inherently designed for regression tasks?",
+      "options": [
+        {
+          "label": "A",
+          "text": "K-Means Clustering"
+        },
+        {
+          "label": "B",
+          "text": "Naive Bayes"
+        },
+        {
+          "label": "C",
+          "text": "Linear Regression"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Standard linear regression fits predictions for a numerical target. K-means groups unlabeled examples, and standard Naive Bayes is a classification method. Other algorithm families, including decision trees and support vector machines, have both regression and classification formulations.",
+      "hint": "Match each method to the kind of target or structure its standard form models."
+    },
+    {
+      "id": "ml-72",
+      "category": "Supervised Learning",
+      "concept": "Classification Algorithm Examples",
+      "learningObjective": "Recognize a classification-tree formulation without implying all trees are classifiers.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "Which option is a supervised classification method in the stated formulation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A decision tree trained to predict a class label."
+        },
+        {
+          "label": "B",
+          "text": "PCA fitted to find high-variance projection directions."
+        },
+        {
+          "label": "C",
+          "text": "K-means fitted to discover groups of similar examples."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A classification tree is fitted to target-class labels. Decision trees also have regression formulations, so the word tree alone does not restrict the task to classification. Standard PCA and K-means are unsupervised methods in the formulations listed here.",
+      "hint": "Compare whether each method is fitted to target-class labels or to unlabeled structure."
+    },
+    {
+      "id": "ml-73",
+      "category": "Supervised Learning",
+      "concept": "Interpreting Linear Regression Coefficients",
+      "learningObjective": "Interpret a main-effect linear-regression coefficient as a conditional prediction difference.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A fitted linear regression uses lot size as an untransformed main-effect feature, with no interaction or polynomial terms involving it. Its coefficient is \\(+50\\). What happens to the predicted price when lot size increases by one recorded unit and the other features stay fixed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The predicted price increases by fifty recorded target units."
+        },
+        {
+          "label": "B",
+          "text": "The predicted price becomes fifty target units regardless of the other features."
+        },
+        {
+          "label": "C",
+          "text": "The predicted price increases by fifty percent of its previous value."
+        }
+      ],
+      "answer": "A",
+      "explanation": "In the fitted equation, changing lot size by \\(1\\) changes its term by \\(50\\cdot 1=50\\), while the other terms remain fixed. This is a difference in the model prediction, not proof that a real intervention on lot size would cause that change. Interactions or transformed inputs would require a different interpretation.",
+      "hint": "Change one input by one unit while leaving the remaining inputs fixed in the fitted equation."
+    },
+    {
+      "id": "ml-74",
+      "category": "Supervised Learning",
+      "concept": "Unscaled Features in KNN",
+      "learningObjective": "Compute the unequal feature contributions to an unscaled squared Euclidean distance.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "KNN uses unscaled Euclidean distance on annual salary in raw USD, ranging from \\(40{,}000\\) to \\(200{,}000\\), and age in years, ranging from \\(18\\) to \\(80\\). For one pair, salary differs by \\(10{,}000\\) and age by \\(10\\). Which contribution is larger in the squared distance?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The age contribution is larger because ages are measured in smaller units."
+        },
+        {
+          "label": "B",
+          "text": "The salary contribution is one million times the age contribution."
+        },
+        {
+          "label": "C",
+          "text": "The two contributions are equal because there are two input features."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The squared salary and age contributions, followed by their ratio, are \\[\\begin{aligned}(10{,}000)^2&=100{,}000{,}000\\\\10^2&=100\\\\\\frac{100{,}000{,}000}{100}&=1{,}000{,}000\\end{aligned}\\] Salary dominates this particular raw numerical distance. Fit an appropriate scaler on training data when such unit effects should not determine neighborhood selection.",
+      "hint": "Compare squared coordinate differences before taking the square root."
+    },
+    {
+      "id": "ml-75",
+      "category": "Supervised Learning",
+      "concept": "Choosing Regression vs Classification",
+      "learningObjective": "Choose binary classification for a labeled yes/no churn prediction task.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Historical customer records include whether each customer cancelled the subscription in the following month. You want to predict Yes or No for a current customer using information available today. Which task formulation fits?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Binary classification using the historical churn outcomes as targets."
+        },
+        {
+          "label": "B",
+          "text": "Numerical regression treating each churn category as an unrestricted measured amount."
+        },
+        {
+          "label": "C",
+          "text": "Unsupervised clustering to recover groups without using the churn targets."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The desired target is one of two categories, and historical target labels are available, so supervised binary classification fits this task. Features must be available before the month being predicted. Regression can estimate probabilities in some formulations, but treating these categories as an unrestricted measured amount does not match the stated formulation.",
+      "hint": "Identify both the requested output type and whether historical target outcomes are available."
+    },
+    {
+      "id": "ml-76",
+      "category": "Unsupervised Learning",
+      "concept": "Supervised vs Unsupervised Data Needs",
+      "learningObjective": "Distinguish labeled-target training from unsupervised structure discovery.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In the standard distinction between supervised and unsupervised learning, how is target information used?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Supervised fitting uses supplied input-target pairs; unsupervised fitting does not require those target labels."
+        },
+        {
+          "label": "B",
+          "text": "Supervised fitting requires numerical inputs; unsupervised fitting requires categorical inputs."
+        },
+        {
+          "label": "C",
+          "text": "Supervised fitting uses only a test set; unsupervised fitting uses only a training set."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Supervised learning fits to supplied targets, while unsupervised learning discovers structure without needing those target labels for fitting. Both can use numerical or suitably encoded categorical inputs. Labels may still be available for later evaluation of an unsupervised result.",
+      "hint": "Compare what the algorithm is expected to infer from the supplied training information."
+    },
+    {
+      "id": "ml-77",
+      "category": "Unsupervised Learning",
+      "concept": "K-Means and Outliers",
+      "learningObjective": "Explain K-means sensitivity to extreme points through squared distances and mean centroids.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Why can extreme outliers strongly influence standard Euclidean K-means?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Its centroid update uses a coordinate-wise median, which amplifies extreme values."
+        },
+        {
+          "label": "B",
+          "text": "Its objective gives all observations the same distance contribution regardless of location."
+        },
+        {
+          "label": "C",
+          "text": "Its squared-distance objective and mean-based centroids can give extreme points large influence."
+        }
+      ],
+      "answer": "C",
+      "explanation": "A very distant point can contribute greatly to the squared-distance objective and pull the arithmetic-mean centroid toward itself. It may also affect assignments or attract a separate cluster. This is a sensitivity of the standard objective, not a claim that every outlier always ruins every clustering result.",
+      "hint": "Consider how a far-away observation affects a sum of squared deviations."
+    },
+    {
+      "id": "ml-78",
+      "category": "Unsupervised Learning",
+      "concept": "PCA and Variance",
+      "learningObjective": "Identify the first principal-component direction under a unit-norm variance criterion.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "For centered data in standard PCA, what characterizes the first principal-component direction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is a unit direction maximizing the variance of the projected training data."
+        },
+        {
+          "label": "B",
+          "text": "It is a unit direction minimizing the variance of the projected training data."
+        },
+        {
+          "label": "C",
+          "text": "It is always the original feature column with the largest individual variance."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Among unit-length directions, PC1 maximizes projected training variance. The unit-length condition prevents arbitrary scaling from inflating the variance. PC1 generally combines original features and need not maximize predictive value for a separate target. Tied maximal variances can make the direction nonunique.",
+      "hint": "Remember that comparing projection directions requires controlling their length."
+    },
+    {
+      "id": "ml-79",
+      "category": "Unsupervised Learning",
+      "concept": "Anomaly Detection Use Case",
+      "learningObjective": "Identify a label-scarce transaction-monitoring task suited to anomaly detection.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "Which task is naturally suited to anomaly detection when confirmed fraud labels are scarce?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Predict a numerical house price from labeled historical sales."
+        },
+        {
+          "label": "B",
+          "text": "Flag transactions that depart strongly from a customer's normal spending behavior."
+        },
+        {
+          "label": "C",
+          "text": "Organize news articles into groups representing their ordinary recurring topics."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Detecting departures from a spending reference is an anomaly-detection task and can support review when fraud labels are scarce. Unusual transactions are not necessarily fraudulent, and fraud is not always unusual. Price prediction is supervised regression; ordinary topic grouping is clustering.",
+      "hint": "Identify whether the task predicts a known target, discovers ordinary groups, or flags departures from a reference."
+    },
+    {
+      "id": "ml-80",
+      "category": "Unsupervised Learning",
+      "concept": "Does Clustering Require Labels?",
+      "learningObjective": "Explain why external labels can evaluate clustering without being required for its fitting.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A researcher fits standard K-means using only input features, then compares its clusters with known species labels. Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "K-means required those species labels to calculate its centroids during fitting."
+        },
+        {
+          "label": "B",
+          "text": "The labels can support external evaluation even though K-means did not require them for fitting."
+        },
+        {
+          "label": "C",
+          "text": "Access to species labels makes any feature-only K-means fit a supervised classifier."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Standard K-means forms clusters from features without using target-class labels. Separate labels can be used to evaluate agreement with an external grouping. Merely possessing labels does not turn this fit into supervised classification, and cluster IDs are not inherently species labels.",
+      "hint": "Separate the information used by a fitting algorithm from information used to assess its output."
+    },
+    {
+      "id": "ml-81",
+      "category": "Model Evaluation",
+      "concept": "Comparing Precision and Recall Across Models",
+      "learningObjective": "Compare precision and positive-case coverage between two spam classifiers.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "The same validation set contains \\(100\\) actual spam emails. Model X flags \\(60\\) spam and \\(15\\) legitimate emails; Model Y flags \\(80\\) spam and \\(40\\) legitimate emails. Which statement about precision is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Model X has higher precision, although Model Y detects more of the actual spam."
+        },
+        {
+          "label": "B",
+          "text": "Model Y has higher precision because it detects more of the actual spam."
+        },
+        {
+          "label": "C",
+          "text": "The two models have equal precision because they use the same validation set."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Precision uses all flagged emails as its denominator. \\[\\begin{aligned}\\mathrm{Precision}_X&=\\frac{60}{60+15}=0.80\\\\\\mathrm{Precision}_Y&=\\frac{80}{80+40}=\\frac{2}{3}\\approx 0.667\\end{aligned}\\] Model Y has higher recall, \\(80\\%\\) versus \\(60\\%\\), but Model X has higher precision. Detecting more true positives alone does not guarantee greater precision.",
+      "hint": "Keep the predicted-positive population separate from the actual-positive population."
+    },
+    {
+      "id": "ml-82",
+      "category": "Model Evaluation",
+      "concept": "Inferring False Negatives from Recall",
+      "learningObjective": "Infer the missed-positive count from a recall value and true-positive count.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A classifier has recall \\(0.80\\) and correctly flags \\(40\\) actual positive cases. How many actual positive cases did it miss?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(50\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Recall is \\(\\frac{\\mathrm{TP}}{\\mathrm{TP}+\\mathrm{FN}}\\). Therefore, \\[\\begin{aligned}\\mathrm{TP}+\\mathrm{FN}&=\\frac{40}{0.80}=50\\\\\\mathrm{FN}&=50-40=10\\end{aligned}\\] Multiplying the true-positive count by the missed fraction would use the wrong reference population.",
+      "hint": "First determine the total actual-positive population, then account for the detected cases."
+    },
+    {
+      "id": "ml-83",
+      "category": "Model Evaluation",
+      "concept": "Best Regression Evaluation Metric",
+      "learningObjective": "Select MAE when the reporting goal is the mean absolute error in target units.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "You want to report the arithmetic mean of the absolute magnitudes of house-price prediction errors in USD. Which metric directly matches that goal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Root mean squared error (RMSE)"
+        },
+        {
+          "label": "B",
+          "text": "Mean absolute error (MAE)"
+        },
+        {
+          "label": "C",
+          "text": "Coefficient of determination (R-squared)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "MAE averages \\(|y_i-\\hat{y}_i|\\), so it directly reports mean absolute error in USD. RMSE is also in USD but uses squared errors before taking a root. Standard \\(R^2\\) compares squared error with a constant-mean baseline, is dimensionless, is not an accuracy percentage, and can be negative.",
+      "hint": "Match the requested aggregation and units, rather than choosing by the metric name alone."
+    },
+    {
+      "id": "ml-84",
+      "category": "Model Evaluation",
+      "concept": "Why Accuracy Fails on Imbalanced Data",
+      "learningObjective": "Evaluate the majority-class accuracy baseline and its failure to detect positives.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A validation set is \\(99\\%\\) negative and \\(1\\%\\) positive. Why is an always-negative classifier inadequate if detecting positive cases matters?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It achieves \\(99\\%\\) accuracy but detects none of the actual positive cases."
+        },
+        {
+          "label": "B",
+          "text": "It achieves \\(1\\%\\) accuracy because only the minority-class fraction counts as correct."
+        },
+        {
+          "label": "C",
+          "text": "It achieves \\(99\\%\\) positive-class recall because most observations are negative."
+        }
+      ],
+      "answer": "A",
+      "explanation": "All actual negatives are correctly predicted, giving \\(99\\%\\) accuracy. Every actual positive is missed, so recall is \\(0\\). Accuracy is mathematically valid, but used alone it can hide this failure on an operationally important minority class.",
+      "hint": "Count what happens separately to examples of each actual class."
+    },
+    {
+      "id": "ml-85",
+      "category": "Model Evaluation",
+      "concept": "Recall Optimization Under a False-Positive Constraint",
+      "learningObjective": "Select the highest-recall screening threshold that satisfies a false-positive constraint.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In a hypothetical screening validation set, there are \\(100\\) actual positive cases. A high threshold gives \\(70\\) true positives and \\(5\\) false positives; a medium threshold gives \\(85\\) and \\(10\\); a low threshold gives \\(90\\) and \\(20\\). You require at most \\(10\\) false positives and then maximize recall. Which threshold should be chosen?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The low threshold."
+        },
+        {
+          "label": "B",
+          "text": "The high threshold."
+        },
+        {
+          "label": "C",
+          "text": "The medium threshold."
+        }
+      ],
+      "answer": "C",
+      "explanation": "The low threshold violates the false-positive limit because \\(20>10\\). The high and medium thresholds satisfy it; their recalls are \\(\\frac{70}{100}=70\\%\\) and \\(\\frac{85}{100}=85\\%\\). The medium threshold therefore has the highest recall among feasible choices. Threshold selection uses validation data, with final test evaluation kept separate.",
+      "hint": "Check feasibility first, then compare the relevant detection proportions among the feasible choices."
+    },
+    {
+      "id": "ml-86",
+      "category": "Model Quality",
+      "concept": "Generalization",
+      "learningObjective": "Define generalization in terms of performance on fresh relevant examples.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Recall",
+      "question": "What is meant by 'generalization' in Machine Learning?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ability to perform well on fresh examples from the relevant target population."
+        },
+        {
+          "label": "B",
+          "text": "The ability to reproduce every training target without any error."
+        },
+        {
+          "label": "C",
+          "text": "The act of rescaling all numerical input features into a common range."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Generalization concerns performance beyond the fitted sample on examples relevant to the intended task. Perfect training fit alone does not establish this. A representative independent evaluation helps assess it, while population shifts can change the generalization requirement.",
+      "hint": "Think about the prediction objective after fitting is complete."
+    },
+    {
+      "id": "ml-87",
+      "category": "Model Quality",
+      "concept": "High Bias",
+      "learningObjective": "Recognize systematic error of the average fitted predictor as bias.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A straight-line regression family is fitted to many random training samples from a known curved relationship. Even the average of its fitted predictions systematically misses the curvature. Which effect is illustrated?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sampling variance: differences among individual fitted predictors around their average."
+        },
+        {
+          "label": "B",
+          "text": "Approximation bias: systematic deviation of the average predictor from the true relationship."
+        },
+        {
+          "label": "C",
+          "text": "Observation noise: random target changes unrelated to the input relationship."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The persistent mismatch of the average fitted predictor with the true relationship is bias. A straight-line family may be unable to represent curvature even with plentiful data. Variance concerns differences between fitted predictors; observation noise concerns unpredictable target variation, not this systematic representation error.",
+      "hint": "Separate the average fitted predictor from the variation among individual fitted predictors."
+    },
+    {
+      "id": "ml-88",
+      "category": "Model Quality",
+      "concept": "High Variance",
+      "learningObjective": "Recognize variability across fitted training samples as prediction variance.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Flexible regression models fitted on different same-sized random samples from one population predict very different values at the same fixed input. Their average prediction is close to the known true response. Which effect is primarily illustrated?",
+      "options": [
+        {
+          "label": "A",
+          "text": "High approximation bias, because the average prediction misses the true response."
+        },
+        {
+          "label": "B",
+          "text": "A change in the deployment population, because the training examples were resampled."
+        },
+        {
+          "label": "C",
+          "text": "High prediction variance, because the fitted result is sensitive to the training sample."
+        }
+      ],
+      "answer": "C",
+      "explanation": "The spread of fitted predictions at a fixed input across random training samples measures variance. A close average prediction suggests low bias at that input, but does not eliminate the spread. Resampling from the same population does not itself establish deployment distribution shift.",
+      "hint": "Keep systematic average error distinct from instability between separately fitted models."
+    },
+    {
+      "id": "ml-89",
+      "category": "Model Quality",
+      "concept": "L1 vs L2 Regularization",
+      "learningObjective": "Distinguish sparsity encouraged by L1 from the usual shrinkage behavior of L2.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "For standard penalized linear regression with positive regularization strength, which statement describes a typical difference between L1 (Lasso) and L2 (Ridge) penalties?",
+      "options": [
+        {
+          "label": "A",
+          "text": "L2 commonly performs sparse feature selection, while L1 keeps every coefficient nonzero."
+        },
+        {
+          "label": "B",
+          "text": "L1 can set some coefficients exactly to zero; L2 generally shrinks coefficients without promoting sparsity."
+        },
+        {
+          "label": "C",
+          "text": "L1 is used only for neural networks, while L2 is used only for linear regression."
+        }
+      ],
+      "answer": "B",
+      "explanation": "L1 uses \\(\\lambda\\sum_j|w_j|\\), which can produce sparse solutions. L2 uses \\(\\lambda\\sum_j w_j^2\\), which generally shrinks coefficients without promoting exact zeros. A Ridge coefficient can still be zero in particular data configurations; Lasso does not guarantee selecting exactly the truly relevant features.",
+      "hint": "Compare the geometry of an absolute-value penalty with a smooth squared penalty near zero."
+    },
+    {
+      "id": "ml-90",
+      "category": "Model Quality",
+      "concept": "How to Fix Underfitting",
+      "learningObjective": "Choose a validation experiment when excessive regularization is the supported cause of underfitting.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A converged model misses learnable patterns in both training and validation data. Controlled experiments identify excessively strong regularization as the limiting factor. Which next experiment addresses that cause?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Increase the regularization strength while keeping the model family unchanged."
+        },
+        {
+          "label": "B",
+          "text": "Try weaker regularization and compare candidates using training-only cross-validation."
+        },
+        {
+          "label": "C",
+          "text": "Keep the regularization strength and fit only to a smaller random subset of the same data."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Weaker regularization permits a closer fit when the current penalty is suppressing learnable structure. Select its strength using validation or cross-validation and monitor overfitting. Low performance without the stated controlled evidence would not uniquely identify excessive regularization as the cause.",
+      "hint": "Use the stated cause to decide which restriction should be varied."
+    },
+    {
+      "id": "ml-91",
+      "category": "Feature Engineering",
+      "concept": "Impact of Features on Model",
+      "learningObjective": "Explain data quality as a potential limit on prediction without an absolute failure claim.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Which statement accurately reflects 'Garbage In, Garbage Out' in predictive modeling?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A sufficiently flexible model makes incorrect feature values harmless in every dataset."
+        },
+        {
+          "label": "B",
+          "text": "Incorrect, noisy, or uninformative inputs can limit predictive performance even with a powerful model."
+        },
+        {
+          "label": "C",
+          "text": "A high validation score proves that all recorded input features are accurate and relevant."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Prediction quality can be constrained by incorrect values, measurement noise, missing signal, or unreliable targets. A powerful model does not remove the need for data checks. Some algorithms can ignore irrelevant features or tolerate noise, so poor inputs do not guarantee failure in every dataset.",
+      "hint": "Separate useful signal from model capacity and consider whether inputs faithfully represent the task."
+    },
+    {
+      "id": "ml-92",
+      "category": "Feature Engineering",
+      "concept": "Domain Knowledge in Feature Engineering",
+      "learningObjective": "Explain how domain knowledge supports useful, available, and leakage-safe feature construction.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How can domain knowledge improve feature engineering for prediction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It proves that every strongly correlated feature has a causal effect on the target."
+        },
+        {
+          "label": "B",
+          "text": "It makes validation unnecessary once a plausible feature has been proposed."
+        },
+        {
+          "label": "C",
+          "text": "It helps propose meaningful predictive features and check availability, leakage, and implausible transformations."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Domain knowledge can reveal useful representations and expose impossible values or features recorded only after the target event. A useful predictive association need not be causal. Proposed features still require valid evaluation, and causal claims require evidence beyond predictive correlation.",
+      "hint": "Consider whether a promising recorded field would be available when the prediction must be made."
+    },
+    {
+      "id": "ml-93",
+      "category": "Model Training",
+      "concept": "Parameter vs Hyperparameter (Example)",
+      "learningObjective": "Distinguish an optimizer-learned weight from a validation-selected training setting in a concrete run.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In a neural-network run, an optimizer changes a weight using loss gradients. Separately, a search picks a learning rate by comparing validation scores. Which is a learned model parameter?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The weight changed by the optimizer."
+        },
+        {
+          "label": "B",
+          "text": "The learning rate picked by the validation search."
+        },
+        {
+          "label": "C",
+          "text": "The hidden-layer count fixed for the candidate architecture."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The weight is part of the fitted prediction function and is updated through the fitting objective. The learning rate and layer count configure training or architecture in this run. Automated, data-informed selection of a learning rate does not turn it into a fitted weight parameter in the described setup.",
+      "hint": "Ask which operation selected each value, rather than whether a person typed it."
+    },
+    {
+      "id": "ml-94",
+      "category": "Model Training",
+      "concept": "Counting Updates with a Partial Batch",
+      "learningObjective": "Count mini-batch updates for an epoch that retains a final partial batch.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A conventional training loop visits \\(10{,}050\\) examples once per epoch with batch size \\(1{,}000\\). It keeps the final partial batch and performs one optimizer update per batch, with no gradient accumulation. How many updates occur in one epoch?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1{,}000\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(11\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Ten full batches process \\(10{,}000\\) examples, leaving \\(50\\) in one partial batch. Thus the update count is \\(\\left\\lceil\\frac{10{,}050}{1{,}000}\\right\\rceil=11\\). Dropping the partial batch or accumulating gradients would change the result, so both conventions are specified.",
+      "hint": "Account for any examples left after all full batches have been processed."
+    },
+    {
+      "id": "ml-95",
+      "category": "Model Training",
+      "concept": "Batch Size",
+      "learningObjective": "Describe memory and gradient-noise trade-offs when reducing batch size.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "For the same neural network, what is a typical trade-off when using smaller mini-batches rather than the full dataset per update?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Less batch-dependent memory and a guarantee of higher final prediction accuracy."
+        },
+        {
+          "label": "B",
+          "text": "Less batch-dependent activation memory but generally noisier gradient estimates per update."
+        },
+        {
+          "label": "C",
+          "text": "Less batch-dependent memory and a guarantee of faster end-to-end convergence."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Smaller batches usually need less memory for examples and activations and yield noisier gradient estimates under ordinary sampling. With one update per batch, they also give more updates per epoch. Total speed and convergence depend on hardware utilization, throughput, optimization settings, and data; accuracy gains or escape from minima are not guaranteed.",
+      "hint": "Compare what must be stored for one update and how many observations determine its gradient."
+    },
+    {
+      "id": "ml-96",
+      "category": "Neural Network Fundamentals",
+      "concept": "Input Layer",
+      "learningObjective": "Determine the input-vector size for a simple dense network with one value per tabular feature.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A simple fully connected network receives a tabular vector with \\(N\\) scalar features, with no embedding or other representation expansion. How many input values does each example supply?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(N\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(N+1\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The supplied input vector has dimension \\(N\\), one scalar value per feature in this setup. A bias is a model term rather than an extra required data feature. Image tensors, sequences, embeddings, and other architectures have different input structures, so this is not a universal rule about all neural networks.",
+      "hint": "Write down the shape of one preprocessed example before considering hidden-layer width."
+    },
+    {
+      "id": "ml-97",
+      "category": "Neural Network Fundamentals",
+      "concept": "Hidden Layer",
+      "learningObjective": "Describe hidden layers as learned intermediate transformations in a feed-forward model.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is a typical role of hidden layers with nonlinear activations in a feed-forward neural network?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They directly define one final probability output for each target class."
+        },
+        {
+          "label": "B",
+          "text": "They store the full training dataset as a required lookup table."
+        },
+        {
+          "label": "C",
+          "text": "They learn intermediate transformations that can support complex input-output relationships."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Hidden layers transform input representations through learned weights and nonlinearities. These intermediate representations can support complex relationships used by later layers. They are not guaranteed to become increasingly interpretable or abstract with depth, and they need not store the training examples explicitly.",
+      "hint": "Distinguish intermediate computation from the final target representation."
+    },
+    {
+      "id": "ml-98",
+      "category": "Neural Network Fundamentals",
+      "concept": "Output Layer",
+      "learningObjective": "Choose the output-logit count for standard single-label softmax classification.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Application",
+      "question": "A network predicts exactly one of \\(10\\) digit classes using a standard softmax output with one logit per class. How many output logits are needed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(1\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The stated representation requires \\(10\\) logits, one for each class, which softmax converts to \\(10\\) probabilities summing to \\(1\\). The hidden-layer width and number of training examples do not determine this output count. Other parameterizations would need their own explicit convention.",
+      "hint": "Determine how many distinct class scores the specified output representation must produce."
+    },
+    {
+      "id": "ml-99",
+      "category": "Neural Network Fundamentals",
+      "concept": "Weights and Biases",
+      "learningObjective": "Explain a bias term as an additive pre-activation intercept in a dense neuron.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "In a typical dense neuron that includes a bias term, what role does that bias serve?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It multiplies each input by a learned scale before all inputs are summed."
+        },
+        {
+          "label": "B",
+          "text": "It adds an input-independent intercept to the weighted sum before activation."
+        },
+        {
+          "label": "C",
+          "text": "It sets the step size used by the optimizer to update the weights."
+        }
+      ],
+      "answer": "B",
+      "explanation": "With a bias, the pre-activation is \\(z=\\sum_j w_jx_j+b\\). The additive term \\(b\\) allows a nonzero intercept even when all inputs are zero. This mathematical bias is distinct from social bias or approximation bias; some layers disable the bias term, so it is not present in every neuron.",
+      "hint": "Compare changing an input multiplier with changing a constant in the fitted expression."
+    },
+    {
+      "id": "ml-100",
+      "category": "Neural Network Fundamentals",
+      "concept": "Chain-Rule Weight Gradient",
+      "learningObjective": "Apply the chain rule to a scalar weight gradient of a squared-error loss.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "A scalar linear neuron has \\(\\hat{y}=wx\\) and loss \\(L=\\frac{1}{2}(\\hat{y}-y)^2\\). With \\(x=2\\), \\(w=3\\), and \\(y=4\\), what is \\(\\frac{\\partial L}{\\partial w}\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "C",
+          "text": "\\(4\\)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Use the chain rule: \\[\\begin{aligned}\\hat{y}&=3\\cdot 2=6\\\\\\frac{\\partial L}{\\partial\\hat{y}}&=\\hat{y}-y=2\\\\\\frac{\\partial\\hat{y}}{\\partial w}&=x=2\\\\\\frac{\\partial L}{\\partial w}&=2\\cdot 2=4\\end{aligned}\\] The derivative is not just the residual: the input factor must be included. Backpropagation applies this principle efficiently through larger computation graphs.",
+      "hint": "Trace how changing the weight changes the prediction and then the loss; include both derivatives."
+    }
+  ]
+}

@@ -1,0 +1,683 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "mathematics-sat-01",
+  "title": "SAT 01 · Whole-number reasoning",
+  "category": "SAT Mathematics",
+  "description": "A/B reasoning practice. Difficulty is editorial, not standardized SAT calibration.",
+  "questionCount": 18,
+  "questions": [
+    {
+      "id": "sat-q0001",
+      "title": "Sharing Pencils Among Classrooms",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "A school buys \\(9\\) packs of pencils, with \\(16\\) pencils in each pack. The school keeps \\(24\\) pencils in the office and distributes the rest equally among \\(6\\) classrooms. How many pencils does each classroom receive? Choose A or B and explain each calculation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\) pencils"
+        },
+        {
+          "label": "B",
+          "text": "\\(20\\) pencils"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First, calculate the total number of pencils purchased: \\(9\\times16=144\\). The school keeps \\(24\\) pencils, leaving \\(144-24=120\\) pencils for the classrooms. Because the pencils are divided equally among \\(6\\) classrooms, each receives \\(120\\div6=20\\) pencils. Choice A is incorrect because \\(24\\) is the number of pencils in each classroom if all \\(144\\) pencils are distributed without reserving any for the office. Therefore, choice B is correct.",
+      "hint": "Find the number purchased in all packs, remove the office reserve, and then divide the remaining pencils among the classrooms."
+    },
+    {
+      "id": "sat-q0002",
+      "title": "Packing Four Days of Donations",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "A food drive collects cans over four days. The chart shows the numbers of cans collected on Monday, Tuesday, and Wednesday. On Thursday, the volunteers collect twice as many cans as on Wednesday. All the collected cans are packed into boxes that hold exactly \\(6\\) cans each. How many full boxes can the volunteers pack using all the cans? Choose A or B and show your calculations.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(13\\) boxes"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\) boxes"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Wednesday's collection is \\(12\\) cans, so Thursday's collection is \\(2\\times12=24\\) cans. The four-day total is \\(18+24+12+24=78\\) cans. Each box holds \\(6\\) cans, so the number of full boxes is \\(78\\div6=13\\). There are no leftover cans. Choice B counts only the first three days: \\((18+24+12)\\div6=9\\). It incorrectly excludes Thursday's collection. Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0002-v1",
+          "type": "DATA_CHART",
+          "data": {
+            "kind": "bar",
+            "xLabel": "Day",
+            "yLabel": "Cans collected",
+            "bars": [
+              {
+                "label": "Monday",
+                "value": 18
+              },
+              {
+                "label": "Tuesday",
+                "value": 24
+              },
+              {
+                "label": "Wednesday",
+                "value": 12
+              }
+            ],
+            "chart": "bar",
+            "labels": [
+              "Monday",
+              "Tuesday",
+              "Wednesday"
+            ],
+            "values": [
+              18,
+              24,
+              12
+            ],
+            "axes": {
+              "xLabel": "Day",
+              "yLabel": "Cans collected"
+            }
+          },
+          "alt": "Bar chart showing 18 cans collected on Monday, 24 on Tuesday, and 12 on Wednesday. Thursday's count must be calculated from the question."
+        }
+      ],
+      "hint": "Use the Wednesday bar to calculate Thursday first. Include all four days before converting the total cans into boxes."
+    },
+    {
+      "id": "sat-q0003",
+      "title": "Students Outside Two Activity Clubs",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "A school has \\(34\\) students in an activity program. Of these, \\(19\\) participate in swimming, \\(16\\) participate in cycling, and \\(7\\) participate in both activities. The Venn diagram represents how the students are distributed. How many students participate in neither swimming nor cycling? Choose A or B and justify the result using whole-number operations.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(9\\) students"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\) students"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The \\(7\\) students who participate in both activities must not be counted twice. The number participating in at least one activity is \\(19+16-7=28\\). Subtract this from the total number of students: \\(34-28=6\\). The Venn diagram confirms this result because its four regions contain \\(12+9+7+6=34\\) students. Choice A gives the number participating only in cycling, not the number participating in neither activity. Therefore, choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0003-v1",
+          "type": "VENN",
+          "data": {
+            "universe": {
+              "label": "Students",
+              "total": 34
+            },
+            "sets": [
+              {
+                "id": "S",
+                "label": "Swimming",
+                "elements": []
+              },
+              {
+                "id": "C",
+                "label": "Cycling",
+                "elements": []
+              }
+            ],
+            "regions": {
+              "S_only": 12,
+              "C_only": 9,
+              "intersection": 7,
+              "outside": 6
+            }
+          },
+          "alt": "Venn diagram of 34 students. Twelve participate only in swimming, nine only in cycling, seven in both activities, and six in neither."
+        }
+      ],
+      "hint": "Combine the two club totals without counting the overlap twice, then compare that total with the whole program."
+    },
+    {
+      "id": "sat-q0004",
+      "title": "Fencing a Garden with an Interior Divider",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "A school builds a rectangular garden that is \\(18\\) meters long and \\(11\\) meters wide. The garden needs fencing around its boundary, except for a \\(5\\)-meter-wide gate opening. The school also installs one straight interior fence that crosses the garden from one long side to the opposite long side, parallel to the shorter sides. How many meters of fencing are required in total? Choose A or B and explain the calculation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(53\\) meters"
+        },
+        {
+          "label": "B",
+          "text": "\\(64\\) meters"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The full perimeter of the rectangular garden is \\(2(18+11)=2\\times29=58\\) meters. The gate opening does not need fencing, so the outer fence requires \\(58-5=53\\) meters. The interior divider crosses the garden along its width and therefore requires another \\(11\\) meters. The total fencing is \\(53+11=64\\) meters. Choice A counts the outer fence correctly but forgets the interior divider. Therefore, choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0004-v1",
+          "type": "GEOMETRY_2D",
+          "data": {
+            "units": "m",
+            "points": [
+              {
+                "id": "A",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B",
+                "x": 18,
+                "y": 0
+              },
+              {
+                "id": "C",
+                "x": 18,
+                "y": 11
+              },
+              {
+                "id": "D",
+                "x": 0,
+                "y": 11
+              },
+              {
+                "id": "E",
+                "x": 11,
+                "y": 0
+              },
+              {
+                "id": "F",
+                "x": 16,
+                "y": 0
+              },
+              {
+                "id": "G",
+                "x": 9,
+                "y": 0
+              },
+              {
+                "id": "H",
+                "x": 9,
+                "y": 11
+              }
+            ],
+            "segments": [
+              [
+                "A",
+                "E"
+              ],
+              [
+                "F",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "D"
+              ],
+              [
+                "D",
+                "A"
+              ],
+              [
+                "G",
+                "H"
+              ]
+            ]
+          },
+          "alt": "Rectangular garden with vertices A(0,0), B(18,0), C(18,11), and D(0,11). The gate opening is the omitted five-meter section between E(11,0) and F(16,0). The interior fence extends from G(9,0) to H(9,11) and is eleven meters long."
+        }
+      ],
+      "hint": "Account separately for the outer boundary, the gate opening, and the divider. Decide whether the divider follows the length or the width."
+    },
+    {
+      "id": "sat-q0005",
+      "title": "Sorting Factory Products into Shipping Crates",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "A factory produces small electronic components using two production teams. The table shows how many components each team produces during three days. Quality inspectors reject \\(12\\) defective components from the combined production. The remaining components are packed into shipping crates holding exactly \\(6\\) components each. How many full crates can be prepared? Choose A or B and explain your calculations.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\) crates"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\) crates"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Team A produces \\(12+15+13=40\\) components. Team B produces \\(10+11+11=32\\) components. Their combined production is \\(40+32=72\\) components. After rejecting \\(12\\) defective components, \\(72-12=60\\) usable components remain. Packing these into crates holding \\(6\\) components each gives \\(60\\div6=10\\) full crates. Choice B incorrectly divides all \\(72\\) produced components by \\(6\\), without removing the defective components. Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0005-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Day",
+              "Team A",
+              "Team B"
+            ],
+            "rows": [
+              [
+                "Monday",
+                12,
+                10
+              ],
+              [
+                "Tuesday",
+                15,
+                11
+              ],
+              [
+                "Wednesday",
+                13,
+                11
+              ]
+            ],
+            "headers": [
+              "Day",
+              "Team A",
+              "Team B"
+            ]
+          },
+          "alt": "Production table. Monday: Team A 12, Team B 10. Tuesday: Team A 15, Team B 11. Wednesday: Team A 13, Team B 11."
+        }
+      ],
+      "hint": "Add both teams across all three days. Remove rejected components before deciding how many crates can be filled."
+    },
+    {
+      "id": "sat-q0006",
+      "title": "Predicting Inventory from a Mapping Diagram",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "An equipment shop begins with a fixed stock of badges and receives the same number of additional badges in every shipment. The mapping diagram shows the total stock after \\(1\\), \\(2\\), and \\(3\\) shipments. After receiving \\(6\\) shipments, the shop discards \\(8\\) defective badges. How many usable badges remain? Choose A or B and derive the shipment rule.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(39\\) badges"
+        },
+        {
+          "label": "B",
+          "text": "\\(47\\) badges"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number of badges increases by \\(19-12=7\\) between the first and second shipments and by \\(26-19=7\\) between the second and third shipments. Therefore, each shipment adds \\(7\\) badges. Since the total after one shipment is \\(12\\), the initial stock is \\(12-7=5\\) badges. After \\(6\\) shipments, the stock is \\(5+6\\times7=47\\) badges. Removing \\(8\\) defective badges leaves \\(47-8=39\\) usable badges. Choice B gives the stock before the defective badges are discarded. Therefore, choice A is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0006-v1",
+          "type": "MAPPING",
+          "data": {
+            "left": {
+              "label": "Shipments",
+              "elements": [
+                1,
+                2,
+                3
+              ]
+            },
+            "right": {
+              "label": "Total badges",
+              "elements": [
+                12,
+                19,
+                26
+              ]
+            },
+            "arrows": [
+              [
+                1,
+                12
+              ],
+              [
+                2,
+                19
+              ],
+              [
+                3,
+                26
+              ]
+            ]
+          },
+          "alt": "Mapping diagram showing that one shipment corresponds to 12 total badges, two shipments to 19 badges, and three shipments to 26 badges."
+        }
+      ],
+      "hint": "Compare consecutive stock totals to find the shipment increase, then work back to the initial stock. Apply the defect removal after six shipments."
+    },
+    {
+      "id": "sat-q0007",
+      "title": "Calculating Revenue from Available Seats",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "A theater has \\(18\\) rows of seats, with \\(24\\) seats in each row. For an upcoming performance, \\(35\\) seats are reserved for staff and cannot be sold. Every remaining seat is sold for \\(8\\) dollars. What is the total ticket revenue? Choose A or B and justify your calculation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(3456\\) dollars"
+        },
+        {
+          "label": "B",
+          "text": "\\(3176\\) dollars"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First, calculate the theater's total seating capacity: \\(18\\times24=432\\) seats. Since \\(35\\) seats are reserved for staff, the number of tickets available for sale is \\(432-35=397\\). Every available ticket is sold for \\(8\\) dollars, so the revenue is \\(397\\times8=3176\\) dollars. Choice A is obtained from \\(432\\times8=3456\\), which incorrectly assumes that the reserved staff seats also generate ticket revenue. Therefore, choice B is correct.",
+      "hint": "Find how many seats can actually be sold before multiplying by the ticket price."
+    },
+    {
+      "id": "sat-q0008",
+      "title": "Comparing Two Printing Contracts",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "A school needs to print \\(30\\) posters. Printing Company A charges a fixed setup fee of \\(45\\) dollars plus \\(6\\) dollars per poster. Printing Company B has no setup fee but charges \\(8\\) dollars per poster. If the school selects the cheaper company, how much money does it save compared with choosing the more expensive company? Choose A or B and show the calculations.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\) dollars"
+        },
+        {
+          "label": "B",
+          "text": "\\(60\\) dollars"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Company A charges \\(45+6\\times30=45+180=225\\) dollars. Company B charges \\(8\\times30=240\\) dollars. Therefore, Company A is cheaper, and the school saves \\(240-225=15\\) dollars. Choice B considers only the difference between the companies' per-poster charges: \\((8-6)\\times30=60\\). It overlooks Company A's fixed setup fee of \\(45\\) dollars, which reduces the actual savings to \\(15\\) dollars. Therefore, choice A is correct.",
+      "hint": "Calculate each company’s complete charge, including any fixed fee, before finding the difference."
+    },
+    {
+      "id": "sat-q0009",
+      "title": "Minimum Buses for Usable Seating Capacity",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "A transportation company has a train with \\(45\\) available passenger seats. To increase capacity, the company can add buses, each with \\(12\\) advertised seats. However, safety regulations require exactly \\(3\\) seats on every added bus to remain unoccupied. The graph represents the total advertised capacity \\(C(x)=45+12x\\), where \\(x\\) is the number of buses. If the company needs at least \\(156\\) usable passenger seats, what is the minimum whole number of buses it must add? Choose A or B and justify your result.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\) buses"
+        },
+        {
+          "label": "B",
+          "text": "\\(13\\) buses"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The graph shows advertised capacity, but \\(3\\) seats on each added bus cannot be used. Each bus therefore contributes \\(12-3=9\\) usable seats. With \\(x\\) buses, usable capacity is \\(45+9x\\). To carry at least \\(156\\) passengers, the company needs \\(45+9x\\ge156\\). Subtracting \\(45\\) gives \\(9x\\ge111\\), so \\(x\\ge111/9=12\\frac13\\). Because the number of buses must be a whole number, the smallest possible value is \\(13\\). With \\(12\\) buses, capacity is only \\(45+9(12)=153\\) seats; with \\(13\\), it is \\(45+9(13)=162\\). Choice A mistakenly uses all \\(12\\) advertised seats per bus. Ten buses provide \\(135\\) usable seats, which is insufficient. Therefore, choice B is correct.",
+      "visuals": [
+        {
+          "id": "sat-q0009-v1",
+          "type": "FUNCTION_GRAPH",
+          "data": {
+            "axes": {
+              "xMin": 0,
+              "xMax": 15,
+              "yMin": 0,
+              "yMax": 240
+            },
+            "curves": [
+              {
+                "expression": "45+12*x",
+                "label": "Advertised capacity C(x)=45+12x"
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": 45,
+                "label": "Initial capacity"
+              },
+              {
+                "x": 10,
+                "y": 165,
+                "label": "Ten buses"
+              }
+            ]
+          },
+          "alt": "Increasing straight-line graph of advertised seating capacity C(x)=45+12x, starting at 45 seats when x is zero and reaching 165 advertised seats with ten buses. Only nonnegative integer values of x represent possible numbers of buses. Three seats per added bus must be subtracted to obtain usable capacity."
+        }
+      ],
+      "hint": "The graph describes advertised seats. Adjust each bus contribution for the reserved seats, then test whole numbers at the capacity threshold."
+    },
+    {
+      "id": "sat-q0010",
+      "title": "Reconstructing a Three-Digit Security Code",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "A security system uses a three-digit positive integer as an access code. The code satisfies three conditions: the hundreds digit is exactly \\(2\\) greater than the units digit, the tens digit is exactly \\(1\\) greater than the units digit, and the sum of all three digits is \\(15\\). Reversing the digits produces a number that is \\(198\\) less than the original code. What is the original code? Choose A or B and verify all the conditions.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(654\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(456\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let the units digit be \\(u\\). Then the tens digit is \\(u+1\\), and the hundreds digit is \\(u+2\\). Using the digit sum gives \\(u+(u+1)+(u+2)=15\\), so \\(3u+3=15\\), \\(3u=12\\), and \\(u=4\\). Thus the tens digit is \\(5\\) and the hundreds digit is \\(6\\), giving the code \\(654\\). Reversing it produces \\(456\\), and \\(654-456=198\\), confirming the final condition. Choice B is the reversed code. Its hundreds digit is not \\(2\\) greater than its units digit, and reversing it increases rather than decreases the number by \\(198\\). Therefore, choice A is correct.",
+      "hint": "Express all three digits in terms of the units digit. Use their sum, then check the direction of the change when reversing the code."
+    },
+    {
+      "id": "sat-q0011",
+      "title": "Finding the First Profitable Shipment",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "A factory pays a one-time setup cost of \\(185\\) dollars to begin production. Each item costs \\(7\\) dollars to manufacture and sells for \\(16\\) dollars. Shipping boxes hold at most \\(10\\) items each, and every box costs \\(8\\) dollars to ship, including a partially filled box. All manufactured items are sold and shipped. What is the smallest positive whole number of items the factory must sell to earn a strictly positive profit after manufacturing, setup, and shipping expenses? Choose A or B and analyze the shipping-box requirement.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(23\\) items"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\) items"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each item contributes \\(16-7=9\\) dollars toward the setup and shipping expenses. If \\(n\\) items are sold, the number of required shipping boxes is \\(\\lceil n/10\\rceil\\), since even one extra item beyond a multiple of \\(10\\) requires another box. The profit is therefore \\(9n-185-8\\lceil n/10\\rceil\\). For up to \\(20\\) items, the contribution cannot exceed \\(9(20)=180\\) dollars, which is already less than the \\(185\\)-dollar setup cost, even before shipping. For \\(21\\) through \\(30\\) items, exactly \\(3\\) shipping boxes are required. At \\(23\\) items, profit is \\(9(23)-185-3(8)=207-185-24=-2\\) dollars. At \\(24\\) items, profit is \\(9(24)-185-24=7\\) dollars. Since fewer than \\(24\\) items cannot produce positive profit, choice A is incorrect and choice B is correct.",
+      "hint": "Write profit as revenue minus all three costs. A partially filled shipping box still adds its full cost, so examine the box count near the break-even point."
+    },
+    {
+      "id": "sat-q0012",
+      "title": "Counting Tickets in Exactly One Number Group",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "A festival prints tickets numbered consecutively from \\(1\\) through \\(360\\). The organizers place every ticket whose number is divisible by \\(6\\) in Group A and every ticket whose number is divisible by \\(8\\) in Group B. A ticket may belong to both groups. How many tickets belong to exactly one group, but not both? Choose A or B and justify the count without listing all the tickets.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(75\\) tickets"
+        },
+        {
+          "label": "B",
+          "text": "\\(90\\) tickets"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(360\\div6=60\\) ticket numbers divisible by \\(6\\) and \\(360\\div8=45\\) divisible by \\(8\\). A number divisible by both \\(6\\) and \\(8\\) must be divisible by their least common multiple, \\(24\\). Thus \\(360\\div24=15\\) tickets belong to both groups. The number belonging only to Group A is \\(60-15=45\\), while the number belonging only to Group B is \\(45-15=30\\). Consequently, exactly one group contains \\(45+30=75\\) tickets. Choice B counts the numbers belonging to at least one group: \\(60+45-15=90\\). It incorrectly includes the \\(15\\) tickets belonging to both groups. Therefore, choice A is correct.",
+      "hint": "Count the common multiples using the least common multiple. Exactly one group excludes a ticket counted in both groups entirely."
+    },
+    {
+      "id": "sat-q0013",
+      "title": "Recovering the Original Fair Tokens",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "At the beginning of a school fair, an organizer has an unknown number of tokens. First, the organizer sells \\(18\\) tokens. The remaining tokens are divided into two equal piles. One complete pile is moved to a prize booth. From the other pile, the organizer uses \\(12\\) tokens for decorations and packs all the tokens still in that pile into \\(4\\) envelopes, with exactly \\(9\\) tokens in each envelope. How many tokens did the organizer have at the beginning? Choose A or B and explain the reverse calculations.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(114\\) tokens"
+        },
+        {
+          "label": "B",
+          "text": "\\(96\\) tokens"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Work backward from the \\(4\\) envelopes. Each contains \\(9\\) tokens, so the number packed into envelopes is \\(4\\times9=36\\). Before the organizer used \\(12\\) tokens for decorations, that pile contained \\(36+12=48\\) tokens. The tokens were originally divided into two equal piles, so the total remaining immediately after the first sale was \\(48\\times2=96\\). Finally, the organizer had sold \\(18\\) tokens before dividing the piles, so the starting amount was \\(96+18=114\\) tokens. Checking forward: \\(114-18=96\\), \\(96\\div2=48\\), and \\(48-12=36=4\\times9\\). Choice B forgets to restore the \\(18\\) tokens sold at the beginning. Therefore, choice A is correct.",
+      "hint": "Work backward from the envelopes to the decoration pile, then undo the equal split and the initial sale in reverse order."
+    },
+    {
+      "id": "sat-q0014",
+      "title": "Solving an Animal Feeding Puzzle",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "A small farm has exactly \\(23\\) animals consisting only of chickens and rabbits. Every chicken has \\(2\\) legs, every rabbit has \\(4\\) legs, and all the animals together have \\(64\\) legs. During a feeding demonstration, each rabbit receives \\(3\\) carrot sticks and each chicken receives \\(1\\) carrot stick. How many carrot sticks are needed to feed every animal exactly once? Choose A or B and explain how to determine the numbers of chickens and rabbits.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(51\\) carrot sticks"
+        },
+        {
+          "label": "B",
+          "text": "\\(41\\) carrot sticks"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If all \\(23\\) animals were chickens, they would have \\(23\\times2=46\\) legs. The actual total is \\(64\\), which is \\(64-46=18\\) additional legs. Replacing a chicken with a rabbit increases the leg count by \\(4-2=2\\), so there must be \\(18\\div2=9\\) rabbits. The remaining \\(23-9=14\\) animals are chickens. The rabbits require \\(9\\times3=27\\) carrot sticks, and the chickens require \\(14\\times1=14\\). The total is \\(27+14=41\\) carrot sticks. Choice A would result from incorrectly treating the \\(14\\) chickens as rabbits and the \\(9\\) rabbits as chickens: \\(14(3)+9(1)=51\\). That assignment would give \\(74\\) legs, not \\(64\\). Therefore, choice B is correct.",
+      "hint": "Compare the actual leg total with an all-chicken farm to find the rabbits. Use the feeding rule only after determining both animal counts."
+    },
+    {
+      "id": "sat-q0015",
+      "title": "Finding a Valid Combination of Supply Packs",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "A school purchases exactly \\(101\\) pencils using only two available pack sizes: small packs containing \\(9\\) pencils and large packs containing \\(14\\) pencils. The school purchases at least \\(8\\) packs but no more than \\(10\\) packs in total, and every pack is completely full. How many large packs did the school purchase? Choose A or B and show why the pack-count restrictions produce a valid whole-number solution.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\) large packs"
+        },
+        {
+          "label": "B",
+          "text": "\\(5\\) large packs"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(a\\) be the number of small packs and \\(b\\) the number of large packs. The pencil total gives \\(9a+14b=101\\). If the school purchases \\(n=a+b\\) packs, replacing \\(a\\) with \\(n-b\\) gives \\(9(n-b)+14b=101\\), or \\(9n+5b=101\\). Since \\(n\\) must be \\(8\\), \\(9\\), or \\(10\\), test these possibilities. With \\(n=8\\), \\(5b=101-72=29\\), which does not give a whole number. With \\(n=9\\), \\(5b=101-81=20\\), so \\(b=4\\) and \\(a=5\\). This gives \\(4(14)+5(9)=56+45=101\\) pencils. With \\(n=10\\), \\(5b=101-90=11\\), which is also not a whole-number solution. Thus exactly \\(4\\) large packs were purchased. Choice B would leave \\(101-5(14)=31\\) pencils for small packs, and \\(31\\) is not divisible by \\(9\\). Therefore, choice A is correct.",
+      "hint": "Let the total number of packs be one of the three permitted integers. Express the pencil count using that total and the number of large packs."
+    },
+    {
+      "id": "sat-q0016",
+      "title": "Reconstructing Ticket Sales After Refunds",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "A theater sells \\(85\\) tickets in total. Adult tickets cost \\(12\\) dollars each, and child tickets cost \\(7\\) dollars each. Before any refunds, the theater collects exactly \\(790\\) dollars. Later, \\(6\\) adult tickets and \\(9\\) child tickets are refunded and become invalid. Which pair correctly describes the numbers of valid adult and child tickets remaining? Choose A or B and justify the calculations.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(39\\) adult tickets and \\(46\\) child tickets"
+        },
+        {
+          "label": "B",
+          "text": "\\(33\\) adult tickets and \\(37\\) child tickets"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Suppose all \\(85\\) tickets were child tickets. Their revenue would be \\(85\\times7=595\\) dollars. The actual revenue exceeds this by \\(790-595=195\\) dollars. Each adult ticket earns \\(12-7=5\\) dollars more than a child ticket, so the number of adult tickets originally sold was \\(195\\div5=39\\). The number of child tickets was \\(85-39=46\\). Verify the revenue: \\(39(12)+46(7)=468+322=790\\). After the refunds, the number of valid adult tickets is \\(39-6=33\\), and the number of valid child tickets is \\(46-9=37\\). Choice A reports the original ticket counts without subtracting the refunded tickets. Therefore, choice B is correct.",
+      "hint": "First reconstruct the original adult and child counts from the total and revenue. Apply the two refund counts to their respective ticket types afterward."
+    },
+    {
+      "id": "sat-q0017",
+      "title": "Minimizing the Cost of Marker Boxes",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "A school must purchase exactly \\(120\\) markers. Supplier A sells boxes containing \\(8\\) markers for \\(45\\) dollars per box. Supplier B sells boxes containing \\(12\\) markers for \\(64\\) dollars per box. The school is required to purchase at least \\(3\\) boxes from each supplier. All boxes must remain intact, and no extra markers may be purchased. What is the minimum possible total cost? Choose A or B and justify why no other valid combination is cheaper.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(647\\) dollars"
+        },
+        {
+          "label": "B",
+          "text": "\\(654\\) dollars"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let \\(a\\) and \\(b\\) represent the numbers of boxes purchased from Suppliers A and B. The marker requirement is \\(8a+12b=120\\), with \\(a\\ge3\\) and \\(b\\ge3\\), both whole numbers. Dividing by \\(4\\) gives \\(2a+3b=30\\). Since \\(2a=30-3b\\) must be even, \\(b\\) must be even. The restrictions also require \\(b\\le8\\), so the only possible values are \\(b=4\\), \\(6\\), and \\(8\\). If \\(b=4\\), then \\(a=9\\), costing \\(9(45)+4(64)=661\\) dollars. If \\(b=6\\), then \\(a=6\\), costing \\(6(45)+6(64)=654\\) dollars. If \\(b=8\\), then \\(a=3\\), costing \\(3(45)+8(64)=135+512=647\\) dollars. All three combinations satisfy the restrictions, but \\(647\\) dollars is the least expensive. Choice B describes a valid purchase but not the minimum-cost purchase. Therefore, choice A is correct.",
+      "hint": "Use the exact marker total to restrict the whole-number box combinations. Compare costs only for combinations satisfying both minimum purchases."
+    },
+    {
+      "id": "sat-q0018",
+      "title": "Reconstructing a Warehouse Count from Remainders",
+      "category": "MATH",
+      "concept": "Whole-number reasoning",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply whole-number reasoning and justify the selected answer.",
+      "question": "A warehouse contains a whole number of identical storage units, and the total is strictly between \\(300\\) and \\(800\\). When the units are divided into groups of \\(8\\), exactly \\(5\\) units remain. When they are divided into groups of \\(9\\), exactly \\(6\\) units remain. The total number of units is also divisible by \\(7\\) with no remainder. What is the total number of storage units? Choose A or B and demonstrate why the conditions determine the answer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(429\\) storage units"
+        },
+        {
+          "label": "B",
+          "text": "\\(357\\) storage units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let \\(N\\) be the total number of storage units. Because dividing \\(N\\) by \\(8\\) leaves \\(5\\), adding \\(3\\) makes \\(N+3\\) divisible by \\(8\\). Similarly, dividing \\(N\\) by \\(9\\) leaves \\(6\\), so \\(N+3\\) is also divisible by \\(9\\). Since the least common multiple of \\(8\\) and \\(9\\) is \\(72\\), \\(N+3\\) must be a multiple of \\(72\\). Thus \\(N=72k-3\\) for some whole number \\(k\\). Between \\(300\\) and \\(800\\), the candidates are \\(357\\), \\(429\\), \\(501\\), \\(573\\), \\(645\\), \\(717\\), and \\(789\\). Consecutive candidates increase by \\(72\\), which leaves a remainder of \\(2\\) when divided by \\(7\\). The first candidate, \\(357\\), is divisible by \\(7\\), since \\(357=7\\times51\\). Each subsequent candidate in the given range has a different nonzero remainder modulo \\(7\\), so none satisfies the final condition. Directly checking \\(357\\) gives \\(357=8(44)+5\\) and \\(357=9(39)+6\\). Choice A satisfies the first two remainder conditions, but \\(429=7(61)+2\\), so it is not divisible by \\(7\\). Therefore, choice B is correct.",
+      "hint": "Look for a small addition that makes the total divisible by both eight and nine. Then use the range and the divisibility-by-seven condition to narrow the candidates."
+    }
+  ]
+}

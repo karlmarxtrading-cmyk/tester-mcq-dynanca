@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-602",
+  "category": "Comprehensive Mathematics",
+  "title": "602. Discrete Mathematics, Counting & Graph Theory: Bipartite Matching by Augmenting Paths",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-602-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Definition of a matching",
+      "learningObjective": "State what a matching in a graph is.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "What is a matching in a graph?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A set of edges that together form a path"
+        },
+        {
+          "label": "B",
+          "text": "A set of edges no two of which share a vertex"
+        }
+      ],
+      "answer": "B",
+      "explanation": "In a matching every vertex lies on at most one of the chosen edges, so the edges pair up vertices without overlap. The edges of a path with at least two edges do share vertices, so they do not form a matching.",
+      "hint": "Each vertex may be used by at most one chosen edge."
+    },
+    {
+      "id": "dynanca-602-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Testing a set of edges",
+      "learningObjective": "Decide whether two edges form a matching.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A bipartite graph has vertices \\(A,B,C\\) on one side and \\(1,2,3\\) on the other, with edges \\(A1\\), \\(A2\\), \\(B1\\), \\(C2\\), and \\(C3\\). Is \\(\\{A1,\\ B1\\}\\) a matching?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; both edges contain the vertex \\(1\\)."
+        },
+        {
+          "label": "B",
+          "text": "Yes; the two edges are different."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A matching may not contain two edges that meet at a vertex. The edges \\(A1\\) and \\(B1\\) both end at \\(1\\), so they cannot both be chosen. Being different edges is not enough.",
+      "hint": "Check whether some vertex lies on both edges."
+    },
+    {
+      "id": "dynanca-602-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Augmenting paths",
+      "learningObjective": "State what an augmenting path for a matching is.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Let \\(M\\) be a matching. What is an augmenting path for \\(M\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A path all of whose edges belong to \\(M\\)"
+        },
+        {
+          "label": "B",
+          "text": "A path that starts and ends at unmatched vertices and whose edges alternate between edges outside \\(M\\) and edges in \\(M\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An augmenting path begins at an unmatched vertex, then alternately uses an edge not in \\(M\\) and an edge in \\(M\\), and ends at another unmatched vertex. Its first and last edges are outside \\(M\\), so it contains one more edge outside \\(M\\) than inside. A path made only of matching edges cannot have more than one edge.",
+      "hint": "The path must offer a way to exchange matching edges for one more non-matching edge."
+    },
+    {
+      "id": "dynanca-602-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Finding an augmenting path",
+      "learningObjective": "Identify an augmenting path for a given matching.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A bipartite graph has vertices \\(A,B,C\\) on one side and \\(1,2,3\\) on the other, with edges \\(A1\\), \\(A2\\), \\(B1\\), \\(C2\\), and \\(C3\\). For the matching \\(M=\\{A1,\\ C2\\}\\), which path is an augmenting path?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(B,\\ 1,\\ A,\\ 2,\\ C,\\ 3\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(B,\\ 1,\\ A,\\ 2\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The path \\(B,1,A,2,C,3\\) starts at the unmatched vertex \\(B\\), uses \\(B1\\) (outside \\(M\\)), \\(1A\\) (in \\(M\\)), \\(A2\\) (outside), \\(2C\\) (in \\(M\\)), \\(C3\\) (outside), and ends at the unmatched vertex \\(3\\). The shorter path ends at \\(2\\), which is matched by the edge \\(C2\\), so it is not augmenting.",
+      "hint": "Both ends of an augmenting path must be unmatched."
+    },
+    {
+      "id": "dynanca-602-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Augmenting a matching",
+      "learningObjective": "Find the matching obtained by switching along an augmenting path.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A bipartite graph has edges \\(A1\\), \\(A2\\), \\(B1\\), \\(C2\\), and \\(C3\\), and \\(M=\\{A1,\\ C2\\}\\) is a matching. Along the augmenting path \\(B,1,A,2,C,3\\), the edges in \\(M\\) are removed and the other edges of the path are added. Which matching results?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\{B1,\\ A2,\\ C3\\}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\{A1,\\ C2,\\ B1\\}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The path uses \\(B1\\), \\(A1\\), \\(A2\\), \\(C2\\), \\(C3\\). Removing the matching edges \\(A1\\) and \\(C2\\) and adding \\(B1\\), \\(A2\\), \\(C3\\) gives \\(\\{B1,A2,C3\\}\\), in which every vertex is matched exactly once. Simply adding \\(B1\\) to \\(M\\) does not give a matching, because \\(A1\\) and \\(B1\\) share the vertex \\(1\\).",
+      "hint": "Switch the status of every edge along the path."
+    },
+    {
+      "id": "dynanca-602-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Edges of an augmenting path",
+      "learningObjective": "Count the matching edges on an augmenting path.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "An augmenting path for a matching \\(M\\) has \\(7\\) edges. How many of these edges belong to \\(M\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The edges alternate, and both the first and the last edge are outside \\(M\\). So the path has \\(4\\) edges outside \\(M\\) and \\(3\\) edges in \\(M\\). Switching along the path therefore replaces \\(3\\) matching edges by \\(4\\), which increases the size of the matching by \\(1\\).",
+      "hint": "The path begins and ends with an edge that is not in the matching."
+    },
+    {
+      "id": "dynanca-602-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Maximum matchings",
+      "learningObjective": "Relate the absence of augmenting paths to maximality.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "A matching \\(M\\) in a graph has no augmenting path. What follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(M\\) is a maximum matching: no matching has more edges."
+        },
+        {
+          "label": "B",
+          "text": "\\(M\\) is a perfect matching: every vertex of the graph is matched."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A matching is of maximum size exactly when it admits no augmenting path. That does not mean that every vertex is matched: in a path with three vertices, a single edge is a maximum matching, yet one vertex stays unmatched.",
+      "hint": "A maximum matching may still leave vertices unmatched."
+    },
+    {
+      "id": "dynanca-602-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Size of a maximum matching",
+      "learningObjective": "Find the size of a maximum matching in a small bipartite graph.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "A bipartite graph has vertices \\(A,B,C\\) on one side and \\(1,2,3\\) on the other, with edges \\(A1\\), \\(B1\\), \\(C1\\), \\(C2\\), and \\(C3\\). What is the size of a maximum matching?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both \\(A\\) and \\(B\\) are adjacent only to \\(1\\), so at most one of them can be matched. Together with one edge at \\(C\\), for example \\(A1\\) and \\(C2\\), this gives a matching of size \\(2\\). A matching of size \\(3\\) would have to match \\(A\\) and \\(B\\) to different vertices, which is impossible.",
+      "hint": "Look at the neighbours of \\(A\\) and of \\(B\\)."
+    },
+    {
+      "id": "dynanca-602-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "An obstruction to a full matching",
+      "learningObjective": "Explain why not every vertex of one side can be matched.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "A bipartite graph has vertices \\(A,B,C\\) on one side and \\(1,2,3\\) on the other, with edges \\(A1\\), \\(B1\\), \\(C1\\), \\(C2\\), and \\(C3\\). Why is there no matching in which \\(A\\), \\(B\\), and \\(C\\) are all matched?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The vertex \\(C\\) has more neighbours than the other vertices."
+        },
+        {
+          "label": "B",
+          "text": "The two vertices \\(A\\) and \\(B\\) have only one neighbour between them, namely \\(1\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "To match a set of vertices on one side, the set must have at least as many neighbours as it has members. The set \\(\\{A,B\\}\\) has two members but only the one neighbour \\(1\\), so \\(A\\) and \\(B\\) cannot both be matched. The number of neighbours of \\(C\\) is not an obstacle.",
+      "hint": "Find a set of vertices on the left whose neighbours are too few."
+    },
+    {
+      "id": "dynanca-602-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A long augmenting path",
+      "learningObjective": "Find the augmenting path that completes an assignment.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Workers \\(P,Q,R,S\\) can do these jobs: \\(P\\) can do \\(1\\) or \\(2\\); \\(Q\\) can do only \\(1\\); \\(R\\) can do \\(2\\) or \\(3\\); \\(S\\) can do \\(3\\) or \\(4\\). The current assignment is \\(P\\) to \\(1\\), \\(R\\) to \\(2\\), and \\(S\\) to \\(3\\). Which augmenting path leads to an assignment of all four workers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(Q,\\ 1,\\ P,\\ 2,\\ R,\\ 3,\\ S,\\ 4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(Q,\\ 1,\\ P,\\ 2,\\ R,\\ 3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The path \\(Q,1,P,2,R,3,S,4\\) starts at the unassigned worker \\(Q\\), alternates between unused and used pairs, and ends at the unassigned job \\(4\\). Switching along it gives \\(Q\\) to \\(1\\), \\(P\\) to \\(2\\), \\(R\\) to \\(3\\), and \\(S\\) to \\(4\\). The shorter path ends at job \\(3\\), which is still assigned to \\(S\\), so it is not augmenting.",
+      "hint": "The path must end at a job that nobody is doing at present."
+    }
+  ]
+}

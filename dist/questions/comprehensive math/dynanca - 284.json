@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-284",
+  "category": "Comprehensive Mathematics",
+  "title": "284. Functions, Graphs & Transformations: Determining Continuity from a Graph",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-284-q001",
+      "category": "Functions & Graphs",
+      "concept": "Continuity at a Point from a Graph",
+      "learningObjective": "Determine whether a function is continuous at a point from its graph.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "The graph of \\(f\\) is a single unbroken curve that passes through \\((1,2)\\). There is no hole, jump, or vertical asymptote at \\(x=1\\). Is \\(f\\) continuous at \\(x=1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A function is continuous at a point if its graph has no break at that point. Since the graph passes through \\((1,2)\\) without a hole, jump, or vertical asymptote, \\(f\\) is continuous at \\(x=1\\).",
+      "hint": "Check whether the graph has any break, hole, or jump at the given x-value."
+    },
+    {
+      "id": "dynanca-284-q002",
+      "category": "Functions & Graphs",
+      "concept": "Jump Discontinuity from a Graph",
+      "learningObjective": "Identify a jump discontinuity from the behavior of a graph at a point.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "At \\(x=2\\), the graph of \\(f\\) approaches \\(1\\) from the left and approaches \\(4\\) from the right. The point \\((2,4)\\) is plotted. Is \\(f\\) continuous at \\(x=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No"
+        },
+        {
+          "label": "B",
+          "text": "Yes"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The left-hand and right-hand behaviors approach different values, \\(1\\) and \\(4\\). This means the limit does not exist at \\(x=2\\), so there is a jump discontinuity. Therefore, \\(f\\) is not continuous at \\(x=2\\).",
+      "hint": "Compare the y-values approached from the left and from the right."
+    },
+    {
+      "id": "dynanca-284-q003",
+      "category": "Functions & Graphs",
+      "concept": "Removable Discontinuity from a Graph",
+      "learningObjective": "Determine continuity at a point where the graph has a hole.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The graph of \\(f\\) has a hole at \\((3,5)\\), and \\(f(3)=2\\). Is \\(f\\) continuous at \\(x=3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The graph has a hole at \\((3,5)\\), but the function value is \\(f(3)=2\\). Since the value at \\(x=3\\) does not match the point approached by the graph, there is a removable discontinuity. Therefore, \\(f\\) is not continuous at \\(x=3\\).",
+      "hint": "Compare the plotted point at \\(x=3\\) with the y-value of the hole."
+    },
+    {
+      "id": "dynanca-284-q004",
+      "category": "Functions & Graphs",
+      "concept": "Infinite Discontinuity from a Graph",
+      "learningObjective": "Determine whether a function is continuous at a vertical asymptote.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The graph of \\(f\\) has a vertical asymptote at \\(x=0\\), and \\(f\\) approaches \\(\\infty\\) as \\(x\\) approaches \\(0\\) from either side. Is \\(f\\) continuous at \\(x=0\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "B",
+      "explanation": "At a vertical asymptote, the function values become unbounded and the limit does not exist as a real number. Therefore, the graph has an infinite discontinuity at \\(x=0\\), so \\(f\\) is not continuous there.",
+      "hint": "Recall that a vertical asymptote indicates a break in the graph."
+    },
+    {
+      "id": "dynanca-284-q005",
+      "category": "Functions & Graphs",
+      "concept": "Continuity from Matching One-Sided Limits and Function Value",
+      "learningObjective": "Determine continuity at a point from given one-sided limits and function value.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "For a function \\(f\\), \\(\\lim_{x\\to 2^{-}}f(x)=3\\), \\(\\lim_{x\\to 2^{+}}f(x)=3\\), and \\(f(2)=3\\). Is \\(f\\) continuous at \\(x=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A function is continuous at \\(x=2\\) if the left-hand limit, right-hand limit, and function value all agree. Here all three are equal to \\(3\\). Therefore, \\(f\\) is continuous at \\(x=2\\).",
+      "hint": "Check whether the left limit, right limit, and function value are equal."
+    },
+    {
+      "id": "dynanca-284-q006",
+      "category": "Functions & Graphs",
+      "concept": "Continuity at a Corner Point",
+      "learningObjective": "Recognize that a corner point does not necessarily break continuity.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The graph of \\(f\\) has a sharp corner at \\(x=-1\\), but the graph is unbroken there. Also, \\(\\lim_{x\\to -1^{-}}f(x)=2\\), \\(\\lim_{x\\to -1^{+}}f(x)=2\\), and \\(f(-1)=2\\). Is \\(f\\) continuous at \\(x=-1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A corner means the graph changes direction sharply, but continuity only requires that the graph has no break. Since the left limit, right limit, and function value are all \\(2\\), the function is continuous at \\(x=-1\\).",
+      "hint": "Continuity does not require smoothness; it only requires no break."
+    },
+    {
+      "id": "dynanca-284-q007",
+      "category": "Functions & Graphs",
+      "concept": "Continuity of a Piecewise Graph at the Boundary",
+      "learningObjective": "Determine continuity at a boundary point of a piecewise graph.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "The function \\(f\\) is defined by \\(f(x)=x+1\\) for \\(x<1\\) and \\(f(x)=3x-1\\) for \\(x\\ge 1\\). At \\(x=1\\), the left-hand limit is \\(2\\), the right-hand limit is \\(2\\), and \\(f(1)=2\\). Is \\(f\\) continuous at \\(x=1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The left-hand limit, right-hand limit, and function value at \\(x=1\\) are all \\(2\\). Since these three values agree, there is no break at \\(x=1\\). Therefore, \\(f\\) is continuous at \\(x=1\\).",
+      "hint": "Compare the left limit, right limit, and function value at the boundary."
+    },
+    {
+      "id": "dynanca-284-q008",
+      "category": "Functions & Graphs",
+      "concept": "Continuity at a Point Where the Function Is Continuous",
+      "learningObjective": "Determine continuity at a point when the graph is known to be continuous there.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "The graph of \\(f\\) has a removable discontinuity at \\(x=1\\), but it is a single unbroken curve at \\(x=2\\). Is \\(f\\) continuous at \\(x=2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The discontinuity at \\(x=1\\) does not affect continuity at \\(x=2\\). At \\(x=2\\), the graph is a single unbroken curve with no hole or jump, so \\(f\\) is continuous at \\(x=2\\).",
+      "hint": "Continuity is determined at each point separately."
+    },
+    {
+      "id": "dynanca-284-q009",
+      "category": "Functions & Graphs",
+      "concept": "Discontinuity from Different One-Sided Limits",
+      "learningObjective": "Determine that a function is not continuous when one-sided limits differ.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "For a function \\(f\\), \\(\\lim_{x\\to 3^{-}}f(x)=2\\), \\(\\lim_{x\\to 3^{+}}f(x)=5\\), and \\(f(3)=5\\). Is \\(f\\) continuous at \\(x=3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The left-hand limit is \\(2\\), but the right-hand limit is \\(5\\). Since the two one-sided limits are not equal, the limit \\(\\lim_{x\\to 3}f(x)\\) does not exist. Therefore, \\(f\\) is not continuous at \\(x=3\\), even though \\(f(3)=5\\).",
+      "hint": "A function cannot be continuous if its left-hand and right-hand limits are different."
+    },
+    {
+      "id": "dynanca-284-q010",
+      "category": "Functions & Graphs",
+      "concept": "Continuity from Matching Limits and Value",
+      "learningObjective": "Determine continuity from matching one-sided limits and function value.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "For a function \\(f\\), \\(\\lim_{x\\to -2^{-}}f(x)=1\\), \\(\\lim_{x\\to -2^{+}}f(x)=1\\), and \\(f(-2)=1\\). Is \\(f\\) continuous at \\(x=-2\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes"
+        },
+        {
+          "label": "B",
+          "text": "No"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The left-hand limit, right-hand limit, and function value at \\(x=-2\\) are all equal to \\(1\\). Therefore, the limit exists and equals the function value. Hence, \\(f\\) is continuous at \\(x=-2\\).",
+      "hint": "Check whether the left limit, right limit, and function value all agree."
+    }
+  ]
+}

@@ -1,0 +1,714 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "mathematics-sat-11",
+  "title": "SAT 11 · Divisibility and remainders",
+  "category": "SAT Mathematics",
+  "description": "A/B reasoning practice. Difficulty is editorial, not standardized SAT calibration.",
+  "questionCount": 18,
+  "questions": [
+    {
+      "id": "sat-q0181",
+      "title": "Remainder When Dividing Thirty-Eight",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "When 38 is divided by 5, what is the remainder? Choose A or B and explain how the quotient and remainder reconstruct the original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Remainder 3"
+        },
+        {
+          "label": "B",
+          "text": "Remainder 4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The largest multiple of 5 that does not exceed 38 is 35, and 35 = 5 × 7. The difference is 38 − 35 = 3, so 38 = 5 × 7 + 3. The remainder is 3. Choice B is incorrect because 5 × 7 + 4 = 39, not 38.",
+      "hint": "Find the largest multiple of 5 that does not exceed 38, then see how much is left over."
+    },
+    {
+      "id": "sat-q0182",
+      "title": "Testing Divisibility by Three",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "Is 246 divisible by 3? Choose A or B and justify your choice using the digit-sum rule.",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, 246 is not divisible by 3."
+        },
+        {
+          "label": "B",
+          "text": "Yes, 246 is divisible by 3."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A whole number is divisible by 3 when the sum of its digits is divisible by 3. For 246, the digit sum is 2 + 4 + 6 = 12, and 12 is divisible by 3. Therefore, 246 is divisible by 3; in fact, 246 = 3 × 82. Choice A overlooks the digit-sum test.",
+      "hint": "Add the digits of 246 and check whether that sum is divisible by 3."
+    },
+    {
+      "id": "sat-q0183",
+      "title": "Numbers Divisible by Two or Three",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "Consider the integers from 1 through 30. How many are divisible by 2 or by 3, including numbers divisible by both? Use the Venn diagram to avoid counting the overlap twice. Choose A or B and justify your count.",
+      "options": [
+        {
+          "label": "A",
+          "text": "25 integers"
+        },
+        {
+          "label": "B",
+          "text": "20 integers"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are 15 multiples of 2 from 1 through 30, and 10 multiples of 3. Five numbers are multiples of both: 6, 12, 18, 24, and 30. Adding the two set sizes and subtracting the overlap gives 15 + 10 − 5 = 20. Equivalently, the Venn regions for numbers divisible by 2 or 3 total 10 + 5 + 5 = 20. Choice A counts the 5 common multiples twice.",
+      "visuals": [
+        {
+          "id": "sat-q0183-v1",
+          "type": "VENN",
+          "data": {
+            "universe": {
+              "label": "Integers from 1 through 30",
+              "total": 30
+            },
+            "sets": [
+              {
+                "id": "E",
+                "label": "Divisible by 2",
+                "elements": []
+              },
+              {
+                "id": "T",
+                "label": "Divisible by 3",
+                "elements": []
+              }
+            ],
+            "regions": {
+              "E_only": 10,
+              "T_only": 5,
+              "intersection": 5,
+              "outside": 10
+            }
+          },
+          "alt": "Among the integers 1 through 30, 10 are divisible by 2 only, 5 by 3 only, 5 by both 2 and 3, and 10 by neither."
+        }
+      ],
+      "hint": "Count the multiples of 2 and of 3 up to 30, subtract those counted twice, and confirm with the Venn regions."
+    },
+    {
+      "id": "sat-q0184",
+      "title": "Packing Eighty-Four Buttons",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "A teacher has 84 buttons and places the same number in each packet, using exactly 7 buttons per packet. How many full packets can be made? Choose A or B and show how multiplication verifies the result.",
+      "options": [
+        {
+          "label": "A",
+          "text": "12 packets"
+        },
+        {
+          "label": "B",
+          "text": "11 packets"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide the number of buttons by the number in each packet: 84 ÷ 7 = 12. Check by multiplication: 12 × 7 = 84, so no buttons remain and 12 full packets are made. Choice B accounts for only 11 × 7 = 77 buttons and leaves 7 buttons, enough for one more packet.",
+      "hint": "Divide the total number of buttons by the number per packet, then check with multiplication."
+    },
+    {
+      "id": "sat-q0185",
+      "title": "Remainder in a Division by Nine",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "What is the remainder when 47 is divided by 9? Choose A or B and explain using a multiple of 9 close to 47.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Remainder 3"
+        },
+        {
+          "label": "B",
+          "text": "Remainder 2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The greatest multiple of 9 less than 47 is 45, because 9 × 5 = 45. The difference is 47 − 45 = 2, so 47 = 9 × 5 + 2. The remainder is 2. Choice A would give 9 × 5 + 3 = 48, which is one too large.",
+      "hint": "Find the largest multiple of 9 that is not greater than 47 and subtract it."
+    },
+    {
+      "id": "sat-q0186",
+      "title": "A Divisibility Test for Six",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "basic",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "Is 1,326 divisible by 6? A number is divisible by 6 exactly when it is divisible by both 2 and 3. Use the checks in the table, then choose A or B and explain your reasoning.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, 1,326 is divisible by 6."
+        },
+        {
+          "label": "B",
+          "text": "No, 1,326 is not divisible by 6."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The last digit is 6, so 1,326 is divisible by 2. Its digit sum is 1 + 3 + 2 + 6 = 12, which is divisible by 3. Since both required conditions hold, 1,326 is divisible by 6; 1,326 ÷ 6 = 221. Choice B is incorrect because it ignores that both divisibility tests are satisfied.",
+      "visuals": [
+        {
+          "id": "sat-q0186-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Test",
+              "Check for 1,326",
+              "Result"
+            ],
+            "rows": [
+              [
+                "Divisible by 2",
+                "Last digit is 6",
+                "Yes"
+              ],
+              [
+                "Divisible by 3",
+                "Digit sum is 1 + 3 + 2 + 6 = 12",
+                "Yes"
+              ]
+            ],
+            "headers": [
+              "Test",
+              "Check for 1,326",
+              "Result"
+            ]
+          },
+          "alt": "Divisibility checks for 1,326: it is even because its last digit is 6, and its digit sum is 12, which is divisible by 3."
+        }
+      ],
+      "hint": "Check the two conditions in the table: whether the number is even and whether its digit sum is divisible by 3."
+    },
+    {
+      "id": "sat-q0187",
+      "title": "The Smallest Number with Two Remainders",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "What is the smallest positive integer that leaves remainder 3 when divided by 7 and remainder 5 when divided by 9? Choose A or B and show how you check the number against both conditions.",
+      "options": [
+        {
+          "label": "A",
+          "text": "59"
+        },
+        {
+          "label": "B",
+          "text": "52"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Integers that leave remainder 3 when divided by 7 are 3, 10, 17, 24, 31, 38, 45, 52, 59, and so on. Checking these in order modulo 9 gives remainders 3, 1, 8, 6, 4, 2, 0, 7, and 5. The first that leaves remainder 5 is 59. Indeed, 59 = 7 × 8 + 3 and 59 = 9 × 6 + 5. Choice B satisfies the division-by-7 condition but 52 = 9 × 5 + 7, so it does not leave remainder 5 when divided by 9.",
+      "hint": "List numbers that leave remainder 3 on division by 7 in increasing order, and test each against division by 9."
+    },
+    {
+      "id": "sat-q0188",
+      "title": "Finding the Twelfth Term of a Pattern",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "The pattern begins 4, 9, 14, 19, ... . Each term is 5 greater than the previous term. What is the twelfth term? Use the table to identify the rule, then choose A or B and justify your calculation.",
+      "options": [
+        {
+          "label": "A",
+          "text": "54"
+        },
+        {
+          "label": "B",
+          "text": "59"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first term is 4 and each step adds 5. From the first term to the twelfth term there are 11 steps, so the twelfth term is 4 + 11 × 5 = 4 + 55 = 59. Choice A results from adding only 10 increments instead of 11; it is the eleventh term, not the twelfth.",
+      "visuals": [
+        {
+          "id": "sat-q0188-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Term number n",
+              "Term value"
+            ],
+            "rows": [
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                9
+              ],
+              [
+                3,
+                14
+              ],
+              [
+                4,
+                19
+              ]
+            ],
+            "headers": [
+              "Term number n",
+              "Term value"
+            ]
+          },
+          "alt": "The first four terms are 4, 9, 14, and 19, increasing by 5 each time."
+        }
+      ],
+      "hint": "Count how many steps of +5 separate the first term from the twelfth term."
+    },
+    {
+      "id": "sat-q0189",
+      "title": "A Linear Rule for an Odd-Step Pattern",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "A number pattern has nth term given by f(n) = 4n + 1 for positive integers n. The graph shows the corresponding linear rule. What is the twelfth term? Choose A or B and explain how substituting n = 12 gives the result.",
+      "options": [
+        {
+          "label": "A",
+          "text": "49"
+        },
+        {
+          "label": "B",
+          "text": "48"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Substitute n = 12 into the rule: f(12) = 4 × 12 + 1 = 48 + 1 = 49. Choice B omits the final addition of 1 and therefore does not follow the stated rule.",
+      "visuals": [
+        {
+          "id": "sat-q0189-v1",
+          "type": "FUNCTION_GRAPH",
+          "data": {
+            "axes": {
+              "xMin": 0,
+              "xMax": 12,
+              "yMin": 0,
+              "yMax": 50
+            },
+            "curves": [
+              {
+                "expression": "4*x+1",
+                "label": "f(n)=4n+1"
+              }
+            ],
+            "points": [
+              {
+                "x": 1,
+                "y": 5,
+                "label": "Term 1"
+              },
+              {
+                "x": 2,
+                "y": 9,
+                "label": "Term 2"
+              },
+              {
+                "x": 3,
+                "y": 13,
+                "label": "Term 3"
+              },
+              {
+                "x": 12,
+                "y": 49,
+                "label": "Term 12"
+              }
+            ]
+          },
+          "alt": "The line f(n)=4n+1 passes through the term points (1,5), (2,9), (3,13), and (12,49). The pattern increases by 4 each term."
+        }
+      ],
+      "hint": "Substitute n = 12 into the rule, multiplying before adding 1."
+    },
+    {
+      "id": "sat-q0190",
+      "title": "A Power Pattern Modulo Five",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "What is the remainder when 7 to the power of 23 is divided by 5? The table shows the repeating remainders of powers of 7. Choose A or B and use the cycle to justify the answer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Remainder 2"
+        },
+        {
+          "label": "B",
+          "text": "Remainder 3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since 7 leaves remainder 2 when divided by 5, the powers have remainders 2, 4, 3, 1 and then repeat every four exponents. Because 23 = 4 × 5 + 3, the 23rd power has the same remainder as the third power in the cycle, which is 3. Choice A corresponds to an exponent that is 1 more than a multiple of 4, not an exponent congruent to 3 modulo 4.",
+      "visuals": [
+        {
+          "id": "sat-q0190-v1",
+          "type": "TABLE",
+          "data": {
+            "columns": [
+              "Exponent",
+              "Remainder of 7^n divided by 5"
+            ],
+            "rows": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                5,
+                2
+              ]
+            ],
+            "headers": [
+              "Exponent",
+              "Remainder of 7^n divided by 5"
+            ]
+          },
+          "alt": "The remainders of the first powers of 7 on division by 5 are 2, 4, 3, 1, and then 2 again, showing a cycle of length four."
+        }
+      ],
+      "hint": "Use the table's cycle of remainders and find where exponent 23 falls by dividing it by the cycle length."
+    },
+    {
+      "id": "sat-q0191",
+      "title": "Testing a Three-Digit Number for Eleven",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "Is 572 divisible by 11? For a three-digit number, the difference between the sum of alternating digits must be 0 or a multiple of 11 for the number to be divisible by 11. Choose A or B and explain the check.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, 572 is divisible by 11."
+        },
+        {
+          "label": "B",
+          "text": "No, 572 is not divisible by 11."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The alternating digit sums are 5 + 2 = 7 and 7. Their difference is 7 − 7 = 0, which is a multiple of 11, so 572 is divisible by 11. Directly, 572 = 11 × 52. Choice B is incorrect because the alternating-sum difference satisfies the divisibility rule exactly.",
+      "hint": "Add the first and third digits, compare with the middle digit, and check whether the difference is 0 or a multiple of 11."
+    },
+    {
+      "id": "sat-q0192",
+      "title": "A Power of Two Divided by Seven",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "intermediate",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "What is the remainder when 2 to the power of 10 is divided by 7? The mapping shows the repeating remainders for powers of 2 according to the exponent's remainder upon division by 3. Choose A or B and explain how the cycle determines the answer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Remainder 4"
+        },
+        {
+          "label": "B",
+          "text": "Remainder 2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first powers of 2 have remainders 2, 4, 1, and then the cycle repeats because 2^3 = 8 leaves remainder 1 when divided by 7. Since 10 = 3 × 3 + 1, the exponent 10 leaves remainder 1 when divided by 3, so 2^10 has the same remainder as 2^1, namely 2. Choice A corresponds to an exponent congruent to 2 modulo 3, such as 2 or 5.",
+      "visuals": [
+        {
+          "id": "sat-q0192-v1",
+          "type": "MAPPING",
+          "data": {
+            "left": {
+              "label": "Exponent remainder when divided by 3",
+              "elements": [
+                1,
+                2,
+                0
+              ]
+            },
+            "right": {
+              "label": "Remainder of 2^n divided by 7",
+              "elements": [
+                2,
+                4,
+                1
+              ]
+            },
+            "arrows": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          "alt": "For powers of 2 modulo 7, an exponent congruent to 1 modulo 3 gives remainder 2, congruent to 2 gives remainder 4, and congruent to 0 gives remainder 1."
+        }
+      ],
+      "hint": "Find the remainder of the exponent 10 when divided by 3 and use the mapping to read the matching remainder."
+    },
+    {
+      "id": "sat-q0193",
+      "title": "Adding Counters to Complete a Group",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "A student has 43 counters and wants to put them into groups of 6 with no counters left over. The student may only add counters, not remove any. What is the smallest number of counters to add? Choose A or B and justify your answer using division with a remainder.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 counter"
+        },
+        {
+          "label": "B",
+          "text": "5 counters"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Dividing 43 by 6 gives 43 = 6 × 7 + 1, so one counter remains after making seven full groups. The next multiple of 6 is 6 × 8 = 48. The student must add 48 − 43 = 5 counters to reach that multiple. Adding only 1 counter would make 44, which is not divisible by 6.",
+      "hint": "Divide 43 by 6 to find the remainder, then find how many more counters reach the next multiple of 6."
+    },
+    {
+      "id": "sat-q0194",
+      "title": "The First Term Below Fifty",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "A number pattern starts at 100 and decreases by 7 each time: 100, 93, 86, 79, ... . The chart lists the first eight terms. Which term number is the first whose value is below 50? Choose A or B and show how the pattern continues.",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ninth term"
+        },
+        {
+          "label": "B",
+          "text": "The eighth term"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The eighth term is 51, which is still above 50. Subtracting 7 once more gives the ninth term, 51 − 7 = 44, which is below 50. Therefore, the ninth term is the first below 50. Choice B is incorrect because 51 is not below 50.",
+      "visuals": [
+        {
+          "id": "sat-q0194-v1",
+          "type": "DATA_CHART",
+          "data": {
+            "kind": "bar",
+            "xLabel": "Term number",
+            "yLabel": "Term value",
+            "bars": [
+              {
+                "label": "1",
+                "value": 100
+              },
+              {
+                "label": "2",
+                "value": 93
+              },
+              {
+                "label": "3",
+                "value": 86
+              },
+              {
+                "label": "4",
+                "value": 79
+              },
+              {
+                "label": "5",
+                "value": 72
+              },
+              {
+                "label": "6",
+                "value": 65
+              },
+              {
+                "label": "7",
+                "value": 58
+              },
+              {
+                "label": "8",
+                "value": 51
+              }
+            ],
+            "chart": "bar",
+            "labels": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8"
+            ],
+            "values": [
+              100,
+              93,
+              86,
+              79,
+              72,
+              65,
+              58,
+              51
+            ],
+            "axes": {
+              "xLabel": "Term number",
+              "yLabel": "Term value"
+            }
+          },
+          "alt": "Bar chart of the first eight terms of a pattern decreasing by 7: 100, 93, 86, 79, 72, 65, 58, and 51."
+        }
+      ],
+      "hint": "Read the eighth term from the chart and decide whether it is already below 50; if not, continue the pattern one more step."
+    },
+    {
+      "id": "sat-q0195",
+      "title": "The Smallest Integer with Two Specified Remainders",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "What is the smallest positive integer that leaves remainder 3 when divided by 4 and remainder 4 when divided by 5? Choose A or B and verify both conditions.",
+      "options": [
+        {
+          "label": "A",
+          "text": "39"
+        },
+        {
+          "label": "B",
+          "text": "19"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Numbers that leave remainder 3 when divided by 4 are 3, 7, 11, 15, 19, 23, and so on. Among these, 19 leaves remainder 4 when divided by 5 because 19 = 5 × 3 + 4. The previous candidate, 15, leaves remainder 0 when divided by 5, so 19 is the smallest positive integer satisfying both conditions. Choice A also satisfies the two remainder conditions, but it is not the smallest.",
+      "hint": "List numbers with remainder 3 on division by 4 in increasing order and test each for remainder 4 on division by 5."
+    },
+    {
+      "id": "sat-q0196",
+      "title": "A Number with Remainders Two and Three",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "Find the smallest positive integer that leaves remainder 2 when divided by 5 and remainder 3 when divided by 4. Choose A or B and demonstrate that the chosen number meets both conditions.",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "27"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The number 7 can be written as 7 = 5 × 1 + 2 and 7 = 4 × 1 + 3, so it leaves the required remainders. To see that it is the smallest positive integer, numbers that leave remainder 2 on division by 5 begin 2, 7, 12, 17, ... . The first, 2, leaves remainder 2 rather than 3 when divided by 4; the next, 7, satisfies both. Choice B satisfies both conditions but is larger than 7.",
+      "hint": "List numbers with remainder 2 on division by 5, starting from the smallest, and check each for remainder 3 on division by 4."
+    },
+    {
+      "id": "sat-q0197",
+      "title": "A Large Power of Three Modulo Seven",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "What is the remainder when 3 to the power of 2026 is divided by 7? The remainders of successive powers of 3 repeat in a cycle. Choose A or B and justify how the exponent identifies the position in that cycle.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Remainder 5"
+        },
+        {
+          "label": "B",
+          "text": "Remainder 4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The remainders of powers of 3 modulo 7 are 3, 2, 6, 4, 5, 1, then the cycle repeats with length 6. Since 2026 = 6 × 337 + 4, the exponent has position 4 in the cycle. The fourth remainder is 4, so the answer is remainder 4. Choice A is the fifth remainder in the cycle and would correspond to an exponent congruent to 5 modulo 6.",
+      "hint": "Find the cycle of remainders of 3, 3^2, 3^3, ... modulo 7, then use the remainder when 2026 is divided by the cycle length."
+    },
+    {
+      "id": "sat-q0198",
+      "title": "The Smallest Number Above One Hundred",
+      "category": "MATH",
+      "concept": "Divisibility and remainders",
+      "difficulty": "advanced",
+      "cognitiveLevel": "application",
+      "learningObjective": "Apply divisibility and remainders and justify the selected answer.",
+      "question": "Find the smallest integer greater than 100 that leaves remainder 2 when divided by 3 and remainder 3 when divided by 5. Choose A or B and use the repeating pattern of possible remainders to justify your answer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "113"
+        },
+        {
+          "label": "B",
+          "text": "128"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An integer that leaves remainder 3 when divided by 5 can be 3, 8, 13, 18, and so on, increasing by 5. Checking these numbers for remainder 2 upon division by 3 gives 8, 23, 38, 53, 68, 83, 98, 113, ... . These valid numbers repeat every 15 because 15 is divisible by both 3 and 5. Since 98 is the greatest valid number below 100, the next one is 98 + 15 = 113, which is greater than 100 and satisfies both conditions. Choice B also has the required remainders, but it is not the smallest number greater than 100.",
+      "hint": "Find one number that satisfies both remainders, notice that the solutions repeat every 15, and step to the first one above 100."
+    }
+  ]
+}

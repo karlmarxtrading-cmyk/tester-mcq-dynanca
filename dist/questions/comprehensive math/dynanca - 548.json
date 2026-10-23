@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-548",
+  "category": "Comprehensive Mathematics",
+  "title": "548. Discrete Mathematics, Counting & Graph Theory: Permutations with Repeated Objects",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-548-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Identical letters",
+      "learningObjective": "Count the arrangements of three letters of which two are identical.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "How many different arrangements can be made with the letters A, A, B?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(6\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The arrangements are AAB, ABA, and BAA. The formula gives \\(\\dfrac{3!}{2!}=3\\): of the \\(3!=6\\) orders obtained by treating the two letters A as different, each arrangement appears twice. So \\(6\\) is an overcount.",
+      "hint": "Write the arrangements out; swapping the two identical letters changes nothing."
+    },
+    {
+      "id": "dynanca-548-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two repeated letters",
+      "learningObjective": "Count the arrangements of a word with two pairs of identical letters.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many different arrangements of the letters of the word LEVEL are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(30\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The word has \\(5\\) letters, with L twice and E twice. The number of arrangements is \\(\\dfrac{5!}{2!\\,2!}=\\dfrac{120}{4}=30\\). The number \\(120=5!\\) treats all five letters as different.",
+      "hint": "Divide the number of orders of five objects by a factorial for each repeated letter."
+    },
+    {
+      "id": "dynanca-548-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A letter repeated three times",
+      "learningObjective": "Count the arrangements of a word with letters repeated three and two times.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many different arrangements of the letters of the word BANANA are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(60\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The word has \\(6\\) letters: A three times, N twice, and B once. The number of arrangements is \\(\\dfrac{6!}{3!\\,2!}=\\dfrac{720}{12}=60\\). Dividing only by \\(3!\\) gives \\(120\\) and ignores the repeated N.",
+      "hint": "Each group of identical letters contributes its own factorial to the denominator."
+    },
+    {
+      "id": "dynanca-548-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Dividing for every repeated letter",
+      "learningObjective": "Count the arrangements of a word with two different repeated letters.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "How many different arrangements of the letters of the word COFFEE are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(360\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(180\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The word has \\(6\\) letters, with F twice and E twice. The number of arrangements is \\(\\dfrac{6!}{2!\\,2!}=\\dfrac{720}{4}=180\\). The number \\(360\\) results from dividing by \\(2!\\) only once.",
+      "hint": "Count how many letters are repeated, and how often each appears."
+    },
+    {
+      "id": "dynanca-548-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Binary strings with a fixed number of ones",
+      "learningObjective": "Count binary strings as arrangements of repeated symbols.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many binary strings of length \\(7\\) contain exactly three digits equal to \\(1\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(35\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(210\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Such a string is an arrangement of three \\(1\\)s and four \\(0\\)s, so the number is \\(\\dfrac{7!}{3!\\,4!}=35\\). The number \\(210=7\\cdot 6\\cdot 5\\) counts ordered choices of three positions, but the three \\(1\\)s are identical, so the order of choosing the positions does not matter.",
+      "hint": "The three \\(1\\)s are identical, and so are the four \\(0\\)s."
+    },
+    {
+      "id": "dynanca-548-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Coloured flags in a row",
+      "learningObjective": "Count the arrangements of objects of two colours.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Four identical red flags and two identical blue flags are hung in a row. How many different colour patterns are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(30\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The patterns are the arrangements of \\(6\\) objects with \\(4\\) alike of one kind and \\(2\\) alike of another: \\(\\dfrac{6!}{4!\\,2!}=\\dfrac{720}{48}=15\\). The number \\(30\\) results from dividing by \\(4!\\) only.",
+      "hint": "A pattern is decided by the positions of the two blue flags."
+    },
+    {
+      "id": "dynanca-548-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "One repeated letter in a longer word",
+      "learningObjective": "Count the arrangements of a seven-letter word with one repeated letter.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "How many different arrangements of the letters of the word ALGEBRA are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(2520\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(5040\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The word has \\(7\\) letters, and only A is repeated, appearing twice. The number of arrangements is \\(\\dfrac{7!}{2!}=\\dfrac{5040}{2}=2520\\). The number \\(5040=7!\\) treats the two letters A as different.",
+      "hint": "Find the one letter that occurs twice."
+    },
+    {
+      "id": "dynanca-548-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Why the factorial is divided out",
+      "learningObjective": "Explain the division by a factorial when objects are identical.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "The number of arrangements of the letters A, A, A, B, C is \\(\\dfrac{5!}{3!}\\). Why is \\(5!\\) divided by \\(3!\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Permuting the three identical letters among their positions gives the same arrangement, so each arrangement is counted \\(3!\\) times in \\(5!\\)."
+        },
+        {
+          "label": "B",
+          "text": "Three of the five positions are already occupied, so only the remaining positions are counted."
+        }
+      ],
+      "answer": "A",
+      "explanation": "If the three letters A are labelled to make them different, there are \\(5!\\) orders. Removing the labels, the \\(3!\\) orders of the labelled letters within their positions all become one arrangement. So \\(5!\\) counts every arrangement \\(3!\\) times, and dividing corrects this: \\(\\dfrac{120}{6}=20\\).",
+      "hint": "Imagine the identical letters carrying temporary labels."
+    },
+    {
+      "id": "dynanca-548-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Three pairs of digits",
+      "learningObjective": "Count the arrangements of six digits forming three identical pairs.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "How many different six-digit numbers can be written using the digits \\(1,1,2,2,3,3\\), each exactly as often as listed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(90\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(120\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are \\(6\\) digits in three identical pairs, so the number of arrangements is \\(\\dfrac{6!}{2!\\,2!\\,2!}=\\dfrac{720}{8}=90\\). The number \\(120=\\dfrac{6!}{3!}\\) divides by the wrong quantity: there are three pairs, not three identical digits.",
+      "hint": "Each of the three pairs contributes a factor \\(2!\\) to the denominator."
+    },
+    {
+      "id": "dynanca-548-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Identical letters kept together",
+      "learningObjective": "Count arrangements in which two identical letters are adjacent.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In how many different arrangements of the letters A, A, B, B, C are the two letters A next to each other?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Glue the two letters A into one block. The objects to arrange are then the block, B, B, and C: four objects with B repeated, giving \\(\\dfrac{4!}{2!}=12\\) arrangements. Because the two letters A are identical, the block has only one internal order. The number \\(24=4!\\) forgets that the two letters B are identical.",
+      "hint": "Treat the pair of adjacent letters as a single object and recount the objects."
+    }
+  ]
+}

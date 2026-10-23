@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-453",
+  "category": "Comprehensive Mathematics",
+  "title": "453. Trigonometry & Periodic Models: Interpreting Phase Difference of Waves",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-453-q001",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Leading wave",
+      "learningObjective": "Decide which of two sinusoids leads when a positive phase is added.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Two waves are \\(y_1=\\sin t\\) and \\(y_2=\\sin\\left(t+\\frac{\\pi}{2}\\right)\\). Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y_2\\) leads \\(y_1\\) by \\(\\frac{\\pi}{2}\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(y_2\\) lags \\(y_1\\) by \\(\\frac{\\pi}{2}\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The wave \\(y_2\\) reaches its maximum when \\(t+\\frac{\\pi}{2}=\\frac{\\pi}{2}\\), that is, at \\(t=0\\), while \\(y_1\\) reaches its maximum later, at \\(t=\\frac{\\pi}{2}\\). A wave that reaches each stage of its cycle earlier is said to lead, so \\(y_2\\) leads by \\(\\frac{\\pi}{2}\\).",
+      "hint": "Find the time at which each wave first reaches its maximum."
+    },
+    {
+      "id": "dynanca-453-q002",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Phase difference of half a cycle",
+      "learningObjective": "Interpret a phase difference of pi between two waves of equal frequency.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "Two waves of the same frequency and amplitude have a phase difference of \\(\\pi\\) radians. How are they related?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They are completely out of phase: one is the negative of the other."
+        },
+        {
+          "label": "B",
+          "text": "They are in phase: their maxima occur at the same times."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A phase difference of \\(\\pi\\) is half a cycle. Since \\(\\sin(t+\\pi)=-\\sin t\\), one wave is at a maximum exactly when the other is at a minimum. Waves are in phase when the phase difference is \\(0\\) or a multiple of \\(2\\pi\\).",
+      "hint": "Evaluate \\(\\sin(t+\\pi)\\) with the sum formula."
+    },
+    {
+      "id": "dynanca-453-q003",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Phase difference of a full cycle",
+      "learningObjective": "Interpret a phase difference of two pi.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Comprehension",
+      "question": "Two waves of the same frequency have a phase difference of \\(2\\pi\\) radians. How are they related?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They are in phase."
+        },
+        {
+          "label": "B",
+          "text": "They are completely out of phase."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A phase difference of \\(2\\pi\\) is one full cycle. Since \\(\\sin(t+2\\pi)=\\sin t\\), the two waves reach their maxima and minima at exactly the same times, so they are in phase. Being completely out of phase corresponds to an odd multiple of \\(\\pi\\).",
+      "hint": "Shifting a sinusoid by a full cycle reproduces the same function."
+    },
+    {
+      "id": "dynanca-453-q004",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Lagging wave",
+      "learningObjective": "Decide which of two sinusoids lags when a phase is subtracted.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Two waves are \\(y_1=\\sin(\\omega t)\\) and \\(y_2=\\sin\\left(\\omega t-\\frac{\\pi}{3}\\right)\\) with \\(\\omega>0\\). Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y_2\\) lags \\(y_1\\) by \\(\\frac{\\pi}{3}\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(y_2\\) leads \\(y_1\\) by \\(\\frac{\\pi}{3}\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The wave \\(y_1\\) crosses zero going upward at \\(t=0\\), while \\(y_2\\) does so when \\(\\omega t-\\frac{\\pi}{3}=0\\), that is, at the later time \\(t=\\frac{\\pi}{3\\omega}\\). A wave that reaches each stage later is said to lag, so \\(y_2\\) lags \\(y_1\\) by \\(\\frac{\\pi}{3}\\).",
+      "hint": "Find when each wave crosses zero going upward and compare the times."
+    },
+    {
+      "id": "dynanca-453-q005",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Time shift from a phase difference",
+      "learningObjective": "Convert a phase difference into a time difference using the period.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Two signals have the same period \\(T=0.02\\text{ s}\\) and a phase difference of \\(\\frac{\\pi}{2}\\) radians. What is the time difference between corresponding points of the two signals?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(0.01\\text{ s}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(0.005\\text{ s}\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A full cycle of \\(2\\pi\\) radians takes one period. The fraction of a cycle is \\(\\frac{\\pi/2}{2\\pi}=\\frac{1}{4}\\), so the time difference is \\(\\frac{T}{4}=\\frac{0.02}{4}=0.005\\text{ s}\\). The value \\(0.01\\text{ s}\\) is half a period, which corresponds to a phase difference of \\(\\pi\\).",
+      "hint": "Find what fraction of a full cycle the phase difference represents."
+    },
+    {
+      "id": "dynanca-453-q006",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Phase difference from a time lag",
+      "learningObjective": "Convert a time lag into a phase difference in degrees.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "Two signals with period \\(8\\text{ ms}\\) are observed, and one lags the other by \\(2\\text{ ms}\\). What is the phase difference in degrees?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(45^\\circ\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(90^\\circ\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The lag is \\(\\frac{2}{8}=\\frac{1}{4}\\) of a period. A full period corresponds to \\(360^\\circ\\), so the phase difference is \\(\\frac{1}{4}\\cdot 360^\\circ=90^\\circ\\). Using \\(180^\\circ\\) for a full period would give \\(45^\\circ\\), which is incorrect.",
+      "hint": "Multiply the fraction of a period by \\(360^\\circ\\)."
+    },
+    {
+      "id": "dynanca-453-q007",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Phase difference from two rules",
+      "learningObjective": "Compute the phase difference between two sinusoids with different phase constants.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Two signals are \\(y_1=3\\sin\\left(2t+\\frac{\\pi}{6}\\right)\\) and \\(y_2=5\\sin\\left(2t-\\frac{\\pi}{3}\\right)\\). What is the phase difference between them?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(\\frac{\\pi}{2}\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(\\frac{\\pi}{6}\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The phases are \\(2t+\\frac{\\pi}{6}\\) and \\(2t-\\frac{\\pi}{3}\\). Their difference is \\(\\frac{\\pi}{6}-\\left(-\\frac{\\pi}{3}\\right)=\\frac{\\pi}{6}+\\frac{2\\pi}{6}=\\frac{\\pi}{2}\\), with \\(y_1\\) leading. The amplitudes \\(3\\) and \\(5\\) do not affect the phase difference. Subtracting \\(\\frac{\\pi}{3}-\\frac{\\pi}{6}\\) ignores the negative sign and gives \\(\\frac{\\pi}{6}\\).",
+      "hint": "Subtract the two phase constants, keeping their signs."
+    },
+    {
+      "id": "dynanca-453-q008",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Phase difference for different frequencies",
+      "learningObjective": "Recognise that a constant phase difference requires equal frequencies.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "Two signals are \\(y_1=\\sin(2t)\\) and \\(y_2=\\sin(3t)\\). Is the difference between their phases constant in time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "No; the difference of the phases is \\(t\\), which changes with time."
+        },
+        {
+          "label": "B",
+          "text": "Yes; it is always \\(0\\), because both phase constants are \\(0\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The phases are \\(2t\\) and \\(3t\\), and their difference is \\(3t-2t=t\\). Because the angular frequencies differ, the difference grows steadily with time, so the signals drift in and out of step. A constant phase difference exists only for signals of the same frequency.",
+      "hint": "Subtract the complete phases, not just the phase constants."
+    },
+    {
+      "id": "dynanca-453-q009",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Sine and cosine of the same frequency",
+      "learningObjective": "State the phase relation between a cosine and a sine of the same frequency.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "Two signals are \\(y_1=\\sin(\\omega t)\\) and \\(y_2=\\cos(\\omega t)\\) with \\(\\omega>0\\). Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y_2\\) leads \\(y_1\\) by \\(90^\\circ\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(y_2\\) lags \\(y_1\\) by \\(90^\\circ\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since \\(\\cos(\\omega t)=\\sin\\left(\\omega t+\\frac{\\pi}{2}\\right)\\), the cosine has a phase that is \\(\\frac{\\pi}{2}\\) radians, or \\(90^\\circ\\), ahead of the sine. Indeed the cosine is at its maximum at \\(t=0\\), while the sine reaches its maximum a quarter period later.",
+      "hint": "Rewrite the cosine as a sine with an added phase."
+    },
+    {
+      "id": "dynanca-453-q010",
+      "category": "Trigonometry & Periodic Models",
+      "concept": "Phase relation after rewriting a cosine",
+      "learningObjective": "Compare the phases of a shifted sine and a cosine by writing both as sines.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "Two signals are \\(y_1=\\sin\\left(\\omega t+\\frac{\\pi}{4}\\right)\\) and \\(y_2=\\cos(\\omega t)\\) with \\(\\omega>0\\). Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(y_2\\) leads \\(y_1\\) by \\(\\frac{\\pi}{4}\\)."
+        },
+        {
+          "label": "B",
+          "text": "\\(y_1\\) leads \\(y_2\\) by \\(\\frac{\\pi}{4}\\)."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Write the cosine as a sine: \\(y_2=\\sin\\left(\\omega t+\\frac{\\pi}{2}\\right)\\). The phase constants are then \\(\\frac{\\pi}{4}\\) for \\(y_1\\) and \\(\\frac{\\pi}{2}\\) for \\(y_2\\). Since \\(\\frac{\\pi}{2}-\\frac{\\pi}{4}=\\frac{\\pi}{4}>0\\), \\(y_2\\) is ahead of \\(y_1\\) by \\(\\frac{\\pi}{4}\\).",
+      "hint": "Express both signals with the same function before comparing phase constants."
+    }
+  ]
+}

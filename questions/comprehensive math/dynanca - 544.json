@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "dynanca-544",
+  "category": "Comprehensive Mathematics",
+  "title": "544. Discrete Mathematics, Counting & Graph Theory: Addition Rule of Counting",
+  "description": "A comprehensive mathematics curriculum progressing from foundational numeracy and core mathematical concepts to algebra, geometry, calculus, linear algebra, probability, statistics, discrete mathematics, optimization, mathematical foundations of AI, advanced pure mathematics, and emerging research methods.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "dynanca-544-q001",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "When the addition rule applies",
+      "learningObjective": "State the condition under which the sizes of two sets of choices may be added.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Comprehension",
+      "question": "A choice can be made from a set \\(A\\) of options or from a set \\(B\\) of options. Under which condition is the total number of options equal to \\(|A|+|B|\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When \\(A\\) and \\(B\\) have no option in common"
+        },
+        {
+          "label": "B",
+          "text": "When a choice from \\(A\\) is followed by a choice from \\(B\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The addition rule counts a union of disjoint sets: if no option belongs to both sets, then \\(|A\\cup B|=|A|+|B|\\). If the sets overlap, the common options would be counted twice. Making one choice after another is the situation of the multiplication rule.",
+      "hint": "Think about what happens to an option that belongs to both sets when the two sizes are added."
+    },
+    {
+      "id": "dynanca-544-q002",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "One item from two disjoint lists",
+      "learningObjective": "Apply the addition rule to a choice of one item from two separate lists.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "A menu offers \\(4\\) soups and \\(6\\) salads. A customer orders exactly one starter, which is either a soup or a salad. How many different orders are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(10\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The customer picks one item, and no item is both a soup and a salad, so the addition rule gives \\(4+6=10\\). The product \\(4\\cdot 6=24\\) would count orders consisting of one soup together with one salad.",
+      "hint": "Only one item is chosen, not one from each list."
+    },
+    {
+      "id": "dynanca-544-q003",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Three disjoint categories",
+      "learningObjective": "Apply the addition rule to three separate categories.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "A shelf holds \\(7\\) novels, \\(5\\) biographies, and \\(3\\) poetry books, all different. In how many ways can one book be chosen?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(15\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(105\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Exactly one book is taken, and the three categories do not overlap, so the number of choices is \\(7+5+3=15\\). The product \\(7\\cdot 5\\cdot 3=105\\) counts the ways to take one book from each category.",
+      "hint": "Count the books on the shelf."
+    },
+    {
+      "id": "dynanca-544-q004",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Multiples in a range",
+      "learningObjective": "Count integers satisfying one of two conditions that cannot hold together.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many integers from \\(1\\) to \\(30\\) are divisible by \\(7\\) or by \\(11\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(8\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(6\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The multiples of \\(7\\) are \\(7,14,21,28\\), and the multiples of \\(11\\) are \\(11,22\\). No number in the range is a multiple of both, because the least common multiple is \\(77\\). So the count is \\(4+2=6\\). The product \\(4\\cdot 2=8\\) has no meaning here.",
+      "hint": "List the multiples of each number separately and check whether the two lists overlap."
+    },
+    {
+      "id": "dynanca-544-q005",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Overlap spoils the addition rule",
+      "learningObjective": "Detect double counting when two conditions can hold together.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Analysis",
+      "question": "To count the integers from \\(1\\) to \\(20\\) that are divisible by \\(2\\) or by \\(5\\), a student adds \\(10+4=14\\). What is wrong?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nothing is wrong; sizes of sets may always be added."
+        },
+        {
+          "label": "B",
+          "text": "The numbers \\(10\\) and \\(20\\) are counted twice; the correct count is \\(12\\)."
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(10\\) multiples of \\(2\\) and \\(4\\) multiples of \\(5\\), but \\(10\\) and \\(20\\) belong to both lists. Adding counts them twice, so the correct count is \\(10+4-2=12\\). The addition rule in its simple form requires sets with no common element.",
+      "hint": "Look for numbers that are multiples of both \\(2\\) and \\(5\\)."
+    },
+    {
+      "id": "dynanca-544-q006",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "A digit or a letter",
+      "learningObjective": "Count one-symbol codes drawn from two disjoint alphabets.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "A code consists of a single symbol, which is either one of the \\(10\\) digits or one of the \\(26\\) uppercase letters. How many codes are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(36\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(260\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A code is one symbol, and no symbol is both a digit and a letter, so there are \\(10+26=36\\) codes. The number \\(260=10\\cdot 26\\) counts codes made of one digit followed by one letter.",
+      "hint": "The code has only one position."
+    },
+    {
+      "id": "dynanca-544-q007",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Two possible sums",
+      "learningObjective": "Count outcomes of two dice by splitting into disjoint cases.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Procedural",
+      "question": "Two dice, one red and one blue, are rolled. In how many of the \\(36\\) outcomes is the sum equal to \\(4\\) or to \\(9\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(12\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(7\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sum is \\(4\\) for \\((1,3),(2,2),(3,1)\\), which is \\(3\\) outcomes, and \\(9\\) for \\((3,6),(4,5),(5,4),(6,3)\\), which is \\(4\\) outcomes. A sum cannot be both, so the total is \\(3+4=7\\). Multiplying \\(3\\cdot 4=12\\) is not justified.",
+      "hint": "List the outcomes for each sum separately."
+    },
+    {
+      "id": "dynanca-544-q008",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Splitting by number of digits",
+      "learningObjective": "Count integers with a given digit sum by cases on the number of digits.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many integers from \\(1\\) to \\(99\\) have digits that add up to \\(3\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(4\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(3\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Split by the number of digits. Among one-digit numbers only \\(3\\) qualifies. Among two-digit numbers the possibilities are \\(12\\), \\(21\\), and \\(30\\). The cases are disjoint, so the total is \\(1+3=4\\). Counting only the two-digit numbers gives \\(3\\) and misses the number \\(3\\) itself.",
+      "hint": "Treat one-digit and two-digit numbers as separate cases."
+    },
+    {
+      "id": "dynanca-544-q009",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Direct and indirect routes",
+      "learningObjective": "Combine the addition and multiplication rules to count routes.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Application",
+      "question": "There are \\(3\\) roads from town \\(P\\) to town \\(Q\\), \\(2\\) roads from \\(Q\\) to town \\(R\\), and \\(4\\) direct roads from \\(P\\) to \\(R\\) that avoid \\(Q\\). How many routes lead from \\(P\\) to \\(R\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(10\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(9\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A route either passes through \\(Q\\) or is direct; these cases are disjoint. Through \\(Q\\) there are \\(3\\cdot 2=6\\) routes, and there are \\(4\\) direct routes, so the total is \\(6+4=10\\). Adding all three numbers, \\(3+2+4=9\\), ignores that a route through \\(Q\\) uses one road of each kind.",
+      "hint": "Count the routes through \\(Q\\) first, then add the direct ones."
+    },
+    {
+      "id": "dynanca-544-q010",
+      "category": "Discrete Mathematics, Counting & Graph Theory",
+      "concept": "Exactly one digit equal to seven",
+      "learningObjective": "Count three-digit integers by cases on the position of a digit.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "How many integers from \\(100\\) to \\(999\\) have exactly one digit equal to \\(7\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(225\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(243\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Split by the position of the \\(7\\). Hundreds digit \\(7\\): the other two digits are not \\(7\\), giving \\(9\\cdot 9=81\\). Tens digit \\(7\\): the hundreds digit is one of \\(8\\) values (not \\(0\\), not \\(7\\)) and the units digit one of \\(9\\), giving \\(72\\). Units digit \\(7\\): likewise \\(72\\). The total is \\(81+72+72=225\\). The number \\(243=3\\cdot 81\\) forgets that the hundreds digit cannot be \\(0\\).",
+      "hint": "Treat the three possible positions of the \\(7\\) as separate cases, and remember that the first digit is not \\(0\\)."
+    }
+  ]
+}

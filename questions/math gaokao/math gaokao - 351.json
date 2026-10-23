@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0",
+  "type": "mcq",
+  "id": "math-gaokao-351",
+  "category": "— CHALLENGE HIGHER. GO FURTHER. —",
+  "title": "MATH GAOKAO - 351",
+  "description": "Authentic-style mathematics problems inspired by China’s Gaokao — build deeper understanding, sharper thinking, and real exam readiness.",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "math-gaokao-351-q001",
+      "category": "Combinatorics",
+      "concept": "Permutations of Distinct Objects",
+      "learningObjective": "Determine the number of linear arrangements of distinct objects using factorial notation.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "In how many different ways can \\(5\\) distinct books be arranged in a row on a shelf?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(120\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are \\(5\\) distinct books, and all \\(5\\) positions must be filled. The number of arrangements is\n\\[\n5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120.\n\\]\nSo the correct answer is \\(120\\).",
+      "hint": "For arranging all distinct objects in a row, use the factorial of the number of objects."
+    },
+    {
+      "id": "math-gaokao-351-q002",
+      "category": "Combinatorics",
+      "concept": "Permutations Without Repetition",
+      "learningObjective": "Calculate the number of ordered selections of \\(3\\) letters from \\(7\\) distinct letters without repetition.",
+      "difficulty": "Easy",
+      "cognitiveLevel": "Procedural",
+      "question": "How many \\(3\\)-letter arrangements can be formed from \\(7\\) distinct letters if no letter may be repeated?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(210\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(343\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For the first letter, there are \\(7\\) choices. For the second letter, \\(6\\) choices remain. For the third letter, \\(5\\) choices remain. Thus the number of arrangements is\n\\[\n7 \\times 6 \\times 5 = 210.\n\\]\nThis is \\(P(7,3)=210\\). The value \\(343\\) would arise if repetition were allowed, since \\(7^3=343\\).",
+      "hint": "Count the choices for each position one by one, remembering that no letter may be reused."
+    },
+    {
+      "id": "math-gaokao-351-q003",
+      "category": "Combinatorics",
+      "concept": "Permutations of a Multiset",
+      "learningObjective": "Count distinct arrangements of letters when some letters are repeated.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many distinct arrangements are there of the letters in the word BANANA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(60\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(720\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The word BANANA has \\(6\\) letters: B appears once, A appears \\(3\\) times, and N appears \\(2\\) times. The number of distinct arrangements is\n\\[\n\\frac{6!}{3!2!} = \\frac{720}{6 \\times 2} = 60.\n\\]\nSo there are \\(60\\) distinct arrangements.",
+      "hint": "Divide the total factorial by the factorials of the repeated-letter counts."
+    },
+    {
+      "id": "math-gaokao-351-q004",
+      "category": "Combinatorics",
+      "concept": "Circular Permutations",
+      "learningObjective": "Count arrangements of distinct people around a circular table when rotations are considered the same.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In how many ways can \\(6\\) distinct people be seated around a circular table if rotations of the same seating are considered identical?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(720\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(120\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For \\(n\\) distinct objects arranged in a circle, with rotations considered the same, the number of arrangements is\n\\[\n(n-1)!.\n\\]\nHere \\(n=6\\), so\n\\[\n(6-1)! = 5! = 120.\n\\]\nThe value \\(720\\) is \\(6!\\), which counts linear arrangements rather than circular arrangements.",
+      "hint": "Fix one person in a position to remove the rotational symmetry, then arrange the remaining people."
+    },
+    {
+      "id": "math-gaokao-351-q005",
+      "category": "Combinatorics",
+      "concept": "Permutations with Adjacency Restriction",
+      "learningObjective": "Count linear arrangements in which two specified objects must be adjacent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "In how many ways can \\(5\\) distinct people be arranged in a row if two particular people must stand next to each other?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(48\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(120\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Treat the two particular people as one block. The block and the other \\(3\\) people give \\(4\\) objects to arrange, which can be done in\n\\[\n4! = 24\n\\]\nways. Inside the block, the two people can be ordered in\n\\[\n2! = 2\n\\]\nways. Therefore the total number of arrangements is\n\\[\n4! \\times 2! = 24 \\times 2 = 48.\n\\]\nThe value \\(120\\) is \\(5!\\), the total arrangements without the adjacency restriction.",
+      "hint": "Combine the two people who must be adjacent into a single block, then arrange the block with the remaining people."
+    },
+    {
+      "id": "math-gaokao-351-q006",
+      "category": "Combinatorics",
+      "concept": "Permutations with Non-Adjacency Restriction",
+      "learningObjective": "Count arrangements of distinct letters in which two specified letters are not adjacent.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many arrangements of the letters E, X, A, M are there in which E and A are not adjacent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(24\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(12\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The total number of arrangements of the \\(4\\) distinct letters is\n\\[\n4! = 24.\n\\]\nNow count arrangements in which E and A are adjacent. Treat EA as one block. Then the block and X, M give \\(3\\) objects, arranged in\n\\[\n3! = 6\n\\]\nways. Inside the block, E and A can be ordered in\n\\[\n2! = 2\n\\]\nways. So adjacent arrangements number\n\\[\n3! \\times 2! = 6 \\times 2 = 12.\n\\]\nTherefore, arrangements where E and A are not adjacent number\n\\[\n24 - 12 = 12.\n\\]",
+      "hint": "Count all arrangements first, then subtract the arrangements where E and A are treated as one adjacent block."
+    },
+    {
+      "id": "math-gaokao-351-q007",
+      "category": "Combinatorics",
+      "concept": "Permutations with Repeated Letters",
+      "learningObjective": "Count distinct permutations of a word containing multiple repeated letters.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Application",
+      "question": "How many distinct arrangements are there of the letters in the word SUCCESS?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(5040\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(420\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The word SUCCESS has \\(7\\) letters: S appears \\(3\\) times, C appears \\(2\\) times, and U and E each appear once. The number of distinct arrangements is\n\\[\n\\begin{aligned}\n\\frac{7!}{3!2!} &= \\frac{5040}{6 \\times 2} \\\\\n&= \\frac{5040}{12} \\\\\n&= 420.\n\\end{aligned}\n\\]\nSo there are \\(420\\) distinct arrangements.",
+      "hint": "Use the multiset permutation formula and divide by the factorials of the repeated letters."
+    },
+    {
+      "id": "math-gaokao-351-q008",
+      "category": "Combinatorics",
+      "concept": "Permutations with a Divisibility Condition",
+      "learningObjective": "Count \\(4\\)-digit numbers formed without repetition from given digits that satisfy a divisibility condition.",
+      "difficulty": "Medium",
+      "cognitiveLevel": "Reasoning",
+      "question": "How many \\(4\\)-digit numbers can be formed using the digits \\(1\\), \\(2\\), \\(3\\), \\(4\\), \\(5\\) without repetition if the number must be divisible by \\(5\\)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(120\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(24\\)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A number is divisible by \\(5\\) only if its last digit is \\(0\\) or \\(5\\). Since the available digits are \\(1\\), \\(2\\), \\(3\\), \\(4\\), \\(5\\), the last digit must be \\(5\\).\nAfter fixing the last digit as \\(5\\), the first three positions must be filled by choosing and arranging \\(3\\) digits from the remaining \\(4\\) digits: \\(1\\), \\(2\\), \\(3\\), \\(4\\).\nThe number of ways is\n\\[\nP(4,3) = 4 \\times 3 \\times 2 = 24.\n\\]\nThe value \\(120\\) is \\(P(5,4)\\), the total number of \\(4\\)-digit numbers without the divisibility restriction.",
+      "hint": "Divisibility by \\(5\\) fixes the units digit, so first determine the required last digit."
+    },
+    {
+      "id": "math-gaokao-351-q009",
+      "category": "Combinatorics",
+      "concept": "Permutations with Gap Method",
+      "learningObjective": "Arrange two groups in a row so that no two members of one group are adjacent.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Problem-Solving",
+      "question": "In how many ways can \\(5\\) distinct men and \\(4\\) distinct women be arranged in a row so that no two women are adjacent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(43200\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(2880\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First arrange the \\(5\\) distinct men. This can be done in\n\\[\n5! = 120\n\\]\nways. These \\(5\\) men create \\(6\\) gaps around and between them:\nThese are the positions before the first object, between consecutive objects, and after the last object.\nTo ensure no two women are adjacent, choose \\(4\\) of these \\(6\\) gaps for the \\(4\\) women. The number of choices is\n\\[\n\\binom{6}{4} = 15.\n\\]\nThen arrange the \\(4\\) distinct women in the chosen gaps in\n\\[\n4! = 24\n\\]\nways. Therefore the total number of valid arrangements is\n\\[\n5! \\times \\binom{6}{4} \\times 4!= 120 \\times 15 \\times 24= 43200.\n\\]",
+      "hint": "Arrange the men first, then use the gaps around them to place the women so that no two are adjacent."
+    },
+    {
+      "id": "math-gaokao-351-q010",
+      "category": "Combinatorics",
+      "concept": "Permutations with Repeated Letters and Non-Adjacency",
+      "learningObjective": "Count distinct arrangements of a word with repeated letters under a non-adjacency restriction.",
+      "difficulty": "Hard",
+      "cognitiveLevel": "Analysis",
+      "question": "How many distinct arrangements are there of the letters in the word STATISTICS if no two T's are adjacent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\(23520\\)"
+        },
+        {
+          "label": "B",
+          "text": "\\(50400\\)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The word STATISTICS has \\(10\\) letters: S appears \\(3\\) times, T appears \\(3\\) times, I appears \\(2\\) times, and A and C each appear once.\nFirst arrange the non-T letters: S, S, S, I, I, A, C. There are \\(7\\) letters with S repeated \\(3\\) times and I repeated \\(2\\) times, so the number of distinct arrangements is\n\\[\n\\frac{7!}{3!2!} = \\frac{5040}{6 \\times 2} = 420.\n\\]\nThese \\(7\\) letters create \\(8\\) gaps:\nThese are the positions before the first object, between consecutive objects, and after the last object.\nTo make no two T's adjacent, choose \\(3\\) of these \\(8\\) gaps for the \\(3\\) identical T's. This can be done in\n\\[\n\\binom{8}{3} = 56\n\\]\nways. Therefore the number of valid arrangements is\n\\[\n420 \\times 56 = 23520.\n\\]\nThe value \\(50400\\) is the total number of distinct arrangements of STATISTICS without the non-adjacency restriction.",
+      "hint": "Arrange the non-T letters first, then place the identical T's into separate gaps so they are not adjacent."
+    }
+  ]
+}
